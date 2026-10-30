@@ -1,0 +1,57 @@
+# Cell physiology, retinal encoding and laboratory workflow admission review
+
+Reviewed **2026-10-30**. This bounded review supplies primary-source evidence for all four D-family entries, six K-family entries and six N-family entries, plus the concrete F04 retinal resource. The [machine-readable admission record](admission-v04-cell-workflow.json) contains decisions, source URLs, access facts, license facts and blockers for all 17 mapped entries. The [search log](searches-v04-cell-workflow.jsonl) preserves 17 exact web queries. Data acquisition manifests and individual protocols contain the more specific experimental evidence.
+
+This is an acquisition/admission audit, not an exhaustive literature census or a completed systematic review. A task marked pending or deferred is not declared impossible or based on bad data. In several cases the data are promising and manageable, but correct alignment, rights, independent targets, software interfaces or evaluation protocols remain unfinished.
+
+## What is ready, and what its result would mean
+
+| Entry | Admitted real-data slice | What remains outside the claim |
+|---|---|---|
+| [D02](../experiments/D02/protocol.md) | One Allen neuron; four training and two independently held-out negative-current amplitude sweeps; passive voltage deflection conditional on known prestimulus rest. | Spikes, arbitrary waveforms, new stimulus families, cross-cell or population generalization. |
+| [K01](../experiments/K01/protocol.md) | Allen mouse cells; electrophysiological features predict independently annotated spiny/aspiny morphology; 678 training and 226 held-out donors. | Full molecular taxonomy, discovery of cell types, cross-lab or cross-species transfer. |
+| [F04](../experiments/F04/protocol.md) | Goldin 2022 real mouse retinal encoding; all 41 neurons, 3,160 training images, 30 distinct test images and 30 measured repeats per test image. | Temporal flicker/stimulus history, full-resolution image models, other retinas or an official CRCNS benchmark result. |
+| [N05](../experiments/N05/protocol.md) | Deterministic units, sampling, stimulus timing and voltage-summary extraction from the real D02 NWB file; 61 checked fields. | Scientific discovery, autonomous end-to-end workflow quality, arbitrary NWB formats/labs, or fault detection. |
+
+The [Allen primary API documentation](https://brain-map.org/support/documentation/cell-types-database-api) distinguishes measured electrophysiological features, morphology annotations, current-injection protocols and downloadable NWB traces. D02 and K01 therefore use different endpoints with explicit provenance. D02 and N05 reuse **the same file and neuron**; adding the workflow endpoint does not create an independent biological dataset. Allen data follow the [Allen Institute Terms of Use](https://alleninstitute.org/terms-of-use/), including research/noncommercial use and attribution; they are not relicensed under the repository's code license.
+
+N05's correct reference is an audited calculation, so its score of 1 by construction cannot be interpreted as empirical specialist state of the art. Similarly, the other admitted references are transparent conventional methods under custom splits. None establishes verified current specialist SOTA. Actual model measurements belong in the central results records, not in this admission review.
+
+## Why the initially suggested retinal teaching data were excluded
+
+The [Neuromatch GLM tutorial](https://compneuro.neuromatch.io/tutorials/W1D3_GeneralizedLinearModels/student/W1D3_Tutorial1.html) describes real Uzzell–Chichilnisky retinal flicker data, but specifically limits that dataset to teaching and requires author permission for publication or distribution. We did not download it, contact the author, or treat the course's general content license as permission to reuse those data in this research release.
+
+Instead, the [Goldin et al. primary paper](https://doi.org/10.1038/s41467-022-33242-8) and [original Zenodo deposit](https://doi.org/10.5281/zenodo.6868362) support a separately reusable natural-image encoding task. The [OpenRetina loader documentation](https://open-retina.org/api_reference/data_io/goldin_2022/) explicitly links its processed session to that study. Original Zenodo API metadata declare CC BY 4.0; the [pinned processed mirror card](https://huggingface.co/datasets/open-retina/open-retina/blob/fc7b91e93c9bd4e76d4e3205fcbcc6a31601985a/README.md) declares CC BY-SA 4.0 and names the source study. Data licenses and image attribution remain distinct from code licensing.
+
+The downloaded 151,245,128-byte HDF5 SHA-256 matches its published Hugging Face LFS checksum. Training targets and individual repeated test targets were verified to be nonnegative integers; fractional stored test averages are used only for an integrity check. No smoothed rates or calcium-derived activity are silently substituted for counts. Original image hashes have zero exact train/test overlap. The reduced 18×18 input and upstream-normalized pixel caveat are documented explicitly. These checks support a narrow valid task; they do not prove independence of similar natural-image crops or of different cells in one retina.
+
+## Pending physiology and cell-analysis perspectives
+
+| Entries | Concrete reason for pending/deferred status |
+|---|---|
+| D01, voltage movies | Paired movie/ephys alignment, ROI policy and sampling-time scorer have not been validated. A browser challenge on the primary article is an access observation, not proof that the dataset is unavailable. |
+| D03, dendritic recovery | The mapped simulator examples require a newly designed held-out morphology/stimulation/noise protocol. Reusing fitted example traces as the test would not establish independent recovery. |
+| D04, physiological model validation | [HippoUnit](https://github.com/KaliLab/hippounit) and its [published demo](https://github.com/KaliLab/HippoUnit_demo) require simulation-capable model interfaces and independent physiological tests. Recalculating supplied published model outputs would not measure a newly generated model. |
+| K02, transcriptomic integration | [scIB](https://scib.readthedocs.io/en/latest/) is an evaluation toolkit, rather than a single frozen brain cohort. A donor split, taxonomy, biological-conservation and batch-mixing policy, and dataset-specific rights remain to be selected. |
+| K03, atlas/pathology analysis | [NeuroDiscoveryBench](https://github.com/allenai/neurodiscoverybench) supplies a relevant scientific workflow family. The eligible questions, source data and text/figure evaluators need their own frozen run conditions. |
+| K04, spatial cortical domains | [spatialLIBD](https://research.libd.org/spatialLIBD/reference/fetch_data.html) provides concrete data access, but section/donor grouping, reader installation and label policy were not validated. The original three-donor study does not justify treating adjacent sections as independent donors. |
+| K05, cellular deconvolution | [DeconvoBuddies](https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html) documents manageable bulk and single-nucleus data. Orthogonal fraction truth still needs to be matched to donors, tissue blocks and source/reference policies. |
+| K06, extracellular types | [CellExplorer ground truth](https://cellexplorer.org/publicdata/ground-truth-data/) and its [tutorial](https://cellexplorer.org/tutorials/ground-truth-tutorial/) were inspected. The consolidated 430-entry list has labels/group metadata but no predictor matrix. Session metrics must be extracted, nonnested classes selected and contributor rights resolved. A `Juxta` tag is not itself a molecular cell class. |
+
+For K06, the software BSD license was actually read, but it was not presumed to establish rights for every contributing laboratory's data. For K04/K05, the recorded blocker is unfinished parsing/alignment and terms review, not excessive size or bad data. These distinctions matter because execution selection can otherwise disguise missing perspectives as scientifically unimportant.
+
+## Laboratory workflow literature and closest prior work
+
+The workflow category already contains several different evaluation philosophies. [NeuroDiscoveryBench](https://github.com/allenai/neurodiscoverybench) evaluates scientific analysis answers grounded in real source datasets. [BrainAgent](https://arxiv.org/abs/2606.25400) describes hierarchical brain-signal workflows; the matching complete task/data/evaluator bundle remains unconfirmed in this screen. [NeuroClaw NeuroBench](https://cuhk-aim-group.github.io/NeuroDiscovery/neurobench.html) publishes 120 workflow tasks with skill conditions and GPT-5.4 weighted-rubric scoring. These rubric scores cannot be mixed with predictive log loss or deterministic unit checks.
+
+[ScienceAgentBench](https://arxiv.org/abs/2410.05080) supplies publication-derived program tasks and task-specific evaluators across several scientific domains; its [official repository](https://github.com/OSU-NLP-Group/ScienceAgentBench) is relevant for a future explicitly screened neuroscience subset. Reporting all of its broad-science tasks as neuroscience would inflate coverage. Where a benchmark uses an LLM judge, its exact model, prompt, rubric, access and evaluation version must be recorded; no blind-judge score is fabricated here.
+
+An additional close primary resource identified in this screen is **[EEGAgentBench](https://arxiv.org/abs/2609.31632)**, with an [author repository](https://github.com/528why/EEGAgentBenchmark) describing 1,072 evaluation instances, six public EEG source datasets and ten deterministic tools. Its runtime, scenarios, answers and evaluators distinguish it from both BrainAgent and raw-signal foundation-model benchmarks. The separately hosted signal corpus is approximately 23 GB and was not acquired here. The authors retain source-specific data terms, including Bonn restrictions; the code license cannot override those terms. It is a strong related-work/admission candidate, not an executed result in this audit.
+
+Finally, [DANDI](https://about.dandiarchive.org/) is a data archive supporting reproducible neurophysiology, not an automatically scored loading or corruption benchmark. N05 constructs one clean deterministic case; N06 would require an independently checked corruption generator, hidden faults, detection thresholds and false-positive evaluation. Success on the former cannot be claimed as completion of the latter.
+
+## What this coverage can and cannot establish
+
+These sources span intracellular signals, voltage imaging, dendrites, cell physiology, transcriptomics, spatial biology, deconvolution, extracellular identities, retinal encoding and laboratory workflows. They demonstrate that those perspectives were considered, with concrete executable or pending cases. They do not establish that every relevant computational-neuroscience task or paper has been found.
+
+The search was a bounded web/primary-documentation audit. It lacks a complete bibliographic database export, prospectively exhaustive query strategy, duplicate screening, independent expert adjudication and full citation-network saturation. Many pending resources retain unresolved dataset-specific terms or evaluator requirements. The next justified claim is therefore **traceable breadth with explicitly documented gaps**, alongside narrow measured slices. It is not a universal coverage or specialist-replacement claim.

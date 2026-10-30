@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "A03",
+    "decision": "candidate_pending_validation",
+    "reason": "Needs exact leave-one-dataset-out weights and proof held-out training set was excluded from domain pretraining. Cannot treat animal-specialist SuperAnimal as a general-purpose baseline. Weights/splits not yet validated.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://www.nature.com/articles/s41467-024-48792-2"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+    "permanent_rejection": false
+  }
 }

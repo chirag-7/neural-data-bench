@@ -1,0 +1,85 @@
+
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/expansion.py", line 110, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/expansion.py", line 109, in main
+    else:print(json.dumps(one(a.task,a.model)))
+                          ^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/expansion.py", line 82, in one
+    idx=groups==g;ss=scoring(task,pred[idx],truth[idx],xt[idx],meta);grouped.append(dict(group=str(g),score=ss['score'],n=int(idx.sum())))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/expansion.py", line 57, in scoring
+    if pred.shape!=truth.shape or not np.all(np.isfinite(pred)) or not np.all(np.isin(pred,np.unique(truth))):raise ValueError('Invalid class output')
+                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid class output

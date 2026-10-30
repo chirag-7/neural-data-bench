@@ -27,3 +27,9 @@ Annotator definitions differ; rare behaviors
 ## Sources
 
 - [https://arxiv.org/abs/2104.02710](https://arxiv.org/abs/2104.02710)
+
+## v0.4 admission and execution
+
+Decision: **measured** (2026-10-30). Official Task1 pose/behavior archive acquired and publisher MD5 verified; current-record/paper license discrepancy documented, raw data cache only. Real expert labels, all70train19test recordings retained in fixed3Hz custom slice, official animal split. Adapter and baseline ready; not full benchmark or SOTA.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). [Actual protocol and artifacts](../../../experiments/A09). [Central task results](../../../results/A09.json).

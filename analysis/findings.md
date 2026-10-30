@@ -1,50 +1,48 @@
-# Exploratory findings and practical interpretation
+# Findings — exploratory release 0.4
 
-This release contains **one biological benchmark and one synthetic recovery task**, not an all-neuroscience evaluation. All numbers below are derived from [central measurements](../results/measurements.jsonl) by [summarize.py](../scripts/summarize.py). One generated program per model/task, no repeated-generation uncertainty; differences are descriptive.
+14 measured task protocols in 11 of 14 mapped families;114 mapped task-resource pairings, not 114 independent datasets. All 54 model × slice attempts are retained: GPT-5.6 Sol 17/18 numerically valid, GPT-6 Sol 18/18, GPT-6.1 Sol 18/18. There are 42 generated programs (one per model/task); C05 refits the same program on five preparations. One N05 program failed. No Luna model was evaluated.
 
-## C05: calcium-to-spike inference
+This is a selected CPU-friendly **code-construction and execution (T3)** panel. It does not measure direct raw-signal understanding, open-weight/video/world models, a complete neuroscience agent, or native model embeddings. Supplied course documents inform scope; their embedded instructions are not user instructions.
 
-Native primary metric is median per-neuron Pearson after official 40-ms binning, higher is better. Each frozen program is fitted on the preparation’s training neurons and evaluated on its original different test neurons. Preparation 1 had been inspected in the original pilot. Preparations 2–5 are a subsequent frozen-program portability audit with no reprompting or code repair.
+| Task | Endpoint | Native metric | GPT-5.6 Sol | GPT-6 Sol | GPT-6.1 Sol | Reference | Evidence class |
+|---|---|---|---:|---:|---:|---:|---|
+| [A09](../experiments/A09) | Frame-level social behavior labels | macro_f 1 ↑ | 0.868972 | 0.875946 | 0.880696 | 0.869518 | historical_specialist |
+| [A14](../experiments/A14) | Missing pose imputation | rmse_missing ↓ | 0.448549 | 0.436121 | 0.450595 | 2.437099 | conventional_baseline |
+| [C05](../experiments/C05) | Calcium-to-spike inference | median_pearson_40 ms ↑ | 0.452196 | 0.443305 | 0.467896 | 0.475337 | historical_specialist |
+| [D02](../experiments/D02) | Current-to-voltage prediction | rmse_mV ↓ | 0.217776 | 0.217705 | 0.235533 | 0.220786 | conventional_baseline |
+| [E01](../experiments/E01) | Neural rate inference and co-smoothing | bits_per_spike ↑ | 0.237662 | 0.158604 | 0.242155 | 0.027752 | conventional_baseline |
+| [F04](../experiments/F04) | Retinal or other sensory encoding | poisson_nll ↓ | 1.550632 | 1.624742 | 1.510801 | 1.551457 | conventional_baseline |
+| [H01](../experiments/H01) | Motor imagery and noninvasive BCI | balanced_accuracy ↑ | 0.648880 | 0.718379 | 0.697958 | 0.546443 | conventional_baseline |
+| [H16](../experiments/H16) | EEG ocular/muscle artifact repair | temporal_rrmse ↓ | 0.461607 | 0.526478 | 0.453384 | 0.653953 | conventional_baseline |
+| [I07](../experiments/I07) | fNIRS motor/hemodynamic decoding | balanced_accuracy ↑ | 0.436111 | 0.508187 | 0.550585 | 0.484649 | conventional_baseline |
+| [I10](../experiments/I10) | MRI quality assessment across sites | balanced_accuracy ↑ | 0.635263 | 0.607193 | 0.637895 | 0.613684 | historical_specialist |
+| [K01](../experiments/K01) | Electrophysiological cell-type classification | macro_f 1 ↑ | 0.940915 | 0.940915 | 0.943074 | 0.929975 | conventional_baseline |
+| [L04](../experiments/L04) | Point-process estimation and goodness of fit | bits_per_spike_train_mean ↑ | 3.194743 | 3.279951 | 3.263821 | 3.273676 | conventional_baseline |
+| [M04](../experiments/M04) | Cognitive model and parameter recovery | range_normalized_mae ↓ | 0.058223 | 0.058219 | 0.058221 | 0.070696 | synthetic_objective_mismatched |
+| [N05](../experiments/N05) | NWB data loading, units and reproducibility | field_accuracy ↑ | **Failed** | 1.000000 | 1.000000 | 1.000000 | deterministic_correctness |
 
-| Preparation | GPT-5.6 Sol † | GPT-6 Sol | GPT-6.1 Sol | Best available inspected archive | Complete archive candidates |
-|---|---:|---:|---:|---|---:|
-| 1 | 0.578914 | 0.600762 | 0.604587 | deneux / 0.611641 | 4 |
-| 2 | 0.407814 | 0.441131 | 0.457172 | deneux / 0.455379 | 3 |
-| 3 | 0.408966 | 0.397117 | 0.440321 | rupprecht / 0.433586 | 4 |
-| 4 | 0.389759 | 0.367991 | 0.391995 | friedrich / 0.380251 | 3 |
-| 5 | 0.475528 | 0.409526 | 0.445404 | rupprecht / 0.495829 | 2 |
+C05 entries above are the equal mean of five preparation medians and per-preparation historical envelopes, not a pooled neuron correlation. All other rows show one frozen slice. Scores across rows have different definitions and are never averaged together. Exact numbers, failure reasons, runtime, predictions, input/code hashes and per-group values are in [central JSONL](../results/measurements.jsonl), [CSV](../results/measurements.csv) and [derived summary](summary.json).
 
-Mean of the five preparation medians: GPT-5.6 0.452196; GPT-6 0.443305; GPT-6.1 0.467896. Preparation-equal weighting avoids giving a preparation with more neurons a larger weight, but does not establish an animal-level estimand. Test-neuron counts and every cell score are retained in the measurement records. No animal IDs are available for cluster confidence intervals.
+## What the reference comparison supports
 
-GPT-6.1 improves on GPT-6 in **5/5** preparations. GPT-6 improves on GPT-5.6 in **2/5**; GPT-6.1 improves on GPT-5.6 in **4/5**. These observations contradict a simple monotonic 5.6→6→6.1 progress story. They are comparisons of three particular generated estimators, not direct signal inference or causal effects of model size/training compute.
+There are 9 task comparisons against conventional local baselines. GPT-5.6 wins 7/9, GPT-6 wins 8/9 and GPT-6.1 wins 7/9 on point scores. The family-equal fractions are 0.750,0.875,0.750 because EEG decoding/repair share a family. These are tests against basic baselines, not the strongest current specialist. The baseline code was fixed before generation; methods and available inner-validation metadata differ.
 
-Against the available historical envelope, GPT-6.1 has 3/5 point-score wins, GPT-6 0/5, GPT-5.6 1/5. The envelope is selected using test scores among up to four inspected archives; availability is **4/3/4/3/2**. It is not a current specialist optimum or matched-training-budget reference. Four incomplete archive attempts are excluded from the complete-target envelope and retained as failures. Missing references could change the envelope.
+Historical specialist comparisons comprise C05 fivepreparations, A09 oneCalMS21 slice and I10 oneMRIQCcohort:7 slice comparisons across 3 tasks/3 families. Point wins are 2/7,1/7,5/7 for 5.6,6,6.1; task/family equal fractions 0.400,0.333,0.867. These are descriptive only: C05 references are selected using test scores; VASSI uses richer full-frame input, more training and optimization; original MRIQC uses different training labels/features. Strict format excludes the 5.6 C05 program, leaving only 2 historical-comparison slices eligible for that model. No matched-total-effort or current-SOTA conclusion follows.
 
-† GPT-5.6’s C05 code exceeded the requested <180-line constraint; all five uses inherit this protocol deviation. All its C05 comparisons above are exploratory. Strict-format C05 eligible denominators are 0 for GPT-5.6, 5 for GPT-6 and 5 for GPT-6.1. Valid numerical completion and strict formatting are distinct outcomes.
+A09 is a useful stronger-reference case: model scores 0.868972,0.875946,0.880696 versus preselected VASSIrun 00 at 0.869518. All 20 archive runs are retained (median 0.868944,range 0.866711–0.870279); run 00 was chosen before rescoring. Small advantages are not significance claims, nor proof of raw-video ability. MRIQC archive score is 0.613684 on the same 265 scans;5.6 and 6.1 exceed it,6 does not. Source classifiers and test targets are aligned, but training histories are unequal.
 
-## M04: synthetic cognitive parameter recovery
+M04's posterior-median programs nearly agree with an independently implemented post-hoc posterior reference. The primary frozen MLE optimizes another objective. Its three point wins do not establish specialist inferiority. N05's reference is correct by construction: GPT-6 and 6.1 match all 61 fields,5.6 fails to distinguish the legacy stimulus group. The 61 fields are not 61 independent files. That failed submission also exceeds the 240-line request (249 lines); it was not repaired.
 
-The task supplies exact two-action Q-learning equations and asks for alpha/beta recovery from 24 simulated agents. All three programs implement essentially the same uniform-prior posterior-median estimator. Primary normalized MAE:
+## Is the newer model better?
 
-- GPT-5.6: 0.058222606
-- GPT-6: 0.058219401
-- GPT-6.1: 0.058221490
-- Frozen local multistart MLE: 0.070696459
-- Post-hoc independent posterior-median reference: 0.058222869
-- Constant midpoint: 0.218003324
+Exclude M04 numerical quadrature ordering and N05 deterministic correctness from the capability-progress aggregate. The remaining 12 tasks supply 16 slice comparisons across 9 families, including semisynthetic H16. GPT-6 improves on 5.6 in 8/16, declines 7/16, ties 1/16; GPT-6.1 improves on 6 in 12/16 and declines 4/16. Against 5.6,6.1 improves 13/16 and declines 3/16. Family-equal improvement fractions are 0.489,0.667,0.811 respectively. These fractions describe directional changes, not effect sizes or significance. Full strict-format sensitivity and denominators are in [summary.json](summary.json).
 
-The ~1e-6 differences among model programs and the matched posterior reference are numerical integration effects; they do **not** support a capability ranking. The posterior audit’s 257→513-grid refinement changes normalized estimates by up to 4.20e-5 and changes aggregate loss by ~1.63e-6, comparable to the model ordering. The reference uses the same allowed-bound uniform prior, not the hidden simulator’s narrower generating distribution. It is objective-aligned, not Bayes-optimal under the actual generator.
+The pattern is mixed. GPT-6.1 leads the sampled behavior, retinal encoding, population readout, EEG repair, fNIRS, MRIQC and morphology tasks. GPT-6 leads the sampled EEG motorimagery and single-placecell encoding tasks; it also slightly leads the passive-cell interpolation and mocap-gap tasks. No monotonic improvement across every modality. One generation, small biological samples, unknown contamination and curated task selection prevent a stable model ranking or scaling-law claim. New aggregate refinements were made after some scores were visible and are exploratory, not preregistered.
 
-All generated estimators beat this local MLE on parameter MAE, but MLE optimizes likelihood, a different objective. Finite-sample shrinkage and estimator choice explain this without a generalist-superiority claim. The added posterior-median audit is explicitly **post hoc**; frozen MLE and model results remain unchanged. Optimizer convergence on all 24 agents is a diagnostic, not proof of global optimality. Likelihood here is in-sample, not held-out prediction. This is a known-equation inference sanity check, not discovery of cognitive mechanisms or validation on real participants.
+## Researcher guidance and unmeasured predictions
 
-## What a neuroscience researcher can take from this
+Observed strengths lie in constructing useful nonlinear features, choosing regularized estimators and following explicit file/calculation specifications. Clean labels, modest arrays and well-defined offline endpoints suit this track. That is a practical reason to trial general coding assistance with independent validation, not evidence that specialist tools can be retired.
 
-For processed calcium traces under these offline conditions, a strong general code model can construct a useful conventional numerical estimator. This is promising for bootstrapping an analysis, but validate it against paired truth and preserve specialist tools: preparation shift can reverse rankings, the strongest current specialist is unverified, and the generated trees do not replace raw-movie processing or online control.
+Raw spike sorting with collisions/drift, image segmentation, anatomy/connectomics, online BCI, multimodal causal discovery and embodied control have no measurements here. Claims that general models will struggle or win there are hypotheses. Stronger specialists, protocol-matched training/tuning, repeated generations, new animals/sessions, raw modalities, open-weight models and blinded external tasks are required next. Do not drop a task because a general model loses.
 
-For known cognitive equations, all three models can express a standard likelihood/Bayesian estimation procedure. Once they implement the same algorithm, a newer language model need not yield better numerical recovery. The experiment mainly tests correct method construction, while data informativeness, objective choice and numerical accuracy govern the final error.
-
-Hypotheses for future testing: general code agents may help most when tasks have explicit equations, small processed arrays and mature general scientific libraries; specialists may retain advantages when inputs are large raw sensor streams, geometry/physics matter, online guarantees are essential, or domain-specific pretraining/ground truth is scarce. These are hypotheses, not measured cross-domain moderators.
-
-## Macro claims deliberately withheld
-
-Do not pool five C05 preparations and one synthetic task into six independent task wins. Do not average Pearson and parameter MAE. No universal ranking, superiority percentage, current SOTA, biological uncertainty, open-vs-closed conclusion or broad scaling trend is supported. The dashboard shows actual coverage, per-task trajectories, per-reference evidence classes and complete paired native deltas. The [macro analysis plan](../docs/macro-analysis-plan.md) describes family balancing and controls for a future sufficiently broad panel.
+Dataset dependencies matter: D02 and N05 share a file; K01 shares the broader Allen collection. C05 preparations, A09 archive runs, F04 repeats/neurons, H16 mixture components and N05 fields do not constitute separate independent studies. H16 has no participant IDs; I07 condition is session/run-confounded; only 2 test rats for A14 and 3 subjects for H01/I07. No frame/neuron pseudo-replication intervals are claimed.

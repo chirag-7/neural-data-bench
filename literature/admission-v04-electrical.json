@@ -1,0 +1,592 @@
+{
+  "schema_version": "1.0",
+  "review_version": "0.4",
+  "checked_on": "2026-10-30",
+  "scope": "Focused primary-source admission review of H01\u2013H19 and I01\u2013I09; I10 reviewed centrally. This is not an exhaustive or PRISMA-compliant literature review.",
+  "status_definitions": {
+    "ready": "An auditable local data slice, protocol, adapter and fixed reference were prepared. It does not imply the full resource was benchmarked or current SOTA verified.",
+    "source-only": "A resource or umbrella is documented, but it is not one executable task; decomposition or independent ground truth remains necessary.",
+    "deferred": "A concrete source/access/protocol/scorer gate remains unresolved for this release. Not a permanent scientific rejection or claim that data are bad."
+  },
+  "n_entries": 28,
+  "status_counts": {
+    "ready": 3,
+    "source-only": 6,
+    "deferred": 19
+  },
+  "decisions": [
+    {
+      "id": "H01",
+      "reviewed_on": "2026-10-30",
+      "reason": "Real public PhysioNet EEGMMI EDF files acquired and validated; fixed subject-disjoint MI slice prepared. This admits one explicitly scoped slice, not the whole MOABB umbrella.",
+      "source_urls": [
+        "https://moabb.neurotechx.com/"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "ready",
+      "decision_detail": "admitted_prepared",
+      "license_facts": "ODC-By-1.0, confirmed on the original PhysioNet v1.0.0 record.",
+      "access_facts": "24 public EDF files acquired without credentials; individual URL/size/SHA-256 records in data/manifests/H01.json.",
+      "next_admission_step": "Preserve split, generate/evaluate model programs and report participant-level scores; extend to other datasets only with separately frozen slices.",
+      "scope": "one explicitly documented slice ready",
+      "primary_sources": [
+        "https://physionet.org/content/eegmmidb/1.0.0/",
+        "https://physionet.org/files/eegmmidb/1.0.0/S001/",
+        "https://moabb.neurotechx.com/docs/generated/moabb.datasets.PhysionetMI.html",
+        "https://mne.tools/stable/auto_examples/decoding/decoding_csp_eeg.html"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry",
+      "artifacts": {
+        "protocol": "experiments/H01/protocol.md",
+        "adapter": "experiments/H01/adapter.py",
+        "verification": "experiments/H01/verification.json",
+        "manifest": "data/manifests/H01.json"
+      }
+    },
+    {
+      "id": "H02",
+      "reviewed_on": "2026-10-30",
+      "reason": "Screened BNCI2014_008 original BNCI terms (CC BY-NC-ND4.0) and MOABB loader/context. Data are real and useful, but derivative-array distribution and the exact cross-subject ERP preparation protocol have not been validated for this release. Alternate openly licensed ERP resources can be admitted later; no claim of bad quality.",
+      "source_urls": [
+        "https://moabb.neurotechx.com/"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_license_and_adapter",
+      "license_facts": "The original BNCI data-set page identifies BNCI2014-008 as CC BY-NC-ND4.0; these terms differ from MOABB software licensing.",
+      "access_facts": "MOABB BNCI2014_008 documentation and original BNCI search-result metadata screened; no P300 raw file acquired.",
+      "next_admission_step": "Validate a specific ERP adapter, participant split, class-imbalance scorer and local/redistribution handling, or select an alternate ERP release. No conclusion that local noncommercial analysis is prohibited.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://bnci-horizon-2020.eu/database/data-sets",
+        "https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_008.html"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H03",
+      "reviewed_on": "2026-10-30",
+      "reason": "MOABB Nakanishi2015 primary documentation located. Need pinned original files/license and frequency/timing metadata, fixed subject split, verified CCA baseline. Generic MOABB umbrella is not one executable dataset; not rejected as infeasible.",
+      "source_urls": [
+        "https://moabb.neurotechx.com/"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_adapter_validation",
+      "license_facts": "Dataset-specific raw-data license not verified; MOABB documentation alone does not establish a blanket data license.",
+      "access_facts": "Nakanishi2015 documentation accessible; no raw SSVEP record acquired in this pass.",
+      "next_admission_step": "Pin original SSVEP data, license, stimulus frequencies and timing; prepare a subject-held-out CCA comparison before admission.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Nakanishi2015.html"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H04",
+      "reviewed_on": "2026-10-30",
+      "reason": "Official BEETL introduction URL timed out in web access. No raw transfer track, license or labels acquired in this screening pass; preserve candidate and retry via original competition release.",
+      "source_urls": [
+        "https://beetl.ai/introduction"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_source_access",
+      "license_facts": "License and original challenge-track access conditions not verified.",
+      "access_facts": "Official BEETL introduction URL timed out through the web tool. This is an access attempt outcome, not evidence of permanent unavailability.",
+      "next_admission_step": "Retry the original competition release, identify transfer track and labeled calibration/evaluation data, then freeze protocol.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://beetl.ai/introduction"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H05",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original NeuralBench documentation accessible. Full/Core suites require selecting task cards, resolving per-dataset licenses and canonical overlap. Avoid counting this suite and its contained EEGMMI-like datasets as independent experiments.",
+      "source_urls": [
+        "https://facebookresearch.github.io/neuroai/neuralbench/index.html"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "source-only",
+      "decision_detail": "deferred_suite_decomposition",
+      "license_facts": "NeuralBench task/dataset licenses must be resolved separately; aggregate raw-data reuse permission not checked.",
+      "access_facts": "Original NeuralBench documentation accessible; no full/core data acquired by this subtask.",
+      "next_admission_step": "Decompose suite into canonical dataset/protocol units and resolve overlap with H01/H06/H07 before counting or executing.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://facebookresearch.github.io/neuroai/neuralbench/index.html"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H06",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original OmniEEG-Bench paper accessible; 54-dataset suite. Must resolve individual task-card preprocessing/splits/licenses and duplicates before execution. Domain EEG foundation-model tables cannot be imported as scores of the evaluated general code generators.",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.00815"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "source-only",
+      "decision_detail": "deferred_suite_decomposition",
+      "license_facts": "Paper/code availability does not establish rights for all 54 source datasets; individual licenses not verified.",
+      "access_facts": "Original OmniEEG-Bench paper accessible; its six-family/54-dataset scope is source-level evidence, not execution.",
+      "next_admission_step": "Resolve original task cards, input/adaptation protocols and per-dataset permission; deduplicate against the other EEG suites.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://arxiv.org/abs/2606.00815"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H07",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original EEG-Arena site reports 57 tasks/23 datasets/five protocols and a migration toward NeuroInfra. Need pinned downstream task version and overlap mapping; umbrella is not directly executable as a single comparable task.",
+      "source_urls": [
+        "https://eeg.fm/benchmarks/"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "source-only",
+      "decision_detail": "deferred_suite_decomposition",
+      "license_facts": "Per-source data terms remain unverified; the umbrella is not a single licensed data release.",
+      "access_facts": "Original EEG-Arena site accessible and reports 57 downstream tasks/23 datasets with five protocols; no downloaded record.",
+      "next_admission_step": "Pin the evolving EEG-Arena/NeuroInfra task implementation and canonical underlying datasets before execution.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://eeg.fm/benchmarks/"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H08",
+      "reviewed_on": "2026-10-30",
+      "reason": "NeuralBench/challenge primary sites accessible. 2026 challenge final phase starts in November after this review date, so no final winner exists yet. Need a pinned accessible sleep dataset, subject/night-disjoint scorer, full-context policy and expert staging labels; no adjacent-epoch shortcut experiment admitted.",
+      "source_urls": [
+        "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+        "https://neural-interfaces26.github.io/"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_full_night_protocol",
+      "license_facts": "Dataset-specific sleep licenses and challenge participation terms not fully checked.",
+      "access_facts": "Official NeuralBench and 2026 challenge pages accessible. The sealed final phase starts in November, after checked date2026-10-30; final winning performance is not yet available.",
+      "next_admission_step": "Select an accessible human sleep release; validate subject/night-disjoint full-context staging, not random adjacent epochs; keep warm-up standings separate from final scores.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+        "https://neural-interfaces26.github.io/"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H09",
+      "reviewed_on": "2026-10-30",
+      "reason": "SzCORE primary framework explicitly distinguishes sample/event scoring and participant independence. CHB-MIT/Siena require long continuous recordings to estimate false alarms/hour; no cherry-picked balanced seizure clips admitted as replacement. Full event pipeline and sufficient recording duration not yet prepared.",
+      "source_urls": [
+        "https://epilepsybenchmarks.com/framework/"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_continuous_event_protocol",
+      "license_facts": "SzCORE describes multiple corpora with individual data-use conditions; no uniform license inferred.",
+      "access_facts": "Original SzCORE framework accessible; CHB-MIT/Siena long-recording raw data were not acquired.",
+      "next_admission_step": "Prepare continuous held-out-patient evaluation with event sensitivity and false alarms/hour. Do not replace it with cherry-picked balanced seizure snippets.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://epilepsybenchmarks.com/framework/"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H10",
+      "reviewed_on": "2026-10-30",
+      "reason": "Broad abnormality/events/cognition/state umbrella overlaps H05/H06 and mixes distinct clinical targets. Requires a specific task, label definition, subject/site split and data-use agreement before an executable benchmark can be admitted.",
+      "source_urls": [
+        "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+        "https://arxiv.org/abs/2606.00815"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "source-only",
+      "decision_detail": "deferred_task_decomposition",
+      "license_facts": "Individual clinical/cognition/state dataset permissions not verified.",
+      "access_facts": "NeuralBench and OmniEEG-Bench primary documentation screened; broad umbrella has no single target or raw-data unit.",
+      "next_admission_step": "Split into concrete target definitions and canonical subject/site protocols; avoid duplicate suite counting and conflating abnormality with diagnosis.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+        "https://arxiv.org/abs/2606.00815"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H11",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original LibriBrain 2026 publications page accessible and identifies LibriBrain100. Need audio-aligned MEG acquisition, official track split and controlled language-prior scorer. Not downloaded in this pass; not a data-quality rejection.",
+      "source_urls": [
+        "https://libribrain.com/editions/2026/publications/"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_large_speech_adapter",
+      "license_facts": "LibriBrain100 dataset and competition-specific reuse/participation terms not fully validated.",
+      "access_facts": "Original2026 publications page accessible and identifies the large MEG speech dataset; no speech-aligned MEG acquired.",
+      "next_admission_step": "Pin official track, audio/word alignment, language-prior policy and metric, then acquire an auditable recording subset.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://libribrain.com/editions/2026/publications/"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H12",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original THINGS site accessible. Stimulus concept and image reuse complicate splitting; original image pool has academic-use restrictions and a separate CC0 subset. Need exact EEG/MEG release, retrieval gallery and held-out concepts/participants rather than an undefined image-reconstruction score.",
+      "source_urls": [
+        "https://things-initiative.org/"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_gallery_and_data_terms",
+      "license_facts": "Original THINGS page distinguishes academically restricted original images from a separately available CC0 image subset. Neural-recording licenses need their own check.",
+      "access_facts": "Original THINGS initiative site accessible; no chosen EEG/MEG release acquired.",
+      "next_admission_step": "Pin one neural release, stimulus gallery and license; distinguish held-out image/concept/person tests and retrieval from unrestricted reconstruction.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://things-initiative.org/"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H13",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original emg2pose repo reports full data431GiB and a ~600MiB sanity-check subset. Full held-out-user benchmark not downloaded; sanity subset cannot substitute for population evaluation without verifying participants and split metadata. EMG is explicitly peripheral.",
+      "source_urls": [
+        "https://github.com/facebookresearch/emg2pose"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_resource_and_protocol",
+      "license_facts": "Original emg2pose raw-data/sanity-subset terms not verified in this screening pass.",
+      "access_facts": "Original repository accessible:full dataset431GiB, sanity subset approximately600MiB. Neither acquired here.",
+      "next_admission_step": "Verify subset user/stage identities and official split before substituting it for a full held-out-user benchmark; retain EMG as peripheral modality.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://github.com/facebookresearch/emg2pose"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H14",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original bycycle code/documentation accessible. Tool features computed from real LFP are not independent gold labels; need expert burst annotations or separately labeled synthetic calibration. Do not grade generic code against bycycle output and label it physiological truth.",
+      "source_urls": [
+        "https://github.com/bycycle-tools/bycycle",
+        "https://about.dandiarchive.org/"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "source-only",
+      "decision_detail": "deferred_ground_truth",
+      "license_facts": "Bycycle repository exposes Apache-2.0 code licensing; this does not establish a license for every LFP example or DANDI source.",
+      "access_facts": "Original bycycle documentation accessible; no independent expert burst truth acquired.",
+      "next_admission_step": "Find expert labels or separately declared synthetic calibration; tool output alone is not physiological ground truth.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://github.com/bycycle-tools/bycycle"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H15",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original MNE/Brainstorm phantom tutorial accessible. Known dipole positions make this scientifically useful, but needs sensor geometry, forward model, filtering and localization scorer adapter. No arbitrary simulated coordinate regression substituted.",
+      "source_urls": [
+        "https://mne.tools/stable/auto_tutorials/inverse/80_brainstorm_phantom_elekta.html"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_forward_model_adapter",
+      "license_facts": "MNE/Brainstorm phantom raw-data terms not verified; tutorial software licensing is distinct.",
+      "access_facts": "Original phantom tutorial accessible; sensor geometry/forward model and raw measurement files not acquired.",
+      "next_admission_step": "Pin phantom acquisition, physical dipole truth, sensor/forward geometry and spatial localization scorer before admission.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://mne.tools/stable/auto_tutorials/inverse/80_brainstorm_phantom_elekta.html"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H16",
+      "reviewed_on": "2026-10-30",
+      "reason": "Pinned original EEG/EOG pools and literal original RMS-ratio SNR convention; component-disjoint semisynthetic repair slice prepared with exact temporal RRMSE. Clean target is algorithmically cleaned/expert-inspected, not pristine physiology. Source participant IDs absent; no subject-generalization claim.",
+      "source_urls": [
+        "https://doi.org/10.1088/1741-2552/ac2bf8"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "ready",
+      "decision_detail": "admitted_prepared",
+      "license_facts": "Original pinned repository MIT LICENSE inspected. The physiological source pools derive from multiple studies; their original provenance remains relevant. Raw pools/mixtures are not redistributed.",
+      "access_facts": "EEG and EOG arrays acquired at commit8d290661146c7189c98cc04812d37371d4b9426c; source SHA-256 and selected component indices retained.",
+      "next_admission_step": "Evaluate frozen T3 submissions; retain semisynthetic, row-disjoint and original SNR-convention caveats; do not claim participant-disjoint real artifact recovery.",
+      "scope": "one explicitly documented slice ready",
+      "primary_sources": [
+        "https://github.com/ncclabsustech/EEGdenoiseNet",
+        "https://arxiv.org/html/2009.11662v4",
+        "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/master/LICENSE",
+        "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/code/benchmark_networks/data_prepare.py"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry",
+      "artifacts": {
+        "protocol": "experiments/H16/protocol.md",
+        "adapter": "experiments/H16/adapter.py",
+        "verification": "experiments/H16/verification.json",
+        "manifest": "data/manifests/H16.json"
+      }
+    },
+    {
+      "id": "H17",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original NEMAR MSSV page accessible:92mice,five labs,CC0,~5.3GB archive/direct manifest. Promising public real sleep resource, not bad data. Need lab identifiers, stage epoch alignment and leave-lab-out acquisition adapter; no local raw arrays downloaded.",
+      "source_urls": [
+        "https://nemar.org/dataset/on006366",
+        "https://doi.org/10.18112/openneuro.ds006366.v1.0.1"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_multilab_sleep_adapter",
+      "license_facts": "Original NEMAR MSSV record explicitly declares CC0; copied OpenNeuro version and mirror version must remain distinct.",
+      "access_facts": "NEMAR page accessible:92mice,five laboratories,~5.3GB archive and selective direct files. No raw sleep sample acquired.",
+      "next_admission_step": "Verify animal/laboratory identifiers, expert-stage alignment and leave-laboratory-out protocol; selective access is possible, so size alone does not justify rejection.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://nemar.org/dataset/on006366"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H18",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original DREAMS Zenodo record explicitly warns Expert1 spindle annotations stop after1000s. A naive full-1800s negative-label benchmark is excluded. A masked interval/Expert2 consensus protocol remains feasible but has not been validated, and original DREAMS noncommercial/no-adaptation terms need an appropriate data handling policy.",
+      "source_urls": [
+        "https://zenodo.org/records/2650142",
+        "https://www.nature.com/articles/s41598-026-53891-9",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_annotation_mask_and_terms",
+      "license_facts": "Original DREAMS license downloaded and read:noncommercial and no-adaptation grant language. Adapted-array distribution policy not resolved; no blanket legal conclusion about local analysis.",
+      "access_facts": "Original Zenodo record warns Expert1 spindle counts stop after1000seconds although excerpts are1800seconds. No annotation archive extracted.",
+      "next_admission_step": "Exclude naive full-excerpt negative-label scoring. A masked-interval/Expert2/consensus protocol may be feasible after actual annotation validation and data-handling review.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://zenodo.org/records/2650142",
+        "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "H19",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original DREAMS record has20expert-annotated15min artifact excerpts and explicit artifact types. Original DREAMS license was downloaded/read; noncommercial and no-adaptation terms complicate distributing prepared arrays. Need local-only extraction/annotation schema and exact event metric; no false claim that real artifact detection equals H16 mixture repair.",
+      "source_urls": [
+        "https://zenodo.org/records/2650142"
+      ],
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_terms_and_event_adapter",
+      "license_facts": "Original DREAMS noncommercial/no-adaptation terms inspected; prepared-array redistribution handling unresolved.",
+      "access_facts": "Original Zenodo record describes20expert-annotated15minute real artifact excerpts; no archive extracted.",
+      "next_admission_step": "Validate artifact-type/event schema and independent scorer with local-only data handling as appropriate. Do not confuse this task with H16 controlled mixing.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://zenodo.org/records/2650142",
+        "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "I01",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original Algonauts2025 challenge page requires a data-download form and Codabench test-response scoring; ID/OOD held-out fMRI responses are not publicly available to a local evaluator. No application signed or hidden-label score fabricated. Need agreed data access, stimulus features and temporal encoding protocol.",
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_access_and_temporal_encoding",
+      "license_facts": "Official Algonauts2025 data download uses a form; movie stimuli and CNeuroMod data require their respective access/use checks.",
+      "access_facts": "Original challenge page accessible; test fMRI responses are withheld for Codabench scoring. No access application or submission made.",
+      "next_admission_step": "Obtain valid access and use official remote scoring, or define an honestly labeled public-training holdout slice with temporally separated movies and stimulus features.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://algonautsproject.com/2025/challenge.html"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "I02",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original NSD site explicitly requests completion of a data-access agreement before receiving the manual/download access. No agreement/application completed on the user\u2019s behalf. Candidate remains scientifically valuable; no bad-data claim.",
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_data_agreement",
+      "license_facts": "Original NSD site requires a data-access agreement; no agreement completed by this subtask.",
+      "access_facts": "Dataset/manual access link follows the official form; no NSD brain/image arrays acquired.",
+      "next_admission_step": "Use user-approved access or a separately licensed public derivative, pin image identities/session split and prevent repeated-image leakage.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://www.naturalscenesdataset.org/"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "I03",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original Brain-Score site supports executable alignment models across neural/behavioral measurements. It is an umbrella with many datasets; need select canonical task, permitted neural data and exact stimulus/model-representation interface. Generic classifier code on a mismatched proxy is not Brain-Score.",
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "source-only",
+      "decision_detail": "deferred_model_interface",
+      "license_facts": "Brain-Score advertises open software and selectively public data/weights; individual neural benchmark data terms must be checked.",
+      "access_facts": "Original Brain-Score platform page accessible; no particular benchmark dataset, model representation or neural score acquired.",
+      "next_admission_step": "Choose a concrete alignment benchmark and model-representation interface; do not label unrelated classifier accuracy as Brain-Score.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://www.brain-score.org/"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "I04",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original Wakeman-Henson Nature article redirect failed through the web tool. No raw multimodal dataset or labels acquired; needs pinned EEG/MEG/fMRI release, face identities/conditions and subject/session split. Access failure is not permanent unavailability.",
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_primary_access_and_multimodal_adapter",
+      "license_facts": "Original multimodal dataset license not verified in this screening pass.",
+      "access_facts": "Nature primary article access failed via its identity-provider redirect; no original EEG/MEG/fMRI records downloaded.",
+      "next_admission_step": "Resolve the pinned primary dataset/manual via a working repository route and verify true events, subjects and modality alignment before execution.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://www.nature.com/articles/sdata20151"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "I05",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original fastMRI site requires user application/institution/proposed-use and data-sharing agreement; no downloaded record, no access application submitted. Its redistribution restrictions require private data handling. Cannot substitute unrelated knee/synthetic reconstructions for brain benchmark.",
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_user_data_access_agreement",
+      "license_facts": "Original fastMRI agreement requires an individual application with institutional affiliation and proposed use; research/education usage and redistribution restrictions apply.",
+      "access_facts": "Official fastMRI page accessible. No investigator identity/application invented, no agreement submitted, no restricted data acquired.",
+      "next_admission_step": "Obtain actual access and a private cache policy, then pin brain k-space inputs, masks and official reconstruction scorer. Unrelated knee or synthetic data are not substitutes.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://fastmri.med.nyu.edu/"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "I06",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original CBICA BraTS page lists multiple separate Synapse challenge instances. Need choose task/release, dataset access terms, subject-level split and official tumor-region/Dice/HD95 rules. No raw records acquired or multiple releases mixed.",
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_release_selection_and_access",
+      "license_facts": "Licenses/access depend on the specific BraTS/Synapse release; no selected release terms accepted.",
+      "access_facts": "Original CBICA page lists multiple challenge instances; no tumor scan/label acquired.",
+      "next_admission_step": "Select a task/year, confirm access and subject split, pin tumor-region definitions and Dice/HD95 conventions before evaluating.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://www.med.upenn.edu/cbica/brats/"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "I07",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original FRESH organizer description resolves left/right2s finger tapping. CC0 versioned SNIRF data acquired/prepared with subject-disjoint2s condition decoding and optical-density conversion; explicit session/condition confounding, no Hb or cortical-activation gold-standard claim.",
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "ready",
+      "decision_detail": "admitted_prepared",
+      "license_facts": "CC0 explicitly confirmed in the downloaded versioned dataset_description.json; mirror DOI10.82901/nemar.on005963 and OpenNeuro DOI10.18112/openneuro.ds005963.v1.0.0 recorded.",
+      "access_facts": "20original SNIRF recordings and BIDS sidecars acquired; all20SNIRF SHA-256 hashes matched publisher manifest; h5py checks confirm136CWchannels inV at760/850nm.",
+      "next_admission_step": "Evaluate frozen subject-disjoint condition classifier; retain session/condition confounding and OD-not-Hb scope. Full physiological activation validation is a different task.",
+      "scope": "one explicitly documented slice ready",
+      "primary_sources": [
+        "https://www.nemar.org/dataset/on005963",
+        "https://openfnirs.org/community/fresh/welcome-to-the-fnirs-fresh-project/",
+        "https://data.nemar.org/on005963/v1.0.0/dataset_description.json",
+        "https://data.nemar.org/on005963/v1.0.0/manifest.json",
+        "https://data.nemar.org/on005963/v1.0.0/code/validation.ipynb"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry",
+      "artifacts": {
+        "protocol": "experiments/I07/protocol.md",
+        "adapter": "experiments/I07/adapter.py",
+        "verification": "experiments/I07/verification.json",
+        "manifest": "data/manifests/I07.json"
+      }
+    },
+    {
+      "id": "I08",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original ConfUSIus collection docs permit small filtered downloads (~30MBexample), anonymous immutable releases and per-source licenses. Data size alone is not an exclusion. Need define actual experimental target (e.g. speed annotations) and held-out-recording/animal scorer; derived GLM maps are not independent truth.",
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_ground_truth_endpoint_adapter",
+      "license_facts": "Original AWS/ConfUSIus record lists source-specific CC BY4.0/CC0/CC BY-NC4.0 terms; no one license inferred for the collection.",
+      "access_facts": "Primary documentation supports anonymous immutable releases and filtered ~30MBexample; no imaging file acquired.",
+      "next_admission_step": "Select an experimental target with verified annotations and animal/recording split; distinguish original measurements from derived GLM maps. Large full datasets alone are not grounds for exclusion.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://registry.opendata.aws/confusius/",
+        "https://confusius.tools/latest/user-guide/datasets/"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    },
+    {
+      "id": "I09",
+      "reviewed_on": "2026-10-30",
+      "reason": "Original Tractometer page explicitly distinguishes2015 Recobundles25bundles from2023 ROI21bundles and tractogram coordinate changes. Need pin matching truth/scorer and verify T1/DWI transforms. No arbitrary mixing of score versions admitted.",
+      "permanent_rejection": false,
+      "checked_on": "2026-10-30",
+      "status": "deferred",
+      "decision_detail": "deferred_spatial_scorer_validation",
+      "license_facts": "Original scoring data/code terms not separately verified; need matching release-specific rights.",
+      "access_facts": "Tractometer page accessible:2015Recobundles25bundles and2023ROI21bundles differ; coordinate/header conventions also changed. No diffusion data acquired.",
+      "next_admission_step": "Pin one scorer/truth version and verify T1-vs-DWI transforms and streamline format handling before interpreting numerical scores.",
+      "scope": "resource screened; no executable evaluation admitted by this review",
+      "primary_sources": [
+        "https://tractometer.org/ismrm2015/tools/"
+      ],
+      "model_evaluation": "outside this admission-review document; consult central results registry"
+    }
+  ]
+}

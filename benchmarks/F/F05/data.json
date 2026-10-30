@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "F05",
+    "decision": "candidate_pending_validation",
+    "reason": "Musall behavior-to-widefield data can support real regression, but exact movies/behavior regressors, temporalalignment and session/animal split must be pinned. Training/testing adjacentframes invalid. No paired behavior/neural arrays acquired here.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://repository.cshl.edu/38599/2/DataDescription_Musall.pdf"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

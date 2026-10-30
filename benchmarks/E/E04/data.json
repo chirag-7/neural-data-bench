@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "E04",
+    "decision": "candidate_pending_validation",
+    "reason": "BrainWideBench TS2 masked/future prediction has exact protocol and public recordings, but causal future prediction versus bidirectional masking must be separate. Need exact bins/neurons/session split and official heldout targets. Not acquired here; E01 does not cover this transfer setting.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://brainbench-org.github.io/ibl-bwb/",
+      "https://arxiv.org/abs/2609.22064"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

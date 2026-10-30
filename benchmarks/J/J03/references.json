@@ -1,20 +1,8 @@
-[
-  {
-    "id": "Se1e1786659",
-    "url": "https://github.com/BigNeuron/Data/releases",
-    "benchmark_ids": [
-      "J03"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "Sff08abf204",
-    "url": "https://diadem.janelia.org/metric.html",
-    "benchmark_ids": [
-      "J03"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "J03",
+  "source_urls": [
+    "https://github.com/BigNeuron/Data/releases",
+    "https://diadem.janelia.org/metric.html"
+  ],
+  "admission_evidence": "literature/admission-v04-behavior-population.json"
+}

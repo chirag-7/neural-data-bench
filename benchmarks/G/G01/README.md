@@ -27,3 +27,9 @@ Offline acausal prediction cannot count as online BCI control
 ## Sources
 
 - [https://snel-repo.github.io/falcon/](https://snel-repo.github.io/falcon/)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). FALCON motor tracks provide official crossday interfaces and labels. Need exacttrack acquisition terms, trial/sessionnormalization, allowed adaptation and online/offline constraints. No data request attempted here. Same-session E01 cannot establish crossday BCIperformance.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

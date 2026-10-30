@@ -1,4 +1,4 @@
-# Literature review and screening protocol v0.3
+# Literature review and screening protocol v 0.4
 
 This is an auditable **evidence map with bounded primary-source gap audits**, not a completed systematic review. Earlier discovery searches were not completely logged; they cannot be retrospectively described as PRISMA-compliant. No exhaustive PubMed/Scopus/Web of Science screening or dual independent human screening was performed.
 
@@ -25,3 +25,7 @@ A numeric best row requires a primary table/leaderboard, retrieval date, exact d
 ## External review needed
 
 Seek domain review across systems ephys/optical, behavior, human neuroimaging/BCI, molecular/anatomy and theory. Expert coverage review and independent execution audit remain pending. [PRISMA-ScR](https://www.prisma-statement.org/scoping), [PRISMA-S](https://pmc.ncbi.nlm.nih.gov/articles/PMC8270366/) and [neuroimaging benchmark recommendations](https://doi.org/10.1016/j.neuroimage.2022.119298) guide the next review; compliance is not claimed.
+
+## Current admission update
+
+The [v 0.4 component reviews and actual search logs](../literature/README.md) assess every mapped entry with variable source/acquisition depth. The catalog remains 114 entries; measured 14,source-only pending 57,deferred 43. Admitted protocols are frozen individually, not a prospective random sample of all neuroscience.

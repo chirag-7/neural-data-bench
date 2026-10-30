@@ -27,3 +27,9 @@ Reference-channel correction can remove biology; samples are not a biological be
 ## Sources
 
 - [https://github.com/LernerLab/GuPPy](https://github.com/LernerLab/GuPPy)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). GuPPy example traces demonstrate photometry workflow, but a true artifact-free neural trace or blinded artifact/event annotations are needed for accuracy measurement. Synthetic artifact injection into observed signals is possible if explicitly semi-synthetic. No reference annotations acquired here.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

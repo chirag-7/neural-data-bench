@@ -9,5 +9,20 @@
   ],
   "license_status": "CC BY 4.0 on dataset record",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "J07",
+    "decision": "deferred",
+    "reason": "Mapped FISBe release is approximately21.6GB. Thin-neurite3D instance segmentation needs valid masks for partly labeled images and topology-sensitive scorer. No GPU3D pipeline prepared; not a valid tiny-patch substitute without protocol.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://kainmueller-lab.github.io/fisbe/",
+      "https://zenodo.org/records/10875063",
+      "https://github.com/Kainmueller-Lab/evaluate-instance-segmentation"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+    "permanent_rejection": false
+  }
 }

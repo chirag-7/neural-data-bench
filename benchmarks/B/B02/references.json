@@ -1,23 +1,8 @@
-[
-  {
-    "id": "S6fec540019",
-    "url": "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
-    "benchmark_ids": [
-      "B01",
-      "B02",
-      "B03",
-      "B04"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "S313ac703c2",
-    "url": "https://github.com/cwindolf/dartsort",
-    "benchmark_ids": [
-      "B02"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "B02",
+  "source_urls": [
+    "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+    "https://github.com/cwindolf/dartsort"
+  ],
+  "admission_evidence": "literature/admission-v04-behavior-population.json"
+}

@@ -1,11 +1,7 @@
-[
-  {
-    "id": "S3e8a37a70e",
-    "url": "https://libribrain.com/editions/2026/publications/",
-    "benchmark_ids": [
-      "H11"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "H11",
+  "source_urls": [
+    "https://libribrain.com/editions/2026/publications/"
+  ],
+  "admission_evidence": "literature/admission-v04-electrical.json"
+}

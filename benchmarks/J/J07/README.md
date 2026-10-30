@@ -29,3 +29,9 @@ Thin interwoven neurites require topology-sensitive scoring; pixel Dice alone in
 - [https://kainmueller-lab.github.io/fisbe/](https://kainmueller-lab.github.io/fisbe/)
 - [https://zenodo.org/records/10875063](https://zenodo.org/records/10875063)
 - [https://github.com/Kainmueller-Lab/evaluate-instance-segmentation](https://github.com/Kainmueller-Lab/evaluate-instance-segmentation)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Mapped FISBe release is approximately21.6GB. Thin-neurite3D instance segmentation needs valid masks for partly labeled images and topology-sensitive scorer. No GPU3D pipeline prepared; not a valid tiny-patch substitute without protocol.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

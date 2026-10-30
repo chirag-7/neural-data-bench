@@ -27,3 +27,9 @@ Not every movie has ephys truth; distinguish segmentation and spike scoring
 ## Sources
 
 - [https://pmc.ncbi.nlm.nih.gov/articles/PMC8075204/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8075204/)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Paired voltage movie/ephys extraction needs validated movie-to-truth alignment, ROI policy, and sampling-time scorer. Primary PMC article web access returned recaptcha in this screening; CaImAn VolPy source documentation located. No acquisition/fit was completed; this is a protocol/resource limitation of this batch, not evidence of bad data.
+
+[Source-linked admission evidence](../../../literature/admission-v04-cell-workflow.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

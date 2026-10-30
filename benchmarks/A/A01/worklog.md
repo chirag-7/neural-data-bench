@@ -3,3 +3,9 @@
 - 2026-10-30 — Resource mapped; source URLs and proposed metrics/splits recorded. Evidence: Primary documentation/paper located; downloads and execution not tested
 - 2026-10-30 — Admission decision: **candidate_pending_validation**. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
 - Acquisition, license audit, scorer implementation, specialist reproduction and model execution: **not completed**.
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Human-labeled pose images are a valid endpoint. Need pin image/label archive, verify published session split and matched coordinate scorer; no image adapter or vision submission interface acquired in this bounded expansion. Not rejected as bad data.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

@@ -1,4 +1,15 @@
-# v0.3 changes
+# v 0.4 changes
+
+- Added 12 executed protocols across behavioral, electrical, optical, molecular, imaging, encoding, inference and file-workflow perspectives; total 14 task IDs/11 families.
+- Retained 54 model-slice attempts,53 valid outputs,1 genuine program failure and original harness attempts; exact generation and prediction artifacts.
+- Added VASSI20 archived runs with prescored run 00 selection, and original MRIQCclassifier alignment/rescoring.
+- Assessed all 114 mapped entries;14 measured/57 pending/43 deferred with specific reasons and source-review depth.
+- Centralized 120 records and generalized native-score, reference-class, failure/format and task/family-weighted descriptive analysis.
+- Updated category/task website, native bar/line charts, macro-analysis tabs and downloads; preserved private audience.
+- Re-scored every valid prediction, frozen hashes and generation tool counts; source-render routes/14 native-chart checks pass. Browser layout/interaction remains unverified after URL-policy block.
+- Explicitly withheld exhaustive coverage, current SOTA, matched-effort superiority and broad scaling claims.
+
+# v 0.3 changes
 
 - Added 12 primary-source gap-audit entries, bringing map to 114 pairings.
 - Added decentralized cards, review/search/admission/current-best ledgers and central methodology.

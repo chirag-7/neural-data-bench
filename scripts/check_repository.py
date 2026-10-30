@@ -19,5 +19,17 @@ for a,b in [('registry/catalog.json','website/data/catalog.json'),('analysis/sum
 for task,base in [('C05','experiments/C05/pilot-v1'),('M04','experiments/M04')]:
  for p in json.loads((R/f'experiments/{task}/generation-provenance.json').read_text()):
   code=json.loads((R/base/(p['requested_model']+'.json')).read_text())['code'];assert hashlib.sha256(code.encode()).hexdigest()==p['code_sha256'];assert p['tool_events']==0
+decisions=json.loads((R/'registry/admission-decisions.json').read_text());assert {x['benchmark_id'] for x in decisions}==set(ids)
+for e in c['entries']:
+ assert (R/e['admission_evidence_file']).exists()
+for d in (R/'experiments').iterdir():
+ if not (d/'run-spec.json').exists() or d.name in ['C05','M04']:continue
+ spec=json.loads((d/'run-spec.json').read_text());assert hashlib.sha256((d/'prompt.txt').read_bytes()).hexdigest()==spec['prompt_sha256']
+ codepath=d/('reference.py' if d.name=='N05' else 'adapter.py');assert hashlib.sha256(codepath.read_bytes()).hexdigest()==spec['reference_sha256' if d.name=='N05' else 'adapter_sha256']
+ prov=json.loads((d/'generation-provenance.json').read_text());assert len(prov)==3
+ for p in prov:
+  code=json.loads((d/(p['requested_model']+'.json')).read_text())['code'];assert hashlib.sha256(code.encode()).hexdigest()==p['code_sha256'];assert p['tool_events']==0 and p['usage'] is not None
+for task in set(r['benchmark_id'] for r in records if r['model'] in ['gpt-5.6-sol','gpt-6-sol','gpt-6.1-sol']):
+ for model in ['gpt-5.6-sol','gpt-6-sol','gpt-6.1-sol']:assert any(r['benchmark_id']==task and r['model']==model for r in records)
 assert not any('luna' in r['model'] for r in records)
 print(f'Integrity checks passed: {len(ids)} task cards, {len(records)} records, linked files, predictions, provenance and synchronized site data.')

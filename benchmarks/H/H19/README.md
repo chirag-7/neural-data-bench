@@ -27,3 +27,9 @@ Small single-annotator corpus; do not confuse real artifact detection with EEGde
 ## Sources
 
 - [https://zenodo.org/records/2650142](https://zenodo.org/records/2650142)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Original DREAMS record has20expert-annotated15min artifact excerpts and explicit artifact types. Original DREAMS license was downloaded/read; noncommercial and no-adaptation terms complicate distributing prepared arrays. Need local-only extraction/annotation schema and exact event metric; no false claim that real artifact detection equals H16 mixture repair.
+
+[Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

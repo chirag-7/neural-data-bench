@@ -27,3 +27,9 @@ Closed image gallery is much easier than unrestricted reconstruction
 ## Sources
 
 - [https://things-initiative.org/](https://things-initiative.org/)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Original THINGS site accessible. Stimulus concept and image reuse complicate splitting; original image pool has academic-use restrictions and a separate CC0 subset. Need exact EEG/MEG release, retrieval gallery and held-out concepts/participants rather than an undefined image-reconstruction score.
+
+[Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

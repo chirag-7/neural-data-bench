@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "N06",
+    "decision": "deferred",
+    "reason": "Proposed data-integrity task has no independently validated corruption generator/hidden fault suite or prespecified detection thresholds yet. DANDI is an archive, not the fault benchmark. N05 clean-file parsing does not establish detection of metadata/timing/unit corruption.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "source_urls": [
+      "https://about.dandiarchive.org/"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

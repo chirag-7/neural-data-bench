@@ -1,7 +1,10 @@
 {
   "type": "in-memory source-render checks; not browser layout or interaction verification",
   "routes": 473,
-  "C05_slice_and_mean": "passed",
+  "C05_five_slices": "passed",
+  "trend_tabs_and_reference_filters": "passed",
+  "native_task_charts": 14,
   "M04_posterior_audit_display": "passed",
-  "javascript_syntax": "passed"
+  "javascript_syntax": "passed",
+  "browser_layout_interaction": "Unverified: prior local-preview navigation blocked by browser URL policy; source checks do not replace browser QA"
 }

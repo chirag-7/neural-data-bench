@@ -5,3 +5,9 @@
 - 2026-10-30 — Frozen protocol and local measurements available in the linked experiment; consult centralized results and execution logs for each slice/model.
 
 Detailed completed steps, artifacts and deviations: [experiment worklog](../../../experiments/C05/README.md).
+
+## v0.4 admission and execution
+
+Decision: **measured** (2026-10-30). Root repository already contains measured Spikefinder preparation slices for all three Sol programs, predictions and archived references. This screening task did not rerun them; officialchallenge aggregate/currentSOTA remain distinct.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). [Actual protocol and artifacts](../../../experiments/C05). [Central task results](../../../results/C05.json).

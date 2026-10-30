@@ -1,11 +1,7 @@
-[
-  {
-    "id": "S724c9f4ea6",
-    "url": "https://arxiv.org/abs/2606.25400",
-    "benchmark_ids": [
-      "N02"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "N02",
+  "source_urls": [
+    "https://arxiv.org/abs/2606.25400"
+  ],
+  "admission_evidence": "literature/admission-v04-cell-workflow.json"
+}

@@ -372,7 +372,8 @@
     "id": "S4bd23c5522",
     "url": "https://alleninstitute.github.io/AllenSDK/cell_types.html",
     "benchmark_ids": [
-      "D02"
+      "D02",
+      "N05"
     ],
     "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
     "reviewed_on": "2026-10-30"
@@ -1234,6 +1235,423 @@
       "K06"
     ],
     "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S1fe1a95f63",
+    "url": "https://doi.org/10.17617/3.3R0QYI",
+    "benchmark_ids": [
+      "A09"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sa3320f3054",
+    "url": "https://zenodo.org/records/18405201",
+    "benchmark_ids": [
+      "A14"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sa7247fe338",
+    "url": "https://github.com/flatironinstitute/CaImAn/tree/main/caiman/source_extraction/volpy",
+    "benchmark_ids": [
+      "D01"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S68dbb54856",
+    "url": "https://brain-map.org/support/documentation/cell-types-database-api",
+    "benchmark_ids": [
+      "D02",
+      "K01",
+      "N05"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S4f88a6baa5",
+    "url": "https://github.com/KaliLab/hippounit",
+    "benchmark_ids": [
+      "D04"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sc32d5172f2",
+    "url": "https://github.com/KaliLab/HippoUnit_demo",
+    "benchmark_ids": [
+      "D04"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S718d9e8ab3",
+    "url": "https://dandiarchive.org/dandiset/000140/0.220113.0408",
+    "benchmark_ids": [
+      "E01"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sc74b4a9d81",
+    "url": "https://github.com/neurallatents/nlb_tools",
+    "benchmark_ids": [
+      "E01"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S1ec8b4d256",
+    "url": "https://open-retina.org/api_reference/data_io/goldin_2022/",
+    "benchmark_ids": [
+      "F04"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S8203ba5b11",
+    "url": "https://doi.org/10.5281/zenodo.6868362",
+    "benchmark_ids": [
+      "F04"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sa99cdba39d",
+    "url": "https://doi.org/10.1038/s41467-022-33242-8",
+    "benchmark_ids": [
+      "F04"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S7eb2303a42",
+    "url": "https://huggingface.co/datasets/open-retina/open-retina/blob/fc7b91e93c9bd4e76d4e3205fcbcc6a31601985a/README.md",
+    "benchmark_ids": [
+      "F04"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S40754e9ae2",
+    "url": "https://huggingface.co/datasets/open-retina/open-retina",
+    "benchmark_ids": [
+      "F04"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S69117a3da0",
+    "url": "https://physionet.org/content/eegmmidb/1.0.0/",
+    "benchmark_ids": [
+      "H01"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S81d6edc41e",
+    "url": "https://physionet.org/files/eegmmidb/1.0.0/S001/",
+    "benchmark_ids": [
+      "H01"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sd4187893d9",
+    "url": "https://moabb.neurotechx.com/docs/generated/moabb.datasets.PhysionetMI.html",
+    "benchmark_ids": [
+      "H01"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sd3afd40096",
+    "url": "https://mne.tools/stable/auto_examples/decoding/decoding_csp_eeg.html",
+    "benchmark_ids": [
+      "H01"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S9aff586f7f",
+    "url": "https://bnci-horizon-2020.eu/database/data-sets",
+    "benchmark_ids": [
+      "H02"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sdd503513d2",
+    "url": "https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_008.html",
+    "benchmark_ids": [
+      "H02"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S7432ba9179",
+    "url": "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Nakanishi2015.html",
+    "benchmark_ids": [
+      "H03"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S325dd7c72d",
+    "url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+    "benchmark_ids": [
+      "H16"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S78519068c1",
+    "url": "https://arxiv.org/html/2009.11662v4",
+    "benchmark_ids": [
+      "H16"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sd0c3e2623b",
+    "url": "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/master/LICENSE",
+    "benchmark_ids": [
+      "H16"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S2a9954e657",
+    "url": "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/code/benchmark_networks/data_prepare.py",
+    "benchmark_ids": [
+      "H16"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sb9d882d666",
+    "url": "https://openfnirs.org/community/fresh/welcome-to-the-fnirs-fresh-project/",
+    "benchmark_ids": [
+      "I07"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Se08f2c534e",
+    "url": "https://data.nemar.org/on005963/v1.0.0/dataset_description.json",
+    "benchmark_ids": [
+      "I07"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Scd98fcec84",
+    "url": "https://data.nemar.org/on005963/v1.0.0/manifest.json",
+    "benchmark_ids": [
+      "I07"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S9e52243374",
+    "url": "https://data.nemar.org/on005963/v1.0.0/code/validation.ipynb",
+    "benchmark_ids": [
+      "I07"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S6d0894f47c",
+    "url": "https://openneuro.org/datasets/ds005963/versions/1.0.0",
+    "benchmark_ids": [
+      "I07"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S29e2908552",
+    "url": "https://doi.org/10.1038/s42003-025-08412-1",
+    "benchmark_ids": [
+      "I07"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sfacf95eb25",
+    "url": "https://confusius.tools/latest/user-guide/datasets/",
+    "benchmark_ids": [
+      "I08"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S3950cc28f8",
+    "url": "https://github.com/nipreps/mriqc/tree/c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8/mriqc/data/csv",
+    "benchmark_ids": [
+      "I10"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S2bf3f92a51",
+    "url": "https://celltypes.brain-map.org/",
+    "benchmark_ids": [
+      "K01"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sb28956ddce",
+    "url": "https://alleninstitute.org/terms-of-use/",
+    "benchmark_ids": [
+      "K01"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S0880ba257d",
+    "url": "https://github.com/jaxleyverse/jaxley",
+    "benchmark_ids": [
+      "L02"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sbe74025792",
+    "url": "https://mark-kramer.github.io/Case-Studies-Python/09.html",
+    "benchmark_ids": [
+      "L04"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S309e3ca7fd",
+    "url": "https://github.com/Mark-Kramer/Case-Studies-Python",
+    "benchmark_ids": [
+      "L04"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Se47acf87e1",
+    "url": "https://github.com/acerbilab/bads",
+    "benchmark_ids": [
+      "M05"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sebe557068a",
+    "url": "https://github.com/acerbilab/pybads",
+    "benchmark_ids": [
+      "M05"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S8c21ec7f03",
+    "url": "https://github.com/NeLy-EPFL/flygym",
+    "benchmark_ids": [
+      "M07"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S8b2209c783",
+    "url": "https://github.com/OSU-NLP-Group/ScienceAgentBench",
+    "benchmark_ids": [
+      "N04"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S8d8a48289e",
+    "url": "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1",
+    "benchmark_ids": [
+      "H18",
+      "H19"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S57e7e42b66",
+    "url": "https://research.libd.org/spatialLIBD/reference/fetch_data.html",
+    "benchmark_ids": [
+      "K04"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S1cd2d6d381",
+    "url": "https://raw.githubusercontent.com/LieberInstitute/spatialLIBD/master/R/fetch_data.R",
+    "benchmark_ids": [
+      "K04"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sb28d716bb3",
+    "url": "https://doi.org/10.1038/s41593-020-00787-0",
+    "benchmark_ids": [
+      "K04"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S0897059691",
+    "url": "https://api.github.com/repos/petersenpeter/CellExplorer/contents/%2BgroundTruthData",
+    "benchmark_ids": [
+      "K06"
+    ],
+    "evidence": "v0.4 bounded source/admission assessment; actual verification depth in task evidence",
     "reviewed_on": "2026-10-30"
   }
 ]

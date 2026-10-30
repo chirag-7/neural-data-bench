@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "I02",
+    "decision": "deferred",
+    "reason": "Original NSD site explicitly requests completion of a data-access agreement before receiving the manual/download access. No agreement/application completed on the user’s behalf. Candidate remains scientifically valuable; no bad-data claim.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://www.naturalscenesdataset.org/"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

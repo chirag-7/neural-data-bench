@@ -1,0 +1,464 @@
+{
+  "version": "0.4",
+  "checked_on": "2026-10-30",
+  "review_type": "Bounded primary-source acquisition/admission audit, not exhaustive literature review or PRISMA-compliant systematic review",
+  "purpose": "Traceable D/K/F/N admission evidence; ready adapters vs unresolved prerequisites; no new model results or SOTA claims",
+  "decision_definitions": {
+    "admit": "A defined custom slice has acquired data, checked basic use terms, frozen endpoint/split/scorer/reference and preparation checks; actual model execution is tracked elsewhere.",
+    "feasible_pending": "No fundamental impossibility asserted; concrete rights/data/split/evaluator prerequisites not completed in this execution batch.",
+    "deferred": "Protocol construction, simulator/agent environment, unconfirmed release or scope prerequisites remain outside this batch. Not evidence that data are bad."
+  },
+  "entries": [
+    {
+      "benchmark_id": "D01",
+      "decision": "deferred",
+      "reason": "Paired voltage movie/ephys extraction needs validated movie-to-truth alignment, ROI policy, and sampling-time scorer. Primary PMC article web access returned recaptcha in this screening; CaImAn VolPy source documentation located. No acquisition/fit was completed; this is a protocol/resource limitation of this batch, not evidence of bad data.",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8075204/",
+        "https://github.com/flatironinstitute/CaImAn/tree/main/caiman/source_extraction/volpy"
+      ],
+      "reviewed_on": "2026-10-30",
+      "current_best_status": "not verified",
+      "decision_scope": "this lightweight research execution batch, not universal infeasibility",
+      "checked_on": "2026-10-30",
+      "access_facts": "Primary article access returned a browser challenge; CaImAn/VolPy repository located. No paired movie/ephys dataset acquired.",
+      "license_facts": "Dataset-specific reuse terms and paired truth release not validated. Do not infer data permission from a software license.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/cell-admission.json"
+    },
+    {
+      "benchmark_id": "D02",
+      "decision": "admit",
+      "reason": "Acquired and hashed one 61,980,832-byte official Allen NWB, specimen and sweep annotations; prepared four train/two held-out negative-amplitude sweeps from cell464212183. Explicitly conditional PRE-stimulus-rest-relative 500Hz passive deflection prediction only, no spiking or cross-cell claim. Adapter/protocol and train-only reference ready.",
+      "source_urls": [
+        "https://brain-map.org/support/documentation/cell-types-database-api",
+        "https://alleninstitute.github.io/AllenSDK/cell_types.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "current_best_status": "not verified",
+      "decision_scope": "this lightweight research execution batch, not universal infeasibility",
+      "checked_on": "2026-10-30",
+      "access_facts": "Official specimen/sweep APIs and one61980832-byte NWB acquired, hashed and prepared.",
+      "license_facts": "Allen Institute Terms of Use reviewed: research/noncommercial use with attribution; source data not relicensed under code license.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/cell-admission.json"
+    },
+    {
+      "benchmark_id": "D03",
+      "decision": "deferred",
+      "reason": "New simulated dendritic recovery protocol would require prespecified morphologies, compartments, stimulation and noise distributions. The registry names examples rather than an already frozen benchmark; fitting examples and then reusing traces as a test would be circular.",
+      "source_urls": [
+        "https://www.nature.com/articles/s41592-025-02895-w"
+      ],
+      "reviewed_on": "2026-10-30",
+      "current_best_status": "not verified",
+      "decision_scope": "this lightweight research execution batch, not universal infeasibility",
+      "checked_on": "2026-10-30",
+      "access_facts": "Registry paper URL attempted; Nature access redirect prevented full inspection in this screen. No simulator benchmark constructed.",
+      "license_facts": "Data/model-specific terms not validated; no simulator example relicensed or redistributed.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/cell-admission.json"
+    },
+    {
+      "benchmark_id": "D04",
+      "decision": "deferred",
+      "reason": "Primary HippoUnit repository requires simulation-capable model interfaces, NEURON/eFEL/SciUnit and standalone model adaptation. Published validation target features and model outputs are available, but no new generated mechanistic model plus independent held-out tests was implemented in this CPU/lightweight estimator batch. Do not substitute recalculating published outputs for new agent performance.",
+      "source_urls": [
+        "https://github.com/KaliLab/hippounit",
+        "https://github.com/KaliLab/HippoUnit_demo",
+        "https://doi.org/10.1371/journal.pcbi.1008114"
+      ],
+      "reviewed_on": "2026-10-30",
+      "current_best_status": "not verified",
+      "decision_scope": "this lightweight research execution batch, not universal infeasibility",
+      "checked_on": "2026-10-30",
+      "access_facts": "Primary HippoUnit repository and published demo documentation reviewed; model/test files not acquired or executed here.",
+      "license_facts": "Software/model/target-feature reuse terms not independently audited; repository availability is not a blanket data license.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/cell-admission.json"
+    },
+    {
+      "benchmark_id": "F04",
+      "decision": "admit",
+      "reason": "Prepared custom real retinal static-image encoding slice from Goldin2022 mouse session via OpenRetina:3160 training images,30 unique held-out images with30 measured repeats and all41 neurons; exact image hashes disjoint, targets verified nonnegative integer counts. This is not an official CRCNS/full-image CNN/temporal-flicker benchmark.",
+      "source_urls": [
+        "https://open-retina.org/api_reference/data_io/goldin_2022/",
+        "https://doi.org/10.5281/zenodo.6868362",
+        "https://doi.org/10.1038/s41467-022-33242-8",
+        "https://huggingface.co/datasets/open-retina/open-retina/blob/fc7b91e93c9bd4e76d4e3205fcbcc6a31601985a/README.md"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "One151245128-byte processed HDF5 acquired; SHA25654c688d78dd977c23c0dfb11e8959d628a35ba16702a44cd78d390274e527a0e matches published HF LFS OID; revision pinned.",
+      "license_facts": "Original Zenodo API metadata declares CC-BY4.0; processed OpenRetina dataset card declares CC-BY-SA4.0. These are data terms separate from code license. Original natural-image attribution retained; raw/prepared images stay ignored cache.",
+      "current_best_status": "not verified; transparent PoissonGLM reference, no imported full-image CNN scores",
+      "decision_scope": "this custom static-flash slice only",
+      "source_candidates": [
+        {
+          "source": "Neuromatch RGCdata.mat",
+          "decision": "excluded_for_research_release",
+          "reason": "Explicit primary tutorial restriction to tutorial purposes; publication/distribution requires author permission, not obtained. No data acquired.",
+          "url": "https://compneuro.neuromatch.io/tutorials/W1D3_GeneralizedLinearModels/student/W1D3_Tutorial1.html"
+        },
+        {
+          "benchmark_id": "F04",
+          "source": "Goldin2022 mouse-session-1 via OpenRetina",
+          "decision": "admit",
+          "reason": "Real recorded integer counts and images, original Zenodo CC-BY4.0, processed mirror CC-BY-SA4.0, complete41-neuron targets and30 distinct held-out images\u00d730measured repeats. Explicit static-flash replacement resource, no temporal-history claim.",
+          "urls": [
+            "https://open-retina.org/api_reference/data_io/goldin_2022/",
+            "https://doi.org/10.5281/zenodo.6868362",
+            "https://doi.org/10.1038/s41467-022-33242-8"
+          ]
+        }
+      ],
+      "source_log": "work/encoding-admission.json"
+    },
+    {
+      "benchmark_id": "K01",
+      "decision": "admit",
+      "reason": "Real primary API data acquired and hashed; independent morphology endpoint, ephys-only whitelist, donor-disjoint split and train-only baseline protocol frozen. Prepared n_train=1356 and n_test=457, 11 features; 678/226 disjoint mouse donors. Adapter ready for root model evaluation.",
+      "source_urls": [
+        "https://brain-map.org/support/documentation/cell-types-database-api",
+        "https://celltypes.brain-map.org/",
+        "https://alleninstitute.org/terms-of-use/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "current_best_status": "not verified",
+      "decision_scope": "this lightweight research execution batch, not universal infeasibility",
+      "checked_on": "2026-10-30",
+      "access_facts": "Complete primary Allen metadata API snapshot acquired;2333 records screened,1813 eligible mouse cells prepared.",
+      "license_facts": "Allen Institute Terms of Use reviewed: research/noncommercial use with attribution; ignored data cache retains source terms.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/cell-admission.json"
+    },
+    {
+      "benchmark_id": "K02",
+      "decision": "feasible_pending",
+      "reason": "scIB is a general cell-integration toolkit, not one uniquely frozen brain dataset task. Need select brain donor cohorts/taxonomy and independent label-transfer policy, fit batch handling on allowed data, preserve rare classes, and reproduce biology AND mixing scorers. No unique dataset/split/rights package selected; do not inflate coverage from toolkit installation.",
+      "source_urls": [
+        "https://scib.readthedocs.io/en/latest/",
+        "https://brain-map.org/our-research/cell-types-taxonomies"
+      ],
+      "reviewed_on": "2026-10-30",
+      "current_best_status": "not verified",
+      "decision_scope": "this lightweight research execution batch, not universal infeasibility",
+      "checked_on": "2026-10-30",
+      "access_facts": "Primary scIB documentation reviewed; no single brain cohort, matrix or donor split selected/acquired.",
+      "license_facts": "Allen source collections follow Allen terms; any selected non-Allen dataset requires its own terms. scIB software does not establish dataset rights.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/cell-admission.json"
+    },
+    {
+      "benchmark_id": "K03",
+      "decision": "deferred",
+      "reason": "Primary NeuroDiscoveryBench includes existing workflow metadata, reference answers and figure/text scoring, but evaluates scientific-analysis agents rather than the fixed train/predict interface used for this execution batch. Large dataset downloader plus external evaluator/workflow budget not replicated; code/data licenses separate and rubric/judge provenance must be logged before admitting scores.",
+      "source_urls": [
+        "https://github.com/allenai/neurodiscoverybench"
+      ],
+      "reviewed_on": "2026-10-30",
+      "current_best_status": "not verified",
+      "decision_scope": "this lightweight research execution batch, not universal infeasibility",
+      "checked_on": "2026-10-30",
+      "access_facts": "Official NeuroDiscoveryBench repository/readme and dataset/evaluator structure reviewed; no workflow question package executed.",
+      "license_facts": "Code repository advertises Apache2.0 and separate DATA_LICENSE; exact task-source data rights still need review before execution. Code license is not blanket data permission.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/cell-admission.json"
+    },
+    {
+      "benchmark_id": "K04",
+      "decision": "feasible_pending",
+      "reason": "Primary spatialLIBD downloader and source located. Original study has three donors, adjacent sections must remain grouped. Local R 4.4.1 is present but SingleCellExperiment, SummarizedExperiment, ExperimentHub and spatialLIBD are absent. Data parsing/independent layer-label policy and spatial specialist scoring are not validated. Small examples/pseudobulks cannot silently stand in for held-out-donor spatial spot benchmark.",
+      "source_urls": [
+        "https://research.libd.org/spatialLIBD/reference/fetch_data.html",
+        "https://raw.githubusercontent.com/LieberInstitute/spatialLIBD/master/R/fetch_data.R",
+        "https://doi.org/10.1038/s41593-020-00787-0"
+      ],
+      "reviewed_on": "2026-10-30",
+      "current_best_status": "not verified",
+      "decision_scope": "this lightweight research execution batch, not universal infeasibility",
+      "checked_on": "2026-10-30",
+      "access_facts": "Primary spatialLIBD downloader documentation/source inspected. R4.4.1 present; SingleCellExperiment, SummarizedExperiment, ExperimentHub, spatialLIBD absent. No data acquired.",
+      "license_facts": "Specific spatial data release terms not independently audited; not admitted solely on public documentation.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/cell-admission.json"
+    },
+    {
+      "benchmark_id": "K05",
+      "decision": "feasible_pending",
+      "reason": "Primary DeconvoBuddies fetch documentation identifies bulk 110x21k (41 MB), snRNA 77kx36k (172 MB) and example 10kx557. Need match orthogonal IF/RNAScope fractions to bulk samples, donor/tissue blocks and fixed reference/marker policy. Bioconductor S4 readers absent and ground-truth alignment not completed. Data size itself is manageable; do not call impossible or bad.",
+      "source_urls": [
+        "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html",
+        "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution",
+        "https://doi.org/10.1186/s13059-025-03552-3"
+      ],
+      "reviewed_on": "2026-10-30",
+      "current_best_status": "not verified",
+      "decision_scope": "this lightweight research execution batch, not universal infeasibility",
+      "checked_on": "2026-10-30",
+      "access_facts": "Primary DeconvoBuddies download documentation reports41MB bulk/172MB snRNA resources and an example; data not acquired or orthogonal truth aligned.",
+      "license_facts": "Specific multi-assay dataset reuse terms not independently audited; donor/ground-truth provenance remains pending.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/cell-admission.json"
+    },
+    {
+      "benchmark_id": "K06",
+      "decision": "feasible_pending",
+      "reason": "Primary ground-truth tutorial and GitHub folder inspected; 87 files total ~500 MB. Downloaded one 189 kB cell metrics example and consolidated 2.83 MB gt list; MATLAB v7.3 HDF5 parsed with isolated h5py3.15.1. Consolidated list has 430 entries and animal/session/truth labels, but no predictor feature matrix; example has Juxta tag (not a molecular cell class). Must select nonnested independently tagged classes, extract only scalar physiology/waveform metrics from session files, group animals, resolve contributor data terms, and exclude putativeCellType/geneticLine/brainRegion proxies. No validated table yet.",
+      "source_urls": [
+        "https://cellexplorer.org/publicdata/ground-truth-data/",
+        "https://cellexplorer.org/tutorials/ground-truth-tutorial/",
+        "https://api.github.com/repos/petersenpeter/CellExplorer/contents/%2BgroundTruthData"
+      ],
+      "reviewed_on": "2026-10-30",
+      "current_best_status": "not verified",
+      "decision_scope": "this lightweight research execution batch, not universal infeasibility",
+      "checked_on": "2026-10-30",
+      "access_facts": "Public GitHub groundTruthData folder inspected (87files,~500MB). One small metrics example and430-entry consolidated truth list downloaded and inspected with h5py.",
+      "license_facts": "Repository LICENSE read as BSD3Clause for software. Contributor-specific raw/derived data terms still unresolved; do not presume all sessions share a software license.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/cell-admission.json"
+    },
+    {
+      "benchmark_id": "N01",
+      "decision": "feasible_pending",
+      "reason": "Official repository provides workflow metadata, expert answers, dataset loader and eval code. This batch has not frozen an eligible neuroscience question subset, run its large-source data loader or replicated text/figure rubric evaluation. Needs task-specific numeric checks and, where the official evaluator uses an LLM judge, recorded judge model/version/prompt and access. No surrogate blind-judge scores supplied.",
+      "source_urls": [
+        "https://github.com/allenai/neurodiscoverybench"
+      ],
+      "reviewed_on": "2026-10-30",
+      "decision_scope": "this execution release; feasible_pending is not bad data/universal infeasibility",
+      "current_best_status": "not verified",
+      "checked_on": "2026-10-30",
+      "access_facts": "Official NeuroDiscoveryBench repository/readme and task/evaluator structure reviewed, not executed.",
+      "license_facts": "Code Apache2.0 advertised with separate DATA_LICENSE; source dataset rights and task-specific evaluator/judge terms still pending.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/workflow-admission.json"
+    },
+    {
+      "benchmark_id": "N02",
+      "decision": "deferred",
+      "reason": "BrainAgent primary paper located and hierarchical workflow claim confirmed. Complete reusable task/data/evaluator bundle and provider/tool conditions not independently validated by this screen. Do not assert unavailable; admission remains unresolved. A similarly named GitHub project cannot be presumed the paper authors release.",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.25400"
+      ],
+      "reviewed_on": "2026-10-30",
+      "decision_scope": "this execution release; feasible_pending is not bad data/universal infeasibility",
+      "current_best_status": "not verified",
+      "checked_on": "2026-10-30",
+      "access_facts": "Primary BrainAgent paper abstract/release page located; complete matching public task/data/evaluator bundle not independently verified.",
+      "license_facts": "No matching executable release terms validated. Similarly named repositories are not presumed to be the paper authors release.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/workflow-admission.json"
+    },
+    {
+      "benchmark_id": "N03",
+      "decision": "feasible_pending",
+      "reason": "Primary NeuroClaw page explicitly lists 120 tasks in7 categories, with/no-skills conditions and GPT5.4 weighted-rubric scoring. Requires matching tool/skill environment, task version, source data terms, and evaluator model/API or a declared distinct deterministic metric. Planning/rubric scores cannot be treated as signal prediction accuracy; no new rubric scores fabricated.",
+      "source_urls": [
+        "https://cuhk-aim-group.github.io/NeuroDiscovery/neurobench.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "decision_scope": "this execution release; feasible_pending is not bad data/universal infeasibility",
+      "current_best_status": "not verified",
+      "checked_on": "2026-10-30",
+      "access_facts": "Primary NeuroClaw NeuroBench page reviewed:120tasks,with/no-skills conditions,GPT5.4 weighted-rubric scoring. No tasks executed.",
+      "license_facts": "Tool,skill,task-source dataset and evaluator-provider terms require per-task review; no blanket data-use claim made.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/workflow-admission.json"
+    },
+    {
+      "benchmark_id": "N04",
+      "decision": "feasible_pending",
+      "reason": "Primary ScienceAgentBench paper/repository provide publication-derived code tasks and evaluators. Need explicitly freeze neuroscience/cognitive/EEG subset with per-task data terms, runtime and output evaluators, rather than report all102 broad-science tasks as neuro. Image/rubric cases need evaluator/judge provenance where applicable. No new complete-subset run performed.",
+      "source_urls": [
+        "https://arxiv.org/abs/2410.05080",
+        "https://github.com/OSU-NLP-Group/ScienceAgentBench"
+      ],
+      "reviewed_on": "2026-10-30",
+      "decision_scope": "this execution release; feasible_pending is not bad data/universal infeasibility",
+      "current_best_status": "not verified",
+      "checked_on": "2026-10-30",
+      "access_facts": "Primary ScienceAgentBench paper and official OSU-NLP-Group repository located; neuro subset and files not acquired/executed.",
+      "license_facts": "Individual source datasets keep source terms; dataset/code/evaluator licenses not independently validated for selected tasks in this screen.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/workflow-admission.json"
+    },
+    {
+      "benchmark_id": "N05",
+      "decision": "admit",
+      "reason": "Constructed and validated deterministic loader/unit/timing audit using actual Allen NWB shared withD02, six sweeps and61 leaf fields; reference crosschecked with official EphysSweep metadata plus independent block-averaged D02 arrays. No claim of DANDI archive benchmark, format-general robustness, or scientific discovery.",
+      "source_urls": [
+        "https://brain-map.org/support/documentation/cell-types-database-api",
+        "https://alleninstitute.github.io/AllenSDK/cell_types.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "decision_scope": "this execution release; feasible_pending is not bad data/universal infeasibility",
+      "current_best_status": "not verified",
+      "checked_on": "2026-10-30",
+      "access_facts": "Actual Allen NWB shared withD02 reused through relative cache symlink; reference calculations and official metadata/independent block-average crosschecks passed.",
+      "license_facts": "Allen Institute research/noncommercial and attribution terms reviewed; no new raw redistribution, no data relicensing under code license.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/workflow-admission.json"
+    },
+    {
+      "benchmark_id": "N06",
+      "decision": "deferred",
+      "reason": "Proposed data-integrity task has no independently validated corruption generator/hidden fault suite or prespecified detection thresholds yet. DANDI is an archive, not the fault benchmark. N05 clean-file parsing does not establish detection of metadata/timing/unit corruption.",
+      "source_urls": [
+        "https://about.dandiarchive.org/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "decision_scope": "this execution release; feasible_pending is not bad data/universal infeasibility",
+      "current_best_status": "not verified",
+      "checked_on": "2026-10-30",
+      "access_facts": "DANDI primary archive documentation reviewed. No corruption suite, generator or labeled fault fixture constructed.",
+      "license_facts": "DANDI archive presence does not establish a license for every contributed dataset; select and inspect per-dandiset terms before constructing faults.",
+      "license_verification_scope": "Explicit facts above only; unknown terms remain unverified",
+      "source_log": "work/workflow-admission.json"
+    }
+  ],
+  "additional_closest_prior_work": [
+    {
+      "resource": "EEGAgentBench",
+      "paper": "https://arxiv.org/abs/2609.31632",
+      "author_repository": "https://github.com/528why/EEGAgentBenchmark",
+      "finding": "Primary repo advertises1072 cases from6 public datasets and10 deterministic EEG tools, task evaluators, scenarios/answers; ~23GB signals separately hosted. EEG workflows complement BrainAgent and NeuralBench. Each source keeps upstream terms, including Bonn research/education/noncommercial/nonmilitary restrictions. Not acquired/executed here; central inclusion pending.",
+      "checked_on": "2026-10-30",
+      "decision": "include related-work evidence; execution admission pending",
+      "access_facts": "Primary paper and author repository documentation reviewed;23GB signal package not acquired.",
+      "license_facts": "Author repository declares Apache2.0 for code and distinct upstream dataset terms. Bonn research/education and noncommercial/nonmilitary restrictions explicitly flagged by authors. Per-source rights must be validated before any run. No raw EEG acquired here.",
+      "scope_relation": "Agentic EEG task/tool evaluation; distinct from BrainAgent2606.25400 and NeuralBench raw-signal model evaluation."
+    }
+  ],
+  "audit_inputs": [
+    {
+      "path": "work/cell-admission.json",
+      "sha256": "3cabcd36238659e3cf7f8a35333ca6b0a7417c4eee65da10fac203af6cbf31a5"
+    },
+    {
+      "path": "work/encoding-admission.json",
+      "sha256": "1a1d5a5f14fbae36aaf3e3ca74212d1364fca95ecc75e916d52f3677c4178b3f"
+    },
+    {
+      "path": "work/workflow-admission.json",
+      "sha256": "e2893494166dd885cc1350c8f7b0ef84bf666e6dfa500d57365570acb323b2e3"
+    },
+    {
+      "path": "work/cell-admission/acquisition-log.json",
+      "sha256": "4e2d4c5c1907656e8da68ad45027510c03c5e944cf2b168a1939f701b4af249c"
+    },
+    {
+      "path": "work/encoding-admission/acquisition-log.json",
+      "sha256": "72000236c9e03ac0e4f4c115308df252f635ad9ddf4f0e9d3c12a8ddb189a018"
+    }
+  ],
+  "coverage_limits": [
+    "All4 D,6 K and6 N IDs in registryv0.3 plus F04 source decision are screened here; this is not a full literature census.",
+    "Source availability and metadata integrity do not prove ground-truth validity, representativeness or absence of pretraining contamination.",
+    "Data reused across D02,N05 and the Allen collection relationship toK01 must be identified in macro analysis.",
+    "Static retinal images in F04 do not supply temporal flicker/stimulus-history coverage.",
+    "Admitted narrow slices do not establish full benchmark completion or verified current specialist SOTA."
+  ],
+  "acquisition_evidence": {
+    "cell_audit": {
+      "date": "2026-10-30",
+      "downloaded_files": [
+        {
+          "path": "work/cell-admission/cellexplorer-license.json",
+          "bytes": 3211,
+          "sha256": "9a9c7f718c5bbe5372ebd3c85ef05729f739e08a8182bf19f2d54a401eace2b3"
+        },
+        {
+          "path": "work/cell-admission/cells.json",
+          "bytes": 3975943,
+          "sha256": "c5e466bee1c9d0b112ef046929c68cae54846cdf8681cb5e059ae7284295669e"
+        },
+        {
+          "path": "work/cell-admission/groundTruth_cell_list.mat",
+          "bytes": 2833832,
+          "sha256": "fb32387c12cd3924413643c5b7d99a70eb451bb066bcce8644c076e57237b5a3"
+        },
+        {
+          "path": "work/cell-admission/K01-preparation.json",
+          "bytes": 57180,
+          "sha256": "c4a47eb496f3f835fbd3f4bfe73153fec77c490f9bedb6299ca375d9780b2f9b"
+        },
+        {
+          "path": "work/cell-admission/cellexplorer-files.json",
+          "bytes": 104465,
+          "sha256": "15cdb7faf81e62a888b4f501511003e66b74a368011da22388ea71a52185d2ed"
+        },
+        {
+          "path": "work/cell-admission/cell_types_api.py",
+          "bytes": 14978,
+          "sha256": "473cd0b005fab8ac3029d2efcfe2d19e3a904ebcfa179c33245c8f6610e26a04"
+        },
+        {
+          "path": "work/cell-admission/ephys.json",
+          "bytes": 4295330,
+          "sha256": "9e2be50d9876bf23d1d0ef2ad81daaa78d3243bd8a4845889960972ea13a1ff3"
+        },
+        {
+          "path": "work/cell-admission/d533101.mat",
+          "bytes": 189152,
+          "sha256": "4c83bc0964bd1a190f95ab3b4f50b13d0ac9c8156179964d77c597f14a00e66e"
+        }
+      ],
+      "sources": {
+        "cells.json": "https://api.brain-map.org/api/v2/data/query.json?criteria=model%3A%3AApiCellTypesSpecimenDetail%2Crma%3A%3Aoptions%5Bnum_rows%24eqall%5D",
+        "ephys.json": "https://api.brain-map.org/api/v2/data/query.json?criteria=model%3A%3AEphysFeature%2Crma%3A%3Acriteria%2Cspecimen%28ephys_result%5Bfailed%24eqfalse%5D%29%2Crma%3A%3Aoptions%5Bnum_rows%24eqall%5D",
+        "groundTruth_cell_list.mat": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/main/+groundTruthData/groundTruth_cell_list.mat",
+        "d533101.mat": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/main/+groundTruthData/d533101.cell_metrics.cellinfo.mat"
+      }
+    },
+    "encoding_audit": {
+      "date": "2026-10-30",
+      "metadata_files": [
+        {
+          "path": "work/encoding-admission/openretina-metadata.json",
+          "bytes": 11066,
+          "sha256": "f3af772d250a4810830b056fbcf5689e6bd5f1f21822430df96aee04daf9b2fe"
+        },
+        {
+          "path": "work/encoding-admission/F04-preparation.json",
+          "bytes": 138645,
+          "sha256": "fa88597920f0fbf4d57c7bb09dd389312fe78c50b32ef4ba4d5508c78b79009a"
+        },
+        {
+          "path": "work/encoding-admission/README-openretina.md",
+          "bytes": 2696,
+          "sha256": "d82fd7e14c12491d54101ab7512c01988d1a0c45a9be3c208577d806cdfd7454"
+        },
+        {
+          "path": "work/encoding-admission/goldin-zenodo-metadata.json",
+          "bytes": 118832,
+          "sha256": "d4a572342b3fd1a67975edea994a3dff623870e9ca52f9e8317264e3db1d3d3b"
+        },
+        {
+          "path": "work/encoding-admission/search-log.jsonl",
+          "bytes": 1505,
+          "sha256": "3e9372c4cb055e28d9246c620fe52f3a700285fefcba474c98a5c7c3cf11e6b7"
+        },
+        {
+          "path": "work/encoding-admission/openretina-tree.json",
+          "bytes": 39170,
+          "sha256": "e6f6c8d595348e01567c9d79261d5f44a4f551edbef395244a986856a6e0d843"
+        }
+      ],
+      "raw_file_sha_matches_hf_lfs_oid": true,
+      "hf_revision": "fc7b91e93c9bd4e76d4e3205fcbcc6a31601985a"
+    },
+    "tracked_manifests": [
+      "data/manifests/D02.json",
+      "data/manifests/K01.json",
+      "data/manifests/F04.json",
+      "data/manifests/N05.json"
+    ],
+    "license_primary_urls": [
+      "https://alleninstitute.org/terms-of-use/",
+      "https://zenodo.org/api/records/6868362",
+      "https://huggingface.co/datasets/open-retina/open-retina/blob/fc7b91e93c9bd4e76d4e3205fcbcc6a31601985a/README.md",
+      "https://api.github.com/repos/petersenpeter/CellExplorer/license"
+    ]
+  }
+}

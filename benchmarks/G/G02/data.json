@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "G02",
+    "decision": "deferred",
+    "reason": "FALCON communication decoding requires sequentialoutputs, official word/character scorer, sessionadaptation and heavier inputdata/training pipeline. Not executed within CPU numeric regression/classification interface. No evidence dataset is bad or universally impossible.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://snel-repo.github.io/falcon/"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "K03",
+    "decision": "deferred",
+    "reason": "Primary NeuroDiscoveryBench includes existing workflow metadata, reference answers and figure/text scoring, but evaluates scientific-analysis agents rather than the fixed train/predict interface used for this execution batch. Large dataset downloader plus external evaluator/workflow budget not replicated; code/data licenses separate and rubric/judge provenance must be logged before admitting scores.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "source_urls": [
+      "https://github.com/allenai/neurodiscoverybench"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

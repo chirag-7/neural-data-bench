@@ -29,3 +29,9 @@ Optotagging can include indirect responses; class labels are uneven and partly n
 - [https://cellexplorer.org/publicdata/ground-truth-data/](https://cellexplorer.org/publicdata/ground-truth-data/)
 - [https://cellexplorer.org/tutorials/ground-truth-tutorial/](https://cellexplorer.org/tutorials/ground-truth-tutorial/)
 - [https://alleninstitute.github.io/openscope_databook/optotagging/](https://alleninstitute.github.io/openscope_databook/optotagging/)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Primary ground-truth tutorial and GitHub folder inspected; 87 files total ~500 MB. Downloaded one 189 kB cell metrics example and consolidated 2.83 MB gt list; MATLAB v7.3 HDF5 parsed with isolated h5py3.15.1. Consolidated list has 430 entries and animal/session/truth labels, but no predictor feature matrix; example has Juxta tag (not a molecular cell class). Must select nonnested independently tagged classes, extract only scalar physiology/waveform metrics from session files, group animals, resolve contributor data terms, and exclude putativeCellType/geneticLine/brainRegion proxies. No validated table yet.
+
+[Source-linked admission evidence](../../../literature/admission-v04-cell-workflow.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

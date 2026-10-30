@@ -7,5 +7,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "I08",
+    "decision": "deferred",
+    "reason": "Original ConfUSIus collection docs permit small filtered downloads (~30MBexample), anonymous immutable releases and per-source licenses. Data size alone is not an exclusion. Need define actual experimental target (e.g. speed annotations) and held-out-recording/animal scorer; derived GLM maps are not independent truth.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://registry.opendata.aws/confusius/",
+      "https://confusius.tools/latest/user-guide/datasets/"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

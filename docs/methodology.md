@@ -2,7 +2,7 @@
 
 ## What is being evaluated
 
-The scientific estimand is performance of a **specified model plus procedure** on a defined neural-data endpoint. T0 direct input/output, T1 frozen features, T2 adaptation, T3 generated code and T4 specialist-tool workflows answer different questions. A text model generating a gradient booster does not demonstrate a pretrained raw-signal encoder. v0.3 measures only constrained T3: a single no-tool code submission followed by local numerical execution. All models are closed hosted Sol models; open-weight, image/video, audio, world and neural-domain models are not yet evaluated.
+The scientific estimand is performance of a **specified model plus procedure** on a defined neural-data endpoint. T0 direct input/output, T1 frozen features, T2 adaptation, T3 generated code and T4 specialist-tool workflows answer different questions. A text model generating a gradient booster does not demonstrate a pretrained raw-signal encoder. v 0.4 measures only constrained T3: a single no-tool code submission followed by local numerical execution. All models are closed hosted Sol models; open-weight, image/video, audio, world and neural-domain models are not yet evaluated.
 
 ## Controls and provenance
 
@@ -29,3 +29,15 @@ Use biologically grouped held-out cases and multiple independent model generatio
 ## Post-hoc reference audit
 
 A separate posterior-median reference was added after observing nearly identical Bayesian estimators in all three M04 submissions. It retains the frozen MLE reference and is documented in `experiments/M04/posthoc-amendment.md`. The 257→513-grid refinement tests numerical convergence. It uses uniform priors over prompt bounds, not oracle knowledge of the hidden generating distribution. Tiny model differences are treated as quadrature effects. Local MLE convergence does not certify a global optimum.
+
+## v 0.4 expansion and procedure amendments
+
+The current release measures 14 task IDs across 11 families. Twelve new frozen protocols are documented under `experiments/<ID>/protocol.md`; [release report](release-v04.md) and [findings](../analysis/findings.md) supersede the earlier two-task status. T3 remains the measured track; N05 permits reading exactly one provided HDF5/NWB fixture at execution, while generation remains no-tool. All other new models receive training arrays/targets and unlabeled test inputs, never test targets. Publicly available labels and raw targets used by the scorer remain a contamination risk.
+
+New protocol prompts/adapters/prepared-input hashes were sealed before each generation. Each model submits one program with high reasoning, deterministic seeds requested, permitted general libraries and no execution feedback.42 programs supply 54 slice executions, because C05 refits one program on five preparations. Fourteen task IDs are not fourteen independent datasets: D02/N05 share a file, K01 shares the broader Allen collection, and within-source neurons/repeats/windows are correlated. F04 requires identical rates for identical repeated testimages; all stored predictions passed that check. The centralization script preserves missing/failed records.
+
+Some H01/I07 programs infer subject block structure or use unlabeled input alignment; the baseline and generated code use different inner-validation grouping policies. Test labels remain withheld, but this is not a matched-information or matched-adaptation comparison. Model-specific adaptations must be inspected in the exact submitted code. H16 is semisynthetic signal repair, A14 artificial gaps in real mocap, E01a supervised population-readout slice, L04 real count encoding rather than full statistical calibration, and I10 processed IQMs rather than raw MRI. These boundaries constrain the claims.
+
+K01 harness repair: predictions from valid global classes were initially rejected within single-class donor subgroups. The scorer now validates against the fixed global label set and reports single-class group accuracy. Initial logs retained; unchanged programs rerun. This is distinct from N05 GPT-5.6's preserved program failure. No program was edited after score feedback. New format limit<240 lines differs from the original C05<180 line contract; strict compliance is evaluated per original task request.
+
+References are stratified: conventional local baselines, historical specialist predictions, synthetic objective-mismatched MLE, deterministic correctness and post-hoc objective-aligned audits. A09 VASSIrun 00 selection predates rescoring; all 20 runs retained. I10 original classifier predictions align one-to-one to 265 DS030 scans with verified exclude 1 labels, but training/rater/feature histories differ. No current strongest matched specialist is verified. Numerically rescoring every stored prediction and source/hash alignment is necessary, but not an external expert audit or proof that a custom diagnostic measures the full scientific task.

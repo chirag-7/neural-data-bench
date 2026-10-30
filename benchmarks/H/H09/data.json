@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "H09",
+    "decision": "deferred",
+    "reason": "SzCORE primary framework explicitly distinguishes sample/event scoring and participant independence. CHB-MIT/Siena require long continuous recordings to estimate false alarms/hour; no cherry-picked balanced seizure clips admitted as replacement. Full event pipeline and sufficient recording duration not yet prepared.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://epilepsybenchmarks.com/framework/"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

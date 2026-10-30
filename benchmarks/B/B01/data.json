@@ -9,5 +9,20 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "B01",
+    "decision": "candidate_pending_validation",
+    "reason": "SpikeForest offers paired/curated groundtruth recordings, but exact accessible recording URI, agreement threshold, sorting scorer and matched sorter have not been acquired here. Do not claim hidden true neuron labels from ordinary extracellular recording.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://github.com/flatironinstitute/spikeforest",
+      "https://elifesciences.org/articles/55167",
+      "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

@@ -27,3 +27,9 @@ Broad science benchmark; only relevant subset belongs in neuro score
 ## Sources
 
 - [https://arxiv.org/abs/2410.05080](https://arxiv.org/abs/2410.05080)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Primary ScienceAgentBench paper/repository provide publication-derived code tasks and evaluators. Need explicitly freeze neuroscience/cognitive/EEG subset with per-task data terms, runtime and output evaluators, rather than report all102 broad-science tasks as neuro. Image/rubric cases need evaluator/judge provenance where applicable. No new complete-subset run performed.
+
+[Source-linked admission evidence](../../../literature/admission-v04-cell-workflow.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

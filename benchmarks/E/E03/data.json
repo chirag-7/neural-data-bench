@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "E03",
+    "decision": "candidate_pending_validation",
+    "reason": "BrainWideBench TS1 provides natural crossanimal decoding benchmark aligned with course. Needs exact pinned IBL sessionmanifest, labels and common neuron/input normalization under official split. Public data may require sizeable multises­sion acquisition; not attempted here.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://brainbench-org.github.io/ibl-bwb/",
+      "https://arxiv.org/abs/2609.22064"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

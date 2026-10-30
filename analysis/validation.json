@@ -7,6 +7,6 @@
   "cognitive_likelihood_hand_fixture": "passed",
   "mle_converged_agents": 24,
   "original_pilot_reproduction": "all three models agree",
-  "central_store_records": 51,
-  "model_attempts": 18
+  "central_store_records": 120,
+  "model_attempts": 54
 }

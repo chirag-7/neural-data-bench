@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "A13",
+    "decision": "deferred",
+    "reason": "Gaussian/multiview reconstruction requires GPU training and substantial calibrated synchronized images. Current numeric code-generation budget cannot reproduce the published task. No claim of data invalidity.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://arxiv.org/abs/2606.02937",
+      "https://arxiv.org/abs/2505.18342"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+    "permanent_rejection": false
+  }
 }

@@ -27,3 +27,9 @@ Simulator truth may not capture real tissue/indicator shift
 ## Sources
 
 - [https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). NAOMi can provide full synthetic calcium movie truth. Requires frozen physicalsimulation parameters and randomseeds, compute budget and exact ROI/timecourse scoring. Clearly synthetic; simulator outputs do not validate real in-vivo robustness.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

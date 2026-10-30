@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": "../../../data/manifests/cognitive.json",
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "M04",
+    "decision": "measured",
+    "reason": "Previously measured24agent synthetic Q-learning recovery. Author guide supports recovery checks; local implementation and posterior-vs-MLE objective difference explicit. Not biological data or a released leaderboard.",
+    "date": "2026-10-30",
+    "source_screen_decision": "admit",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://elifesciences.org/articles/49547"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+    "permanent_rejection": false
+  }
 }

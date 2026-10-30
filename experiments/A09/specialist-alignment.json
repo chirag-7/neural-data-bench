@@ -1,0 +1,202 @@
+{
+  "frame_index_convention": "zero-based np.arange(len(original_sequence)); no offset applied",
+  "archive_md5_matches_publisher": true,
+  "all_original_frames_match_archived_truth": true,
+  "all20run_truth_arrays_match_original": true,
+  "all_frozen_center_labels_match": true,
+  "num_test_sequences": 19,
+  "num_original_frames": 262107,
+  "num_frozen_centers": 26162,
+  "sequences": [
+    {
+      "group_index": 0,
+      "sequence_id": "task1/test/mouse071_task1_annotator1",
+      "frames": 23810,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 23809,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 0
+    },
+    {
+      "group_index": 1,
+      "sequence_id": "task1/test/mouse072_task1_annotator1",
+      "frames": 18164,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 18163,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 23810
+    },
+    {
+      "group_index": 2,
+      "sequence_id": "task1/test/mouse073_task1_annotator1",
+      "frames": 19156,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 19155,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 41974
+    },
+    {
+      "group_index": 3,
+      "sequence_id": "task1/test/mouse074_task1_annotator1",
+      "frames": 18825,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 18824,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 61130
+    },
+    {
+      "group_index": 4,
+      "sequence_id": "task1/test/mouse075_task1_annotator1",
+      "frames": 18015,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 18014,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 79955
+    },
+    {
+      "group_index": 5,
+      "sequence_id": "task1/test/mouse076_task1_annotator1",
+      "frames": 19710,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 19709,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 97970
+    },
+    {
+      "group_index": 6,
+      "sequence_id": "task1/test/mouse077_task1_annotator1",
+      "frames": 18907,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 18906,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 117680
+    },
+    {
+      "group_index": 7,
+      "sequence_id": "task1/test/mouse078_task1_annotator1",
+      "frames": 19473,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 19472,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 136587
+    },
+    {
+      "group_index": 8,
+      "sequence_id": "task1/test/mouse079_task1_annotator1",
+      "frames": 17483,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 17482,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 156060
+    },
+    {
+      "group_index": 9,
+      "sequence_id": "task1/test/mouse080_task1_annotator1",
+      "frames": 6179,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 6178,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 173543
+    },
+    {
+      "group_index": 10,
+      "sequence_id": "task1/test/mouse081_task1_annotator1",
+      "frames": 4932,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 4931,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 179722
+    },
+    {
+      "group_index": 11,
+      "sequence_id": "task1/test/mouse082_task1_annotator1",
+      "frames": 7115,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 7114,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 184654
+    },
+    {
+      "group_index": 12,
+      "sequence_id": "task1/test/mouse083_task1_annotator1",
+      "frames": 4881,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 4880,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 191769
+    },
+    {
+      "group_index": 13,
+      "sequence_id": "task1/test/mouse084_task1_annotator1",
+      "frames": 5626,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 5625,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 196650
+    },
+    {
+      "group_index": 14,
+      "sequence_id": "task1/test/mouse085_task1_annotator1",
+      "frames": 19200,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 19199,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 202276
+    },
+    {
+      "group_index": 15,
+      "sequence_id": "task1/test/mouse086_task1_annotator1",
+      "frames": 8617,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 8616,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 221476
+    },
+    {
+      "group_index": 16,
+      "sequence_id": "task1/test/mouse087_task1_annotator1",
+      "frames": 11915,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 11914,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 230093
+    },
+    {
+      "group_index": 17,
+      "sequence_id": "task1/test/mouse088_task1_annotator1",
+      "frames": 8825,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 8824,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 242008
+    },
+    {
+      "group_index": 18,
+      "sequence_id": "task1/test/mouse089_task1_annotator1",
+      "frames": 11274,
+      "timestamp_start": 0,
+      "timestamp_stop_inclusive": 11273,
+      "raw_label_match": true,
+      "mismatch_count": 0,
+      "fullframe_offset": 250833
+    }
+  ]
+}

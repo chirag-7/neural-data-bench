@@ -28,3 +28,9 @@ Report neural-only/no-neural controls; competition access/rules may apply
 
 - [https://github.com/fwillett/speechBCI](https://github.com/fwillett/speechBCI)
 - [https://www.kaggle.com/competitions/brain-to-text-25/overview](https://www.kaggle.com/competitions/brain-to-text-25/overview)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Brain-to-Text speech decoding needs sequence/phoneme/texttargets, CTC/language-model decoding rules and speech-rate/word-error scorer, with substantial data and training. ThreeSol numerical code snippets are not speechsequence models. No data acquisition attempted; retain valid futurecandidate.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

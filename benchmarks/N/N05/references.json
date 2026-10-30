@@ -1,25 +1,10 @@
-[
-  {
-    "id": "Sa98ec84476",
-    "url": "https://about.dandiarchive.org/",
-    "benchmark_ids": [
-      "H14",
-      "N05",
-      "N06"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "S365e78023d",
-    "url": "https://www.internationalbrainlab.com/data",
-    "benchmark_ids": [
-      "B08",
-      "L03",
-      "M01",
-      "N05"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "N05",
+  "source_urls": [
+    "https://about.dandiarchive.org/",
+    "https://www.internationalbrainlab.com/data",
+    "https://brain-map.org/support/documentation/cell-types-database-api",
+    "https://alleninstitute.github.io/AllenSDK/cell_types.html"
+  ],
+  "admission_evidence": "literature/admission-v04-cell-workflow.json"
+}

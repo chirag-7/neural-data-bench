@@ -7,5 +7,19 @@
   ],
   "license_status": "Not independently reviewed",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "H19",
+    "decision": "deferred",
+    "reason": "Original DREAMS record has20expert-annotated15min artifact excerpts and explicit artifact types. Original DREAMS license was downloaded/read; noncommercial and no-adaptation terms complicate distributing prepared arrays. Need local-only extraction/annotation schema and exact event metric; no false claim that real artifact detection equals H16 mixture repair.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://zenodo.org/records/2650142",
+      "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

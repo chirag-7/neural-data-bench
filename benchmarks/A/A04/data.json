@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "A04",
+    "decision": "candidate_pending_validation",
+    "reason": "Real Rat7M mocap labels acquired through DISK for A14. This does not admit 3D pose-from-video: its synchronized six-camera inputs and calibrations have not been downloaded or evaluated. Share dataset group with A14 for independence accounting.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://figshare.com/collections/Rat_7M/5295370/3",
+      "https://www.nature.com/articles/s41592-025-02893-y"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+    "permanent_rejection": false
+  }
 }

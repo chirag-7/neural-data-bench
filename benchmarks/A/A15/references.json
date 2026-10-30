@@ -1,38 +1,10 @@
-[
-  {
-    "id": "S2db46b7ed6",
-    "url": "https://elifesciences.org/articles/68837",
-    "benchmark_ids": [
-      "A15"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "S03c7daa60e",
-    "url": "https://data.goettingen-research-online.de/dataverse/das",
-    "benchmark_ids": [
-      "A15"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "S4101d1582b",
-    "url": "https://janclemenslab.org/das/",
-    "benchmark_ids": [
-      "A15"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "Sa56b8ecdd5",
-    "url": "https://github.com/nianlonggu/WhisperSeg",
-    "benchmark_ids": [
-      "A15"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "A15",
+  "source_urls": [
+    "https://elifesciences.org/articles/68837",
+    "https://data.goettingen-research-online.de/dataverse/das",
+    "https://janclemenslab.org/das/",
+    "https://github.com/nianlonggu/WhisperSeg"
+  ],
+  "admission_evidence": "literature/admission-v04-behavior-population.json"
+}

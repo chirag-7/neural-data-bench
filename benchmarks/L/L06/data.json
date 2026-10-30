@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "L06",
+    "decision": "candidate_pending_validation",
+    "reason": "Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.",
+    "date": "2026-10-30",
+    "source_screen_decision": "feasible_pending",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://github.com/sbi-benchmark/sbibm"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+    "permanent_rejection": false
+  }
 }

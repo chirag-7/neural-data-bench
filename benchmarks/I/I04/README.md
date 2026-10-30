@@ -27,3 +27,9 @@ Source truth is not directly known; careful coregistration
 ## Sources
 
 - [https://www.nature.com/articles/sdata20151](https://www.nature.com/articles/sdata20151)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Original Wakeman-Henson Nature article redirect failed through the web tool. No raw multimodal dataset or labels acquired; needs pinned EEG/MEG/fMRI release, face identities/conditions and subject/session split. Access failure is not permanent unavailability.
+
+[Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

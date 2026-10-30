@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "I06",
+    "decision": "deferred",
+    "reason": "Original CBICA BraTS page lists multiple separate Synapse challenge instances. Need choose task/release, dataset access terms, subject-level split and official tumor-region/Dice/HD95 rules. No raw records acquired or multiple releases mixed.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://www.med.upenn.edu/cbica/brats/"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

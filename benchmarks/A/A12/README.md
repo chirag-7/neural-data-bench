@@ -27,3 +27,9 @@ Method evaluation suite needs a frozen common wrapper
 ## Sources
 
 - [https://arxiv.org/abs/2507.09513](https://arxiv.org/abs/2507.09513)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Need raw or published fixed behavior features jointly aligned to neural recordings and recording-level heldout responses. No common numerical endpoint independently acquired; do not score predicted behavior labels as neural encoding.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

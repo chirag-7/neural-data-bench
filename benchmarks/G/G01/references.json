@@ -1,12 +1,7 @@
-[
-  {
-    "id": "Sf3cbf2d161",
-    "url": "https://snel-repo.github.io/falcon/",
-    "benchmark_ids": [
-      "G01",
-      "G02"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "G01",
+  "source_urls": [
+    "https://snel-repo.github.io/falcon/"
+  ],
+  "admission_evidence": "literature/admission-v04-behavior-population.json"
+}

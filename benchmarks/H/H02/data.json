@@ -7,5 +7,20 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "H02",
+    "decision": "deferred",
+    "reason": "Screened BNCI2014_008 original BNCI terms (CC BY-NC-ND4.0) and MOABB loader/context. Data are real and useful, but derivative-array distribution and the exact cross-subject ERP preparation protocol have not been validated for this release. Alternate openly licensed ERP resources can be admitted later; no claim of bad quality.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://moabb.neurotechx.com/",
+      "https://bnci-horizon-2020.eu/database/data-sets",
+      "https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_008.html"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

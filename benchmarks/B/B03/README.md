@@ -28,3 +28,9 @@ Real motion estimates are often proxy truth
 
 - [https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html](https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html)
 - [https://github.com/evarol/dredge](https://github.com/evarol/dredge)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Synthetic drift with known displacement supports motion-estimation error; real DREDge drift estimates themselves are not groundtruth. Need fixed simulator/probe mapping and matched motion pipeline; no acquisition/execution attempted here.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "H13",
+    "decision": "deferred",
+    "reason": "Original emg2pose repo reports full data431GiB and a ~600MiB sanity-check subset. Full held-out-user benchmark not downloaded; sanity subset cannot substitute for population evaluation without verifying participants and split metadata. EMG is explicitly peripheral.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://github.com/facebookresearch/emg2pose"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

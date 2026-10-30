@@ -27,3 +27,9 @@ Generic toy tasks outside neuroscience excluded from neural aggregate
 ## Sources
 
 - [https://github.com/sbi-benchmark/sbibm](https://github.com/sbi-benchmark/sbibm)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.
+
+[Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

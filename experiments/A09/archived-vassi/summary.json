@@ -1,0 +1,139 @@
+{
+  "task_id": "A09",
+  "primary_reference_model": "vassi-run-00",
+  "primary_score": 0.8695177327504425,
+  "selection_rule": "lowest numeric archived run ID; locked before any rescoring",
+  "num_archived_runs": 20,
+  "secondary_descriptive": {
+    "median": 0.8689440631758837,
+    "minimum": 0.866711197217867,
+    "maximum": 0.8702791972840422,
+    "std_population": 0.0010829366058854755
+  },
+  "metric": "macro_f1",
+  "metric_classes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "original_test_frames": 262107,
+  "frozen_test_centers": 26162,
+  "source_doi": "10.17617/3.3R0QYI",
+  "source_version": "1.0",
+  "archive_file_id": 315313,
+  "archive_sha256": "dca04622d09d11c69f8054970f73f4f952473c91884ab23b16bd9175857e8bf1",
+  "publisher_md5": "242beccb757da2573c7879db66908ec6",
+  "matched_test_centers_labels_metric": true,
+  "matched_training_input_budget": false,
+  "is_current_sota": false,
+  "pipeline": "VASSI201hand-designedspatiotemporalfeatures;XGBoost1000trees;trainonly5foldpostprocessingoptimization;20archivedruns;fullframecontext",
+  "notes": [
+    "A09fourclassmacroF1differsfromoriginalCalMS21foregroundF1",
+    "Do not treat20runs as20independentdatasets",
+    "Maximum is descriptive rangeendpoint, never selected comparator",
+    "Archived pipeline uses more training/context/optimization budget than Solcodegeneration submissions. Exclude from strict matched-budget superiority counts."
+  ],
+  "runs": [
+    {
+      "model_id": "vassi-run-00",
+      "primary_score": 0.8695177327504425,
+      "primary_reference": true
+    },
+    {
+      "model_id": "vassi-run-01",
+      "primary_score": 0.868998770966235,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-02",
+      "primary_score": 0.8695484043864823,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-03",
+      "primary_score": 0.8702006409981802,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-04",
+      "primary_score": 0.8669488616044104,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-05",
+      "primary_score": 0.8697333131396927,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-06",
+      "primary_score": 0.8699842178797927,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-07",
+      "primary_score": 0.866711197217867,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-08",
+      "primary_score": 0.8682683842075497,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-09",
+      "primary_score": 0.8676891271020648,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-10",
+      "primary_score": 0.8697726374249142,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-11",
+      "primary_score": 0.8668047719238074,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-12",
+      "primary_score": 0.8678602012303515,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-13",
+      "primary_score": 0.8692979581332307,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-14",
+      "primary_score": 0.8688893553855324,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-15",
+      "primary_score": 0.8702791972840422,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-16",
+      "primary_score": 0.8681839399836866,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-17",
+      "primary_score": 0.8686177676408582,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-18",
+      "primary_score": 0.8690845087543317,
+      "primary_reference": false
+    },
+    {
+      "model_id": "vassi-run-19",
+      "primary_score": 0.8684579797660562,
+      "primary_reference": false
+    }
+  ]
+}

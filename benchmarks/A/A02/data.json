@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "A02",
+    "decision": "candidate_pending_validation",
+    "reason": "AP-10K offers official image/keypoint splits, but raw-image inference needs vision/multimodal submissions and matched OKS scorer. Numeric pose-to-label A09 does not cover this operation. Dataset not downloaded in this expansion.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://arxiv.org/abs/2108.12617",
+      "https://benchmark.deeplabcut.org/datasets.html"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+    "permanent_rejection": false
+  }
 }

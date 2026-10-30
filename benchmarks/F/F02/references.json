@@ -1,12 +1,7 @@
-[
-  {
-    "id": "S408bc065d2",
-    "url": "https://sensorium-competition.net/",
-    "benchmark_ids": [
-      "F01",
-      "F02"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "F02",
+  "source_urls": [
+    "https://sensorium-competition.net/"
+  ],
+  "admission_evidence": "literature/admission-v04-behavior-population.json"
+}

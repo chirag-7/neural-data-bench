@@ -27,3 +27,9 @@ General features still need fitted brain alignment
 ## Sources
 
 - [https://algonautsproject.com/2025/challenge.html](https://algonautsproject.com/2025/challenge.html)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Original Algonauts2025 challenge page requires a data-download form and Codabench test-response scoring; ID/OOD held-out fMRI responses are not publicly available to a local evaluator. No application signed or hidden-label score fabricated. Need agreed data access, stimulus features and temporal encoding protocol.
+
+[Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

@@ -7,5 +7,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "M07",
+    "decision": "deferred",
+    "reason": "Author FlyGym repository provides embodied NeuroMechFly simulation. Need pinned simulator/contact/sensory assets, terrain seeds and controller training/rollout protocol. Not a ready static supervised dataset; no biological validity inferred from simulated reward.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://www.nature.com/articles/s41592-024-02497-y",
+      "https://github.com/NeLy-EPFL/flygym"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+    "permanent_rejection": false
+  }
 }

@@ -1,12 +1,12 @@
 # Population activity and dynamics
 
-[All families](../../docs/taxonomy.md) · [Project](../../README.md)
+[Taxonomy](../../docs/taxonomy.md) · [Project](../../README.md)
 
 Spike trains/count tensors, calcium activity, covariates
 
 Operations: Rate inference, co-smoothing, forecasting, latent dynamics, anatomy from activity, transfer
 
-- [E01 — Neural rate inference and co-smoothing](E01/README.md) · candidate_pending_validation
+- [E01 — Neural rate inference and co-smoothing](E01/README.md) · measured
 - [E02 — Recovery of computational dynamics](E02/README.md) · candidate_pending_validation
 - [E03 — Behavior decoding across animals](E03/README.md) · candidate_pending_validation
 - [E04 — Masked/future neural activity prediction](E04/README.md) · candidate_pending_validation

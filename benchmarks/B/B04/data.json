@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "B04",
+    "decision": "candidate_pending_validation",
+    "reason": "Hybrid insertion can provide known collision times, but must freeze inserted templates and distinguish synthetic labels from unknown endogenous spikes. Requires event-matching tolerance and collision definitions. Adapter not prepared.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://spikeinterface.readthedocs.io/en/stable/modules/comparison.html",
+      "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

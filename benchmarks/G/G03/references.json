@@ -1,20 +1,8 @@
-[
-  {
-    "id": "S540cc17323",
-    "url": "https://github.com/fwillett/speechBCI",
-    "benchmark_ids": [
-      "G03"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "Sd480ab5ca7",
-    "url": "https://www.kaggle.com/competitions/brain-to-text-25/overview",
-    "benchmark_ids": [
-      "G03"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "G03",
+  "source_urls": [
+    "https://github.com/fwillett/speechBCI",
+    "https://www.kaggle.com/competitions/brain-to-text-25/overview"
+  ],
+  "admission_evidence": "literature/admission-v04-behavior-population.json"
+}

@@ -1,24 +1,8 @@
-[
-  {
-    "id": "Sd05d08c358",
-    "url": "https://brainbench-org.github.io/ibl-bwb/",
-    "benchmark_ids": [
-      "E03",
-      "E04",
-      "E05"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "S2d2db9be21",
-    "url": "https://arxiv.org/abs/2609.22064",
-    "benchmark_ids": [
-      "E03",
-      "E04",
-      "E05"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "E05",
+  "source_urls": [
+    "https://brainbench-org.github.io/ibl-bwb/",
+    "https://arxiv.org/abs/2609.22064"
+  ],
+  "admission_evidence": "literature/admission-v04-behavior-population.json"
+}

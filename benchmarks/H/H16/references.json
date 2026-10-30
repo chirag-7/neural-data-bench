@@ -1,11 +1,11 @@
-[
-  {
-    "id": "S2d5bc5da8e",
-    "url": "https://doi.org/10.1088/1741-2552/ac2bf8",
-    "benchmark_ids": [
-      "H16"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "H16",
+  "source_urls": [
+    "https://doi.org/10.1088/1741-2552/ac2bf8",
+    "https://github.com/ncclabsustech/EEGdenoiseNet",
+    "https://arxiv.org/html/2009.11662v4",
+    "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/master/LICENSE",
+    "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/code/benchmark_networks/data_prepare.py"
+  ],
+  "admission_evidence": "literature/admission-v04-electrical.json"
+}

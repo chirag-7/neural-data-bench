@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "A07",
+    "decision": "candidate_pending_validation",
+    "reason": "Synchronized camera and landmark/calibration release must be pinned with official holdout. No multiview visual adapter prepared; numerical mocap imputation A14 cannot count as this task.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13131684/"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+    "permanent_rejection": false
+  }
 }

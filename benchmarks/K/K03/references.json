@@ -1,12 +1,7 @@
-[
-  {
-    "id": "Sb5dca9f7e9",
-    "url": "https://github.com/allenai/neurodiscoverybench",
-    "benchmark_ids": [
-      "K03",
-      "N01"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "K03",
+  "source_urls": [
+    "https://github.com/allenai/neurodiscoverybench"
+  ],
+  "admission_evidence": "literature/admission-v04-cell-workflow.json"
+}

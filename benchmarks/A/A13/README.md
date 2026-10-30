@@ -28,3 +28,9 @@ Photorealistic rendering alone does not show correct neuroscience features
 
 - [https://arxiv.org/abs/2606.02937](https://arxiv.org/abs/2606.02937)
 - [https://arxiv.org/abs/2505.18342](https://arxiv.org/abs/2505.18342)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Gaussian/multiview reconstruction requires GPU training and substantial calibrated synchronized images. Current numeric code-generation budget cannot reproduce the published task. No claim of data invalidity.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

@@ -10,5 +10,21 @@
   ],
   "license_status": "Not independently reviewed",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "A15",
+    "decision": "candidate_pending_validation",
+    "reason": "DAS annotated raw audio can support real event-segmentation evaluation. Still need pinned species/recording slice, sampling rate and official event-matching tolerance; no audio acquisition attempted here. Temporal bouts must remain grouped.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://elifesciences.org/articles/68837",
+      "https://data.goettingen-research-online.de/dataverse/das",
+      "https://janclemenslab.org/das/",
+      "https://github.com/nianlonggu/WhisperSeg"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+    "permanent_rejection": false
+  }
 }

@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "H07",
+    "decision": "candidate_pending_validation",
+    "reason": "Original EEG-Arena site reports 57 tasks/23 datasets/five protocols and a migration toward NeuroInfra. Need pinned downstream task version and overlap mapping; umbrella is not directly executable as a single comparable task.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source-only",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://eeg.fm/benchmarks/"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

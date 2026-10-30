@@ -7,5 +7,23 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "H01",
+    "decision": "measured",
+    "reason": "Real public PhysioNet EEGMMI EDF files acquired and validated; fixed subject-disjoint MI slice prepared. This admits one explicitly scoped slice, not the whole MOABB umbrella.",
+    "date": "2026-10-30",
+    "source_screen_decision": "ready",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://moabb.neurotechx.com/",
+      "https://physionet.org/content/eegmmidb/1.0.0/",
+      "https://physionet.org/files/eegmmidb/1.0.0/S001/",
+      "https://moabb.neurotechx.com/docs/generated/moabb.datasets.PhysionetMI.html",
+      "https://mne.tools/stable/auto_examples/decoding/decoding_csp_eeg.html"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  },
+  "executed_slice": "PhysioNet motorimagery;5train/3heldout subjects,225/135epochs"
 }

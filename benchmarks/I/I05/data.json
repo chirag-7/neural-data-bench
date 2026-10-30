@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "I05",
+    "decision": "deferred",
+    "reason": "Original fastMRI site requires user application/institution/proposed-use and data-sharing agreement; no downloaded record, no access application submitted. Its redistribution restrictions require private data handling. Cannot substitute unrelated knee/synthetic reconstructions for brain benchmark.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://fastmri.med.nyu.edu/"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

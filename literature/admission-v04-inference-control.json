@@ -1,0 +1,185 @@
+{
+  "version": "0.4",
+  "entries": [
+    {
+      "benchmark_id": "L01",
+      "decision": "feasible_pending",
+      "reason": "Official challenge page identifies simulated fluorescence and synaptic truth and mirror links. No mirror acquired/hashed; download terms, held-out network split and directed graph scorer remain unvalidated. Not rejected as bad data.",
+      "source_urls": [
+        "https://connectomics.chalearn.org/help/data"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "Official challenge page identifies simulated fluorescence and synaptic truth and mirror links. No mirror acquired/hashed; download terms, held-out network split and directed graph scorer remain unvalidated. Not rejected as bad data.",
+      "license_facts": "See acquired source manifests/protocol for measured data; otherwise data-specific terms remain unverified. Software license is not automatically a data license.",
+      "review_scope": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    },
+    {
+      "benchmark_id": "L02",
+      "decision": "deferred",
+      "reason": "Jaxley source repository exists; Nature full-text URL redirected beyond this web reader. Fixed prior, stimuli, simulator version, reference posterior and predictive/calibration scoring require a new experiment; single parameter MAE is insufficient under nonidentifiability.",
+      "source_urls": [
+        "https://sbi.readthedocs.io/en/latest/advanced_tutorials/21_diagnostics_misspecification_checks.html",
+        "https://www.nature.com/articles/s41592-025-02895-w",
+        "https://github.com/jaxleyverse/jaxley"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "Jaxley source repository exists; Nature full-text URL redirected beyond this web reader. Fixed prior, stimuli, simulator version, reference posterior and predictive/calibration scoring require a new experiment; single parameter MAE is insufficient under nonidentifiability.",
+      "license_facts": "See acquired source manifests/protocol for measured data; otherwise data-specific terms remain unverified. Software license is not automatically a data license.",
+      "review_scope": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    },
+    {
+      "benchmark_id": "L03",
+      "decision": "deferred",
+      "reason": "IBL AI Agent is a real analysis toolkit, not a frozen false-positive-rate benchmark. Need animal-held-out genuine/null task generation, exchangeability-preserving randomization and a blinded power/type-I-error protocol. No significance-searching substituted for benchmark completion.",
+      "source_urls": [
+        "https://github.com/int-brain-lab/ibl-ai-agent",
+        "https://www.internationalbrainlab.com/data"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "IBL AI Agent is a real analysis toolkit, not a frozen false-positive-rate benchmark. Need animal-held-out genuine/null task generation, exchangeability-preserving randomization and a blinded power/type-I-error protocol. No significance-searching substituted for benchmark completion.",
+      "license_facts": "See acquired source manifests/protocol for measured data; otherwise data-specific terms remain unverified. Software license is not automatically a data license.",
+      "review_scope": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    },
+    {
+      "benchmark_id": "L04",
+      "decision": "admit",
+      "reason": "Constructed an explicit real place-cell count-encoding diagnostic from author-released data, replacing only the execution slice of the earlier proposed simulation. Chronological60/40split plus1sbuffer; train-mean-null bits/spike; no parameter-recovery/calibration claim.",
+      "source_urls": [
+        "https://neurallatents.github.io/",
+        "https://github.com/snel-repo/ComputationThroughDynamicsToolkit",
+        "https://mark-kramer.github.io/Case-Studies-Python/09.html",
+        "https://github.com/Mark-Kramer/Case-Studies-Python"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "Constructed an explicit real place-cell count-encoding diagnostic from author-released data, replacing only the execution slice of the earlier proposed simulation. Chronological60/40split plus1sbuffer; train-mean-null bits/spike; no parameter-recovery/calibration claim.",
+      "license_facts": "See acquired source manifests/protocol for measured data; otherwise data-specific terms remain unverified. Software license is not automatically a data license.",
+      "review_scope": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    },
+    {
+      "benchmark_id": "L05",
+      "decision": "feasible_pending",
+      "reason": "Perturbation-response atlas primary source mapped; Nature full-text access redirected in this audit. Animal/experiment identities, perturbation matching, source reuse terms and missing-response policy require acquisition/validation before an intervention-prediction score.",
+      "source_urls": [
+        "https://www.nature.com/articles/s41586-023-06683-4"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "Perturbation-response atlas primary source mapped; Nature full-text access redirected in this audit. Animal/experiment identities, perturbation matching, source reuse terms and missing-response policy require acquisition/validation before an intervention-prediction score.",
+      "license_facts": "See acquired source manifests/protocol for measured data; otherwise data-specific terms remain unverified. Software license is not automatically a data license.",
+      "review_scope": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    },
+    {
+      "benchmark_id": "L06",
+      "decision": "feasible_pending",
+      "reason": "Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.",
+      "source_urls": [
+        "https://github.com/sbi-benchmark/sbibm"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.",
+      "license_facts": "See acquired source manifests/protocol for measured data; otherwise data-specific terms remain unverified. Software license is not automatically a data license.",
+      "review_scope": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    },
+    {
+      "benchmark_id": "M01",
+      "decision": "feasible_pending",
+      "reason": "IBL data and Psych-101/Centaur primary resource mapped. Real choice prediction requires participant/animal-held-out chronology, a bounded task selection and data-specific terms; M04 synthetic parameter recovery does not complete this endpoint.",
+      "source_urls": [
+        "https://www.internationalbrainlab.com/data",
+        "https://www.nature.com/articles/s41586-025-09215-4"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "IBL data and Psych-101/Centaur primary resource mapped. Real choice prediction requires participant/animal-held-out chronology, a bounded task selection and data-specific terms; M04 synthetic parameter recovery does not complete this endpoint.",
+      "license_facts": "See acquired source manifests/protocol for measured data; otherwise data-specific terms remain unverified. Software license is not automatically a data license.",
+      "review_scope": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    },
+    {
+      "benchmark_id": "M02",
+      "decision": "deferred",
+      "reason": "Jaxley/NeuroGym environments exist, but adaptive design needs unknown-system distributions, allowed interventions, equal trial budget and regret/information-gain scorer. No frozen design benchmark instantiated.",
+      "source_urls": [
+        "https://www.nature.com/articles/s41592-025-02895-w",
+        "https://github.com/neurogym/neurogym"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "Jaxley/NeuroGym environments exist, but adaptive design needs unknown-system distributions, allowed interventions, equal trial budget and regret/information-gain scorer. No frozen design benchmark instantiated.",
+      "license_facts": "See acquired source manifests/protocol for measured data; otherwise data-specific terms remain unverified. Software license is not automatically a data license.",
+      "review_scope": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    },
+    {
+      "benchmark_id": "M03",
+      "decision": "feasible_pending",
+      "reason": "Official NeuroGym task collection exists. Need versioned finite suite, trial-generation seeds, observation/action contract and task-trained controller reference. Static supervised score is not closed-loop policy evaluation.",
+      "source_urls": [
+        "https://github.com/neurogym/neurogym"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "Official NeuroGym task collection exists. Need versioned finite suite, trial-generation seeds, observation/action contract and task-trained controller reference. Static supervised score is not closed-loop policy evaluation.",
+      "license_facts": "See acquired source manifests/protocol for measured data; otherwise data-specific terms remain unverified. Software license is not automatically a data license.",
+      "review_scope": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    },
+    {
+      "benchmark_id": "M04",
+      "decision": "admit",
+      "reason": "Previously measured24agent synthetic Q-learning recovery. Author guide supports recovery checks; local implementation and posterior-vs-MLE objective difference explicit. Not biological data or a released leaderboard.",
+      "source_urls": [
+        "https://elifesciences.org/articles/49547"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "Previously measured24agent synthetic Q-learning recovery. Author guide supports recovery checks; local implementation and posterior-vs-MLE objective difference explicit. Not biological data or a released leaderboard.",
+      "license_facts": "See acquired source manifests/protocol for measured data; otherwise data-specific terms remain unverified. Software license is not automatically a data license.",
+      "review_scope": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    },
+    {
+      "benchmark_id": "M05",
+      "decision": "deferred",
+      "reason": "BADS primary paper benchmarks real neuroscience fitting objectives; MATLAB BADS/Python PyBADS repositories exist. Full CCN17 objective data/dependencies and per-objective budgets not acquired; optimizing an unrelated toy loss would not reproduce this task.",
+      "source_urls": [
+        "https://arxiv.org/abs/1705.04405",
+        "https://github.com/acerbilab/bads",
+        "https://github.com/acerbilab/pybads"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "BADS primary paper benchmarks real neuroscience fitting objectives; MATLAB BADS/Python PyBADS repositories exist. Full CCN17 objective data/dependencies and per-objective budgets not acquired; optimizing an unrelated toy loss would not reproduce this task.",
+      "license_facts": "See acquired source manifests/protocol for measured data; otherwise data-specific terms remain unverified. Software license is not automatically a data license.",
+      "review_scope": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    },
+    {
+      "benchmark_id": "M06",
+      "decision": "deferred",
+      "reason": "Official MyoChallenge site lists musculoskeletal control environments and editions. Need pinned MuJoCo/MyoSuite state/action environments, rollout/time budgets and trained policy references; policy training/evaluation outside180s array-code slice.",
+      "source_urls": [
+        "https://myosuite.org/myochallenge/"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "Official MyoChallenge site lists musculoskeletal control environments and editions. Need pinned MuJoCo/MyoSuite state/action environments, rollout/time budgets and trained policy references; policy training/evaluation outside180s array-code slice.",
+      "license_facts": "See acquired source manifests/protocol for measured data; otherwise data-specific terms remain unverified. Software license is not automatically a data license.",
+      "review_scope": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    },
+    {
+      "benchmark_id": "M07",
+      "decision": "deferred",
+      "reason": "Author FlyGym repository provides embodied NeuroMechFly simulation. Need pinned simulator/contact/sensory assets, terrain seeds and controller training/rollout protocol. Not a ready static supervised dataset; no biological validity inferred from simulated reward.",
+      "source_urls": [
+        "https://www.nature.com/articles/s41592-024-02497-y",
+        "https://github.com/NeLy-EPFL/flygym"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "Author FlyGym repository provides embodied NeuroMechFly simulation. Need pinned simulator/contact/sensory assets, terrain seeds and controller training/rollout protocol. Not a ready static supervised dataset; no biological validity inferred from simulated reward.",
+      "license_facts": "See acquired source manifests/protocol for measured data; otherwise data-specific terms remain unverified. Software license is not automatically a data license.",
+      "review_scope": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    },
+    {
+      "benchmark_id": "I10",
+      "decision": "admit",
+      "reason": "Acquired original MRIQC0.10.5 tables and2017 classifier predictions;600ABIDEtrain/265DS030test rater1 labels and68IQMs. One-to-one archived prediction alignment and exclude1 label convention verified. Original classifier used different training/rater/features, currentbest unresolved.",
+      "source_urls": [
+        "https://doi.org/10.1371/journal.pone.0184661",
+        "https://github.com/nipreps/mriqc/tree/c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8/mriqc/data/csv"
+      ],
+      "checked_on": "2026-10-30",
+      "access_facts": "Acquired original MRIQC0.10.5 tables and2017 classifier predictions;600ABIDEtrain/265DS030test rater1 labels and68IQMs. One-to-one archived prediction alignment and exclude1 label convention verified. Original classifier used different training/rater/features, currentbest unresolved.",
+      "license_facts": "See acquired source manifests/protocol for measured data; otherwise data-specific terms remain unverified. Software license is not automatically a data license.",
+      "review_scope": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    }
+  ]
+}

@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "C02",
+    "decision": "candidate_pending_validation",
+    "reason": "CaImAn annotated data can support ROI/timecourse evaluation but labels and quality annotations are incomplete; must pin exact nine-dataset release and per-endpoint valid annotations. No movies acquired here; neuron masks alone do not establish full demixing groundtruth.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6342523/"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "D03",
+    "decision": "deferred",
+    "reason": "New simulated dendritic recovery protocol would require prespecified morphologies, compartments, stimulation and noise distributions. The registry names examples rather than an already frozen benchmark; fitting examples and then reusing traces as a test would be circular.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "source_urls": [
+      "https://www.nature.com/articles/s41592-025-02895-w"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

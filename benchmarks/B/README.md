@@ -1,6 +1,6 @@
 # Extracellular signal acquisition
 
-[All families](../../docs/taxonomy.md) · [Project](../../README.md)
+[Taxonomy](../../docs/taxonomy.md) · [Project](../../README.md)
 
 Raw multichannel voltage, waveforms, spike events, probe geometry
 

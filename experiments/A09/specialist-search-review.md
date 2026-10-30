@@ -1,0 +1,15 @@
+# Search for an eligible archived behavior specialist
+
+On 2026-10-30 we searched for public CalMS21 predictions and pretrained classifiers, then inspected primary releases. This bounded search establishes one usable reference; it does not establish the strongest currently available method.
+
+| Resource | Evidence examined | Admission decision |
+|---|---|---|
+| CalMS21 baseline | Original [AIcrowd GitLab](https://gitlab.aicrowd.com/aicrowd/research/mab-e/mab-e-baselines) timed out both through browsing and a 30-second direct download attempt. Official data record contains trajectories, derived features and videos, without deposited predictions. | No archived predictions acquired. This access failure is not proof no copy exists. |
+| BKinD mirror | [Classifier source](https://github.com/neuroethology/BKinD/tree/9e737219aff1bcf2d471833835edd3115a967d62/classifier), pinned repository tree. Training code and normalization arrays exist, but no trained classifier checkpoints or test predictions found in that tree. | Could support a new reproduction, requiring training; not an archived reference here. |
+| TREBA | [Official repository](https://github.com/neuroethology/TREBA) supplies trajectory features and links the original CalMS21 classifier. | Pretrained features do not themselves supply behavioral predictions; published foreground F1 is not A09 four-class slice F1. |
+| MARS | [Official end-user repository](https://github.com/neuroethology/MARS/tree/d530c7fa08746a35d335a4d5b6fa6ba86173ab51), feature/classifier source and asset submodule. | Eligibility of pretrained action models relative to CalMS21 animal/label split not verified; do not risk evaluating an overlapping training set. No matched predictions admitted. |
+| VASSI | [Primary result archive](https://doi.org/10.17617/3.3R0QYI), archived source ZIP and [training-only postprocessing description](https://vassi.readthedocs.io/en/latest/source/postprocessing_parameters.html). All 20 runs, sequence order, frame convention and original labels verified. | Admitted as an archived specialist pipeline with unequal training/context budget. Run 00 selected before rescoring. |
+| FERAL / V-TRACE | Primary projects document released video model checkpoints; inference needs original videos and substantial vision-model compute. | Different input modality and larger budget. Not acquired or rescored here; do not transplant published mAP into this F1 comparison. |
+| HiDRA | [Primary project](https://neuroethology.github.io/hidra-site/) and [2026-10-18 preprint](https://www.biorxiv.org/content/10.64898/2026.10.18.758876v1.full). CalMS21 trajectories were used in self-supervised pretraining, while behavior labels were not used for classifier training. | Relevant cross-lab transfer follow-up; not acquired or scored in this bounded search. |
+
+The executed reference has its own [selection plan](specialist-selection-plan.json), [alignment verification](specialist-alignment.json), [method/readout caveats](archived-vassi/README.md), [source manifest](archived-vassi/source-manifest.json), and all archived predictions/scores. The frozen Sol adapter and run specification were not edited.

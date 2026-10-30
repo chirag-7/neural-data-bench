@@ -29,3 +29,9 @@ Current repo exposes subset; paired truth often only one neuron
 - [https://github.com/flatironinstitute/spikeforest](https://github.com/flatironinstitute/spikeforest)
 - [https://elifesciences.org/articles/55167](https://elifesciences.org/articles/55167)
 - [https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html](https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). SpikeForest offers paired/curated groundtruth recordings, but exact accessible recording URI, agreement threshold, sorting scorer and matched sorter have not been acquired here. Do not claim hidden true neuron labels from ordinary extracellular recording.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

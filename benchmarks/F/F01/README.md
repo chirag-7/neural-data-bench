@@ -27,3 +27,9 @@ ImageNet features plus neural head are adapted models
 ## Sources
 
 - [https://sensorium-competition.net/](https://sensorium-competition.net/)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Sensorium2022 stimulus-response encoding is feasible with official split and responses, but current CPU numerical-code interface lacks reproducible visualstimulus decoding/encoder and a matched published model. Need exact response availability and heldoutanimal protocol before execution.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

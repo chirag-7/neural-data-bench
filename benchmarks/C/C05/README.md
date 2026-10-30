@@ -28,3 +28,9 @@ Published correlation is not millisecond spike-time accuracy
 
 - [https://github.com/codeneuro/spikefinder-datasets](https://github.com/codeneuro/spikefinder-datasets)
 - [https://github.com/berenslab/spikefinder_analysis](https://github.com/berenslab/spikefinder_analysis)
+
+## v0.4 admission and execution
+
+Decision: **measured** (2026-10-30). Root repository already contains measured Spikefinder preparation slices for all three Sol programs, predictions and archived references. This screening task did not rerun them; officialchallenge aggregate/currentSOTA remain distinct.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). [Actual protocol and artifacts](../../../experiments/C05). [Central task results](../../../results/C05.json).

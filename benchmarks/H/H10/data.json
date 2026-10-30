@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "H10",
+    "decision": "candidate_pending_validation",
+    "reason": "Broad abnormality/events/cognition/state umbrella overlaps H05/H06 and mixes distinct clinical targets. Requires a specific task, label definition, subject/site split and data-use agreement before an executable benchmark can be admitted.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source-only",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+      "https://arxiv.org/abs/2606.00815"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

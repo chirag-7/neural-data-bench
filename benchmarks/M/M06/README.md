@@ -27,3 +27,9 @@ Code generation and direct policy control are distinct tracks
 ## Sources
 
 - [https://myosuite.org/myochallenge/](https://myosuite.org/myochallenge/)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Official MyoChallenge site lists musculoskeletal control environments and editions. Need pinned MuJoCo/MyoSuite state/action environments, rollout/time budgets and trained policy references; policy training/evaluation outside180s array-code slice.
+
+[Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

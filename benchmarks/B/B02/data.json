@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "B02",
+    "decision": "candidate_pending_validation",
+    "reason": "SpikeInterface/MEArec generators can supply exact drift and unit truth without restricted real data. Needs frozen simulation seed, geometry, waveform/noise/drift regime and event-matching scorer. This would be explicitly synthetic, not real in-vivo drift validation.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+      "https://github.com/cwindolf/dartsort"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

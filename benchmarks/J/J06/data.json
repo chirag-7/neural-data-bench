@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "J06",
+    "decision": "candidate_pending_validation",
+    "reason": "WormND provides detection/identity tracks, but crossworm split, template annotations and exact organism normalization remain unvalidated. No3D image adapter acquired. Candidate remains eligible for later execution.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://github.com/focolab/WormND"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+    "permanent_rejection": false
+  }
 }

@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "C09",
+    "decision": "candidate_pending_validation",
+    "reason": "CNMF-E onephoton examples may support ROI and source extraction endpoints; require independent masks/timecourse labels, background model definition and frozen recording split. No real labeled movie acquired here. Specialized outputs cannot serve as unquestioned true signals.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://elifesciences.org/articles/28728"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

@@ -27,3 +27,9 @@ No experiment admitted yet. All measurements are centralized in [results](../../
 ## Sources
 
 - [https://libribrain.com/editions/2026/publications/](https://libribrain.com/editions/2026/publications/)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Original LibriBrain 2026 publications page accessible and identifies LibriBrain100. Need audio-aligned MEG acquisition, official track split and controlled language-prior scorer. Not downloaded in this pass; not a data-quality rejection.
+
+[Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

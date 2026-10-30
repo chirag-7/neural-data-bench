@@ -28,3 +28,9 @@ Injected waveforms may make evaluation easier than real data
 
 - [https://spikeinterface.readthedocs.io/en/stable/modules/comparison.html](https://spikeinterface.readthedocs.io/en/stable/modules/comparison.html)
 - [https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html](https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Hybrid insertion can provide known collision times, but must freeze inserted templates and distinguish synthetic labels from unknown endogenous spikes. Requires event-matching tolerance and collision definitions. Adapter not prepared.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

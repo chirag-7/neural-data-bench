@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "C07",
+    "decision": "candidate_pending_validation",
+    "reason": "CellReg examples contain multi-session ROI images, but cell-identity scoring needs independent manuallyvalidated crossday pairs; CellReg matching outputs cannot serve as truth for evaluating a competing matcher. Verify identity groundtruth before admission.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://github.com/zivlab/CellReg"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

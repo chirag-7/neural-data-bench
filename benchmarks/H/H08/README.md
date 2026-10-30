@@ -28,3 +28,9 @@ PSG multimodal inputs must match; adjacent epoch leakage
 
 - [https://facebookresearch.github.io/neuroai/neuralbench/index.html](https://facebookresearch.github.io/neuroai/neuralbench/index.html)
 - [https://neural-interfaces26.github.io/](https://neural-interfaces26.github.io/)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). NeuralBench/challenge primary sites accessible. 2026 challenge final phase starts in November after this review date, so no final winner exists yet. Need a pinned accessible sleep dataset, subject/night-disjoint scorer, full-context policy and expert staging labels; no adjacent-epoch shortcut experiment admitted.
+
+[Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

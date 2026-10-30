@@ -28,3 +28,9 @@ Not the same task as histology probe registration
 
 - [https://brainbench-org.github.io/ibl-bwb/](https://brainbench-org.github.io/ibl-bwb/)
 - [https://arxiv.org/abs/2609.22064](https://arxiv.org/abs/2609.22064)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). BrainWideBench TS3 anatomy labels can support session/probe-generalizing classification from activity. Must verify histology regiongroundtruth and avoid neurons from sameanimal on both sides. Not acquired; do not substitute E01same-sessionpopulation readout.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

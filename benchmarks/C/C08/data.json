@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "C08",
+    "decision": "candidate_pending_validation",
+    "reason": "GuPPy example traces demonstrate photometry workflow, but a true artifact-free neural trace or blinded artifact/event annotations are needed for accuracy measurement. Synthetic artifact injection into observed signals is possible if explicitly semi-synthetic. No reference annotations acquired here.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://github.com/LernerLab/GuPPy"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

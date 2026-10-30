@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "G03",
+    "decision": "deferred",
+    "reason": "Brain-to-Text speech decoding needs sequence/phoneme/texttargets, CTC/language-model decoding rules and speech-rate/word-error scorer, with substantial data and training. ThreeSol numerical code snippets are not speechsequence models. No data acquisition attempted; retain valid futurecandidate.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://github.com/fwillett/speechBCI",
+      "https://www.kaggle.com/competitions/brain-to-text-25/overview"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

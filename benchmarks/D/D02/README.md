@@ -28,3 +28,9 @@ Future current input may be known, future measured voltage is not
 
 - [https://brain-map.org/support/documentation/documentation-cell-types-database](https://brain-map.org/support/documentation/documentation-cell-types-database)
 - [https://alleninstitute.github.io/AllenSDK/cell_types.html](https://alleninstitute.github.io/AllenSDK/cell_types.html)
+
+## v0.4 admission and execution
+
+Decision: **measured** (2026-10-30). Acquired and hashed one 61,980,832-byte official Allen NWB, specimen and sweep annotations; prepared four train/two held-out negative-amplitude sweeps from cell464212183. Explicitly conditional PRE-stimulus-rest-relative 500Hz passive deflection prediction only, no spiking or cross-cell claim. Adapter/protocol and train-only reference ready.
+
+[Source-linked admission evidence](../../../literature/admission-v04-cell-workflow.json). [Actual protocol and artifacts](../../../experiments/D02). [Central task results](../../../results/D02.json).

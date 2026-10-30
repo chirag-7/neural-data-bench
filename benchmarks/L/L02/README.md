@@ -28,3 +28,9 @@ Nonidentifiability makes single parameter error misleading
 
 - [https://sbi.readthedocs.io/en/latest/advanced_tutorials/21_diagnostics_misspecification_checks.html](https://sbi.readthedocs.io/en/latest/advanced_tutorials/21_diagnostics_misspecification_checks.html)
 - [https://www.nature.com/articles/s41592-025-02895-w](https://www.nature.com/articles/s41592-025-02895-w)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Jaxley source repository exists; Nature full-text URL redirected beyond this web reader. Fixed prior, stimuli, simulator version, reference posterior and predictive/calibration scoring require a new experiment; single parameter MAE is insufficient under nonidentifiability.
+
+[Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

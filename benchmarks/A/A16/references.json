@@ -1,29 +1,9 @@
-[
-  {
-    "id": "Sad24c8d790",
-    "url": "https://proceedings.nips.cc/paper_files/paper/2024/hash/c00d37d6b04d73b870b963a4d70051c1-Abstract-Datasets_and_Benchmarks_Track.html",
-    "benchmark_ids": [
-      "A16"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "S8e8819019c",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/",
-    "benchmark_ids": [
-      "A16"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "Sc8ee5df708",
-    "url": "https://github.com/neurostatslab/vocalocator",
-    "benchmark_ids": [
-      "A16"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "A16",
+  "source_urls": [
+    "https://proceedings.nips.cc/paper_files/paper/2024/hash/c00d37d6b04d73b870b963a4d70051c1-Abstract-Datasets_and_Benchmarks_Track.html",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/",
+    "https://github.com/neurostatslab/vocalocator"
+  ],
+  "admission_evidence": "literature/admission-v04-behavior-population.json"
+}

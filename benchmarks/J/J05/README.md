@@ -27,3 +27,9 @@ Evolving proofreading; adjacent neuron leakage; substantial data engineering
 ## Sources
 
 - [https://www.microns-explorer.org/](https://www.microns-explorer.org/)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). MICrONS needs proofread graph release pinning, cell-function joins and release-specific train/test units; substantial data engineering and evolving annotations. Not prepared under current CPU/lightweight acquisition budget.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

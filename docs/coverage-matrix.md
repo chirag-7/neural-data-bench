@@ -1,20 +1,22 @@
-# Coverage matrix
+# Coverage and maturity matrix
 
-Counts below use provisional lexical operation tags, not expert-reviewed exhaustive coverage. Zero may reflect an untagged operation, not proof no task exists.
+Counts describe catalog entries, not independent datasets or completed scientific operations. Source-only assessment can inherit prior primary links; actual acquisition depth is in each decision.
 
-| Family | quality_control | reconstruction | detection_segmentation | tracking | encoding_decoding | forecasting | inference | intervention | design_control | scientific_workflow | Measured tasks |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| A Behavior, kinematics and vocalization | 0 | 1 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
-| B Extracellular signal acquisition | 3 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| C Calcium imaging and photometry | 1 | 4 | 1 | 1 | 0 | 0 | 2 | 0 | 0 | 1 | 1 |
-| D Voltage, intracellular and dendrites | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
-| E Population activity and dynamics | 0 | 0 | 0 | 0 | 1 | 4 | 2 | 0 | 0 | 0 | 0 |
-| F Sensory and behavioral encoding | 0 | 0 | 0 | 0 | 4 | 1 | 0 | 0 | 0 | 0 | 0 |
-| G Intracortical BCI | 0 | 0 | 0 | 2 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| H EEG, MEG, field signals and peripheral interfaces | 2 | 1 | 3 | 0 | 3 | 0 | 0 | 0 | 1 | 0 | 0 |
-| I Human and mesoscopic neuroimaging | 1 | 2 | 1 | 0 | 3 | 0 | 0 | 0 | 0 | 2 | 0 |
-| J Anatomy, histology and connectomics | 0 | 1 | 5 | 2 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
-| K Cell types and molecular neuroscience | 0 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 0 | 1 | 0 |
-| L Mechanistic and statistical inference | 0 | 0 | 0 | 0 | 0 | 1 | 3 | 1 | 0 | 1 | 0 |
-| M Experimental design and control | 0 | 0 | 0 | 0 | 1 | 0 | 3 | 0 | 5 | 0 | 1 |
-| N Scientific analysis workflows | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 0 |
+| Family | Mapped pairings | Measured task IDs | Source-only pending | Deferred |
+|---|---:|---|---:|---:|
+| [A](../benchmarks/A/README.md) Behavior, kinematics and vocalization | 16 | A09, A14 | 11 | 3 |
+| [B](../benchmarks/B/README.md) Extracellular signal acquisition | 8 | None | 8 | 0 |
+| [C](../benchmarks/C/README.md) Calcium imaging and photometry | 9 | C05 | 8 | 0 |
+| [D](../benchmarks/D/README.md) Voltage, intracellular and dendrites | 4 | D02 | 0 | 3 |
+| [E](../benchmarks/E/README.md) Population activity and dynamics | 6 | E01 | 5 | 0 |
+| [F](../benchmarks/F/README.md) Sensory and behavioral encoding | 5 | F04 | 2 | 2 |
+| [G](../benchmarks/G/README.md) Intracortical BCI | 3 | None | 1 | 2 |
+| [H](../benchmarks/H/README.md) EEG, MEG, field signals and peripheral interfaces | 19 | H01, H16 | 5 | 12 |
+| [I](../benchmarks/I/README.md) Human and mesoscopic neuroimaging | 10 | I07, I10 | 1 | 7 |
+| [J](../benchmarks/J/README.md) Anatomy, histology and connectomics | 9 | None | 4 | 5 |
+| [K](../benchmarks/K/README.md) Cell types and molecular neuroscience | 6 | K01 | 4 | 1 |
+| [L](../benchmarks/L/README.md) Mechanistic and statistical inference | 6 | L04 | 3 | 2 |
+| [M](../benchmarks/M/README.md) Experimental design and control | 7 | M04 | 2 | 4 |
+| [N](../benchmarks/N/README.md) Scientific analysis workflows | 6 | N05 | 3 | 2 |
+
+[Taxonomy and cross-cutting axes](taxonomy.md); [known gaps and sufficiency limits](release-v04.md). Some measured IDs complete only a narrow endpoint within a broader mapping, e.g.L04 encoding does not complete goodness-of-fit calibration. No independent human expert coverage audit has been completed.

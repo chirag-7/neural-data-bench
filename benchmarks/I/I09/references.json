@@ -1,11 +1,7 @@
-[
-  {
-    "id": "Sb212440b8b",
-    "url": "https://tractometer.org/ismrm2015/tools/",
-    "benchmark_ids": [
-      "I09"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "I09",
+  "source_urls": [
+    "https://tractometer.org/ismrm2015/tools/"
+  ],
+  "admission_evidence": "literature/admission-v04-electrical.json"
+}

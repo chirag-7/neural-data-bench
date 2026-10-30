@@ -28,3 +28,9 @@ Do not conflate acausal infilling with causal forecasting
 
 - [https://brainbench-org.github.io/ibl-bwb/](https://brainbench-org.github.io/ibl-bwb/)
 - [https://arxiv.org/abs/2609.22064](https://arxiv.org/abs/2609.22064)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). BrainWideBench TS2 masked/future prediction has exact protocol and public recordings, but causal future prediction versus bidirectional masking must be separate. Need exact bins/neurons/session split and official heldout targets. Not acquired here; E01 does not cover this transfer setting.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

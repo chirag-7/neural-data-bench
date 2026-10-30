@@ -8,5 +8,22 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "N05",
+    "decision": "measured",
+    "reason": "Constructed and validated deterministic loader/unit/timing audit using actual Allen NWB shared withD02, six sweeps and61 leaf fields; reference crosschecked with official EphysSweep metadata plus independent block-averaged D02 arrays. No claim of DANDI archive benchmark, format-general robustness, or scientific discovery.",
+    "date": "2026-10-30",
+    "source_screen_decision": "admit",
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "source_urls": [
+      "https://about.dandiarchive.org/",
+      "https://www.internationalbrainlab.com/data",
+      "https://brain-map.org/support/documentation/cell-types-database-api",
+      "https://alleninstitute.github.io/AllenSDK/cell_types.html"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  },
+  "executed_slice": "One real legacyNWB file sharedD02;61deterministic fields,6sweeps"
 }

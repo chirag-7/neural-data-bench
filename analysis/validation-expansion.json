@@ -1,0 +1,65 @@
+{
+  "A09": {
+    "predictions_rescored": 24,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 submissions,zero observed tool events"
+  },
+  "A14": {
+    "predictions_rescored": 4,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 submissions,zero observed tool events"
+  },
+  "D02": {
+    "predictions_rescored": 4,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 submissions,zero observed tool events"
+  },
+  "E01": {
+    "predictions_rescored": 4,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 submissions,zero observed tool events"
+  },
+  "F04": {
+    "predictions_rescored": 4,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 submissions,zero observed tool events"
+  },
+  "H01": {
+    "predictions_rescored": 4,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 submissions,zero observed tool events"
+  },
+  "H16": {
+    "predictions_rescored": 4,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 submissions,zero observed tool events"
+  },
+  "I07": {
+    "predictions_rescored": 4,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 submissions,zero observed tool events"
+  },
+  "I10": {
+    "predictions_rescored": 5,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 submissions,zero observed tool events"
+  },
+  "K01": {
+    "predictions_rescored": 4,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 submissions,zero observed tool events"
+  },
+  "L04": {
+    "predictions_rescored": 4,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 submissions,zero observed tool events"
+  },
+  "N05": {
+    "predictions_rescored": 3,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 submissions,zero observed tool events"
+  },
+  "scope": "Exact prediction rescoring/hash/provenance checks, not external expert validation or proof of uncontaminated pretraining",
+  "new_tasks": 12,
+  "new_prediction_records_rescored": 68
+}

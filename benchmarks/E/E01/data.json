@@ -7,5 +7,21 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "E01",
+    "decision": "measured",
+    "reason": "Acquired published DANDI000140 version0.220113.0408 NWBs and pinned official2026released test targets.99train/100test trials,107heldin/35heldout neurons,20ms bins. Unmodified officialtensor code, explicit lasttrainingtrial199 exclusion, exactNLB bits/spike scorer. Custom supervised diagnostic, not complete leaderboard reproduction.",
+    "date": "2026-10-30",
+    "source_screen_decision": "ready",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://neurallatents.github.io/",
+      "https://dandiarchive.org/dandiset/000140/0.220113.0408",
+      "https://github.com/neurallatents/nlb_tools"
+    ],
+    "review_depth": "Actual acquisition, officialreader and tensorvalidation",
+    "permanent_rejection": false
+  },
+  "executed_slice": "NLBMC_Maze_Small99train/100test movement-aligned trials;20ms supervised107→35neuron readout"
 }

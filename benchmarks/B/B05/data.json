@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "B05",
+    "decision": "candidate_pending_validation",
+    "reason": "UnitMatch crossday matching needs real paired sessions with independently supported identities; algorithm outputs cannot be used as target labels. Need exact released validation identities/sessions and potential calcium or optotagging corroboration. No paired acquisition attempted here.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://www.nature.com/articles/s41592-024-02440-1"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

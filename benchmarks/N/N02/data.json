@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "N02",
+    "decision": "deferred",
+    "reason": "BrainAgent primary paper located and hierarchical workflow claim confirmed. Complete reusable task/data/evaluator bundle and provider/tool conditions not independently validated by this screen. Do not assert unavailable; admission remains unresolved. A similarly named GitHub project cannot be presumed the paper authors release.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "source_urls": [
+      "https://arxiv.org/abs/2606.25400"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

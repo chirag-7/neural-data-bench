@@ -29,3 +29,9 @@ DREAMS repository explicitly warns expert 1 spindle counts stop after 1000 secon
 - [https://zenodo.org/records/2650142](https://zenodo.org/records/2650142)
 - [https://www.nature.com/articles/s41598-026-53891-9](https://www.nature.com/articles/s41598-026-53891-9)
 - [https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/](https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Original DREAMS Zenodo record explicitly warns Expert1 spindle annotations stop after1000s. A naive full-1800s negative-label benchmark is excluded. A masked interval/Expert2 consensus protocol remains feasible but has not been validated, and original DREAMS noncommercial/no-adaptation terms need an appropriate data handling policy.
+
+[Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

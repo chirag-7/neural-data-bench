@@ -7,5 +7,20 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "D04",
+    "decision": "deferred",
+    "reason": "Primary HippoUnit repository requires simulation-capable model interfaces, NEURON/eFEL/SciUnit and standalone model adaptation. Published validation target features and model outputs are available, but no new generated mechanistic model plus independent held-out tests was implemented in this CPU/lightweight estimator batch. Do not substitute recalculating published outputs for new agent performance.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "source_urls": [
+      "https://doi.org/10.1371/journal.pcbi.1008114",
+      "https://github.com/KaliLab/hippounit",
+      "https://github.com/KaliLab/HippoUnit_demo"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

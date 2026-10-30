@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-30",
+  "source_sha256": "5fda41045738eb1c69aab738224e6da21a28793323e48cffce69e7aa9856d42f",
+  "join": "one-to-one cohort-local subject_id, all265 frozen DS030 examples, sorted prepared-array order",
+  "label_mapping": "pred_y1exclude vs rater1<0;0include otherwise",
+  "missing_predictions": 0,
+  "score": 0.6136842105263158,
+  "metric": "balanced_accuracy",
+  "limitations": "Archived MRIQC classifier: different merged-rater training labels/features, sample size and tuning history; same DS030 examples and rater1 scoring"
+}

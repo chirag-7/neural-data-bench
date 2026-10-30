@@ -8,5 +8,19 @@
   ],
   "license_status": "CC0 shown by NEMAR; original dataset version must be pinned separately from mirror",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "H17",
+    "decision": "deferred",
+    "reason": "Original NEMAR MSSV page accessible:92mice,five labs,CC0,~5.3GB archive/direct manifest. Promising public real sleep resource, not bad data. Need lab identifiers, stage epoch alignment and leave-lab-out acquisition adapter; no local raw arrays downloaded.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://nemar.org/dataset/on006366",
+      "https://doi.org/10.18112/openneuro.ds006366.v1.0.1"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

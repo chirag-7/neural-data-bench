@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "C04",
+    "decision": "candidate_pending_validation",
+    "reason": "DeepCAD release offers real movies and trained denoisers, but a paired independent low-noise reference or declared self-supervised scorer is needed. Denoised outputs cannot silently become target truth. Movie/clean reference pair not acquired here.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://github.com/cabooster/DeepCAD/blob/master/dataset/README.md",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

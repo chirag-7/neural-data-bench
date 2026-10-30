@@ -1,11 +1,8 @@
-[
-  {
-    "id": "S8cd89cc083",
-    "url": "https://doi.org/10.1371/journal.pone.0184661",
-    "benchmark_ids": [
-      "I10"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "I10",
+  "source_urls": [
+    "https://doi.org/10.1371/journal.pone.0184661",
+    "https://github.com/nipreps/mriqc/tree/c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8/mriqc/data/csv"
+  ],
+  "admission_evidence": "literature/admission-v04-inference-control.json"
+}

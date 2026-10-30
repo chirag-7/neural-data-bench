@@ -1,6 +1,6 @@
 # Calcium imaging and photometry
 
-[All families](../../docs/taxonomy.md) · [Project](../../README.md)
+[Taxonomy](../../docs/taxonomy.md) · [Project](../../README.md)
 
 1P/2P/3D calcium movies, fluorescence traces, reference photometry channels
 

@@ -8,5 +8,23 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "K01",
+    "decision": "measured",
+    "reason": "Real primary API data acquired and hashed; independent morphology endpoint, ephys-only whitelist, donor-disjoint split and train-only baseline protocol frozen. Prepared n_train=1356 and n_test=457, 11 features; 678/226 disjoint mouse donors. Adapter ready for root model evaluation.",
+    "date": "2026-10-30",
+    "source_screen_decision": "admit",
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "source_urls": [
+      "https://brain-map.org/our-research/cell-types-taxonomies",
+      "https://brain-map.org/support/documentation/documentation-cell-types-database",
+      "https://brain-map.org/support/documentation/cell-types-database-api",
+      "https://celltypes.brain-map.org/",
+      "https://alleninstitute.org/terms-of-use/"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  },
+  "executed_slice": "Allen mouse ephys11features→spiny/aspiny morphology,donor-disjoint1356/457cells"
 }

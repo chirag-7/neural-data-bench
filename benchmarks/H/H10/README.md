@@ -28,3 +28,9 @@ Abnormality is not disease diagnosis; demographic/site confounds
 
 - [https://facebookresearch.github.io/neuroai/neuralbench/index.html](https://facebookresearch.github.io/neuroai/neuralbench/index.html)
 - [https://arxiv.org/abs/2606.00815](https://arxiv.org/abs/2606.00815)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Broad abnormality/events/cognition/state umbrella overlaps H05/H06 and mixes distinct clinical targets. Requires a specific task, label definition, subject/site split and data-use agreement before an executable benchmark can be admitted.
+
+[Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

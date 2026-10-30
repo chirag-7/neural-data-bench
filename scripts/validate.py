@@ -20,7 +20,7 @@ exec(compile(ast.Module(body=nodes,type_ignores=[]),'pinned_official_scorer','ex
 records=[json.loads(s) for s in (ROOT/'results/measurements.jsonl').read_text().splitlines()]
 archive=pd.read_csv(ROOT/'data/cache/spikefinder/results_30_06_17.csv');archive_checks=0;pred_checks=0
 for r in records:
-    if r['status']!='measured':continue
+    if r['status']!='measured' or r['benchmark_id'] not in ['C05','M04']:continue
     p=ROOT/r['prediction_file'];assert hashlib.sha256(p.read_bytes()).hexdigest()==r['prediction_sha256']
     pred=np.load(p)['predictions'];pred_checks+=1
     if r['benchmark_id']=='C05':

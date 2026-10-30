@@ -1,20 +1,8 @@
-[
-  {
-    "id": "S3fa9731374",
-    "url": "https://arxiv.org/abs/2606.02937",
-    "benchmark_ids": [
-      "A13"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "S144ea2f874",
-    "url": "https://arxiv.org/abs/2505.18342",
-    "benchmark_ids": [
-      "A13"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "A13",
+  "source_urls": [
+    "https://arxiv.org/abs/2606.02937",
+    "https://arxiv.org/abs/2505.18342"
+  ],
+  "admission_evidence": "literature/admission-v04-behavior-population.json"
+}

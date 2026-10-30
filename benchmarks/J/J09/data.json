@@ -8,5 +8,19 @@
   ],
   "license_status": "MIT software; CC BY 4.0 image dataset on project page",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "J09",
+    "decision": "candidate_pending_validation",
+    "reason": "MTNeuro released region/semantic labels and dataCC BY4.0 make it plausible. Need exact volume-block split and image-to-label adapter; no acquisition attempted here. Region and pixel tasks share samples and must not count as independent datasets.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://mtneuro.github.io/",
+      "https://github.com/MTNeuro/MTNeuro"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+    "permanent_rejection": false
+  }
 }

@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "H08",
+    "decision": "deferred",
+    "reason": "NeuralBench/challenge primary sites accessible. 2026 challenge final phase starts in November after this review date, so no final winner exists yet. Need a pinned accessible sleep dataset, subject/night-disjoint scorer, full-context policy and expert staging labels; no adjacent-epoch shortcut experiment admitted.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+      "https://neural-interfaces26.github.io/"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

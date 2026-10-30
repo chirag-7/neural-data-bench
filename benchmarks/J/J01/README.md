@@ -27,3 +27,9 @@ No experiment admitted yet. All measurements are centralized in [results](../../
 ## Sources
 
 - [https://cremi.janelia.org/](https://cremi.janelia.org/)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). CREMI real volumetric image segmentation needs3D inputs and topology-sensitive adapted Rand/VI scoring. GPU specialist weights/scorer not prepared; a small randomvoxel classifier would not validate neurite segmentation.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

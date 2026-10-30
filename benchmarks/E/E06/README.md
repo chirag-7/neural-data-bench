@@ -29,3 +29,9 @@ One brain cannot establish cross-animal generalization; 70k neurons do not equal
 - [https://google-research.github.io/zapbench/](https://google-research.github.io/zapbench/)
 - [https://arxiv.org/abs/2503.02618](https://arxiv.org/abs/2503.02618)
 - [https://zapbench-release.storage.googleapis.com/volumes/README.html](https://zapbench-release.storage.googleapis.com/volumes/README.html)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). ZAPBench real larval zebrafish wholebrain activity forecasting is a distinct real task. Needs pinned release, official heldout temporal blocks and neuron mappings; complete brain arrays may be large. No acquisition attempted here, so no permanent infeasibility claim.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

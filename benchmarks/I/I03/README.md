@@ -27,3 +27,9 @@ Brain similarity is distinct from useful raw-data analysis
 ## Sources
 
 - [https://www.brain-score.org/](https://www.brain-score.org/)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Original Brain-Score site supports executable alignment models across neural/behavioral measurements. It is an umbrella with many datasets; need select canonical task, permitted neural data and exact stimulus/model-representation interface. Generic classifier code on a mismatched proxy is not Brain-Score.
+
+[Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

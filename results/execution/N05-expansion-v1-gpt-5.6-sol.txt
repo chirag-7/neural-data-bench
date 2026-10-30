@@ -1,0 +1,11 @@
+
+Traceback (most recent call last):
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/workflow.py", line 57, in <module>
+    else:print(json.dumps(one(sys.argv[2])))
+                          ^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/workflow.py", line 40, in one
+    t=time.perf_counter();answer=f(str(CACHE/'fixture.nwb'));elapsed=time.perf_counter()-t;sc=score(answer);p=ROOT/f'results/predictions/N05/expansion-v1--{model}.json';p.parent.mkdir(exist_ok=True,parents=True);p.write_text(json.dumps(answer,indent=2))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "gpt-5.6-sol", line 204, in extract
+  File "gpt-5.6-sol", line 121, in find_series
+ValueError: Could not distinguish sweep 19 stimulus

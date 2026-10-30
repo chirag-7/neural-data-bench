@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "E05",
+    "decision": "candidate_pending_validation",
+    "reason": "BrainWideBench TS3 anatomy labels can support session/probe-generalizing classification from activity. Must verify histology regiongroundtruth and avoid neurons from sameanimal on both sides. Not acquired; do not substitute E01same-sessionpopulation readout.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://brainbench-org.github.io/ibl-bwb/",
+      "https://arxiv.org/abs/2609.22064"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

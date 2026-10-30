@@ -27,3 +27,9 @@ One aggregate can hide failures by species or task
 ## Sources
 
 - [https://arxiv.org/abs/2207.10553](https://arxiv.org/abs/2207.10553)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Representation assessment requires multiple downstream task labels and recording-group splits. CalMS21 Task1 is not equivalent to MABe22. Need pin exact track release and fixed downstream evaluation wrapper.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

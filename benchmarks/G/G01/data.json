@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "G01",
+    "decision": "candidate_pending_validation",
+    "reason": "FALCON motor tracks provide official crossday interfaces and labels. Need exacttrack acquisition terms, trial/sessionnormalization, allowed adaptation and online/offline constraints. No data request attempted here. Same-session E01 cannot establish crossday BCIperformance.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://snel-repo.github.io/falcon/"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

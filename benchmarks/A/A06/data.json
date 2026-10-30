@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "A06",
+    "decision": "candidate_pending_validation",
+    "reason": "Fitted 3D animal shape labels are a valid separate proxy-label endpoint, but need model parameter conventions and source image acquisition; do not equate fitted SMAL annotations to physical groundtruth. Not acquired.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://arxiv.org/abs/2308.11737"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+    "permanent_rejection": false
+  }
 }

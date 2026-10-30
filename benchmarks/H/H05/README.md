@@ -27,3 +27,9 @@ Core is manageable subset; Full has large storage requirements
 ## Sources
 
 - [https://facebookresearch.github.io/neuroai/neuralbench/index.html](https://facebookresearch.github.io/neuroai/neuralbench/index.html)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Original NeuralBench documentation accessible. Full/Core suites require selecting task cards, resolving per-dataset licenses and canonical overlap. Avoid counting this suite and its contained EEGMMI-like datasets as independent experiments.
+
+[Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

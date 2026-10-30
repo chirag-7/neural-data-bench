@@ -1,0 +1,11 @@
+{
+  "reviewed_on": "2026-10-30",
+  "selection_locked_before_rescoring": true,
+  "primary_archived_run": "run_00",
+  "selection_reason": "Lowest numeric archived run ID, chosen before calculating any score on frozen centers. Never select the highest test score.",
+  "secondary": "All20run scores, median and min/max, purely descriptive; no best-run selection.",
+  "frozen_adapter_changed": false,
+  "source_dataset": "Edmond10.17617/3.3R0QYIversion1.0file315313",
+  "input_budget": "Archived full-frame hand-designed spatiotemporal features, XGBoost1000trees, training-only5fold postprocessing optimization. Different training/context/inference budget from Sol3Hz code-generated programs.",
+  "status": "admission_pending_exact_frame_ID_label_alignment"
+}

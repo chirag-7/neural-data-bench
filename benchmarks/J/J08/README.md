@@ -29,3 +29,9 @@ Tiny benchmark image count limits independent sampling; synaptic puncta are mark
 - [https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/](https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/)
 - [https://github.com/pascalschamber/SynAPSeg](https://github.com/pascalschamber/SynAPSeg)
 - [https://zenodo.org/records/18988899](https://zenodo.org/records/18988899)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Dataset license unresolved in earlier mapping and only three fully held-out benchmark images with multiple raters. Code license does not resolve image-data terms. Do not redistribute or execute until authoritative dataset terms and scorer are verified.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

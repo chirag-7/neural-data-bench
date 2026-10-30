@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "H06",
+    "decision": "candidate_pending_validation",
+    "reason": "Original OmniEEG-Bench paper accessible; 54-dataset suite. Must resolve individual task-card preprocessing/splits/licenses and duplicates before execution. Domain EEG foundation-model tables cannot be imported as scores of the evaluated general code generators.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source-only",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://arxiv.org/abs/2606.00815"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

@@ -1,11 +1,7 @@
-[
-  {
-    "id": "S09da18c117",
-    "url": "https://repository.cshl.edu/38599/2/DataDescription_Musall.pdf",
-    "benchmark_ids": [
-      "F05"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "F05",
+  "source_urls": [
+    "https://repository.cshl.edu/38599/2/DataDescription_Musall.pdf"
+  ],
+  "admission_evidence": "literature/admission-v04-behavior-population.json"
+}

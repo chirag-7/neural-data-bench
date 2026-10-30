@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "M02",
+    "decision": "deferred",
+    "reason": "Jaxley/NeuroGym environments exist, but adaptive design needs unknown-system distributions, allowed interventions, equal trial budget and regret/information-gain scorer. No frozen design benchmark instantiated.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://www.nature.com/articles/s41592-025-02895-w",
+      "https://github.com/neurogym/neurogym"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+    "permanent_rejection": false
+  }
 }

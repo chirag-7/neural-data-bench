@@ -8,5 +8,20 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "L02",
+    "decision": "deferred",
+    "reason": "Jaxley source repository exists; Nature full-text URL redirected beyond this web reader. Fixed prior, stimuli, simulator version, reference posterior and predictive/calibration scoring require a new experiment; single parameter MAE is insufficient under nonidentifiability.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://sbi.readthedocs.io/en/latest/advanced_tutorials/21_diagnostics_misspecification_checks.html",
+      "https://www.nature.com/articles/s41592-025-02895-w",
+      "https://github.com/jaxleyverse/jaxley"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+    "permanent_rejection": false
+  }
 }

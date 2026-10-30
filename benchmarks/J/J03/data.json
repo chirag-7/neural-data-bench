@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "J03",
+    "decision": "deferred",
+    "reason": "Inspected official BigNeuron gold166 release: paired raw images plus gold reconstructions exist, and traced outputs from40+ algorithms are archived. SWC-only morphology statistics do not evaluate image-to-skeleton tracing. No raw optical-volume slice or DIADEM scorer prepared, so no invented morphology classification proxy admitted.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://github.com/BigNeuron/Data/releases",
+      "https://diadem.janelia.org/metric.html"
+    ],
+    "review_depth": "primary release page inspected",
+    "permanent_rejection": false
+  }
 }

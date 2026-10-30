@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "F03",
+    "decision": "candidate_pending_validation",
+    "reason": "Allen Visual Coding can support real stimulus-to-response encoding with immutable sessionIDs and repeatedstimulus splits. Need specific experiments/moviefeatures and train-only learned readout; preprocessing leakage from repeatframes must be prevented. Not acquired here.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://observatory.brain-map.org/visualcoding"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

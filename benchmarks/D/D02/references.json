@@ -1,21 +1,9 @@
-[
-  {
-    "id": "Se2cecc5949",
-    "url": "https://brain-map.org/support/documentation/documentation-cell-types-database",
-    "benchmark_ids": [
-      "D02",
-      "K01"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "S4bd23c5522",
-    "url": "https://alleninstitute.github.io/AllenSDK/cell_types.html",
-    "benchmark_ids": [
-      "D02"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "D02",
+  "source_urls": [
+    "https://brain-map.org/support/documentation/documentation-cell-types-database",
+    "https://alleninstitute.github.io/AllenSDK/cell_types.html",
+    "https://brain-map.org/support/documentation/cell-types-database-api"
+  ],
+  "admission_evidence": "literature/admission-v04-cell-workflow.json"
+}

@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "K02",
+    "decision": "candidate_pending_validation",
+    "reason": "scIB is a general cell-integration toolkit, not one uniquely frozen brain dataset task. Need select brain donor cohorts/taxonomy and independent label-transfer policy, fit batch handling on allowed data, preserve rare classes, and reproduce biology AND mixing scorers. No unique dataset/split/rights package selected; do not inflate coverage from toolkit installation.",
+    "date": "2026-10-30",
+    "source_screen_decision": "feasible_pending",
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "source_urls": [
+      "https://brain-map.org/our-research/cell-types-taxonomies",
+      "https://scib.readthedocs.io/en/latest/"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

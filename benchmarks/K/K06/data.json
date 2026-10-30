@@ -9,5 +9,21 @@
   ],
   "license_status": "Not independently reviewed",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "K06",
+    "decision": "candidate_pending_validation",
+    "reason": "Primary ground-truth tutorial and GitHub folder inspected; 87 files total ~500 MB. Downloaded one 189 kB cell metrics example and consolidated 2.83 MB gt list; MATLAB v7.3 HDF5 parsed with isolated h5py3.15.1. Consolidated list has 430 entries and animal/session/truth labels, but no predictor feature matrix; example has Juxta tag (not a molecular cell class). Must select nonnested independently tagged classes, extract only scalar physiology/waveform metrics from session files, group animals, resolve contributor data terms, and exclude putativeCellType/geneticLine/brainRegion proxies. No validated table yet.",
+    "date": "2026-10-30",
+    "source_screen_decision": "feasible_pending",
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "source_urls": [
+      "https://cellexplorer.org/publicdata/ground-truth-data/",
+      "https://cellexplorer.org/tutorials/ground-truth-tutorial/",
+      "https://alleninstitute.github.io/openscope_databook/optotagging/",
+      "https://api.github.com/repos/petersenpeter/CellExplorer/contents/%2BgroundTruthData"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

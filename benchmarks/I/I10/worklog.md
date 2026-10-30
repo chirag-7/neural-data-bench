@@ -3,3 +3,9 @@
 - 2026-10-30 — Resource mapped; source URLs and proposed metrics/splits recorded. Evidence: Primary paper/project located during bounded gap audit; not executed
 - 2026-10-30 — Admission decision: **candidate_pending_validation**. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
 - Acquisition, license audit, scorer implementation, specialist reproduction and model execution: **not completed**.
+
+## v0.4 admission and execution
+
+Decision: **measured** (2026-10-30). Acquired original MRIQC0.10.5 tables and2017 classifier predictions;600ABIDEtrain/265DS030test rater1 labels and68IQMs. One-to-one archived prediction alignment and exclude1 label convention verified. Original classifier used different training/rater/features, currentbest unresolved.
+
+[Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). [Actual protocol and artifacts](../../../experiments/I10). [Central task results](../../../results/I10.json).

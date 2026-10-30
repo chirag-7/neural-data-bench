@@ -29,3 +29,9 @@ Speaker-ground-truth and freely moving animals are distinct conditions; paper re
 - [https://proceedings.nips.cc/paper_files/paper/2024/hash/c00d37d6b04d73b870b963a4d70051c1-Abstract-Datasets_and_Benchmarks_Track.html](https://proceedings.nips.cc/paper_files/paper/2024/hash/c00d37d6b04d73b870b963a4d70051c1-Abstract-Datasets_and_Benchmarks_Track.html)
 - [https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/)
 - [https://github.com/neurostatslab/vocalocator](https://github.com/neurostatslab/vocalocator)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). VCL controlled speaker localization supplies positions, but multi-mic calibration/time synchronization and recording-group split must be acquired. Do not infer source identity solely from event detection; no adapter prepared.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

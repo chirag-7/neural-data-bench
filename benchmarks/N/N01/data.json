@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "N01",
+    "decision": "candidate_pending_validation",
+    "reason": "Official repository provides workflow metadata, expert answers, dataset loader and eval code. This batch has not frozen an eligible neuroscience question subset, run its large-source data loader or replicated text/figure rubric evaluation. Needs task-specific numeric checks and, where the official evaluator uses an LLM judge, recorded judge model/version/prompt and access. No surrogate blind-judge scores supplied.",
+    "date": "2026-10-30",
+    "source_screen_decision": "feasible_pending",
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "source_urls": [
+      "https://github.com/allenai/neurodiscoverybench"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

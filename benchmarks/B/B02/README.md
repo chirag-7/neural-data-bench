@@ -28,3 +28,9 @@ Simulation-to-real gap; do not reuse templates in test
 
 - [https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html](https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html)
 - [https://github.com/cwindolf/dartsort](https://github.com/cwindolf/dartsort)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). SpikeInterface/MEArec generators can supply exact drift and unit truth without restricted real data. Needs frozen simulation seed, geometry, waveform/noise/drift regime and event-matching scorer. This would be explicitly synthetic, not real in-vivo drift validation.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

@@ -27,3 +27,9 @@ Large downloads; collisions; mocap-to-image correspondence
 ## Sources
 
 - [https://olveczkylab.oeb.harvard.edu/publications/pair-r24m-dataset-multi-animal-3d-pose-estimation](https://olveczkylab.oeb.harvard.edu/publications/pair-r24m-dataset-multi-animal-3d-pose-estimation)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Calibrated multi-camera social-pose recordings require substantial video acquisition and geometry/GPU pipeline. No exact slice/calibration/scorer prepared. This is a resource deferral, not poor-data judgment.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

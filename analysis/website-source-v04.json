@@ -1,0 +1,28 @@
+{
+  "version": "0.4",
+  "sha256": {
+    "index.html": "14d5e339e1ff82dd477594bd13d775c9ca41e9a143053e899675385bb348f8e4",
+    "style.css": "c4af66df8dce6a0ac5b343a580bef137b0d422c175f4d0fa2be25458fa53c8a5",
+    "app.js": "2c43757db3e394a832ea4d00f6e922b0317f37a4d0ca70edde3d335e955c5bf6",
+    "data/summary.json": "91c95d872f5bd427fc85a83460c83585ad07608f71427817f1a01a8583318bcc",
+    "data/A14.json": "c79b6a04bf63786b7b961055ad106d24a7f0cf64325a5c5128e62b07293bf403",
+    "data/H01.json": "98121e87fe192042bdc7dca6f0a4279c5df918b0cd5f573c614ea1104c9aa822",
+    "data/H16.json": "18fcde925feeab6d9c15a117ba9916aabbe78b689b33e9b4638cdf4a7f1a3a43",
+    "data/M04.json": "70b5644505b7679c8ec78c38f9612992f6e3744bfc5958d75b5bd4e2b69c9876",
+    "data/C05.json": "5a3e4c710c587ffeab068739ce99268e28769c3b048c9a0dc635b1df8c41ec59",
+    "data/A09.json": "f1ed47af411f9ccfd7f6d0964cc3fd6f11ff7cbeca76ce8d6cdcc2be119926c7",
+    "data/measurements.jsonl": "3a2881366d04d26a3f7441c0d5b3193514a3a22a941fb4d986ca3e8dd049ac59",
+    "data/F04.json": "9f3bc0aecabbd1056b60bade812b6d764be44a0d6f13113b6803b1e71d5948d9",
+    "data/E01.json": "775421ab7a6c5dd277d7c77f6ee44cf8521bdd571195500489e3093ab26ca27a",
+    "data/measurements.csv": "e48a7f17fa1760704c99b6647c2197557cab6b9bc45a28ee7148e45dac0ccdf5",
+    "data/K01.json": "ea8c78da9516e320d505c2ad766947f53127f8b23c8c7d0e8ee9b12a7f6c0d08",
+    "data/catalog.json": "66684e5c272eb72fa6ce2c5755fbd5707fa7cd4562dea7955328e2760fec8b90",
+    "data/N05.json": "90b6f5720bcedc3ff38c26e64450afc73dfca96af67c357ba622b21425b1267d",
+    "data/L04.json": "15da9702ccc51f64525462c82122595c7c5428260f2136d5bac7813935e07258",
+    "data/I07.json": "be3879017f3134f687007c44b79a4e4bfd3e53d98fe6bdfbbd8cf2741a059920",
+    "data/D02.json": "cd5156ee985d3e268f343670c889c02244f2e50f54a93d0432ad40f276eed6a8",
+    "data/I10.json": "19e5b42658d8b08a28a9343fa55e57c2e0e8d32f97937349d112b5cb6a54ae01"
+  },
+  "site_directory": "website/",
+  "canonical_repo": "https://github.com/chirag-7/neural-data-bench"
+}

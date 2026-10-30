@@ -1,0 +1,170 @@
+{
+  "model_id": "vassi-run-00",
+  "source_archived_run": "run_00",
+  "primary_reference": true,
+  "task_id": "A09",
+  "endpoint": "calms21-task1-3hz-custom",
+  "metric": "macro_f1",
+  "direction": "higher",
+  "primary_score": 0.8695177327504425,
+  "secondary": {
+    "balanced_accuracy": 0.8859336118526014,
+    "foreground_macro_f1": 0.8429144381842449
+  },
+  "per_class": {
+    "precision": [
+      0.7079037800687286,
+      0.8350350989151244,
+      0.9157700584076237,
+      0.9622678783089688
+    ],
+    "recall": [
+      0.816812053925456,
+      0.8566284779050737,
+      0.9335631463491069,
+      0.9367307692307693
+    ],
+    "f1": [
+      0.7584683357879234,
+      0.8456939731782194,
+      0.9245810055865922,
+      0.9493276164490353
+    ],
+    "support": [
+      1261,
+      6110,
+      3191,
+      15600
+    ]
+  },
+  "confusion_matrix": [
+    [
+      1030,
+      189,
+      8,
+      34
+    ],
+    [
+      277,
+      5234,
+      121,
+      478
+    ],
+    [
+      3,
+      148,
+      2979,
+      61
+    ],
+    [
+      145,
+      697,
+      145,
+      14613
+    ]
+  ],
+  "per_recording": [
+    {
+      "recording": "mouse071",
+      "examples": 2378,
+      "macro_f1_fixed_four_classes": 0.7036902506142877
+    },
+    {
+      "recording": "mouse072",
+      "examples": 1814,
+      "macro_f1_fixed_four_classes": 0.7131576633365447
+    },
+    {
+      "recording": "mouse073",
+      "examples": 1913,
+      "macro_f1_fixed_four_classes": 0.7211619116425155
+    },
+    {
+      "recording": "mouse074",
+      "examples": 1880,
+      "macro_f1_fixed_four_classes": 0.6652825467192323
+    },
+    {
+      "recording": "mouse075",
+      "examples": 1799,
+      "macro_f1_fixed_four_classes": 0.6456885573949427
+    },
+    {
+      "recording": "mouse076",
+      "examples": 1968,
+      "macro_f1_fixed_four_classes": 0.5803735177150421
+    },
+    {
+      "recording": "mouse077",
+      "examples": 1888,
+      "macro_f1_fixed_four_classes": 0.5812340752827991
+    },
+    {
+      "recording": "mouse078",
+      "examples": 1945,
+      "macro_f1_fixed_four_classes": 0.49290801898325537
+    },
+    {
+      "recording": "mouse079",
+      "examples": 1746,
+      "macro_f1_fixed_four_classes": 0.6288890001192808
+    },
+    {
+      "recording": "mouse080",
+      "examples": 615,
+      "macro_f1_fixed_four_classes": 0.6598896124755425
+    },
+    {
+      "recording": "mouse081",
+      "examples": 491,
+      "macro_f1_fixed_four_classes": 0.3848564924442614
+    },
+    {
+      "recording": "mouse082",
+      "examples": 709,
+      "macro_f1_fixed_four_classes": 0.6948922211425189
+    },
+    {
+      "recording": "mouse083",
+      "examples": 486,
+      "macro_f1_fixed_four_classes": 0.6371101335545121
+    },
+    {
+      "recording": "mouse084",
+      "examples": 560,
+      "macro_f1_fixed_four_classes": 0.6252567909120661
+    },
+    {
+      "recording": "mouse085",
+      "examples": 1917,
+      "macro_f1_fixed_four_classes": 0.6713392059798388
+    },
+    {
+      "recording": "mouse086",
+      "examples": 859,
+      "macro_f1_fixed_four_classes": 0.6421809327795455
+    },
+    {
+      "recording": "mouse087",
+      "examples": 1189,
+      "macro_f1_fixed_four_classes": 0.6433322596231277
+    },
+    {
+      "recording": "mouse088",
+      "examples": 880,
+      "macro_f1_fixed_four_classes": 0.6451050911470549
+    },
+    {
+      "recording": "mouse089",
+      "examples": 1125,
+      "macro_f1_fixed_four_classes": 0.6274687066818642
+    }
+  ],
+  "evaluation_examples": 26162,
+  "predictions_sha256": "16898a165c3249734e84f9d3f09546a4bbbc88d1e755d0fe71a9d02a51cb5a24",
+  "comparison_tier": "archived domain-specialist pipeline; unequal training/context/optimization budget",
+  "matched_test_centers_labels_metric": true,
+  "matched_training_input_budget": false,
+  "is_current_sota": false,
+  "source_url": "https://edmond.mpg.de/api/access/datafile/315313"
+}

@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "E02",
+    "decision": "candidate_pending_validation",
+    "reason": "CtDB can supply synthetic mechanistic dynamics groundtruth and known task variables. Needs pinned generator, stimulus/trajectory/seed split and metric for actual recovered dynamics, not arbitrary latent-coordinateRMSE. Synthetic extension remains useful but unprepared.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://github.com/snel-repo/ComputationThroughDynamicsToolkit"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

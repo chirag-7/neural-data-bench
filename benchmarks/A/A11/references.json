@@ -1,11 +1,7 @@
-[
-  {
-    "id": "S2ad67fe966",
-    "url": "https://arxiv.org/abs/2204.08129",
-    "benchmark_ids": [
-      "A11"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "A11",
+  "source_urls": [
+    "https://arxiv.org/abs/2204.08129"
+  ],
+  "admission_evidence": "literature/admission-v04-behavior-population.json"
+}

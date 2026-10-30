@@ -27,3 +27,9 @@ Overlaps other EEG suites; do not count duplicates as independent evidence
 ## Sources
 
 - [https://arxiv.org/abs/2606.00815](https://arxiv.org/abs/2606.00815)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Original OmniEEG-Bench paper accessible; 54-dataset suite. Must resolve individual task-card preprocessing/splits/licenses and duplicates before execution. Domain EEG foundation-model tables cannot be imported as scores of the evaluated general code generators.
+
+[Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

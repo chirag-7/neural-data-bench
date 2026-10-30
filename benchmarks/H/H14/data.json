@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "H14",
+    "decision": "candidate_pending_validation",
+    "reason": "Original bycycle code/documentation accessible. Tool features computed from real LFP are not independent gold labels; need expert burst annotations or separately labeled synthetic calibration. Do not grade generic code against bycycle output and label it physiological truth.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source-only",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://github.com/bycycle-tools/bycycle",
+      "https://about.dandiarchive.org/"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

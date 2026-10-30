@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "F02",
+    "decision": "deferred",
+    "reason": "Sensorium2023 adds dynamic visual stimuli and neuralresponses; fullvideo/mouse data and visionencoding pipeline exceed present lightweightCPU execution. No acquisition attempted. Distinct temporal task cannot be represented by static images or arbitrary tabular features.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://sensorium-competition.net/"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

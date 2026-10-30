@@ -7,5 +7,25 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "I07",
+    "decision": "measured",
+    "reason": "Original FRESH organizer description resolves left/right2s finger tapping. CC0 versioned SNIRF data acquired/prepared with subject-disjoint2s condition decoding and optical-density conversion; explicit session/condition confounding, no Hb or cortical-activation gold-standard claim.",
+    "date": "2026-10-30",
+    "source_screen_decision": "ready",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://www.nemar.org/dataset/on005963",
+      "https://openfnirs.org/community/fresh/welcome-to-the-fnirs-fresh-project/",
+      "https://data.nemar.org/on005963/v1.0.0/dataset_description.json",
+      "https://data.nemar.org/on005963/v1.0.0/manifest.json",
+      "https://data.nemar.org/on005963/v1.0.0/code/validation.ipynb",
+      "https://openneuro.org/datasets/ds005963/versions/1.0.0",
+      "https://doi.org/10.1038/s42003-025-08412-1"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  },
+  "executed_slice": "FRESH opticaldensity tapping condition,7train/3test subjects;condition/session confounded"
 }

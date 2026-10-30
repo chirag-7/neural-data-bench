@@ -27,3 +27,9 @@ Dataset and model overlap with other EEG suites
 ## Sources
 
 - [https://eeg.fm/benchmarks/](https://eeg.fm/benchmarks/)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Original EEG-Arena site reports 57 tasks/23 datasets/five protocols and a migration toward NeuroInfra. Need pinned downstream task version and overlap mapping; umbrella is not directly executable as a single comparable task.
+
+[Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

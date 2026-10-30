@@ -1,0 +1,77 @@
+{
+  "nwb_version": "NWB-1.0.5",
+  "sweeps": {
+    "19": {
+      "sampling_rate_hz": 200000.0,
+      "n_samples": 804001,
+      "dt_seconds": 5e-06,
+      "response_stored_unit": "Volts",
+      "stimulus_stored_unit": "Amps",
+      "main_pulse_onset_s": 1.02,
+      "main_pulse_duration_s": 1.0,
+      "main_pulse_amplitude_pa": -110.00000216254692,
+      "pre_stimulus_voltage_mv": -65.08337933197618,
+      "mean_pulse_voltage_deflection_mv": -21.524367887638505
+    },
+    "20": {
+      "sampling_rate_hz": 200000.0,
+      "n_samples": 804001,
+      "dt_seconds": 5e-06,
+      "response_stored_unit": "Volts",
+      "stimulus_stored_unit": "Amps",
+      "main_pulse_onset_s": 1.02,
+      "main_pulse_duration_s": 1.0,
+      "main_pulse_amplitude_pa": -90.0000005077395,
+      "pre_stimulus_voltage_mv": -65.42339788526297,
+      "mean_pulse_voltage_deflection_mv": -17.987100070267914
+    },
+    "21": {
+      "sampling_rate_hz": 200000.0,
+      "n_samples": 804001,
+      "dt_seconds": 5e-06,
+      "response_stored_unit": "Volts",
+      "stimulus_stored_unit": "Amps",
+      "main_pulse_onset_s": 1.02,
+      "main_pulse_duration_s": 1.0,
+      "main_pulse_amplitude_pa": -69.9999988529321,
+      "pre_stimulus_voltage_mv": -65.51341998949647,
+      "mean_pulse_voltage_deflection_mv": -14.37035258144141
+    },
+    "22": {
+      "sampling_rate_hz": 200000.0,
+      "n_samples": 804001,
+      "dt_seconds": 5e-06,
+      "response_stored_unit": "Volts",
+      "stimulus_stored_unit": "Amps",
+      "main_pulse_onset_s": 1.02,
+      "main_pulse_duration_s": 1.0,
+      "main_pulse_amplitude_pa": -50.00000066757161,
+      "pre_stimulus_voltage_mv": -65.52628882452845,
+      "mean_pulse_voltage_deflection_mv": -10.77039417222143
+    },
+    "23": {
+      "sampling_rate_hz": 200000.0,
+      "n_samples": 804001,
+      "dt_seconds": 5e-06,
+      "response_stored_unit": "Volts",
+      "stimulus_stored_unit": "Amps",
+      "main_pulse_onset_s": 1.02,
+      "main_pulse_duration_s": 1.0,
+      "main_pulse_amplitude_pa": -29.99999901276419,
+      "pre_stimulus_voltage_mv": -65.74806443601847,
+      "mean_pulse_voltage_deflection_mv": -6.569461689703161
+    },
+    "24": {
+      "sampling_rate_hz": 200000.0,
+      "n_samples": 804001,
+      "dt_seconds": 5e-06,
+      "response_stored_unit": "Volts",
+      "stimulus_stored_unit": "Amps",
+      "main_pulse_onset_s": 1.02,
+      "main_pulse_duration_s": 1.0,
+      "main_pulse_amplitude_pa": -9.999999960041972,
+      "pre_stimulus_voltage_mv": -65.60821409001946,
+      "mean_pulse_voltage_deflection_mv": -2.251803250312804
+    }
+  }
+}

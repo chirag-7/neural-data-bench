@@ -1,21 +1,8 @@
-[
-  {
-    "id": "Sb204a1d238",
-    "url": "https://brain-map.org/our-research/cell-types-taxonomies",
-    "benchmark_ids": [
-      "K01",
-      "K02"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "S3a2c6642bd",
-    "url": "https://scib.readthedocs.io/en/latest/",
-    "benchmark_ids": [
-      "K02"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "K02",
+  "source_urls": [
+    "https://brain-map.org/our-research/cell-types-taxonomies",
+    "https://scib.readthedocs.io/en/latest/"
+  ],
+  "admission_evidence": "literature/admission-v04-cell-workflow.json"
+}

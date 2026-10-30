@@ -39,3 +39,45 @@ codex exec --ephemeral --ignore-user-config --skip-git-repo-check \
 Repeat for exact requested IDs `gpt-5.6-sol`, `gpt-6-sol`, `gpt-6.1-sol` and the chosen frozen task prompt. Availability and provider alias resolution may change. Do not overwrite the archived submission with a new generation and call it a reproduction: create a new run ID, preserve all attempts and record actual model/tool events. Explicit user prompts are identical within a task; CLI/provider instructions may differ between models. No model tool events were observed in the recorded runs.
 
 Review code before local execution. The AST gate is not a security boundary for arbitrary contributed programs. External submissions need a genuine isolated execution service. No specialist code, test labels or execution feedback were supplied to the models during generation.
+
+## v 0.4 expanded protocols
+
+Install repository requirements plus `h5py==3.15.1` for the N05 file reader. Data preparation is task-specific, uses public source downloads and writes ignored `data/cache/<ID>/` arrays. Read each protocol/license before acquisition. Use a new checkout/run directory to preserve original result artifacts; do not regenerate frozen prompts/specifications or replace original submissions.
+
+```sh
+# Most adapters expose prepare() through their module entrypoint.
+python experiments/H01/adapter.py
+python experiments/H16/adapter.py
+python experiments/I07/adapter.py
+python experiments/I10/adapter.py
+python experiments/K01/adapter.py
+python experiments/D02/adapter.py
+python experiments/A09/adapter.py
+python experiments/A14/adapter.py
+python experiments/F04/adapter.py
+python experiments/L04/adapter.py
+# E01requires the pinned official NWB-reader preparation stack:
+python -m pip install -r experiments/E01/requirements-prepare.txt
+python experiments/E01/adapter.py
+# N05reuses the D02rawfile; see its source-specific preparation script:
+python experiments/N05/prepare.py
+```
+
+Preparation must reproduce declared source checksums/selection. Exact prepared NPZhashes can be sensitive to serialization/library versions; a hash mismatch deliberately prevents silently evaluating a changed frozen input. Inspect semantic arrays and record a new explicit reproduction run rather than modifying original specifications to hide mismatch. E01's preparation-only older NWB dependencies may need a separate virtual environment; generated-model evaluation uses the repository scientific stack.
+
+```sh
+# Execute already-frozen model code, no model calls. TASK is an admitted array task.
+python scripts/expansion.py evaluate TASK
+python scripts/workflow.py evaluate  # N05, after source fixture preparation
+# Restore archived refs after rerunning the primary A09/I10model/reference records:
+python scripts/integrate_references.py
+python scripts/integrate_admissions.py
+python scripts/summarize.py
+python scripts/validate.py
+python scripts/validate_expansion.py
+python scripts/build_website.py
+python scripts/check_repository.py
+node scripts/check_site.mjs
+```
+
+`integrate_references.py` reuses the committed aligned VASSIpredictions; its original source retrieval/alignment steps are in `experiments/A09/specialized_reference.py` and the specialist selection/alignment files. I10 archived CSV is acquired by its adapter. `validate_expansion.py` only re-scores stored predictions; it does not retrain or contact a model. Portable CI checks metadata, linked files, prediction hashes and static-source routes without acquiring raw data. Source-render checks are not browser layout/interaction QA.

@@ -27,3 +27,9 @@ Artificial missingness may understate occlusion difficulty
 ## Sources
 
 - [https://www.nature.com/articles/s41592-025-02893-y](https://www.nature.com/articles/s41592-025-02893-y)
+
+## v0.4 admission and execution
+
+Decision: **measured** (2026-10-30). Rat7M raw measured mocap246MB archive acquired from immutable DISK Zenodo18405201 CC BY4.0; seven original recordings, real measured targets and controlled synthetic gaps. Three trainingrats versus two test rats, six head/spine landmarks, nonoverlapping31frame windows. Custom endpoint, not official DISK full distribution.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). [Actual protocol and artifacts](../../../experiments/A14). [Central task results](../../../results/A14.json).

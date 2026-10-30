@@ -1,0 +1,1020 @@
+[
+  {
+    "benchmark_id": "N05",
+    "slice_id": "expansion-v1",
+    "model": "gpt-5.6-sol",
+    "status": "failed",
+    "reason": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/workflow.py\", line 57, in <module>\n    else:print(json.dumps(one(sys.argv[2])))\n                          ^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/workflow.py\", line 40, in one\n    t=time.perf_counter();answer=f(str(CACHE/'fixture.nwb'));elapsed=time.perf_counter()-t;sc=score(answer);p=ROOT/f'results/predictions/N05/expansion-v1--{model}.json';p.parent.mkdir(exist_ok=True,parents=True);p.write_text(json.dumps(answer,indent=2))\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"gpt-5.6-sol\", line 204, in extract\n  File \"gpt-5.6-sol\", line 121, in find_series\nValueError: Could not distinguish sweep 19 stimulus\n",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "N05",
+    "slice_id": "expansion-v1",
+    "model": "gpt-6-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3-file-analysis",
+    "reference_type": "deterministic_audited_calculation",
+    "superiority_eligible": false,
+    "superiority_reason": "Reference correct by construction; correctness, not empirical specialist superiority",
+    "generation_replicates": 1,
+    "seconds": 0.17366374982520938,
+    "truth_type": "deterministic_file_calculations",
+    "prediction_file": "results/predictions/N05/expansion-v1--gpt-6-sol.json",
+    "prediction_sha256": "08524f4f029f8b7f6be30b057a74eedec25459ae07e4c4e850b0f1078420da4e",
+    "dataset_group": "Allen-cell464212183-shared-D02",
+    "input_sha256": {
+      "data/cache/N05/fixture.nwb": "6e663e329261c4302748df0286edd6a3168ff3e20f2433f413e2ac6240d10ddb"
+    },
+    "description": "Reads the NWB file with h5py, locates sweeps 19\u201324, applies stored conversions and units, and calculates timing and voltage statistics from sample indices.",
+    "code_sha256": "afa6fcefd234e6bd942d3d975e6d165897823b876050a9d968d989cc09c1c901",
+    "code_lines": 144,
+    "line_limit_compliant": true,
+    "score": 1.0,
+    "metric": "field_accuracy",
+    "direction": "higher",
+    "n_units": 61,
+    "per_unit": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "field_results": [
+      {
+        "field": "/nwb_version",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      }
+    ],
+    "all_fields_correct": true
+  },
+  {
+    "benchmark_id": "N05",
+    "slice_id": "expansion-v1",
+    "model": "gpt-6.1-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3-file-analysis",
+    "reference_type": "deterministic_audited_calculation",
+    "superiority_eligible": false,
+    "superiority_reason": "Reference correct by construction; correctness, not empirical specialist superiority",
+    "generation_replicates": 1,
+    "seconds": 0.23240537499077618,
+    "truth_type": "deterministic_file_calculations",
+    "prediction_file": "results/predictions/N05/expansion-v1--gpt-6.1-sol.json",
+    "prediction_sha256": "08524f4f029f8b7f6be30b057a74eedec25459ae07e4c4e850b0f1078420da4e",
+    "dataset_group": "Allen-cell464212183-shared-D02",
+    "input_sha256": {
+      "data/cache/N05/fixture.nwb": "6e663e329261c4302748df0286edd6a3168ff3e20f2433f413e2ac6240d10ddb"
+    },
+    "description": "Inspects legacy and newer NWB layouts, identifies the six sweep pairs, verifies sampling rates, and computes pulse timing and voltage statistics using stored physical-unit conversions.",
+    "code_sha256": "0ab1ba20b95835fb60d212f029977276848273be3acfb73563bcef502cae8cd1",
+    "code_lines": 204,
+    "line_limit_compliant": true,
+    "score": 1.0,
+    "metric": "field_accuracy",
+    "direction": "higher",
+    "n_units": 61,
+    "per_unit": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "field_results": [
+      {
+        "field": "/nwb_version",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      }
+    ],
+    "all_fields_correct": true
+  },
+  {
+    "benchmark_id": "N05",
+    "slice_id": "expansion-v1",
+    "model": "task-baseline",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "reference",
+    "reference_type": "deterministic_audited_calculation",
+    "superiority_eligible": false,
+    "superiority_reason": "Reference correct by construction; correctness, not empirical specialist superiority",
+    "generation_replicates": null,
+    "seconds": 0.09157045790925622,
+    "truth_type": "deterministic_file_calculations",
+    "prediction_file": "results/predictions/N05/expansion-v1--task-baseline.json",
+    "prediction_sha256": "08524f4f029f8b7f6be30b057a74eedec25459ae07e4c4e850b0f1078420da4e",
+    "dataset_group": "Allen-cell464212183-shared-D02",
+    "input_sha256": {
+      "data/cache/N05/fixture.nwb": "6e663e329261c4302748df0286edd6a3168ff3e20f2433f413e2ac6240d10ddb"
+    },
+    "score": 1.0,
+    "metric": "field_accuracy",
+    "direction": "higher",
+    "n_units": 61,
+    "per_unit": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "field_results": [
+      {
+        "field": "/nwb_version",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/19/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/20/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/21/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/22/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/23/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/sampling_rate_hz",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/n_samples",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/dt_seconds",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/response_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/stimulus_stored_unit",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/main_pulse_onset_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/main_pulse_duration_s",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/main_pulse_amplitude_pa",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/pre_stimulus_voltage_mv",
+        "correct": true
+      },
+      {
+        "field": "/sweeps/24/mean_pulse_voltage_deflection_mv",
+        "correct": true
+      }
+    ],
+    "all_fields_correct": true
+  }
+]

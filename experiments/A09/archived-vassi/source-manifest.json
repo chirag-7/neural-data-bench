@@ -1,0 +1,57 @@
+{
+  "source_doi": "10.17617/3.3R0QYI",
+  "source_version": "1.0",
+  "license_data": "CC BY4.0",
+  "source_archive_file_id": 315709,
+  "source_archive_md5": "0a8dfc6263473843640185574e03cfc7",
+  "source_archive_sha256": "9ec8dd3fb6d3239b75865dd8d03dc793a4b92f9d795ddccbb62cfd968bfa9a59",
+  "prediction_file_id": 315313,
+  "prediction_archive_sha256": "dca04622d09d11c69f8054970f73f4f952473c91884ab23b16bd9175857e8bf1",
+  "files": [
+    {
+      "path": "archived-vassi/source/evaluation-mice.py",
+      "source_git_commit": "9fdf7111ae11160dbfffbd7a29d1e20a0f8c1886",
+      "source_relative_path": "examples/CALMS21/scripts/evaluation-mice.py",
+      "sha256": "df3b2479560e45c9e2f6b84560b076609014fc05f41713e4a527647c0866ae46",
+      "matches_source_archive_v1_0": true,
+      "archived_source_member": "examples/CALMS21/scripts/evaluation-mice.py"
+    },
+    {
+      "path": "archived-vassi/source/convert.py",
+      "source_git_commit": "9fdf7111ae11160dbfffbd7a29d1e20a0f8c1886",
+      "source_relative_path": "src/vassi/case_studies/calms21/convert.py",
+      "sha256": "ab4ca7985c0b0619d9ad10232802c364906c8ccf1053c133c57847f3d8fd18fa",
+      "matches_source_archive_v1_0": true,
+      "archived_source_member": "src/vassi/case_studies/calms21/convert.py"
+    },
+    {
+      "path": "archived-vassi/source/helpers.py",
+      "source_git_commit": "9fdf7111ae11160dbfffbd7a29d1e20a0f8c1886",
+      "source_relative_path": "examples/CALMS21/helpers.py",
+      "sha256": "992c8d7d74c62d490c23f05960942d3640c7eee21b3f9a8ed1ab1fef340f021d",
+      "matches_source_archive_v1_0": true,
+      "archived_source_member": "examples/CALMS21/helpers.py"
+    },
+    {
+      "path": "archived-vassi/source/features-mice.yaml",
+      "source_git_commit": "9fdf7111ae11160dbfffbd7a29d1e20a0f8c1886",
+      "source_relative_path": "examples/CALMS21/features-mice.yaml",
+      "sha256": "09f66ece2ddde67a15577b779a6d4480182d6f599356fde9e78e49ccd02d7331",
+      "matches_source_archive_v1_0": true,
+      "archived_source_member": "examples/CALMS21/features-mice.yaml"
+    },
+    {
+      "path": "archived-vassi/source/LICENSE",
+      "source_git_commit": "9fdf7111ae11160dbfffbd7a29d1e20a0f8c1886",
+      "source_relative_path": "LICENSE",
+      "sha256": "f55d703668bcba3b77b0241f54ca3e123ab27e0b3e1f56673dc1de2d8f4997dd",
+      "matches_source_archive_v1_0": true,
+      "archived_source_member": "LICENSE"
+    }
+  ],
+  "frozen_adapter_hash_unchanged": true,
+  "primary_selection_before_scores": true,
+  "prespecified_selection_plan_sha256": "99e6abde17349b381afd9ec13c5e9e800931de58cd73a83692475a594acc0551",
+  "subsequent_admission_status": "validated and admitted as unequal-budget archived specialist reference",
+  "primary_model_id": "vassi-run-00"
+}

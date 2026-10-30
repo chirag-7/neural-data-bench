@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "H15",
+    "decision": "deferred",
+    "reason": "Original MNE/Brainstorm phantom tutorial accessible. Known dipole positions make this scientifically useful, but needs sensor geometry, forward model, filtering and localization scorer adapter. No arbitrary simulated coordinate regression substituted.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://mne.tools/stable/auto_tutorials/inverse/80_brainstorm_phantom_elekta.html"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

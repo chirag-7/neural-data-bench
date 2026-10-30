@@ -27,3 +27,9 @@ Confirm released tasks/dependencies; do not call every optimum known
 ## Sources
 
 - [https://arxiv.org/abs/1705.04405](https://arxiv.org/abs/1705.04405)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). BADS primary paper benchmarks real neuroscience fitting objectives; MATLAB BADS/Python PyBADS repositories exist. Full CCN17 objective data/dependencies and per-objective budgets not acquired; optimizing an unrelated toy loss would not reproduce this task.
+
+[Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

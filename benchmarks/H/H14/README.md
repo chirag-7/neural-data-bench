@@ -28,3 +28,9 @@ Oscillation/burst definitions are method dependent; real ground truth is limited
 
 - [https://github.com/bycycle-tools/bycycle](https://github.com/bycycle-tools/bycycle)
 - [https://about.dandiarchive.org/](https://about.dandiarchive.org/)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Original bycycle code/documentation accessible. Tool features computed from real LFP are not independent gold labels; need expert burst annotations or separately labeled synthetic calibration. Do not grade generic code against bycycle output and label it physiological truth.
+
+[Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

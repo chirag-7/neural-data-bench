@@ -27,3 +27,9 @@ Prediction alone does not establish identifiability
 ## Sources
 
 - [https://elifesciences.org/articles/49547](https://elifesciences.org/articles/49547)
+
+## v0.4 admission and execution
+
+Decision: **measured** (2026-10-30). Previously measured24agent synthetic Q-learning recovery. Author guide supports recovery checks; local implementation and posterior-vs-MLE objective difference explicit. Not biological data or a released leaderboard.
+
+[Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). [Actual protocol and artifacts](../../../experiments/M04). [Central task results](../../../results/M04.json).

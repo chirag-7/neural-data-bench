@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "I03",
+    "decision": "candidate_pending_validation",
+    "reason": "Original Brain-Score site supports executable alignment models across neural/behavioral measurements. It is an umbrella with many datasets; need select canonical task, permitted neural data and exact stimulus/model-representation interface. Generic classifier code on a mismatched proxy is not Brain-Score.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source-only",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://www.brain-score.org/"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

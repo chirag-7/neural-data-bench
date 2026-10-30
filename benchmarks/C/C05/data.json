@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": "../../../data/manifests/spikefinder.json",
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "C05",
+    "decision": "measured",
+    "reason": "Root repository already contains measured Spikefinder preparation slices for all three Sol programs, predictions and archived references. This screening task did not rerun them; officialchallenge aggregate/currentSOTA remain distinct.",
+    "date": "2026-10-30",
+    "source_screen_decision": "ready",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://github.com/codeneuro/spikefinder-datasets",
+      "https://github.com/berenslab/spikefinder_analysis"
+    ],
+    "review_depth": "Previously measured root experiment",
+    "permanent_rejection": false
+  }
 }

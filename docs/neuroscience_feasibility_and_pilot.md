@@ -1,6 +1,6 @@
 # Feasibility assessment and first measured pilot
 
-30 October 2026 · research preview v0.2
+30 October 2026 · research preview v 0.2
 
 ## What is feasible
 

@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "I09",
+    "decision": "deferred",
+    "reason": "Original Tractometer page explicitly distinguishes2015 Recobundles25bundles from2023 ROI21bundles and tractogram coordinate changes. Need pin matching truth/scorer and verify T1/DWI transforms. No arbitrary mixing of score versions admitted.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://tractometer.org/ismrm2015/tools/"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

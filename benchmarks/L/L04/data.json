@@ -8,5 +8,22 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "L04",
+    "decision": "measured",
+    "reason": "Constructed an explicit real place-cell count-encoding diagnostic from author-released data, replacing only the execution slice of the earlier proposed simulation. Chronological60/40split plus1sbuffer; train-mean-null bits/spike; no parameter-recovery/calibration claim.",
+    "date": "2026-10-30",
+    "source_screen_decision": "admit",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://neurallatents.github.io/",
+      "https://github.com/snel-repo/ComputationThroughDynamicsToolkit",
+      "https://mark-kramer.github.io/Case-Studies-Python/09.html",
+      "https://github.com/Mark-Kramer/Case-Studies-Python"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+    "permanent_rejection": false
+  },
+  "executed_slice": "One real rat placecell,20mscounts,chronological60/40split with1sgap;position/velocity"
 }

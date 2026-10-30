@@ -27,3 +27,9 @@ Simulator is not a validated replacement for a real animal
 ## Sources
 
 - [https://www.nature.com/articles/s41592-024-02497-y](https://www.nature.com/articles/s41592-024-02497-y)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Author FlyGym repository provides embodied NeuroMechFly simulation. Need pinned simulator/contact/sensory assets, terrain seeds and controller training/rollout protocol. Not a ready static supervised dataset; no biological validity inferred from simulated reward.
+
+[Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "I04",
+    "decision": "deferred",
+    "reason": "Original Wakeman-Henson Nature article redirect failed through the web tool. No raw multimodal dataset or labels acquired; needs pinned EEG/MEG/fMRI release, face identities/conditions and subject/session split. Access failure is not permanent unavailability.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://www.nature.com/articles/sdata20151"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  }
 }

@@ -1,29 +1,9 @@
-[
-  {
-    "id": "Sc063051bb2",
-    "url": "https://google-research.github.io/zapbench/",
-    "benchmark_ids": [
-      "E06"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "Sa4cfa0eb61",
-    "url": "https://arxiv.org/abs/2503.02618",
-    "benchmark_ids": [
-      "E06"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  },
-  {
-    "id": "Sf97b526a1d",
-    "url": "https://zapbench-release.storage.googleapis.com/volumes/README.html",
-    "benchmark_ids": [
-      "E06"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "E06",
+  "source_urls": [
+    "https://google-research.github.io/zapbench/",
+    "https://arxiv.org/abs/2503.02618",
+    "https://zapbench-release.storage.googleapis.com/volumes/README.html"
+  ],
+  "admission_evidence": "literature/admission-v04-behavior-population.json"
+}

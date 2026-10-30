@@ -1,6 +1,6 @@
 # Experimental design and control
 
-[All families](../../docs/taxonomy.md) · [Project](../../README.md)
+[Taxonomy](../../docs/taxonomy.md) · [Project](../../README.md)
 
 Simulators, psychophysics trials, actions/interventions, neural feedback
 

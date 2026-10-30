@@ -1,13 +1,7 @@
-[
-  {
-    "id": "S69467629c8",
-    "url": "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
-    "benchmark_ids": [
-      "H05",
-      "H08",
-      "H10"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "H05",
+  "source_urls": [
+    "https://facebookresearch.github.io/neuroai/neuralbench/index.html"
+  ],
+  "admission_evidence": "literature/admission-v04-electrical.json"
+}

@@ -28,3 +28,9 @@ Simulator results alone do not validate real biological interventions
 
 - [https://www.nature.com/articles/s41592-025-02895-w](https://www.nature.com/articles/s41592-025-02895-w)
 - [https://github.com/neurogym/neurogym](https://github.com/neurogym/neurogym)
+
+## v0.4 admission and execution
+
+Decision: **deferred** (2026-10-30). Jaxley/NeuroGym environments exist, but adaptive design needs unknown-system distributions, allowed interventions, equal trial budget and regret/information-gain scorer. No frozen design benchmark instantiated.
+
+[Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

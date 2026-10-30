@@ -8,5 +8,19 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "C01",
+    "decision": "candidate_pending_validation",
+    "reason": "Neurofinder supplies true labeled calcium ROI masks and image stacks. Needs image/mask archive pinning, original heldout recording split and official ROI matching scorer. Segmentation image adapter not acquired in this expansion.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://github.com/codeneuro/neurofinder-datasets",
+      "https://github.com/codeneuro/neurofinder"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

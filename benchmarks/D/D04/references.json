@@ -1,11 +1,9 @@
-[
-  {
-    "id": "S83f3daf03e",
-    "url": "https://doi.org/10.1371/journal.pcbi.1008114",
-    "benchmark_ids": [
-      "D04"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "D04",
+  "source_urls": [
+    "https://doi.org/10.1371/journal.pcbi.1008114",
+    "https://github.com/KaliLab/hippounit",
+    "https://github.com/KaliLab/HippoUnit_demo"
+  ],
+  "admission_evidence": "literature/admission-v04-cell-workflow.json"
+}

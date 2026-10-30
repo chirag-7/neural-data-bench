@@ -1,11 +1,7 @@
-[
-  {
-    "id": "S80a54e0229",
-    "url": "https://huggingface.co/int-brain-lab/ea-decoder-channel-xgboost",
-    "benchmark_ids": [
-      "B06"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "B06",
+  "source_urls": [
+    "https://huggingface.co/int-brain-lab/ea-decoder-channel-xgboost"
+  ],
+  "admission_evidence": "literature/admission-v04-behavior-population.json"
+}

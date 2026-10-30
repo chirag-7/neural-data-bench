@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "C03",
+    "decision": "candidate_pending_validation",
+    "reason": "NAOMi can provide full synthetic calcium movie truth. Requires frozen physicalsimulation parameters and randomseeds, compute budget and exact ROI/timecourse scoring. Clearly synthetic; simulator outputs do not validate real in-vivo robustness.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+    "permanent_rejection": false
+  }
 }

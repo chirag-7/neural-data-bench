@@ -7,5 +7,20 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "A14",
+    "decision": "measured",
+    "reason": "Rat7M raw measured mocap246MB archive acquired from immutable DISK Zenodo18405201 CC BY4.0; seven original recordings, real measured targets and controlled synthetic gaps. Three trainingrats versus two test rats, six head/spine landmarks, nonoverlapping31frame windows. Custom endpoint, not official DISK full distribution.",
+    "date": "2026-10-30",
+    "source_screen_decision": "ready",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://www.nature.com/articles/s41592-025-02893-y",
+      "https://zenodo.org/records/18405201"
+    ],
+    "review_depth": "direct acquisition and schema validation",
+    "permanent_rejection": false
+  },
+  "executed_slice": "Rat7M six-landmark31frame windows;7frame artificialHeadF gap;heldout rats4–5"
 }

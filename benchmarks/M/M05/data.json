@@ -7,5 +7,20 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "M05",
+    "decision": "deferred",
+    "reason": "BADS primary paper benchmarks real neuroscience fitting objectives; MATLAB BADS/Python PyBADS repositories exist. Full CCN17 objective data/dependencies and per-objective budgets not acquired; optimizing an unrelated toy loss would not reproduce this task.",
+    "date": "2026-10-30",
+    "source_screen_decision": "deferred",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://arxiv.org/abs/1705.04405",
+      "https://github.com/acerbilab/bads",
+      "https://github.com/acerbilab/pybads"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+    "permanent_rejection": false
+  }
 }

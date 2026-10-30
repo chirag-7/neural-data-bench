@@ -1,11 +1,13 @@
-[
-  {
-    "id": "S8b596b5f8e",
-    "url": "https://www.nemar.org/dataset/on005963",
-    "benchmark_ids": [
-      "I07"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "I07",
+  "source_urls": [
+    "https://www.nemar.org/dataset/on005963",
+    "https://openfnirs.org/community/fresh/welcome-to-the-fnirs-fresh-project/",
+    "https://data.nemar.org/on005963/v1.0.0/dataset_description.json",
+    "https://data.nemar.org/on005963/v1.0.0/manifest.json",
+    "https://data.nemar.org/on005963/v1.0.0/code/validation.ipynb",
+    "https://openneuro.org/datasets/ds005963/versions/1.0.0",
+    "https://doi.org/10.1038/s42003-025-08412-1"
+  ],
+  "admission_evidence": "literature/admission-v04-electrical.json"
+}

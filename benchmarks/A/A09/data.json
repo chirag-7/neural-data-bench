@@ -7,5 +7,20 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "A09",
+    "decision": "measured",
+    "reason": "Official Task1 pose/behavior archive acquired and publisher MD5 verified; current-record/paper license discrepancy documented, raw data cache only. Real expert labels, all70train19test recordings retained in fixed3Hz custom slice, official animal split. Adapter and baseline ready; not full benchmark or SOTA.",
+    "date": "2026-10-30",
+    "source_screen_decision": "ready",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://arxiv.org/abs/2104.02710",
+      "https://doi.org/10.17617/3.3R0QYI"
+    ],
+    "review_depth": "direct acquisition and schema validation",
+    "permanent_rejection": false
+  },
+  "executed_slice": "CalMS21 Task1,3Hz centers and seven pose offsets,19 test recordings"
 }

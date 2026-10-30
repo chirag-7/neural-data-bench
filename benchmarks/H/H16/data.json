@@ -7,5 +7,23 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "H16",
+    "decision": "measured",
+    "reason": "Pinned original EEG/EOG pools and literal original RMS-ratio SNR convention; component-disjoint semisynthetic repair slice prepared with exact temporal RRMSE. Clean target is algorithmically cleaned/expert-inspected, not pristine physiology. Source participant IDs absent; no subject-generalization claim.",
+    "date": "2026-10-30",
+    "source_screen_decision": "ready",
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "source_urls": [
+      "https://doi.org/10.1088/1741-2552/ac2bf8",
+      "https://github.com/ncclabsustech/EEGdenoiseNet",
+      "https://arxiv.org/html/2009.11662v4",
+      "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/master/LICENSE",
+      "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/code/benchmark_networks/data_prepare.py"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+    "permanent_rejection": false
+  },
+  "executed_slice": "EEGdenoiseNet clean+EOG2000train/600test component-disjoint mixtures"
 }

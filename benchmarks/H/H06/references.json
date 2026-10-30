@@ -1,12 +1,7 @@
-[
-  {
-    "id": "S20134b50da",
-    "url": "https://arxiv.org/abs/2606.00815",
-    "benchmark_ids": [
-      "H06",
-      "H10"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "H06",
+  "source_urls": [
+    "https://arxiv.org/abs/2606.00815"
+  ],
+  "admission_evidence": "literature/admission-v04-electrical.json"
+}

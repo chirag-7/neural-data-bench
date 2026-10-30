@@ -28,3 +28,9 @@ Pleasing denoised movies can erase weak events
 
 - [https://github.com/cabooster/DeepCAD/blob/master/dataset/README.md](https://github.com/cabooster/DeepCAD/blob/master/dataset/README.md)
 - [https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). DeepCAD release offers real movies and trained denoisers, but a paired independent low-noise reference or declared self-supervised scorer is needed. Denoised outputs cannot silently become target truth. Movie/clean reference pair not acquired here.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

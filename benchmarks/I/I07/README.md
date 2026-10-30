@@ -27,3 +27,9 @@ Needs benchmark wrapper; hemodynamic lag and motion confounding
 ## Sources
 
 - [https://www.nemar.org/dataset/on005963](https://www.nemar.org/dataset/on005963)
+
+## v0.4 admission and execution
+
+Decision: **measured** (2026-10-30). Original FRESH organizer description resolves left/right2s finger tapping. CC0 versioned SNIRF data acquired/prepared with subject-disjoint2s condition decoding and optical-density conversion; explicit session/condition confounding, no Hb or cortical-activation gold-standard claim.
+
+[Source-linked admission evidence](../../../literature/admission-v04-electrical.json). [Actual protocol and artifacts](../../../experiments/I07). [Central task results](../../../results/I07.json).

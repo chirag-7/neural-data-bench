@@ -1,13 +1,7 @@
-[
-  {
-    "id": "Sa98ec84476",
-    "url": "https://about.dandiarchive.org/",
-    "benchmark_ids": [
-      "H14",
-      "N05",
-      "N06"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "N06",
+  "source_urls": [
+    "https://about.dandiarchive.org/"
+  ],
+  "admission_evidence": "literature/admission-v04-cell-workflow.json"
+}

@@ -27,3 +27,9 @@ Mask tracking does not establish persistent identity
 ## Sources
 
 - [https://doi.org/10.7554/eLife.107602.3](https://doi.org/10.7554/eLife.107602.3)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Complete-video identity assignments require persistent IDs and track-matching scorer. No reference trajectories/video pair acquired. Random frame classification would not be a valid substitute.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

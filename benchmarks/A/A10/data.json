@@ -7,5 +7,18 @@
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
-  "raw_data_in_git": false
+  "raw_data_in_git": false,
+  "v04_admission": {
+    "benchmark_id": "A10",
+    "decision": "candidate_pending_validation",
+    "reason": "Representation assessment requires multiple downstream task labels and recording-group splits. CalMS21 Task1 is not equivalent to MABe22. Need pin exact track release and fixed downstream evaluation wrapper.",
+    "date": "2026-10-30",
+    "source_screen_decision": "source_only",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://arxiv.org/abs/2207.10553"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+    "permanent_rejection": false
+  }
 }

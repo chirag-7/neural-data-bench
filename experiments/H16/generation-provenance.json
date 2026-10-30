@@ -1,0 +1,77 @@
+[
+  {
+    "requested_model": "gpt-5.6-sol",
+    "reasoning_effort": "high",
+    "generation_replicates": 1,
+    "user_prompt_sha256": "e5c842e5ee0d09b39b55bb2eaa655c380130dd80102a096e2da0bd4ad400a650",
+    "code_sha256": "46ce528fb217b7c073311cae1a893c78640dfa1c5306efcc46c2f54be786bd99",
+    "code_lines": 190,
+    "usage": {
+      "input_tokens": 13824,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 8404,
+      "reasoning_output_tokens": 5902
+    },
+    "tool_events": 0,
+    "effective_context": "Identical explicit user prompt; CLI/provider instructions also present, byte-identical full context unestablished",
+    "command_policy": [
+      "exec",
+      "--ephemeral",
+      "--ignore-user-config",
+      "--skip-git-repo-check",
+      "--sandbox read-only",
+      "model_reasoning_effort=high"
+    ]
+  },
+  {
+    "requested_model": "gpt-6-sol",
+    "reasoning_effort": "high",
+    "generation_replicates": 1,
+    "user_prompt_sha256": "e5c842e5ee0d09b39b55bb2eaa655c380130dd80102a096e2da0bd4ad400a650",
+    "code_sha256": "3dfba6af1d916a9abd4c7a4541e79219cea38bbe016ba36c382fe90400117ff9",
+    "code_lines": 93,
+    "usage": {
+      "input_tokens": 14189,
+      "cached_input_tokens": 11776,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6716,
+      "reasoning_output_tokens": 5518
+    },
+    "tool_events": 0,
+    "effective_context": "Identical explicit user prompt; CLI/provider instructions also present, byte-identical full context unestablished",
+    "command_policy": [
+      "exec",
+      "--ephemeral",
+      "--ignore-user-config",
+      "--skip-git-repo-check",
+      "--sandbox read-only",
+      "model_reasoning_effort=high"
+    ]
+  },
+  {
+    "requested_model": "gpt-6.1-sol",
+    "reasoning_effort": "high",
+    "generation_replicates": 1,
+    "user_prompt_sha256": "e5c842e5ee0d09b39b55bb2eaa655c380130dd80102a096e2da0bd4ad400a650",
+    "code_sha256": "4623c5bba3d8ca280e0bd5f01fc90e858781e2eee539cbd27d87f41d60dc3261",
+    "code_lines": 181,
+    "usage": {
+      "input_tokens": 14706,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7710,
+      "reasoning_output_tokens": 5103
+    },
+    "tool_events": 0,
+    "effective_context": "Identical explicit user prompt; CLI/provider instructions also present, byte-identical full context unestablished",
+    "command_policy": [
+      "exec",
+      "--ephemeral",
+      "--ignore-user-config",
+      "--skip-git-repo-check",
+      "--sandbox read-only",
+      "model_reasoning_effort=high"
+    ]
+  }
+]

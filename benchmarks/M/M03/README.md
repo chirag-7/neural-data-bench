@@ -27,3 +27,9 @@ Task collection requires a fixed suite; not evidence of real closed-loop BCI per
 ## Sources
 
 - [https://github.com/neurogym/neurogym](https://github.com/neurogym/neurogym)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Official NeuroGym task collection exists. Need versioned finite suite, trial-generation seeds, observation/action contract and task-trained controller reference. Static supervised score is not closed-loop policy evaluation.
+
+[Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.

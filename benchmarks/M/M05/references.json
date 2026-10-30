@@ -1,11 +1,9 @@
-[
-  {
-    "id": "S1fd40c4452",
-    "url": "https://arxiv.org/abs/1705.04405",
-    "benchmark_ids": [
-      "M05"
-    ],
-    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
-    "reviewed_on": "2026-10-30"
-  }
-]
+{
+  "benchmark_id": "M05",
+  "source_urls": [
+    "https://arxiv.org/abs/1705.04405",
+    "https://github.com/acerbilab/bads",
+    "https://github.com/acerbilab/pybads"
+  ],
+  "admission_evidence": "literature/admission-v04-inference-control.json"
+}

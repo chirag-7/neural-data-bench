@@ -27,3 +27,9 @@ Fitted shape labels are not direct physical motion capture
 ## Sources
 
 - [https://arxiv.org/abs/2308.11737](https://arxiv.org/abs/2308.11737)
+
+## v0.4 admission and execution
+
+Decision: **candidate_pending_validation** (2026-10-30). Fitted 3D animal shape labels are a valid separate proxy-label endpoint, but need model parameter conventions and source image acquisition; do not equate fitted SMAL annotations to physical groundtruth. Not acquired.
+
+[Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
