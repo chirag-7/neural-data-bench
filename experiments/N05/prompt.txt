@@ -1,0 +1,29 @@
+Single-shot neuroscience file-analysis code evaluation. Do not call tools, browse, read files or execute code during generation. Return JSON description and code only. Implement extract(nwb_path) returning the specified JSON-serializable dictionary. At execution you may read ONLY the supplied NWB/HDF5 file with h5py. No other file, network, subprocess, external assets, reference answers, dynamic exec/eval or hardcoded measured values. Allowed imports numpy,h5py,math,json,re,collections,functools,itertools,statistics. Inspect file structure programmatically; do not assume modern NWB2. One submission, no feedback;180seconds,oneCPUthread,approx4GB unmeasured,<240code lines.
+
+{
+  "benchmark_id": "N05",
+  "slice_id": "allen-nwb-loading-units-six-sweeps-v1",
+  "interface": "extract(nwb_path) -> JSON-serializable dict",
+  "task_description": "Write a self-contained Python function extract(nwb_path) that reads only the supplied real NWB/HDF5 file and returns the schema below for sweeps 19,20,21,22,23,24. h5py and NumPy are available. Inspect the file at execution time; no generation-time tools, internet, auxiliary answers or hardcoded extracted numeric values. Handle the actual NWB layout rather than assuming the latest NWB version. The task is deterministic data loading and physical-unit/timing correctness, not prediction or scientific discovery.",
+  "allowed_inputs": ["The single NWB path passed to extract; standard library, h5py, NumPy"],
+  "forbidden_inputs": ["Any file other than the passed NWB", "network", "reference code or expected answers", "hardcoded measured values"],
+  "required_top_level_keys": ["nwb_version", "sweeps"],
+  "nwb_version": "String read from file metadata, decoding bytes if needed",
+  "sweeps": {
+    "description": "Object keyed by the strings 19,20,21,22,23,24; each value has all ten fields below",
+    "fields": {
+      "sampling_rate_hz": "Numeric recorded response sampling rate in samples/second, verify stimulus rate matches",
+      "n_samples": "Integer complete response sample count, including initial/test-pulse portions",
+      "dt_seconds": "Numeric reciprocal of sampling_rate_hz",
+      "response_stored_unit": "String from the response data unit attribute exactly as stored (decode bytes)",
+      "stimulus_stored_unit": "String from the stimulus data unit attribute exactly as stored (decode bytes)",
+      "main_pulse_onset_s": "Numeric main negative-pulse start relative to the START OF THE SWEEP, not absolute recording time. Main pulse is the longest contiguous run of stimulus values at least 1e-6 pA below the median stimulus holding current. Convert raw stimulus data using its conversion attribute and stored physical unit before applying this threshold.",
+      "main_pulse_duration_s": "Numeric number of samples in that contiguous main pulse divided by sampling rate. Use sample-count duration, not last-minus-first timestamp.",
+      "main_pulse_amplitude_pa": "Numeric mean physical current during main pulse minus mean physical current in the 50ms immediately preceding it, in pA. Use stored conversion factors and units.",
+      "pre_stimulus_voltage_mv": "Numeric mean physical response voltage in the 50ms immediately before the main pulse, in mV. Use conversion factors and stored units. Do not substitute the first50ms of the file or acquisition absolute time.",
+      "mean_pulse_voltage_deflection_mv": "Numeric mean physical voltage during the entire main pulse minus pre_stimulus_voltage_mv, in mV. Do not use only the final sample or peak."
+    }
+  },
+  "expected_output_shape": "One metadata version string plus 6 sweep objects, each with 8 numeric fields and 2 stored-unit strings; 61 scored leaf fields total",
+  "scoring_policy": "Each leaf field receives 0 or1 against deterministic hidden answers. Strings exact after byte decoding; sample counts exact; numeric tolerances are frozen by field and documented in protocol. Primary mean field accuracy, secondary all-fields-correct. Missing, extra-type, nonfinite or failed extraction fields score0. Additional output keys do not replace required fields. No LLM judge."
+}

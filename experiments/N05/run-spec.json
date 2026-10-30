@@ -1,0 +1,19 @@
+{
+  "benchmark_id": "N05",
+  "date": "2026-10-30",
+  "track": "T3-file-analysis",
+  "models": [
+    "gpt-5.6-sol",
+    "gpt-6-sol",
+    "gpt-6.1-sol"
+  ],
+  "prompt_sha256": "3d816aec642b0385d82343a5074e0049cf89f5f2740856d5a3ff87c276b43538",
+  "fixture_sha256": "6e663e329261c4302748df0286edd6a3168ff3e20f2433f413e2ac6240d10ddb",
+  "reference_sha256": "24d759308f4ad07b1179cf876749a1c1c8d26e9283e3028a8f1695808a00126a",
+  "expected_sha256": "89c9eeace3b6e3adc8f072a375b42b3c9847ba00e321a53dcbef58887a63f25b",
+  "tolerances_sha256": "9f88a1e99cca223dfc400ce208d81c8f0605d74c6948d3a590b8b39769664ddf",
+  "status": "frozen before model generation",
+  "generation_replicates": 1,
+  "timeout_seconds": 180,
+  "line_limit_exclusive": 240
+}

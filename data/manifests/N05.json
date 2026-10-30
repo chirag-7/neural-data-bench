@@ -1,0 +1,26 @@
+{
+  "benchmark_id": "N05",
+  "accessed_on": "2026-10-30",
+  "dependency": "D02",
+  "files": [
+    {
+      "url": "https://api.brain-map.org/api/v2/well_known_file_download/491202878",
+      "path": "data/cache/N05/fixture.nwb",
+      "alias_of": "data/cache/D02/464212181_ephys.nwb",
+      "bytes": 61980832,
+      "sha256": "6e663e329261c4302748df0286edd6a3168ff3e20f2433f413e2ac6240d10ddb"
+    }
+  ],
+  "reference_answers": {
+    "path": "data/cache/N05/expected.json",
+    "sha256": "89c9eeace3b6e3adc8f072a375b42b3c9847ba00e321a53dcbef58887a63f25b"
+  },
+  "crosscheck_sources": [
+    "data/cache/D02/sweeps.json",
+    "data/cache/D02/sweep-manifest.json",
+    "data/cache/D02/data.npz"
+  ],
+  "data_terms": "Allen Institute Terms of Use research/noncommercial with attribution; shared raw fixture not covered by code license",
+  "terms_url": "https://alleninstitute.org/terms-of-use/",
+  "redistribution": "Raw file remains in ignored cache; N05 uses relative symlink to D02 without duplication"
+}
