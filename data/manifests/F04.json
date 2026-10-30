@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "F04",
+  "accessed_on": "2026-10-30",
+  "source_revision": "fc7b91e93c9bd4e76d4e3205fcbcc6a31601985a",
+  "files": [
+    {
+      "url": "https://huggingface.co/datasets/open-retina/open-retina/resolve/fc7b91e93c9bd4e76d4e3205fcbcc6a31601985a/marre_lab/goldin_2022/mouse-session-1_structured_data.h5?download=true",
+      "path": "data/cache/F04/mouse-session-1_structured_data.h5",
+      "bytes": 151245128,
+      "sha256": "54c688d78dd977c23c0dfb11e8959d628a35ba16702a44cd78d390274e527a0e"
+    }
+  ],
+  "prepared": {
+    "path": "data/cache/F04/data.npz",
+    "sha256": "33256c2f96c856219ee910eebe76160e5398953afd06a3a51089a674a47c2ff4"
+  },
+  "original_doi": "10.5281/zenodo.6868362",
+  "paper_doi": "10.1038/s41467-022-33242-8",
+  "data_license": "CC-BY-SA-4.0 processed OpenRetina mirror; distinct from repository code license",
+  "original_data_license": "CC-BY-4.0 (original Zenodo metadata)",
+  "attribution": "Goldin MA et al.(2022), Context-dependent selectivity to natural images in the retina, NatCommun13:5556; OpenRetina processed release",
+  "redistribution": "Raw/prepared images and counts remain ignored cache; acquisition script and manifest tracked. Preserve upstream CC-BY-SA terms for data derivatives, not code-MIT relicensing."
+}
