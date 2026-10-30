@@ -20,6 +20,8 @@ BRIEFS={
 }
 BRIEFS['H08']="""Classify real sleep EEG into five expert sleep stages. train_x shape(5nights,1440epochs,3000samples),train_y(5,1440);test_x(3,1440,3000),return intlabels(3,1440). Each night is a distinct person,trainpeopleSC400–SC404,testSC405–SC407. EEGFpz-Cz100Hz in microvolts,30second epochs;1440consecutive epochs cover a fixed20:00–08:00clock window pernight, no label-based crop. Labels0Wake,1N1,2N2,3N3(R&K3/4merged),4REM. Traininglabels-1areunknown/movement;ignorethem whenfitting. All test epochs need0..4predictions;scorer excludesunknownexpertlabels. Offline/acausal temporalcontext and unsupervised pernight normalization allowed. Keepnight boundaries,do not concatenate people into one continuous signal. You may use signal/spectralfeatures and classifiers,train-only supervisedvalidation/grouping. Primary macroF1 over all scoredtestepochs withfixedfiveclasses; perperson metrics secondary. No pretrainedassets/specialistpackages. One generation,180seconds,oneCPUthread."""
 
+BRIEFS['G01']="""Decode two real monkey finger-velocity targets from96causallyfiltered intracortical spike-count features perrow. Train70,989bins from4runs onOct19/20; test44,633bins from3runs onOct27/28; one monkey,twoheldoutdays. Rows nestedin1169training/754testtrials. Inputs are causal exponential-filtered spikecounts with240ms filter horizon and20ms bins, trialboundaries reset inpreprocessing. Targetscolumns index,mrs finger velocities in nativeAU(source doesnotstateAU/s). Return shape(n_test,2) finite continuouspredictions. Primary variance-weightedR2 overbothoutputs, canbenegative; perdayR2secondary. Custom chronological publicFALCON M2calibration split,NOT officialleaderboard. Trainingandtestcontaindifferentdays. No testdaycalibrationlabels. Onlytrainingfittedsupervisedtransforms: no fittingnormalization,imputers,covariances orweights ontestdata. Eachrowalreadyhascausal context; trialIDsare notpassed so do notsmooth/joinadjacentrows orusefuturetestrows. Frozen train-only regressionallowed; validationaccountforchronology/drift.180seconds numericalCPUone-threadbudget."""
+
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def adapter(task):
  p=ROOT/f'experiments/{task}/adapter.py';s=importlib.util.spec_from_file_location('adapter_'+task,p);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
@@ -73,6 +75,8 @@ def scoring(task,pred,truth,test_x,meta):
   per=np.sqrt(np.mean((pred-truth)**2,axis=1));return dict(score=float(np.sqrt(np.mean((pred-truth)**2))),metric='rmse_mV',direction='lower',per_unit=per.tolist())
  if task=='H16':
   per=np.linalg.norm(pred-truth,axis=1)/np.maximum(np.linalg.norm(truth,axis=1),1e-12);return dict(score=float(per.mean()),metric='temporal_rrmse',direction='lower',per_unit=per.tolist(),rmse=float(np.sqrt(np.mean((pred-truth)**2))))
+ if task=='G01':
+  value=adapter(task).score(truth,pred);return dict(score=value,metric='r2_variance_weighted',direction='higher',per_unit=None)
  if task=='E01':
   value=adapter(task).score(pred,truth);return dict(score=value,metric='bits_per_spike',direction='higher',per_unit=None)
  if hasattr(adapter(task),'score'):return adapter(task).score(pred,truth,test_x)

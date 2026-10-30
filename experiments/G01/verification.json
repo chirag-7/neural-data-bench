@@ -1,0 +1,61 @@
+{
+  "reviewed_on": "2026-10-30",
+  "scope": "data/preparation parity and frozen local reference only; no evaluated model calls",
+  "train_shape": [
+    70989,
+    96
+  ],
+  "test_shape": [
+    44633,
+    96
+  ],
+  "train_trials": 1169,
+  "test_trials": 754,
+  "baseline_r2_variance_weighted": -0.22748267650604248,
+  "baseline_seconds": 1.255656500114128,
+  "per_day": {
+    "2020-10-27": 0.04468146339058876,
+    "2020-10-28": -0.5470848679542542
+  },
+  "official_binning_and_filter_parity": [
+    {
+      "extraction": "sub-MonkeyN-held-in-calib_ses-2020-10-19-Run1_behavior+ecephys.npz",
+      "max_abs_error_float32": 1.1919535225501932e-07,
+      "n_scored": 19860
+    },
+    {
+      "extraction": "sub-MonkeyN-held-in-calib_ses-2020-10-19-Run2_behavior+ecephys.npz",
+      "max_abs_error_float32": 1.1920848308477616e-07,
+      "n_scored": 20026
+    },
+    {
+      "extraction": "sub-MonkeyN-held-in-calib_ses-2020-10-20-Run1_behavior+ecephys.npz",
+      "max_abs_error_float32": 1.1920164721956894e-07,
+      "n_scored": 15596
+    },
+    {
+      "extraction": "sub-MonkeyN-held-in-calib_ses-2020-10-20-Run2_behavior+ecephys.npz",
+      "max_abs_error_float32": 1.1904493746328626e-07,
+      "n_scored": 15507
+    },
+    {
+      "extraction": "sub-MonkeyN-held-in-calib_ses-2020-10-27-Run1_behavior+ecephys.npz",
+      "max_abs_error_float32": 1.1894332274664521e-07,
+      "n_scored": 12215
+    },
+    {
+      "extraction": "sub-MonkeyN-held-in-calib_ses-2020-10-27-Run2_behavior+ecephys.npz",
+      "max_abs_error_float32": 1.6272138658735003e-07,
+      "n_scored": 14675
+    },
+    {
+      "extraction": "sub-MonkeyN-held-in-calib_ses-2020-10-28-Run1_behavior+ecephys.npz",
+      "max_abs_error_float32": 1.1920863984826724e-07,
+      "n_scored": 17743
+    }
+  ],
+  "unit_target_variance": [
+    0.00010558664507698268,
+    9.603166108718142e-05
+  ]
+}

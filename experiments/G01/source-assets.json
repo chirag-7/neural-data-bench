@@ -1,0 +1,69 @@
+{
+  "dataset_id": "000953",
+  "version": "draft",
+  "snapshot_checked_on": "2026-10-30",
+  "license": [
+    "spdx:CC-BY-4.0"
+  ],
+  "falcon_source_commit": "770c9b9597b8f58bf67b5a9ec6401ef705a2cb0f",
+  "train_days": [
+    "2020-10-19",
+    "2020-10-20"
+  ],
+  "test_days": [
+    "2020-10-27",
+    "2020-10-28"
+  ],
+  "files": [
+    {
+      "asset_id": "08243690-f05a-4b1a-8980-6bb6115d67c2",
+      "blob_id": "c22efb7c-8169-45ee-a349-30bf85101e0f",
+      "path": "sub-MonkeyN-held-in-calib/sub-MonkeyN-held-in-calib_ses-2020-10-19-Run1_behavior+ecephys.nwb",
+      "bytes": 2397151103,
+      "download_url": "https://api.dandiarchive.org/api/assets/08243690-f05a-4b1a-8980-6bb6115d67c2/download/"
+    },
+    {
+      "asset_id": "ebf0646b-3a66-41e3-b395-1d973bc694ff",
+      "blob_id": "fce994a6-dbda-4879-aa4a-8efdbe090573",
+      "path": "sub-MonkeyN-held-in-calib/sub-MonkeyN-held-in-calib_ses-2020-10-19-Run2_behavior+ecephys.nwb",
+      "bytes": 2407211257,
+      "download_url": "https://api.dandiarchive.org/api/assets/ebf0646b-3a66-41e3-b395-1d973bc694ff/download/"
+    },
+    {
+      "asset_id": "8ce86e3b-0166-4a98-b08a-dfb60afe6201",
+      "blob_id": "5fe1c6d2-e752-4c60-b165-fdaefeb562ea",
+      "path": "sub-MonkeyN-held-in-calib/sub-MonkeyN-held-in-calib_ses-2020-10-20-Run1_behavior+ecephys.nwb",
+      "bytes": 1879943059,
+      "download_url": "https://api.dandiarchive.org/api/assets/8ce86e3b-0166-4a98-b08a-dfb60afe6201/download/"
+    },
+    {
+      "asset_id": "25ff78b8-62d3-435c-8ae1-a82acc265802",
+      "blob_id": "f9c2f669-fa45-4a6f-b4a4-3664ec88195b",
+      "path": "sub-MonkeyN-held-in-calib/sub-MonkeyN-held-in-calib_ses-2020-10-20-Run2_behavior+ecephys.nwb",
+      "bytes": 1866625575,
+      "download_url": "https://api.dandiarchive.org/api/assets/25ff78b8-62d3-435c-8ae1-a82acc265802/download/"
+    },
+    {
+      "asset_id": "d80bc39d-0052-4468-bb4f-c1137c8ca985",
+      "blob_id": "eb7460d6-6c32-44da-ae9d-c44a7b11e881",
+      "path": "sub-MonkeyN-held-in-calib/sub-MonkeyN-held-in-calib_ses-2020-10-27-Run1_behavior+ecephys.nwb",
+      "bytes": 1470730520,
+      "download_url": "https://api.dandiarchive.org/api/assets/d80bc39d-0052-4468-bb4f-c1137c8ca985/download/"
+    },
+    {
+      "asset_id": "43f6c095-b7d3-4599-a9a8-a8b111813a56",
+      "blob_id": "9fbb79fa-8159-4225-a6e4-07e5ff314512",
+      "path": "sub-MonkeyN-held-in-calib/sub-MonkeyN-held-in-calib_ses-2020-10-27-Run2_behavior+ecephys.nwb",
+      "bytes": 1773775197,
+      "download_url": "https://api.dandiarchive.org/api/assets/43f6c095-b7d3-4599-a9a8-a8b111813a56/download/"
+    },
+    {
+      "asset_id": "66179cbd-a1a7-4c63-97fe-d92339f20f2d",
+      "blob_id": "8e1c7342-f8ea-4382-80a6-ca71f71f7402",
+      "path": "sub-MonkeyN-held-in-calib/sub-MonkeyN-held-in-calib_ses-2020-10-28-Run1_behavior+ecephys.nwb",
+      "bytes": 2137463302,
+      "download_url": "https://api.dandiarchive.org/api/assets/66179cbd-a1a7-4c63-97fe-d92339f20f2d/download/"
+    }
+  ],
+  "slice": "Chronological held-out-day split of official held-in-calibration data; not official FALCON held-out evaluation"
+}

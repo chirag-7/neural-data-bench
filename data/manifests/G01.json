@@ -1,0 +1,782 @@
+{
+  "benchmark_id": "G01",
+  "checked_on": "2026-10-30",
+  "dataset_id": "000953",
+  "license": "CC-BY-4.0",
+  "files": [
+    {
+      "asset_id": "08243690-f05a-4b1a-8980-6bb6115d67c2",
+      "blob_id": "c22efb7c-8169-45ee-a349-30bf85101e0f",
+      "path": "sub-MonkeyN-held-in-calib/sub-MonkeyN-held-in-calib_ses-2020-10-19-Run1_behavior+ecephys.nwb",
+      "bytes": 2397151103,
+      "download_url": "https://api.dandiarchive.org/api/assets/08243690-f05a-4b1a-8980-6bb6115d67c2/download/",
+      "source_metadata_url": "https://api.dandiarchive.org/api/assets/08243690-f05a-4b1a-8980-6bb6115d67c2/",
+      "source_reported_digest": {
+        "dandi:dandi-etag": "4e1849dd99adb13360b162a98085c879-36",
+        "dandi:sha2-256": "dc40ef63a379ae71bd051cc3c5ec0e6756bc24e5eda604ee5d100a8af3abe91a"
+      },
+      "acquisition": "partial HTTP range extraction of named HDF5 datasets",
+      "full_file_sha256_independently_verified": false,
+      "target_source_units": [
+        "AU",
+        "AU"
+      ],
+      "components": {
+        "unit_ids": {
+          "dataset_path": "units/id",
+          "shape": [
+            96
+          ],
+          "dtype": "int64",
+          "sha256_contiguous_bytes": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65"
+        },
+        "spike_times": {
+          "dataset_path": "units/spike_times",
+          "shape": [
+            202939
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "b0615dcb0162484342095476a65d784581a5c3d7cf7cbc7f64c7eb40ae93210b"
+        },
+        "spike_times_index": {
+          "dataset_path": "units/spike_times_index",
+          "shape": [
+            96
+          ],
+          "dtype": "uint32",
+          "sha256_contiguous_bytes": "f5781c541d1a2d752f1d5f109b80a8636f14ee717be8f981bd43cf8155e59445"
+        },
+        "index_velocity": {
+          "dataset_path": "acquisition/finger_vel/index/data",
+          "shape": [
+            19959
+          ],
+          "dtype": "float32",
+          "sha256_contiguous_bytes": "9a0027e99d8b0dfe4480cb8b489620b94e746fa20c43e60f163915fa4336ba9d"
+        },
+        "mrs_velocity": {
+          "dataset_path": "acquisition/finger_vel/mrs/data",
+          "shape": [
+            19959
+          ],
+          "dtype": "float32",
+          "sha256_contiguous_bytes": "8602e3c2e8a08c140264ebd9f7d9139ada2ebbe12fc3544432e7d1f74f9d919e"
+        },
+        "timestamps": {
+          "dataset_path": "acquisition/finger_vel/index/timestamps",
+          "shape": [
+            19959
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "883bdfd529043a81fced03327dcb809b1f722a87b4bb734f48edb42cea3d7693"
+        },
+        "mrs_timestamps": {
+          "dataset_path": "acquisition/finger_vel/mrs/timestamps",
+          "shape": [
+            19959
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "883bdfd529043a81fced03327dcb809b1f722a87b4bb734f48edb42cea3d7693"
+        },
+        "eval_mask": {
+          "dataset_path": "acquisition/eval_mask/data",
+          "shape": [
+            19959
+          ],
+          "dtype": "bool",
+          "sha256_contiguous_bytes": "75f317d9b4c2e1221396decd630a0b610880afb9115155c7a66331ae4a13e767"
+        },
+        "trial_ids": {
+          "dataset_path": "intervals/trials/trial_num",
+          "shape": [
+            337
+          ],
+          "dtype": "int64",
+          "sha256_contiguous_bytes": "a9c6a28bd258c96e79174bf0035fcef2b8822c13ad5a24c0d5b10fe2a6a9763a"
+        },
+        "trial_start": {
+          "dataset_path": "intervals/trials/start_time",
+          "shape": [
+            337
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "6c89e1ce9ff3df43aef0c4f1b76650e5781c95280508a46f7cfedaf455ad1333"
+        },
+        "trial_stop": {
+          "dataset_path": "intervals/trials/stop_time",
+          "shape": [
+            337
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "94cdf586e0d8f933d2d1e5679de6031a8724f6884a164a4906918a7e648d6877"
+        }
+      },
+      "extracted_npz_path": "data/cache/G01/extracted/sub-MonkeyN-held-in-calib_ses-2020-10-19-Run1_behavior+ecephys.npz",
+      "extracted_npz_sha256": "7a195a1725a4df7b7d1385534259dd423e990bb7701fd93ee4eaf3807b0fdc48"
+    },
+    {
+      "asset_id": "ebf0646b-3a66-41e3-b395-1d973bc694ff",
+      "blob_id": "fce994a6-dbda-4879-aa4a-8efdbe090573",
+      "path": "sub-MonkeyN-held-in-calib/sub-MonkeyN-held-in-calib_ses-2020-10-19-Run2_behavior+ecephys.nwb",
+      "bytes": 2407211257,
+      "download_url": "https://api.dandiarchive.org/api/assets/ebf0646b-3a66-41e3-b395-1d973bc694ff/download/",
+      "source_metadata_url": "https://api.dandiarchive.org/api/assets/ebf0646b-3a66-41e3-b395-1d973bc694ff/",
+      "source_reported_digest": {
+        "dandi:dandi-etag": "c564f118070a66f0367920168de350e9-36",
+        "dandi:sha2-256": "fdacf9f9cc55c5b778e5f7ae6c8014520cde038ef6f0dedb5e95ce2c51b0c677"
+      },
+      "acquisition": "partial HTTP range extraction of named HDF5 datasets",
+      "full_file_sha256_independently_verified": false,
+      "target_source_units": [
+        "AU",
+        "AU"
+      ],
+      "components": {
+        "unit_ids": {
+          "dataset_path": "units/id",
+          "shape": [
+            96
+          ],
+          "dtype": "int64",
+          "sha256_contiguous_bytes": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65"
+        },
+        "spike_times": {
+          "dataset_path": "units/spike_times",
+          "shape": [
+            194904
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "22ac386ea1c727edc786e2bc5ce9b69a6e8ae13ef8c4c5b84d950d24047f72a2"
+        },
+        "spike_times_index": {
+          "dataset_path": "units/spike_times_index",
+          "shape": [
+            96
+          ],
+          "dtype": "uint32",
+          "sha256_contiguous_bytes": "a86fa2e89443f05a72c4ec31666c8cb1a2084a37fd04426bc724fede133609c2"
+        },
+        "index_velocity": {
+          "dataset_path": "acquisition/finger_vel/index/data",
+          "shape": [
+            20081
+          ],
+          "dtype": "float32",
+          "sha256_contiguous_bytes": "06f4974d509a8d2dcd97cfbfd6a308b78f42030a20454eeaa49cdfc37d999c5e"
+        },
+        "mrs_velocity": {
+          "dataset_path": "acquisition/finger_vel/mrs/data",
+          "shape": [
+            20081
+          ],
+          "dtype": "float32",
+          "sha256_contiguous_bytes": "5285f2e80a6a21648a5d01e9bd799defbe7d9267ef3d9144b6e21f501ec7cf31"
+        },
+        "timestamps": {
+          "dataset_path": "acquisition/finger_vel/index/timestamps",
+          "shape": [
+            20081
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "69d8f3bd8a7cdb95edce2135816cc47cfb6a911846e9aef42dfa5151acc004a7"
+        },
+        "mrs_timestamps": {
+          "dataset_path": "acquisition/finger_vel/mrs/timestamps",
+          "shape": [
+            20081
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "69d8f3bd8a7cdb95edce2135816cc47cfb6a911846e9aef42dfa5151acc004a7"
+        },
+        "eval_mask": {
+          "dataset_path": "acquisition/eval_mask/data",
+          "shape": [
+            20081
+          ],
+          "dtype": "bool",
+          "sha256_contiguous_bytes": "7282225e5f000098f1527c5c3403f835721f43dcef0ab8acf2b0e03ce9416b07"
+        },
+        "trial_ids": {
+          "dataset_path": "intervals/trials/trial_num",
+          "shape": [
+            339
+          ],
+          "dtype": "int64",
+          "sha256_contiguous_bytes": "c0b313e2678dcc13970612856818de8b79df6fad608dbb1078602c02bda853cf"
+        },
+        "trial_start": {
+          "dataset_path": "intervals/trials/start_time",
+          "shape": [
+            339
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "b296e5437c88677672b162fc8e5a0a79207710ec3a531abb276c041ce7b2f96c"
+        },
+        "trial_stop": {
+          "dataset_path": "intervals/trials/stop_time",
+          "shape": [
+            339
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "fb437f81fda3e205d0584b200509c489ff0117b0ba2107b5ba2462c3f518cdef"
+        }
+      },
+      "extracted_npz_path": "data/cache/G01/extracted/sub-MonkeyN-held-in-calib_ses-2020-10-19-Run2_behavior+ecephys.npz",
+      "extracted_npz_sha256": "fb9277bdeac551bb482d9fd9cb4cc10f1f2965f766610d3d682e6481687e1d25"
+    },
+    {
+      "asset_id": "8ce86e3b-0166-4a98-b08a-dfb60afe6201",
+      "blob_id": "5fe1c6d2-e752-4c60-b165-fdaefeb562ea",
+      "path": "sub-MonkeyN-held-in-calib/sub-MonkeyN-held-in-calib_ses-2020-10-20-Run1_behavior+ecephys.nwb",
+      "bytes": 1879943059,
+      "download_url": "https://api.dandiarchive.org/api/assets/8ce86e3b-0166-4a98-b08a-dfb60afe6201/download/",
+      "source_metadata_url": "https://api.dandiarchive.org/api/assets/8ce86e3b-0166-4a98-b08a-dfb60afe6201/",
+      "source_reported_digest": {
+        "dandi:dandi-etag": "83ea2028a64ff0ce2347b94fb27edcf8-29",
+        "dandi:sha2-256": "757cf61bdbbdad4faaf363a7c6fc570ee3b7815bfa0359cad35cab4447f2fb49"
+      },
+      "acquisition": "partial HTTP range extraction of named HDF5 datasets",
+      "full_file_sha256_independently_verified": false,
+      "target_source_units": [
+        "AU",
+        "AU"
+      ],
+      "components": {
+        "unit_ids": {
+          "dataset_path": "units/id",
+          "shape": [
+            96
+          ],
+          "dtype": "int64",
+          "sha256_contiguous_bytes": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65"
+        },
+        "spike_times": {
+          "dataset_path": "units/spike_times",
+          "shape": [
+            137297
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "481a89c765dd2596ae14e4fe58555ad5c08a515d51e6c51417d7bbb3965cb165"
+        },
+        "spike_times_index": {
+          "dataset_path": "units/spike_times_index",
+          "shape": [
+            96
+          ],
+          "dtype": "uint32",
+          "sha256_contiguous_bytes": "d247dde29c28b46b7f820c054340c9f7f1e4f3295275ba51e0beb559d564a151"
+        },
+        "index_velocity": {
+          "dataset_path": "acquisition/finger_vel/index/data",
+          "shape": [
+            15643
+          ],
+          "dtype": "float32",
+          "sha256_contiguous_bytes": "12b90b8392992b1a434419728633747147ffa192e5d20d66719b60fed32eefe3"
+        },
+        "mrs_velocity": {
+          "dataset_path": "acquisition/finger_vel/mrs/data",
+          "shape": [
+            15643
+          ],
+          "dtype": "float32",
+          "sha256_contiguous_bytes": "6b74400c91223f3385fc1c20e7da1826a70ad2091061b2bd559b3614131f0ace"
+        },
+        "timestamps": {
+          "dataset_path": "acquisition/finger_vel/index/timestamps",
+          "shape": [
+            15643
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "3a2a02808a27a1246b79ba61b2fbe41ca7c40f1b3c3d866fe9d7f46afb617b88"
+        },
+        "mrs_timestamps": {
+          "dataset_path": "acquisition/finger_vel/mrs/timestamps",
+          "shape": [
+            15643
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "3a2a02808a27a1246b79ba61b2fbe41ca7c40f1b3c3d866fe9d7f46afb617b88"
+        },
+        "eval_mask": {
+          "dataset_path": "acquisition/eval_mask/data",
+          "shape": [
+            15643
+          ],
+          "dtype": "bool",
+          "sha256_contiguous_bytes": "5cd5edbd2411507f83ba45fb7c6e3469015d1af910ddd57ed2702a55e0f5e4ff"
+        },
+        "trial_ids": {
+          "dataset_path": "intervals/trials/trial_num",
+          "shape": [
+            248
+          ],
+          "dtype": "int64",
+          "sha256_contiguous_bytes": "ff92ce65869469a39030f30405da52b147f18e8e9afd77c0bf33f5b86cb3d81a"
+        },
+        "trial_start": {
+          "dataset_path": "intervals/trials/start_time",
+          "shape": [
+            248
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "7e9409f3ead2706bb270f48775a78b833c579d573d6a6f4a27cd13a05e278704"
+        },
+        "trial_stop": {
+          "dataset_path": "intervals/trials/stop_time",
+          "shape": [
+            248
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "03cf5bda2bc46c40362407599fb2a34093c36bfbb671d81ad3b3b64e972b4cca"
+        }
+      },
+      "extracted_npz_path": "data/cache/G01/extracted/sub-MonkeyN-held-in-calib_ses-2020-10-20-Run1_behavior+ecephys.npz",
+      "extracted_npz_sha256": "445bd7fa72348aee87b9706eb751654a53891ec3c84eb27e630ded73448969c7"
+    },
+    {
+      "asset_id": "25ff78b8-62d3-435c-8ae1-a82acc265802",
+      "blob_id": "f9c2f669-fa45-4a6f-b4a4-3664ec88195b",
+      "path": "sub-MonkeyN-held-in-calib/sub-MonkeyN-held-in-calib_ses-2020-10-20-Run2_behavior+ecephys.nwb",
+      "bytes": 1866625575,
+      "download_url": "https://api.dandiarchive.org/api/assets/25ff78b8-62d3-435c-8ae1-a82acc265802/download/",
+      "source_metadata_url": "https://api.dandiarchive.org/api/assets/25ff78b8-62d3-435c-8ae1-a82acc265802/",
+      "source_reported_digest": {
+        "dandi:dandi-etag": "bb9d4862baa95cbcb55536bcf39de672-28",
+        "dandi:sha2-256": "5a11cded250929786d2991d3059b448e30a7e5aa57afc75ff4c514797f28ee1e"
+      },
+      "acquisition": "partial HTTP range extraction of named HDF5 datasets",
+      "full_file_sha256_independently_verified": false,
+      "target_source_units": [
+        "AU",
+        "AU"
+      ],
+      "components": {
+        "unit_ids": {
+          "dataset_path": "units/id",
+          "shape": [
+            96
+          ],
+          "dtype": "int64",
+          "sha256_contiguous_bytes": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65"
+        },
+        "spike_times": {
+          "dataset_path": "units/spike_times",
+          "shape": [
+            132486
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "9ad39b1631f6667538a6db6496159a1d961d6183830695841ec6d9ee4100ef94"
+        },
+        "spike_times_index": {
+          "dataset_path": "units/spike_times_index",
+          "shape": [
+            96
+          ],
+          "dtype": "uint32",
+          "sha256_contiguous_bytes": "b2ce898cdca5142669932d3247773a62e87d129408f070ebf55e43b06509cb1a"
+        },
+        "index_velocity": {
+          "dataset_path": "acquisition/finger_vel/index/data",
+          "shape": [
+            15543
+          ],
+          "dtype": "float32",
+          "sha256_contiguous_bytes": "bc7dc25c907cbadd3488973d1d993862933787dffc75b88753aaa1aac3046fb1"
+        },
+        "mrs_velocity": {
+          "dataset_path": "acquisition/finger_vel/mrs/data",
+          "shape": [
+            15543
+          ],
+          "dtype": "float32",
+          "sha256_contiguous_bytes": "066853f0eae4fac71bca20d471eec08087442279f87a23a3ae8c91de6a463333"
+        },
+        "timestamps": {
+          "dataset_path": "acquisition/finger_vel/index/timestamps",
+          "shape": [
+            15543
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "f8e99cdb932a704f2f0d278761191c9917691a23ee61bfe1b32c2f47dd60d550"
+        },
+        "mrs_timestamps": {
+          "dataset_path": "acquisition/finger_vel/mrs/timestamps",
+          "shape": [
+            15543
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "f8e99cdb932a704f2f0d278761191c9917691a23ee61bfe1b32c2f47dd60d550"
+        },
+        "eval_mask": {
+          "dataset_path": "acquisition/eval_mask/data",
+          "shape": [
+            15543
+          ],
+          "dtype": "bool",
+          "sha256_contiguous_bytes": "3a42daacf73b3078fd10be67be0d279387801f3848cfcb289110e50ccf08406f"
+        },
+        "trial_ids": {
+          "dataset_path": "intervals/trials/trial_num",
+          "shape": [
+            245
+          ],
+          "dtype": "int64",
+          "sha256_contiguous_bytes": "bc859defe4f40dbcc33f48fc36ba5b74905027b4446fc55e0c9a292dd874fa3a"
+        },
+        "trial_start": {
+          "dataset_path": "intervals/trials/start_time",
+          "shape": [
+            245
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "3e1a3577370065ab7235da7ed2d73765619c6f31fe1505db45974bd3faeabb9a"
+        },
+        "trial_stop": {
+          "dataset_path": "intervals/trials/stop_time",
+          "shape": [
+            245
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "93b35efbfad1fc2b0b5cde7c4d127350d656d582c52aff1eb2948ca778717794"
+        }
+      },
+      "extracted_npz_path": "data/cache/G01/extracted/sub-MonkeyN-held-in-calib_ses-2020-10-20-Run2_behavior+ecephys.npz",
+      "extracted_npz_sha256": "9d61bb6589a1daa9421f766fea52075ef0b584e0f630dc191b2be5049fc121f5"
+    },
+    {
+      "asset_id": "d80bc39d-0052-4468-bb4f-c1137c8ca985",
+      "blob_id": "eb7460d6-6c32-44da-ae9d-c44a7b11e881",
+      "path": "sub-MonkeyN-held-in-calib/sub-MonkeyN-held-in-calib_ses-2020-10-27-Run1_behavior+ecephys.nwb",
+      "bytes": 1470730520,
+      "download_url": "https://api.dandiarchive.org/api/assets/d80bc39d-0052-4468-bb4f-c1137c8ca985/download/",
+      "source_metadata_url": "https://api.dandiarchive.org/api/assets/d80bc39d-0052-4468-bb4f-c1137c8ca985/",
+      "source_reported_digest": {
+        "dandi:dandi-etag": "2ceea80e86817a2cc0633db7c0623634-22",
+        "dandi:sha2-256": "f7a8e1288bf1fa225ba8cde85f969d6e5547d937fbb69f531580bec9c8c4f1e0"
+      },
+      "acquisition": "partial HTTP range extraction of named HDF5 datasets",
+      "full_file_sha256_independently_verified": false,
+      "target_source_units": [
+        "AU",
+        "AU"
+      ],
+      "components": {
+        "unit_ids": {
+          "dataset_path": "units/id",
+          "shape": [
+            96
+          ],
+          "dtype": "int64",
+          "sha256_contiguous_bytes": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65"
+        },
+        "spike_times": {
+          "dataset_path": "units/spike_times",
+          "shape": [
+            93172
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "5e380c67b677101003484954842d7776123806664653d06c84fbd44fb7bbd2d7"
+        },
+        "spike_times_index": {
+          "dataset_path": "units/spike_times_index",
+          "shape": [
+            96
+          ],
+          "dtype": "uint32",
+          "sha256_contiguous_bytes": "db96b68cbd38b2096c8ca555df3f027e812e095550561e5c825de51bd96af360"
+        },
+        "index_velocity": {
+          "dataset_path": "acquisition/finger_vel/index/data",
+          "shape": [
+            12248
+          ],
+          "dtype": "float32",
+          "sha256_contiguous_bytes": "0341d667aad172db5e04e424dc34b4adaf235b15f4ee25844305a14fefc233ed"
+        },
+        "mrs_velocity": {
+          "dataset_path": "acquisition/finger_vel/mrs/data",
+          "shape": [
+            12248
+          ],
+          "dtype": "float32",
+          "sha256_contiguous_bytes": "417ecbbd7d95663aa32e37c323eaf6e281db12614e1492bdba341623d187610a"
+        },
+        "timestamps": {
+          "dataset_path": "acquisition/finger_vel/index/timestamps",
+          "shape": [
+            12248
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "7e4ea69a670db70d651bd0be52107c1deac2373ccaeb268e11b52be3687301cc"
+        },
+        "mrs_timestamps": {
+          "dataset_path": "acquisition/finger_vel/mrs/timestamps",
+          "shape": [
+            12248
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "7e4ea69a670db70d651bd0be52107c1deac2373ccaeb268e11b52be3687301cc"
+        },
+        "eval_mask": {
+          "dataset_path": "acquisition/eval_mask/data",
+          "shape": [
+            12248
+          ],
+          "dtype": "bool",
+          "sha256_contiguous_bytes": "5a43e992ca07c4edd7b1f73771be88dc95e1842e26a9019dcf45cd3034b05041"
+        },
+        "trial_ids": {
+          "dataset_path": "intervals/trials/trial_num",
+          "shape": [
+            204
+          ],
+          "dtype": "int64",
+          "sha256_contiguous_bytes": "8741ad04b0aae8c9e4ca3dc4797730ed0b728403f938c852a93f275e2d72a381"
+        },
+        "trial_start": {
+          "dataset_path": "intervals/trials/start_time",
+          "shape": [
+            204
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "26615d39f8d8ba530e8df88bf65193389a250811f5c115a292044c238455042e"
+        },
+        "trial_stop": {
+          "dataset_path": "intervals/trials/stop_time",
+          "shape": [
+            204
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "dda0748bd574901791e8d81ba9edf972794d4ee528dc01752f233763a1ba787c"
+        }
+      },
+      "extracted_npz_path": "data/cache/G01/extracted/sub-MonkeyN-held-in-calib_ses-2020-10-27-Run1_behavior+ecephys.npz",
+      "extracted_npz_sha256": "3f15d219420ac6247090f4fdc63d43f6fa382cceb2871cd823147f12c4b3087f"
+    },
+    {
+      "asset_id": "43f6c095-b7d3-4599-a9a8-a8b111813a56",
+      "blob_id": "9fbb79fa-8159-4225-a6e4-07e5ff314512",
+      "path": "sub-MonkeyN-held-in-calib/sub-MonkeyN-held-in-calib_ses-2020-10-27-Run2_behavior+ecephys.nwb",
+      "bytes": 1773775197,
+      "download_url": "https://api.dandiarchive.org/api/assets/43f6c095-b7d3-4599-a9a8-a8b111813a56/download/",
+      "source_metadata_url": "https://api.dandiarchive.org/api/assets/43f6c095-b7d3-4599-a9a8-a8b111813a56/",
+      "source_reported_digest": {
+        "dandi:dandi-etag": "fd2b86655ca7239b805ddce42450ea99-27",
+        "dandi:sha2-256": "e9d1bc0968f06bfe820fc3a036324032b35890a295dd8f9ad8b1b33a05e0bcd4"
+      },
+      "acquisition": "partial HTTP range extraction of named HDF5 datasets",
+      "full_file_sha256_independently_verified": false,
+      "target_source_units": [
+        "AU",
+        "AU"
+      ],
+      "components": {
+        "unit_ids": {
+          "dataset_path": "units/id",
+          "shape": [
+            96
+          ],
+          "dtype": "int64",
+          "sha256_contiguous_bytes": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65"
+        },
+        "spike_times": {
+          "dataset_path": "units/spike_times",
+          "shape": [
+            114382
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "6d40ec43e0399f2094100637754ede3e16d871e6990bde323b5efe7d9d7ec721"
+        },
+        "spike_times_index": {
+          "dataset_path": "units/spike_times_index",
+          "shape": [
+            96
+          ],
+          "dtype": "uint32",
+          "sha256_contiguous_bytes": "467c792d994cb80105aa4188b65495285d5d71b8cfb5a0a5fbc543bb2db742bd"
+        },
+        "index_velocity": {
+          "dataset_path": "acquisition/finger_vel/index/data",
+          "shape": [
+            14709
+          ],
+          "dtype": "float32",
+          "sha256_contiguous_bytes": "fad0e07f6d1badff4d5530f669b91992d5bc14a81e3bdd2b35f04ffe97349ccc"
+        },
+        "mrs_velocity": {
+          "dataset_path": "acquisition/finger_vel/mrs/data",
+          "shape": [
+            14709
+          ],
+          "dtype": "float32",
+          "sha256_contiguous_bytes": "23f4c5ce4c643a15372fcb9f735763c8be2d0c7b6bd71df9ac6c0327f199d5e9"
+        },
+        "timestamps": {
+          "dataset_path": "acquisition/finger_vel/index/timestamps",
+          "shape": [
+            14709
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "6f6806894792aeaca68faebc7a99ce8b0471a67ba786ca0994483ae9cf3fc578"
+        },
+        "mrs_timestamps": {
+          "dataset_path": "acquisition/finger_vel/mrs/timestamps",
+          "shape": [
+            14709
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "6f6806894792aeaca68faebc7a99ce8b0471a67ba786ca0994483ae9cf3fc578"
+        },
+        "eval_mask": {
+          "dataset_path": "acquisition/eval_mask/data",
+          "shape": [
+            14709
+          ],
+          "dtype": "bool",
+          "sha256_contiguous_bytes": "5b9c8f628a8e704ab8553faffa722e2a81907f8d45d694c7530acb8c9de92fd0"
+        },
+        "trial_ids": {
+          "dataset_path": "intervals/trials/trial_num",
+          "shape": [
+            251
+          ],
+          "dtype": "int64",
+          "sha256_contiguous_bytes": "bc33d3438940fbad83fece4301ee55294e158319c42b08428112c15a00fd6428"
+        },
+        "trial_start": {
+          "dataset_path": "intervals/trials/start_time",
+          "shape": [
+            251
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "a33127244e227846085c1978e7ff6008137728be2e76515eea367eac2c73424f"
+        },
+        "trial_stop": {
+          "dataset_path": "intervals/trials/stop_time",
+          "shape": [
+            251
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "4fd493b497e9f206453a7fcc7de0d18bab182f75c63cb3781aa3e9a89f6ed4e6"
+        }
+      },
+      "extracted_npz_path": "data/cache/G01/extracted/sub-MonkeyN-held-in-calib_ses-2020-10-27-Run2_behavior+ecephys.npz",
+      "extracted_npz_sha256": "154f7dfa48afa5cdfccfa793c4ed5fa1121dc5fc115f99745baff67d3bf744dd"
+    },
+    {
+      "asset_id": "66179cbd-a1a7-4c63-97fe-d92339f20f2d",
+      "blob_id": "8e1c7342-f8ea-4382-80a6-ca71f71f7402",
+      "path": "sub-MonkeyN-held-in-calib/sub-MonkeyN-held-in-calib_ses-2020-10-28-Run1_behavior+ecephys.nwb",
+      "bytes": 2137463302,
+      "download_url": "https://api.dandiarchive.org/api/assets/66179cbd-a1a7-4c63-97fe-d92339f20f2d/download/",
+      "source_metadata_url": "https://api.dandiarchive.org/api/assets/66179cbd-a1a7-4c63-97fe-d92339f20f2d/",
+      "source_reported_digest": {
+        "dandi:dandi-etag": "0ef4a140e043a6ecd9a268e97dabb79e-32",
+        "dandi:sha2-256": "45a41f15110a8c950f2439cddfa0c207179cfa97d1035c7b1776d2b3dba1c601"
+      },
+      "acquisition": "partial HTTP range extraction of named HDF5 datasets",
+      "full_file_sha256_independently_verified": false,
+      "target_source_units": [
+        "AU",
+        "AU"
+      ],
+      "components": {
+        "unit_ids": {
+          "dataset_path": "units/id",
+          "shape": [
+            96
+          ],
+          "dtype": "int64",
+          "sha256_contiguous_bytes": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65"
+        },
+        "spike_times": {
+          "dataset_path": "units/spike_times",
+          "shape": [
+            177365
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "d2af321b4132d0dea4e04936196914f64a79e1c93c84eaeb862a391d96cd1746"
+        },
+        "spike_times_index": {
+          "dataset_path": "units/spike_times_index",
+          "shape": [
+            96
+          ],
+          "dtype": "uint32",
+          "sha256_contiguous_bytes": "dbb3b7e55ec98ce5ea4b31ea5af242eb4dfc16841150ed34b2016caae6e92cab"
+        },
+        "index_velocity": {
+          "dataset_path": "acquisition/finger_vel/index/data",
+          "shape": [
+            17782
+          ],
+          "dtype": "float32",
+          "sha256_contiguous_bytes": "346ff7a6a73d89862ce35ac0761d7d803bd40068b13a558ec826a991b98d9d2f"
+        },
+        "mrs_velocity": {
+          "dataset_path": "acquisition/finger_vel/mrs/data",
+          "shape": [
+            17782
+          ],
+          "dtype": "float32",
+          "sha256_contiguous_bytes": "758cb54e51a3ba0ee6e184fec5a9f348617dbd3519bd0cd881ab61567e024fce"
+        },
+        "timestamps": {
+          "dataset_path": "acquisition/finger_vel/index/timestamps",
+          "shape": [
+            17782
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "79e1e2c8e93e259afd1a173d2b95d0bf9afccd4ad51db3a753ea7617e807efe7"
+        },
+        "mrs_timestamps": {
+          "dataset_path": "acquisition/finger_vel/mrs/timestamps",
+          "shape": [
+            17782
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "79e1e2c8e93e259afd1a173d2b95d0bf9afccd4ad51db3a753ea7617e807efe7"
+        },
+        "eval_mask": {
+          "dataset_path": "acquisition/eval_mask/data",
+          "shape": [
+            17782
+          ],
+          "dtype": "bool",
+          "sha256_contiguous_bytes": "6e15f8ebdebd62b2cd4c2ce81d54383e21e9cb337bf19c5c4ce8a9754c6311cb"
+        },
+        "trial_ids": {
+          "dataset_path": "intervals/trials/trial_num",
+          "shape": [
+            299
+          ],
+          "dtype": "int64",
+          "sha256_contiguous_bytes": "2ab9a6e08563155feed71eaf6714310444950ea197ebcc0d3a80029f715c6498"
+        },
+        "trial_start": {
+          "dataset_path": "intervals/trials/start_time",
+          "shape": [
+            299
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "3a715cfc91b559c8f0fbf8328b89a6415d5c07c3fca8b6cc6d45028af9441eea"
+        },
+        "trial_stop": {
+          "dataset_path": "intervals/trials/stop_time",
+          "shape": [
+            299
+          ],
+          "dtype": "float64",
+          "sha256_contiguous_bytes": "d94e20ced74173f833653f223f0c43b0fb0a6bd28db7fd2b4e26035e47517034"
+        }
+      },
+      "extracted_npz_path": "data/cache/G01/extracted/sub-MonkeyN-held-in-calib_ses-2020-10-28-Run1_behavior+ecephys.npz",
+      "extracted_npz_sha256": "a5118a1567de2e3888ea3ebfb88abdccb8b1eab7f9c2a99f1ea6c48788fb2f74"
+    }
+  ],
+  "prepared": {
+    "path": "data/cache/G01/data.npz",
+    "sha256": "b19c47236c8215d3502dda9de6a723184e47aa891ae958006029ea700400326a"
+  }
+}
