@@ -1,0 +1,230 @@
+{
+  "benchmark_id": "C05",
+  "pilot_id": "spikefinder-dataset1-test-v1",
+  "date": "2026-10-30",
+  "metric": "Pearson correlation after 40-ms binning",
+  "primary_aggregation": "median across five held-out neurons",
+  "secondary_aggregation": "mean across five held-out neurons",
+  "track": "T3 single-shot code synthesis with external execution; no tools during generation",
+  "models_requested": [
+    "gpt-6.1-sol",
+    "gpt-6-sol",
+    "gpt-5.6-sol"
+  ],
+  "reasoning_effort": "high",
+  "runs_per_model": 1,
+  "train_neurons": 11,
+  "test_neurons": 5,
+  "sampling_hz": 100,
+  "causal": false,
+  "test_labels_visible_to_models": false,
+  "prompt_sha256": "00b53eb24dffcad2a9f3d1c4696f7078165bd897b9bac2595f3fae5d2a784b5c",
+  "input_hashes": {
+    "1.train.calcium.csv": "fe5373dcac2dc55959a9828acea5632e4bdc808cf2fa9714e9afec796c8a2492",
+    "1.train.spikes.csv": "0f17641b18f4b7e5f5e8edcbc76d5d3ef437738c25a050b380015b3305a5fff1",
+    "reference/1.test.calcium.csv": "968e0654f72da499953442b3086dc7e607d4c4a83e48350a588cd5dc3d42e3e0",
+    "reference/truth.test.spikes.csv": "15a034471ff5080fceccbca74588073e309de8205d446e4b9e69243acc401271"
+  },
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "oasis-deconv": "0.3.2",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0",
+    "cloudpickle": "3.1.2",
+    "narwhals": "2.28.0"
+  },
+  "model_provenance": {
+    "gpt-6.1-sol": {
+      "usage": {
+        "input_tokens": 14697,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8861,
+        "reasoning_output_tokens": 6702
+      },
+      "tool_events": 0,
+      "events": 4,
+      "code_lines": 154,
+      "nonblank_code_lines": 142,
+      "line_limit_compliant": true
+    },
+    "gpt-6-sol": {
+      "usage": {
+        "input_tokens": 14180,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6490,
+        "reasoning_output_tokens": 5178
+      },
+      "tool_events": 0,
+      "events": 4,
+      "code_lines": 92,
+      "nonblank_code_lines": 86,
+      "line_limit_compliant": true
+    },
+    "gpt-5.6-sol": {
+      "usage": {
+        "input_tokens": 13815,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8240,
+        "reasoning_output_tokens": 5696
+      },
+      "tool_events": 0,
+      "events": 4,
+      "code_lines": 188,
+      "nonblank_code_lines": 165,
+      "line_limit_compliant": false
+    }
+  },
+  "results": [
+    {
+      "model": "gpt-6.1-sol",
+      "status": "measured",
+      "description": "Fits gradient-boosted trees to multiscale fluorescence, derivative, local-envelope, and approximate deconvolution features normalized separately for each neuron. Held-out training neurons select tree count and prediction smoothing using 40-ms binned correlation; the selected model is refit using samples from all training neurons.",
+      "seconds": 9.51808854099363,
+      "code_sha256": "c17a41aa5823917abf38386d4ccaf20adfd00a6b28f42ee92470cbfd98316515",
+      "per_neuron": [
+        0.6161699083460399,
+        0.5862532689343063,
+        0.5656954957093965,
+        0.6045865346359193,
+        0.6260291693180157
+      ],
+      "mean": 0.5997468753887355,
+      "median": 0.6045865346359193
+    },
+    {
+      "model": "gpt-6-sol",
+      "status": "measured",
+      "description": "Detrends and scales each neuron independently, then trains a Poisson gradient-boosted regressor on acausal, multiscale fluorescence features. A fixed random subset of training samples provides early stopping; no test labels are used.",
+      "seconds": 4.425019791116938,
+      "code_sha256": "6fd7603002097560c46ca26f19c407849e30a086a51a12ba9fe32f66d628a41b",
+      "per_neuron": [
+        0.5933103617729457,
+        0.6034795797403131,
+        0.5589436663285002,
+        0.6007624982304995,
+        0.61621291124312
+      ],
+      "mean": 0.5945418034630757,
+      "median": 0.6007624982304995
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "status": "measured",
+      "description": "Bins calcium and spikes into the exact 40-ms evaluation grid, normalizes each neuron robustly, and extracts acausal multiscale level, slope, curvature, and candidate-deconvolution features. A Poisson histogram gradient booster is blended with a ridge model; the blend weight is selected by held-out-neuron validation, then both models are refit on all training neurons. Bin predictions are expanded back to 100 Hz, preserving trailing NaNs.",
+      "seconds": 26.65594408311881,
+      "code_sha256": "1cdd5649312236d530225c4743e1fa24d59db1ce9e0a7c5e93ed32d1cf0de8be",
+      "per_neuron": [
+        0.5859232218081093,
+        0.5789139103635804,
+        0.5670485868904903,
+        0.5757056099554085,
+        0.5929693252351469
+      ],
+      "mean": 0.5801121308505471,
+      "median": 0.5789139103635804
+    },
+    {
+      "model": "oasis-reference",
+      "status": "measured",
+      "description": "OASIS 0.3.2 deconvolve with default AR(1) parameter/baseline/noise estimation and penalty=1, independently per test neuron; no test spike labels.",
+      "seconds": 0.1238647080026567,
+      "code_sha256": "b5568814abf2f2e0eb5850fe3b972366cd52fc014a5f2e3b2eaa239bc4acb857",
+      "per_neuron": [
+        0.3837539421139785,
+        0.31171695005273736,
+        0.2504662918826693,
+        0.3564682566573755,
+        0.3387556386052246
+      ],
+      "mean": 0.32823221586239704,
+      "median": 0.3387556386052246
+    },
+    {
+      "model": "deneux (archived)",
+      "status": "archived_predictions_rescored",
+      "per_neuron": [
+        0.5730859159948962,
+        0.6116413541596544,
+        0.5778030156208,
+        0.6187521375063697,
+        0.6254437856474923
+      ],
+      "mean": 0.6013452417858425,
+      "median": 0.6116413541596544
+    },
+    {
+      "model": "speiser (archived)",
+      "status": "archived_predictions_rescored",
+      "per_neuron": [
+        0.5809007298667093,
+        0.6053295326723008,
+        0.5825664131581813,
+        0.5974717854194861,
+        0.6149216373261179
+      ],
+      "mean": 0.596238019688559,
+      "median": 0.5974717854194861
+    },
+    {
+      "model": "friedrich (archived)",
+      "status": "archived_predictions_rescored",
+      "per_neuron": [
+        0.552012028898894,
+        0.6031332578760715,
+        0.565016941325797,
+        0.60865795471872,
+        0.6146762305079695
+      ],
+      "mean": 0.5886992826654904,
+      "median": 0.6031332578760715
+    },
+    {
+      "model": "rupprecht (archived)",
+      "status": "archived_predictions_rescored",
+      "per_neuron": [
+        0.5510777064793668,
+        0.5946196374003442,
+        0.5598249387673588,
+        0.5979329573513755,
+        0.596088928710438
+      ],
+      "mean": 0.5799088337417767,
+      "median": 0.5946196374003442
+    },
+    {
+      "model": "Raw calcium baseline",
+      "status": "measured_simple_baseline",
+      "per_neuron": [
+        0.16330047113627905,
+        0.13849561201627525,
+        0.1169066152697716,
+        0.22767434208731785,
+        0.30946981683748886
+      ],
+      "mean": 0.19116937146942653,
+      "median": 0.16330047113627905
+    }
+  ],
+  "best_comparable_reference": "Highest archived dataset-1 test correlation among complete five-neuron submissions in results_30_06_17.csv; not verified current global SOTA.",
+  "limitations": [
+    "One dataset and five neurons; not a broad neuroscience score",
+    "One generated program per model; no repeated-run uncertainty",
+    "Models can fit numerical estimators on training data; this is not direct native signal inference",
+    "Public historical labels may have appeared in pretraining, although no tools or raw labels were supplied",
+    "No subject/animal IDs available in this slice; neurons are not independent animals",
+    "Specialist archive and current OASIS have different supervision/tuning budgets; compare performance, not equal-effort superiority",
+    "Offline acausal inference; no online latency claim",
+    "Model names are requested CLI IDs; provider-internal checkpoint resolution not independently observable"
+  ],
+  "protocol_deviations": [
+    "GPT-5.6 Sol returned 188 code lines including blanks against the requested fewer-than-180 limit. Its unmodified program is scored and flagged; strict formatting compliance is not claimed.",
+    "A shared missing cloudpickle dependency prevented initial imports; the harness environment was repaired before rerunning the unchanged model programs.",
+    "The approximate 3 GB requested memory budget was not enforced or independently measured."
+  ]
+}

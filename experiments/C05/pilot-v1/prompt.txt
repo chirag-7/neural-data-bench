@@ -1,0 +1,30 @@
+You are participating in a single-shot neuroscience code-synthesis pilot.
+Do not call tools, read files, browse, or execute code. Return only the requested JSON object.
+
+Task: infer a nonnegative spike-rate/event-intensity signal from calcium fluorescence.
+Implement Python code defining:
+    fit_predict(train_calcium, train_spikes, test_calcium)
+returning a numpy ndarray of exactly test_calcium.shape.
+
+Inputs are float64 arrays. Rows are time samples at 100 Hz, columns are individual neurons.
+train_calcium and train_spikes have shape approximately (72000, 11), including trailing NaNs for shorter neurons.
+test_calcium has shape approximately (72000, 5); these are different held-out neurons from the same original dataset/preparation.
+Each train column has paired calcium and ground-truth spikes. No test spike labels are provided.
+Treat neurons as separate time series; do not mix temporal boundaries between columns.
+The test set has no correspondence to particular train-neuron columns.
+The fluorescence is already a preprocessed trace, not raw pixels. Its scale and offset vary across neurons.
+The runner scores each finite test neuron by Pearson correlation after summing every four adjacent 100-Hz samples (40-ms non-overlapping bins), then reports median and mean across the five neurons. Multiplying a prediction by a positive constant does not change this metric.
+Offline acausal context is allowed. This is not online BCI inference.
+
+Allowed imports: numpy, scipy, sklearn and Python standard math/collections utilities. No other packages, no specialist neuroscience solvers or pretrained weights.
+No file I/O, network, subprocesses, dynamic exec/eval, or loading external assets.
+Use deterministic seeds, if needed. Fit or select parameters using training data only.
+The full function must run in at most 180 seconds on one CPU thread with approximately 3 GB working memory. Avoid large dense sample-by-sample matrices.
+You get one submission and no execution feedback. Keep code below 180 lines. Favor a robust, computationally practical solution.
+At finite test inputs predictions must be finite and nonnegative; trailing NaNs may remain NaN.
+
+JSON output fields:
+  description: concise description of your method and any internal training/validation scheme.
+  code: complete self-contained Python source containing fit_predict and any helpers.
+
+Do not claim a score; the external runner computes it.

@@ -1,0 +1,16 @@
+{
+  "model": "oasis-reference",
+  "status": "measured",
+  "description": "OASIS 0.3.2 deconvolve with default AR(1) parameter/baseline/noise estimation and penalty=1, independently per test neuron; no test spike labels.",
+  "seconds": 0.1238647080026567,
+  "code_sha256": "b5568814abf2f2e0eb5850fe3b972366cd52fc014a5f2e3b2eaa239bc4acb857",
+  "per_neuron": [
+    0.3837539421139785,
+    0.31171695005273736,
+    0.2504662918826693,
+    0.3564682566573755,
+    0.3387556386052246
+  ],
+  "mean": 0.32823221586239704,
+  "median": 0.3387556386052246
+}

@@ -1,0 +1,16 @@
+{
+  "model": "gpt-6-sol",
+  "status": "measured",
+  "description": "Detrends and scales each neuron independently, then trains a Poisson gradient-boosted regressor on acausal, multiscale fluorescence features. A fixed random subset of training samples provides early stopping; no test labels are used.",
+  "seconds": 4.425019791116938,
+  "code_sha256": "6fd7603002097560c46ca26f19c407849e30a086a51a12ba9fe32f66d628a41b",
+  "per_neuron": [
+    0.5933103617729457,
+    0.6034795797403131,
+    0.5589436663285002,
+    0.6007624982304995,
+    0.61621291124312
+  ],
+  "mean": 0.5945418034630757,
+  "median": 0.6007624982304995
+}

@@ -1,0 +1,7 @@
+data/cache/*
+!data/cache/README.md
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+*.tgz
