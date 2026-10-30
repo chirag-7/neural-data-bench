@@ -1,0 +1,20 @@
+{
+  "benchmark_id": "E01",
+  "slice_id": "area2_bump",
+  "date": "2026-10-30",
+  "status": "frozen before any model-program execution on this source",
+  "track": "T3-frozen-program-transfer",
+  "no_new_generation": true,
+  "base_prompt_sha256": "5227b10093eb9498f09a5a8625440d8192a730e5b5fdf92bb88e1e97a2c34ba2",
+  "adapter_sha256": "5ebee94358bdd880f4d2299197ceeed94a5e97207610e19b5d8cadc1b3d2c9b7",
+  "base_adapter_sha256": "4785ee942aa8968d2eedb6482f970269c595f0222c91f89893686cbc53421422",
+  "data_sha256": "02c7df1e01b9e954d56273eb45cdcfb965f1bd19cca85f0ebe36337523e88f3d",
+  "source_seal_sha256": "d61de45492420712f57543daf7b03c280e57daa9c96469f357a7edbf2f979719",
+  "model_code_sha256": {
+    "gpt-5.6-sol": "b5b2d3c40e97e2693a950ae62dffe591a82c0bbab43eb3f7274aab34e0680e59",
+    "gpt-6-sol": "c4d1a6ff8db59616ead05ee427529278cce63c5b91076319eca89514e8c60649",
+    "gpt-6.1-sol": "d9868869aeb1b0da6ae92f12bd44f6f5595e8034011bf7d35d16048120a4eb8f"
+  },
+  "timeout_seconds": 180,
+  "one_numerical_thread": true
+}

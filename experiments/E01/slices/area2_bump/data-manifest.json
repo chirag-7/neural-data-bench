@@ -1,0 +1,413 @@
+{
+  "benchmark_id": "E01",
+  "slice_id": "area2_bump",
+  "source": {
+    "dandiset": "000127",
+    "version": "0.220113.0359",
+    "subject": "Han",
+    "session_date": "2017-12-07",
+    "task": "Center-out reaching with externally applied arm perturbations; area2 somatosensory cortex",
+    "train_asset": "ded26b6c-418d-43f5-8a37-dfd072c2dbd4",
+    "test_asset": "f907b288-a9b4-4c6e-9d66-6812f306e253",
+    "test_bytes": 492576,
+    "train_bytes": 1822876234,
+    "test_shape": [
+      98,
+      30,
+      16
+    ],
+    "heldin": 49,
+    "heldout": 16
+  },
+  "data_license": "CC BY4.0 as confirmed in source-record.json",
+  "nlb_tools_commit": "42f8410b88e12db136910fa2f888b025ea0aa2ae",
+  "bin_width_ms": 20,
+  "official_train_tensor_seed": 0,
+  "train_splits_combined": [
+    "train",
+    "val"
+  ],
+  "skipped_behavior_fields": {
+    "train": [
+      "muscle_vel",
+      "behavior_muscle_vel",
+      "muscle_len",
+      "behavior_muscle_len",
+      "joint_vel",
+      "behavior_joint_vel",
+      "joint_ang",
+      "behavior_joint_ang",
+      "hand_vel",
+      "behavior_hand_vel",
+      "hand_pos",
+      "behavior_hand_pos",
+      "force",
+      "behavior_force"
+    ],
+    "test": []
+  },
+  "shapes": {
+    "train_x": [
+      364,
+      30,
+      49
+    ],
+    "train_y": [
+      364,
+      30,
+      16
+    ],
+    "test_x": [
+      98,
+      30,
+      49
+    ],
+    "test_y": [
+      98,
+      30,
+      16
+    ],
+    "test_input_observed_mask": [
+      98,
+      30
+    ],
+    "test_target_observed_mask": [
+      98,
+      30
+    ],
+    "train_groups": [
+      364
+    ],
+    "test_groups": [
+      98
+    ],
+    "train_units": [
+      364
+    ],
+    "test_units": [
+      98
+    ]
+  },
+  "train_requested_splits": {
+    "none": 462,
+    "train": 272,
+    "val": 92
+  },
+  "test_requested_splits": {
+    "test": 98
+  },
+  "train_file": {
+    "url": "https://api.dandiarchive.org/api/assets/ded26b6c-418d-43f5-8a37-dfd072c2dbd4/download/",
+    "sha256": null,
+    "range_read": {
+      "asset_url": "https://api.dandiarchive.org/api/assets/ded26b6c-418d-43f5-8a37-dfd072c2dbd4/download/",
+      "asset_total_bytes": 1822876234,
+      "whole_file_downloaded": false,
+      "whole_file_sha256_verified": false,
+      "block_size": 1048576,
+      "fetched_blocks": [
+        {
+          "start": 0,
+          "stop": 1048575,
+          "sha256": "1dc68e68fa2e09450df87eee4cfed65cee540cc380c59fb330bc3cd4f0ebff79"
+        },
+        {
+          "start": 34603008,
+          "stop": 35651583,
+          "sha256": "01e6a0f89fab780bfb277b44315bae9f61804c3f7a70944db1ec7f58ccb2bbbc"
+        },
+        {
+          "start": 70254592,
+          "stop": 71303167,
+          "sha256": "b4ad8627fd0dac2e490a492f9bab42e0bdd9fdf1ca40508e441713f5588bc971"
+        },
+        {
+          "start": 177209344,
+          "stop": 178257919,
+          "sha256": "d92e23527d2f569da9fb8e0cc8c565d7eec499f27efd8e53b81c79d2b11cf02a"
+        },
+        {
+          "start": 871366656,
+          "stop": 872415231,
+          "sha256": "f804ac9014191ee0fee26aa64062825120b618e928b4645279d99656ae012435"
+        },
+        {
+          "start": 1564475392,
+          "stop": 1565523967,
+          "sha256": "ad51ca5606bf2e5aace69b41fc3478ce9921a5d6b4829a261fdd9ab898f314d3"
+        },
+        {
+          "start": 1689255936,
+          "stop": 1690304511,
+          "sha256": "9370647a85e2e4c71f09bc5364e1e1d9deb83816428a5dd7263ca838e7d91e9e"
+        },
+        {
+          "start": 1814036480,
+          "stop": 1815085055,
+          "sha256": "2205f7a3b01081e9505228fc6290c71e8538682a295970985ee8a2639ffb54d7"
+        },
+        {
+          "start": 1815085056,
+          "stop": 1816133631,
+          "sha256": "44841897699d4dbf02bf995aed68f18d0c4e8b348bc404e5d92b3fcee58f6ccf"
+        },
+        {
+          "start": 1816133632,
+          "stop": 1817182207,
+          "sha256": "6c06f0cc0ed61c8f625fe1be6dfa357a761199f0edfd7af2a370ac5fabe63744"
+        },
+        {
+          "start": 1817182208,
+          "stop": 1818230783,
+          "sha256": "31263004408bd9d65587e8c86e5c378d5b583e7869f05c5b22513f524cdbc7fc"
+        },
+        {
+          "start": 1818230784,
+          "stop": 1819279359,
+          "sha256": "45a8c1efe7b7899dc3da4f544143388b3a7826092cabbb67e7ab36f39f11a1e8"
+        },
+        {
+          "start": 1819279360,
+          "stop": 1820327935,
+          "sha256": "e571c16dce35d2d11e23eb8d4786a429d101ac1535f0c71277f72e68fc3b9493"
+        },
+        {
+          "start": 1820327936,
+          "stop": 1821376511,
+          "sha256": "f5829c3ee14f3955273cc07a8e597eb2cfcac1701ddd2dabc5ad8ebbb0ed7d30"
+        },
+        {
+          "start": 1821376512,
+          "stop": 1822425087,
+          "sha256": "6bc42e9882940423cba0dda79f74e8540306b89f5faee330f56e555a572c53eb"
+        },
+        {
+          "start": 1822425088,
+          "stop": 1822876233,
+          "sha256": "7cb8579505823ec538a703dd0000bebb2e8af7b40fb7d18dec6d06d5f558bfc2"
+        }
+      ],
+      "unique_bytes_read": 16179786
+    }
+  },
+  "test_file": {
+    "url": "https://api.dandiarchive.org/api/assets/f907b288-a9b4-4c6e-9d66-6812f306e253/download/",
+    "sha256": "adde1de7bb83d36d93d0a524ccf4ac77cdf370ec826c3acc1d2fc16a21237617"
+  },
+  "shared_groundtruth_file": "data/cache/E01/raw/eval_data_test.h5",
+  "shared_groundtruth_sha256": "f2f434d30193251b58e6a693381fdd185c8fbc0e47d38f8810e65295bc42c865",
+  "target_group": "area2_bump_20/eval_spikes_heldout",
+  "observed_input_bins_per_trial": [
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30
+  ],
+  "test_input_padding_bins": 0,
+  "test_target_unscored_bins": 0,
+  "target_scored_bins_per_trial": [
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30
+  ],
+  "target_mask_unmodified": true,
+  "padding_policy": "No missing input or target values; no padding replacement",
+  "prepared_sha256": "02c7df1e01b9e954d56273eb45cdcfb965f1bd19cca85f0ebe36337523e88f3d",
+  "array_sha256": {
+    "train_x": "a01a43a31027faf68da8e3bf13045b09c1182d319a63ceb2fe3b385c78c7a392",
+    "train_y": "8f8fb84180dacfb67d6808e4583a7164e1a812dfc49c8c34e9e87ed317164057",
+    "test_x": "a5f04547b4ed78e26dd5c3b6538cb3ee6e562de3b8fd4a0ab9f532df6b06f561",
+    "test_y": "42bf90de3abef2a00df95110cd997554bd0f2c93cc0598826b10bedfe934fa88"
+  },
+  "general_model_calls": 0,
+  "frozen_base_E01_programs_modified": false
+}

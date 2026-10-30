@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-30",
+  "status": "prepared_before_evaluated_program_execution",
+  "files": {
+    "experiments/E01/slices/dmfc_rsg/adapter.py": "b60581db416aac5df6c864b97fef72568c41727cc9eaf438306a20fef5cd9b20",
+    "experiments/E01/slices/dmfc_rsg/metadata.json": "b25b44b796f601e0b42a20639a2e739fe1086449ddf9e6dd7314eb9c8ec964fc",
+    "experiments/E01/slices/dmfc_rsg/protocol.md": "1c49f415329deae464f95cdc14bb7a9106267125ad5e20608d1ec6f35d4aad68",
+    "experiments/E01/slices/dmfc_rsg/data-manifest.json": "b7927f35f3e3c79224de7c337703c6c07395652a3c274839a34212d26d9927eb",
+    "experiments/E01/slices/dmfc_rsg/validation.json": "bc964530570b1e47a3fb7581bcbca0aeeb2f8354b6f00c4d47259e00b9f2feb7",
+    "experiments/E01/slices/dmfc_rsg/recording-identity.json": "ccb21608c3c1a15474391d03141237bb1c4e4fe5a6278945847d1cfd785fd247",
+    "experiments/E01/slices/prep_common.py": "3ccff03d351abfe23c5285c1a191682fd07e53a13dfad771ac2d2cf6b38a82ab",
+    "experiments/E01/slices/range_reader.py": "21aa6ab921744bc39d5e1e32ad6d22a4449e429566f3694cdfd2ddfa808f13df",
+    "experiments/E01/slices/verify_slices.py": "56ead53fc8f23f3bb4f9837898028783b21e1a6ca5f616cbcea24b975b7cb822"
+  },
+  "prepared_npz_sha256": "426408eb558939192b02a0ddb9b23a45ad4e644f10afbf9a22688b290216bdc7",
+  "base_adapter_sha256": "4785ee942aa8968d2eedb6482f970269c595f0222c91f89893686cbc53421422",
+  "no_model_calls": true
+}

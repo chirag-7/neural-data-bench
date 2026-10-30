@@ -1,0 +1,49 @@
+{
+  "id": "E01",
+  "slice_id": "area2_bump",
+  "endpoint": "area2_bump-20ms-supervised-population-portability",
+  "task_type": "population_rate_inference",
+  "metric": "bits_per_spike",
+  "direction": "higher",
+  "input_shape": "('N', 30, 49)",
+  "output_shape": "('N', 30, 16)",
+  "input_units": "spike count per20ms bin",
+  "output_units": "nonnegative finite expected count per20ms bin, notHz",
+  "feature_description": "49 held-in neurons, movement onset from \u2212100 to +500ms;30 consecutive20ms bins. Predict simultaneous corresponding16 held-out neurons. Whole-trial context allowed; no smoothing across trials. Return shape(N,30,16). All30 bins scored.",
+  "grouping": "Official train+validation combined: 364 trials; official test:98 trials. Same subject Han and source recording/session, distinct official trial partitions. No cross-session or cross-animal generalization claim. Test timeline is packed for release. Exact original session date is 2017-12-07; source NWB identity is preserved in recording-identity.json rather than inferred from packed timestamps.",
+  "scientific_task": "Center-out reaching with externally applied arm perturbations; area2 somatosensory cortex",
+  "dataset_group": "NLB_area2_bump",
+  "source": "https://doi.org/10.48324/dandi.000127/0.220113.0359",
+  "terms": "CC BY4.0 DANDI release metadata; MIT nlb_tools",
+  "baseline_name": "Frozen baseE01 Gaussian sigma1bin population readout + Ridge alpha100; clip1e-6",
+  "baseline_is_specialist_sota": false,
+  "evaluation_regime": "Portability of original frozen E01 generated programs, unchanged source and hyperparameters, refitted on each new training array; no fresh model generation or post-test repairs",
+  "official_benchmark_equivalent": false,
+  "why_not_official_leaderboard": "Supervised held-in\u2192held-out readout diagnostic, not full unsupervised neural-latent model suite. No decoding, PSTH, timing correlation or forecasting metrics. Data are official, scorer official, learning regime customized.",
+  "macro_counting": "Additional source slice under existing E01 ID; do not count as a new independent benchmark/task ID. Report datasets separately and aggregate atE01 level before cross-task comparisons.",
+  "metric_details": "Exact pinned official NLB bits_per_spike; Poisson NLL improvement over per-neuron evaluation-set mean divided by total finite-target spikes andln2. Evaluation-set mean is scoring normalization only and never supplied to model. NaN targets ignored by np.nansum; zero expected counts replaced by1e-9; negative or nonfinite predictions rejected.",
+  "train_shape": [
+    364,
+    30,
+    49
+  ],
+  "train_target_shape": [
+    364,
+    30,
+    16
+  ],
+  "test_shape": [
+    98,
+    30,
+    49
+  ],
+  "test_target_shape": [
+    98,
+    30,
+    16
+  ],
+  "input_padding": "none; no imputation, no zero-fill",
+  "target_mask": "all finite",
+  "checked_at": "2026-10-30",
+  "general_model_calls": 0
+}

@@ -1,0 +1,22 @@
+{
+  "train": {
+    "identifier": "8969f328-3929-11ec-8077-43176b153428",
+    "session_description": "Data from monkey Haydn performing ready-set-go time interval reproduction task. This file contains continuous segments of the full session on 2016-12-11 that can be used for training models for the Neural Latents Benchmark.",
+    "session_start_time": "2016-12-11T00:00:00-05:00",
+    "general/subject/subject_id": "Haydn",
+    "general/subject/species": "Macaca mulatta",
+    "general/experiment_description": "Cognitive timing task in which subject attempts to reproduce interval between two cues",
+    "general/institution": "Massachusetts Institute of Technology",
+    "general/lab": "Jazayeri"
+  },
+  "test": {
+    "identifier": "8d26aa92-3929-11ec-8077-43176b153428",
+    "session_description": "Data from monkey Haydn performing ready-set-go time interval reproduction task. This file contains segments of trials from the full session on 2016-12-11 that are to be used for evaluating models for the Neural Latents Benchmark.",
+    "session_start_time": "2016-12-11T00:00:00-05:00",
+    "general/subject/subject_id": "Haydn",
+    "general/subject/species": "Macaca mulatta",
+    "general/experiment_description": "Cognitive timing task in which subject attempts to reproduce interval between two cues",
+    "general/institution": "Massachusetts Institute of Technology",
+    "general/lab": "Jazayeri"
+  }
+}

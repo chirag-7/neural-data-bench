@@ -1,0 +1,22 @@
+{
+  "train": {
+    "identifier": "c32b334c-0b8e-11ec-b9b7-0bfeb2c344ea",
+    "session_description": "Data from monkey Han performing center-out active-passive task. This file contains several continuous segments of the full session on 2017-12-07 that can be used for training models for the Neural Latents Benchmark.",
+    "session_start_time": "2017-12-07T17:06:09.727000-05:00",
+    "general/subject/subject_id": "Han",
+    "general/subject/species": "Macaca mulatta",
+    "general/experiment_description": "Center out reaching task with perturbations during center hold period before reach",
+    "general/institution": "Northwestern University",
+    "general/lab": "Miller"
+  },
+  "test": {
+    "identifier": "c942902c-0b8e-11ec-b9b7-0bfeb2c344ea",
+    "session_description": "Data from monkey Han performing center-out active-passive task. This file contains segments of trials from the full session on 2017-12-07 that are to be used for evaluating models for the Neural Latents Benchmark.",
+    "session_start_time": "2017-12-07T17:06:09.727000-05:00",
+    "general/subject/subject_id": "Han",
+    "general/subject/species": "Macaca mulatta",
+    "general/experiment_description": "Center out reaching task with perturbations during center hold period before reach",
+    "general/institution": "Northwestern University",
+    "general/lab": "Miller"
+  }
+}
