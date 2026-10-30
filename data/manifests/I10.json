@@ -1,0 +1,42 @@
+{
+  "source_commit": "c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8",
+  "files": [
+    {
+      "path": "data/cache/I10/x_abide.csv",
+      "url": "https://raw.githubusercontent.com/nipreps/mriqc/c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8/mriqc/data/csv/x_abide.csv",
+      "sha256": "9c76b755e3620f4b511ffc4d80c9ec6a152b507beaabdf836862d3ae6e873edb",
+      "bytes": 1228692
+    },
+    {
+      "path": "data/cache/I10/x_ds030.csv",
+      "url": "https://raw.githubusercontent.com/nipreps/mriqc/c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8/mriqc/data/csv/x_ds030.csv",
+      "sha256": "71533d9190255ef6f3b0d152b55f3715e239ecce10c3cb2d7b29d9fbca687e48",
+      "bytes": 295308
+    },
+    {
+      "path": "data/cache/I10/y_abide.csv",
+      "url": "https://raw.githubusercontent.com/nipreps/mriqc/c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8/mriqc/data/csv/y_abide.csv",
+      "sha256": "ff64acc590702c1ca91891abdf0885eb51d3acad0287ec1e84ed9711e2ec370b",
+      "bytes": 18347
+    },
+    {
+      "path": "data/cache/I10/y_ds030.csv",
+      "url": "https://raw.githubusercontent.com/nipreps/mriqc/c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8/mriqc/data/csv/y_ds030.csv",
+      "sha256": "90304a998557c5a72016d5077921af96a7384da11ddcdcb7b389e71ca5120815",
+      "bytes": 3279
+    },
+    {
+      "path": "data/cache/I10/mclf_run-20170703-190702_mod-rfc_ver-0.9.7.clf-3.3_class-2_cv-loso_data-test_pred.csv",
+      "url": "https://raw.githubusercontent.com/nipreps/mriqc/c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8/mriqc/data/csv/mclf_run-20170703-190702_mod-rfc_ver-0.9.7.clf-3.3_class-2_cv-loso_data-test_pred.csv",
+      "sha256": "5fda41045738eb1c69aab738224e6da21a28793323e48cffce69e7aa9856d42f",
+      "bytes": 7339
+    },
+    {
+      "path": "data/cache/I10/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/nipreps/mriqc/c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8/LICENSE.txt",
+      "sha256": "63806d0ff0aa3dafce84a5b60ad7bd63726f655a355f85b9348de98a5ba88316",
+      "bytes": 1514
+    }
+  ],
+  "prepared_sha256": "5f581bb291e09b7641aba7047ec64af747d4e7019dd410e116dd83f97e5e6329"
+}

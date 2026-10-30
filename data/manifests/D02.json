@@ -1,0 +1,32 @@
+{
+  "benchmark_id": "D02",
+  "accessed_on": "2026-10-30",
+  "files": [
+    {
+      "url": "https://api.brain-map.org/api/v2/well_known_file_download/491202878",
+      "path": "data/cache/D02/464212181_ephys.nwb",
+      "bytes": 61980832,
+      "sha256": "6e663e329261c4302748df0286edd6a3168ff3e20f2433f413e2ac6240d10ddb"
+    },
+    {
+      "url": "https://api.brain-map.org/api/v2/data/query.json?criteria=model%3A%3ASpecimen%2Crma%3A%3Acriteria%2C%5Bid%24eq464212183%5D%2Crma%3A%3Ainclude%2Cephys_result%28well_known_files%28well_known_file_type%5Bname%24eqNWBDownload%5D%29%29",
+      "path": "data/cache/D02/specimen.json",
+      "bytes": 1103,
+      "sha256": "a0910fbf34edba0f839038d722be6ced47badb924cfe1f4b350fae91b4bdd6a2"
+    },
+    {
+      "url": "https://api.brain-map.org/api/v2/data/query.json?criteria=model%3A%3AEphysSweep%2Crma%3A%3Acriteria%2C%5Bspecimen_id%24eq464212183%5D%2Crma%3A%3Aoptions%5Bnum_rows%24eqall%5D",
+      "path": "data/cache/D02/sweeps.json",
+      "bytes": 66908,
+      "sha256": "c602f6d922fc5701bee02691112df0cf02f0d7f220e9b8472bc5af1481d21382"
+    }
+  ],
+  "prepared": {
+    "path": "data/cache/D02/data.npz",
+    "sha256": "2a5f30d8b6f07f981a0cf2c6e7717543185ef3c8732a17e8bfefef500c7a49ca"
+  },
+  "use_terms": "Allen Institute Terms of Use, research/noncommercial use with attribution; no data relicensing under code license",
+  "terms_url": "https://alleninstitute.org/terms-of-use/",
+  "attribution": "Allen Institute for Brain Science, Allen Cell Types Database (2015); https://celltypes.brain-map.org/",
+  "redistribution": "Raw and prepared data in ignored cache; downloader/manifests tracked"
+}

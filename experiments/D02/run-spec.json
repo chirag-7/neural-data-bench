@@ -1,0 +1,21 @@
+{
+  "benchmark_id": "D02",
+  "run_id": "expansion-v1",
+  "date": "2026-10-30",
+  "track": "T3",
+  "models": [
+    "gpt-5.6-sol",
+    "gpt-6-sol",
+    "gpt-6.1-sol"
+  ],
+  "reasoning_effort": "high",
+  "generation_replicates": 1,
+  "timeout_seconds": 180,
+  "line_limit_exclusive": 240,
+  "memory_enforced": false,
+  "prompt_sha256": "d077b7128181f627f40d6aec35bb6ca5e9a993e9e353dd946e01f7dd57aca010",
+  "adapter_sha256": "6801c86d7ba189e203b5c6f5898362394b63a10039ae2ea945cc2e10ed960242",
+  "data_sha256": "2a5f30d8b6f07f981a0cf2c6e7717543185ef3c8732a17e8bfefef500c7a49ca",
+  "status": "frozen before model generation",
+  "test_targets_not_in_prompt": true
+}
