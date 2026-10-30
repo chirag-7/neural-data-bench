@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-30",
+  "files": [
+    {
+      "file": "source/utils_image_processing.py",
+      "upstream_repository": "https://github.com/pascalschamber/SynAPSeg",
+      "commit": "6f16e52c94d167b8045846b4ff671b0c400c8b98",
+      "original_path": "SynAPSeg/utils/utils_image_processing.py",
+      "git_blob_sha": "6c7b0318b33d98b3b5b315bf77e6b1feabd1f024",
+      "sha256": "34ba4a2bfdd71c8fafd5826eb0fa6d3993700acce0c1c176b5ade5a90fdf9903",
+      "modified": false,
+      "license": "BSD-3-Clause"
+    },
+    {
+      "file": "source/fig2_intrarater_var_analysis.py",
+      "upstream_repository": "https://github.com/Bygrave-Lab/SynAPSeg_manuscript_code",
+      "commit": "7bda22bc79468d3ef8e5eb592af2bdffb1544a6e",
+      "original_path": "scripts/fig2_intrarater_var_analysis.py",
+      "git_blob_sha": "7d355b75748a7621695f8d015fd78aa518efaf32",
+      "sha256": "27f8b76cc765bd8a8cf404dccda0a66c616ae298419c9ee2aa0ffe8bc1391870",
+      "modified": false,
+      "license": "BSD-3-Clause"
+    },
+    {
+      "file": "source/fig1_evaluate_models_final.py",
+      "upstream_repository": "https://github.com/Bygrave-Lab/SynAPSeg_manuscript_code",
+      "commit": "7bda22bc79468d3ef8e5eb592af2bdffb1544a6e",
+      "original_path": "scripts/fig1_evaluate_models_final.py",
+      "git_blob_sha": "3bde39d2edc328e6d0e06e283a69c7d329fc472f",
+      "sha256": "7a730c75b006049a3ca7c015434c81a7c2d09184f0f3f3203ad60b6335d05436",
+      "modified": false,
+      "license": "BSD-3-Clause"
+    }
+  ],
+  "data_record": "18988899",
+  "data_license": "CC BY4.0",
+  "independent_annotation_preprocessing_check": "verify_adapter.py compiles only the reviewed author relabel/format functions and compares all12benchmarkmasks exactly; does not execute their full scripts."
+}

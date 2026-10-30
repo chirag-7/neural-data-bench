@@ -1,0 +1,181 @@
+{
+  "date": "2026-10-30",
+  "author_annotation_preprocessing_exact_matches": [
+    {
+      "member": "BenchmarkDatasets/Dataset1/annotations/annotated_A_Labels_2025_0127_103947.tiff",
+      "original_shape": [
+        727,
+        546
+      ],
+      "formatted_shape": [
+        727,
+        546
+      ],
+      "instance_count": 73,
+      "matches_author_function_exactly": true
+    },
+    {
+      "member": "BenchmarkDatasets/Dataset1/annotations/annotated_B_Labels_2025_0123_140945.tiff",
+      "original_shape": [
+        727,
+        546
+      ],
+      "formatted_shape": [
+        727,
+        546
+      ],
+      "instance_count": 68,
+      "matches_author_function_exactly": true
+    },
+    {
+      "member": "BenchmarkDatasets/Dataset1/annotations/annotated_C_Labels_2025_0127_104432.tiff",
+      "original_shape": [
+        727,
+        546
+      ],
+      "formatted_shape": [
+        727,
+        546
+      ],
+      "instance_count": 67,
+      "matches_author_function_exactly": true
+    },
+    {
+      "member": "BenchmarkDatasets/Dataset1/annotations/annotated_D_Labels_2025_0127_103540.tiff",
+      "original_shape": [
+        727,
+        546
+      ],
+      "formatted_shape": [
+        727,
+        546
+      ],
+      "instance_count": 65,
+      "matches_author_function_exactly": true
+    },
+    {
+      "member": "BenchmarkDatasets/Dataset1/annotations/annotated_E_Labels_2025_0107_074335.tiff",
+      "original_shape": [
+        727,
+        546
+      ],
+      "formatted_shape": [
+        727,
+        546
+      ],
+      "instance_count": 71,
+      "matches_author_function_exactly": true
+    },
+    {
+      "member": "BenchmarkDatasets/Dataset1/annotations/annotated_predStardist_v3.6.0.8_Labels_2025_1221.tiff",
+      "original_shape": [
+        727,
+        546
+      ],
+      "formatted_shape": [
+        727,
+        546
+      ],
+      "instance_count": 74,
+      "matches_author_function_exactly": true
+    },
+    {
+      "member": "BenchmarkDatasets/Dataset2/annotations/annotated_A_Labels_2025_0127_105235.tiff",
+      "original_shape": [
+        8,
+        80,
+        204
+      ],
+      "formatted_shape": [
+        80,
+        204
+      ],
+      "instance_count": 30,
+      "matches_author_function_exactly": true
+    },
+    {
+      "member": "BenchmarkDatasets/Dataset2/annotations/annotated_B_Labels_2025_0123_144635.tiff",
+      "original_shape": [
+        8,
+        80,
+        204
+      ],
+      "formatted_shape": [
+        80,
+        204
+      ],
+      "instance_count": 29,
+      "matches_author_function_exactly": true
+    },
+    {
+      "member": "BenchmarkDatasets/Dataset2/annotations/annotated_C_Labels_2025_0127_105343.tiff",
+      "original_shape": [
+        8,
+        80,
+        204
+      ],
+      "formatted_shape": [
+        80,
+        204
+      ],
+      "instance_count": 30,
+      "matches_author_function_exactly": true
+    },
+    {
+      "member": "BenchmarkDatasets/Dataset2/annotations/annotated_D_Labels_2025_0127_104507.tiff",
+      "original_shape": [
+        8,
+        80,
+        204
+      ],
+      "formatted_shape": [
+        80,
+        204
+      ],
+      "instance_count": 27,
+      "matches_author_function_exactly": true
+    },
+    {
+      "member": "BenchmarkDatasets/Dataset2/annotations/annotated_E_Labels_2025_0131_190715.tiff",
+      "original_shape": [
+        80,
+        204
+      ],
+      "formatted_shape": [
+        80,
+        204
+      ],
+      "instance_count": 31,
+      "matches_author_function_exactly": true
+    },
+    {
+      "member": "BenchmarkDatasets/Dataset2/annotations/annotated_predStardist_v3.6.0.8_Labels_2025_1221.tiff",
+      "original_shape": [
+        80,
+        204
+      ],
+      "formatted_shape": [
+        80,
+        204
+      ],
+      "instance_count": 31,
+      "matches_author_function_exactly": true
+    }
+  ],
+  "num_masks_compared": 12,
+  "train_fields": 27,
+  "train_crops": 1262,
+  "test_fields": 2,
+  "raters_per_test_field": 5,
+  "training_unknown_pixels_never_negative_examples": true,
+  "test_padding_mask_verified": true,
+  "scorer_toy_cases_passed": [
+    "perfect",
+    "ID_permutation",
+    "empty_prediction",
+    "empty_truth",
+    "both_empty",
+    "independent_bruteforce_assignment"
+  ],
+  "general_model_calls": 0
+}

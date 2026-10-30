@@ -1,0 +1,20 @@
+{
+  "id": "J08",
+  "date": "2026-10-30",
+  "status": "prepared and validated, handed off for evaluator freezing",
+  "model_calls_by_preparation_agent": 0,
+  "authoritative_evaluation_freeze": "Parent run-spec records actual generation timing; adapter/protocol/metadata were finalized before handoff.",
+  "prepared_sha256": "fac163a34bc8efdbd4cc20e0b21cc6ab10d9306010a648a310ca85e997f87909",
+  "files": {
+    "adapter.py": "9dc6a36a057bcfa766f227c497b47f46d0d4657682dd4a7eb1d32645662dd3f1",
+    "protocol.md": "1fa4983162a42f78c7880d14d2b92a35f63d6689032a9183a260772cb4b9f778",
+    "metadata.json": "68018e39e85aea0acfcaff65944ecf15dc87dec2f63d133b309e3ca9747cfd15",
+    "data-manifest.json": "1cd380a0f4f67c48be0579e60035270d04539764d81799f682170feb69ea323c",
+    "source-manifest.json": "2d7b2c6e4413e3636017d1dc08c49f24f4d9b3d676cd05481a1057754f762e08",
+    "validation.json": "097432f1754c03cbb46a968773792eb73cafd5980dadebcc9216640f17ec4239"
+  },
+  "primary_metric": "mean_instance_f1_iou50_multirater",
+  "dataset_group": "SynAPSeg18988899",
+  "current_sota_verified": false,
+  "specialist_evidence": "Author-deposited masks in benchmarkarchive; no local weight inference; budgets/history differ."
+}

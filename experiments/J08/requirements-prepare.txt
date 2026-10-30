@@ -1,0 +1,6 @@
+tifffile==2026.10.15
+imagecodecs==2026.10.10
+# Independent validation only, not required by adapter/scorer:
+scikit-image==0.26.0
+lazy_loader==0.6
+packaging==26.3
