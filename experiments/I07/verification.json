@@ -1,0 +1,29 @@
+{
+  "train_shape": [
+    378,
+    136,
+    8
+  ],
+  "test_shape": [
+    166,
+    136,
+    8
+  ],
+  "baseline_balanced_accuracy": 0.48464912280701755,
+  "per_subject": {
+    "8": 0.38,
+    "9": 0.573076923076923,
+    "10": 0.5
+  },
+  "train_labels": [
+    171,
+    207
+  ],
+  "test_labels": [
+    76,
+    90
+  ],
+  "reviewed_on": "2026-10-30",
+  "scope": "data and fixed local reference only; no evaluated models called",
+  "publisher_sha256_matches": 20
+}

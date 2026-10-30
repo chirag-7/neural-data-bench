@@ -1,0 +1,17 @@
+{
+  "source_commit": "060e67e81096b900773e2166910c5f3aca6365f8",
+  "files": [
+    {
+      "path": "data/cache/L04/spikes-1.mat",
+      "url": "https://raw.githubusercontent.com/Mark-Kramer/Case-Studies-Python/060e67e81096b900773e2166910c5f3aca6365f8/matfiles/spikes-1.mat",
+      "sha256": "8a04d601fce12603fac23a92cc4651c31e134a29c626344efc26b42ba4658e1d",
+      "bytes": 1761663
+    },
+    {
+      "path": "data/cache/L04/LICENSE.MD",
+      "url": "https://raw.githubusercontent.com/Mark-Kramer/Case-Studies-Python/060e67e81096b900773e2166910c5f3aca6365f8/LICENSE.MD",
+      "sha256": "c8d753312c2f1008965c60ff1b58b43d519c2b285097a4917f61af31241c6415",
+      "bytes": 1068
+    }
+  ]
+}

@@ -1,0 +1,510 @@
+{
+  "benchmark_id": "I07",
+  "accessed_on": "2026-10-30",
+  "source": "https://data.nemar.org/on005963/v1.0.0/",
+  "license": "CC0",
+  "files": [
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/README.md",
+      "path": "data/cache/I07/raw/README.md",
+      "bytes": 555,
+      "sha256": "f6fab0124bcbc85d79b54214209a2f8bee10806a4198984986f53ebc4c7397ad"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/dataset_description.json",
+      "path": "data/cache/I07/raw/dataset_description.json",
+      "bytes": 309,
+      "sha256": "8da73b80b10d24c7fabd1728549b935855d52b012f689804e128c331e136e706"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/participants.tsv",
+      "path": "data/cache/I07/raw/participants.tsv",
+      "bytes": 295,
+      "sha256": "8604696fc9b003c462f676a0136811eaecb7f80da449cb563d9fd4428a166dc5"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-01/ses-left2s/nirs/sub-01_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-01/ses-left2s/nirs/sub-01_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 5703280,
+      "sha256": "6bc256d5117d63b8a81b765da8c3ff0096fd30ea66a7e48453b506fb3d8b2765"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-01/ses-left2s/nirs/sub-01_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-01/ses-left2s/nirs/sub-01_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 496,
+      "sha256": "6a935f7657a73eab8cff98924690488af389af48c7548d6f100f421f7f6eec47"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-01/ses-left2s/nirs/sub-01_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-01/ses-left2s/nirs/sub-01_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 699,
+      "sha256": "8182945c048b43ddbd00048550674650afa8dac47c6516caf2a02ad8bc121f9e"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-01/ses-left2s/nirs/sub-01_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-01/ses-left2s/nirs/sub-01_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-01/ses-right2s/nirs/sub-01_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-01/ses-right2s/nirs/sub-01_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 6364168,
+      "sha256": "85dec2ea8b0fafb4fda36e8fc1ad981b90ffa05164f4caea1d05a214bd695f5e"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-01/ses-right2s/nirs/sub-01_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-01/ses-right2s/nirs/sub-01_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 496,
+      "sha256": "8f759025ede2cff7f7164a3cf0a03c27e7fb69d6e737cc90eed6e053a61f2a1d"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-01/ses-right2s/nirs/sub-01_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-01/ses-right2s/nirs/sub-01_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 834,
+      "sha256": "f02ed24a6f10b058f424b61e6b18ccfd66df79529ea4207220945024035bb36a"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-01/ses-right2s/nirs/sub-01_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-01/ses-right2s/nirs/sub-01_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-02/ses-left2s/nirs/sub-02_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-02/ses-left2s/nirs/sub-02_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 5604640,
+      "sha256": "5c9106740cb585231eb7632da4ee18d172f80f999dd995c83c91038462c5935e"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-02/ses-left2s/nirs/sub-02_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-02/ses-left2s/nirs/sub-02_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 506,
+      "sha256": "9c74282370f7e1d87c18404395a93f59ee2f27aa1c966c28e53795ee5e63b11c"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-02/ses-left2s/nirs/sub-02_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-02/ses-left2s/nirs/sub-02_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 716,
+      "sha256": "b86718b7f7ef38ed9ec0e1481da4d4600c23939072220926e66458c985e5f8b4"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-02/ses-left2s/nirs/sub-02_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-02/ses-left2s/nirs/sub-02_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-02/ses-right2s/nirs/sub-02_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-02/ses-right2s/nirs/sub-02_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 6331288,
+      "sha256": "f706126a52e584ae45cf35b269c20735f783b03f5520af65cb302160c1b80c19"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-02/ses-right2s/nirs/sub-02_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-02/ses-right2s/nirs/sub-02_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 496,
+      "sha256": "b0267858e8a70e68049cde5c2dd041ffd29419359594c0859a3cd106b5398047"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-02/ses-right2s/nirs/sub-02_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-02/ses-right2s/nirs/sub-02_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 827,
+      "sha256": "c9d80291f548f5cb036acbf5a2193564af6bc67f7f22085a8b8b649610a90168"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-02/ses-right2s/nirs/sub-02_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-02/ses-right2s/nirs/sub-02_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-03/ses-left2s/nirs/sub-03_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-03/ses-left2s/nirs/sub-03_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 5811784,
+      "sha256": "e1d83980731f489201d8d750a1befb2741de6e4f69eaf10c27b103c266b3df62"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-03/ses-left2s/nirs/sub-03_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-03/ses-left2s/nirs/sub-03_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 506,
+      "sha256": "3286f477fdc658f507733f821e6eae1322827cdb26da76704b7980c974ce93ba"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-03/ses-left2s/nirs/sub-03_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-03/ses-left2s/nirs/sub-03_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 677,
+      "sha256": "c3785e7bce5fc4dd0041fa1110141bd009f6f55aa597b0ff08c332ed5604bd05"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-03/ses-left2s/nirs/sub-03_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-03/ses-left2s/nirs/sub-03_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-03/ses-right2s/nirs/sub-03_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-03/ses-right2s/nirs/sub-03_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 6022216,
+      "sha256": "accffdb5a6692ca66d4f4d834ca814266b6873ffff864302996f48dcf74a735c"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-03/ses-right2s/nirs/sub-03_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-03/ses-right2s/nirs/sub-03_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 494,
+      "sha256": "552cd5b23bf407cfa7fd52d3ec6a0ad5fd7f2b86b773293ce50b963b770e40a8"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-03/ses-right2s/nirs/sub-03_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-03/ses-right2s/nirs/sub-03_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 875,
+      "sha256": "895f619e95860070981b3be6d5e194b34094ca6dd586c4551604d99bb52a2466"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-03/ses-right2s/nirs/sub-03_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-03/ses-right2s/nirs/sub-03_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-04/ses-left2s/nirs/sub-04_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-04/ses-left2s/nirs/sub-04_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 6028792,
+      "sha256": "99dd3ecfddbd455fda9b84cda07de02c579051e30cbad1f291b365aeb77ca0a0"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-04/ses-left2s/nirs/sub-04_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-04/ses-left2s/nirs/sub-04_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 496,
+      "sha256": "968fbe2febcc064475313be026797ad68c5da0367b9c447abdb94c8b1d62d0ae"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-04/ses-left2s/nirs/sub-04_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-04/ses-left2s/nirs/sub-04_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 732,
+      "sha256": "2ea78d6db8568778cbb6dab7874f551218ee5217b839817361096a367363ade1"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-04/ses-left2s/nirs/sub-04_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-04/ses-left2s/nirs/sub-04_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-04/ses-right2s/nirs/sub-04_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-04/ses-right2s/nirs/sub-04_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 6739000,
+      "sha256": "debfe639fc99b60a60069aae86ba9ae7ab79f95a58643828dc49fd08c34e8b0a"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-04/ses-right2s/nirs/sub-04_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-04/ses-right2s/nirs/sub-04_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 496,
+      "sha256": "9023319fb76c1188f458810329fe9740e6ccb8922e4fddb6bebfd9fe3ea2f8ed"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-04/ses-right2s/nirs/sub-04_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-04/ses-right2s/nirs/sub-04_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 828,
+      "sha256": "40f0103c09b86aa26d4f1b1ffa0bca87431472619016afb326ac5d639c2dc40e"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-04/ses-right2s/nirs/sub-04_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-04/ses-right2s/nirs/sub-04_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-05/ses-left2s/nirs/sub-05_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-05/ses-left2s/nirs/sub-05_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 5887408,
+      "sha256": "48efdc351b4627993d1190ac6b55ab61c4e6acd85cbbbbe820ed8d062cb7dbab"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-05/ses-left2s/nirs/sub-05_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-05/ses-left2s/nirs/sub-05_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 496,
+      "sha256": "39e3ad5f9ef907bc69d160fc0ca2e8470fdfc2c35c349170f7a3c3994393eab1"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-05/ses-left2s/nirs/sub-05_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-05/ses-left2s/nirs/sub-05_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 730,
+      "sha256": "8f48a2e2bc0ef8da6629665d84de87588d7ec2900c2aeea508af9a07d1258f98"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-05/ses-left2s/nirs/sub-05_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-05/ses-left2s/nirs/sub-05_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-05/ses-right2s/nirs/sub-05_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-05/ses-right2s/nirs/sub-05_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 6285256,
+      "sha256": "6afd3ca0c1e1935725a0c51d248930a73fd9e1551e49fdb6ed74a4251c7d2e67"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-05/ses-right2s/nirs/sub-05_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-05/ses-right2s/nirs/sub-05_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 495,
+      "sha256": "e38ff7126eb265f51b13fd494885966152850e4fe5c3943cd5ee8a7f926db422"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-05/ses-right2s/nirs/sub-05_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-05/ses-right2s/nirs/sub-05_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 891,
+      "sha256": "890bc25af4df0459d14a088bfe703b16cda8fc3304ec7cbc8111e8851c145426"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-05/ses-right2s/nirs/sub-05_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-05/ses-right2s/nirs/sub-05_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-06/ses-left2s/nirs/sub-06_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-06/ses-left2s/nirs/sub-06_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 5124592,
+      "sha256": "5156f96b53b7f88d9d230fb30e2267b55d3f0158f691781fe360ed7ad24e8592"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-06/ses-left2s/nirs/sub-06_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-06/ses-left2s/nirs/sub-06_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 496,
+      "sha256": "2415ac73d5833280b4119244b397e7369e37e8e1be6061e6d6beb19caf89b1c3"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-06/ses-left2s/nirs/sub-06_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-06/ses-left2s/nirs/sub-06_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 586,
+      "sha256": "c4d01eb538aecc201d22f1a6bb978e6078a40b65c69831e22e7277ad6ca95080"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-06/ses-left2s/nirs/sub-06_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-06/ses-left2s/nirs/sub-06_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-06/ses-right2s/nirs/sub-06_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-06/ses-right2s/nirs/sub-06_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 5805208,
+      "sha256": "a5c6f3f9f77c7ab20fb02969d3492a04bfa9a8edabc41c69aced89497bf55302"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-06/ses-right2s/nirs/sub-06_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-06/ses-right2s/nirs/sub-06_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 496,
+      "sha256": "8015849f6e94b5fd8e90de60ec33d2bf2ea58d06b1693af04767a2378ec5a143"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-06/ses-right2s/nirs/sub-06_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-06/ses-right2s/nirs/sub-06_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 745,
+      "sha256": "e42627e7dabbad184dbed15ee8bdcb060feef281eac32b500931a4607de183e7"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-06/ses-right2s/nirs/sub-06_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-06/ses-right2s/nirs/sub-06_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-07/ses-left2s/nirs/sub-07_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-07/ses-left2s/nirs/sub-07_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 5815072,
+      "sha256": "47a5346d659af005f9c80149c52ad47d41597c14b2b935e3ef37ca4d743d0207"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-07/ses-left2s/nirs/sub-07_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-07/ses-left2s/nirs/sub-07_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 496,
+      "sha256": "01ba47b3e589c5b8536afc8df64476362e930520766110bfbf52d19d1bf9ed72"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-07/ses-left2s/nirs/sub-07_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-07/ses-left2s/nirs/sub-07_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 677,
+      "sha256": "34fbec4fe04b38a66da75ba62f3118c0e3b089c03636187997376c7976a15c38"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-07/ses-left2s/nirs/sub-07_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-07/ses-left2s/nirs/sub-07_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-07/ses-right2s/nirs/sub-07_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-07/ses-right2s/nirs/sub-07_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 6817912,
+      "sha256": "3134525238e351807dbc385ba015cb6d913e93a62a0b7d81aafbb8371d6a7a1b"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-07/ses-right2s/nirs/sub-07_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-07/ses-right2s/nirs/sub-07_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 496,
+      "sha256": "89bdac6a37a1f9dfe03622d8889493c7641bd6e71c21477944ee2b0a6332ba56"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-07/ses-right2s/nirs/sub-07_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-07/ses-right2s/nirs/sub-07_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 858,
+      "sha256": "70c1262502aebfea360975ee8517461904feabf73c08ee0dc41fa0745d1a3bce"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-07/ses-right2s/nirs/sub-07_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-07/ses-right2s/nirs/sub-07_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-08/ses-left2s/nirs/sub-08_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-08/ses-left2s/nirs/sub-08_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 5726296,
+      "sha256": "7c6a28d8d07ed033ddae9488d9fbaab18619190ca6137942b2cb5230ce728861"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-08/ses-left2s/nirs/sub-08_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-08/ses-left2s/nirs/sub-08_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 495,
+      "sha256": "0104764d0eb836c170c6d0d1b22663a250efb8a6738cfc8c8e2313c2f8e7fdc6"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-08/ses-left2s/nirs/sub-08_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-08/ses-left2s/nirs/sub-08_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 747,
+      "sha256": "3a801a0129d807941d519d53aed8511461b4853f06c6f7ade17c354e39ec447c"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-08/ses-left2s/nirs/sub-08_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-08/ses-left2s/nirs/sub-08_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-08/ses-right2s/nirs/sub-08_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-08/ses-right2s/nirs/sub-08_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 6498976,
+      "sha256": "730c85ece7602660dfc1eebca4530a0390a42d4c1440224248c8c389a2efae68"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-08/ses-right2s/nirs/sub-08_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-08/ses-right2s/nirs/sub-08_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 495,
+      "sha256": "bbc486def20ab240f6eba28a9453ed418acb92f7dc0cd5fe1a378a1483254ac6"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-08/ses-right2s/nirs/sub-08_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-08/ses-right2s/nirs/sub-08_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 835,
+      "sha256": "43edb65d3f62dd6dd0f8180d1f6d197b847e0c6b00b807d2034369e41c8acc4f"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-08/ses-right2s/nirs/sub-08_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-08/ses-right2s/nirs/sub-08_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-09/ses-left2s/nirs/sub-09_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-09/ses-left2s/nirs/sub-09_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 6157024,
+      "sha256": "4893fcaeb53e54f4e0bf55b77bd588cd9f85645d2bca8fca1f60c9f3572b6fb3"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-09/ses-left2s/nirs/sub-09_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-09/ses-left2s/nirs/sub-09_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 496,
+      "sha256": "47be40f32b567a3ecf8d0674bfbbe816aa7de36b4823b5cae4a6fd150312e127"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-09/ses-left2s/nirs/sub-09_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-09/ses-left2s/nirs/sub-09_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 760,
+      "sha256": "3697b5daf4e19ee6dee27e744ca50b5ac259e34ac195753e0975ba7b2e4febae"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-09/ses-left2s/nirs/sub-09_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-09/ses-left2s/nirs/sub-09_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-09/ses-right2s/nirs/sub-09_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-09/ses-right2s/nirs/sub-09_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 6617344,
+      "sha256": "cb14d25134f7f65f1a76c4f721d07697ddfa8b4f27460ff60cc8469ce765be74"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-09/ses-right2s/nirs/sub-09_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-09/ses-right2s/nirs/sub-09_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 496,
+      "sha256": "4194114f4692adce186009cb6cb5f5ef009f520eb30aabe4bb6ded90eeb5d0d4"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-09/ses-right2s/nirs/sub-09_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-09/ses-right2s/nirs/sub-09_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 875,
+      "sha256": "889a8b5b3c98640b96e9ed02b67b41f12372280c20eb856d52cd5093babc07e8"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-09/ses-right2s/nirs/sub-09_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-09/ses-right2s/nirs/sub-09_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-10/ses-left2s/nirs/sub-10_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-10/ses-left2s/nirs/sub-10_ses-left2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 6028792,
+      "sha256": "9990477f0cfadf209b78723f66b24593a8c0a875af2fdb9650f526725a534c7b"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-10/ses-left2s/nirs/sub-10_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-10/ses-left2s/nirs/sub-10_ses-left2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 496,
+      "sha256": "968fbe2febcc064475313be026797ad68c5da0367b9c447abdb94c8b1d62d0ae"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-10/ses-left2s/nirs/sub-10_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-10/ses-left2s/nirs/sub-10_ses-left2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 700,
+      "sha256": "8a8acec4df4b4eb5aa6bfebf3b04097e563a6646ae52760d8ddd131ae764a7b7"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-10/ses-left2s/nirs/sub-10_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-10/ses-left2s/nirs/sub-10_ses-left2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-10/ses-right2s/nirs/sub-10_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "path": "data/cache/I07/raw/sub-10/ses-right2s/nirs/sub-10_ses-right2s_task-FRESHMOTOR_nirs.snirf",
+      "bytes": 6045232,
+      "sha256": "d7b14e07d51f752293aaa3a0162bb7ec205533b2cc05b0d1492eba0b0b5d51c5"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-10/ses-right2s/nirs/sub-10_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "path": "data/cache/I07/raw/sub-10/ses-right2s/nirs/sub-10_ses-right2s_task-FRESHMOTOR_nirs.json",
+      "bytes": 506,
+      "sha256": "99cbeea811672be1961fcca85618bdf709a1e489e6a8ce23bd9fd80826944915"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-10/ses-right2s/nirs/sub-10_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "path": "data/cache/I07/raw/sub-10/ses-right2s/nirs/sub-10_ses-right2s_task-FRESHMOTOR_events.tsv",
+      "bytes": 834,
+      "sha256": "9f300577b7ac188c7341e7e02e4dc05fd0641ff09c3b72f54020e6502bc753c6"
+    },
+    {
+      "url": "https://data.nemar.org/on005963/v1.0.0/sub-10/ses-right2s/nirs/sub-10_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "path": "data/cache/I07/raw/sub-10/ses-right2s/nirs/sub-10_ses-right2s_task-FRESHMOTOR_channels.tsv",
+      "bytes": 18662,
+      "sha256": "99826b12f01f8075c249ab67c0963f3bbddb51df11ed10d96822473401971883"
+    }
+  ],
+  "prepared": {
+    "path": "data/cache/I07/data.npz",
+    "sha256": "fa62b48ce60428efb63acf5fd2c2b04a7cd7bbf4a9d197f834fed6810edb921b"
+  }
+}

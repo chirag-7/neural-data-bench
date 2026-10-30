@@ -1,0 +1,9 @@
+# L04 — real place-cell predictive Poisson diagnostic
+
+Source: [Kramer/Eden neural-data case study](https://mark-kramer.github.io/Case-Studies-Python/09.html), pinned repository commit060e67e81096b900773e2166910c5f3aca6365f8, spikes-1.mat. Source describes an in-vivo rat hippocampal place-cell spike train and measured1ms position samples. This replaces the catalog's merely proposed generator with one concrete **real-data predictive endpoint**, not the entire goodness-of-fit/inference task family.
+
+Aggregate nonoverlapping20ms bins with edges half a1ms sample before the first recorded position. Counts preserve individual events (not binary clipping); exclude incomplete final bin. X=meanposition(cm), finite-differencevelocity(cm/s). Split first60% chronological bins as training, omit50bins(1s), remaining40% as test. Singlecell/singleexperiment; timebins are not independent animals. No labels used to choose windows/split.
+
+Generate one model program perSol ID, no tools/testcounts, same explicit prompt, highreasoning,240line/180seconds budget. Output finite nonnegative expected counts/bin. Primary held-out loglikelihood improvement against trainingmean constant, divided by observed testspikes andlog2 (bits/spike); meanPoissonNLL perbinsecondary. Scoring clamps exactzeros at1e-12 only for logarithm. No currentSOTA. Conventional reference: fixed quadraticposition×movementdirection PoissonGLM, tinyL2 penalty, numericalMLE fitted onlytraining. Input/output shapes, codeandarrayhashes retained.
+
+No parametertruth, stationarity, time-rescaling test, calibrated intervals or neuronal-population claim. A predictive score is not a causal place-field inference. Public historical tutorial data could be in modelpretraining; no explicit testdata/labels provided at generation. The familiar source-specific response pattern is not supplied in the prompt.
