@@ -1,0 +1,38 @@
+[
+  {
+    "path": "app.js",
+    "sha256": "263e5aa996026d0ca2854a7c1a63b46e03f2eddc85e65f0559197a9a3e3d999a"
+  },
+  {
+    "path": "data/C05.json",
+    "sha256": "5a3e4c710c587ffeab068739ce99268e28769c3b048c9a0dc635b1df8c41ec59"
+  },
+  {
+    "path": "data/M04.json",
+    "sha256": "70b5644505b7679c8ec78c38f9612992f6e3744bfc5958d75b5bd4e2b69c9876"
+  },
+  {
+    "path": "data/catalog.json",
+    "sha256": "cf12bfc295c2f97bef78de124a23dda8eb19056d21829bb81980652cb0a577a5"
+  },
+  {
+    "path": "data/measurements.csv",
+    "sha256": "a03fd5bb8c04559209fcebb4ba63cc68df3991f6c1635a3140e21c39cca025ee"
+  },
+  {
+    "path": "data/measurements.jsonl",
+    "sha256": "45ed077f3564531c64f4e3f6c2629243b00378a232c668edca19303365d95dd4"
+  },
+  {
+    "path": "data/summary.json",
+    "sha256": "ea3da4e2e3aa6f0c3123b75590c65b0099d41d1b413d4ab02d1f144900ff64dc"
+  },
+  {
+    "path": "index.html",
+    "sha256": "e43089620335eb6de8b0bd6bb0d33c8621d8d51a0445e0dc3259e7321b6f5483"
+  },
+  {
+    "path": "style.css",
+    "sha256": "c0a65026d775bdd4cd43ca7e7436e720f411a789170c0d5eb48dbcde498ebb69"
+  }
+]

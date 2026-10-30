@@ -6,6 +6,8 @@ DATA=ROOT/'data/cache/spikefinder'
 PIN='def1f8c2c5268eb71e83f57c265d4b3c102fb5f8'
 RAW=f'https://raw.githubusercontent.com/berenslab/spikefinder_analysis/{PIN}/'
 manifest=[]
+manifest_path=ROOT/'data/manifests/spikefinder.json'
+expected={f['path']:f['sha256'] for f in json.loads(manifest_path.read_text())['files']} if manifest_path.exists() else {}
 def fetch(url,p):
     p.parent.mkdir(parents=True,exist_ok=True)
     if not p.exists():
@@ -24,5 +26,9 @@ for d in range(1,6):
         fetch(RAW+f'data/raw/{method}/{d}.test.spikes.csv',DATA/f'{d}.{method}.csv')
 fetch(RAW+'spikefinder_eval.py',DATA/'spikefinder_eval.py')
 fetch(RAW+'data/results_30_06_17.csv',DATA/'results_30_06_17.csv')
-(ROOT/'data/manifests/spikefinder.json').write_text(json.dumps(dict(pin=PIN,files=manifest),indent=2))
+for item in manifest:
+    prior=expected.get(item['path'])
+    if prior is not None and item['sha256']!=prior:
+        raise ValueError('Acquired bytes differ from the published manifest: '+item['path'])
+manifest_path.write_text(json.dumps(dict(pin=PIN,files=manifest),indent=2))
 print('Acquired and hashed',len(manifest),'files')
