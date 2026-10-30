@@ -1,0 +1,770 @@
+[
+  {
+    "benchmark_id": "B01",
+    "slice_id": "sorting-v1",
+    "model": "gpt-5.6-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3-unsupervised",
+    "reference_type": null,
+    "specialist_name": null,
+    "score": 0.8749905140758875,
+    "metric": "mean_gt_accuracy",
+    "direction": "higher",
+    "n_units": 10,
+    "seconds": 0.519237375119701,
+    "per_unit": [
+      1.0,
+      0.98,
+      0.9302325581395349,
+      1.0,
+      0.9791666666666666,
+      0.9736842105263158,
+      1.0,
+      0.0,
+      0.9333333333333333,
+      0.9534883720930233
+    ],
+    "prediction_file": "results/predictions/B01/sorting-v1--gpt-5.6-sol.npz",
+    "prediction_sha256": "178d29c2807916c8d333ce43542ce5c9086d7235f546e5cda84da4df80cc3cad",
+    "input_sha256": {
+      "data/cache/B01/inputs.npz": "9fe7074e716111b13c4a1339cf555d51ccb3cd59efcf0b4b27405d79b16262b4",
+      "data/cache/B01/truth.npz": "86c33c5ba5983c037d2d957cd051dc8b3beaaffbc62b5bfc5faf43aab4d11309"
+    },
+    "scoring_diagnostics": {
+      "mean_gt_accuracy": 0.8749905140758875,
+      "mean_precision": 0.8973684210526315,
+      "mean_recall": 0.8776220930232558,
+      "n_gt_units": 10,
+      "n_predicted_units": 9,
+      "n_predicted_events": 613,
+      "well_detected_unit_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "false_positive_unit_ids": [],
+      "redundant_unit_ids": [],
+      "overmerged_unit_ids": [],
+      "per_gt_unit_accuracy": {
+        "0": 1.0,
+        "1": 0.98,
+        "2": 0.9302325581395349,
+        "3": 1.0,
+        "4": 0.9791666666666666,
+        "5": 0.9736842105263158,
+        "6": 1.0,
+        "7": 0.0,
+        "8": 0.9333333333333333,
+        "9": 0.9534883720930233
+      },
+      "per_gt_unit_metrics": {
+        "0": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "1": {
+          "accuracy": 0.98,
+          "recall": 0.98,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.02
+        },
+        "2": {
+          "accuracy": 0.9302325581395349,
+          "recall": 0.9302325581395349,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.06976744186046512
+        },
+        "3": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "4": {
+          "accuracy": 0.9791666666666666,
+          "recall": 0.9791666666666666,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.020833333333333332
+        },
+        "5": {
+          "accuracy": 0.9736842105263158,
+          "recall": 1.0,
+          "precision": 0.9736842105263158,
+          "false_discovery_rate": 0.02631578947368421,
+          "miss_rate": 0.0
+        },
+        "6": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "7": {
+          "accuracy": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "8": {
+          "accuracy": 0.9333333333333333,
+          "recall": 0.9333333333333333,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.06666666666666667
+        },
+        "9": {
+          "accuracy": 0.9534883720930233,
+          "recall": 0.9534883720930233,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.046511627906976744
+        }
+      },
+      "scorer": "SpikeInterface0.105.4",
+      "comparison_parameters": {
+        "delta_time": 0.4,
+        "match_score": 0.5,
+        "chance_score": 0.1,
+        "well_detected_score": 0.8,
+        "redundant_score": 0.2,
+        "overmerged_score": 0.2,
+        "exhaustive_gt": true,
+        "match_mode": "hungarian",
+        "agreement_method": "count"
+      }
+    },
+    "superiority_eligible": false,
+    "superiority_reason": "One short standard simulation; current best and equivalent total effort unverified",
+    "description": "Deterministic, fully unsupervised sorter. It common-median references the recording, estimates per-channel noise with robust MAD statistics, detects negative spatiotemporal peaks with geometry-aware nonmaximum suppression, and extracts aligned multichannel snippets. Waveform PCA, estimated source location, and amplitude features are clustered by diagonal Gaussian mixtures; component count is selected using BIC on the supplied recording. Highly similar or coincident components are merged, while low-support, weak, edge-dominated, or temporally unstable templates are rejected. Final within-unit refractory deduplication prevents duplicate events. Validation uses only internal template stability, morphology, support, and refractory consistency\u2014never hidden labels, a prescribed unit count, or external templates.",
+    "code_sha256": "2b66587ada96abb6ad99683342f8fff9f6d610ad9bab21effbbf89d809b93ca5",
+    "code_lines": 225,
+    "line_limit_compliant": true
+  },
+  {
+    "benchmark_id": "B01",
+    "slice_id": "sorting-v1",
+    "model": "gpt-6-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3-unsupervised",
+    "reference_type": null,
+    "specialist_name": null,
+    "score": 0.9400114619192405,
+    "metric": "mean_gt_accuracy",
+    "direction": "higher",
+    "n_units": 10,
+    "seconds": 2.3857737500220537,
+    "per_unit": [
+      1.0,
+      0.98,
+      0.9772727272727273,
+      1.0,
+      0.8275862068965517,
+      0.7027027027027027,
+      1.0,
+      0.9459459459459459,
+      0.9743589743589743,
+      0.9922480620155039
+    ],
+    "prediction_file": "results/predictions/B01/sorting-v1--gpt-6-sol.npz",
+    "prediction_sha256": "905b689dea2689e487872cbce870016c8deeedfe6bbf873ebfd209a1700a617b",
+    "input_sha256": {
+      "data/cache/B01/inputs.npz": "9fe7074e716111b13c4a1339cf555d51ccb3cd59efcf0b4b27405d79b16262b4",
+      "data/cache/B01/truth.npz": "86c33c5ba5983c037d2d957cd051dc8b3beaaffbc62b5bfc5faf43aab4d11309"
+    },
+    "scoring_diagnostics": {
+      "mean_gt_accuracy": 0.9400114619192405,
+      "mean_precision": 0.9804858934169278,
+      "mean_recall": 0.9595255685023126,
+      "n_gt_units": 10,
+      "n_predicted_units": 20,
+      "n_predicted_events": 1664,
+      "well_detected_unit_ids": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        10,
+        11,
+        16
+      ],
+      "false_positive_unit_ids": [
+        4,
+        5,
+        8,
+        9,
+        13,
+        14,
+        17,
+        19
+      ],
+      "redundant_unit_ids": [
+        12,
+        18
+      ],
+      "overmerged_unit_ids": [],
+      "per_gt_unit_accuracy": {
+        "0": 1.0,
+        "1": 0.98,
+        "2": 0.9772727272727273,
+        "3": 1.0,
+        "4": 0.8275862068965517,
+        "5": 0.7027027027027027,
+        "6": 1.0,
+        "7": 0.9459459459459459,
+        "8": 0.9743589743589743,
+        "9": 0.9922480620155039
+      },
+      "per_gt_unit_metrics": {
+        "0": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "1": {
+          "accuracy": 0.98,
+          "recall": 0.98,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.02
+        },
+        "2": {
+          "accuracy": 0.9772727272727273,
+          "recall": 1.0,
+          "precision": 0.9772727272727273,
+          "false_discovery_rate": 0.022727272727272728,
+          "miss_rate": 0.0
+        },
+        "3": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "4": {
+          "accuracy": 0.8275862068965517,
+          "recall": 1.0,
+          "precision": 0.8275862068965517,
+          "false_discovery_rate": 0.1724137931034483,
+          "miss_rate": 0.0
+        },
+        "5": {
+          "accuracy": 0.7027027027027027,
+          "recall": 0.7027027027027027,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.2972972972972973
+        },
+        "6": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "7": {
+          "accuracy": 0.9459459459459459,
+          "recall": 0.9459459459459459,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.05405405405405406
+        },
+        "8": {
+          "accuracy": 0.9743589743589743,
+          "recall": 0.9743589743589743,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.02564102564102564
+        },
+        "9": {
+          "accuracy": 0.9922480620155039,
+          "recall": 0.9922480620155039,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.007751937984496124
+        }
+      },
+      "scorer": "SpikeInterface0.105.4",
+      "comparison_parameters": {
+        "delta_time": 0.4,
+        "match_score": 0.5,
+        "chance_score": 0.1,
+        "well_detected_score": 0.8,
+        "redundant_score": 0.2,
+        "overmerged_score": 0.2,
+        "exhaustive_gt": true,
+        "match_mode": "hungarian",
+        "agreement_method": "count"
+      }
+    },
+    "superiority_eligible": false,
+    "superiority_reason": "One short standard simulation; current best and equivalent total effort unverified",
+    "description": "Unsupervised local peak detection, waveform clustering, template merging, and template based event filtering. Unit count is inferred from supported clusters. Validation uses only waveform consistency and timing within the supplied recording; no labels, ground truth, or claimed score are used.",
+    "code_sha256": "a699000dad24ef0c5ea9f3170dcbe69162a730df8c27db08aeed566321af7fd0",
+    "code_lines": 170,
+    "line_limit_compliant": true
+  },
+  {
+    "benchmark_id": "B01",
+    "slice_id": "sorting-v1",
+    "model": "gpt-6.1-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3-unsupervised",
+    "reference_type": null,
+    "specialist_name": null,
+    "score": 0.7504504504504504,
+    "metric": "mean_gt_accuracy",
+    "direction": "higher",
+    "n_units": 10,
+    "seconds": 1.2775145000778139,
+    "per_unit": [
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.5135135135135135,
+      1.0,
+      0.990990990990991,
+      1.0,
+      1.0
+    ],
+    "prediction_file": "results/predictions/B01/sorting-v1--gpt-6.1-sol.npz",
+    "prediction_sha256": "420adda9f8fdf05280863cd71316ff0739bd5fa1c3560b7017249f1b8616db6b",
+    "input_sha256": {
+      "data/cache/B01/inputs.npz": "9fe7074e716111b13c4a1339cf555d51ccb3cd59efcf0b4b27405d79b16262b4",
+      "data/cache/B01/truth.npz": "86c33c5ba5983c037d2d957cd051dc8b3beaaffbc62b5bfc5faf43aab4d11309"
+    },
+    "scoring_diagnostics": {
+      "mean_gt_accuracy": 0.7504504504504504,
+      "mean_precision": 0.8,
+      "mean_recall": 0.7504504504504504,
+      "n_gt_units": 10,
+      "n_predicted_units": 11,
+      "n_predicted_events": 746,
+      "well_detected_unit_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "false_positive_unit_ids": [
+        5,
+        10
+      ],
+      "redundant_unit_ids": [
+        8
+      ],
+      "overmerged_unit_ids": [],
+      "per_gt_unit_accuracy": {
+        "0": 1.0,
+        "1": 0.0,
+        "2": 1.0,
+        "3": 0.0,
+        "4": 1.0,
+        "5": 0.5135135135135135,
+        "6": 1.0,
+        "7": 0.990990990990991,
+        "8": 1.0,
+        "9": 1.0
+      },
+      "per_gt_unit_metrics": {
+        "0": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "1": {
+          "accuracy": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "2": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "3": {
+          "accuracy": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "4": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "5": {
+          "accuracy": 0.5135135135135135,
+          "recall": 0.5135135135135135,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.4864864864864865
+        },
+        "6": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "7": {
+          "accuracy": 0.990990990990991,
+          "recall": 0.990990990990991,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.009009009009009009
+        },
+        "8": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "9": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        }
+      },
+      "scorer": "SpikeInterface0.105.4",
+      "comparison_parameters": {
+        "delta_time": 0.4,
+        "match_score": 0.5,
+        "chance_score": 0.1,
+        "well_detected_score": 0.8,
+        "redundant_score": 0.2,
+        "overmerged_score": 0.2,
+        "exhaustive_gt": true,
+        "match_mode": "hungarian",
+        "agreement_method": "count"
+      }
+    },
+    "superiority_eligible": false,
+    "superiority_reason": "One short standard simulation; current best and equivalent total effort unverified",
+    "description": "Unsupervised spatial whitening, local spike detection, waveform PCA and overclustering with projection-based mode merging. Robust templates drive iterative matching and whole-recording refinement. Unit counts come from voltage-derived clusters; no labels, external templates, or claimed benchmark score are used.",
+    "code_sha256": "4b6047ddbb35b0009248e30192372afc956558d5c8f46867a4832a3d8e9789e6",
+    "code_lines": 225,
+    "line_limit_compliant": true
+  },
+  {
+    "benchmark_id": "B01",
+    "slice_id": "sorting-v1",
+    "model": "mountainsort5",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "reference",
+    "reference_type": "local_specialist_reproduction",
+    "specialist_name": "MountainSort5 0.5.9 scheme1",
+    "score": 0.9408960583730381,
+    "metric": "mean_gt_accuracy",
+    "direction": "higher",
+    "n_units": 10,
+    "seconds": 2.8937087920494378,
+    "per_unit": [
+      0.7169811320754716,
+      1.0,
+      0.9767441860465116,
+      1.0,
+      1.0,
+      0.8648648648648649,
+      1.0,
+      0.9464285714285714,
+      0.9487179487179487,
+      0.9552238805970149
+    ],
+    "prediction_file": "results/predictions/B01/sorting-v1--mountainsort5.npz",
+    "prediction_sha256": "6393fed0d8484176f51a013f429bbaedef3004fbdf14ee219472d9b268b2f1cd",
+    "input_sha256": {
+      "data/cache/B01/inputs.npz": "9fe7074e716111b13c4a1339cf555d51ccb3cd59efcf0b4b27405d79b16262b4",
+      "data/cache/B01/truth.npz": "86c33c5ba5983c037d2d957cd051dc8b3beaaffbc62b5bfc5faf43aab4d11309"
+    },
+    "scoring_diagnostics": {
+      "mean_gt_accuracy": 0.9408960583730381,
+      "mean_precision": 0.9953060220645071,
+      "mean_recall": 0.9454511148675255,
+      "n_gt_units": 10,
+      "n_predicted_units": 11,
+      "n_predicted_events": 729,
+      "well_detected_unit_ids": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "false_positive_unit_ids": [],
+      "redundant_unit_ids": [
+        2
+      ],
+      "overmerged_unit_ids": [],
+      "per_gt_unit_accuracy": {
+        "0": 0.7169811320754716,
+        "1": 1.0,
+        "2": 0.9767441860465116,
+        "3": 1.0,
+        "4": 1.0,
+        "5": 0.8648648648648649,
+        "6": 1.0,
+        "7": 0.9464285714285714,
+        "8": 0.9487179487179487,
+        "9": 0.9552238805970149
+      },
+      "per_gt_unit_metrics": {
+        "0": {
+          "accuracy": 0.7169811320754716,
+          "recall": 0.7169811320754716,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.2830188679245283
+        },
+        "1": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "2": {
+          "accuracy": 0.9767441860465116,
+          "recall": 0.9767441860465116,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.023255813953488372
+        },
+        "3": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "4": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "5": {
+          "accuracy": 0.8648648648648649,
+          "recall": 0.8648648648648649,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.13513513513513514
+        },
+        "6": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "7": {
+          "accuracy": 0.9464285714285714,
+          "recall": 0.954954954954955,
+          "precision": 0.9906542056074766,
+          "false_discovery_rate": 0.009345794392523364,
+          "miss_rate": 0.04504504504504504
+        },
+        "8": {
+          "accuracy": 0.9487179487179487,
+          "recall": 0.9487179487179487,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.05128205128205128
+        },
+        "9": {
+          "accuracy": 0.9552238805970149,
+          "recall": 0.9922480620155039,
+          "precision": 0.9624060150375939,
+          "false_discovery_rate": 0.03759398496240601,
+          "miss_rate": 0.007751937984496124
+        }
+      },
+      "scorer": "SpikeInterface0.105.4",
+      "comparison_parameters": {
+        "delta_time": 0.4,
+        "match_score": 0.5,
+        "chance_score": 0.1,
+        "well_detected_score": 0.8,
+        "redundant_score": 0.2,
+        "overmerged_score": 0.2,
+        "exhaustive_gt": true,
+        "match_mode": "hungarian",
+        "agreement_method": "count"
+      }
+    },
+    "superiority_eligible": false,
+    "superiority_reason": "One short standard simulation; current best and equivalent total effort unverified",
+    "source_specialist_record": {
+      "mean_gt_accuracy": 0.9408960583730381,
+      "mean_precision": 0.9953060220645071,
+      "mean_recall": 0.9454511148675255,
+      "n_gt_units": 10,
+      "n_predicted_units": 11,
+      "n_predicted_events": 729,
+      "well_detected_unit_ids": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "false_positive_unit_ids": [],
+      "redundant_unit_ids": [
+        2
+      ],
+      "overmerged_unit_ids": [],
+      "per_gt_unit_accuracy": {
+        "0": 0.7169811320754716,
+        "1": 1.0,
+        "2": 0.9767441860465116,
+        "3": 1.0,
+        "4": 1.0,
+        "5": 0.8648648648648649,
+        "6": 1.0,
+        "7": 0.9464285714285714,
+        "8": 0.9487179487179487,
+        "9": 0.9552238805970149
+      },
+      "per_gt_unit_metrics": {
+        "0": {
+          "accuracy": 0.7169811320754716,
+          "recall": 0.7169811320754716,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.2830188679245283
+        },
+        "1": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "2": {
+          "accuracy": 0.9767441860465116,
+          "recall": 0.9767441860465116,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.023255813953488372
+        },
+        "3": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "4": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "5": {
+          "accuracy": 0.8648648648648649,
+          "recall": 0.8648648648648649,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.13513513513513514
+        },
+        "6": {
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.0
+        },
+        "7": {
+          "accuracy": 0.9464285714285714,
+          "recall": 0.954954954954955,
+          "precision": 0.9906542056074766,
+          "false_discovery_rate": 0.009345794392523364,
+          "miss_rate": 0.04504504504504504
+        },
+        "8": {
+          "accuracy": 0.9487179487179487,
+          "recall": 0.9487179487179487,
+          "precision": 1.0,
+          "false_discovery_rate": 0.0,
+          "miss_rate": 0.05128205128205128
+        },
+        "9": {
+          "accuracy": 0.9552238805970149,
+          "recall": 0.9922480620155039,
+          "precision": 0.9624060150375939,
+          "false_discovery_rate": 0.03759398496240601,
+          "miss_rate": 0.007751937984496124
+        }
+      },
+      "scorer": "SpikeInterface0.105.4",
+      "comparison_parameters": {
+        "delta_time": 0.4,
+        "match_score": 0.5,
+        "chance_score": 0.1,
+        "well_detected_score": 0.8,
+        "redundant_score": 0.2,
+        "overmerged_score": 0.2,
+        "exhaustive_gt": true,
+        "match_mode": "hungarian",
+        "agreement_method": "count"
+      },
+      "method": "MountainSort5 0.5.9 scheme1 frozen configuration",
+      "runtime_seconds": 2.8937087920494378,
+      "program_sha256": "1c42a77d2dad42acd3a4da41a72b537f1b955a297d766598cc22f06b63f463db",
+      "events_sha256": "f20adb4ed9dcb607f561a1313fe606e8671cd5ce6139044e793c758a5a1fc4b5",
+      "selection": "One preregistered configuration; no test-score selection",
+      "status": "succeeded",
+      "infrastructure_repair": "Distance-preserving projection of planar source geometry from xyz to yz; failure archived before any predictions"
+    }
+  }
+]

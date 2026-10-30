@@ -1,28 +1,117 @@
-// Source-level render checks in an in-memory DOM stub, not browser interaction/layout QA.
-import fs from 'node:fs';
-import vm from 'node:vm';
-import path from 'node:path';
-import {fileURLToPath} from 'node:url';
-const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const elements=new Map();
-const el=s=>{if(!elements.has(s))elements.set(s,{innerHTML:'',value:'',classList:{toggle(){}},dataset:{}});return elements.get(s)};
-const sandbox={document:{querySelector:el,querySelectorAll:()=>[]},location:{hash:'#/'},window:{addEventListener(){},scrollTo(){}},console,fetch:async p=>({json:async()=>JSON.parse(fs.readFileSync(path.join(root,'website',p),'utf8')),text:async()=>fs.readFileSync(path.join(root,'website',p),'utf8')})};
-vm.createContext(sandbox);vm.runInContext(fs.readFileSync(path.join(root,'website/app.js'),'utf8'),sandbox);await new Promise(resolve=>setImmediate(resolve));
-const catalog=JSON.parse(fs.readFileSync(path.join(root,'registry/catalog.json'),'utf8'));
-let tested=0;
-for(const route of ['','trends','methods',...catalog.families.map(f=>'family/'+f.code),...catalog.entries.flatMap(e=>['overview','results','procedure','sources'].map(t=>'task/'+e.id+'/'+t))]){
- sandbox.location.hash='#/'+route;vm.runInContext('draw()',sandbox);const text=el('#app').innerHTML+el('#task-content').innerHTML;
- if(!text.length||/>undefined</.test(text))throw Error('Render defect: '+route);
- tested++;
+// Source-render and event-handler checks in a DOM stub; browser QA is reported separately.
+import fs from "node:fs";
+import vm from "node:vm";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const elements = new Map();
+const el = (s) => {
+  if (!elements.has(s))
+    elements.set(s, {
+      innerHTML: "",
+      value: "",
+      checked: true,
+      dataset: {},
+      classList: { toggle() {} },
+      querySelectorAll: () => [],
+    });
+  return elements.get(s);
+};
+const ctx = {
+  document: { querySelector: el, querySelectorAll: () => [] },
+  location: { hash: "#/" },
+  window: { addEventListener() {}, scrollTo() {} },
+  console,
+  fetch: async (p) => ({
+    ok: fs.existsSync(path.join(root, "website", p)),
+    json: async () =>
+      JSON.parse(fs.readFileSync(path.join(root, "website", p), "utf8")),
+    text: async () => fs.readFileSync(path.join(root, "website", p), "utf8"),
+  }),
+};
+vm.createContext(ctx);
+vm.runInContext(
+  fs.readFileSync(path.join(root, "website/app.js"), "utf8"),
+  ctx,
+);
+await new Promise((resolve) => setImmediate(resolve));
+const catalog = JSON.parse(
+    fs.readFileSync(path.join(root, "registry/catalog.json"), "utf8"),
+  ),
+  summary = JSON.parse(
+    fs.readFileSync(path.join(root, "analysis/summary.json"), "utf8"),
+  );
+let n = 0;
+for (const route of [
+  "",
+  "models",
+  "analysis",
+  "methods",
+  "excluded",
+  ...summary.models.map((m) => "model/" + m),
+  ...catalog.families.map((f) => "category/" + f.code),
+  ...catalog.entries.flatMap((e) =>
+    ["results", "evaluation", "sources"].map(
+      (t) => "benchmark/" + e.id + "/" + t,
+    ),
+  ),
+]) {
+  ctx.location.hash = "#/" + route;
+  vm.runInContext("draw()", ctx);
+  const text = el("#app").innerHTML + el("#benchmark-content").innerHTML;
+  if (!text.length || />undefined<|NaN%/.test(text))
+    throw Error("Render failure:" + route);
+  for (const m of text.matchAll(
+    /https:\/\/github\.com\/chirag-7\/neural-data-bench\/(?:blob|tree)\/main\/([^\"#<>]+)/g,
+  )) {
+    const dest = decodeURIComponent(m[1]).replaceAll("&amp;", "&");
+    if (!fs.existsSync(path.join(root, dest)))
+      throw Error("Missing repository target on " + route + ":" + dest);
+  }
+  n++;
 }
-sandbox.location.hash='#/task/C05/results';vm.runInContext('slice="5";draw()',sandbox);
-if(!el('#task-content').innerHTML.includes('GPT-6.1 Sol')||!el('#task-content').innerHTML.includes('<svg'))throw Error('C05 plot missing');
-sandbox.location.hash='#/task/M04/results';vm.runInContext('draw()',sandbox);
-if(!el('#task-content').innerHTML.includes('Posterior median · audit'))throw Error('Post-hoc reference missing');
-for(const tab of ['references','progress','native']){vm.runInContext(`trendTab="${tab}";trends()`,sandbox);if(!el('#trend-content').innerHTML.length)throw Error('Empty trend view:'+tab);}
-for(const c of ['conventional_baseline','historical_specialist','synthetic_objective_mismatched','deterministic_correctness'])vm.runInContext(`trendTab="references";referenceClass="${c}";trends()`,sandbox);
-const measured=JSON.parse(fs.readFileSync(path.join(root,'analysis/summary.json'),'utf8')).measured_task_ids;
-for(const id of measured){vm.runInContext(`trendTab="native";trendTask="${id}";trends()`,sandbox);if(!el('#native-trend').innerHTML.includes('<svg'))throw Error('Native charts missing:'+id);}
-vm.runInContext('metric="score";bars([{model:"fixture",score:-.2},{model:"fixture2",score:.3}],"higher")',sandbox);
-const checks={type:'in-memory source-render checks; not browser layout or interaction verification',routes:tested,C05_five_slices:'passed',trend_tabs_and_reference_filters:'passed',native_task_charts:measured.length,M04_posterior_audit_display:'passed',javascript_syntax:'passed',browser_layout_interaction:'Unverified: prior local-preview navigation blocked by browser URL policy; source checks do not replace browser QA'};
-fs.writeFileSync(path.join(root,'analysis/site-source-checks.json'),JSON.stringify(checks,null,2));console.log(JSON.stringify(checks,null,2));
+let plots = 0;
+for (const id of summary.measured_task_ids) {
+  vm.runInContext(`selectedSlice='';renderChart('#test-chart','${id}')`, ctx);
+  const text = el("#test-chart").innerHTML;
+  if (
+    !text.includes("Bar chart including") ||
+    !text.includes("Model-version line chart")
+  )
+    throw Error("Both plots required:" + id);
+  if (
+    ["B01", "J08", "H08", "H01", "C05", "A09", "I10"].includes(id) &&
+    !text.includes("dash")
+  )
+    throw Error("Specialist overlay missing:" + id);
+  vm.runInContext(
+    `plotView='table';renderChart('#test-chart','${id}');plotView='graph'`,
+    ctx,
+  );
+  plots++;
+}
+vm.runInContext("selectedSlice='';renderChart('#test-chart','G01')", ctx);
+if (!el("#test-chart").innerHTML.includes("FALCON-style ridge"))
+  throw Error("Negative-R2 reference missing");
+ctx.location.hash = "#/";
+vm.runInContext("draw()", ctx);
+el("#search").oninput({ target: { value: "spike" } });
+el("#list-mode").onchange({ target: { value: "all" } });
+el("#benchmark-picker").onchange({ target: { value: "B01" } });
+if (!el("#featured-chart").innerHTML.includes("MountainSort5"))
+  throw Error("Selector failed to reveal specialist");
+const result = {
+  type: "In-memory source-render and direct-handler checks; not real-browser interaction or layout QA",
+  routes: n,
+  measured_tasks_with_bar_and_line_plots: plots,
+  specialist_overlays: "passed",
+  negative_R2_axis: "passed",
+  graph_table_switch: "passed",
+  search_and_benchmark_selector: "passed",
+  javascript_syntax: "passed",
+};
+fs.writeFileSync(
+  path.join(root, "analysis/site-source-checks.json"),
+  JSON.stringify(result, null, 2),
+);
+console.log(JSON.stringify(result, null, 2));

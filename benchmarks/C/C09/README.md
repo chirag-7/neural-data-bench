@@ -33,3 +33,9 @@ Strong out-of-focus background differs from two-photon data; truth varies
 Decision: **candidate_pending_validation** (2026-10-30). CNMF-E onephoton examples may support ROI and source extraction endpoints; require independent masks/timecourse labels, background model definition and frozen recording split. No real labeled movie acquired here. Specialized outputs cannot serve as unquestioned true signals.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+candidate_pending_validation. CNMF-E onephoton examples may support ROI and source extraction endpoints; require independent masks/timecourse labels, background model definition and frozen recording split. No real labeled movie acquired here. Specialized outputs cannot serve as unquestioned true signals.
+
+[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

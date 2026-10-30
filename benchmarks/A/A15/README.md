@@ -36,3 +36,9 @@ Ultrasound sample rates exceed speech frontends; species and segment matching di
 Decision: **candidate_pending_validation** (2026-10-30). DAS annotated raw audio can support real event-segmentation evaluation. Still need pinned species/recording slice, sampling rate and official event-matching tolerance; no audio acquisition attempted here. Temporal bouts must remain grouped.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+candidate_pending_validation. DAS annotated raw audio can support real event-segmentation evaluation. Still need pinned species/recording slice, sampling rate and official event-matching tolerance; no audio acquisition attempted here. Temporal bouts must remain grouped.
+
+[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

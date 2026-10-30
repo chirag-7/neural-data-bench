@@ -1,0 +1,20 @@
+{
+  "url": "https://bnci-horizon-2020.eu/database/data-sets/008-2014/A01.mat",
+  "bytes": 21548593,
+  "sha256": "cdf9bca4f48c61ee9c9ba998382a4e84392918c9dbc5a43f45ee0052614e25bd",
+  "fields": {
+    "channels": "<class 'numpy.ndarray'>",
+    "X": "<class 'numpy.ndarray'>",
+    "y": "<class 'numpy.ndarray'>",
+    "y_stim": "<class 'numpy.ndarray'>",
+    "trial": "<class 'numpy.ndarray'>",
+    "classes": "<class 'numpy.ndarray'>",
+    "classes_stim": "<class 'numpy.ndarray'>",
+    "gender": "<class 'str'>",
+    "age": "<class 'str'>",
+    "ALSfrs": "<class 'str'>",
+    "onsetALS": "<class 'str'>"
+  },
+  "license": "Original BNCI CC BY-NC-ND4.0",
+  "status": "source download verified; no executable benchmark admitted yet"
+}

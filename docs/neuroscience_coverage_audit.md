@@ -1,3 +1,5 @@
+> Historical planning snapshot. The current executed panel, results and remaining gaps are in [release 0.5](release-v05.md). Figures and plans below describe an earlier stage.
+
 # Independent coverage audit of the neuroscience benchmark map
 
 Audit date: 2026-10-30. Input: `outputs/neuroscience_benchmark_catalog.json`, 90 task–resource pairings in 14 families. This is a bounded gap audit, not a systematic literature review or a new validation of every existing entry. Resources below were checked through primary papers/project documentation; downloads, license review, installation, scoring and current-best searches were not performed here.

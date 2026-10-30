@@ -34,3 +34,9 @@ Injected waveforms may make evaluation easier than real data
 Decision: **candidate_pending_validation** (2026-10-30). Hybrid insertion can provide known collision times, but must freeze inserted templates and distinguish synthetic labels from unknown endogenous spikes. Requires event-matching tolerance and collision definitions. Adapter not prepared.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+candidate_pending_validation. Hybrid insertion can provide known collision times, but must freeze inserted templates and distinguish synthetic labels from unknown endogenous spikes. Requires event-matching tolerance and collision definitions. Adapter not prepared.
+
+[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

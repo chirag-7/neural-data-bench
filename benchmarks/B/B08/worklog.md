@@ -9,3 +9,9 @@
 Decision: **candidate_pending_validation** (2026-10-30). IBL spike trains could support lossless integer/event compression; reconstruction must preserve exact event times/unitIDs. Need exact release/chunk bounds and bits/event denominator; shared IBL recordings must not count twice as independent datasets. Not acquired here.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+candidate_pending_validation. IBL spike trains could support lossless integer/event compression; reconstruction must preserve exact event times/unitIDs. Need exact release/chunk bounds and bits/event denominator; shared IBL recordings must not count twice as independent datasets. Not acquired here.
+
+[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

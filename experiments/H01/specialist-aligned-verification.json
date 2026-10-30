@@ -1,0 +1,20 @@
+{
+  "reference_id": "pyriemann-aligned",
+  "prediction_shape": [
+    135
+  ],
+  "validation_prediction_shape": [
+    9,
+    225
+  ],
+  "all_labels_in_frozen_classes": true,
+  "cv_scores_recomputed_from_saved_oof_predictions_max_abs_error": 0.0,
+  "alignment_other_subject_independence_max_abs_error": 0.0,
+  "alignment_within_subject_permutation_max_abs_error": 1.2589929099249275e-13,
+  "train_test_subjects_disjoint": true,
+  "data_sha256": "b796d19d1d00250f5321f2c65e97dd037f5aa1bb7132af50cb6ecfded69fff24",
+  "data_unchanged": true,
+  "test_targets_loaded": false,
+  "test_score_computed": false,
+  "no_second_prediction_configuration": true
+}

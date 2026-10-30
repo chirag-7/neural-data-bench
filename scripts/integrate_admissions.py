@@ -1,10 +1,11 @@
-"""Normalize bounded screening evidence and connect every card to its actual execution."""
+"""Historical v0.4 normalizer. Current releases use release_registry.py."""
 from pathlib import Path
 import json,hashlib
 R=Path(__file__).resolve().parents[1]
 def dump(p,o):p.write_text(json.dumps(o,indent=2,ensure_ascii=False)+'\n')
 def main():
  c=json.loads((R/'registry/catalog.json').read_text());byid={};
+ if len(c['entries']) != 114:raise SystemExit('Historical v0.4 utility: use scripts/release_registry.py for the active catalog.')
  for p in sorted((R/'literature').glob('admission-v04-*.json')):
   o=json.loads(p.read_text());rows=o.get('entries',o.get('decisions',[]))
   for row in rows:

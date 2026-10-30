@@ -20,6 +20,16 @@ for task,base in [('C05','experiments/C05/pilot-v1'),('M04','experiments/M04')]:
  for p in json.loads((R/f'experiments/{task}/generation-provenance.json').read_text()):
   code=json.loads((R/base/(p['requested_model']+'.json')).read_text())['code'];assert hashlib.sha256(code.encode()).hexdigest()==p['code_sha256'];assert p['tool_events']==0
 decisions=json.loads((R/'registry/admission-decisions.json').read_text());assert {x['benchmark_id'] for x in decisions}==set(ids)
+historical={e['id'] for e in json.loads((R/'registry/catalog-history/v04-114.json').read_text())['entries']}
+archived={e['id'] for e in json.loads((R/'registry/excluded-candidates.json').read_text())}
+assert len(historical)==114 and set(ids).isdisjoint(archived) and set(ids)|archived==historical
+for d in (R/'experiments/E01/slices').iterdir():
+ if not (d/'run-spec.json').exists():continue
+ spec=json.loads((d/'run-spec.json').read_text());seal=json.loads((d/'preparation-seal.json').read_text())
+ assert spec['no_new_generation'] and hashlib.sha256((d/'preparation-seal.json').read_bytes()).hexdigest()==spec['source_seal_sha256']
+ for filename,digest in seal['files'].items():assert hashlib.sha256((R/filename).read_bytes()).hexdigest()==digest
+ for model,digest in spec['model_code_sha256'].items():
+  code=json.loads((R/'experiments/E01'/(model+'.json')).read_text())['code'];assert hashlib.sha256(code.encode()).hexdigest()==digest
 for e in c['entries']:
  assert (R/e['admission_evidence_file']).exists()
 for d in (R/'experiments').iterdir():

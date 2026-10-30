@@ -33,3 +33,9 @@ Rubric-scored success differs from raw neural model accuracy; naming collisions
 Decision: **candidate_pending_validation** (2026-10-30). Primary NeuroClaw page explicitly lists 120 tasks in7 categories, with/no-skills conditions and GPT5.4 weighted-rubric scoring. Requires matching tool/skill environment, task version, source data terms, and evaluator model/API or a declared distinct deterministic metric. Planning/rubric scores cannot be treated as signal prediction accuracy; no new rubric scores fabricated.
 
 [Source-linked admission evidence](../../../literature/admission-v04-cell-workflow.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+candidate_pending_validation. Primary NeuroClaw page explicitly lists 120 tasks in7 categories, with/no-skills conditions and GPT5.4 weighted-rubric scoring. Requires matching tool/skill environment, task version, source data terms, and evaluator model/API or a declared distinct deterministic metric. Planning/rubric scores cannot be treated as signal prediction accuracy; no new rubric scores fabricated.
+
+[Admission/source evidence](../../../literature/admission-v04-cell-workflow.json).

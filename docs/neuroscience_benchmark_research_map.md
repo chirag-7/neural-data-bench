@@ -1,3 +1,5 @@
+> Historical planning snapshot. The current executed panel, results and remaining gaps are in [release 0.5](release-v05.md). Figures and plans below describe an earlier stage.
+
 # General models for neuroscience laboratory data
 
 Research map and benchmark design · 30 October 2026

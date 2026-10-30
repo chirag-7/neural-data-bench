@@ -1,0 +1,14 @@
+
+Traceback (most recent call last):
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/expansion.py", line 133, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/expansion.py", line 132, in main
+    else:print(json.dumps(one(a.task,a.model)))
+                          ^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/expansion.py", line 94, in one
+    np.random.seed(0);t=time.perf_counter();pred=np.asarray(f(x.copy(),y.copy(),xt.copy()));elapsed=time.perf_counter()-t
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "gpt-6.1-sol", line 208, in fit_predict
+  File "gpt-6.1-sol", line 88, in _counts
+IndexError: boolean index did not match indexed array along axis 0; size of axis is 128 but size of corresponding boolean axis is 16384

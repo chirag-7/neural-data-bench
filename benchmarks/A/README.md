@@ -1,10 +1,8 @@
 # Behavior, kinematics and vocalization
 
-[Taxonomy](../../docs/taxonomy.md) · [Project](../../README.md)
+[Project](../../README.md) · [Coverage](../../docs/coverage-matrix.md)
 
 RGB/IR/depth videos, calibrated multiview video, pose trajectories, audio and microphone arrays
-
-Operations: Detection, segmentation, identity tracking, 2D/3D keypoints, pose imputation, action labels, behavioral representations, acoustic segmentation and caller localization
 
 - [A01 — 2D lab keypoints and pupil/paw tracking](A01/README.md) · candidate_pending_validation
 - [A02 — Cross-species 2D pose transfer](A02/README.md) · candidate_pending_validation
@@ -22,3 +20,5 @@ Operations: Detection, segmentation, identity tracking, 2D/3D keypoints, pose im
 - [A14 — Missing pose imputation](A14/README.md) · measured
 - [A15 — Animal vocalization event segmentation and syllable labeling](A15/README.md) · candidate_pending_validation
 - [A16 — Caller localization and vocalization attribution](A16/README.md) · candidate_pending_validation
+
+Archived candidates remain in the [exclusion ledger](../../registry/excluded-candidates.json).

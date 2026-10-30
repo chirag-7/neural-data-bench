@@ -1,0 +1,23 @@
+{
+  "reference_id": "pyriemann-aligned",
+  "started_at_utc": "2026-10-30T23:38:34.884691+00:00",
+  "seconds": 10.261181666050106,
+  "time_budget_seconds": 600,
+  "within_time_budget": true,
+  "prediction_file": "results/predictions/H01/specialist--pyriemann-aligned.npz",
+  "prediction_sha256": "936b9ef786db2d94def5a37a29f434b46def60ed3e47cdbaf7b18e4ff9717a46",
+  "config_sha256": "2b58ca71fcb524eabc8d38ab81b5bb7e5b81495041d2778b455a8adfce22a3f3",
+  "code_sha256": "2ec1efb09d506fac22b9883e578848747287d56a761228cf111fc71d934332c6",
+  "selection_sha256": "f9e4ad417562bc6575d10b4467993951f4f6862b7f8c61f0bf769f8654fad7c7",
+  "data_sha256_before": "b796d19d1d00250f5321f2c65e97dd037f5aa1bb7132af50cb6ecfded69fff24",
+  "data_sha256_after": "b796d19d1d00250f5321f2c65e97dd037f5aa1bb7132af50cb6ecfded69fff24",
+  "data_unchanged": true,
+  "test_score_computed": false,
+  "packages": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "pyriemann": "0.12"
+  }
+}

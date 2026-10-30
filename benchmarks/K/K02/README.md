@@ -34,3 +34,9 @@ Gene foundation models are domain-pretrained comparators; batch mixing alone is 
 Decision: **candidate_pending_validation** (2026-10-30). scIB is a general cell-integration toolkit, not one uniquely frozen brain dataset task. Need select brain donor cohorts/taxonomy and independent label-transfer policy, fit batch handling on allowed data, preserve rare classes, and reproduce biology AND mixing scorers. No unique dataset/split/rights package selected; do not inflate coverage from toolkit installation.
 
 [Source-linked admission evidence](../../../literature/admission-v04-cell-workflow.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+candidate_pending_validation. scIB is a general cell-integration toolkit, not one uniquely frozen brain dataset task. Need select brain donor cohorts/taxonomy and independent label-transfer policy, fit batch handling on allowed data, preserve rare classes, and reproduce biology AND mixing scorers. No unique dataset/split/rights package selected; do not inflate coverage from toolkit installation.
+
+[Admission/source evidence](../../../literature/admission-v04-cell-workflow.json).

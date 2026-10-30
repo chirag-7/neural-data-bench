@@ -1,0 +1,28 @@
+{
+  "reference_id": "pyriemann-aligned",
+  "frozen_at_utc": "2026-10-30T23:37:29Z",
+  "stage": "frozen before this aligned reference's first prediction or test score; post-hoc after other H01 scores",
+  "dataset_sha256": "b796d19d1d00250f5321f2c65e97dd037f5aa1bb7132af50cb6ecfded69fff24",
+  "pyriemann_version": "0.12",
+  "band_grid_hz": [[7, 30], [8, 35], [8, 15]],
+  "C_grid": [0.1, 1.0, 10.0],
+  "sampling_rate_hz": 160,
+  "filter": "fourth-order Butterworth bandpass; scipy sosfiltfilt separately within each epoch; temporal demeaning",
+  "covariance": "OAS covariance per epoch; divide each covariance by its trace before alignment",
+  "alignment": "TLCenter(metric=riemann) independently for each participant using all that participant's unlabeled epochs; dummy constant labels passed to encode_domains",
+  "validation": "LeaveOneGroupOut on five training participants; each held-out training subject gets its own unlabeled centering; tangent reference, scaling and SVM fit on four source participants only",
+  "selection_metric": "unweighted mean of five subject balanced accuracies",
+  "selection_tie_break": "first candidate in band-grid then C-grid order",
+  "classifier": "training-only Riemannian TangentSpace(tsupdate=False), StandardScaler, sklearn SVC(kernel=linear,class_weight=balanced)",
+  "prediction_threshold": "ordinary SVC prediction; no class-rank or assumed class-balance threshold",
+  "test_policy": "After training-only selection, process selected band only on test inputs; align subjects 6,7,8 separately using unlabeled full batches; no test targets read by fit_predict or main",
+  "group_information": "explicit train_groups and test_groups, extra information relative to Sol fit_predict interface; Sol6 inferred blocks of 45 from ordered input",
+  "time_budget_seconds": 600,
+  "numerical_threads": 1,
+  "no_score_driven_retuning": true,
+  "sources": [
+    "https://pyriemann.readthedocs.io/en/v0.12/generated/pyriemann.transfer.TLCenter.html",
+    "https://pyriemann.readthedocs.io/en/v0.12/_modules/pyriemann/transfer/_estimators.html",
+    "https://hal.science/hal-01923278"
+  ]
+}

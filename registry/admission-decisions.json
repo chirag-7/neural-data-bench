@@ -4,590 +4,535 @@
     "decision": "candidate_pending_validation",
     "reason": "Human-labeled pose images are a valid endpoint. Need pin image/label archive, verify published session split and matched coordinate scorer; no image adapter or vision submission interface acquired in this bounded expansion. Not rejected as bad data.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC12087009/"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "A02",
     "decision": "candidate_pending_validation",
     "reason": "AP-10K offers official image/keypoint splits, but raw-image inference needs vision/multimodal submissions and matched OKS scorer. Numeric pose-to-label A09 does not cover this operation. Dataset not downloaded in this expansion.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://arxiv.org/abs/2108.12617",
       "https://benchmark.deeplabcut.org/datasets.html"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "A03",
     "decision": "candidate_pending_validation",
     "reason": "Needs exact leave-one-dataset-out weights and proof held-out training set was excluded from domain pretraining. Cannot treat animal-specialist SuperAnimal as a general-purpose baseline. Weights/splits not yet validated.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://www.nature.com/articles/s41467-024-48792-2"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "A04",
     "decision": "candidate_pending_validation",
     "reason": "Real Rat7M mocap labels acquired through DISK for A14. This does not admit 3D pose-from-video: its synchronized six-camera inputs and calibrations have not been downloaded or evaluated. Share dataset group with A14 for independence accounting.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://figshare.com/collections/Rat_7M/5295370/3",
       "https://www.nature.com/articles/s41592-025-02893-y"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "A05",
     "decision": "deferred",
     "reason": "Calibrated multi-camera social-pose recordings require substantial video acquisition and geometry/GPU pipeline. No exact slice/calibration/scorer prepared. This is a resource deferral, not poor-data judgment.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://olveczkylab.oeb.harvard.edu/publications/pair-r24m-dataset-multi-animal-3d-pose-estimation"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "A06",
     "decision": "candidate_pending_validation",
     "reason": "Fitted 3D animal shape labels are a valid separate proxy-label endpoint, but need model parameter conventions and source image acquisition; do not equate fitted SMAL annotations to physical groundtruth. Not acquired.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://arxiv.org/abs/2308.11737"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "A07",
     "decision": "candidate_pending_validation",
     "reason": "Synchronized camera and landmark/calibration release must be pinned with official holdout. No multiview visual adapter prepared; numerical mocap imputation A14 cannot count as this task.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC13131684/"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "A08",
     "decision": "candidate_pending_validation",
     "reason": "Complete-video identity assignments require persistent IDs and track-matching scorer. No reference trajectories/video pair acquired. Random frame classification would not be a valid substitute.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://doi.org/10.7554/eLife.107602.3"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "A09",
     "decision": "measured",
     "reason": "Official Task1 pose/behavior archive acquired and publisher MD5 verified; current-record/paper license discrepancy documented, raw data cache only. Real expert labels, all70train19test recordings retained in fixed3Hz custom slice, official animal split. Adapter and baseline ready; not full benchmark or SOTA.",
     "date": "2026-10-30",
-    "source_screen_decision": "ready",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://arxiv.org/abs/2104.02710",
       "https://doi.org/10.17617/3.3R0QYI"
     ],
-    "review_depth": "direct acquisition and schema validation",
-    "permanent_rejection": false
+    "review_depth": "direct acquisition and schema validation"
   },
   {
     "benchmark_id": "A10",
     "decision": "candidate_pending_validation",
     "reason": "Representation assessment requires multiple downstream task labels and recording-group splits. CalMS21 Task1 is not equivalent to MABe22. Need pin exact track release and fixed downstream evaluation wrapper.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://arxiv.org/abs/2207.10553"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "A11",
     "decision": "deferred",
     "reason": "Wildlife video/action localization requires substantial visual data and temporal action scorer beyond CPU numeric adapter. Valid adjacent-domain task; not redundant with lab social behavior and not yet acquired.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://arxiv.org/abs/2204.08129"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "A12",
     "decision": "candidate_pending_validation",
     "reason": "Need raw or published fixed behavior features jointly aligned to neural recordings and recording-level heldout responses. No common numerical endpoint independently acquired; do not score predicted behavior labels as neural encoding.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://arxiv.org/abs/2507.09513"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "A13",
     "decision": "deferred",
     "reason": "Gaussian/multiview reconstruction requires GPU training and substantial calibrated synchronized images. Current numeric code-generation budget cannot reproduce the published task. No claim of data invalidity.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://arxiv.org/abs/2606.02937",
       "https://arxiv.org/abs/2505.18342"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "A14",
     "decision": "measured",
     "reason": "Rat7M raw measured mocap246MB archive acquired from immutable DISK Zenodo18405201 CC BY4.0; seven original recordings, real measured targets and controlled synthetic gaps. Three trainingrats versus two test rats, six head/spine landmarks, nonoverlapping31frame windows. Custom endpoint, not official DISK full distribution.",
     "date": "2026-10-30",
-    "source_screen_decision": "ready",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://www.nature.com/articles/s41592-025-02893-y",
       "https://zenodo.org/records/18405201"
     ],
-    "review_depth": "direct acquisition and schema validation",
-    "permanent_rejection": false
+    "review_depth": "direct acquisition and schema validation"
+  },
+  {
+    "benchmark_id": "A15",
+    "decision": "candidate_pending_validation",
+    "reason": "DAS annotated raw audio can support real event-segmentation evaluation. Still need pinned species/recording slice, sampling rate and official event-matching tolerance; no audio acquisition attempted here. Temporal bouts must remain grouped.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://elifesciences.org/articles/68837",
+      "https://data.goettingen-research-online.de/dataverse/das",
+      "https://janclemenslab.org/das/",
+      "https://github.com/nianlonggu/WhisperSeg"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+  },
+  {
+    "benchmark_id": "A16",
+    "decision": "candidate_pending_validation",
+    "reason": "VCL controlled speaker localization supplies positions, but multi-mic calibration/time synchronization and recording-group split must be acquired. Do not infer source identity solely from event detection; no adapter prepared.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://proceedings.nips.cc/paper_files/paper/2024/hash/c00d37d6b04d73b870b963a4d70051c1-Abstract-Datasets_and_Benchmarks_Track.html",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/",
+      "https://github.com/neurostatslab/vocalocator"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "B01",
-    "decision": "candidate_pending_validation",
-    "reason": "SpikeForest offers paired/curated groundtruth recordings, but exact accessible recording URI, agreement threshold, sorting scorer and matched sorter have not been acquired here. Do not claim hidden true neuron labels from ordinary extracellular recording.",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "evidence_file": "literature/admission-v05-extracellular.json",
     "source_urls": [
       "https://github.com/flatironinstitute/spikeforest",
       "https://elifesciences.org/articles/55167",
-      "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+      "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+      "https://gin.g-node.org/NeuralEnsemble/ephy_testing_data",
+      "https://spikeinterface.readthedocs.io/en/0.96.1/modules/comparison/plot_3_compare_sorter_with_ground_truth.html",
+      "https://github.com/flatironinstitute/mountainsort5"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "B02",
     "decision": "candidate_pending_validation",
     "reason": "SpikeInterface/MEArec generators can supply exact drift and unit truth without restricted real data. Needs frozen simulation seed, geometry, waveform/noise/drift regime and event-matching scorer. This would be explicitly synthetic, not real in-vivo drift validation.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
       "https://github.com/cwindolf/dartsort"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "B03",
     "decision": "candidate_pending_validation",
     "reason": "Synthetic drift with known displacement supports motion-estimation error; real DREDge drift estimates themselves are not groundtruth. Need fixed simulator/probe mapping and matched motion pipeline; no acquisition/execution attempted here.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
       "https://github.com/evarol/dredge"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "B04",
     "decision": "candidate_pending_validation",
     "reason": "Hybrid insertion can provide known collision times, but must freeze inserted templates and distinguish synthetic labels from unknown endogenous spikes. Requires event-matching tolerance and collision definitions. Adapter not prepared.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://spikeinterface.readthedocs.io/en/stable/modules/comparison.html",
       "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "B05",
     "decision": "candidate_pending_validation",
     "reason": "UnitMatch crossday matching needs real paired sessions with independently supported identities; algorithm outputs cannot be used as target labels. Need exact released validation identities/sessions and potential calcium or optotagging corroboration. No paired acquisition attempted here.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://www.nature.com/articles/s41592-024-02440-1"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "B06",
     "decision": "candidate_pending_validation",
     "reason": "IBL Ephys Atlas channel features/region labels are potentially lightweight tabular classification. Must group held-out probes/animals and verify histology provenance, regionontology and published split. Channel-wise random split invalid. No feature dataset acquired in this bounded work.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://huggingface.co/int-brain-lab/ea-decoder-channel-xgboost"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "B07",
     "decision": "candidate_pending_validation",
     "reason": "Lossless compression is executable with small frozen raw ephys segments, exactbyte reconstruction and compression/runtime metrics. Need immutable raw-file URI, acquisition terms and canonical codec reference; no raw acquisition attempted here. Avoid different dtype or discarded channels confounding ratio.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://allenneuraldynamics.github.io/data.html"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "B08",
     "decision": "candidate_pending_validation",
     "reason": "IBL spike trains could support lossless integer/event compression; reconstruction must preserve exact event times/unitIDs. Need exact release/chunk bounds and bits/event denominator; shared IBL recordings must not count twice as independent datasets. Not acquired here.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://github.com/int-brain-lab/spikepack",
       "https://www.internationalbrainlab.com/data"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "C01",
     "decision": "candidate_pending_validation",
     "reason": "Neurofinder supplies true labeled calcium ROI masks and image stacks. Needs image/mask archive pinning, original heldout recording split and official ROI matching scorer. Segmentation image adapter not acquired in this expansion.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://github.com/codeneuro/neurofinder-datasets",
       "https://github.com/codeneuro/neurofinder"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "C02",
     "decision": "candidate_pending_validation",
     "reason": "CaImAn annotated data can support ROI/timecourse evaluation but labels and quality annotations are incomplete; must pin exact nine-dataset release and per-endpoint valid annotations. No movies acquired here; neuron masks alone do not establish full demixing groundtruth.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC6342523/"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "C03",
     "decision": "candidate_pending_validation",
     "reason": "NAOMi can provide full synthetic calcium movie truth. Requires frozen physicalsimulation parameters and randomseeds, compute budget and exact ROI/timecourse scoring. Clearly synthetic; simulator outputs do not validate real in-vivo robustness.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "C04",
     "decision": "candidate_pending_validation",
     "reason": "DeepCAD release offers real movies and trained denoisers, but a paired independent low-noise reference or declared self-supervised scorer is needed. Denoised outputs cannot silently become target truth. Movie/clean reference pair not acquired here.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://github.com/cabooster/DeepCAD/blob/master/dataset/README.md",
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "C05",
     "decision": "measured",
     "reason": "Root repository already contains measured Spikefinder preparation slices for all three Sol programs, predictions and archived references. This screening task did not rerun them; officialchallenge aggregate/currentSOTA remain distinct.",
     "date": "2026-10-30",
-    "source_screen_decision": "ready",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://github.com/codeneuro/spikefinder-datasets",
       "https://github.com/berenslab/spikefinder_analysis"
     ],
-    "review_depth": "Previously measured root experiment",
-    "permanent_rejection": false
+    "review_depth": "Previously measured root experiment"
   },
   {
     "benchmark_id": "C06",
     "decision": "candidate_pending_validation",
     "reason": "CASCADE paired fluorescence/electrophysiology is a credible additional deconvolution source. Need exact indicator/preparation noise/rate matching, neuron/recording-disjointsplit and baseline. Shared Spikefinder cells must be deduplicated, not counted as new independent recordings. Not acquired here.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC7611618/"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "C07",
     "decision": "candidate_pending_validation",
     "reason": "CellReg examples contain multi-session ROI images, but cell-identity scoring needs independent manuallyvalidated crossday pairs; CellReg matching outputs cannot serve as truth for evaluating a competing matcher. Verify identity groundtruth before admission.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://github.com/zivlab/CellReg"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "C08",
     "decision": "candidate_pending_validation",
     "reason": "GuPPy example traces demonstrate photometry workflow, but a true artifact-free neural trace or blinded artifact/event annotations are needed for accuracy measurement. Synthetic artifact injection into observed signals is possible if explicitly semi-synthetic. No reference annotations acquired here.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://github.com/LernerLab/GuPPy"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "C09",
     "decision": "candidate_pending_validation",
     "reason": "CNMF-E onephoton examples may support ROI and source extraction endpoints; require independent masks/timecourse labels, background model definition and frozen recording split. No real labeled movie acquired here. Specialized outputs cannot serve as unquestioned true signals.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://elifesciences.org/articles/28728"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "D01",
     "decision": "deferred",
     "reason": "Paired voltage movie/ephys extraction needs validated movie-to-truth alignment, ROI policy, and sampling-time scorer. Primary PMC article web access returned recaptcha in this screening; CaImAn VolPy source documentation located. No acquisition/fit was completed; this is a protocol/resource limitation of this batch, not evidence of bad data.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-cell-workflow.json",
     "source_urls": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC8075204/",
       "https://github.com/flatironinstitute/CaImAn/tree/main/caiman/source_extraction/volpy"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "D02",
     "decision": "measured",
     "reason": "Acquired and hashed one 61,980,832-byte official Allen NWB, specimen and sweep annotations; prepared four train/two held-out negative-amplitude sweeps from cell464212183. Explicitly conditional PRE-stimulus-rest-relative 500Hz passive deflection prediction only, no spiking or cross-cell claim. Adapter/protocol and train-only reference ready.",
     "date": "2026-10-30",
-    "source_screen_decision": "admit",
     "evidence_file": "literature/admission-v04-cell-workflow.json",
     "source_urls": [
       "https://brain-map.org/support/documentation/documentation-cell-types-database",
       "https://alleninstitute.github.io/AllenSDK/cell_types.html",
       "https://brain-map.org/support/documentation/cell-types-database-api"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "D03",
-    "decision": "deferred",
-    "reason": "New simulated dendritic recovery protocol would require prespecified morphologies, compartments, stimulation and noise distributions. The registry names examples rather than an already frozen benchmark; fitting examples and then reusing traces as a test would be circular.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-cell-workflow.json",
-    "source_urls": [
-      "https://www.nature.com/articles/s41592-025-02895-w"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "D04",
     "decision": "deferred",
     "reason": "Primary HippoUnit repository requires simulation-capable model interfaces, NEURON/eFEL/SciUnit and standalone model adaptation. Published validation target features and model outputs are available, but no new generated mechanistic model plus independent held-out tests was implemented in this CPU/lightweight estimator batch. Do not substitute recalculating published outputs for new agent performance.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-cell-workflow.json",
     "source_urls": [
       "https://doi.org/10.1371/journal.pcbi.1008114",
       "https://github.com/KaliLab/hippounit",
       "https://github.com/KaliLab/HippoUnit_demo"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "E01",
     "decision": "measured",
     "reason": "Acquired published DANDI000140 version0.220113.0408 NWBs and pinned official2026released test targets.99train/100test trials,107heldin/35heldout neurons,20ms bins. Unmodified officialtensor code, explicit lasttrainingtrial199 exclusion, exactNLB bits/spike scorer. Custom supervised diagnostic, not complete leaderboard reproduction.",
     "date": "2026-10-30",
-    "source_screen_decision": "ready",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://neurallatents.github.io/",
       "https://dandiarchive.org/dandiset/000140/0.220113.0408",
       "https://github.com/neurallatents/nlb_tools"
     ],
-    "review_depth": "Actual acquisition, officialreader and tensorvalidation",
-    "permanent_rejection": false
+    "review_depth": "Actual acquisition, officialreader and tensorvalidation"
   },
   {
     "benchmark_id": "E02",
     "decision": "candidate_pending_validation",
     "reason": "CtDB can supply synthetic mechanistic dynamics groundtruth and known task variables. Needs pinned generator, stimulus/trajectory/seed split and metric for actual recovered dynamics, not arbitrary latent-coordinateRMSE. Synthetic extension remains useful but unprepared.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://github.com/snel-repo/ComputationThroughDynamicsToolkit"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "E03",
     "decision": "candidate_pending_validation",
     "reason": "BrainWideBench TS1 provides natural crossanimal decoding benchmark aligned with course. Needs exact pinned IBL sessionmanifest, labels and common neuron/input normalization under official split. Public data may require sizeable multises­sion acquisition; not attempted here.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://brainbench-org.github.io/ibl-bwb/",
       "https://arxiv.org/abs/2609.22064"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "E04",
     "decision": "candidate_pending_validation",
     "reason": "BrainWideBench TS2 masked/future prediction has exact protocol and public recordings, but causal future prediction versus bidirectional masking must be separate. Need exact bins/neurons/session split and official heldout targets. Not acquired here; E01 does not cover this transfer setting.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://brainbench-org.github.io/ibl-bwb/",
       "https://arxiv.org/abs/2609.22064"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "E05",
     "decision": "candidate_pending_validation",
     "reason": "BrainWideBench TS3 anatomy labels can support session/probe-generalizing classification from activity. Must verify histology regiongroundtruth and avoid neurons from sameanimal on both sides. Not acquired; do not substitute E01same-sessionpopulation readout.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://brainbench-org.github.io/ibl-bwb/",
       "https://arxiv.org/abs/2609.22064"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+  },
+  {
+    "benchmark_id": "E06",
+    "decision": "candidate_pending_validation",
+    "reason": "ZAPBench real larval zebrafish wholebrain activity forecasting is a distinct real task. Needs pinned release, official heldout temporal blocks and neuron mappings; complete brain arrays may be large. No acquisition attempted here, so no permanent infeasibility claim.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://google-research.github.io/zapbench/",
+      "https://arxiv.org/abs/2503.02618",
+      "https://zapbench-release.storage.googleapis.com/volumes/README.html"
+    ],
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "F01",
     "decision": "deferred",
     "reason": "Sensorium2022 stimulus-response encoding is feasible with official split and responses, but current CPU numerical-code interface lacks reproducible visualstimulus decoding/encoder and a matched published model. Need exact response availability and heldoutanimal protocol before execution.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://sensorium-competition.net/"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "F02",
     "decision": "deferred",
     "reason": "Sensorium2023 adds dynamic visual stimuli and neuralresponses; fullvideo/mouse data and visionencoding pipeline exceed present lightweightCPU execution. No acquisition attempted. Distinct temporal task cannot be represented by static images or arbitrary tabular features.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://sensorium-competition.net/"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "F03",
     "decision": "candidate_pending_validation",
     "reason": "Allen Visual Coding can support real stimulus-to-response encoding with immutable sessionIDs and repeatedstimulus splits. Need specific experiments/moviefeatures and train-only learned readout; preprocessing leakage from repeatframes must be prevented. Not acquired here.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://observatory.brain-map.org/visualcoding"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "F04",
     "decision": "measured",
     "reason": "Prepared custom real retinal static-image encoding slice from Goldin2022 mouse session via OpenRetina:3160 training images,30 unique held-out images with30 measured repeats and all41 neurons; exact image hashes disjoint, targets verified nonnegative integer counts. This is not an official CRCNS/full-image CNN/temporal-flicker benchmark.",
     "date": "2026-10-30",
-    "source_screen_decision": "admit",
     "evidence_file": "literature/admission-v04-cell-workflow.json",
     "source_urls": [
       "https://crcns.org/data-sets",
@@ -597,68 +542,60 @@
       "https://huggingface.co/datasets/open-retina/open-retina/blob/fc7b91e93c9bd4e76d4e3205fcbcc6a31601985a/README.md",
       "https://huggingface.co/datasets/open-retina/open-retina"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "F05",
     "decision": "candidate_pending_validation",
     "reason": "Musall behavior-to-widefield data can support real regression, but exact movies/behavior regressors, temporalalignment and session/animal split must be pinned. Training/testing adjacentframes invalid. No paired behavior/neural arrays acquired here.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://repository.cshl.edu/38599/2/DataDescription_Musall.pdf"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "G01",
-    "decision": "candidate_pending_validation",
-    "reason": "FALCON motor tracks provide official crossday interfaces and labels. Need exacttrack acquisition terms, trial/sessionnormalization, allowed adaptation and online/offline constraints. No data request attempted here. Same-session E01 cannot establish crossday BCIperformance.",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "evidence_file": "literature/admission-v05-bci.json",
     "source_urls": [
-      "https://snel-repo.github.io/falcon/"
+      "https://snel-repo.github.io/falcon/",
+      "https://dandiarchive.org/dandiset/000953",
+      "https://github.com/snel-repo/falcon-challenge"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "G02",
     "decision": "deferred",
     "reason": "FALCON communication decoding requires sequentialoutputs, official word/character scorer, sessionadaptation and heavier inputdata/training pipeline. Not executed within CPU numeric regression/classification interface. No evidence dataset is bad or universally impossible.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://snel-repo.github.io/falcon/"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "G03",
     "decision": "deferred",
     "reason": "Brain-to-Text speech decoding needs sequence/phoneme/texttargets, CTC/language-model decoding rules and speech-rate/word-error scorer, with substantial data and training. ThreeSol numerical code snippets are not speechsequence models. No data acquisition attempted; retain valid futurecandidate.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://github.com/fwillett/speechBCI",
       "https://www.kaggle.com/competitions/brain-to-text-25/overview"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "H01",
     "decision": "measured",
     "reason": "Real public PhysioNet EEGMMI EDF files acquired and validated; fixed subject-disjoint MI slice prepared. This admits one explicitly scoped slice, not the whole MOABB umbrella.",
     "date": "2026-10-30",
-    "source_screen_decision": "ready",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://moabb.neurotechx.com/",
@@ -667,203 +604,120 @@
       "https://moabb.neurotechx.com/docs/generated/moabb.datasets.PhysionetMI.html",
       "https://mne.tools/stable/auto_examples/decoding/decoding_csp_eeg.html"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "H02",
     "decision": "deferred",
     "reason": "Screened BNCI2014_008 original BNCI terms (CC BY-NC-ND4.0) and MOABB loader/context. Data are real and useful, but derivative-array distribution and the exact cross-subject ERP preparation protocol have not been validated for this release. Alternate openly licensed ERP resources can be admitted later; no claim of bad quality.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://moabb.neurotechx.com/",
       "https://bnci-horizon-2020.eu/database/data-sets",
       "https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_008.html"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "H03",
-    "decision": "deferred",
-    "reason": "MOABB Nakanishi2015 primary documentation located. Need pinned original files/license and frequency/timing metadata, fixed subject split, verified CCA baseline. Generic MOABB umbrella is not one executable dataset; not rejected as infeasible.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-electrical.json",
-    "source_urls": [
-      "https://moabb.neurotechx.com/",
-      "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Nakanishi2015.html"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "H04",
     "decision": "deferred",
     "reason": "Official BEETL introduction URL timed out in web access. No raw transfer track, license or labels acquired in this screening pass; preserve candidate and retry via original competition release.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://beetl.ai/introduction"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "H05",
-    "decision": "candidate_pending_validation",
-    "reason": "Original NeuralBench documentation accessible. Full/Core suites require selecting task cards, resolving per-dataset licenses and canonical overlap. Avoid counting this suite and its contained EEGMMI-like datasets as independent experiments.",
-    "date": "2026-10-30",
-    "source_screen_decision": "source-only",
-    "evidence_file": "literature/admission-v04-electrical.json",
-    "source_urls": [
-      "https://facebookresearch.github.io/neuroai/neuralbench/index.html"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "H06",
-    "decision": "candidate_pending_validation",
-    "reason": "Original OmniEEG-Bench paper accessible; 54-dataset suite. Must resolve individual task-card preprocessing/splits/licenses and duplicates before execution. Domain EEG foundation-model tables cannot be imported as scores of the evaluated general code generators.",
-    "date": "2026-10-30",
-    "source_screen_decision": "source-only",
-    "evidence_file": "literature/admission-v04-electrical.json",
-    "source_urls": [
-      "https://arxiv.org/abs/2606.00815"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "H07",
-    "decision": "candidate_pending_validation",
-    "reason": "Original EEG-Arena site reports 57 tasks/23 datasets/five protocols and a migration toward NeuroInfra. Need pinned downstream task version and overlap mapping; umbrella is not directly executable as a single comparable task.",
-    "date": "2026-10-30",
-    "source_screen_decision": "source-only",
-    "evidence_file": "literature/admission-v04-electrical.json",
-    "source_urls": [
-      "https://eeg.fm/benchmarks/"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "H08",
-    "decision": "deferred",
-    "reason": "NeuralBench/challenge primary sites accessible. 2026 challenge final phase starts in November after this review date, so no final winner exists yet. Need a pinned accessible sleep dataset, subject/night-disjoint scorer, full-context policy and expert staging labels; no adjacent-epoch shortcut experiment admitted.",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-electrical.json",
+    "evidence_file": "experiments/H08/protocol.md",
     "source_urls": [
       "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
-      "https://neural-interfaces26.github.io/"
+      "https://neural-interfaces26.github.io/",
+      "https://physionet.org/content/sleep-edfx/1.0.0/",
+      "https://doi.org/10.13026/C2X676",
+      "https://doi.org/10.7554/eLife.70092",
+      "https://github.com/raphaelvallat/yasa_classifier"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "H09",
     "decision": "deferred",
     "reason": "SzCORE primary framework explicitly distinguishes sample/event scoring and participant independence. CHB-MIT/Siena require long continuous recordings to estimate false alarms/hour; no cherry-picked balanced seizure clips admitted as replacement. Full event pipeline and sufficient recording duration not yet prepared.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://epilepsybenchmarks.com/framework/"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "H10",
-    "decision": "candidate_pending_validation",
-    "reason": "Broad abnormality/events/cognition/state umbrella overlaps H05/H06 and mixes distinct clinical targets. Requires a specific task, label definition, subject/site split and data-use agreement before an executable benchmark can be admitted.",
-    "date": "2026-10-30",
-    "source_screen_decision": "source-only",
-    "evidence_file": "literature/admission-v04-electrical.json",
-    "source_urls": [
-      "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
-      "https://arxiv.org/abs/2606.00815"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "H11",
     "decision": "deferred",
     "reason": "Original LibriBrain 2026 publications page accessible and identifies LibriBrain100. Need audio-aligned MEG acquisition, official track split and controlled language-prior scorer. Not downloaded in this pass; not a data-quality rejection.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://libribrain.com/editions/2026/publications/"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "H12",
     "decision": "deferred",
     "reason": "Original THINGS site accessible. Stimulus concept and image reuse complicate splitting; original image pool has academic-use restrictions and a separate CC0 subset. Need exact EEG/MEG release, retrieval gallery and held-out concepts/participants rather than an undefined image-reconstruction score.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://things-initiative.org/"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "H13",
     "decision": "deferred",
     "reason": "Original emg2pose repo reports full data431GiB and a ~600MiB sanity-check subset. Full held-out-user benchmark not downloaded; sanity subset cannot substitute for population evaluation without verifying participants and split metadata. EMG is explicitly peripheral.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://github.com/facebookresearch/emg2pose"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "H14",
     "decision": "candidate_pending_validation",
     "reason": "Original bycycle code/documentation accessible. Tool features computed from real LFP are not independent gold labels; need expert burst annotations or separately labeled synthetic calibration. Do not grade generic code against bycycle output and label it physiological truth.",
     "date": "2026-10-30",
-    "source_screen_decision": "source-only",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://github.com/bycycle-tools/bycycle",
       "https://about.dandiarchive.org/"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "H15",
     "decision": "deferred",
     "reason": "Original MNE/Brainstorm phantom tutorial accessible. Known dipole positions make this scientifically useful, but needs sensor geometry, forward model, filtering and localization scorer adapter. No arbitrary simulated coordinate regression substituted.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://mne.tools/stable/auto_tutorials/inverse/80_brainstorm_phantom_elekta.html"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "H16",
     "decision": "measured",
     "reason": "Pinned original EEG/EOG pools and literal original RMS-ratio SNR convention; component-disjoint semisynthetic repair slice prepared with exact temporal RRMSE. Clean target is algorithmically cleaned/expert-inspected, not pristine physiology. Source participant IDs absent; no subject-generalization claim.",
     "date": "2026-10-30",
-    "source_screen_decision": "ready",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://doi.org/10.1088/1741-2552/ac2bf8",
@@ -872,93 +726,73 @@
       "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/master/LICENSE",
       "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/code/benchmark_networks/data_prepare.py"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
-    "benchmark_id": "I01",
+    "benchmark_id": "H17",
     "decision": "deferred",
-    "reason": "Original Algonauts2025 challenge page requires a data-download form and Codabench test-response scoring; ID/OOD held-out fMRI responses are not publicly available to a local evaluator. No application signed or hidden-label score fabricated. Need agreed data access, stimulus features and temporal encoding protocol.",
+    "reason": "Original NEMAR MSSV page accessible:92mice,five labs,CC0,~5.3GB archive/direct manifest. Promising public real sleep resource, not bad data. Need lab identifiers, stage epoch alignment and leave-lab-out acquisition adapter; no local raw arrays downloaded.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
-      "https://algonautsproject.com/2025/challenge.html"
+      "https://nemar.org/dataset/on006366",
+      "https://doi.org/10.18112/openneuro.ds006366.v1.0.1"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
-    "benchmark_id": "I02",
+    "benchmark_id": "H18",
     "decision": "deferred",
-    "reason": "Original NSD site explicitly requests completion of a data-access agreement before receiving the manual/download access. No agreement/application completed on the user’s behalf. Candidate remains scientifically valuable; no bad-data claim.",
+    "reason": "Original DREAMS Zenodo record explicitly warns Expert1 spindle annotations stop after1000s. A naive full-1800s negative-label benchmark is excluded. A masked interval/Expert2 consensus protocol remains feasible but has not been validated, and original DREAMS noncommercial/no-adaptation terms need an appropriate data handling policy.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
-      "https://www.naturalscenesdataset.org/"
+      "https://zenodo.org/records/2650142",
+      "https://www.nature.com/articles/s41598-026-53891-9",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/",
+      "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
-    "benchmark_id": "I03",
-    "decision": "candidate_pending_validation",
-    "reason": "Original Brain-Score site supports executable alignment models across neural/behavioral measurements. It is an umbrella with many datasets; need select canonical task, permitted neural data and exact stimulus/model-representation interface. Generic classifier code on a mismatched proxy is not Brain-Score.",
+    "benchmark_id": "H19",
+    "decision": "deferred",
+    "reason": "Original DREAMS record has20expert-annotated15min artifact excerpts and explicit artifact types. Original DREAMS license was downloaded/read; noncommercial and no-adaptation terms complicate distributing prepared arrays. Need local-only extraction/annotation schema and exact event metric; no false claim that real artifact detection equals H16 mixture repair.",
     "date": "2026-10-30",
-    "source_screen_decision": "source-only",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
-      "https://www.brain-score.org/"
+      "https://zenodo.org/records/2650142",
+      "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "I04",
     "decision": "deferred",
     "reason": "Original Wakeman-Henson Nature article redirect failed through the web tool. No raw multimodal dataset or labels acquired; needs pinned EEG/MEG/fMRI release, face identities/conditions and subject/session split. Access failure is not permanent unavailability.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://www.nature.com/articles/sdata20151"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "I05",
-    "decision": "deferred",
-    "reason": "Original fastMRI site requires user application/institution/proposed-use and data-sharing agreement; no downloaded record, no access application submitted. Its redistribution restrictions require private data handling. Cannot substitute unrelated knee/synthetic reconstructions for brain benchmark.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-electrical.json",
-    "source_urls": [
-      "https://fastmri.med.nyu.edu/"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "I06",
     "decision": "deferred",
     "reason": "Original CBICA BraTS page lists multiple separate Synapse challenge instances. Need choose task/release, dataset access terms, subject-level split and official tumor-region/Dice/HD95 rules. No raw records acquired or multiple releases mixed.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://www.med.upenn.edu/cbica/brats/"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "I07",
     "decision": "measured",
     "reason": "Original FRESH organizer description resolves left/right2s finger tapping. CC0 versioned SNIRF data acquired/prepared with subject-disjoint2s condition decoding and optical-density conversion; explicit session/condition confounding, no Hb or cortical-activation gold-standard claim.",
     "date": "2026-10-30",
-    "source_screen_decision": "ready",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://www.nemar.org/dataset/on005963",
@@ -969,135 +803,154 @@
       "https://openneuro.org/datasets/ds005963/versions/1.0.0",
       "https://doi.org/10.1038/s42003-025-08412-1"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "I08",
     "decision": "deferred",
     "reason": "Original ConfUSIus collection docs permit small filtered downloads (~30MBexample), anonymous immutable releases and per-source licenses. Data size alone is not an exclusion. Need define actual experimental target (e.g. speed annotations) and held-out-recording/animal scorer; derived GLM maps are not independent truth.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://registry.opendata.aws/confusius/",
       "https://confusius.tools/latest/user-guide/datasets/"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "I09",
     "decision": "deferred",
     "reason": "Original Tractometer page explicitly distinguishes2015 Recobundles25bundles from2023 ROI21bundles and tractogram coordinate changes. Need pin matching truth/scorer and verify T1/DWI transforms. No arbitrary mixing of score versions admitted.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://tractometer.org/ismrm2015/tools/"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "I10",
     "decision": "measured",
     "reason": "Acquired original MRIQC0.10.5 tables and2017 classifier predictions;600ABIDEtrain/265DS030test rater1 labels and68IQMs. One-to-one archived prediction alignment and exclude1 label convention verified. Original classifier used different training/rater/features, currentbest unresolved.",
     "date": "2026-10-30",
-    "source_screen_decision": "admit",
     "evidence_file": "literature/admission-v04-inference-control.json",
     "source_urls": [
       "https://doi.org/10.1371/journal.pone.0184661",
       "https://github.com/nipreps/mriqc/tree/c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8/mriqc/data/csv"
     ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-    "permanent_rejection": false
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
   },
   {
     "benchmark_id": "J01",
     "decision": "deferred",
     "reason": "CREMI real volumetric image segmentation needs3D inputs and topology-sensitive adapted Rand/VI scoring. GPU specialist weights/scorer not prepared; a small randomvoxel classifier would not validate neurite segmentation.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://cremi.janelia.org/"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "J02",
     "decision": "candidate_pending_validation",
     "reason": "CREMI synapse detection requires actual pre/post partner instance annotations, separate from image segmentation labels. No synapse manifest or partner matching scorer acquired. Do not substitute arbitrary voxel classification.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://cremi.janelia.org/"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "J03",
     "decision": "deferred",
     "reason": "Inspected official BigNeuron gold166 release: paired raw images plus gold reconstructions exist, and traced outputs from40+ algorithms are archived. SWC-only morphology statistics do not evaluate image-to-skeleton tracing. No raw optical-volume slice or DIADEM scorer prepared, so no invented morphology classification proxy admitted.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://github.com/BigNeuron/Data/releases",
       "https://diadem.janelia.org/metric.html"
     ],
-    "review_depth": "primary release page inspected",
-    "permanent_rejection": false
+    "review_depth": "primary release page inspected"
   },
   {
     "benchmark_id": "J04",
     "decision": "candidate_pending_validation",
     "reason": "DeepSlice histology registration needs expert reference transforms/landmarks paired with source sections and animal IDs. Those pairs and train/test protocol have not been downloaded/validated. No substitute score from image metadata or atlas-derived pseudo-labels.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC10514056/"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "J05",
     "decision": "deferred",
     "reason": "MICrONS needs proofread graph release pinning, cell-function joins and release-specific train/test units; substantial data engineering and evolving annotations. Not prepared under current CPU/lightweight acquisition budget.",
     "date": "2026-10-30",
-    "source_screen_decision": "deferred",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://www.microns-explorer.org/"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "J06",
     "decision": "candidate_pending_validation",
     "reason": "WormND provides detection/identity tracks, but crossworm split, template annotations and exact organism normalization remain unvalidated. No3D image adapter acquired. Candidate remains eligible for later execution.",
     "date": "2026-10-30",
-    "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://github.com/focolab/WormND"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+  },
+  {
+    "benchmark_id": "J07",
+    "decision": "deferred",
+    "reason": "Mapped FISBe release is approximately21.6GB. Thin-neurite3D instance segmentation needs valid masks for partly labeled images and topology-sensitive scorer. No GPU3D pipeline prepared; not a valid tiny-patch substitute without protocol.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://kainmueller-lab.github.io/fisbe/",
+      "https://zenodo.org/records/10875063",
+      "https://github.com/Kainmueller-Lab/evaluate-instance-segmentation"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+  },
+  {
+    "benchmark_id": "J08",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
+    "date": "2026-10-30",
+    "evidence_file": "experiments/J08/protocol.md",
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
+      "https://github.com/pascalschamber/SynAPSeg",
+      "https://zenodo.org/records/18988899",
+      "https://doi.org/10.1371/journal.pcbi.1014571"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+  },
+  {
+    "benchmark_id": "J09",
+    "decision": "candidate_pending_validation",
+    "reason": "MTNeuro released region/semantic labels and dataCC BY4.0 make it plausible. Need exact volume-block split and image-to-label adapter; no acquisition attempted here. Region and pixel tasks share samples and must not count as independent datasets.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "source_urls": [
+      "https://mtneuro.github.io/",
+      "https://github.com/MTNeuro/MTNeuro"
+    ],
+    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
   },
   {
     "benchmark_id": "K01",
     "decision": "measured",
     "reason": "Real primary API data acquired and hashed; independent morphology endpoint, ephys-only whitelist, donor-disjoint split and train-only baseline protocol frozen. Prepared n_train=1356 and n_test=457, 11 features; 678/226 disjoint mouse donors. Adapter ready for root model evaluation.",
     "date": "2026-10-30",
-    "source_screen_decision": "admit",
     "evidence_file": "literature/admission-v04-cell-workflow.json",
     "source_urls": [
       "https://brain-map.org/our-research/cell-types-taxonomies",
@@ -1106,438 +959,25 @@
       "https://celltypes.brain-map.org/",
       "https://alleninstitute.org/terms-of-use/"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "K02",
     "decision": "candidate_pending_validation",
     "reason": "scIB is a general cell-integration toolkit, not one uniquely frozen brain dataset task. Need select brain donor cohorts/taxonomy and independent label-transfer policy, fit batch handling on allowed data, preserve rare classes, and reproduce biology AND mixing scorers. No unique dataset/split/rights package selected; do not inflate coverage from toolkit installation.",
     "date": "2026-10-30",
-    "source_screen_decision": "feasible_pending",
     "evidence_file": "literature/admission-v04-cell-workflow.json",
     "source_urls": [
       "https://brain-map.org/our-research/cell-types-taxonomies",
       "https://scib.readthedocs.io/en/latest/"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "K03",
-    "decision": "deferred",
-    "reason": "Primary NeuroDiscoveryBench includes existing workflow metadata, reference answers and figure/text scoring, but evaluates scientific-analysis agents rather than the fixed train/predict interface used for this execution batch. Large dataset downloader plus external evaluator/workflow budget not replicated; code/data licenses separate and rubric/judge provenance must be logged before admitting scores.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-cell-workflow.json",
-    "source_urls": [
-      "https://github.com/allenai/neurodiscoverybench"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "L01",
-    "decision": "candidate_pending_validation",
-    "reason": "Official challenge page identifies simulated fluorescence and synaptic truth and mirror links. No mirror acquired/hashed; download terms, held-out network split and directed graph scorer remain unvalidated. Not rejected as bad data.",
-    "date": "2026-10-30",
-    "source_screen_decision": "feasible_pending",
-    "evidence_file": "literature/admission-v04-inference-control.json",
-    "source_urls": [
-      "https://connectomics.chalearn.org/help/data"
-    ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "L02",
-    "decision": "deferred",
-    "reason": "Jaxley source repository exists; Nature full-text URL redirected beyond this web reader. Fixed prior, stimuli, simulator version, reference posterior and predictive/calibration scoring require a new experiment; single parameter MAE is insufficient under nonidentifiability.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-inference-control.json",
-    "source_urls": [
-      "https://sbi.readthedocs.io/en/latest/advanced_tutorials/21_diagnostics_misspecification_checks.html",
-      "https://www.nature.com/articles/s41592-025-02895-w",
-      "https://github.com/jaxleyverse/jaxley"
-    ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "L03",
-    "decision": "deferred",
-    "reason": "IBL AI Agent is a real analysis toolkit, not a frozen false-positive-rate benchmark. Need animal-held-out genuine/null task generation, exchangeability-preserving randomization and a blinded power/type-I-error protocol. No significance-searching substituted for benchmark completion.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-inference-control.json",
-    "source_urls": [
-      "https://github.com/int-brain-lab/ibl-ai-agent",
-      "https://www.internationalbrainlab.com/data"
-    ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "L04",
-    "decision": "measured",
-    "reason": "Constructed an explicit real place-cell count-encoding diagnostic from author-released data, replacing only the execution slice of the earlier proposed simulation. Chronological60/40split plus1sbuffer; train-mean-null bits/spike; no parameter-recovery/calibration claim.",
-    "date": "2026-10-30",
-    "source_screen_decision": "admit",
-    "evidence_file": "literature/admission-v04-inference-control.json",
-    "source_urls": [
-      "https://neurallatents.github.io/",
-      "https://github.com/snel-repo/ComputationThroughDynamicsToolkit",
-      "https://mark-kramer.github.io/Case-Studies-Python/09.html",
-      "https://github.com/Mark-Kramer/Case-Studies-Python"
-    ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "L05",
-    "decision": "candidate_pending_validation",
-    "reason": "Perturbation-response atlas primary source mapped; Nature full-text access redirected in this audit. Animal/experiment identities, perturbation matching, source reuse terms and missing-response policy require acquisition/validation before an intervention-prediction score.",
-    "date": "2026-10-30",
-    "source_screen_decision": "feasible_pending",
-    "evidence_file": "literature/admission-v04-inference-control.json",
-    "source_urls": [
-      "https://www.nature.com/articles/s41586-023-06683-4"
-    ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "L06",
-    "decision": "candidate_pending_validation",
-    "reason": "Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.",
-    "date": "2026-10-30",
-    "source_screen_decision": "feasible_pending",
-    "evidence_file": "literature/admission-v04-inference-control.json",
-    "source_urls": [
-      "https://github.com/sbi-benchmark/sbibm"
-    ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "M01",
-    "decision": "candidate_pending_validation",
-    "reason": "IBL data and Psych-101/Centaur primary resource mapped. Real choice prediction requires participant/animal-held-out chronology, a bounded task selection and data-specific terms; M04 synthetic parameter recovery does not complete this endpoint.",
-    "date": "2026-10-30",
-    "source_screen_decision": "feasible_pending",
-    "evidence_file": "literature/admission-v04-inference-control.json",
-    "source_urls": [
-      "https://www.internationalbrainlab.com/data",
-      "https://www.nature.com/articles/s41586-025-09215-4"
-    ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "M02",
-    "decision": "deferred",
-    "reason": "Jaxley/NeuroGym environments exist, but adaptive design needs unknown-system distributions, allowed interventions, equal trial budget and regret/information-gain scorer. No frozen design benchmark instantiated.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-inference-control.json",
-    "source_urls": [
-      "https://www.nature.com/articles/s41592-025-02895-w",
-      "https://github.com/neurogym/neurogym"
-    ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "M03",
-    "decision": "candidate_pending_validation",
-    "reason": "Official NeuroGym task collection exists. Need versioned finite suite, trial-generation seeds, observation/action contract and task-trained controller reference. Static supervised score is not closed-loop policy evaluation.",
-    "date": "2026-10-30",
-    "source_screen_decision": "feasible_pending",
-    "evidence_file": "literature/admission-v04-inference-control.json",
-    "source_urls": [
-      "https://github.com/neurogym/neurogym"
-    ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "M04",
-    "decision": "measured",
-    "reason": "Previously measured24agent synthetic Q-learning recovery. Author guide supports recovery checks; local implementation and posterior-vs-MLE objective difference explicit. Not biological data or a released leaderboard.",
-    "date": "2026-10-30",
-    "source_screen_decision": "admit",
-    "evidence_file": "literature/admission-v04-inference-control.json",
-    "source_urls": [
-      "https://elifesciences.org/articles/49547"
-    ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "M05",
-    "decision": "deferred",
-    "reason": "BADS primary paper benchmarks real neuroscience fitting objectives; MATLAB BADS/Python PyBADS repositories exist. Full CCN17 objective data/dependencies and per-objective budgets not acquired; optimizing an unrelated toy loss would not reproduce this task.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-inference-control.json",
-    "source_urls": [
-      "https://arxiv.org/abs/1705.04405",
-      "https://github.com/acerbilab/bads",
-      "https://github.com/acerbilab/pybads"
-    ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "M06",
-    "decision": "deferred",
-    "reason": "Official MyoChallenge site lists musculoskeletal control environments and editions. Need pinned MuJoCo/MyoSuite state/action environments, rollout/time budgets and trained policy references; policy training/evaluation outside180s array-code slice.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-inference-control.json",
-    "source_urls": [
-      "https://myosuite.org/myochallenge/"
-    ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "M07",
-    "decision": "deferred",
-    "reason": "Author FlyGym repository provides embodied NeuroMechFly simulation. Need pinned simulator/contact/sensory assets, terrain seeds and controller training/rollout protocol. Not a ready static supervised dataset; no biological validity inferred from simulated reward.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-inference-control.json",
-    "source_urls": [
-      "https://www.nature.com/articles/s41592-024-02497-y",
-      "https://github.com/NeLy-EPFL/flygym"
-    ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "N01",
-    "decision": "candidate_pending_validation",
-    "reason": "Official repository provides workflow metadata, expert answers, dataset loader and eval code. This batch has not frozen an eligible neuroscience question subset, run its large-source data loader or replicated text/figure rubric evaluation. Needs task-specific numeric checks and, where the official evaluator uses an LLM judge, recorded judge model/version/prompt and access. No surrogate blind-judge scores supplied.",
-    "date": "2026-10-30",
-    "source_screen_decision": "feasible_pending",
-    "evidence_file": "literature/admission-v04-cell-workflow.json",
-    "source_urls": [
-      "https://github.com/allenai/neurodiscoverybench"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "N02",
-    "decision": "deferred",
-    "reason": "BrainAgent primary paper located and hierarchical workflow claim confirmed. Complete reusable task/data/evaluator bundle and provider/tool conditions not independently validated by this screen. Do not assert unavailable; admission remains unresolved. A similarly named GitHub project cannot be presumed the paper authors release.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-cell-workflow.json",
-    "source_urls": [
-      "https://arxiv.org/abs/2606.25400"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "N03",
-    "decision": "candidate_pending_validation",
-    "reason": "Primary NeuroClaw page explicitly lists 120 tasks in7 categories, with/no-skills conditions and GPT5.4 weighted-rubric scoring. Requires matching tool/skill environment, task version, source data terms, and evaluator model/API or a declared distinct deterministic metric. Planning/rubric scores cannot be treated as signal prediction accuracy; no new rubric scores fabricated.",
-    "date": "2026-10-30",
-    "source_screen_decision": "feasible_pending",
-    "evidence_file": "literature/admission-v04-cell-workflow.json",
-    "source_urls": [
-      "https://cuhk-aim-group.github.io/NeuroDiscovery/neurobench.html"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "N04",
-    "decision": "candidate_pending_validation",
-    "reason": "Primary ScienceAgentBench paper/repository provide publication-derived code tasks and evaluators. Need explicitly freeze neuroscience/cognitive/EEG subset with per-task data terms, runtime and output evaluators, rather than report all102 broad-science tasks as neuro. Image/rubric cases need evaluator/judge provenance where applicable. No new complete-subset run performed.",
-    "date": "2026-10-30",
-    "source_screen_decision": "feasible_pending",
-    "evidence_file": "literature/admission-v04-cell-workflow.json",
-    "source_urls": [
-      "https://arxiv.org/abs/2410.05080",
-      "https://github.com/OSU-NLP-Group/ScienceAgentBench"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "N05",
-    "decision": "measured",
-    "reason": "Constructed and validated deterministic loader/unit/timing audit using actual Allen NWB shared withD02, six sweeps and61 leaf fields; reference crosschecked with official EphysSweep metadata plus independent block-averaged D02 arrays. No claim of DANDI archive benchmark, format-general robustness, or scientific discovery.",
-    "date": "2026-10-30",
-    "source_screen_decision": "admit",
-    "evidence_file": "literature/admission-v04-cell-workflow.json",
-    "source_urls": [
-      "https://about.dandiarchive.org/",
-      "https://www.internationalbrainlab.com/data",
-      "https://brain-map.org/support/documentation/cell-types-database-api",
-      "https://alleninstitute.github.io/AllenSDK/cell_types.html"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "N06",
-    "decision": "deferred",
-    "reason": "Proposed data-integrity task has no independently validated corruption generator/hidden fault suite or prespecified detection thresholds yet. DANDI is an archive, not the fault benchmark. N05 clean-file parsing does not establish detection of metadata/timing/unit corruption.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-cell-workflow.json",
-    "source_urls": [
-      "https://about.dandiarchive.org/"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "A15",
-    "decision": "candidate_pending_validation",
-    "reason": "DAS annotated raw audio can support real event-segmentation evaluation. Still need pinned species/recording slice, sampling rate and official event-matching tolerance; no audio acquisition attempted here. Temporal bouts must remain grouped.",
-    "date": "2026-10-30",
-    "source_screen_decision": "source_only",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
-    "source_urls": [
-      "https://elifesciences.org/articles/68837",
-      "https://data.goettingen-research-online.de/dataverse/das",
-      "https://janclemenslab.org/das/",
-      "https://github.com/nianlonggu/WhisperSeg"
-    ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "A16",
-    "decision": "candidate_pending_validation",
-    "reason": "VCL controlled speaker localization supplies positions, but multi-mic calibration/time synchronization and recording-group split must be acquired. Do not infer source identity solely from event detection; no adapter prepared.",
-    "date": "2026-10-30",
-    "source_screen_decision": "source_only",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
-    "source_urls": [
-      "https://proceedings.nips.cc/paper_files/paper/2024/hash/c00d37d6b04d73b870b963a4d70051c1-Abstract-Datasets_and_Benchmarks_Track.html",
-      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/",
-      "https://github.com/neurostatslab/vocalocator"
-    ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "E06",
-    "decision": "candidate_pending_validation",
-    "reason": "ZAPBench real larval zebrafish wholebrain activity forecasting is a distinct real task. Needs pinned release, official heldout temporal blocks and neuron mappings; complete brain arrays may be large. No acquisition attempted here, so no permanent infeasibility claim.",
-    "date": "2026-10-30",
-    "source_screen_decision": "source_only",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
-    "source_urls": [
-      "https://google-research.github.io/zapbench/",
-      "https://arxiv.org/abs/2503.02618",
-      "https://zapbench-release.storage.googleapis.com/volumes/README.html"
-    ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "H17",
-    "decision": "deferred",
-    "reason": "Original NEMAR MSSV page accessible:92mice,five labs,CC0,~5.3GB archive/direct manifest. Promising public real sleep resource, not bad data. Need lab identifiers, stage epoch alignment and leave-lab-out acquisition adapter; no local raw arrays downloaded.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-electrical.json",
-    "source_urls": [
-      "https://nemar.org/dataset/on006366",
-      "https://doi.org/10.18112/openneuro.ds006366.v1.0.1"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "H18",
-    "decision": "deferred",
-    "reason": "Original DREAMS Zenodo record explicitly warns Expert1 spindle annotations stop after1000s. A naive full-1800s negative-label benchmark is excluded. A masked interval/Expert2 consensus protocol remains feasible but has not been validated, and original DREAMS noncommercial/no-adaptation terms need an appropriate data handling policy.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-electrical.json",
-    "source_urls": [
-      "https://zenodo.org/records/2650142",
-      "https://www.nature.com/articles/s41598-026-53891-9",
-      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/",
-      "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "H19",
-    "decision": "deferred",
-    "reason": "Original DREAMS record has20expert-annotated15min artifact excerpts and explicit artifact types. Original DREAMS license was downloaded/read; noncommercial and no-adaptation terms complicate distributing prepared arrays. Need local-only extraction/annotation schema and exact event metric; no false claim that real artifact detection equals H16 mixture repair.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-electrical.json",
-    "source_urls": [
-      "https://zenodo.org/records/2650142",
-      "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
-    ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "J07",
-    "decision": "deferred",
-    "reason": "Mapped FISBe release is approximately21.6GB. Thin-neurite3D instance segmentation needs valid masks for partly labeled images and topology-sensitive scorer. No GPU3D pipeline prepared; not a valid tiny-patch substitute without protocol.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
-    "source_urls": [
-      "https://kainmueller-lab.github.io/fisbe/",
-      "https://zenodo.org/records/10875063",
-      "https://github.com/Kainmueller-Lab/evaluate-instance-segmentation"
-    ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "J08",
-    "decision": "deferred",
-    "reason": "Dataset license unresolved in earlier mapping and only three fully held-out benchmark images with multiple raters. Code license does not resolve image-data terms. Do not redistribute or execute until authoritative dataset terms and scorer are verified.",
-    "date": "2026-10-30",
-    "source_screen_decision": "deferred",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
-    "source_urls": [
-      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
-      "https://github.com/pascalschamber/SynAPSeg",
-      "https://zenodo.org/records/18988899"
-    ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
-  },
-  {
-    "benchmark_id": "J09",
-    "decision": "candidate_pending_validation",
-    "reason": "MTNeuro released region/semantic labels and dataCC BY4.0 make it plausible. Need exact volume-block split and image-to-label adapter; no acquisition attempted here. Region and pixel tasks share samples and must not count as independent datasets.",
-    "date": "2026-10-30",
-    "source_screen_decision": "source_only",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
-    "source_urls": [
-      "https://mtneuro.github.io/",
-      "https://github.com/MTNeuro/MTNeuro"
-    ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "K04",
     "decision": "candidate_pending_validation",
     "reason": "Primary spatialLIBD downloader and source located. Original study has three donors, adjacent sections must remain grouped. Local R 4.4.1 is present but SingleCellExperiment, SummarizedExperiment, ExperimentHub and spatialLIBD are absent. Data parsing/independent layer-label policy and spatial specialist scoring are not validated. Small examples/pseudobulks cannot silently stand in for held-out-donor spatial spot benchmark.",
     "date": "2026-10-30",
-    "source_screen_decision": "feasible_pending",
     "evidence_file": "literature/admission-v04-cell-workflow.json",
     "source_urls": [
       "https://research.libd.org/spatialLIBD/",
@@ -1547,15 +987,13 @@
       "https://raw.githubusercontent.com/LieberInstitute/spatialLIBD/master/R/fetch_data.R",
       "https://doi.org/10.1038/s41593-020-00787-0"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "K05",
     "decision": "candidate_pending_validation",
     "reason": "Primary DeconvoBuddies fetch documentation identifies bulk 110x21k (41 MB), snRNA 77kx36k (172 MB) and example 10kx557. Need match orthogonal IF/RNAScope fractions to bulk samples, donor/tissue blocks and fixed reference/marker policy. Bioconductor S4 readers absent and ground-truth alignment not completed. Data size itself is manageable; do not call impossible or bad.",
     "date": "2026-10-30",
-    "source_screen_decision": "feasible_pending",
     "evidence_file": "literature/admission-v04-cell-workflow.json",
     "source_urls": [
       "https://doi.org/10.1186/s13059-025-03552-3",
@@ -1563,15 +1001,13 @@
       "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution",
       "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "K06",
     "decision": "candidate_pending_validation",
     "reason": "Primary ground-truth tutorial and GitHub folder inspected; 87 files total ~500 MB. Downloaded one 189 kB cell metrics example and consolidated 2.83 MB gt list; MATLAB v7.3 HDF5 parsed with isolated h5py3.15.1. Consolidated list has 430 entries and animal/session/truth labels, but no predictor feature matrix; example has Juxta tag (not a molecular cell class). Must select nonnested independently tagged classes, extract only scalar physiology/waveform metrics from session files, group animals, resolve contributor data terms, and exclude putativeCellType/geneticLine/brainRegion proxies. No validated table yet.",
     "date": "2026-10-30",
-    "source_screen_decision": "feasible_pending",
     "evidence_file": "literature/admission-v04-cell-workflow.json",
     "source_urls": [
       "https://cellexplorer.org/publicdata/ground-truth-data/",
@@ -1579,7 +1015,146 @@
       "https://alleninstitute.github.io/openscope_databook/optotagging/",
       "https://api.github.com/repos/petersenpeter/CellExplorer/contents/%2BgroundTruthData"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-    "permanent_rejection": false
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+  },
+  {
+    "benchmark_id": "L01",
+    "decision": "candidate_pending_validation",
+    "reason": "Official challenge page identifies simulated fluorescence and synaptic truth and mirror links. No mirror acquired/hashed; download terms, held-out network split and directed graph scorer remain unvalidated. Not rejected as bad data.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://connectomics.chalearn.org/help/data"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+  },
+  {
+    "benchmark_id": "L03",
+    "decision": "deferred",
+    "reason": "IBL AI Agent is a real analysis toolkit, not a frozen false-positive-rate benchmark. Need animal-held-out genuine/null task generation, exchangeability-preserving randomization and a blinded power/type-I-error protocol. No significance-searching substituted for benchmark completion.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://github.com/int-brain-lab/ibl-ai-agent",
+      "https://www.internationalbrainlab.com/data"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+  },
+  {
+    "benchmark_id": "L04",
+    "decision": "measured",
+    "reason": "Constructed an explicit real place-cell count-encoding diagnostic from author-released data, replacing only the execution slice of the earlier proposed simulation. Chronological60/40split plus1sbuffer; train-mean-null bits/spike; no parameter-recovery/calibration claim.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://neurallatents.github.io/",
+      "https://github.com/snel-repo/ComputationThroughDynamicsToolkit",
+      "https://mark-kramer.github.io/Case-Studies-Python/09.html",
+      "https://github.com/Mark-Kramer/Case-Studies-Python"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+  },
+  {
+    "benchmark_id": "L05",
+    "decision": "candidate_pending_validation",
+    "reason": "Perturbation-response atlas primary source mapped; Nature full-text access redirected in this audit. Animal/experiment identities, perturbation matching, source reuse terms and missing-response policy require acquisition/validation before an intervention-prediction score.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://www.nature.com/articles/s41586-023-06683-4"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+  },
+  {
+    "benchmark_id": "L06",
+    "decision": "candidate_pending_validation",
+    "reason": "Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://github.com/sbi-benchmark/sbibm"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+  },
+  {
+    "benchmark_id": "M01",
+    "decision": "candidate_pending_validation",
+    "reason": "IBL data and Psych-101/Centaur primary resource mapped. Real choice prediction requires participant/animal-held-out chronology, a bounded task selection and data-specific terms; M04 synthetic parameter recovery does not complete this endpoint.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://www.internationalbrainlab.com/data",
+      "https://www.nature.com/articles/s41586-025-09215-4"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+  },
+  {
+    "benchmark_id": "M03",
+    "decision": "candidate_pending_validation",
+    "reason": "Official NeuroGym task collection exists. Need versioned finite suite, trial-generation seeds, observation/action contract and task-trained controller reference. Static supervised score is not closed-loop policy evaluation.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://github.com/neurogym/neurogym"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+  },
+  {
+    "benchmark_id": "M04",
+    "decision": "measured",
+    "reason": "Previously measured24agent synthetic Q-learning recovery. Author guide supports recovery checks; local implementation and posterior-vs-MLE objective difference explicit. Not biological data or a released leaderboard.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://elifesciences.org/articles/49547"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+  },
+  {
+    "benchmark_id": "M06",
+    "decision": "deferred",
+    "reason": "Official MyoChallenge site lists musculoskeletal control environments and editions. Need pinned MuJoCo/MyoSuite state/action environments, rollout/time budgets and trained policy references; policy training/evaluation outside180s array-code slice.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "source_urls": [
+      "https://myosuite.org/myochallenge/"
+    ],
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+  },
+  {
+    "benchmark_id": "N01",
+    "decision": "candidate_pending_validation",
+    "reason": "Official repository provides workflow metadata, expert answers, dataset loader and eval code. This batch has not frozen an eligible neuroscience question subset, run its large-source data loader or replicated text/figure rubric evaluation. Needs task-specific numeric checks and, where the official evaluator uses an LLM judge, recorded judge model/version/prompt and access. No surrogate blind-judge scores supplied.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "source_urls": [
+      "https://github.com/allenai/neurodiscoverybench"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+  },
+  {
+    "benchmark_id": "N03",
+    "decision": "candidate_pending_validation",
+    "reason": "Primary NeuroClaw page explicitly lists 120 tasks in7 categories, with/no-skills conditions and GPT5.4 weighted-rubric scoring. Requires matching tool/skill environment, task version, source data terms, and evaluator model/API or a declared distinct deterministic metric. Planning/rubric scores cannot be treated as signal prediction accuracy; no new rubric scores fabricated.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "source_urls": [
+      "https://cuhk-aim-group.github.io/NeuroDiscovery/neurobench.html"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+  },
+  {
+    "benchmark_id": "N05",
+    "decision": "measured",
+    "reason": "Constructed and validated deterministic loader/unit/timing audit using actual Allen NWB shared withD02, six sweeps and61 leaf fields; reference crosschecked with official EphysSweep metadata plus independent block-averaged D02 arrays. No claim of DANDI archive benchmark, format-general robustness, or scientific discovery.",
+    "date": "2026-10-30",
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "source_urls": [
+      "https://about.dandiarchive.org/",
+      "https://www.internationalbrainlab.com/data",
+      "https://brain-map.org/support/documentation/cell-types-database-api",
+      "https://alleninstitute.github.io/AllenSDK/cell_types.html"
+    ],
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   }
 ]

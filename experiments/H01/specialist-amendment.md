@@ -1,0 +1,7 @@
+# Added specialist reference, v0.5
+
+Added after seeing the original Sol scores, with no changes to those programs or data. This is an exploratory stronger domain reference, not a prospective matched-budget study or current-SOTA claim.
+
+Use published pyRiemann covariance/tangent-space classifiers: [author package](https://github.com/pyRiemann/pyRiemann), [official API](https://pyriemann.readthedocs.io/). The isolated runtime installs pyRiemann0.12. OAS covariance, trace normalization, Riemannian tangent reference, standardization and linear balanced SVM. Choose band(7–30,8–35,8–15Hz) and C(0.1,1,10) using leave-one-training-subject-out balanced accuracy. Preprocessing, tangent reference and scaling are re-estimated inside each fold; refit selected procedure to all training subjects. No test labels or unlabeled test adaptation used for selection.
+
+This grid, scorer, tie-break(first candidate in order), source arrays and numerical thread policy were recorded before this reference's first test score. No comparison-driven second config is permitted. Entire validation/fit time and prediction artifacts retained. General-model budget was180seconds; specialist has a separately disclosed600second cap and extra subject-group metadata. Therefore no equal-information/equal-effort superiority claim. The code compares library-based established specialist procedures, not the strongest possible neural network.

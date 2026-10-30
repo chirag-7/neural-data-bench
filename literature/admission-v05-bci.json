@@ -1,0 +1,114 @@
+{
+  "checked_on": "2026-10-30",
+  "scope": "Bounded follow-on admission investigation: intracortical G01 and source candidates H02/H03; not an exhaustive literature review",
+  "decisions": [
+    {
+      "id": "G01",
+      "status": "ready",
+      "slice_id": "falcon-m2-calib-chronological-v1",
+      "reason": "A real 96-channel intracortical neural-to-two-dimensional finger-velocity endpoint was prepared from seven pinned calibration NWBs. Whole recording days are separated, with 1169 training and 754 evaluation trials. Range extraction avoids unused raw fullband voltage. This is custom zero-shot chronology, not the official FALCON protocol or leaderboard score.",
+      "license_facts": "Original DANDI 000953 metadata declares CC-BY-4.0 and describes one monkey; its split partitions are not separate animals. FALCON reference code is MIT and retained with its license.",
+      "access_facts": "Anonymous public asset downloads support HTTP Range. Only named spike, kinematic and trial datasets were extracted. Provider whole-file SHA-256 values are reported but were not independently verified. Every extracted buffer and saved NPZ has a local SHA-256.",
+      "primary_sources": [
+        "https://snel-repo.github.io/falcon/",
+        "https://github.com/snel-repo/falcon-challenge",
+        "https://api.dandiarchive.org/api/dandisets/000953/versions/draft/",
+        "https://api.dandiarchive.org/api/dandisets/000953/versions/draft/assets/?page_size=100"
+      ],
+      "protocol": "experiments/G01/protocol.md",
+      "manifest": "data/manifests/G01.json",
+      "verification": "experiments/G01/verification.json",
+      "current_best_status": "Not verified; only the frozen adapted FALCON ridge reference was reproduced.",
+      "remaining_limitations": [
+        "One monkey",
+        "Two held-out days",
+        "Offline estimator given fixed causal features",
+        "Not the official few-shot calibration budget",
+        "Native target AU retained without assuming SI units"
+      ],
+      "checked_on": "2026-10-30"
+    },
+    {
+      "id": "G01:H1-alternative",
+      "status": "not_selected",
+      "reason": "The full public H1 release is approximately 102 MB, but its description adds human-data nonredistribution and no-reidentification terms despite CC-BY metadata. M2 was preferred for this release. This is not a claim that H1 is bad or unusable.",
+      "primary_sources": [
+        "https://api.dandiarchive.org/api/dandisets/000954/versions/draft/",
+        "https://raw.githubusercontent.com/dandisets/000954/draft/dandiset.yaml"
+      ],
+      "license_facts": "CC-BY metadata plus the explicitly stated H1 Data Use Agreement. No H1 participant arrays or predictions are shared.",
+      "access_facts": "One small minival scratch file was inspected. No H1 benchmark was prepared.",
+      "checked_on": "2026-10-30"
+    },
+    {
+      "id": "G01:M2-minival-alternative",
+      "status": "excluded_tiny_slice",
+      "reason": "Seven public minival files provide only 14 trials, too small to justify a useful new broad decoding slice. They were replaced by partial extraction of full calibration files with hundreds of trials. Potentially overlapping minival and calibration files were never mixed.",
+      "primary_sources": [
+        "https://api.dandiarchive.org/api/dandisets/000953/versions/draft/assets/?page_size=100",
+        "https://raw.githubusercontent.com/snel-repo/falcon-challenge/main/README.md"
+      ],
+      "license_facts": "Original M2 record declares CC-BY-4.0.",
+      "access_facts": "One original minival run was inspected: 173 behavior bins and two trials. It is not used in the admitted arrays.",
+      "checked_on": "2026-10-30"
+    },
+    {
+      "id": "G01:NLB-alternative",
+      "status": "not_selected_for_crossday",
+      "reason": "NLB MC_Maze and MC_RTT provide useful real neural-to-behavior data, but single-session releases do not establish G01 cross-day robustness. They remain valid population/behavior endpoints; no same-session data were relabeled as cross-day.",
+      "primary_sources": [
+        "https://neurallatents.github.io/datasets",
+        "https://arxiv.org/abs/2109.04463"
+      ],
+      "license_facts": "A specifically selected NLB asset would require its own license check; the source MC_Maze record declares CC-BY-4.0.",
+      "access_facts": "Official NLB dataset documentation was screened. No new NLB NWB was acquired by this subtask.",
+      "checked_on": "2026-10-30"
+    },
+    {
+      "id": "H02",
+      "status": "candidate_verified_source",
+      "resource": "BNCI2014-008 P300 ALS dataset",
+      "reason": "The compact original subject A01 MATLAB file is downloadable, and its actual EEG/target fields were inspected. A participant-held-out P300 protocol and xDAWN/shrinkage-LDA reference remain to be implemented. No benchmark score was fabricated.",
+      "license_facts": "The original BNCI page explicitly declares CC BY-NC-ND 4.0. Local noncommercial analysis and publication of code/aggregate scores are distinct from sharing adapted waveform arrays. Original terms must remain visible; this review does not claim that local analysis is forbidden.",
+      "access_facts": "Original A01 MATLAB file: 21,548,593 bytes; byte-range header and full download verified, with source SHA-256 in the verification receipt. The EPFL alternative URL returned HTTP 206 and a valid ZIP header, with total size 266,875,940 bytes; no full EPFL archive was acquired.",
+      "primary_sources": [
+        "https://bnci-horizon-2020.eu/database/data-sets",
+        "https://bnci-horizon-2020.eu/database/data-sets/008-2014/A01.mat",
+        "https://raw.githubusercontent.com/NeuroTechX/moabb/develop/moabb/datasets/bnci/bnci_2014.py",
+        "https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_008.html",
+        "https://moabb.neurotechx.com/docs/generated/moabb.datasets.EPFLP300.html"
+      ],
+      "next_steps": [
+        "Verify event/sample offsets and measurement units against the original data description and loader",
+        "Use participant-held-out splits, retaining the natural target imbalance",
+        "Fit xDAWN spatial filters and shrinkage LDA or BLDA only on training data",
+        "Use AUROC as primary metric, with balanced accuracy secondary",
+        "Keep prepared waveforms local unless sharing terms are resolved"
+      ],
+      "checked_on": "2026-10-30"
+    },
+    {
+      "id": "H03",
+      "status": "deferred_unknown_data_license",
+      "resource": "Nakanishi2015 12JFPM SSVEP",
+      "reason": "The original author-hosted MATLAB download, array shape and frequency-label mapping were verified. The repository lacks an explicit data license and current MOABB metadata says Unknown. The article CC-BY license does not automatically license external repository arrays. Execution is deferred until terms are clarified.",
+      "license_facts": "No explicit data LICENSE was found in the original repository tree at commit 2d4e281a430b4676f75c9270db839e963f172da5. MOABB documentation records the license as Unknown.",
+      "access_facts": "Original s1 MATLAB file: 15,011,521 bytes; SHA-256 dea3eecb45cf9295e41b1eb1dfca0d63febf3537a0e35f5036aba5cde661c9e5. Finite float64 array of shape (12 targets,8 channels,1114 samples,15 blocks), at 256 Hz. Nine additional subject URLs are listed in the same author repository.",
+      "primary_sources": [
+        "https://github.com/mnakanishi/12JFPM_SSVEP",
+        "https://raw.githubusercontent.com/mnakanishi/12JFPM_SSVEP/2d4e281a430b4676f75c9270db839e963f172da5/README.md",
+        "https://raw.githubusercontent.com/mnakanishi/12JFPM_SSVEP/2d4e281a430b4676f75c9270db839e963f172da5/data/s1.mat",
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0140703",
+        "https://raw.githubusercontent.com/NeuroTechX/moabb/develop/moabb/datasets/ssvep_nakanishi.py"
+      ],
+      "next_steps": [
+        "Clarify dataset reuse permission or select an explicitly licensed SSVEP dataset",
+        "Use standard CCA with sinusoid references as the calibration-free specialist; extended CCA/IT-CCA is a separately labeled personal-calibration track",
+        "Hold out whole blocks in the original leave-one-block-out paradigm; report subject holdout separately",
+        "Pin the 39th-sample stimulus onset, 0.15-second prestimulus interval and 135 ms latency without test-score tuning",
+        "Report classification accuracy and timing conventions before ITR; do not import the paper score onto a custom split"
+      ],
+      "checked_on": "2026-10-30"
+    }
+  ]
+}

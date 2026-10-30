@@ -35,3 +35,9 @@ Current repo exposes subset; paired truth often only one neuron
 Decision: **candidate_pending_validation** (2026-10-30). SpikeForest offers paired/curated groundtruth recordings, but exact accessible recording URI, agreement threshold, sorting scorer and matched sorter have not been acquired here. Do not claim hidden true neuron labels from ordinary extracellular recording.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
+
+[Admission/source evidence](../../../literature/admission-v05-extracellular.json). [Actual protocol/worklog](../../../experiments/B01). [Task measurements](../../../results/B01.json).

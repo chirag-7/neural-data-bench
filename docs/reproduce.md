@@ -71,7 +71,7 @@ python scripts/expansion.py evaluate TASK
 python scripts/workflow.py evaluate  # N05, after source fixture preparation
 # Restore archived refs after rerunning the primary A09/I10model/reference records:
 python scripts/integrate_references.py
-python scripts/integrate_admissions.py
+python scripts/release_registry.py
 python scripts/summarize.py
 python scripts/validate.py
 python scripts/validate_expansion.py
@@ -81,3 +81,52 @@ node scripts/check_site.mjs
 ```
 
 `integrate_references.py` reuses the committed aligned VASSIpredictions; its original source retrieval/alignment steps are in `experiments/A09/specialized_reference.py` and the specialist selection/alignment files. I10 archived CSV is acquired by its adapter. `validate_expansion.py` only re-scores stored predictions; it does not retrain or contact a model. Portable CI checks metadata, linked files, prediction hashes and static-source routes without acquiring raw data. Source-render checks are not browser layout/interaction QA.
+
+## Preview 0.5 additions
+
+Use `scripts/release_registry.py` for the current 96-entry active map. `integrate_admissions.py` is a historical v0.4 normalizer and must not reconstruct the current active panel. Raw data stay ignored. All acquisition/preparation commands below can download substantial public data; read the per-task protocol and terms first. Do not run `freeze` again for the original release.
+
+```sh
+# Prepare new bounded tasks; B01 needs its separate pinned specialist stack.
+python experiments/B01/adapter.py
+python experiments/G01/adapter.py
+python experiments/H08/adapter.py
+python experiments/J08/adapter.py
+# E01 source preparation uses its pinned preparation environment.
+python experiments/E01/slices/area2_bump/adapter.py
+python experiments/E01/slices/dmfc_rsg/adapter.py
+# Execute frozen programs, no new model calls.
+python scripts/spikes.py evaluate
+python scripts/expansion.py evaluate G01
+python scripts/expansion.py evaluate H08
+python scripts/expansion.py evaluate J08
+python scripts/transfer.py evaluate area2_bump
+python scripts/transfer.py evaluate dmfc_rsg
+```
+
+B01 acquisition/scoring requires `experiments/B01/requirements.txt`; source MEArec/SpikeInterface compatibility is separate from the model's allowed general-package environment. The adapter prepares the MountainSort5 reference events; scorer uses pinned SpikeInterface 0.105.4. E01/G01 source preparation requirements are declared in their experiment directories. Core general-model evaluation uses root `requirements.txt`. H08 preparation uses MNE; the YASA reference uses a separate environment to prevent specialist dependencies changing the general-model evaluation stack.
+
+For specialist reproduction, use a separate virtual environment with `yasa==0.8.1`, `pyriemann==0.12`, `mne==1.13.2`, `lightgbm==4.7.0`, `numpy==2.5.4`, `scipy==1.18.1`, `scikit-learn==1.9.1`, `pandas==3.1.0`, `antropy==0.2.3`, `numba==0.68.1`; the exact runtime identities and checkpoint hashes are in per-task specialist runtime JSON. These are the observed release versions, not a claim about universal compatibility.
+
+```sh
+# Separate specialist environment; train-only selection, no model calls.
+python experiments/H01/specialist_riemann.py
+python experiments/H01/specialist_aligned_riemann.py
+python experiments/H08/specialist_yasa.py
+python experiments/H08/verify_yasa.py
+# Return to the core science environment for scoring/integration.
+python scripts/integrate_specialists.py
+python scripts/release_registry.py
+python scripts/summarize.py
+python scripts/validate.py
+python scripts/validate_expansion.py
+python scripts/build_website.py
+python scripts/check_repository.py
+node scripts/check_site.mjs
+```
+
+The original H01 selection outputs include all out-of-fold predictions and a separate verification record. J08's author StarDist masks are archived predictions, not locally executed inference; source code and all aligned human masks are retained in acquisition evidence. A14's optional DISK transformer archive was inspected and rejected because its downloaded, publisher-hash-matching weight ZIP lacks a readable central directory; it is not a scored specialist.
+
+E01 extra sources reuse the exact original generated programs. The original prompt describes MC_Maze_Small dimensions, so this is a deliberately disclosed frozen-program portability test, not a matched fresh-prompt comparison. DMFC preserves official masked target coordinates. Prepared data hashes and source preparation seals must match; never fix a mismatch by silently changing an original run-spec.
+
+Scoring checks need acquired arrays. Portable CI uses no raw-data downloads or provider calls and verifies metadata, links, frozen source/prompt/code identities and stored prediction hashes. Browser verification is recorded separately; source-VM checks alone do not establish layout or click behavior.

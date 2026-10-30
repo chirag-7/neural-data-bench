@@ -12,7 +12,7 @@
   "v04_admission": {
     "benchmark_id": "E03",
     "decision": "candidate_pending_validation",
-    "reason": "BrainWideBench TS1 provides natural crossanimal decoding benchmark aligned with course. Needs exact pinned IBL sessionmanifest, labels and common neuron/input normalization under official split. Public data may require sizeable multises­sion acquisition; not attempted here.",
+    "reason": "BrainWideBench TS1 provides natural crossanimal decoding benchmark aligned with course. Needs exact pinned IBL sessionmanifest, labels and common neuron/input normalization under official split. Public data may require sizeable multises\u00adsion acquisition; not attempted here.",
     "date": "2026-10-30",
     "source_screen_decision": "source_only",
     "evidence_file": "literature/admission-v04-behavior-population.json",
@@ -22,5 +22,10 @@
     ],
     "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
     "permanent_rejection": false
+  },
+  "v05_actual_execution": {
+    "status": "candidate_pending_validation",
+    "slice": null,
+    "evidence": "literature/admission-v04-behavior-population.json"
   }
 }

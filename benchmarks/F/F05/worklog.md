@@ -9,3 +9,9 @@
 Decision: **candidate_pending_validation** (2026-10-30). Musall behavior-to-widefield data can support real regression, but exact movies/behavior regressors, temporalalignment and session/animal split must be pinned. Training/testing adjacentframes invalid. No paired behavior/neural arrays acquired here.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+candidate_pending_validation. Musall behavior-to-widefield data can support real regression, but exact movies/behavior regressors, temporalalignment and session/animal split must be pinned. Training/testing adjacentframes invalid. No paired behavior/neural arrays acquired here.
+
+[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

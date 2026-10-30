@@ -26,5 +26,10 @@
     "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
     "permanent_rejection": false
   },
-  "executed_slice": "Goldin2022 retina,3160trainimages/30testimages×30repeats,41neurons,18×18imagefeatures"
+  "executed_slice": "Goldin2022 retina,3160trainimages/30testimages\u00d730repeats,41neurons,18\u00d718imagefeatures",
+  "v05_actual_execution": {
+    "status": "measured",
+    "slice": "Goldin2022 retina,3160trainimages/30testimages\u00d730repeats,41neurons,18\u00d718imagefeatures",
+    "evidence": "literature/admission-v04-cell-workflow.json"
+  }
 }

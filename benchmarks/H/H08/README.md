@@ -34,3 +34,9 @@ PSG multimodal inputs must match; adjacent epoch leakage
 Decision: **deferred** (2026-10-30). NeuralBench/challenge primary sites accessible. 2026 challenge final phase starts in November after this review date, so no final winner exists yet. Need a pinned accessible sleep dataset, subject/night-disjoint scorer, full-context policy and expert staging labels; no adjacent-epoch shortcut experiment admitted.
 
 [Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
+
+[Admission/source evidence](../../../experiments/H08/protocol.md). [Actual protocol/worklog](../../../experiments/H08). [Task measurements](../../../results/H08.json).

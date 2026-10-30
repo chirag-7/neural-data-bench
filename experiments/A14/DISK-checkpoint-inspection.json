@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-30",
+  "record": "18405201",
+  "files": [
+    {
+      "file": "Rat7M_GRU.zip",
+      "source_url": "https://zenodo.org/api/records/18405201/files/Rat7M_GRU.zip/content",
+      "bytes": 25559040,
+      "publisher_checksum": "md5:47426557f70769211093327f770d550a",
+      "publisher_checksum_matches": true,
+      "sha256": "076e66f8f9a7947ec8a56ad123c2ba2fe251ad1dced54c4329fba4b847299733",
+      "valid_zip_central_directory": false,
+      "observed_failure": "ZIP local header exists, but no central-directory or end-of-central-directory signatures; standard ZipFile rejects checksum-matched published artifact. No checkpoint inference attempted."
+    },
+    {
+      "file": "Rat7M_transformer_proba.zip",
+      "source_url": "https://zenodo.org/api/records/18405201/files/Rat7M_transformer_proba.zip/content",
+      "bytes": 9039170,
+      "publisher_checksum": "md5:65e16a9c1dc5b802d5309c7fb7e1a810",
+      "publisher_checksum_matches": true,
+      "sha256": "9957712385785334a94eb4f332d15c4a0c621fc9bdd7a0b5503b2639db0f4860",
+      "valid_zip_central_directory": true,
+      "config_member": "05-12-23_transformer_NLL/.hydra/config.yaml",
+      "config_sha256": "ae33eccae5e5a53399bddc183f8964c83bd22163a58887ddecf92dc3e37c73f9",
+      "observed_dataset_contract": "DANNCE_seq_keypoints_60_stride30_fill10; external skeleton_file; viewinvariant=true; normalizecube=true; explicit missingness model files"
+    }
+  ],
+  "admission": "No archived pretrained output admitted to frozen six-landmark31frame A14 slice",
+  "reason": "One published GRU archive malformed; alternate transformer archive valid but requires60frame external skeleton/normalization/missingness contract not verified for frozen A14inputs. Do not fabricate missing marker context or silently alter frozen endpoint.",
+  "general_model_calls": 0,
+  "frozen_adapter_modified": false
+}

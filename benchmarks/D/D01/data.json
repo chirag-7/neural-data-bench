@@ -21,5 +21,10 @@
     ],
     "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
     "permanent_rejection": false
+  },
+  "v05_actual_execution": {
+    "status": "deferred",
+    "slice": null,
+    "evidence": "literature/admission-v04-cell-workflow.json"
   }
 }

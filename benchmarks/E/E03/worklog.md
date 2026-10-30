@@ -9,3 +9,9 @@
 Decision: **candidate_pending_validation** (2026-10-30). BrainWideBench TS1 provides natural crossanimal decoding benchmark aligned with course. Needs exact pinned IBL sessionmanifest, labels and common neuron/input normalization under official split. Public data may require sizeable multises­sion acquisition; not attempted here.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+candidate_pending_validation. BrainWideBench TS1 provides natural crossanimal decoding benchmark aligned with course. Needs exact pinned IBL sessionmanifest, labels and common neuron/input normalization under official split. Public data may require sizeable multises­sion acquisition; not attempted here.
+
+[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

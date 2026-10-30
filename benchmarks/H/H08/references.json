@@ -2,7 +2,11 @@
   "benchmark_id": "H08",
   "source_urls": [
     "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
-    "https://neural-interfaces26.github.io/"
+    "https://neural-interfaces26.github.io/",
+    "https://physionet.org/content/sleep-edfx/1.0.0/",
+    "https://doi.org/10.13026/C2X676",
+    "https://doi.org/10.7554/eLife.70092",
+    "https://github.com/raphaelvallat/yasa_classifier"
   ],
-  "admission_evidence": "literature/admission-v04-electrical.json"
+  "admission_evidence": "experiments/H08/protocol.md"
 }

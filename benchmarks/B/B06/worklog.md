@@ -9,3 +9,9 @@
 Decision: **candidate_pending_validation** (2026-10-30). IBL Ephys Atlas channel features/region labels are potentially lightweight tabular classification. Must group held-out probes/animals and verify histology provenance, regionontology and published split. Channel-wise random split invalid. No feature dataset acquired in this bounded work.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+candidate_pending_validation. IBL Ephys Atlas channel features/region labels are potentially lightweight tabular classification. Must group held-out probes/animals and verify histology provenance, regionontology and published split. Channel-wise random split invalid. No feature dataset acquired in this bounded work.
+
+[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

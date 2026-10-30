@@ -1,0 +1,273 @@
+{
+  "checked_on": "2026-10-30",
+  "entries": [
+    {
+      "benchmark_id": "B01",
+      "resource": "SpikeForest available paired-recording subset",
+      "decision": "deferred_this_batch",
+      "access_facts": "Primary current README states only a subset is available and instructs kachery-cloud client association with Google user. Older content-addressable SHA1 examples located, but credentialless current paired-file acquisition not established. No login/account association attempted.",
+      "license_facts": "Underlying paired datasets have different source terms; this screen did not validate every paired-source license. A public API instruction does not override source rights.",
+      "reason": "Avoid claiming real paired truth acquired through an unvalidated legacy pointer. Continue paired real data investigation in a future release; no claim of impossible/bad data.",
+      "source_urls": [
+        "https://github.com/flatironinstitute/spikeforest",
+        "https://github.com/flatironinstitute/spikeforest_recordings",
+        "https://elifesciences.org/articles/55167"
+      ],
+      "checked_on": "2026-10-30",
+      "screening_scope": "bounded single-fixture admission; not all B-family literature"
+    },
+    {
+      "benchmark_id": "B01",
+      "resource": "SpikeInterface/Neo standard MEArec10s fixture",
+      "decision": "admit",
+      "access_facts": "Primary direct GIN URL works without registration;62317832-byte file acquired and hashed, repository revision pinned.32channels,320k samples,32000Hz,10s,source MEArec1.5.1,seeded/no-drift simulation.",
+      "license_facts": "Primary README explicitly ODbL1.0 database and CC-BY-SA4.0 individual contents. Data remain ignored cache; source/derivative terms preserved separately from code license.",
+      "reason": "Smallest clearly available standard ground-truth sorting example located in this bounded search. Frozen unsupervised interface and hidden source truth, official SI assignment scorer, single preregistered MS5 specialist configuration.",
+      "source_urls": [
+        "https://gin.g-node.org/NeuralEnsemble/ephy_testing_data/raw/71e5c5b04e34ab9e69533a4fb092a6ce4d244034/mearec/mearec_test_10s.h5",
+        "https://gin.g-node.org/NeuralEnsemble/ephy_testing_data/raw/71e5c5b04e34ab9e69533a4fb092a6ce4d244034/README.md",
+        "https://spikeinterface.readthedocs.io/en/0.96.1/modules/comparison/plot_3_compare_sorter_with_ground_truth.html"
+      ],
+      "prepared_protocol": "experiments/B01/protocol.md",
+      "checked_on": "2026-10-30",
+      "screening_scope": "bounded single-fixture admission; not all B-family literature"
+    },
+    {
+      "benchmark_id": "B01",
+      "resource": "SpikeInterface tutorial MEArec36-cell tetrode release",
+      "decision": "not_selected",
+      "access_facts": "Primary Zenodo page documents426.5MB,30s,36-cell simulated fixture. Not downloaded; chose smaller official10s fixture.",
+      "license_facts": "Zenodo record-specific license not independently audited in this screen; no data acquired.",
+      "reason": "Larger data/setup for the same limited synthetic admission objective. Not rejected as bad or impossible.",
+      "source_urls": [
+        "https://zenodo.org/records/4657314"
+      ],
+      "checked_on": "2026-10-30",
+      "screening_scope": "bounded single-fixture admission; not all B-family literature"
+    },
+    {
+      "benchmark_id": "B01",
+      "resource": "SpikeInterface training real OpenEphys/Neuropixels recordings",
+      "decision": "not_selected",
+      "access_facts": "Primary Zenodo v2 release lists2.2GB tetrode and15.1GB Neuropixels files. No paired intracellular truth identified from release description; not acquired.",
+      "license_facts": "Record-specific terms not independently audited; no data acquired.",
+      "reason": "Large raw files without a validated independent spike-truth mapping do not satisfy the smallest ground-truth admission objective.",
+      "source_urls": [
+        "https://zenodo.org/records/20726062"
+      ],
+      "checked_on": "2026-10-30",
+      "screening_scope": "bounded single-fixture admission; not all B-family literature"
+    },
+    {
+      "benchmark_id": "B01",
+      "resource": "Yger paired loose-patch retinal recordings",
+      "decision": "feasible_pending",
+      "access_facts": "Primary author page describes simultaneous loose-patch plus252-channel dense extracellular recordings,up to5min. No specific smallest file/paired-time extraction package acquired in this screen.",
+      "license_facts": "Specific source download rights/truth-file terms not independently audited.",
+      "reason": "Promising real paired alternative, but per-file size, byte offsets, juxta truth extraction and source terms remain unvalidated.",
+      "source_urls": [
+        "https://www.yger.net/software/ground-truth-recordings/",
+        "https://elifesciences.org/articles/34518"
+      ],
+      "checked_on": "2026-10-30",
+      "screening_scope": "bounded single-fixture admission; not all B-family literature"
+    }
+  ],
+  "chosen_benchmark": "B01",
+  "prepared_files": [
+    "experiments/B01/adapter.py",
+    "experiments/B01/protocol.md",
+    "experiments/B01/requirements.txt",
+    "data/manifests/B01.json"
+  ],
+  "scorer_validation": "Official SI identity oracle=1 and empty valid sorting=0. Oracle used solely as integrity check, never method result.",
+  "specialist_result": {
+    "mean_gt_accuracy": 0.9408960583730381,
+    "mean_precision": 0.9953060220645071,
+    "mean_recall": 0.9454511148675255,
+    "n_gt_units": 10,
+    "n_predicted_units": 11,
+    "n_predicted_events": 729,
+    "well_detected_unit_ids": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "false_positive_unit_ids": [],
+    "redundant_unit_ids": [
+      2
+    ],
+    "overmerged_unit_ids": [],
+    "per_gt_unit_accuracy": {
+      "0": 0.7169811320754716,
+      "1": 1.0,
+      "2": 0.9767441860465116,
+      "3": 1.0,
+      "4": 1.0,
+      "5": 0.8648648648648649,
+      "6": 1.0,
+      "7": 0.9464285714285714,
+      "8": 0.9487179487179487,
+      "9": 0.9552238805970149
+    },
+    "per_gt_unit_metrics": {
+      "0": {
+        "accuracy": 0.7169811320754716,
+        "recall": 0.7169811320754716,
+        "precision": 1.0,
+        "false_discovery_rate": 0.0,
+        "miss_rate": 0.2830188679245283
+      },
+      "1": {
+        "accuracy": 1.0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "false_discovery_rate": 0.0,
+        "miss_rate": 0.0
+      },
+      "2": {
+        "accuracy": 0.9767441860465116,
+        "recall": 0.9767441860465116,
+        "precision": 1.0,
+        "false_discovery_rate": 0.0,
+        "miss_rate": 0.023255813953488372
+      },
+      "3": {
+        "accuracy": 1.0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "false_discovery_rate": 0.0,
+        "miss_rate": 0.0
+      },
+      "4": {
+        "accuracy": 1.0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "false_discovery_rate": 0.0,
+        "miss_rate": 0.0
+      },
+      "5": {
+        "accuracy": 0.8648648648648649,
+        "recall": 0.8648648648648649,
+        "precision": 1.0,
+        "false_discovery_rate": 0.0,
+        "miss_rate": 0.13513513513513514
+      },
+      "6": {
+        "accuracy": 1.0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "false_discovery_rate": 0.0,
+        "miss_rate": 0.0
+      },
+      "7": {
+        "accuracy": 0.9464285714285714,
+        "recall": 0.954954954954955,
+        "precision": 0.9906542056074766,
+        "false_discovery_rate": 0.009345794392523364,
+        "miss_rate": 0.04504504504504504
+      },
+      "8": {
+        "accuracy": 0.9487179487179487,
+        "recall": 0.9487179487179487,
+        "precision": 1.0,
+        "false_discovery_rate": 0.0,
+        "miss_rate": 0.05128205128205128
+      },
+      "9": {
+        "accuracy": 0.9552238805970149,
+        "recall": 0.9922480620155039,
+        "precision": 0.9624060150375939,
+        "false_discovery_rate": 0.03759398496240601,
+        "miss_rate": 0.007751937984496124
+      }
+    },
+    "scorer": "SpikeInterface0.105.4",
+    "comparison_parameters": {
+      "delta_time": 0.4,
+      "match_score": 0.5,
+      "chance_score": 0.1,
+      "well_detected_score": 0.8,
+      "redundant_score": 0.2,
+      "overmerged_score": 0.2,
+      "exhaustive_gt": true,
+      "match_mode": "hungarian",
+      "agreement_method": "count"
+    },
+    "method": "MountainSort5 0.5.9 scheme1 frozen configuration",
+    "runtime_seconds": 2.8937087920494378,
+    "program_sha256": "1c42a77d2dad42acd3a4da41a72b537f1b955a297d766598cc22f06b63f463db",
+    "events_sha256": "f20adb4ed9dcb607f561a1313fe606e8671cd5ce6139044e793c758a5a1fc4b5",
+    "selection": "One preregistered configuration; no test-score selection",
+    "status": "succeeded",
+    "infrastructure_repair": "Distance-preserving projection of planar source geometry from xyz to yz; failure archived before any predictions"
+  },
+  "infrastructure_failure": "SI default contact geometry setter projected xyz toxy,duplicatingcontacts becausex=0; archived failure before any predictions; yzprojectionpreservesdistance and configuration.",
+  "coverage_limits": [
+    "No paired-real dataset executed",
+    "No drift or independent recording holdout",
+    "Whole-recording unsupervised sorting only",
+    "No general model calls by this worker",
+    "No currentSOTA claim"
+  ],
+  "version": "0.5",
+  "review_type": "Bounded extracellular source/admission audit; one precomputed synthetic sorting fixture,not exhaustive literature review",
+  "acquisition_evidence": {
+    "date": "2026-10-30",
+    "files": [
+      {
+        "path": "work/extracellular-admission/ephy-readme.md",
+        "bytes": 4489,
+        "sha256": "ed13686972fb5928c1db7791afc46449622679da88bf7f86dfdbe06238467652"
+      },
+      {
+        "path": "work/extracellular-admission/gin-revision.txt",
+        "bytes": 59,
+        "sha256": "ae282ddc6f811180b390e00d27589abfd3b4bf41833c62699dd27dd9927e0a62"
+      },
+      {
+        "path": "outputs/neural-data-bench/data/cache/B01/mearec_test_10s.h5",
+        "bytes": 62317832,
+        "sha256": "22e8d5ab3f137bf926822074a4b332ac675ed538f379eca60c21fd6f76993ed4"
+      },
+      {
+        "path": "outputs/neural-data-bench/data/cache/B01/inputs.npz",
+        "bytes": 37900865,
+        "sha256": "9fe7074e716111b13c4a1339cf555d51ccb3cd59efcf0b4b27405d79b16262b4"
+      },
+      {
+        "path": "outputs/neural-data-bench/data/cache/B01/truth.npz",
+        "bytes": 3252,
+        "sha256": "86c33c5ba5983c037d2d957cd051dc8b3beaaffbc62b5bfc5faf43aab4d11309"
+      },
+      {
+        "path": "outputs/neural-data-bench/data/cache/B01/scorer-verification.json",
+        "bytes": 2636,
+        "sha256": "c8c0a7618b3d1399aa6d042743d0052d7e256fd039c5ed3fad7839bd1699ea82"
+      },
+      {
+        "path": "outputs/neural-data-bench/data/cache/B01/specialist-events.npz",
+        "bytes": 3001,
+        "sha256": "f20adb4ed9dcb607f561a1313fe606e8671cd5ce6139044e793c758a5a1fc4b5"
+      },
+      {
+        "path": "outputs/neural-data-bench/data/cache/B01/specialist-reference.json",
+        "bytes": 3312,
+        "sha256": "b4797d9aa9d50a4366d80dec5b2dfe200dd69fb03cb340530fda09a5bd62ef6e"
+      }
+    ],
+    "source_revision": "71e5c5b04e34ab9e69533a4fb092a6ce4d244034",
+    "source_urls": [
+      "https://gin.g-node.org/NeuralEnsemble/ephy_testing_data/raw/71e5c5b04e34ab9e69533a4fb092a6ce4d244034/mearec/mearec_test_10s.h5",
+      "https://gin.g-node.org/NeuralEnsemble/ephy_testing_data/raw/71e5c5b04e34ab9e69533a4fb092a6ce4d244034/README.md"
+    ]
+  },
+  "source_log_sha256": "9268839f4577a06240c3397ea4684d6cacf3c4d69281542b4ccf2e327a2d104e",
+  "limits": "Specialist-only score is a local reproduction; model executions belong in central results; no claim to real paired data,currentSOTA or drift coverage."
+}

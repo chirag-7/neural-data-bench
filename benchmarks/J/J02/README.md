@@ -33,3 +33,9 @@ Detection and correct synaptic partners are different tasks
 Decision: **candidate_pending_validation** (2026-10-30). CREMI synapse detection requires actual pre/post partner instance annotations, separate from image segmentation labels. No synapse manifest or partner matching scorer acquired. Do not substitute arbitrary voxel classification.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+candidate_pending_validation. CREMI synapse detection requires actual pre/post partner instance annotations, separate from image segmentation labels. No synapse manifest or partner matching scorer acquired. Do not substitute arbitrary voxel classification.
+
+[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

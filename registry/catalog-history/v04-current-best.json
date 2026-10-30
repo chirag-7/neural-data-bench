@@ -1,0 +1,1649 @@
+[
+  {
+    "benchmark_id": "A01",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12087009/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A02",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://arxiv.org/abs/2108.12617",
+      "https://benchmark.deeplabcut.org/datasets.html"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A03",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://www.nature.com/articles/s41467-024-48792-2"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A04",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://figshare.com/collections/Rat_7M/5295370/3",
+      "https://www.nature.com/articles/s41592-025-02893-y"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A05",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://olveczkylab.oeb.harvard.edu/publications/pair-r24m-dataset-multi-animal-3d-pose-estimation"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A06",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://arxiv.org/abs/2308.11737"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A07",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13131684/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A08",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://doi.org/10.7554/eLife.107602.3"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A09",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://arxiv.org/abs/2104.02710"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A10",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://arxiv.org/abs/2207.10553"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A11",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://arxiv.org/abs/2204.08129"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A12",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://arxiv.org/abs/2507.09513"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A13",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://arxiv.org/abs/2606.02937",
+      "https://arxiv.org/abs/2505.18342"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A14",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://www.nature.com/articles/s41592-025-02893-y"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "B01",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/flatironinstitute/spikeforest",
+      "https://elifesciences.org/articles/55167",
+      "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "B02",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+      "https://github.com/cwindolf/dartsort"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "B03",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+      "https://github.com/evarol/dredge"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "B04",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://spikeinterface.readthedocs.io/en/stable/modules/comparison.html",
+      "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "B05",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://www.nature.com/articles/s41592-024-02440-1"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "B06",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://huggingface.co/int-brain-lab/ea-decoder-channel-xgboost"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "B07",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://allenneuraldynamics.github.io/data.html"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "B08",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/int-brain-lab/spikepack",
+      "https://www.internationalbrainlab.com/data"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "C01",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/codeneuro/neurofinder-datasets",
+      "https://github.com/codeneuro/neurofinder"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "C02",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6342523/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "C03",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "C04",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/cabooster/DeepCAD/blob/master/dataset/README.md",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "C05",
+    "status": "not verified; archived same-slice and local default references available",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/codeneuro/spikefinder-datasets",
+      "https://github.com/berenslab/spikefinder_analysis"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "C06",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7611618/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "C07",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/zivlab/CellReg"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "C08",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/LernerLab/GuPPy"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "C09",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://elifesciences.org/articles/28728"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "D01",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8075204/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "D02",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://brain-map.org/support/documentation/documentation-cell-types-database",
+      "https://alleninstitute.github.io/AllenSDK/cell_types.html"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "D03",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://www.nature.com/articles/s41592-025-02895-w"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "D04",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://doi.org/10.1371/journal.pcbi.1008114"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "E01",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://neurallatents.github.io/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "E02",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/snel-repo/ComputationThroughDynamicsToolkit"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "E03",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://brainbench-org.github.io/ibl-bwb/",
+      "https://arxiv.org/abs/2609.22064"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "E04",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://brainbench-org.github.io/ibl-bwb/",
+      "https://arxiv.org/abs/2609.22064"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "E05",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://brainbench-org.github.io/ibl-bwb/",
+      "https://arxiv.org/abs/2609.22064"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "F01",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://sensorium-competition.net/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "F02",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://sensorium-competition.net/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "F03",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://observatory.brain-map.org/visualcoding"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "F04",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://crcns.org/data-sets"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "F05",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://repository.cshl.edu/38599/2/DataDescription_Musall.pdf"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "G01",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://snel-repo.github.io/falcon/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "G02",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://snel-repo.github.io/falcon/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "G03",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/fwillett/speechBCI",
+      "https://www.kaggle.com/competitions/brain-to-text-25/overview"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H01",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://moabb.neurotechx.com/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H02",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://moabb.neurotechx.com/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H03",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://moabb.neurotechx.com/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H04",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://beetl.ai/introduction"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H05",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://facebookresearch.github.io/neuroai/neuralbench/index.html"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H06",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://arxiv.org/abs/2606.00815"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H07",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://eeg.fm/benchmarks/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H08",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+      "https://neural-interfaces26.github.io/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H09",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://epilepsybenchmarks.com/framework/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H10",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+      "https://arxiv.org/abs/2606.00815"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H11",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://libribrain.com/editions/2026/publications/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H12",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://things-initiative.org/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H13",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/facebookresearch/emg2pose"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H14",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/bycycle-tools/bycycle",
+      "https://about.dandiarchive.org/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H15",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://mne.tools/stable/auto_tutorials/inverse/80_brainstorm_phantom_elekta.html"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H16",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://doi.org/10.1088/1741-2552/ac2bf8"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "I01",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://algonautsproject.com/2025/challenge.html"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "I02",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://www.naturalscenesdataset.org/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "I03",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://www.brain-score.org/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "I04",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://www.nature.com/articles/sdata20151"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "I05",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://fastmri.med.nyu.edu/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "I06",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://www.med.upenn.edu/cbica/brats/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "I07",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://www.nemar.org/dataset/on005963"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "I08",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://registry.opendata.aws/confusius/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "I09",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://tractometer.org/ismrm2015/tools/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "I10",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://doi.org/10.1371/journal.pone.0184661"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "J01",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://cremi.janelia.org/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "J02",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://cremi.janelia.org/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "J03",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/BigNeuron/Data/releases",
+      "https://diadem.janelia.org/metric.html"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "J04",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10514056/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "J05",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://www.microns-explorer.org/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "J06",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/focolab/WormND"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "K01",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://brain-map.org/our-research/cell-types-taxonomies",
+      "https://brain-map.org/support/documentation/documentation-cell-types-database"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "K02",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://brain-map.org/our-research/cell-types-taxonomies",
+      "https://scib.readthedocs.io/en/latest/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "K03",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/allenai/neurodiscoverybench"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "L01",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://connectomics.chalearn.org/help/data"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "L02",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://sbi.readthedocs.io/en/latest/advanced_tutorials/21_diagnostics_misspecification_checks.html",
+      "https://www.nature.com/articles/s41592-025-02895-w"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "L03",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/int-brain-lab/ibl-ai-agent",
+      "https://www.internationalbrainlab.com/data"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "L04",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://neurallatents.github.io/",
+      "https://github.com/snel-repo/ComputationThroughDynamicsToolkit"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "L05",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://www.nature.com/articles/s41586-023-06683-4"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "L06",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/sbi-benchmark/sbibm"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "M01",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://www.internationalbrainlab.com/data",
+      "https://www.nature.com/articles/s41586-025-09215-4"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "M02",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://www.nature.com/articles/s41592-025-02895-w",
+      "https://github.com/neurogym/neurogym"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "M03",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/neurogym/neurogym"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "M04",
+    "status": "not verified; canonical local fitting baseline available",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://elifesciences.org/articles/49547"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "M05",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://arxiv.org/abs/1705.04405"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "M06",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://myosuite.org/myochallenge/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "M07",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://www.nature.com/articles/s41592-024-02497-y"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "N01",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://github.com/allenai/neurodiscoverybench"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "N02",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://arxiv.org/abs/2606.25400"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "N03",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://cuhk-aim-group.github.io/NeuroDiscovery/neurobench.html"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "N04",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://arxiv.org/abs/2410.05080"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "N05",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://about.dandiarchive.org/",
+      "https://www.internationalbrainlab.com/data"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "N06",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://about.dandiarchive.org/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A15",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://elifesciences.org/articles/68837",
+      "https://data.goettingen-research-online.de/dataverse/das",
+      "https://janclemenslab.org/das/",
+      "https://github.com/nianlonggu/WhisperSeg"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "A16",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://proceedings.nips.cc/paper_files/paper/2024/hash/c00d37d6b04d73b870b963a4d70051c1-Abstract-Datasets_and_Benchmarks_Track.html",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/",
+      "https://github.com/neurostatslab/vocalocator"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "E06",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://google-research.github.io/zapbench/",
+      "https://arxiv.org/abs/2503.02618",
+      "https://zapbench-release.storage.googleapis.com/volumes/README.html"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H17",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://nemar.org/dataset/on006366",
+      "https://doi.org/10.18112/openneuro.ds006366.v1.0.1"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H18",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://zenodo.org/records/2650142",
+      "https://www.nature.com/articles/s41598-026-53891-9",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "H19",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://zenodo.org/records/2650142"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "J07",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://kainmueller-lab.github.io/fisbe/",
+      "https://zenodo.org/records/10875063",
+      "https://github.com/Kainmueller-Lab/evaluate-instance-segmentation"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "J08",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
+      "https://github.com/pascalschamber/SynAPSeg",
+      "https://zenodo.org/records/18988899"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "J09",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://mtneuro.github.io/",
+      "https://github.com/MTNeuro/MTNeuro"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "K04",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://research.libd.org/spatialLIBD/",
+      "https://github.com/LieberInstitute/spatialLIBD",
+      "https://doi.org/10.1038/s42003-024-07001-y"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "K05",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://doi.org/10.1186/s13059-025-03552-3",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
+      "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution",
+      "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  },
+  {
+    "benchmark_id": "K06",
+    "status": "not verified",
+    "score": null,
+    "metric": null,
+    "split": null,
+    "scorer_version": null,
+    "supervision": null,
+    "source_urls": [
+      "https://cellexplorer.org/publicdata/ground-truth-data/",
+      "https://cellexplorer.org/tutorials/ground-truth-tutorial/",
+      "https://alleninstitute.github.io/openscope_databook/optotagging/"
+    ],
+    "checked_on": "2026-10-30",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "night": 0,
+      "raw_booster_and_wrapper_probabilities_agree": true,
+      "stored_decoded_labels_agree": true,
+      "epochs": 1440,
+      "class_order": [
+        "N1",
+        "N2",
+        "N3",
+        "R",
+        "W"
+      ]
+    },
+    {
+      "night": 1,
+      "raw_booster_and_wrapper_probabilities_agree": true,
+      "stored_decoded_labels_agree": true,
+      "epochs": 1440,
+      "class_order": [
+        "N1",
+        "N2",
+        "N3",
+        "R",
+        "W"
+      ]
+    },
+    {
+      "night": 2,
+      "raw_booster_and_wrapper_probabilities_agree": true,
+      "stored_decoded_labels_agree": true,
+      "epochs": 1440,
+      "class_order": [
+        "N1",
+        "N2",
+        "N3",
+        "R",
+        "W"
+      ]
+    }
+  ],
+  "chosen_checkpoint": "clf_eeg_lgb_0.5.0.joblib",
+  "chosen_sha256": "330c1afdc86396e0b6d9f1294d4c4796beb5f7e7cd38be424c10feae98867e31",
+  "warning": "Packaged LabelEncoder trained withsklearn0.24.2loadedunder1.9.1; all4320labels crosscheckedagainst rawLightGBM booster probabilityargmax/classorder. No checkpoint changes or score-driven adjustment."
+}

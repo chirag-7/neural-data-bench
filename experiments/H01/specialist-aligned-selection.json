@@ -1,0 +1,421 @@
+{
+  "selected": {
+    "band": [
+      8,
+      35
+    ],
+    "C": 0.1,
+    "validation_mean_subject_balanced_accuracy": 0.4801948051948052,
+    "validation_pooled_balanced_accuracy": 0.4799304677623262,
+    "folds": [
+      {
+        "held_out_training_subject": 1,
+        "n_source_trials": 180,
+        "n_validation_trials": 45,
+        "balanced_accuracy": 0.5108695652173914
+      },
+      {
+        "held_out_training_subject": 2,
+        "n_source_trials": 180,
+        "n_validation_trials": 45,
+        "balanced_accuracy": 0.5098814229249011
+      },
+      {
+        "held_out_training_subject": 3,
+        "n_source_trials": 180,
+        "n_validation_trials": 45,
+        "balanced_accuracy": 0.37845849802371545
+      },
+      {
+        "held_out_training_subject": 4,
+        "n_source_trials": 180,
+        "n_validation_trials": 45,
+        "balanced_accuracy": 0.5553359683794465
+      },
+      {
+        "held_out_training_subject": 5,
+        "n_source_trials": 180,
+        "n_validation_trials": 45,
+        "balanced_accuracy": 0.4464285714285714
+      }
+    ]
+  },
+  "selected_candidate_index": 3,
+  "training_only_candidates": [
+    {
+      "band": [
+        7,
+        30
+      ],
+      "C": 0.1,
+      "validation_mean_subject_balanced_accuracy": 0.4516986636551854,
+      "validation_pooled_balanced_accuracy": 0.4530657395701644,
+      "folds": [
+        {
+          "held_out_training_subject": 1,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.4199604743083004
+        },
+        {
+          "held_out_training_subject": 2,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.441699604743083
+        },
+        {
+          "held_out_training_subject": 3,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.4871541501976284
+        },
+        {
+          "held_out_training_subject": 4,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5108695652173914
+        },
+        {
+          "held_out_training_subject": 5,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.39880952380952384
+        }
+      ]
+    },
+    {
+      "band": [
+        7,
+        30
+      ],
+      "C": 1.0,
+      "validation_mean_subject_balanced_accuracy": 0.4516986636551854,
+      "validation_pooled_balanced_accuracy": 0.4530657395701644,
+      "folds": [
+        {
+          "held_out_training_subject": 1,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.4199604743083004
+        },
+        {
+          "held_out_training_subject": 2,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.441699604743083
+        },
+        {
+          "held_out_training_subject": 3,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.4871541501976284
+        },
+        {
+          "held_out_training_subject": 4,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5108695652173914
+        },
+        {
+          "held_out_training_subject": 5,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.39880952380952384
+        }
+      ]
+    },
+    {
+      "band": [
+        7,
+        30
+      ],
+      "C": 10.0,
+      "validation_mean_subject_balanced_accuracy": 0.4516986636551854,
+      "validation_pooled_balanced_accuracy": 0.4530657395701644,
+      "folds": [
+        {
+          "held_out_training_subject": 1,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.4199604743083004
+        },
+        {
+          "held_out_training_subject": 2,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.441699604743083
+        },
+        {
+          "held_out_training_subject": 3,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.4871541501976284
+        },
+        {
+          "held_out_training_subject": 4,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5108695652173914
+        },
+        {
+          "held_out_training_subject": 5,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.39880952380952384
+        }
+      ]
+    },
+    {
+      "band": [
+        8,
+        35
+      ],
+      "C": 0.1,
+      "validation_mean_subject_balanced_accuracy": 0.4801948051948052,
+      "validation_pooled_balanced_accuracy": 0.4799304677623262,
+      "folds": [
+        {
+          "held_out_training_subject": 1,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5108695652173914
+        },
+        {
+          "held_out_training_subject": 2,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5098814229249011
+        },
+        {
+          "held_out_training_subject": 3,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.37845849802371545
+        },
+        {
+          "held_out_training_subject": 4,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5553359683794465
+        },
+        {
+          "held_out_training_subject": 5,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.4464285714285714
+        }
+      ]
+    },
+    {
+      "band": [
+        8,
+        35
+      ],
+      "C": 1.0,
+      "validation_mean_subject_balanced_accuracy": 0.4801948051948052,
+      "validation_pooled_balanced_accuracy": 0.4799304677623262,
+      "folds": [
+        {
+          "held_out_training_subject": 1,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5108695652173914
+        },
+        {
+          "held_out_training_subject": 2,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5098814229249011
+        },
+        {
+          "held_out_training_subject": 3,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.37845849802371545
+        },
+        {
+          "held_out_training_subject": 4,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5553359683794465
+        },
+        {
+          "held_out_training_subject": 5,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.4464285714285714
+        }
+      ]
+    },
+    {
+      "band": [
+        8,
+        35
+      ],
+      "C": 10.0,
+      "validation_mean_subject_balanced_accuracy": 0.4801948051948052,
+      "validation_pooled_balanced_accuracy": 0.4799304677623262,
+      "folds": [
+        {
+          "held_out_training_subject": 1,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5108695652173914
+        },
+        {
+          "held_out_training_subject": 2,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5098814229249011
+        },
+        {
+          "held_out_training_subject": 3,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.37845849802371545
+        },
+        {
+          "held_out_training_subject": 4,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5553359683794465
+        },
+        {
+          "held_out_training_subject": 5,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.4464285714285714
+        }
+      ]
+    },
+    {
+      "band": [
+        8,
+        15
+      ],
+      "C": 0.1,
+      "validation_mean_subject_balanced_accuracy": 0.4747670807453416,
+      "validation_pooled_balanced_accuracy": 0.47554519595448796,
+      "folds": [
+        {
+          "held_out_training_subject": 1,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5326086956521738
+        },
+        {
+          "held_out_training_subject": 2,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.6660079051383399
+        },
+        {
+          "held_out_training_subject": 3,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.37845849802371545
+        },
+        {
+          "held_out_training_subject": 4,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.46640316205533594
+        },
+        {
+          "held_out_training_subject": 5,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.33035714285714285
+        }
+      ]
+    },
+    {
+      "band": [
+        8,
+        15
+      ],
+      "C": 1.0,
+      "validation_mean_subject_balanced_accuracy": 0.4747670807453416,
+      "validation_pooled_balanced_accuracy": 0.47554519595448796,
+      "folds": [
+        {
+          "held_out_training_subject": 1,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5326086956521738
+        },
+        {
+          "held_out_training_subject": 2,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.6660079051383399
+        },
+        {
+          "held_out_training_subject": 3,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.37845849802371545
+        },
+        {
+          "held_out_training_subject": 4,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.46640316205533594
+        },
+        {
+          "held_out_training_subject": 5,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.33035714285714285
+        }
+      ]
+    },
+    {
+      "band": [
+        8,
+        15
+      ],
+      "C": 10.0,
+      "validation_mean_subject_balanced_accuracy": 0.4747670807453416,
+      "validation_pooled_balanced_accuracy": 0.47554519595448796,
+      "folds": [
+        {
+          "held_out_training_subject": 1,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.5326086956521738
+        },
+        {
+          "held_out_training_subject": 2,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.6660079051383399
+        },
+        {
+          "held_out_training_subject": 3,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.37845849802371545
+        },
+        {
+          "held_out_training_subject": 4,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.46640316205533594
+        },
+        {
+          "held_out_training_subject": 5,
+          "n_source_trials": 180,
+          "n_validation_trials": 45,
+          "balanced_accuracy": 0.33035714285714285
+        }
+      ]
+    }
+  ],
+  "test_labels_used": false,
+  "unlabeled_test_adaptation": true,
+  "explicit_subject_group_ids": true,
+  "causal_or_online": false,
+  "test_score_computed_by_this_runner": false,
+  "posthoc_after_prior_H01_scores": true
+}

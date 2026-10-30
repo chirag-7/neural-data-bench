@@ -3,7 +3,10 @@
   "source_urls": [
     "https://github.com/flatironinstitute/spikeforest",
     "https://elifesciences.org/articles/55167",
-    "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+    "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+    "https://gin.g-node.org/NeuralEnsemble/ephy_testing_data",
+    "https://spikeinterface.readthedocs.io/en/0.96.1/modules/comparison/plot_3_compare_sorter_with_ground_truth.html",
+    "https://github.com/flatironinstitute/mountainsort5"
   ],
-  "admission_evidence": "literature/admission-v04-behavior-population.json"
+  "admission_evidence": "literature/admission-v05-extracellular.json"
 }

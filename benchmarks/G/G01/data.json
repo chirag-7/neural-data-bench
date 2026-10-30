@@ -20,5 +20,10 @@
     ],
     "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
     "permanent_rejection": false
+  },
+  "v05_actual_execution": {
+    "status": "measured",
+    "slice": "FALCON M2 custom cross-day finger-velocity decoding:1169train/754testtrials,96causalfeatures,twooutputs,one monkey",
+    "evidence": "literature/admission-v05-bci.json"
   }
 }

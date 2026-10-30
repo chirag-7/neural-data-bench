@@ -1,5 +1,5 @@
 {
-  "registry_and_task_cards": "114 unique source-linked cards",
+  "registry_and_task_cards": "96 active source-linked cards; 18 auditable archived candidates; 114 historical entries",
   "acquired_input_hashes": 43,
   "prediction_files_and_hashes": 47,
   "official_function_equivalence": "all complete C05 predictions",
@@ -7,6 +7,6 @@
   "cognitive_likelihood_hand_fixture": "passed",
   "mle_converged_agents": 24,
   "original_pilot_reproduction": "all three models agree",
-  "central_store_records": 120,
-  "model_attempts": 54
+  "central_store_records": 147,
+  "model_attempts": 72
 }

@@ -1,0 +1,9 @@
+# Inspection of published DISK checkpoints
+
+Checked 2026-10-30 against immutable [DISK record 18405201](https://zenodo.org/records/18405201), under CC BY 4.0. This follow-up did not change the frozen A14 adapter, prompts, models or data.
+
+The 25,559,040-byte `Rat7M_GRU.zip` matches its publisher MD5 (`47426557f70769211093327f770d550a`) but has ZIP local headers without a central directory or end record. Python's standard ZIP reader rejects it. Because the downloaded checksum matches the authoritative record, this is a concrete malformed published archive, rather than an unexplained local download failure. We did not execute or unpickle its partial contents.
+
+The alternative `Rat7M_transformer_proba.zip` is a valid ZIP and also matches its publisher checksum. Its archived Hydra configuration names `DANNCE_seq_keypoints_60_stride30_fill10`, requires an external skeleton and missingness-distribution files, and applies view-invariant/cube normalization. The frozen A14 endpoint instead supplies 31-frame windows of six selected landmarks. Compatibility and an information-matched preprocessing bridge have not been established; inventing additional marker coordinates or changing window context would silently change the comparison. No pretrained output was therefore admitted to A14 on this basis.
+
+This does not imply every DISK checkpoint is unusable. A future endpoint following the full published 60-frame skeleton and preprocessing protocol can use the valid transformer archive after checking its dependencies and split provenance. It should be a separately specified dataset/protocol extension. Details and checksums are in [inspection metadata](DISK-checkpoint-inspection.json); the small original configuration is preserved as `DISK-transformer-original-config.yaml`. No model inference was run in this inspection.

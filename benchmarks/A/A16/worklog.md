@@ -9,3 +9,9 @@
 Decision: **candidate_pending_validation** (2026-10-30). VCL controlled speaker localization supplies positions, but multi-mic calibration/time synchronization and recording-group split must be acquired. Do not infer source identity solely from event detection; no adapter prepared.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+candidate_pending_validation. VCL controlled speaker localization supplies positions, but multi-mic calibration/time synchronization and recording-group split must be acquired. Do not infer source identity solely from event detection; no adapter prepared.
+
+[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

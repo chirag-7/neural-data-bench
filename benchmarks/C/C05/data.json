@@ -22,5 +22,10 @@
     ],
     "review_depth": "Previously measured root experiment",
     "permanent_rejection": false
+  },
+  "v05_actual_execution": {
+    "status": "measured",
+    "slice": null,
+    "evidence": "literature/admission-v04-behavior-population.json"
   }
 }

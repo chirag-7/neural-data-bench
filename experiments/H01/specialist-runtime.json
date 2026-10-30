@@ -1,0 +1,6 @@
+{
+  "seconds": 11.601568958023563,
+  "model": "pyriemann-ts-svm",
+  "prediction_file": "results/predictions/H01/specialist--pyriemann-ts-svm.npz",
+  "prediction_sha256": "b3c6e41f0a9b372fd5c8a1c34749db635968159912b94d0c6742690601239ee5"
+}

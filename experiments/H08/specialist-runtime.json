@@ -1,0 +1,61 @@
+{
+  "model": "yasa-eeg",
+  "seconds": 7.865147416945547,
+  "prediction_file": "results/predictions/H08/specialist--yasa-eeg.npz",
+  "prediction_sha256": "3abec4b9a76901c1cc1313e1671c43dd926f4519704a6afbf286d04b9fecddf6",
+  "yasa_version": "0.8.1",
+  "checkpoint_files": [
+    {
+      "name": "clf_eeg_lgb_0.5.0.joblib",
+      "bytes": 3410920,
+      "sha256": "330c1afdc86396e0b6d9f1294d4c4796beb5f7e7cd38be424c10feae98867e31"
+    },
+    {
+      "name": "clf_eeg+emg+demo_lgb_0.5.0.joblib",
+      "bytes": 3390609,
+      "sha256": "035191c5ffbb84ef9f4b09864bf54f01bd302a94188c34a9d6535460e74f4b49"
+    },
+    {
+      "name": "clf_eeg+eog+emg_lgb_0.5.0.joblib",
+      "bytes": 3421798,
+      "sha256": "3d27d440c94c61d8013c81c91693ad88810af2ddae85b62f4bc797f6e2464beb"
+    },
+    {
+      "name": "clf_eeg+demo_lgb_0.5.0.joblib",
+      "bytes": 3376512,
+      "sha256": "686fd99ad834d657833d7d7c2b3256f9689c023cf13aee16381b2b2cd6f0e86b"
+    },
+    {
+      "name": "clf_eeg+eog+demo_lgb_0.5.0.joblib",
+      "bytes": 3399557,
+      "sha256": "e4762d95dddce707ee8da922dbc505dea4be6a5a5070cbc9a06e0a88f2fc2b43"
+    },
+    {
+      "name": "clf_eeg+emg_lgb_0.5.0.joblib",
+      "bytes": 3413333,
+      "sha256": "9771995bcf7d1c90456986fbf9f991a5b5e8fe68cf0a8c410ec38ad3615a3c78"
+    },
+    {
+      "name": "clf_eeg+eog+emg+demo_lgb_0.5.0.joblib",
+      "bytes": 3409628,
+      "sha256": "d915de033ecbce0833600151d73a5b271b8f305d63bbc774400ee64bdb9df8ff"
+    },
+    {
+      "name": "clf_eeg+eog_lgb_0.5.0.joblib",
+      "bytes": 3419550,
+      "sha256": "86d726a3e6aa6195197ffbc9765f5e194c74358295ef331998c21f8badcebcc3"
+    }
+  ],
+  "runtime": {
+    "yasa": "0.8.1",
+    "mne": "1.13.2",
+    "lightgbm": "4.7.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "antropy": "0.2.3",
+    "numba": "0.68.1"
+  },
+  "selection": "default EEG-only,no EOG/EMG/demographics,no test-label tuning; NSRRpretrained"
+}

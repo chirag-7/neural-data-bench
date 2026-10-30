@@ -9,3 +9,9 @@
 Decision: **candidate_pending_validation** (2026-10-30). Neurofinder supplies true labeled calcium ROI masks and image stacks. Needs image/mask archive pinning, original heldout recording split and official ROI matching scorer. Segmentation image adapter not acquired in this expansion.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+candidate_pending_validation. Neurofinder supplies true labeled calcium ROI masks and image stacks. Needs image/mask archive pinning, original heldout recording split and official ROI matching scorer. Segmentation image adapter not acquired in this expansion.
+
+[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

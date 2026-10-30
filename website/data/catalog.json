@@ -1,7 +1,7 @@
 {
   "title": "Neural Data Bench: task–resource evidence map",
   "as_of": "2026-10-30",
-  "scope": "Broad evidence map; 114 task–resource pairings, not an exhaustive systematic review or 114 runnable benchmarks.",
+  "scope": "Active candidate catalog plus measured custom slices; excluded proposals/unresolved-access resources preserved in versioned evidence archive. Neither catalog count nor category coverage proves completeness.",
   "readiness": {
     "B": "Existing benchmark or published evaluation protocol; public execution still requires setup",
     "B*": "Published benchmark; full reusable release not independently confirmed",
@@ -147,7 +147,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "A02",
@@ -183,7 +184,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "A03",
@@ -218,7 +220,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "A04",
@@ -254,7 +257,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "A05",
@@ -289,7 +293,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "A06",
@@ -324,7 +329,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "A07",
@@ -359,7 +365,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "A08",
@@ -394,7 +401,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "A09",
@@ -431,7 +439,8 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
       "review_depth": "direct acquisition and schema validation",
-      "executed_slice": "CalMS21 Task1,3Hz centers and seven pose offsets,19 test recordings"
+      "executed_slice": "CalMS21 Task1,3Hz centers and seven pose offsets,19 test recordings",
+      "active": true
     },
     {
       "id": "A10",
@@ -466,7 +475,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "A11",
@@ -501,7 +511,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "A12",
@@ -536,7 +547,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "A13",
@@ -572,7 +584,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "A14",
@@ -609,44 +622,133 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
       "review_depth": "direct acquisition and schema validation",
-      "executed_slice": "Rat7M six-landmark31frame windows;7frame artificialHeadF gap;heldout rats4–5"
+      "executed_slice": "Rat7M six-landmark31frame windows;7frame artificialHeadF gap;heldout rats4–5",
+      "active": true
+    },
+    {
+      "id": "A15",
+      "family_code": "A",
+      "task": "Animal vocalization event segmentation and syllable labeling",
+      "data": "Single/multi-channel raw audio and human annotations",
+      "resource": "DAS multi-species annotated acoustic datasets",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "Manual acoustic events/segments",
+      "recommended_metrics": "Event precision/recall/F1; onset/offset error; published match tolerance",
+      "recommended_split": "Published splits first; additional held-out recording/animal, never random adjacent audio crops",
+      "specialist_baselines": "DAS; TweetyNet; WhisperSeg (separate domain-adapted pretrained comparator)",
+      "general_model_route": "General audio features/readout or bounded code synthesis; audio-native foundation model",
+      "limitations": "Ultrasound sample rates exceed speech frontends; species and segment matching differ; tune thresholds only on validation",
+      "priority": "P2",
+      "source_urls": [
+        "https://elifesciences.org/articles/68837",
+        "https://data.goettingen-research-online.de/dataverse/das",
+        "https://janclemenslab.org/das/",
+        "https://github.com/nianlonggu/WhisperSeg"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Adds acoustic communication used by social/ethology labs; video action labels do not test it.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "Not independently reviewed",
+      "family": "Behavior, kinematics and vocalization",
+      "added_in": "0.3",
+      "execution_admission": "candidate_pending_validation",
+      "admission_reason": "DAS annotated raw audio can support real event-segmentation evaluation. Still need pinned species/recording slice, sampling rate and official event-matching tolerance; no audio acquisition attempted here. Temporal bouts must remain grouped.",
+      "dataset_group": "DAS multi-species annotated acoustic datasets",
+      "operation_tags": [
+        "detection_segmentation"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-behavior-population.json",
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
+    },
+    {
+      "id": "A16",
+      "family_code": "A",
+      "task": "Caller localization and vocalization attribution",
+      "data": "Synchronized multi-microphone audio with overhead video-derived source positions",
+      "resource": "Vocal Call Locator (VCL) Benchmark",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "2D source positions, including controlled speaker conditions",
+      "recommended_metrics": "Localization error; published uncertainty/calibration and attribution endpoint",
+      "recommended_split": "Official recording/condition split; group all snippets from same sound and session",
+      "specialist_baselines": "VCL localization models; classical sound source localization",
+      "general_model_route": "Generic audio model or code-agent localization under fixed calibration information",
+      "limitations": "Speaker-ground-truth and freely moving animals are distinct conditions; paper revisions report differing event totals, so pin release",
+      "priority": "P2",
+      "source_urls": [
+        "https://proceedings.nips.cc/paper_files/paper/2024/hash/c00d37d6b04d73b870b963a4d70051c1-Abstract-Datasets_and_Benchmarks_Track.html",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/",
+        "https://github.com/neurostatslab/vocalocator"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Separates who emitted a call from detecting that a call occurred.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "Not independently reviewed",
+      "family": "Behavior, kinematics and vocalization",
+      "added_in": "0.3",
+      "execution_admission": "candidate_pending_validation",
+      "admission_reason": "VCL controlled speaker localization supplies positions, but multi-mic calibration/time synchronization and recording-group split must be acquired. Do not infer source identity solely from event detection; no adapter prepared.",
+      "dataset_group": "Vocal Call Locator (VCL) Benchmark",
+      "operation_tags": [
+        "other_requires_review"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-behavior-population.json",
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "B01",
       "family_code": "B",
       "family": "Extracellular signal acquisition",
       "task": "Spike sorting and event detection",
-      "data": "Raw extracellular voltage and probe geometry",
-      "resource": "SpikeForest available subset",
+      "data": "Simulated filtered extracellular voltage32kHz,32channels; hidden generated spike events",
+      "resource": "Standard SpikeInterface/MEArec fixture; MountainSort5 reference",
       "readiness": "B",
       "setup_effort": "Medium",
-      "ground_truth": "Paired recordings and/or simulated known spikes",
-      "recommended_metrics": "Matched-event precision/recall/F1; unit recovery",
-      "recommended_split": "Hold out recordings/probe types; separate truth types",
+      "ground_truth": "Known simulation spike events and neuron IDs; not paired biological truth",
+      "recommended_metrics": "Mean GT-unit accuracy/Jaccard; precision/recall and redundant/extra-unit diagnostics",
+      "recommended_split": "One scored unsupervised recording; no independent recording-generalization claim",
       "specialist_baselines": "Kilosort4; DARTsort; other SpikeInterface sorters",
       "general_model_route": "General signal model or coding agent",
-      "limitations": "Current repo exposes subset; paired truth often only one neuron",
+      "limitations": "Short stationary public simulation, no drift/real paired/animal generalization. Extra unit diagnostics required.",
       "priority": "P1",
       "source_urls": [
         "https://github.com/flatironinstitute/spikeforest",
         "https://elifesciences.org/articles/55167",
-        "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+        "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+        "https://gin.g-node.org/NeuralEnsemble/ephy_testing_data",
+        "https://spikeinterface.readthedocs.io/en/0.96.1/modules/comparison/plot_3_compare_sorter_with_ground_truth.html",
+        "https://github.com/flatironinstitute/mountainsort5"
       ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
+      "verification": "Actual acquired/extracted source arrays, frozen protocol, submitted programs and prediction/scorer artifacts; exact scope in experiments/B01",
       "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
+      "execution_status": "measured exploratory slice",
+      "current_best_status": "not verified; named matched specialist/reference evidence retained separately",
       "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
       "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "SpikeForest offers paired/curated groundtruth recordings, but exact accessible recording URI, agreement threshold, sorting scorer and matched sorter have not been acquired here. Do not claim hidden true neuron labels from ordinary extracellular recording.",
+      "execution_admission": "measured",
+      "admission_reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
       "dataset_group": "SpikeForest available subset",
       "operation_tags": [
         "detection_segmentation"
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "admission_evidence_file": "literature/admission-v05-extracellular.json",
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "executed_slice": "Blind unsupervised sorting of one10second32channel MEArec simulation; official unit/event scorer",
+      "active": true
     },
     {
       "id": "B02",
@@ -682,7 +784,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "B03",
@@ -718,7 +821,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "B04",
@@ -754,7 +858,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "B05",
@@ -789,7 +894,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "B06",
@@ -824,7 +930,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "B07",
@@ -859,7 +966,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "B08",
@@ -895,7 +1003,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "C01",
@@ -931,7 +1040,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "C02",
@@ -966,7 +1076,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "C03",
@@ -1001,7 +1112,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "C04",
@@ -1037,7 +1149,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "C05",
@@ -1073,7 +1186,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Previously measured root experiment"
+      "review_depth": "Previously measured root experiment",
+      "active": true
     },
     {
       "id": "C06",
@@ -1108,7 +1222,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "C07",
@@ -1144,7 +1259,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "C08",
@@ -1180,7 +1296,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "C09",
@@ -1215,7 +1332,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "D01",
@@ -1251,7 +1369,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "D02",
@@ -1290,42 +1409,8 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
       "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "executed_slice": "One Allen cell,4train/2test negative-current sweeps;500Hz passive voltage-deflection interpolation"
-    },
-    {
-      "id": "D03",
-      "family_code": "D",
-      "family": "Voltage, intracellular and dendrites",
-      "task": "Dendritic voltage/calcium recovery",
-      "data": "Morphology plus sparse compartment observations",
-      "resource": "Jaxley examples and simulated dendritic recordings",
-      "readiness": "R",
-      "setup_effort": "High",
-      "ground_truth": "Known simulated compartment states; limited experimental truth",
-      "recommended_metrics": "Held-out voltage error; event propagation; posterior coverage",
-      "recommended_split": "Unseen morphologies and stimulation sites",
-      "specialist_baselines": "Biophysical smoothing; Jaxley fitted models",
-      "general_model_route": "General spatiotemporal model or code agent",
-      "limitations": "Requires designed simulator protocol; not ready-made benchmark",
-      "priority": "P3",
-      "source_urls": [
-        "https://www.nature.com/articles/s41592-025-02895-w"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "deferred",
-      "admission_reason": "New simulated dendritic recovery protocol would require prespecified morphologies, compartments, stimulation and noise distributions. The registry names examples rather than an already frozen benchmark; fitting examples and then reusing traces as a test would be circular.",
-      "dataset_group": "Jaxley examples and simulated dendritic recordings",
-      "operation_tags": [
-        "inference"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "executed_slice": "One Allen cell,4train/2test negative-current sweeps;500Hz passive voltage-deflection interpolation",
+      "active": true
     },
     {
       "id": "D04",
@@ -1362,7 +1447,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "E01",
@@ -1401,7 +1487,8 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
       "review_depth": "Actual acquisition, officialreader and tensorvalidation",
-      "executed_slice": "NLBMC_Maze_Small99train/100test movement-aligned trials;20ms supervised107→35neuron readout"
+      "executed_slice": "NLBMC_Maze_Small99train/100test movement-aligned trials;20ms supervised107→35neuron readout",
+      "active": true
     },
     {
       "id": "E02",
@@ -1437,7 +1524,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "E03",
@@ -1473,7 +1561,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "E04",
@@ -1509,7 +1598,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "E05",
@@ -1545,7 +1635,49 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
+    },
+    {
+      "id": "E06",
+      "family_code": "E",
+      "task": "Whole-brain neural activity forecasting",
+      "data": "Larval zebrafish light-sheet volumes and extracted cellular traces",
+      "resource": "ZAPBench (ICLR 2025)",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "Future measured calcium activity",
+      "recommended_metrics": "Official forecasting losses at fixed horizons and stimulus conditions; maintain trace/video tracks",
+      "recommended_split": "Official temporal/stimulus-condition splits, including held-out condition",
+      "specialist_baselines": "Published naive, time-series and volumetric video baselines",
+      "general_model_route": "General time-series/world/video models; code agents in separate track",
+      "limitations": "One brain cannot establish cross-animal generalization; 70k neurons do not equal 70k independent subjects; anatomical pairing was future-facing in original paper",
+      "priority": "P2",
+      "source_urls": [
+        "https://google-research.github.io/zapbench/",
+        "https://arxiv.org/abs/2503.02618",
+        "https://zapbench-release.storage.googleapis.com/volumes/README.html"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Important omitted whole-brain forecasting resource and a concrete world/video-model task.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "CC BY 4.0 explicitly stated in official dataset README",
+      "family": "Population activity and dynamics",
+      "added_in": "0.3",
+      "execution_admission": "candidate_pending_validation",
+      "admission_reason": "ZAPBench real larval zebrafish wholebrain activity forecasting is a distinct real task. Needs pinned release, official heldout temporal blocks and neuron mappings; complete brain arrays may be large. No acquisition attempted here, so no permanent infeasibility claim.",
+      "dataset_group": "ZAPBench (ICLR 2025)",
+      "operation_tags": [
+        "forecasting"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-behavior-population.json",
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "F01",
@@ -1580,7 +1712,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "F02",
@@ -1615,7 +1748,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "F03",
@@ -1650,7 +1784,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "F04",
@@ -1692,7 +1827,8 @@
       "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
       "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
       "executed_slice": "Goldin2022 retina,3160trainimages/30testimages×30repeats,41neurons,18×18imagefeatures",
-      "executed_source_deviation": "Goldin2022 reusable retina release is the measured slice; other listed CRCNS datasets not thereby evaluated"
+      "executed_source_deviation": "Goldin2022 reusable retina release is the measured slice; other listed CRCNS datasets not thereby evaluated",
+      "active": true
     },
     {
       "id": "F05",
@@ -1727,7 +1863,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "G01",
@@ -1735,35 +1872,39 @@
       "family": "Intracortical BCI",
       "task": "Robust cross-day motor decoding",
       "data": "Intracortical neural activity and kinematics",
-      "resource": "FALCON motor tracks",
+      "resource": "FALCON M2 public calibration NWBs; custom chronological split",
       "readiness": "B",
       "setup_effort": "Medium",
       "ground_truth": "Recorded kinematics on held-out days",
-      "recommended_metrics": "Official track metric; latency and adaptation labels",
-      "recommended_split": "Official calibration and held-out-day protocol",
+      "recommended_metrics": "Variance-weighted R² and perdayR², native velocityAU",
+      "recommended_split": "Oct19/20training;Oct27/28heldout; no minival or official FALCONscore",
       "specialist_baselines": "FALCON baseline decoders; NDT3 if compatible",
       "general_model_route": "General sequence model or analysis agent",
-      "limitations": "Offline acausal prediction cannot count as online BCI control",
+      "limitations": "One monkey,two testdays; fixed causal features but no closed-loop/online latency evaluation. Full sourceSHAreported,partial extractedbufferhashesverified.",
       "priority": "P1",
       "source_urls": [
-        "https://snel-repo.github.io/falcon/"
+        "https://snel-repo.github.io/falcon/",
+        "https://dandiarchive.org/dandiset/000953",
+        "https://github.com/snel-repo/falcon-challenge"
       ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
+      "verification": "Actual acquired/extracted source arrays, frozen protocol, submitted programs and prediction/scorer artifacts; exact scope in experiments/G01",
       "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
+      "execution_status": "measured exploratory slice",
+      "current_best_status": "not verified; named matched specialist/reference evidence retained separately",
       "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
       "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "FALCON motor tracks provide official crossday interfaces and labels. Need exacttrack acquisition terms, trial/sessionnormalization, allowed adaptation and online/offline constraints. No data request attempted here. Same-session E01 cannot establish crossday BCIperformance.",
+      "execution_admission": "measured",
+      "admission_reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
       "dataset_group": "FALCON motor tracks",
       "operation_tags": [
         "tracking",
         "encoding_decoding"
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "admission_evidence_file": "literature/admission-v05-bci.json",
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "executed_slice": "FALCON M2 custom cross-day finger-velocity decoding:1169train/754testtrials,96causalfeatures,twooutputs,one monkey",
+      "active": true
     },
     {
       "id": "G02",
@@ -1799,7 +1940,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "G03",
@@ -1835,7 +1977,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
+      "active": true
     },
     {
       "id": "H01",
@@ -1875,7 +2018,8 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
       "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "executed_slice": "PhysioNet motorimagery;5train/3heldout subjects,225/135epochs"
+      "executed_slice": "PhysioNet motorimagery;5train/3heldout subjects,225/135epochs",
+      "active": true
     },
     {
       "id": "H02",
@@ -1912,43 +2056,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "H03",
-      "family_code": "H",
-      "family": "EEG, MEG, field signals and peripheral interfaces",
-      "task": "SSVEP stimulus selection",
-      "data": "EEG with frequency-tagged stimuli",
-      "resource": "MOABB SSVEP datasets",
-      "readiness": "B",
-      "setup_effort": "Low",
-      "ground_truth": "Stimulus-frequency labels",
-      "recommended_metrics": "Accuracy; information transfer rate with explicit timing",
-      "recommended_split": "Official cross-session/subject protocols",
-      "specialist_baselines": "CCA/filter-bank CCA; TRCA where supported",
-      "general_model_route": "General multichannel time-series encoder",
-      "limitations": "Stimulus timing and frequency metadata can be shortcuts",
-      "priority": "P2",
-      "source_urls": [
-        "https://moabb.neurotechx.com/",
-        "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Nakanishi2015.html"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "deferred",
-      "admission_reason": "MOABB Nakanishi2015 primary documentation located. Need pinned original files/license and frequency/timing metadata, fixed subject split, verified CCA baseline. Generic MOABB umbrella is not one executable dataset; not rejected as infeasible.",
-      "dataset_group": "MOABB SSVEP datasets",
-      "operation_tags": [
-        "encoding_decoding"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "H04",
@@ -1983,148 +2092,50 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "H05",
-      "family_code": "H",
-      "family": "EEG, MEG, field signals and peripheral interfaces",
-      "task": "Broad EEG model comparison",
-      "data": "EEG datasets across many paradigms",
-      "resource": "NeuralBench-EEG Core / Full",
-      "readiness": "B",
-      "setup_effort": "Medium",
-      "ground_truth": "Task-specific recorded labels",
-      "recommended_metrics": "Official per-task metrics; family-wise summary",
-      "recommended_split": "Official subject/session splits and adaptation modes",
-      "specialist_baselines": "Published task-specific and EEG-foundation models",
-      "general_model_route": "General time-series features with the same head",
-      "limitations": "Core is manageable subset; Full has large storage requirements",
-      "priority": "P2",
-      "source_urls": [
-        "https://facebookresearch.github.io/neuroai/neuralbench/index.html"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Original NeuralBench documentation accessible. Full/Core suites require selecting task cards, resolving per-dataset licenses and canonical overlap. Avoid counting this suite and its contained EEGMMI-like datasets as independent experiments.",
-      "dataset_group": "NeuralBench-EEG Core / Full",
-      "operation_tags": [
-        "other_requires_review"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "H06",
-      "family_code": "H",
-      "family": "EEG, MEG, field signals and peripheral interfaces",
-      "task": "EEG foundation model transfer roadmap",
-      "data": "EEG across six task families",
-      "resource": "OmniEEG-Bench",
-      "readiness": "B",
-      "setup_effort": "Medium",
-      "ground_truth": "Dataset-specific signal/state/clinical/task labels",
-      "recommended_metrics": "Official metrics by task",
-      "recommended_split": "Official task cards and deployment settings",
-      "specialist_baselines": "Published EEG FM baselines; supervised EEG models",
-      "general_model_route": "Generic sequence model or coding agent",
-      "limitations": "Overlaps other EEG suites; do not count duplicates as independent evidence",
-      "priority": "P2",
-      "source_urls": [
-        "https://arxiv.org/abs/2606.00815"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Original OmniEEG-Bench paper accessible; 54-dataset suite. Must resolve individual task-card preprocessing/splits/licenses and duplicates before execution. Domain EEG foundation-model tables cannot be imported as scores of the evaluated general code generators.",
-      "dataset_group": "OmniEEG-Bench",
-      "operation_tags": [
-        "other_requires_review"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "H07",
-      "family_code": "H",
-      "family": "EEG, MEG, field signals and peripheral interfaces",
-      "task": "EEG scaling and robustness",
-      "data": "EEG across seven paradigms",
-      "resource": "EEG-Arena",
-      "readiness": "B",
-      "setup_effort": "Medium",
-      "ground_truth": "Dataset-specific labels",
-      "recommended_metrics": "Official task scores; channel/scaling protocols",
-      "recommended_split": "Official five evaluation protocols",
-      "specialist_baselines": "EEG FMs and supervised baselines in suite",
-      "general_model_route": "Generic time-series representation",
-      "limitations": "Dataset and model overlap with other EEG suites",
-      "priority": "P2",
-      "source_urls": [
-        "https://eeg.fm/benchmarks/"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Original EEG-Arena site reports 57 tasks/23 datasets/five protocols and a migration toward NeuroInfra. Need pinned downstream task version and overlap mapping; umbrella is not directly executable as a single comparable task.",
-      "dataset_group": "EEG-Arena",
-      "operation_tags": [
-        "other_requires_review"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "H08",
       "family_code": "H",
       "family": "EEG, MEG, field signals and peripheral interfaces",
       "task": "Sleep staging and sleep onset",
-      "data": "Continuous overnight EEG/PSG",
-      "resource": "Sleep tasks in NeuralBench; 2026 foundation challenge",
+      "data": "Raw EEG Fpz-Cz,1440consecutive30second epochs/night",
+      "resource": "Sleep-EDF Expanded1.0.0; custom subject-held-out diagnostic with YASA checkpoint",
       "readiness": "B",
       "setup_effort": "Medium",
-      "ground_truth": "Human sleep-stage labels",
-      "recommended_metrics": "Macro F1; Cohen kappa; onset error as track specifies",
-      "recommended_split": "Hold out subjects/nights; preserve temporal context",
+      "ground_truth": "Independent technician R&K stages; stages3/4merged,unknown/movement excluded",
+      "recommended_metrics": "Pooled fiveclassmacroF1,accuracy,balancedaccuracy,pernightmacroF1",
+      "recommended_split": "FirstnightSC400–404train,SC405–407test;fixedclockwindowwithoutlabel-basedcrop",
       "specialist_baselines": "Sleep-specific model; EEGNet where appropriate",
       "general_model_route": "General sequence model",
-      "limitations": "PSG multimodal inputs must match; adjacent epoch leakage",
+      "limitations": "Three testpeople;singlederivation;customclockwindow not officialSleepEDF20protocol;YASANSRRpretraining differs from five targettrainingnights.",
       "priority": "P2",
       "source_urls": [
         "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
-        "https://neural-interfaces26.github.io/"
+        "https://neural-interfaces26.github.io/",
+        "https://physionet.org/content/sleep-edfx/1.0.0/",
+        "https://doi.org/10.13026/C2X676",
+        "https://doi.org/10.7554/eLife.70092",
+        "https://github.com/raphaelvallat/yasa_classifier"
       ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
+      "verification": "Actual acquired/extracted source arrays, frozen protocol, submitted programs and prediction/scorer artifacts; exact scope in experiments/H08",
       "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
+      "execution_status": "measured exploratory slice",
+      "current_best_status": "not verified; named matched specialist/reference evidence retained separately",
       "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
       "added_in": "0.1",
-      "execution_admission": "deferred",
-      "admission_reason": "NeuralBench/challenge primary sites accessible. 2026 challenge final phase starts in November after this review date, so no final winner exists yet. Need a pinned accessible sleep dataset, subject/night-disjoint scorer, full-context policy and expert staging labels; no adjacent-epoch shortcut experiment admitted.",
+      "execution_admission": "measured",
+      "admission_reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
       "dataset_group": "Sleep tasks in NeuralBench; 2026 foundation challenge",
       "operation_tags": [
         "other_requires_review"
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "admission_evidence_file": "experiments/H08/protocol.md",
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "executed_slice": "SleepEDF fixed20:00–08:00firstnightwindows;5train/3heldoutpeople,100HzFpz-Cz;fiveclassstaging",
+      "active": true
     },
     {
       "id": "H09",
@@ -2159,43 +2170,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "H10",
-      "family_code": "H",
-      "family": "EEG, MEG, field signals and peripheral interfaces",
-      "task": "EEG abnormality, events, cognition and state",
-      "data": "Clinical/task EEG plus metadata",
-      "resource": "Task subsets in NeuralBench / OmniEEG-Bench",
-      "readiness": "B",
-      "setup_effort": "Medium",
-      "ground_truth": "Expert/experimental labels depending on task",
-      "recommended_metrics": "Balanced accuracy/AUROC/F1 as task defines",
-      "recommended_split": "Patient/subject-held-out; hospital/site-held-out when available",
-      "specialist_baselines": "EEGNet; EEGConformer; domain FM",
-      "general_model_route": "General signal model",
-      "limitations": "Abnormality is not disease diagnosis; demographic/site confounds",
-      "priority": "P2",
-      "source_urls": [
-        "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
-        "https://arxiv.org/abs/2606.00815"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Broad abnormality/events/cognition/state umbrella overlaps H05/H06 and mixes distinct clinical targets. Requires a specific task, label definition, subject/site split and data-use agreement before an executable benchmark can be admitted.",
-      "dataset_group": "Task subsets in NeuralBench / OmniEEG-Bench",
-      "operation_tags": [
-        "other_requires_review"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "H11",
@@ -2230,7 +2206,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "H12",
@@ -2265,7 +2242,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "H13",
@@ -2300,7 +2278,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "H14",
@@ -2336,7 +2315,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "H15",
@@ -2371,7 +2351,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "H16",
@@ -2412,113 +2393,131 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
       "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "executed_slice": "EEGdenoiseNet clean+EOG2000train/600test component-disjoint mixtures"
+      "executed_slice": "EEGdenoiseNet clean+EOG2000train/600test component-disjoint mixtures",
+      "active": true
     },
     {
-      "id": "I01",
-      "family_code": "I",
-      "family": "Human and mesoscopic neuroimaging",
-      "task": "Multimodal movie-to-fMRI encoding",
-      "data": "Video/audio/language and BOLD parcel time series",
-      "resource": "Algonauts 2025 / CNeuroMod",
-      "readiness": "B",
+      "id": "H17",
+      "family_code": "H",
+      "task": "Cross-laboratory rodent sleep staging",
+      "data": "Mouse EEG/EMG, expert stage annotations",
+      "resource": "Mouse Sleep Staging Validation dataset (MSSV), OpenNeuro ds006366",
+      "readiness": "D",
       "setup_effort": "Medium",
-      "ground_truth": "Measured held-out fMRI responses",
-      "recommended_metrics": "Official brain-response correlation and OOD score",
-      "recommended_split": "Official movie/subject split; account for HRF delay",
-      "specialist_baselines": "Published Algonauts feature/readout systems",
-      "general_model_route": "Frozen vision/audio/language features with common readout",
-      "limitations": "General features still need fitted brain alignment",
+      "ground_truth": "Expert sleep scores from 92 healthy mice across five labs",
+      "recommended_metrics": "Macro-F1, balanced accuracy, per-stage recall and transition errors",
+      "recommended_split": "Held-out mouse and held-out laboratory; keep whole light/dark recordings grouped",
+      "specialist_baselines": "Published mouse sleep staging methods; simple spectral-feature baseline",
+      "general_model_route": "General time-series features or code-generated classifier",
+      "limitations": "Rodent stages, epoch lengths and recording setups must be specified; human sleep foundation-model scores cannot transfer directly",
       "priority": "P2",
       "source_urls": [
-        "https://algonautsproject.com/2025/challenge.html"
+        "https://nemar.org/dataset/on006366",
+        "https://doi.org/10.18112/openneuro.ds006366.v1.0.1"
       ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
       "reviewed_on": "2026-10-30",
       "execution_status": "not evaluated",
       "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Adds animal sleep rather than assuming human EEG staging covers laboratory mouse sleep.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "CC0 shown by NEMAR; original dataset version must be pinned separately from mirror",
+      "family": "EEG, MEG, field signals and peripheral interfaces",
+      "added_in": "0.3",
       "execution_admission": "deferred",
-      "admission_reason": "Original Algonauts2025 challenge page requires a data-download form and Codabench test-response scoring; ID/OOD held-out fMRI responses are not publicly available to a local evaluator. No application signed or hidden-label score fabricated. Need agreed data access, stimulus features and temporal encoding protocol.",
-      "dataset_group": "Algonauts 2025 / CNeuroMod",
-      "operation_tags": [
-        "encoding_decoding"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "I02",
-      "family_code": "I",
-      "family": "Human and mesoscopic neuroimaging",
-      "task": "Image encoding/reconstruction from fMRI",
-      "data": "Natural images and repeated fMRI responses",
-      "resource": "NSD / Algonauts 2023",
-      "readiness": "B/D",
-      "setup_effort": "Medium",
-      "ground_truth": "Stimulus identities and measured BOLD",
-      "recommended_metrics": "Encoding correlation; retrieval; reconstruction semantic and pixel metrics",
-      "recommended_split": "Official split; held-out images/subjects; gallery fixed",
-      "specialist_baselines": "Ridge encoding; published neural-to-diffusion adapter",
-      "general_model_route": "Generic image/diffusion model with trained adapter",
-      "limitations": "NSD is a dataset; reconstruction needs a separately frozen protocol",
-      "priority": "P2",
-      "source_urls": [
-        "https://www.naturalscenesdataset.org/"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "deferred",
-      "admission_reason": "Original NSD site explicitly requests completion of a data-access agreement before receiving the manual/download access. No agreement/application completed on the user’s behalf. Candidate remains scientifically valuable; no bad-data claim.",
-      "dataset_group": "NSD / Algonauts 2023",
-      "operation_tags": [
-        "reconstruction",
-        "encoding_decoding"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "I03",
-      "family_code": "I",
-      "family": "Human and mesoscopic neuroimaging",
-      "task": "Human brain model alignment",
-      "data": "Visual stimuli, neural responses, behavior",
-      "resource": "Brain-Score",
-      "readiness": "B",
-      "setup_effort": "Medium",
-      "ground_truth": "Experimental neural/behavioral measurements",
-      "recommended_metrics": "Official noise-normalized predictivity and behavior scores",
-      "recommended_split": "Use benchmark-specific held-out stimulus split",
-      "specialist_baselines": "Published brain-aligned models",
-      "general_model_route": "General vision/language representations",
-      "limitations": "Brain similarity is distinct from useful raw-data analysis",
-      "priority": "P2",
-      "source_urls": [
-        "https://www.brain-score.org/"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Original Brain-Score site supports executable alignment models across neural/behavioral measurements. It is an umbrella with many datasets; need select canonical task, permitted neural data and exact stimulus/model-representation interface. Generic classifier code on a mismatched proxy is not Brain-Score.",
-      "dataset_group": "Brain-Score",
+      "admission_reason": "Original NEMAR MSSV page accessible:92mice,five labs,CC0,~5.3GB archive/direct manifest. Promising public real sleep resource, not bad data. Need lab identifiers, stage epoch alignment and leave-lab-out acquisition adapter; no local raw arrays downloaded.",
+      "dataset_group": "Mouse Sleep Staging Validation dataset (MSSV), OpenNeuro ds006366",
       "operation_tags": [
         "other_requires_review"
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
+    },
+    {
+      "id": "H18",
+      "family_code": "H",
+      "task": "Sleep microevent detection",
+      "data": "Human EEG with spindle and K-complex intervals",
+      "resource": "DREAMS microevent annotations; MODA consensus as a separately versioned extension",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "Individual expert labels with disagreement",
+      "recommended_metrics": "Event F1 at fixed IoU/tolerance; temporal error; per-expert and consensus results separately",
+      "recommended_split": "Held-out subject; freeze usable annotation intervals and scorer",
+      "specialist_baselines": "SUMO/SUMOv2; published spindle detector baselines",
+      "general_model_route": "General signal/audio feature or code-agent event detector",
+      "limitations": "DREAMS repository explicitly warns expert 1 spindle counts stop after 1000 seconds; censor unannotated periods rather than scoring them negative; MODA and DREAMS are not interchangeable",
+      "priority": "P2",
+      "source_urls": [
+        "https://zenodo.org/records/2650142",
+        "https://www.nature.com/articles/s41598-026-53891-9",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/",
+        "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Sleep staging does not cover spindle/K-complex microevents needed in sleep and memory labs.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "Not independently reviewed",
+      "family": "EEG, MEG, field signals and peripheral interfaces",
+      "added_in": "0.3",
+      "execution_admission": "deferred",
+      "admission_reason": "Original DREAMS Zenodo record explicitly warns Expert1 spindle annotations stop after1000s. A naive full-1800s negative-label benchmark is excluded. A masked interval/Expert2 consensus protocol remains feasible but has not been validated, and original DREAMS noncommercial/no-adaptation terms need an appropriate data handling policy.",
+      "dataset_group": "DREAMS microevent annotations; MODA consensus as a separately versioned extension",
+      "operation_tags": [
+        "detection_segmentation"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-electrical.json",
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
+    },
+    {
+      "id": "H19",
+      "family_code": "H",
+      "task": "Real physiological artifact detection and type identification",
+      "data": "PSG excerpts with expert artifact labels",
+      "resource": "DREAMS Artifacts database",
+      "readiness": "D",
+      "setup_effort": "Medium",
+      "ground_truth": "Expert temporal annotations in 20 fifteen-minute excerpts",
+      "recommended_metrics": "Event/timewise macro-F1, artifact-type confusion, clean-signal retention",
+      "recommended_split": "Group by source recording/person; validation threshold selection only",
+      "specialist_baselines": "Signal-processing detectors; declared artifact classification baseline",
+      "general_model_route": "Generic signal classifier or code agent",
+      "limitations": "Small single-annotator corpus; do not confuse real artifact detection with EEGdenoiseNet semi-synthetic signal repair",
+      "priority": "P2",
+      "source_urls": [
+        "https://zenodo.org/records/2650142",
+        "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Complements H16 repair with detection on real artifact labels and metadata-aware exclusion.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "Not independently reviewed",
+      "family": "EEG, MEG, field signals and peripheral interfaces",
+      "added_in": "0.3",
+      "execution_admission": "deferred",
+      "admission_reason": "Original DREAMS record has20expert-annotated15min artifact excerpts and explicit artifact types. Original DREAMS license was downloaded/read; noncommercial and no-adaptation terms complicate distributing prepared arrays. Need local-only extraction/annotation schema and exact event metric; no false claim that real artifact detection equals H16 mixture repair.",
+      "dataset_group": "DREAMS Artifacts database",
+      "operation_tags": [
+        "quality_control",
+        "detection_segmentation"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-electrical.json",
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "I04",
@@ -2553,42 +2552,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "I05",
-      "family_code": "I",
-      "family": "Human and mesoscopic neuroimaging",
-      "task": "MRI reconstruction",
-      "data": "Undersampled raw k-space and images",
-      "resource": "fastMRI brain",
-      "readiness": "B",
-      "setup_effort": "High",
-      "ground_truth": "Fully sampled/reference reconstructions",
-      "recommended_metrics": "Official SSIM/NMSE/PSNR with fixed masks",
-      "recommended_split": "Official patient/scan split and acceleration",
-      "specialist_baselines": "VarNet; classical reconstruction",
-      "general_model_route": "Generic image prior with explicit measurement consistency",
-      "limitations": "Natural-image generation without k-space consistency can invent anatomy",
-      "priority": "P3",
-      "source_urls": [
-        "https://fastmri.med.nyu.edu/"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "deferred",
-      "admission_reason": "Original fastMRI site requires user application/institution/proposed-use and data-sharing agreement; no downloaded record, no access application submitted. Its redistribution restrictions require private data handling. Cannot substitute unrelated knee/synthetic reconstructions for brain benchmark.",
-      "dataset_group": "fastMRI brain",
-      "operation_tags": [
-        "reconstruction"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "I06",
@@ -2623,7 +2588,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "I07",
@@ -2665,7 +2631,8 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
       "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "executed_slice": "FRESH opticaldensity tapping condition,7train/3test subjects;condition/session confounded"
+      "executed_slice": "FRESH opticaldensity tapping condition,7train/3test subjects;condition/session confounded",
+      "active": true
     },
     {
       "id": "I08",
@@ -2701,7 +2668,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "I09",
@@ -2736,7 +2704,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "I10",
@@ -2773,7 +2742,8 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-inference-control.json",
       "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-      "executed_slice": "MRIQC600ABIDEtrain/265DS030test,68numeric IQMs,rater1exclude labels"
+      "executed_slice": "MRIQC600ABIDEtrain/265DS030test,68numeric IQMs,rater1exclude labels",
+      "active": true
     },
     {
       "id": "J01",
@@ -2808,7 +2778,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "J02",
@@ -2844,7 +2815,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "J03",
@@ -2880,7 +2852,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "primary release page inspected"
+      "review_depth": "primary release page inspected",
+      "active": true
     },
     {
       "id": "J04",
@@ -2916,7 +2889,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "J05",
@@ -2951,7 +2925,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "J06",
@@ -2987,1046 +2962,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
-    },
-    {
-      "id": "K01",
-      "family_code": "K",
-      "family": "Cell types and molecular neuroscience",
-      "task": "Electrophysiological cell-type classification",
-      "data": "Patch clamp features, morphology, labels",
-      "resource": "Allen Cell Types / Patch-seq resources",
-      "readiness": "D",
-      "setup_effort": "Low",
-      "ground_truth": "Published cell taxonomy labels",
-      "recommended_metrics": "Macro F1; hierarchical label accuracy; calibration",
-      "recommended_split": "Hold out cells/donors; define taxonomy level",
-      "specialist_baselines": "Feature+RF/XGBoost; domain cell classifiers",
-      "general_model_route": "Tabular foundation model; multimodal embeddings",
-      "limitations": "Taxonomy label uncertainty; donor and acquisition batch confounds",
-      "priority": "P2",
-      "source_urls": [
-        "https://brain-map.org/our-research/cell-types-taxonomies",
-        "https://brain-map.org/support/documentation/documentation-cell-types-database",
-        "https://brain-map.org/support/documentation/cell-types-database-api",
-        "https://celltypes.brain-map.org/",
-        "https://alleninstitute.org/terms-of-use/"
-      ],
-      "verification": "Acquired data, frozen custom-slice protocol, unchanged model submissions, scored predictions and execution/failure records available; see experiments/K01",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "measured exploratory slice",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "measured",
-      "admission_reason": "Real primary API data acquired and hashed; independent morphology endpoint, ephys-only whitelist, donor-disjoint split and train-only baseline protocol frozen. Prepared n_train=1356 and n_test=457, 11 features; 678/226 disjoint mouse donors. Adapter ready for root model evaluation.",
-      "dataset_group": "Allen Cell Types / Patch-seq resources",
-      "operation_tags": [
-        "encoding_decoding"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "executed_slice": "Allen mouse ephys11features→spiny/aspiny morphology,donor-disjoint1356/457cells"
-    },
-    {
-      "id": "K02",
-      "family_code": "K",
-      "family": "Cell types and molecular neuroscience",
-      "task": "Transcriptomic cell mapping and integration",
-      "data": "Brain scRNA/scATAC or spatial cell profiles",
-      "resource": "Allen Brain Cell Atlas plus scIB evaluation tools",
-      "readiness": "D",
-      "setup_effort": "Medium",
-      "ground_truth": "Reference taxonomy and biological annotations",
-      "recommended_metrics": "Cell mapping F1; scIB biology/batch metrics",
-      "recommended_split": "Donor/site-held-out; preserve rare types",
-      "specialist_baselines": "scVI/scANVI; reference mapping; scIB baselines",
-      "general_model_route": "Generic tabular/gene-token model",
-      "limitations": "Gene foundation models are domain-pretrained comparators; batch mixing alone is insufficient",
-      "priority": "P2",
-      "source_urls": [
-        "https://brain-map.org/our-research/cell-types-taxonomies",
-        "https://scib.readthedocs.io/en/latest/"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "scIB is a general cell-integration toolkit, not one uniquely frozen brain dataset task. Need select brain donor cohorts/taxonomy and independent label-transfer policy, fit batch handling on allowed data, preserve rare classes, and reproduce biology AND mixing scorers. No unique dataset/split/rights package selected; do not inflate coverage from toolkit installation.",
-      "dataset_group": "Allen Brain Cell Atlas plus scIB evaluation tools",
-      "operation_tags": [
-        "other_requires_review"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "K03",
-      "family_code": "K",
-      "family": "Cell types and molecular neuroscience",
-      "task": "Molecular/pathology cohort analysis",
-      "data": "Cell atlas tables, donors and pathology labels",
-      "resource": "NeuroDiscoveryBench atlas/SEA-AD tasks",
-      "readiness": "B",
-      "setup_effort": "Low",
-      "ground_truth": "Expert curated quantitative/text/figure answers",
-      "recommended_metrics": "Published rubric; numeric checks added where feasible",
-      "recommended_split": "Official task split; new donor analyses for stronger holdout",
-      "specialist_baselines": "Reference expert analysis",
-      "general_model_route": "General coding agent",
-      "limitations": "Donor is the experimental unit; cells are not independent patient replicates",
-      "priority": "P2",
-      "source_urls": [
-        "https://github.com/allenai/neurodiscoverybench"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "deferred",
-      "admission_reason": "Primary NeuroDiscoveryBench includes existing workflow metadata, reference answers and figure/text scoring, but evaluates scientific-analysis agents rather than the fixed train/predict interface used for this execution batch. Large dataset downloader plus external evaluator/workflow budget not replicated; code/data licenses separate and rubric/judge provenance must be logged before admitting scores.",
-      "dataset_group": "NeuroDiscoveryBench atlas/SEA-AD tasks",
-      "operation_tags": [
-        "scientific_workflow"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "L01",
-      "family_code": "L",
-      "family": "Mechanistic and statistical inference",
-      "task": "Functional connectivity recovery",
-      "data": "Simulated fluorescence and neural network graphs",
-      "resource": "ChaLearn Connectomics Challenge",
-      "readiness": "B",
-      "setup_effort": "Medium",
-      "ground_truth": "Known simulated connectivity",
-      "recommended_metrics": "AUROC and AUPRC; direction-specific recovery",
-      "recommended_split": "Official networks; unseen topology/noise",
-      "specialist_baselines": "Partial correlation; GLM; transfer-entropy methods",
-      "general_model_route": "General sequence/graph model",
-      "limitations": "Simulation connections do not establish causal connectivity in real recordings",
-      "priority": "P2",
-      "source_urls": [
-        "https://connectomics.chalearn.org/help/data"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Official challenge page identifies simulated fluorescence and synaptic truth and mirror links. No mirror acquired/hashed; download terms, held-out network split and directed graph scorer remain unvalidated. Not rejected as bad data.",
-      "dataset_group": "ChaLearn Connectomics Challenge",
-      "operation_tags": [
-        "inference"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
-    },
-    {
-      "id": "L02",
-      "family_code": "L",
-      "family": "Mechanistic and statistical inference",
-      "task": "Biophysical parameter posterior inference",
-      "data": "Voltage traces from known neural simulators",
-      "resource": "sbi Hodgkin-Huxley example / Jaxley tasks",
-      "readiness": "R",
-      "setup_effort": "Medium",
-      "ground_truth": "Known simulated parameters; multiple valid solutions",
-      "recommended_metrics": "Posterior predictive fit; coverage; calibration; simulation cost",
-      "recommended_split": "Unseen parameter seeds/stimuli; frozen priors",
-      "specialist_baselines": "SBI; optimization; classical fits",
-      "general_model_route": "General inference model or coding agent",
-      "limitations": "Nonidentifiability makes single parameter error misleading",
-      "priority": "P3",
-      "source_urls": [
-        "https://sbi.readthedocs.io/en/latest/advanced_tutorials/21_diagnostics_misspecification_checks.html",
-        "https://www.nature.com/articles/s41592-025-02895-w",
-        "https://github.com/jaxleyverse/jaxley"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "deferred",
-      "admission_reason": "Jaxley source repository exists; Nature full-text URL redirected beyond this web reader. Fixed prior, stimuli, simulator version, reference posterior and predictive/calibration scoring require a new experiment; single parameter MAE is insufficient under nonidentifiability.",
-      "dataset_group": "sbi Hodgkin-Huxley example / Jaxley tasks",
-      "operation_tags": [
-        "inference"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
-    },
-    {
-      "id": "L03",
-      "family_code": "L",
-      "family": "Mechanistic and statistical inference",
-      "task": "Valid neural hypothesis testing",
-      "data": "IBL spikes, trial variables and behavioral history",
-      "resource": "IBL-agent genuine/null analysis tasks",
-      "readiness": "D",
-      "setup_effort": "Medium",
-      "ground_truth": "Known randomized/null labels; expert analysis of genuine data",
-      "recommended_metrics": "False-positive rate; power; analysis validity; replication",
-      "recommended_split": "Blinded nulls; held-out mice; locked confirmatory analysis",
-      "specialist_baselines": "Prespecified GLM/decoder and valid randomization test",
-      "general_model_route": "General coding agent with/without domain skills",
-      "limitations": "Naive permutation breaks trial history; significance shopping",
-      "priority": "P1",
-      "source_urls": [
-        "https://github.com/int-brain-lab/ibl-ai-agent",
-        "https://www.internationalbrainlab.com/data"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "deferred",
-      "admission_reason": "IBL AI Agent is a real analysis toolkit, not a frozen false-positive-rate benchmark. Need animal-held-out genuine/null task generation, exchangeability-preserving randomization and a blinded power/type-I-error protocol. No significance-searching substituted for benchmark completion.",
-      "dataset_group": "IBL-agent genuine/null analysis tasks",
-      "operation_tags": [
-        "scientific_workflow"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
-    },
-    {
-      "id": "L04",
-      "family_code": "L",
-      "family": "Mechanistic and statistical inference",
-      "task": "Point-process estimation and goodness of fit",
-      "data": "Real rat hippocampal spike counts and position/velocity",
-      "resource": "Kramer real place-cell case study; custom count-encoding diagnostic",
-      "readiness": "R",
-      "setup_effort": "Low",
-      "ground_truth": "Measured extracellular spike counts",
-      "recommended_metrics": "Held-out Poisson bits/spike relative to training-mean null; goodness-of-fit/coverage remains unexecuted",
-      "recommended_split": "Chronological split with gap; one cell/preparation",
-      "specialist_baselines": "Poisson GLM; history GLM; Bayesian fit",
-      "general_model_route": "General sequence model; code agent",
-      "limitations": "No known generating parameters; no animal generalization or completed time-rescaling calibration",
-      "priority": "P2",
-      "source_urls": [
-        "https://neurallatents.github.io/",
-        "https://github.com/snel-repo/ComputationThroughDynamicsToolkit",
-        "https://mark-kramer.github.io/Case-Studies-Python/09.html",
-        "https://github.com/Mark-Kramer/Case-Studies-Python"
-      ],
-      "verification": "Acquired data, frozen custom-slice protocol, unchanged model submissions, scored predictions and execution/failure records available; see experiments/L04",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "measured exploratory slice",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "measured",
-      "admission_reason": "Constructed an explicit real place-cell count-encoding diagnostic from author-released data, replacing only the execution slice of the earlier proposed simulation. Chronological60/40split plus1sbuffer; train-mean-null bits/spike; no parameter-recovery/calibration claim.",
-      "dataset_group": "Proposed GLM/point-process task generator",
-      "operation_tags": [
-        "other_requires_review"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-      "executed_slice": "One real rat placecell,20mscounts,chronological60/40split with1sgap;position/velocity",
-      "original_mapping_preserved": "Originally proposed synthetic GLM construction; new execution is real-data encoding only"
-    },
-    {
-      "id": "L05",
-      "family_code": "L",
-      "family": "Mechanistic and statistical inference",
-      "task": "Intervention-response prediction",
-      "data": "Neural responses to optogenetic perturbations",
-      "resource": "C. elegans signal-propagation atlas",
-      "readiness": "D",
-      "setup_effort": "Medium",
-      "ground_truth": "Recorded responses under controlled perturbations",
-      "recommended_metrics": "Held-out response error; sign/strength; calibration",
-      "recommended_split": "Hold out animals/experiments and perturbation targets",
-      "specialist_baselines": "Published atlas response model; observational-only baseline",
-      "general_model_route": "General sequence or graph representation",
-      "limitations": "Observational prediction is not causal intervention prediction",
-      "priority": "P2",
-      "source_urls": [
-        "https://www.nature.com/articles/s41586-023-06683-4"
-      ],
-      "verification": "Primary paper/project located during bounded gap audit; not executed",
-      "reviewed_on": "2026-10-30",
-      "added_in": "0.2",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Perturbation-response atlas primary source mapped; Nature full-text access redirected in this audit. Animal/experiment identities, perturbation matching, source reuse terms and missing-response policy require acquisition/validation before an intervention-prediction score.",
-      "dataset_group": "C. elegans signal-propagation atlas",
-      "operation_tags": [
-        "forecasting",
-        "intervention"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
-    },
-    {
-      "id": "L06",
-      "family_code": "L",
-      "family": "Mechanistic and statistical inference",
-      "task": "Calibrated statistical neural inference",
-      "data": "Bernoulli GLM and reference posterior tasks",
-      "resource": "sbibm neuroscience-linked GLM task",
-      "readiness": "B",
-      "setup_effort": "Medium",
-      "ground_truth": "Reference posterior samples and known simulator",
-      "recommended_metrics": "Posterior accuracy; coverage; predictive fit; simulation cost",
-      "recommended_split": "Official task protocol and observations",
-      "specialist_baselines": "Published SBI algorithms and classical inference",
-      "general_model_route": "General inference or code agent",
-      "limitations": "Generic toy tasks outside neuroscience excluded from neural aggregate",
-      "priority": "P2",
-      "source_urls": [
-        "https://github.com/sbi-benchmark/sbibm"
-      ],
-      "verification": "Primary paper/project located during bounded gap audit; not executed",
-      "reviewed_on": "2026-10-30",
-      "added_in": "0.2",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.",
-      "dataset_group": "sbibm neuroscience-linked GLM task",
-      "operation_tags": [
-        "inference"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
-    },
-    {
-      "id": "M01",
-      "family_code": "M",
-      "family": "Experimental design and control",
-      "task": "Behavioral decision-model fitting",
-      "data": "Psychophysics trials and choices",
-      "resource": "IBL trial tables; Psych-101 cognitive tasks",
-      "readiness": "D",
-      "setup_effort": "Medium",
-      "ground_truth": "Recorded choices; synthetic recovery targets when added",
-      "recommended_metrics": "Held-out choice likelihood; parameter recovery on simulation",
-      "recommended_split": "Animal/participant-held-out; contiguous trial blocks",
-      "specialist_baselines": "Psychometric/logistic/RL models; Centaur as domain comparator",
-      "general_model_route": "General language/sequence models",
-      "limitations": "Predicting choices is distinct from identifying a cognitive mechanism",
-      "priority": "P2",
-      "source_urls": [
-        "https://www.internationalbrainlab.com/data",
-        "https://www.nature.com/articles/s41586-025-09215-4"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "IBL data and Psych-101/Centaur primary resource mapped. Real choice prediction requires participant/animal-held-out chronology, a bounded task selection and data-specific terms; M04 synthetic parameter recovery does not complete this endpoint.",
-      "dataset_group": "IBL trial tables; Psych-101 cognitive tasks",
-      "operation_tags": [
-        "inference"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
-    },
-    {
-      "id": "M02",
-      "family_code": "M",
-      "family": "Experimental design and control",
-      "task": "Adaptive experiment and stimulus design",
-      "data": "Neural simulator, stimulus/action and observations",
-      "resource": "Proposed Jaxley/NeuroGym design environment",
-      "readiness": "R",
-      "setup_effort": "High",
-      "ground_truth": "Known simulated system and experiment budget",
-      "recommended_metrics": "Information gain; prediction gain per trial; design regret",
-      "recommended_split": "Unseen simulated subjects; fixed budget and allowed actions",
-      "specialist_baselines": "Random design; Bayesian design; specialist controller",
-      "general_model_route": "World model or language agent",
-      "limitations": "Simulator results alone do not validate real biological interventions",
-      "priority": "P3",
-      "source_urls": [
-        "https://www.nature.com/articles/s41592-025-02895-w",
-        "https://github.com/neurogym/neurogym"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "deferred",
-      "admission_reason": "Jaxley/NeuroGym environments exist, but adaptive design needs unknown-system distributions, allowed interventions, equal trial budget and regret/information-gain scorer. No frozen design benchmark instantiated.",
-      "dataset_group": "Proposed Jaxley/NeuroGym design environment",
-      "operation_tags": [
-        "encoding_decoding",
-        "design_control"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
-    },
-    {
-      "id": "M03",
-      "family_code": "M",
-      "family": "Experimental design and control",
-      "task": "Closed-loop control policy evaluation",
-      "data": "Cognitive/control environments with observations/actions",
-      "resource": "NeuroGym task collection",
-      "readiness": "D",
-      "setup_effort": "Medium",
-      "ground_truth": "Task rewards/targets; simulated feedback",
-      "recommended_metrics": "Success/reward; adaptation; real-time latency",
-      "recommended_split": "Held-out task variants and seeds",
-      "specialist_baselines": "Task-trained RNN/RL controller",
-      "general_model_route": "General world/RL model or code agent",
-      "limitations": "Task collection requires a fixed suite; not evidence of real closed-loop BCI performance",
-      "priority": "P3",
-      "source_urls": [
-        "https://github.com/neurogym/neurogym"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Official NeuroGym task collection exists. Need versioned finite suite, trial-generation seeds, observation/action contract and task-trained controller reference. Static supervised score is not closed-loop policy evaluation.",
-      "dataset_group": "NeuroGym task collection",
-      "operation_tags": [
-        "design_control"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
-    },
-    {
-      "id": "M04",
-      "family_code": "M",
-      "family": "Experimental design and control",
-      "task": "Cognitive model and parameter recovery",
-      "data": "Synthetic choices from known behavioral models",
-      "resource": "Wilson–Collins modeling guide and example code",
-      "readiness": "D",
-      "setup_effort": "Medium",
-      "ground_truth": "Known simulated generating model and parameters",
-      "recommended_metrics": "Model-confusion matrix; parameter recovery; predictive checks",
-      "recommended_split": "Unseen parameter draws, participants, tasks",
-      "specialist_baselines": "Known RL/DDM/bandit model fitted by established optimizer",
-      "general_model_route": "General code agent or sequence inference model",
-      "limitations": "Prediction alone does not establish identifiability",
-      "priority": "P2",
-      "source_urls": [
-        "https://elifesciences.org/articles/49547"
-      ],
-      "verification": "Primary paper/project located during bounded gap audit; not executed",
-      "reviewed_on": "2026-10-30",
-      "added_in": "0.2",
-      "execution_status": "measured exploratory slice",
-      "current_best_status": "not verified; canonical local fitting baseline available",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "execution_admission": "measured",
-      "admission_reason": "Previously measured24agent synthetic Q-learning recovery. Author guide supports recovery checks; local implementation and posterior-vs-MLE objective difference explicit. Not biological data or a released leaderboard.",
-      "dataset_group": "Wilson–Collins modeling guide and example code",
-      "operation_tags": [
-        "inference"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
-    },
-    {
-      "id": "M05",
-      "family_code": "M",
-      "family": "Experimental design and control",
-      "task": "Practical neuroscience model-fitting optimization",
-      "data": "Likelihood objectives from computational studies",
-      "resource": "BADS CCN17 optimization problems",
-      "readiness": "B*",
-      "setup_effort": "Medium",
-      "ground_truth": "Published optimization objectives and reference solutions",
-      "recommended_metrics": "Objective value versus evaluation/time budget",
-      "recommended_split": "Fixed objectives; multiple random starts",
-      "specialist_baselines": "BADS; CMA-ES; established optimizers",
-      "general_model_route": "General agent choosing/implementing fitting procedure",
-      "limitations": "Confirm released tasks/dependencies; do not call every optimum known",
-      "priority": "P2",
-      "source_urls": [
-        "https://arxiv.org/abs/1705.04405",
-        "https://github.com/acerbilab/bads",
-        "https://github.com/acerbilab/pybads"
-      ],
-      "verification": "Primary paper/project located during bounded gap audit; not executed",
-      "reviewed_on": "2026-10-30",
-      "added_in": "0.2",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "execution_admission": "deferred",
-      "admission_reason": "BADS primary paper benchmarks real neuroscience fitting objectives; MATLAB BADS/Python PyBADS repositories exist. Full CCN17 objective data/dependencies and per-objective budgets not acquired; optimizing an unrelated toy loss would not reproduce this task.",
-      "dataset_group": "BADS CCN17 optimization problems",
-      "operation_tags": [
-        "inference",
-        "design_control"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
-    },
-    {
-      "id": "M06",
-      "family_code": "M",
-      "family": "Experimental design and control",
-      "task": "Embodied neuromuscular control",
-      "data": "Muscle-actuated simulations with feedback",
-      "resource": "MyoChallenge / MyoSuite",
-      "readiness": "B",
-      "setup_effort": "High",
-      "ground_truth": "Environment rewards, targets and physical state",
-      "recommended_metrics": "Task success; return; stability; energy; perturbation robustness",
-      "recommended_split": "Official environment version, seeds and training budget",
-      "specialist_baselines": "Published task policies and competition baselines",
-      "general_model_route": "General world model/policy or policy-training code agent",
-      "limitations": "Code generation and direct policy control are distinct tracks",
-      "priority": "P3",
-      "source_urls": [
-        "https://myosuite.org/myochallenge/"
-      ],
-      "verification": "Primary paper/project located during bounded gap audit; not executed",
-      "reviewed_on": "2026-10-30",
-      "added_in": "0.2",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "execution_admission": "deferred",
-      "admission_reason": "Official MyoChallenge site lists musculoskeletal control environments and editions. Need pinned MuJoCo/MyoSuite state/action environments, rollout/time budgets and trained policy references; policy training/evaluation outside180s array-code slice.",
-      "dataset_group": "MyoChallenge / MyoSuite",
-      "operation_tags": [
-        "design_control"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
-    },
-    {
-      "id": "M07",
-      "family_code": "M",
-      "family": "Experimental design and control",
-      "task": "Animal embodied sensorimotor modeling",
-      "data": "Fly body, terrain and sensory feedback simulation",
-      "resource": "FlyGym / NeuroMechFly v2",
-      "readiness": "D",
-      "setup_effort": "High",
-      "ground_truth": "Known simulated states and task outcomes",
-      "recommended_metrics": "Locomotion/task success; robustness; sensory-control validity",
-      "recommended_split": "Held-out terrain, perturbations and environment seeds",
-      "specialist_baselines": "Published fly control policies",
-      "general_model_route": "General world or embodied controller",
-      "limitations": "Simulator is not a validated replacement for a real animal",
-      "priority": "P3",
-      "source_urls": [
-        "https://www.nature.com/articles/s41592-024-02497-y",
-        "https://github.com/NeLy-EPFL/flygym"
-      ],
-      "verification": "Primary paper/project located during bounded gap audit; not executed",
-      "reviewed_on": "2026-10-30",
-      "added_in": "0.2",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "execution_admission": "deferred",
-      "admission_reason": "Author FlyGym repository provides embodied NeuroMechFly simulation. Need pinned simulator/contact/sensory assets, terrain seeds and controller training/rollout protocol. Not a ready static supervised dataset; no biological validity inferred from simulated reward.",
-      "dataset_group": "FlyGym / NeuroMechFly v2",
-      "operation_tags": [
-        "design_control"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
-    },
-    {
-      "id": "N01",
-      "family_code": "N",
-      "family": "Scientific analysis workflows",
-      "task": "End-to-end neuroscience data analysis QA",
-      "data": "Real atlas/cohort files and question prompts",
-      "resource": "NeuroDiscoveryBench",
-      "readiness": "B",
-      "setup_effort": "Low",
-      "ground_truth": "Expert quantitative/text/figure answers",
-      "recommended_metrics": "Official scoring; numeric and statistical validity checks",
-      "recommended_split": "Freeze official version; separate raw/processed tracks",
-      "specialist_baselines": "Expert reference workflow; published agent baseline",
-      "general_model_route": "General coding agent",
-      "limitations": "Original tasks have public answers; model judge is fallible",
-      "priority": "P1",
-      "source_urls": [
-        "https://github.com/allenai/neurodiscoverybench"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Official repository provides workflow metadata, expert answers, dataset loader and eval code. This batch has not frozen an eligible neuroscience question subset, run its large-source data loader or replicated text/figure rubric evaluation. Needs task-specific numeric checks and, where the official evaluator uses an LLM judge, recorded judge model/version/prompt and access. No surrogate blind-judge scores supplied.",
-      "dataset_group": "NeuroDiscoveryBench",
-      "operation_tags": [
-        "scientific_workflow"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "N02",
-      "family_code": "N",
-      "family": "Scientific analysis workflows",
-      "task": "Agentic EEG workflow execution",
-      "data": "EEG files with natural-language requests",
-      "resource": "BrainAgent hierarchical benchmark",
-      "readiness": "B*",
-      "setup_effort": "Medium",
-      "ground_truth": "Task completion and execution traces; output rubrics",
-      "recommended_metrics": "Completion rate plus independently checked scientific correctness",
-      "recommended_split": "Freeze toolset and tasks; confirm public task/data availability",
-      "specialist_baselines": "Specialized EEG tools; reference workflow",
-      "general_model_route": "General agent under identical tools",
-      "limitations": "Paper located; complete reusable public release not independently confirmed",
-      "priority": "P2",
-      "source_urls": [
-        "https://arxiv.org/abs/2606.25400"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "deferred",
-      "admission_reason": "BrainAgent primary paper located and hierarchical workflow claim confirmed. Complete reusable task/data/evaluator bundle and provider/tool conditions not independently validated by this screen. Do not assert unavailable; admission remains unresolved. A similarly named GitHub project cannot be presumed the paper authors release.",
-      "dataset_group": "BrainAgent hierarchical benchmark",
-      "operation_tags": [
-        "scientific_workflow"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "N03",
-      "family_code": "N",
-      "family": "Scientific analysis workflows",
-      "task": "Neuroimaging tool and training workflows",
-      "data": "MRI/EEG/BIDS files and pipeline tasks",
-      "resource": "NeuroDiscovery/NeuroClaw NeuroBench",
-      "readiness": "B",
-      "setup_effort": "Medium",
-      "ground_truth": "Task outputs, checks and rubric",
-      "recommended_metrics": "Executability; output validity; reproducibility; held-out predictive scores",
-      "recommended_split": "Paired with-skills/no-skills; freeze benchmark version",
-      "specialist_baselines": "Reference imaging workflows",
-      "general_model_route": "General coding agent",
-      "limitations": "Rubric-scored success differs from raw neural model accuracy; naming collisions",
-      "priority": "P2",
-      "source_urls": [
-        "https://cuhk-aim-group.github.io/NeuroDiscovery/neurobench.html"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Primary NeuroClaw page explicitly lists 120 tasks in7 categories, with/no-skills conditions and GPT5.4 weighted-rubric scoring. Requires matching tool/skill environment, task version, source data terms, and evaluator model/API or a declared distinct deterministic metric. Planning/rubric scores cannot be treated as signal prediction accuracy; no new rubric scores fabricated.",
-      "dataset_group": "NeuroDiscovery/NeuroClaw NeuroBench",
-      "operation_tags": [
-        "scientific_workflow"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "N04",
-      "family_code": "N",
-      "family": "Scientific analysis workflows",
-      "task": "Reproducing scientific analyses",
-      "data": "Code, datasets and publication-derived tasks",
-      "resource": "ScienceAgentBench neuroscience/EEG subset",
-      "readiness": "B",
-      "setup_effort": "Medium",
-      "ground_truth": "Published reference results and task evaluators",
-      "recommended_metrics": "Official completion/output metric",
-      "recommended_split": "Freeze neuroscience subset and runtime budget",
-      "specialist_baselines": "Reference analysis scripts",
-      "general_model_route": "General coding agent",
-      "limitations": "Broad science benchmark; only relevant subset belongs in neuro score",
-      "priority": "P2",
-      "source_urls": [
-        "https://arxiv.org/abs/2410.05080",
-        "https://github.com/OSU-NLP-Group/ScienceAgentBench"
-      ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Primary ScienceAgentBench paper/repository provide publication-derived code tasks and evaluators. Need explicitly freeze neuroscience/cognitive/EEG subset with per-task data terms, runtime and output evaluators, rather than report all102 broad-science tasks as neuro. Image/rubric cases need evaluator/judge provenance where applicable. No new complete-subset run performed.",
-      "dataset_group": "ScienceAgentBench neuroscience/EEG subset",
-      "operation_tags": [
-        "scientific_workflow"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "N05",
-      "family_code": "N",
-      "family": "Scientific analysis workflows",
-      "task": "NWB data loading, units and reproducibility",
-      "data": "NWB neurophysiology and metadata",
-      "resource": "DANDI selected dandisets / IBL data",
-      "readiness": "D",
-      "setup_effort": "Low",
-      "ground_truth": "Metadata invariants; known deterministic reference outputs",
-      "recommended_metrics": "Schema/units/timing correctness; reproducibility; QC issue recall",
-      "recommended_split": "Held-out dandisets/labs with locked answer files",
-      "specialist_baselines": "NWB/ONE loading scripts; expert QC",
-      "general_model_route": "General coding agent",
-      "limitations": "Archive is not benchmark; need curated cases and hidden answers",
-      "priority": "P2",
-      "source_urls": [
-        "https://about.dandiarchive.org/",
-        "https://www.internationalbrainlab.com/data",
-        "https://brain-map.org/support/documentation/cell-types-database-api",
-        "https://alleninstitute.github.io/AllenSDK/cell_types.html"
-      ],
-      "verification": "Acquired data, frozen custom-slice protocol, unchanged model submissions, scored predictions and execution/failure records available; see experiments/N05",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "measured exploratory slice",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "added_in": "0.1",
-      "execution_admission": "measured",
-      "admission_reason": "Constructed and validated deterministic loader/unit/timing audit using actual Allen NWB shared withD02, six sweeps and61 leaf fields; reference crosschecked with official EphysSweep metadata plus independent block-averaged D02 arrays. No claim of DANDI archive benchmark, format-general robustness, or scientific discovery.",
-      "dataset_group": "DANDI selected dandisets / IBL data",
-      "operation_tags": [
-        "scientific_workflow"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "executed_slice": "One real legacyNWB file sharedD02;61deterministic fields,6sweeps"
-    },
-    {
-      "id": "N06",
-      "family_code": "N",
-      "family": "Scientific analysis workflows",
-      "task": "Data integrity fault detection",
-      "data": "NWB/BIDS files with controlled metadata/timing faults",
-      "resource": "Proposed blinded scientific data-integrity cases",
-      "readiness": "R",
-      "setup_effort": "Medium",
-      "ground_truth": "Injected sampling-rate, timestamp, channel or unit faults",
-      "recommended_metrics": "Fault detection/localization; false alarms; recovered scientific output",
-      "recommended_split": "Hidden fault types and unseen datasets",
-      "specialist_baselines": "Schema validators; prespecified QC tests",
-      "general_model_route": "General code agent",
-      "limitations": "Needs an independently validated corruption generator and scorer",
-      "priority": "P2",
-      "source_urls": [
-        "https://about.dandiarchive.org/"
-      ],
-      "verification": "Primary paper/project located during bounded gap audit; not executed",
-      "reviewed_on": "2026-10-30",
-      "added_in": "0.2",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "execution_admission": "deferred",
-      "admission_reason": "Proposed data-integrity task has no independently validated corruption generator/hidden fault suite or prespecified detection thresholds yet. DANDI is an archive, not the fault benchmark. N05 clean-file parsing does not establish detection of metadata/timing/unit corruption.",
-      "dataset_group": "Proposed blinded scientific data-integrity cases",
-      "operation_tags": [
-        "quality_control",
-        "detection_segmentation"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "A15",
-      "family_code": "A",
-      "task": "Animal vocalization event segmentation and syllable labeling",
-      "data": "Single/multi-channel raw audio and human annotations",
-      "resource": "DAS multi-species annotated acoustic datasets",
-      "readiness": "B",
-      "setup_effort": "Medium",
-      "ground_truth": "Manual acoustic events/segments",
-      "recommended_metrics": "Event precision/recall/F1; onset/offset error; published match tolerance",
-      "recommended_split": "Published splits first; additional held-out recording/animal, never random adjacent audio crops",
-      "specialist_baselines": "DAS; TweetyNet; WhisperSeg (separate domain-adapted pretrained comparator)",
-      "general_model_route": "General audio features/readout or bounded code synthesis; audio-native foundation model",
-      "limitations": "Ultrasound sample rates exceed speech frontends; species and segment matching differ; tune thresholds only on validation",
-      "priority": "P2",
-      "source_urls": [
-        "https://elifesciences.org/articles/68837",
-        "https://data.goettingen-research-online.de/dataverse/das",
-        "https://janclemenslab.org/das/",
-        "https://github.com/nianlonggu/WhisperSeg"
-      ],
-      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
-      "inclusion_reason": "Adds acoustic communication used by social/ethology labs; video action labels do not test it.",
-      "screening_decision": "include evidence map; executable admission pending",
-      "license_evidence": "Not independently reviewed",
-      "family": "Behavior, kinematics and vocalization",
-      "added_in": "0.3",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "DAS annotated raw audio can support real event-segmentation evaluation. Still need pinned species/recording slice, sampling rate and official event-matching tolerance; no audio acquisition attempted here. Temporal bouts must remain grouped.",
-      "dataset_group": "DAS multi-species annotated acoustic datasets",
-      "operation_tags": [
-        "detection_segmentation"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
-    },
-    {
-      "id": "A16",
-      "family_code": "A",
-      "task": "Caller localization and vocalization attribution",
-      "data": "Synchronized multi-microphone audio with overhead video-derived source positions",
-      "resource": "Vocal Call Locator (VCL) Benchmark",
-      "readiness": "B",
-      "setup_effort": "Medium",
-      "ground_truth": "2D source positions, including controlled speaker conditions",
-      "recommended_metrics": "Localization error; published uncertainty/calibration and attribution endpoint",
-      "recommended_split": "Official recording/condition split; group all snippets from same sound and session",
-      "specialist_baselines": "VCL localization models; classical sound source localization",
-      "general_model_route": "Generic audio model or code-agent localization under fixed calibration information",
-      "limitations": "Speaker-ground-truth and freely moving animals are distinct conditions; paper revisions report differing event totals, so pin release",
-      "priority": "P2",
-      "source_urls": [
-        "https://proceedings.nips.cc/paper_files/paper/2024/hash/c00d37d6b04d73b870b963a4d70051c1-Abstract-Datasets_and_Benchmarks_Track.html",
-        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/",
-        "https://github.com/neurostatslab/vocalocator"
-      ],
-      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
-      "inclusion_reason": "Separates who emitted a call from detecting that a call occurred.",
-      "screening_decision": "include evidence map; executable admission pending",
-      "license_evidence": "Not independently reviewed",
-      "family": "Behavior, kinematics and vocalization",
-      "added_in": "0.3",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "VCL controlled speaker localization supplies positions, but multi-mic calibration/time synchronization and recording-group split must be acquired. Do not infer source identity solely from event detection; no adapter prepared.",
-      "dataset_group": "Vocal Call Locator (VCL) Benchmark",
-      "operation_tags": [
-        "other_requires_review"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
-    },
-    {
-      "id": "E06",
-      "family_code": "E",
-      "task": "Whole-brain neural activity forecasting",
-      "data": "Larval zebrafish light-sheet volumes and extracted cellular traces",
-      "resource": "ZAPBench (ICLR 2025)",
-      "readiness": "B",
-      "setup_effort": "Medium",
-      "ground_truth": "Future measured calcium activity",
-      "recommended_metrics": "Official forecasting losses at fixed horizons and stimulus conditions; maintain trace/video tracks",
-      "recommended_split": "Official temporal/stimulus-condition splits, including held-out condition",
-      "specialist_baselines": "Published naive, time-series and volumetric video baselines",
-      "general_model_route": "General time-series/world/video models; code agents in separate track",
-      "limitations": "One brain cannot establish cross-animal generalization; 70k neurons do not equal 70k independent subjects; anatomical pairing was future-facing in original paper",
-      "priority": "P2",
-      "source_urls": [
-        "https://google-research.github.io/zapbench/",
-        "https://arxiv.org/abs/2503.02618",
-        "https://zapbench-release.storage.googleapis.com/volumes/README.html"
-      ],
-      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
-      "inclusion_reason": "Important omitted whole-brain forecasting resource and a concrete world/video-model task.",
-      "screening_decision": "include evidence map; executable admission pending",
-      "license_evidence": "CC BY 4.0 explicitly stated in official dataset README",
-      "family": "Population activity and dynamics",
-      "added_in": "0.3",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "ZAPBench real larval zebrafish wholebrain activity forecasting is a distinct real task. Needs pinned release, official heldout temporal blocks and neuron mappings; complete brain arrays may be large. No acquisition attempted here, so no permanent infeasibility claim.",
-      "dataset_group": "ZAPBench (ICLR 2025)",
-      "operation_tags": [
-        "forecasting"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
-    },
-    {
-      "id": "H17",
-      "family_code": "H",
-      "task": "Cross-laboratory rodent sleep staging",
-      "data": "Mouse EEG/EMG, expert stage annotations",
-      "resource": "Mouse Sleep Staging Validation dataset (MSSV), OpenNeuro ds006366",
-      "readiness": "D",
-      "setup_effort": "Medium",
-      "ground_truth": "Expert sleep scores from 92 healthy mice across five labs",
-      "recommended_metrics": "Macro-F1, balanced accuracy, per-stage recall and transition errors",
-      "recommended_split": "Held-out mouse and held-out laboratory; keep whole light/dark recordings grouped",
-      "specialist_baselines": "Published mouse sleep staging methods; simple spectral-feature baseline",
-      "general_model_route": "General time-series features or code-generated classifier",
-      "limitations": "Rodent stages, epoch lengths and recording setups must be specified; human sleep foundation-model scores cannot transfer directly",
-      "priority": "P2",
-      "source_urls": [
-        "https://nemar.org/dataset/on006366",
-        "https://doi.org/10.18112/openneuro.ds006366.v1.0.1"
-      ],
-      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
-      "inclusion_reason": "Adds animal sleep rather than assuming human EEG staging covers laboratory mouse sleep.",
-      "screening_decision": "include evidence map; executable admission pending",
-      "license_evidence": "CC0 shown by NEMAR; original dataset version must be pinned separately from mirror",
-      "family": "EEG, MEG, field signals and peripheral interfaces",
-      "added_in": "0.3",
-      "execution_admission": "deferred",
-      "admission_reason": "Original NEMAR MSSV page accessible:92mice,five labs,CC0,~5.3GB archive/direct manifest. Promising public real sleep resource, not bad data. Need lab identifiers, stage epoch alignment and leave-lab-out acquisition adapter; no local raw arrays downloaded.",
-      "dataset_group": "Mouse Sleep Staging Validation dataset (MSSV), OpenNeuro ds006366",
-      "operation_tags": [
-        "other_requires_review"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "H18",
-      "family_code": "H",
-      "task": "Sleep microevent detection",
-      "data": "Human EEG with spindle and K-complex intervals",
-      "resource": "DREAMS microevent annotations; MODA consensus as a separately versioned extension",
-      "readiness": "B",
-      "setup_effort": "Medium",
-      "ground_truth": "Individual expert labels with disagreement",
-      "recommended_metrics": "Event F1 at fixed IoU/tolerance; temporal error; per-expert and consensus results separately",
-      "recommended_split": "Held-out subject; freeze usable annotation intervals and scorer",
-      "specialist_baselines": "SUMO/SUMOv2; published spindle detector baselines",
-      "general_model_route": "General signal/audio feature or code-agent event detector",
-      "limitations": "DREAMS repository explicitly warns expert 1 spindle counts stop after 1000 seconds; censor unannotated periods rather than scoring them negative; MODA and DREAMS are not interchangeable",
-      "priority": "P2",
-      "source_urls": [
-        "https://zenodo.org/records/2650142",
-        "https://www.nature.com/articles/s41598-026-53891-9",
-        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/",
-        "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
-      ],
-      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
-      "inclusion_reason": "Sleep staging does not cover spindle/K-complex microevents needed in sleep and memory labs.",
-      "screening_decision": "include evidence map; executable admission pending",
-      "license_evidence": "Not independently reviewed",
-      "family": "EEG, MEG, field signals and peripheral interfaces",
-      "added_in": "0.3",
-      "execution_admission": "deferred",
-      "admission_reason": "Original DREAMS Zenodo record explicitly warns Expert1 spindle annotations stop after1000s. A naive full-1800s negative-label benchmark is excluded. A masked interval/Expert2 consensus protocol remains feasible but has not been validated, and original DREAMS noncommercial/no-adaptation terms need an appropriate data handling policy.",
-      "dataset_group": "DREAMS microevent annotations; MODA consensus as a separately versioned extension",
-      "operation_tags": [
-        "detection_segmentation"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-    },
-    {
-      "id": "H19",
-      "family_code": "H",
-      "task": "Real physiological artifact detection and type identification",
-      "data": "PSG excerpts with expert artifact labels",
-      "resource": "DREAMS Artifacts database",
-      "readiness": "D",
-      "setup_effort": "Medium",
-      "ground_truth": "Expert temporal annotations in 20 fifteen-minute excerpts",
-      "recommended_metrics": "Event/timewise macro-F1, artifact-type confusion, clean-signal retention",
-      "recommended_split": "Group by source recording/person; validation threshold selection only",
-      "specialist_baselines": "Signal-processing detectors; declared artifact classification baseline",
-      "general_model_route": "Generic signal classifier or code agent",
-      "limitations": "Small single-annotator corpus; do not confuse real artifact detection with EEGdenoiseNet semi-synthetic signal repair",
-      "priority": "P2",
-      "source_urls": [
-        "https://zenodo.org/records/2650142",
-        "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
-      ],
-      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
-      "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
-      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
-      "inclusion_reason": "Complements H16 repair with detection on real artifact labels and metadata-aware exclusion.",
-      "screening_decision": "include evidence map; executable admission pending",
-      "license_evidence": "Not independently reviewed",
-      "family": "EEG, MEG, field signals and peripheral interfaces",
-      "added_in": "0.3",
-      "execution_admission": "deferred",
-      "admission_reason": "Original DREAMS record has20expert-annotated15min artifact excerpts and explicit artifact types. Original DREAMS license was downloaded/read; noncommercial and no-adaptation terms complicate distributing prepared arrays. Need local-only extraction/annotation schema and exact event metric; no false claim that real artifact detection equals H16 mixture repair.",
-      "dataset_group": "DREAMS Artifacts database",
-      "operation_tags": [
-        "quality_control",
-        "detection_segmentation"
-      ],
-      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-electrical.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "J07",
@@ -4066,47 +3003,51 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
     },
     {
       "id": "J08",
       "family_code": "J",
       "task": "Fluorescent synaptic puncta segmentation and quantification",
-      "data": "2D/3D confocal synaptic marker images",
-      "resource": "SynAPSeg training and multi-rater benchmark datasets",
+      "data": "Normalized microscopy intensities and known training annotation ROI/geometry masks",
+      "resource": "SynAPSeg Zenodo18988899; 2D multi-rater instance-segmentation slice",
       "readiness": "B",
       "setup_effort": "Medium",
-      "ground_truth": "Pixel-wise instance annotations; five raters for three held-out benchmark images",
-      "recommended_metrics": "Object F1/IoU with declared matching; counts/density, centroid and boundary error; inter-rater range",
-      "recommended_split": "Keep original whole benchmark images held out; never mix training 3D slices into test",
+      "ground_truth": "Five independent human instance annotations per held-out field; no majority oracle",
+      "recommended_metrics": "Equal image/rater instanceF1 atIoU≥0.5; Hungarian objectmatching",
+      "recommended_split": "All27released2Dtrainingfields vs both official2Dbenchmarkfields; crop correlations preserved",
       "specialist_baselines": "Published custom StarDist and Cellpose comparisons",
       "general_model_route": "Generic microscopy/vision segmentation model; bounded code agent",
-      "limitations": "Tiny benchmark image count limits independent sampling; synaptic puncta are marker-based proxies for synapses; data license field was not resolved in rendered record",
+      "limitations": "Only two testfields and unresolved animal identities. Archived StarDist optimization history differs; no inference timing or currentSOTAclaim.",
       "priority": "P2",
       "source_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
         "https://github.com/pascalschamber/SynAPSeg",
-        "https://zenodo.org/records/18988899"
+        "https://zenodo.org/records/18988899",
+        "https://doi.org/10.1371/journal.pcbi.1014571"
       ],
-      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "verification": "Actual acquired/extracted source arrays, frozen protocol, submitted programs and prediction/scorer artifacts; exact scope in experiments/J08",
       "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
+      "execution_status": "measured exploratory slice",
+      "current_best_status": "not verified; named matched specialist/reference evidence retained separately",
       "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
       "inclusion_reason": "Adds light-microscopy synaptic protein quantification beyond EM synapse detection.",
       "screening_decision": "include evidence map; executable admission pending",
       "license_evidence": "Repository code BSD-3-Clause; dataset license must be independently resolved before redistribution",
       "family": "Anatomy, histology and connectomics",
       "added_in": "0.3",
-      "execution_admission": "deferred",
-      "admission_reason": "Dataset license unresolved in earlier mapping and only three fully held-out benchmark images with multiple raters. Code license does not resolve image-data terms. Do not redistribute or execute until authoritative dataset terms and scorer are verified.",
+      "execution_admission": "measured",
+      "admission_reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
       "dataset_group": "SynAPSeg training and multi-rater benchmark datasets",
       "operation_tags": [
         "detection_segmentation"
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "admission_evidence_file": "experiments/J08/protocol.md",
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "executed_slice": "SynAPSeg2Dpuncta instances:27trainingfields,1262crops;twoheldoutwholefields×fiveexpertmasks;archivedStarDistreference",
+      "active": true
     },
     {
       "id": "J09",
@@ -4145,7 +3086,86 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
-      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+      "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
+      "active": true
+    },
+    {
+      "id": "K01",
+      "family_code": "K",
+      "family": "Cell types and molecular neuroscience",
+      "task": "Electrophysiological cell-type classification",
+      "data": "Patch clamp features, morphology, labels",
+      "resource": "Allen Cell Types / Patch-seq resources",
+      "readiness": "D",
+      "setup_effort": "Low",
+      "ground_truth": "Published cell taxonomy labels",
+      "recommended_metrics": "Macro F1; hierarchical label accuracy; calibration",
+      "recommended_split": "Hold out cells/donors; define taxonomy level",
+      "specialist_baselines": "Feature+RF/XGBoost; domain cell classifiers",
+      "general_model_route": "Tabular foundation model; multimodal embeddings",
+      "limitations": "Taxonomy label uncertainty; donor and acquisition batch confounds",
+      "priority": "P2",
+      "source_urls": [
+        "https://brain-map.org/our-research/cell-types-taxonomies",
+        "https://brain-map.org/support/documentation/documentation-cell-types-database",
+        "https://brain-map.org/support/documentation/cell-types-database-api",
+        "https://celltypes.brain-map.org/",
+        "https://alleninstitute.org/terms-of-use/"
+      ],
+      "verification": "Acquired data, frozen custom-slice protocol, unchanged model submissions, scored predictions and execution/failure records available; see experiments/K01",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "measured exploratory slice",
+      "current_best_status": "not verified",
+      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
+      "added_in": "0.1",
+      "execution_admission": "measured",
+      "admission_reason": "Real primary API data acquired and hashed; independent morphology endpoint, ephys-only whitelist, donor-disjoint split and train-only baseline protocol frozen. Prepared n_train=1356 and n_test=457, 11 features; 678/226 disjoint mouse donors. Adapter ready for root model evaluation.",
+      "dataset_group": "Allen Cell Types / Patch-seq resources",
+      "operation_tags": [
+        "encoding_decoding"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "executed_slice": "Allen mouse ephys11features→spiny/aspiny morphology,donor-disjoint1356/457cells",
+      "active": true
+    },
+    {
+      "id": "K02",
+      "family_code": "K",
+      "family": "Cell types and molecular neuroscience",
+      "task": "Transcriptomic cell mapping and integration",
+      "data": "Brain scRNA/scATAC or spatial cell profiles",
+      "resource": "Allen Brain Cell Atlas plus scIB evaluation tools",
+      "readiness": "D",
+      "setup_effort": "Medium",
+      "ground_truth": "Reference taxonomy and biological annotations",
+      "recommended_metrics": "Cell mapping F1; scIB biology/batch metrics",
+      "recommended_split": "Donor/site-held-out; preserve rare types",
+      "specialist_baselines": "scVI/scANVI; reference mapping; scIB baselines",
+      "general_model_route": "Generic tabular/gene-token model",
+      "limitations": "Gene foundation models are domain-pretrained comparators; batch mixing alone is insufficient",
+      "priority": "P2",
+      "source_urls": [
+        "https://brain-map.org/our-research/cell-types-taxonomies",
+        "https://scib.readthedocs.io/en/latest/"
+      ],
+      "verification": "Primary documentation/paper located; downloads and execution not tested",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
+      "added_in": "0.1",
+      "execution_admission": "candidate_pending_validation",
+      "admission_reason": "scIB is a general cell-integration toolkit, not one uniquely frozen brain dataset task. Need select brain donor cohorts/taxonomy and independent label-transfer policy, fit batch handling on allowed data, preserve rare classes, and reproduce biology AND mixing scorers. No unique dataset/split/rights package selected; do not inflate coverage from toolkit installation.",
+      "dataset_group": "Allen Brain Cell Atlas plus scIB evaluation tools",
+      "operation_tags": [
+        "other_requires_review"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "K04",
@@ -4188,7 +3208,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "K05",
@@ -4229,7 +3250,8 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
     },
     {
       "id": "K06",
@@ -4270,7 +3292,452 @@
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
+    },
+    {
+      "id": "L01",
+      "family_code": "L",
+      "family": "Mechanistic and statistical inference",
+      "task": "Functional connectivity recovery",
+      "data": "Simulated fluorescence and neural network graphs",
+      "resource": "ChaLearn Connectomics Challenge",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "Known simulated connectivity",
+      "recommended_metrics": "AUROC and AUPRC; direction-specific recovery",
+      "recommended_split": "Official networks; unseen topology/noise",
+      "specialist_baselines": "Partial correlation; GLM; transfer-entropy methods",
+      "general_model_route": "General sequence/graph model",
+      "limitations": "Simulation connections do not establish causal connectivity in real recordings",
+      "priority": "P2",
+      "source_urls": [
+        "https://connectomics.chalearn.org/help/data"
+      ],
+      "verification": "Primary documentation/paper located; downloads and execution not tested",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
+      "added_in": "0.1",
+      "execution_admission": "candidate_pending_validation",
+      "admission_reason": "Official challenge page identifies simulated fluorescence and synaptic truth and mirror links. No mirror acquired/hashed; download terms, held-out network split and directed graph scorer remain unvalidated. Not rejected as bad data.",
+      "dataset_group": "ChaLearn Connectomics Challenge",
+      "operation_tags": [
+        "inference"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-inference-control.json",
+      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+      "active": true
+    },
+    {
+      "id": "L03",
+      "family_code": "L",
+      "family": "Mechanistic and statistical inference",
+      "task": "Valid neural hypothesis testing",
+      "data": "IBL spikes, trial variables and behavioral history",
+      "resource": "IBL-agent genuine/null analysis tasks",
+      "readiness": "D",
+      "setup_effort": "Medium",
+      "ground_truth": "Known randomized/null labels; expert analysis of genuine data",
+      "recommended_metrics": "False-positive rate; power; analysis validity; replication",
+      "recommended_split": "Blinded nulls; held-out mice; locked confirmatory analysis",
+      "specialist_baselines": "Prespecified GLM/decoder and valid randomization test",
+      "general_model_route": "General coding agent with/without domain skills",
+      "limitations": "Naive permutation breaks trial history; significance shopping",
+      "priority": "P1",
+      "source_urls": [
+        "https://github.com/int-brain-lab/ibl-ai-agent",
+        "https://www.internationalbrainlab.com/data"
+      ],
+      "verification": "Primary documentation/paper located; downloads and execution not tested",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
+      "added_in": "0.1",
+      "execution_admission": "deferred",
+      "admission_reason": "IBL AI Agent is a real analysis toolkit, not a frozen false-positive-rate benchmark. Need animal-held-out genuine/null task generation, exchangeability-preserving randomization and a blinded power/type-I-error protocol. No significance-searching substituted for benchmark completion.",
+      "dataset_group": "IBL-agent genuine/null analysis tasks",
+      "operation_tags": [
+        "scientific_workflow"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-inference-control.json",
+      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+      "active": true
+    },
+    {
+      "id": "L04",
+      "family_code": "L",
+      "family": "Mechanistic and statistical inference",
+      "task": "Point-process estimation and goodness of fit",
+      "data": "Real rat hippocampal spike counts and position/velocity",
+      "resource": "Kramer real place-cell case study; custom count-encoding diagnostic",
+      "readiness": "R",
+      "setup_effort": "Low",
+      "ground_truth": "Measured extracellular spike counts",
+      "recommended_metrics": "Held-out Poisson bits/spike relative to training-mean null; goodness-of-fit/coverage remains unexecuted",
+      "recommended_split": "Chronological split with gap; one cell/preparation",
+      "specialist_baselines": "Poisson GLM; history GLM; Bayesian fit",
+      "general_model_route": "General sequence model; code agent",
+      "limitations": "No known generating parameters; no animal generalization or completed time-rescaling calibration",
+      "priority": "P2",
+      "source_urls": [
+        "https://neurallatents.github.io/",
+        "https://github.com/snel-repo/ComputationThroughDynamicsToolkit",
+        "https://mark-kramer.github.io/Case-Studies-Python/09.html",
+        "https://github.com/Mark-Kramer/Case-Studies-Python"
+      ],
+      "verification": "Acquired data, frozen custom-slice protocol, unchanged model submissions, scored predictions and execution/failure records available; see experiments/L04",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "measured exploratory slice",
+      "current_best_status": "not verified",
+      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
+      "added_in": "0.1",
+      "execution_admission": "measured",
+      "admission_reason": "Constructed an explicit real place-cell count-encoding diagnostic from author-released data, replacing only the execution slice of the earlier proposed simulation. Chronological60/40split plus1sbuffer; train-mean-null bits/spike; no parameter-recovery/calibration claim.",
+      "dataset_group": "Proposed GLM/point-process task generator",
+      "operation_tags": [
+        "other_requires_review"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-inference-control.json",
+      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+      "executed_slice": "One real rat placecell,20mscounts,chronological60/40split with1sgap;position/velocity",
+      "original_mapping_preserved": "Originally proposed synthetic GLM construction; new execution is real-data encoding only",
+      "active": true
+    },
+    {
+      "id": "L05",
+      "family_code": "L",
+      "family": "Mechanistic and statistical inference",
+      "task": "Intervention-response prediction",
+      "data": "Neural responses to optogenetic perturbations",
+      "resource": "C. elegans signal-propagation atlas",
+      "readiness": "D",
+      "setup_effort": "Medium",
+      "ground_truth": "Recorded responses under controlled perturbations",
+      "recommended_metrics": "Held-out response error; sign/strength; calibration",
+      "recommended_split": "Hold out animals/experiments and perturbation targets",
+      "specialist_baselines": "Published atlas response model; observational-only baseline",
+      "general_model_route": "General sequence or graph representation",
+      "limitations": "Observational prediction is not causal intervention prediction",
+      "priority": "P2",
+      "source_urls": [
+        "https://www.nature.com/articles/s41586-023-06683-4"
+      ],
+      "verification": "Primary paper/project located during bounded gap audit; not executed",
+      "reviewed_on": "2026-10-30",
+      "added_in": "0.2",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
+      "execution_admission": "candidate_pending_validation",
+      "admission_reason": "Perturbation-response atlas primary source mapped; Nature full-text access redirected in this audit. Animal/experiment identities, perturbation matching, source reuse terms and missing-response policy require acquisition/validation before an intervention-prediction score.",
+      "dataset_group": "C. elegans signal-propagation atlas",
+      "operation_tags": [
+        "forecasting",
+        "intervention"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-inference-control.json",
+      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+      "active": true
+    },
+    {
+      "id": "L06",
+      "family_code": "L",
+      "family": "Mechanistic and statistical inference",
+      "task": "Calibrated statistical neural inference",
+      "data": "Bernoulli GLM and reference posterior tasks",
+      "resource": "sbibm neuroscience-linked GLM task",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "Reference posterior samples and known simulator",
+      "recommended_metrics": "Posterior accuracy; coverage; predictive fit; simulation cost",
+      "recommended_split": "Official task protocol and observations",
+      "specialist_baselines": "Published SBI algorithms and classical inference",
+      "general_model_route": "General inference or code agent",
+      "limitations": "Generic toy tasks outside neuroscience excluded from neural aggregate",
+      "priority": "P2",
+      "source_urls": [
+        "https://github.com/sbi-benchmark/sbibm"
+      ],
+      "verification": "Primary paper/project located during bounded gap audit; not executed",
+      "reviewed_on": "2026-10-30",
+      "added_in": "0.2",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
+      "execution_admission": "candidate_pending_validation",
+      "admission_reason": "Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.",
+      "dataset_group": "sbibm neuroscience-linked GLM task",
+      "operation_tags": [
+        "inference"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-inference-control.json",
+      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+      "active": true
+    },
+    {
+      "id": "M01",
+      "family_code": "M",
+      "family": "Experimental design and control",
+      "task": "Behavioral decision-model fitting",
+      "data": "Psychophysics trials and choices",
+      "resource": "IBL trial tables; Psych-101 cognitive tasks",
+      "readiness": "D",
+      "setup_effort": "Medium",
+      "ground_truth": "Recorded choices; synthetic recovery targets when added",
+      "recommended_metrics": "Held-out choice likelihood; parameter recovery on simulation",
+      "recommended_split": "Animal/participant-held-out; contiguous trial blocks",
+      "specialist_baselines": "Psychometric/logistic/RL models; Centaur as domain comparator",
+      "general_model_route": "General language/sequence models",
+      "limitations": "Predicting choices is distinct from identifying a cognitive mechanism",
+      "priority": "P2",
+      "source_urls": [
+        "https://www.internationalbrainlab.com/data",
+        "https://www.nature.com/articles/s41586-025-09215-4"
+      ],
+      "verification": "Primary documentation/paper located; downloads and execution not tested",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
+      "added_in": "0.1",
+      "execution_admission": "candidate_pending_validation",
+      "admission_reason": "IBL data and Psych-101/Centaur primary resource mapped. Real choice prediction requires participant/animal-held-out chronology, a bounded task selection and data-specific terms; M04 synthetic parameter recovery does not complete this endpoint.",
+      "dataset_group": "IBL trial tables; Psych-101 cognitive tasks",
+      "operation_tags": [
+        "inference"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-inference-control.json",
+      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+      "active": true
+    },
+    {
+      "id": "M03",
+      "family_code": "M",
+      "family": "Experimental design and control",
+      "task": "Closed-loop control policy evaluation",
+      "data": "Cognitive/control environments with observations/actions",
+      "resource": "NeuroGym task collection",
+      "readiness": "D",
+      "setup_effort": "Medium",
+      "ground_truth": "Task rewards/targets; simulated feedback",
+      "recommended_metrics": "Success/reward; adaptation; real-time latency",
+      "recommended_split": "Held-out task variants and seeds",
+      "specialist_baselines": "Task-trained RNN/RL controller",
+      "general_model_route": "General world/RL model or code agent",
+      "limitations": "Task collection requires a fixed suite; not evidence of real closed-loop BCI performance",
+      "priority": "P3",
+      "source_urls": [
+        "https://github.com/neurogym/neurogym"
+      ],
+      "verification": "Primary documentation/paper located; downloads and execution not tested",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
+      "added_in": "0.1",
+      "execution_admission": "candidate_pending_validation",
+      "admission_reason": "Official NeuroGym task collection exists. Need versioned finite suite, trial-generation seeds, observation/action contract and task-trained controller reference. Static supervised score is not closed-loop policy evaluation.",
+      "dataset_group": "NeuroGym task collection",
+      "operation_tags": [
+        "design_control"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-inference-control.json",
+      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+      "active": true
+    },
+    {
+      "id": "M04",
+      "family_code": "M",
+      "family": "Experimental design and control",
+      "task": "Cognitive model and parameter recovery",
+      "data": "Synthetic choices from known behavioral models",
+      "resource": "Wilson–Collins modeling guide and example code",
+      "readiness": "D",
+      "setup_effort": "Medium",
+      "ground_truth": "Known simulated generating model and parameters",
+      "recommended_metrics": "Model-confusion matrix; parameter recovery; predictive checks",
+      "recommended_split": "Unseen parameter draws, participants, tasks",
+      "specialist_baselines": "Known RL/DDM/bandit model fitted by established optimizer",
+      "general_model_route": "General code agent or sequence inference model",
+      "limitations": "Prediction alone does not establish identifiability",
+      "priority": "P2",
+      "source_urls": [
+        "https://elifesciences.org/articles/49547"
+      ],
+      "verification": "Primary paper/project located during bounded gap audit; not executed",
+      "reviewed_on": "2026-10-30",
+      "added_in": "0.2",
+      "execution_status": "measured exploratory slice",
+      "current_best_status": "not verified; canonical local fitting baseline available",
+      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
+      "execution_admission": "measured",
+      "admission_reason": "Previously measured24agent synthetic Q-learning recovery. Author guide supports recovery checks; local implementation and posterior-vs-MLE objective difference explicit. Not biological data or a released leaderboard.",
+      "dataset_group": "Wilson–Collins modeling guide and example code",
+      "operation_tags": [
+        "inference"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-inference-control.json",
+      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+      "active": true
+    },
+    {
+      "id": "M06",
+      "family_code": "M",
+      "family": "Experimental design and control",
+      "task": "Embodied neuromuscular control",
+      "data": "Muscle-actuated simulations with feedback",
+      "resource": "MyoChallenge / MyoSuite",
+      "readiness": "B",
+      "setup_effort": "High",
+      "ground_truth": "Environment rewards, targets and physical state",
+      "recommended_metrics": "Task success; return; stability; energy; perturbation robustness",
+      "recommended_split": "Official environment version, seeds and training budget",
+      "specialist_baselines": "Published task policies and competition baselines",
+      "general_model_route": "General world model/policy or policy-training code agent",
+      "limitations": "Code generation and direct policy control are distinct tracks",
+      "priority": "P3",
+      "source_urls": [
+        "https://myosuite.org/myochallenge/"
+      ],
+      "verification": "Primary paper/project located during bounded gap audit; not executed",
+      "reviewed_on": "2026-10-30",
+      "added_in": "0.2",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
+      "execution_admission": "deferred",
+      "admission_reason": "Official MyoChallenge site lists musculoskeletal control environments and editions. Need pinned MuJoCo/MyoSuite state/action environments, rollout/time budgets and trained policy references; policy training/evaluation outside180s array-code slice.",
+      "dataset_group": "MyoChallenge / MyoSuite",
+      "operation_tags": [
+        "design_control"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-inference-control.json",
+      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
+      "active": true
+    },
+    {
+      "id": "N01",
+      "family_code": "N",
+      "family": "Scientific analysis workflows",
+      "task": "End-to-end neuroscience data analysis QA",
+      "data": "Real atlas/cohort files and question prompts",
+      "resource": "NeuroDiscoveryBench",
+      "readiness": "B",
+      "setup_effort": "Low",
+      "ground_truth": "Expert quantitative/text/figure answers",
+      "recommended_metrics": "Official scoring; numeric and statistical validity checks",
+      "recommended_split": "Freeze official version; separate raw/processed tracks",
+      "specialist_baselines": "Expert reference workflow; published agent baseline",
+      "general_model_route": "General coding agent",
+      "limitations": "Original tasks have public answers; model judge is fallible",
+      "priority": "P1",
+      "source_urls": [
+        "https://github.com/allenai/neurodiscoverybench"
+      ],
+      "verification": "Primary documentation/paper located; downloads and execution not tested",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
+      "added_in": "0.1",
+      "execution_admission": "candidate_pending_validation",
+      "admission_reason": "Official repository provides workflow metadata, expert answers, dataset loader and eval code. This batch has not frozen an eligible neuroscience question subset, run its large-source data loader or replicated text/figure rubric evaluation. Needs task-specific numeric checks and, where the official evaluator uses an LLM judge, recorded judge model/version/prompt and access. No surrogate blind-judge scores supplied.",
+      "dataset_group": "NeuroDiscoveryBench",
+      "operation_tags": [
+        "scientific_workflow"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
+    },
+    {
+      "id": "N03",
+      "family_code": "N",
+      "family": "Scientific analysis workflows",
+      "task": "Neuroimaging tool and training workflows",
+      "data": "MRI/EEG/BIDS files and pipeline tasks",
+      "resource": "NeuroDiscovery/NeuroClaw NeuroBench",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "Task outputs, checks and rubric",
+      "recommended_metrics": "Executability; output validity; reproducibility; held-out predictive scores",
+      "recommended_split": "Paired with-skills/no-skills; freeze benchmark version",
+      "specialist_baselines": "Reference imaging workflows",
+      "general_model_route": "General coding agent",
+      "limitations": "Rubric-scored success differs from raw neural model accuracy; naming collisions",
+      "priority": "P2",
+      "source_urls": [
+        "https://cuhk-aim-group.github.io/NeuroDiscovery/neurobench.html"
+      ],
+      "verification": "Primary documentation/paper located; downloads and execution not tested",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
+      "added_in": "0.1",
+      "execution_admission": "candidate_pending_validation",
+      "admission_reason": "Primary NeuroClaw page explicitly lists 120 tasks in7 categories, with/no-skills conditions and GPT5.4 weighted-rubric scoring. Requires matching tool/skill environment, task version, source data terms, and evaluator model/API or a declared distinct deterministic metric. Planning/rubric scores cannot be treated as signal prediction accuracy; no new rubric scores fabricated.",
+      "dataset_group": "NeuroDiscovery/NeuroClaw NeuroBench",
+      "operation_tags": [
+        "scientific_workflow"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "active": true
+    },
+    {
+      "id": "N05",
+      "family_code": "N",
+      "family": "Scientific analysis workflows",
+      "task": "NWB data loading, units and reproducibility",
+      "data": "NWB neurophysiology and metadata",
+      "resource": "DANDI selected dandisets / IBL data",
+      "readiness": "D",
+      "setup_effort": "Low",
+      "ground_truth": "Metadata invariants; known deterministic reference outputs",
+      "recommended_metrics": "Schema/units/timing correctness; reproducibility; QC issue recall",
+      "recommended_split": "Held-out dandisets/labs with locked answer files",
+      "specialist_baselines": "NWB/ONE loading scripts; expert QC",
+      "general_model_route": "General coding agent",
+      "limitations": "Archive is not benchmark; need curated cases and hidden answers",
+      "priority": "P2",
+      "source_urls": [
+        "https://about.dandiarchive.org/",
+        "https://www.internationalbrainlab.com/data",
+        "https://brain-map.org/support/documentation/cell-types-database-api",
+        "https://alleninstitute.github.io/AllenSDK/cell_types.html"
+      ],
+      "verification": "Acquired data, frozen custom-slice protocol, unchanged model submissions, scored predictions and execution/failure records available; see experiments/N05",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "measured exploratory slice",
+      "current_best_status": "not verified",
+      "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
+      "added_in": "0.1",
+      "execution_admission": "measured",
+      "admission_reason": "Constructed and validated deterministic loader/unit/timing audit using actual Allen NWB shared withD02, six sweeps and61 leaf fields; reference crosschecked with official EphysSweep metadata plus independent block-averaged D02 arrays. No claim of DANDI archive benchmark, format-general robustness, or scientific discovery.",
+      "dataset_group": "DANDI selected dandisets / IBL data",
+      "operation_tags": [
+        "scientific_workflow"
+      ],
+      "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
+      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
+      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
+      "executed_slice": "One real legacyNWB file sharedD02;61deterministic fields,6sweeps",
+      "active": true
     }
   ],
   "version": "0.3",
@@ -4283,5 +3750,7 @@
     "Spatial molecular inference is represented, but developmental, evolutionary and comparative diversity remains incomplete.",
     "Analytical theory, formal proofs and open-ended scientific discovery need separate validity criteria."
   ],
-  "release": "0.4"
+  "release": "0.5",
+  "historical_mapped_entries": 114,
+  "archived_candidates": 18
 }

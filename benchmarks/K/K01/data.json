@@ -26,5 +26,10 @@
     "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
     "permanent_rejection": false
   },
-  "executed_slice": "Allen mouse ephys11features→spiny/aspiny morphology,donor-disjoint1356/457cells"
+  "executed_slice": "Allen mouse ephys11features\u2192spiny/aspiny morphology,donor-disjoint1356/457cells",
+  "v05_actual_execution": {
+    "status": "measured",
+    "slice": "Allen mouse ephys11features\u2192spiny/aspiny morphology,donor-disjoint1356/457cells",
+    "evidence": "literature/admission-v04-cell-workflow.json"
+  }
 }

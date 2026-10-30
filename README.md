@@ -1,64 +1,60 @@
 # Neural Data Bench
 
-**A traceable evidence map and exploratory evaluation of general models on neuroscience lab tasks.** Research preview 0.4,30October 2026. Course context: [Liam Paninski's Statistical Analysis of Neural Data](https://sites.stat.columbia.edu/liam/teaching/neurostat-fall26/).
+**A traceable evidence map and exploratory evaluation of general coding models on neuroscience lab tasks.** Research preview **0.5**, 30 October 2026. Course context: [Liam Paninski's Statistical Analysis of Neural Data](https://sites.stat.columbia.edu/liam/teaching/neurostat-fall26/).
 
-[Interactive observatory](https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site) · [Full release report](docs/release-v04.md) · [Results and interpretation](analysis/findings.md) · [Reproduce](docs/reproduce.md)
+[Interactive observatory](https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site) · [Release and main plan](docs/release-v05.md) · [Results](analysis/findings.md) · [Reproduce](docs/reproduce.md)
 
-## What is completed
+## Completed evidence
 
 | Artifact | Current state |
 |---|---|
-| Evidence map |114 task-resource pairings across 14 families;180 sourceURLs, not 180 fully reviewed papers |
-| Admission review | Every entry assessed:14 measured,57 source-only pending gates,43 deferred with reasons |
-| Measured panel |14 task IDs across 11 families;3 requested Sol models;42 single-shot generated programs |
-| Executions |54 model-slice attempts;53 numerically valid,1 program failure;120 model/reference records retained |
-| References |Basic conventional baselines; historical Spikefinder, VASSI and MRIQC predictions rescored; deterministic and synthetic references labeled separately |
-| Audit trail |Per-task source terms/manifests, frozen prompts/data/code hashes, programs, predictions, usage/tool counts, failures and scorer checks |
-| Website |Category→task→overview/results/procedure/sources; bar and generation-line plots; reference-class filters, native-task scores and macro statistics |
+| Research map | 96 active task–resource pairings across 14 families; 18 further candidates archived with reactivation criteria; 114 historical entries preserved |
+| Measured panel | 18 task IDs across all 14 families; 24 evaluation slices per model; 54 single-shot generated programs |
+| Executions | 72 model–slice attempts: 70 numerically valid, 2 failures; 147 model/reference records; 141 stored predictions rescored |
+| General models | Exact requested GPT-5.6 Sol, GPT-6 Sol, GPT-6.1 Sol; no Luna |
+| Specialists | MountainSort5, pyRiemann, YASA; archived StarDist, VASSI, Spikefinder and MRIQC predictions; conventional baselines separately labeled |
+| Audit trail | Frozen contracts, source/license evidence, hashes, unchanged submissions, predictions, failures, usage/tool counts and scorer checks |
+| Interface | Measured benchmark directory, category sidebar, benchmark selector, graph/table views, named specialist overlays in both line and bar plots |
 
-This is **not a completed all-neuroscience study**.100 mapped entries have no model score; open-weight, native image/video/world models and stronger current specialists remain untested. Coverage and search are bounded, not exhaustive. No current-SOTA or universal superiority claim. Unknown remains unknown.
+This remains an exploratory T3 code-generation-plus-fitting panel, not a completed all-neuroscience study. **78 active entries remain unrun** (49 pending validation, 29 deferred). Open-weight, native image/video/world models and most current strongest specialists remain untested. A measured family means at least one narrow slice, not complete coverage of its scientific questions. The source registry contains 190 URLs, not 190 fully read papers. No exhaustive-literature or current-global-SOTA claim.
 
-## Main findings
+## What changed and what the evidence says
 
-- GPT-6.1 improves on GPT-6 in 12 of 16 biological/semisynthetic slice comparisons and declines in 4;12 tasks across 9 families, excluding synthetic quadrature and deterministic file checks. Family-equal improvement fraction 0.667. One program per version; no stable scaling claim.
-- Against 9 simple conventional baselines, point wins are 7/9,8/9,7/9 for GPT-5.6,6,6.1. This does not show superiority over current specialized methods.
-- Against 7 historical-specialist slice references across 3 tasks, point wins are 2/7,1/7,5/7. C05 uses test-selected envelopes; VASSI/MRIQCtraining histories differ. Strict-format denominators and family-weighting are explicit in [analysis](analysis/summary.json).
-- GPT-5.6 fails the legacyNWBfile extractor; GPT-6 and 6.1 match all 61 deterministic fields. Failures and format deviations remain visible.
+- Added spike sorting (B01), cross-day intracortical BCI (G01), sleep staging (H08), and expert-labeled microscopy instance segmentation (J08). Refit unchanged E01 programs on Area2_Bump and DMFC_RSG as source-portability tests.
+- MountainSort5 scores 0.940896 versus 0.874991 / 0.940011 / 0.750450 for the three models on one short stationary simulation. Archived StarDist scores 0.862534 versus 0.643368 / 0.492074 / **failure** on two microscopy fields. These are concrete specialist advantages with narrow scope.
+- EEG-only pretrained YASA scores 0.764737 versus 0.802716 / 0.792675 / 0.792236 on three held-out Sleep-EDF nights. Training histories differ; GPT-5.6 exceeds the requested code-line limit and is excluded from the strict-format subset.
+- GPT-6.1 improves over GPT-6 on 15 of 22 non-deterministic/non-quadrature slice comparisons, declines on 6, and fails on 1. Family-equal directional improvement fraction is 0.569. The aggregate includes selected synthetic and semisynthetic tasks and one generation per task/model; it is not a scaling law.
 
-[Complete 14-task native-score table, interpretation and limitations](analysis/findings.md). Native metric values are not averaged across tasks. These are constrained code-generation plus local-fitting experiments(T3), not native neural-data comprehension or a full autonomous scientist.
+[Full native-score table and interpretation](analysis/findings.md). Native metric magnitudes are never averaged across different tasks. Historical test-selected envelopes, local specialists, pretrained specialists and conventional baselines have separate comparison classes and explicit denominators.
 
-## Navigate the project
+## Navigate by category
 
-| Family | Mapped pairings | Measured task IDs | Source-only pending | Deferred |
+| Family | Active entries | Measured IDs | Pending validation | Deferred |
 |---|---:|---|---:|---:|
 | [A](benchmarks/A/README.md) Behavior, kinematics and vocalization | 16 | A09, A14 | 11 | 3 |
-| [B](benchmarks/B/README.md) Extracellular signal acquisition | 8 | None | 8 | 0 |
+| [B](benchmarks/B/README.md) Extracellular signal acquisition | 8 | B01 | 7 | 0 |
 | [C](benchmarks/C/README.md) Calcium imaging and photometry | 9 | C05 | 8 | 0 |
-| [D](benchmarks/D/README.md) Voltage, intracellular and dendrites | 4 | D02 | 0 | 3 |
+| [D](benchmarks/D/README.md) Voltage, intracellular and dendrites | 3 | D02 | 0 | 2 |
 | [E](benchmarks/E/README.md) Population activity and dynamics | 6 | E01 | 5 | 0 |
 | [F](benchmarks/F/README.md) Sensory and behavioral encoding | 5 | F04 | 2 | 2 |
-| [G](benchmarks/G/README.md) Intracortical BCI | 3 | None | 1 | 2 |
-| [H](benchmarks/H/README.md) EEG, MEG, field signals and peripheral interfaces | 19 | H01, H16 | 5 | 12 |
-| [I](benchmarks/I/README.md) Human and mesoscopic neuroimaging | 10 | I07, I10 | 1 | 7 |
-| [J](benchmarks/J/README.md) Anatomy, histology and connectomics | 9 | None | 4 | 5 |
-| [K](benchmarks/K/README.md) Cell types and molecular neuroscience | 6 | K01 | 4 | 1 |
-| [L](benchmarks/L/README.md) Mechanistic and statistical inference | 6 | L04 | 3 | 2 |
-| [M](benchmarks/M/README.md) Experimental design and control | 7 | M04 | 2 | 4 |
-| [N](benchmarks/N/README.md) Scientific analysis workflows | 6 | N05 | 3 | 2 |
+| [G](benchmarks/G/README.md) Intracortical BCI | 3 | G01 | 0 | 2 |
+| [H](benchmarks/H/README.md) EEG, MEG, field signals and peripheral interfaces | 14 | H01, H08, H16 | 1 | 10 |
+| [I](benchmarks/I/README.md) Human and mesoscopic neuroimaging | 6 | I07, I10 | 0 | 4 |
+| [J](benchmarks/J/README.md) Anatomy, histology and connectomics | 9 | J08 | 4 | 4 |
+| [K](benchmarks/K/README.md) Cell types and molecular neuroscience | 5 | K01 | 4 | 0 |
+| [L](benchmarks/L/README.md) Mechanistic and statistical inference | 5 | L04 | 3 | 1 |
+| [M](benchmarks/M/README.md) Experimental design and control | 4 | M04 | 2 | 1 |
+| [N](benchmarks/N/README.md) Scientific analysis workflows | 3 | N05 | 2 | 0 |
 
+[Taxonomy](docs/taxonomy.md) · [Coverage and remaining gaps](docs/coverage-matrix.md) · [Methodology](docs/methodology.md) · [Prior work](docs/prior-work.md) · [Macro-analysis policy](docs/macro-analysis-plan.md)
 
-[Taxonomy and coverage justification](docs/taxonomy.md) · [Coverage maturity](docs/coverage-matrix.md) · [Methodology](docs/methodology.md) · [Main plan/release](docs/release-v04.md) · [Closest prior work](docs/prior-work.md) · [Macro-analysis policy](docs/macro-analysis-plan.md)
+## Audit a result
 
-## Audit any task or claim
+1. Open `benchmarks/<family>/<ID>/` for scope, data, sources, proposed methods and actual worklog.
+2. Follow `experiments/<ID>/` for the executed protocol, input/prompt/code identities and exact submissions. E01's additional sources have separate slice directories and reuse the original code.
+3. Compare [central JSONL](results/measurements.jsonl), [CSV](results/measurements.csv), [stored predictions](results/predictions/), [score checks](analysis/validation-expansion.json) and [derived summaries](analysis/summary.json).
+4. Inspect [admission decisions](registry/admission-decisions.json), [archived candidates](registry/excluded-candidates.json), [source registry](literature/sources.json) and [current-best ledger](registry/current-best.json). Unknown current best remains unknown.
 
-1. Start at `benchmarks/<family>/<ID>/`: overview, proposed methods, data description, references and actual worklog.
-2. Check [admission evidence](registry/admission-decisions.json) and actual acquisition/license scope; only measured slices have executed data/scorer gates.
-3. Follow `experiments/<ID>/` to the frozen protocol, prompts/run-spec, exact model submissions, generation provenance and execution worklog.
-4. Re-score [stored predictions](results/predictions/) and compare [central JSONL](results/measurements.jsonl), [CSV](results/measurements.csv) and [validation](analysis/validation-expansion.json).
-5. Inspect [aggregation code](scripts/summarize.py) and [derived summary](analysis/summary.json). All 20 VASSIruns and original failures remain available. D02/N05 share a file; repeated trials/neurons are not independent studies.
+[Review protocol](docs/review-protocol.md) · [Data management](docs/data-management.md) · [Contributing](CONTRIBUTING.md). Closest prior work includes BrainWideBench, NeuralBench, NeuroDiscoveryBench/NeuroClaw, SciVid and EEGAgentBench; this project does not claim to originate broad neuroscience evaluation. A paper needs repeated generations, stronger matched specialists, independent biological cases and external coverage review.
 
-[Review protocol](docs/review-protocol.md) · [Source registry](literature/sources.json) · [Admission decisions](registry/admission-decisions.json) · [Current-best evidence ledger](registry/current-best.json) · [Data management](docs/data-management.md) · [Contributing](CONTRIBUTING.md)
-
-Nearest prior work includes BrainWideBench,NeuralBench,NeuroDiscoveryBench/NeuroClaw,SciVid andEEGAgentBench; this project builds on a substantial existing field. A paper needs a narrowly justified contribution, external expert coverage review, repeated generations, stronger matched specialists and prospectively frozen independent cases. No assertion that nothing is missing.
-
-Code/documentation MIT; third-party data/artifacts retain upstream terms. Raw data cache and supplied lecturePDFs are not redistributed. Repository and hosted dashboard preserve their private audiences.
+Code/documentation MIT; third-party data/artifacts retain upstream terms. Raw caches and supplied lecture PDFs are not redistributed. Repository and hosted dashboard retain their private audiences.

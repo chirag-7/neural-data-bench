@@ -1,10 +1,10 @@
 {
-  "type": "in-memory source-render checks; not browser layout or interaction verification",
-  "routes": 473,
-  "C05_five_slices": "passed",
-  "trend_tabs_and_reference_filters": "passed",
-  "native_task_charts": 14,
-  "M04_posterior_audit_display": "passed",
-  "javascript_syntax": "passed",
-  "browser_layout_interaction": "Unverified: prior local-preview navigation blocked by browser URL policy; source checks do not replace browser QA"
+  "type": "In-memory source-render and direct-handler checks; not real-browser interaction or layout QA",
+  "routes": 310,
+  "measured_tasks_with_bar_and_line_plots": 18,
+  "specialist_overlays": "passed",
+  "negative_R2_axis": "passed",
+  "graph_table_switch": "passed",
+  "search_and_benchmark_selector": "passed",
+  "javascript_syntax": "passed"
 }

@@ -34,3 +34,9 @@ Not the same task as histology probe registration
 Decision: **candidate_pending_validation** (2026-10-30). BrainWideBench TS3 anatomy labels can support session/probe-generalizing classification from activity. Must verify histology regiongroundtruth and avoid neurons from sameanimal on both sides. Not acquired; do not substitute E01same-sessionpopulation readout.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+candidate_pending_validation. BrainWideBench TS3 anatomy labels can support session/probe-generalizing classification from activity. Must verify histology regiongroundtruth and avoid neurons from sameanimal on both sides. Not acquired; do not substitute E01same-sessionpopulation readout.
+
+[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

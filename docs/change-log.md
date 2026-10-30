@@ -20,3 +20,7 @@
 - Rebuilt dashboard as category/task pages with bar and line plots, native metric selectors and result downloads.
 - Excluded Luna at user request before numerical execution.
 - Recorded incomplete browser layout/interaction QA after URL-policy block.
+
+## 0.5 — 30 October 2026
+
+18 measured task IDs / 14 families; four added tasks, two E01 source transfers, new specialist references, 72 model-slice attempts and 2 preserved failures. Pruned 18 active candidates with archive/reactivation evidence. Redesigned measured-first directory, category sidebar and plot/table controls; named specialists in both plot types. [Release report](release-v05.md).

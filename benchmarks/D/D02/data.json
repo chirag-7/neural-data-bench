@@ -24,5 +24,10 @@
     "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
     "permanent_rejection": false
   },
-  "executed_slice": "One Allen cell,4train/2test negative-current sweeps;500Hz passive voltage-deflection interpolation"
+  "executed_slice": "One Allen cell,4train/2test negative-current sweeps;500Hz passive voltage-deflection interpolation",
+  "v05_actual_execution": {
+    "status": "measured",
+    "slice": "One Allen cell,4train/2test negative-current sweeps;500Hz passive voltage-deflection interpolation",
+    "evidence": "literature/admission-v04-cell-workflow.json"
+  }
 }

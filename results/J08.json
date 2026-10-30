@@ -1,0 +1,111 @@
+[
+  {
+    "benchmark_id": "J08",
+    "slice_id": "expansion-v1",
+    "run_id": "expansion-v1",
+    "model": "gpt-5.6-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3",
+    "reference_type": "local_reproduction",
+    "baseline_name": null,
+    "superiority_eligible": false,
+    "superiority_reason": "Local conventional baseline; current strongest specialist and matched total tuning effort unverified",
+    "generation_replicates": 1,
+    "n_units": 2,
+    "seconds": 5.127977499971166,
+    "truth_type": "experimental_labels",
+    "prediction_file": "results/predictions/J08/expansion-v1--gpt-5.6-sol.npz",
+    "prediction_sha256": "cfd1bb0195c7dbea4ab6191e06a159b460995a34683115d19ce061f478794344",
+    "input_sha256": {
+      "data/cache/J08/data.npz": "fac163a34bc8efdbd4cc20e0b21cc6ab10d9306010a648a310ca85e997f87909"
+    },
+    "prompt_sha256": "02f3ff23dfb5f22bd10ebf8e5ad43ff635b5913bb31af03090541eac15ea9196",
+    "group_results": [],
+    "description": "Learns a train-only pixel foreground model from multiscale intensity, contrast, Laplacian, and gradient features while treating positive IDs only as local instance annotations and excluding unknown/invalid pixels. Sampling balances object pixels with random and bright hard negatives. Threshold and touching-object splitting parameters are selected by object-level IoU-0.5 F1 on deterministic held-out contiguous patch groups, reducing likely source-field leakage. Final instances are connected foreground regions split by distance-transform peaks; objects under four pixels are removed, IDs are local to each test image, and padded pixels are forced to zero.",
+    "code_sha256": "b0acea63327665a97316a6a383dcfb516225e47812a073c707c055984778db8d",
+    "code_lines": 223,
+    "line_limit_compliant": true,
+    "score": 0.6433683295437704,
+    "metric": "instance_f1_iou50_multirater",
+    "direction": "higher",
+    "per_unit": [
+      0.7658404649142861,
+      0.5208961941732547
+    ]
+  },
+  {
+    "benchmark_id": "J08",
+    "slice_id": "expansion-v1",
+    "run_id": "expansion-v1",
+    "model": "gpt-6-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3",
+    "reference_type": "local_reproduction",
+    "baseline_name": null,
+    "superiority_eligible": false,
+    "superiority_reason": "Local conventional baseline; current strongest specialist and matched total tuning effort unverified",
+    "generation_replicates": 1,
+    "n_units": 2,
+    "seconds": 3.2884181670378894,
+    "truth_type": "experimental_labels",
+    "prediction_file": "results/predictions/J08/expansion-v1--gpt-6-sol.npz",
+    "prediction_sha256": "10b659c20780d97b572a8ed5f9cc07185b67b9f3f4b7ddf5ada79e79d85dd6df",
+    "input_sha256": {
+      "data/cache/J08/data.npz": "fac163a34bc8efdbd4cc20e0b21cc6ab10d9306010a648a310ca85e997f87909"
+    },
+    "prompt_sha256": "02f3ff23dfb5f22bd10ebf8e5ad43ff635b5913bb31af03090541eac15ea9196",
+    "group_results": [],
+    "description": "Trains a pixel foreground classifier from intensity features, ignoring unknown training pixels and treating instance IDs as local to each patch. Uses held-out training patches only to select a foreground threshold and peak spacing; this patch validation is calibration, not an independent-field score. Converts foreground regions into instances with intensity-guided watershed and zeros predictions outside each test image\u2019s extent.",
+    "code_sha256": "ad4abbda3259836d17ea77f88d5c47ddfaac622a31f6e00e6d901bb8c3cf3e52",
+    "code_lines": 177,
+    "line_limit_compliant": true,
+    "score": 0.49207380629422726,
+    "metric": "instance_f1_iou50_multirater",
+    "direction": "higher",
+    "per_unit": [
+      0.40732510341192885,
+      0.5768225091765256
+    ]
+  },
+  {
+    "benchmark_id": "J08",
+    "slice_id": "expansion-v1",
+    "model": "gpt-6.1-sol",
+    "status": "failed",
+    "reason": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/expansion.py\", line 133, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/expansion.py\", line 132, in main\n    else:print(json.dumps(one(a.task,a.model)))\n                          ^^^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/expansion.py\", line 94, in one\n    np.random.seed(0);t=time.perf_counter();pred=np.asarray(f(x.copy(),y.copy(),xt.copy()));elapsed=time.perf_counter()-t\n                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"gpt-6.1-sol\", line 208, in fit_predict\n  File \"gpt-6.1-sol\", line 88, in _counts\nIndexError: boolean index did not match indexed array along axis 0; size of axis is 128 but size of corresponding boolean axis is 16384\n",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "J08",
+    "slice_id": "expansion-v1",
+    "run_id": "expansion-v1",
+    "model": "task-baseline",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "reference",
+    "reference_type": "archived_predictions_rescored",
+    "baseline_name": "archived SynAPSeg custom 2D StarDist v3.6.0.8 masks, rescored",
+    "superiority_eligible": false,
+    "superiority_reason": "Local conventional baseline; current strongest specialist and matched total tuning effort unverified",
+    "generation_replicates": null,
+    "n_units": 2,
+    "seconds": null,
+    "truth_type": "experimental_labels",
+    "prediction_file": "results/predictions/J08/expansion-v1--task-baseline.npz",
+    "prediction_sha256": "44a0558f061a8797153f1b4f78c46d00ac5fd48b9302a25dca1ba27882a73ed9",
+    "input_sha256": {
+      "data/cache/J08/data.npz": "fac163a34bc8efdbd4cc20e0b21cc6ab10d9306010a648a310ca85e997f87909"
+    },
+    "prompt_sha256": "02f3ff23dfb5f22bd10ebf8e5ad43ff635b5913bb31af03090541eac15ea9196",
+    "group_results": [],
+    "score": 0.8625343802858836,
+    "metric": "instance_f1_iou50_multirater",
+    "direction": "higher",
+    "per_unit": [
+      0.8790608708096153,
+      0.8460078897621521
+    ]
+  }
+]

@@ -1,0 +1,2207 @@
+{
+  "version": "0.5",
+  "reviewed_on": "2026-10-30",
+  "purpose": "Recommendations only for an active scalar-task/benchmark list; root integrates catalog/archive. This file changes no catalog/results/site.",
+  "catalog_snapshot_sha256": "66684e5c272eb72fa6ce2c5755fbd5707fa7cd4562dea7955328e2760fec8b90",
+  "n_screened": 114,
+  "decision_counts": {
+    "KEEP_CANDIDATE": 100,
+    "REMOVE_ACTIVE": 14
+  },
+  "protected_ids": [
+    "A09",
+    "A14",
+    "B01",
+    "C05",
+    "D02",
+    "E01",
+    "F04",
+    "G01",
+    "H01",
+    "H08",
+    "H16",
+    "I07",
+    "I10",
+    "J08",
+    "K01",
+    "L04",
+    "M04",
+    "N05"
+  ],
+  "rules": [
+    "Every measured/admitted ID is retained regardless of score,success or formatting failures.",
+    "Archive proposed constructions lacking independent data/split/scorer instead of promising an active executable benchmark.",
+    "Archive unresolved executable releases/packages without asserting no data exist.",
+    "Retain genuine high-effort lab tasks when the endpoint and upstream benchmark protocol are concrete; unattempted access/runtime is not proof of infeasibility.",
+    "Represent umbrella suites as sources until a pinned roster,model interface and overlap map make the unit of analysis explicit.",
+    "Archive duplicate uninstantiated subsets rather than count them as independent benchmarks.",
+    "No entry is removed solely for poor results,clinical relevance,ecological transfer or being difficult."
+  ],
+  "entries": [
+    {
+      "benchmark_id": "A01",
+      "task": "2D lab keypoints and pupil/paw tracking",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Human-labeled pose images are a valid endpoint. Need pin image/label archive, verify published session split and matched coordinate scorer; no image adapter or vision submission interface acquired in this bounded expansion. Not rejected as bad data.",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12087009/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A02",
+      "task": "Cross-species 2D pose transfer",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. AP-10K offers official image/keypoint splits, but raw-image inference needs vision/multimodal submissions and matched OKS scorer. Numeric pose-to-label A09 does not cover this operation. Dataset not downloaded in this expansion.",
+      "source_urls": [
+        "https://arxiv.org/abs/2108.12617",
+        "https://benchmark.deeplabcut.org/datasets.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A03",
+      "task": "Low-label lab pose adaptation",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Needs exact leave-one-dataset-out weights and proof held-out training set was excluded from domain pretraining. Cannot treat animal-specialist SuperAnimal as a general-purpose baseline. Weights/splits not yet validated.",
+      "source_urls": [
+        "https://www.nature.com/articles/s41467-024-48792-2"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A04",
+      "task": "Single-animal 3D pose",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Real Rat7M mocap labels acquired through DISK for A14. This does not admit 3D pose-from-video: its synchronized six-camera inputs and calibrations have not been downloaded or evaluated. Share dataset group with A14 for independence accounting.",
+      "source_urls": [
+        "https://figshare.com/collections/Rat_7M/5295370/3",
+        "https://www.nature.com/articles/s41592-025-02893-y"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A05",
+      "task": "Social multi-animal 3D pose",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Calibrated multi-camera social-pose recordings require substantial video acquisition and geometry/GPU pipeline. No exact slice/calibration/scorer prepared. This is a resource deferral, not poor-data judgment.",
+      "source_urls": [
+        "https://olveczkylab.oeb.harvard.edu/publications/pair-r24m-dataset-multi-animal-3d-pose-estimation"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A06",
+      "task": "3D pose and shape from one image",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Fitted 3D animal shape labels are a valid separate proxy-label endpoint, but need model parameter conventions and source image acquisition; do not equate fitted SMAL annotations to physical groundtruth. Not acquired.",
+      "source_urls": [
+        "https://arxiv.org/abs/2308.11737"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A07",
+      "task": "Data-efficient calibrated 3D lab pose",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Synchronized camera and landmark/calibration release must be pinned with official holdout. No multiview visual adapter prepared; numerical mocap imputation A14 cannot count as this task.",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13131684/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A08",
+      "task": "Animal identity tracking through occlusions",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Complete-video identity assignments require persistent IDs and track-matching scorer. No reference trajectories/video pair acquired. Random frame classification would not be a valid substitute.",
+      "source_urls": [
+        "https://doi.org/10.7554/eLife.107602.3"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A09",
+      "task": "Frame-level social behavior labels",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://arxiv.org/abs/2104.02710",
+        "https://doi.org/10.17617/3.3R0QYI"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A10",
+      "task": "General behavioral representations",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Representation assessment requires multiple downstream task labels and recording-group splits. CalMS21 Task1 is not equivalent to MABe22. Need pin exact track release and fixed downstream evaluation wrapper.",
+      "source_urls": [
+        "https://arxiv.org/abs/2207.10553"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A11",
+      "task": "Action recognition and temporal localization",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Wildlife video/action localization requires substantial visual data and temporal action scorer beyond CPU numeric adapter. Valid adjacent-domain task; not redundant with lab social behavior and not yet acquired.",
+      "source_urls": [
+        "https://arxiv.org/abs/2204.08129"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A12",
+      "task": "Behavioral features for neural prediction",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Need raw or published fixed behavior features jointly aligned to neural recordings and recording-level heldout responses. No common numerical endpoint independently acquired; do not score predicted behavior labels as neural encoding.",
+      "source_urls": [
+        "https://arxiv.org/abs/2507.09513"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A13",
+      "task": "Dense 3D behavior representation",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Gaussian/multiview reconstruction requires GPU training and substantial calibrated synchronized images. Current numeric code-generation budget cannot reproduce the published task. No claim of data invalidity.",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.02937",
+        "https://arxiv.org/abs/2505.18342"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A14",
+      "task": "Missing pose imputation",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://www.nature.com/articles/s41592-025-02893-y",
+        "https://zenodo.org/records/18405201"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "B01",
+      "task": "Spike sorting and event detection",
+      "family_code": "B",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://github.com/flatironinstitute/spikeforest",
+        "https://elifesciences.org/articles/55167",
+        "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "B02",
+      "task": "Drift-aware spike sorting",
+      "family_code": "B",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. SpikeInterface/MEArec generators can supply exact drift and unit truth without restricted real data. Needs frozen simulation seed, geometry, waveform/noise/drift regime and event-matching scorer. This would be explicitly synthetic, not real in-vivo drift validation.",
+      "source_urls": [
+        "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+        "https://github.com/cwindolf/dartsort"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "B03",
+      "task": "Probe motion estimation",
+      "family_code": "B",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Synthetic drift with known displacement supports motion-estimation error; real DREDge drift estimates themselves are not groundtruth. Need fixed simulator/probe mapping and matched motion pipeline; no acquisition/execution attempted here.",
+      "source_urls": [
+        "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+        "https://github.com/evarol/dredge"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "B04",
+      "task": "Collision recovery and sorting robustness",
+      "family_code": "B",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Hybrid insertion can provide known collision times, but must freeze inserted templates and distinguish synthetic labels from unknown endogenous spikes. Requires event-matching tolerance and collision definitions. Adapter not prepared.",
+      "source_urls": [
+        "https://spikeinterface.readthedocs.io/en/stable/modules/comparison.html",
+        "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "B05",
+      "task": "Neuron matching across days",
+      "family_code": "B",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. UnitMatch crossday matching needs real paired sessions with independently supported identities; algorithm outputs cannot be used as target labels. Need exact released validation identities/sessions and potential calcium or optotagging corroboration. No paired acquisition attempted here.",
+      "source_urls": [
+        "https://www.nature.com/articles/s41592-024-02440-1"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "B06",
+      "task": "Brain-region/probe localization from ephys",
+      "family_code": "B",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. IBL Ephys Atlas channel features/region labels are potentially lightweight tabular classification. Must group held-out probes/animals and verify histology provenance, regionontology and published split. Channel-wise random split invalid. No feature dataset acquired in this bounded work.",
+      "source_urls": [
+        "https://huggingface.co/int-brain-lab/ea-decoder-channel-xgboost"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "B07",
+      "task": "Raw neural data compression",
+      "family_code": "B",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Lossless compression is executable with small frozen raw ephys segments, exactbyte reconstruction and compression/runtime metrics. Need immutable raw-file URI, acquisition terms and canonical codec reference; no raw acquisition attempted here. Avoid different dtype or discarded channels confounding ratio.",
+      "source_urls": [
+        "https://allenneuraldynamics.github.io/data.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "B08",
+      "task": "Spike train compression",
+      "family_code": "B",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. IBL spike trains could support lossless integer/event compression; reconstruction must preserve exact event times/unitIDs. Need exact release/chunk bounds and bits/event denominator; shared IBL recordings must not count twice as independent datasets. Not acquired here.",
+      "source_urls": [
+        "https://github.com/int-brain-lab/spikepack",
+        "https://www.internationalbrainlab.com/data"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "C01",
+      "task": "Calcium ROI detection",
+      "family_code": "C",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Neurofinder supplies true labeled calcium ROI masks and image stacks. Needs image/mask archive pinning, original heldout recording split and official ROI matching scorer. Segmentation image adapter not acquired in this expansion.",
+      "source_urls": [
+        "https://github.com/codeneuro/neurofinder-datasets",
+        "https://github.com/codeneuro/neurofinder"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "C02",
+      "task": "Activity extraction and demixing",
+      "family_code": "C",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. CaImAn annotated data can support ROI/timecourse evaluation but labels and quality annotations are incomplete; must pin exact nine-dataset release and per-endpoint valid annotations. No movies acquired here; neuron masks alone do not establish full demixing groundtruth.",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6342523/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "C03",
+      "task": "Synthetic calcium pipeline with full truth",
+      "family_code": "C",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. NAOMi can provide full synthetic calcium movie truth. Requires frozen physicalsimulation parameters and randomseeds, compute budget and exact ROI/timecourse scoring. Clearly synthetic; simulator outputs do not validate real in-vivo robustness.",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "C04",
+      "task": "Calcium movie denoising",
+      "family_code": "C",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. DeepCAD release offers real movies and trained denoisers, but a paired independent low-noise reference or declared self-supervised scorer is needed. Denoised outputs cannot silently become target truth. Movie/clean reference pair not acquired here.",
+      "source_urls": [
+        "https://github.com/cabooster/DeepCAD/blob/master/dataset/README.md",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "C05",
+      "task": "Calcium-to-spike inference",
+      "family_code": "C",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://github.com/codeneuro/spikefinder-datasets",
+        "https://github.com/berenslab/spikefinder_analysis"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "C06",
+      "task": "Cross-preparation calcium deconvolution",
+      "family_code": "C",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. CASCADE paired fluorescence/electrophysiology is a credible additional deconvolution source. Need exact indicator/preparation noise/rate matching, neuron/recording-disjointsplit and baseline. Shared Spikefinder cells must be deduplicated, not counted as new independent recordings. Not acquired here.",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7611618/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "C07",
+      "task": "Longitudinal calcium cell registration",
+      "family_code": "C",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. CellReg examples contain multi-session ROI images, but cell-identity scoring needs independent manuallyvalidated crossday pairs; CellReg matching outputs cannot serve as truth for evaluating a competing matcher. Verify identity groundtruth before admission.",
+      "source_urls": [
+        "https://github.com/zivlab/CellReg"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "C08",
+      "task": "Fiber photometry cleanup and event analysis",
+      "family_code": "C",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. GuPPy example traces demonstrate photometry workflow, but a true artifact-free neural trace or blinded artifact/event annotations are needed for accuracy measurement. Synthetic artifact injection into observed signals is possible if explicitly semi-synthetic. No reference annotations acquired here.",
+      "source_urls": [
+        "https://github.com/LernerLab/GuPPy"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "C09",
+      "task": "One-photon microendoscopic demixing",
+      "family_code": "C",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. CNMF-E onephoton examples may support ROI and source extraction endpoints; require independent masks/timecourse labels, background model definition and frozen recording split. No real labeled movie acquired here. Specialized outputs cannot serve as unquestioned true signals.",
+      "source_urls": [
+        "https://elifesciences.org/articles/28728"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "D01",
+      "task": "Voltage imaging spike and subthreshold extraction",
+      "family_code": "D",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Paired voltage movie/ephys extraction needs validated movie-to-truth alignment, ROI policy, and sampling-time scorer. Primary PMC article web access returned recaptcha in this screening; CaImAn VolPy source documentation located. No acquisition/fit was completed; this is a protocol/resource limitation of this batch, not evidence of bad data.",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8075204/",
+        "https://github.com/flatironinstitute/CaImAn/tree/main/caiman/source_extraction/volpy"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "D02",
+      "task": "Current-to-voltage prediction",
+      "family_code": "D",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://brain-map.org/support/documentation/documentation-cell-types-database",
+        "https://alleninstitute.github.io/AllenSDK/cell_types.html",
+        "https://brain-map.org/support/documentation/cell-types-database-api"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "D03",
+      "task": "Dendritic voltage/calcium recovery",
+      "family_code": "D",
+      "decision": "REMOVE_ACTIVE",
+      "reason_category": "new_benchmark_construction",
+      "reason": "Simulator/examples without a frozen morphology/stimulation/noise distribution, independent split and endpoint scorer. Archive the scientifically relevant dendritic-recovery perspective; fitting and testing the same examples would be circular.",
+      "source_urls": [
+        "https://www.nature.com/articles/s41592-025-02895-w"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": "Instantiate a versioned simulator/data release with held-out morphologies,stimulation and independent reference evaluation.",
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "D04",
+      "task": "Physiological validation of mechanistic models",
+      "family_code": "D",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Primary HippoUnit repository requires simulation-capable model interfaces, NEURON/eFEL/SciUnit and standalone model adaptation. Published validation target features and model outputs are available, but no new generated mechanistic model plus independent held-out tests was implemented in this CPU/lightweight estimator batch. Do not substitute recalculating published outputs for new agent performance.",
+      "source_urls": [
+        "https://doi.org/10.1371/journal.pcbi.1008114",
+        "https://github.com/KaliLab/hippounit",
+        "https://github.com/KaliLab/HippoUnit_demo"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "E01",
+      "task": "Neural rate inference and co-smoothing",
+      "family_code": "E",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://neurallatents.github.io/",
+        "https://dandiarchive.org/dandiset/000140/0.220113.0408",
+        "https://github.com/neurallatents/nlb_tools"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "E02",
+      "task": "Recovery of computational dynamics",
+      "family_code": "E",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. CtDB can supply synthetic mechanistic dynamics groundtruth and known task variables. Needs pinned generator, stimulus/trajectory/seed split and metric for actual recovered dynamics, not arbitrary latent-coordinateRMSE. Synthetic extension remains useful but unprepared.",
+      "source_urls": [
+        "https://github.com/snel-repo/ComputationThroughDynamicsToolkit"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "E03",
+      "task": "Behavior decoding across animals",
+      "family_code": "E",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. BrainWideBench TS1 provides natural crossanimal decoding benchmark aligned with course. Needs exact pinned IBL sessionmanifest, labels and common neuron/input normalization under official split. Public data may require sizeable multises\u00adsion acquisition; not attempted here.",
+      "source_urls": [
+        "https://brainbench-org.github.io/ibl-bwb/",
+        "https://arxiv.org/abs/2609.22064"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "E04",
+      "task": "Masked/future neural activity prediction",
+      "family_code": "E",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. BrainWideBench TS2 masked/future prediction has exact protocol and public recordings, but causal future prediction versus bidirectional masking must be separate. Need exact bins/neurons/session split and official heldout targets. Not acquired here; E01 does not cover this transfer setting.",
+      "source_urls": [
+        "https://brainbench-org.github.io/ibl-bwb/",
+        "https://arxiv.org/abs/2609.22064"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "E05",
+      "task": "Anatomy from neural activity",
+      "family_code": "E",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. BrainWideBench TS3 anatomy labels can support session/probe-generalizing classification from activity. Must verify histology regiongroundtruth and avoid neurons from sameanimal on both sides. Not acquired; do not substitute E01same-sessionpopulation readout.",
+      "source_urls": [
+        "https://brainbench-org.github.io/ibl-bwb/",
+        "https://arxiv.org/abs/2609.22064"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "F01",
+      "task": "Static visual encoding",
+      "family_code": "F",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Sensorium2022 stimulus-response encoding is feasible with official split and responses, but current CPU numerical-code interface lacks reproducible visualstimulus decoding/encoder and a matched published model. Need exact response availability and heldoutanimal protocol before execution.",
+      "source_urls": [
+        "https://sensorium-competition.net/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "F02",
+      "task": "Dynamic visual encoding",
+      "family_code": "F",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Sensorium2023 adds dynamic visual stimuli and neuralresponses; fullvideo/mouse data and visionencoding pipeline exceed present lightweightCPU execution. No acquisition attempted. Distinct temporal task cannot be represented by static images or arbitrary tabular features.",
+      "source_urls": [
+        "https://sensorium-competition.net/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "F03",
+      "task": "Receptive fields and sensory response prediction",
+      "family_code": "F",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Allen Visual Coding can support real stimulus-to-response encoding with immutable sessionIDs and repeatedstimulus splits. Need specific experiments/moviefeatures and train-only learned readout; preprocessing leakage from repeatframes must be prevented. Not acquired here.",
+      "source_urls": [
+        "https://observatory.brain-map.org/visualcoding"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "F04",
+      "task": "Retinal or other sensory encoding",
+      "family_code": "F",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://crcns.org/data-sets",
+        "https://open-retina.org/api_reference/data_io/goldin_2022/",
+        "https://doi.org/10.5281/zenodo.6868362",
+        "https://doi.org/10.1038/s41467-022-33242-8",
+        "https://huggingface.co/datasets/open-retina/open-retina/blob/fc7b91e93c9bd4e76d4e3205fcbcc6a31601985a/README.md",
+        "https://huggingface.co/datasets/open-retina/open-retina"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "F05",
+      "task": "Behavior-to-widefield neural encoding",
+      "family_code": "F",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Musall behavior-to-widefield data can support real regression, but exact movies/behavior regressors, temporalalignment and session/animal split must be pinned. Training/testing adjacentframes invalid. No paired behavior/neural arrays acquired here.",
+      "source_urls": [
+        "https://repository.cshl.edu/38599/2/DataDescription_Musall.pdf"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "G01",
+      "task": "Robust cross-day motor decoding",
+      "family_code": "G",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://snel-repo.github.io/falcon/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "G02",
+      "task": "Handwriting/communication decoding",
+      "family_code": "G",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. FALCON communication decoding requires sequentialoutputs, official word/character scorer, sessionadaptation and heavier inputdata/training pipeline. Not executed within CPU numeric regression/classification interface. No evidence dataset is bad or universally impossible.",
+      "source_urls": [
+        "https://snel-repo.github.io/falcon/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "G03",
+      "task": "Attempted speech to text",
+      "family_code": "G",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Brain-to-Text speech decoding needs sequence/phoneme/texttargets, CTC/language-model decoding rules and speech-rate/word-error scorer, with substantial data and training. ThreeSol numerical code snippets are not speechsequence models. No data acquisition attempted; retain valid futurecandidate.",
+      "source_urls": [
+        "https://github.com/fwillett/speechBCI",
+        "https://www.kaggle.com/competitions/brain-to-text-25/overview"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H01",
+      "task": "Motor imagery and noninvasive BCI",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://moabb.neurotechx.com/",
+        "https://physionet.org/content/eegmmidb/1.0.0/",
+        "https://physionet.org/files/eegmmidb/1.0.0/S001/",
+        "https://moabb.neurotechx.com/docs/generated/moabb.datasets.PhysionetMI.html",
+        "https://mne.tools/stable/auto_examples/decoding/decoding_csp_eeg.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H02",
+      "task": "ERP/P300 target decoding",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Screened BNCI2014_008 original BNCI terms (CC BY-NC-ND4.0) and MOABB loader/context. Data are real and useful, but derivative-array distribution and the exact cross-subject ERP preparation protocol have not been validated for this release. Alternate openly licensed ERP resources can be admitted later; no claim of bad quality.",
+      "source_urls": [
+        "https://moabb.neurotechx.com/",
+        "https://bnci-horizon-2020.eu/database/data-sets",
+        "https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_008.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H03",
+      "task": "SSVEP stimulus selection",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. MOABB Nakanishi2015 primary documentation located. Need pinned original files/license and frequency/timing metadata, fixed subject split, verified CCA baseline. Generic MOABB umbrella is not one executable dataset; not rejected as infeasible.",
+      "source_urls": [
+        "https://moabb.neurotechx.com/",
+        "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Nakanishi2015.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H04",
+      "task": "EEG transfer under limited calibration",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Official BEETL introduction URL timed out in web access. No raw transfer track, license or labels acquired in this screening pass; preserve candidate and retry via original competition release.",
+      "source_urls": [
+        "https://beetl.ai/introduction"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H05",
+      "task": "Broad EEG model comparison",
+      "family_code": "H",
+      "decision": "REMOVE_ACTIVE",
+      "reason_category": "suite_not_atomic_task",
+      "reason": "NeuralBench Core/Full is a multi-task/multi-dataset umbrella. It overlaps the constituent EEG categories and cannot be one independent benchmark result in the central task table without a pinned task roster and deduplication. Preserve it as a source/evaluation framework.",
+      "source_urls": [
+        "https://facebookresearch.github.io/neuroai/neuralbench/index.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Specific substantive review using prior bounded source/admission evidence; fresh primary umbrella pages reread for H05/H06/H07/I03",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": "Instantiate named task-card/dataset/split/adaptation combinations and map shared subjects to existing H entries before activating individual tasks or a clearly labeled suite aggregate.",
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H06",
+      "task": "EEG foundation model transfer roadmap",
+      "family_code": "H",
+      "decision": "REMOVE_ACTIVE",
+      "reason_category": "suite_not_atomic_task",
+      "reason": "OmniEEG-Bench covers six task families and54datasets. An umbrella roadmap is not a single nonduplicated task; mixing its averages with contained H-task measurements would inflate evidence. This does not question the validity of the upstream benchmark.",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.00815"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Specific substantive review using prior bounded source/admission evidence; fresh primary umbrella pages reread for H05/H06/H07/I03",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": "Pin constituent task cards and dataset-specific licenses/preprocessing,specify adaptation mode,and deduplicate overlaps before activation.",
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H07",
+      "task": "EEG scaling and robustness",
+      "family_code": "H",
+      "decision": "REMOVE_ACTIVE",
+      "reason_category": "suite_not_atomic_task",
+      "reason": "EEG-Arena covers57tasks,23datasets and5protocols and is migrating into NeuroInfra. Current registry row lacks a pinned constituent task/protocol/version,so archive the suite as a source rather than count it as an independent active task.",
+      "source_urls": [
+        "https://eeg.fm/benchmarks/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Specific substantive review using prior bounded source/admission evidence; fresh primary umbrella pages reread for H05/H06/H07/I03",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": "Select and pin a concrete task/protocol/version with source rights and map overlap with measured EEG cohorts.",
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H08",
+      "task": "Sleep staging and sleep onset",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+        "https://neural-interfaces26.github.io/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H09",
+      "task": "Seizure detection with useful event scoring",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. SzCORE primary framework explicitly distinguishes sample/event scoring and participant independence. CHB-MIT/Siena require long continuous recordings to estimate false alarms/hour; no cherry-picked balanced seizure clips admitted as replacement. Full event pipeline and sufficient recording duration not yet prepared.",
+      "source_urls": [
+        "https://epilepsybenchmarks.com/framework/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H10",
+      "task": "EEG abnormality, events, cognition and state",
+      "family_code": "H",
+      "decision": "REMOVE_ACTIVE",
+      "reason_category": "mixed_unspecified_target",
+      "reason": "Abnormality,events,cognition and state combine materially different targets and patient/site confounds. No specific dataset/label definition/protocol is frozen; the row also reuses H05/H06 sources.",
+      "source_urls": [
+        "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+        "https://arxiv.org/abs/2606.00815"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": "Replace with one or more explicit labeled tasks and patient/site-held-out protocols; do not silently claim clinical-domain coverage from the umbrella.",
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H11",
+      "task": "Noninvasive speech decoding",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original LibriBrain 2026 publications page accessible and identifies LibriBrain100. Need audio-aligned MEG acquisition, official track split and controlled language-prior scorer. Not downloaded in this pass; not a data-quality rejection.",
+      "source_urls": [
+        "https://libribrain.com/editions/2026/publications/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H12",
+      "task": "Image/object retrieval from EEG/MEG",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original THINGS site accessible. Stimulus concept and image reuse complicate splitting; original image pool has academic-use restrictions and a separate CC0 subset. Need exact EEG/MEG release, retrieval gallery and held-out concepts/participants rather than an undefined image-reconstruction score.",
+      "source_urls": [
+        "https://things-initiative.org/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H13",
+      "task": "Neuromotor pose and typing from muscle signals",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original emg2pose repo reports full data431GiB and a ~600MiB sanity-check subset. Full held-out-user benchmark not downloaded; sanity subset cannot substitute for population evaluation without verifying participants and split metadata. EMG is explicitly peripheral.",
+      "source_urls": [
+        "https://github.com/facebookresearch/emg2pose"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H14",
+      "task": "LFP oscillation and burst quantification",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original bycycle code/documentation accessible. Tool features computed from real LFP are not independent gold labels; need expert burst annotations or separately labeled synthetic calibration. Do not grade generic code against bycycle output and label it physiological truth.",
+      "source_urls": [
+        "https://github.com/bycycle-tools/bycycle",
+        "https://about.dandiarchive.org/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H15",
+      "task": "EEG/MEG source localization",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original MNE/Brainstorm phantom tutorial accessible. Known dipole positions make this scientifically useful, but needs sensor geometry, forward model, filtering and localization scorer adapter. No arbitrary simulated coordinate regression substituted.",
+      "source_urls": [
+        "https://mne.tools/stable/auto_tutorials/inverse/80_brainstorm_phantom_elekta.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H16",
+      "task": "EEG ocular/muscle artifact repair",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://doi.org/10.1088/1741-2552/ac2bf8",
+        "https://github.com/ncclabsustech/EEGdenoiseNet",
+        "https://arxiv.org/html/2009.11662v4",
+        "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/master/LICENSE",
+        "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/code/benchmark_networks/data_prepare.py"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "I01",
+      "task": "Multimodal movie-to-fMRI encoding",
+      "family_code": "I",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original Algonauts2025 challenge page requires a data-download form and Codabench test-response scoring; ID/OOD held-out fMRI responses are not publicly available to a local evaluator. No application signed or hidden-label score fabricated. Need agreed data access, stimulus features and temporal encoding protocol.",
+      "source_urls": [
+        "https://algonautsproject.com/2025/challenge.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "I02",
+      "task": "Image encoding/reconstruction from fMRI",
+      "family_code": "I",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original NSD site explicitly requests completion of a data-access agreement before receiving the manual/download access. No agreement/application completed on the user\u2019s behalf. Candidate remains scientifically valuable; no bad-data claim.",
+      "source_urls": [
+        "https://www.naturalscenesdataset.org/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "I03",
+      "task": "Human brain model alignment",
+      "family_code": "I",
+      "decision": "REMOVE_ACTIVE",
+      "reason_category": "suite_not_atomic_task",
+      "reason": "Brain-Score is a valid platform spanning dozens of neural/behavioral benchmarks and a suite aggregate. Current row selects no benchmark/model-layer interface or permitted stimuli; counting it alongside NSD/THINGS-derived constituent rows risks overlap.",
+      "source_urls": [
+        "https://www.brain-score.org/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Specific substantive review using prior bounded source/admission evidence; fresh primary umbrella pages reread for H05/H06/H07/I03",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": "Select a named versioned neural-alignment benchmark and model representation interface,or explicitly define a pinned suite-level track with separate accounting.",
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "I04",
+      "task": "Cross-modal EEG/MEG/fMRI analysis",
+      "family_code": "I",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original Wakeman-Henson Nature article redirect failed through the web tool. No raw multimodal dataset or labels acquired; needs pinned EEG/MEG/fMRI release, face identities/conditions and subject/session split. Access failure is not permanent unavailability.",
+      "source_urls": [
+        "https://www.nature.com/articles/sdata20151"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "I05",
+      "task": "MRI reconstruction",
+      "family_code": "I",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original fastMRI site requires user application/institution/proposed-use and data-sharing agreement; no downloaded record, no access application submitted. Its redistribution restrictions require private data handling. Cannot substitute unrelated knee/synthetic reconstructions for brain benchmark.",
+      "source_urls": [
+        "https://fastmri.med.nyu.edu/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "I06",
+      "task": "Brain MRI lesion segmentation",
+      "family_code": "I",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original CBICA BraTS page lists multiple separate Synapse challenge instances. Need choose task/release, dataset access terms, subject-level split and official tumor-region/Dice/HD95 rules. No raw records acquired or multiple releases mixed.",
+      "source_urls": [
+        "https://www.med.upenn.edu/cbica/brats/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "I07",
+      "task": "fNIRS motor/hemodynamic decoding",
+      "family_code": "I",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://www.nemar.org/dataset/on005963",
+        "https://openfnirs.org/community/fresh/welcome-to-the-fnirs-fresh-project/",
+        "https://data.nemar.org/on005963/v1.0.0/dataset_description.json",
+        "https://data.nemar.org/on005963/v1.0.0/manifest.json",
+        "https://data.nemar.org/on005963/v1.0.0/code/validation.ipynb",
+        "https://openneuro.org/datasets/ds005963/versions/1.0.0",
+        "https://doi.org/10.1038/s42003-025-08412-1"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "I08",
+      "task": "Functional ultrasound analysis",
+      "family_code": "I",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original ConfUSIus collection docs permit small filtered downloads (~30MBexample), anonymous immutable releases and per-source licenses. Data size alone is not an exclusion. Need define actual experimental target (e.g. speed annotations) and held-out-recording/animal scorer; derived GLM maps are not independent truth.",
+      "source_urls": [
+        "https://registry.opendata.aws/confusius/",
+        "https://confusius.tools/latest/user-guide/datasets/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "I09",
+      "task": "Diffusion MRI tractography",
+      "family_code": "I",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original Tractometer page explicitly distinguishes2015 Recobundles25bundles from2023 ROI21bundles and tractogram coordinate changes. Need pin matching truth/scorer and verify T1/DWI transforms. No arbitrary mixing of score versions admitted.",
+      "source_urls": [
+        "https://tractometer.org/ismrm2015/tools/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "I10",
+      "task": "MRI quality assessment across sites",
+      "family_code": "I",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://doi.org/10.1371/journal.pone.0184661",
+        "https://github.com/nipreps/mriqc/tree/c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8/mriqc/data/csv"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-inference-control.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "J01",
+      "task": "EM neurite segmentation",
+      "family_code": "J",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. CREMI real volumetric image segmentation needs3D inputs and topology-sensitive adapted Rand/VI scoring. GPU specialist weights/scorer not prepared; a small randomvoxel classifier would not validate neurite segmentation.",
+      "source_urls": [
+        "https://cremi.janelia.org/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "J02",
+      "task": "Synapse detection and partner identification",
+      "family_code": "J",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. CREMI synapse detection requires actual pre/post partner instance annotations, separate from image segmentation labels. No synapse manifest or partner matching scorer acquired. Do not substitute arbitrary voxel classification.",
+      "source_urls": [
+        "https://cremi.janelia.org/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "J03",
+      "task": "3D neuron tracing and morphology",
+      "family_code": "J",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Inspected official BigNeuron gold166 release: paired raw images plus gold reconstructions exist, and traced outputs from40+ algorithms are archived. SWC-only morphology statistics do not evaluate image-to-skeleton tracing. No raw optical-volume slice or DIADEM scorer prepared, so no invented morphology classification proxy admitted.",
+      "source_urls": [
+        "https://github.com/BigNeuron/Data/releases",
+        "https://diadem.janelia.org/metric.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "J04",
+      "task": "Histology-to-atlas registration",
+      "family_code": "J",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. DeepSlice histology registration needs expert reference transforms/landmarks paired with source sections and animal IDs. Those pairs and train/test protocol have not been downloaded/validated. No substitute score from image metadata or atlas-derived pseudo-labels.",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10514056/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "J05",
+      "task": "Joint structure-function modeling",
+      "family_code": "J",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. MICrONS needs proofread graph release pinning, cell-function joins and release-specific train/test units; substantial data engineering and evolving annotations. Not prepared under current CPU/lightweight acquisition budget.",
+      "source_urls": [
+        "https://www.microns-explorer.org/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "J06",
+      "task": "Whole-brain neuron detection, identity and tracking",
+      "family_code": "J",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. WormND provides detection/identity tracks, but crossworm split, template annotations and exact organism normalization remain unvalidated. No3D image adapter acquired. Candidate remains eligible for later execution.",
+      "source_urls": [
+        "https://github.com/focolab/WormND"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "K01",
+      "task": "Electrophysiological cell-type classification",
+      "family_code": "K",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://brain-map.org/our-research/cell-types-taxonomies",
+        "https://brain-map.org/support/documentation/documentation-cell-types-database",
+        "https://brain-map.org/support/documentation/cell-types-database-api",
+        "https://celltypes.brain-map.org/",
+        "https://alleninstitute.org/terms-of-use/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "K02",
+      "task": "Transcriptomic cell mapping and integration",
+      "family_code": "K",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. scIB is a general cell-integration toolkit, not one uniquely frozen brain dataset task. Need select brain donor cohorts/taxonomy and independent label-transfer policy, fit batch handling on allowed data, preserve rare classes, and reproduce biology AND mixing scorers. No unique dataset/split/rights package selected; do not inflate coverage from toolkit installation.",
+      "source_urls": [
+        "https://brain-map.org/our-research/cell-types-taxonomies",
+        "https://scib.readthedocs.io/en/latest/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "K03",
+      "task": "Molecular/pathology cohort analysis",
+      "family_code": "K",
+      "decision": "REMOVE_ACTIVE",
+      "reason_category": "duplicate_workflow_subset",
+      "reason": "Atlas/SEA-AD analysis is an uninstantiated molecular/pathology subset of the same NeuroDiscoveryBench workflow source already represented by N01. Separate workflow/task tags are useful, but duplicate resource rows must not inflate active benchmark or independent-data counts.",
+      "source_urls": [
+        "https://github.com/allenai/neurodiscoverybench"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": "Create a specific task ID with a pinned question/data/scorer and retain cross-links to N01 and K; otherwise keep as a tagged subtopic in the archive.",
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "L01",
+      "task": "Functional connectivity recovery",
+      "family_code": "L",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Official challenge page identifies simulated fluorescence and synaptic truth and mirror links. No mirror acquired/hashed; download terms, held-out network split and directed graph scorer remain unvalidated. Not rejected as bad data.",
+      "source_urls": [
+        "https://connectomics.chalearn.org/help/data"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-inference-control.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "L02",
+      "task": "Biophysical parameter posterior inference",
+      "family_code": "L",
+      "decision": "REMOVE_ACTIVE",
+      "reason_category": "new_benchmark_construction",
+      "reason": "Hodgkin-Huxley/Jaxley examples are not yet a frozen inference benchmark here. Priors,stimuli,simulator version,reference posterior and posterior-predictive/calibration criteria are missing; parameter MAE alone is invalid under nonidentifiability.",
+      "source_urls": [
+        "https://sbi.readthedocs.io/en/latest/advanced_tutorials/21_diagnostics_misspecification_checks.html",
+        "https://www.nature.com/articles/s41592-025-02895-w",
+        "https://github.com/jaxleyverse/jaxley"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": "Provide frozen priors/stimuli,seeds,posterior reference and calibrated predictive tests,then reactivate a specific task.",
+      "evidence_file": "literature/admission-v04-inference-control.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "L03",
+      "task": "Valid neural hypothesis testing",
+      "family_code": "L",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. IBL AI Agent is a real analysis toolkit, not a frozen false-positive-rate benchmark. Need animal-held-out genuine/null task generation, exchangeability-preserving randomization and a blinded power/type-I-error protocol. No significance-searching substituted for benchmark completion.",
+      "source_urls": [
+        "https://github.com/int-brain-lab/ibl-ai-agent",
+        "https://www.internationalbrainlab.com/data"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-inference-control.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "L04",
+      "task": "Point-process estimation and goodness of fit",
+      "family_code": "L",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://neurallatents.github.io/",
+        "https://github.com/snel-repo/ComputationThroughDynamicsToolkit",
+        "https://mark-kramer.github.io/Case-Studies-Python/09.html",
+        "https://github.com/Mark-Kramer/Case-Studies-Python"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-inference-control.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "L05",
+      "task": "Intervention-response prediction",
+      "family_code": "L",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Perturbation-response atlas primary source mapped; Nature full-text access redirected in this audit. Animal/experiment identities, perturbation matching, source reuse terms and missing-response policy require acquisition/validation before an intervention-prediction score.",
+      "source_urls": [
+        "https://www.nature.com/articles/s41586-023-06683-4"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-inference-control.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "L06",
+      "task": "Calibrated statistical neural inference",
+      "family_code": "L",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.",
+      "source_urls": [
+        "https://github.com/sbi-benchmark/sbibm"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-inference-control.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "M01",
+      "task": "Behavioral decision-model fitting",
+      "family_code": "M",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. IBL data and Psych-101/Centaur primary resource mapped. Real choice prediction requires participant/animal-held-out chronology, a bounded task selection and data-specific terms; M04 synthetic parameter recovery does not complete this endpoint.",
+      "source_urls": [
+        "https://www.internationalbrainlab.com/data",
+        "https://www.nature.com/articles/s41586-025-09215-4"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-inference-control.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "M02",
+      "task": "Adaptive experiment and stimulus design",
+      "family_code": "M",
+      "decision": "REMOVE_ACTIVE",
+      "reason_category": "new_benchmark_construction",
+      "reason": "Proposed adaptive-design environment has no instantiated unknown-system distribution,action constraints,equal trial budget or regret/information-gain scorer. Archive design/control relevance rather than promise a ready experiment.",
+      "source_urls": [
+        "https://www.nature.com/articles/s41592-025-02895-w",
+        "https://github.com/neurogym/neurogym"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": "Release an independently validated finite adaptive-design environment and scorer with equal interventions/simulation budgets.",
+      "evidence_file": "literature/admission-v04-inference-control.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "M03",
+      "task": "Closed-loop control policy evaluation",
+      "family_code": "M",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Official NeuroGym task collection exists. Need versioned finite suite, trial-generation seeds, observation/action contract and task-trained controller reference. Static supervised score is not closed-loop policy evaluation.",
+      "source_urls": [
+        "https://github.com/neurogym/neurogym"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-inference-control.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "M04",
+      "task": "Cognitive model and parameter recovery",
+      "family_code": "M",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://elifesciences.org/articles/49547"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-inference-control.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "M05",
+      "task": "Practical neuroscience model-fitting optimization",
+      "family_code": "M",
+      "decision": "REMOVE_ACTIVE",
+      "reason_category": "unconfirmed_benchmark_package",
+      "reason": "The BADS/PyBADS optimizers are available,but the registry specifically names CCN17 real neuroscience objectives whose complete task-data/dependency/budget package has not been acquired or validated. A toy optimizer demonstration would not instantiate that benchmark.",
+      "source_urls": [
+        "https://arxiv.org/abs/1705.04405",
+        "https://github.com/acerbilab/bads",
+        "https://github.com/acerbilab/pybads"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": "Locate/pin the actual neuroscience objective bundle and source terms,define evaluation budgets and starts,and reproduce its scorer.",
+      "evidence_file": "literature/admission-v04-inference-control.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "M06",
+      "task": "Embodied neuromuscular control",
+      "family_code": "M",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Official MyoChallenge site lists musculoskeletal control environments and editions. Need pinned MuJoCo/MyoSuite state/action environments, rollout/time budgets and trained policy references; policy training/evaluation outside180s array-code slice.",
+      "source_urls": [
+        "https://myosuite.org/myochallenge/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-inference-control.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "M07",
+      "task": "Animal embodied sensorimotor modeling",
+      "family_code": "M",
+      "decision": "REMOVE_ACTIVE",
+      "reason_category": "simulator_without_frozen_task",
+      "reason": "FlyGym/NeuroMechFly is a scientifically relevant embodied simulator, but this broad row has no particular task,terrain/perturbation distribution,action budget,scorer or controller reference pinned in this project. Setup exceeds the current fixed-program protocol.",
+      "source_urls": [
+        "https://www.nature.com/articles/s41592-024-02497-y",
+        "https://github.com/NeLy-EPFL/flygym"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": "Choose a finite sensorimotor endpoint,pin simulator/assets/seeds and rollout/control reference; activate after an independent smoke test.",
+      "evidence_file": "literature/admission-v04-inference-control.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "N01",
+      "task": "End-to-end neuroscience data analysis QA",
+      "family_code": "N",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Official repository provides workflow metadata, expert answers, dataset loader and eval code. This batch has not frozen an eligible neuroscience question subset, run its large-source data loader or replicated text/figure rubric evaluation. Needs task-specific numeric checks and, where the official evaluator uses an LLM judge, recorded judge model/version/prompt and access. No surrogate blind-judge scores supplied.",
+      "source_urls": [
+        "https://github.com/allenai/neurodiscoverybench"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "N02",
+      "task": "Agentic EEG workflow execution",
+      "family_code": "N",
+      "decision": "REMOVE_ACTIVE",
+      "reason_category": "unconfirmed_executable_release",
+      "reason": "Paper describes relevant agentic EEG evaluation, but the matching complete task/data/evaluator release and tool/provider conditions remain unverified. A similarly named repository is not proof of release.",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.25400"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": "Identify and pin the paper-linked reusable release,source licenses,data and reproducible evaluation configuration.",
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "N03",
+      "task": "Neuroimaging tool and training workflows",
+      "family_code": "N",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Primary NeuroClaw page explicitly lists 120 tasks in7 categories, with/no-skills conditions and GPT5.4 weighted-rubric scoring. Requires matching tool/skill environment, task version, source data terms, and evaluator model/API or a declared distinct deterministic metric. Planning/rubric scores cannot be treated as signal prediction accuracy; no new rubric scores fabricated.",
+      "source_urls": [
+        "https://cuhk-aim-group.github.io/NeuroDiscovery/neurobench.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "N04",
+      "task": "Reproducing scientific analyses",
+      "family_code": "N",
+      "decision": "REMOVE_ACTIVE",
+      "reason_category": "undefined_domain_subset",
+      "reason": "ScienceAgentBench is a real broad-science benchmark, but this row names an unspecified neuroscience/EEG subset rather than a frozen list of task IDs/data/evaluators. Counting all broad-science tasks as neuroscience would be misleading.",
+      "source_urls": [
+        "https://arxiv.org/abs/2410.05080",
+        "https://github.com/OSU-NLP-Group/ScienceAgentBench"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": "Screen and publish the exact neuroscience/cognitive task roster,source data terms and per-task evaluators,then activate those concrete cases.",
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "N05",
+      "task": "NWB data loading, units and reproducibility",
+      "family_code": "N",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://about.dandiarchive.org/",
+        "https://www.internationalbrainlab.com/data",
+        "https://brain-map.org/support/documentation/cell-types-database-api",
+        "https://alleninstitute.github.io/AllenSDK/cell_types.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "N06",
+      "task": "Data integrity fault detection",
+      "family_code": "N",
+      "decision": "REMOVE_ACTIVE",
+      "reason_category": "new_benchmark_construction",
+      "reason": "No validated corruption generator,hidden fault set or fault-detection scorer exists in this project. DANDI is a data archive; N05 clean parsing does not complete corruption detection.",
+      "source_urls": [
+        "https://about.dandiarchive.org/"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": "Validate generator/fault labels and false-alarm/localization scoring on unseen files before reactivation.",
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A15",
+      "task": "Animal vocalization event segmentation and syllable labeling",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. DAS annotated raw audio can support real event-segmentation evaluation. Still need pinned species/recording slice, sampling rate and official event-matching tolerance; no audio acquisition attempted here. Temporal bouts must remain grouped.",
+      "source_urls": [
+        "https://elifesciences.org/articles/68837",
+        "https://data.goettingen-research-online.de/dataverse/das",
+        "https://janclemenslab.org/das/",
+        "https://github.com/nianlonggu/WhisperSeg"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "A16",
+      "task": "Caller localization and vocalization attribution",
+      "family_code": "A",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. VCL controlled speaker localization supplies positions, but multi-mic calibration/time synchronization and recording-group split must be acquired. Do not infer source identity solely from event detection; no adapter prepared.",
+      "source_urls": [
+        "https://proceedings.nips.cc/paper_files/paper/2024/hash/c00d37d6b04d73b870b963a4d70051c1-Abstract-Datasets_and_Benchmarks_Track.html",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/",
+        "https://github.com/neurostatslab/vocalocator"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "E06",
+      "task": "Whole-brain neural activity forecasting",
+      "family_code": "E",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. ZAPBench real larval zebrafish wholebrain activity forecasting is a distinct real task. Needs pinned release, official heldout temporal blocks and neuron mappings; complete brain arrays may be large. No acquisition attempted here, so no permanent infeasibility claim.",
+      "source_urls": [
+        "https://google-research.github.io/zapbench/",
+        "https://arxiv.org/abs/2503.02618",
+        "https://zapbench-release.storage.googleapis.com/volumes/README.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H17",
+      "task": "Cross-laboratory rodent sleep staging",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original NEMAR MSSV page accessible:92mice,five labs,CC0,~5.3GB archive/direct manifest. Promising public real sleep resource, not bad data. Need lab identifiers, stage epoch alignment and leave-lab-out acquisition adapter; no local raw arrays downloaded.",
+      "source_urls": [
+        "https://nemar.org/dataset/on006366",
+        "https://doi.org/10.18112/openneuro.ds006366.v1.0.1"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H18",
+      "task": "Sleep microevent detection",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original DREAMS Zenodo record explicitly warns Expert1 spindle annotations stop after1000s. A naive full-1800s negative-label benchmark is excluded. A masked interval/Expert2 consensus protocol remains feasible but has not been validated, and original DREAMS noncommercial/no-adaptation terms need an appropriate data handling policy.",
+      "source_urls": [
+        "https://zenodo.org/records/2650142",
+        "https://www.nature.com/articles/s41598-026-53891-9",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/",
+        "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "H19",
+      "task": "Real physiological artifact detection and type identification",
+      "family_code": "H",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Original DREAMS record has20expert-annotated15min artifact excerpts and explicit artifact types. Original DREAMS license was downloaded/read; noncommercial and no-adaptation terms complicate distributing prepared arrays. Need local-only extraction/annotation schema and exact event metric; no false claim that real artifact detection equals H16 mixture repair.",
+      "source_urls": [
+        "https://zenodo.org/records/2650142",
+        "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-electrical.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "J07",
+      "task": "Multi-neuron instance segmentation in light microscopy",
+      "family_code": "J",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Mapped FISBe release is approximately21.6GB. Thin-neurite3D instance segmentation needs valid masks for partly labeled images and topology-sensitive scorer. No GPU3D pipeline prepared; not a valid tiny-patch substitute without protocol.",
+      "source_urls": [
+        "https://kainmueller-lab.github.io/fisbe/",
+        "https://zenodo.org/records/10875063",
+        "https://github.com/Kainmueller-Lab/evaluate-instance-segmentation"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "J08",
+      "task": "Fluorescent synaptic puncta segmentation and quantification",
+      "family_code": "J",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "protected_measurement_or_admission",
+      "reason": "Protected because a model measurement or newly admitted protocol exists. Retain all outcomes,including failures/poor scores; pruning never depends on measured performance.",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
+        "https://github.com/pascalschamber/SynAPSeg",
+        "https://zenodo.org/records/18988899"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Measured/admitted protocol preservation; no outcome-based filtering",
+      "protected_measured_or_admitted": true,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "J09",
+      "task": "Multiscale X-ray brain region and microstructure classification",
+      "family_code": "J",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. MTNeuro released region/semantic labels and dataCC BY4.0 make it plausible. Need exact volume-block split and image-to-label adapter; no acquisition attempted here. Region and pixel tasks share samples and must not count as independent datasets.",
+      "source_urls": [
+        "https://mtneuro.github.io/",
+        "https://github.com/MTNeuro/MTNeuro"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-behavior-population.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "K04",
+      "task": "Spatial cortical-domain assignment",
+      "family_code": "K",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Primary spatialLIBD downloader and source located. Original study has three donors, adjacent sections must remain grouped. Local R 4.4.1 is present but SingleCellExperiment, SummarizedExperiment, ExperimentHub and spatialLIBD are absent. Data parsing/independent layer-label policy and spatial specialist scoring are not validated. Small examples/pseudobulks cannot silently stand in for held-out-donor spatial spot benchmark.",
+      "source_urls": [
+        "https://research.libd.org/spatialLIBD/",
+        "https://github.com/LieberInstitute/spatialLIBD",
+        "https://doi.org/10.1038/s42003-024-07001-y",
+        "https://research.libd.org/spatialLIBD/reference/fetch_data.html",
+        "https://raw.githubusercontent.com/LieberInstitute/spatialLIBD/master/R/fetch_data.R",
+        "https://doi.org/10.1038/s41593-020-00787-0"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "K05",
+      "task": "Bulk brain transcriptome cellular deconvolution",
+      "family_code": "K",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Primary DeconvoBuddies fetch documentation identifies bulk 110x21k (41 MB), snRNA 77kx36k (172 MB) and example 10kx557. Need match orthogonal IF/RNAScope fractions to bulk samples, donor/tissue blocks and fixed reference/marker policy. Bioconductor S4 readers absent and ground-truth alignment not completed. Data size itself is manageable; do not call impossible or bad.",
+      "source_urls": [
+        "https://doi.org/10.1186/s13059-025-03552-3",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
+        "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution",
+        "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    },
+    {
+      "benchmark_id": "K06",
+      "task": "Extracellular cell-type inference from ground-truth cell metrics",
+      "family_code": "K",
+      "decision": "KEEP_CANDIDATE",
+      "reason_category": "concrete_candidate_endpoint",
+      "reason": "Retain the distinct lab/computational-neuroscience endpoint as a candidate, not an executable-completion claim. Primary ground-truth tutorial and GitHub folder inspected; 87 files total ~500 MB. Downloaded one 189 kB cell metrics example and consolidated 2.83 MB gt list; MATLAB v7.3 HDF5 parsed with isolated h5py3.15.1. Consolidated list has 430 entries and animal/session/truth labels, but no predictor feature matrix; example has Juxta tag (not a molecular cell class). Must select nonnested independently tagged classes, extract only scalar physiology/waveform metrics from session files, group animals, resolve contributor data terms, and exclude putativeCellType/geneticLine/brainRegion proxies. No validated table yet.",
+      "source_urls": [
+        "https://cellexplorer.org/publicdata/ground-truth-data/",
+        "https://cellexplorer.org/tutorials/ground-truth-tutorial/",
+        "https://alleninstitute.github.io/openscope_databook/optotagging/",
+        "https://api.github.com/repos/petersenpeter/CellExplorer/contents/%2BgroundTruthData"
+      ],
+      "reviewed_on": "2026-10-30",
+      "review_depth": "Catalog-level endpoint/provenance assessment reusing linked bounded admission evidence; no new data-acquisition or exhaustive primary-source review in this pruning pass",
+      "protected_measured_or_admitted": false,
+      "preserve_evidence_archive": true,
+      "reactivation_requirements": null,
+      "evidence_file": "literature/admission-v04-cell-workflow.json",
+      "scope_note": "Active list membership only; REMOVE_ACTIVE does not mean bad data,universal infeasibility or scientific irrelevance."
+    }
+  ],
+  "coverage_consequences": [
+    "Archiving M02/M07 and generic mechanistic constructions leaves active closed-loop/adaptive-design/embodied breadth incomplete; M03 NeuroGym and M06 MyoChallenge remain candidates because their task/reward settings are concrete upstream,even though execution is unattempted here.",
+    "Archiving I03 removes a generic alignment-platform placeholder,not the scientific perspective; a named Brain-Score constituent remains a priority to instantiate.",
+    "Archiving EEG umbrellas/mixed H10 prevents count inflation but leaves some clinical/biometric/cognitive tasks uninstantiated. Do not claim those gaps are solved.",
+    "D03/L02/N06 perspectives remain in the broader archive; their absence from the active list is a release limitation,not evidence they are unnecessary."
+  ],
+  "review_limitations": [
+    "Bounded registry/primary-documentation pruning,not an exhaustive literature or rights audit.",
+    "Most kept candidates are unmeasured and may still fail acquisition,license,split,scorer or budget gates.",
+    "No automatic claim of feasibility is inferred from KEEP_CANDIDATE.",
+    "Root should apply protection again against all newly completed measurements before integrating these recommendations."
+  ]
+}

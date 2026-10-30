@@ -24,5 +24,10 @@
     ],
     "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
     "permanent_rejection": false
+  },
+  "v05_actual_execution": {
+    "status": "measured",
+    "slice": "Blind unsupervised sorting of one10second32channel MEArec simulation; official unit/event scorer",
+    "evidence": "literature/admission-v05-extracellular.json"
   }
 }

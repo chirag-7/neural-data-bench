@@ -1,40 +1,647 @@
-'use strict';
-const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const GH='https://github.com/chirag-7/neural-data-bench',MODELS=['gpt-5.6-sol','gpt-6-sol','gpt-6.1-sol'];
-const label=x=>({'gpt-5.6-sol':'GPT-5.6 Sol','gpt-6-sol':'GPT-6 Sol','gpt-6.1-sol':'GPT-6.1 Sol','oasis-default':'OASIS · default','raw-calcium':'Raw calcium','canonical-mle':'Canonical MLE','midpoint':'Midpoint baseline','canonical-posterior':'Posterior median · audit','deneux':'Deneux · archived','speiser':'Speiser · archived','friedrich':'Friedrich · archived','rupprecht':'Rupprecht · archived','task-baseline':'Conventional task baseline','vassi-run-00':'VASSI · archived run00','mriqc-rfc-2017':'MRIQC · archived2017'}[x]||x);
-const colors={'gpt-5.6-sol':'#8b7394','gpt-6-sol':'#3b728b','gpt-6.1-sol':'#c65327'};
-const link=(u,t)=>`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(t)} ↗</a>`;
-const routeLink=(path,t,cls='')=>`<a class="${cls}" href="#/${path}">${t}</a>`;
-let catalog,summary,records=[],slice='1',metric='score',search='';
-const taskRecords=id=>records.filter(r=>r.benchmark_id===id),valid=r=>r&&Number.isFinite(r[metric]);
-const status=e=>e.execution_admission==='measured'?'<span class="tag measured">Measured exploratory slice</span>':e.execution_admission==='deferred'?'<span class="tag research">Deferred from execution</span>':'<span class="tag wrapper">Mapped · validation pending</span>';
-const cardLink=e=>`${GH}/tree/main/benchmarks/${e.family_code}/${e.id}`;
-function breadcrumb(parts){return `<div class="breadcrumb">${routeLink('','Research atlas')} ${parts.map(p=>' / '+p).join('')}</div>`;}
-function draw(){const p=location.hash.replace(/^#\/?/,'').split('/').filter(Boolean);document.querySelectorAll('nav .nav').forEach(a=>a.classList.toggle('active',p[0]==='trends'?a.hash==='#/trends':p[0]==='methods'?a.hash==='#/methods':a.hash==='#/'));if(p[0]==='family')family(p[1]);else if(p[0]==='task')task(p[1],p[2]||'overview');else if(p[0]==='trends')trends();else if(p[0]==='methods')methods();else home();}
-function familyCard(f){const es=catalog.entries.filter(e=>e.family_code===f.code),n=es.filter(e=>e.execution_admission==='measured').length;return routeLink('family/'+f.code,`<span class="card-code">${f.code} / ${f.scope.toUpperCase()}</span><h2>${esc(f.name)}</h2><p>${esc(f.tasks)}</p><div class="card-bottom"><span>${es.length} task–resource pairings · ${n} measured</span><span aria-hidden="true">→</span></div>`,'family-card');}
-function taskCard(e){return routeLink('task/'+e.id,`<div class="task-meta"><span class="card-code">${e.id}</span>${status(e)}</div><h2>${esc(e.task)}</h2><p>${esc(e.resource)}</p><div class="small">${esc(e.data)} →</div>`,'task-card');}
-function home(){
- $('#app').innerHTML=`<div class="hero"><div><p class="eyebrow">Neuroscience × general models</p><h1>What can a general model<br>do for a neuroscience lab?</h1><p class="lede">Choose a research family, inspect its tasks, and trace measured comparisons to data, code and scoring protocols.</p></div><div class="facts"><div class="fact"><strong>${catalog.entries.length}</strong><span>mapped task–resource pairings</span></div><div class="fact"><strong>${catalog.families.length}</strong><span>research families</span></div><div class="fact"><strong>${summary.measured_tasks}</strong><span>tasks with measurements</span></div><div class="scope-note">${summary.measured_tasks} bounded tasks across ${summary.measured_families} families.<br>Incomplete empirical coverage; current SOTA unverified.</div></div></div><div class="alert"><b>Explore the measured work</b><span>${routeLink('task/A09/results','Behavior classification')} · ${routeLink('task/H01/results','EEG decoding')} · ${routeLink('task/E01/results','Population inference')} · ${routeLink('trends','All measured comparisons')}</span></div><div class="section-head"><div><p class="eyebrow">Research atlas</p><h2 style="margin:0">Start with a category.</h2></div><span class="subtle">Data modalities and scientific workflows</span></div><input class="search" id="catalog-search" aria-label="Find a task or dataset" placeholder="Find a task, dataset or method across all families…" value="${esc(search)}"><div id="search-results"></div><div class="category-grid">${catalog.families.map(familyCard).join('')}</div><p class="footer-note">Mapped resources are candidates, not completed experiments. Scores appear only after execution. ${routeLink('methods','Inspect the scope, admission decisions and limitations →')}</p>`;
- $('#catalog-search').oninput=e=>{search=e.target.value;searchResults()};searchResults();
+"use strict";
+const $ = (s) => document.querySelector(s),
+  esc = (v) =>
+    String(v ?? "").replace(
+      /[&<>"']/g,
+      (c) =>
+        ({
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;",
+        })[c],
+    );
+const GH = "https://github.com/chirag-7/neural-data-bench",
+  MODELS = ["gpt-5.6-sol", "gpt-6-sol", "gpt-6.1-sol"];
+const COLORS = {
+  "gpt-5.6-sol": "#9475aa",
+  "gpt-6-sol": "#3c7fa4",
+  "gpt-6.1-sol": "#c77735",
+};
+const NAMES = {
+  "gpt-5.6-sol": "GPT-5.6 Sol",
+  "gpt-6-sol": "GPT-6 Sol",
+  "gpt-6.1-sol": "GPT-6.1 Sol",
+  mountainsort5: "MountainSort5 · scheme 1",
+  "yasa-eeg": "YASA · pretrained EEG",
+  "pyriemann-ts-svm": "pyRiemann · TS-SVM",
+  "pyriemann-aligned": "pyRiemann · aligned TS-SVM",
+  "canonical-posterior": "Posterior median · post-hoc audit",
+  "canonical-mle": "Canonical MLE",
+  "oasis-default": "OASIS · default AR1",
+  "raw-calcium": "Raw calcium",
+  midpoint: "Midpoint",
+  "mriqc-rfc-2017": "MRIQC · archived 2017",
+  deneux: "Deneux · archived",
+  speiser: "Speiser · archived",
+  friedrich: "Friedrich · archived",
+  rupprecht: "Rupprecht · archived",
+};
+const CATEGORIES = {
+  A: "Behavior & movement",
+  B: "Spikes & sorting",
+  C: "Calcium imaging",
+  D: "Voltage & intracellular",
+  E: "Population dynamics",
+  F: "Neural encoding",
+  G: "Intracortical BCI",
+  H: "EEG, MEG & sleep",
+  I: "Neuroimaging",
+  J: "Anatomy & microscopy",
+  K: "Cell & molecular data",
+  L: "Statistical inference",
+  M: "Cognition & control",
+  N: "Analysis workflows",
+};
+const TITLES = {
+  A09: "Social behavior classification",
+  A14: "Missing-pose recovery",
+  B01: "Extracellular spike sorting",
+  C05: "Calcium-to-spike inference",
+  D02: "Passive cell-response prediction",
+  E01: "Population activity inference",
+  F04: "Retinal image-response encoding",
+  G01: "Cross-day finger-velocity decoding",
+  H01: "EEG motor-imagery decoding",
+  H08: "Sleep-stage classification",
+  H16: "EEG artifact removal",
+  I07: "fNIRS condition classification",
+  I10: "MRI scan-quality classification",
+  J08: "Microscopy puncta segmentation",
+  K01: "Cell morphology classification",
+  L04: "Place-cell count encoding",
+  M04: "Cognitive parameter recovery",
+  N05: "NWB file analysis",
+};
+const DATASETS = {
+  A09: "CalMS21 · processed pose context",
+  A14: "Rat7M · artificial HeadF gaps",
+  B01: "MEArec · 10 s stationary simulation",
+  C05: "Spikefinder · five preparations",
+  D02: "Allen Cell Types · one passive cell",
+  E01: "NLB · Maze, Area2, DMFC",
+  F04: "Goldin 2022 · one retinal preparation",
+  G01: "FALCON M2 · four recording days",
+  H01: "PhysioNet EEGMMI · held-out subjects",
+  H08: "Sleep-EDF · eight first nights",
+  H16: "EEGdenoiseNet · semisynthetic EOG mixtures",
+  I07: "FRESH · tapping conditions",
+  I10: "MRIQC · ABIDE → DS030",
+  J08: "SynAPSeg · two held-out 2D fields",
+  K01: "Allen Cell Types · ephys features",
+  L04: "Kramer · one rat place cell",
+  M04: "Synthetic two-choice Q-learning agents",
+  N05: "Allen · one legacy NWB file",
+};
+let catalog,
+  summary,
+  records = [],
+  excluded = [],
+  selectedTask = "A09",
+  selectedSlice = "",
+  plotView = "graph",
+  showAllRefs = false,
+  showReferences = true,
+  startAtZero = false,
+  query = "",
+  listMode = "measured",
+  hiddenModels = new Set(),
+  analysisClass = "historical_specialist";
+const label = (x) =>
+    NAMES[x] ||
+    (x.startsWith("vassi-run-") ? "VASSI · archived " + x.slice(-2) : x),
+  title = (e) => TITLES[e.id] || e.task;
+const valid = (r) => r && Number.isFinite(r.score),
+  rowsFor = (id) => records.filter((r) => r.benchmark_id === id),
+  measured = (id) => rowsFor(id).some((r) => MODELS.includes(r.model));
+const link = (url, text, cls = "") =>
+  `<a class="${cls}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${text} ↗</a>`;
+const route = (path, text, cls = "") =>
+  `<a class="${cls}" href="#/${path}">${text}</a>`;
+const fmt = (v) =>
+  Number.isFinite(v)
+    ? Math.abs(v) > 0 && Math.abs(v) < 0.00001
+      ? v.toExponential(2)
+      : v.toFixed(4)
+    : "—";
+function methodName(r) {
+  if (r.display_name) return r.display_name;
+  if (r.model === "task-baseline") {
+    if (r.benchmark_id === "J08") return "StarDist · author archive";
+    if (r.benchmark_id === "N05") return "Audited file reference";
+    if (r.benchmark_id === "G01") return "FALCON-style ridge";
+    if (r.benchmark_id === "F04") return "PCA–Poisson GLM";
+    return "Conventional task baseline";
+  }
+  return label(r.model);
 }
-function searchResults(){const q=search.toLowerCase().trim(),es=q?catalog.entries.filter(e=>[e.id,e.task,e.resource,e.data,e.family].join(' ').toLowerCase().includes(q)):[];$('#search-results').innerHTML=q?`<div class="search-results"><span class="small">${es.length} matching pairings</span>${es.map(e=>routeLink('task/'+e.id,`<span class="card-code">${e.id}</span> ${esc(e.task)}<span class="resource"> · ${esc(e.resource)}</span>`,'search-result')).join('')}</div>`:'';}
-function family(code){const f=catalog.families.find(f=>f.code===code);if(!f){home();return}const es=catalog.entries.filter(e=>e.family_code===code);$('#app').innerHTML=`${breadcrumb([esc(f.name)])}<div class="category-hero"><p class="eyebrow">Family ${f.code} / ${f.scope}</p><h1>${esc(f.name)}</h1><p class="lede">${esc(f.data_types)}</p></div><div class="alert"><b>${es.length} mapped pairings</b><span>${es.filter(e=>e.execution_admission==='measured').length} measured · ${es.filter(e=>e.execution_admission==='candidate_pending_validation').length} awaiting validation · ${es.filter(e=>e.execution_admission==='deferred').length} deferred. ${link(GH+'/blob/main/benchmarks/'+code+'/README.md','Family documentation')}</span></div><div class="task-list">${es.map(taskCard).join('')}</div>`;}
-function task(id,tab){const e=catalog.entries.find(e=>e.id===id);if(!e){home();return}const measured=taskRecords(id).some(r=>r.status==='measured'),tabs=['overview','results','procedure','sources'];if(!tabs.includes(tab))tab='overview';$('#app').innerHTML=`${breadcrumb([routeLink('family/'+e.family_code,esc(e.family)),e.id])}<p class="eyebrow">${e.id} / task card</p><h1 class="task-heading">${esc(e.task)}</h1><p class="lede">${esc(e.resource)}</p><div class="task-meta" style="margin-top:20px">${status(e)}<span class="small">Current best: unverified</span></div><nav class="task-tabs" aria-label="Task sections">${tabs.map(t=>routeLink('task/'+id+'/'+t,t[0].toUpperCase()+t.slice(1),t===tab?'active':'')).join('')}</nav><div id="task-content"></div>`;
- if(tab==='results'){if(measured)resultsView(e);else $('#task-content').innerHTML=`<div class="no-score"><h2>No measured scores yet.</h2><p class="method-prose">${esc(e.admission_reason)}</p><p class="small">This resource has not passed every data, rights, split, scorer and baseline gate. Missing results are unknown, not zero.</p></div><p>${link(cardLink(e).replace('/tree/','/blob/')+'/worklog.md','Actual worklog')} · ${link(GH+'/blob/main/registry/current-best.json','Current-best evidence ledger')}</p>`;return;}
- if(tab==='overview')$('#task-content').innerHTML=`<div class="compact-grid"><section class="panel"><p class="eyebrow">Evaluation design</p><h2>From input to scientific endpoint.</h2><dl class="key-value">${e.executed_slice?`<dt>Executed slice</dt><dd>${esc(e.executed_slice)}</dd>`:""}<dt>Input</dt><dd>${esc(e.data)}</dd><dt>Ground truth</dt><dd>${esc(e.ground_truth)}</dd><dt>Native metrics</dt><dd>${esc(e.recommended_metrics)}</dd><dt>Split / transfer</dt><dd>${esc(e.recommended_split)}</dd><dt>Specialist candidates</dt><dd>${esc(e.specialist_baselines)}</dd><dt>General-model route</dt><dd>${esc(e.general_model_route)}</dd></dl></section><section class="panel"><p class="eyebrow">State of evidence</p><h2>${measured?'Exploratory execution.':'A mapped candidate.'}</h2><p class="method-prose">${esc(e.admission_reason)}</p><p class="method-prose">${esc(e.limitations)}</p><p class="small">Catalog metrics and splits are recommendations until a specific executable protocol is frozen. One pairing may name several endpoints.</p><div class="actions">${routeLink('task/'+id+'/results','Inspect results →','button')}${link(cardLink(e),'Decentralized task documentation')}</div></section></div>`;
- if(tab==='procedure')$('#task-content').innerHTML=`<section class="doc-prose"><h2>How this task is handled.</h2><p>${esc(e.verification)}</p><p>${esc(e.admission_reason)}</p><p>Each task has a source-linked card, evaluation contract, data description and actual worklog. An unexecuted task’s proposed method is not an execution claim.</p><div class="method-links">${link(cardLink(e).replace('/tree/','/blob/')+'/methods.md','Task-specific methods')}${link(cardLink(e).replace('/tree/','/blob/')+'/worklog.md','Steps actually completed')}${link(cardLink(e).replace('/tree/','/blob/')+'/data.json','Data and license status')}${measured?link(GH+'/tree/main/experiments/'+id,'Frozen experiment artifacts'):link(GH+'/blob/main/registry/admission-decisions.json','Admission decision ledger')}</div>${measured?`<p>${id==='C05'?'The three programs were first generated for preparation 1, then frozen and refitted on preparations 2–5. No test feedback or code repair was provided. Data and scoring come from the original public challenge.':id==='M04'?'This is a newly constructed synthetic recovery task with known Q-learning equations,24 simulated agents and a canonical local MLE reference.':esc(e.executed_slice||'See frozen experiment protocol. No execution feedback or model repair.')}</p>`:''}</section>`;
- if(tab==='sources')$('#task-content').innerHTML=`<section class="doc-prose"><h2>Follow the evidence.</h2>${e.source_urls.map((u,i)=>`<p>${link(u,'Primary source '+(i+1))}<br><span class="mono-link">${esc(u)}</span></p>`).join('')}<p>${link(cardLink(e).replace('/tree/','/blob/')+'/references.json','Machine-readable source associations')}</p><p>Source discovery does not establish current-best performance or permission to redistribute data. Those checks remain separate.</p></section>`;
+function isSpecialist(r) {
+  return (
+    [
+      "deneux",
+      "speiser",
+      "friedrich",
+      "rupprecht",
+      "oasis-default",
+      "mountainsort5",
+      "mriqc-rfc-2017",
+      "yasa-eeg",
+      "pyriemann-ts-svm",
+      "pyriemann-aligned",
+    ].includes(r.model) ||
+    r.model.startsWith("vassi-run-") ||
+    (r.benchmark_id === "J08" && r.model === "task-baseline")
+  );
 }
-function chartDomain(values){const lo=Math.min(...values),hi=Math.max(...values),pad=Math.max((hi-lo)*.18,Math.abs(hi)*.035,.000001);return [lo>=0?Math.max(0,lo-pad):lo-pad,hi+pad];}
-function lineChart(rows,reference,direction,aggregate=false){const points=MODELS.map(m=>({model:m,r:rows.find(r=>r.model===m)}));const values=points.filter(p=>valid(p.r)).map(p=>p.r[metric]);if(Number.isFinite(reference))values.push(reference);if(!values.length)return '<p>No valid measurements.</p>';const [lo,hi]=chartDomain(values),x=i=>85+i*200,y=v=>225-(v-lo)/(hi-lo)*175;let path='',last=false;for(const p of points){if(valid(p.r)){path+=(last?'L':'M')+x(MODELS.indexOf(p.model))+' '+y(p.r[metric])+' ';last=true}else last=false}return `<svg class="line-chart" viewBox="0 0 570 295" role="img" aria-label="Native endpoint across three ordered Sol versions; ${direction} is better"><title>Model generation comparison; truncated native-score axis, not a time or compute scaling curve</title>${[0,.25,.5,.75,1].map(t=>{const v=lo+t*(hi-lo);return `<line x1="64" x2="530" y1="${y(v)}" y2="${y(v)}" stroke="#e1e3de"/><text x="56" y="${y(v)+4}" text-anchor="end">${v.toFixed(3)}</text>`}).join('')}${Number.isFinite(reference)?`<line x1="64" x2="530" y1="${y(reference)}" y2="${y(reference)}" stroke="#172b3a" stroke-dasharray="6 5"/>`:''}<path d="${path}" fill="none" stroke="#c65327" stroke-width="3"/>${points.map((p,i)=>`<text x="${x(i)}" y="258" text-anchor="middle">${label(p.model).replace('GPT-','')}</text>${valid(p.r)?`<circle cx="${x(i)}" cy="${y(p.r[metric])}" r="5" fill="${colors[p.model]}"/><text x="${x(i)}" y="${y(p.r[metric])-12}" text-anchor="middle">${p.r[metric].toFixed(4)}</text>`:`<text x="${x(i)}" y="150" text-anchor="middle">Failed / missing</text>`}`).join('')}<text x="285" y="286" text-anchor="middle">Model version order · inspect axis range</text></svg><div class="chart-key"><span><i class="key-dot" style="background:#c65327"></i>Generated program</span>${Number.isFinite(reference)?'<span>– – Reference (unequal histories)</span>':''}</div>`;}
-function bars(rows,direction){const values=rows.filter(valid).map(r=>r[metric]);if(!values.length)return '<p>No valid measurements.</p>';const lo=Math.min(0,...values),hi=Math.max(0,...values),span=hi-lo||1;return `<div class="chart">${rows.map(r=>{const v=r[metric],zero=(-lo/span)*100,end=(v-lo)/span*100;return `<div class="bar-row"><span class="bar-label">${esc(label(r.model))}${r.line_limit_compliant===false?' †':''}</span><div class="bar-track" style="position:relative"><div class="bar-fill" style="position:absolute;left:${valid(r)?Math.min(zero,end):0}%;width:${valid(r)?Math.abs(end-zero):0}%;background:${colors[r.model]||'#70867d'}"></div></div><span class="bar-value">${valid(r)?v.toFixed(4):'Failed'}</span></div>`}).join('')}<div class="chart-axis"><span>${lo.toFixed(3)}</span><span>${((hi+lo)/2).toFixed(3)}</span><span>${hi.toFixed(3)}</span></div></div>`;}
-function resultsView(e){metric='score';const all=taskRecords(e.id),slices=[...new Set(all.map(r=>r.slice_id))];if(!slices.includes(slice))slice=slices[0];const rows=all.filter(r=>r.slice_id===slice),ref=summary.reference_envelopes.find(r=>r.benchmark_id===e.id&&r.slice_id===slice),refRow=ref&&rows.find(r=>r.model===ref.model),native=rows.find(r=>Number.isFinite(r.score)),dir=native?.direction||'higher';const extras=rows.filter(r=>!MODELS.includes(r.model)&&r!==refRow&&!r.model.startsWith('vassi-run-'));const ordered=[...MODELS.map(m=>rows.find(r=>r.model===m)),refRow,...extras].filter(Boolean);$('#task-content').innerHTML=`<div class="result-alert">${esc(e.executed_slice||e.data)}. <strong>${dir==='higher'?'Higher':'Lower'} is better.</strong> Custom diagnostics do not automatically reproduce full official leaderboards.</div><div class="controls"><label>Evaluation slice <select id="slice">${slices.map(v=>`<option value="${v}" ${slice===v?'selected':''}>${e.id==='C05'?'Preparation '+v:v}</option>`).join('')}</select></label></div><div class="score-grid"><section class="panel"><p class="eyebrow">Native endpoint / bar chart</p><h2>${esc(native?.metric||'Task score')}</h2>${bars(ordered,dir)}<p class="chart-note">${esc(ref?.evidence||'Reference unavailable')}. The bar axis includes zero. ${ref?esc(ref.reference_class):''}.</p></section><section class="panel"><p class="eyebrow">Generation trajectory / line plot</p><h2>Three versions, one endpoint.</h2>${lineChart(rows,refRow?.score,dir)}<p class="chart-note">Line axes adapt to the native score range and may be truncated. One submission per model; connected points are not a fitted scaling law or evidence of consistent improvement.</p></section></div><section class="panel section-space"><p class="eyebrow">All frozen attempts and references</p><h2>Inspect scores and failures.</h2><div class="table-scroll"><table class="data-table"><thead><tr><th>Method</th><th>Primary score</th><th>Evaluated rows / fields</th><th>Fit / execution seconds</th><th>Evidence</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${esc(label(r.model))}${r.line_limit_compliant===false?' †':''}</td><td>${Number.isFinite(r.score)?r.score.toFixed(6):'Failed'}</td><td>${r.n_units||'—'}</td><td>${Number.isFinite(r.seconds)?r.seconds.toFixed(2):'—'}</td><td>${r.status==='failed'?esc(r.reason):r.reference_type==='archived_predictions_rescored'?'Archived · exact-slice rescore':MODELS.includes(r.model)?'Single generated program':r.model==='canonical-posterior'?'Posterior median · audit (post hoc)':'Local reference'}</td></tr>`).join('')}</tbody></table></div><p class="chart-note">† Format deviation; retained unchanged for exploratory analysis, excluded from strict format subsets. Rows, neurons, fields and repeated trials are not independent animals. Times exclude generation/loading/imports and are not end-to-end cost. ${e.id==='M04'?'All three programs implement nearly identical posterior medians; tiny differences are numerical, and the frozen MLE uses another estimation objective.':''}${e.id==='N05'?'One NWB file shared with D02;61 fields are a deterministic checklist, not61 independent experiments.':''}${e.id==='A09'?'All20 VASSI runs are retained; run00 was selected before scoring. The test-best run was not selected as the primary comparator.':''}</p><div class="actions"><a class="button" href="data/measurements.csv" download>All scalar results ↓</a><a class="button secondary" href="data/${e.id}.json" download>Detailed task records ↓</a>${link(GH+'/tree/main/experiments/'+e.id,'Frozen code, protocol and worklog')}${link(GH+'/tree/main/results/predictions/'+e.id,'Predictions')}</div></section><div class="panel section-space"><p class="eyebrow">Validity limits</p><p class="method-prose">Measures single-shot code construction plus local numerical execution (T3). Programs implement domain methods using general libraries; this does not establish native signal understanding. Public-data contamination, exact hosted checkpoint resolution and provider context remain unverified. No current global SOTA or matched-total-effort superiority claim. ${esc(e.limitations)}</p></div>`;$('#slice').onchange=ev=>{slice=ev.target.value;resultsView(e)};}
-let trendTab='references',referenceClass='conventional_baseline',trendTask='A09';
-function trends(){metric='score';const sm=summary.model_summaries;$('#app').innerHTML=`${breadcrumb(['Cross-task summaries'])}<p class="eyebrow">Centralized measurements / exploratory</p><h1>Where do general models<br>help in the lab?</h1><p class="lede">Compare native scores, reference classes and model-version changes. Every denominator is visible; no overall mean of incompatible metrics.</p><div class="stat-strip"><div><strong>${summary.measured_tasks} / ${summary.mapped_entries}</strong><span>mapped task pairings with measured attempts</span></div><div><strong>${summary.measured_families} / ${summary.mapped_families}</strong><span>families represented</span></div><div><strong>${summary.model_attempts}</strong><span>model × evaluation-slice attempts</span></div><div><strong>1</strong><span>generated program / model / task</span></div></div><nav class="task-tabs" aria-label="Analysis views">${[['references','Reference comparisons'],['progress','Generation changes'],['native','Native task scores']].map(([id,t])=>`<button class="${trendTab===id?'active':''}" data-analysis="${id}">${t}</button>`).join('')}</nav><div id="trend-content"></div><div class="panel section-space"><p class="eyebrow">Interpretation limits</p><p>General models often beat the simple local baselines in this selected panel. That cannot establish superiority over the best specialized methods. C05 uses test-selected historical envelopes; A09 and I10 use archived specialists with unequal training histories. D02 and N05 share a file; repeated trials and neurons do not create independent datasets. M04 numerical differences and N05 deterministic correctness are reported separately from capability-progress summaries.</p><p>Weighting: average slice win indicators within task, tasks within family, then families equally. A win is a directional point-score difference greater than1e−9, not statistical significance. Selection favored affordable CPU diagnostics; no population-level neuroscience conclusion.</p></div><div class="actions"><a class="button" href="data/summary.json" download>Derived statistics ↓</a><a class="button secondary" href="data/measurements.csv" download>All measurements ↓</a>${link(GH+'/blob/main/analysis/findings.md','Findings and researcher guidance')}${link(GH+'/blob/main/docs/release-v04.md','Release scope and exclusions')}</div>`;document.querySelectorAll('[data-analysis]').forEach(b=>b.onclick=()=>{trendTab=b.dataset.analysis;trends()});trendContent();}
-function trendContent(){const el=$('#trend-content');if(trendTab==='references'){const classes=['conventional_baseline','historical_specialist','synthetic_objective_mismatched','deterministic_correctness'];const rs=summary.model_summaries.map(s=>({model:s.model,c:s.reference_class_summaries[referenceClass]}));const scores=rs.map(r=>({model:r.model,score:r.c?.exploratory.family_equal_win_fraction}));el.innerHTML=`<div class="controls"><label>Reference evidence class <select id="reference-class">${classes.map(c=>`<option value="${c}" ${c===referenceClass?'selected':''}>${c.replaceAll('_',' ')}</option>`).join('')}</select></label></div><div class="score-grid"><section class="panel"><p class="eyebrow">Family-equal directional win fraction</p><h2>${esc(referenceClass.replaceAll('_',' '))}</h2>${bars(scores,'higher')}<p class="chart-note">Fraction of selected task point comparisons won, not accuracy, SOTA superiority or effect size. Failures remain in the exploratory denominator. Reference types are kept separate.</p></section><section class="panel"><p class="eyebrow">Denominators and strict-format sensitivity</p><div class="table-scroll"><table class="data-table"><thead><tr><th>Model</th><th>Wins / slices</th><th>Tasks / families</th><th>Strict wins / eligible slices</th><th>Failures</th></tr></thead><tbody>${rs.map(r=>{const a=r.c?.exploratory,b=r.c?.strict;return `<tr><td>${label(r.model)}</td><td>${a?.wins??0} / ${a?.n_slice_comparisons??0}</td><td>${a?.n_tasks??0} / ${a?.n_families??0}</td><td>${b?.wins??0} / ${b?.n_slice_comparisons??0}</td><td>${a?.failed_or_missing??0}</td></tr>`}).join('')}</tbody></table></div><p class="chart-note">Strict excludes submitted format deviations. It does not imply matched procedures or remove public-test contamination concerns.</p></section></div>`;$('#reference-class').onchange=e=>{referenceClass=e.target.value;trendContent()};}
-else if(trendTab==='progress'){el.innerHTML=`<section class="panel"><p class="eyebrow">Point-score ordering / M04 and N05 separate</p><h2>Improvement is task dependent.</h2><div class="table-scroll"><table class="data-table"><thead><tr><th>Comparison</th><th>Improved / slices</th><th>Declined</th><th>Ties</th><th>Task / family count</th><th>Family-equal improvement fraction</th></tr></thead><tbody>${summary.paired_macro_summaries.map(p=>{const a=p.exploratory;return `<tr><td>${label(p.older)} → ${label(p.newer)}</td><td>${a.wins} / ${a.n_slice_comparisons}</td><td>${a.losses}</td><td>${a.numerical_ties}</td><td>${a.n_tasks} / ${a.n_families}</td><td>${a.family_equal_win_fraction.toFixed(3)}</td></tr>`}).join('')}</tbody></table></div><p>One frozen program per version. No practical-equivalence margin or generation-replicate uncertainty was prespecified. The1e−9 tie tolerance only removes numerical equality.</p></section><section class="panel section-space"><h2>Reliability includes the failures.</h2><table class="data-table"><thead><tr><th>Model</th><th>Valid / attempted</th><th>Strict valid / attempted</th></tr></thead><tbody>${summary.model_summaries.map(s=>`<tr><td>${label(s.model)}</td><td>${s.valid} / ${s.attempted}</td><td>${s.strict_format_valid} / ${s.attempted}</td></tr>`).join('')}</tbody></table></section>`;}
-else{el.innerHTML=`<div class="controls"><label>Measured task <select id="trend-task">${summary.measured_task_ids.map(id=>`<option value="${id}" ${id===trendTask?'selected':''}>${id} · ${esc(catalog.entries.find(e=>e.id===id)?.task||id)}</option>`).join('')}</select></label></div><div id="native-trend"></div>`;const show=()=>{const rows=taskRecords(trendTask),sid=rows[0].slice_id,selected=rows.filter(r=>r.slice_id===sid),ref=summary.reference_envelopes.find(r=>r.benchmark_id===trendTask&&r.slice_id===sid);$('#native-trend').innerHTML=`<div class="score-grid"><section class="panel"><p class="eyebrow">${trendTask} / ${esc(ref?.metric||'native endpoint')}</p>${bars([...MODELS.map(m=>selected.find(r=>r.model===m)),ref&&selected.find(r=>r.model===ref.model)].filter(Boolean),ref?.direction||'higher')}${routeLink('task/'+trendTask+'/results','Inspect all slices, methods and caveats →')}</section><section class="panel">${lineChart(selected,ref?.score,ref?.direction||'higher')}<p class="chart-note">First recorded slice shown; C05 preparation1 is development evidence. Use the task page to inspect all five preparations.</p></section></div>`};$('#trend-task').onchange=e=>{trendTask=e.target.value;show()};show();}}
-
-function methods(){const admissions=catalog.entries.reduce((a,e)=>(a[e.execution_admission]=(a[e.execution_admission]||0)+1,a),{});$('#app').innerHTML=`${breadcrumb(['Methods & evidence'])}<p class="eyebrow">Scope / provenance / audit trail</p><h1>A broad map.<br>A bounded experiment.</h1><p class="lede">A useful research benchmark must make it easy to distinguish what was found, what was executed, and what can be concluded.</p><div class="stat-strip"><div><strong>${catalog.entries.length}</strong><span>mapped task–resource pairings</span></div><div><strong>${admissions.measured}</strong><span>measured exploratory tasks</span></div><div><strong>${admissions.candidate_pending_validation}</strong><span>candidates awaiting execution gates</span></div><div><strong>${admissions.deferred}</strong><span>deferred from lightweight execution</span></div></div><div class="compact-grid"><section class="panel method-prose"><p class="eyebrow">Coverage argument</p><h2>Modalities and operations.</h2><p>Fourteen families map behavior/audio, electrical and optical physiology, dynamics, encoding, interfaces, neuroimaging, anatomy, molecular data, inference, control and workflows. Bounded audits added causal, mechanistic, cognitive, acoustic, sleep and spatial-assay perspectives.</p><p>Each task has its own documentation. The central taxonomy also examines ground truth, preparation, scientific operation, transfer unit, supervision and resource constraints. Provisional operation tags need expert adjudication.</p><p>Clinical/prognostic and lifespan modeling, PET/SPECT, neurochemical/autonomic sensing, specialized interventions and analytical theory remain underrepresented or outside execution scope. The review is not exhaustive and has not received independent human domain validation.</p></section><section class="panel method-prose"><p class="eyebrow">Execution admission</p><h2>Five gates before a score.</h2><ol><li>Neuroscience-relevant input/output endpoint.</li><li>Usable data and verified rights for a finite slice.</li><li>Frozen biological grouping, split and label-access policy.</li><li>Executable scorer and reproduced reference.</li><li>Frozen model procedure, predictions and failure reporting.</li></ol><p>High setup, unclear release or rights, and proposed constructions are deferred. Candidates are not promised complete. No unverified current-best numbers are filled in.</p></section></div><section class="panel section-space"><p class="eyebrow">Pretraining domain × procedure</p><h2>Keep the evaluation tracks distinct.</h2><div class="table-scroll"><table class="data-table"><thead><tr><th>Track</th><th>Procedure</th><th>Claim</th></tr></thead><tbody><tr><td>T0</td><td>Direct frozen model</td><td>Native input/output capability</td></tr><tr><td>T1</td><td>Frozen representation + controlled readout</td><td>Feature transfer</td></tr><tr><td>T2</td><td>Bounded adaptation</td><td>Label/compute efficiency</td></tr><tr><td>T3 · measured here</td><td>Single no-tool code submission + local numerical fitting</td><td>Analysis construction</td></tr><tr><td>T4</td><td>Agent with specialist tools</td><td>Workflow execution and interpretation</td></tr></tbody></table></div><p class="chart-note">The current models are three hosted Sol versions. Open-weight, image/video, audio, world and neuroscience-pretrained models remain future comparisons; their scores are not implied.</p></section><div class="method-links">${[['README.md','Main plan and central status'],['docs/taxonomy.md','Taxonomy and coverage justification'],['docs/review-protocol.md','Review protocol and inclusion rules'],['literature/search-log.json','Recorded searches'],['literature/sources.json','Source registry'],['literature/extension-audit.md','Latest gap audit and exclusions'],['docs/methodology.md','Evaluation methodology'],['docs/macro-analysis-plan.md','Macro statistics and hypotheses'],['docs/prior-work.md','Closest prior work'],['registry/admission-decisions.json','Every admission decision'],['registry/current-best.json','Current-best evidence ledger'],['docs/data-management.md','Data and audit structure']].map(([p,t])=>link(GH+'/blob/main/'+p,t)).join('')}</div><p class="footer-note">This is an evidence map with bounded primary-source audits. Earlier search records were incomplete; PRISMA compliance and exhaustive literature screening are not claimed. Historical public labels, one-generation sampling and unequal specialist histories limit the current experiments.</p>`;}
-window.addEventListener('hashchange',()=>{draw();window.scrollTo({top:0})});
-Promise.all([fetch('data/catalog.json').then(r=>r.json()),fetch('data/summary.json').then(r=>r.json()),fetch('data/measurements.jsonl').then(r=>r.text())]).then(([c,s,t])=>{catalog=c;summary=s;records=t.trim().split('\n').filter(Boolean).map(x=>JSON.parse(x));draw()}).catch(e=>{$('#app').innerHTML='<p class="loading">The research data could not be loaded. Please reload.</p>';console.error(e)});
+function evidence(r) {
+  if (MODELS.includes(r.model)) return "General-model code";
+  if (r.reference_type === "pretrained_specialist")
+    return "Pretrained specialist";
+  if (isSpecialist(r))
+    return r.reference_type === "archived_predictions_rescored"
+      ? "Archived specialist"
+      : "Reproduced specialist";
+  if (r.model === "canonical-posterior") return "Post-hoc mathematical audit";
+  if (r.model === "canonical-mle") return "Frozen mathematical reference";
+  if (r.benchmark_id === "N05") return "Deterministic correctness";
+  return "Conventional baseline";
+}
+function best(rs) {
+  const vs = rs.filter(valid);
+  return vs.sort(
+    (a, b) => (b.score - a.score) * (a.direction === "lower" ? -1 : 1),
+  )[0];
+}
+function primary(id, sid) {
+  const ref = summary.reference_envelopes.find(
+    (r) => r.benchmark_id === id && r.slice_id === sid,
+  );
+  return (
+    ref && rowsFor(id).find((r) => r.slice_id === sid && r.model === ref.model)
+  );
+}
+function comparisons(id, sid) {
+  const rs = rowsFor(id).filter((r) => r.slice_id === sid),
+    specialists = rs.filter((r) => isSpecialist(r) && valid(r)),
+    available = rs.filter((r) => !MODELS.includes(r.model) && valid(r)),
+    specialist = best(specialists),
+    reference = specialist || primary(id, sid) || best(available);
+  return { rs, specialists, specialist, reference, frozen: primary(id, sid) };
+}
+function brief(id) {
+  const ss = [
+      ...new Set(
+        rowsFor(id)
+          .filter((r) => MODELS.includes(r.model))
+          .map((r) => r.slice_id),
+      ),
+    ],
+    rs = [];
+  for (const model of MODELS) {
+    const a = rowsFor(id).filter((r) => r.model === model && valid(r));
+    if (a.length)
+      rs.push({
+        ...a[0],
+        score: a.reduce((s, r) => s + r.score, 0) / a.length,
+        line_limit_compliant: a.every((r) => r.line_limit_compliant !== false),
+      });
+  }
+  const refs = ss.map((s) => comparisons(id, s).reference).filter(valid);
+  return {
+    models: rs,
+    bestModel: best(rs),
+    reference: refs.length
+      ? {
+          ...refs[0],
+          score: refs.reduce((s, r) => s + r.score, 0) / refs.length,
+          display_name:
+            refs.length > 1 && new Set(refs.map((r) => r.model)).size > 1
+              ? "Slice-equal inspected reference envelope"
+              : undefined,
+        }
+      : null,
+    nSlices: ss.length,
+  };
+}
+function sidebar(family = "") {
+  const counts = Object.fromEntries(
+    catalog.families.map((f) => [
+      f.code,
+      catalog.entries.filter((e) => e.family_code === f.code && measured(e.id))
+        .length,
+    ]),
+  );
+  $("#sidebar").innerHTML =
+    `<p class="side-label">Benchmark categories</p>${route("", '<span>All measured benchmarks</span><span class="count">' + summary.measured_tasks + "</span>", "side-link " + (!family ? "active" : ""))}${catalog.families.map((f) => route("category/" + f.code, `<span>${esc(CATEGORIES[f.code] || f.name)}</span><span class="count">${counts[f.code]}</span>`, "side-link " + (family === f.code ? "active" : ""))).join("")}<div class="side-note">Counts show tasks with model attempts. Each task has its own protocol and native metric.<br><br>${route("excluded", "Archived & excluded candidates →")}<br>${link(GH, "Source & audit trail")}</div>`;
+}
+function draw() {
+  let p = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
+  if (p[0] === "task")
+    p = ["benchmark", p[1], p[2] === "procedure" ? "evaluation" : p[2]];
+  if (p[0] === "family") p = ["category", p[1]];
+  if (p[0] === "trends") p = ["analysis"];
+  let fam = p[0] === "category" ? p[1] : p[0] === "benchmark" ? p[1]?.[0] : "";
+  sidebar(fam);
+  document
+    .querySelectorAll("[data-nav]")
+    .forEach((a) =>
+      a.classList.toggle(
+        "active",
+        a.dataset.nav ===
+          (["models", "model"].includes(p[0])
+            ? "models"
+            : ["analysis", "methods"].includes(p[0])
+              ? p[0]
+              : "benchmarks"),
+      ),
+    );
+  if (p[0] === "benchmark") benchmark(p[1], p[2] || "results");
+  else if (p[0] === "models") modelsPage();
+  else if (p[0] === "model") modelsPage(p[1]);
+  else if (p[0] === "analysis") analysisPage();
+  else if (p[0] === "methods") methodsPage();
+  else if (p[0] === "excluded") excludedPage();
+  else explorer(p[0] === "category" ? p[1] : "");
+}
+function mobileFilter(fam) {
+  return `<div class="mobile-filter"><label class="screen-reader" for="mobile-category">Category</label><select id="mobile-category"><option value="">All categories</option>${catalog.families.map((f) => `<option value="${f.code}" ${fam === f.code ? "selected" : ""}>${esc(CATEGORIES[f.code] || f.name)}</option>`).join("")}</select></div>`;
+}
+function explorer(fam = "") {
+  const f = catalog.families.find((f) => f.code === fam),
+    es = catalog.entries.filter((e) => !fam || e.family_code === fam),
+    scored = es.filter((e) => measured(e.id));
+  if (scored.length && !scored.some((e) => e.id === selectedTask))
+    selectedTask = scored[0].id;
+  $("#app").innerHTML =
+    `<p class="eyebrow">General models × specialist methods</p><h1>${f ? esc(CATEGORIES[fam] || f.name) : "Neuroscience benchmark results"}</h1><p class="lede">${f ? esc(f.tasks) : "Explore measured performance by task, compare general models with verified specialist references, and follow each result to its data and evaluation protocol."}</p>${mobileFilter(fam)}${!fam ? `<div class="stats"><div class="stat"><strong>${summary.measured_tasks}</strong><span>tasks with model attempts</span></div><div class="stat"><strong>${summary.measured_families} / ${catalog.families.length}</strong><span>categories represented</span></div><div class="stat"><strong>3</strong><span>general models evaluated</span></div><div class="stat"><strong>${summary.model_attempts}</strong><span>model × slice attempts</span></div></div>` : ""}${scored.length ? `<div class="toolbar"><label for="benchmark-picker" class="small">Explore a benchmark</label><select id="benchmark-picker">${scored.map((e) => `<option value="${e.id}" ${selectedTask === e.id ? "selected" : ""}>${e.id} · ${esc(title(e))}</option>`).join("")}</select>${route("benchmark/" + selectedTask, "Open benchmark →", "button secondary")}</div><div id="featured-chart"></div>` : `<div class="note">No model results are available in this category yet. Its candidates remain separate from measured benchmarks.</div>`}<div class="section-head"><h2>${f ? "Benchmarks in this category" : "Benchmark directory"}</h2><span class="small">Native scores · no mixed-metric ranking</span></div><div class="toolbar"><input id="search" class="search" aria-label="Search benchmarks" placeholder="Search tasks, datasets or methods…" value="${esc(query)}"><select id="list-mode" aria-label="Result availability"><option value="measured" ${listMode === "measured" ? "selected" : ""}>Measured results</option><option value="all" ${listMode === "all" ? "selected" : ""}>All active candidates</option></select><a class="download-link" href="data/measurements.csv" download>Download results ↓</a></div><div id="benchmark-directory"></div><p class="small" style="margin-top:17px">† Code-line format deviation; see strict-format analysis. A published task score is conditional on its frozen slice and procedure. “Best verified specialist” means the highest matching score among inspected references; it does not establish current global SOTA. ${route("methods", "Read the methodology →")}</p>`;
+  if ($("#mobile-category"))
+    $("#mobile-category").onchange = (e) => {
+      location.hash = e.target.value ? "#/category/" + e.target.value : "#/";
+    };
+  if ($("#benchmark-picker"))
+    $("#benchmark-picker").onchange = (e) => {
+      selectedTask = e.target.value;
+      selectedSlice = "";
+      explorer(fam);
+    };
+  $("#search").oninput = (e) => {
+    query = e.target.value;
+    directory(es);
+  };
+  $("#list-mode").onchange = (e) => {
+    listMode = e.target.value;
+    directory(es);
+  };
+  directory(es);
+  if (scored.length) renderChart("#featured-chart", selectedTask, true);
+}
+function directory(es) {
+  const q = query.toLowerCase(),
+    filtered = es.filter(
+      (e) =>
+        (listMode === "all" || measured(e.id)) &&
+        (!q ||
+          JSON.stringify([
+            e.id,
+            title(e),
+            DATASETS[e.id],
+            e.resource,
+            e.data,
+            e.specialist_baselines,
+          ])
+            .toLowerCase()
+            .includes(q)),
+    );
+  $("#benchmark-directory").innerHTML =
+    `<div class="table-panel table-wrap"><table><thead><tr><th>Benchmark / dataset</th><th>Category</th><th>Best measured general model</th><th>Best verified specialist / reference</th><th>Metric</th></tr></thead><tbody>${
+      filtered
+        .map((e) => {
+          const b = brief(e.id);
+          return `<tr><td>${route("benchmark/" + e.id, esc(title(e)), "bench-name")}<span class="bench-sub">${e.id} · ${esc(DATASETS[e.id] || e.resource)}</span></td><td><span class="small">${esc(CATEGORIES[e.family_code])}</span></td><td>${b.bestModel ? `<span class="number">${fmt(b.bestModel.score)}</span><span class="score-caption">${label(b.bestModel.model)}${b.bestModel.line_limit_compliant === false ? " †" : ""}${b.nSlices > 1 ? " · mean of " + b.nSlices + " slices" : ""}</span>` : '<span class="badge">Not run</span>'}</td><td>${b.reference ? `<span class="number">${fmt(b.reference.score)}</span><span class="score-caption">${esc(methodName(b.reference))}${isSpecialist(b.reference) ? "" : " · baseline/reference"}</span>` : '<span class="small">Unverified</span>'}</td><td>${b.bestModel ? `<span class="small">${esc(b.bestModel.metric)} ${b.bestModel.direction === "higher" ? "↑" : "↓"}</span>` : "—"}</td></tr>`;
+        })
+        .join("") ||
+      '<tr><td colspan="5" class="empty">No matching benchmarks. Try another category or result-availability filter.</td></tr>'
+    }</tbody></table></div>`;
+}
+function referenceSelection(c) {
+  const selected = [];
+  const add = (r) => {
+    if (r && !selected.some((v) => v.model === r.model)) selected.push(r);
+  };
+  add(c.reference);
+  add(c.frozen);
+  const baseline = c.rs.find((r) => r.model === "task-baseline");
+  if (valid(baseline)) add(baseline);
+  if (showAllRefs)
+    for (const r of c.rs)
+      if (!MODELS.includes(r.model) && !r.model.startsWith("vassi-run-"))
+        add(r);
+  return selected;
+}
+function renderChart(target, id, compact = false) {
+  const e = catalog.entries.find((e) => e.id === id),
+    all = rowsFor(id),
+    slices = [
+      ...new Set(
+        all.filter((r) => MODELS.includes(r.model)).map((r) => r.slice_id),
+      ),
+    ];
+  if (!slices.includes(selectedSlice)) selectedSlice = slices[0];
+  const c = comparisons(id, selectedSlice),
+    native = c.rs.find(valid);
+  if (!native) {
+    $(target).innerHTML =
+      '<p class="empty">No valid measurements for this slice.</p>';
+    return;
+  }
+  const refs = showReferences ? referenceSelection(c) : [],
+    generals = MODELS.filter((m) => !hiddenModels.has(m)).map(
+      (m) => c.rs.find((r) => r.model === m) || { model: m, status: "missing" },
+    );
+  $(target).innerHTML =
+    `<div class="chart-card"><div class="chart-head"><div><h2>${compact ? route("benchmark/" + id, esc(title(e))) : esc(title(e))}</h2><p class="small">${esc(native.metric)} · ${native.direction === "higher" ? "higher" : "lower"} is better · ${id}</p></div><div class="segmented" role="group" aria-label="Chart or table"><button data-view="graph" class="${plotView === "graph" ? "active" : ""}">Graph</button><button data-view="table" class="${plotView === "table" ? "active" : ""}">Table</button></div></div><div class="plot-controls"><label>Evaluation slice <select id="slice-picker">${slices.map((s) => `<option value="${s}" ${s === selectedSlice ? "selected" : ""}>${id === "C05" ? "Preparation " + s : s}</option>`).join("")}</select></label><label><input id="show-ref" type="checkbox" ${showReferences ? "checked" : ""}>Include references</label><label><input id="all-ref" type="checkbox" ${showAllRefs ? "checked" : ""}>Other inspected references</label>${plotView === "graph" ? `<label class="right"><input id="zero-axis" type="checkbox" ${startAtZero ? "checked" : ""}>Line axis starts at zero</label>` : ""}</div>${plotView === "graph" ? `<div class="chart-grid"><section><p class="chart-label">Performance across model versions</p>${linePlot(generals, refs, native.direction, c.specialists)}</section><section><p class="chart-label">General models and specialist references</p>${barPlot([...generals, ...refs], native.direction)}</section></div><div class="legend">${MODELS.map((m) => `<label><input type="checkbox" data-model="${m}" ${!hiddenModels.has(m) ? "checked" : ""}><i class="dot" style="background:${COLORS[m]}"></i>${label(m)}</label>`).join("")}${refs.map((r, i) => `<span><i class="dash" style="border-color:${refColor(r, i)}"></i>${esc(methodName(r))}</span>`).join("")}</div>` : `<div class="table-wrap">${scoreTable(c.rs)}</div>`}<div class="chart-foot">${chartCaveat(id, c)} ${compact ? route("benchmark/" + id, "Inspect protocol, sources and all scores →") : ""}<br>Connected points show version order, not elapsed time or a compute scaling law. Line axes ${startAtZero ? "include zero" : "adapt to the score range; inspect the ticks"}; bars include zero. One generated program per model/task.</div></div>`;
+  $(target)
+    .querySelectorAll?.("[data-view]")
+    .forEach(
+      (b) =>
+        (b.onclick = () => {
+          plotView = b.dataset.view;
+          renderChart(target, id, compact);
+        }),
+    );
+  $("#slice-picker").onchange = (ev) => {
+    selectedSlice = ev.target.value;
+    renderChart(target, id, compact);
+  };
+  $("#show-ref").onchange = (ev) => {
+    showReferences = ev.target.checked;
+    renderChart(target, id, compact);
+  };
+  $("#all-ref").onchange = (ev) => {
+    showAllRefs = ev.target.checked;
+    renderChart(target, id, compact);
+  };
+  if ($("#zero-axis"))
+    $("#zero-axis").onchange = (ev) => {
+      startAtZero = ev.target.checked;
+      renderChart(target, id, compact);
+    };
+  document.querySelectorAll("[data-model]").forEach(
+    (b) =>
+      (b.onchange = () => {
+        b.checked
+          ? hiddenModels.delete(b.dataset.model)
+          : hiddenModels.add(b.dataset.model);
+        renderChart(target, id, compact);
+      }),
+  );
+}
+function refColor(r, i = 0) {
+  return isSpecialist(r)
+    ? ["#24796d", "#5f9e75", "#688c5e", "#4b806b"][i % 4]
+    : r.model === "canonical-posterior"
+      ? "#24796d"
+      : "#8a939c";
+}
+function linePlot(general, refs, direction, specialists = []) {
+  let vals = [...general, ...refs].filter(valid).map((r) => r.score);
+  if (showReferences)
+    vals.push(
+      ...specialists
+        .filter((r) => r.model.startsWith("vassi-run-"))
+        .map((r) => r.score),
+    );
+  if (!vals.length) return '<p class="empty">No finite scores.</p>';
+  let lo = Math.min(...vals),
+    hi = Math.max(...vals),
+    padding = Math.max((hi - lo) * 0.16, Math.abs(hi) * 0.025, 1e-6);
+  lo = startAtZero ? Math.min(0, lo - padding) : lo - padding;
+  hi += padding;
+  const x = (i) => 90 + 195 * i,
+    y = (v) => 235 - ((v - lo) / (hi - lo)) * 180;
+  let path = "",
+    prior = false;
+  for (const r of general) {
+    if (valid(r)) {
+      path +=
+        (prior ? " L" : " M") + x(MODELS.indexOf(r.model)) + " " + y(r.score);
+      prior = true;
+    } else prior = false;
+  }
+  const archives = specialists.filter((r) => r.model.startsWith("vassi-run-"));
+  return `<svg class="plot" viewBox="0 0 570 305" role="img" aria-label="Model-version line chart with named specialist reference lines"><title>Native score comparison. ${direction} is better. Reference lines are verified matches; current SOTA unknown.</title>${[
+    0, 0.25, 0.5, 0.75, 1,
+  ]
+    .map((t) => {
+      const v = lo + t * (hi - lo);
+      return `<line x1="65" x2="535" y1="${y(v)}" y2="${y(v)}" stroke="#e5ebef"/><text x="55" y="${y(v) + 4}" text-anchor="end">${fmt(v)}</text>`;
+    })
+    .join(
+      "",
+    )}${archives.length > 1 && showReferences ? `<rect x="65" width="470" y="${y(Math.max(...archives.map((r) => r.score)))}" height="${Math.abs(y(Math.min(...archives.map((r) => r.score))) - y(Math.max(...archives.map((r) => r.score))))}" fill="#24796d" opacity=".12"><title>Range of 20 archived VASSI runs; not independent tasks</title></rect>` : ""}${refs
+    .filter(valid)
+    .map(
+      (r, i) =>
+        `<line x1="65" x2="535" y1="${y(r.score)}" y2="${y(r.score)}" stroke="${refColor(r, i)}" stroke-width="1.6" stroke-dasharray="${isSpecialist(r) ? "7 4" : "3 5"}"><title>${esc(methodName(r))}: ${fmt(r.score)}. ${evidence(r)}</title></line>`,
+    )
+    .join(
+      "",
+    )}<path d="${path}" fill="none" stroke="#547b97" stroke-width="2"/>${general
+    .map((r) => {
+      const xx = x(MODELS.indexOf(r.model));
+      return `${valid(r) ? `<circle cx="${xx}" cy="${y(r.score)}" r="5.5" fill="${COLORS[r.model]}"><title>${label(r.model)}: ${fmt(r.score)}</title></circle><text class="value-label" x="${xx}" y="${y(r.score) - 13}" text-anchor="middle">${fmt(r.score)}${r.line_limit_compliant === false ? "†" : ""}</text>` : `<text x="${xx}" y="145" text-anchor="middle">Failed / missing</text>`}<text x="${xx}" y="267" text-anchor="middle">${label(r.model).replace("GPT-", "")}</text>`;
+    })
+    .join(
+      "",
+    )}<text x="300" y="296" text-anchor="middle">Model version order</text></svg>`;
+}
+function barPlot(rs, direction) {
+  const vals = rs.filter(valid).map((r) => r.score);
+  let lo = Math.min(0, ...vals),
+    hi = Math.max(0, ...vals);
+  if (hi === lo) hi = lo + 1;
+  const scale = (v) => 195 + ((v - lo) / (hi - lo)) * 300,
+    zero = scale(0),
+    height = rs.length * 42 + 50;
+  return `<svg class="plot" viewBox="0 0 570 ${height}" role="img" aria-label="Bar chart including general models and named specialist or baseline scores"><title>Native metric; ${direction} is better. Bar axis includes zero.</title>${[
+    0, 0.5, 1,
+  ]
+    .map((t) => {
+      const v = lo + t * (hi - lo);
+      return `<line x1="${scale(v)}" x2="${scale(v)}" y1="5" y2="${height - 32}" stroke="#e9edf0"/><text x="${scale(v)}" y="${height - 10}" text-anchor="middle">${fmt(v)}</text>`;
+    })
+    .join("")}${rs
+    .map((r, i) => {
+      const yy = 12 + i * 42;
+      return `<text x="181" y="${yy + 15}" text-anchor="end">${esc(methodName(r))}${r.line_limit_compliant === false ? "†" : ""}</text>${valid(r) ? `<rect x="${Math.min(zero, scale(r.score))}" y="${yy}" width="${Math.max(0.8, Math.abs(scale(r.score) - zero))}" height="23" fill="${COLORS[r.model] || refColor(r, i)}"><title>${esc(methodName(r))}: ${fmt(r.score)} · ${evidence(r)}</title></rect><text class="value-label" x="560" y="${yy + 15}" text-anchor="end">${fmt(r.score)}</text>` : `<text x="360" y="${yy + 15}">Failed</text>`}`;
+    })
+    .join("")}</svg>`;
+}
+function chartCaveat(id, c) {
+  let text = c.specialist
+    ? "Green dashed lines identify verified specialist methods. "
+    : c.reference
+      ? "This task has a conventional or mathematical reference; a strongest specialist result is not established. "
+      : "No matched reference verified. ";
+  if (c.specialist && c.specialists.length > 1)
+    text +=
+      "The highest inspected specialist point score is a test-selected descriptive envelope, not a prospective model-selection result. ";
+  if (id === "A09")
+    text +=
+      "VASSI uses richer full-frame inputs/training; its 20-run range is shaded. Preselected run00 remains the primary scientific comparator. ";
+  if (id === "C05")
+    text +=
+      "Historical 2017 archives have different tuning histories; preparation1 was development evidence. ";
+  if (id === "M04")
+    text +=
+      "All three posterior estimators nearly agree; tiny differences reflect numerical quadrature. The post-hoc posterior reference and frozen MLE optimize different objectives. ";
+  if (id === "N05")
+    text +=
+      "One file, 61 deterministic fields, shared with D02; the reference is correct by construction. ";
+  if (id === "B01")
+    text +=
+      "One 10-second stationary simulation. GPT-6 returns 8 false-positive units despite its high matched-unit score; inspect the full diagnostics. ";
+  if (id === "J08")
+    text +=
+      "Two held-out fields × five human raters; archived StarDist optimization history differs. ";
+  return (
+    esc(text) +
+    "†Formatting deviations remain visible and are excluded from strict subsets."
+  );
+}
+function scoreTable(rs) {
+  return `<table><thead><tr><th>Method</th><th>Score</th><th>Evidence</th><th>Execution seconds</th><th>Details</th></tr></thead><tbody>${rs.map((r) => `<tr><td><span class="dot" style="background:${COLORS[r.model] || refColor(r)}"></span> ${esc(methodName(r))}${r.line_limit_compliant === false ? " †" : ""}</td><td>${valid(r) ? fmt(r.score) : "Failed"}</td><td><span class="badge ${isSpecialist(r) ? "verified" : MODELS.includes(r.model) ? "general" : ""}">${evidence(r)}</span></td><td>${Number.isFinite(r.seconds) ? r.seconds.toFixed(2) : "Unavailable"}</td><td class="wrap small">${r.status === "failed" ? esc((r.reason || "Execution failed").trim().split("\n").pop()) : r.scoring_diagnostics ? esc(`${r.scoring_diagnostics.n_predicted_units} predicted units; ${(r.scoring_diagnostics.redundant_unit_ids || []).length} redundant; ${(r.scoring_diagnostics.false_positive_unit_ids || []).length} false-positive units`) : r.model === "canonical-posterior" ? "Added post hoc; objective-aligned audit" : r.line_limit_compliant === false ? "Unchanged format deviation" : "See protocol and prediction artifacts"}</td></tr>`).join("")}</tbody></table>`;
+}
+function benchmark(id, tab = "results") {
+  const e = catalog.entries.find((e) => e.id === id);
+  if (!e) {
+    $("#app").innerHTML =
+      "<h1>Benchmark unavailable</h1><p>It may have been archived. " +
+      route("excluded", "Inspect exclusion decisions →") +
+      "</p>";
+    return;
+  }
+  const b = brief(id);
+  $("#app").innerHTML =
+    `<p class="breadcrumb">${route("", "Benchmarks")} / ${route("category/" + e.family_code, esc(CATEGORIES[e.family_code]))} / ${id}</p><p class="eyebrow">${id} · ${esc(CATEGORIES[e.family_code])}</p><h1>${esc(title(e))}</h1><p class="lede">${esc(e.executed_slice || e.resource)}</p><div class="detail-top"><span class="badge ${measured(id) ? "verified" : ""}">${measured(id) ? "Measured exploratory protocol" : "Candidate · not run"}</span><span class="badge">T3 · generated analysis code</span><span class="badge">Current global SOTA unverified</span></div><nav class="tabs" aria-label="Benchmark information">${[
+      ["results", "Results"],
+      ["evaluation", "Evaluation details"],
+      ["sources", "Data & sources"],
+    ]
+      .map(([v, t]) =>
+        route("benchmark/" + id + "/" + v, t, tab === v ? "active" : ""),
+      )
+      .join("")}</nav><div id="benchmark-content"></div>`;
+  if (tab === "results") {
+    if (!measured(id)) {
+      $("#benchmark-content").innerHTML =
+        `<div class="note"><strong>No model results.</strong> ${esc(e.admission_reason)}</div>${link(GH + "/blob/main/" + e.admission_evidence_file, "Admission evidence")}`;
+      return;
+    }
+    const ref = b.reference;
+    $("#benchmark-content").innerHTML =
+      `<div class="detail-summary"><div class="reference-box"><span class="small">Best measured general model${b.nSlices > 1 ? " · slice-equal mean" : ""}</span><strong>${fmt(b.bestModel?.score)}</strong><p>${b.bestModel ? label(b.bestModel.model) + (b.bestModel.line_limit_compliant === false ? " · format deviation" : "") : "All attempts failed"}</p></div><div class="reference-box specialist"><span class="small">${ref && isSpecialist(ref) ? "Best verified specialist in inspected set" : "Available baseline / reference"}</span><strong>${fmt(ref?.score)}</strong><p>${ref ? esc(methodName(ref)) : "Not established"} · training and selection histories differ</p></div></div><div id="detail-chart"></div><details><summary>What can this result establish?</summary><p>${esc(e.limitations)}</p><p>This measures a model-generated numerical analysis procedure. One submission per model; public-data contamination and provider checkpoint resolution remain unverified. Specialist training, feature access and tuning budgets can differ. Missing results are unknown, not zero.</p></details><div class="actions"><a class="button secondary" href="data/${id}.json" download>Detailed records ↓</a>${link(GH + "/tree/main/experiments/" + id, "Frozen code & protocol", "button secondary")}${link(GH + "/tree/main/results/predictions/" + id, "Predictions", "button secondary")}</div>`;
+    renderChart("#detail-chart", id);
+  } else if (tab === "evaluation") {
+    $("#benchmark-content").innerHTML =
+      `<div class="doc-grid"><section class="doc-panel"><h2>Evaluation contract</h2><dl class="kv"><dt>Input</dt><dd>${esc(e.data)}</dd><dt>Executed slice</dt><dd>${esc(e.executed_slice || "Not yet defined")}</dd><dt>Ground truth</dt><dd>${esc(e.ground_truth)}</dd><dt>Metric / split</dt><dd>${esc(e.recommended_metrics)}<br>${esc(e.recommended_split)}</dd></dl></section><section class="doc-panel"><h2>Validity and procedure</h2><p>${esc(e.limitations)}</p><p>${esc(e.admission_reason)}</p><div class="link-list">${measured(id) ? link(GH + "/blob/main/experiments/" + id + (id === "C05" ? "/phase2-protocol.md" : "/protocol.md"), "Exact frozen protocol") : ""}${link(GH + "/blob/main/benchmarks/" + e.family_code + "/" + id + "/worklog.md", "Steps actually completed")}${measured(id) ? link(GH + "/blob/main/experiments/" + id + (["C05", "M04"].includes(id) ? "/generation-provenance.json" : "/run-spec.json"), "Frozen input and prompt identities") : ""}${link(GH + "/blob/main/" + e.admission_evidence_file, "Admission assessment")}</div></section></div>`;
+  } else {
+    $("#benchmark-content").innerHTML =
+      `<div class="doc-panel"><h2>Primary data and method sources</h2><p>Sources retain their original terms. A source association is not a claim that every asset was acquired or every paper fully reviewed. Measured-task manifests describe the actual files used.</p><div class="link-list">${e.source_urls.map((u, i) => link(u, esc(u.replace(/^https?:\/\//, "")))).join("")}</div><div class="actions">${link(GH + "/tree/main/" + (measured(id) ? "experiments/" + id : "benchmarks/" + e.family_code + "/" + id), "Source manifests and preparation")}${link(GH + "/blob/main/benchmarks/" + e.family_code + "/" + id + "/data.json", "Data and rights assessment")}</div></div>`;
+  }
+}
+function modelsPage(model) {
+  const summaries = summary.model_summaries.filter(
+    (s) => !model || s.model === model,
+  );
+  $("#app").innerHTML =
+    `<p class="eyebrow">Model comparisons</p><h1>${model ? label(model) : "Models in the experiment"}</h1><p class="lede">Exact requested hosted model IDs, one high-reasoning no-tool code submission per task. Same explicit task prompt; full provider context and internal checkpoint identity are not independently observable.</p><div class="model-cards">${summaries.map((s) => route("model/" + s.model, `<h2>${label(s.model)}</h2><strong>${s.valid} / ${s.attempted}</strong><p>Numerically valid evaluation slices</p><p>${s.strict_format_valid} strict-format valid · ${s.failed} failed</p>`, "model-card")).join("")}</div><div class="section-head"><h2>Native scores by task</h2><span class="small">Slice-equal mean where multiple slices exist</span></div><div class="table-panel table-wrap"><table><thead><tr><th>Benchmark</th>${MODELS.map((m) => `<th>${label(m)}</th>`).join("")}<th>Best verified specialist / reference</th><th>Metric</th></tr></thead><tbody>${summary.measured_task_ids
+      .map((id) => {
+        const e = catalog.entries.find((e) => e.id === id);
+        if (!e) return "";
+        const b = brief(id);
+        return `<tr><td>${route("benchmark/" + id, esc(title(e)))}<span class="bench-sub">${id} · ${b.nSlices} slice${b.nSlices === 1 ? "" : "s"}</span></td>${MODELS.map((m) => `<td>${fmt(b.models.find((r) => r.model === m)?.score)}${b.models.find((r) => r.model === m)?.line_limit_compliant === false ? " †" : ""}</td>`).join("")}<td>${fmt(b.reference?.score)}<span class="score-caption">${b.reference ? esc(methodName(b.reference)) : "Unknown"}</span></td><td class="small">${esc(b.bestModel?.metric || "No valid score")}</td></tr>`;
+      })
+      .join(
+        "",
+      )}</tbody></table></div><p class="note">These native metrics cannot be averaged into a universal model ranking. Reliability, directional improvement and reference comparisons have separate denominators. ${route("analysis", "Explore the analysis →")}</p>`;
+}
+function analysisPage() {
+  const classes = [
+    ...new Set(summary.reference_envelopes.map((r) => r.reference_class)),
+  ];
+  if (!classes.includes(analysisClass)) analysisClass = classes[0];
+  $("#app").innerHTML =
+    `<p class="eyebrow">Cross-task analysis</p><h1>Where do models improve?</h1><p class="lede">Track point-score changes and reference comparisons while keeping task, family, failure and evidence-class denominators visible.</p><div class="doc-panel" style="margin-top:26px"><h2>Comparison with references</h2><div class="toolbar"><label for="reference-class" class="small">Reference evidence</label><select id="reference-class">${classes.map((c) => `<option value="${c}" ${c === analysisClass ? "selected" : ""}>${esc(c.replaceAll("_", " "))}</option>`).join("")}</select></div><div class="table-wrap"><table><thead><tr><th>Model</th><th>Point wins / slices</th><th>Lost / tied / failed</th><th>Tasks / families</th><th>Family-equal win fraction</th><th>Strict-format wins / eligible slices</th></tr></thead><tbody>${summary.model_summaries
+      .map((s) => {
+        const c = s.reference_class_summaries[analysisClass],
+          a = c?.exploratory,
+          b = c?.strict;
+        return `<tr><td>${label(s.model)}</td><td>${a?.wins ?? 0} / ${a?.n_slice_comparisons ?? 0}</td><td>${a?.losses ?? 0} / ${a?.numerical_ties ?? 0} / ${a?.failed_or_missing ?? 0}</td><td>${a?.n_tasks ?? 0} / ${a?.n_families ?? 0}</td><td>${fmt(a?.family_equal_win_fraction)}</td><td>${b?.wins ?? 0} / ${b?.n_slice_comparisons ?? 0}</td></tr>`;
+      })
+      .join(
+        "",
+      )}</tbody></table></div><p class="small">Primary scientific comparator selection follows the frozen/reference policy, which can differ from the best-inspected envelope displayed on benchmark plots. No current-SOTA or matched-total-effort superiority claim.</p></div><div class="doc-panel" style="margin-top:22px"><h2>Model-version changes</h2><div class="table-wrap"><table><thead><tr><th>Pair</th><th>Improved / slices</th><th>Declined</th><th>Ties</th><th>Failed / missing</th><th>Task / family count</th><th>Family-equal improvement fraction</th></tr></thead><tbody>${summary.paired_macro_summaries
+      .map((p) => {
+        const a = p.exploratory;
+        return `<tr><td>${label(p.older)} → ${label(p.newer)}</td><td>${a.wins} / ${a.n_slice_comparisons}</td><td>${a.losses}</td><td>${a.numerical_ties}</td><td>${a.failed_or_missing}</td><td>${a.n_tasks} / ${a.n_families}</td><td>${fmt(a.family_equal_win_fraction)}</td></tr>`;
+      })
+      .join(
+        "",
+      )}</tbody></table></div><p class="small">M04 quadrature differences and N05 deterministic correctness are excluded from this progress aggregate. The aggregate includes synthetic B01 and semisynthetic repair tasks. Failures remain in the denominator. New datasets or simulations are not automatically independent biological replications.</p></div><details open><summary>How aggregation works</summary><p>For descriptive directional win fractions, average slices within task, tasks within category, then categories equally. Incompatible native metric deltas are never averaged. A numerical difference above1e−9 is a point win, not statistical significance or a practical-equivalence threshold. One generated program per version, convenience-selected tasks and public labels prevent causal scaling conclusions.</p></details><div class="actions"><a class="button secondary" href="data/summary.json" download>All derived statistics ↓</a><a class="button secondary" href="data/measurements.csv" download>Measurements ↓</a>${link(GH + "/blob/main/analysis/findings.md", "Interpretation & limitations", "button secondary")}</div>`;
+  $("#reference-class").onchange = (e) => {
+    analysisClass = e.target.value;
+    analysisPage();
+  };
+}
+function methodsPage() {
+  $("#app").innerHTML =
+    `<p class="eyebrow">Methods & data</p><h1>Trace every result.</h1><p class="lede">A benchmark is an exact input, target, split, scorer and model procedure. The broader neuroscience evidence map remains separate from the measured results explorer.</p><div class="doc-grid"><section class="doc-panel"><h2>What is measured</h2><p>T3: a single general-model code submission followed by local numerical execution. Models use general scientific libraries; specialist packages and pretrained assets are separate references. This does not directly measure native raw-signal understanding or full autonomous lab workflows.</p><p>Exact prompts, frozen data/code hashes, submitted programs, generation usage/tool counts, predictions and errors are retained. Current general models: GPT-5.6 Sol, GPT-6 Sol and GPT-6.1 Sol.</p></section><section class="doc-panel"><h2>Specialist evidence</h2><p>Named specialist methods appear on line charts and bar plots wherever verified matching predictions exist. Archived specialist masks/predictions, local specialist reproductions, conventional baselines and mathematical audits are identified separately.</p><p>The highest inspected point score is a descriptive test-selected envelope. It cannot certify the current global best, comparable training inputs or equal tuning effort. Published scores on a different split are not inserted into these plots.</p></section></div><div class="doc-grid"><section class="doc-panel"><h2>Coverage and exclusions</h2><p>The historical evidence map covers 114 task-resource associations across 14 families. The active catalog is pruned when a reusable endpoint, data rights, release or scorer is unresolved. Concrete high-effort tasks remain candidates, with missing results shown as unknown.</p><p>Pruning does not prove exhaustive coverage. Removed candidates retain their decision trail and reactivation requirements. Broad clinical, causal, control and mechanistic perspectives still have gaps.</p>${route("excluded", "Inspect archived candidates →")}</section><section class="doc-panel"><h2>Validity controls</h2><p>Biological grouping, human vs synthetic truth, adaptation policy and reference information access are explicit per task. Source identities, acquired-file/buffer hashes and scorer checks are recorded. Failures and formatting deviations stay visible.</p><p>Small biological samples, public-label contamination, unequal specialist histories and one-generation uncertainty remain. No neuron/frame pseudo-replication intervals or universal mixed-metric capability score.</p></section></div><div class="link-list">${[
+      ["README.md", "Main research plan and status"],
+      ["docs/release-v05.md", "Current release report"],
+      ["docs/taxonomy.md", "Taxonomy and coverage justification"],
+      ["docs/methodology.md", "Evaluation methodology"],
+      ["docs/macro-analysis-plan.md", "Macro analysis and weighting"],
+      ["docs/prior-work.md", "Related benchmarks and literature"],
+      ["literature/README.md", "Sources, searches and review depth"],
+      ["registry/admission-decisions.json", "Every admission decision"],
+      ["registry/current-best.json", "Current-best verification ledger"],
+      ["docs/reproduce.md", "Reproduce the experiments"],
+    ]
+      .map(([p, t]) => link(GH + "/blob/main/" + p, t))
+      .join("")}</div>`;
+}
+function excludedPage() {
+  $("#app").innerHTML =
+    `<p class="eyebrow">Quality control / archive</p><h1>Archived benchmark candidates</h1><p class="lede">These entries are removed from the active benchmark catalog. The reason and evidence remain inspectable; a resource can be reconsidered when its release, rights or evaluation contract is resolved.</p><div class="note">No measured task is removed because a model performed poorly. Setup difficulty alone is not evidence of bad data.</div><div class="table-panel table-wrap"><table><thead><tr><th>Candidate</th><th>Reason for archival</th><th>Reactivation requirement</th></tr></thead><tbody>${excluded.map((e) => `<tr><td>${esc(e.id || e.benchmark_id)}<span class="bench-sub">${esc(e.resource || e.task || "")}</span></td><td class="wrap">${esc(e.reason || e.rationale || "See source review")}</td><td class="wrap small">${esc(e.reactivation_requirements || e.reactivation_requirement || "Resolve the documented data, release or protocol gate; freeze a separate execution contract.")}</td></tr>`).join("") || '<tr><td colspan="3">See the repository exclusion ledger.</td></tr>'}</tbody></table></div><div class="actions">${link(GH + "/blob/main/literature/active-pruning-v05.md", "Review rationale", "button secondary")}${link(GH + "/blob/main/registry/catalog-history/v04-114.json", "Historical full evidence map", "button secondary")}</div>`;
+}
+window.addEventListener("hashchange", () => {
+  selectedSlice = "";
+  draw();
+  window.scrollTo({ top: 0 });
+});
+Promise.all([
+  fetch("data/catalog.json").then((r) => r.json()),
+  fetch("data/summary.json").then((r) => r.json()),
+  fetch("data/measurements.jsonl").then((r) => r.text()),
+  fetch("data/exclusions.json")
+    .then((r) => (r.ok ? r.json() : []))
+    .catch(() => []),
+])
+  .then(([c, s, t, x]) => {
+    catalog = c;
+    summary = s;
+    records = t
+      .trim()
+      .split("\n")
+      .filter(Boolean)
+      .map((v) => JSON.parse(v));
+    excluded = Array.isArray(x) ? x : x.entries || x.decisions || [];
+    draw();
+  })
+  .catch((e) => {
+    $("#app").innerHTML =
+      "<h1>Results could not load</h1><p>Please reload, or inspect the source repository.</p>";
+    console.error(e);
+  });

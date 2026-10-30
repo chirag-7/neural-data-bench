@@ -23,5 +23,10 @@
     "review_depth": "Actual acquisition, officialreader and tensorvalidation",
     "permanent_rejection": false
   },
-  "executed_slice": "NLBMC_Maze_Small99train/100test movement-aligned trials;20ms supervised107→35neuron readout"
+  "executed_slice": "NLBMC_Maze_Small99train/100test movement-aligned trials;20ms supervised107\u219235neuron readout",
+  "v05_actual_execution": {
+    "status": "measured",
+    "slice": "NLBMC_Maze_Small99train/100test movement-aligned trials;20ms supervised107\u219235neuron readout",
+    "evidence": "literature/admission-v04-behavior-population.json"
+  }
 }

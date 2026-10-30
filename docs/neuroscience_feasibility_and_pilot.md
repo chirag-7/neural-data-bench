@@ -1,3 +1,5 @@
+> Historical planning snapshot. The current executed panel, results and remaining gaps are in [release 0.5](release-v05.md). Figures and plans below describe an earlier stage.
+
 # Feasibility assessment and first measured pilot
 
 30 October 2026 · research preview v 0.2

@@ -11,3 +11,9 @@ Detailed completed steps, artifacts and deviations: [experiment worklog](../../.
 Decision: **measured** (2026-10-30). Previously measured24agent synthetic Q-learning recovery. Author guide supports recovery checks; local implementation and posterior-vs-MLE objective difference explicit. Not biological data or a released leaderboard.
 
 [Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). [Actual protocol and artifacts](../../../experiments/M04). [Central task results](../../../results/M04.json).
+
+## v0.5 execution status
+
+measured. Previously measured24agent synthetic Q-learning recovery. Author guide supports recovery checks; local implementation and posterior-vs-MLE objective difference explicit. Not biological data or a released leaderboard.
+
+[Admission/source evidence](../../../literature/admission-v04-inference-control.json). [Actual protocol/worklog](../../../experiments/M04). [Task measurements](../../../results/M04.json).

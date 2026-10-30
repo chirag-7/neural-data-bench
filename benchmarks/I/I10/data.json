@@ -22,5 +22,10 @@
     "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
     "permanent_rejection": false
   },
-  "executed_slice": "MRIQC600ABIDEtrain/265DS030test,68numeric IQMs,rater1exclude labels"
+  "executed_slice": "MRIQC600ABIDEtrain/265DS030test,68numeric IQMs,rater1exclude labels",
+  "v05_actual_execution": {
+    "status": "measured",
+    "slice": "MRIQC600ABIDEtrain/265DS030test,68numeric IQMs,rater1exclude labels",
+    "evidence": "literature/admission-v04-inference-control.json"
+  }
 }

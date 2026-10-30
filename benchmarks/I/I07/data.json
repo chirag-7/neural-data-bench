@@ -27,5 +27,10 @@
     "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
     "permanent_rejection": false
   },
-  "executed_slice": "FRESH opticaldensity tapping condition,7train/3test subjects;condition/session confounded"
+  "executed_slice": "FRESH opticaldensity tapping condition,7train/3test subjects;condition/session confounded",
+  "v05_actual_execution": {
+    "status": "measured",
+    "slice": "FRESH opticaldensity tapping condition,7train/3test subjects;condition/session confounded",
+    "evidence": "literature/admission-v04-electrical.json"
+  }
 }

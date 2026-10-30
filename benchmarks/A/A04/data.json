@@ -22,5 +22,10 @@
     ],
     "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
     "permanent_rejection": false
+  },
+  "v05_actual_execution": {
+    "status": "candidate_pending_validation",
+    "slice": null,
+    "evidence": "literature/admission-v04-behavior-population.json"
   }
 }

@@ -3,7 +3,8 @@
   "source_urls": [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
     "https://github.com/pascalschamber/SynAPSeg",
-    "https://zenodo.org/records/18988899"
+    "https://zenodo.org/records/18988899",
+    "https://doi.org/10.1371/journal.pcbi.1014571"
   ],
-  "admission_evidence": "literature/admission-v04-behavior-population.json"
+  "admission_evidence": "experiments/J08/protocol.md"
 }

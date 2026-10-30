@@ -5,11 +5,17 @@ import pandas as pd
 from evaluate import ROOT, score, nll, MODELS
 checks={}
 cat=json.loads((ROOT/'registry/catalog.json').read_text());ids=[e['id'] for e in cat['entries']]
-assert len(ids)==len(set(ids))==114
+assert len(ids)==len(set(ids))
+historical=json.loads((ROOT/'registry/catalog-history/v04-114.json').read_text())
+old_ids={e['id'] for e in historical['entries']}
+excluded=json.loads((ROOT/'registry/excluded-candidates.json').read_text())
+excluded_ids={e.get('benchmark_id',e.get('id')) for e in excluded}
+assert len(old_ids)==114 and set(ids).isdisjoint(excluded_ids)
+assert set(ids)|excluded_ids==old_ids
 for e in cat['entries']:
     for name in ['README.md','methods.md','worklog.md','data.json','references.json']:
         assert (ROOT/f'benchmarks/{e["family_code"]}/{e["id"]}/{name}').exists()
-checks['registry_and_task_cards']='114 unique source-linked cards'
+checks['registry_and_task_cards']=f'{len(ids)} active source-linked cards; {len(excluded_ids)} auditable archived candidates; 114 historical entries'
 manifest=json.loads((ROOT/'data/manifests/spikefinder.json').read_text())
 for f in manifest['files']:
     assert hashlib.sha256((ROOT/f['path']).read_bytes()).hexdigest()==f['sha256']

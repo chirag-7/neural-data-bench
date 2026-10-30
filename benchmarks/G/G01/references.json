@@ -1,7 +1,9 @@
 {
   "benchmark_id": "G01",
   "source_urls": [
-    "https://snel-repo.github.io/falcon/"
+    "https://snel-repo.github.io/falcon/",
+    "https://dandiarchive.org/dandiset/000953",
+    "https://github.com/snel-repo/falcon-challenge"
   ],
-  "admission_evidence": "literature/admission-v04-behavior-population.json"
+  "admission_evidence": "literature/admission-v05-bci.json"
 }

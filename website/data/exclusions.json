@@ -1,0 +1,299 @@
+[
+  {
+    "id": "D03",
+    "resource": "Jaxley examples and simulated dendritic recordings",
+    "task": "Dendritic voltage/calcium recovery",
+    "family_code": "D",
+    "reason": "Simulator/examples without a frozen morphology/stimulation/noise distribution, independent split and endpoint scorer. Archive the scientifically relevant dendritic-recovery perspective; fitting and testing the same examples would be circular.",
+    "reactivation_requirements": "Instantiate a versioned simulator/data release with held-out morphologies,stimulation and independent reference evaluation.",
+    "source_urls": [
+      "https://www.nature.com/articles/s41592-025-02895-w"
+    ],
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/D/D03",
+    "permanent_rejection": false
+  },
+  {
+    "id": "H03",
+    "resource": "MOABB SSVEP datasets",
+    "task": "SSVEP stimulus selection",
+    "family_code": "H",
+    "reason": "Unresolved original dataset rights; original Nakanishi data are downloadable but author repository and MOABB/NEMAR metadata provide no verified data license.",
+    "reactivation_requirements": "Obtain explicit original data permission or select a separately licensed SSVEP release.",
+    "source_urls": [
+      "https://moabb.neurotechx.com/",
+      "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Nakanishi2015.html"
+    ],
+    "evidence_file": "literature/source-verification-v05-ssvep.json",
+    "review_depth": "Source-specific access/rights screen, no data acquisition claim",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/H/H03",
+    "permanent_rejection": false
+  },
+  {
+    "id": "H05",
+    "resource": "NeuralBench-EEG Core / Full",
+    "task": "Broad EEG model comparison",
+    "family_code": "H",
+    "reason": "NeuralBench Core/Full is a multi-task/multi-dataset umbrella. It overlaps the constituent EEG categories and cannot be one independent benchmark result in the central task table without a pinned task roster and deduplication. Preserve it as a source/evaluation framework.",
+    "reactivation_requirements": "Instantiate named task-card/dataset/split/adaptation combinations and map shared subjects to existing H entries before activating individual tasks or a clearly labeled suite aggregate.",
+    "source_urls": [
+      "https://facebookresearch.github.io/neuroai/neuralbench/index.html"
+    ],
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "review_depth": "Specific substantive review using prior bounded source/admission evidence; fresh primary umbrella pages reread for H05/H06/H07/I03",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/H/H05",
+    "permanent_rejection": false
+  },
+  {
+    "id": "H06",
+    "resource": "OmniEEG-Bench",
+    "task": "EEG foundation model transfer roadmap",
+    "family_code": "H",
+    "reason": "OmniEEG-Bench covers six task families and54datasets. An umbrella roadmap is not a single nonduplicated task; mixing its averages with contained H-task measurements would inflate evidence. This does not question the validity of the upstream benchmark.",
+    "reactivation_requirements": "Pin constituent task cards and dataset-specific licenses/preprocessing,specify adaptation mode,and deduplicate overlaps before activation.",
+    "source_urls": [
+      "https://arxiv.org/abs/2606.00815"
+    ],
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "review_depth": "Specific substantive review using prior bounded source/admission evidence; fresh primary umbrella pages reread for H05/H06/H07/I03",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/H/H06",
+    "permanent_rejection": false
+  },
+  {
+    "id": "H07",
+    "resource": "EEG-Arena",
+    "task": "EEG scaling and robustness",
+    "family_code": "H",
+    "reason": "EEG-Arena covers57tasks,23datasets and5protocols and is migrating into NeuroInfra. Current registry row lacks a pinned constituent task/protocol/version,so archive the suite as a source rather than count it as an independent active task.",
+    "reactivation_requirements": "Select and pin a concrete task/protocol/version with source rights and map overlap with measured EEG cohorts.",
+    "source_urls": [
+      "https://eeg.fm/benchmarks/"
+    ],
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "review_depth": "Specific substantive review using prior bounded source/admission evidence; fresh primary umbrella pages reread for H05/H06/H07/I03",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/H/H07",
+    "permanent_rejection": false
+  },
+  {
+    "id": "H10",
+    "resource": "Task subsets in NeuralBench / OmniEEG-Bench",
+    "task": "EEG abnormality, events, cognition and state",
+    "family_code": "H",
+    "reason": "Abnormality,events,cognition and state combine materially different targets and patient/site confounds. No specific dataset/label definition/protocol is frozen; the row also reuses H05/H06 sources.",
+    "reactivation_requirements": "Replace with one or more explicit labeled tasks and patient/site-held-out protocols; do not silently claim clinical-domain coverage from the umbrella.",
+    "source_urls": [
+      "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+      "https://arxiv.org/abs/2606.00815"
+    ],
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/H/H10",
+    "permanent_rejection": false
+  },
+  {
+    "id": "I01",
+    "resource": "Algonauts 2025 / CNeuroMod",
+    "task": "Multimodal movie-to-fMRI encoding",
+    "family_code": "I",
+    "reason": "Algonauts original test responses require remote challenge scoring and data access steps; no locally verifiable held-out target release for this protocol. Archived from the runnable catalog, not declared scientifically invalid.",
+    "reactivation_requirements": "Complete authorized access and official scoring contract, or define a licensed public-response split with explicit deviation.",
+    "source_urls": [
+      "https://algonautsproject.com/2025/challenge.html"
+    ],
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "review_depth": "Source-specific access/rights screen, no data acquisition claim",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/I/I01",
+    "permanent_rejection": false
+  },
+  {
+    "id": "I02",
+    "resource": "NSD / Algonauts 2023",
+    "task": "Image encoding/reconstruction from fMRI",
+    "family_code": "I",
+    "reason": "NSD requires a data-access agreement; the required access process has not been completed. Removed from the active local execution list until access is established.",
+    "reactivation_requirements": "User-authorized source access and a frozen stimulus/subject split with neural labels.",
+    "source_urls": [
+      "https://www.naturalscenesdataset.org/"
+    ],
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "review_depth": "Source-specific access/rights screen, no data acquisition claim",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/I/I02",
+    "permanent_rejection": false
+  },
+  {
+    "id": "I03",
+    "resource": "Brain-Score",
+    "task": "Human brain model alignment",
+    "family_code": "I",
+    "reason": "Brain-Score is a valid platform spanning dozens of neural/behavioral benchmarks and a suite aggregate. Current row selects no benchmark/model-layer interface or permitted stimuli; counting it alongside NSD/THINGS-derived constituent rows risks overlap.",
+    "reactivation_requirements": "Select a named versioned neural-alignment benchmark and model representation interface,or explicitly define a pinned suite-level track with separate accounting.",
+    "source_urls": [
+      "https://www.brain-score.org/"
+    ],
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "review_depth": "Specific substantive review using prior bounded source/admission evidence; fresh primary umbrella pages reread for H05/H06/H07/I03",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/I/I03",
+    "permanent_rejection": false
+  },
+  {
+    "id": "I05",
+    "resource": "fastMRI brain",
+    "task": "MRI reconstruction",
+    "family_code": "I",
+    "reason": "fastMRI brain access requires an investigator application/data agreement; no credentialed acquisition is available in this release.",
+    "reactivation_requirements": "Complete authorized access and pin brain release,subject split and reconstruction scorer.",
+    "source_urls": [
+      "https://fastmri.med.nyu.edu/"
+    ],
+    "evidence_file": "literature/admission-v04-electrical.json",
+    "review_depth": "Source-specific access/rights screen, no data acquisition claim",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/I/I05",
+    "permanent_rejection": false
+  },
+  {
+    "id": "K03",
+    "resource": "NeuroDiscoveryBench atlas/SEA-AD tasks",
+    "task": "Molecular/pathology cohort analysis",
+    "family_code": "K",
+    "reason": "Atlas/SEA-AD analysis is an uninstantiated molecular/pathology subset of the same NeuroDiscoveryBench workflow source already represented by N01. Separate workflow/task tags are useful, but duplicate resource rows must not inflate active benchmark or independent-data counts.",
+    "reactivation_requirements": "Create a specific task ID with a pinned question/data/scorer and retain cross-links to N01 and K; otherwise keep as a tagged subtopic in the archive.",
+    "source_urls": [
+      "https://github.com/allenai/neurodiscoverybench"
+    ],
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/K/K03",
+    "permanent_rejection": false
+  },
+  {
+    "id": "L02",
+    "resource": "sbi Hodgkin-Huxley example / Jaxley tasks",
+    "task": "Biophysical parameter posterior inference",
+    "family_code": "L",
+    "reason": "Hodgkin-Huxley/Jaxley examples are not yet a frozen inference benchmark here. Priors,stimuli,simulator version,reference posterior and posterior-predictive/calibration criteria are missing; parameter MAE alone is invalid under nonidentifiability.",
+    "reactivation_requirements": "Provide frozen priors/stimuli,seeds,posterior reference and calibrated predictive tests,then reactivate a specific task.",
+    "source_urls": [
+      "https://sbi.readthedocs.io/en/latest/advanced_tutorials/21_diagnostics_misspecification_checks.html",
+      "https://www.nature.com/articles/s41592-025-02895-w",
+      "https://github.com/jaxleyverse/jaxley"
+    ],
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/L/L02",
+    "permanent_rejection": false
+  },
+  {
+    "id": "M02",
+    "resource": "Proposed Jaxley/NeuroGym design environment",
+    "task": "Adaptive experiment and stimulus design",
+    "family_code": "M",
+    "reason": "Proposed adaptive-design environment has no instantiated unknown-system distribution,action constraints,equal trial budget or regret/information-gain scorer. Archive design/control relevance rather than promise a ready experiment.",
+    "reactivation_requirements": "Release an independently validated finite adaptive-design environment and scorer with equal interventions/simulation budgets.",
+    "source_urls": [
+      "https://www.nature.com/articles/s41592-025-02895-w",
+      "https://github.com/neurogym/neurogym"
+    ],
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/M/M02",
+    "permanent_rejection": false
+  },
+  {
+    "id": "M05",
+    "resource": "BADS CCN17 optimization problems",
+    "task": "Practical neuroscience model-fitting optimization",
+    "family_code": "M",
+    "reason": "The BADS/PyBADS optimizers are available,but the registry specifically names CCN17 real neuroscience objectives whose complete task-data/dependency/budget package has not been acquired or validated. A toy optimizer demonstration would not instantiate that benchmark.",
+    "reactivation_requirements": "Locate/pin the actual neuroscience objective bundle and source terms,define evaluation budgets and starts,and reproduce its scorer.",
+    "source_urls": [
+      "https://arxiv.org/abs/1705.04405",
+      "https://github.com/acerbilab/bads",
+      "https://github.com/acerbilab/pybads"
+    ],
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/M/M05",
+    "permanent_rejection": false
+  },
+  {
+    "id": "M07",
+    "resource": "FlyGym / NeuroMechFly v2",
+    "task": "Animal embodied sensorimotor modeling",
+    "family_code": "M",
+    "reason": "FlyGym/NeuroMechFly is a scientifically relevant embodied simulator, but this broad row has no particular task,terrain/perturbation distribution,action budget,scorer or controller reference pinned in this project. Setup exceeds the current fixed-program protocol.",
+    "reactivation_requirements": "Choose a finite sensorimotor endpoint,pin simulator/assets/seeds and rollout/control reference; activate after an independent smoke test.",
+    "source_urls": [
+      "https://www.nature.com/articles/s41592-024-02497-y",
+      "https://github.com/NeLy-EPFL/flygym"
+    ],
+    "evidence_file": "literature/admission-v04-inference-control.json",
+    "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/M/M07",
+    "permanent_rejection": false
+  },
+  {
+    "id": "N02",
+    "resource": "BrainAgent hierarchical benchmark",
+    "task": "Agentic EEG workflow execution",
+    "family_code": "N",
+    "reason": "Paper describes relevant agentic EEG evaluation, but the matching complete task/data/evaluator release and tool/provider conditions remain unverified. A similarly named repository is not proof of release.",
+    "reactivation_requirements": "Identify and pin the paper-linked reusable release,source licenses,data and reproducible evaluation configuration.",
+    "source_urls": [
+      "https://arxiv.org/abs/2606.25400"
+    ],
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/N/N02",
+    "permanent_rejection": false
+  },
+  {
+    "id": "N04",
+    "resource": "ScienceAgentBench neuroscience/EEG subset",
+    "task": "Reproducing scientific analyses",
+    "family_code": "N",
+    "reason": "ScienceAgentBench is a real broad-science benchmark, but this row names an unspecified neuroscience/EEG subset rather than a frozen list of task IDs/data/evaluators. Counting all broad-science tasks as neuroscience would be misleading.",
+    "reactivation_requirements": "Screen and publish the exact neuroscience/cognitive task roster,source data terms and per-task evaluators,then activate those concrete cases.",
+    "source_urls": [
+      "https://arxiv.org/abs/2410.05080",
+      "https://github.com/OSU-NLP-Group/ScienceAgentBench"
+    ],
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/N/N04",
+    "permanent_rejection": false
+  },
+  {
+    "id": "N06",
+    "resource": "Proposed blinded scientific data-integrity cases",
+    "task": "Data integrity fault detection",
+    "family_code": "N",
+    "reason": "No validated corruption generator,hidden fault set or fault-detection scorer exists in this project. DANDI is a data archive; N05 clean parsing does not complete corruption detection.",
+    "reactivation_requirements": "Validate generator/fault labels and false-alarm/localization scoring on unseen files before reactivation.",
+    "source_urls": [
+      "https://about.dandiarchive.org/"
+    ],
+    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
+    "date": "2026-10-30",
+    "historical_card": "benchmarks/N/N06",
+    "permanent_rejection": false
+  }
+]

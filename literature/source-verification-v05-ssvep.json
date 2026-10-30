@@ -1,0 +1,43 @@
+{
+  "original_author_repo": "https://github.com/mnakanishi/12JFPM_SSVEP",
+  "commit": "2d4e281a430b4676f75c9270db839e963f172da5",
+  "verified_download": "https://raw.githubusercontent.com/mnakanishi/12JFPM_SSVEP/2d4e281a430b4676f75c9270db839e963f172da5/data/s1.mat",
+  "bytes": 15011521,
+  "sha256": "dea3eecb45cf9295e41b1eb1dfca0d63febf3537a0e35f5036aba5cde661c9e5",
+  "shape": [
+    12,
+    8,
+    1114,
+    15
+  ],
+  "dtype": "float64",
+  "finite": true,
+  "license": "Unknown; source repository lacks license; articleCC-BY alone does not resolve repositorydata permissions",
+  "status": "download verified, not admitted pending data terms",
+  "native_fs": 256,
+  "shape_semantics": [
+    "target",
+    "channel",
+    "sample",
+    "block"
+  ],
+  "frequencies_hz": [
+    9.25,
+    11.25,
+    13.25,
+    9.75,
+    11.75,
+    13.75,
+    10.25,
+    12.25,
+    14.25,
+    10.75,
+    12.75,
+    14.75
+  ],
+  "primary_sources": [
+    "https://raw.githubusercontent.com/mnakanishi/12JFPM_SSVEP/master/README.md",
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0140703",
+    "https://raw.githubusercontent.com/NeuroTechX/moabb/develop/moabb/datasets/ssvep_nakanishi.py"
+  ]
+}

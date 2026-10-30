@@ -22,5 +22,10 @@
     ],
     "review_depth": "primary release page inspected",
     "permanent_rejection": false
+  },
+  "v05_actual_execution": {
+    "status": "deferred",
+    "slice": null,
+    "evidence": "literature/admission-v04-behavior-population.json"
   }
 }

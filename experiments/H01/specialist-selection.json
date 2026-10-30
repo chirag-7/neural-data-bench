@@ -1,0 +1,86 @@
+{
+  "selected": {
+    "band": [
+      8,
+      35
+    ],
+    "C": 0.1,
+    "validation_balanced_accuracy": 0.4843157395701644
+  },
+  "training_only_candidates": [
+    {
+      "band": [
+        7,
+        30
+      ],
+      "C": 0.1,
+      "validation_balanced_accuracy": 0.47534766118836913
+    },
+    {
+      "band": [
+        7,
+        30
+      ],
+      "C": 1.0,
+      "validation_balanced_accuracy": 0.47534766118836913
+    },
+    {
+      "band": [
+        7,
+        30
+      ],
+      "C": 10.0,
+      "validation_balanced_accuracy": 0.47534766118836913
+    },
+    {
+      "band": [
+        8,
+        35
+      ],
+      "C": 0.1,
+      "validation_balanced_accuracy": 0.4843157395701644
+    },
+    {
+      "band": [
+        8,
+        35
+      ],
+      "C": 1.0,
+      "validation_balanced_accuracy": 0.4843157395701644
+    },
+    {
+      "band": [
+        8,
+        35
+      ],
+      "C": 10.0,
+      "validation_balanced_accuracy": 0.4843157395701644
+    },
+    {
+      "band": [
+        8,
+        15
+      ],
+      "C": 0.1,
+      "validation_balanced_accuracy": 0.46223135271807836
+    },
+    {
+      "band": [
+        8,
+        15
+      ],
+      "C": 1.0,
+      "validation_balanced_accuracy": 0.46223135271807836
+    },
+    {
+      "band": [
+        8,
+        15
+      ],
+      "C": 10.0,
+      "validation_balanced_accuracy": 0.46223135271807836
+    }
+  ],
+  "pyriemann_version": "0.12",
+  "no_test_input_adaptation": true
+}

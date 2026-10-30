@@ -35,3 +35,9 @@ Tiny benchmark image count limits independent sampling; synaptic puncta are mark
 Decision: **deferred** (2026-10-30). Dataset license unresolved in earlier mapping and only three fully held-out benchmark images with multiple raters. Code license does not resolve image-data terms. Do not redistribute or execute until authoritative dataset terms and scorer are verified.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
+
+## v0.5 execution status
+
+measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
+
+[Admission/source evidence](../../../experiments/J08/protocol.md). [Actual protocol/worklog](../../../experiments/J08). [Task measurements](../../../results/J08.json).
