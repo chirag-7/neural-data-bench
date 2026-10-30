@@ -1,0 +1,20 @@
+[
+  {
+    "id": "S218ba7a709",
+    "url": "https://github.com/codeneuro/spikefinder-datasets",
+    "benchmark_ids": [
+      "C05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S204821f612",
+    "url": "https://github.com/berenslab/spikefinder_analysis",
+    "benchmark_ids": [
+      "C05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

@@ -90,9 +90,10 @@ def one(task,slice_id,model):
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--one',nargs=3);ap.add_argument('--task',choices=['C05','M04']);args=ap.parse_args()
     if args.one:print(json.dumps(one(*args.one)));return
-    tasks=[args.task] if args.task else ['C05','M04'];records=[]
+    tasks=[args.task] if args.task else ['C05','M04']
     env=dict(os.environ,OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',MKL_NUM_THREADS='1',VECLIB_MAXIMUM_THREADS='1')
     for task in tasks:
+        records=[]
         models=MODELS+(['deneux','speiser','friedrich','rupprecht','oasis-default','raw-calcium'] if task=='C05' else ['canonical-mle','midpoint'])
         for sid in (range(1,6) if task=='C05' else ['synthetic-v1']):
             for model in models:

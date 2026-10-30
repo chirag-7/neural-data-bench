@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "H07",
+  "input": "EEG across seven paradigms",
+  "ground_truth": "Dataset-specific labels",
+  "sources": [
+    "https://eeg.fm/benchmarks/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

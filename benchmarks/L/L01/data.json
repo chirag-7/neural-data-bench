@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "L01",
+  "input": "Simulated fluorescence and neural network graphs",
+  "ground_truth": "Known simulated connectivity",
+  "sources": [
+    "https://connectomics.chalearn.org/help/data"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "A09",
+  "input": "Mouse video and/or tracked poses",
+  "ground_truth": "Expert behavioral labels",
+  "sources": [
+    "https://arxiv.org/abs/2104.02710"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

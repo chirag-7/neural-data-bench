@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "H05",
+  "input": "EEG datasets across many paradigms",
+  "ground_truth": "Task-specific recorded labels",
+  "sources": [
+    "https://facebookresearch.github.io/neuroai/neuralbench/index.html"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "L06",
+  "input": "Bernoulli GLM and reference posterior tasks",
+  "ground_truth": "Reference posterior samples and known simulator",
+  "sources": [
+    "https://github.com/sbi-benchmark/sbibm"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

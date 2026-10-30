@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "E01",
+  "input": "Binned spike-count tensors",
+  "ground_truth": "Held-out observed spikes; behavioral covariates",
+  "sources": [
+    "https://neurallatents.github.io/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

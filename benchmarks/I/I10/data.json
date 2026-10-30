@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "I10",
+  "input": "MRI scans, quality metrics and expert ratings",
+  "ground_truth": "Expert quality ratings with label disagreement",
+  "sources": [
+    "https://doi.org/10.1371/journal.pone.0184661"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

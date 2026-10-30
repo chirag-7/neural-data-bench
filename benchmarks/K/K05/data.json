@@ -1,0 +1,14 @@
+{
+  "benchmark_id": "K05",
+  "input": "Bulk RNA-seq, reference snRNA-seq and orthogonal RNAScope/IF fractions",
+  "ground_truth": "Cell fractions estimated by orthogonal RNAScope/IF from matched tissue blocks",
+  "sources": [
+    "https://doi.org/10.1186/s13059-025-03552-3",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
+    "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution",
+    "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html"
+  ],
+  "license_status": "Not independently reviewed",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

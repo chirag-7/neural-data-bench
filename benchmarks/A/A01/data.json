@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "A01",
+  "input": "RGB/IR videos; labeled keypoints",
+  "ground_truth": "Human keypoint annotations",
+  "sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12087009/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

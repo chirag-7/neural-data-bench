@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "A02",
+  "input": "Animal photographs and keypoints",
+  "ground_truth": "Human keypoint annotations",
+  "sources": [
+    "https://arxiv.org/abs/2108.12617",
+    "https://benchmark.deeplabcut.org/datasets.html"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

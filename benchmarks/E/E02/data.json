@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "E02",
+  "input": "Synthetic spikes from task-trained networks",
+  "ground_truth": "Ground-truth simulated dynamics and states",
+  "sources": [
+    "https://github.com/snel-repo/ComputationThroughDynamicsToolkit"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "A08",
+  "input": "Multi-animal laboratory videos",
+  "ground_truth": "Human-validated trajectories",
+  "sources": [
+    "https://doi.org/10.7554/eLife.107602.3"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

@@ -1,0 +1,7 @@
+{
+  "type": "in-memory source-render checks; not browser layout or interaction verification",
+  "routes": 473,
+  "C05_slice_and_mean": "passed",
+  "M04_posterior_audit_display": "passed",
+  "javascript_syntax": "passed"
+}

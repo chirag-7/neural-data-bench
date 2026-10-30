@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "J02",
+  "input": "EM images and neuron instances",
+  "ground_truth": "Synapse and pre/post partner annotations",
+  "sources": [
+    "https://cremi.janelia.org/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

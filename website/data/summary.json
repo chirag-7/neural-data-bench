@@ -1,0 +1,512 @@
+{
+  "version": "0.3",
+  "date": "2026-10-30",
+  "mapped_entries": 114,
+  "mapped_families": 14,
+  "measured_tasks": 2,
+  "measured_families": 2,
+  "measured_biological_benchmarks": 1,
+  "measured_synthetic_tasks": 1,
+  "models": [
+    "gpt-5.6-sol",
+    "gpt-6-sol",
+    "gpt-6.1-sol"
+  ],
+  "reference_envelopes": [
+    {
+      "benchmark_id": "C05",
+      "slice_id": "1",
+      "model": "deneux",
+      "score": 0.6116413541596544,
+      "evidence": "best available complete result among up to four inspected archives; selected using test scores, not current SOTA",
+      "n_archive_candidates": 4
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "2",
+      "model": "deneux",
+      "score": 0.4553791266850664,
+      "evidence": "best available complete result among up to four inspected archives; selected using test scores, not current SOTA",
+      "n_archive_candidates": 3
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "3",
+      "model": "rupprecht",
+      "score": 0.43358593466881956,
+      "evidence": "best available complete result among up to four inspected archives; selected using test scores, not current SOTA",
+      "n_archive_candidates": 4
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "4",
+      "model": "friedrich",
+      "score": 0.38025125471234655,
+      "evidence": "best available complete result among up to four inspected archives; selected using test scores, not current SOTA",
+      "n_archive_candidates": 3
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "5",
+      "model": "rupprecht",
+      "score": 0.49582853086510337,
+      "evidence": "best available complete result among up to four inspected archives; selected using test scores, not current SOTA",
+      "n_archive_candidates": 2
+    },
+    {
+      "benchmark_id": "M04",
+      "slice_id": "synthetic-v1",
+      "model": "canonical-mle",
+      "score": 0.0706964586193028,
+      "evidence": "local correctly specified multistart MLE; not literature SOTA"
+    }
+  ],
+  "reference_comparisons": [
+    {
+      "benchmark_id": "C05",
+      "slice_id": "1",
+      "model": "gpt-5.6-sol",
+      "reference": "deneux",
+      "direction_adjusted_delta": -0.03272744379607395,
+      "outcome": "loss",
+      "budget_matched": false,
+      "strict_format_compliant": false,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "2",
+      "model": "gpt-5.6-sol",
+      "reference": "deneux",
+      "direction_adjusted_delta": -0.04756543562473414,
+      "outcome": "loss",
+      "budget_matched": false,
+      "strict_format_compliant": false,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "3",
+      "model": "gpt-5.6-sol",
+      "reference": "rupprecht",
+      "direction_adjusted_delta": -0.024619784104317588,
+      "outcome": "loss",
+      "budget_matched": false,
+      "strict_format_compliant": false,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "4",
+      "model": "gpt-5.6-sol",
+      "reference": "friedrich",
+      "direction_adjusted_delta": 0.009507655963027606,
+      "outcome": "win",
+      "budget_matched": false,
+      "strict_format_compliant": false,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "5",
+      "model": "gpt-5.6-sol",
+      "reference": "rupprecht",
+      "direction_adjusted_delta": -0.020300605609179123,
+      "outcome": "loss",
+      "budget_matched": false,
+      "strict_format_compliant": false,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "M04",
+      "slice_id": "synthetic-v1",
+      "model": "gpt-5.6-sol",
+      "reference": "canonical-mle",
+      "direction_adjusted_delta": 0.012473852772377503,
+      "outcome": "win",
+      "budget_matched": false,
+      "strict_format_compliant": true,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "1",
+      "model": "gpt-6-sol",
+      "reference": "deneux",
+      "direction_adjusted_delta": -0.01087885592915483,
+      "outcome": "loss",
+      "budget_matched": false,
+      "strict_format_compliant": true,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "2",
+      "model": "gpt-6-sol",
+      "reference": "deneux",
+      "direction_adjusted_delta": -0.014248472562276349,
+      "outcome": "loss",
+      "budget_matched": false,
+      "strict_format_compliant": true,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "3",
+      "model": "gpt-6-sol",
+      "reference": "rupprecht",
+      "direction_adjusted_delta": -0.03646927731370986,
+      "outcome": "loss",
+      "budget_matched": false,
+      "strict_format_compliant": true,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "4",
+      "model": "gpt-6-sol",
+      "reference": "friedrich",
+      "direction_adjusted_delta": -0.012260630249317561,
+      "outcome": "loss",
+      "budget_matched": false,
+      "strict_format_compliant": true,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "5",
+      "model": "gpt-6-sol",
+      "reference": "rupprecht",
+      "direction_adjusted_delta": -0.08630270740605106,
+      "outcome": "loss",
+      "budget_matched": false,
+      "strict_format_compliant": true,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "M04",
+      "slice_id": "synthetic-v1",
+      "model": "gpt-6-sol",
+      "reference": "canonical-mle",
+      "direction_adjusted_delta": 0.012477057906252087,
+      "outcome": "win",
+      "budget_matched": false,
+      "strict_format_compliant": true,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "1",
+      "model": "gpt-6.1-sol",
+      "reference": "deneux",
+      "direction_adjusted_delta": -0.007054819523735101,
+      "outcome": "loss",
+      "budget_matched": false,
+      "strict_format_compliant": true,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "2",
+      "model": "gpt-6.1-sol",
+      "reference": "deneux",
+      "direction_adjusted_delta": 0.001792626207825887,
+      "outcome": "win",
+      "budget_matched": false,
+      "strict_format_compliant": true,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "3",
+      "model": "gpt-6.1-sol",
+      "reference": "rupprecht",
+      "direction_adjusted_delta": 0.0067352773151420076,
+      "outcome": "win",
+      "budget_matched": false,
+      "strict_format_compliant": true,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "4",
+      "model": "gpt-6.1-sol",
+      "reference": "friedrich",
+      "direction_adjusted_delta": 0.011743693671814104,
+      "outcome": "win",
+      "budget_matched": false,
+      "strict_format_compliant": true,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "5",
+      "model": "gpt-6.1-sol",
+      "reference": "rupprecht",
+      "direction_adjusted_delta": -0.050424405607725875,
+      "outcome": "loss",
+      "budget_matched": false,
+      "strict_format_compliant": true,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    },
+    {
+      "benchmark_id": "M04",
+      "slice_id": "synthetic-v1",
+      "model": "gpt-6.1-sol",
+      "reference": "canonical-mle",
+      "direction_adjusted_delta": 0.012474968524177198,
+      "outcome": "win",
+      "budget_matched": false,
+      "strict_format_compliant": true,
+      "caveat": "Performance-only; reference construction/supervision/selection differs"
+    }
+  ],
+  "generation_progress": [
+    {
+      "benchmark_id": "C05",
+      "slice_id": "1",
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": 0.021848587866919122,
+      "improved": true,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": false
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "2",
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": 0.033316963062457794,
+      "improved": true,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": false
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "3",
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": -0.01184949320939227,
+      "improved": false,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": false
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "4",
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": -0.021768286212345167,
+      "improved": false,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": false
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "5",
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": -0.06600210179687194,
+      "improved": false,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": false
+    },
+    {
+      "benchmark_id": "M04",
+      "slice_id": "synthetic-v1",
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6-sol",
+      "metric": "range_normalized_mae",
+      "direction_adjusted_delta": 3.2051338745842095e-06,
+      "improved": true,
+      "interpretation": "numerical ordering only; near-identical quadrature estimators",
+      "strict_pair_compliant": true
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "1",
+      "older": "gpt-6-sol",
+      "newer": "gpt-6.1-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": 0.0038240364054197284,
+      "improved": true,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": true
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "2",
+      "older": "gpt-6-sol",
+      "newer": "gpt-6.1-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": 0.016041098770102236,
+      "improved": true,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": true
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "3",
+      "older": "gpt-6-sol",
+      "newer": "gpt-6.1-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": 0.043204554628851866,
+      "improved": true,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": true
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "4",
+      "older": "gpt-6-sol",
+      "newer": "gpt-6.1-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": 0.024004323921131665,
+      "improved": true,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": true
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "5",
+      "older": "gpt-6-sol",
+      "newer": "gpt-6.1-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": 0.035878301798325185,
+      "improved": true,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": true
+    },
+    {
+      "benchmark_id": "M04",
+      "slice_id": "synthetic-v1",
+      "older": "gpt-6-sol",
+      "newer": "gpt-6.1-sol",
+      "metric": "range_normalized_mae",
+      "direction_adjusted_delta": -2.0893820748893455e-06,
+      "improved": false,
+      "interpretation": "numerical ordering only; near-identical quadrature estimators",
+      "strict_pair_compliant": true
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "1",
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6.1-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": 0.02567262427233885,
+      "improved": true,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": false
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "2",
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6.1-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": 0.04935806183256003,
+      "improved": true,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": false
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "3",
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6.1-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": 0.031355061419459596,
+      "improved": true,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": false
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "4",
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6.1-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": 0.002236037708786498,
+      "improved": true,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": false
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "5",
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6.1-sol",
+      "metric": "median_pearson_40ms",
+      "direction_adjusted_delta": -0.030123799998546752,
+      "improved": false,
+      "interpretation": "exploratory point-score change; one frozen program",
+      "strict_pair_compliant": false
+    },
+    {
+      "benchmark_id": "M04",
+      "slice_id": "synthetic-v1",
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6.1-sol",
+      "metric": "range_normalized_mae",
+      "direction_adjusted_delta": 1.115751799694864e-06,
+      "improved": true,
+      "interpretation": "numerical ordering only; near-identical quadrature estimators",
+      "strict_pair_compliant": true
+    }
+  ],
+  "model_summaries": [
+    {
+      "model": "gpt-5.6-sol",
+      "attempted": 6,
+      "valid": 6,
+      "strict_format_valid": 1,
+      "C05_preparation_equal_mean_of_medians": 0.45219611758394257,
+      "C05_n_preparations": 5,
+      "M04_normalized_mae": 0.05822260584692529,
+      "C05_strict_eligible_preparations": 0,
+      "C05_strict_reference_wins": 0,
+      "C05_reference_wins": 1,
+      "M04_reference_wins": 1
+    },
+    {
+      "model": "gpt-6-sol",
+      "attempted": 6,
+      "valid": 6,
+      "strict_format_valid": 6,
+      "C05_preparation_equal_mean_of_medians": 0.4433052515260961,
+      "C05_n_preparations": 5,
+      "M04_normalized_mae": 0.058219400713050706,
+      "C05_strict_eligible_preparations": 5,
+      "C05_strict_reference_wins": 0,
+      "C05_reference_wins": 0,
+      "M04_reference_wins": 1
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "attempted": 6,
+      "valid": 6,
+      "strict_format_valid": 6,
+      "C05_preparation_equal_mean_of_medians": 0.46789571463086227,
+      "C05_n_preparations": 5,
+      "M04_normalized_mae": 0.058221490095125596,
+      "C05_strict_eligible_preparations": 5,
+      "C05_strict_reference_wins": 3,
+      "C05_reference_wins": 3,
+      "M04_reference_wins": 1
+    }
+  ],
+  "claims_withheld": [
+    "Universal neuroscience ranking",
+    "Current global SOTA",
+    "Matched-total-effort generalist superiority",
+    "Stable causal generation/scaling trend",
+    "Biological population uncertainty without animal IDs"
+  ]
+}

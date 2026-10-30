@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "H12",
+  "input": "Neural responses to object images",
+  "ground_truth": "Image/concept identity and repeated trials",
+  "sources": [
+    "https://things-initiative.org/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

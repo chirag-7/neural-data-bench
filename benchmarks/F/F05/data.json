@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "F05",
+  "input": "Widefield calcium, video and trial covariates",
+  "ground_truth": "Measured widefield activity and behavioral events",
+  "sources": [
+    "https://repository.cshl.edu/38599/2/DataDescription_Musall.pdf"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

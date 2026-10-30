@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "A11",
+  "input": "Wildlife video and animal images",
+  "ground_truth": "Action labels, temporal segments, keypoints",
+  "sources": [
+    "https://arxiv.org/abs/2204.08129"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

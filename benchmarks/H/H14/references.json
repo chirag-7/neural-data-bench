@@ -1,0 +1,22 @@
+[
+  {
+    "id": "Scebd18a932",
+    "url": "https://github.com/bycycle-tools/bycycle",
+    "benchmark_ids": [
+      "H14"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sa98ec84476",
+    "url": "https://about.dandiarchive.org/",
+    "benchmark_ids": [
+      "H14",
+      "N05",
+      "N06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

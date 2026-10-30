@@ -1,0 +1,13 @@
+{
+  "benchmark_id": "E06",
+  "input": "Larval zebrafish light-sheet volumes and extracted cellular traces",
+  "ground_truth": "Future measured calcium activity",
+  "sources": [
+    "https://google-research.github.io/zapbench/",
+    "https://arxiv.org/abs/2503.02618",
+    "https://zapbench-release.storage.googleapis.com/volumes/README.html"
+  ],
+  "license_status": "CC BY 4.0 explicitly stated in official dataset README",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

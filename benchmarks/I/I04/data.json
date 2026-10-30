@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "I04",
+  "input": "Faces, EEG, MEG, structural/functional MRI",
+  "ground_truth": "Stimulus labels; physiological recordings",
+  "sources": [
+    "https://www.nature.com/articles/sdata20151"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

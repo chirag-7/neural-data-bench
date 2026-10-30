@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "H19",
+  "input": "PSG excerpts with expert artifact labels",
+  "ground_truth": "Expert temporal annotations in 20 fifteen-minute excerpts",
+  "sources": [
+    "https://zenodo.org/records/2650142"
+  ],
+  "license_status": "Not independently reviewed",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

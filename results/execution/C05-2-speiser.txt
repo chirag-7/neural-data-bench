@@ -1,0 +1,15 @@
+
+Traceback (most recent call last):
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py", line 110, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py", line 92, in main
+    if args.one:print(json.dumps(one(*args.one)));return
+                                 ^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py", line 74, in one
+    truth=load('test.spikes');scores=score(pred,truth)
+                                     ^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py", line 12, in score
+    if pred.shape!=truth.shape:raise ValueError('Prediction shape mismatch')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Prediction shape mismatch

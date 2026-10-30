@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "J06",
+  "input": "3D worm microscopy and calcium videos",
+  "ground_truth": "Neuron positions, identities and tracks",
+  "sources": [
+    "https://github.com/focolab/WormND"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "A10",
+  "input": "Videos and trajectories across species",
+  "ground_truth": "Experimental metadata and behavioral annotations",
+  "sources": [
+    "https://arxiv.org/abs/2207.10553"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

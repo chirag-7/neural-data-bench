@@ -1,0 +1,13 @@
+{
+  "benchmark_id": "K06",
+  "input": "Waveform/firing metrics and optotagged/identified cell classes",
+  "ground_truth": "Curated PV, SST, pyramidal, axo-axonic, VGAT and VIP identities",
+  "sources": [
+    "https://cellexplorer.org/publicdata/ground-truth-data/",
+    "https://cellexplorer.org/tutorials/ground-truth-tutorial/",
+    "https://alleninstitute.github.io/openscope_databook/optotagging/"
+  ],
+  "license_status": "Not independently reviewed",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "I01",
+  "input": "Video/audio/language and BOLD parcel time series",
+  "ground_truth": "Measured held-out fMRI responses",
+  "sources": [
+    "https://algonautsproject.com/2025/challenge.html"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

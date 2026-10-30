@@ -1,0 +1,20 @@
+[
+  {
+    "id": "S0d49bd0fd9",
+    "url": "https://arxiv.org/abs/2108.12617",
+    "benchmark_ids": [
+      "A02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sdee519f52d",
+    "url": "https://benchmark.deeplabcut.org/datasets.html",
+    "benchmark_ids": [
+      "A02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

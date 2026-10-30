@@ -1,0 +1,11 @@
+[
+  {
+    "id": "S3129d9cd92",
+    "url": "https://olveczkylab.oeb.harvard.edu/publications/pair-r24m-dataset-multi-animal-3d-pose-estimation",
+    "benchmark_ids": [
+      "A05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

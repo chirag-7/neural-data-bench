@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "H03",
+  "input": "EEG with frequency-tagged stimuli",
+  "ground_truth": "Stimulus-frequency labels",
+  "sources": [
+    "https://moabb.neurotechx.com/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

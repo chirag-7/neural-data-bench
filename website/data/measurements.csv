@@ -1,0 +1,108 @@
+benchmark_id,family_code,slice_id,model,status,score,metric,direction,n_units,seconds,track,score_evidence,strict_format_compliant,prediction_file,code_sha256,reason
+C05,C,1,gpt-5.6-sol,measured,0.5789139103635804,median_pearson_40ms,higher,5,23.912414042046294,T3,new_local_measurement,False,results/predictions/C05/1--gpt-5.6-sol.npz,1cdd5649312236d530225c4743e1fa24d59db1ce9e0a7c5e93ed32d1cf0de8be,
+C05,C,1,gpt-6-sol,measured,0.6007624982304995,median_pearson_40ms,higher,5,4.283544625155628,T3,new_local_measurement,True,results/predictions/C05/1--gpt-6-sol.npz,6fd7603002097560c46ca26f19c407849e30a086a51a12ba9fe32f66d628a41b,
+C05,C,1,gpt-6.1-sol,measured,0.6045865346359193,median_pearson_40ms,higher,5,8.92581058293581,T3,new_local_measurement,True,results/predictions/C05/1--gpt-6.1-sol.npz,c17a41aa5823917abf38386d4ccaf20adfd00a6b28f42ee92470cbfd98316515,
+C05,C,1,deneux,measured,0.6116413541596544,median_pearson_40ms,higher,5,,reference,archived_predictions_rescored,True,results/predictions/C05/1--deneux.npz,,
+C05,C,1,speiser,measured,0.5974717854194861,median_pearson_40ms,higher,5,,reference,archived_predictions_rescored,True,results/predictions/C05/1--speiser.npz,,
+C05,C,1,friedrich,measured,0.6031332578760715,median_pearson_40ms,higher,5,,reference,archived_predictions_rescored,True,results/predictions/C05/1--friedrich.npz,,
+C05,C,1,rupprecht,measured,0.5946196374003442,median_pearson_40ms,higher,5,,reference,archived_predictions_rescored,True,results/predictions/C05/1--rupprecht.npz,,
+C05,C,1,oasis-default,measured,0.3387556386052246,median_pearson_40ms,higher,5,0.12176354113034904,reference,new_local_measurement,True,results/predictions/C05/1--oasis-default.npz,,
+C05,C,1,raw-calcium,measured,0.16330047113627905,median_pearson_40ms,higher,5,,reference,new_local_measurement,True,results/predictions/C05/1--raw-calcium.npz,,
+C05,C,2,gpt-5.6-sol,measured,0.4078136910603323,median_pearson_40ms,higher,10,22.756478999974206,T3,new_local_measurement,False,results/predictions/C05/2--gpt-5.6-sol.npz,1cdd5649312236d530225c4743e1fa24d59db1ce9e0a7c5e93ed32d1cf0de8be,
+C05,C,2,gpt-6-sol,measured,0.44113065412279007,median_pearson_40ms,higher,10,5.849399416940287,T3,new_local_measurement,True,results/predictions/C05/2--gpt-6-sol.npz,6fd7603002097560c46ca26f19c407849e30a086a51a12ba9fe32f66d628a41b,
+C05,C,2,gpt-6.1-sol,measured,0.4571717528928923,median_pearson_40ms,higher,10,7.017356333089992,T3,new_local_measurement,True,results/predictions/C05/2--gpt-6.1-sol.npz,c17a41aa5823917abf38386d4ccaf20adfd00a6b28f42ee92470cbfd98316515,
+C05,C,2,deneux,measured,0.4553791266850664,median_pearson_40ms,higher,10,,reference,archived_predictions_rescored,True,results/predictions/C05/2--deneux.npz,,
+C05,C,2,speiser,failed,,,,,0.48349112505093217,,new_local_measurement,True,,,"Traceback (most recent call last):
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 110, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 92, in main
+    if args.one:print(json.dumps(one(*args.one)));return
+                                 ^^^^^^^^^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 74, in one
+    truth=load('test.spikes');scores=score(pred,truth)
+                                     ^^^^^^^^^^^^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 12, in score
+    if pred.shape!=truth.shape:raise ValueError('Prediction shape mismatch')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Prediction shape mismatch
+"
+C05,C,2,friedrich,measured,0.393491904813226,median_pearson_40ms,higher,10,,reference,archived_predictions_rescored,True,results/predictions/C05/2--friedrich.npz,,
+C05,C,2,rupprecht,measured,0.41379863832160535,median_pearson_40ms,higher,10,,reference,archived_predictions_rescored,True,results/predictions/C05/2--rupprecht.npz,,
+C05,C,2,oasis-default,measured,0.24503109961895,median_pearson_40ms,higher,10,0.240565667161718,reference,new_local_measurement,True,results/predictions/C05/2--oasis-default.npz,,
+C05,C,2,raw-calcium,measured,0.1769028754057752,median_pearson_40ms,higher,10,,reference,new_local_measurement,True,results/predictions/C05/2--raw-calcium.npz,,
+C05,C,3,gpt-5.6-sol,measured,0.408966150564502,median_pearson_40ms,higher,6,20.386969541897997,T3,new_local_measurement,False,results/predictions/C05/3--gpt-5.6-sol.npz,1cdd5649312236d530225c4743e1fa24d59db1ce9e0a7c5e93ed32d1cf0de8be,
+C05,C,3,gpt-6-sol,measured,0.3971166573551097,median_pearson_40ms,higher,6,4.391803042031825,T3,new_local_measurement,True,results/predictions/C05/3--gpt-6-sol.npz,6fd7603002097560c46ca26f19c407849e30a086a51a12ba9fe32f66d628a41b,
+C05,C,3,gpt-6.1-sol,measured,0.44032121198396157,median_pearson_40ms,higher,6,9.009792333003134,T3,new_local_measurement,True,results/predictions/C05/3--gpt-6.1-sol.npz,c17a41aa5823917abf38386d4ccaf20adfd00a6b28f42ee92470cbfd98316515,
+C05,C,3,deneux,measured,0.37585965272185695,median_pearson_40ms,higher,6,,reference,archived_predictions_rescored,True,results/predictions/C05/3--deneux.npz,,
+C05,C,3,speiser,measured,0.4182906288995436,median_pearson_40ms,higher,6,,reference,archived_predictions_rescored,True,results/predictions/C05/3--speiser.npz,,
+C05,C,3,friedrich,measured,0.3737756076865332,median_pearson_40ms,higher,6,,reference,archived_predictions_rescored,True,results/predictions/C05/3--friedrich.npz,,
+C05,C,3,rupprecht,measured,0.43358593466881956,median_pearson_40ms,higher,6,,reference,archived_predictions_rescored,True,results/predictions/C05/3--rupprecht.npz,,
+C05,C,3,oasis-default,measured,0.20058763300550797,median_pearson_40ms,higher,6,0.1068327920511365,reference,new_local_measurement,True,results/predictions/C05/3--oasis-default.npz,,
+C05,C,3,raw-calcium,measured,0.1703909253368049,median_pearson_40ms,higher,6,,reference,new_local_measurement,True,results/predictions/C05/3--raw-calcium.npz,,
+C05,C,4,gpt-5.6-sol,measured,0.38975891067537416,median_pearson_40ms,higher,3,5.716438041999936,T3,new_local_measurement,False,results/predictions/C05/4--gpt-5.6-sol.npz,1cdd5649312236d530225c4743e1fa24d59db1ce9e0a7c5e93ed32d1cf0de8be,
+C05,C,4,gpt-6-sol,measured,0.367990624463029,median_pearson_40ms,higher,3,1.7955498329829425,T3,new_local_measurement,True,results/predictions/C05/4--gpt-6-sol.npz,6fd7603002097560c46ca26f19c407849e30a086a51a12ba9fe32f66d628a41b,
+C05,C,4,gpt-6.1-sol,measured,0.39199494838416066,median_pearson_40ms,higher,3,4.77849862514995,T3,new_local_measurement,True,results/predictions/C05/4--gpt-6.1-sol.npz,c17a41aa5823917abf38386d4ccaf20adfd00a6b28f42ee92470cbfd98316515,
+C05,C,4,deneux,measured,0.3719087362681153,median_pearson_40ms,higher,3,,reference,archived_predictions_rescored,True,results/predictions/C05/4--deneux.npz,,
+C05,C,4,speiser,failed,,,,,0.43159804097376764,,new_local_measurement,True,,,"Traceback (most recent call last):
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 110, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 92, in main
+    if args.one:print(json.dumps(one(*args.one)));return
+                                 ^^^^^^^^^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 74, in one
+    truth=load('test.spikes');scores=score(pred,truth)
+                                     ^^^^^^^^^^^^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 16, in score
+    if not np.all(np.isfinite(x)):raise ValueError('Nonfinite predictions on labels')
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Nonfinite predictions on labels
+"
+C05,C,4,friedrich,measured,0.38025125471234655,median_pearson_40ms,higher,3,,reference,archived_predictions_rescored,True,results/predictions/C05/4--friedrich.npz,,
+C05,C,4,rupprecht,measured,0.3651559099842012,median_pearson_40ms,higher,3,,reference,archived_predictions_rescored,True,results/predictions/C05/4--rupprecht.npz,,
+C05,C,4,oasis-default,measured,0.20670218159576897,median_pearson_40ms,higher,3,0.05999195808544755,reference,new_local_measurement,True,results/predictions/C05/4--oasis-default.npz,,
+C05,C,4,raw-calcium,measured,0.22624925455537856,median_pearson_40ms,higher,3,,reference,new_local_measurement,True,results/predictions/C05/4--raw-calcium.npz,,
+C05,C,5,gpt-5.6-sol,measured,0.47552792525592424,median_pearson_40ms,higher,8,5.756411832990125,T3,new_local_measurement,False,results/predictions/C05/5--gpt-5.6-sol.npz,1cdd5649312236d530225c4743e1fa24d59db1ce9e0a7c5e93ed32d1cf0de8be,
+C05,C,5,gpt-6-sol,measured,0.4095258234590523,median_pearson_40ms,higher,8,2.2334257080219686,T3,new_local_measurement,True,results/predictions/C05/5--gpt-6-sol.npz,6fd7603002097560c46ca26f19c407849e30a086a51a12ba9fe32f66d628a41b,
+C05,C,5,gpt-6.1-sol,measured,0.4454041252573775,median_pearson_40ms,higher,8,5.362934208940715,T3,new_local_measurement,True,results/predictions/C05/5--gpt-6.1-sol.npz,c17a41aa5823917abf38386d4ccaf20adfd00a6b28f42ee92470cbfd98316515,
+C05,C,5,deneux,failed,,,,,0.46740508382208645,,new_local_measurement,True,,,"Traceback (most recent call last):
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 110, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 92, in main
+    if args.one:print(json.dumps(one(*args.one)));return
+                                 ^^^^^^^^^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 74, in one
+    truth=load('test.spikes');scores=score(pred,truth)
+                                     ^^^^^^^^^^^^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 16, in score
+    if not np.all(np.isfinite(x)):raise ValueError('Nonfinite predictions on labels')
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Nonfinite predictions on labels
+"
+C05,C,5,speiser,failed,,,,,0.43515258305706084,,new_local_measurement,True,,,"Traceback (most recent call last):
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 110, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 92, in main
+    if args.one:print(json.dumps(one(*args.one)));return
+                                 ^^^^^^^^^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 74, in one
+    truth=load('test.spikes');scores=score(pred,truth)
+                                     ^^^^^^^^^^^^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py"", line 12, in score
+    if pred.shape!=truth.shape:raise ValueError('Prediction shape mismatch')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Prediction shape mismatch
+"
+C05,C,5,friedrich,measured,0.4577931435706073,median_pearson_40ms,higher,8,,reference,archived_predictions_rescored,True,results/predictions/C05/5--friedrich.npz,,
+C05,C,5,rupprecht,measured,0.49582853086510337,median_pearson_40ms,higher,8,,reference,archived_predictions_rescored,True,results/predictions/C05/5--rupprecht.npz,,
+C05,C,5,oasis-default,measured,0.2114068935162991,median_pearson_40ms,higher,8,0.04273395799100399,reference,new_local_measurement,True,results/predictions/C05/5--oasis-default.npz,,
+C05,C,5,raw-calcium,measured,0.22188103727882053,median_pearson_40ms,higher,8,,reference,new_local_measurement,True,results/predictions/C05/5--raw-calcium.npz,,
+M04,M,synthetic-v1,gpt-5.6-sol,measured,0.05822260584692529,range_normalized_mae,lower,24,1.9723134590312839,T3,new_local_measurement,True,results/predictions/M04/synthetic-v1--gpt-5.6-sol.npz,7f8968c3d29d12117938f62bce4d543f133899888a5985e4d3f2492fe71105ae,
+M04,M,synthetic-v1,gpt-6-sol,measured,0.058219400713050706,range_normalized_mae,lower,24,0.71018020901829,T3,new_local_measurement,True,results/predictions/M04/synthetic-v1--gpt-6-sol.npz,f72bb17d272471f18d1d74f4cb121b4a0a421468276a9aa65005a9bcb671bad7,
+M04,M,synthetic-v1,gpt-6.1-sol,measured,0.058221490095125596,range_normalized_mae,lower,24,2.3303139999043196,T3,new_local_measurement,True,results/predictions/M04/synthetic-v1--gpt-6.1-sol.npz,b3ff9a498db59df1e3c9763f5b2619dc1c792e45b252dee199cce2f07aea95f4,
+M04,M,synthetic-v1,canonical-mle,measured,0.0706964586193028,range_normalized_mae,lower,24,2.7840382088907063,reference,new_local_measurement,True,results/predictions/M04/synthetic-v1--canonical-mle.npz,,
+M04,M,synthetic-v1,midpoint,measured,0.21800332418606802,range_normalized_mae,lower,24,1.795799471437931e-05,reference,new_local_measurement,True,results/predictions/M04/synthetic-v1--midpoint.npz,,
+M04,M,synthetic-v1,canonical-posterior,measured,0.05822286923267737,range_normalized_mae,lower,24,15.578427334083244,reference,new_local_measurement,True,results/predictions/M04/synthetic-v1--canonical-posterior.npz,cbf0c7a2adaf615c5f9d48818d55e021f52b12c709e4809dc730d9501abbc5b1,

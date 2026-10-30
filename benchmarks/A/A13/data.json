@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "A13",
+  "input": "Synchronized calibrated multiview videos",
+  "ground_truth": "Held-out camera images; selected pose/neural labels",
+  "sources": [
+    "https://arxiv.org/abs/2606.02937",
+    "https://arxiv.org/abs/2505.18342"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

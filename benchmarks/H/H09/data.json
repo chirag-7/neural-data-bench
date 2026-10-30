@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "H09",
+  "input": "Long EEG recordings and seizure annotations",
+  "ground_truth": "Expert event intervals",
+  "sources": [
+    "https://epilepsybenchmarks.com/framework/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "D04",
+  "input": "Biophysical neuron models and stimulation protocols",
+  "ground_truth": "Experimental feature distributions and held-out physiological protocols",
+  "sources": [
+    "https://doi.org/10.1371/journal.pcbi.1008114"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

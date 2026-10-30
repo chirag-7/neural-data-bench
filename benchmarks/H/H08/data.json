@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "H08",
+  "input": "Continuous overnight EEG/PSG",
+  "ground_truth": "Human sleep-stage labels",
+  "sources": [
+    "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+    "https://neural-interfaces26.github.io/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

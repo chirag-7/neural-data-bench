@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "M03",
+  "input": "Cognitive/control environments with observations/actions",
+  "ground_truth": "Task rewards/targets; simulated feedback",
+  "sources": [
+    "https://github.com/neurogym/neurogym"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

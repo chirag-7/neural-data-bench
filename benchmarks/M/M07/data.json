@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "M07",
+  "input": "Fly body, terrain and sensory feedback simulation",
+  "ground_truth": "Known simulated states and task outcomes",
+  "sources": [
+    "https://www.nature.com/articles/s41592-024-02497-y"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

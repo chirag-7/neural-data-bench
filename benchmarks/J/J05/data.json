@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "J05",
+  "input": "Coregistered EM, neurons, calcium responses",
+  "ground_truth": "Released proofread connectivity and activity",
+  "sources": [
+    "https://www.microns-explorer.org/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

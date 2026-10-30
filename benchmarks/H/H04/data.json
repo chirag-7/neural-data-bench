@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "H04",
+  "input": "Multiple EEG tasks and subjects",
+  "ground_truth": "Provided task labels",
+  "sources": [
+    "https://beetl.ai/introduction"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

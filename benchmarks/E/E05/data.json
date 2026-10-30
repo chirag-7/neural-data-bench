@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "E05",
+  "input": "Per-neuron activity and region labels",
+  "ground_truth": "Histology-derived region assignments",
+  "sources": [
+    "https://brainbench-org.github.io/ibl-bwb/",
+    "https://arxiv.org/abs/2609.22064"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

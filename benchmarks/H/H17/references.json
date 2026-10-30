@@ -1,0 +1,20 @@
+[
+  {
+    "id": "Sdfe5ef392f",
+    "url": "https://nemar.org/dataset/on006366",
+    "benchmark_ids": [
+      "H17"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Seefe88ef95",
+    "url": "https://doi.org/10.18112/openneuro.ds006366.v1.0.1",
+    "benchmark_ids": [
+      "H17"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

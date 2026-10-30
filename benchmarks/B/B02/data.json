@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "B02",
+  "input": "Simulated/hybrid raw multichannel voltage",
+  "ground_truth": "Known spike times, units and simulated motion",
+  "sources": [
+    "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+    "https://github.com/cwindolf/dartsort"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

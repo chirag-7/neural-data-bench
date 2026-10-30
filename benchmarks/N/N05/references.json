@@ -1,0 +1,25 @@
+[
+  {
+    "id": "Sa98ec84476",
+    "url": "https://about.dandiarchive.org/",
+    "benchmark_ids": [
+      "H14",
+      "N05",
+      "N06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S365e78023d",
+    "url": "https://www.internationalbrainlab.com/data",
+    "benchmark_ids": [
+      "B08",
+      "L03",
+      "M01",
+      "N05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

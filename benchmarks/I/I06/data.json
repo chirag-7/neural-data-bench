@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "I06",
+  "input": "Multicontrast MRI volumes",
+  "ground_truth": "Expert tumor labels",
+  "sources": [
+    "https://www.med.upenn.edu/cbica/brats/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

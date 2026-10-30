@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "C01",
+  "input": "Two-photon movies",
+  "ground_truth": "Human cell-region annotations",
+  "sources": [
+    "https://github.com/codeneuro/neurofinder-datasets",
+    "https://github.com/codeneuro/neurofinder"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

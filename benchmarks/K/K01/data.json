@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "K01",
+  "input": "Patch clamp features, morphology, labels",
+  "ground_truth": "Published cell taxonomy labels",
+  "sources": [
+    "https://brain-map.org/our-research/cell-types-taxonomies",
+    "https://brain-map.org/support/documentation/documentation-cell-types-database"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

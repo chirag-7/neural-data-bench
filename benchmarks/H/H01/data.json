@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "H01",
+  "input": "EEG epochs, montage and labels",
+  "ground_truth": "Task labels",
+  "sources": [
+    "https://moabb.neurotechx.com/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "A14",
+  "input": "Partially observed 2D/3D skeleton time series",
+  "ground_truth": "Observed positions hidden under known masks",
+  "sources": [
+    "https://www.nature.com/articles/s41592-025-02893-y"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

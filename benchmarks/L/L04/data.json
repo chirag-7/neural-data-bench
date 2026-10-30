@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "L04",
+  "input": "Synthetic spike trains with known rate/history",
+  "ground_truth": "Known generating process and held-out spikes",
+  "sources": [
+    "https://neurallatents.github.io/",
+    "https://github.com/snel-repo/ComputationThroughDynamicsToolkit"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

@@ -1,0 +1,1239 @@
+[
+  {
+    "id": "S1d7f109382",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12087009/",
+    "benchmark_ids": [
+      "A01"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S0d49bd0fd9",
+    "url": "https://arxiv.org/abs/2108.12617",
+    "benchmark_ids": [
+      "A02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sdee519f52d",
+    "url": "https://benchmark.deeplabcut.org/datasets.html",
+    "benchmark_ids": [
+      "A02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sf8490f1414",
+    "url": "https://www.nature.com/articles/s41467-024-48792-2",
+    "benchmark_ids": [
+      "A03"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S8bb5e226e8",
+    "url": "https://figshare.com/collections/Rat_7M/5295370/3",
+    "benchmark_ids": [
+      "A04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sde02ffafd5",
+    "url": "https://www.nature.com/articles/s41592-025-02893-y",
+    "benchmark_ids": [
+      "A04",
+      "A14"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S3129d9cd92",
+    "url": "https://olveczkylab.oeb.harvard.edu/publications/pair-r24m-dataset-multi-animal-3d-pose-estimation",
+    "benchmark_ids": [
+      "A05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S9a02ded2e7",
+    "url": "https://arxiv.org/abs/2308.11737",
+    "benchmark_ids": [
+      "A06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Seec2cbeea2",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13131684/",
+    "benchmark_ids": [
+      "A07"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S7fd06813f8",
+    "url": "https://doi.org/10.7554/eLife.107602.3",
+    "benchmark_ids": [
+      "A08"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S6ff0638f05",
+    "url": "https://arxiv.org/abs/2104.02710",
+    "benchmark_ids": [
+      "A09"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sb3ea913b3d",
+    "url": "https://arxiv.org/abs/2207.10553",
+    "benchmark_ids": [
+      "A10"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S2ad67fe966",
+    "url": "https://arxiv.org/abs/2204.08129",
+    "benchmark_ids": [
+      "A11"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sc3e49da8e6",
+    "url": "https://arxiv.org/abs/2507.09513",
+    "benchmark_ids": [
+      "A12"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S3fa9731374",
+    "url": "https://arxiv.org/abs/2606.02937",
+    "benchmark_ids": [
+      "A13"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S144ea2f874",
+    "url": "https://arxiv.org/abs/2505.18342",
+    "benchmark_ids": [
+      "A13"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S393156f0e5",
+    "url": "https://github.com/flatironinstitute/spikeforest",
+    "benchmark_ids": [
+      "B01"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S16ed2ff6c5",
+    "url": "https://elifesciences.org/articles/55167",
+    "benchmark_ids": [
+      "B01"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S6fec540019",
+    "url": "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+    "benchmark_ids": [
+      "B01",
+      "B02",
+      "B03",
+      "B04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S313ac703c2",
+    "url": "https://github.com/cwindolf/dartsort",
+    "benchmark_ids": [
+      "B02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sb3441bb979",
+    "url": "https://github.com/evarol/dredge",
+    "benchmark_ids": [
+      "B03"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sc21ce16225",
+    "url": "https://spikeinterface.readthedocs.io/en/stable/modules/comparison.html",
+    "benchmark_ids": [
+      "B04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S2bf720f933",
+    "url": "https://www.nature.com/articles/s41592-024-02440-1",
+    "benchmark_ids": [
+      "B05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S80a54e0229",
+    "url": "https://huggingface.co/int-brain-lab/ea-decoder-channel-xgboost",
+    "benchmark_ids": [
+      "B06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S00bd846408",
+    "url": "https://allenneuraldynamics.github.io/data.html",
+    "benchmark_ids": [
+      "B07"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S51b3e602d5",
+    "url": "https://github.com/int-brain-lab/spikepack",
+    "benchmark_ids": [
+      "B08"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S365e78023d",
+    "url": "https://www.internationalbrainlab.com/data",
+    "benchmark_ids": [
+      "B08",
+      "L03",
+      "M01",
+      "N05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sdc41eb8f0f",
+    "url": "https://github.com/codeneuro/neurofinder-datasets",
+    "benchmark_ids": [
+      "C01"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S91f3c4e2c5",
+    "url": "https://github.com/codeneuro/neurofinder",
+    "benchmark_ids": [
+      "C01"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S44bbd9dc05",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6342523/",
+    "benchmark_ids": [
+      "C02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S9617b6d8c9",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/",
+    "benchmark_ids": [
+      "C03",
+      "C04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S50c6e8c8ef",
+    "url": "https://github.com/cabooster/DeepCAD/blob/master/dataset/README.md",
+    "benchmark_ids": [
+      "C04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S218ba7a709",
+    "url": "https://github.com/codeneuro/spikefinder-datasets",
+    "benchmark_ids": [
+      "C05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S204821f612",
+    "url": "https://github.com/berenslab/spikefinder_analysis",
+    "benchmark_ids": [
+      "C05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sf0d399def4",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7611618/",
+    "benchmark_ids": [
+      "C06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S369ad5a8b0",
+    "url": "https://github.com/zivlab/CellReg",
+    "benchmark_ids": [
+      "C07"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S8a213b7767",
+    "url": "https://github.com/LernerLab/GuPPy",
+    "benchmark_ids": [
+      "C08"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S7395c7e9f4",
+    "url": "https://elifesciences.org/articles/28728",
+    "benchmark_ids": [
+      "C09"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Scea7107e0a",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8075204/",
+    "benchmark_ids": [
+      "D01"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Se2cecc5949",
+    "url": "https://brain-map.org/support/documentation/documentation-cell-types-database",
+    "benchmark_ids": [
+      "D02",
+      "K01"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S4bd23c5522",
+    "url": "https://alleninstitute.github.io/AllenSDK/cell_types.html",
+    "benchmark_ids": [
+      "D02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sa7cf2df484",
+    "url": "https://www.nature.com/articles/s41592-025-02895-w",
+    "benchmark_ids": [
+      "D03",
+      "L02",
+      "M02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S83f3daf03e",
+    "url": "https://doi.org/10.1371/journal.pcbi.1008114",
+    "benchmark_ids": [
+      "D04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S00bce68f0b",
+    "url": "https://neurallatents.github.io/",
+    "benchmark_ids": [
+      "E01",
+      "L04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S24206c403f",
+    "url": "https://github.com/snel-repo/ComputationThroughDynamicsToolkit",
+    "benchmark_ids": [
+      "E02",
+      "L04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sd05d08c358",
+    "url": "https://brainbench-org.github.io/ibl-bwb/",
+    "benchmark_ids": [
+      "E03",
+      "E04",
+      "E05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S2d2db9be21",
+    "url": "https://arxiv.org/abs/2609.22064",
+    "benchmark_ids": [
+      "E03",
+      "E04",
+      "E05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S408bc065d2",
+    "url": "https://sensorium-competition.net/",
+    "benchmark_ids": [
+      "F01",
+      "F02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sb71690539d",
+    "url": "https://observatory.brain-map.org/visualcoding",
+    "benchmark_ids": [
+      "F03"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S59396a3f79",
+    "url": "https://crcns.org/data-sets",
+    "benchmark_ids": [
+      "F04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S09da18c117",
+    "url": "https://repository.cshl.edu/38599/2/DataDescription_Musall.pdf",
+    "benchmark_ids": [
+      "F05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sf3cbf2d161",
+    "url": "https://snel-repo.github.io/falcon/",
+    "benchmark_ids": [
+      "G01",
+      "G02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S540cc17323",
+    "url": "https://github.com/fwillett/speechBCI",
+    "benchmark_ids": [
+      "G03"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sd480ab5ca7",
+    "url": "https://www.kaggle.com/competitions/brain-to-text-25/overview",
+    "benchmark_ids": [
+      "G03"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Seef48163b6",
+    "url": "https://moabb.neurotechx.com/",
+    "benchmark_ids": [
+      "H01",
+      "H02",
+      "H03"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S29691687ad",
+    "url": "https://beetl.ai/introduction",
+    "benchmark_ids": [
+      "H04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S69467629c8",
+    "url": "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+    "benchmark_ids": [
+      "H05",
+      "H08",
+      "H10"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S20134b50da",
+    "url": "https://arxiv.org/abs/2606.00815",
+    "benchmark_ids": [
+      "H06",
+      "H10"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S4839fd2c96",
+    "url": "https://eeg.fm/benchmarks/",
+    "benchmark_ids": [
+      "H07"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S4fd1f293d5",
+    "url": "https://neural-interfaces26.github.io/",
+    "benchmark_ids": [
+      "H08"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S0444d6d29f",
+    "url": "https://epilepsybenchmarks.com/framework/",
+    "benchmark_ids": [
+      "H09"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S3e8a37a70e",
+    "url": "https://libribrain.com/editions/2026/publications/",
+    "benchmark_ids": [
+      "H11"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sc2d1088542",
+    "url": "https://things-initiative.org/",
+    "benchmark_ids": [
+      "H12"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sb7c0e7259e",
+    "url": "https://github.com/facebookresearch/emg2pose",
+    "benchmark_ids": [
+      "H13"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Scebd18a932",
+    "url": "https://github.com/bycycle-tools/bycycle",
+    "benchmark_ids": [
+      "H14"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sa98ec84476",
+    "url": "https://about.dandiarchive.org/",
+    "benchmark_ids": [
+      "H14",
+      "N05",
+      "N06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sfebadd9e8a",
+    "url": "https://mne.tools/stable/auto_tutorials/inverse/80_brainstorm_phantom_elekta.html",
+    "benchmark_ids": [
+      "H15"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S2d5bc5da8e",
+    "url": "https://doi.org/10.1088/1741-2552/ac2bf8",
+    "benchmark_ids": [
+      "H16"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Se713806f1a",
+    "url": "https://algonautsproject.com/2025/challenge.html",
+    "benchmark_ids": [
+      "I01"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S1e300624f6",
+    "url": "https://www.naturalscenesdataset.org/",
+    "benchmark_ids": [
+      "I02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S7ba4fd3442",
+    "url": "https://www.brain-score.org/",
+    "benchmark_ids": [
+      "I03"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S4d59ee5a2f",
+    "url": "https://www.nature.com/articles/sdata20151",
+    "benchmark_ids": [
+      "I04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S297615fa41",
+    "url": "https://fastmri.med.nyu.edu/",
+    "benchmark_ids": [
+      "I05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sb367ef3474",
+    "url": "https://www.med.upenn.edu/cbica/brats/",
+    "benchmark_ids": [
+      "I06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S8b596b5f8e",
+    "url": "https://www.nemar.org/dataset/on005963",
+    "benchmark_ids": [
+      "I07"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S6693642daa",
+    "url": "https://registry.opendata.aws/confusius/",
+    "benchmark_ids": [
+      "I08"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sb212440b8b",
+    "url": "https://tractometer.org/ismrm2015/tools/",
+    "benchmark_ids": [
+      "I09"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S8cd89cc083",
+    "url": "https://doi.org/10.1371/journal.pone.0184661",
+    "benchmark_ids": [
+      "I10"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sa255b89c66",
+    "url": "https://cremi.janelia.org/",
+    "benchmark_ids": [
+      "J01",
+      "J02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Se1e1786659",
+    "url": "https://github.com/BigNeuron/Data/releases",
+    "benchmark_ids": [
+      "J03"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sff08abf204",
+    "url": "https://diadem.janelia.org/metric.html",
+    "benchmark_ids": [
+      "J03"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "See381119c7",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10514056/",
+    "benchmark_ids": [
+      "J04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sbb3f336be7",
+    "url": "https://www.microns-explorer.org/",
+    "benchmark_ids": [
+      "J05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S80f8fad197",
+    "url": "https://github.com/focolab/WormND",
+    "benchmark_ids": [
+      "J06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sb204a1d238",
+    "url": "https://brain-map.org/our-research/cell-types-taxonomies",
+    "benchmark_ids": [
+      "K01",
+      "K02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S3a2c6642bd",
+    "url": "https://scib.readthedocs.io/en/latest/",
+    "benchmark_ids": [
+      "K02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sb5dca9f7e9",
+    "url": "https://github.com/allenai/neurodiscoverybench",
+    "benchmark_ids": [
+      "K03",
+      "N01"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S4899e1794a",
+    "url": "https://connectomics.chalearn.org/help/data",
+    "benchmark_ids": [
+      "L01"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S5ff26a7c8c",
+    "url": "https://sbi.readthedocs.io/en/latest/advanced_tutorials/21_diagnostics_misspecification_checks.html",
+    "benchmark_ids": [
+      "L02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S8fae91c94b",
+    "url": "https://github.com/int-brain-lab/ibl-ai-agent",
+    "benchmark_ids": [
+      "L03"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S5bc2432be4",
+    "url": "https://www.nature.com/articles/s41586-023-06683-4",
+    "benchmark_ids": [
+      "L05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S434da70c80",
+    "url": "https://github.com/sbi-benchmark/sbibm",
+    "benchmark_ids": [
+      "L06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sff66218ad5",
+    "url": "https://www.nature.com/articles/s41586-025-09215-4",
+    "benchmark_ids": [
+      "M01"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S64924ff09c",
+    "url": "https://github.com/neurogym/neurogym",
+    "benchmark_ids": [
+      "M02",
+      "M03"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S38a7e1c4f2",
+    "url": "https://elifesciences.org/articles/49547",
+    "benchmark_ids": [
+      "M04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S1fd40c4452",
+    "url": "https://arxiv.org/abs/1705.04405",
+    "benchmark_ids": [
+      "M05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Scb77eecea4",
+    "url": "https://myosuite.org/myochallenge/",
+    "benchmark_ids": [
+      "M06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S2bf3a8304d",
+    "url": "https://www.nature.com/articles/s41592-024-02497-y",
+    "benchmark_ids": [
+      "M07"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S724c9f4ea6",
+    "url": "https://arxiv.org/abs/2606.25400",
+    "benchmark_ids": [
+      "N02"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S12a6e01683",
+    "url": "https://cuhk-aim-group.github.io/NeuroDiscovery/neurobench.html",
+    "benchmark_ids": [
+      "N03"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S171cfc96b2",
+    "url": "https://arxiv.org/abs/2410.05080",
+    "benchmark_ids": [
+      "N04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S2db46b7ed6",
+    "url": "https://elifesciences.org/articles/68837",
+    "benchmark_ids": [
+      "A15"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S03c7daa60e",
+    "url": "https://data.goettingen-research-online.de/dataverse/das",
+    "benchmark_ids": [
+      "A15"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S4101d1582b",
+    "url": "https://janclemenslab.org/das/",
+    "benchmark_ids": [
+      "A15"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sa56b8ecdd5",
+    "url": "https://github.com/nianlonggu/WhisperSeg",
+    "benchmark_ids": [
+      "A15"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sad24c8d790",
+    "url": "https://proceedings.nips.cc/paper_files/paper/2024/hash/c00d37d6b04d73b870b963a4d70051c1-Abstract-Datasets_and_Benchmarks_Track.html",
+    "benchmark_ids": [
+      "A16"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S8e8819019c",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/",
+    "benchmark_ids": [
+      "A16"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sc8ee5df708",
+    "url": "https://github.com/neurostatslab/vocalocator",
+    "benchmark_ids": [
+      "A16"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sc063051bb2",
+    "url": "https://google-research.github.io/zapbench/",
+    "benchmark_ids": [
+      "E06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sa4cfa0eb61",
+    "url": "https://arxiv.org/abs/2503.02618",
+    "benchmark_ids": [
+      "E06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sf97b526a1d",
+    "url": "https://zapbench-release.storage.googleapis.com/volumes/README.html",
+    "benchmark_ids": [
+      "E06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sdfe5ef392f",
+    "url": "https://nemar.org/dataset/on006366",
+    "benchmark_ids": [
+      "H17"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Seefe88ef95",
+    "url": "https://doi.org/10.18112/openneuro.ds006366.v1.0.1",
+    "benchmark_ids": [
+      "H17"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sabbdcc24e4",
+    "url": "https://zenodo.org/records/2650142",
+    "benchmark_ids": [
+      "H18",
+      "H19"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S53166249bd",
+    "url": "https://www.nature.com/articles/s41598-026-53891-9",
+    "benchmark_ids": [
+      "H18"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sf94e061934",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/",
+    "benchmark_ids": [
+      "H18"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S2da608b4be",
+    "url": "https://kainmueller-lab.github.io/fisbe/",
+    "benchmark_ids": [
+      "J07"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sd4c8e13328",
+    "url": "https://zenodo.org/records/10875063",
+    "benchmark_ids": [
+      "J07"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S41155fd4a1",
+    "url": "https://github.com/Kainmueller-Lab/evaluate-instance-segmentation",
+    "benchmark_ids": [
+      "J07"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S6147b0a9e2",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
+    "benchmark_ids": [
+      "J08"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sd636ac2fac",
+    "url": "https://github.com/pascalschamber/SynAPSeg",
+    "benchmark_ids": [
+      "J08"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sfb5bfb5201",
+    "url": "https://zenodo.org/records/18988899",
+    "benchmark_ids": [
+      "J08"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S698f1349b2",
+    "url": "https://mtneuro.github.io/",
+    "benchmark_ids": [
+      "J09"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Se602cea5d8",
+    "url": "https://github.com/MTNeuro/MTNeuro",
+    "benchmark_ids": [
+      "J09"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S93775326e8",
+    "url": "https://research.libd.org/spatialLIBD/",
+    "benchmark_ids": [
+      "K04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S32d9a4fe8b",
+    "url": "https://github.com/LieberInstitute/spatialLIBD",
+    "benchmark_ids": [
+      "K04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S1ab08dd369",
+    "url": "https://doi.org/10.1038/s42003-024-07001-y",
+    "benchmark_ids": [
+      "K04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sf2be93b784",
+    "url": "https://doi.org/10.1186/s13059-025-03552-3",
+    "benchmark_ids": [
+      "K05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S891cafda00",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
+    "benchmark_ids": [
+      "K05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S838180bac7",
+    "url": "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution",
+    "benchmark_ids": [
+      "K05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sca667a9cd5",
+    "url": "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html",
+    "benchmark_ids": [
+      "K05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S0036c9cd29",
+    "url": "https://cellexplorer.org/publicdata/ground-truth-data/",
+    "benchmark_ids": [
+      "K06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S9592a6a4da",
+    "url": "https://cellexplorer.org/tutorials/ground-truth-tutorial/",
+    "benchmark_ids": [
+      "K06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S9e6544a01a",
+    "url": "https://alleninstitute.github.io/openscope_databook/optotagging/",
+    "benchmark_ids": [
+      "K06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

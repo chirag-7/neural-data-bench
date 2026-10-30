@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "B06",
+  "input": "Channel features, waveforms, LFP and atlas labels",
+  "ground_truth": "Histology-aligned region labels",
+  "sources": [
+    "https://huggingface.co/int-brain-lab/ea-decoder-channel-xgboost"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

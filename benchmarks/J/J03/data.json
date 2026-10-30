@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "J03",
+  "input": "Optical stacks and skeletons",
+  "ground_truth": "Gold/manual skeleton reconstructions",
+  "sources": [
+    "https://github.com/BigNeuron/Data/releases",
+    "https://diadem.janelia.org/metric.html"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

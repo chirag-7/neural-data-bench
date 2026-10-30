@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "K02",
+  "input": "Brain scRNA/scATAC or spatial cell profiles",
+  "ground_truth": "Reference taxonomy and biological annotations",
+  "sources": [
+    "https://brain-map.org/our-research/cell-types-taxonomies",
+    "https://scib.readthedocs.io/en/latest/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

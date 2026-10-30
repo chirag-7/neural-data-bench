@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "H15",
+  "input": "Physical phantom sensor measurements and known dipoles",
+  "ground_truth": "Known physical phantom dipole position/orientation",
+  "sources": [
+    "https://mne.tools/stable/auto_tutorials/inverse/80_brainstorm_phantom_elekta.html"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

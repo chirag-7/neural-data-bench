@@ -1,0 +1,29 @@
+[
+  {
+    "id": "S2da608b4be",
+    "url": "https://kainmueller-lab.github.io/fisbe/",
+    "benchmark_ids": [
+      "J07"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sd4c8e13328",
+    "url": "https://zenodo.org/records/10875063",
+    "benchmark_ids": [
+      "J07"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S41155fd4a1",
+    "url": "https://github.com/Kainmueller-Lab/evaluate-instance-segmentation",
+    "benchmark_ids": [
+      "J07"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

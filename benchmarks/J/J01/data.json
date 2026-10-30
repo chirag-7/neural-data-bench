@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "J01",
+  "input": "Serial-section EM volumes",
+  "ground_truth": "Expert instance labels",
+  "sources": [
+    "https://cremi.janelia.org/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

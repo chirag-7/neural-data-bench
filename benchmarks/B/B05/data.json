@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "B05",
+  "input": "Waveforms and spatial footprints",
+  "ground_truth": "Functional/stability proxies; curated matches",
+  "sources": [
+    "https://www.nature.com/articles/s41592-024-02440-1"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

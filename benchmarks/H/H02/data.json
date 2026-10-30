@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "H02",
+  "input": "Stimulus-locked EEG",
+  "ground_truth": "Target/nontarget event labels",
+  "sources": [
+    "https://moabb.neurotechx.com/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

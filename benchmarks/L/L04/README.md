@@ -1,0 +1,30 @@
+# L04 — Point-process estimation and goodness of fit
+
+[Family](../README.md) · [Project](../../../README.md) · [Methods](methods.md) · [Worklog](worklog.md)
+
+**Resource:** Proposed GLM/point-process task generator
+
+**State:** not evaluated; deferred. Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.
+
+## Scientific use
+
+Input: Synthetic spike trains with known rate/history
+
+Target/ground truth: Known generating process and held-out spikes
+
+Specialist candidates: Poisson GLM; history GLM; Bayesian fit
+
+General-model route: General sequence model; code agent
+
+## Execution and performance
+
+No experiment admitted yet. All measurements are centralized in [results](../../../results/). Current best: **not verified**. Missing scores are unknown, not zero. Literature resources are not newly executed results.
+
+## Limitations
+
+New benchmark requires tested generator and scorer; not an existing public suite
+
+## Sources
+
+- [https://neurallatents.github.io/](https://neurallatents.github.io/)
+- [https://github.com/snel-repo/ComputationThroughDynamicsToolkit](https://github.com/snel-repo/ComputationThroughDynamicsToolkit)

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "Sdc41eb8f0f",
+    "url": "https://github.com/codeneuro/neurofinder-datasets",
+    "benchmark_ids": [
+      "C01"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S91f3c4e2c5",
+    "url": "https://github.com/codeneuro/neurofinder",
+    "benchmark_ids": [
+      "C01"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

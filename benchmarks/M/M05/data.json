@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "M05",
+  "input": "Likelihood objectives from computational studies",
+  "ground_truth": "Published optimization objectives and reference solutions",
+  "sources": [
+    "https://arxiv.org/abs/1705.04405"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

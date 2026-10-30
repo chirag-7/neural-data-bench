@@ -1,0 +1,14 @@
+{
+  "benchmark_id": "A15",
+  "input": "Single/multi-channel raw audio and human annotations",
+  "ground_truth": "Manual acoustic events/segments",
+  "sources": [
+    "https://elifesciences.org/articles/68837",
+    "https://data.goettingen-research-online.de/dataverse/das",
+    "https://janclemenslab.org/das/",
+    "https://github.com/nianlonggu/WhisperSeg"
+  ],
+  "license_status": "Not independently reviewed",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

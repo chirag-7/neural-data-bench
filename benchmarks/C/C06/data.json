@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "C06",
+  "input": "Calcium traces and paired spikes",
+  "ground_truth": "Simultaneous electrophysiology",
+  "sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7611618/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

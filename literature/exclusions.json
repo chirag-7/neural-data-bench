@@ -1,0 +1,57 @@
+[
+  {
+    "id": "X-EXT-01",
+    "resource": "OpenBHB age prediction/debiasing",
+    "decision": "retain scope boundary; exclude immediate execution",
+    "reason": "Strong normative/developmental MRI benchmark, but exact IEEE Dataport access, license and release/split not verified; do not replace original data with a convenient other cohort.",
+    "source_urls": [
+      "https://github.com/baobablab/bhb/blob/gh-pages/dataset.md",
+      "https://github.com/Duplums/SMLvsDL"
+    ]
+  },
+  {
+    "id": "X-EXT-02",
+    "resource": "DARELA dopamine release/reuptake models",
+    "decision": "exclude immediate empirical benchmark",
+    "reason": "Verified mechanistic code exists; a pinned raw FSCV dataset, independent concentration labels and standard test split/scorer were not established here. Could support explicitly synthetic parameter-recovery research later.",
+    "source_urls": [
+      "https://github.com/DSulzerLab/DARELA",
+      "https://doi.org/10.1093/pnasnexus/pgad044"
+    ]
+  },
+  {
+    "id": "X-EXT-03",
+    "resource": "SPARC autonomic/peripheral neuroscience portal",
+    "decision": "exclude portal as benchmark",
+    "reason": "Open PNS/organ physiology data clearly exists, but portal-level inclusion is not an executable endpoint. Select a specific licensed dataset with known intervention/input and outcome, then define protocol before admitting it.",
+    "source_urls": [
+      "https://sparc.science/",
+      "https://registry.opendata.aws/sparc/"
+    ]
+  },
+  {
+    "id": "X-EXT-04",
+    "resource": "Biodenoising validation",
+    "decision": "exclude immediate suite",
+    "reason": "Useful 62-pair animal-audio denoising task, but record limits use to educational/noncommercial purposes and mixture provenance must be reviewed. Audio denoising is lower priority than lab-specific caller attribution and segmentation.",
+    "source_urls": [
+      "https://zenodo.org/records/13736465"
+    ]
+  },
+  {
+    "id": "X-EXT-05",
+    "resource": "CogBench (Coda-Forno et al. 2024)",
+    "decision": "related work; exclude lab-analysis leaderboard",
+    "reason": "Phenotypes an LLM acting as an experimental subject across seven psychology experiments. This differs from analyzing neural data or recovering human cognitive parameters. It is useful prior art for multilevel model-family comparisons.",
+    "source_urls": [
+      "https://proceedings.mlr.press/v235/coda-forno24a.html"
+    ]
+  },
+  {
+    "id": "X-EXT-06",
+    "resource": "Generic proteomics / protein structure tasks",
+    "decision": "out of operational scope until neuroscience-specific endpoint selected",
+    "reason": "No sufficiently scoped, easy-to-reuse neural proteomics benchmark was confirmed in this bounded audit. SynAPSeg covers protein-marker puncta imagery, not the entire proteomics perspective. Do not treat it as filling that gap.",
+    "source_urls": []
+  }
+]

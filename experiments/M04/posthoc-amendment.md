@@ -1,0 +1,3 @@
+# Post-hoc reference audit — 30 October 2026
+
+After observing that all three models implemented nearly identical posterior medians under uniform priors on the supplied bounds, add an independent dense-quadrature posterior-median reference. The original MLE baseline optimizes likelihood, a different objective from parameter MAE. This amendment is explicitly post hoc; original scores and primary reference are retained. The new reference uses only the prompt bounds, not the narrower hidden simulation parameter distribution. Check 257 vs 513 grid convergence and report tiny score differences as numerical/finite-sample variation, not model superiority.

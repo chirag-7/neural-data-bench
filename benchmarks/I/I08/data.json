@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "I08",
+  "input": "fUS volumes, time series and templates",
+  "ground_truth": "Available task/region annotations vary",
+  "sources": [
+    "https://registry.opendata.aws/confusius/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

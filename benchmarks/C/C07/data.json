@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "C07",
+  "input": "Spatial footprints across sessions",
+  "ground_truth": "Curated/proxy cell matches",
+  "sources": [
+    "https://github.com/zivlab/CellReg"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

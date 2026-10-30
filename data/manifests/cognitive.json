@@ -1,0 +1,33 @@
+{
+  "path": "data/cache/cognitive-v1.npz",
+  "generator": "scripts/evaluate.py:make_cognitive",
+  "seed": 20261030,
+  "sha256": "dd1c541235d7e69ed2cc6271a474c1686ddae9bc686fc5b4f6e4f0e178fb3c7f",
+  "arrays": {
+    "choices": {
+      "shape": [
+        24,
+        240
+      ],
+      "dtype": "int64",
+      "sha256": "778697041bc5e81cf4b92e5e064b8ee4d5c182440bd141539cdd92ee447f3cad"
+    },
+    "rewards": {
+      "shape": [
+        24,
+        240
+      ],
+      "dtype": "int64",
+      "sha256": "b7c6b0415fe7120c1fe0a65bc46e9a360b3e420c43581f7cc629517537ea8777"
+    },
+    "truth": {
+      "shape": [
+        24,
+        2
+      ],
+      "dtype": "float64",
+      "sha256": "b6c32fb0b1fc941be7f0b15bdc384f7c37691e055b56bc3ef4a9ad5afb0be628"
+    }
+  },
+  "license": "Project-generated synthetic data; no human or animal participants"
+}

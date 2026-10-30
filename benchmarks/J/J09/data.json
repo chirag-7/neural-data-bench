@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "J09",
+  "input": "Mouse brain X-ray microtomography with regional and pixel labels",
+  "ground_truth": "Brain-region and cell/axon/vasculature labels",
+  "sources": [
+    "https://mtneuro.github.io/",
+    "https://github.com/MTNeuro/MTNeuro"
+  ],
+  "license_status": "MIT software; CC BY 4.0 image dataset on project page",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

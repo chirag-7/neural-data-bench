@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "I05",
+  "input": "Undersampled raw k-space and images",
+  "ground_truth": "Fully sampled/reference reconstructions",
+  "sources": [
+    "https://fastmri.med.nyu.edu/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

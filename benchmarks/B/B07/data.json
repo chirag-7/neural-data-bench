@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "B07",
+  "input": "Neuropixels voltage recordings",
+  "ground_truth": "Original bytes or original downstream output",
+  "sources": [
+    "https://allenneuraldynamics.github.io/data.html"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

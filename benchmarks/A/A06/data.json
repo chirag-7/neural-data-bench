@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "A06",
+  "input": "Animal images with fitted shape labels",
+  "ground_truth": "Annotated 2D/3D model-derived shape/pose",
+  "sources": [
+    "https://arxiv.org/abs/2308.11737"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

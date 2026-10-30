@@ -1,0 +1,38 @@
+[
+  {
+    "id": "S2db46b7ed6",
+    "url": "https://elifesciences.org/articles/68837",
+    "benchmark_ids": [
+      "A15"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S03c7daa60e",
+    "url": "https://data.goettingen-research-online.de/dataverse/das",
+    "benchmark_ids": [
+      "A15"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S4101d1582b",
+    "url": "https://janclemenslab.org/das/",
+    "benchmark_ids": [
+      "A15"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sa56b8ecdd5",
+    "url": "https://github.com/nianlonggu/WhisperSeg",
+    "benchmark_ids": [
+      "A15"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

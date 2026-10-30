@@ -1,0 +1,463 @@
+[
+  {
+    "benchmark_id": "M04",
+    "slice_id": "synthetic-v1",
+    "model": "gpt-5.6-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3",
+    "reference_type": "local_reproduction",
+    "generation_replicates": 1,
+    "seconds": 1.9723134590312839,
+    "prediction_file": "results/predictions/M04/synthetic-v1--gpt-5.6-sol.npz",
+    "prediction_sha256": "91f320ce45428813787ef8d57c000c16ad2f131b7295276f591676244273ff58",
+    "description": "Fits the exact conditional choice likelihood for each agent on a dense bounded alpha\u2013beta grid and returns marginal posterior medians under uniform priors. Posterior medians regularize weakly identified finite-sample cases while directly targeting absolute parameter error.",
+    "code_sha256": "7f8968c3d29d12117938f62bce4d543f133899888a5985e4d3f2492fe71105ae",
+    "code_lines": 93,
+    "line_limit_compliant": true,
+    "metric": "range_normalized_mae",
+    "direction": "lower",
+    "n_units": 24,
+    "truth_type": "synthetic_known_parameters",
+    "input_sha256": {
+      "data/cache/cognitive-v1.npz": "dd1c541235d7e69ed2cc6271a474c1686ddae9bc686fc5b4f6e4f0e178fb3c7f"
+    },
+    "per_unit": [
+      0.06681428369267498,
+      0.04111996580013176,
+      0.06604419634784488,
+      0.056105156860320346,
+      0.0903397192106271,
+      0.08481242931360708,
+      0.05149540777379919,
+      0.078158556016725,
+      0.055209613557550906,
+      0.015717333589595185,
+      0.0193400178691372,
+      0.03442946955544661,
+      0.03825170798069509,
+      0.03455907150158179,
+      0.03226285356525484,
+      0.09378780081488208,
+      0.1542263625771137,
+      0.04148807297282712,
+      0.008624018855778922,
+      0.1337849652146672,
+      0.013033641917029711,
+      0.10511396664411592,
+      0.05360199611545693,
+      0.029021932579343386
+    ],
+    "score": 0.05822260584692529,
+    "mean": 0.05822260584692529,
+    "per_parameter_mae": [
+      0.06440825411380573,
+      0.5021527838031242
+    ],
+    "nll_per_trial": 0.370870847320305,
+    "optimization_diagnostics": null
+  },
+  {
+    "benchmark_id": "M04",
+    "slice_id": "synthetic-v1",
+    "model": "gpt-6-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3",
+    "reference_type": "local_reproduction",
+    "generation_replicates": 1,
+    "seconds": 0.71018020901829,
+    "prediction_file": "results/predictions/M04/synthetic-v1--gpt-6-sol.npz",
+    "prediction_sha256": "62620466f8b13b67f3f4b916a8c2bfe6d73a3ae1023231e70a4d6a52b008293c",
+    "description": "Estimates each agent\u2019s parameters from the conditional choice likelihood. A grid over the allowed ranges approximates a uniform-prior posterior; marginal medians reduce expected absolute parameter error when finite trials leave parameters uncertain.",
+    "code_sha256": "f72bb17d272471f18d1d74f4cb121b4a0a421468276a9aa65005a9bcb671bad7",
+    "code_lines": 48,
+    "line_limit_compliant": true,
+    "metric": "range_normalized_mae",
+    "direction": "lower",
+    "n_units": 24,
+    "truth_type": "synthetic_known_parameters",
+    "input_sha256": {
+      "data/cache/cognitive-v1.npz": "dd1c541235d7e69ed2cc6271a474c1686ddae9bc686fc5b4f6e4f0e178fb3c7f"
+    },
+    "per_unit": [
+      0.06681071970836085,
+      0.041128265469682325,
+      0.0660534194336964,
+      0.05611264868541198,
+      0.09030252467943177,
+      0.0848025615408957,
+      0.05149754445138716,
+      0.07815116601843244,
+      0.05521154990667872,
+      0.015710984285422062,
+      0.019310806908095106,
+      0.034430078460478464,
+      0.03824496948172694,
+      0.03455373937795807,
+      0.03226068984971779,
+      0.09377736872303455,
+      0.15422692918357572,
+      0.04148350501130189,
+      0.008635231365175161,
+      0.13378647462993837,
+      0.013040357839454364,
+      0.10511693028291562,
+      0.05361180355627533,
+      0.029005348264170228
+    ],
+    "score": 0.058219400713050706,
+    "mean": 0.058219400713050706,
+    "per_parameter_mae": [
+      0.06440357237650217,
+      0.5021366172537391
+    ],
+    "nll_per_trial": 0.37087093986100195,
+    "optimization_diagnostics": null
+  },
+  {
+    "benchmark_id": "M04",
+    "slice_id": "synthetic-v1",
+    "model": "gpt-6.1-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3",
+    "reference_type": "local_reproduction",
+    "generation_replicates": 1,
+    "seconds": 2.3303139999043196,
+    "prediction_file": "results/predictions/M04/synthetic-v1--gpt-6.1-sol.npz",
+    "prediction_sha256": "4b7d4d235b5f799875a01ed4f537c63366c63a4bccf802bce248a48ec27c0306",
+    "description": "Fits the conditional Q-learning likelihood and returns marginal posterior medians under uniform priors over the allowed ranges. Deterministic numerical integration accounts for finite-sample uncertainty and weak parameter identifiability.",
+    "code_sha256": "b3ff9a498db59df1e3c9763f5b2619dc1c792e45b252dee199cce2f07aea95f4",
+    "code_lines": 76,
+    "line_limit_compliant": true,
+    "metric": "range_normalized_mae",
+    "direction": "lower",
+    "n_units": 24,
+    "truth_type": "synthetic_known_parameters",
+    "input_sha256": {
+      "data/cache/cognitive-v1.npz": "dd1c541235d7e69ed2cc6271a474c1686ddae9bc686fc5b4f6e4f0e178fb3c7f"
+    },
+    "per_unit": [
+      0.06681233040690827,
+      0.04111824518744635,
+      0.06604751533368143,
+      0.056103476901630214,
+      0.09031355671963982,
+      0.08481048936384049,
+      0.0514994124579952,
+      0.07815577433089999,
+      0.055210906695457085,
+      0.015717685709719993,
+      0.01933892392436563,
+      0.034437124449418606,
+      0.03825163895921966,
+      0.03456027802040007,
+      0.032260064342463236,
+      0.0937860368645102,
+      0.15422297661632273,
+      0.04148959074542379,
+      0.00862359412301631,
+      0.13378431709819252,
+      0.013035643510304288,
+      0.10511354931821043,
+      0.053603884676846125,
+      0.029018746527101798
+    ],
+    "score": 0.058221490095125596,
+    "mean": 0.058221490095125596,
+    "per_parameter_mae": [
+      0.06440865568911754,
+      0.5021266351872994
+    ],
+    "nll_per_trial": 0.37087080436572145,
+    "optimization_diagnostics": null
+  },
+  {
+    "benchmark_id": "M04",
+    "slice_id": "synthetic-v1",
+    "model": "canonical-mle",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "reference",
+    "reference_type": "local_reproduction",
+    "generation_replicates": null,
+    "seconds": 2.7840382088907063,
+    "prediction_file": "results/predictions/M04/synthetic-v1--canonical-mle.npz",
+    "prediction_sha256": "884d938919f012caacf75b52ccdb1ec539853367cb1efd0c4b07916aed0baa63",
+    "metric": "range_normalized_mae",
+    "direction": "lower",
+    "n_units": 24,
+    "truth_type": "synthetic_known_parameters",
+    "input_sha256": {
+      "data/cache/cognitive-v1.npz": "dd1c541235d7e69ed2cc6271a474c1686ddae9bc686fc5b4f6e4f0e178fb3c7f"
+    },
+    "per_unit": [
+      0.06851558013256846,
+      0.03868574825643951,
+      0.060361782953858634,
+      0.05573577955519222,
+      0.059154612955056356,
+      0.0865699617904798,
+      0.04434936321727798,
+      0.19102779941751794,
+      0.051360028480135746,
+      0.008955654892387241,
+      0.01876339355762987,
+      0.051261711865755594,
+      0.03472672650515276,
+      0.04136666769729322,
+      0.036133210019887715,
+      0.10082348797264148,
+      0.22234454893405484,
+      0.05047746361156202,
+      0.014455993172632676,
+      0.1315483517923567,
+      0.012139070771030807,
+      0.12221900815942302,
+      0.05084606247777623,
+      0.14489299867515623
+    ],
+    "score": 0.0706964586193028,
+    "mean": 0.0706964586193028,
+    "per_parameter_mae": [
+      0.06994724470901587,
+      0.6931799596221371
+    ],
+    "nll_per_trial": 0.3706311680560437,
+    "optimization_diagnostics": [
+      {
+        "success": true,
+        "nll": 96.94911500225619,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "success": true,
+        "nll": 104.14958754719021,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 91.61314771587634,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 27.107680135851176,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "success": true,
+        "nll": 163.04933167282275,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 83.7509855064493,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "success": true,
+        "nll": 52.3721784011941,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 35.71744068845797,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 114.888084753719,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 129.5551406999333,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 67.25017863926213,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "success": true,
+        "nll": 164.1271381051201,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 129.5805358277295,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 42.68012986266825,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 50.02971449657239,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 117.61662444017148,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 34.070618022760996,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 146.78150140520043,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "success": true,
+        "nll": 125.25743518866369,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "success": true,
+        "nll": 27.274148611973654,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 54.724057480698974,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 155.83115171270026,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "success": true,
+        "nll": 56.00863167987552,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "success": true,
+        "nll": 64.4509704056641,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      }
+    ]
+  },
+  {
+    "benchmark_id": "M04",
+    "slice_id": "synthetic-v1",
+    "model": "midpoint",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "reference",
+    "reference_type": "local_reproduction",
+    "generation_replicates": null,
+    "seconds": 1.795799471437931e-05,
+    "prediction_file": "results/predictions/M04/synthetic-v1--midpoint.npz",
+    "prediction_sha256": "f32ccb257256165974d1d8933c9bc9b18e6d0bae07f3559188ae41a81c7c596b",
+    "metric": "range_normalized_mae",
+    "direction": "lower",
+    "n_units": 24,
+    "truth_type": "synthetic_known_parameters",
+    "input_sha256": {
+      "data/cache/cognitive-v1.npz": "dd1c541235d7e69ed2cc6271a474c1686ddae9bc686fc5b4f6e4f0e178fb3c7f"
+    },
+    "per_unit": [
+      0.04594054828634091,
+      0.16275777575131017,
+      0.24446771903309458,
+      0.1336147878507785,
+      0.4243441399754513,
+      0.13223638451875078,
+      0.17082708909450572,
+      0.18974340277911655,
+      0.21830592134683358,
+      0.21791477312944685,
+      0.22467026343298532,
+      0.3774705859865951,
+      0.29105541478503194,
+      0.14867497835482935,
+      0.22871076288701442,
+      0.2037044101069938,
+      0.12562625946174263,
+      0.3456038151791868,
+      0.2881448995136004,
+      0.14901278497356402,
+      0.08402046579105238,
+      0.30045816586835994,
+      0.18970204513334185,
+      0.33507238722570576
+    ],
+    "score": 0.21800332418606802,
+    "mean": 0.21800332418606802,
+    "per_parameter_mae": [
+      0.2227095598887068,
+      2.066644754702312
+    ],
+    "nll_per_trial": 0.5324454305255237,
+    "optimization_diagnostics": null
+  },
+  {
+    "benchmark_id": "M04",
+    "slice_id": "synthetic-v1",
+    "model": "canonical-posterior",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "reference",
+    "reference_type": "local_reproduction_posthoc",
+    "generation_replicates": null,
+    "seconds": 15.578427334083244,
+    "metric": "range_normalized_mae",
+    "direction": "lower",
+    "n_units": 24,
+    "truth_type": "synthetic_known_parameters",
+    "score": 0.05822286923267737,
+    "mean": 0.05822286923267737,
+    "per_unit": [
+      0.06681602752663088,
+      0.04112036351353186,
+      0.06604080256685618,
+      0.056107134126324454,
+      0.09032983186938212,
+      0.08481489870677034,
+      0.051492256658998245,
+      0.07816055823586544,
+      0.05520820455336633,
+      0.015716255394472876,
+      0.01934926505745152,
+      0.034434315915183575,
+      0.03824743211487647,
+      0.034559190217933876,
+      0.03226781608363966,
+      0.09378994211413345,
+      0.15422795463444058,
+      0.04149419629312788,
+      0.008613846169247888,
+      0.13378488907662178,
+      0.013031302165036162,
+      0.10511410108143533,
+      0.05360612004098532,
+      0.029022157467944454
+    ],
+    "per_parameter_mae": [
+      0.06440812521914378,
+      0.502159300940151
+    ],
+    "nll_per_trial": 0.37087072776755586,
+    "prediction_file": "results/predictions/M04/synthetic-v1--canonical-posterior.npz",
+    "prediction_sha256": "3c74e7604c8d9983c453986079be01b05339a37fdb98eb0ac7ae839e39ad0cdb",
+    "code_sha256": "cbf0c7a2adaf615c5f9d48818d55e021f52b12c709e4809dc730d9501abbc5b1",
+    "description": "Independent dense quadrature with Simpson marginalization and trapezoid-CDF inversion; uniform priors over prompt bounds. Post-hoc audit, not the frozen primary MLE reference.",
+    "convergence_check": {
+      "coarse_resolution": 257,
+      "fine_resolution": 513,
+      "max_range_normalized_estimate_change": 4.1979378961382544e-05,
+      "coarse_score": 0.05822123738394689
+    }
+  }
+]

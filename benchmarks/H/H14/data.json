@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "H14",
+  "input": "LFP/field time series with labeled or injected events",
+  "ground_truth": "Injected known bursts; expert/proxy annotations for real events",
+  "sources": [
+    "https://github.com/bycycle-tools/bycycle",
+    "https://about.dandiarchive.org/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

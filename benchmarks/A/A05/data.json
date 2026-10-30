@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "A05",
+  "input": "Multiview interacting rats",
+  "ground_truth": "3D motion capture and identities",
+  "sources": [
+    "https://olveczkylab.oeb.harvard.edu/publications/pair-r24m-dataset-multi-animal-3d-pose-estimation"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

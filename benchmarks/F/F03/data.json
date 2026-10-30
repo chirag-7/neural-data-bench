@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "F03",
+  "input": "Visual stimuli with spikes or calcium",
+  "ground_truth": "Neural responses and stimulus timings",
+  "sources": [
+    "https://observatory.brain-map.org/visualcoding"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

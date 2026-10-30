@@ -1,0 +1,13 @@
+{
+  "benchmark_id": "J07",
+  "input": "3D multicolor fruit-fly neuronal microscopy volumes",
+  "ground_truth": "Expert pixel-wise neuron instances",
+  "sources": [
+    "https://kainmueller-lab.github.io/fisbe/",
+    "https://zenodo.org/records/10875063",
+    "https://github.com/Kainmueller-Lab/evaluate-instance-segmentation"
+  ],
+  "license_status": "CC BY 4.0 on dataset record",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "I07",
+  "input": "Optical hemodynamic time series and task events",
+  "ground_truth": "Experimental event labels",
+  "sources": [
+    "https://www.nemar.org/dataset/on005963"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

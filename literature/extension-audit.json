@@ -1,0 +1,630 @@
+{
+  "audit_date": "2026-10-30",
+  "input_catalog_version": "0.2",
+  "input_catalog_entries": 102,
+  "review_type": "bounded primary-source gap audit",
+  "recommended_entries": [
+    {
+      "id": "A15",
+      "family_code": "A",
+      "task": "Animal vocalization event segmentation and syllable labeling",
+      "data": "Single/multi-channel raw audio and human annotations",
+      "resource": "DAS multi-species annotated acoustic datasets",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "Manual acoustic events/segments",
+      "recommended_metrics": "Event precision/recall/F1; onset/offset error; published match tolerance",
+      "recommended_split": "Published splits first; additional held-out recording/animal, never random adjacent audio crops",
+      "specialist_baselines": "DAS; TweetyNet; WhisperSeg (separate domain-adapted pretrained comparator)",
+      "general_model_route": "General audio features/readout or bounded code synthesis; audio-native foundation model",
+      "limitations": "Ultrasound sample rates exceed speech frontends; species and segment matching differ; tune thresholds only on validation",
+      "priority": "P2",
+      "source_urls": [
+        "https://elifesciences.org/articles/68837",
+        "https://data.goettingen-research-online.de/dataverse/das",
+        "https://janclemenslab.org/das/",
+        "https://github.com/nianlonggu/WhisperSeg"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Adds acoustic communication used by social/ethology labs; video action labels do not test it.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "Not independently reviewed"
+    },
+    {
+      "id": "A16",
+      "family_code": "A",
+      "task": "Caller localization and vocalization attribution",
+      "data": "Synchronized multi-microphone audio with overhead video-derived source positions",
+      "resource": "Vocal Call Locator (VCL) Benchmark",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "2D source positions, including controlled speaker conditions",
+      "recommended_metrics": "Localization error; published uncertainty/calibration and attribution endpoint",
+      "recommended_split": "Official recording/condition split; group all snippets from same sound and session",
+      "specialist_baselines": "VCL localization models; classical sound source localization",
+      "general_model_route": "Generic audio model or code-agent localization under fixed calibration information",
+      "limitations": "Speaker-ground-truth and freely moving animals are distinct conditions; paper revisions report differing event totals, so pin release",
+      "priority": "P2",
+      "source_urls": [
+        "https://proceedings.nips.cc/paper_files/paper/2024/hash/c00d37d6b04d73b870b963a4d70051c1-Abstract-Datasets_and_Benchmarks_Track.html",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/",
+        "https://github.com/neurostatslab/vocalocator"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Separates who emitted a call from detecting that a call occurred.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "Not independently reviewed"
+    },
+    {
+      "id": "E06",
+      "family_code": "E",
+      "task": "Whole-brain neural activity forecasting",
+      "data": "Larval zebrafish light-sheet volumes and extracted cellular traces",
+      "resource": "ZAPBench (ICLR 2025)",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "Future measured calcium activity",
+      "recommended_metrics": "Official forecasting losses at fixed horizons and stimulus conditions; maintain trace/video tracks",
+      "recommended_split": "Official temporal/stimulus-condition splits, including held-out condition",
+      "specialist_baselines": "Published naive, time-series and volumetric video baselines",
+      "general_model_route": "General time-series/world/video models; code agents in separate track",
+      "limitations": "One brain cannot establish cross-animal generalization; 70k neurons do not equal 70k independent subjects; anatomical pairing was future-facing in original paper",
+      "priority": "P2",
+      "source_urls": [
+        "https://google-research.github.io/zapbench/",
+        "https://arxiv.org/abs/2503.02618",
+        "https://zapbench-release.storage.googleapis.com/volumes/README.html"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Important omitted whole-brain forecasting resource and a concrete world/video-model task.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "CC BY 4.0 explicitly stated in official dataset README"
+    },
+    {
+      "id": "H17",
+      "family_code": "H",
+      "task": "Cross-laboratory rodent sleep staging",
+      "data": "Mouse EEG/EMG, expert stage annotations",
+      "resource": "Mouse Sleep Staging Validation dataset (MSSV), OpenNeuro ds006366",
+      "readiness": "D",
+      "setup_effort": "Medium",
+      "ground_truth": "Expert sleep scores from 92 healthy mice across five labs",
+      "recommended_metrics": "Macro-F1, balanced accuracy, per-stage recall and transition errors",
+      "recommended_split": "Held-out mouse and held-out laboratory; keep whole light/dark recordings grouped",
+      "specialist_baselines": "Published mouse sleep staging methods; simple spectral-feature baseline",
+      "general_model_route": "General time-series features or code-generated classifier",
+      "limitations": "Rodent stages, epoch lengths and recording setups must be specified; human sleep foundation-model scores cannot transfer directly",
+      "priority": "P2",
+      "source_urls": [
+        "https://nemar.org/dataset/on006366",
+        "https://doi.org/10.18112/openneuro.ds006366.v1.0.1"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Adds animal sleep rather than assuming human EEG staging covers laboratory mouse sleep.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "CC0 shown by NEMAR; original dataset version must be pinned separately from mirror"
+    },
+    {
+      "id": "H18",
+      "family_code": "H",
+      "task": "Sleep microevent detection",
+      "data": "Human EEG with spindle and K-complex intervals",
+      "resource": "DREAMS microevent annotations; MODA consensus as a separately versioned extension",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "Individual expert labels with disagreement",
+      "recommended_metrics": "Event F1 at fixed IoU/tolerance; temporal error; per-expert and consensus results separately",
+      "recommended_split": "Held-out subject; freeze usable annotation intervals and scorer",
+      "specialist_baselines": "SUMO/SUMOv2; published spindle detector baselines",
+      "general_model_route": "General signal/audio feature or code-agent event detector",
+      "limitations": "DREAMS repository explicitly warns expert 1 spindle counts stop after 1000 seconds; censor unannotated periods rather than scoring them negative; MODA and DREAMS are not interchangeable",
+      "priority": "P2",
+      "source_urls": [
+        "https://zenodo.org/records/2650142",
+        "https://www.nature.com/articles/s41598-026-53891-9",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Sleep staging does not cover spindle/K-complex microevents needed in sleep and memory labs.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "Not independently reviewed"
+    },
+    {
+      "id": "H19",
+      "family_code": "H",
+      "task": "Real physiological artifact detection and type identification",
+      "data": "PSG excerpts with expert artifact labels",
+      "resource": "DREAMS Artifacts database",
+      "readiness": "D",
+      "setup_effort": "Medium",
+      "ground_truth": "Expert temporal annotations in 20 fifteen-minute excerpts",
+      "recommended_metrics": "Event/timewise macro-F1, artifact-type confusion, clean-signal retention",
+      "recommended_split": "Group by source recording/person; validation threshold selection only",
+      "specialist_baselines": "Signal-processing detectors; declared artifact classification baseline",
+      "general_model_route": "Generic signal classifier or code agent",
+      "limitations": "Small single-annotator corpus; do not confuse real artifact detection with EEGdenoiseNet semi-synthetic signal repair",
+      "priority": "P2",
+      "source_urls": [
+        "https://zenodo.org/records/2650142"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Complements H16 repair with detection on real artifact labels and metadata-aware exclusion.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "Not independently reviewed"
+    },
+    {
+      "id": "J07",
+      "family_code": "J",
+      "task": "Multi-neuron instance segmentation in light microscopy",
+      "data": "3D multicolor fruit-fly neuronal microscopy volumes",
+      "resource": "FISBe / FlyLight Instance Segmentation Benchmark",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "Expert pixel-wise neuron instances",
+      "recommended_metrics": "Official S ranking score; avF1, coverage, false merges/splits and clDice",
+      "recommended_split": "Official image split; completely and partly labeled images need separate valid-mask policy",
+      "specialist_baselines": "PatchPerPix; flood-filling networks; color clustering",
+      "general_model_route": "General vision segmentation backbone; 3D generic model; code-agent pipeline",
+      "limitations": "Thin interwoven neurites require topology-sensitive scoring; pixel Dice alone insufficient; full dataset ~21.6 GB",
+      "priority": "P2",
+      "source_urls": [
+        "https://kainmueller-lab.github.io/fisbe/",
+        "https://zenodo.org/records/10875063",
+        "https://github.com/Kainmueller-Lab/evaluate-instance-segmentation"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "EM connectomics and isolated-neuron tracing do not cover dense multicolor light-microscopy disentangling.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "CC BY 4.0 on dataset record"
+    },
+    {
+      "id": "J08",
+      "family_code": "J",
+      "task": "Fluorescent synaptic puncta segmentation and quantification",
+      "data": "2D/3D confocal synaptic marker images",
+      "resource": "SynAPSeg training and multi-rater benchmark datasets",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "Pixel-wise instance annotations; five raters for three held-out benchmark images",
+      "recommended_metrics": "Object F1/IoU with declared matching; counts/density, centroid and boundary error; inter-rater range",
+      "recommended_split": "Keep original whole benchmark images held out; never mix training 3D slices into test",
+      "specialist_baselines": "Published custom StarDist and Cellpose comparisons",
+      "general_model_route": "Generic microscopy/vision segmentation model; bounded code agent",
+      "limitations": "Tiny benchmark image count limits independent sampling; synaptic puncta are marker-based proxies for synapses; data license field was not resolved in rendered record",
+      "priority": "P2",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
+        "https://github.com/pascalschamber/SynAPSeg",
+        "https://zenodo.org/records/18988899"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Adds light-microscopy synaptic protein quantification beyond EM synapse detection.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "Repository code BSD-3-Clause; dataset license must be independently resolved before redistribution"
+    },
+    {
+      "id": "J09",
+      "family_code": "J",
+      "task": "Multiscale X-ray brain region and microstructure classification",
+      "data": "Mouse brain X-ray microtomography with regional and pixel labels",
+      "resource": "MTNeuro",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "Brain-region and cell/axon/vasculature labels",
+      "recommended_metrics": "Published region-classification accuracy and semantic segmentation metrics, reported as separate endpoints",
+      "recommended_split": "Official task splits; contiguous volume blocks must not leak across train/test",
+      "specialist_baselines": "Published supervised and self-supervised 2D/3D baselines",
+      "general_model_route": "Generic vision embeddings/readout or 3D segmentation",
+      "limitations": "Same underlying sample across endpoints; count shared dataset once for macro independence; X-ray contrasts differ from EM/fluorescence",
+      "priority": "P2",
+      "source_urls": [
+        "https://mtneuro.github.io/",
+        "https://github.com/MTNeuro/MTNeuro"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Adds X-ray mesoscopic anatomy and vasculature/cell/axon operations missing from current modality map.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "MIT software; CC BY 4.0 image dataset on project page"
+    },
+    {
+      "id": "K04",
+      "family_code": "K",
+      "task": "Spatial cortical-domain assignment",
+      "data": "Human DLPFC Visium gene counts, spot positions and histology",
+      "resource": "spatialLIBD DLPFC cortical-layer annotations",
+      "readiness": "D",
+      "setup_effort": "Medium",
+      "ground_truth": "Expert layer/white-matter annotation informed by cytoarchitecture and marker genes",
+      "recommended_metrics": "ARI/NMI and spatial boundary metrics; matched-label accuracy only with explicit mapping policy",
+      "recommended_split": "Hold out donor, then section; adjacent sections from same donor stay grouped",
+      "specialist_baselines": "Published spatial clustering methods; simple non-spatial clustering baseline",
+      "general_model_route": "Generic tabular/spatial model or code-generated pipeline",
+      "limitations": "Only three original donors; labels partially derived from expression, limiting independence; specify whether histology is available to each method",
+      "priority": "P2",
+      "source_urls": [
+        "https://research.libd.org/spatialLIBD/",
+        "https://github.com/LieberInstitute/spatialLIBD",
+        "https://doi.org/10.1038/s42003-024-07001-y"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Cell-type transfer/integration does not cover spatial laminar domain recovery.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "Not independently reviewed"
+    },
+    {
+      "id": "K05",
+      "family_code": "K",
+      "task": "Bulk brain transcriptome cellular deconvolution",
+      "data": "Bulk RNA-seq, reference snRNA-seq and orthogonal RNAScope/IF fractions",
+      "resource": "Human DLPFC multi-assay deconvolution benchmark / DeconvoBuddies",
+      "readiness": "B",
+      "setup_effort": "Medium",
+      "ground_truth": "Cell fractions estimated by orthogonal RNAScope/IF from matched tissue blocks",
+      "recommended_metrics": "Per-type correlation and absolute/compositional error; donor-grouped uncertainty",
+      "recommended_split": "Hold out donor/tissue block; RNA extraction/library technical variants stay together",
+      "specialist_baselines": "Six published algorithms including Bisque and hspe; reproduce exact reference/marker policy",
+      "general_model_route": "General constrained regression/tabular method; code agent",
+      "limitations": "Adjacent-section proxy truth has measurement error; 110 RNA-seq samples do not imply 110 independent donors; same DLPFC resource family overlaps K04",
+      "priority": "P2",
+      "source_urls": [
+        "https://doi.org/10.1186/s13059-025-03552-3",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
+        "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution",
+        "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Adds tissue mixture estimation against an orthogonal assay, beyond labeling single cells.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "Not independently reviewed"
+    },
+    {
+      "id": "K06",
+      "family_code": "K",
+      "task": "Extracellular cell-type inference from ground-truth cell metrics",
+      "data": "Waveform/firing metrics and optotagged/identified cell classes",
+      "resource": "CellExplorer ground-truth cell metrics",
+      "readiness": "D",
+      "setup_effort": "Medium",
+      "ground_truth": "Curated PV, SST, pyramidal, axo-axonic, VGAT and VIP identities",
+      "recommended_metrics": "Macro-F1, class-balanced accuracy, calibration; hierarchical labels if classes overlap",
+      "recommended_split": "Hold out contributing lab/animal/session; preserve provenance and avoid waveform windows as independent samples",
+      "specialist_baselines": "CellExplorer feature-based classification; declared supervised baseline",
+      "general_model_route": "Generic tabular estimator or code agent",
+      "limitations": "Optotagging can include indirect responses; class labels are uneven and partly nested; small class counts and uncertain raw-data provenance need inspection",
+      "priority": "P2",
+      "source_urls": [
+        "https://cellexplorer.org/publicdata/ground-truth-data/",
+        "https://cellexplorer.org/tutorials/ground-truth-tutorial/",
+        "https://alleninstitute.github.io/openscope_databook/optotagging/"
+      ],
+      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "reviewed_on": "2026-10-30",
+      "execution_status": "not evaluated",
+      "current_best_status": "not verified",
+      "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
+      "inclusion_reason": "Patch-seq intracellular type inference does not cover extracellular deployment from ground-truth cell metrics.",
+      "screening_decision": "include evidence map; executable admission pending",
+      "license_evidence": "Not independently reviewed"
+    }
+  ],
+  "screened_exclusions": [
+    {
+      "id": "X-EXT-01",
+      "resource": "OpenBHB age prediction/debiasing",
+      "decision": "retain scope boundary; exclude immediate execution",
+      "reason": "Strong normative/developmental MRI benchmark, but exact IEEE Dataport access, license and release/split not verified; do not replace original data with a convenient other cohort.",
+      "source_urls": [
+        "https://github.com/baobablab/bhb/blob/gh-pages/dataset.md",
+        "https://github.com/Duplums/SMLvsDL"
+      ]
+    },
+    {
+      "id": "X-EXT-02",
+      "resource": "DARELA dopamine release/reuptake models",
+      "decision": "exclude immediate empirical benchmark",
+      "reason": "Verified mechanistic code exists; a pinned raw FSCV dataset, independent concentration labels and standard test split/scorer were not established here. Could support explicitly synthetic parameter-recovery research later.",
+      "source_urls": [
+        "https://github.com/DSulzerLab/DARELA",
+        "https://doi.org/10.1093/pnasnexus/pgad044"
+      ]
+    },
+    {
+      "id": "X-EXT-03",
+      "resource": "SPARC autonomic/peripheral neuroscience portal",
+      "decision": "exclude portal as benchmark",
+      "reason": "Open PNS/organ physiology data clearly exists, but portal-level inclusion is not an executable endpoint. Select a specific licensed dataset with known intervention/input and outcome, then define protocol before admitting it.",
+      "source_urls": [
+        "https://sparc.science/",
+        "https://registry.opendata.aws/sparc/"
+      ]
+    },
+    {
+      "id": "X-EXT-04",
+      "resource": "Biodenoising validation",
+      "decision": "exclude immediate suite",
+      "reason": "Useful 62-pair animal-audio denoising task, but record limits use to educational/noncommercial purposes and mixture provenance must be reviewed. Audio denoising is lower priority than lab-specific caller attribution and segmentation.",
+      "source_urls": [
+        "https://zenodo.org/records/13736465"
+      ]
+    },
+    {
+      "id": "X-EXT-05",
+      "resource": "CogBench (Coda-Forno et al. 2024)",
+      "decision": "related work; exclude lab-analysis leaderboard",
+      "reason": "Phenotypes an LLM acting as an experimental subject across seven psychology experiments. This differs from analyzing neural data or recovering human cognitive parameters. It is useful prior art for multilevel model-family comparisons.",
+      "source_urls": [
+        "https://proceedings.mlr.press/v235/coda-forno24a.html"
+      ]
+    },
+    {
+      "id": "X-EXT-06",
+      "resource": "Generic proteomics / protein structure tasks",
+      "decision": "out of operational scope until neuroscience-specific endpoint selected",
+      "reason": "No sufficiently scoped, easy-to-reuse neural proteomics benchmark was confirmed in this bounded audit. SynAPSeg covers protein-marker puncta imagery, not the entire proteomics perspective. Do not treat it as filling that gap.",
+      "source_urls": []
+    }
+  ],
+  "search_log": [
+    {
+      "search_id": "EXT-Q01",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "DAS deep audio segmenter benchmark animal vocalizations annotated dataset eLife",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q02",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "VocalBench benchmark animal vocalization dataset machine learning",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q03",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "FSCAV dopamine FSCV benchmark dataset DeepLabCut deep learning voltammetry neuroscience open data",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q04",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "SPARC benchmark autonomic neuroscience datasets ECG respiration open",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q05",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "FSCV benchmark dopamine concentration dataset machine learning public GitHub voltammetry",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q06",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "optoelectrophysiology perturbation benchmark dataset causal neural Neuropixels open IBL",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q07",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "sleep animal sleep staging benchmark dataset SleepSEEG neuroscience open dataset",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q08",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "spatial transcriptomics neuroscience benchmark cell segmentation MERFISH challenge dataset",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q09",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "FISBe dataset github neuron light microscopy benchmark instances",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q10",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "sleep spindle detection benchmark DREAMS MODA dataset expert labels official",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q11",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "high frequency oscillation detection benchmark HFO challenge dataset github open",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q12",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "DLPFC spatial transcriptomics benchmark spatialLIBD cortical layers dataset Maynard 2021",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q13",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "neuroscience open dataset optogenetic perturbation prediction benchmark CEBRA ZAPBench",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q14",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "ZAPBench zebrafish activity prediction benchmark perturbation dataset",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q15",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "FSCV machine learning concentration prediction dataset github voltammetry dopamine serotonin benchmark",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q16",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "spike optotagging benchmark ground truth dataset cell type classification Allen visual coding",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q17",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "mouse ultrasound sound source localization benchmark dataset SLIM NeurIPS 2024 dataset",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q18",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "WhisperSeg animal vocalization segmentation benchmark github datasets",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q19",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "cognitive computational neuroscience benchmark tasks psychological modeling CogBench Psych101 benchmark",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q20",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "neuroscience benchmark proteomics synapse image dataset segmentation SynapseNet",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q21",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "OpenBHB brain age benchmark github dataset access 5000",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q22",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "Benchmark Cellular Deconvolution Methods Multi-Assay Reference Dataset Postmortem Human Prefrontal Cortex data github",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q23",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "Mouse Sleep Staging Validation dataset MSSV expert five laboratories paper benchmark",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q24",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "Vocal Call Locator benchmark github download dataset",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q25",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "\"VCL\" \"Benchmark\" \"github\" Peterson Tanelus",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q26",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "\"MODA\" \"sleep\" \"Zenodo\" dataset Lacourse",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q27",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "\"Vocal Call Locator\" dataset download",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q28",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "\"Vocal Call Locator\" \"github.com\"",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q29",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "\"DAS\" \"data.goettingen-research-online.de/dataverse/das\"",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q30",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "\"DeconvoBuddies\" \"Human_DLPFC_Deconvolution\"",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    }
+  ],
+  "limitations": [
+    "No downloads or execution performed in this audit.",
+    "No independent current-best score audit completed.",
+    "Original evidence-map searches before this extension are not reconstructed as if prospectively logged.",
+    "Search engine result sets are dynamic and not complete scholarly database exports.",
+    "Neural proteomics, autonomic intervention analysis, unrestricted clinical prognosis and formal theoretical proofs remain scoped limitations."
+  ]
+}

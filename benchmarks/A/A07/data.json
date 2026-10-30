@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "A07",
+  "input": "Synchronized calibrated views",
+  "ground_truth": "Labeled 3D/multiview landmarks",
+  "sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13131684/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

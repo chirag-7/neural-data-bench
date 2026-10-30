@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "H10",
+  "input": "Clinical/task EEG plus metadata",
+  "ground_truth": "Expert/experimental labels depending on task",
+  "sources": [
+    "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+    "https://arxiv.org/abs/2606.00815"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

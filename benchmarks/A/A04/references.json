@@ -1,0 +1,21 @@
+[
+  {
+    "id": "S8bb5e226e8",
+    "url": "https://figshare.com/collections/Rat_7M/5295370/3",
+    "benchmark_ids": [
+      "A04"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sde02ffafd5",
+    "url": "https://www.nature.com/articles/s41592-025-02893-y",
+    "benchmark_ids": [
+      "A04",
+      "A14"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

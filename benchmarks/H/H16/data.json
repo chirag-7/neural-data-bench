@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "H16",
+  "input": "Curated EEG and artifact segments; synthetic mixtures",
+  "ground_truth": "Curated clean reference under controlled synthetic contamination",
+  "sources": [
+    "https://doi.org/10.1088/1741-2552/ac2bf8"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

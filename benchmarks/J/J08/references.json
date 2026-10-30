@@ -1,0 +1,29 @@
+[
+  {
+    "id": "S6147b0a9e2",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
+    "benchmark_ids": [
+      "J08"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sd636ac2fac",
+    "url": "https://github.com/pascalschamber/SynAPSeg",
+    "benchmark_ids": [
+      "J08"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sfb5bfb5201",
+    "url": "https://zenodo.org/records/18988899",
+    "benchmark_ids": [
+      "J08"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "Sf2be93b784",
+    "url": "https://doi.org/10.1186/s13059-025-03552-3",
+    "benchmark_ids": [
+      "K05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S891cafda00",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
+    "benchmark_ids": [
+      "K05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S838180bac7",
+    "url": "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution",
+    "benchmark_ids": [
+      "K05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sca667a9cd5",
+    "url": "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html",
+    "benchmark_ids": [
+      "K05"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

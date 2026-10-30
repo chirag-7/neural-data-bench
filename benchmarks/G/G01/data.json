@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "G01",
+  "input": "Intracortical neural activity and kinematics",
+  "ground_truth": "Recorded kinematics on held-out days",
+  "sources": [
+    "https://snel-repo.github.io/falcon/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

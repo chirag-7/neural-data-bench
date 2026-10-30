@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the underlying benchmarks as well as this research artifact."
+title: "Neural Data Bench: Evidence Map and Exploratory General-Model Evaluations"
+version: 0.3.0
+date-released: 2026-10-30
+authors:
+  - family-names: Chivate
+    given-names: Chirag
+repository-code: "https://github.com/chirag-7/neural-data-bench"
+license: MIT

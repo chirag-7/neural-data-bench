@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "E04",
+  "input": "IBL spike counts across brain regions",
+  "ground_truth": "Held-out observed spikes",
+  "sources": [
+    "https://brainbench-org.github.io/ibl-bwb/",
+    "https://arxiv.org/abs/2609.22064"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

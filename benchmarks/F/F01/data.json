@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "F01",
+  "input": "Images with mouse calcium responses",
+  "ground_truth": "Measured neural responses",
+  "sources": [
+    "https://sensorium-competition.net/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

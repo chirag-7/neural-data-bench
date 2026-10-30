@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "F02",
+  "input": "Natural videos, behavior, mouse neural responses",
+  "ground_truth": "Measured held-out responses",
+  "sources": [
+    "https://sensorium-competition.net/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

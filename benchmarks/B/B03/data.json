@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "B03",
+  "input": "Spike localizations or LFP with probe coordinates",
+  "ground_truth": "Known imposed/simulated displacement",
+  "sources": [
+    "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+    "https://github.com/evarol/dredge"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

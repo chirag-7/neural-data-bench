@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "M01",
+  "input": "Psychophysics trials and choices",
+  "ground_truth": "Recorded choices; synthetic recovery targets when added",
+  "sources": [
+    "https://www.internationalbrainlab.com/data",
+    "https://www.nature.com/articles/s41586-025-09215-4"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

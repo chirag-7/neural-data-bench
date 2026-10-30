@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "H17",
+  "input": "Mouse EEG/EMG, expert stage annotations",
+  "ground_truth": "Expert sleep scores from 92 healthy mice across five labs",
+  "sources": [
+    "https://nemar.org/dataset/on006366",
+    "https://doi.org/10.18112/openneuro.ds006366.v1.0.1"
+  ],
+  "license_status": "CC0 shown by NEMAR; original dataset version must be pinned separately from mirror",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

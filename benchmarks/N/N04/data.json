@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "N04",
+  "input": "Code, datasets and publication-derived tasks",
+  "ground_truth": "Published reference results and task evaluators",
+  "sources": [
+    "https://arxiv.org/abs/2410.05080"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

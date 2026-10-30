@@ -1,0 +1,233 @@
+{
+  "date": "2026-10-30",
+  "scope": "Prospective bounded extension only. Earlier discovery queries were not fully logged and are not reconstructed.",
+  "queries": [
+    {
+      "search_id": "EXT-Q01",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "DAS deep audio segmenter benchmark animal vocalizations annotated dataset eLife",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q02",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "VocalBench benchmark animal vocalization dataset machine learning",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q03",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "FSCAV dopamine FSCV benchmark dataset DeepLabCut deep learning voltammetry neuroscience open data",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q04",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "SPARC benchmark autonomic neuroscience datasets ECG respiration open",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q05",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "FSCV benchmark dopamine concentration dataset machine learning public GitHub voltammetry",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q06",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "optoelectrophysiology perturbation benchmark dataset causal neural Neuropixels open IBL",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q07",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "sleep animal sleep staging benchmark dataset SleepSEEG neuroscience open dataset",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q08",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "spatial transcriptomics neuroscience benchmark cell segmentation MERFISH challenge dataset",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q09",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "FISBe dataset github neuron light microscopy benchmark instances",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q10",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "sleep spindle detection benchmark DREAMS MODA dataset expert labels official",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q11",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "high frequency oscillation detection benchmark HFO challenge dataset github open",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q12",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "DLPFC spatial transcriptomics benchmark spatialLIBD cortical layers dataset Maynard 2021",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q13",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "neuroscience open dataset optogenetic perturbation prediction benchmark CEBRA ZAPBench",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q14",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "ZAPBench zebrafish activity prediction benchmark perturbation dataset",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q15",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "FSCV machine learning concentration prediction dataset github voltammetry dopamine serotonin benchmark",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q16",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "spike optotagging benchmark ground truth dataset cell type classification Allen visual coding",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q17",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "mouse ultrasound sound source localization benchmark dataset SLIM NeurIPS 2024 dataset",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q18",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "WhisperSeg animal vocalization segmentation benchmark github datasets",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q19",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "cognitive computational neuroscience benchmark tasks psychological modeling CogBench Psych101 benchmark",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q20",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "neuroscience benchmark proteomics synapse image dataset segmentation SynapseNet",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q21",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "OpenBHB brain age benchmark github dataset access 5000",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q22",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "Benchmark Cellular Deconvolution Methods Multi-Assay Reference Dataset Postmortem Human Prefrontal Cortex data github",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q23",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "Mouse Sleep Staging Validation dataset MSSV expert five laboratories paper benchmark",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q24",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "Vocal Call Locator benchmark github download dataset",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q25",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "\"VCL\" \"Benchmark\" \"github\" Peterson Tanelus",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q26",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "\"MODA\" \"sleep\" \"Zenodo\" dataset Lacourse",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q27",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "\"Vocal Call Locator\" dataset download",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q28",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "\"Vocal Call Locator\" \"github.com\"",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q29",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "\"DAS\" \"data.goettingen-research-online.de/dataverse/das\"",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    },
+    {
+      "search_id": "EXT-Q30",
+      "date": "2026-10-30",
+      "source": "web search tool",
+      "query": "\"DeconvoBuddies\" \"Human_DLPFC_Deconvolution\"",
+      "scope": "bounded gap-finding, not exhaustive database search"
+    }
+  ],
+  "parent_queries": [
+    {
+      "query": "neuroscience benchmark comprehensive evaluation foundation models neural data benchmark review 2026 BrainWideBench NeuralBench",
+      "engine": "web search",
+      "date": "2026-10-30"
+    },
+    {
+      "query": "neuroscience benchmark datasets systematic review task taxonomy electrophysiology imaging behavior NeuroBench",
+      "engine": "web search",
+      "date": "2026-10-30"
+    },
+    {
+      "query": "gpt-6-luna gpt-6.1-sol models (official OpenAI domains)",
+      "engine": "web search",
+      "date": "2026-10-30"
+    }
+  ]
+}

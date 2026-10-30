@@ -1,0 +1,13 @@
+{
+  "benchmark_id": "H18",
+  "input": "Human EEG with spindle and K-complex intervals",
+  "ground_truth": "Individual expert labels with disagreement",
+  "sources": [
+    "https://zenodo.org/records/2650142",
+    "https://www.nature.com/articles/s41598-026-53891-9",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/"
+  ],
+  "license_status": "Not independently reviewed",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

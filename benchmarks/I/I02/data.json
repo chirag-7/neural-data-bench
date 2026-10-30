@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "I02",
+  "input": "Natural images and repeated fMRI responses",
+  "ground_truth": "Stimulus identities and measured BOLD",
+  "sources": [
+    "https://www.naturalscenesdataset.org/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

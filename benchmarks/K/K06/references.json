@@ -1,0 +1,29 @@
+[
+  {
+    "id": "S0036c9cd29",
+    "url": "https://cellexplorer.org/publicdata/ground-truth-data/",
+    "benchmark_ids": [
+      "K06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S9592a6a4da",
+    "url": "https://cellexplorer.org/tutorials/ground-truth-tutorial/",
+    "benchmark_ids": [
+      "K06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S9e6544a01a",
+    "url": "https://alleninstitute.github.io/openscope_databook/optotagging/",
+    "benchmark_ids": [
+      "K06"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

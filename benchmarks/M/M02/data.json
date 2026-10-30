@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "M02",
+  "input": "Neural simulator, stimulus/action and observations",
+  "ground_truth": "Known simulated system and experiment budget",
+  "sources": [
+    "https://www.nature.com/articles/s41592-025-02895-w",
+    "https://github.com/neurogym/neurogym"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

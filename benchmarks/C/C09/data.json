@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "C09",
+  "input": "Miniscope fluorescence movies with strong background",
+  "ground_truth": "Simulated truth and expert/paired validation on selected examples",
+  "sources": [
+    "https://elifesciences.org/articles/28728"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

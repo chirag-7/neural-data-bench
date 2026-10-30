@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "D02",
+  "input": "Patch clamp voltage/current sweeps",
+  "ground_truth": "Measured voltage and recorded stimulation",
+  "sources": [
+    "https://brain-map.org/support/documentation/documentation-cell-types-database",
+    "https://alleninstitute.github.io/AllenSDK/cell_types.html"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

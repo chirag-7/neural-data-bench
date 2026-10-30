@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "A12",
+  "input": "Behavior video aligned with neural activity",
+  "ground_truth": "Keypoints/actions and measured neural responses",
+  "sources": [
+    "https://arxiv.org/abs/2507.09513"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

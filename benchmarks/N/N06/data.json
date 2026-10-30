@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "N06",
+  "input": "NWB/BIDS files with controlled metadata/timing faults",
+  "ground_truth": "Injected sampling-rate, timestamp, channel or unit faults",
+  "sources": [
+    "https://about.dandiarchive.org/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

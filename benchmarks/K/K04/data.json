@@ -1,0 +1,13 @@
+{
+  "benchmark_id": "K04",
+  "input": "Human DLPFC Visium gene counts, spot positions and histology",
+  "ground_truth": "Expert layer/white-matter annotation informed by cytoarchitecture and marker genes",
+  "sources": [
+    "https://research.libd.org/spatialLIBD/",
+    "https://github.com/LieberInstitute/spatialLIBD",
+    "https://doi.org/10.1038/s42003-024-07001-y"
+  ],
+  "license_status": "Not independently reviewed",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

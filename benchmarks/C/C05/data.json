@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "C05",
+  "input": "Fluorescence traces plus electrophysiology",
+  "ground_truth": "Simultaneous electrophysiological spike recordings",
+  "sources": [
+    "https://github.com/codeneuro/spikefinder-datasets",
+    "https://github.com/berenslab/spikefinder_analysis"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": "../../../data/manifests/spikefinder.json",
+  "raw_data_in_git": false
+}

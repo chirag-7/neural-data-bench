@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "E03",
+  "input": "IBL spike populations and behavior",
+  "ground_truth": "Measured trial outcomes/behavior",
+  "sources": [
+    "https://brainbench-org.github.io/ibl-bwb/",
+    "https://arxiv.org/abs/2609.22064"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "Sb7c0e7259e",
+    "url": "https://github.com/facebookresearch/emg2pose",
+    "benchmark_ids": [
+      "H13"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

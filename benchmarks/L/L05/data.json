@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "L05",
+  "input": "Neural responses to optogenetic perturbations",
+  "ground_truth": "Recorded responses under controlled perturbations",
+  "sources": [
+    "https://www.nature.com/articles/s41586-023-06683-4"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

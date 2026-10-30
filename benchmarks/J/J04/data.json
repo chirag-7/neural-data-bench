@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "J04",
+  "input": "Coronal histology sections and atlas",
+  "ground_truth": "Expert alignment/landmarks",
+  "sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10514056/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

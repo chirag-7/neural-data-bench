@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "B04",
+  "input": "Hybrid/simulated overlapping spikes",
+  "ground_truth": "Injected events and templates",
+  "sources": [
+    "https://spikeinterface.readthedocs.io/en/stable/modules/comparison.html",
+    "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

@@ -1,0 +1,13 @@
+{
+  "benchmark_id": "A16",
+  "input": "Synchronized multi-microphone audio with overhead video-derived source positions",
+  "ground_truth": "2D source positions, including controlled speaker conditions",
+  "sources": [
+    "https://proceedings.nips.cc/paper_files/paper/2024/hash/c00d37d6b04d73b870b963a4d70051c1-Abstract-Datasets_and_Benchmarks_Track.html",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/",
+    "https://github.com/neurostatslab/vocalocator"
+  ],
+  "license_status": "Not independently reviewed",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

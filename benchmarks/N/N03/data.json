@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "N03",
+  "input": "MRI/EEG/BIDS files and pipeline tasks",
+  "ground_truth": "Task outputs, checks and rubric",
+  "sources": [
+    "https://cuhk-aim-group.github.io/NeuroDiscovery/neurobench.html"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

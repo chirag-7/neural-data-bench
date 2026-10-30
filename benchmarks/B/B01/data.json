@@ -1,0 +1,13 @@
+{
+  "benchmark_id": "B01",
+  "input": "Raw extracellular voltage and probe geometry",
+  "ground_truth": "Paired recordings and/or simulated known spikes",
+  "sources": [
+    "https://github.com/flatironinstitute/spikeforest",
+    "https://elifesciences.org/articles/55167",
+    "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

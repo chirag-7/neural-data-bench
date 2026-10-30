@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "A04",
+  "input": "Calibrated multiview rat videos",
+  "ground_truth": "Motion-capture landmarks; incomplete frames",
+  "sources": [
+    "https://figshare.com/collections/Rat_7M/5295370/3",
+    "https://www.nature.com/articles/s41592-025-02893-y"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

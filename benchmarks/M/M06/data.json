@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "M06",
+  "input": "Muscle-actuated simulations with feedback",
+  "ground_truth": "Environment rewards, targets and physical state",
+  "sources": [
+    "https://myosuite.org/myochallenge/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "G02",
+  "input": "Intracortical activity and character/sequence labels",
+  "ground_truth": "Recorded target character or vocal sequence labels",
+  "sources": [
+    "https://snel-repo.github.io/falcon/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

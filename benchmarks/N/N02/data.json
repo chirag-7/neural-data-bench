@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "N02",
+  "input": "EEG files with natural-language requests",
+  "ground_truth": "Task completion and execution traces; output rubrics",
+  "sources": [
+    "https://arxiv.org/abs/2606.25400"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

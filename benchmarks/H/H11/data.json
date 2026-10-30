@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "H11",
+  "input": "MEG responses aligned to speech/audio",
+  "ground_truth": "Speech/phoneme/word timing and labels",
+  "sources": [
+    "https://libribrain.com/editions/2026/publications/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

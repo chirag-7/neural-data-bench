@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "C08",
+  "input": "Signal/reference fluorescence; behavioral events",
+  "ground_truth": "Known analysis outputs; injected artifacts for stronger truth",
+  "sources": [
+    "https://github.com/LernerLab/GuPPy"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

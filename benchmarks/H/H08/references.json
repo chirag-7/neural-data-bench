@@ -1,0 +1,22 @@
+[
+  {
+    "id": "S69467629c8",
+    "url": "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
+    "benchmark_ids": [
+      "H05",
+      "H08",
+      "H10"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S4fd1f293d5",
+    "url": "https://neural-interfaces26.github.io/",
+    "benchmark_ids": [
+      "H08"
+    ],
+    "evidence": "Source cited in discovery map or bounded audit; see task verification. Full-text/asset verification varies.",
+    "reviewed_on": "2026-10-30"
+  }
+]

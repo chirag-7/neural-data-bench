@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "G03",
+  "input": "Intracortical activity with speech targets",
+  "ground_truth": "Prompted attempted-speech text/phonemes",
+  "sources": [
+    "https://github.com/fwillett/speechBCI",
+    "https://www.kaggle.com/competitions/brain-to-text-25/overview"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

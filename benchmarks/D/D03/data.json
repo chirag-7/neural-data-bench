@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "D03",
+  "input": "Morphology plus sparse compartment observations",
+  "ground_truth": "Known simulated compartment states; limited experimental truth",
+  "sources": [
+    "https://www.nature.com/articles/s41592-025-02895-w"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

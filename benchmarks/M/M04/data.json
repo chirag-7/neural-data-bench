@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "M04",
+  "input": "Synthetic choices from known behavioral models",
+  "ground_truth": "Known simulated generating model and parameters",
+  "sources": [
+    "https://elifesciences.org/articles/49547"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": "../../../data/manifests/cognitive.json",
+  "raw_data_in_git": false
+}

@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "F04",
+  "input": "Stimulus movies and retinal spike trains",
+  "ground_truth": "Measured spike trains with aligned stimuli",
+  "sources": [
+    "https://crcns.org/data-sets"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

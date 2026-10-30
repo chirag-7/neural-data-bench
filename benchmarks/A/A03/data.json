@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "A03",
+  "input": "Animal videos and keypoints",
+  "ground_truth": "Held-out human keypoints",
+  "sources": [
+    "https://www.nature.com/articles/s41467-024-48792-2"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

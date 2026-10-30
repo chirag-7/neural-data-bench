@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "H13",
+  "input": "Wrist surface EMG and hand pose",
+  "ground_truth": "Motion capture or keypress labels",
+  "sources": [
+    "https://github.com/facebookresearch/emg2pose"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "I09",
+  "input": "Diffusion phantom images and tract labels",
+  "ground_truth": "Phantom bundles and connectivity labels",
+  "sources": [
+    "https://tractometer.org/ismrm2015/tools/"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

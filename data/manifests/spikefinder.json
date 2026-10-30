@@ -1,0 +1,349 @@
+{
+  "pin": "def1f8c2c5268eb71e83f57c265d4b3c102fb5f8",
+  "files": [
+    {
+      "path": "data/cache/spikefinder/spikefinder.train.zip",
+      "source": "https://s3.amazonaws.com/neuro.datasets/challenges/spikefinder/spikefinder.train.zip",
+      "sha256": "a3ada9defe36449f7640c3bec53057fb9053d958b61c57097f948ab33ab5ef95",
+      "bytes": 35290716,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/1.train.calcium.csv",
+      "source": "https://s3.amazonaws.com/neuro.datasets/challenges/spikefinder/spikefinder.train.zip#spikefinder.train/1.train.calcium.csv",
+      "sha256": "fe5373dcac2dc55959a9828acea5632e4bdc808cf2fa9714e9afec796c8a2492",
+      "bytes": 11064557,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply"
+    },
+    {
+      "path": "data/cache/spikefinder/1.train.spikes.csv",
+      "source": "https://s3.amazonaws.com/neuro.datasets/challenges/spikefinder/spikefinder.train.zip#spikefinder.train/1.train.spikes.csv",
+      "sha256": "0f17641b18f4b7e5f5e8edcbc76d5d3ef437738c25a050b380015b3305a5fff1",
+      "bytes": 2014811,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply"
+    },
+    {
+      "path": "data/cache/spikefinder/2.train.calcium.csv",
+      "source": "https://s3.amazonaws.com/neuro.datasets/challenges/spikefinder/spikefinder.train.zip#spikefinder.train/2.train.calcium.csv",
+      "sha256": "dff69c20aa8c1e9187c6229e07dc88ce4f5c3c95a57186977f919fe6555b9cc5",
+      "bytes": 10107196,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply"
+    },
+    {
+      "path": "data/cache/spikefinder/2.train.spikes.csv",
+      "source": "https://s3.amazonaws.com/neuro.datasets/challenges/spikefinder/spikefinder.train.zip#spikefinder.train/2.train.spikes.csv",
+      "sha256": "01166aa6f321c5e22806d4696be39cacd6a9f73bd25375c6e85e0c8945ed7810",
+      "bytes": 1785437,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply"
+    },
+    {
+      "path": "data/cache/spikefinder/3.train.calcium.csv",
+      "source": "https://s3.amazonaws.com/neuro.datasets/challenges/spikefinder/spikefinder.train.zip#spikefinder.train/3.train.calcium.csv",
+      "sha256": "e0098e1c3e31dc6fbc0420c966836e55e397d8be78aa97c8a6ba1c1214cb1a67",
+      "bytes": 8564552,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply"
+    },
+    {
+      "path": "data/cache/spikefinder/3.train.spikes.csv",
+      "source": "https://s3.amazonaws.com/neuro.datasets/challenges/spikefinder/spikefinder.train.zip#spikefinder.train/3.train.spikes.csv",
+      "sha256": "3ae32e3af21eca09caf7ba9b894ebd7639adacd33ae279c67fde6104e3688d33",
+      "bytes": 1435727,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply"
+    },
+    {
+      "path": "data/cache/spikefinder/4.train.calcium.csv",
+      "source": "https://s3.amazonaws.com/neuro.datasets/challenges/spikefinder/spikefinder.train.zip#spikefinder.train/4.train.calcium.csv",
+      "sha256": "deaa8fc08f56b80ededc5ef5eb1c93bf2393717ed2d86dc1948a37d5bc9ee569",
+      "bytes": 2466089,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply"
+    },
+    {
+      "path": "data/cache/spikefinder/4.train.spikes.csv",
+      "source": "https://s3.amazonaws.com/neuro.datasets/challenges/spikefinder/spikefinder.train.zip#spikefinder.train/4.train.spikes.csv",
+      "sha256": "c4ca07a8a21c03c9bd0aee731b8144e48b0835f5e19c53f013da48cb9fee7928",
+      "bytes": 333168,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply"
+    },
+    {
+      "path": "data/cache/spikefinder/5.train.calcium.csv",
+      "source": "https://s3.amazonaws.com/neuro.datasets/challenges/spikefinder/spikefinder.train.zip#spikefinder.train/5.train.calcium.csv",
+      "sha256": "6b1964a63f2f177fe62b723e876b5c574ea1b3926e37af0546e95b8e397bb2c6",
+      "bytes": 2267733,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply"
+    },
+    {
+      "path": "data/cache/spikefinder/5.train.spikes.csv",
+      "source": "https://s3.amazonaws.com/neuro.datasets/challenges/spikefinder/spikefinder.train.zip#spikefinder.train/5.train.spikes.csv",
+      "sha256": "d31cd91610b20eeea3c0a06929ce763f5cacbcc30f231f9105eb3ddac320dbc2",
+      "bytes": 304560,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply"
+    },
+    {
+      "path": "data/cache/spikefinder/1.test.calcium.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/truth/1.test.calcium.csv",
+      "sha256": "968e0654f72da499953442b3086dc7e607d4c4a83e48350a588cd5dc3d42e3e0",
+      "bytes": 4836690,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/1.test.spikes.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/truth/1.test.spikes.csv",
+      "sha256": "15a034471ff5080fceccbca74588073e309de8205d446e4b9e69243acc401271",
+      "bytes": 755842,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/1.deneux.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/deneux/1.test.spikes.csv",
+      "sha256": "8cfad541e59ea5f475b9b78312f90b595053eeb08698c92e8d966b1d1f29b4f5",
+      "bytes": 3653178,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/1.speiser.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/speiser/1.test.spikes.csv",
+      "sha256": "762d85965f9d9f307d6f559631699fbba4ccd1049a13b7f36f9169dfc0c60200",
+      "bytes": 4090921,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/1.friedrich.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/friedrich/1.test.spikes.csv",
+      "sha256": "77f53cd9404aa8fd7f34c6067b75c308b84e00a8ed666210716f1d552c35abd6",
+      "bytes": 2251834,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/1.rupprecht.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/rupprecht/1.test.spikes.csv",
+      "sha256": "779714c2d2fc55d714ec93393788ef98cb95c3b08f9e90d4419ba31a6bfc9a21",
+      "bytes": 5188555,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/2.test.calcium.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/truth/2.test.calcium.csv",
+      "sha256": "b6cba3639811f8d681c1e5b9e18ef44434efc4cc39a2bf6cc8d0122483f92c6c",
+      "bytes": 6844270,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/2.test.spikes.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/truth/2.test.spikes.csv",
+      "sha256": "806e37c5704db6fbe3b8104bd5e7ce3df26c40134c032db8be00a86166431d33",
+      "bytes": 1941168,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/2.deneux.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/deneux/2.test.spikes.csv",
+      "sha256": "59b7bf8f774bbd2f56d52e2e4ccd16c1eb9b0733fc7dce5029196bedc286693e",
+      "bytes": 8218190,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/2.speiser.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/speiser/2.test.spikes.csv",
+      "sha256": "b8b32a80a5d05b0535449a542265db5fef47e35c83e2eeb22f38064e74851f98",
+      "bytes": 5671938,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/2.friedrich.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/friedrich/2.test.spikes.csv",
+      "sha256": "0ed9557f99ab3e3d7490d8f960d13c87825a9524012cc0e83264800bff478c7d",
+      "bytes": 4356161,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/2.rupprecht.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/rupprecht/2.test.spikes.csv",
+      "sha256": "5d90e19d54eebc9a19622d12f1355949589753fd01d05004003da6b482b68279",
+      "bytes": 7323485,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/3.test.calcium.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/truth/3.test.calcium.csv",
+      "sha256": "44ecf4de6898a8ef3d1f54d6893290b7a4f2075be119b839dbd1415d413b26ea",
+      "bytes": 4265984,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/3.test.spikes.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/truth/3.test.spikes.csv",
+      "sha256": "43766dc07b8f44e6b10c6e86522c833376755ef721dfaf67206c27cdf1213286",
+      "bytes": 738929,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/3.deneux.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/deneux/3.test.spikes.csv",
+      "sha256": "263d4695cfabb45341e03b0bc6a5df4310c1827596640bb5714fa58c6846c915",
+      "bytes": 3375561,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/3.speiser.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/speiser/3.test.spikes.csv",
+      "sha256": "75918b5ed03b7a3bcdfe5aee24245a330d7ad0ce2da6b3ff93dba7d37dd5ae12",
+      "bytes": 4776236,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/3.friedrich.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/friedrich/3.test.spikes.csv",
+      "sha256": "6c3b0d9df4ade3225781b4f321930d0f91cb083306bca3727f0300ba8954f3f5",
+      "bytes": 2919322,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/3.rupprecht.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/rupprecht/3.test.spikes.csv",
+      "sha256": "fff0ed555ade4993a656774dc67e6dd70c45ec0955d22376e605899c3f28381b",
+      "bytes": 4484640,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/4.test.calcium.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/truth/4.test.calcium.csv",
+      "sha256": "5e400ac22e34b8feb05ad1d9f624d549728b481c1b035b51c1da676c9a294d78",
+      "bytes": 1444185,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/4.test.spikes.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/truth/4.test.spikes.csv",
+      "sha256": "31809c057c3ca7a93d164ebd261491db78ef60a93bc80e41df05bd771eb67995",
+      "bytes": 258836,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/4.deneux.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/deneux/4.test.spikes.csv",
+      "sha256": "2682b8cdf30985ace4cce54b0538f043b90149b7bd28bbfb70cd4529516d119b",
+      "bytes": 1033969,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/4.speiser.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/speiser/4.test.spikes.csv",
+      "sha256": "3d4b5bf286fc3136faa824b13d1cbe4ecc05a564fe430b8271c1a9ab3a52bb3f",
+      "bytes": 1186287,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/4.friedrich.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/friedrich/4.test.spikes.csv",
+      "sha256": "b5252cebd30c6b7ba99db7b0d13a2cfca2f8a7939cc91782925e478f7ca11db6",
+      "bytes": 1592917,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/4.rupprecht.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/rupprecht/4.test.spikes.csv",
+      "sha256": "664388a818a90aa5718c02e86cbabef9d76064df182266fd84a53a751f51d281",
+      "bytes": 1543280,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/5.test.calcium.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/truth/5.test.calcium.csv",
+      "sha256": "abe430f0092e156495133d69079601b5ef958a1d479c9df7b9150c1a52475e37",
+      "bytes": 1535360,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/5.test.spikes.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/truth/5.test.spikes.csv",
+      "sha256": "391317820a400c751995cce337fb63abda711b83d2f87c972657a83b83a6f071",
+      "bytes": 267726,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/5.deneux.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/deneux/5.test.spikes.csv",
+      "sha256": "1c65c3ee30091741cef426d9311fbe9f4c535e4ce22e0b29c88df4504d87d821",
+      "bytes": 1374990,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/5.speiser.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/speiser/5.test.spikes.csv",
+      "sha256": "86be293f10f75501a3b519f528dea03bc233eb361dfbd2f38b9c693f0f2a9a8a",
+      "bytes": 1665131,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/5.friedrich.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/friedrich/5.test.spikes.csv",
+      "sha256": "c521ded4fbbdd778c955dbf79921bb4770c2d77974a6c7ca670f0cb23961324a",
+      "bytes": 2253933,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/5.rupprecht.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/raw/rupprecht/5.test.spikes.csv",
+      "sha256": "88188cd297f7c0cb6bc8accb18e79d4d688d55cf88cb60aeaa776c3754585915",
+      "bytes": 1601827,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/spikefinder_eval.py",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/spikefinder_eval.py",
+      "sha256": "fd39042a5d1be5b7ca309860648dcc1e34a604f9c9d21efa989ad3cb15432263",
+      "bytes": 6164,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    },
+    {
+      "path": "data/cache/spikefinder/results_30_06_17.csv",
+      "source": "https://raw.githubusercontent.com/berenslab/spikefinder_analysis/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/data/results_30_06_17.csv",
+      "sha256": "bf04af206e6c8aef6cf0c5b70df1b5395f1b7358186044a6ac74c6caec9bee03",
+      "bytes": 196870,
+      "acquired_on": "2026-10-30",
+      "license_status": "Upstream data terms apply; redistribution not granted by this repository"
+    }
+  ]
+}

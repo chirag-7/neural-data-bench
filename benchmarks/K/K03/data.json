@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "K03",
+  "input": "Cell atlas tables, donors and pathology labels",
+  "ground_truth": "Expert curated quantitative/text/figure answers",
+  "sources": [
+    "https://github.com/allenai/neurodiscoverybench"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

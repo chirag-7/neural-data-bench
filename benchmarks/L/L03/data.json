@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "L03",
+  "input": "IBL spikes, trial variables and behavioral history",
+  "ground_truth": "Known randomized/null labels; expert analysis of genuine data",
+  "sources": [
+    "https://github.com/int-brain-lab/ibl-ai-agent",
+    "https://www.internationalbrainlab.com/data"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

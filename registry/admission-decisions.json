@@ -1,0 +1,686 @@
+[
+  {
+    "benchmark_id": "A01",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A02",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A03",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A04",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A05",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A06",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A07",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A08",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A09",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A10",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A11",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A12",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A13",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A14",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "B01",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "B02",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "B03",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "B04",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "B05",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "B06",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "B07",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "B08",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "C01",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "C02",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "C03",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "C04",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "C05",
+    "decision": "measured",
+    "reason": "A frozen local protocol, data, scorer, predictions and baseline exist; limits are documented.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "C06",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "C07",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "C08",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "C09",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "D01",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "D02",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "D03",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "D04",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "E01",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "E02",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "E03",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "E04",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "E05",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "F01",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "F02",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "F03",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "F04",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "F05",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "G01",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "G02",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "G03",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H01",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H02",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H03",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H04",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H05",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H06",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H07",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H08",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H09",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H10",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H11",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H12",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H13",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H14",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H15",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H16",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "I01",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "I02",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "I03",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "I04",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "I05",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "I06",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "I07",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "I08",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "I09",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "I10",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "J01",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "J02",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "J03",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "J04",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "J05",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "J06",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "K01",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "K02",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "K03",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "L01",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "L02",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "L03",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "L04",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "L05",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "L06",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "M01",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "M02",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "M03",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "M04",
+    "decision": "measured",
+    "reason": "A frozen local protocol, data, scorer, predictions and baseline exist; limits are documented.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "M05",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "M06",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "M07",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "N01",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "N02",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "N03",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "N04",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "N05",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "N06",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A15",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "A16",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "E06",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H17",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H18",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "H19",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "J07",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "J08",
+    "decision": "deferred",
+    "reason": "Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "J09",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "K04",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "K05",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  },
+  {
+    "benchmark_id": "K06",
+    "decision": "candidate_pending_validation",
+    "reason": "Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.",
+    "date": "2026-10-30"
+  }
+]

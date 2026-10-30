@@ -1,0 +1,29 @@
+# L01 — Functional connectivity recovery
+
+[Family](../README.md) · [Project](../../../README.md) · [Methods](methods.md) · [Worklog](worklog.md)
+
+**Resource:** ChaLearn Connectomics Challenge
+
+**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+
+## Scientific use
+
+Input: Simulated fluorescence and neural network graphs
+
+Target/ground truth: Known simulated connectivity
+
+Specialist candidates: Partial correlation; GLM; transfer-entropy methods
+
+General-model route: General sequence/graph model
+
+## Execution and performance
+
+No experiment admitted yet. All measurements are centralized in [results](../../../results/). Current best: **not verified**. Missing scores are unknown, not zero. Literature resources are not newly executed results.
+
+## Limitations
+
+Simulation connections do not establish causal connectivity in real recordings
+
+## Sources
+
+- [https://connectomics.chalearn.org/help/data](https://connectomics.chalearn.org/help/data)

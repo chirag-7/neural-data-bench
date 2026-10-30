@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "L02",
+  "input": "Voltage traces from known neural simulators",
+  "ground_truth": "Known simulated parameters; multiple valid solutions",
+  "sources": [
+    "https://sbi.readthedocs.io/en/latest/advanced_tutorials/21_diagnostics_misspecification_checks.html",
+    "https://www.nature.com/articles/s41592-025-02895-w"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

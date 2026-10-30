@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "N05",
+  "input": "NWB neurophysiology and metadata",
+  "ground_truth": "Metadata invariants; known deterministic reference outputs",
+  "sources": [
+    "https://about.dandiarchive.org/",
+    "https://www.internationalbrainlab.com/data"
+  ],
+  "license_status": "Not independently verified",
+  "local_manifest": null,
+  "raw_data_in_git": false
+}

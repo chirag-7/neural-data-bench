@@ -1,0 +1,3 @@
+# Contributions and review
+
+Add primary sources and a task card before proposing a result. Keep evidence-map admission separate from execution. Every result needs a frozen protocol, exact data/split/scorer, model procedure and prediction artifact. Disclose label access, supervision, tool and compute budget, failures and deviations. Do not submit fabricated current-best values, estimated missing scores or private data. Security: do not execute untrusted contributed code in the local harness; isolated execution infrastructure is required for external submissions. Use issues for scope gaps and citation corrections. Do not claim independent human domain validation until it occurs.
