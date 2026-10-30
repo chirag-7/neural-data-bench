@@ -1,0 +1,80 @@
+{
+  "dandiset": "000140",
+  "version": "0.220113.0408",
+  "nlb_tools_commit": "42f8410b88e12db136910fa2f888b025ea0aa2ae",
+  "bin_width_ms": 20,
+  "align_field": "move_onset_time",
+  "align_range_ms": [
+    -250,
+    450
+  ],
+  "training_splits_combined": [
+    "train",
+    "val"
+  ],
+  "requested_training_trials": 100,
+  "retained_training_trials": 99,
+  "excluded_training_trial_ids": [
+    199
+  ],
+  "exclusion_reason": "Official make_trial_data allow_nans=False produces no valid aligned timepoints for final training trial199; retained trial IDs recorded. No target-based selection.",
+  "test_trials": 100,
+  "heldin_neurons": 107,
+  "heldout_neurons": 35,
+  "raw_files": [
+    {
+      "file": "train.nwb",
+      "url": "https://api.dandiarchive.org/api/assets/7821971e-c6a4-4568-8773-1bfa205c13f8/download/",
+      "bytes": 29207528,
+      "sha256": "dcaf3a524e2b2f65f163ee3b07789b8474bdfc6ca66098bc542ab93dff489884"
+    },
+    {
+      "file": "test.nwb",
+      "url": "https://api.dandiarchive.org/api/assets/544a660e-a173-46f3-985a-60fd67e6ae1f/download/",
+      "bytes": 689312,
+      "sha256": "ca8a0bef5f189eafb9db1961d617e065cb461360718fde1c16a538922a6fa5fe"
+    },
+    {
+      "file": "eval_data_test.h5",
+      "url": "https://media.githubusercontent.com/media/neurallatents/nlb_tools/42f8410b88e12db136910fa2f888b025ea0aa2ae/data/eval_data_test.h5",
+      "bytes": 105927616,
+      "sha256": "f2f434d30193251b58e6a693381fdd185c8fbc0e47d38f8810e65295bc42c865"
+    }
+  ],
+  "shapes": {
+    "train_x": [
+      99,
+      35,
+      107
+    ],
+    "train_y": [
+      99,
+      35,
+      35
+    ],
+    "test_x": [
+      100,
+      35,
+      107
+    ],
+    "test_y": [
+      100,
+      35,
+      35
+    ],
+    "train_groups": [
+      99
+    ],
+    "test_groups": [
+      100
+    ],
+    "train_units": [
+      99
+    ],
+    "test_units": [
+      100
+    ]
+  },
+  "prepared_sha256": "47bf8125c79925af3a638e73e8b48c04e02e3390e40bd65eaafd5deee5879dfc",
+  "official_lfs_sha256": "f2f434d30193251b58e6a693381fdd185c8fbc0e47d38f8810e65295bc42c865"
+}

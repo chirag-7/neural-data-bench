@@ -1,0 +1,31 @@
+{
+  "scorer_cases": [
+    {
+      "case": "evaluation_mean",
+      "ours": 0.0,
+      "official": 0.0,
+      "absolute_difference": 0.0
+    },
+    {
+      "case": "fixed_random",
+      "ours": -7.31795897101433,
+      "official": -7.31795897101433,
+      "absolute_difference": 0.0
+    }
+  ],
+  "raw_input_count_check": "Independent raw HDF5 spike-time extraction, integer1ms truncation and20ms aggregation EXACTLY equals all100\u00d735\u00d7107 official testinput counts. Confirms trialorder, neuronorder and bin alignment. Test targets loaded directly from same named official release group.",
+  "independent_testinput_equal": true,
+  "test_input_shape": [
+    100,
+    35,
+    107
+  ],
+  "test_target_shape": [
+    100,
+    35,
+    35
+  ],
+  "test_finite": true,
+  "negative_predictions_rejected": true,
+  "discarded_validation_attempt": "Forecast groundtruth cannot be equality-checked against testNWB because future spikes are intentionally omitted and trialtime compressed; an initial comparison was invalid and is not used as a gate. No input/target arrays changed in response."
+}
