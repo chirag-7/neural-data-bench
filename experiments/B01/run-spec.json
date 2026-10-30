@@ -1,0 +1,21 @@
+{
+  "benchmark_id": "B01",
+  "run_id": "sorting-v1",
+  "date": "2026-10-30",
+  "track": "T3-unsupervised",
+  "models": [
+    "gpt-5.6-sol",
+    "gpt-6-sol",
+    "gpt-6.1-sol"
+  ],
+  "generation_replicates": 1,
+  "reasoning_effort": "high",
+  "prompt_sha256": "81bf9c612bd66845fbed58ca676a178779cf5015f7e7ae7c62d1145caccd633d",
+  "adapter_sha256": "1c42a77d2dad42acd3a4da41a72b537f1b955a297d766598cc22f06b63f463db",
+  "inputs_sha256": "9fe7074e716111b13c4a1339cf555d51ccb3cd59efcf0b4b27405d79b16262b4",
+  "truth_sha256": "86c33c5ba5983c037d2d957cd051dc8b3beaaffbc62b5bfc5faf43aab4d11309",
+  "status": "frozen before model generation",
+  "timeout_seconds": 180,
+  "line_limit_exclusive": 240,
+  "memory_enforced": false
+}

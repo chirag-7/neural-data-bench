@@ -1,0 +1,30 @@
+{
+  "benchmark_id": "B01",
+  "accessed_on": "2026-10-30",
+  "source_revision": "71e5c5b04e34ab9e69533a4fb092a6ce4d244034",
+  "files": [
+    {
+      "url": "https://gin.g-node.org/NeuralEnsemble/ephy_testing_data/raw/71e5c5b04e34ab9e69533a4fb092a6ce4d244034/mearec/mearec_test_10s.h5",
+      "path": "data/cache/B01/mearec_test_10s.h5",
+      "bytes": 62317832,
+      "sha256": "22e8d5ab3f137bf926822074a4b332ac675ed538f379eca60c21fd6f76993ed4"
+    }
+  ],
+  "prepared": [
+    {
+      "path": "data/cache/B01/inputs.npz",
+      "sha256": "9fe7074e716111b13c4a1339cf555d51ccb3cd59efcf0b4b27405d79b16262b4",
+      "model_accessible": true
+    },
+    {
+      "path": "data/cache/B01/truth.npz",
+      "sha256": "86c33c5ba5983c037d2d957cd051dc8b3beaaffbc62b5bfc5faf43aab4d11309",
+      "model_accessible": false
+    }
+  ],
+  "data_origin": "SIMULATED extracellular waveforms and spike trains, not paired real biological ground truth",
+  "data_terms": "Primary repository README declares ODbL1.0 for database and links CC-BY-SA4.0 for individual contents; cache and derivatives retain those terms, distinct from code license",
+  "license_source": "https://gin.g-node.org/NeuralEnsemble/ephy_testing_data/raw/71e5c5b04e34ab9e69533a4fb092a6ce4d244034/README.md",
+  "attribution": "NeuralEnsemble electrophysiology testing data; MEArec by Buccino & Einevoll; SpikeInterface standard test fixture",
+  "redistribution": "Raw/prepared data stay ignored cache; tracked acquisition code/manifests preserve terms"
+}
