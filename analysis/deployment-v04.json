@@ -1,0 +1,36 @@
+{
+  "release": "0.4",
+  "research_commit": "4cc1161f621c25aedd7ecf0bec05882d860ccfab",
+  "source_commit": "8b2508929633e5bbc93b7ba8a1fc89e72abc5762",
+  "id": "appgdep_6ae522a6996881919e7513aa3b318dd1",
+  "project_id": "appgprj_6ae4f438805c81919b082963db32f4f5",
+  "title": "Neural Data Observatory",
+  "version_id": "appgprj_6ae4f438805c81919b082963db32f4f5~appgver_cf0f302cafa48191a65f8229c5e7383e",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6ae4f438805c81919b082963db32f4f5",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-10-30T23:05:19.500920+00:00",
+  "repository_url": "https://github.com/chirag-7/neural-data-bench",
+  "audience": "owner-private, preserved",
+  "github_ci": {
+    "status": "success",
+    "url": "https://github.com/chirag-7/neural-data-bench/actions/runs/41142322879",
+    "commit": "4cc1161f621c25aedd7ecf0bec05882d860ccfab"
+  },
+  "canonical_source_hash_manifest": "analysis/website-source-v04.json",
+  "canonical_deployment_file_hashes_verified": 21,
+  "verification": {
+    "stored_prediction_records_rescored": 115,
+    "model_slice_attempts": 54,
+    "numerically_valid_model_attempts": 53,
+    "failed_model_attempts": 1,
+    "static_render_routes": 473,
+    "native_task_charts": 14,
+    "browser_layout_interaction": "unverified: previous local-preview URL-policy block; no bypass attempted"
+  }
+}
