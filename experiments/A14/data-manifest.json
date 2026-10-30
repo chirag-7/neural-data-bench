@@ -1,0 +1,138 @@
+{
+  "dataset": "Rat7M raw mocap distributed with DISK pinned record18405201",
+  "url": "https://zenodo.org/api/records/18405201/files/rat7M_raw_data.zip/content",
+  "raw_sha256": "d2ccb75b28e93684456840490a3cc79bc55baf9204b1e8cdd185e3580981a474",
+  "raw_bytes": 246184002,
+  "prepared_sha256": "a0b8bc77bd286d647656dcb620709abfcfdef9ac4392b2bd3a4332b0917d5325",
+  "landmarks": [
+    "HeadF",
+    "HeadB",
+    "HeadL",
+    "SpineF",
+    "SpineM",
+    "SpineL"
+  ],
+  "window_length": 31,
+  "stride": 60,
+  "masked_frames": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "masked_columns": [
+    0,
+    1,
+    2
+  ],
+  "source_files": [
+    {
+      "member": "mocap-s1-d1.mat",
+      "subject": 1,
+      "split": "train",
+      "frames": 126000,
+      "candidate_windows": 2100,
+      "complete_windows": 1875,
+      "excluded_incomplete_windows": 225,
+      "original_nonfinite_fraction": 0.022353174603174604
+    },
+    {
+      "member": "mocap-s2-d1.mat",
+      "subject": 2,
+      "split": "train",
+      "frames": 184831,
+      "candidate_windows": 3081,
+      "complete_windows": 2896,
+      "excluded_incomplete_windows": 185,
+      "original_nonfinite_fraction": 0.015646725928009912
+    },
+    {
+      "member": "mocap-s2-d2.mat",
+      "subject": 2,
+      "split": "train",
+      "frames": 165375,
+      "candidate_windows": 2756,
+      "complete_windows": 2507,
+      "excluded_incomplete_windows": 249,
+      "original_nonfinite_fraction": 0.014452003023431595
+    },
+    {
+      "member": "mocap-s3-d1.mat",
+      "subject": 3,
+      "split": "train",
+      "frames": 177935,
+      "candidate_windows": 2966,
+      "complete_windows": 2889,
+      "excluded_incomplete_windows": 77,
+      "original_nonfinite_fraction": 0.00886934367418814
+    },
+    {
+      "member": "mocap-s4-d1.mat",
+      "subject": 4,
+      "split": "test",
+      "frames": 59452,
+      "candidate_windows": 991,
+      "complete_windows": 833,
+      "excluded_incomplete_windows": 158,
+      "original_nonfinite_fraction": 0.028877637982462043
+    },
+    {
+      "member": "mocap-s5-d1.mat",
+      "subject": 5,
+      "split": "test",
+      "frames": 234499,
+      "candidate_windows": 3908,
+      "complete_windows": 3769,
+      "excluded_incomplete_windows": 139,
+      "original_nonfinite_fraction": 0.0042189234637816505
+    },
+    {
+      "member": "mocap-s5-d2.mat",
+      "subject": 5,
+      "split": "test",
+      "frames": 213500,
+      "candidate_windows": 3558,
+      "complete_windows": 3433,
+      "excluded_incomplete_windows": 125,
+      "original_nonfinite_fraction": 0.00577751756440281
+    }
+  ],
+  "shapes": {
+    "train_x": [
+      10167,
+      31,
+      18
+    ],
+    "train_y": [
+      10167,
+      31,
+      18
+    ],
+    "test_x": [
+      8035,
+      31,
+      18
+    ],
+    "test_y": [
+      8035,
+      31,
+      18
+    ],
+    "train_groups": [
+      10167
+    ],
+    "test_groups": [
+      8035
+    ],
+    "train_units": [
+      10167
+    ],
+    "test_units": [
+      8035
+    ]
+  },
+  "publisher_md5": "9cebea82f2bd2403a201df52cdccc486"
+}

@@ -1,0 +1,3 @@
+# Acquisition and preparation log
+
+2026-10-30: Queried primary CaltechDATA record, downloaded API metadata and official readme. Downloaded 457,357,950 byte official Task1 archive and validated publisher MD5. Documented current CC BY 4.0 record versus paper noncommercial-sharealike discrepancy; no raw files are to be committed. Defined fixed 3Hz sampling without test-score access and retained official train/test animal split. Wrote streaming per-sequence JSON reader to avoid materializing multi-gigabyte release as Python nested objects. Prepared all recordings with sequence IDs and center-frame provenance. This adapter does not use TREBA task-program features or MARS supervised action features.

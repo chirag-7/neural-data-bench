@@ -1,0 +1,687 @@
+{
+  "dataset": "CalMS21 v1.0 Task1",
+  "url": "https://data.caltech.edu/api/records/s0vdx-0k302/files/task1_classic_classification.zip/content",
+  "raw_sha256": "f1cd2f46771cc3834020d187604da53e5ff330121f5a816146f14192fb0bf427",
+  "raw_bytes": 457357950,
+  "prepared_sha256": "d4a508dd786e52b7989f192a54634134a052936c3600a2182f4e51d59e4020e4",
+  "sequences": [
+    {
+      "sequence": "task1/train/mouse001_task1_annotator1",
+      "group": "mouse001",
+      "split": "train",
+      "original_frames": 21364,
+      "evaluated_centers": 2134
+    },
+    {
+      "sequence": "task1/train/mouse002_task1_annotator1",
+      "group": "mouse002",
+      "split": "train",
+      "original_frames": 19343,
+      "evaluated_centers": 1932
+    },
+    {
+      "sequence": "task1/train/mouse003_task1_annotator1",
+      "group": "mouse003",
+      "split": "train",
+      "original_frames": 13222,
+      "evaluated_centers": 1320
+    },
+    {
+      "sequence": "task1/train/mouse004_task1_annotator1",
+      "group": "mouse004",
+      "split": "train",
+      "original_frames": 7433,
+      "evaluated_centers": 741
+    },
+    {
+      "sequence": "task1/train/mouse005_task1_annotator1",
+      "group": "mouse005",
+      "split": "train",
+      "original_frames": 5641,
+      "evaluated_centers": 562
+    },
+    {
+      "sequence": "task1/train/mouse006_task1_annotator1",
+      "group": "mouse006",
+      "split": "train",
+      "original_frames": 3029,
+      "evaluated_centers": 300
+    },
+    {
+      "sequence": "task1/train/mouse007_task1_annotator1",
+      "group": "mouse007",
+      "split": "train",
+      "original_frames": 10025,
+      "evaluated_centers": 1000
+    },
+    {
+      "sequence": "task1/train/mouse008_task1_annotator1",
+      "group": "mouse008",
+      "split": "train",
+      "original_frames": 11407,
+      "evaluated_centers": 1138
+    },
+    {
+      "sequence": "task1/train/mouse009_task1_annotator1",
+      "group": "mouse009",
+      "split": "train",
+      "original_frames": 8332,
+      "evaluated_centers": 831
+    },
+    {
+      "sequence": "task1/train/mouse010_task1_annotator1",
+      "group": "mouse010",
+      "split": "train",
+      "original_frames": 8666,
+      "evaluated_centers": 864
+    },
+    {
+      "sequence": "task1/train/mouse011_task1_annotator1",
+      "group": "mouse011",
+      "split": "train",
+      "original_frames": 4260,
+      "evaluated_centers": 423
+    },
+    {
+      "sequence": "task1/train/mouse012_task1_annotator1",
+      "group": "mouse012",
+      "split": "train",
+      "original_frames": 7190,
+      "evaluated_centers": 716
+    },
+    {
+      "sequence": "task1/train/mouse013_task1_annotator1",
+      "group": "mouse013",
+      "split": "train",
+      "original_frames": 2263,
+      "evaluated_centers": 224
+    },
+    {
+      "sequence": "task1/train/mouse014_task1_annotator1",
+      "group": "mouse014",
+      "split": "train",
+      "original_frames": 8994,
+      "evaluated_centers": 897
+    },
+    {
+      "sequence": "task1/train/mouse015_task1_annotator1",
+      "group": "mouse015",
+      "split": "train",
+      "original_frames": 7406,
+      "evaluated_centers": 738
+    },
+    {
+      "sequence": "task1/train/mouse016_task1_annotator1",
+      "group": "mouse016",
+      "split": "train",
+      "original_frames": 3692,
+      "evaluated_centers": 367
+    },
+    {
+      "sequence": "task1/train/mouse017_task1_annotator1",
+      "group": "mouse017",
+      "split": "train",
+      "original_frames": 6200,
+      "evaluated_centers": 617
+    },
+    {
+      "sequence": "task1/train/mouse018_task1_annotator1",
+      "group": "mouse018",
+      "split": "train",
+      "original_frames": 6127,
+      "evaluated_centers": 610
+    },
+    {
+      "sequence": "task1/train/mouse019_task1_annotator1",
+      "group": "mouse019",
+      "split": "train",
+      "original_frames": 4461,
+      "evaluated_centers": 444
+    },
+    {
+      "sequence": "task1/train/mouse020_task1_annotator1",
+      "group": "mouse020",
+      "split": "train",
+      "original_frames": 3714,
+      "evaluated_centers": 369
+    },
+    {
+      "sequence": "task1/train/mouse021_task1_annotator1",
+      "group": "mouse021",
+      "split": "train",
+      "original_frames": 11322,
+      "evaluated_centers": 1130
+    },
+    {
+      "sequence": "task1/train/mouse022_task1_annotator1",
+      "group": "mouse022",
+      "split": "train",
+      "original_frames": 9792,
+      "evaluated_centers": 977
+    },
+    {
+      "sequence": "task1/train/mouse023_task1_annotator1",
+      "group": "mouse023",
+      "split": "train",
+      "original_frames": 1838,
+      "evaluated_centers": 181
+    },
+    {
+      "sequence": "task1/train/mouse024_task1_annotator1",
+      "group": "mouse024",
+      "split": "train",
+      "original_frames": 8899,
+      "evaluated_centers": 887
+    },
+    {
+      "sequence": "task1/train/mouse025_task1_annotator1",
+      "group": "mouse025",
+      "split": "train",
+      "original_frames": 3770,
+      "evaluated_centers": 374
+    },
+    {
+      "sequence": "task1/train/mouse026_task1_annotator1",
+      "group": "mouse026",
+      "split": "train",
+      "original_frames": 3632,
+      "evaluated_centers": 361
+    },
+    {
+      "sequence": "task1/train/mouse027_task1_annotator1",
+      "group": "mouse027",
+      "split": "train",
+      "original_frames": 1987,
+      "evaluated_centers": 196
+    },
+    {
+      "sequence": "task1/train/mouse028_task1_annotator1",
+      "group": "mouse028",
+      "split": "train",
+      "original_frames": 1036,
+      "evaluated_centers": 101
+    },
+    {
+      "sequence": "task1/train/mouse029_task1_annotator1",
+      "group": "mouse029",
+      "split": "train",
+      "original_frames": 3041,
+      "evaluated_centers": 302
+    },
+    {
+      "sequence": "task1/train/mouse030_task1_annotator1",
+      "group": "mouse030",
+      "split": "train",
+      "original_frames": 1607,
+      "evaluated_centers": 158
+    },
+    {
+      "sequence": "task1/train/mouse031_task1_annotator1",
+      "group": "mouse031",
+      "split": "train",
+      "original_frames": 5096,
+      "evaluated_centers": 507
+    },
+    {
+      "sequence": "task1/train/mouse032_task1_annotator1",
+      "group": "mouse032",
+      "split": "train",
+      "original_frames": 5763,
+      "evaluated_centers": 574
+    },
+    {
+      "sequence": "task1/train/mouse033_task1_annotator1",
+      "group": "mouse033",
+      "split": "train",
+      "original_frames": 2497,
+      "evaluated_centers": 247
+    },
+    {
+      "sequence": "task1/train/mouse034_task1_annotator1",
+      "group": "mouse034",
+      "split": "train",
+      "original_frames": 1062,
+      "evaluated_centers": 104
+    },
+    {
+      "sequence": "task1/train/mouse035_task1_annotator1",
+      "group": "mouse035",
+      "split": "train",
+      "original_frames": 4879,
+      "evaluated_centers": 485
+    },
+    {
+      "sequence": "task1/train/mouse036_task1_annotator1",
+      "group": "mouse036",
+      "split": "train",
+      "original_frames": 96,
+      "evaluated_centers": 7
+    },
+    {
+      "sequence": "task1/train/mouse037_task1_annotator1",
+      "group": "mouse037",
+      "split": "train",
+      "original_frames": 5133,
+      "evaluated_centers": 511
+    },
+    {
+      "sequence": "task1/train/mouse038_task1_annotator1",
+      "group": "mouse038",
+      "split": "train",
+      "original_frames": 2796,
+      "evaluated_centers": 277
+    },
+    {
+      "sequence": "task1/train/mouse039_task1_annotator1",
+      "group": "mouse039",
+      "split": "train",
+      "original_frames": 3188,
+      "evaluated_centers": 316
+    },
+    {
+      "sequence": "task1/train/mouse040_task1_annotator1",
+      "group": "mouse040",
+      "split": "train",
+      "original_frames": 2643,
+      "evaluated_centers": 262
+    },
+    {
+      "sequence": "task1/train/mouse041_task1_annotator1",
+      "group": "mouse041",
+      "split": "train",
+      "original_frames": 1440,
+      "evaluated_centers": 141
+    },
+    {
+      "sequence": "task1/train/mouse042_task1_annotator1",
+      "group": "mouse042",
+      "split": "train",
+      "original_frames": 3351,
+      "evaluated_centers": 333
+    },
+    {
+      "sequence": "task1/train/mouse043_task1_annotator1",
+      "group": "mouse043",
+      "split": "train",
+      "original_frames": 974,
+      "evaluated_centers": 95
+    },
+    {
+      "sequence": "task1/train/mouse044_task1_annotator1",
+      "group": "mouse044",
+      "split": "train",
+      "original_frames": 3394,
+      "evaluated_centers": 337
+    },
+    {
+      "sequence": "task1/train/mouse045_task1_annotator1",
+      "group": "mouse045",
+      "split": "train",
+      "original_frames": 2713,
+      "evaluated_centers": 269
+    },
+    {
+      "sequence": "task1/train/mouse046_task1_annotator1",
+      "group": "mouse046",
+      "split": "train",
+      "original_frames": 5065,
+      "evaluated_centers": 504
+    },
+    {
+      "sequence": "task1/train/mouse047_task1_annotator1",
+      "group": "mouse047",
+      "split": "train",
+      "original_frames": 2751,
+      "evaluated_centers": 273
+    },
+    {
+      "sequence": "task1/train/mouse048_task1_annotator1",
+      "group": "mouse048",
+      "split": "train",
+      "original_frames": 1213,
+      "evaluated_centers": 119
+    },
+    {
+      "sequence": "task1/train/mouse049_task1_annotator1",
+      "group": "mouse049",
+      "split": "train",
+      "original_frames": 2885,
+      "evaluated_centers": 286
+    },
+    {
+      "sequence": "task1/train/mouse050_task1_annotator1",
+      "group": "mouse050",
+      "split": "train",
+      "original_frames": 1283,
+      "evaluated_centers": 126
+    },
+    {
+      "sequence": "task1/train/mouse051_task1_annotator1",
+      "group": "mouse051",
+      "split": "train",
+      "original_frames": 17326,
+      "evaluated_centers": 1730
+    },
+    {
+      "sequence": "task1/train/mouse052_task1_annotator1",
+      "group": "mouse052",
+      "split": "train",
+      "original_frames": 17946,
+      "evaluated_centers": 1792
+    },
+    {
+      "sequence": "task1/train/mouse053_task1_annotator1",
+      "group": "mouse053",
+      "split": "train",
+      "original_frames": 17472,
+      "evaluated_centers": 1745
+    },
+    {
+      "sequence": "task1/train/mouse054_task1_annotator1",
+      "group": "mouse054",
+      "split": "train",
+      "original_frames": 17319,
+      "evaluated_centers": 1729
+    },
+    {
+      "sequence": "task1/train/mouse055_task1_annotator1",
+      "group": "mouse055",
+      "split": "train",
+      "original_frames": 17637,
+      "evaluated_centers": 1761
+    },
+    {
+      "sequence": "task1/train/mouse056_task1_annotator1",
+      "group": "mouse056",
+      "split": "train",
+      "original_frames": 16420,
+      "evaluated_centers": 1639
+    },
+    {
+      "sequence": "task1/train/mouse057_task1_annotator1",
+      "group": "mouse057",
+      "split": "train",
+      "original_frames": 18617,
+      "evaluated_centers": 1859
+    },
+    {
+      "sequence": "task1/train/mouse058_task1_annotator1",
+      "group": "mouse058",
+      "split": "train",
+      "original_frames": 18423,
+      "evaluated_centers": 1840
+    },
+    {
+      "sequence": "task1/train/mouse059_task1_annotator1",
+      "group": "mouse059",
+      "split": "train",
+      "original_frames": 5495,
+      "evaluated_centers": 547
+    },
+    {
+      "sequence": "task1/train/mouse060_task1_annotator1",
+      "group": "mouse060",
+      "split": "train",
+      "original_frames": 4755,
+      "evaluated_centers": 473
+    },
+    {
+      "sequence": "task1/train/mouse061_task1_annotator1",
+      "group": "mouse061",
+      "split": "train",
+      "original_frames": 3996,
+      "evaluated_centers": 397
+    },
+    {
+      "sequence": "task1/train/mouse062_task1_annotator1",
+      "group": "mouse062",
+      "split": "train",
+      "original_frames": 7754,
+      "evaluated_centers": 773
+    },
+    {
+      "sequence": "task1/train/mouse063_task1_annotator1",
+      "group": "mouse063",
+      "split": "train",
+      "original_frames": 13170,
+      "evaluated_centers": 1314
+    },
+    {
+      "sequence": "task1/train/mouse064_task1_annotator1",
+      "group": "mouse064",
+      "split": "train",
+      "original_frames": 7150,
+      "evaluated_centers": 712
+    },
+    {
+      "sequence": "task1/train/mouse065_task1_annotator1",
+      "group": "mouse065",
+      "split": "train",
+      "original_frames": 8103,
+      "evaluated_centers": 808
+    },
+    {
+      "sequence": "task1/train/mouse066_task1_annotator1",
+      "group": "mouse066",
+      "split": "train",
+      "original_frames": 7410,
+      "evaluated_centers": 738
+    },
+    {
+      "sequence": "task1/train/mouse067_task1_annotator1",
+      "group": "mouse067",
+      "split": "train",
+      "original_frames": 7024,
+      "evaluated_centers": 700
+    },
+    {
+      "sequence": "task1/train/mouse068_task1_annotator1",
+      "group": "mouse068",
+      "split": "train",
+      "original_frames": 9838,
+      "evaluated_centers": 981
+    },
+    {
+      "sequence": "task1/train/mouse069_task1_annotator1",
+      "group": "mouse069",
+      "split": "train",
+      "original_frames": 11431,
+      "evaluated_centers": 1141
+    },
+    {
+      "sequence": "task1/train/mouse070_task1_annotator1",
+      "group": "mouse070",
+      "split": "train",
+      "original_frames": 12537,
+      "evaluated_centers": 1251
+    },
+    {
+      "sequence": "task1/test/mouse071_task1_annotator1",
+      "group": "mouse071",
+      "split": "test",
+      "original_frames": 23810,
+      "evaluated_centers": 2378
+    },
+    {
+      "sequence": "task1/test/mouse072_task1_annotator1",
+      "group": "mouse072",
+      "split": "test",
+      "original_frames": 18164,
+      "evaluated_centers": 1814
+    },
+    {
+      "sequence": "task1/test/mouse073_task1_annotator1",
+      "group": "mouse073",
+      "split": "test",
+      "original_frames": 19156,
+      "evaluated_centers": 1913
+    },
+    {
+      "sequence": "task1/test/mouse074_task1_annotator1",
+      "group": "mouse074",
+      "split": "test",
+      "original_frames": 18825,
+      "evaluated_centers": 1880
+    },
+    {
+      "sequence": "task1/test/mouse075_task1_annotator1",
+      "group": "mouse075",
+      "split": "test",
+      "original_frames": 18015,
+      "evaluated_centers": 1799
+    },
+    {
+      "sequence": "task1/test/mouse076_task1_annotator1",
+      "group": "mouse076",
+      "split": "test",
+      "original_frames": 19710,
+      "evaluated_centers": 1968
+    },
+    {
+      "sequence": "task1/test/mouse077_task1_annotator1",
+      "group": "mouse077",
+      "split": "test",
+      "original_frames": 18907,
+      "evaluated_centers": 1888
+    },
+    {
+      "sequence": "task1/test/mouse078_task1_annotator1",
+      "group": "mouse078",
+      "split": "test",
+      "original_frames": 19473,
+      "evaluated_centers": 1945
+    },
+    {
+      "sequence": "task1/test/mouse079_task1_annotator1",
+      "group": "mouse079",
+      "split": "test",
+      "original_frames": 17483,
+      "evaluated_centers": 1746
+    },
+    {
+      "sequence": "task1/test/mouse080_task1_annotator1",
+      "group": "mouse080",
+      "split": "test",
+      "original_frames": 6179,
+      "evaluated_centers": 615
+    },
+    {
+      "sequence": "task1/test/mouse081_task1_annotator1",
+      "group": "mouse081",
+      "split": "test",
+      "original_frames": 4932,
+      "evaluated_centers": 491
+    },
+    {
+      "sequence": "task1/test/mouse082_task1_annotator1",
+      "group": "mouse082",
+      "split": "test",
+      "original_frames": 7115,
+      "evaluated_centers": 709
+    },
+    {
+      "sequence": "task1/test/mouse083_task1_annotator1",
+      "group": "mouse083",
+      "split": "test",
+      "original_frames": 4881,
+      "evaluated_centers": 486
+    },
+    {
+      "sequence": "task1/test/mouse084_task1_annotator1",
+      "group": "mouse084",
+      "split": "test",
+      "original_frames": 5626,
+      "evaluated_centers": 560
+    },
+    {
+      "sequence": "task1/test/mouse085_task1_annotator1",
+      "group": "mouse085",
+      "split": "test",
+      "original_frames": 19200,
+      "evaluated_centers": 1917
+    },
+    {
+      "sequence": "task1/test/mouse086_task1_annotator1",
+      "group": "mouse086",
+      "split": "test",
+      "original_frames": 8617,
+      "evaluated_centers": 859
+    },
+    {
+      "sequence": "task1/test/mouse087_task1_annotator1",
+      "group": "mouse087",
+      "split": "test",
+      "original_frames": 11915,
+      "evaluated_centers": 1189
+    },
+    {
+      "sequence": "task1/test/mouse088_task1_annotator1",
+      "group": "mouse088",
+      "split": "test",
+      "original_frames": 8825,
+      "evaluated_centers": 880
+    },
+    {
+      "sequence": "task1/test/mouse089_task1_annotator1",
+      "group": "mouse089",
+      "split": "test",
+      "original_frames": 11274,
+      "evaluated_centers": 1125
+    }
+  ],
+  "stride": 10,
+  "offsets": [
+    -15,
+    -5,
+    -1,
+    0,
+    1,
+    5,
+    15
+  ],
+  "shapes": {
+    "train_x": [
+      50597,
+      7,
+      28
+    ],
+    "train_y": [
+      50597
+    ],
+    "test_x": [
+      26162,
+      7,
+      28
+    ],
+    "test_y": [
+      26162
+    ],
+    "train_groups": [
+      50597
+    ],
+    "test_groups": [
+      26162
+    ],
+    "train_units": [
+      50597
+    ],
+    "test_units": [
+      26162
+    ]
+  },
+  "class_counts": {
+    "train": [
+      1377,
+      14633,
+      2855,
+      31732
+    ],
+    "test": [
+      1261,
+      6110,
+      3191,
+      15600
+    ]
+  },
+  "publisher_md5": "8a02654fddae28614ee24a6a082261b8"
+}

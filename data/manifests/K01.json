@@ -1,0 +1,26 @@
+{
+  "benchmark_id": "K01",
+  "accessed_on": "2026-10-30",
+  "files": [
+    {
+      "url": "https://api.brain-map.org/api/v2/data/query.json?criteria=model%3A%3AApiCellTypesSpecimenDetail%2Crma%3A%3Aoptions%5Bnum_rows%24eqall%5D",
+      "path": "data/cache/K01/cells.json",
+      "bytes": 3975943,
+      "sha256": "c5e466bee1c9d0b112ef046929c68cae54846cdf8681cb5e059ae7284295669e"
+    }
+  ],
+  "prepared": {
+    "path": "data/cache/K01/data.npz",
+    "sha256": "932646e486e69d608258e44c7e5f0f99d9b83821c0b224074d5764312ea47f47"
+  },
+  "use_terms": "Allen Institute Terms of Use: research/noncommercial use and attribution; data are not covered by repository MIT code license",
+  "terms_url": "https://alleninstitute.org/terms-of-use/",
+  "attribution": "Allen Institute for Brain Science, Allen Cell Types Database (2015); https://celltypes.brain-map.org/",
+  "raw_count": 2333,
+  "eligible_count": 1813,
+  "exclusions": {
+    "human_cells": 413,
+    "mouse_sparsely_spiny": 107
+  },
+  "redistribution": "Cache excluded from Git; tracked downloader/manifests retain source and hashes"
+}

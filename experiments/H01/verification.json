@@ -1,0 +1,26 @@
+{
+  "n_train": 225,
+  "n_test": 135,
+  "train_shape": [
+    225,
+    64,
+    480
+  ],
+  "test_shape": [
+    135,
+    64,
+    480
+  ],
+  "pooled_balanced_accuracy": 0.5464426877470356,
+  "per_subject": {
+    "6": 0.5625,
+    "7": 0.5,
+    "8": 0.5741106719367589
+  },
+  "prediction_classes": [
+    0,
+    1
+  ],
+  "reviewed_on": "2026-10-30",
+  "scope": "adapter/data checks and fixed local reference only; no general-model evaluation"
+}

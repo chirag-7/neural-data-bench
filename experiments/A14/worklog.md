@@ -1,0 +1,3 @@
+# Acquisition and preparation log
+
+2026-10-30: Located primary DISK data-availability statement and followed concept record15800034 to immutable version18405201. Inspected CC BY4.0 metadata. Downloaded246,184,002byte raw Rat7M mocap archive. Verified seven MAT recordings and mocap named landmark arrays, including naturally missing limb coordinates. Selected six measured head/spine markers and predefined whole-animal split1–3 versus4–5 before model generation. Defined nonoverlapping31frame windows with60frame stride; complete-window filter explicitly restricts population. Defined synthetic seven-frame HeadF mask with all targets from unchanged measured arrays. No model runs, tuning, or label-derived selection have occurred during preparation.

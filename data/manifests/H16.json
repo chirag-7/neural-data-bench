@@ -1,0 +1,37 @@
+{
+  "benchmark_id": "H16",
+  "source_commit": "8d290661146c7189c98cc04812d37371d4b9426c",
+  "accessed_on": "2026-10-30",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/data/EEG_all_epochs.npy",
+      "path": "data/cache/H16/raw/EEG_all_epochs.npy",
+      "bytes": 18489424,
+      "sha256": "89350579007ab18daf918a26c9f730484ba3755e861bbf8a6f68d1657843a748"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/data/EOG_all_epochs.npy",
+      "path": "data/cache/H16/raw/EOG_all_epochs.npy",
+      "bytes": 13926480,
+      "sha256": "fe31f2c22efce5da7488a1047b6f05d678e80f48d22e20a70972aaf13784fa0a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/LICENSE",
+      "path": "data/cache/H16/raw/LICENSE",
+      "bytes": 1070,
+      "sha256": "9edecc3e64eff42ce4c7381349279fc9cdbc760b05384ae499c044bf8c40d010"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/code/benchmark_networks/data_prepare.py",
+      "path": "data/cache/H16/raw/data_prepare.py",
+      "bytes": 8444,
+      "sha256": "fb53d5329fd9eabe8fee2f901f6b77457f6a6afd741bf0e4a400de46ebd327fe"
+    }
+  ],
+  "prepared": {
+    "path": "data/cache/H16/data.npz",
+    "sha256": "60d29e6c9ae9c16485c8ef1832fcef775108e687ae304c711b2a72d677e025ac"
+  },
+  "seed": 20261030,
+  "redistribution": "Original pools/prepared samples stay in ignored local cache; URLs/hashes/code tracked"
+}

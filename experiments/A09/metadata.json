@@ -1,0 +1,36 @@
+{
+  "id": "A09",
+  "endpoint": "calms21-task1-3hz-custom",
+  "metric": "macro_f1",
+  "direction": "higher",
+  "task_type": "classification",
+  "classes": {
+    "0": "attack",
+    "1": "investigation",
+    "2": "mount",
+    "3": "other"
+  },
+  "input_shape": "(N,7,28)",
+  "output_shape": "(N,)",
+  "input_units": "image pixels",
+  "sample_rate_hz": 30,
+  "center_stride_frames": 10,
+  "offsets_frames": [
+    -15,
+    -5,
+    -1,
+    0,
+    1,
+    5,
+    15
+  ],
+  "grouping": "Official train/test animal-identity split; recording/mouse groups saved in data.npz",
+  "dataset_group": "CalMS21",
+  "baseline_name": "geometry ExtraTrees reference",
+  "baseline_is_specialist_sota": false,
+  "source": "https://doi.org/10.22002/D1.1991",
+  "terms": "Current record CC BY 4.0; paper CC-BY-NC-SA 2.0 discrepancy. Raw data cache only, do not redistribute until resolved.",
+  "evaluation_regime": "T3 code synthesis plus external supervised fitting",
+  "official_benchmark_equivalent": false,
+  "feature_description": "Seven temporal offsets [-15,-5,-1,0,1,5,15] frames. At each offset flatten original keypoints shape(2 mice,2 coordinates x/y,7 landmarks) in C order: resident x landmarks0:7, resident y landmarks0:7, intruder x landmarks0:7, intruder y landmarks0:7. Landmark order nose,left ear,right ear,neck,left hip,right hip,tail base. Pose estimates are inputs; human behavior labels are targets. Do not smooth across examples or recording boundaries."
+}
