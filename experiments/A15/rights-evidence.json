@@ -1,0 +1,14 @@
+{
+  "DAS_converted_release": {
+    "doi": "10.25625/ENKMJS",
+    "version": "1.0",
+    "license": "CC0-1.0"
+  },
+  "original_audio_annotations": {
+    "doi": "10.6084/m9.figshare.4805749",
+    "license": "CC BY4.0",
+    "source_metadata": "data/cache/A15/original-figshare-metadata.json"
+  },
+  "applied_terms": "Preserve CC BY4.0 attribution to original Nicholson,Queen,Sober and cite DAS adaptation; converted CC0 notice does not remove original attribution",
+  "modifications": "Deterministic80-recording subset,birdholdout,binary label merge,verified ms-to-s conversion,float16-to-float32 representation,NaNpadding,1ms rasterization; no source media publication"
+}

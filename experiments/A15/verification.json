@@ -1,0 +1,30 @@
+{
+  "benchmark_id": "A15",
+  "status": "prepared and verified; not frozen",
+  "source_files_verified": 163,
+  "source_md5_verified": true,
+  "license_checks": [
+    "DAS CC0-1.0",
+    "Original CC BY4.0"
+  ],
+  "unit_verification": {
+    "original_events": 90,
+    "all_labels_match": true,
+    "max_error_seconds": 8.881784197001252e-16,
+    "factor_from_mislabeled_DAS_columns": 0.001
+  },
+  "n_whole_recordings": 80,
+  "source_events": 6935,
+  "train_birds": 3,
+  "test_birds": 1,
+  "checks": [
+    "Deterministic filename-hash selection",
+    "No source recording or bird crosses outer split",
+    "Every raw waveform and valid/padding sample reconstructed",
+    "All original event bounds and1ms target rasterization reconstructed",
+    "Toy one-to-one matching and onset/offset tolerances"
+  ],
+  "method_runs": 0,
+  "model_calls": 0,
+  "real_slice_method_scores": 0
+}

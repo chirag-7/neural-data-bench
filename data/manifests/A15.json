@@ -1,0 +1,1636 @@
+{
+  "benchmark_id": "A15",
+  "accessed_on": "2026-10-31",
+  "source_doi": "10.25625/ENKMJS",
+  "dataset_version": "1.0",
+  "files": [
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33645",
+      "path": "data/cache/A15/bl26lb16_200412_0729.32144.npz",
+      "bytes": 4159888,
+      "sha256": "4f1acd605ffa1709b1e83832b9683b0ad83f16b2cdcb3abe3c47ab9ae5007ea9",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "5179c5c9e6fcb7ca951f9056bb0029c7"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33441",
+      "path": "data/cache/A15/bl26lb16_200412_0729.32144_annotations.csv",
+      "bytes": 850,
+      "sha256": "92144b7085341843d5c770350cb6238af99cd080c8d9f2741a592df11c6e318b",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "56ed689deac44edded097c1667e088a2"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33251",
+      "path": "data/cache/A15/bl26lb16_200412_1137.-32485.npz",
+      "bytes": 1623876,
+      "sha256": "989e0b4bdc64e0fe9b5bea76b8a66e392a0a722eca9b202277eee29cd4f0194d",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "8d84bd769588ae59dc029498df54e37f"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33237",
+      "path": "data/cache/A15/bl26lb16_200412_1137.-32485_annotations.csv",
+      "bytes": 3469,
+      "sha256": "0d4d2690b7f0e75de2b702a4b0cfc0c56d8dd0c98a5d515391bab5e701c890ce",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "4b164055a856a88d84d08e0b1966cdb2"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33074",
+      "path": "data/cache/A15/bl26lb16_200412_0742.32192.npz",
+      "bytes": 1567308,
+      "sha256": "2552fe3e89e567ceb257f93e8925b343bfe61db67bf029b3899e68e5c2f1725d",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "fdbf0fb5215b46d3653e3df3b0525696"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33472",
+      "path": "data/cache/A15/bl26lb16_200412_0742.32192_annotations.csv",
+      "bytes": 4723,
+      "sha256": "8fb5324cd6c197e09add2b5b0aab7859f75ef9d7c4b7354b17b7714388af5b79",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "d5a3b2194c6953e1be663a515ce05ad4"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33383",
+      "path": "data/cache/A15/bl26lb16_200412_0804.32288.npz",
+      "bytes": 3784280,
+      "sha256": "d569bd2ada4d5f497f7891fb615c2bbcd54083ae89b1c79dfeb3a05088e3bcc6",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "83d26eb164a5d7a53fdf83af438b409f"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33661",
+      "path": "data/cache/A15/bl26lb16_200412_0804.32288_annotations.csv",
+      "bytes": 6232,
+      "sha256": "9699c0cc54c7f9246e7db5f2f1b811783bc04023737397e27fce1455343ea0a5",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "59810b5a20c6757f24ae6d052f4822fc"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33656",
+      "path": "data/cache/A15/bl26lb16_200412_1455.-31109.npz",
+      "bytes": 1052998,
+      "sha256": "7af267b685b7daec771e4096175734a197e68f664d196b43fd6a53ff5e1b5392",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "43c247c978bfd03c49feeae9221353dc"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33090",
+      "path": "data/cache/A15/bl26lb16_200412_1455.-31109_annotations.csv",
+      "bytes": 3583,
+      "sha256": "a0763e7bf38c3242683e0ddfc240166bd6026773573208584797b9b71404560a",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "2b1d6438f58ea57021909dd5217b5bfd"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33064",
+      "path": "data/cache/A15/bl26lb16_190412_1341.22551.npz",
+      "bytes": 1675338,
+      "sha256": "aada5095d6e98e72585aac50a54c9d45feb10d58833a099a4d8267583843787f",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "57c045335cf62c6ebbe1fb995c829c18"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33140",
+      "path": "data/cache/A15/bl26lb16_190412_1341.22551_annotations.csv",
+      "bytes": 5683,
+      "sha256": "828f39dbe0435d4cde6a5c3874ed22b1539e47465caf59d31d1413ea161b1fcd",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "9a4fe5dd358f279e111adaabdc502c03"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33181",
+      "path": "data/cache/A15/bl26lb16_210412_0723.7915.npz",
+      "bytes": 1883234,
+      "sha256": "39fa5cc9ab720afee4438c7a96b966d72a7529947e6133a8669795557d5562d8",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "6617e967911714ed7e0cc1f65a992ed8"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33488",
+      "path": "data/cache/A15/bl26lb16_210412_0723.7915_annotations.csv",
+      "bytes": 4658,
+      "sha256": "2b690c29265e45c98d577820bf3f34f50a468cea8e5ed020360215f347f1a080",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "f41a5a03d874c0f5e49dbf53b14a3d5b"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33475",
+      "path": "data/cache/A15/bl26lb16_210412_0833.8277.npz",
+      "bytes": 1434256,
+      "sha256": "030bf835dc2364535d79ff1393c0404c46be357b6db9b7804f821c579e0af913",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "6d02bf1417038ebb1daa164fe4efb3d8"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33427",
+      "path": "data/cache/A15/bl26lb16_210412_0833.8277_annotations.csv",
+      "bytes": 4271,
+      "sha256": "a3c5b19b461f87948c95b32b370881fdf12c9b97e95665f2a95f68e402d14953",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "6425e4b4c38b75b6dee808859b010584"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33177",
+      "path": "data/cache/A15/bl26lb16_200412_1448.-31155.npz",
+      "bytes": 2122490,
+      "sha256": "6fea4f908ff229ebf8e2b9017cee30d7e6c06731e8ab4f71073a97d68fdb5eac",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "7b9f3b3f22647297f8f0a4beda8d761e"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33664",
+      "path": "data/cache/A15/bl26lb16_200412_1448.-31155_annotations.csv",
+      "bytes": 7417,
+      "sha256": "e8fa7fbfdd3bb1ad299d9d3059ab4ed8565ea9af6b1bbf27cffb0db5b5d9da1c",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "2115da42c60cd323e7316ef107ec1163"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33658",
+      "path": "data/cache/A15/bl26lb16_200412_1712.656.npz",
+      "bytes": 3132562,
+      "sha256": "18c132160b14ec19f2c455b5429ab2846281ec7fdbe2b2a754af31ca9f3f4aca",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "e08e81ef971e398cef64673c21f0f0e0"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33372",
+      "path": "data/cache/A15/bl26lb16_200412_1712.656_annotations.csv",
+      "bytes": 4720,
+      "sha256": "8fca560b55e312c5a6b7a1207e905080d29bd22050d22329a09c39c395d83abf",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "41bc16c1d062f9073c5af3154b72c58b"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33066",
+      "path": "data/cache/A15/bl26lb16_210412_0725.7921.npz",
+      "bytes": 1420248,
+      "sha256": "e3f2782180eafb209ec375381e483f945c8c72029f5227d6eabb0d91926d8354",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "3b157eaecc60370378e5ba1645ac49f0"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33149",
+      "path": "data/cache/A15/bl26lb16_210412_0725.7921_annotations.csv",
+      "bytes": 1755,
+      "sha256": "4a82cc813ddf9cb089bf6273d27b1b8e07b5a33d6f908fa72e65d53a87f3f7a0",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "f9e7699c06df501ee84a5cd6413dfb30"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33453",
+      "path": "data/cache/A15/bl26lb16_190412_1730.24384.npz",
+      "bytes": 543392,
+      "sha256": "180c521eee5907063bbb92b5c870b9738fe4a3f99971472a07699a78f6abd3a9",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "2a6b74fca5e8ba7eda1c92c076d0bfb6"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33248",
+      "path": "data/cache/A15/bl26lb16_190412_1730.24384_annotations.csv",
+      "bytes": 816,
+      "sha256": "27015f9313dac75fb649229e0aa86f4583e1bbd1e12a0b4c522bba49c01c9cd8",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "3a3109c9627a363102d88847be67c42d"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33209",
+      "path": "data/cache/A15/bl26lb16_200412_0808.32296.npz",
+      "bytes": 2502056,
+      "sha256": "fbb977c31ee78884f1322d86b2215fab0d6fd8cfb2350f341dfb26adf0ad0aaa",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "91e23dc310ff9d9ddc635e12807b5f51"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33097",
+      "path": "data/cache/A15/bl26lb16_200412_0808.32296_annotations.csv",
+      "bytes": 6449,
+      "sha256": "fb4f9c95bc74b4d80b04f1565c7c08202e7c3659520ba878306c924231c70424",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "77a5ab47d7fafa0304c446a1b8e7b968"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33391",
+      "path": "data/cache/A15/bl26lb16_190412_1023.20896.npz",
+      "bytes": 2248326,
+      "sha256": "a644eecb3281a351c5a62087c38f82350a0c54cc3b1c8ab4bf96a523ef56627c",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "0f4cc79a1ad7f94838495b21947f402c"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33296",
+      "path": "data/cache/A15/bl26lb16_190412_1023.20896_annotations.csv",
+      "bytes": 5786,
+      "sha256": "04b1285ee309bc8982e96edda043157bf6294ac2531657212e1958f1f8a4892b",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "930e2fe857e171c29a85fd1b677c7690"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33236",
+      "path": "data/cache/A15/bl26lb16_200412_0746.32229.npz",
+      "bytes": 403184,
+      "sha256": "2eb9118d3fe64f6df6c0c060879dc7051bc82cf1e05581adccae8453be32d451",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "20c047711140b1aaed3081e3e76db27d"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33041",
+      "path": "data/cache/A15/bl26lb16_200412_0746.32229_annotations.csv",
+      "bytes": 482,
+      "sha256": "e730ed0e6ad02b15b121fe4d9670873fc409f911156b454d447b1744f83460fe",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "46c2aa64317d141247e938589cd65a74"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33254",
+      "path": "data/cache/A15/bl26lb16_190412_0722.20147.npz",
+      "bytes": 1918368,
+      "sha256": "c6f331f3b504605db9dd5acffd4eefd85d2dfe5302d02781a796f24d673f0c3c",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "6659decfbd0c4e5b6dd449d2615f6660"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33414",
+      "path": "data/cache/A15/bl26lb16_190412_0722.20147_annotations.csv",
+      "bytes": 2575,
+      "sha256": "bf6740ab4100eff52368748fa73ba38bfb8ee14f8524577701736127474f08cd",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "fd400683f585cfee6f7413c3a25a11db"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33197",
+      "path": "data/cache/A15/bl26lb16_210412_0736.7992.npz",
+      "bytes": 1043434,
+      "sha256": "ab2c972bb6816a19ec2b72dfe777ceec233ed1403f3b41dde4b7fbcc8e737bf3",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "4d9374217659681c0863b4e60872b6b6"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33229",
+      "path": "data/cache/A15/bl26lb16_210412_0736.7992_annotations.csv",
+      "bytes": 2185,
+      "sha256": "3997867000b44f3c719139eea1d0040d87160495bcaff9fbf713775c31c88f30",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "037ebf1c62a24fc7815b43c580e28458"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33611",
+      "path": "data/cache/A15/bl26lb16_190412_0927.20692.npz",
+      "bytes": 1516554,
+      "sha256": "1e2ef36ce5ae604ac3237cfee327d6aebbb1ba7730963de12508e501812ccbd5",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "487828007a06d9d119712c71103fc047"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33393",
+      "path": "data/cache/A15/bl26lb16_190412_0927.20692_annotations.csv",
+      "bytes": 5622,
+      "sha256": "a7098f77f25d2e1eaacc5cbfcdcbca6d8dc17f597f058d21eac5d081d067c947",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "cd341864953b08f544a6b0b14c6d3620"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33681",
+      "path": "data/cache/A15/bl26lb16_190412_0721.20144.npz",
+      "bytes": 1931266,
+      "sha256": "effdc95a83174fa8bce47d04230857dad640bfc7b259d49e2195cd8e98e7abd6",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "5d1fce9e79c94eb2f4feced2e9967939"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33301",
+      "path": "data/cache/A15/bl26lb16_190412_0721.20144_annotations.csv",
+      "bytes": 2341,
+      "sha256": "d388fbaf4ca6ed930312a4d24fb7ebf0c3ce758a13fbd98fb158730db3254a28",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "b4eb3678cb87046e3e0f89f2ee616f54"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33345",
+      "path": "data/cache/A15/bl26lb16_200412_1451.-31134.npz",
+      "bytes": 2045904,
+      "sha256": "fd63894e067be09ed28f6f7b5cf3b5d4cbb941cc286d67bce43e36bdb49ccf64",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "cbe45fa7425f07d76c3f378588fc3d51"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33318",
+      "path": "data/cache/A15/bl26lb16_200412_1451.-31134_annotations.csv",
+      "bytes": 5909,
+      "sha256": "584ed5e378b38859414cfc923ac236b643d265bc7db91f0748af3d4290ee2a4f",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "d45b6d16d38fa285ae24aff93e48875f"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33428",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_230612_1057.18068.npz",
+      "bytes": 532570,
+      "sha256": "163eeee8a2316d38064122e689b158e4fb187eaed69f31c1812af75179a9b800",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "3da6a9b93eb6c7a9338f34da0b303eb3"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33166",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_230612_1057.18068_annotations.csv",
+      "bytes": 1085,
+      "sha256": "68f0b83c257dfda0a75f88578493348c6ac2a8a00a90740369a833981d06f73a",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "a21b661064c684d238f1fda2ad0b1a12"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33665",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_210612_1103.11013.npz",
+      "bytes": 746206,
+      "sha256": "c50c2d568cba9b6bd587ee57d4243796b5b3644b57be8ea95e21bb74e63a9bfb",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "a4c265cdf82715f5f2dec9c33c50c485"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33363",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_210612_1103.11013_annotations.csv",
+      "bytes": 1563,
+      "sha256": "0f9f53756527a3c5fd781bb1c98fd54e70bb5ec84ee5d3024d4b7c2f55fc66f9",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "0bd129eebd3483e249ed5a934eaf8277"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33146",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_0835.14038.npz",
+      "bytes": 831706,
+      "sha256": "17273bc3ed6c3c07044e36e924478d76c68963c3a09c89e8899defe4dc522b8b",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "32933b2775d14ef98df3a4fd2a8cad17"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33619",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_0835.14038_annotations.csv",
+      "bytes": 1363,
+      "sha256": "d990ac8a7ae32e09178f65f768a6029b009640efa38ff9eee03159a737829c68",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "08fad6b05e204c4c6e2a32eaf9cc7695"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33573",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_1027.14673.npz",
+      "bytes": 1004776,
+      "sha256": "5c27087ae4f60bd0e80b4dcb3a208425bc7732ab4c47bc323667ab33c08ae35e",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "e1d53d3836e64f06f73dfe7cbe472b2e"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33076",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_1027.14673_annotations.csv",
+      "bytes": 1978,
+      "sha256": "522758daad6bdc00aa6bfc34bc2a1184e64ff164e158b4e451a7076bc933cffe",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "48521e252858b1abdad8bbb348431de9"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33636",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_1809.16283.npz",
+      "bytes": 778998,
+      "sha256": "1b3055b688b51fb6cf0cea9fd81556ff32bd5b14fdb2205135f8fdbcce6bab79",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "007b035f75ca274661fe47095510f5d0"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33323",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_1809.16283_annotations.csv",
+      "bytes": 1521,
+      "sha256": "986750f492c630c4c386633ff91ed885e95014818fbb3521684c38bc6b28ffc1",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "38197675e162956ab71d58bfea7c4eb1"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33478",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_200612_0820.4995.npz",
+      "bytes": 750930,
+      "sha256": "98071e57d340cc679329e5c7a7605bcea5f1d5c5f8d962fff1e130fec451ff42",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "4c4bd9bec0d7b0feb8cbcd3321e7450a"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33112",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_200612_0820.4995_annotations.csv",
+      "bytes": 1496,
+      "sha256": "40d5c41e888a00993ebef4abed5b48049a957796f8b4010f6ca520a5867c7d33",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "23e2b9be19609a89320a0d62cde11f2b"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33568",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_210612_1111.11040.npz",
+      "bytes": 1108548,
+      "sha256": "ba8a57c02ee99b560fdfefaa998503de8aa2db8a8b279cdefaecc898b5dea5c0",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "3cee3032442fb363380a4150b06522e5"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33589",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_210612_1111.11040_annotations.csv",
+      "bytes": 2076,
+      "sha256": "acd98266619dbf6fddeafb0f46b62fd24d59803d527e2cf89722a05a2117a52a",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "3ae57fde2592d7c82bd633ac36b7898c"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33088",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_230612_0855.17386.npz",
+      "bytes": 665070,
+      "sha256": "bcaca4736e69860b9feff015d3a882d31946d72c29581a5e9696632234294464",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "da2e9fd5b4de78b552db38d5bed64ed2"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33518",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_230612_0855.17386_annotations.csv",
+      "bytes": 1190,
+      "sha256": "5c882d49b9d823447660c9e9a1c54c846337d088458cd95ba351946130771bb6",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "83f21a814e8d47fc3fc41e85f242e825"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/32991",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_0917.14282.npz",
+      "bytes": 935320,
+      "sha256": "1c1009219885a305b1ce01cb617b6865e9985162ed148b2001a930b22465fd64",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "ed473ab32aec9fd702854d167c809d7d"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33189",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_0917.14282_annotations.csv",
+      "bytes": 1876,
+      "sha256": "3ea5126d0926c40b1c09351007089376b46b8f591afc837003df7102c2240219",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "a4598db91c3817622f5f9b09fb8373bd"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33582",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_1046.14758.npz",
+      "bytes": 659716,
+      "sha256": "ab39e3c810019cc65a13e193e5e4a8915712adfd869c918a71f4ac5fd08e92c2",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "1d0522332681da6a76ea2b36bec7320b"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33313",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_1046.14758_annotations.csv",
+      "bytes": 1478,
+      "sha256": "24693616001553d0b20759cd929bb4d7b23cea0e52fb5be6ae1ccacae0b09e6b",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "90e25730b28781cd11b99b689785c5fb"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33017",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_210612_0855.10184.npz",
+      "bytes": 993188,
+      "sha256": "b7449b7c11999a996718e230439d218ba2d29e5d7fa05138d07a62916ef2e7ce",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "2c9a58f83828fea0c0abf54a7e690315"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33238",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_210612_0855.10184_annotations.csv",
+      "bytes": 2442,
+      "sha256": "aae79a43011c836bf4cd0a9121e26d65191639269a366bf8b9b9b4a508a09f9e",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "bd533fc4681240184b4e7d713d93a021"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/32932",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_2003.16450.npz",
+      "bytes": 1034684,
+      "sha256": "d0f666b7e2fcb4fd89e3a35c37a9c737535899e1669e9722bbff7a0d42560bae",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "4053bd39b17e30cff685f40939c5b0c7"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33024",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_2003.16450_annotations.csv",
+      "bytes": 2216,
+      "sha256": "0d9fce2bf5ddac7561140f9bcb746183f80e8c1ba8dca0358b31d4c4611ddc30",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "e965ba4a44d7aa3114919fb5453bb40f"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33191",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_0749.13716.npz",
+      "bytes": 822032,
+      "sha256": "bd8477207aa29fc382b77bbad4587b6cd554438cc6b28f3dcf9329ba7eddf628",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "f13969120885bf30a539e506889f3f17"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/32992",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_0749.13716_annotations.csv",
+      "bytes": 1430,
+      "sha256": "3935f73b9e147f2767cb2334c650b4dac26e8c477a41ecb489c1fc3295e82bf0",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "c24fdc5aa64e239c6ebe1f0abb7ded7c"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/32964",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_0812.13862.npz",
+      "bytes": 945454,
+      "sha256": "31777846c734a976c347c26b50bdce8c2401699126d75fb5327f0f93cb09d14f",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "430b25d5cd9f0e10e4ab112e9eca5cb5"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33599",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_0812.13862_annotations.csv",
+      "bytes": 1244,
+      "sha256": "4a0ab098762e8b507ff1df8b932ca3bc79045251b5dddd222cd9402d8194da89",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "a543e04aaa58683fd00a0db958ef60fc"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33426",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_230612_1020.17903.npz",
+      "bytes": 650852,
+      "sha256": "f8c1fe626d78698a9f6764fa1e60dff12545cad9b2bddfb21986aa0248f33372",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "702faa118818d8b6f3fa081529842025"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33590",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_230612_1020.17903_annotations.csv",
+      "bytes": 1138,
+      "sha256": "67ab5a3a5d3dcad3e9d66d902a1186dc135935bea445f52ca080578fe0ee5bc1",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "32693043d15988a55a8f68b54108df20"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33541",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_230612_0910.17494.npz",
+      "bytes": 929660,
+      "sha256": "7b992724cb5f3ec7cd162719d64c10847abb51ea1eb152b22e0a70fe00177df2",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "0c677511e4347d1f0e4b05564aed69a3"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33320",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_230612_0910.17494_annotations.csv",
+      "bytes": 1304,
+      "sha256": "59148a3f1f3fd13c554158d15caba7d413002fcb41970e0cc819afc65c57e259",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "6502b33506e188940fa67ff73f1bb583"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33045",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_0814.13882.npz",
+      "bytes": 670680,
+      "sha256": "3658dd5edbda8d57bfa24117236d8ad64042627d4777fd9fb56de2b912bafbee",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "375c4d663c4858bed01b526735061ae8"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33298",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_0814.13882_annotations.csv",
+      "bytes": 878,
+      "sha256": "4c19cd9344a254bc8a9c5388e8acc7dd8e48103eed00e242bf0f4fbd566b74c7",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "91b96b13f7449b55911db31d931d393f"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33044",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_1323.15362.npz",
+      "bytes": 837842,
+      "sha256": "4aad5d7c7789cb640ffb199cf6bea538d0c18906979630e888a26c4288a1b8c7",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "92c5c7a340b81acbe780bca08bd29f61"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33208",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_220612_1323.15362_annotations.csv",
+      "bytes": 1294,
+      "sha256": "32973d6c9ce900f9aa4c123908cb21eb8f70e4476f48d109164ffe96881de46a",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "e4cc28b89a267809be4409444889b8fc"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33092",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_190612_0955.1283.npz",
+      "bytes": 619964,
+      "sha256": "010d4959e35ff920ab7adb4b0ac26286782b7d73d976088afa7219fa8d849346",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "2c997b43a1505ebe2b0636b829603363"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33053",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_190612_0955.1283_annotations.csv",
+      "bytes": 1124,
+      "sha256": "80d99b13c2e85ac3ba4fe23486177d79ce53989da67bb4229cb33dbc0d1aafb6",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "3563294557f4e00f12320de5731d53b9"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33180",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_210612_0907.10285.npz",
+      "bytes": 764650,
+      "sha256": "f175ad5339446a220a3ee7f178f574b99f169742d6ca3b1bd9d833cd0b1a466b",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "5471a3419b7e942bff647a4683b6da48"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33081",
+      "path": "data/cache/A15/gr41rd51__3part_SYLc_th4191_belowhits_210612_0907.10285_annotations.csv",
+      "bytes": 1532,
+      "sha256": "fbb02215ab396819bb6f534d38f0b59bf614fd7c4dae02832c74161cd73a485f",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "bd9731bd322b07c858e362e07b5f249f"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33055",
+      "path": "data/cache/A15/gy6or6_baseline_260312_0907.3729.npz",
+      "bytes": 805382,
+      "sha256": "b030dcb41bca3673274d74690778d138b9804e215f80eb1520a755a5f8fe97b9",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "edd37f60e512739542a4f0811703acb0"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33385",
+      "path": "data/cache/A15/gy6or6_baseline_260312_0907.3729_annotations.csv",
+      "bytes": 2447,
+      "sha256": "9332dec4c5a353344f3268bd5b7265b9c0f57d4552abe8161e5c033153f6a791",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "c4f024fcd73b71b41c9e44dbea8c9a52"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33075",
+      "path": "data/cache/A15/gy6or6_baseline_230312_1010.988.npz",
+      "bytes": 545792,
+      "sha256": "24245ec61919d070723e5ec988ce1f4291d32043b4e2969fc8402460b51f1d14",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "ac191246ae7b4a4762f63fbca3c8a114"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33660",
+      "path": "data/cache/A15/gy6or6_baseline_230312_1010.988_annotations.csv",
+      "bytes": 1259,
+      "sha256": "b4ef586b90dfc22b343c8dd71844da0a5b50238d37b15f1629fcd4ceef173a9c",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "899ff812b32c6dde4e07d69afc0bb84b"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33316",
+      "path": "data/cache/A15/gy6or6_baseline_250312_1641.1770.npz",
+      "bytes": 707966,
+      "sha256": "e25747d52d449e0058907621b7c1171174f483cf0d4f4405cc7e67bd873033d3",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "c8fa972b0bf5d4f8deab48f379d21ac8"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33504",
+      "path": "data/cache/A15/gy6or6_baseline_250312_1641.1770_annotations.csv",
+      "bytes": 2118,
+      "sha256": "4b40be9cc97e0565dae6a02454702c2d464dff962bc84f9dab841cbe898df55c",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "a1821ee52a31e4f002c578cac8c1be27"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33513",
+      "path": "data/cache/A15/gy6or6_baseline_220312_0915.147.npz",
+      "bytes": 699854,
+      "sha256": "837565e44cb6b0d205de8856d3d65acb036097c0d2de4ab5958214fd2be36183",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "1950368ed2ef9cf0d37ab854a7a2e492"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33280",
+      "path": "data/cache/A15/gy6or6_baseline_220312_0915.147_annotations.csv",
+      "bytes": 1665,
+      "sha256": "a768a7ea0b91876c109e1b9c6730a6173a5a5ef072fb24b9e505781cbe0f0522",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "1b32563e50df66ad9aab07a7c0f144c1"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33271",
+      "path": "data/cache/A15/gy6or6_baseline_230312_0934.701.npz",
+      "bytes": 679838,
+      "sha256": "60996a674fa218cb90bdfa78e23c1b802ba0214f268866823251db859ac07772",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "cfc3050b6334819397b59e5451e68b95"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33067",
+      "path": "data/cache/A15/gy6or6_baseline_230312_0934.701_annotations.csv",
+      "bytes": 1715,
+      "sha256": "72fb51b2140e45ad7fa4061f261f856e87c77ad6bb1e968339382467c0271c4c",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "11337750710a40f42ee10c934249d4e2"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33593",
+      "path": "data/cache/A15/gy6or6_baseline_240312_1717.4398.npz",
+      "bytes": 793462,
+      "sha256": "2a65ecec05acec12696f1234088f285e6eab7b96a1854ba07c8b17536261d8f8",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "625019eee8da90ae9e5d647ddbf905dc"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/32958",
+      "path": "data/cache/A15/gy6or6_baseline_240312_1717.4398_annotations.csv",
+      "bytes": 2232,
+      "sha256": "b1850144a8b0630ec633af860422ea6f081a6833fd5bc692ed39c99067e9dea0",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "bd4890d597f3b13fb7778b7a6074c1ad"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33241",
+      "path": "data/cache/A15/gy6or6_baseline_250312_1906.2374.npz",
+      "bytes": 727942,
+      "sha256": "3b5894e0bf3dae2076a8e1232860e23fda9a2d80e9650e03421cdf3b101bd85f",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "cd63ee5fae21ad4c4b5bad6449e06cb2"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33265",
+      "path": "data/cache/A15/gy6or6_baseline_250312_1906.2374_annotations.csv",
+      "bytes": 2113,
+      "sha256": "b0066a3aefe524afe472066904cfce92bf68df2f05f31f25d5eba76ffe72bd7b",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "84306c2a23aa334c385374dcfb674ef0"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33051",
+      "path": "data/cache/A15/gy6or6_baseline_250312_1304.630.npz",
+      "bytes": 569020,
+      "sha256": "0846a089816b058ebe52282011b742a093c01b1b4681d7d54dcbebe6922cef03",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "6e823276ea39cd3ab7900b6c6d38165d"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33105",
+      "path": "data/cache/A15/gy6or6_baseline_250312_1304.630_annotations.csv",
+      "bytes": 1569,
+      "sha256": "d0bb5db6034c7ce73ce2cfdf89e34458c06a2b7aa73c03d5bba22358c6c34a15",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "7a9b72d4b2f1622a2f344e4f5c164efc"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33545",
+      "path": "data/cache/A15/gy6or6_baseline_250312_1213.324.npz",
+      "bytes": 481496,
+      "sha256": "45843f3ea737cca4b890300a340049d750f466982ba9f0349d1ae49da3c1a99f",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "7cc5b2178c70ffc9346c93d7d795eeb0"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33402",
+      "path": "data/cache/A15/gy6or6_baseline_250312_1213.324_annotations.csv",
+      "bytes": 1170,
+      "sha256": "a05e85c177d28e5aa33748fb0b1d07b05ce1a26b8cc65500441438c25c736d3b",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "8ed9df068b7a03f708e48df7fae3de73"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33448",
+      "path": "data/cache/A15/gy6or6_baseline_240312_1030.2099.npz",
+      "bytes": 722824,
+      "sha256": "185a4d0bbb7b04ec38d523b52173ec926fbcb36feeb662ae9cc7f60b35b3e95d",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "37121fa02c64a7f26b271aa5d350b9e6"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33101",
+      "path": "data/cache/A15/gy6or6_baseline_240312_1030.2099_annotations.csv",
+      "bytes": 2001,
+      "sha256": "e705ac9ede3cb427f3d5da599a31f7c6645a0b0f8163234357a4c3ba58afbb24",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "32a7fd9401f2c27c80ed50c15190d02d"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33480",
+      "path": "data/cache/A15/gy6or6_baseline_220312_1533.1490.npz",
+      "bytes": 1027608,
+      "sha256": "492e588c667d97cb57f1969580e690d5a658a3a2d3d597179e0918eeec342a11",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "a061fca38a110414f8135856ae786211"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33612",
+      "path": "data/cache/A15/gy6or6_baseline_220312_1533.1490_annotations.csv",
+      "bytes": 2823,
+      "sha256": "f7251c24025ecf09e1c93b464c7d3a9f0d63fe7a5425b94603ebcc6ce7f0344f",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "a0ca9f6ca8c81d3e03e3595da8389196"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33337",
+      "path": "data/cache/A15/gy6or6_baseline_250312_1420.1052.npz",
+      "bytes": 566170,
+      "sha256": "dd6ca3ef8abad3fe5666c8bf9921e83bb2e5740f119f980a6d65bd29e4a3ef2b",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "bae6f02b67a6b50f6e8f99f29012173f"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33306",
+      "path": "data/cache/A15/gy6or6_baseline_250312_1420.1052_annotations.csv",
+      "bytes": 1532,
+      "sha256": "e84f055cd73836f9f5f8b8ef08f881492df204036637db4f478d1c83802bc38c",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "439fe8601688745446c77d5237c6e198"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33514",
+      "path": "data/cache/A15/gy6or6_baseline_220312_1249.953.npz",
+      "bytes": 651636,
+      "sha256": "49ca4650f78473887647c9e87121916b06fb9f0951768823a50c4e0bd48c3682",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "ffd71a4233a68740017235f6671cbd55"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33269",
+      "path": "data/cache/A15/gy6or6_baseline_220312_1249.953_annotations.csv",
+      "bytes": 1652,
+      "sha256": "8525c86a22c927aa1f3affd45c324d411421a0baf4cfa620065bfc0a5f82b10b",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "bcef507fc8a4b9622a0c06ae40972816"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33330",
+      "path": "data/cache/A15/gy6or6_baseline_250312_1101.6748.npz",
+      "bytes": 657242,
+      "sha256": "19363136dc069abe3f083747cc42b705075fdd68dbb1aa09a117717644c2efa6",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "4f55c6d6a9172c48088f714bd4bfb05e"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33500",
+      "path": "data/cache/A15/gy6or6_baseline_250312_1101.6748_annotations.csv",
+      "bytes": 1924,
+      "sha256": "8b59e8cc4d2dee731f3874a75199faeb3d0062a21c6d224f39b8561f5871b473",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "44f43fe983d94e838ee7e17da0d2bf99"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/32954",
+      "path": "data/cache/A15/gy6or6_baseline_240312_1938.4930.npz",
+      "bytes": 1127772,
+      "sha256": "644ade2af1c65cca2e0adbbe7bb46a1191c1630d88e906ae65a6c7ec093c3a1b",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "6ec0c4430ad689213d8e40a5218adf13"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33608",
+      "path": "data/cache/A15/gy6or6_baseline_240312_1938.4930_annotations.csv",
+      "bytes": 3210,
+      "sha256": "d5e1f3a2062c6c557ff2bfc390240cdef004e3953d528f6a5ba3f20d0c7e8486",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "aeca858055e5424e2bb29a4aa9d834b0"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33286",
+      "path": "data/cache/A15/gy6or6_baseline_240312_1357.3417.npz",
+      "bytes": 871238,
+      "sha256": "b3fdb81c7a3d34f6215639c866d569db8c9bf0b82ef8224d8d34e71d420e53ef",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "6bee8749edf6c84971d37cd33a13add6"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33389",
+      "path": "data/cache/A15/gy6or6_baseline_240312_1357.3417_annotations.csv",
+      "bytes": 2486,
+      "sha256": "98af67a8891c842403ea22ad15cbf6b138ec71aa4ca341466adad7938c2182e0",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "b3e5dcc8ed40e7dacff2c163a6f6cdee"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33635",
+      "path": "data/cache/A15/gy6or6_baseline_240312_1515.3758.npz",
+      "bytes": 630790,
+      "sha256": "203f88922af460f6cfbefd549367ef0f8c51b5ad7eef08a4a43af81bf795bbce",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "dab98b2c4d51c734a3c3618e2a71f39f"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33194",
+      "path": "data/cache/A15/gy6or6_baseline_240312_1515.3758_annotations.csv",
+      "bytes": 1860,
+      "sha256": "b44930c224b5385b4381ddfee959ffdd495ad5336de3b7799e964bb67f82bfbc",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "eab7050a56807e42d68c4e303c6ead52"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33048",
+      "path": "data/cache/A15/gy6or6_baseline_220312_1203.863.npz",
+      "bytes": 924462,
+      "sha256": "4fef96fb72f4b7e3b181893941b5bd36c933fde744a9dca55af0b75ffaf69dcf",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "3631ab2412ec5e2fea67dc3bef1ad8ea"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33485",
+      "path": "data/cache/A15/gy6or6_baseline_220312_1203.863_annotations.csv",
+      "bytes": 2564,
+      "sha256": "7be31f3440883e4fb6d2596696f7acb520e4eca46e068ad2948dbd2c352520bf",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "204757bb32d0c79c5708acead1f02602"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/32946",
+      "path": "data/cache/A15/gy6or6_baseline_220312_1016.506.npz",
+      "bytes": 667962,
+      "sha256": "a194ad4d75233ec7e1d0cdcd5fcc902f7c72496b8ce5ea56c3c2c90a86ef1fb0",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "8557ecb0e8b93469fb29df54e0aa1d44"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33641",
+      "path": "data/cache/A15/gy6or6_baseline_220312_1016.506_annotations.csv",
+      "bytes": 1813,
+      "sha256": "2a05909ed132959823df91ab8e90109f57b94c48c2a46b168e845eda95f78e23",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "6bf1513c189e7aaa35cbedf0e2751924"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33671",
+      "path": "data/cache/A15/gy6or6_baseline_240312_1255.3001.npz",
+      "bytes": 562112,
+      "sha256": "cd998b80282c450ca039ebaf8c601f9b067d7c7c708286cf38289c37d089ced9",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "691bd981f661601f2433d87c8185a71d"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33528",
+      "path": "data/cache/A15/gy6or6_baseline_240312_1255.3001_annotations.csv",
+      "bytes": 1807,
+      "sha256": "ff590a8a46e3ccc4184e23b502ef8e05336a6fa289194799240e2645b98a2c86",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "3cebe44d88a190cc5d1ad63d7b189d39"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33174",
+      "path": "data/cache/A15/or60yw70_290912_1501.6648.npz",
+      "bytes": 765168,
+      "sha256": "818fafdd5ceafa5f11a29d2fefb76b6ef6785562e8a244e0ba8caff73168475a",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "02b45457caac98407662de81edd4e605"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/32963",
+      "path": "data/cache/A15/or60yw70_290912_1501.6648_annotations.csv",
+      "bytes": 1754,
+      "sha256": "3c6b5f5f8fa829c1196fdd495087c7424c9b611dde49c731a905273685af4f2e",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "8c9f45ca87e6e804aff8e535b16ef940"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33011",
+      "path": "data/cache/A15/or60yw70_280912_1748.2341.npz",
+      "bytes": 809938,
+      "sha256": "b873d78563adce5d82e530d0f9b39801bc8927dbf3b8b64359d1b13d766b0754",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "b2ba876add3e20dcaec650ec9e2f1ab2"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/32953",
+      "path": "data/cache/A15/or60yw70_280912_1748.2341_annotations.csv",
+      "bytes": 1639,
+      "sha256": "45c95bd1c64c9ab247f777ee3fdfa9b8dcf445718df032afd5498cb24a51f8f3",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "64a4ae3b0034c66d704211c655493fd6"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33637",
+      "path": "data/cache/A15/or60yw70_300912_1010.1381.npz",
+      "bytes": 837946,
+      "sha256": "c4063bedf9085a11a250396e6372a05e96760f043d33d7096669194852df13d4",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "cca950ef4a140077c2f4f8d9912c2389"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33093",
+      "path": "data/cache/A15/or60yw70_300912_1010.1381_annotations.csv",
+      "bytes": 2123,
+      "sha256": "d32fd52ffce10720bbd773e0afcecb11d2cdc49d97ac706b99ff570e80614d64",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "e02fca1c41eac0f5b050176cb84d3fa8"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33147",
+      "path": "data/cache/A15/or60yw70_290912_0945.4734.npz",
+      "bytes": 828974,
+      "sha256": "69e5413ff7f7279520483f47db42fd44854c0adc043dd1ef3b593806092dfdde",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "71b929686deea7e23305cc4add35897e"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33618",
+      "path": "data/cache/A15/or60yw70_290912_0945.4734_annotations.csv",
+      "bytes": 1934,
+      "sha256": "c12f17aea3971e34b8b2b6b984129d38a7c02f0752744a713e8a545364b4155a",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "c0c3c620db6fa2bae19d2e15dd271bbe"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33202",
+      "path": "data/cache/A15/or60yw70_290912_1417.6361.npz",
+      "bytes": 1162592,
+      "sha256": "bb120b605905435fe806d9a4aa73a8e0e83cc7042266d274996586e1538af99e",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "7ae09c532231d9500ea9e3136eda579b"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33333",
+      "path": "data/cache/A15/or60yw70_290912_1417.6361_annotations.csv",
+      "bytes": 2310,
+      "sha256": "ef9d71bbb950d71c076131e6abe71b4ccc54eefe98be21b08dbd4c2eac456e31",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "2c543b7d61912b60fc2e2c06138c794b"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33172",
+      "path": "data/cache/A15/or60yw70_300912_0810.703.npz",
+      "bytes": 766126,
+      "sha256": "91375de7108b3e4cde4d97a28726d3bc43dd91eacd571cdfb9a5b0d41ae23c20",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "49b44c7540754e8d45f13856fb45fe7c"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33440",
+      "path": "data/cache/A15/or60yw70_300912_0810.703_annotations.csv",
+      "bytes": 1366,
+      "sha256": "890178508fc837ae1142ff7fc4f5cf308b1789e2b34e6b2816644c58f3f7a301",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "9a1f6be5ca79573523a809a39bfcb7b4"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33167",
+      "path": "data/cache/A15/or60yw70_290912_2007.8075.npz",
+      "bytes": 755264,
+      "sha256": "77e4f6e3e480cdfbd8b27a5eba78056de942a92610cb498810171101fa572a2f",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "2c1c00316369b047d72dc30a9afec474"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33072",
+      "path": "data/cache/A15/or60yw70_290912_2007.8075_annotations.csv",
+      "bytes": 1834,
+      "sha256": "023f8ce8c15d5b43a4abfffe1247d730213cab4e2334f2c85b3735ba8f016d1e",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "b0ec149afbacf96f0cabbe10bc084654"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33657",
+      "path": "data/cache/A15/or60yw70_300912_0819.769.npz",
+      "bytes": 1027516,
+      "sha256": "c43b6cf9e31c1c2552329a0670c83b95fa96231f84820ec75080ff6014fd6ff5",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "f6165a74fced3cf4ea079be2f2bfba0a"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33190",
+      "path": "data/cache/A15/or60yw70_300912_0819.769_annotations.csv",
+      "bytes": 2264,
+      "sha256": "735b9b023d4d03f837169d70efb67c1eb012149a624a1f9db139dcc2be13d7e5",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "19aeeb194b0bb001f33bb28441261f33"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33054",
+      "path": "data/cache/A15/or60yw70_300912_1417.2530.npz",
+      "bytes": 1175116,
+      "sha256": "9bc245099851de6bc1fe2727f8b7ea0d085e0eaad835d6df5e5d00563f6db05c",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "dd11a7b38f3f55916b6b409016473e82"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33482",
+      "path": "data/cache/A15/or60yw70_300912_1417.2530_annotations.csv",
+      "bytes": 3449,
+      "sha256": "1d53b7a35f9b4b596bc891d708455598b84e8520c511f4206b193c5a4bbe623d",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "589baf2a4cabd12f30cb6a96cb1b2ae4"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/32972",
+      "path": "data/cache/A15/or60yw70_011012_1000.1370.npz",
+      "bytes": 768900,
+      "sha256": "847f31dfba6aa122ed9ca2cbb97c1fb781e6d270552fec1454776908b77f60d2",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "178529dba397ec24a7379f0f7abeb34f"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33550",
+      "path": "data/cache/A15/or60yw70_011012_1000.1370_annotations.csv",
+      "bytes": 2042,
+      "sha256": "f0e5972a1c2fe8ea21ed3cf5602aa49d257f1a7ca0ebb3feccf4452462027c2e",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "0149c99a16daca2a5cbadf5d35a64c91"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33648",
+      "path": "data/cache/A15/or60yw70_300912_1509.2782.npz",
+      "bytes": 1062360,
+      "sha256": "6a64480122c58eb63e546109c8a1f2669ab85f4b623e16abcf98e195d5735833",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "16c61370cd52fd5f3d219cb05e437fae"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33043",
+      "path": "data/cache/A15/or60yw70_300912_1509.2782_annotations.csv",
+      "bytes": 3238,
+      "sha256": "a23131abd9d6f40db1ac43c3e37f431ded5758beb1475b27fc4a7fdabe4817b8",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "ab89cfbb9c808358cfa70390ffcad9d3"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33666",
+      "path": "data/cache/A15/or60yw70_270912_1747.4760.npz",
+      "bytes": 1150434,
+      "sha256": "ad546b209c2575c49a9e2311044320870bf151eaf4e5dbf8ccefdf6565ac2092",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "9e9ed1835f4e22d8a89183c71b854de2"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/32949",
+      "path": "data/cache/A15/or60yw70_270912_1747.4760_annotations.csv",
+      "bytes": 2917,
+      "sha256": "157bb5fea90953a41bde26345a4bb97f26434000a9b2d01fecb939a3a90e0970",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "4736dbea561ac1e4e33fc70f79e3886c"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33338",
+      "path": "data/cache/A15/or60yw70_290912_2012.8110.npz",
+      "bytes": 894036,
+      "sha256": "18cd272f27c7f6202c0922b3c0a7a6497da70a26aed524dbb7389794d65792cd",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "3729c100ebe7c2c6e669ae722e826643"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33542",
+      "path": "data/cache/A15/or60yw70_290912_2012.8110_annotations.csv",
+      "bytes": 2355,
+      "sha256": "d3d8d74d5656aadbb8b09b2bfe8c5bb0f25bc3f76b5a1916013eab639684c835",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "db3b176e0393a56b1afc477ecb2a629d"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33515",
+      "path": "data/cache/A15/or60yw70_270912_1236.2939.npz",
+      "bytes": 980862,
+      "sha256": "9a1fb16a8962a1c81bc3a15a78bf59ebe65d847e5a5a95e6653b30d602ba20eb",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "3b7250af1d8d663347ef76d8c0a6c2b3"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33328",
+      "path": "data/cache/A15/or60yw70_270912_1236.2939_annotations.csv",
+      "bytes": 2482,
+      "sha256": "fc9c85167888fcc111c3c285a807ff934054ae2e5645c3fedd9d6251f4f5c0a4",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "d9aedc50df30dc1ab8fa54a6f1502d01"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33549",
+      "path": "data/cache/A15/or60yw70_290912_1553.6928.npz",
+      "bytes": 570452,
+      "sha256": "3f3f7dd553fbc7a77dbaee9a97232c35ef831effd6235643e6dc4f6942940db6",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "dbdfcfa1e8d017a7c6a6b4531d2b1577"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33577",
+      "path": "data/cache/A15/or60yw70_290912_1553.6928_annotations.csv",
+      "bytes": 853,
+      "sha256": "491eda561290c289e9012a742a4326f8bdebcad8d620811d5bd189100db252bd",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "a720c0243fc45371e58b204086706d9f"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33451",
+      "path": "data/cache/A15/or60yw70_011012_0951.1305.npz",
+      "bytes": 569360,
+      "sha256": "9aa8b7b34344bc78ed9f77df0d767a5fe3bf76267a0fc1a1f8ae1669ac5e748b",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "7c1d21db11483bb54e2ec41ebbcf720d"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33136",
+      "path": "data/cache/A15/or60yw70_011012_0951.1305_annotations.csv",
+      "bytes": 1495,
+      "sha256": "98dcbf1fc84f6f69475b7c3e49a1dfe11ede56a7b0a285896ed64964b2a669ed",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "9e0953a111465257d0bc8081c25191bf"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33523",
+      "path": "data/cache/A15/or60yw70_300912_1243.2146.npz",
+      "bytes": 865604,
+      "sha256": "744925f11f8589d8a8b0002d2d2173b44d354dbc1a898351712d3f4371505f3e",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "de3078258b9367bdde2decf9c7ba7600"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33388",
+      "path": "data/cache/A15/or60yw70_300912_1243.2146_annotations.csv",
+      "bytes": 2484,
+      "sha256": "b837a1dd3fa9d94daeeabfb3ecff0d552da3ec6efc75dedb0840f0d5472499c5",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "6def4e96a331a40e439cba084ab7d6c1"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33677",
+      "path": "data/cache/A15/or60yw70_280912_1205.780.npz",
+      "bytes": 756952,
+      "sha256": "1ab1ffa2b9df324b9f5663d1e0fe87e84479e89a465a90b319128b22172ecf84",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "3e4895b125450a62db16066b2fdbb043"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/32981",
+      "path": "data/cache/A15/or60yw70_280912_1205.780_annotations.csv",
+      "bytes": 1795,
+      "sha256": "4e26b43b6f21aae5c65035a5785bec7bf81cc79e54a04c0bf280d30660f15b64",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "b8df957c4df745d1ce74b417b6771723"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33669",
+      "path": "data/cache/A15/or60yw70_280912_1600.1815.npz",
+      "bytes": 970652,
+      "sha256": "52564d3198a9aab85b749d7efcbef681be10f47b76fd4bc73a179e4d13791db4",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "8a19ea00748e2d91e35787568000fbed"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33139",
+      "path": "data/cache/A15/or60yw70_280912_1600.1815_annotations.csv",
+      "bytes": 2457,
+      "sha256": "97000e661468500408ec2901692321789958083bf397675a4f248ae67d602667",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "6b94f8b9529f7fd970d4f4eb85852c1a"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33407",
+      "path": "data/cache/A15/or60yw70_300912_1217.2002.npz",
+      "bytes": 428300,
+      "sha256": "e512655e9605e0281c18e728d8eaac8fc7530dcaff92ea5ce3ff210c1380cebf",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "8cf2dad8e641ca7f9a911a51ac42802d"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/access/datafile/33436",
+      "path": "data/cache/A15/or60yw70_300912_1217.2002_annotations.csv",
+      "bytes": 556,
+      "sha256": "3293a521e0486d2519a3e1ae8030e6f4d3fa91d24a7ec598fefab9e03d477c80",
+      "upstream_checksum": {
+        "type": "MD5",
+        "value": "0e41a190d74aaa955f88d7e97d736d88"
+      }
+    },
+    {
+      "url": "https://data.goettingen-research-online.de/api/datasets/32924/versions/1.0",
+      "path": "data/cache/A15/das-dataset-metadata.json",
+      "bytes": 508820,
+      "sha256": "5e1e760685e7734a5d90edc48c954d489a326d6ad9e2abce208147d5f3d07a98"
+    },
+    {
+      "url": "https://api.figshare.com/v2/articles/4805749",
+      "path": "data/cache/A15/original-figshare-metadata.json",
+      "bytes": 19425,
+      "sha256": "bf6f6dce348294159fe8ca72e04be425542b9ed1842003e9800d30ffe1f67d96"
+    },
+    {
+      "url": "https://api.figshare.com/v2/file/download/41668992",
+      "path": "data/cache/A15/source-gy6or6-260312.tar.gz",
+      "bytes": 19214942,
+      "sha256": "28e8d2787d1faaa177d67f786cf77a03706189ca09933e5f6784547e9023e628"
+    }
+  ],
+  "source_bytes": 105793176,
+  "prepared": {
+    "path": "data/cache/A15/data.npz",
+    "bytes": 78627877,
+    "sha256": "b365f56d812150311fb55ac58ab92b416cdd575c5b2b47badd39a7bec85e0804"
+  },
+  "selection": "20smallest SHA256(audio filename) per bird, paired annotations, last lexical bird held out",
+  "terms": "DAS converted release CC0-1.0; underlying original audio/annotations CC BY4.0 with attribution retained",
+  "attribution": "Steinfath,Palacios-Munoz,Rottschaefer,Yuezak,Clemens(2021),eLife10:e68837; Nicholson,Queen,Sober(2017),Bengalese Finch Song Repository,doi:10.6084/m9.figshare.4805749; Clemens(2021),DAS Bengalese finch data,doi:10.25625/ENKMJS",
+  "raw_redistribution": "All original data cached locally/excluded from source control; retain hashes/manifests and acquisition code"
+}

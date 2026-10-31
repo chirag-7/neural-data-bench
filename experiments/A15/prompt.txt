@@ -1,0 +1,46 @@
+Single-shot neuroscience numerical procedure construction. Do not call tools, browse, read files or execute during generation. Return only JSON fields description and code, containing complete self-contained Python. Do not claim a score. One unchanged submission, no execution feedback or repairs. Under240 source lines including blanks; whole fit/predict or encode/decode workload180seconds, one numerical CPU thread, approximately4GB requested memory not enforced. Use deterministic seeds. Explicit prompt shared across the exact three requested Sol versions, reasoning effort high.
+
+Implement fit_predict(train_x, train_y, test_x, train_groups)->numpy.ndarray. Shapes train_x=(60, 2079712),train_y=(60, 64991),test_x=(20, 587328); output=(20, 18354). train_groups is None; no condition/stimulus or source group IDs are supplied. Test groups/labels are scorer-only. Learn all fitted transforms from training data only. Return complete finite output in target units and follow mask/label rules below. Reference implementation receives the same training groups where needed. Allowed imports numpy,scipy,sklearn,math,collections,functools,itertools,statistics,gc. No pretrained weights, specialist packages, file/network/subprocess access or dynamic exec/eval.
+
+Frozen task contract:
+# A15: Held-out-bird annotated acoustic-event detection
+
+Prepared for parent review; not frozen or scored. This is numeric signal-processing code synthesis on real animal audio, not native multimodal LLM perception. It reproduces source-annotated syllable intervals, not exhaustive detection of every vocalization or identification of bird-specific syllable types.
+
+Sources and rights
+
+Steinfath, Palacios-Muñoz, Rottschäfer, Yuezak and Clemens(2021), [DAS paper](https://elifesciences.org/articles/68837), release [Bengalese finch train/test data](https://doi.org/10.25625/ENKMJS), dataset32924/version1.0, under CC0-1.0. The underlying [Nicholson, Queen and Sober Bengalese Finch Song Repository](https://doi.org/10.6084/m9.figshare.4805749) is CC BY4.0. Retain original authors, DOI and modification notice; combined reuse follows original CC BY4.0 attribution. Exact metadata, original checksums, SHA256, sizes and URLs are in source.json; source bytes remain in ignored local cache.
+
+The original repository's [primary documentation](https://www.vocalpy.org/bfsongrepo/) identifies four individual male birds and describes annotation provenance. Audio was amplitude-triggered and curated to contain song bouts. Boundaries were obtained using amplitude thresholding with duration/gap rules, then humans assigned syllable labels in a GUI. These pre-existing annotations are independent of submissions here, but boundaries are not wholly freehand expert tracings. Bird-specific syllable labels are arbitrary across birds. Some contact calls were inconsistently annotated. Merge all original annotation intervals, including rare/out-of-schema labels, into one binary target;0 means no source-annotated interval, not proof that no animal sound occurred.
+
+Important source-unit correction
+
+DAS CSV columns named start_seconds/stop_seconds actually contain milliseconds. We independently compared all90 annotations of gy6or6_baseline_260312_0907.3729 to its original Nicholson wav/csv annotation in Figshare file41668992. After chronological sorting, every syllable label matches and DAS bounds divided by1000 match original onset_s/offset_s to8.9e-16seconds. The original19.21MB archive and converted CSV are hashed. Every selected event passes audio-duration checks using this fixed conversion. verify.py repeats the exact comparison. The conversion was not inferred from model scores.
+
+Selection and outer split
+
+From379 paired DAS recordings, rank NPZ filenames within each bird by SHA256(filename), retain the first20, then sort filenames before arrays. This uses filenames only. All80 recordings remain complete. Train60 recordings from bl26lb16,gr41rd51,gy6or6; hold out20 from or60yw70,the lexical last bird. No recording or specimen crosses the split. Training1073.1415seconds/5416events; held-out267.75175seconds/1519events. Twenty test recordings are one held-out individual, not20 independent animals.
+
+Input/output contract
+
+Implement fit_predict(train_x,train_y,test_x,train_groups). Fourth argument train_groups=None for both references and general submissions. No bird IDs, filenames, test labels or hidden source metadata during fitting. Preparation/scoring retains IDs only to establish the outer split.
+
+train_x=(60,2079712),test_x=(20,587328),float32. Rows are complete32000Hz monaural waveforms in source native arbitrary amplitude units, followed by NaN padding. Source audio is already float16; conversion to float32 is lossless relative to source. No calibrated voltage/sound-pressure claim. Do not concatenate rows. Offline/acausal processing within each recording and deterministic per-recording analytic normalization are allowed equally. No supervised fitting or jointly fitted population transforms on test recordings.
+
+train_y=(60,64991),int8, is a1ms target per complete32sample bin:1 if bin centre lies inside any annotated event,0 otherwise,-1 outside valid complete bins. Ignore-1 when fitting. Rasterization is onset-inclusive/offset-exclusive with1e-12second numerical equality tolerance. One submillisecond training gap merges; no held-out event gap is lost. Return integer0/1 array(20,18354),equivalently(len(test_x),test_x.shape[1]//32). Return0 in padding; padding is unscored. NaN audio padding reveals valid lengths.
+
+Fixed event score
+
+Convert consecutive positive1ms bins into intervals[start_bin*.001,stop_bin*.001). Compare to original corrected-source events,not re-rasterized runs. Match only when absolute onset error<=20ms AND absolute offset error<=max(20ms,20%reference duration),with1e-12second numerical allowance. Use maximum-cardinality one-to-one bipartite matching; duplicates cannot match a reference twice. Recording F1=2TP/(Npred+Nreference);both-empty case1. Primary is mean20recording F1,higher better. Retain per-recording TP/prediction/reference counts. This custom event endpoint differs from the paper's mostly sample-wise bird scores; no published score is imported. Call adapter.score once on the full canonical test set.
+
+Fixed conventional reference and equal validation information
+
+Deterministic SciPy STFT features:256sample Hann windows,32sample/1ms hop,24log-power frequency bands250–12000Hz,relative broadband energy and5/15ms smoothing. Subtract each recording's20th-percentile log-band energy as deterministic noise-floor normalization. HistGradientBoostingClassifier:80iterations,15leaf nodes,learning_rate.1,l2_regularization10,max_bins128,seed20261031;uniformly sample at most60000 training frames.
+
+Training rows0,5,10,...,55 form the fixed whole-recording validation set; all other training rows fit a provisional classifier. Globally select threshold(.3,.5,.7),gap fill(0,4,8ms),minimum duration(5,10,20ms),maximizing mean recording eventF1 against train_y-derived intervals,ties in listed loop order. Refit on all training recordings. Baseline fitting accesses no bird IDs or original event tables; it uses the same train_x/train_y as generals. This exact row recipe is exposed equally. Inner validation is within training birds,not bird-held-out validation; the outer test is a completely unseen bird. No DAS weights,TensorFlow/GPU training,specialist packages or imported scores. This is a conventional supervised spectral comparator,not a verified strongest DAS reproduction.
+
+Execution and verification
+
+Exact models gpt-5.6-sol,gpt-6-sol,gpt-6.1-sol,high effort,one no-tool generation each,<240lines,180seconds,one numerical CPU thread. General numerical libraries only. Approximate4GB memory request is not enforced. Prepared compressed NPZ78.6MB; padded training waveform array approximately499MB loaded. No predictive procedure has been run.
+
+acquire.py reproduces reviewed sources; adapter.prepare reproduces arrays. verify.py independently checks SHA/size/MD5,both licenses,90event unit proof,filename selection,whole-recording/bird disjointness,every waveform/event/mask/padding value,and toy matching/tolerance semantics. Parent reviews scope,rights,split,memory and scorer,then freezes hashes before generation. No central registry,summary,website or per-task release changes.
