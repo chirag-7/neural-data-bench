@@ -1,0 +1,125 @@
+{
+  "benchmark_id": "H02",
+  "study": "replication-v1",
+  "date": "2026-10-30",
+  "status": "retrospective follow-up frozen before new generation or tuned-reference fit",
+  "original_test_results_already_known": true,
+  "models": [
+    "gpt-5.6-sol",
+    "gpt-6-sol",
+    "gpt-6.1-sol"
+  ],
+  "new_replicates": [
+    2,
+    3
+  ],
+  "original_replicate": 1,
+  "reasoning_effort": "high",
+  "timeout_seconds": 180,
+  "line_limit_exclusive": 240,
+  "memory_enforced": false,
+  "generation_max_wall_seconds": 600,
+  "no_feedback": true,
+  "data_sha256": "84c3635f9b32974cb03bb9e340e01fd34512e4483e034b1c000e828c6651376c",
+  "sealed_files": {
+    "experiments/H02/replication-v1/amendment.md": "6b8cb94bd5a6e5bc7fbec55085d86d0212345de0fab140ea26c1e447f6609083",
+    "experiments/H02/replication-v1/tuned_specialist.py": "cb9a9b71c9e39d6f7c1e945e918abb3bb7e875a2be8f8a34203a5449a10c8f79",
+    "scripts/replicate_erp.py": "efd934abe181f5c86d416278d204b58c8cc5db452772f0e8d5fd5f678340aa28",
+    "experiments/H02/prompt.txt": "d311e0dd3acb26d3ee738adff31b7dc3639a3cc56e816db665bf7b5eac31d1f8",
+    "experiments/H02/response_schema.json": "5caff7b9bde2bc742e6c178602afccf9ab813b07806cdd2e7aa77d2a51d998d3",
+    "experiments/H02/adapter.py": "1b74bb40ad0675d6e1cd3162e13af7f2eec1c94e43d3d89044bfb6733a78cafc"
+  },
+  "specialist_grid": [
+    {
+      "nfilter": 2,
+      "classes": [
+        1
+      ],
+      "C": 0.1
+    },
+    {
+      "nfilter": 2,
+      "classes": [
+        1
+      ],
+      "C": 1
+    },
+    {
+      "nfilter": 2,
+      "classes": [
+        1
+      ],
+      "C": 10
+    },
+    {
+      "nfilter": 2,
+      "classes": [
+        0,
+        1
+      ],
+      "C": 0.1
+    },
+    {
+      "nfilter": 2,
+      "classes": [
+        0,
+        1
+      ],
+      "C": 1
+    },
+    {
+      "nfilter": 2,
+      "classes": [
+        0,
+        1
+      ],
+      "C": 10
+    },
+    {
+      "nfilter": 4,
+      "classes": [
+        1
+      ],
+      "C": 0.1
+    },
+    {
+      "nfilter": 4,
+      "classes": [
+        1
+      ],
+      "C": 1
+    },
+    {
+      "nfilter": 4,
+      "classes": [
+        1
+      ],
+      "C": 10
+    },
+    {
+      "nfilter": 4,
+      "classes": [
+        0,
+        1
+      ],
+      "C": 0.1
+    },
+    {
+      "nfilter": 4,
+      "classes": [
+        0,
+        1
+      ],
+      "C": 1
+    },
+    {
+      "nfilter": 4,
+      "classes": [
+        0,
+        1
+      ],
+      "C": 10
+    }
+  ],
+  "original_macro_records_unchanged": true
+}
