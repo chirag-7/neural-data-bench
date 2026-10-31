@@ -1,0 +1,34 @@
+{
+  "benchmark_id": "L06",
+  "run_id": "posterior-v1",
+  "date": "2026-10-31",
+  "track": "T3",
+  "models": [
+    "gpt-5.6-sol",
+    "gpt-6-sol",
+    "gpt-6.1-sol"
+  ],
+  "reasoning_effort": "high",
+  "generation_replicates": 1,
+  "timeout_seconds": 180,
+  "line_limit_exclusive": 240,
+  "memory_enforced": false,
+  "adapter_sha256": "499afacc1c6d8aa49cb3971f97bdc16a9d5d743f65b14af82375395a58c43813",
+  "data_sha256": "c3ae6e81458fd88dac7a1492443bfe4d6d49c62ed7a85b1f98486ab73c171e3e",
+  "prompt_sha256": "9fd8e357ecf8b9c42cfd13276af3c1492a9b3ccf7cee487b1a3e2a3802de5a4a",
+  "frozen_files": {
+    "experiments/L06/adapter.py": "499afacc1c6d8aa49cb3971f97bdc16a9d5d743f65b14af82375395a58c43813",
+    "experiments/L06/protocol.md": "5847db040121e034cd732ae5c036da891bbf8ef55e099d057e21828a0c18fb35",
+    "experiments/L06/specialist.py": "d7c72807819c276093b742c6a01ac5f9934c82ce2a9bcce22738c1ee0366fe10",
+    "experiments/L06/laplace.py": "f97b6dee3ae109899b5ca40f2299141f180b30f4ee90a7e9d2cde2144e75258f",
+    "experiments/L06/scorer.py": "e2144f446915aa46047fe939d7e1e0171710aa406477ed57085bb2fdd12ca98b",
+    "experiments/L06/prompt.txt": "9fd8e357ecf8b9c42cfd13276af3c1492a9b3ccf7cee487b1a3e2a3802de5a4a",
+    "experiments/L06/response_schema.json": "5caff7b9bde2bc742e6c178602afccf9ab813b07806cdd2e7aa77d2a51d998d3",
+    "scripts/posterior_candidates.py": "c826b587bc5873a184164c662b7255809513bf95227c4d9dccef398aa870e6f3",
+    "data/cache/L06/data.npz": "c3ae6e81458fd88dac7a1492443bfe4d6d49c62ed7a85b1f98486ab73c171e3e",
+    "data/cache/L06/metadata.json": "b42b6fcee38e0b0e6db1ec2d7ed43199d4e8c9a3226e3cdf06d6ff5bc2ae4ec1",
+    "data/manifests/L06.json": "7546f4292d23c7733ec9cf732b869d4de4cdf078ff942dce3935f011b5334f23"
+  },
+  "status": "frozen before any model generation or method score",
+  "reference_samples_not_in_prompt": true
+}

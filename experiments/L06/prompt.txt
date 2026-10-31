@@ -1,0 +1,13 @@
+Single-shot neuroscience posterior-sampling code-construction experiment. Do not call tools, browse, read files or execute during generation. Return only JSON with description and code.
+
+Implement sample_posterior(design_matrix,spike_trains,prior_precision,n_samples,seed).
+
+For each of ten observations, sample the posterior of a ten-parameter Bernoulli spiking-neuron GLM. design_matrix X is float64(100,10): intercept then nine causal stimulus lags. spike_trains is float64(10,100), binary observed spikes. Different rows are DIFFERENT parameter vectors/posteriors, not repeated sequences from one vector. Q=prior_precision is float64(10,10), symmetric positive definite. Prior mean zero. The known unnormalized log posterior for observation y is:
+sum(y*(X@beta)-logaddexp(0,X@beta)) - 0.5*beta.T@Q@beta.
+The stimulus is common to all observations. It comes from standard Gaussian values; lags are causal with zero padding. Prior penalizes roughness of nine filter coefficients; offset precision0.5. Do not impose a diagonal/independent prior. Use the supplied Q.
+
+Return finite posterior draws shape(10,n_samples,10), n_samples=10000, seed=20261031. Each observation needs its OWN posterior. You receive no posterior reference samples, true parameters, training corpus or validation scores. Likelihood/gradient calculations are allowed without a simulation-call limit. This is a custom likelihood-informed inference track, not black-box SBI. Represent posterior uncertainty and joint dependence, not just point estimates.
+
+Primary evaluation: mean classifier two-sample-test accuracy against original reference posteriors across ten observations, lower/near0.5 better. Scorer uses 2000 evenly spaced draws per distribution, 5-fold shuffled MLP classification. Finite scores near chance are noisy. Secondary prior-whitened sliced Wasserstein2 on all10000draws. Scorer data/outputs are not available to your procedure.
+
+Allowed imports numpy,scipy,sklearn,math,collections,functools,itertools,statistics,gc. No file/network/subprocess access, dynamic exec/eval, pretrained assets or specialist packages (no PyMC,Stan,Pyro,polyagamma). All helper functions self-contained. One submission, no execution feedback. Entire call across ALL TEN observations must finish in180seconds on one numerical CPUthread. Approximately4GB memory requested but not enforced. Keep code below240lines including blanks. Deterministic use of seed required. The runtime has numpy2.3.5,scipy1.18.1,scikit-learn1.9.1. Return complete Python code and concise description including uncertainty/sampling and tuning/burn-in choices. Do not claim a score.

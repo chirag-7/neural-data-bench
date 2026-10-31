@@ -1,0 +1,260 @@
+{
+  "benchmark_id": "L06",
+  "source_commit": "f0bc44039e6b7e095c18d4e9e64819d75be76587",
+  "original_task": "bernoulli_glm",
+  "acquisition": "Original immutable author repository, no third-party mirror",
+  "files": [
+    {
+      "path": "data/cache/L06/source/design_matrix.pt",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/design_matrix.pt",
+      "bytes": 4344,
+      "sha256": "156293f2bc4eae14566b8508a3eb20cae2bd42bb7f2fabe7c71ffff6671040da"
+    },
+    {
+      "path": "data/cache/L06/source/stimulus_I.pt",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/stimulus_I.pt",
+      "bytes": 739,
+      "sha256": "f1f9ddecafb32310f1940e955fecbd7be43afc4d0c3cd8accbe3abd4f2968f2b"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_1/observation.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_1/observation.csv",
+      "bytes": 166,
+      "sha256": "dd0c725ea3daba66565654f26ca00e7a5ee9bffc3940e079bf2e727178e704c1"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_1/observation_raw.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_1/observation_raw.csv",
+      "bytes": 1192,
+      "sha256": "ca97404669cda4ee6e7bce18a10ec4e091645a38386c6aa257ead83fd3a2ed0c"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_1/reference_posterior_samples.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_1/reference_posterior_samples.csv.bz2",
+      "bytes": 402946,
+      "sha256": "fcd5178eff7fad7b1e87755e4c33d34ffd2c5065f21daa2711d2337fd69094e7"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_1/observation_seed.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_1/observation_seed.csv",
+      "bytes": 43,
+      "sha256": "ce9faa9f097b41ab3f0231933c70a291fafd1539593e5ff950820363d11ebf7f"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_2/observation.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_2/observation.csv",
+      "bytes": 174,
+      "sha256": "b87e976aa87949748f100d2b910102d3a84f39a2a600e59c5c034a3e55501e18"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_2/observation_raw.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_2/observation_raw.csv",
+      "bytes": 1192,
+      "sha256": "5fe5296136da9bd14895c43318f45c193f7c35b86e3d3a72311f8ca96557d883"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_2/reference_posterior_samples.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_2/reference_posterior_samples.csv.bz2",
+      "bytes": 403995,
+      "sha256": "8c524786fdf3d692d5c0926c6ab2f4790c830f2dd151d95020996ca95db900fc"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_2/observation_seed.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_2/observation_seed.csv",
+      "bytes": 43,
+      "sha256": "88cf87dc0e3fea668c5be3c4cd701595e175d09e5fcdd7685bc405e066c913a2"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_3/observation.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_3/observation.csv",
+      "bytes": 168,
+      "sha256": "52d5b2bd3047d469b2a98ea78c6b156f4c62ec40b0ddc3170a3ae1a6a52e85e4"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_3/observation_raw.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_3/observation_raw.csv",
+      "bytes": 1192,
+      "sha256": "d6032cb30834b8eda1dfba08a09edb1b46575a8b5743000ca5a7065ffd0e062f"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_3/reference_posterior_samples.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_3/reference_posterior_samples.csv.bz2",
+      "bytes": 396967,
+      "sha256": "4ed244a307f1e993e97f75211c0b47b9cc716642cfbac533e88cbe69417c604e"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_3/observation_seed.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_3/observation_seed.csv",
+      "bytes": 43,
+      "sha256": "4e80f01be8ac4aeb2b993180598d15d5bf13ed302c1e4757374591f697cbada2"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_4/observation.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_4/observation.csv",
+      "bytes": 171,
+      "sha256": "122168e568a53656502b201948361175f0dd11509b4fcfe46fd5efcbc602d697"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_4/observation_raw.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_4/observation_raw.csv",
+      "bytes": 1192,
+      "sha256": "15dad1ef77236c9db374eae6e6133c90273e574f55f3b4b7a26e5229f05603b4"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_4/reference_posterior_samples.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_4/reference_posterior_samples.csv.bz2",
+      "bytes": 406117,
+      "sha256": "6d3f71965d18ccdcc264423b4cd71d9ca485a921859fefb87955cdb0c0d2633c"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_4/observation_seed.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_4/observation_seed.csv",
+      "bytes": 43,
+      "sha256": "6bcdb70e2d5a8d091f99d71b20d8f1cb24765f4eee160e075ed6e5c78aa2f5b8"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_5/observation.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_5/observation.csv",
+      "bytes": 165,
+      "sha256": "1f13c9ca4a783648434a02eeb7dc12dde0d3bcba6df8a1ebe27da51a9ccebc13"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_5/observation_raw.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_5/observation_raw.csv",
+      "bytes": 1192,
+      "sha256": "6490ecd8bcb9b3943945646fcd18cab3c377c9562a213ca13eaadf82fefa0ee3"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_5/reference_posterior_samples.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_5/reference_posterior_samples.csv.bz2",
+      "bytes": 403210,
+      "sha256": "e50656f6f6a3198a241632be466c9db5fe9dbca34c18e40e4c807e007297c487"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_5/observation_seed.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_5/observation_seed.csv",
+      "bytes": 43,
+      "sha256": "37ac9498606c6c362b738525f03f06a5eddbe77be120aeb8e6249cc5a576c74f"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_6/observation.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_6/observation.csv",
+      "bytes": 170,
+      "sha256": "534768423e897f265a7d57476c7dd3948a77f86605aa1939632ddca926977d4c"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_6/observation_raw.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_6/observation_raw.csv",
+      "bytes": 1192,
+      "sha256": "dee32983b4a929b32244b16f48daf7b6b4b7af6835fbbf2cd1dfcebc05001c43"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_6/reference_posterior_samples.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_6/reference_posterior_samples.csv.bz2",
+      "bytes": 401710,
+      "sha256": "67de9dcbd1b23258becd1610877ee57a247755c036d1a302abe7ea8c0ba3b69d"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_6/observation_seed.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_6/observation_seed.csv",
+      "bytes": 43,
+      "sha256": "fb5e8a0e1dbfd0667d4acd60b31ea9c7dccd097927d4bf4f3f1978053a85cfba"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_7/observation.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_7/observation.csv",
+      "bytes": 169,
+      "sha256": "a6496097b9a2ea099655d5b70463e829194a02b9ac86a6a3ad4ceea89e2724ff"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_7/observation_raw.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_7/observation_raw.csv",
+      "bytes": 1192,
+      "sha256": "b36b917e24476392a4e22ce20e06d8257d2bd0d593ccbc868a6f47d462979863"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_7/reference_posterior_samples.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_7/reference_posterior_samples.csv.bz2",
+      "bytes": 399976,
+      "sha256": "2682390df95401f85c0399449d813141e690f7d4f6b2826d199de7217fc5854a"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_7/observation_seed.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_7/observation_seed.csv",
+      "bytes": 43,
+      "sha256": "7aab4d425c46e267f39531b1a743eb1f62d074930962a2661de522d0bf883744"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_8/observation.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_8/observation.csv",
+      "bytes": 173,
+      "sha256": "9ff5e4b0e1cb55f3d095263fb3664160624748db177e82c1779313ad8a60200d"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_8/observation_raw.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_8/observation_raw.csv",
+      "bytes": 1192,
+      "sha256": "7a8041e920961878b998eb41c4236cb291ac1dab3dae2c6694e25f71f09f8788"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_8/reference_posterior_samples.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_8/reference_posterior_samples.csv.bz2",
+      "bytes": 405661,
+      "sha256": "f154dc491ce282f24fe4d6e2b214f202c4557f3fda1606eac1dc19256c5f8f4f"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_8/observation_seed.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_8/observation_seed.csv",
+      "bytes": 43,
+      "sha256": "78cab51032684dc5c2f293f0639ee7b44a9ee0ff86fa2923c58e76966cae22bf"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_9/observation.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_9/observation.csv",
+      "bytes": 167,
+      "sha256": "475599b71168e3b91c0dd62b7aa0508a1b21ae031b8922898f18e7cf51a216ea"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_9/observation_raw.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_9/observation_raw.csv",
+      "bytes": 1192,
+      "sha256": "f7bc67a96dc742984d6ccc68c807d1d4081a8f4085bfde1671e8ba5f89be1ebe"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_9/reference_posterior_samples.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_9/reference_posterior_samples.csv.bz2",
+      "bytes": 406815,
+      "sha256": "93a1c8f9a7f2ac9cb150e504137b327204befa62b8c05f9edb6ac69ed13d1457"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_9/observation_seed.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_9/observation_seed.csv",
+      "bytes": 43,
+      "sha256": "87b9bf370ff4251bf123f3b4ff80a1360733d9e113bd7762201f882d6fe99c1c"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_10/observation.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_10/observation.csv",
+      "bytes": 172,
+      "sha256": "a642758920699a08ba2d3a87ef513ab8c56c3c6e2c4af159df73ec1ae4ad5696"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_10/observation_raw.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_10/observation_raw.csv",
+      "bytes": 1192,
+      "sha256": "6a1e2fbff31a690fafb2dc93a063e47b75abeda912290e6f161158893744b76b"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_10/reference_posterior_samples.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_10/reference_posterior_samples.csv.bz2",
+      "bytes": 403938,
+      "sha256": "6f48821c9511127b5879f77c60103cf0c41631f5bc47ecb4eaa0967479041914"
+    },
+    {
+      "path": "data/cache/L06/source/num_observation_10/observation_seed.csv",
+      "source_url": "https://raw.githubusercontent.com/sbi-benchmark/sbibm/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/tasks/bernoulli_glm/files/num_observation_10/observation_seed.csv",
+      "bytes": 44,
+      "sha256": "f6046422972960aa91c70ec12a98d033082ade4e7a9405fea2db6e855ef55222"
+    }
+  ]
+}
