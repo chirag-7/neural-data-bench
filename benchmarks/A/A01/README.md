@@ -38,6 +38,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Human-labeled pose imag
 
 ## Current admission and execution
 
-Preview 0.9: candidate_pending_validation. Human-labeled pose images are a valid endpoint. Need pin image/label archive, verify published session split and matched coordinate scorer; no image adapter or vision submission interface acquired in this bounded expansion. Not rejected as bad data.
+Preview 0.10: candidate_pending_validation. Human-labeled pose images are a valid endpoint. Need pin image/label archive, verify published session split and matched coordinate scorer; no image adapter or vision submission interface acquired in this bounded expansion. Not rejected as bad data.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

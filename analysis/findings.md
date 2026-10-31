@@ -1,6 +1,6 @@
-# Findings — exploratory preview 0.9
+# Findings — exploratory preview 0.10
 
-The first-submission panel has 22 measured tasks across 14 mapped families and 84 model–slice attempts: 82 valid predictions and two unrepaired failures. Its 66 generated programs are reused across source slices. All 167 model/reference records include 161 stored predictions/posteriors. The separate H02 follow-up adds six programs and seven prediction files without increasing these macro totals.
+The first-submission panel has 23 measured tasks across 14 mapped families and 87 model–slice attempts: 85 valid outputs and 2 unrepaired failures. Its 69 generated programs are reused across source slices. All 173 model/reference records include 167 saved prediction/posterior/output manifests. B07 additionally retains 96 compressed payloads. The separate H02 follow-up adds six programs and seven prediction files outside these macro totals.
 
 The estimand is performance of generated analysis code fitted locally under an exact T3 contract, not native neural representations or universal neuroscience understanding. Current selection, public labels, one generation and unequal reference histories make the results exploratory.
 
@@ -9,6 +9,7 @@ The estimand is performance of generated analysis code fitted locally under an e
 | [A09](../experiments/A09) | Frame-level social behavior labels | macro_f1 ↑ | 0.868972 | 0.875946 | 0.880696 | 0.869518 | historical_specialist |
 | [A14](../experiments/A14) | Missing pose imputation | rmse_missing ↓ | 0.448549 | 0.436121 | 0.450595 | 2.437099 | conventional_baseline |
 | [B01](../experiments/B01) | Spike sorting and event detection | mean_gt_accuracy ↑ | 0.874991 | 0.940011 | 0.750450 | 0.940896 | local_specialist |
+| [B07](../experiments/B07) | Real-voltage lossless short chunk compression | encoded_bits_per_int16_sample ↓ | 7.019830 | 6.901698 | 7.214589 | 7.690052 | local_specialist |
 | [C05](../experiments/C05) | Calcium-to-spike inference | median_pearson_40ms ↑ | 0.452196 | 0.443305 | 0.467896 | 0.475337 | historical_specialist |
 | [D02](../experiments/D02) | Current-to-voltage prediction | rmse_mV ↓ | 0.217776 | 0.217705 | 0.235533 | 0.220786 | conventional_baseline |
 | [E01](../experiments/E01) | Neural rate inference and co-smoothing | bits_per_spike ↑ | 0.203507 | 0.161134 | 0.207376 | 0.072001 | conventional_baseline |
@@ -31,6 +32,21 @@ The estimand is performance of generated analysis code fitted locally under an e
 
 
 C05 shows equal means of five preparation medians and historical per-preparation envelopes. E01 shows equal means across three source-specific bits/spike scores. These within-task means are not pooled-neuron scores; no values across different rows are averaged together. Failed attempts receive no invented numeric score. Exact data, scores, units, predictions and errors: [JSONL](../results/measurements.jsonl), [CSV](../results/measurements.csv), [summary](summary.json).
+
+## New lossless-compression task
+
+| Method | Encoded bits/sample ↓ | Raw/encoded ratio ↑ | Encode + decode seconds |
+|---|---:|---:|---:|
+| gpt-5.6-sol | 7.019830 | 2.279 | 15.458 |
+| gpt-6-sol | 6.901698 | 2.318 | 9.023 |
+| gpt-6.1-sol | 7.214589 | 2.218 | 9.619 |
+| wavpack-high | 7.690052 | 2.081 | 4.614 |
+| delta-blosc-zstd | 7.683237 | 2.082 | 2.060 |
+| task-baseline | 11.412251 | 1.402 | 2.183 |
+
+All three generated programs compress fewer bytes than both frozen codec references on this exact slice. GPT-6 has the smallest point size; GPT-6.1 is larger than both earlier versions. Header/chunk overhead and signal-adaptive predictors can affect this ordering. These results support no current-global-best or stable model-version trend. 
+
+Every successful method reconstructs all 16 real source chunks byte-exactly. One short chunk per recording and unequal implementation effort limit storage/deployment conclusions. WavPack remains the prespecified primary comparator; all inspected references appear in both plots. [Full result and audit](../docs/release-v10.md).
 
 ## New posterior-sampling task
 
@@ -88,7 +104,7 @@ This is a retrospective follow-up on the same 25-person source, not another data
 | conventional_baseline | 9 / 9 / 11 | 9 / 2 / 0 / 0 | 10 / 1 / 0 / 0 | 9 / 2 / 0 / 0 |
 | conventional_domain_reference | 1 / 1 / 1 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 |
 | historical_specialist | 4 / 4 / 8 | 2 / 6 / 0 / 0 | 1 / 7 / 0 / 0 | 5 / 2 / 0 / 1 |
-| local_specialist | 3 / 2 / 3 | 1 / 2 / 0 / 0 | 1 / 2 / 0 / 0 | 2 / 1 / 0 / 0 |
+| local_specialist | 4 / 3 / 4 | 2 / 2 / 0 / 0 | 2 / 2 / 0 / 0 | 3 / 1 / 0 / 0 |
 | pretrained_specialist | 1 / 1 / 1 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 |
 
 ### Including fully synthetic tasks
@@ -99,7 +115,7 @@ This is a retrospective follow-up on the same 25-person source, not another data
 | conventional_domain_reference | 1 / 1 / 1 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 |
 | deterministic_correctness | 1 / 1 / 1 | 0 / 0 / 0 / 1 | 0 / 0 / 1 / 0 | 0 / 0 / 1 / 0 |
 | historical_specialist | 4 / 4 / 8 | 2 / 6 / 0 / 0 | 1 / 7 / 0 / 0 | 5 / 2 / 0 / 1 |
-| local_specialist | 5 / 4 / 5 | 1 / 4 / 0 / 0 | 1 / 4 / 0 / 0 | 2 / 3 / 0 / 0 |
+| local_specialist | 6 / 4 / 6 | 2 / 4 / 0 / 0 | 2 / 4 / 0 / 0 | 3 / 3 / 0 / 0 |
 | pretrained_specialist | 1 / 1 / 1 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 |
 | synthetic_objective_mismatched | 1 / 1 / 1 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 |
 
@@ -111,17 +127,17 @@ These are descriptive point counts, not significance or equivalence. Default sco
 
 | Model pair | Improved | Declined | Numerical ties | Failed/missing | Slices / tasks / families | Family-equal improvement fraction |
 |---|---:|---:|---:|---:|---|---:|
-| gpt-5.6-sol → gpt-6-sol | 9 | 14 | 1 | 0 | 24 / 18 / 12 | 0.387500 |
-| gpt-6-sol → gpt-6.1-sol | 18 | 5 | 0 | 1 | 24 / 18 / 12 | 0.666667 |
-| gpt-5.6-sol → gpt-6.1-sol | 17 | 6 | 0 | 1 | 24 / 18 / 12 | 0.643056 |
+| gpt-5.6-sol → gpt-6-sol | 10 | 14 | 1 | 0 | 25 / 19 / 13 | 0.434615 |
+| gpt-6-sol → gpt-6.1-sol | 18 | 6 | 0 | 1 | 25 / 19 / 13 | 0.615385 |
+| gpt-5.6-sol → gpt-6.1-sol | 17 | 7 | 0 | 1 | 25 / 19 / 13 | 0.593590 |
 
 ### Including eligible fully synthetic tasks
 
 | Model pair | Improved | Declined | Numerical ties | Failed/missing | Slices / tasks / families | Family-equal improvement fraction |
 |---|---:|---:|---:|---:|---|---:|
-| gpt-5.6-sol → gpt-6-sol | 11 | 14 | 1 | 0 | 26 / 20 / 13 | 0.434615 |
-| gpt-6-sol → gpt-6.1-sol | 18 | 7 | 0 | 1 | 26 / 20 / 13 | 0.615385 |
-| gpt-5.6-sol → gpt-6.1-sol | 18 | 7 | 0 | 1 | 26 / 20 / 13 | 0.593590 |
+| gpt-5.6-sol → gpt-6-sol | 12 | 14 | 1 | 0 | 27 / 21 / 13 | 0.434615 |
+| gpt-6-sol → gpt-6.1-sol | 18 | 8 | 0 | 1 | 27 / 21 / 13 | 0.615385 |
+| gpt-5.6-sol → gpt-6.1-sol | 18 | 8 | 0 | 1 | 27 / 21 / 13 | 0.593590 |
 
 Both version-change views exclude M04 quadrature ordering and N05 deterministic correctness. The synthetic-inclusive view retains B01 and L06. Observed-data scope includes artificial corruption in A14/H16; it does not imply every target is wholly natural. Failures remain in the denominator. Directional fractions are not effect sizes, significance, practical-equivalence statements or causal scaling laws. Near-chance posterior C2ST values and B01 metric sensitivity limit interpretation.
 
@@ -131,6 +147,7 @@ Both version-change views exclude M04 quadrature ordering and N05 deterministic 
 |---|---|
 | A09 | Processed pose context; archived VASSI has richer full-frame inputs and unequal training.20 archive runs are not 20 tasks. |
 | A14 | Artificial pose gaps in real motion, only two test rats; optional DISKweight ZIP was unusable despite matching publisher MD 5. |
+| B07 | One roughly 0.137-second chunk/recording; exact-byte storage diagnostic, not full streaming or neural interpretation; 16 recordings/14 animals. |
 | C05 | Historical 2017 test-selected envelopes; preparation 1 is prior development evidence; same code refitted on five preparations. |
 | D02 | One cell, passive current interpolation; measured pre-stimulus rest is allowed; no spiking/cross-cell result. |
 | E01 | Three official sources, frozen-program portability with first-source dimensions in the prompt. DMFCexact official NaNmask retained; hidden jitter cannot be reconstructed fully from packed public timestamps. |

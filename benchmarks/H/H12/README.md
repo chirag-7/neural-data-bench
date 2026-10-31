@@ -38,6 +38,6 @@ Decision: **deferred** (2026-10-30). Original THINGS site accessible. Stimulus c
 
 ## Current admission and execution
 
-Preview 0.9: deferred. Original THINGS site accessible. Stimulus concept and image reuse complicate splitting; original image pool has academic-use restrictions and a separate CC0 subset. Need exact EEG/MEG release, retrieval gallery and held-out concepts/participants rather than an undefined image-reconstruction score.
+Preview 0.10: deferred. Original THINGS site accessible. Stimulus concept and image reuse complicate splitting; original image pool has academic-use restrictions and a separate CC0 subset. Need exact EEG/MEG release, retrieval gallery and held-out concepts/participants rather than an undefined image-reconstruction score.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

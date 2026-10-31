@@ -41,6 +41,6 @@ Decision: **deferred** (2026-10-30). Original DREAMS Zenodo record explicitly wa
 
 ## Current admission and execution
 
-Preview 0.9: deferred. MODA annotations/code are public, but raw MASS PSG requires a project/ethics access request. Annotation-only inputs cannot evaluate EEG detection; DREAMS remains a separate deferred alternative.
+Preview 0.10: deferred. MODA annotations/code are public, but raw MASS PSG requires a project/ethics access request. Annotation-only inputs cannot evaluate EEG detection; DREAMS remains a separate deferred alternative.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

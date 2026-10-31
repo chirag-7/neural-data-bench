@@ -1,0 +1,24 @@
+{
+  "release": "0.10",
+  "scientific_freeze_commit": "1ab99b1",
+  "checks": [
+    "All16 original source chunks and metadata hashes verified",
+    "All96 saved codec payloads independently decoded byte-exactly; six primary size metrics reproduced",
+    "All3 final generation messages equal retained original submissions; zero observed tool events",
+    "All167 original0.9 model/reference records remain identical",
+    "All311 source routes and23 line/bar plot pairs pass",
+    "Existing strict-format deviations and two previous failed attempts retained",
+    "Observed-data and synthetic-inclusive macro counts refreshed from canonical records"
+  ],
+  "limitations": [
+    "One shortchunk perrecording;16recordings represent14 sourceanimals",
+    "Code generation with general libraries vs frozen local codec configurations; unequal implementation effort",
+    "Compression is lab infrastructure,not native neural interpretation or globalSOTA",
+    "73 active candidates unrun; category representation is not exhaustive coverage"
+  ],
+  "new_attempts": 3,
+  "new_valid": 3,
+  "central_records": 173,
+  "central_output_manifests": 167,
+  "additional_compressed_payloads": 96
+}

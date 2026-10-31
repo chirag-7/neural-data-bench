@@ -18,6 +18,6 @@ Decision: **deferred** (2026-10-30). Screened BNCI2014_008 original BNCI terms (
 
 ## Current admission and execution
 
-Preview 0.9: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
+Preview 0.10: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
 [Admission/source evidence](../../../experiments/H02/protocol.md). [Actual protocol/worklog](../../../experiments/H02). [Task measurements](../../../results/H02.json).

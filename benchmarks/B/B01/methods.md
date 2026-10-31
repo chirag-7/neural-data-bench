@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.9: Blind unsupervised spike sorting of one 10-second, 32-channel stationary MEArec simulation; official unit/event matching.
+Preview 0.10: Blind unsupervised spike sorting of one 10-second, 32-channel stationary MEArec simulation; official unit/event matching.
 
 [Actual frozen contract and implementation](../../../experiments/B01). [Measured method/reference records](../../../results/B01.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

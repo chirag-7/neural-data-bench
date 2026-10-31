@@ -1,15 +1,16 @@
 {
-  "version": "0.9",
+  "version": "0.10",
   "date": "2026-10-31",
   "mapped_entries": 96,
   "historical_mapped_entries": 114,
   "archived_candidates": 18,
   "mapped_families": 14,
-  "measured_tasks": 22,
+  "measured_tasks": 23,
   "measured_task_ids": [
     "A09",
     "A14",
     "B01",
+    "B07",
     "C05",
     "D02",
     "E01",
@@ -31,7 +32,7 @@
     "N05"
   ],
   "measured_families": 14,
-  "measured_biological_benchmarks": 17,
+  "measured_biological_benchmarks": 18,
   "measured_synthetic_tasks": 3,
   "fully_synthetic_task_ids": [
     "B01",
@@ -635,16 +636,25 @@
         },
         "local_specialist": {
           "exploratory": {
-            "n_tasks": 3,
-            "n_families": 2,
-            "n_slice_comparisons": 3,
-            "wins": 1,
+            "n_tasks": 4,
+            "n_families": 3,
+            "n_slice_comparisons": 4,
+            "wins": 2,
             "losses": 2,
             "numerical_ties": 0,
             "failed_or_missing": 0,
-            "task_equal_win_fraction": 0.3333333333333333,
-            "family_equal_win_fraction": 0.25,
+            "task_equal_win_fraction": 0.5,
+            "family_equal_win_fraction": 0.5,
             "task_summaries": [
+              {
+                "benchmark_id": "B07",
+                "family_code": "B",
+                "n_slices": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
               {
                 "benchmark_id": "H01",
                 "family_code": "H",
@@ -674,6 +684,14 @@
               }
             ],
             "family_summaries": [
+              {
+                "family_code": "B",
+                "n_tasks": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
               {
                 "family_code": "H",
                 "n_tasks": 2,
@@ -693,16 +711,25 @@
             ]
           },
           "strict": {
-            "n_tasks": 3,
-            "n_families": 2,
-            "n_slice_comparisons": 3,
-            "wins": 1,
+            "n_tasks": 4,
+            "n_families": 3,
+            "n_slice_comparisons": 4,
+            "wins": 2,
             "losses": 2,
             "numerical_ties": 0,
             "failed_or_missing": 0,
-            "task_equal_win_fraction": 0.3333333333333333,
-            "family_equal_win_fraction": 0.25,
+            "task_equal_win_fraction": 0.5,
+            "family_equal_win_fraction": 0.5,
             "task_summaries": [
+              {
+                "benchmark_id": "B07",
+                "family_code": "B",
+                "n_slices": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
               {
                 "benchmark_id": "H01",
                 "family_code": "H",
@@ -732,6 +759,14 @@
               }
             ],
             "family_summaries": [
+              {
+                "family_code": "B",
+                "n_tasks": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
               {
                 "family_code": "H",
                 "n_tasks": 2,
@@ -828,10 +863,10 @@
         }
       },
       "model": "gpt-5.6-sol",
-      "attempted": 28,
-      "valid": 27,
+      "attempted": 29,
+      "valid": 28,
       "failed": 1,
-      "strict_format_valid": 21,
+      "strict_format_valid": 22,
       "C05_preparation_equal_mean_of_medians": 0.45219611758394257,
       "C05_n_preparations": 5,
       "C05_reference_wins": 1,
@@ -1442,15 +1477,15 @@
         },
         "local_specialist": {
           "exploratory": {
-            "n_tasks": 5,
+            "n_tasks": 6,
             "n_families": 4,
-            "n_slice_comparisons": 5,
-            "wins": 1,
+            "n_slice_comparisons": 6,
+            "wins": 2,
             "losses": 4,
             "numerical_ties": 0,
             "failed_or_missing": 0,
-            "task_equal_win_fraction": 0.2,
-            "family_equal_win_fraction": 0.125,
+            "task_equal_win_fraction": 0.3333333333333333,
+            "family_equal_win_fraction": 0.25,
             "task_summaries": [
               {
                 "benchmark_id": "B01",
@@ -1458,6 +1493,15 @@
                 "n_slices": 1,
                 "win_fraction": 0.0,
                 "loss_fraction": 1.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
+              {
+                "benchmark_id": "B07",
+                "family_code": "B",
+                "n_slices": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
                 "tie_fraction": 0.0,
                 "failure_fraction": 0.0
               },
@@ -1501,9 +1545,9 @@
             "family_summaries": [
               {
                 "family_code": "B",
-                "n_tasks": 1,
-                "win_fraction": 0.0,
-                "loss_fraction": 1.0,
+                "n_tasks": 2,
+                "win_fraction": 0.5,
+                "loss_fraction": 0.5,
                 "tie_fraction": 0.0,
                 "failure_fraction": 0.0
               },
@@ -1534,15 +1578,15 @@
             ]
           },
           "strict": {
-            "n_tasks": 5,
+            "n_tasks": 6,
             "n_families": 4,
-            "n_slice_comparisons": 5,
-            "wins": 1,
+            "n_slice_comparisons": 6,
+            "wins": 2,
             "losses": 4,
             "numerical_ties": 0,
             "failed_or_missing": 0,
-            "task_equal_win_fraction": 0.2,
-            "family_equal_win_fraction": 0.125,
+            "task_equal_win_fraction": 0.3333333333333333,
+            "family_equal_win_fraction": 0.25,
             "task_summaries": [
               {
                 "benchmark_id": "B01",
@@ -1550,6 +1594,15 @@
                 "n_slices": 1,
                 "win_fraction": 0.0,
                 "loss_fraction": 1.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
+              {
+                "benchmark_id": "B07",
+                "family_code": "B",
+                "n_slices": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
                 "tie_fraction": 0.0,
                 "failure_fraction": 0.0
               },
@@ -1593,9 +1646,9 @@
             "family_summaries": [
               {
                 "family_code": "B",
-                "n_tasks": 1,
-                "win_fraction": 0.0,
-                "loss_fraction": 1.0,
+                "n_tasks": 2,
+                "win_fraction": 0.5,
+                "loss_fraction": 0.5,
                 "tie_fraction": 0.0,
                 "failure_fraction": 0.0
               },
@@ -2345,16 +2398,25 @@
         },
         "local_specialist": {
           "exploratory": {
-            "n_tasks": 3,
-            "n_families": 2,
-            "n_slice_comparisons": 3,
-            "wins": 1,
+            "n_tasks": 4,
+            "n_families": 3,
+            "n_slice_comparisons": 4,
+            "wins": 2,
             "losses": 2,
             "numerical_ties": 0,
             "failed_or_missing": 0,
-            "task_equal_win_fraction": 0.3333333333333333,
-            "family_equal_win_fraction": 0.25,
+            "task_equal_win_fraction": 0.5,
+            "family_equal_win_fraction": 0.5,
             "task_summaries": [
+              {
+                "benchmark_id": "B07",
+                "family_code": "B",
+                "n_slices": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
               {
                 "benchmark_id": "H01",
                 "family_code": "H",
@@ -2384,6 +2446,14 @@
               }
             ],
             "family_summaries": [
+              {
+                "family_code": "B",
+                "n_tasks": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
               {
                 "family_code": "H",
                 "n_tasks": 2,
@@ -2403,16 +2473,25 @@
             ]
           },
           "strict": {
-            "n_tasks": 3,
-            "n_families": 2,
-            "n_slice_comparisons": 3,
-            "wins": 1,
+            "n_tasks": 4,
+            "n_families": 3,
+            "n_slice_comparisons": 4,
+            "wins": 2,
             "losses": 2,
             "numerical_ties": 0,
             "failed_or_missing": 0,
-            "task_equal_win_fraction": 0.3333333333333333,
-            "family_equal_win_fraction": 0.25,
+            "task_equal_win_fraction": 0.5,
+            "family_equal_win_fraction": 0.5,
             "task_summaries": [
+              {
+                "benchmark_id": "B07",
+                "family_code": "B",
+                "n_slices": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
               {
                 "benchmark_id": "H01",
                 "family_code": "H",
@@ -2442,6 +2521,14 @@
               }
             ],
             "family_summaries": [
+              {
+                "family_code": "B",
+                "n_tasks": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
               {
                 "family_code": "H",
                 "n_tasks": 2,
@@ -2557,10 +2644,10 @@
         }
       },
       "model": "gpt-6-sol",
-      "attempted": 28,
-      "valid": 28,
+      "attempted": 29,
+      "valid": 29,
       "failed": 0,
-      "strict_format_valid": 28,
+      "strict_format_valid": 29,
       "C05_preparation_equal_mean_of_medians": 0.4433052515260961,
       "C05_n_preparations": 5,
       "C05_reference_wins": 0,
@@ -3207,15 +3294,15 @@
         },
         "local_specialist": {
           "exploratory": {
-            "n_tasks": 5,
+            "n_tasks": 6,
             "n_families": 4,
-            "n_slice_comparisons": 5,
-            "wins": 1,
+            "n_slice_comparisons": 6,
+            "wins": 2,
             "losses": 4,
             "numerical_ties": 0,
             "failed_or_missing": 0,
-            "task_equal_win_fraction": 0.2,
-            "family_equal_win_fraction": 0.125,
+            "task_equal_win_fraction": 0.3333333333333333,
+            "family_equal_win_fraction": 0.25,
             "task_summaries": [
               {
                 "benchmark_id": "B01",
@@ -3223,6 +3310,15 @@
                 "n_slices": 1,
                 "win_fraction": 0.0,
                 "loss_fraction": 1.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
+              {
+                "benchmark_id": "B07",
+                "family_code": "B",
+                "n_slices": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
                 "tie_fraction": 0.0,
                 "failure_fraction": 0.0
               },
@@ -3266,9 +3362,9 @@
             "family_summaries": [
               {
                 "family_code": "B",
-                "n_tasks": 1,
-                "win_fraction": 0.0,
-                "loss_fraction": 1.0,
+                "n_tasks": 2,
+                "win_fraction": 0.5,
+                "loss_fraction": 0.5,
                 "tie_fraction": 0.0,
                 "failure_fraction": 0.0
               },
@@ -3299,15 +3395,15 @@
             ]
           },
           "strict": {
-            "n_tasks": 5,
+            "n_tasks": 6,
             "n_families": 4,
-            "n_slice_comparisons": 5,
-            "wins": 1,
+            "n_slice_comparisons": 6,
+            "wins": 2,
             "losses": 4,
             "numerical_ties": 0,
             "failed_or_missing": 0,
-            "task_equal_win_fraction": 0.2,
-            "family_equal_win_fraction": 0.125,
+            "task_equal_win_fraction": 0.3333333333333333,
+            "family_equal_win_fraction": 0.25,
             "task_summaries": [
               {
                 "benchmark_id": "B01",
@@ -3315,6 +3411,15 @@
                 "n_slices": 1,
                 "win_fraction": 0.0,
                 "loss_fraction": 1.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
+              {
+                "benchmark_id": "B07",
+                "family_code": "B",
+                "n_slices": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
                 "tie_fraction": 0.0,
                 "failure_fraction": 0.0
               },
@@ -3358,9 +3463,9 @@
             "family_summaries": [
               {
                 "family_code": "B",
-                "n_tasks": 1,
-                "win_fraction": 0.0,
-                "loss_fraction": 1.0,
+                "n_tasks": 2,
+                "win_fraction": 0.5,
+                "loss_fraction": 0.5,
                 "tie_fraction": 0.0,
                 "failure_fraction": 0.0
               },
@@ -4129,16 +4234,25 @@
         },
         "local_specialist": {
           "exploratory": {
-            "n_tasks": 3,
-            "n_families": 2,
-            "n_slice_comparisons": 3,
-            "wins": 2,
+            "n_tasks": 4,
+            "n_families": 3,
+            "n_slice_comparisons": 4,
+            "wins": 3,
             "losses": 1,
             "numerical_ties": 0,
             "failed_or_missing": 0,
-            "task_equal_win_fraction": 0.6666666666666666,
-            "family_equal_win_fraction": 0.5,
+            "task_equal_win_fraction": 0.75,
+            "family_equal_win_fraction": 0.6666666666666666,
             "task_summaries": [
+              {
+                "benchmark_id": "B07",
+                "family_code": "B",
+                "n_slices": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
               {
                 "benchmark_id": "H01",
                 "family_code": "H",
@@ -4168,6 +4282,14 @@
               }
             ],
             "family_summaries": [
+              {
+                "family_code": "B",
+                "n_tasks": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
               {
                 "family_code": "H",
                 "n_tasks": 2,
@@ -4187,16 +4309,25 @@
             ]
           },
           "strict": {
-            "n_tasks": 3,
-            "n_families": 2,
-            "n_slice_comparisons": 3,
-            "wins": 2,
+            "n_tasks": 4,
+            "n_families": 3,
+            "n_slice_comparisons": 4,
+            "wins": 3,
             "losses": 1,
             "numerical_ties": 0,
             "failed_or_missing": 0,
-            "task_equal_win_fraction": 0.6666666666666666,
-            "family_equal_win_fraction": 0.5,
+            "task_equal_win_fraction": 0.75,
+            "family_equal_win_fraction": 0.6666666666666666,
             "task_summaries": [
+              {
+                "benchmark_id": "B07",
+                "family_code": "B",
+                "n_slices": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
               {
                 "benchmark_id": "H01",
                 "family_code": "H",
@@ -4226,6 +4357,14 @@
               }
             ],
             "family_summaries": [
+              {
+                "family_code": "B",
+                "n_tasks": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
               {
                 "family_code": "H",
                 "n_tasks": 2,
@@ -4341,10 +4480,10 @@
         }
       },
       "model": "gpt-6.1-sol",
-      "attempted": 28,
-      "valid": 27,
+      "attempted": 29,
+      "valid": 28,
       "failed": 1,
-      "strict_format_valid": 27,
+      "strict_format_valid": 28,
       "C05_preparation_equal_mean_of_medians": 0.46789571463086227,
       "C05_n_preparations": 5,
       "C05_reference_wins": 3,
@@ -4991,15 +5130,15 @@
         },
         "local_specialist": {
           "exploratory": {
-            "n_tasks": 5,
+            "n_tasks": 6,
             "n_families": 4,
-            "n_slice_comparisons": 5,
-            "wins": 2,
+            "n_slice_comparisons": 6,
+            "wins": 3,
             "losses": 3,
             "numerical_ties": 0,
             "failed_or_missing": 0,
-            "task_equal_win_fraction": 0.4,
-            "family_equal_win_fraction": 0.25,
+            "task_equal_win_fraction": 0.5,
+            "family_equal_win_fraction": 0.375,
             "task_summaries": [
               {
                 "benchmark_id": "B01",
@@ -5007,6 +5146,15 @@
                 "n_slices": 1,
                 "win_fraction": 0.0,
                 "loss_fraction": 1.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
+              {
+                "benchmark_id": "B07",
+                "family_code": "B",
+                "n_slices": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
                 "tie_fraction": 0.0,
                 "failure_fraction": 0.0
               },
@@ -5050,9 +5198,9 @@
             "family_summaries": [
               {
                 "family_code": "B",
-                "n_tasks": 1,
-                "win_fraction": 0.0,
-                "loss_fraction": 1.0,
+                "n_tasks": 2,
+                "win_fraction": 0.5,
+                "loss_fraction": 0.5,
                 "tie_fraction": 0.0,
                 "failure_fraction": 0.0
               },
@@ -5083,15 +5231,15 @@
             ]
           },
           "strict": {
-            "n_tasks": 5,
+            "n_tasks": 6,
             "n_families": 4,
-            "n_slice_comparisons": 5,
-            "wins": 2,
+            "n_slice_comparisons": 6,
+            "wins": 3,
             "losses": 3,
             "numerical_ties": 0,
             "failed_or_missing": 0,
-            "task_equal_win_fraction": 0.4,
-            "family_equal_win_fraction": 0.25,
+            "task_equal_win_fraction": 0.5,
+            "family_equal_win_fraction": 0.375,
             "task_summaries": [
               {
                 "benchmark_id": "B01",
@@ -5099,6 +5247,15 @@
                 "n_slices": 1,
                 "win_fraction": 0.0,
                 "loss_fraction": 1.0,
+                "tie_fraction": 0.0,
+                "failure_fraction": 0.0
+              },
+              {
+                "benchmark_id": "B07",
+                "family_code": "B",
+                "n_slices": 1,
+                "win_fraction": 1.0,
+                "loss_fraction": 0.0,
                 "tie_fraction": 0.0,
                 "failure_fraction": 0.0
               },
@@ -5142,9 +5299,9 @@
             "family_summaries": [
               {
                 "family_code": "B",
-                "n_tasks": 1,
-                "win_fraction": 0.0,
-                "loss_fraction": 1.0,
+                "n_tasks": 2,
+                "win_fraction": 0.5,
+                "loss_fraction": 0.5,
                 "tie_fraction": 0.0,
                 "failure_fraction": 0.0
               },
@@ -5344,6 +5501,18 @@
       "direction": "higher",
       "reference_class": "local_specialist",
       "evidence": "MountainSort5 fixed configuration; one standard stationary simulation, not current SOTA",
+      "budget_matched": false,
+      "current_sota": false
+    },
+    {
+      "benchmark_id": "B07",
+      "slice_id": "compression-v1",
+      "model": "wavpack-high",
+      "score": 7.690052032470703,
+      "metric": "encoded_bits_per_int16_sample",
+      "direction": "lower",
+      "reference_class": "local_specialist",
+      "evidence": "Frozen WavPack5.8.0 lossless very-high mode on16 real shortchunks, all384channels, exact-byte reconstruction; delta-Blosc alternative retained; not full streaming/paper/current-global-best benchmark",
       "budget_matched": false,
       "current_sota": false
     },
@@ -5683,6 +5852,17 @@
       "budget_matched": false
     },
     {
+      "benchmark_id": "B07",
+      "slice_id": "compression-v1",
+      "model": "gpt-5.6-sol",
+      "reference": "wavpack-high",
+      "reference_class": "local_specialist",
+      "direction_adjusted_delta": 0.6702219645182286,
+      "outcome": "win",
+      "strict_format_compliant": true,
+      "budget_matched": false
+    },
+    {
       "benchmark_id": "C05",
       "slice_id": "1",
       "model": "gpt-5.6-sol",
@@ -5991,6 +6171,17 @@
       "budget_matched": false
     },
     {
+      "benchmark_id": "B07",
+      "slice_id": "compression-v1",
+      "model": "gpt-6-sol",
+      "reference": "wavpack-high",
+      "reference_class": "local_specialist",
+      "direction_adjusted_delta": 0.7883542378743487,
+      "outcome": "win",
+      "strict_format_compliant": true,
+      "budget_matched": false
+    },
+    {
       "benchmark_id": "C05",
       "slice_id": "1",
       "model": "gpt-6-sol",
@@ -6295,6 +6486,17 @@
       "reference_class": "local_specialist",
       "direction_adjusted_delta": -0.1904456079225877,
       "outcome": "loss",
+      "strict_format_compliant": true,
+      "budget_matched": false
+    },
+    {
+      "benchmark_id": "B07",
+      "slice_id": "compression-v1",
+      "model": "gpt-6.1-sol",
+      "reference": "wavpack-high",
+      "reference_class": "local_specialist",
+      "direction_adjusted_delta": 0.4754629135131836,
+      "outcome": "win",
       "strict_format_compliant": true,
       "budget_matched": false
     },
@@ -6610,6 +6812,20 @@
       "newer": "gpt-6-sol",
       "metric": "mean_gt_accuracy",
       "direction_adjusted_delta": 0.065020947843353,
+      "outcome": "win",
+      "improved": true,
+      "older_valid": true,
+      "newer_valid": true,
+      "strict_pair_compliant": true,
+      "interpretation": "One program per model; exploratory point score only"
+    },
+    {
+      "benchmark_id": "B07",
+      "slice_id": "compression-v1",
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6-sol",
+      "metric": "encoded_bits_per_int16_sample",
+      "direction_adjusted_delta": 0.11813227335612009,
       "outcome": "win",
       "improved": true,
       "older_valid": true,
@@ -7010,6 +7226,20 @@
       "interpretation": "One program per model; exploratory point score only"
     },
     {
+      "benchmark_id": "B07",
+      "slice_id": "compression-v1",
+      "older": "gpt-6-sol",
+      "newer": "gpt-6.1-sol",
+      "metric": "encoded_bits_per_int16_sample",
+      "direction_adjusted_delta": -0.31289132436116507,
+      "outcome": "loss",
+      "improved": false,
+      "older_valid": true,
+      "newer_valid": true,
+      "strict_pair_compliant": true,
+      "interpretation": "One program per model; exploratory point score only"
+    },
+    {
       "benchmark_id": "C05",
       "slice_id": "1",
       "older": "gpt-6-sol",
@@ -7402,6 +7632,20 @@
       "interpretation": "One program per model; exploratory point score only"
     },
     {
+      "benchmark_id": "B07",
+      "slice_id": "compression-v1",
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6.1-sol",
+      "metric": "encoded_bits_per_int16_sample",
+      "direction_adjusted_delta": -0.19475905100504498,
+      "outcome": "loss",
+      "improved": false,
+      "older_valid": true,
+      "newer_valid": true,
+      "strict_pair_compliant": true,
+      "interpretation": "One program per model; exploratory point score only"
+    },
+    {
       "benchmark_id": "C05",
       "slice_id": "1",
       "older": "gpt-5.6-sol",
@@ -7757,15 +8001,15 @@
       "older": "gpt-5.6-sol",
       "newer": "gpt-6-sol",
       "observed_data": {
-        "n_tasks": 18,
-        "n_families": 12,
-        "n_slice_comparisons": 24,
-        "wins": 9,
+        "n_tasks": 19,
+        "n_families": 13,
+        "n_slice_comparisons": 25,
+        "wins": 10,
         "losses": 14,
         "numerical_ties": 1,
         "failed_or_missing": 0,
-        "task_equal_win_fraction": 0.41111111111111115,
-        "family_equal_win_fraction": 0.3875,
+        "task_equal_win_fraction": 0.4421052631578948,
+        "family_equal_win_fraction": 0.4346153846153846,
         "task_summaries": [
           {
             "benchmark_id": "A09",
@@ -7779,6 +8023,15 @@
           {
             "benchmark_id": "A14",
             "family_code": "A",
+            "n_slices": 1,
+            "win_fraction": 1.0,
+            "loss_fraction": 0.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "benchmark_id": "B07",
+            "family_code": "B",
             "n_slices": 1,
             "win_fraction": 1.0,
             "loss_fraction": 0.0,
@@ -7934,6 +8187,14 @@
           {
             "family_code": "A",
             "n_tasks": 2,
+            "win_fraction": 1.0,
+            "loss_fraction": 0.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "family_code": "B",
+            "n_tasks": 1,
             "win_fraction": 1.0,
             "loss_fraction": 0.0,
             "tie_fraction": 0.0,
@@ -8030,15 +8291,15 @@
         ]
       },
       "observed_data_strict": {
-        "n_tasks": 16,
-        "n_families": 11,
-        "n_slice_comparisons": 18,
-        "wins": 7,
+        "n_tasks": 17,
+        "n_families": 12,
+        "n_slice_comparisons": 19,
+        "wins": 8,
         "losses": 10,
         "numerical_ties": 1,
         "failed_or_missing": 0,
-        "task_equal_win_fraction": 0.4375,
-        "family_equal_win_fraction": 0.3939393939393939,
+        "task_equal_win_fraction": 0.47058823529411764,
+        "family_equal_win_fraction": 0.4444444444444444,
         "task_summaries": [
           {
             "benchmark_id": "A09",
@@ -8052,6 +8313,15 @@
           {
             "benchmark_id": "A14",
             "family_code": "A",
+            "n_slices": 1,
+            "win_fraction": 1.0,
+            "loss_fraction": 0.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "benchmark_id": "B07",
+            "family_code": "B",
             "n_slices": 1,
             "win_fraction": 1.0,
             "loss_fraction": 0.0,
@@ -8195,6 +8465,14 @@
             "failure_fraction": 0.0
           },
           {
+            "family_code": "B",
+            "n_tasks": 1,
+            "win_fraction": 1.0,
+            "loss_fraction": 0.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
             "family_code": "D",
             "n_tasks": 1,
             "win_fraction": 1.0,
@@ -8281,14 +8559,14 @@
         "N05: deterministic file correctness reported separately"
       ],
       "exploratory": {
-        "n_tasks": 20,
+        "n_tasks": 21,
         "n_families": 13,
-        "n_slice_comparisons": 26,
-        "wins": 11,
+        "n_slice_comparisons": 27,
+        "wins": 12,
         "losses": 14,
         "numerical_ties": 1,
         "failed_or_missing": 0,
-        "task_equal_win_fraction": 0.47000000000000003,
+        "task_equal_win_fraction": 0.49523809523809526,
         "family_equal_win_fraction": 0.4346153846153846,
         "task_summaries": [
           {
@@ -8311,6 +8589,15 @@
           },
           {
             "benchmark_id": "B01",
+            "family_code": "B",
+            "n_slices": 1,
+            "win_fraction": 1.0,
+            "loss_fraction": 0.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "benchmark_id": "B07",
             "family_code": "B",
             "n_slices": 1,
             "win_fraction": 1.0,
@@ -8483,7 +8770,7 @@
           },
           {
             "family_code": "B",
-            "n_tasks": 1,
+            "n_tasks": 2,
             "win_fraction": 1.0,
             "loss_fraction": 0.0,
             "tie_fraction": 0.0,
@@ -8580,14 +8867,14 @@
         ]
       },
       "strict": {
-        "n_tasks": 18,
+        "n_tasks": 19,
         "n_families": 12,
-        "n_slice_comparisons": 20,
-        "wins": 9,
+        "n_slice_comparisons": 21,
+        "wins": 10,
         "losses": 10,
         "numerical_ties": 1,
         "failed_or_missing": 0,
-        "task_equal_win_fraction": 0.5,
+        "task_equal_win_fraction": 0.5263157894736842,
         "family_equal_win_fraction": 0.4444444444444444,
         "task_summaries": [
           {
@@ -8610,6 +8897,15 @@
           },
           {
             "benchmark_id": "B01",
+            "family_code": "B",
+            "n_slices": 1,
+            "win_fraction": 1.0,
+            "loss_fraction": 0.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "benchmark_id": "B07",
             "family_code": "B",
             "n_slices": 1,
             "win_fraction": 1.0,
@@ -8764,7 +9060,7 @@
           },
           {
             "family_code": "B",
-            "n_tasks": 1,
+            "n_tasks": 2,
             "win_fraction": 1.0,
             "loss_fraction": 0.0,
             "tie_fraction": 0.0,
@@ -8857,15 +9153,15 @@
       "older": "gpt-6-sol",
       "newer": "gpt-6.1-sol",
       "observed_data": {
-        "n_tasks": 18,
-        "n_families": 12,
-        "n_slice_comparisons": 24,
+        "n_tasks": 19,
+        "n_families": 13,
+        "n_slice_comparisons": 25,
         "wins": 18,
-        "losses": 5,
+        "losses": 6,
         "numerical_ties": 0,
         "failed_or_missing": 1,
-        "task_equal_win_fraction": 0.6666666666666666,
-        "family_equal_win_fraction": 0.6666666666666666,
+        "task_equal_win_fraction": 0.631578947368421,
+        "family_equal_win_fraction": 0.6153846153846154,
         "task_summaries": [
           {
             "benchmark_id": "A09",
@@ -8879,6 +9175,15 @@
           {
             "benchmark_id": "A14",
             "family_code": "A",
+            "n_slices": 1,
+            "win_fraction": 0.0,
+            "loss_fraction": 1.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "benchmark_id": "B07",
+            "family_code": "B",
             "n_slices": 1,
             "win_fraction": 0.0,
             "loss_fraction": 1.0,
@@ -9036,6 +9341,14 @@
             "n_tasks": 2,
             "win_fraction": 0.5,
             "loss_fraction": 0.5,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "family_code": "B",
+            "n_tasks": 1,
+            "win_fraction": 0.0,
+            "loss_fraction": 1.0,
             "tie_fraction": 0.0,
             "failure_fraction": 0.0
           },
@@ -9130,15 +9443,15 @@
         ]
       },
       "observed_data_strict": {
-        "n_tasks": 18,
-        "n_families": 12,
-        "n_slice_comparisons": 24,
+        "n_tasks": 19,
+        "n_families": 13,
+        "n_slice_comparisons": 25,
         "wins": 18,
-        "losses": 5,
+        "losses": 6,
         "numerical_ties": 0,
         "failed_or_missing": 1,
-        "task_equal_win_fraction": 0.6666666666666666,
-        "family_equal_win_fraction": 0.6666666666666666,
+        "task_equal_win_fraction": 0.631578947368421,
+        "family_equal_win_fraction": 0.6153846153846154,
         "task_summaries": [
           {
             "benchmark_id": "A09",
@@ -9152,6 +9465,15 @@
           {
             "benchmark_id": "A14",
             "family_code": "A",
+            "n_slices": 1,
+            "win_fraction": 0.0,
+            "loss_fraction": 1.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "benchmark_id": "B07",
+            "family_code": "B",
             "n_slices": 1,
             "win_fraction": 0.0,
             "loss_fraction": 1.0,
@@ -9309,6 +9631,14 @@
             "n_tasks": 2,
             "win_fraction": 0.5,
             "loss_fraction": 0.5,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "family_code": "B",
+            "n_tasks": 1,
+            "win_fraction": 0.0,
+            "loss_fraction": 1.0,
             "tie_fraction": 0.0,
             "failure_fraction": 0.0
           },
@@ -9407,14 +9737,14 @@
         "N05: deterministic file correctness reported separately"
       ],
       "exploratory": {
-        "n_tasks": 20,
+        "n_tasks": 21,
         "n_families": 13,
-        "n_slice_comparisons": 26,
+        "n_slice_comparisons": 27,
         "wins": 18,
-        "losses": 7,
+        "losses": 8,
         "numerical_ties": 0,
         "failed_or_missing": 1,
-        "task_equal_win_fraction": 0.6,
+        "task_equal_win_fraction": 0.5714285714285714,
         "family_equal_win_fraction": 0.6153846153846154,
         "task_summaries": [
           {
@@ -9437,6 +9767,15 @@
           },
           {
             "benchmark_id": "B01",
+            "family_code": "B",
+            "n_slices": 1,
+            "win_fraction": 0.0,
+            "loss_fraction": 1.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "benchmark_id": "B07",
             "family_code": "B",
             "n_slices": 1,
             "win_fraction": 0.0,
@@ -9609,7 +9948,7 @@
           },
           {
             "family_code": "B",
-            "n_tasks": 1,
+            "n_tasks": 2,
             "win_fraction": 0.0,
             "loss_fraction": 1.0,
             "tie_fraction": 0.0,
@@ -9706,14 +10045,14 @@
         ]
       },
       "strict": {
-        "n_tasks": 20,
+        "n_tasks": 21,
         "n_families": 13,
-        "n_slice_comparisons": 26,
+        "n_slice_comparisons": 27,
         "wins": 18,
-        "losses": 7,
+        "losses": 8,
         "numerical_ties": 0,
         "failed_or_missing": 1,
-        "task_equal_win_fraction": 0.6,
+        "task_equal_win_fraction": 0.5714285714285714,
         "family_equal_win_fraction": 0.6153846153846154,
         "task_summaries": [
           {
@@ -9736,6 +10075,15 @@
           },
           {
             "benchmark_id": "B01",
+            "family_code": "B",
+            "n_slices": 1,
+            "win_fraction": 0.0,
+            "loss_fraction": 1.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "benchmark_id": "B07",
             "family_code": "B",
             "n_slices": 1,
             "win_fraction": 0.0,
@@ -9908,7 +10256,7 @@
           },
           {
             "family_code": "B",
-            "n_tasks": 1,
+            "n_tasks": 2,
             "win_fraction": 0.0,
             "loss_fraction": 1.0,
             "tie_fraction": 0.0,
@@ -10009,15 +10357,15 @@
       "older": "gpt-5.6-sol",
       "newer": "gpt-6.1-sol",
       "observed_data": {
-        "n_tasks": 18,
-        "n_families": 12,
-        "n_slice_comparisons": 24,
+        "n_tasks": 19,
+        "n_families": 13,
+        "n_slice_comparisons": 25,
         "wins": 17,
-        "losses": 6,
+        "losses": 7,
         "numerical_ties": 0,
         "failed_or_missing": 1,
-        "task_equal_win_fraction": 0.6925925925925926,
-        "family_equal_win_fraction": 0.6430555555555556,
+        "task_equal_win_fraction": 0.656140350877193,
+        "family_equal_win_fraction": 0.5935897435897436,
         "task_summaries": [
           {
             "benchmark_id": "A09",
@@ -10031,6 +10379,15 @@
           {
             "benchmark_id": "A14",
             "family_code": "A",
+            "n_slices": 1,
+            "win_fraction": 0.0,
+            "loss_fraction": 1.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "benchmark_id": "B07",
+            "family_code": "B",
             "n_slices": 1,
             "win_fraction": 0.0,
             "loss_fraction": 1.0,
@@ -10192,6 +10549,14 @@
             "failure_fraction": 0.0
           },
           {
+            "family_code": "B",
+            "n_tasks": 1,
+            "win_fraction": 0.0,
+            "loss_fraction": 1.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
             "family_code": "C",
             "n_tasks": 1,
             "win_fraction": 0.8,
@@ -10282,15 +10647,15 @@
         ]
       },
       "observed_data_strict": {
-        "n_tasks": 16,
-        "n_families": 11,
-        "n_slice_comparisons": 18,
+        "n_tasks": 17,
+        "n_families": 12,
+        "n_slice_comparisons": 19,
         "wins": 13,
-        "losses": 4,
+        "losses": 5,
         "numerical_ties": 0,
         "failed_or_missing": 1,
-        "task_equal_win_fraction": 0.7291666666666666,
-        "family_equal_win_fraction": 0.6515151515151515,
+        "task_equal_win_fraction": 0.6862745098039216,
+        "family_equal_win_fraction": 0.5972222222222222,
         "task_summaries": [
           {
             "benchmark_id": "A09",
@@ -10304,6 +10669,15 @@
           {
             "benchmark_id": "A14",
             "family_code": "A",
+            "n_slices": 1,
+            "win_fraction": 0.0,
+            "loss_fraction": 1.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "benchmark_id": "B07",
+            "family_code": "B",
             "n_slices": 1,
             "win_fraction": 0.0,
             "loss_fraction": 1.0,
@@ -10447,6 +10821,14 @@
             "failure_fraction": 0.0
           },
           {
+            "family_code": "B",
+            "n_tasks": 1,
+            "win_fraction": 0.0,
+            "loss_fraction": 1.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
             "family_code": "D",
             "n_tasks": 1,
             "win_fraction": 0.0,
@@ -10533,14 +10915,14 @@
         "N05: deterministic file correctness reported separately"
       ],
       "exploratory": {
-        "n_tasks": 20,
+        "n_tasks": 21,
         "n_families": 13,
-        "n_slice_comparisons": 26,
+        "n_slice_comparisons": 27,
         "wins": 18,
-        "losses": 7,
+        "losses": 8,
         "numerical_ties": 0,
         "failed_or_missing": 1,
-        "task_equal_win_fraction": 0.6733333333333333,
+        "task_equal_win_fraction": 0.6412698412698413,
         "family_equal_win_fraction": 0.5935897435897436,
         "task_summaries": [
           {
@@ -10563,6 +10945,15 @@
           },
           {
             "benchmark_id": "B01",
+            "family_code": "B",
+            "n_slices": 1,
+            "win_fraction": 0.0,
+            "loss_fraction": 1.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "benchmark_id": "B07",
             "family_code": "B",
             "n_slices": 1,
             "win_fraction": 0.0,
@@ -10735,7 +11126,7 @@
           },
           {
             "family_code": "B",
-            "n_tasks": 1,
+            "n_tasks": 2,
             "win_fraction": 0.0,
             "loss_fraction": 1.0,
             "tie_fraction": 0.0,
@@ -10832,14 +11223,14 @@
         ]
       },
       "strict": {
-        "n_tasks": 18,
+        "n_tasks": 19,
         "n_families": 12,
-        "n_slice_comparisons": 20,
+        "n_slice_comparisons": 21,
         "wins": 14,
-        "losses": 5,
+        "losses": 6,
         "numerical_ties": 0,
         "failed_or_missing": 1,
-        "task_equal_win_fraction": 0.7037037037037037,
+        "task_equal_win_fraction": 0.6666666666666666,
         "family_equal_win_fraction": 0.5972222222222222,
         "task_summaries": [
           {
@@ -10862,6 +11253,15 @@
           },
           {
             "benchmark_id": "B01",
+            "family_code": "B",
+            "n_slices": 1,
+            "win_fraction": 0.0,
+            "loss_fraction": 1.0,
+            "tie_fraction": 0.0,
+            "failure_fraction": 0.0
+          },
+          {
+            "benchmark_id": "B07",
             "family_code": "B",
             "n_slices": 1,
             "win_fraction": 0.0,
@@ -11016,7 +11416,7 @@
           },
           {
             "family_code": "B",
-            "n_tasks": 1,
+            "n_tasks": 2,
             "win_fraction": 0.0,
             "loss_fraction": 1.0,
             "tie_fraction": 0.0,
@@ -11106,8 +11506,8 @@
       }
     }
   ],
-  "record_count": 167,
-  "model_attempts": 84,
+  "record_count": 173,
+  "model_attempts": 87,
   "weighting": "Native deltas never averaged. For descriptive win fractions average slices within task, tasks within family, families equally. Report reference classes separately. Failed/missing attempts remain denominator, strict format subsets have explicit denominator.",
   "dataset_dependencies": [
     "D02 and N05 share the same Allen intracellular file",
@@ -11118,6 +11518,7 @@
     "H16 semisynthetic mixtures, participant IDs unavailable",
     "K04 four testsections are one held-out donor; annotations are expression-assisted",
     "M01 observed five-trial histories and known blockprior; nonoverlapping target/history blocks; labs overlap",
+    "B07 sixteen short real-voltage chunks represent fourteen animals; compression is lab infrastructure, not neural interpretation",
     "L06 ten synthetic observations share one design; likelihood-informed posterior sampling, custom2000drawC2ST, not originalSBI leaderboard",
     "H02 extra generations remain separate from this first-submission panel"
   ],

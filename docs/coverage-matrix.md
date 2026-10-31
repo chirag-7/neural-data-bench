@@ -1,11 +1,11 @@
 # Coverage and maturity
 
-22 measured IDs represent 14 families through narrow selected slices, not complete coverage. Counts describe task–resource associations, not independent datasets.
+23 measured IDs represent 14 families through narrow selected slices, not complete coverage. Counts describe task–resource associations, not independent datasets.
 
 | Family | Active entries | Measured IDs | Pending validation | Deferred |
 |---|---:|---|---:|---:|
 | [A](../benchmarks/A/README.md) Behavior, kinematics and vocalization | 16 | A09, A14 | 11 | 3 |
-| [B](../benchmarks/B/README.md) Extracellular signal acquisition | 8 | B01 | 7 | 0 |
+| [B](../benchmarks/B/README.md) Extracellular signal acquisition | 8 | B01, B07 | 6 | 0 |
 | [C](../benchmarks/C/README.md) Calcium imaging and photometry | 9 | C05 | 8 | 0 |
 | [D](../benchmarks/D/README.md) Voltage, intracellular and dendrites | 3 | D02 | 0 | 2 |
 | [E](../benchmarks/E/README.md) Population activity and dynamics | 6 | E01 | 5 | 0 |
@@ -25,7 +25,7 @@
 
 ## Material gaps
 
-- B01 is a ten-second stationary simulation: biological extracellular voltage, drift, collisions and multi-hour stability remain unmeasured.
+- B01 is a ten-second stationary sorting simulation. B07 adds byte-exact compression of real voltage; real-data spike sorting, drift, collisions and multi-hour stability remain unmeasured.
 - J08 has two 2 D fields: 3 D microscopy, EM connectomics, registration, tractography and independent-specimen replication remain unmeasured.
 - G01 is offline monkey finger-velocity decoding across four recording days: clinical speech BCI, online control, adaptation latency and human safety remain unmeasured.
 - H08 has three held-out first nights from healthy volunteers; clinical disorders, sites, demographics and full polysomnography generalization remain unmeasured. MEG, seizure detection and other electrophysiology endpoints remain candidates.
@@ -43,4 +43,4 @@ H02 adds one 25-person P300 source with 15/10 subject split; it does not complet
 
 ## Posterior-inference addition in preview 0.9
 
-L06 covers likelihood-informed posterior sampling for a ten-parameter spiking-neuron GLM. All ten simulated observations share a design. This adds an uncertainty/distribution endpoint but not broad mechanistic simulator fitting, likelihood-free SBI, causal recovery or biological validation. [Protocol](../experiments/L06/protocol.md). Original/public data access for B07 is now verified, but no compression contract or performance is admitted.
+L06 covers likelihood-informed posterior sampling for a ten-parameter spiking-neuron GLM. All ten simulated observations share a design. This adds an uncertainty/distribution endpoint but not broad mechanistic simulator fitting, likelihood-free SBI, causal recovery or biological validation. [Protocol](../experiments/L06/protocol.md). B07 is now executed under a separate short chunk lossless-compression contract; see [release0.10](release-v10.md).

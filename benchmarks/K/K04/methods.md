@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.9: HumanPilot DLPFC: 33,086 training spots from two donors/eight sections; 14,243 test spots from one donor/four sections; 500 training-selected genes.
+Preview 0.10: HumanPilot DLPFC: 33,086 training spots from two donors/eight sections; 14,243 test spots from one donor/four sections; 500 training-selected genes.
 
 [Actual frozen contract and implementation](../../../experiments/K04). [Measured method/reference records](../../../results/K04.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

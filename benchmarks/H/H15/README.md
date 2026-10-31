@@ -38,6 +38,6 @@ Decision: **deferred** (2026-10-30). Original MNE/Brainstorm phantom tutorial ac
 
 ## Current admission and execution
 
-Preview 0.9: deferred. Original MNE/Brainstorm phantom tutorial accessible. Known dipole positions make this scientifically useful, but needs sensor geometry, forward model, filtering and localization scorer adapter. No arbitrary simulated coordinate regression substituted.
+Preview 0.10: deferred. Original MNE/Brainstorm phantom tutorial accessible. Known dipole positions make this scientifically useful, but needs sensor geometry, forward model, filtering and localization scorer adapter. No arbitrary simulated coordinate regression substituted.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

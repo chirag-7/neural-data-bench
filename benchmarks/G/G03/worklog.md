@@ -12,6 +12,6 @@ Decision: **deferred** (2026-10-30). Brain-to-Text speech decoding needs sequenc
 
 ## Current admission and execution
 
-Preview 0.9: deferred. Brain-to-Text speech decoding needs sequence/phoneme/texttargets, CTC/language-model decoding rules and speech-rate/word-error scorer, with substantial data and training. ThreeSol numerical code snippets are not speechsequence models. No data acquisition attempted; retain valid futurecandidate.
+Preview 0.10: deferred. Brain-to-Text speech decoding needs sequence/phoneme/texttargets, CTC/language-model decoding rules and speech-rate/word-error scorer, with substantial data and training. ThreeSol numerical code snippets are not speechsequence models. No data acquisition attempted; retain valid futurecandidate.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.9: One real legacy Allen NWB file, shared with D02: extract 61 deterministic fields covering six sweeps.
+Preview 0.10: One real legacy Allen NWB file, shared with D02: extract 61 deterministic fields covering six sweeps.
 
 [Actual frozen contract and implementation](../../../experiments/N05). [Measured method/reference records](../../../results/N05.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

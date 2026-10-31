@@ -30,7 +30,7 @@
     "evidence": "literature/admission-v04-behavior-population.json"
   },
   "current_execution": {
-    "release": "0.9",
+    "release": "0.10",
     "status": "measured",
     "slice": "Rat7M: six-landmark, 31-frame windows with an artificial seven-frame HeadF gap; three training and two test rats.",
     "evidence": "literature/admission-v04-behavior-population.json"

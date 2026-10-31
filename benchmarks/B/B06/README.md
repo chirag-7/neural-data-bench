@@ -38,6 +38,6 @@ Decision: **candidate_pending_validation** (2026-10-30). IBL Ephys Atlas channel
 
 ## Current admission and execution
 
-Preview 0.9: candidate_pending_validation. Current full atlas tables require authenticated Alyx/private-S3 access; no configured source credentials used. Public software test fixtures were not substituted for a representative benchmark.
+Preview 0.10: candidate_pending_validation. Current full atlas tables require authenticated Alyx/private-S3 access; no configured source credentials used. Public software test fixtures were not substituted for a representative benchmark.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

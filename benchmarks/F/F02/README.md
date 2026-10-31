@@ -38,6 +38,6 @@ Decision: **deferred** (2026-10-30). Sensorium2023 adds dynamic visual stimuli a
 
 ## Current admission and execution
 
-Preview 0.9: deferred. Sensorium2023 adds dynamic visual stimuli and neuralresponses; fullvideo/mouse data and visionencoding pipeline exceed present lightweightCPU execution. No acquisition attempted. Distinct temporal task cannot be represented by static images or arbitrary tabular features.
+Preview 0.10: deferred. Sensorium2023 adds dynamic visual stimuli and neuralresponses; fullvideo/mouse data and visionencoding pipeline exceed present lightweightCPU execution. No acquisition attempted. Distinct temporal task cannot be represented by static images or arbitrary tabular features.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

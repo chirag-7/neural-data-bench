@@ -1,10 +1,11 @@
 # Executed panel
 
-22 measured task IDs. Exact scores and caveats:[findings](../analysis/findings.md); source contracts:[experiments](../experiments/).
+23 measured task IDs. Exact scores and caveats:[findings](../analysis/findings.md); source contracts:[experiments](../experiments/).
 
 - [A09](../experiments/A09): CalMS21 Task 1: processed pose context at 3 Hz; 70 training and 19 test recordings.
-- [A14](../experiments/A14): Rat7 M: six-landmark, 31-frame windows with an artificial seven-frame HeadF gap; three training and two test rats.
+- [A14](../experiments/A14): Rat 7 M: six-landmark, 31-frame windows with an artificial seven-frame HeadF gap; three training and two test rats.
 - [B01](../experiments/B01): Blind unsupervised spike sorting of one 10-second, 32-channel stationary MEArec simulation; official unit/event matching.
+- [B07](../experiments/B07): AIND/IBL original 16 recordings; fixed 4096 x 384 int16 chunks, exact-byte lossless compression;14 source animals.
 - [C05](../experiments/C05): Spikefinder: calcium-to-spike inference on five preparations; median 40 ms correlation per preparation.
 - [D02](../experiments/D02): One Allen cell: four training and two test negative-current sweeps; 500 Hz passive voltage interpolation.
 - [E01](../experiments/E01): Neural Latents Benchmark: MC_Maze_Small, Area 2_Bump and DMFC_RSG; held-in to held-out neuron readout using unchanged generated programs.
@@ -19,9 +20,9 @@
 - [J08](../experiments/J08): SynAPSeg 2 D puncta: 27 training fields yielding 1, 262 crops; two held-out whole fields, five expert masks each; archived StarDist reference.
 - [K01](../experiments/K01): Allen mouse electrophysiology: 11 features predict spiny/aspiny morphology; donor-disjoint 1, 356 training and 457 test cells.
 - [K04](../experiments/K04): DLPFC HumanPilot donor-held-out expression-to-layer transfer; two train donors/eight sections versus one test donor/four sections;500 genes.
-- [L06](../experiments/L06): All ten original sbibm Bernoulli GLM observations; known design/likelihood/prior,10,000 posterior draws each;2,000-draw C2ST primary.
+- [L06](../experiments/L06): All ten original sbibm Bernoulli GLM observations; known design/likelihood/prior,10,000 posterior draws each;2,000-draw C2 ST primary.
 - [L04](../experiments/L04): One rat place cell: 20 ms spike counts predicted from position and velocity; chronological 60/40 split with a one-second gap.
-- [M01](../experiments/M01): IBL real conditional choices;83 train/17 test mice,nonoverlapping six-trial target/history blocks and known experimenter blockprior.
+- [M01](../experiments/M01): IBL real conditional choices;83 train/17 test mice, nonoverlapping six-trial target/history blocks and known experimenter blockprior.
 - [M04](../experiments/M04): Synthetic two-choice Q-learning agents: recover learning rate and inverse temperature from choices and rewards.
 - [N05](../experiments/N05): One real legacy Allen NWB file, shared with D02: extract 61 deterministic fields covering six sweeps.
 
@@ -32,3 +33,5 @@ C05 has five preparations; E01 has three official source slices, all reusing ori
 Six new submissions plus one train-only CV-selected specialist are retained in the [separate ledger](../results/replications/H02.json). Original attempt 1 is included for context, giving three attempts per model on the same dataset. These do not increase first-submission macro denominators. The historical 19-task/75-attempt 0.7 snapshot is preserved. Preview 0.8 added K04/M01 to reach 21 tasks/81 attempts; preview 0.9 adds L06 to reach 22 tasks/84 attempts. [Plan, outcomes and verification](../experiments/H02/replication-v1/results.md).
 
 Preview 0.9 adds L06 as one synthetic posterior task, giving 22 tasks/84 first-submission attempts. The three generated programs pass all strict runtime/format rules. Local Polya–Gamma and Laplace references share the same inputs. The prior 0.8 ledger and H02 follow-up remain unchanged.
+
+Preview 0.10 adds B07, giving 23 tasks/87 first-submission attempts. Its 16 per-recording outputs count as one task/slice, not 16 independent tasks. The previous 0.9 ledger is preserved.

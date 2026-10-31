@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Needs exact leave-one-d
 
 ## Current admission and execution
 
-Preview 0.9: candidate_pending_validation. Needs exact leave-one-dataset-out weights and proof held-out training set was excluded from domain pretraining. Cannot treat animal-specialist SuperAnimal as a general-purpose baseline. Weights/splits not yet validated.
+Preview 0.10: candidate_pending_validation. Needs exact leave-one-dataset-out weights and proof held-out training set was excluded from domain pretraining. Cannot treat animal-specialist SuperAnimal as a general-purpose baseline. Weights/splits not yet validated.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

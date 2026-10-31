@@ -1,11 +1,11 @@
 # Current status
 
-Research preview **0.9**: [release](release-v09.md), [findings](../analysis/findings.md), [machine-readable summary](../analysis/summary.json).
+Research preview **0.10**: [release](release-v10.md), [findings](../analysis/findings.md), [machine-readable summary](../analysis/summary.json).
 
-The active map has 96 entries across 14 families: **22 measured tasks, 46 pending validation and 28 deferred**. Eighteen other candidates remain archived. The first-submission panel has 28 slices per model and **84 attempts: 82 valid predictions and two failures**. Its 66 generated programs plus six separate H02 follow-up programs give 72 programs overall.
+The active map has 96 entries across 14 families: **23 measured tasks, 45 pending validation and 28 deferred**. Eighteen others remain archived. The first-submission panel has 29 slices/model and **87 attempts: 85 valid and 2 failures**. Its 69 programs plus six separate H02 follow-up programs give 75 programs overall.
 
-The central ledger has 167 model/reference records and 161 stored posterior/prediction outputs. Seven additional H02 outputs give 168 unique prediction files across both panels. H02 repetitions do not enter first-submission macro totals. Every 0.8 record remains unchanged.
+The central ledger has 173 model/reference records and 167 saved prediction/posterior/output manifests. Seven additional H02 outputs give 174 unique manifests/prediction files across both panels. B07 additionally retains 96 compressed binary payloads; these are not new tasks or model attempts. H02 repetitions remain separate. Every 0.9 central record remains identical.
 
-L06 adds three strict-valid generated posterior samplers and two fixed references on all ten original simulated GLM observations. Primary accuracy arithmetic, source joins, frozen artifacts and secondary distribution distances have independent audits. It is known-likelihood inference, not the original simulator-only SBI leaderboard or biological data. The observed-data macro view is now the default, with a synthetic-inclusive view available explicitly.
+B07 adds fixed real Neuropixels chunks from all 16 original AIND/IBL recordings (14 source animals), exact-byte codec checks and frozen WavPack/delta–Blosc references. It is short chunk lab infrastructure, not full streaming performance or neural interpretation. Observed-data macro scope includes it; synthetic and deterministic exclusions remain explicit.
 
-There are 74 active unrun candidates. Current global best, exhaustive coverage and paper readiness remain unestablished. See the [candid progress assessment](progress-assessment.md).
+There are 73 active unrun candidates. Current global best, exhaustive coverage and paper readiness remain unestablished. See the [progress assessment](progress-assessment.md).

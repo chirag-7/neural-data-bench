@@ -40,7 +40,7 @@
     "evidence": "literature/admission-v04-electrical.json"
   },
   "current_execution": {
-    "release": "0.9",
+    "release": "0.10",
     "status": "measured",
     "slice": "FRESH optical-density tapping classification: seven training and three test people; condition and session remain confounded.",
     "evidence": "literature/admission-v04-electrical.json"

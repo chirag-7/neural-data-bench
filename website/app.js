@@ -23,6 +23,8 @@ const NAMES = {
   "gpt-5.6-sol": "GPT-5.6 Sol",
   "gpt-6-sol": "GPT-6 Sol",
   "gpt-6.1-sol": "GPT-6.1 Sol",
+  "wavpack-high": "WavPack 5.8 · lossless very-high",
+  "delta-blosc-zstd": "Delta + Blosc/Zstd9 · bitshuffle",
   mountainsort5: "MountainSort5 · scheme 1",
   "yasa-eeg": "YASA · pretrained EEG",
   "pyriemann-ts-svm": "pyRiemann · TS-SVM",
@@ -46,7 +48,7 @@ const NAMES = {
 };
 const CATEGORIES = {
   A: "Behavior & movement",
-  B: "Spikes & sorting",
+  B: "Extracellular data",
   C: "Calcium imaging",
   D: "Voltage & intracellular",
   E: "Population dynamics",
@@ -64,6 +66,7 @@ const TITLES = {
   A09: "Social behavior classification",
   A14: "Missing-pose recovery",
   B01: "Extracellular spike sorting",
+  B07: "Lossless voltage compression",
   C05: "Calcium-to-spike inference",
   D02: "Passive cell-response prediction",
   E01: "Population activity inference",
@@ -88,6 +91,7 @@ const DATASETS = {
   A09: "CalMS21 · processed pose context",
   A14: "Rat7M · artificial HeadF gaps",
   B01: "MEArec · 10 s stationary simulation",
+  B07: "AIND / IBL · 16 real short chunks",
   C05: "Spikefinder · five preparations",
   D02: "Allen Cell Types · one passive cell",
   E01: "NLB · Maze, Area2, DMFC",
@@ -147,6 +151,7 @@ const fmt = (v) =>
 function methodName(r) {
   if (r.display_name) return r.display_name;
   if (r.model === "task-baseline") {
+    if (r.benchmark_id === "B07") return "Raw zlib9";
     if (r.benchmark_id === "J08") return "StarDist · author archive";
     if (r.benchmark_id === "N05") return "Audited file reference";
     if (r.benchmark_id === "G01") return "FALCON-style ridge";
@@ -161,6 +166,8 @@ function methodName(r) {
 function isSpecialist(r) {
   return (
     [
+      "wavpack-high",
+      "delta-blosc-zstd",
       "deneux",
       "speiser",
       "friedrich",
@@ -183,6 +190,7 @@ function isSpecialist(r) {
 }
 function evidence(r) {
   if (MODELS.includes(r.model)) return "General-model code";
+  if (r.benchmark_id === "B07" && isSpecialist(r)) return "Domain-aligned codec reference";
   if (r.model === "behavioral-glm") return "Source-inspired pooled domain reference";
   if (r.reference_type === "pretrained_specialist")
     return "Pretrained specialist";
@@ -302,7 +310,7 @@ function explorer(fam = "") {
   if (scored.length && !scored.some((e) => e.id === selectedTask))
     selectedTask = scored[0].id;
   $("#app").innerHTML =
-    `<p class="eyebrow">General models × specialist methods</p><h1>${f ? esc(CATEGORIES[fam] || f.name) : "Neuroscience benchmark results"}</h1><p class="lede">${f ? esc(f.tasks) : "Explore measured performance by task, compare general models with verified specialist references, and follow each result to its data and evaluation protocol. Models generate analysis code, which is then fitted locally."}</p>${mobileFilter(fam)}${!fam ? `<p class="note">Newly evaluated: ${route("benchmark/L06", "Spiking-neuron posterior inference")}. Also available: ${route("benchmark/K04", "Cortical-layer label transfer")} · ${route("benchmark/M01", "Conditional mouse-choice prediction")}. Inspect exact data, named references and both plots.</p>` : ""}${!fam ? `<div class="stats"><div class="stat"><strong>${summary.measured_tasks}</strong><span>tasks with model attempts</span></div><div class="stat"><strong>${summary.measured_families} / ${catalog.families.length}</strong><span>categories represented</span></div><div class="stat"><strong>3</strong><span>general models evaluated</span></div><div class="stat"><strong>${summary.model_attempts}</strong><span>model × slice attempts</span></div></div>` : ""}${scored.length ? `<div class="toolbar"><label for="benchmark-picker" class="small">Explore a benchmark</label><select id="benchmark-picker">${scored.map((e) => `<option value="${e.id}" ${selectedTask === e.id ? "selected" : ""}>${e.id} · ${esc(title(e))}</option>`).join("")}</select>${route("benchmark/" + selectedTask, "Open benchmark →", "button secondary")}</div><div id="featured-chart"></div>` : `<div class="note">No model results are available in this category yet. Its candidates remain separate from measured benchmarks.</div>`}<div class="section-head"><h2>${f ? "Benchmarks in this category" : "Benchmark directory"}</h2><span class="small">Native scores · no mixed-metric ranking</span></div><div class="toolbar"><input id="search" class="search" aria-label="Search benchmarks" placeholder="Search tasks, datasets or methods…" value="${esc(query)}"><select id="list-mode" aria-label="Result availability"><option value="measured" ${listMode === "measured" ? "selected" : ""}>Measured results</option><option value="all" ${listMode === "all" ? "selected" : ""}>All active candidates</option></select><a class="download-link" href="data/measurements.csv" download>Download results ↓</a></div><div id="benchmark-directory"></div><p class="small" style="margin-top:17px">† Code-line format deviation; see strict-format analysis. A published task score is conditional on its frozen slice and procedure. Directory scores use each task’s first submission. H02’s replication tab includes its stronger train-CV specialist and repeated submissions. The highest inspected reference score does not establish current global SOTA. ${route("methods", "Read the methodology →")}</p>`;
+    `<p class="eyebrow">General models × specialist methods</p><h1>${f ? esc(CATEGORIES[fam] || f.name) : "Neuroscience benchmark results"}</h1><p class="lede">${f ? esc(f.tasks) : "Explore measured performance by task, compare general models with verified specialist references, and follow each result to its data and evaluation protocol. Models generate analysis code, which is then fitted locally."}</p>${mobileFilter(fam)}${!fam ? `<p class="note">Newly evaluated: ${route("benchmark/B07", "Lossless voltage compression")}. Also: ${route("benchmark/L06", "Spiking-neuron posterior inference")}. Also available: ${route("benchmark/K04", "Cortical-layer label transfer")} · ${route("benchmark/M01", "Conditional mouse-choice prediction")}. Inspect exact data, named references and both plots.</p>` : ""}${!fam ? `<div class="stats"><div class="stat"><strong>${summary.measured_tasks}</strong><span>tasks with model attempts</span></div><div class="stat"><strong>${summary.measured_families} / ${catalog.families.length}</strong><span>categories represented</span></div><div class="stat"><strong>3</strong><span>general models evaluated</span></div><div class="stat"><strong>${summary.model_attempts}</strong><span>model × slice attempts</span></div></div>` : ""}${scored.length ? `<div class="toolbar"><label for="benchmark-picker" class="small">Explore a benchmark</label><select id="benchmark-picker">${scored.map((e) => `<option value="${e.id}" ${selectedTask === e.id ? "selected" : ""}>${e.id} · ${esc(title(e))}</option>`).join("")}</select>${route("benchmark/" + selectedTask, "Open benchmark →", "button secondary")}</div><div id="featured-chart"></div>` : `<div class="note">No model results are available in this category yet. Its candidates remain separate from measured benchmarks.</div>`}<div class="section-head"><h2>${f ? "Benchmarks in this category" : "Benchmark directory"}</h2><span class="small">Native scores · no mixed-metric ranking</span></div><div class="toolbar"><input id="search" class="search" aria-label="Search benchmarks" placeholder="Search tasks, datasets or methods…" value="${esc(query)}"><select id="list-mode" aria-label="Result availability"><option value="measured" ${listMode === "measured" ? "selected" : ""}>Measured results</option><option value="all" ${listMode === "all" ? "selected" : ""}>All active candidates</option></select><a class="download-link" href="data/measurements.csv" download>Download results ↓</a></div><div id="benchmark-directory"></div><p class="small" style="margin-top:17px">† Code-line format deviation; see strict-format analysis. A published task score is conditional on its frozen slice and procedure. Directory scores use each task’s first submission. H02’s replication tab includes its stronger train-CV specialist and repeated submissions. The highest inspected reference score does not establish current global SOTA. ${route("methods", "Read the methodology →")}</p>`;
   if ($("#mobile-category"))
     $("#mobile-category").onchange = (e) => {
       location.hash = e.target.value ? "#/category/" + e.target.value : "#/";
@@ -359,6 +367,7 @@ function referenceSelection(c) {
   };
   add(c.reference);
   add(c.frozen);
+  if (c.rs.some((r) => r.benchmark_id === "B07")) add(c.rs.find((r) => r.model === "delta-blosc-zstd"));
   const baseline = c.rs.find((r) => r.model === "task-baseline") || c.rs.find((r) => r.benchmark_id === "L06" && r.model === "laplace");
   if (valid(baseline)) add(baseline);
   if (showAllRefs)
@@ -477,7 +486,7 @@ function referenceCards(refs, frozen) {
     .filter(valid)
     .map(
       (r, i) =>
-        `<div class="reference-card ${isSpecialist(r) ? "specialist" : "baseline"}"><div class="reference-kicker"><span class="reference-key" style="color:${refColor(r, i)}">R${i + 1} · ${r.model === "behavioral-glm" ? "Domain reference · dashed line" : isSpecialist(r) ? "Specialist · dashed line" : "Other reference · dotted line"}</span>${r.model === frozen?.model ? '<span class="reference-policy">Primary comparator</span>' : ""}</div><div class="reference-value"><span>${esc(methodName(r))}</span><strong>${fmt(r.score)}</strong></div><span class="reference-policy">${esc(evidence(r))}</span></div>`,
+        `<div class="reference-card ${isSpecialist(r) ? "specialist" : "baseline"}"><div class="reference-kicker"><span class="reference-key" style="color:${refColor(r, i)}">R${i + 1} · ${r.benchmark_id === "B07" && isSpecialist(r) ? "Codec reference · dashed line" : r.model === "behavioral-glm" ? "Domain reference · dashed line" : isSpecialist(r) ? "Specialist · dashed line" : "Other reference · dotted line"}</span>${r.model === frozen?.model ? '<span class="reference-policy">Primary comparator</span>' : ""}</div><div class="reference-value"><span>${esc(methodName(r))}</span><strong>${fmt(r.score)}</strong></div><span class="reference-policy">${esc(evidence(r))}</span></div>`,
     )
     .join("")}</div>`;
 }
@@ -544,7 +553,7 @@ function linePlot(general, refs, direction, specialists = [], zeroAxis = startAt
         ly = labelPosition.get(i),
         name = methodName(r),
         short = name.length > 24 ? name.slice(0, 23) + "…" : name;
-      return `<g class="direct-reference-label"><line x1="65" x2="365" y1="${yy}" y2="${yy}" stroke="${refColor(r, i)}" stroke-width="2" stroke-dasharray="${isSpecialist(r) ? "7 4" : "2 5"}"/><path d="M365 ${yy} L376 ${yy} L389 ${ly}" fill="none" stroke="${refColor(r, i)}" stroke-width="1"/><text x="395" y="${ly - 4}" class="reference-label-name" style="fill:${refColor(r, i)}">R${i + 1} · ${esc(short)}</text><text x="395" y="${ly + 10}" class="reference-label-score">${fmt(r.score)} · ${r.model === "behavioral-glm" ? "domain reference" : isSpecialist(r) ? "specialist" : "other reference"}</text><title>R${i + 1}: ${esc(name)}, ${fmt(r.score)}. ${evidence(r)}</title></g>`;
+      return `<g class="direct-reference-label"><line x1="65" x2="365" y1="${yy}" y2="${yy}" stroke="${refColor(r, i)}" stroke-width="2" stroke-dasharray="${isSpecialist(r) ? "7 4" : "2 5"}"/><path d="M365 ${yy} L376 ${yy} L389 ${ly}" fill="none" stroke="${refColor(r, i)}" stroke-width="1"/><text x="395" y="${ly - 4}" class="reference-label-name" style="fill:${refColor(r, i)}">R${i + 1} · ${esc(short)}</text><text x="395" y="${ly + 10}" class="reference-label-score">${fmt(r.score)} · ${r.model === "behavioral-glm" ? "domain reference" : r.benchmark_id === "B07" && isSpecialist(r) ? "codec reference" : isSpecialist(r) ? "specialist" : "other reference"}</text><title>R${i + 1}: ${esc(name)}, ${fmt(r.score)}. ${evidence(r)}</title></g>`;
     })
     .join(
       "",
@@ -603,6 +612,7 @@ function chartCaveat(id, c) {
   if (id === "B01")
     text +=
       "One 10-second stationary simulation. The all-output event F1 sensitivity counts extra spikes: GPT-6 0.5998, MountainSort5 0.9621. Select it above to inspect both plots. This diagnostic was added post hoc; directory and macro statistics retain the frozen primary metric. ";
+  if (id === "B07") text += "All 16 fixed real-voltage chunks must decode byte-exactly. Lower encoded bits per int16 sample is better; raw storage is 16 bits/sample. WavPack and delta–Blosc/Zstd are dashed codec references; raw zlib9 is dotted. Roughly 0.137 seconds per recording: this is a short-chunk storage diagnostic, not full streaming, neural interpretation or a global-best result. WavPack remains the frozen primary comparator even when another inspected codec compresses better. ";
   if (id === "L06") text += "Ten synthetic posteriors share one stimulus. Primary C2ST accuracy should approach 0.5; near-chance differences are noisy. Secondary sliced Wasserstein-2 should approach zero. The observation selector changes this plot only; directory and macro scores retain the mean primary over all ten. Reported sampling seconds cover the full ten-posterior call, excluding classifier scoring. The dashed line is the local Polya–Gamma Gibbs sampler, related to the archived reference algorithm. Known likelihood and a custom 2,000-draw scorer: these are not original simulator-only SBI leaderboard scores. ";
   if (id === "K04") text += "Four test sections are one held-out donor. Curated layer labels use expression assistance; no spatial coordinates are provided. SingleR is a fixed local label-transfer reference, not a spatial-clustering leaderboard winner. ";
   if (id === "M01") text += "Seventeen held-out mice, with labs shared across train/test. Inputs include known block prior and observed histories; disjoint target/history blocks prevent target reuse. This is conditional prediction, not rollout. The source-inspired GLM is not an established strongest specialist. ";
@@ -615,7 +625,7 @@ function chartCaveat(id, c) {
   );
 }
 function scoreTable(rs) {
-  return `<table><thead><tr><th>Method</th><th>Score</th><th>Evidence</th><th>${rs.some((r) => r.benchmark_id === "L06") ? "All-ten sampling seconds" : "Execution seconds"}</th><th>Details</th></tr></thead><tbody>${rs.map((r) => `<tr><td><span class="dot" style="background:${COLORS[r.model] || refColor(r)}"></span> ${esc(methodName(r))}${r.line_limit_compliant === false ? " †" : ""}</td><td>${valid(r) ? fmt(r.score) : "Failed"}</td><td><span class="badge ${isSpecialist(r) ? "verified" : MODELS.includes(r.model) ? "general" : ""}">${evidence(r)}</span></td><td>${Number.isFinite(r.seconds) ? r.seconds.toFixed(2) : "Unavailable"}</td><td class="wrap small">${r.status === "failed" ? esc((r.reason || "Execution failed").trim().split("\n").pop()) : r.scoring_diagnostics ? esc(`${r.posthoc_secondary_metrics ? "All-output event F1 " + fmt(r.posthoc_secondary_metrics.all_event_f1) + " (post-hoc); " : ""}${r.scoring_diagnostics.n_predicted_units} predicted units; ${(r.scoring_diagnostics.redundant_unit_ids || []).length} redundant; ${(r.scoring_diagnostics.false_positive_unit_ids || []).length} false-positive units`) : r.model === "canonical-posterior" ? "Added post hoc; objective-aligned audit" : r.line_limit_compliant === false ? "Unchanged format deviation" : "See protocol and prediction artifacts"}</td></tr>`).join("")}</tbody></table>`;
+  return `<table><thead><tr><th>Method</th><th>Score</th><th>Evidence</th><th>${rs.some((r) => r.benchmark_id === "B07") ? "All-16 codec seconds" : rs.some((r) => r.benchmark_id === "L06") ? "All-ten sampling seconds" : "Execution seconds"}</th><th>Details</th></tr></thead><tbody>${rs.map((r) => `<tr><td><span class="dot" style="background:${COLORS[r.model] || refColor(r)}"></span> ${esc(methodName(r))}${r.line_limit_compliant === false ? " †" : ""}</td><td>${valid(r) ? fmt(r.score) : "Failed"}</td><td><span class="badge ${isSpecialist(r) ? "verified" : MODELS.includes(r.model) ? "general" : ""}">${evidence(r)}</span></td><td>${Number.isFinite(r.seconds) ? r.seconds.toFixed(2) : "Unavailable"}</td><td class="wrap small">${r.status === "failed" ? esc((r.reason || "Execution failed").trim().split("\n").pop()) : r.scoring_diagnostics ? esc(`${r.posthoc_secondary_metrics ? "All-output event F1 " + fmt(r.posthoc_secondary_metrics.all_event_f1) + " (post-hoc); " : ""}${r.scoring_diagnostics.n_predicted_units} predicted units; ${(r.scoring_diagnostics.redundant_unit_ids || []).length} redundant; ${(r.scoring_diagnostics.false_positive_unit_ids || []).length} false-positive units`) : r.model === "canonical-posterior" ? "Added post hoc; objective-aligned audit" : r.line_limit_compliant === false ? "Unchanged format deviation" : "See protocol and prediction artifacts"}</td></tr>`).join("")}</tbody></table>`;
 }
 function benchmark(id, tab = "results") {
   const e = catalog.entries.find((e) => e.id === id);
@@ -646,7 +656,7 @@ function benchmark(id, tab = "results") {
     }
     const ref = b.reference;
     $("#benchmark-content").innerHTML =
-      `<div class="detail-summary"><div class="reference-box"><span class="small">${id === "L06" ? "Lowest general C2ST · descriptive point" : "Best measured general model"}${b.nSlices > 1 ? " · slice-equal mean" : ""}</span><strong>${fmt(b.bestModel?.score)}</strong><p>${b.bestModel ? label(b.bestModel.model) + (b.bestModel.line_limit_compliant === false ? " · format deviation" : "") : "All attempts failed"}</p></div><div class="reference-box specialist"><span class="small">${id === "L06" ? "Fixed Polya–Gamma sampler reference" : id === "M01" ? "Source-inspired domain reference" : id === "H02" ? "Original fixed specialist · see replication tab" : ref && isSpecialist(ref) ? "Best verified specialist in inspected set" : "Available baseline / reference"}</span><strong>${fmt(ref?.score)}</strong><p>${ref ? esc(methodName(ref)) : "Not established"} · training and selection histories differ</p></div></div><div id="detail-chart"></div><details><summary>What can this result establish?</summary><p>${esc(e.limitations)}</p><p>This measures a model-generated numerical analysis procedure. One submission per model; public-data contamination and provider checkpoint resolution remain unverified. Specialist training, feature access and tuning budgets can differ. Missing results are unknown, not zero.</p></details><div class="actions"><a class="button secondary" href="data/${id}.json" download>Detailed records ↓</a>${link(GH + "/tree/main/experiments/" + id, "Frozen code & protocol", "button secondary")}${link(GH + "/tree/main/results/predictions/" + id, "Predictions", "button secondary")}</div>`;
+      `<div class="detail-summary"><div class="reference-box"><span class="small">${id === "L06" ? "Lowest general C2ST · descriptive point" : "Best measured general model"}${b.nSlices > 1 ? " · slice-equal mean" : ""}</span><strong>${fmt(b.bestModel?.score)}</strong><p>${b.bestModel ? label(b.bestModel.model) + (b.bestModel.line_limit_compliant === false ? " · format deviation" : "") : "All attempts failed"}</p></div><div class="reference-box specialist"><span class="small">${id === "B07" ? "Best inspected codec reference" : id === "L06" ? "Fixed Polya–Gamma sampler reference" : id === "M01" ? "Source-inspired domain reference" : id === "H02" ? "Original fixed specialist · see replication tab" : ref && isSpecialist(ref) ? "Best verified specialist in inspected set" : "Available baseline / reference"}</span><strong>${fmt(ref?.score)}</strong><p>${ref ? esc(methodName(ref)) : "Not established"} · training and selection histories differ</p></div></div><div id="detail-chart"></div><details><summary>What can this result establish?</summary><p>${esc(e.limitations)}</p><p>This measures a model-generated numerical analysis procedure. One submission per model; public-data contamination and provider checkpoint resolution remain unverified. Specialist training, feature access and tuning budgets can differ. Missing results are unknown, not zero.</p></details><div class="actions"><a class="button secondary" href="data/${id}.json" download>Detailed records ↓</a>${link(GH + "/tree/main/experiments/" + id, "Frozen code & protocol", "button secondary")}${link(GH + "/tree/main/results/predictions/" + id, "Predictions", "button secondary")}</div>`;
     renderChart("#detail-chart", id);
   } else if (tab === "replication" && id === "H02") {
     $("#benchmark-content").innerHTML = replicationPanel();

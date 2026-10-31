@@ -1,26 +1,28 @@
 # Neural Data Bench
 
-**Traceable evidence and exploratory experiments on general coding models for neuroscience lab tasks.** Preview **0.9**, 31 October 2026 (UTC). Course context: [Liam Paninski's Statistical Analysis of Neural Data](https://sites.stat.columbia.edu/liam/teaching/neurostat-fall26/).
+**Traceable evidence and exploratory experiments on general coding models for neuroscience lab tasks.** Preview **0.10**, 31 October 2026 (UTC). Course context: [Liam Paninski's Statistical Analysis of Neural Data](https://sites.stat.columbia.edu/liam/teaching/neurostat-fall26/).
 
-[Results explorer](https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site) · [Current release and review](docs/release-v09.md) · [Results and limits](analysis/findings.md) · [Reproduce](docs/reproduce.md)
+[Results explorer](https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site) · [Current release and review](docs/release-v10.md) · [Results and limits](analysis/findings.md) · [Reproduce](docs/reproduce.md)
 
 ## Completed evidence
 
 | Artifact | Current state |
 |---|---|
 | Active research map | 96 task–resource entries across 14 families; 18 further candidates archived with reasons; 114 historical entries preserved |
-| First-submission panel | **22 task IDs**, 28 evaluation slices per model; 66 single-shot generated programs |
-| First-submission executions | **84 attempts: 82 valid, 2 failures**; exact GPT-5.6 Sol, GPT-6 Sol, GPT-6.1 Sol |
-| Audit artifacts | 167 model/reference records; 161 saved prediction/posterior outputs audited; source/manifests, hashes, unchanged programs and generation provenance |
+| First-submission panel | **23 task IDs**, 29 evaluation slices per model; 69 single-shot generated programs |
+| First-submission executions | **87 attempts: 85 valid, 2 failures**; exact GPT-5.6 Sol, GPT-6 Sol, GPT-6.1 Sol |
+| Audit artifacts | 173 model/reference records; 167 saved prediction/posterior manifests audited; 96 retained compression payloads; source/manifests, hashes, unchanged programs and generation provenance |
 | H02 generation follow-up | Six fresh submissions, all strict-valid; three per model including the original, plus one train-only CV-selected specialist; kept outside original macro totals |
-| Specialist evidence | MountainSort5, pyRiemann motor-imagery/xDAWN pipelines, YASA, SingleR, Polya–Gamma Gibbs and a source-inspired behavioral GLM; aligned archived StarDist, VASSI, Spikefinder and MRIQC predictions |
+| Specialist and domain reference evidence | MountainSort5, pyRiemann motor-imagery/xDAWN pipelines, YASA, SingleR, Polya–Gamma Gibbs, WavPack, delta–Blosc/Zstd and a source-inspired behavioral GLM; aligned archived StarDist, VASSI, Spikefinder and MRIQC predictions |
 | Interface | Measured-first directory, category navigation, searchable tasks, graph/table controls; specialist names and values directly label horizontal lines |
 
-Models **generate analysis code**, then saved programs execute numerical procedures locally. This is the T3 procedure, not native raw-signal comprehension or a full autonomous scientist. No Luna, open-weight, native image/video/world-model track or current-global-SOTA certification is included. **74 active entries remain unrun** (46 pending validation, 28 deferred). Representing 14 categories does not complete all their subfields. The source registry contains 207 associated URLs; this is a source inventory, not a count of fully reviewed papers.
+Models **generate analysis code**, then saved programs execute numerical procedures locally. This is the T3 procedure, not native raw-signal comprehension or a full autonomous scientist. No Luna, open-weight, native image/video/world-model track or current-global-SOTA certification is included. **73 active entries remain unrun** (45 pending validation, 28 deferred). Representing 14 categories does not complete all their subfields. The source registry contains 212 associated URLs; this is a source inventory, not a count of fully reviewed papers.
 
 [Candid progress assessment](docs/progress-assessment.md) · [H02 three-generation follow-up](experiments/H02/replication-v1/results.md)
 
 ## Why the latest review matters
+
+- **Real-voltage lossless compression:** all 16 original source recordings, exact byte reconstruction, WavPack and delta–Blosc/Zstd references; every successful saved bitstream independently decoded. [Scores and limits](docs/release-v10.md).
 
 - **New posterior-sampling endpoint:** all three generated samplers complete ten original synthetic spiking-neuron GLM posteriors; compare the frozen primary classifier diagnostic and secondary distribution distance against local Polya–Gamma/Laplace references. [Exact procedure and limits](docs/release-v09.md).
 - **Explicit analysis scopes:** observed-data sources are the default; include fully synthetic tasks with one selector. Both views retain task/family denominators.
@@ -31,7 +33,7 @@ Models **generate analysis code**, then saved programs execute numerical procedu
 - **P300 replication:** three-attempt means are **0.752374 / 0.744027 / 0.784685**, versus train-only CV-selected xDAWN **0.778541**. All three GPT-6.1 attempts exceed this reference; minimum advantage is only 0.000754. Same dataset, retrospective follow-up, no global-superiority claim. Original endpoint below is preserved.
 - **Original P300 experiment:** all 25 Brain Invaders 2012 people, 15 train/10 held-out. Person-equal ROC-AUC is **0.757195 /0.730548 /0.788537**, versus fixed xDAWN **0.761230**. Ten-person evaluation is stronger grouping depth than earlier pilots, but remains one public source and one generation.
 - **Readability corrections:** current task-card/method headers no longer say “not evaluated” for measured tasks. Historical status remains dated. Methodology is consolidated; specialists, ordinary baselines and post-hoc metrics are visually distinct.
-- **Mixed model progress:** GPT-6.1 improves on GPT-6 in 18 of 25 progress slices, declines in 6 and fails in 1; family-equal directional improvement fraction 0.615. This includes selected synthetic/semisynthetic tasks and supports no causal scaling claim.
+- **Mixed model progress:** GPT-6.1 improves on GPT-6 in 18 of 27 progress slices, declines in 8 and fails in 1; family-equal directional improvement fraction 0.615. This includes selected synthetic/semisynthetic tasks and supports no causal scaling claim.
 
 [Full native-score table and caveats](analysis/findings.md). Native metric magnitudes are never averaged across unrelated tasks. Test-selected envelopes, historical/pretrained/local specialists, conventional references and failures have explicit policies and denominators.
 
@@ -40,7 +42,7 @@ Models **generate analysis code**, then saved programs execute numerical procedu
 | Family | Active entries | Measured IDs | Pending validation | Deferred |
 |---|---:|---|---:|---:|
 | [A](benchmarks/A/README.md) Behavior, kinematics and vocalization | 16 | A09, A14 | 11 | 3 |
-| [B](benchmarks/B/README.md) Extracellular signal acquisition | 8 | B01 | 7 | 0 |
+| [B](benchmarks/B/README.md) Extracellular signal acquisition | 8 | B01, B07 | 6 | 0 |
 | [C](benchmarks/C/README.md) Calcium imaging and photometry | 9 | C05 | 8 | 0 |
 | [D](benchmarks/D/README.md) Voltage, intracellular and dendrites | 3 | D02 | 0 | 2 |
 | [E](benchmarks/E/README.md) Population activity and dynamics | 6 | E01 | 5 | 0 |
@@ -50,7 +52,7 @@ Models **generate analysis code**, then saved programs execute numerical procedu
 | [I](benchmarks/I/README.md) Human and mesoscopic neuroimaging | 6 | I07, I10 | 0 | 4 |
 | [J](benchmarks/J/README.md) Anatomy, histology and connectomics | 9 | J08 | 4 | 4 |
 | [K](benchmarks/K/README.md) Cell types and molecular neuroscience | 5 | K01, K04 | 3 | 0 |
-| [L](benchmarks/L/README.md) Mechanistic and statistical inference | 5 | L04 | 3 | 1 |
+| [L](benchmarks/L/README.md) Mechanistic and statistical inference | 5 | L04, L06 | 2 | 1 |
 | [M](benchmarks/M/README.md) Experimental design and control | 4 | M01, M04 | 1 | 1 |
 | [N](benchmarks/N/README.md) Scientific analysis workflows | 3 | N05 | 2 | 0 |
 

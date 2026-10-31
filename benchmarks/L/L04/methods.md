@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.9: One rat place cell: 20 ms spike counts predicted from position and velocity; chronological 60/40 split with a one-second gap.
+Preview 0.10: One rat place cell: 20 ms spike counts predicted from position and velocity; chronological 60/40 split with a one-second gap.
 
 [Actual frozen contract and implementation](../../../experiments/L04). [Measured method/reference records](../../../results/L04.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

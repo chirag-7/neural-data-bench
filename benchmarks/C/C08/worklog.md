@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). GuPPy example traces de
 
 ## Current admission and execution
 
-Preview 0.9: candidate_pending_validation. GuPPy example traces demonstrate photometry workflow, but a true artifact-free neural trace or blinded artifact/event annotations are needed for accuracy measurement. Synthetic artifact injection into observed signals is possible if explicitly semi-synthetic. No reference annotations acquired here.
+Preview 0.10: candidate_pending_validation. GuPPy example traces demonstrate photometry workflow, but a true artifact-free neural trace or blinded artifact/event annotations are needed for accuracy measurement. Synthetic artifact injection into observed signals is possible if explicitly semi-synthetic. No reference annotations acquired here.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

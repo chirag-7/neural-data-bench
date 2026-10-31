@@ -2,7 +2,7 @@
 from pathlib import Path
 import json,hashlib,re
 R=Path(__file__).resolve().parents[1]
-RELEASE='0.9'
+RELEASE='0.10'
 def read(p):return json.loads((R/p).read_text())
 def dump(p,o):p=R/p;p.parent.mkdir(exist_ok=True,parents=True);p.write_text(json.dumps(o,indent=2,ensure_ascii=False)+'\n')
 def main():

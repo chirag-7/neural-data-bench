@@ -9,3 +9,11 @@ A Python WavPack wrapper could not build without a system library. Built officia
 ## Frozen execution
 
 Pending first submissions and independent bitstream verification. Updates below will preserve failures and the frozen protocol.
+
+## Reference context
+
+Buccino et al. (2023), [Compression strategies for large-scale electrophysiology data](https://doi.org/10.1088/1741-2552/acf5a4), studies full experimental/simulated Neuropixels compression. Our strict-lossless short chunk endpoint does not copy its lossy hybrid scores, full-stream compression ratios or runtime claims. Specialist codec families are motivated by that work; exact local settings and bytes determine our results.
+
+## Execution and review
+
+Three original high-effort/no-tool submissions retained; no repairs. 6 methods completed all 16 byte-exact roundtrips, retaining 96 compressed payloads. Independent decoding and size arithmetic passed. [All results](../../results/B07.json), [verification](verification.json), [recording CSV](recording-scores.csv), [release review](../../docs/release-v10.md). Original 0.9 central records remain unchanged.

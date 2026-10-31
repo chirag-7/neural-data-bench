@@ -335,10 +335,18 @@
     "supervision": null,
     "source_urls": [
       "https://allenneuraldynamics.github.io/data.html",
-      "https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml"
+      "https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml",
+      "https://github.com/AllenNeuralDynamics/ephys-compression/tree/c89e8e481435f39e3bf041bfc0eaac5ef6d93900",
+      "https://www.wavpack.com/",
+      "https://numcodecs.readthedocs.io/en/stable/compression/blosc.html",
+      "https://doi.org/10.1088/1741-2552/acf5a4",
+      "https://www.biorxiv.org/content/10.1101/2023.05.22.541700v2"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-10-31",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA.",
+    "local_reference_evidence": "results/B07.json",
+    "current_global_best_verified": false,
+    "verification_limits": "Custom fixed4096sample chunks,not fullstreaming/originalpaper/currentglobalbest;unequal implementation effort"
   },
   {
     "benchmark_id": "B08",

@@ -1896,5 +1896,50 @@
     ],
     "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
     "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sba64087d5c",
+    "url": "https://github.com/AllenNeuralDynamics/ephys-compression/tree/c89e8e481435f39e3bf041bfc0eaac5ef6d93900",
+    "benchmark_ids": [
+      "B07"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sb39f6d8bf3",
+    "url": "https://www.wavpack.com/",
+    "benchmark_ids": [
+      "B07"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S4ef86c78fd",
+    "url": "https://numcodecs.readthedocs.io/en/stable/compression/blosc.html",
+    "benchmark_ids": [
+      "B07"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sca63e99870",
+    "url": "https://doi.org/10.1088/1741-2552/acf5a4",
+    "benchmark_ids": [
+      "B07"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sb9db6f6e12",
+    "url": "https://www.biorxiv.org/content/10.1101/2023.05.22.541700v2",
+    "benchmark_ids": [
+      "B07"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
   }
 ]

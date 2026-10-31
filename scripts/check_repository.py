@@ -42,7 +42,7 @@ for e in c['entries']:
 for d in (R/'experiments').iterdir():
  if not (d/'run-spec.json').exists() or d.name in ['C05','M04']:continue
  spec=json.loads((d/'run-spec.json').read_text());assert hashlib.sha256((d/'prompt.txt').read_bytes()).hexdigest()==spec['prompt_sha256']
- if d.name=='L06':
+ if d.name in ['L06','B07']:
   for filename,digest in spec['frozen_files'].items():
    if filename.startswith('data/cache/'):continue
    assert hashlib.sha256((R/filename).read_bytes()).hexdigest()==digest,filename
@@ -103,3 +103,18 @@ if posterior.exists():
  snapshot=R/'results/archive/v08-measurements.jsonl'
  for line in snapshot.read_text().splitlines():assert json.loads(line) in records,'A v0.8 historical record changed'
  print('L06 frozen posterior interface, all5 prediction/audit identities, sources and raw generation events passed; v0.8 records unchanged.')
+compression=R/'experiments/B07'
+if compression.exists():
+ verification=json.loads((compression/'verification.json').read_text())
+ assert verification['source_chunks_verified']==16 and verification['source_bytes_verified']==50331648
+ for event in verification['generation_checks']:
+  assert hashlib.sha256((R/event['event_file']).read_bytes()).hexdigest()==event['sha256'] and event['tool_events']==0 and event['submission_matches_final_generation_event']
+ for row in records:
+  if row['benchmark_id']!='B07' or row['status']!='measured':continue
+  items=json.loads((R/row['prediction_file']).read_text());assert len(items)==16
+  for item in items:
+   payload=(R/item['compressed_file']).read_bytes();assert len(payload)==item['compressed_bytes'] and hashlib.sha256(payload).hexdigest()==item['compressed_sha256']
+   assert item['lossless'] and item['decoded_sha256']==item['source_sha256']
+  assert abs(sum(8*x['compressed_bytes']/(4096*384) for x in items)/16-row['score'])<1e-12
+ for line in (R/'results/archive/v09-measurements.jsonl').read_text().splitlines():assert json.loads(line) in records,'A v0.9 historical record changed'
+ print('B07 saved bitstream hashes/size arithmetic and source-audit evidence passed; all v0.9 records unchanged. CI does not redownload raw chunks or rerun decoders.')

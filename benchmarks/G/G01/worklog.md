@@ -16,6 +16,6 @@ Decision: **candidate_pending_validation** (2026-10-30). FALCON motor tracks pro
 
 ## Current admission and execution
 
-Preview 0.9: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
+Preview 0.10: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
 [Admission/source evidence](../../../literature/admission-v05-bci.json). [Actual protocol/worklog](../../../experiments/G01). [Task measurements](../../../results/G01.json).

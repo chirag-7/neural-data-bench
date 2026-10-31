@@ -1,0 +1,81 @@
+{
+  "benchmark_id": "B07",
+  "source_chunks_verified": 16,
+  "source_animals": 14,
+  "source_bytes_verified": 50331648,
+  "frozen_hashes": "passed",
+  "prediction_checks": [
+    {
+      "model": "gpt-5.6-sol",
+      "score": 7.019830067952474,
+      "encoded_bytes": 22082476,
+      "bitstreams_verified": 16,
+      "all_raw_bytes_equal": true,
+      "prediction_sha256": "cbceb71bfa8745b600e65e5d373d12ceed4fd19c5ea54ee5386dcbc926b3cbf1"
+    },
+    {
+      "model": "gpt-6-sol",
+      "score": 6.9016977945963545,
+      "encoded_bytes": 21710864,
+      "bitstreams_verified": 16,
+      "all_raw_bytes_equal": true,
+      "prediction_sha256": "61f1c37ddbd1066989a5aa49d951760533db7c022d098c59579aa5b0076f950b"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "score": 7.2145891189575195,
+      "encoded_bytes": 22695135,
+      "bitstreams_verified": 16,
+      "all_raw_bytes_equal": true,
+      "prediction_sha256": "9a2959a3bbcb22943ffb8da33faf62296d3ecf8867ca124e3f2ece8243e8f345"
+    },
+    {
+      "model": "wavpack-high",
+      "score": 7.690052032470703,
+      "encoded_bytes": 24190812,
+      "bitstreams_verified": 16,
+      "all_raw_bytes_equal": true,
+      "prediction_sha256": "d8657330a8b9e6010067b7b5bcbd55b4d4b443f893e6beef9baf272e4e8f5b7a"
+    },
+    {
+      "model": "delta-blosc-zstd",
+      "score": 7.683237393697103,
+      "encoded_bytes": 24169375,
+      "bitstreams_verified": 16,
+      "all_raw_bytes_equal": true,
+      "prediction_sha256": "bb01dee73f9068712a02a2318a731a93142ebe13a3ac6bf62793d39bfd747358"
+    },
+    {
+      "model": "task-baseline",
+      "score": 11.412251154581705,
+      "encoded_bytes": 35899838,
+      "bitstreams_verified": 16,
+      "all_raw_bytes_equal": true,
+      "prediction_sha256": "a1fe2550d598a6388d1aefad7d61738e2f205669545ec9b0ed418f640a871f45"
+    }
+  ],
+  "generation_checks": [
+    {
+      "model": "gpt-5.6-sol",
+      "event_file": "experiments/B07/generation-events/gpt-5.6-sol.jsonl",
+      "sha256": "a26adde2c2e6b801afe5e3542523775e439b1b6e6fa8628071e9d7ebc0e58874",
+      "tool_events": 0,
+      "submission_matches_final_generation_event": true
+    },
+    {
+      "model": "gpt-6-sol",
+      "event_file": "experiments/B07/generation-events/gpt-6-sol.jsonl",
+      "sha256": "16c7c6df9e9e587fcfa33429df4ced250ea2dd6d2041daa344fbef6134dbdd66",
+      "tool_events": 0,
+      "submission_matches_final_generation_event": true
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "event_file": "experiments/B07/generation-events/gpt-6.1-sol.jsonl",
+      "sha256": "d5c7489494015cc6d1617626f8c40fd4689b3b339accb5412f7834350bc2381d",
+      "tool_events": 0,
+      "submission_matches_final_generation_event": true
+    }
+  ],
+  "scope": "Every retained successful payload decoded afresh, exact source bytes compared and size arithmetic recomputed; no encoder rerun or model repair; no global-best claim"
+}

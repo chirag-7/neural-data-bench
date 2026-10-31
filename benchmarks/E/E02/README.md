@@ -38,6 +38,6 @@ Decision: **candidate_pending_validation** (2026-10-30). CtDB can supply synthet
 
 ## Current admission and execution
 
-Preview 0.9: candidate_pending_validation. CtDB can supply synthetic mechanistic dynamics groundtruth and known task variables. Needs pinned generator, stimulus/trajectory/seed split and metric for actual recovered dynamics, not arbitrary latent-coordinateRMSE. Synthetic extension remains useful but unprepared.
+Preview 0.10: candidate_pending_validation. CtDB can supply synthetic mechanistic dynamics groundtruth and known task variables. Needs pinned generator, stimulus/trajectory/seed split and metric for actual recovered dynamics, not arbitrary latent-coordinateRMSE. Synthetic extension remains useful but unprepared.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

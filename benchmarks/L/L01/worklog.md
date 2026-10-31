@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Official challenge page
 
 ## Current admission and execution
 
-Preview 0.9: candidate_pending_validation. Original challenge page and three author-listed mirrors checked: ETH(previous0.8),Duke andNYU(this0.9) returnedHTTP403. Authorized Kaggle competition access not established; no raw network data admitted. No universal-inaccessibility claim.
+Preview 0.10: candidate_pending_validation. Original challenge page and three author-listed mirrors checked: ETH(previous0.8),Duke andNYU(this0.9) returnedHTTP403. Authorized Kaggle competition access not established; no raw network data admitted. No universal-inaccessibility claim.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json).

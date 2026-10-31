@@ -36,7 +36,7 @@
     "evidence": "literature/admission-v04-electrical.json"
   },
   "current_execution": {
-    "release": "0.9",
+    "release": "0.10",
     "status": "measured",
     "slice": "EEGdenoiseNet: 2,000 training and 600 test clean-plus-EOG mixtures, with disjoint source components.",
     "evidence": "literature/admission-v04-electrical.json"

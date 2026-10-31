@@ -28,3 +28,7 @@
 ## 0.6 — 30 October 2026
 
 One bounded review plus one new task. Specialists now have named numeric cards and direct line labels; solid/dashed/dotted marks are explained. B01 gains an explicitly post-hoc all-output event audit and plot selector, revealing GPT-6's extra-event problem while retaining the frozen primary. H02 adds 25-person Brain Invaders 2012 target ranking with 15/10 person split, grouped validation input and fixed xDAWN reference. Total: 19 tasks, 75 model-slice attempts, 73 valid, 2 preserved failures; 152 records, 146 stored predictions rescored. Consolidated methodology and corrected stale measured-task status/data/method headers; dated history is retained.
+
+## 0.10 —31 October 2026
+
+Added B07 byte-exact real-voltage compression:16 recordings/14 animals, frozen codec interfaces/references and every successful payload retained/independently decoded. Current totals:23 tasks,87 attempts,85 valid,2 preserved failures,173 model/reference records. Updated named specialist line/bar plots, source evidence, decentralized task documents and both macro scopes;0.9 ledger unchanged. [Review](release-v10.md).

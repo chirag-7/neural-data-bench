@@ -34,7 +34,7 @@
     "evidence": "literature/admission-v05-extracellular.json"
   },
   "current_execution": {
-    "release": "0.9",
+    "release": "0.10",
     "status": "measured",
     "slice": "Blind unsupervised spike sorting of one 10-second, 32-channel stationary MEArec simulation; official unit/event matching.",
     "evidence": "literature/admission-v05-extracellular.json"

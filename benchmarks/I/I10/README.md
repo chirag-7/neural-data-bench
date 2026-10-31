@@ -41,6 +41,6 @@ Decision: **measured** (2026-10-30). Acquired original MRIQC0.10.5 tables and201
 
 ## Current admission and execution
 
-Preview 0.9: measured. Acquired original MRIQC0.10.5 tables and2017 classifier predictions;600ABIDEtrain/265DS030test rater1 labels and68IQMs. One-to-one archived prediction alignment and exclude1 label convention verified. Original classifier used different training/rater/features, currentbest unresolved.
+Preview 0.10: measured. Acquired original MRIQC0.10.5 tables and2017 classifier predictions;600ABIDEtrain/265DS030test rater1 labels and68IQMs. One-to-one archived prediction alignment and exclude1 label convention verified. Original classifier used different training/rater/features, currentbest unresolved.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json). [Actual protocol/worklog](../../../experiments/I10). [Task measurements](../../../results/I10.json).

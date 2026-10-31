@@ -1,13 +1,18 @@
 {
   "benchmark_id": "B07",
-  "input": "Neuropixels voltage recordings",
-  "ground_truth": "Original bytes or original downstream output",
+  "input": "Original time-major little-endian int16 ADC bytes; no resampling, filtering or training/calibration set",
+  "ground_truth": "Exact original numerical bytes,not neural labels or biological interpretation",
   "sources": [
     "https://allenneuraldynamics.github.io/data.html",
-    "https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml"
+    "https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml",
+    "https://github.com/AllenNeuralDynamics/ephys-compression/tree/c89e8e481435f39e3bf041bfc0eaac5ef6d93900",
+    "https://www.wavpack.com/",
+    "https://numcodecs.readthedocs.io/en/stable/compression/blosc.html",
+    "https://doi.org/10.1088/1741-2552/acf5a4",
+    "https://www.biorxiv.org/content/10.1101/2023.05.22.541700v2"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/B07.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "B07",
@@ -28,9 +33,10 @@
     "evidence": "literature/admission-v04-behavior-population.json"
   },
   "current_execution": {
-    "release": "0.9",
-    "status": "candidate_pending_validation",
-    "slice": null,
-    "evidence": "literature/admission-v04-behavior-population.json"
-  }
+    "release": "0.10",
+    "status": "measured",
+    "slice": "All 16 original AIND/IBL recordings: one fixed 4,096-sample chunk, all 384 channels and original int16 bytes per recording; 14 source animals.",
+    "evidence": "experiments/B07/protocol.md"
+  },
+  "executed_slice": "All 16 original AIND/IBL recordings: one fixed 4,096-sample chunk, all 384 channels and original int16 bytes per recording; 14 source animals."
 }

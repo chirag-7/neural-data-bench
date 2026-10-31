@@ -32,7 +32,7 @@
     "evidence": "literature/admission-v04-cell-workflow.json"
   },
   "current_execution": {
-    "release": "0.9",
+    "release": "0.10",
     "status": "measured",
     "slice": "One Allen cell: four training and two test negative-current sweeps; 500 Hz passive voltage interpolation.",
     "evidence": "literature/admission-v04-cell-workflow.json"

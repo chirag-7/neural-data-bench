@@ -29,7 +29,7 @@
     "evidence": "literature/admission-v04-behavior-population.json"
   },
   "current_execution": {
-    "release": "0.9",
+    "release": "0.10",
     "status": "deferred",
     "slice": null,
     "evidence": "literature/admission-v04-behavior-population.json"

@@ -34,7 +34,7 @@
     "evidence": "literature/admission-v04-inference-control.json"
   },
   "current_execution": {
-    "release": "0.9",
+    "release": "0.10",
     "status": "measured",
     "slice": "One rat place cell: 20 ms spike counts predicted from position and velocity; chronological 60/40 split with a one-second gap.",
     "evidence": "literature/admission-v04-inference-control.json"

@@ -36,7 +36,7 @@
     "evidence": "literature/admission-v04-electrical.json"
   },
   "current_execution": {
-    "release": "0.9",
+    "release": "0.10",
     "status": "measured",
     "slice": "PhysioNet motor imagery: five training and three held-out people; 225 training and 135 test epochs.",
     "evidence": "literature/admission-v04-electrical.json"

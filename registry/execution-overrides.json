@@ -57,5 +57,28 @@
     "limitations": "Synthetic shared-design GLM; known likelihood changes original SBI information access. Custom2000draw C2ST and near-chance variation are not original leaderboard scores or superiority evidence. PG comparator is related to archived reference, shorter local chains have unproven convergence, one code generation/model.",
     "review_depth": "All42 original files hashed; design reconstructed byte-for-value; all observations/sufficient statistics joined; frozen references/scorer/interface before generation; accuracy decisions and secondary distances independently auditable",
     "execution_date": "2026-10-31"
+  },
+  "B07": {
+    "task": "Lossless Neuropixels voltage compression",
+    "executed_slice": "All 16 original AIND/IBL recordings: one fixed 4,096-sample chunk, all 384 channels and original int16 bytes per recording; 14 source animals.",
+    "resource": "AIND original ephys-compression benchmark; fixed real Neuropixels shortchunks",
+    "dataset_group": "AIND/IBL ephys-compression original 16",
+    "data": "Original time-major little-endian int16 ADC bytes; no resampling, filtering or training/calibration set",
+    "ground_truth": "Exact original numerical bytes,not neural labels or biological interpretation",
+    "source_urls": [
+      "https://allenneuraldynamics.github.io/data.html",
+      "https://github.com/AllenNeuralDynamics/ephys-compression/tree/c89e8e481435f39e3bf041bfc0eaac5ef6d93900",
+      "https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml",
+      "https://www.wavpack.com/",
+      "https://numcodecs.readthedocs.io/en/stable/compression/blosc.html",
+      "https://doi.org/10.1088/1741-2552/acf5a4",
+      "https://www.biorxiv.org/content/10.1101/2023.05.22.541700v2"
+    ],
+    "admission_evidence_file": "experiments/B07/protocol.md",
+    "recommended_metrics": "Mean encoded bits per raw scalar int16 sample, lower better; all 16 chunks must reconstruct byte-exactly; throughput secondary",
+    "recommended_split": "No supervised split. All 16 original recordings selected from the source inventory; fixed cached samples [1000000:1004096), all channels; no score-based selection",
+    "limitations": "One roughly 0.137-second chunk per recording; 16 recordings from 14 animals. This tests short-chunk lossless storage, not full streaming or neural interpretation. Fixed local WavPack/delta\u2013Blosc references have unequal implementation/library effort; current global best remains unverified.",
+    "review_depth": "All 16 range responses and metadata hashed; ETag and Content-Range guarded. Protocol, prompt, references and scorer frozen before generation/scores; every successful saved bitstream decoded independently",
+    "execution_date": "2026-10-31"
   }
 }

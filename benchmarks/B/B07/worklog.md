@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Lossless compression is
 
 ## Current admission and execution
 
-Preview 0.9: candidate_pending_validation. Original public S3 listing and binary metadata acquired;16 experimental raw sources identified and CC BY4.0 recorded by original AWS registry. Raw chunks, lossless byte-exact codec contract/scorer and specialist execution remain unfrozen; no compression scores claimed.
+Preview 0.10: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
-[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).
+[Admission/source evidence](../../../experiments/B07/protocol.md). [Actual protocol/worklog](../../../experiments/B07). [Task measurements](../../../results/B07.json).

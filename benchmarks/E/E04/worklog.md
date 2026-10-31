@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). BrainWideBench TS2 mask
 
 ## Current admission and execution
 
-Preview 0.9: candidate_pending_validation. BrainWideBench TS2 masked/future prediction has exact protocol and public recordings, but causal future prediction versus bidirectional masking must be separate. Need exact bins/neurons/session split and official heldout targets. Not acquired here; E01 does not cover this transfer setting.
+Preview 0.10: candidate_pending_validation. BrainWideBench TS2 masked/future prediction has exact protocol and public recordings, but causal future prediction versus bidirectional masking must be separate. Need exact bins/neurons/session split and official heldout targets. Not acquired here; E01 does not cover this transfer setting.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

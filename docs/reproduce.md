@@ -230,3 +230,18 @@ python scripts/verify_posteriors.py
 ```
 
 The reference-only dependency is not imported by generated model programs. The general and reference array stack is otherwise identical. Do not regenerate prompt/spec or use newly generated code to replace released attempts. C2ST classifier fitting is outside each 180-second posterior-sampling call and can take substantially longer. Posterior outputs and held-out classifier decisions are retained, with primary and secondary metrics separately named. Historical 0.8 records are retained in `results/archive/v08-measurements.jsonl` and must remain identical in the expanded ledger.
+
+## Preview 0.10: B07 byte-exact voltage compression
+
+The frozen source [manifest](../data/manifests/B07.json) identifies 16 HTTP ranges (~50 MB total) and original metadata. Original data terms are CC BY 4.0, with AIND/IBL/Buccino et al. attribution. Raw bytes stay in the ignored cache; all successful encoded payloads and exact-byte hashes are retained. Multipart ETags are not full-file SHA256s.
+
+```sh
+python scripts/acquire_compression.py
+python scripts/verify_compression.py
+```
+
+Verification requires NumPy and numcodecs 0.15.2 plus WavPack 5.8.0. The [runtime record](../experiments/B07/runtime.json) pins Python/package versions, vendor archive SHA256, original local binary SHA256s and flags. Fetch the official [WavPack 5.8.0 archive](https://www.wavpack.com/wavpack-5.8.0.tar.bz2), verify its recorded hash, unpack under `work/`, and build locally with `./configure --disable-shared --disable-threads --prefix=<workspace>/work/wavpack-runtime`, then `make clean`, `make -j2`, `make install`. No source patch is required. Architecture/compiler changes can change binary hashes and timings; record them separately rather than overwriting this environment evidence. The extended-channel raw-PCM argument and pipe acknowledgement are intentional vendor options.
+
+The runner resolves binaries at `<workspace>/work/wavpack-runtime/bin`; install Python packages in an isolated environment. Set `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 MKL_NUM_THREADS=1`. The first audit needs the saved payloads, frozen source chunks and existing generated programs, and only **decodes**. It does not call a model or re-encode. To repeat encoding without changing the original ledger, invoke `python scripts/compression_candidates.py one <model-or-reference>` in a separate checkout with a separate artifact location, preserving the original records first. Full `evaluate` deliberately refuses to overwrite existing attempts.
+
+[Protocol](../experiments/B07/protocol.md), [worklog](../experiments/B07/worklog.md), [release review](release-v10.md). One short chunk per original recording is not a complete streaming-storage benchmark or an independent biological cohort.

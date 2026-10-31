@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Original bycycle code/d
 
 ## Current admission and execution
 
-Preview 0.9: candidate_pending_validation. Original bycycle code/documentation accessible. Tool features computed from real LFP are not independent gold labels; need expert burst annotations or separately labeled synthetic calibration. Do not grade generic code against bycycle output and label it physiological truth.
+Preview 0.10: candidate_pending_validation. Original bycycle code/documentation accessible. Tool features computed from real LFP are not independent gold labels; need expert burst annotations or separately labeled synthetic calibration. Do not grade generic code against bycycle output and label it physiological truth.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

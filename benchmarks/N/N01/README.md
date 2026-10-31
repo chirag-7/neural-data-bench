@@ -38,6 +38,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Official repository pro
 
 ## Current admission and execution
 
-Preview 0.9: candidate_pending_validation. Official repository provides workflow metadata, expert answers, dataset loader and eval code. This batch has not frozen an eligible neuroscience question subset, run its large-source data loader or replicated text/figure rubric evaluation. Needs task-specific numeric checks and, where the official evaluator uses an LLM judge, recorded judge model/version/prompt and access. No surrogate blind-judge scores supplied.
+Preview 0.10: candidate_pending_validation. Official repository provides workflow metadata, expert answers, dataset loader and eval code. This batch has not frozen an eligible neuroscience question subset, run its large-source data loader or replicated text/figure rubric evaluation. Needs task-specific numeric checks and, where the official evaluator uses an LLM judge, recorded judge model/version/prompt and access. No surrogate blind-judge scores supplied.
 
 [Admission/source evidence](../../../literature/admission-v04-cell-workflow.json).

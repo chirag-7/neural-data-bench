@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). CASCADE paired fluoresc
 
 ## Current admission and execution
 
-Preview 0.9: candidate_pending_validation. CASCADE paired fluorescence/electrophysiology is a credible additional deconvolution source. Need exact indicator/preparation noise/rate matching, neuron/recording-disjointsplit and baseline. Shared Spikefinder cells must be deduplicated, not counted as new independent recordings. Not acquired here.
+Preview 0.10: candidate_pending_validation. CASCADE paired fluorescence/electrophysiology is a credible additional deconvolution source. Need exact indicator/preparation noise/rate matching, neuron/recording-disjointsplit and baseline. Shared Spikefinder cells must be deduplicated, not counted as new independent recordings. Not acquired here.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

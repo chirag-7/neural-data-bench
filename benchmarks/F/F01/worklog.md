@@ -12,6 +12,6 @@ Decision: **deferred** (2026-10-30). Sensorium2022 stimulus-response encoding is
 
 ## Current admission and execution
 
-Preview 0.9: deferred. Sensorium2022 stimulus-response encoding is feasible with official split and responses, but current CPU numerical-code interface lacks reproducible visualstimulus decoding/encoder and a matched published model. Need exact response availability and heldoutanimal protocol before execution.
+Preview 0.10: deferred. Sensorium2022 stimulus-response encoding is feasible with official split and responses, but current CPU numerical-code interface lacks reproducible visualstimulus decoding/encoder and a matched published model. Need exact response availability and heldoutanimal protocol before execution.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

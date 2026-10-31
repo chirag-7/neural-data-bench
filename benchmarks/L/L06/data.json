@@ -32,7 +32,7 @@
     "evidence": "literature/admission-v04-inference-control.json"
   },
   "current_execution": {
-    "release": "0.9",
+    "release": "0.10",
     "status": "measured",
     "slice": "All ten original sbibm Bernoulli GLM observations; ten parameters,100 bins,10000 posterior draws per observation; custom likelihood-informed track.",
     "evidence": "experiments/L06/protocol.md"

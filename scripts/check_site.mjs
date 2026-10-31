@@ -86,7 +86,7 @@ for (const id of summary.measured_task_ids) {
   )
     throw Error("Both plots required:" + id);
   if (
-    ["B01", "J08", "H08", "H01", "H02", "C05", "A09", "I10", "K04", "M01", "L06"].includes(id) &&
+    ["B01", "J08", "H08", "H01", "H02", "C05", "A09", "I10", "K04", "M01", "L06", "B07"].includes(id) &&
     (!text.includes('class="direct-reference-label"') ||
       !text.includes('aria-label="Named reference scores"'))
   )

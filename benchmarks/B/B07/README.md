@@ -2,15 +2,15 @@
 
 [Family](../README.md) · [Project](../../../README.md) · [Methods](methods.md) · [Worklog](worklog.md)
 
-**Resource:** AIND electrophysiology compression benchmark
+**Resource:** AIND original ephys-compression benchmark; fixed real Neuropixels shortchunks
 
-**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
+**State:** measured. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
-Input: Neuropixels voltage recordings
+Input: Original time-major little-endian int16 ADC bytes; no resampling, filtering or training/calibration set
 
-Target/ground truth: Original bytes or original downstream output
+Target/ground truth: Exact original numerical bytes,not neural labels or biological interpretation
 
 Mapped specialist candidates (not all evaluated): WavPack; Zstd/Blosc codecs
 
@@ -18,16 +18,23 @@ General-model route: Generic learned compression model
 
 ## Execution and performance
 
-No experiment admitted yet. All measurements are centralized in [results](../../../results/). Current best: **not verified**. Missing scores are unknown, not zero. Literature resources are not newly executed results.
+**Executed slice:** All 16 original AIND/IBL recordings: one fixed 4,096-sample chunk, all 384 channels and original int16 bytes per recording; 14 source animals.
+
+[Frozen protocol and artifacts](../../../experiments/B07). [Measured scores and references](../../../results/B07.json). [Central data](../../../results/measurements.csv). Missing or failed outputs are retained.
 
 ## Limitations
 
-Lossless byte equality differs from downstream-preserving lossy compression
+One roughly 0.137-second chunk per recording; 16 recordings from 14 animals. This tests short-chunk lossless storage, not full streaming or neural interpretation. Fixed local WavPack/delta–Blosc references have unequal implementation/library effort; current global best remains unverified.
 
 ## Sources
 
 - [https://allenneuraldynamics.github.io/data.html](https://allenneuraldynamics.github.io/data.html)
 - [https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml](https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml)
+- [https://github.com/AllenNeuralDynamics/ephys-compression/tree/c89e8e481435f39e3bf041bfc0eaac5ef6d93900](https://github.com/AllenNeuralDynamics/ephys-compression/tree/c89e8e481435f39e3bf041bfc0eaac5ef6d93900)
+- [https://www.wavpack.com/](https://www.wavpack.com/)
+- [https://numcodecs.readthedocs.io/en/stable/compression/blosc.html](https://numcodecs.readthedocs.io/en/stable/compression/blosc.html)
+- [https://doi.org/10.1088/1741-2552/acf5a4](https://doi.org/10.1088/1741-2552/acf5a4)
+- [https://www.biorxiv.org/content/10.1101/2023.05.22.541700v2](https://www.biorxiv.org/content/10.1101/2023.05.22.541700v2)
 
 Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
 
@@ -39,6 +46,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Lossless compression is
 
 ## Current admission and execution
 
-Preview 0.9: candidate_pending_validation. Original public S3 listing and binary metadata acquired;16 experimental raw sources identified and CC BY4.0 recorded by original AWS registry. Raw chunks, lossless byte-exact codec contract/scorer and specialist execution remain unfrozen; no compression scores claimed.
+Preview 0.10: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
-[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).
+[Admission/source evidence](../../../experiments/B07/protocol.md). [Actual protocol/worklog](../../../experiments/B07). [Task measurements](../../../results/B07.json).

@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.9: CalMS21 Task 1: processed pose context at 3 Hz; 70 training and 19 test recordings.
+Preview 0.10: CalMS21 Task 1: processed pose context at 3 Hz; 70 training and 19 test recordings.
 
 [Actual frozen contract and implementation](../../../experiments/A09). [Measured method/reference records](../../../results/A09.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

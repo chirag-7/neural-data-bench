@@ -38,6 +38,6 @@ Decision: **deferred** (2026-10-30). CREMI real volumetric image segmentation ne
 
 ## Current admission and execution
 
-Preview 0.9: deferred. CREMI real volumetric image segmentation needs3D inputs and topology-sensitive adapted Rand/VI scoring. GPU specialist weights/scorer not prepared; a small randomvoxel classifier would not validate neurite segmentation.
+Preview 0.10: deferred. CREMI real volumetric image segmentation needs3D inputs and topology-sensitive adapted Rand/VI scoring. GPU specialist weights/scorer not prepared; a small randomvoxel classifier would not validate neurite segmentation.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).
