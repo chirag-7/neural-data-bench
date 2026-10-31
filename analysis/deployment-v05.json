@@ -29,7 +29,8 @@
     "browser_layout_interaction": "Passed representative real-browser flows on published owner-private site: categories, benchmark selection, graph/table switching, references, search, active/measured filter, source slices, macro denominators and negative score zero tick; default viewport and mobile390x844; override reset",
     "browser_console_errors": 0,
     "browser_scope": "Representative flows, not exhaustive interaction testing of every task",
-    "screenshot": "docs/assets/explorer-v05.jpg"
+    "screenshot": "docs/assets/explorer-v05.jpg",
+    "screenshot_sha256": "ddcc762dc557b0dd1e6d78108ed4edc22f479a97d4f565523a0c7fe5ee6e542f"
   },
   "github_ci": {
     "status": "success",

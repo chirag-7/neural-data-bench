@@ -1,0 +1,29 @@
+{
+  "checked_on_local_date": "2026-10-30 America/New_York",
+  "site_url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site",
+  "source_commit": "c59ff6589795031908a3581ce2919c9dfde74375",
+  "type": "Real browser interactions on published owner-private URL",
+  "result": "passed representative flows",
+  "viewports": [
+    "default 840px wide",
+    "390x844 mobile breakpoint; override reset"
+  ],
+  "flows": [
+    "Category sidebar navigation",
+    "Mobile category dropdown",
+    "Benchmark selector",
+    "Graph/table switching",
+    "Reference visibility toggle",
+    "Sleep specialist and format-deviation marker",
+    "Search narrows directory to Sleep-EDF",
+    "Measured/all-active filter (96 active rows)",
+    "E01 source selector reproduces Area2 scores",
+    "Negative G01 bars include explicit zero-axis tick",
+    "J08 failure remains visible",
+    "Macro tables retain failure denominators"
+  ],
+  "console_errors_observed": 0,
+  "screenshot": "docs/assets/explorer-v05.jpg",
+  "screenshot_sha256": "ddcc762dc557b0dd1e6d78108ed4edc22f479a97d4f565523a0c7fe5ee6e542f",
+  "limitations": "Representative workflows only; source-VM checks cover310 routes and18 plot pairs, not exhaustive real-browser tests. No claim of independent expert scientific validation."
+}

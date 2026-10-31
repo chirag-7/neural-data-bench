@@ -37,3 +37,7 @@ For a paper, choose an explicit target population of tasks; freeze a prospective
 - Verification: [reproduce](reproduce.md), [validation](../analysis/validation-expansion.json), [portable repository checks](../scripts/check_repository.py).
 
 All documents and scores are exploratory. Revisions to reference classes, pruning and macro weighting made after some scores were known are disclosed; no retroactive preregistration claim.
+
+## Publication verification
+
+The [deployment receipt](../analysis/deployment-v05.json) records the exact owner-private Sites version, canonical research/source commits and GitHub integrity run. [Real-browser QA](../analysis/browser-qa-v05.json) covers representative desktop/mobile interactions; [source checks](../analysis/site-source-checks.json) cover all rendered routes and 18 plot pairs. [Screenshot of both plot types and the named specialist](assets/explorer-v05.jpg). The earlier local-preview block was resolved by using the normally authenticated published URL; no URL-policy bypass was used.

@@ -1,0 +1,13 @@
+{
+  "project_id": "appgprj_6ae4f438805c81919b082963db32f4f5",
+  "version_id": "appgprj_6ae4f438805c81919b082963db32f4f5~appgver_8409054ef6248191b2d1006182f018c9",
+  "deployment_id": "appgdep_6ae512227bc88191a14d55041d2ca529",
+  "status": "succeeded",
+  "url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site",
+  "managed_site_source_commit": "35243e9fe3d57e8c1d70829fb8208efecd3f4e49",
+  "canonical_research_source_commit": "f4e67d5f784992442048922ae813939d8fe00d50",
+  "audience": "owner-private; preserved",
+  "browser_qa": "Incomplete: URL policy blocked local preview error page. Static source/render, link, data and scientific checks passed.",
+  "github_integrity_workflow": "https://github.com/chirag-7/neural-data-bench/actions/runs/41134510971",
+  "github_integrity_workflow_conclusion": "success"
+}
