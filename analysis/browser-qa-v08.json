@@ -1,0 +1,40 @@
+{
+  "release": "0.8",
+  "url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site",
+  "source_commit": "da114e9e5aef2a982f750859c96a66d3b3757685",
+  "first_submission_model_attempts": 81,
+  "first_submission_valid_model_attempts": 79,
+  "first_submission_model_failures": 2,
+  "new_tasks": [
+    "K04",
+    "M01"
+  ],
+  "new_model_submissions": 6,
+  "new_strict_valid_submissions": 6,
+  "new_reference_predictions": 4,
+  "current_central_prediction_records_rescored": 156,
+  "additional_unchanged_H02_followup_predictions": 7,
+  "combined_unique_prediction_files_verified": 163,
+  "new_prediction_files_independently_rescored": 10,
+  "new_source_checks": [
+    "K04: all12 source matrices, author donor mapping, annotation joins, top500 training-only genes independently recomputed and36 spot normalizations",
+    "M01: all100 animals and9538 target/history examples matched to original arrays; disjoint mouse split and target/history sets"
+  ],
+  "numerical_note": "Nine new independent scores agree within1e-12; float32 GLM loss agrees within one float32 epsilon, with frozen primary predictions/scores retained",
+  "static_render_routes": 311,
+  "task_plot_pairs": 21,
+  "browser_checks": [
+    "Homepage displays21tasks and81attempts; both new task links and category counts present",
+    "K04 graph/table and numeric SingleR/logistic-reference cards match saved records",
+    "M01 lower-is-better plot and source-inspired domain-reference headline verified",
+    "Aggregate conventional-domain-reference selector shows all three models1/1 point wins on M01 only",
+    "390x844 breakpoint: M01 reference cards inside375px content width, no page overflow; viewport reset",
+    "Published footer is research preview0.8"
+  ],
+  "browser_console_errors": 0,
+  "browser_scope": "Representative live-browser flows; not exhaustive layout testing of all311routes",
+  "screenshots": [
+    "docs/assets/cortical-layers-v08.jpg",
+    "docs/assets/mouse-choice-v08.jpg"
+  ]
+}

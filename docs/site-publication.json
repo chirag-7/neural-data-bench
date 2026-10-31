@@ -1,11 +1,12 @@
 {
-  "release": "0.7",
-  "research_commit": "64659e869312e0bced5a6d07f1723e7b3a0b558f",
-  "source_commit": "c982fa4d75b61217ef9a0848a99481384dd846e8",
-  "id": "appgdep_6ae543f91cf4819185be48e0fe8847f4",
+  "release": "0.8",
+  "scientific_freeze_commit": "74b8244",
+  "research_commit": "1b35c2e5c2b1552fef8aa49dcc4093452b3e8080",
+  "source_commit": "da114e9e5aef2a982f750859c96a66d3b3757685",
+  "id": "appgdep_6ae5520838e88191b705993b5adbbf81",
   "project_id": "appgprj_6ae4f438805c81919b082963db32f4f5",
   "title": "Neural Data Observatory",
-  "version_id": "appgprj_6ae4f438805c81919b082963db32f4f5~appgver_b9881f2126508191b2d490d57278c3da",
+  "version_id": "appgprj_6ae4f438805c81919b082963db32f4f5~appgver_76fcb70a571c8191992365c6d534a532",
   "type": "publish",
   "status": "succeeded",
   "url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site",
@@ -14,40 +15,56 @@
   "provider_deployment_id": "site---6ae4f438805c81919b082963db32f4f5",
   "failure_message": null,
   "env_set_revision": 0,
-  "updated_at": "2026-10-31T01:27:27.083479+00:00",
+  "updated_at": "2026-10-31T02:27:25.080351+00:00",
   "repository_url": "https://github.com/chirag-7/neural-data-bench",
   "audience": "owner-private, preserved",
   "github_ci": {
     "status": "success",
-    "url": "https://github.com/chirag-7/neural-data-bench/actions/runs/41155386519",
-    "commit": "64659e869312e0bced5a6d07f1723e7b3a0b558f"
+    "url": "https://github.com/chirag-7/neural-data-bench/actions/runs/41160018836",
+    "commit": "1b35c2e5c2b1552fef8aa49dcc4093452b3e8080"
   },
-  "canonical_source_hash_manifest": "analysis/website-source-v07.json",
-  "canonical_archive_payload_hashes_verified": 29,
+  "canonical_source_hash_manifest": "analysis/website-source-v08.json",
+  "canonical_archive_payload_hashes_verified": 31,
   "verification": {
-    "original_macro_attempts_unchanged": 75,
-    "new_generation_attempts": 6,
-    "new_generation_strict_valid": 6,
-    "new_specialist_attempts": 1,
-    "new_specialist_successful": 1,
-    "H02_prediction_records_independently_rescored": 12,
-    "original_prediction_files_verified_in_prior_release": 146,
-    "combined_unique_prediction_files_verified": 153,
-    "training_only_specialist_candidates_rescored": 12,
-    "source_render_routes": 311,
-    "original_task_plot_pairs": 19,
-    "separate_replication_plot_pair": true,
+    "first_submission_model_attempts": 81,
+    "first_submission_valid_model_attempts": 79,
+    "first_submission_model_failures": 2,
+    "new_tasks": [
+      "K04",
+      "M01"
+    ],
+    "new_model_submissions": 6,
+    "new_strict_valid_submissions": 6,
+    "new_reference_predictions": 4,
+    "current_central_prediction_records_rescored": 156,
+    "additional_unchanged_H02_followup_predictions": 7,
+    "combined_unique_prediction_files_verified": 163,
+    "new_prediction_files_independently_rescored": 10,
+    "new_source_checks": [
+      "K04: all12 source matrices, author donor mapping, annotation joins, top500 training-only genes independently recomputed and36 spot normalizations",
+      "M01: all100 animals and9538 target/history examples matched to original arrays; disjoint mouse split and target/history sets"
+    ],
+    "numerical_note": "Nine new independent scores agree within1e-12; float32 GLM loss agrees within one float32 epsilon, with frozen primary predictions/scores retained",
+    "static_render_routes": 311,
+    "task_plot_pairs": 21,
     "browser_checks": [
-      "Published category selector to H02 original and replication tabs",
-      "All nine individual scores and named fixed/tuned specialist values visible",
-      "Two replication plots with three range whiskers each",
-      "Original fixed specialist label points to follow-up",
-      "Footer matches research preview0.7",
-      "390x844 responsive check: cards and plots within375px content width, no page overflow; viewport reset"
+      "Homepage displays21tasks and81attempts; both new task links and category counts present",
+      "K04 graph/table and numeric SingleR/logistic-reference cards match saved records",
+      "M01 lower-is-better plot and source-inspired domain-reference headline verified",
+      "Aggregate conventional-domain-reference selector shows all three models1/1 point wins on M01 only",
+      "390x844 breakpoint: M01 reference cards inside375px content width, no page overflow; viewport reset",
+      "Published footer is research preview0.8"
     ],
     "browser_console_errors": 0,
-    "browser_scope": "Representative flows only; not exhaustive live-browser testing of all routes",
-    "screenshot": "docs/assets/replication-v07.jpg"
+    "browser_scope": "Representative live-browser flows; not exhaustive layout testing of all311routes",
+    "screenshots": [
+      "docs/assets/cortical-layers-v08.jpg",
+      "docs/assets/mouse-choice-v08.jpg"
+    ],
+    "screenshot_sha256": {
+      "docs/assets/cortical-layers-v08.jpg": "e4fb5bdbd274a9326c6d7dd3a6a0f3d289de32e5012b6c5f5f3f6f34ad1bb16c",
+      "docs/assets/mouse-choice-v08.jpg": "12fb76a227c6c03ff0448dbabb023a56821f92cac90d60e43c1e43a62fe25265"
+    }
   },
-  "packaging_note": "Automatic review initially rejected a stale-parent interpretation. Refreshed helper source opening and credential, verified all29 managed files against canonical hashes, then helper created/pushed new source commits. Final archive hashes and project identity verified before private publication. First v0.7 deployment was followed by a footer/original-reference-label correction; no scientific scores changed."
+  "publication_note": "Browser review prompted one wording-only correction to distinguish the source-inspired behavioral GLM from an established strongest specialist. Final source/archive hashes verified before private publication; no scientific scores or contracts changed."
 }
