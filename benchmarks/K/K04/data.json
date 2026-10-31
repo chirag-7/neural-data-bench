@@ -1,17 +1,20 @@
 {
   "benchmark_id": "K04",
-  "input": "Human DLPFC Visium gene counts, spot positions and histology",
-  "ground_truth": "Expert layer/white-matter annotation informed by cytoarchitecture and marker genes",
+  "input": "Prepared float32 log-normalized expression for 500 training-selected non-mitochondrial genes; no spatial coordinates or images",
+  "ground_truth": "Curated L1\u2013L6/white-matter annotations with expression and histology assistance; not fully orthogonal molecular truth",
   "sources": [
     "https://research.libd.org/spatialLIBD/",
     "https://github.com/LieberInstitute/spatialLIBD",
     "https://doi.org/10.1038/s42003-024-07001-y",
     "https://research.libd.org/spatialLIBD/reference/fetch_data.html",
     "https://raw.githubusercontent.com/LieberInstitute/spatialLIBD/master/R/fetch_data.R",
-    "https://doi.org/10.1038/s41593-020-00787-0"
+    "https://doi.org/10.1038/s41593-020-00787-0",
+    "https://github.com/LieberInstitute/HumanPilot/tree/044446d6bd8fc154aa74f7be62ec67effb1ec376",
+    "https://singler-inc.github.io/singler-py/api/singler.html",
+    "https://github.com/SingleR-inc/singler-py"
   ],
-  "license_status": "Not independently reviewed",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/K04.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "K04",
@@ -37,9 +40,10 @@
     "evidence": "literature/admission-v04-cell-workflow.json"
   },
   "current_execution": {
-    "release": "0.6",
-    "status": "candidate_pending_validation",
-    "slice": null,
-    "evidence": "literature/admission-v04-cell-workflow.json"
-  }
+    "release": "0.8",
+    "status": "measured",
+    "slice": "HumanPilot DLPFC: 33,086 training spots from two donors/eight sections; 14,243 test spots from one donor/four sections; 500 training-selected genes.",
+    "evidence": "experiments/K04/protocol.md"
+  },
+  "executed_slice": "HumanPilot DLPFC: 33,086 training spots from two donors/eight sections; 14,243 test spots from one donor/four sections; 500 training-selected genes."
 }

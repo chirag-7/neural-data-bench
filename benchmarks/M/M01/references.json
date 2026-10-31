@@ -2,7 +2,11 @@
   "benchmark_id": "M01",
   "source_urls": [
     "https://www.internationalbrainlab.com/data",
-    "https://www.nature.com/articles/s41586-025-09215-4"
+    "https://www.nature.com/articles/s41586-025-09215-4",
+    "https://figshare.com/articles/dataset/11636748",
+    "https://api.figshare.com/v2/articles/11636748",
+    "https://elifesciences.org/articles/63711",
+    "https://github.com/int-brain-lab/paper-behavior/blob/24b094226a84c8609c97cfd36c8387ea7c5d61e0/figure5_GLM_modelfit.py"
   ],
-  "admission_evidence": "literature/admission-v04-inference-control.json"
+  "admission_evidence": "experiments/M01/protocol.md"
 }

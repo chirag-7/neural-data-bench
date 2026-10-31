@@ -6,7 +6,10 @@
     "https://doi.org/10.1038/s42003-024-07001-y",
     "https://research.libd.org/spatialLIBD/reference/fetch_data.html",
     "https://raw.githubusercontent.com/LieberInstitute/spatialLIBD/master/R/fetch_data.R",
-    "https://doi.org/10.1038/s41593-020-00787-0"
+    "https://doi.org/10.1038/s41593-020-00787-0",
+    "https://github.com/LieberInstitute/HumanPilot/tree/044446d6bd8fc154aa74f7be62ec67effb1ec376",
+    "https://singler-inc.github.io/singler-py/api/singler.html",
+    "https://github.com/SingleR-inc/singler-py"
   ],
-  "admission_evidence": "literature/admission-v04-cell-workflow.json"
+  "admission_evidence": "experiments/K04/protocol.md"
 }

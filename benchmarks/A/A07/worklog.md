@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Synchronized camera and
 
 ## Current admission and execution
 
-Preview 0.6: candidate_pending_validation. Synchronized camera and landmark/calibration release must be pinned with official holdout. No multiview visual adapter prepared; numerical mocap imputation A14 cannot count as this task.
+Preview 0.8: candidate_pending_validation. Synchronized camera and landmark/calibration release must be pinned with official holdout. No multiview visual adapter prepared; numerical mocap imputation A14 cannot count as this task.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

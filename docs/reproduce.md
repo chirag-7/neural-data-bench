@@ -176,3 +176,34 @@ node scripts/check_site.mjs
 ```
 
 These execution commands replace local follow-up output files; run in a separate checkout to preserve the release artifacts. Do not rerun `freeze` or `generate` on the original study: generation refuses existing contexts/outputs and must use a separately named study for any future attempt. The plan, runner, inputs and reference implementation are sealed in the follow-up run-spec; a mismatch must be investigated rather than silently updating the seal. `verification.json` checks all saved person-level prediction scores, all 12 training-only candidate scores, fold person separation and the deterministic selection rule. It does not prove model contamination is absent.
+
+## Preview 0.8: K04 and M01
+
+Both new tasks have frozen contracts in commit `74b8244`. Raw counts, source archive and prepared arrays stay local. The acquisition helper uses the committed source hashes and stops if source bytes change. K04 downloads all 12 original matrices (~137 MB); M01 downloads the original 229 MB behavior archive. Read the per-task terms and protocol first. These commands need no model account:
+
+```sh
+python scripts/acquire_grouped_candidates.py K04
+python scripts/acquire_grouped_candidates.py M01
+python experiments/K04/adapter.py
+python experiments/M01/adapter.py
+# Dedicated reference environment; do not add specialist imports to model environments.
+python -m pip install singler==0.5.0
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/grouped_candidates.py reference K04
+# Return to the root pinned numerical environment, including h5py==3.15.1.
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/grouped_candidates.py evaluate K04
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/grouped_candidates.py evaluate M01
+python scripts/verify_new_candidates.py
+python scripts/release_registry.py
+python scripts/summarize.py
+python scripts/validate.py
+python scripts/validate_expansion.py
+python scripts/build_website.py
+python scripts/check_repository.py
+node scripts/check_site.mjs
+```
+
+The evaluation runner refuses to overwrite a method attempt. To reproduce stored programs, use a separate checkout, preserve the committed result files elsewhere, then remove only those local task result JSON files before the commands above. Do not regenerate original prompts/specifications or replace original generated submissions. Archive serialization may change NPZ hashes across runtimes; investigate semantic equality and record a new reproduction run rather than changing frozen hashes silently. Full package identities are retained in reference records. SingleR uses NumPy 2.5.4; the generated numerical programs use the root NumPy 2.3.5 environment. Both use the exact same prepared arrays.
+
+`verify_new_candidates.py` independently checks source joins, donor and mouse partitions, the exact training-only gene selection, all behavioral target/history values and group-equal metric arithmetic. The frozen sklearn loss preserves float32 arithmetic for the source-inspired GLM's float32 probabilities; its independent float64 audit is within one float32 epsilon. Other new scores agree within 1e-12. No primary scores were replaced to hide that precision difference.
+
+The prior first-submission ledger is preserved in `results/archive/v07-measurements.jsonl`; integrity checks require every historical record to remain unchanged in the expanded central ledger. H02's repeated generations remain in their separate directory and are not re-counted as new task attempts.

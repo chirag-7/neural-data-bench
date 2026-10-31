@@ -38,6 +38,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Official challenge page
 
 ## Current admission and execution
 
-Preview 0.6: candidate_pending_validation. Official challenge page identifies simulated fluorescence and synaptic truth and mirror links. No mirror acquired/hashed; download terms, held-out network split and directed graph scorer remain unvalidated. Not rejected as bad data.
+Preview 0.8: candidate_pending_validation. Official challenge page identifies simulated fluorescence and synaptic truth and mirror links. No mirror acquired/hashed; download terms, held-out network split and directed graph scorer remain unvalidated. Not rejected as bad data.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json).

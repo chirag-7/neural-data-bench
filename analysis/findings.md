@@ -1,6 +1,6 @@
-# Findings — exploratory preview 0.7
+# Findings — exploratory preview 0.8
 
-19 measured task IDs across 14 mapped families.75 model–slice attempts, 73 valid and 2 unrepaired program failures. GPT-5.6: 24/25 valid (18 strict-format valid); GPT-6: 25/25; GPT-6.1: 24/25. The original panel has 57 generated programs, one per model/task, reused across C05 preparations and E01 sources. All 152 model/reference records remain; 146 stored prediction records passed rescoring/hash checks.
+The first-submission panel has 21 measured tasks across 14 mapped families and 81 model–slice attempts: 79 valid predictions and two unrepaired failures. Its 63 generated programs are reused across source slices. All 162 model/reference records include 156 stored predictions. The separate H02 follow-up adds six programs and seven prediction files without increasing these macro totals.
 
 The estimand is performance of generated analysis code fitted locally under an exact T3 contract, not native neural representations or universal neuroscience understanding. Current selection, public labels, one generation and unequal reference histories make the results exploratory.
 
@@ -9,7 +9,7 @@ The estimand is performance of generated analysis code fitted locally under an e
 | [A09](../experiments/A09) | Frame-level social behavior labels | macro_f1 ↑ | 0.868972 | 0.875946 | 0.880696 | 0.869518 | historical_specialist |
 | [A14](../experiments/A14) | Missing pose imputation | rmse_missing ↓ | 0.448549 | 0.436121 | 0.450595 | 2.437099 | conventional_baseline |
 | [B01](../experiments/B01) | Spike sorting and event detection | mean_gt_accuracy ↑ | 0.874991 | 0.940011 | 0.750450 | 0.940896 | local_specialist |
-| [C05](../experiments/C05) | Calcium-to-spike inference | median_pearson_40 ms ↑ | 0.452196 | 0.443305 | 0.467896 | 0.475337 | historical_specialist |
+| [C05](../experiments/C05) | Calcium-to-spike inference | median_pearson_40ms ↑ | 0.452196 | 0.443305 | 0.467896 | 0.475337 | historical_specialist |
 | [D02](../experiments/D02) | Current-to-voltage prediction | rmse_mV ↓ | 0.217776 | 0.217705 | 0.235533 | 0.220786 | conventional_baseline |
 | [E01](../experiments/E01) | Neural rate inference and co-smoothing | bits_per_spike ↑ | 0.203507 | 0.161134 | 0.207376 | 0.072001 | conventional_baseline |
 | [F04](../experiments/F04) | Retinal or other sensory encoding | poisson_nll ↓ | 1.550632 | 1.624742 | 1.510801 | 1.551457 | conventional_baseline |
@@ -22,12 +22,22 @@ The estimand is performance of generated analysis code fitted locally under an e
 | [I10](../experiments/I10) | MRI quality assessment across sites | balanced_accuracy ↑ | 0.635263 | 0.607193 | 0.637895 | 0.613684 | historical_specialist |
 | [J08](../experiments/J08) | Fluorescent synaptic puncta segmentation and quantification | instance_f1_iou50_multirater ↑ | 0.643368 | 0.492074 | **Failed** | 0.862534 | historical_specialist |
 | [K01](../experiments/K01) | Electrophysiological cell-type classification | macro_f1 ↑ | 0.940915 | 0.940915 | 0.943074 | 0.929975 | conventional_baseline |
+| [K04](../experiments/K04) | Cortical-layer label transfer | section_equal_macro_f1_7 classes ↑ | 0.505071 | 0.531942 | 0.550550 | 0.554585 | local_specialist |
 | [L04](../experiments/L04) | Point-process estimation and goodness of fit | bits_per_spike_train_mean ↑ | 3.194743 | 3.279951 | 3.263821 | 3.273676 | conventional_baseline |
+| [M01](../experiments/M01) | Conditional mouse-choice prediction | mouse_equal_binary_log_loss ↓ | 0.436515 | 0.437584 | 0.436634 | 0.463877 | conventional_domain_reference |
 | [M04](../experiments/M04) | Cognitive model and parameter recovery | range_normalized_mae ↓ | 0.058223 | 0.058219 | 0.058221 | 0.070696 | synthetic_objective_mismatched |
 | [N05](../experiments/N05) | NWB data loading, units and reproducibility | field_accuracy ↑ | **Failed** | 1.000000 | 1.000000 | 1.000000 | deterministic_correctness |
 
 
 C05 shows equal means of five preparation medians and historical per-preparation envelopes. E01 shows equal means across three source-specific bits/spike scores. These within-task means are not pooled-neuron scores; no values across different rows are averaged together. Failed attempts receive no invented numeric score. Exact data, scores, units, predictions and errors: [JSONL](../results/measurements.jsonl), [CSV](../results/measurements.csv), [summary](summary.json).
+
+## Two additional real-data candidates
+
+K04: SingleR 0.5.0 scores 0.554585 seven-class macro-F1, versus 0.505071 / 0.531942 / 0.550550 for Sol 5.6 / 6 / 6.1. The specialist leads all three on this custom donor-held-out split; only one held-out donor underlies four sections. Prepared expression lacks spatial coordinates, and curated layer labels use expression assistance. This is not an unsupervised spatial-clustering benchmark.
+
+M01: mouse-equal binary log-loss is 0.436515 / 0.437584 / 0.436634, versus paper-inspired GLM 0.463877 (lower is better). All three improve over this local domain reference; tiny nonmonotonic version differences do not establish a meaningful ranking.Seventeen test mice share labs with 83 training mice. Known blockprior and observed five-trial histories define conditional forecasting, not autonomous rollout. Disjoint six-trial blocks ensure no test target leaks through a later history.
+
+All ten new prediction files were independently rescored. The float32 GLM reference differs from float64 arithmetic by9.07e−9 mean/5.42e−8max-permouse, below one float32epsilon; frozen scores/predictions retained. Other new metrics agree to1e−12. [Release/source checks](../docs/release-v08.md), [K04 worklog](../experiments/K04/worklog.md), [M01 worklog](../experiments/M01/worklog.md).
 
 ## Spike sorting: a close primary score can hide a serious failure
 
@@ -61,9 +71,10 @@ This is a retrospective follow-up on the same 25-person source, not another data
 | Reference class | Tasks / families / slices | GPT-5.6 win / loss / tie / failure | GPT-6 | GPT-6.1 |
 |---|---|---|---|---|
 | conventional_baseline | 9 / 9 / 11 | 9 / 2 / 0 / 0 | 10 / 1 / 0 / 0 | 9 / 2 / 0 / 0 |
+| conventional_domain_reference | 1 / 1 / 1 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 |
 | deterministic_correctness | 1 / 1 / 1 | 0 / 0 / 0 / 1 | 0 / 0 / 1 / 0 | 0 / 0 / 1 / 0 |
 | historical_specialist | 4 / 4 / 8 | 2 / 6 / 0 / 0 | 1 / 7 / 0 / 0 | 5 / 2 / 0 / 1 |
-| local_specialist | 3 / 2 / 3 | 1 / 2 / 0 / 0 | 1 / 2 / 0 / 0 | 2 / 1 / 0 / 0 |
+| local_specialist | 4 / 3 / 4 | 1 / 3 / 0 / 0 | 1 / 3 / 0 / 0 | 2 / 2 / 0 / 0 |
 | pretrained_specialist | 1 / 1 / 1 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 |
 | synthetic_objective_mismatched | 1 / 1 / 1 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 |
 
@@ -74,9 +85,9 @@ These are slice-level point counts. Exact task/family-balanced fractions and str
 
 | Model pair | Improved | Declined | Numerical ties | Failed/missing | Slices / tasks / families | Family-equal improvement fraction |
 |---|---:|---:|---:|---:|---|---:|
-| gpt-5.6-sol → gpt-6-sol | 9 | 13 | 1 | 0 | 23 / 17 / 12 | 0.429167 |
-| gpt-6-sol → gpt-6.1-sol | 16 | 6 | 0 | 1 | 23 / 17 / 12 | 0.583333 |
-| gpt-5.6-sol → gpt-6.1-sol | 16 | 6 | 0 | 1 | 23 / 17 / 12 | 0.643056 |
+| gpt-5.6-sol → gpt-6-sol | 10 | 14 | 1 | 0 | 25 / 19 / 13 | 0.434615 |
+| gpt-6-sol → gpt-6.1-sol | 18 | 6 | 0 | 1 | 25 / 19 / 13 | 0.615385 |
+| gpt-5.6-sol → gpt-6.1-sol | 17 | 7 | 0 | 1 | 25 / 19 / 13 | 0.593590 |
 
 
 Progress aggregates exclude M04 numerical quadrature ordering and N05 deterministic correctness. They retain selected synthetic B01 and semisynthetic repair tasks. Failures remain in the denominator. Directional fractions are not effect sizes, statistical significance or causal scaling laws; version order is not training compute/time. B01'spost-hoc metric sensitivity does not silently change this table.

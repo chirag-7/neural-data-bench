@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). NAOMi can provide full 
 
 ## Current admission and execution
 
-Preview 0.6: candidate_pending_validation. NAOMi can provide full synthetic calcium movie truth. Requires frozen physicalsimulation parameters and randomseeds, compute budget and exact ROI/timecourse scoring. Clearly synthetic; simulator outputs do not validate real in-vivo robustness.
+Preview 0.8: candidate_pending_validation. NAOMi can provide full synthetic calcium movie truth. Requires frozen physicalsimulation parameters and randomseeds, compute budget and exact ROI/timecourse scoring. Clearly synthetic; simulator outputs do not validate real in-vivo robustness.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

@@ -1,0 +1,23 @@
+[
+  {
+    "model": "gpt-5.6-sol",
+    "event_file": "experiments/K04/generation-events/gpt-5.6-sol.jsonl",
+    "sha256": "0345b48cc879c1152e87488926d62eadba4bc9e91de59e6f55c8208cbbb714e7",
+    "tool_events": 0,
+    "submission_matches_final_generation_event": true
+  },
+  {
+    "model": "gpt-6-sol",
+    "event_file": "experiments/K04/generation-events/gpt-6-sol.jsonl",
+    "sha256": "5b5c1d2c71d92dd52b8a856b7c09acd73815190d5e2609b43d1e15ee333c237f",
+    "tool_events": 0,
+    "submission_matches_final_generation_event": true
+  },
+  {
+    "model": "gpt-6.1-sol",
+    "event_file": "experiments/K04/generation-events/gpt-6.1-sol.jsonl",
+    "sha256": "71a2de5dc12da5ed13ec3f3bf380c65edb5255016432075960825a14b1d08b0f",
+    "tool_events": 0,
+    "submission_matches_final_generation_event": true
+  }
+]

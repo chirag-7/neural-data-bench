@@ -1,6 +1,6 @@
 # Executed panel
 
-19 measured task IDs. Exact scores and caveats:[findings](../analysis/findings.md); source contracts:[experiments](../experiments/).
+21measured task IDs. Exact scores and caveats:[findings](../analysis/findings.md); source contracts:[experiments](../experiments/).
 
 - [A09](../experiments/A09): CalMS21 Task 1: processed pose context at 3 Hz; 70 training and 19 test recordings.
 - [A14](../experiments/A14): Rat7 M: six-landmark, 31-frame windows with an artificial seven-frame HeadF gap; three training and two test rats.
@@ -18,7 +18,9 @@
 - [I10](../experiments/I10): MRIQC: 600 ABIDE training scans and 265 DS030 test scans; 68 numeric quality metrics and rater-1 exclusion labels.
 - [J08](../experiments/J08): SynAPSeg 2 D puncta: 27 training fields yielding 1, 262 crops; two held-out whole fields, five expert masks each; archived StarDist reference.
 - [K01](../experiments/K01): Allen mouse electrophysiology: 11 features predict spiny/aspiny morphology; donor-disjoint 1, 356 training and 457 test cells.
+- [K04](../experiments/K04): DLPFC HumanPilot donor-held-out expression-to-layer transfer; two train donors/eight sections versus one test donor/four sections;500 genes.
 - [L04](../experiments/L04): One rat place cell: 20 ms spike counts predicted from position and velocity; chronological 60/40 split with a one-second gap.
+- [M01](../experiments/M01): IBL real conditional choices;83 train/17 test mice,nonoverlapping six-trial target/history blocks and known experimenter blockprior.
 - [M04](../experiments/M04): Synthetic two-choice Q-learning agents: recover learning rate and inverse temperature from choices and rewards.
 - [N05](../experiments/N05): One real legacy Allen NWB file, shared with D02: extract 61 deterministic fields covering six sweeps.
 
@@ -26,4 +28,4 @@ C05 has five preparations; E01 has three official source slices, all reusing ori
 
 ## Separate H02 generation follow-up (0.7)
 
-Six new submissions plus one train-only CV-selected specialist are retained in the [separate ledger](../results/replications/H02.json). Original attempt 1 is included for context, giving three attempts per model on the same dataset. These do not increase the 19-task/75-attempt original panel or its macro denominators. [Plan, outcomes and verification](../experiments/H02/replication-v1/results.md).
+Six new submissions plus one train-only CV-selected specialist are retained in the [separate ledger](../results/replications/H02.json). Original attempt 1 is included for context, giving three attempts per model on the same dataset. These do not increase first-submission macro denominators. The historical19-task/75-attempt0.7snapshot is preserved; new K04/M01 tasks legitimately extend the current panel to21 tasks/81 attempts. [Plan, outcomes and verification](../experiments/H02/replication-v1/results.md).

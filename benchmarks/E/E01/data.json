@@ -32,7 +32,7 @@
     "evidence": "literature/admission-v04-behavior-population.json"
   },
   "current_execution": {
-    "release": "0.6",
+    "release": "0.8",
     "status": "measured",
     "slice": "Neural Latents Benchmark: MC_Maze_Small, Area2_Bump and DMFC_RSG; held-in to held-out neuron readout using unchanged generated programs.",
     "evidence": "literature/admission-v04-behavior-population.json"

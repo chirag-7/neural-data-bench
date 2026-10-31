@@ -12,6 +12,6 @@ Decision: **deferred** (2026-10-30). Original NEMAR MSSV page accessible:92mice,
 
 ## Current admission and execution
 
-Preview 0.6: deferred. Original NEMAR MSSV page accessible:92mice,five labs,CC0,~5.3GB archive/direct manifest. Promising public real sleep resource, not bad data. Need lab identifiers, stage epoch alignment and leave-lab-out acquisition adapter; no local raw arrays downloaded.
+Preview 0.8: deferred. Original NEMAR MSSV page accessible:92mice,five labs,CC0,~5.3GB archive/direct manifest. Promising public real sleep resource, not bad data. Need lab identifiers, stage epoch alignment and leave-lab-out acquisition adapter; no local raw arrays downloaded.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

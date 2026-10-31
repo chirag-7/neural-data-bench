@@ -39,6 +39,6 @@ Decision: **deferred** (2026-10-30). Gaussian/multiview reconstruction requires 
 
 ## Current admission and execution
 
-Preview 0.6: deferred. Gaussian/multiview reconstruction requires GPU training and substantial calibrated synchronized images. Current numeric code-generation budget cannot reproduce the published task. No claim of data invalidity.
+Preview 0.8: deferred. Gaussian/multiview reconstruction requires GPU training and substantial calibrated synchronized images. Current numeric code-generation budget cannot reproduce the published task. No claim of data invalidity.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

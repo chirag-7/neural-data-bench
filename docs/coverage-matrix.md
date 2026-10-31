@@ -1,6 +1,6 @@
 # Coverage and maturity
 
-19 measured IDs represent 14 families through narrow selected slices, not complete coverage. Counts describe task–resource associations, not independent datasets.
+21measured IDs represent 14 families through narrow selected slices, not complete coverage. Counts describe task–resource associations, not independent datasets.
 
 | Family | Active entries | Measured IDs | Pending validation | Deferred |
 |---|---:|---|---:|---:|
@@ -14,9 +14,9 @@
 | [H](../benchmarks/H/README.md) EEG, MEG, field signals and peripheral interfaces | 14 | H01, H02, H08, H16 | 1 | 9 |
 | [I](../benchmarks/I/README.md) Human and mesoscopic neuroimaging | 6 | I07, I10 | 0 | 4 |
 | [J](../benchmarks/J/README.md) Anatomy, histology and connectomics | 9 | J08 | 4 | 4 |
-| [K](../benchmarks/K/README.md) Cell types and molecular neuroscience | 5 | K01 | 4 | 0 |
+| [K](../benchmarks/K/README.md) Cell types and molecular neuroscience | 5 | K01, K04 | 3 | 0 |
 | [L](../benchmarks/L/README.md) Mechanistic and statistical inference | 5 | L04 | 3 | 1 |
-| [M](../benchmarks/M/README.md) Experimental design and control | 4 | M04 | 2 | 1 |
+| [M](../benchmarks/M/README.md) Experimental design and control | 4 | M01, M04 | 1 | 1 |
 | [N](../benchmarks/N/README.md) Scientific analysis workflows | 3 | N05 | 2 | 0 |
 
 ## Removed from the active map
@@ -29,7 +29,9 @@
 - J08 has two 2 D fields: 3 D microscopy, EM connectomics, registration, tractography and independent-specimen replication remain unmeasured.
 - G01 is offline monkey finger-velocity decoding across four recording days: clinical speech BCI, online control, adaptation latency and human safety remain unmeasured.
 - H08 has three held-out first nights from healthy volunteers; clinical disorders, sites, demographics and full polysomnography generalization remain unmeasured. MEG, seizure detection and other electrophysiology endpoints remain candidates.
-- Calcium motion correction/segmentation, whole-brain fMRI encoding, molecular/spatial omics, causal perturbation inference, mechanistic simulator fitting, active experiment design and embodied control have little or no execution here.
+- Calcium motion correction/segmentation, whole-brain fMRI encoding, broader molecular/spatial omics, causal perturbation inference, mechanistic simulator fitting, active experiment design and embodied control have little or no execution here.
+- K04 adds supervised layer transfer from spatial expression, but only one test donor and no spatial context; independent spatial truth, broader molecular mapping and spatial clustering remain gaps.
+- M01 adds real conditional choice prediction with observed histories and known blockprior; unseen labs, autonomous policies and richer cognitive tasks remain gaps.
 - M04 is synthetic cognitive parameter recovery; L04 measures one real cell's encoding, not full goodness-of-fit or causal identification. N05 is one deterministic file fixture.
 - Every measured model is a constrained general coding model. Native image/video/world models, open-weight models, retrieval-assisted agents and unconstrained autonomous lab workflows are not compared.
 

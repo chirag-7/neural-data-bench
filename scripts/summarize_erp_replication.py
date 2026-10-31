@@ -119,7 +119,7 @@ def main():
     (D / 'generation-provenance.json').write_text(json.dumps(provenance, indent=2) + '\n')
     (D / 'verification.json').write_text(json.dumps(dict(frozen_seal_verified=True,
         independently_rescored_predictions=verification, selection_checks=selection_checks,
-        original_macro_measurements_sha256=sha(R / 'results/measurements.jsonl')), indent=2) + '\n')
+        original_macro_measurements_sha256=sha(R / 'results/archive/v07-measurements.jsonl') if (R / 'results/archive/v07-measurements.jsonl').exists() else sha(R / 'results/measurements.jsonl')), indent=2) + '\n')
     table = '\n'.join(f"| {r['model']} | {r['valid']}/{r['attempted']} | {r['strict_valid']}/{r['attempted']} | {r['mean']:.6f} | {r['minimum']:.6f}–{r['maximum']:.6f} | {r['attempts_above_fixed_specialist']} | {r['attempts_above_tuned_specialist']} |" for r in summaries)
     text = '# H02 follow-up results\n\nRetrospective replication on the same frozen Brain Invaders 2012 split. Original plus two fresh, no-feedback submissions per model. Equal-person ROC-AUC; larger is better. Means include every numerically valid attempt; failures and format compliance are shown separately. No best-of-three model selection.\n\n| Model | Valid | Strict valid | Mean | Range | Attempts > fixed specialist | Attempts > tuned specialist |\n|---|---:|---:|---:|---:|---:|---:|\n' + table
     text += f"\n\nOriginal fixed xDAWN reference: **{fixed_score:.6f}**. Tuned reference status: **{tuned['status']}**."

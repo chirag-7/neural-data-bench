@@ -1779,5 +1779,68 @@
     ],
     "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
     "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S9ada82a7ba",
+    "url": "https://github.com/LieberInstitute/HumanPilot/tree/044446d6bd8fc154aa74f7be62ec67effb1ec376",
+    "benchmark_ids": [
+      "K04"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S5f0f6c3d48",
+    "url": "https://singler-inc.github.io/singler-py/api/singler.html",
+    "benchmark_ids": [
+      "K04"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sb9832d4cf1",
+    "url": "https://github.com/SingleR-inc/singler-py",
+    "benchmark_ids": [
+      "K04"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Seb521ab4e9",
+    "url": "https://figshare.com/articles/dataset/11636748",
+    "benchmark_ids": [
+      "M01"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S5dac9c4df4",
+    "url": "https://api.figshare.com/v2/articles/11636748",
+    "benchmark_ids": [
+      "M01"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sad2a4acea1",
+    "url": "https://elifesciences.org/articles/63711",
+    "benchmark_ids": [
+      "M01"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sc66fb4f158",
+    "url": "https://github.com/int-brain-lab/paper-behavior/blob/24b094226a84c8609c97cfd36c8387ea7c5d61e0/figure5_GLM_modelfit.py",
+    "benchmark_ids": [
+      "M01"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
   }
 ]

@@ -45,6 +45,7 @@ for d in (R/'experiments').iterdir():
  codepath=d/('reference.py' if d.name=='N05' else 'adapter.py');assert hashlib.sha256(codepath.read_bytes()).hexdigest()==spec['reference_sha256' if d.name=='N05' else 'adapter_sha256']
  for filename,key in [('protocol.md','protocol_sha256'),('specialist.py','specialist_sha256')]:
   if key in spec:assert hashlib.sha256((d/filename).read_bytes()).hexdigest()==spec[key]
+ if 'runner_sha256' in spec:assert hashlib.sha256((R/'scripts/grouped_candidates.py').read_bytes()).hexdigest()==spec['runner_sha256']
  prov=json.loads((d/'generation-provenance.json').read_text());assert len(prov)==3
  for p in prov:
   code=json.loads((d/(p['requested_model']+'.json')).read_text())['code'];assert hashlib.sha256(code.encode()).hexdigest()==p['code_sha256'];assert p['tool_events']==0 and p['usage'] is not None
@@ -71,7 +72,16 @@ if tuned['status']=='measured':
  assert hashlib.sha256((follow/'selection.json').read_bytes()).hexdigest()==tuned['selection_sha256']
  assert len(choice['candidates'])==12 and choice['chosen_index']==max(range(12),key=lambda i:choice['candidates'][i]['validation_score'])
  assert hashlib.sha256((follow/'validation-predictions.npz').read_bytes()).hexdigest()==json.loads((follow/'verification.json').read_text())['selection_checks']['oof_prediction_sha256']
-assert hashlib.sha256((R/'results/measurements.jsonl').read_bytes()).hexdigest()==json.loads((follow/'verification.json').read_text())['original_macro_measurements_sha256']
+snapshot=R/'results/archive/v07-measurements.jsonl'
+assert hashlib.sha256(snapshot.read_bytes()).hexdigest()==json.loads((follow/'verification.json').read_text())['original_macro_measurements_sha256']
+old_records=[json.loads(v) for v in snapshot.read_text().splitlines()]
+for row in old_records:assert row in records,'A historical first-submission record changed'
 for suffix in ['json','csv']:assert (R/f'results/replications/H02.{suffix}').read_bytes()==(R/f'website/data/H02-replication.{suffix}').read_bytes()
 print(f'Integrity checks passed: {len(ids)} task cards, {len(records)} records, linked files, predictions, provenance and synchronized site data.')
 print('H02 follow-up integrity passed: all 9 planned generations, separate results, unchanged original macro ledger.')
+for task in ['K04','M01']:
+ d=R/f'experiments/{task}';events=json.loads((d/'generation-event-files.json').read_text());assert len(events)==3
+ for entry in events:
+  assert hashlib.sha256((R/entry['event_file']).read_bytes()).hexdigest()==entry['sha256'] and entry['tool_events']==0 and entry['submission_matches_final_generation_event']
+ assert len(json.loads((d/'verification.json').read_text())['prediction_checks'])==5
+print('K04/M01 source, scorer, frozen runner and retained generation event evidence present.')

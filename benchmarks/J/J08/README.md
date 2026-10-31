@@ -43,6 +43,6 @@ Decision: **deferred** (2026-10-30). Dataset license unresolved in earlier mappi
 
 ## Current admission and execution
 
-Preview 0.6: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
+Preview 0.8: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
 [Admission/source evidence](../../../experiments/J08/protocol.md). [Actual protocol/worklog](../../../experiments/J08). [Task measurements](../../../results/J08.json).

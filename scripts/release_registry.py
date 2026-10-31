@@ -2,6 +2,7 @@
 from pathlib import Path
 import json,hashlib,re
 R=Path(__file__).resolve().parents[1]
+RELEASE='0.8'
 def read(p):return json.loads((R/p).read_text())
 def dump(p,o):p=R/p;p.parent.mkdir(exist_ok=True,parents=True);p.write_text(json.dumps(o,indent=2,ensure_ascii=False)+'\n')
 def main():
@@ -22,6 +23,7 @@ def main():
  'H02':dict(executed_slice='Brain Invaders2012 calibration runs: 15 training and10 held-out people; 11,481/7,663 epochs,16 EEG channels; equal-person ROC-AUC.',resource='Brain Invaders2012 v3 / Zenodo2649069; custom subject-held-out ERP diagnostic',dataset_group='Brain Invaders2012',executed_source_deviation='The earlier BNCI2014_008 proposal remains unrun; this is a separately licensed alternate ERP source.',review_depth='All25 original archives checksum-verified; MAT/CSV markers independently compared, grouped scorer fixtures and frozen model procedure documented',data='Stimulus-locked16channel EEG epochs,128Hz,0–1s afterflash; EEG only, groundFz removed',ground_truth='Original all-flash/target event markers; higher score denotes target',source_urls=['https://zenodo.org/records/2649069','https://arxiv.org/abs/1905.05182','https://github.com/plcrodrigues/py.BI.EEG.2012-GIPSA','https://pyriemann.readthedocs.io/en/latest/auto_examples/biosignal-erp/plot_classify_EEG_tangentspace.html'],admission_evidence_file='experiments/H02/protocol.md',recommended_metrics='Frozen primary: equal-person ROC-AUC over10held-out people; pooled AUC secondary',recommended_split='People01–15 train,16–25 test; calibration runs only; training group IDs passed to all methods',limitations='One public source/fixedIDsplit, offline filtering and overlapping trials. No cross-lab,online control,currentSOTA or matched-total-effort claim.'),
  'H08':dict(executed_slice='SleepEDF fixed20:00–08:00firstnightwindows;5train/3heldoutpeople,100HzFpz-Cz;fiveclassstaging',resource='Sleep-EDF Expanded1.0.0; custom subject-held-out diagnostic with YASA checkpoint',data='Raw EEG Fpz-Cz,1440consecutive30second epochs/night',ground_truth='Independent technician R&K stages; stages3/4merged,unknown/movement excluded',source_urls=['https://physionet.org/content/sleep-edfx/1.0.0/','https://doi.org/10.13026/C2X676','https://doi.org/10.7554/eLife.70092','https://github.com/raphaelvallat/yasa_classifier'],admission_evidence_file='experiments/H08/protocol.md',recommended_metrics='Pooled fiveclassmacroF1,accuracy,balancedaccuracy,pernightmacroF1',recommended_split='FirstnightSC400–404train,SC405–407test;fixedclockwindowwithoutlabel-basedcrop',limitations='Three testpeople;singlederivation;customclockwindow not officialSleepEDF20protocol;YASANSRRpretraining differs from five targettrainingnights.'),
  'J08':dict(executed_slice='SynAPSeg2Dpuncta instances:27trainingfields,1262crops;twoheldoutwholefields×fiveexpertmasks;archivedStarDistreference',resource='SynAPSeg Zenodo18988899; 2D multi-rater instance-segmentation slice',data='Normalized microscopy intensities and known training annotation ROI/geometry masks',ground_truth='Five independent human instance annotations per held-out field; no majority oracle',source_urls=['https://zenodo.org/records/18988899','https://doi.org/10.1371/journal.pcbi.1014571'],admission_evidence_file='experiments/J08/protocol.md',recommended_metrics='Equal image/rater instanceF1 atIoU≥0.5; Hungarian objectmatching',recommended_split='All27released2Dtrainingfields vs both official2Dbenchmarkfields; crop correlations preserved',limitations='Only two testfields and unresolved animal identities. Archived StarDist optimization history differs; no inference timing or currentSOTAclaim.')}
+ if (R/'registry/execution-overrides.json').exists():additions.update(read('registry/execution-overrides.json'))
  readable_slices={
  'A09':'CalMS21 Task 1: processed pose context at 3 Hz; 70 training and 19 test recordings.',
  'A14':'Rat7M: six-landmark, 31-frame windows with an artificial seven-frame HeadF gap; three training and two test rats.',
@@ -70,6 +72,7 @@ def main():
     text=re.sub(r'Target/ground truth: [^\n]*','Target/ground truth: '+e['ground_truth'],text)
     if t in measured:
      current='## Execution and performance\n\n**Executed slice:** '+e.get('executed_slice',e['task'])+'\n\n[Frozen protocol and artifacts](../../../experiments/'+t+'). [Measured scores and references](../../../results/'+t+'.json). [Central data](../../../results/measurements.csv). Missing or failed outputs are retained.\n\n'
+     if t=='H02':current+='[Separate three-generation follow-up](../../../experiments/H02/replication-v1/results.md); repeated attempts are excluded from first-submission macro totals.\n\n'
      text=re.sub(r'## Execution and performance\n.*?(?=## Limitations)',lambda m:current,text,flags=re.S)
      text=re.sub(r'## Limitations\n.*?(?=## Sources)',lambda m:'## Limitations\n\n'+e['limitations']+'\n\n',text,flags=re.S)
     text=text.replace('Specialist candidates:','Mapped specialist candidates (not all evaluated):')
@@ -78,14 +81,14 @@ def main():
      before,after=text.split('## Sources',1);history='## Historical v0.4 admission and execution'
      tail=history+after.split(history,1)[1] if history in after else ''
      text=before+'## Sources\n\n'+''.join('- ['+u+']('+u+')\n' for u in e['source_urls'])+'\nSource associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.\n\n'+tail
-   text+='\n## Current admission and execution\n\nPreview 0.6: '+e['execution_admission']+'. '+e['admission_reason']+'\n\n[Admission/source evidence](../../../'+e['admission_evidence_file']+').'
+   text+='\n## Current admission and execution\n\nPreview '+RELEASE+': '+e['execution_admission']+'. '+e['admission_reason']+'\n\n[Admission/source evidence](../../../'+e['admission_evidence_file']+').'
    if t in measured:text+=' [Actual protocol/worklog](../../../experiments/'+t+'). [Task measurements](../../../results/'+t+'.json).'
    p.write_text(text+'\n')
   if t in measured:
    method=folder/'methods.md';text=method.read_text().split('\n## Current executed protocol\n')[0];text=text.replace('No experiment admitted yet.','An explicitly scoped exploratory slice has been executed; broader proposed operations above remain separate.')
-   text+='\n## Current executed protocol\n\nPreview 0.6: '+e.get('executed_slice',e['task'])+'\n\n[Actual frozen contract and implementation](../../../experiments/'+t+'). [Measured method/reference records](../../../results/'+t+'.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.\n';method.write_text(text)
+   text+='\n## Current executed protocol\n\nPreview '+RELEASE+': '+e.get('executed_slice',e['task'])+'\n\n[Actual frozen contract and implementation](../../../experiments/'+t+'). [Measured method/reference records](../../../results/'+t+'.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.\n';method.write_text(text)
   dump(f'benchmarks/{t[0]}/{t}/references.json',dict(benchmark_id=t,source_urls=e['source_urls'],admission_evidence=e['admission_evidence_file']))
-  p=folder/'data.json';o=json.loads(p.read_text());o['current_execution']=dict(release='0.6',status=e['execution_admission'],slice=e.get('executed_slice'),evidence=e['admission_evidence_file']);o['input']=e['data'];o['ground_truth']=e['ground_truth'];o['sources']=e['source_urls']
+  p=folder/'data.json';o=json.loads(p.read_text());o['current_execution']=dict(release=RELEASE,status=e['execution_admission'],slice=e.get('executed_slice'),evidence=e['admission_evidence_file']);o['input']=e['data'];o['ground_truth']=e['ground_truth'];o['sources']=e['source_urls']
   if t in measured:
    manifest=R/f'data/manifests/{t}.json'
    if not manifest.exists():manifest=R/f'experiments/{t}/data-manifest.json'
@@ -95,7 +98,7 @@ def main():
    o['license_status']='Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources'
    o['executed_slice']=e.get('executed_slice',e['task'])
   p.write_text(json.dumps(o,indent=2)+'\n')
- c['entries']=active;c['release']='0.6';c['historical_mapped_entries']=len(all_entries);c['archived_candidates']=len(exclusions);c['scope']='Active candidate catalog plus measured custom slices; excluded proposals/unresolved-access resources preserved in versioned evidence archive. Neither catalog count nor category coverage proves completeness.'
+ c['entries']=active;c['release']=RELEASE;c['historical_mapped_entries']=len(all_entries);c['archived_candidates']=len(exclusions);c['scope']='Active candidate catalog plus measured custom slices; excluded proposals/unresolved-access resources preserved in versioned evidence archive. Neither catalog count nor category coverage proves completeness.'
  dump('registry/catalog.json',c);dump('registry/admission-decisions.json',decisions);dump('registry/excluded-candidates.json',exclusions)
  for fam in c['families']:
   text='# '+fam['name']+'\n\n[Project](../../README.md) · [Coverage](../../docs/coverage-matrix.md)\n\n'+fam['data_types']+'\n\n'

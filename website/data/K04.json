@@ -1,0 +1,280 @@
+[
+  {
+    "benchmark_id": "K04",
+    "slice_id": "expansion-v1",
+    "model": "singler",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "reference",
+    "reference_type": "local_specialist_reproduction",
+    "n_units": 4,
+    "seconds": 0.3191878329962492,
+    "prediction_file": "results/predictions/K04/expansion-v1--singler.npz",
+    "prediction_sha256": "826efbd021e3f9121b4e08e5f8e92e3cd49e576a209f7f18d81f439379e26d46",
+    "input_sha256": {
+      "data/cache/K04/data.npz": "ef17e2b31a61a773f1ce79ba21a4df9f03ba71090a8b5bd09a9f178c97066d21"
+    },
+    "prompt_sha256": "8ea1145c80e2bc90e94a0bb8a33233c83627ab17edddadc3f38636f51a52097a",
+    "superiority_eligible": false,
+    "superiority_reason": "Custom source/split, one generation, current strongest specialist and matched total effort unestablished",
+    "code_sha256": "49c9d5dc1b202b1d1416b33f57b2be92cdb5dc8ddd4a00a6a666ce4e2ae12382",
+    "selection": "Fixed before model generation and reference test score; no test tuning",
+    "packages": {
+      "singler": "0.5.0",
+      "numpy": "2.5.4"
+    },
+    "score": 0.5545850046572878,
+    "metric": "section_equal_macro_f1_7classes",
+    "direction": "higher",
+    "per_unit": [
+      0.5732832649413346,
+      0.5155374434824801,
+      0.5739171835477181,
+      0.5556021266576179
+    ],
+    "group_results": [
+      {
+        "group": "151673",
+        "n": 3611,
+        "score": 0.5732832649413346
+      },
+      {
+        "group": "151674",
+        "n": 3635,
+        "score": 0.5155374434824801
+      },
+      {
+        "group": "151675",
+        "n": 3566,
+        "score": 0.5739171835477181
+      },
+      {
+        "group": "151676",
+        "n": 3431,
+        "score": 0.5556021266576179
+      }
+    ],
+    "pooled_macro_f1": 0.5551424101639302,
+    "accuracy": 0.5936951484939971
+  },
+  {
+    "benchmark_id": "K04",
+    "slice_id": "expansion-v1",
+    "model": "gpt-5.6-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3",
+    "reference_type": "local_reproduction",
+    "n_units": 4,
+    "seconds": 30.248514625011012,
+    "prediction_file": "results/predictions/K04/expansion-v1--gpt-5.6-sol.npz",
+    "prediction_sha256": "d6b505ef573556b31c7a17f0cb914ba8c8f7e8e52e7eb6dd7a8fff7c53f6a052",
+    "input_sha256": {
+      "data/cache/K04/data.npz": "ef17e2b31a61a773f1ce79ba21a4df9f03ba71090a8b5bd09a9f178c97066d21"
+    },
+    "prompt_sha256": "8ea1145c80e2bc90e94a0bb8a33233c83627ab17edddadc3f38636f51a52097a",
+    "superiority_eligible": false,
+    "superiority_reason": "Custom source/split, one generation, current strongest specialist and matched total effort unestablished",
+    "description": "Deterministic primal linear-SVM classifier with fixed per-spot summary features and training-only standardization. Three regularization values and fixed class-prior margin adjustments are selected by leave-one-donor-out validation, averaging fixed seven-label macro-F1 across the two held-out donors. Square-root inverse-frequency weights reduce imbalance; absent fold classes are explicitly aligned without failure. The selected model is refit on all training donors, with no test-set normalization or adaptation.",
+    "code_sha256": "4502c445f1efdbf8cf37aa9754a64c3249348dc7dd4c7241160a48d96519ba00",
+    "code_lines": 143,
+    "line_limit_compliant": true,
+    "score": 0.5050711426219323,
+    "metric": "section_equal_macro_f1_7classes",
+    "direction": "higher",
+    "per_unit": [
+      0.5272581691881356,
+      0.46322745471864124,
+      0.5086346383431711,
+      0.521164308237781
+    ],
+    "group_results": [
+      {
+        "group": "151673",
+        "n": 3611,
+        "score": 0.5272581691881356
+      },
+      {
+        "group": "151674",
+        "n": 3635,
+        "score": 0.46322745471864124
+      },
+      {
+        "group": "151675",
+        "n": 3566,
+        "score": 0.5086346383431711
+      },
+      {
+        "group": "151676",
+        "n": 3431,
+        "score": 0.521164308237781
+      }
+    ],
+    "pooled_macro_f1": 0.504945045733639,
+    "accuracy": 0.5895527627606544
+  },
+  {
+    "benchmark_id": "K04",
+    "slice_id": "expansion-v1",
+    "model": "gpt-6-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3",
+    "reference_type": "local_reproduction",
+    "n_units": 4,
+    "seconds": 0.8520157090388238,
+    "prediction_file": "results/predictions/K04/expansion-v1--gpt-6-sol.npz",
+    "prediction_sha256": "f3bfd7183f901580ed8c3fc88d0bf9a0e00cc96f6a849cff4c9311399cfe9e5a",
+    "input_sha256": {
+      "data/cache/K04/data.npz": "ef17e2b31a61a773f1ce79ba21a4df9f03ba71090a8b5bd09a9f178c97066d21"
+    },
+    "prompt_sha256": "8ea1145c80e2bc90e94a0bb8a33233c83627ab17edddadc3f38636f51a52097a",
+    "superiority_eligible": false,
+    "superiority_reason": "Custom source/split, one generation, current strongest specialist and matched total effort unestablished",
+    "description": "Selects kernel width and ridge penalty with two donor-held-out folds. Each fold fits gene ranking and scaling on its training donor; validation excludes labels the fold could not learn. The selected model is refit on all training spots. Prediction uses each test row independently.",
+    "code_sha256": "9029251c832def1b03ea5e5d712f09832acfed5d43f048566db92936b7daeba7",
+    "code_lines": 91,
+    "line_limit_compliant": true,
+    "score": 0.5319420425018879,
+    "metric": "section_equal_macro_f1_7classes",
+    "direction": "higher",
+    "per_unit": [
+      0.5571072236192969,
+      0.4899147465422314,
+      0.5486384220894711,
+      0.5321077777565526
+    ],
+    "group_results": [
+      {
+        "group": "151673",
+        "n": 3611,
+        "score": 0.5571072236192969
+      },
+      {
+        "group": "151674",
+        "n": 3635,
+        "score": 0.4899147465422314
+      },
+      {
+        "group": "151675",
+        "n": 3566,
+        "score": 0.5486384220894711
+      },
+      {
+        "group": "151676",
+        "n": 3431,
+        "score": 0.5321077777565526
+      }
+    ],
+    "pooled_macro_f1": 0.532493465168315,
+    "accuracy": 0.5919399003019027
+  },
+  {
+    "benchmark_id": "K04",
+    "slice_id": "expansion-v1",
+    "model": "gpt-6.1-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3",
+    "reference_type": "local_reproduction",
+    "n_units": 4,
+    "seconds": 2.3182547909673303,
+    "prediction_file": "results/predictions/K04/expansion-v1--gpt-6.1-sol.npz",
+    "prediction_sha256": "99af0c1695e64c3478828a3454bc2cccb1afc543a6071e93f2973b1057fc73c9",
+    "input_sha256": {
+      "data/cache/K04/data.npz": "ef17e2b31a61a773f1ce79ba21a4df9f03ba71090a8b5bd09a9f178c97066d21"
+    },
+    "prompt_sha256": "8ea1145c80e2bc90e94a0bb8a33233c83627ab17edddadc3f38636f51a52097a",
+    "superiority_eligible": false,
+    "superiority_reason": "Custom source/split, one generation, current strongest specialist and matched total effort unestablished",
+    "description": "Use leave-one-training-donor-out validation with all seven labels fixed in macro-F1. Select a probability ensemble of regularized linear, discriminant, logistic, and approximate RBF models. Fit preprocessing within each validation fold, then refit selected models on all training spots. Test predictions use independent per-row calculations only.",
+    "code_sha256": "a7b61112664c6384cfa942dc29c2d238cc4d99366d2ce639dbbadc4816653c74",
+    "code_lines": 187,
+    "line_limit_compliant": true,
+    "score": 0.5505501906955991,
+    "metric": "section_equal_macro_f1_7classes",
+    "direction": "higher",
+    "per_unit": [
+      0.5762475621276855,
+      0.5051210692191076,
+      0.5594205861653011,
+      0.5614115452703025
+    ],
+    "group_results": [
+      {
+        "group": "151673",
+        "n": 3611,
+        "score": 0.5762475621276855
+      },
+      {
+        "group": "151674",
+        "n": 3635,
+        "score": 0.5051210692191076
+      },
+      {
+        "group": "151675",
+        "n": 3566,
+        "score": 0.5594205861653011
+      },
+      {
+        "group": "151676",
+        "n": 3431,
+        "score": 0.5614115452703025
+      }
+    ],
+    "pooled_macro_f1": 0.5512130666807218,
+    "accuracy": 0.6252896159516955
+  },
+  {
+    "benchmark_id": "K04",
+    "slice_id": "expansion-v1",
+    "model": "task-baseline",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "reference",
+    "reference_type": "local_reproduction",
+    "n_units": 4,
+    "seconds": 1.1660846669692546,
+    "prediction_file": "results/predictions/K04/expansion-v1--task-baseline.npz",
+    "prediction_sha256": "bdb20daa5d093191b72657da66c34a67431e3a611c9c64e12f8a0efeb7809ed3",
+    "input_sha256": {
+      "data/cache/K04/data.npz": "ef17e2b31a61a773f1ce79ba21a4df9f03ba71090a8b5bd09a9f178c97066d21"
+    },
+    "prompt_sha256": "8ea1145c80e2bc90e94a0bb8a33233c83627ab17edddadc3f38636f51a52097a",
+    "superiority_eligible": false,
+    "superiority_reason": "Custom source/split, one generation, current strongest specialist and matched total effort unestablished",
+    "score": 0.5193260844488914,
+    "metric": "section_equal_macro_f1_7classes",
+    "direction": "higher",
+    "per_unit": [
+      0.5331637372451626,
+      0.49002420689471693,
+      0.5299880173351305,
+      0.5241283763205555
+    ],
+    "group_results": [
+      {
+        "group": "151673",
+        "n": 3611,
+        "score": 0.5331637372451626
+      },
+      {
+        "group": "151674",
+        "n": 3635,
+        "score": 0.49002420689471693
+      },
+      {
+        "group": "151675",
+        "n": 3566,
+        "score": 0.5299880173351305
+      },
+      {
+        "group": "151676",
+        "n": 3431,
+        "score": 0.5241283763205555
+      }
+    ],
+    "pooled_macro_f1": 0.5194002578245464,
+    "accuracy": 0.5830232394860634
+  }
+]

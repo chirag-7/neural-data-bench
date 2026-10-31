@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.6: MRIQC: 600 ABIDE training scans and 265 DS030 test scans; 68 numeric quality metrics and rater-1 exclusion labels.
+Preview 0.8: MRIQC: 600 ABIDE training scans and 265 DS030 test scans; 68 numeric quality metrics and rater-1 exclusion labels.
 
 [Actual frozen contract and implementation](../../../experiments/I10). [Measured method/reference records](../../../results/I10.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

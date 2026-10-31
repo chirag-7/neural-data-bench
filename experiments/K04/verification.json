@@ -1,0 +1,140 @@
+{
+  "source_checks": {
+    "all12_sources_hashed": true,
+    "author_donor_metadata_verified": true,
+    "all_target_annotation_joins_verified": true,
+    "n_independent_spot_normalizations_checked": 36,
+    "top500_genes_independently_recomputed_from_training_only": true,
+    "train_test_donors_disjoint": true,
+    "test_sections": 4,
+    "test_donors": 1,
+    "oracle_scorer_fixture": 1.0,
+    "source_counts": [
+      {
+        "sample": "151507",
+        "source_spots": 4226,
+        "retained": 4221,
+        "donor": "Br5292"
+      },
+      {
+        "sample": "151508",
+        "source_spots": 4384,
+        "retained": 4381,
+        "donor": "Br5292"
+      },
+      {
+        "sample": "151509",
+        "source_spots": 4789,
+        "retained": 4788,
+        "donor": "Br5292"
+      },
+      {
+        "sample": "151510",
+        "source_spots": 4634,
+        "retained": 4595,
+        "donor": "Br5292"
+      },
+      {
+        "sample": "151669",
+        "source_spots": 3661,
+        "retained": 3636,
+        "donor": "Br5595"
+      },
+      {
+        "sample": "151670",
+        "source_spots": 3498,
+        "retained": 3484,
+        "donor": "Br5595"
+      },
+      {
+        "sample": "151671",
+        "source_spots": 4110,
+        "retained": 4093,
+        "donor": "Br5595"
+      },
+      {
+        "sample": "151672",
+        "source_spots": 4015,
+        "retained": 3888,
+        "donor": "Br5595"
+      },
+      {
+        "sample": "151673",
+        "source_spots": 3639,
+        "retained": 3611,
+        "donor": "Br8100"
+      },
+      {
+        "sample": "151674",
+        "source_spots": 3673,
+        "retained": 3635,
+        "donor": "Br8100"
+      },
+      {
+        "sample": "151675",
+        "source_spots": 3592,
+        "retained": 3566,
+        "donor": "Br8100"
+      },
+      {
+        "sample": "151676",
+        "source_spots": 3460,
+        "retained": 3431,
+        "donor": "Br8100"
+      }
+    ]
+  },
+  "prediction_checks": [
+    {
+      "model": "singler",
+      "prediction_sha256": "826efbd021e3f9121b4e08e5f8e92e3cd49e576a209f7f18d81f439379e26d46",
+      "prediction_dtype": "int64",
+      "independent_float64_score": 0.5545850046572878,
+      "independent_metric_error": 0.0,
+      "max_unit_error": 0.0,
+      "numerical_tolerance": 1e-12,
+      "note": "Independent arithmetic agrees within1e-12"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "prediction_sha256": "d6b505ef573556b31c7a17f0cb914ba8c8f7e8e52e7eb6dd7a8fff7c53f6a052",
+      "prediction_dtype": "int64",
+      "independent_float64_score": 0.5050711426219323,
+      "independent_metric_error": 0.0,
+      "max_unit_error": 0.0,
+      "numerical_tolerance": 1e-12,
+      "note": "Independent arithmetic agrees within1e-12"
+    },
+    {
+      "model": "gpt-6-sol",
+      "prediction_sha256": "f3bfd7183f901580ed8c3fc88d0bf9a0e00cc96f6a849cff4c9311399cfe9e5a",
+      "prediction_dtype": "int64",
+      "independent_float64_score": 0.5319420425018879,
+      "independent_metric_error": 0.0,
+      "max_unit_error": 0.0,
+      "numerical_tolerance": 1e-12,
+      "note": "Independent arithmetic agrees within1e-12"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "prediction_sha256": "99af0c1695e64c3478828a3454bc2cccb1afc543a6071e93f2973b1057fc73c9",
+      "prediction_dtype": "int64",
+      "independent_float64_score": 0.5505501906955991,
+      "independent_metric_error": 0.0,
+      "max_unit_error": 0.0,
+      "numerical_tolerance": 1e-12,
+      "note": "Independent arithmetic agrees within1e-12"
+    },
+    {
+      "model": "task-baseline",
+      "prediction_sha256": "bdb20daa5d093191b72657da66c34a67431e3a611c9c64e12f8a0efeb7809ed3",
+      "prediction_dtype": "int64",
+      "independent_float64_score": 0.5193260844488914,
+      "independent_metric_error": 0.0,
+      "max_unit_error": 0.0,
+      "numerical_tolerance": 1e-12,
+      "note": "Independent arithmetic agrees within1e-12"
+    }
+  ],
+  "scope": "Independent source joins, normalization and metric arithmetic; no proof of uncontaminated training or external expert validation"
+}

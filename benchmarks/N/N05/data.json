@@ -34,7 +34,7 @@
     "evidence": "literature/admission-v04-cell-workflow.json"
   },
   "current_execution": {
-    "release": "0.6",
+    "release": "0.8",
     "status": "measured",
     "slice": "One real legacy Allen NWB file, shared with D02: extract 61 deterministic fields covering six sweeps.",
     "evidence": "literature/admission-v04-cell-workflow.json"

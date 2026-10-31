@@ -31,7 +31,7 @@ for task in tasks:
   assert np.isclose(res['score'],r['score'],rtol=0,atol=1e-12),(task,r['model'],res['score'],r['score']);count+=1
  if task not in ['N05','B01']:
   with np.load(R/f'data/cache/{task}/data.npz') as z:
-   if task in ['A09','A14','E01','F04','H01','H02','H08','I07','K01','J08']:assert not set(map(str,z['train_groups'])) & set(map(str,z['test_groups']))
+   if task in ['A09','A14','E01','F04','H01','H02','H08','I07','K01','K04','M01','J08']:assert not set(map(str,z['train_groups'])) & set(map(str,z['test_groups']))
    if task=='H16':
     for kind in ['clean','artifact']:assert not set(z['train_'+kind+'_indices']) & set(z['test_'+kind+'_indices'])
    if task=='L04':assert z['test_times'].min()-z['train_times'].max()>=1.

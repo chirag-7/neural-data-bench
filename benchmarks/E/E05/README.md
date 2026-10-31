@@ -39,6 +39,6 @@ Decision: **candidate_pending_validation** (2026-10-30). BrainWideBench TS3 anat
 
 ## Current admission and execution
 
-Preview 0.6: candidate_pending_validation. BrainWideBench TS3 anatomy labels can support session/probe-generalizing classification from activity. Must verify histology regiongroundtruth and avoid neurons from sameanimal on both sides. Not acquired; do not substitute E01same-sessionpopulation readout.
+Preview 0.8: candidate_pending_validation. BrainWideBench TS3 anatomy labels can support session/probe-generalizing classification from activity. Must verify histology regiongroundtruth and avoid neurons from sameanimal on both sides. Not acquired; do not substitute E01same-sessionpopulation readout.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

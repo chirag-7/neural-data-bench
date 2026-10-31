@@ -18,6 +18,6 @@ Decision: **measured** (2026-10-30). Previously measured24agent synthetic Q-lear
 
 ## Current admission and execution
 
-Preview 0.6: measured. Previously measured24agent synthetic Q-learning recovery. Author guide supports recovery checks; local implementation and posterior-vs-MLE objective difference explicit. Not biological data or a released leaderboard.
+Preview 0.8: measured. Previously measured24agent synthetic Q-learning recovery. Author guide supports recovery checks; local implementation and posterior-vs-MLE objective difference explicit. Not biological data or a released leaderboard.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json). [Actual protocol/worklog](../../../experiments/M04). [Task measurements](../../../results/M04.json).

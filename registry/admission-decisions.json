@@ -251,13 +251,13 @@
   {
     "benchmark_id": "B06",
     "decision": "candidate_pending_validation",
-    "reason": "IBL Ephys Atlas channel features/region labels are potentially lightweight tabular classification. Must group held-out probes/animals and verify histology provenance, regionontology and published split. Channel-wise random split invalid. No feature dataset acquired in this bounded work.",
+    "reason": "Current full atlas tables require authenticated Alyx/private-S3 access; no configured source credentials used. Public software test fixtures were not substituted for a representative benchmark.",
     "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "evidence_file": "literature/admission-v08.json",
     "source_urls": [
       "https://huggingface.co/int-brain-lab/ea-decoder-channel-xgboost"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+    "review_depth": "Original source access requirements checked; no scored proxy substituted"
   },
   {
     "benchmark_id": "B07",
@@ -449,7 +449,7 @@
   {
     "benchmark_id": "E03",
     "decision": "candidate_pending_validation",
-    "reason": "BrainWideBench TS1 provides natural crossanimal decoding benchmark aligned with course. Needs exact pinned IBL sessionmanifest, labels and common neuron/input normalization under official split. Public data may require sizeable multises­sion acquisition; not attempted here.",
+    "reason": "BrainWideBench TS1 provides natural crossanimal decoding benchmark aligned with course. Needs exact pinned IBL sessionmanifest, labels and common neuron/input normalization under official split. Public data may require sizeable multises\u00adsion acquisition; not attempted here.",
     "date": "2026-10-30",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
@@ -747,16 +747,16 @@
   {
     "benchmark_id": "H18",
     "decision": "deferred",
-    "reason": "Original DREAMS Zenodo record explicitly warns Expert1 spindle annotations stop after1000s. A naive full-1800s negative-label benchmark is excluded. A masked interval/Expert2 consensus protocol remains feasible but has not been validated, and original DREAMS noncommercial/no-adaptation terms need an appropriate data handling policy.",
+    "reason": "MODA annotations/code are public, but raw MASS PSG requires a project/ethics access request. Annotation-only inputs cannot evaluate EEG detection; DREAMS remains a separate deferred alternative.",
     "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-electrical.json",
+    "evidence_file": "literature/admission-v08.json",
     "source_urls": [
       "https://zenodo.org/records/2650142",
       "https://www.nature.com/articles/s41598-026-53891-9",
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/",
       "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+    "review_depth": "Original source access requirements checked; no scored proxy substituted"
   },
   {
     "benchmark_id": "H19",
@@ -979,19 +979,22 @@
   },
   {
     "benchmark_id": "K04",
-    "decision": "candidate_pending_validation",
-    "reason": "Primary spatialLIBD downloader and source located. Original study has three donors, adjacent sections must remain grouped. Local R 4.4.1 is present but SingleCellExperiment, SummarizedExperiment, ExperimentHub and spatialLIBD are absent. Data parsing/independent layer-label policy and spatial specialist scoring are not validated. Small examples/pseudobulks cannot silently stand in for held-out-donor spatial spot benchmark.",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
     "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "evidence_file": "experiments/K04/protocol.md",
     "source_urls": [
       "https://research.libd.org/spatialLIBD/",
       "https://github.com/LieberInstitute/spatialLIBD",
       "https://doi.org/10.1038/s42003-024-07001-y",
       "https://research.libd.org/spatialLIBD/reference/fetch_data.html",
       "https://raw.githubusercontent.com/LieberInstitute/spatialLIBD/master/R/fetch_data.R",
-      "https://doi.org/10.1038/s41593-020-00787-0"
+      "https://doi.org/10.1038/s41593-020-00787-0",
+      "https://github.com/LieberInstitute/HumanPilot/tree/044446d6bd8fc154aa74f7be62ec67effb1ec376",
+      "https://singler-inc.github.io/singler-py/api/singler.html",
+      "https://github.com/SingleR-inc/singler-py"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+    "review_depth": "All12 original count matrices acquired/hashed; author donor metadata and label joins verified; all top500 training-only gene choices and36 spot normalizations independently reproduced; fixed SingleR reference"
   },
   {
     "benchmark_id": "K05",
@@ -1024,13 +1027,13 @@
   {
     "benchmark_id": "L01",
     "decision": "candidate_pending_validation",
-    "reason": "Official challenge page identifies simulated fluorescence and synaptic truth and mirror links. No mirror acquired/hashed; download terms, held-out network split and directed graph scorer remain unvalidated. Not rejected as bad data.",
+    "reason": "Original challenge data page verified; listed ETH mirror returnedHTTP403. Other mirrors not exhaustively tested; no source admitted.",
     "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-inference-control.json",
+    "evidence_file": "literature/admission-v08.json",
     "source_urls": [
       "https://connectomics.chalearn.org/help/data"
     ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    "review_depth": "Original source access requirements checked; no scored proxy substituted"
   },
   {
     "benchmark_id": "L03",
@@ -1082,15 +1085,19 @@
   },
   {
     "benchmark_id": "M01",
-    "decision": "candidate_pending_validation",
-    "reason": "IBL data and Psych-101/Centaur primary resource mapped. Real choice prediction requires participant/animal-held-out chronology, a bounded task selection and data-specific terms; M04 synthetic parameter recovery does not complete this endpoint.",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
     "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-inference-control.json",
+    "evidence_file": "experiments/M01/protocol.md",
     "source_urls": [
       "https://www.internationalbrainlab.com/data",
-      "https://www.nature.com/articles/s41586-025-09215-4"
+      "https://www.nature.com/articles/s41586-025-09215-4",
+      "https://figshare.com/articles/dataset/11636748",
+      "https://api.figshare.com/v2/articles/11636748",
+      "https://elifesciences.org/articles/63711",
+      "https://github.com/int-brain-lab/paper-behavior/blob/24b094226a84c8609c97cfd36c8387ea7c5d61e0/figure5_GLM_modelfit.py"
     ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    "review_depth": "Original CC BY4 archive publisher MD5+localSHA verified; all100 mice and9,538 examples independently matched to source; target/history overlap excluded before scores"
   },
   {
     "benchmark_id": "M03",

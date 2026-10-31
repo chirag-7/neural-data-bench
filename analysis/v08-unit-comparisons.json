@@ -1,0 +1,143 @@
+[
+  {
+    "benchmark_id": "K04",
+    "model": "gpt-5.6-sol",
+    "reference": "singler",
+    "n_units": 4,
+    "unit": "sections, all one donor",
+    "point_wins": 0,
+    "point_losses": 4,
+    "numerical_ties": 0,
+    "direction_adjusted_unit_deltas": [
+      -0.04602509575319902,
+      -0.052309988763838855,
+      -0.06528254520454702,
+      -0.03443781841983684
+    ],
+    "interpretation": "Descriptive paired units only; no significance or independent-dataset claim"
+  },
+  {
+    "benchmark_id": "K04",
+    "model": "gpt-6-sol",
+    "reference": "singler",
+    "n_units": 4,
+    "unit": "sections, all one donor",
+    "point_wins": 0,
+    "point_losses": 4,
+    "numerical_ties": 0,
+    "direction_adjusted_unit_deltas": [
+      -0.01617604132203776,
+      -0.025622696940248713,
+      -0.025278761458247034,
+      -0.023494348901065276
+    ],
+    "interpretation": "Descriptive paired units only; no significance or independent-dataset claim"
+  },
+  {
+    "benchmark_id": "K04",
+    "model": "gpt-6.1-sol",
+    "reference": "singler",
+    "n_units": 4,
+    "unit": "sections, all one donor",
+    "point_wins": 2,
+    "point_losses": 2,
+    "numerical_ties": 0,
+    "direction_adjusted_unit_deltas": [
+      0.0029642971863508283,
+      -0.010416374263372497,
+      -0.014496597382417042,
+      0.00580941861268458
+    ],
+    "interpretation": "Descriptive paired units only; no significance or independent-dataset claim"
+  },
+  {
+    "benchmark_id": "M01",
+    "model": "gpt-5.6-sol",
+    "reference": "behavioral-glm",
+    "n_units": 17,
+    "unit": "held-out mice, labs overlap",
+    "point_wins": 14,
+    "point_losses": 3,
+    "numerical_ties": 0,
+    "direction_adjusted_unit_deltas": [
+      0.020096074215522286,
+      0.036232247517190785,
+      0.04078095290347172,
+      0.03054120751701994,
+      0.034537823970871906,
+      -0.030739178931524946,
+      0.07525093615455858,
+      -0.02791120222205351,
+      0.016237097954297952,
+      0.06274243470702523,
+      0.031856297666200795,
+      0.006144376434361554,
+      0.10496230131536055,
+      -0.006056469105757578,
+      0.012604820246665704,
+      0.01897604254244728,
+      0.03889410474003646
+    ],
+    "interpretation": "Descriptive paired units only; no significance or independent-dataset claim"
+  },
+  {
+    "benchmark_id": "M01",
+    "model": "gpt-6-sol",
+    "reference": "behavioral-glm",
+    "n_units": 17,
+    "unit": "held-out mice, labs overlap",
+    "point_wins": 13,
+    "point_losses": 4,
+    "numerical_ties": 0,
+    "direction_adjusted_unit_deltas": [
+      0.043321302146617335,
+      0.02709571948750672,
+      0.04568245286176398,
+      0.03765249435468937,
+      0.04452267304242152,
+      -0.023261214459104507,
+      0.06806040683956571,
+      -0.03517284663498099,
+      0.020772885129736296,
+      0.05915645601105063,
+      0.03162017926625055,
+      -0.0007472186864935226,
+      0.09058077323333125,
+      -0.016746555178660194,
+      8.898137842239251e-05,
+      0.012520211541724113,
+      0.04183285244341606
+    ],
+    "interpretation": "Descriptive paired units only; no significance or independent-dataset claim"
+  },
+  {
+    "benchmark_id": "M01",
+    "model": "gpt-6.1-sol",
+    "reference": "behavioral-glm",
+    "n_units": 17,
+    "unit": "held-out mice, labs overlap",
+    "point_wins": 14,
+    "point_losses": 3,
+    "numerical_ties": 0,
+    "direction_adjusted_unit_deltas": [
+      0.012709501733705886,
+      0.03177724933209747,
+      0.04155772162270954,
+      0.025662247962011386,
+      0.043371740654822966,
+      -0.02513230110574427,
+      0.09840626605583491,
+      -0.0332767406737946,
+      0.02189659635008845,
+      0.05929522432918105,
+      0.03419873274811258,
+      0.003241783887192151,
+      0.09536086223969803,
+      -0.015344366185583436,
+      0.0049115056035529125,
+      0.021594154909711172,
+      0.04290202060334719
+    ],
+    "interpretation": "Descriptive paired units only; no significance or independent-dataset claim"
+  }
+]

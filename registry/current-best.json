@@ -1234,10 +1234,16 @@
       "https://doi.org/10.1038/s42003-024-07001-y",
       "https://research.libd.org/spatialLIBD/reference/fetch_data.html",
       "https://raw.githubusercontent.com/LieberInstitute/spatialLIBD/master/R/fetch_data.R",
-      "https://doi.org/10.1038/s41593-020-00787-0"
+      "https://doi.org/10.1038/s41593-020-00787-0",
+      "https://github.com/LieberInstitute/HumanPilot/tree/044446d6bd8fc154aa74f7be62ec67effb1ec376",
+      "https://singler-inc.github.io/singler-py/api/singler.html",
+      "https://github.com/SingleR-inc/singler-py"
     ],
     "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA.",
+    "local_reference_evidence": "results/K04.json",
+    "current_global_best_verified": false,
+    "verification_limits": "Custom supervised endpoint/source split; matched local references do not establish published/global best"
   },
   {
     "benchmark_id": "K05",
@@ -1357,10 +1363,17 @@
     "supervision": null,
     "source_urls": [
       "https://www.internationalbrainlab.com/data",
-      "https://www.nature.com/articles/s41586-025-09215-4"
+      "https://www.nature.com/articles/s41586-025-09215-4",
+      "https://figshare.com/articles/dataset/11636748",
+      "https://api.figshare.com/v2/articles/11636748",
+      "https://elifesciences.org/articles/63711",
+      "https://github.com/int-brain-lab/paper-behavior/blob/24b094226a84c8609c97cfd36c8387ea7c5d61e0/figure5_GLM_modelfit.py"
     ],
     "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA.",
+    "local_reference_evidence": "results/M01.json",
+    "current_global_best_verified": false,
+    "verification_limits": "Custom supervised endpoint/source split; matched local references do not establish published/global best"
   },
   {
     "benchmark_id": "M03",

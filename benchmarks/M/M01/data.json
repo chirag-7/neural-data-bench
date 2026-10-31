@@ -1,13 +1,17 @@
 {
   "benchmark_id": "M01",
-  "input": "Psychophysics trials and choices",
-  "ground_truth": "Recorded choices; synthetic recovery targets when added",
+  "input": "Current contrasts/known experimenter block prior plus five past choice/feedback lags;13 features, no current/future response fields",
+  "ground_truth": "Recorded binary mouse turn choices, not latent cognitive parameter labels",
   "sources": [
     "https://www.internationalbrainlab.com/data",
-    "https://www.nature.com/articles/s41586-025-09215-4"
+    "https://www.nature.com/articles/s41586-025-09215-4",
+    "https://figshare.com/articles/dataset/11636748",
+    "https://api.figshare.com/v2/articles/11636748",
+    "https://elifesciences.org/articles/63711",
+    "https://github.com/int-brain-lab/paper-behavior/blob/24b094226a84c8609c97cfd36c8387ea7c5d61e0/figure5_GLM_modelfit.py"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/M01.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "M01",
@@ -29,9 +33,10 @@
     "evidence": "literature/admission-v04-inference-control.json"
   },
   "current_execution": {
-    "release": "0.6",
-    "status": "candidate_pending_validation",
-    "slice": null,
-    "evidence": "literature/admission-v04-inference-control.json"
-  }
+    "release": "0.8",
+    "status": "measured",
+    "slice": "IBL Dec2019 choice data: all100 source mice, 83 train/17 held-out; 7,696/1,842 nonoverlapping conditional examples from latest archived sessions.",
+    "evidence": "experiments/M01/protocol.md"
+  },
+  "executed_slice": "IBL Dec2019 choice data: all100 source mice, 83 train/17 held-out; 7,696/1,842 nonoverlapping conditional examples from latest archived sessions."
 }

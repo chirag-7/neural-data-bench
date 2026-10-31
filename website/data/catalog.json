@@ -923,7 +923,7 @@
       "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
       "added_in": "0.1",
       "execution_admission": "candidate_pending_validation",
-      "admission_reason": "IBL Ephys Atlas channel features/region labels are potentially lightweight tabular classification. Must group held-out probes/animals and verify histology provenance, regionontology and published split. Channel-wise random split invalid. No feature dataset acquired in this bounded work.",
+      "admission_reason": "Current full atlas tables require authenticated Alyx/private-S3 access; no configured source credentials used. Public software test fixtures were not substituted for a representative benchmark.",
       "dataset_group": "IBL Ephys Atlas feature release",
       "operation_tags": [
         "other_requires_review"
@@ -931,7 +931,8 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
       "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-      "active": true
+      "active": true,
+      "latest_screening_evidence": "literature/admission-v08.json"
     },
     {
       "id": "B07",
@@ -2475,7 +2476,7 @@
       "family": "EEG, MEG, field signals and peripheral interfaces",
       "added_in": "0.3",
       "execution_admission": "deferred",
-      "admission_reason": "Original DREAMS Zenodo record explicitly warns Expert1 spindle annotations stop after1000s. A naive full-1800s negative-label benchmark is excluded. A masked interval/Expert2 consensus protocol remains feasible but has not been validated, and original DREAMS noncommercial/no-adaptation terms need an appropriate data handling policy.",
+      "admission_reason": "MODA annotations/code are public, but raw MASS PSG requires a project/ethics access request. Annotation-only inputs cannot evaluate EEG detection; DREAMS remains a separate deferred alternative.",
       "dataset_group": "DREAMS microevent annotations; MODA consensus as a separately versioned extension",
       "operation_tags": [
         "detection_segmentation"
@@ -2483,7 +2484,8 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
       "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "active": true
+      "active": true,
+      "latest_screening_evidence": "literature/admission-v08.json"
     },
     {
       "id": "H19",
@@ -3177,17 +3179,17 @@
     {
       "id": "K04",
       "family_code": "K",
-      "task": "Spatial cortical-domain assignment",
-      "data": "Human DLPFC Visium gene counts, spot positions and histology",
-      "resource": "spatialLIBD DLPFC cortical-layer annotations",
+      "task": "Cortical-layer label transfer",
+      "data": "Prepared float32 log-normalized expression for 500 training-selected non-mitochondrial genes; no spatial coordinates or images",
+      "resource": "Maynard2021 DLPFC HumanPilot; donor-held-out supervised layer transfer",
       "readiness": "D",
       "setup_effort": "Medium",
-      "ground_truth": "Expert layer/white-matter annotation informed by cytoarchitecture and marker genes",
-      "recommended_metrics": "ARI/NMI and spatial boundary metrics; matched-label accuracy only with explicit mapping policy",
-      "recommended_split": "Hold out donor, then section; adjacent sections from same donor stay grouped",
+      "ground_truth": "Curated L1–L6/white-matter annotations with expression and histology assistance; not fully orthogonal molecular truth",
+      "recommended_metrics": "Section-equal seven-class macro-F1; pooled F1/accuracy secondary",
+      "recommended_split": "Train Br5292/Br5595, test Br8100; all four adjacent sections remain together",
       "specialist_baselines": "Published spatial clustering methods; simple non-spatial clustering baseline",
       "general_model_route": "Generic tabular/spatial model or code-generated pipeline",
-      "limitations": "Only three original donors; labels partially derived from expression, limiting independence; specify whether histology is available to each method",
+      "limitations": "Only one test donor; four sections are correlated. Curated labels use expression assistance, shared feature selection uses all outer-training spots, and no spatial context is supplied. Supervised transfer is not unsupervised spatial-domain discovery; global best unverified.",
       "priority": "P2",
       "source_urls": [
         "https://research.libd.org/spatialLIBD/",
@@ -3195,28 +3197,32 @@
         "https://doi.org/10.1038/s42003-024-07001-y",
         "https://research.libd.org/spatialLIBD/reference/fetch_data.html",
         "https://raw.githubusercontent.com/LieberInstitute/spatialLIBD/master/R/fetch_data.R",
-        "https://doi.org/10.1038/s41593-020-00787-0"
+        "https://doi.org/10.1038/s41593-020-00787-0",
+        "https://github.com/LieberInstitute/HumanPilot/tree/044446d6bd8fc154aa74f7be62ec67effb1ec376",
+        "https://singler-inc.github.io/singler-py/api/singler.html",
+        "https://github.com/SingleR-inc/singler-py"
       ],
-      "verification": "Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit",
+      "verification": "Actual acquired/extracted source arrays, frozen protocol, submitted programs and prediction/scorer artifacts; exact scope in experiments/K04",
       "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
+      "execution_status": "measured exploratory slice",
+      "current_best_status": "not verified; named matched specialist/reference evidence retained separately",
       "score_comparability": "Exact split, input, scorer and adaptation budget must match.",
       "inclusion_reason": "Cell-type transfer/integration does not cover spatial laminar domain recovery.",
       "screening_decision": "include evidence map; executable admission pending",
       "license_evidence": "Not independently reviewed",
       "family": "Cell types and molecular neuroscience",
       "added_in": "0.3",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Primary spatialLIBD downloader and source located. Original study has three donors, adjacent sections must remain grouped. Local R 4.4.1 is present but SingleCellExperiment, SummarizedExperiment, ExperimentHub and spatialLIBD are absent. Data parsing/independent layer-label policy and spatial specialist scoring are not validated. Small examples/pseudobulks cannot silently stand in for held-out-donor spatial spot benchmark.",
-      "dataset_group": "spatialLIBD DLPFC cortical-layer annotations",
+      "execution_admission": "measured",
+      "admission_reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
+      "dataset_group": "HumanPilot DLPFC 2021",
       "operation_tags": [
         "other_requires_review"
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
-      "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "active": true
+      "admission_evidence_file": "experiments/K04/protocol.md",
+      "review_depth": "All12 original count matrices acquired/hashed; author donor metadata and label joins verified; all top500 training-only gene choices and36 spot normalizations independently reproduced; fixed SingleR reference",
+      "active": true,
+      "executed_slice": "HumanPilot DLPFC: 33,086 training spots from two donors/eight sections; 14,243 test spots from one donor/four sections; 500 training-selected genes."
     },
     {
       "id": "K05",
@@ -3328,7 +3334,7 @@
       "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
       "added_in": "0.1",
       "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Official challenge page identifies simulated fluorescence and synaptic truth and mirror links. No mirror acquired/hashed; download terms, held-out network split and directed graph scorer remain unvalidated. Not rejected as bad data.",
+      "admission_reason": "Original challenge data page verified; listed ETH mirror returnedHTTP403. Other mirrors not exhaustively tested; no source admitted.",
       "dataset_group": "ChaLearn Connectomics Challenge",
       "operation_tags": [
         "inference"
@@ -3336,7 +3342,8 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-inference-control.json",
       "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-      "active": true
+      "active": true,
+      "latest_screening_evidence": "literature/admission-v08.json"
     },
     {
       "id": "L03",
@@ -3493,38 +3500,43 @@
       "id": "M01",
       "family_code": "M",
       "family": "Experimental design and control",
-      "task": "Behavioral decision-model fitting",
-      "data": "Psychophysics trials and choices",
-      "resource": "IBL trial tables; Psych-101 cognitive tasks",
+      "task": "Conditional mouse-choice prediction",
+      "data": "Current contrasts/known experimenter block prior plus five past choice/feedback lags;13 features, no current/future response fields",
+      "resource": "IBL Dec2019 behavior archive / Figshare11636748; custom mouse-held-out slice",
       "readiness": "D",
       "setup_effort": "Medium",
-      "ground_truth": "Recorded choices; synthetic recovery targets when added",
-      "recommended_metrics": "Held-out choice likelihood; parameter recovery on simulation",
-      "recommended_split": "Animal/participant-held-out; contiguous trial blocks",
+      "ground_truth": "Recorded binary mouse turn choices, not latent cognitive parameter labels",
+      "recommended_metrics": "Mouse-equal clipped binary negative log-likelihood; pooled loss/accuracy secondary",
+      "recommended_split": "Hash-split whole mice, latest complete session, first≤1000 trials, disjoint six-trial target/history blocks; nine labs overlap",
       "specialist_baselines": "Psychometric/logistic/RL models; Centaur as domain comparator",
       "general_model_route": "General language/sequence models",
-      "limitations": "Predicting choices is distinct from identifying a cognitive mechanism",
+      "limitations": "Conditional one-step forecast with observed history and known block prior; no autonomous rollout or held-out-lab claim. One historical beta-quality archive; prior target choices never reappear in another scored input. Paper-inspired pooled GLM is not original peranimal fits or established global best.",
       "priority": "P2",
       "source_urls": [
         "https://www.internationalbrainlab.com/data",
-        "https://www.nature.com/articles/s41586-025-09215-4"
+        "https://www.nature.com/articles/s41586-025-09215-4",
+        "https://figshare.com/articles/dataset/11636748",
+        "https://api.figshare.com/v2/articles/11636748",
+        "https://elifesciences.org/articles/63711",
+        "https://github.com/int-brain-lab/paper-behavior/blob/24b094226a84c8609c97cfd36c8387ea7c5d61e0/figure5_GLM_modelfit.py"
       ],
-      "verification": "Primary documentation/paper located; downloads and execution not tested",
+      "verification": "Actual acquired/extracted source arrays, frozen protocol, submitted programs and prediction/scorer artifacts; exact scope in experiments/M01",
       "reviewed_on": "2026-10-30",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
+      "execution_status": "measured exploratory slice",
+      "current_best_status": "not verified; named matched specialist/reference evidence retained separately",
       "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
       "added_in": "0.1",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "IBL data and Psych-101/Centaur primary resource mapped. Real choice prediction requires participant/animal-held-out chronology, a bounded task selection and data-specific terms; M04 synthetic parameter recovery does not complete this endpoint.",
-      "dataset_group": "IBL trial tables; Psych-101 cognitive tasks",
+      "execution_admission": "measured",
+      "admission_reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
+      "dataset_group": "IBL behavior Dec2019",
       "operation_tags": [
         "inference"
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-      "active": true
+      "admission_evidence_file": "experiments/M01/protocol.md",
+      "review_depth": "Original CC BY4 archive publisher MD5+localSHA verified; all100 mice and9,538 examples independently matched to source; target/history overlap excluded before scores",
+      "active": true,
+      "executed_slice": "IBL Dec2019 choice data: all100 source mice, 83 train/17 held-out; 7,696/1,842 nonoverlapping conditional examples from latest archived sessions."
     },
     {
       "id": "M03",
@@ -3758,7 +3770,7 @@
     "Spatial molecular inference is represented, but developmental, evolutionary and comparative diversity remains incomplete.",
     "Analytical theory, formal proofs and open-ended scientific discovery need separate validity criteria."
   ],
-  "release": "0.6",
+  "release": "0.8",
   "historical_mapped_entries": 114,
   "archived_candidates": 18
 }

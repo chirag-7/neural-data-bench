@@ -38,6 +38,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Lossless compression is
 
 ## Current admission and execution
 
-Preview 0.6: candidate_pending_validation. Lossless compression is executable with small frozen raw ephys segments, exactbyte reconstruction and compression/runtime metrics. Need immutable raw-file URI, acquisition terms and canonical codec reference; no raw acquisition attempted here. Avoid different dtype or discarded channels confounding ratio.
+Preview 0.8: candidate_pending_validation. Lossless compression is executable with small frozen raw ephys segments, exactbyte reconstruction and compression/runtime metrics. Need immutable raw-file URI, acquisition terms and canonical codec reference; no raw acquisition attempted here. Avoid different dtype or discarded channels confounding ratio.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

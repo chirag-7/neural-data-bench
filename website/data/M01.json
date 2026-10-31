@@ -1,0 +1,691 @@
+[
+  {
+    "benchmark_id": "M01",
+    "slice_id": "expansion-v1",
+    "model": "gpt-5.6-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3",
+    "reference_type": "local_reproduction",
+    "n_units": 17,
+    "seconds": 63.72208766685799,
+    "prediction_file": "results/predictions/M01/expansion-v1--gpt-5.6-sol.npz",
+    "prediction_sha256": "19ac1eda0f70dbf0b5f93493de1355b1cff58e82b9888f02244d028cceb9e51a",
+    "input_sha256": {
+      "data/cache/M01/data.npz": "3ae8fd34be70bb7f3234ff470f6a6e40c3cbd3c5be5a4466cfa410cd293e841b"
+    },
+    "prompt_sha256": "ce3ed452b97ec306c8a587a1570be8bef6efd99f6fe5ca6756d7273f37d09691",
+    "superiority_eligible": false,
+    "superiority_reason": "Custom source/split, one generation, current strongest specialist and matched total effort unestablished",
+    "description": "Uses deterministic five-fold mouse-held-out validation with equal total weight per mouse. It fits a diverse ensemble of regularized logistic, histogram-gradient-boosting, and extra-trees models on behaviorally structured stimulus/history features; out-of-fold equal-mouse log-loss determines a nonnegative blend and conservative calibration. All supervised fitting and scaling use training mice only, after which models are refit on all training data.",
+    "code_sha256": "ad7aa45c770121757e13a2e5798b1b01e7daacd584cbd6cb996ba4e2b6db5121",
+    "code_lines": 191,
+    "line_limit_compliant": true,
+    "score": 0.436515244310296,
+    "metric": "mouse_equal_binary_log_loss",
+    "direction": "lower",
+    "per_unit": [
+      0.5241706265291066,
+      0.35151605351201454,
+      0.5423747983248608,
+      0.4352673628679593,
+      0.4198195020598593,
+      0.3312742617486026,
+      0.6659117811878181,
+      0.49037738254660795,
+      0.530386072421526,
+      0.42880663994278556,
+      0.3225087829288157,
+      0.3806114774570111,
+      0.43377124065012407,
+      0.3454331571092976,
+      0.47449825454238154,
+      0.3958960077428921,
+      0.3481357517033687
+    ],
+    "group_results": [
+      {
+        "group": "CSHL_005",
+        "n": 77,
+        "score": 0.5241706265291066
+      },
+      {
+        "group": "CSH_ZAD_001",
+        "n": 166,
+        "score": 0.35151605351201454
+      },
+      {
+        "group": "CSH_ZAD_004",
+        "n": 99,
+        "score": 0.5423747983248608
+      },
+      {
+        "group": "CSH_ZAD_006",
+        "n": 30,
+        "score": 0.4352673628679593
+      },
+      {
+        "group": "DY_001",
+        "n": 80,
+        "score": 0.4198195020598593
+      },
+      {
+        "group": "DY_005",
+        "n": 81,
+        "score": 0.3312742617486026
+      },
+      {
+        "group": "KS015",
+        "n": 14,
+        "score": 0.6659117811878181
+      },
+      {
+        "group": "KS023",
+        "n": 78,
+        "score": 0.49037738254660795
+      },
+      {
+        "group": "NYU-12",
+        "n": 109,
+        "score": 0.530386072421526
+      },
+      {
+        "group": "SWC_001",
+        "n": 137,
+        "score": 0.42880663994278556
+      },
+      {
+        "group": "SWC_022",
+        "n": 138,
+        "score": 0.3225087829288157
+      },
+      {
+        "group": "ZM_1084",
+        "n": 112,
+        "score": 0.3806114774570111
+      },
+      {
+        "group": "ZM_1089",
+        "n": 124,
+        "score": 0.43377124065012407
+      },
+      {
+        "group": "ZM_1091",
+        "n": 99,
+        "score": 0.3454331571092976
+      },
+      {
+        "group": "ibl_witten_02",
+        "n": 166,
+        "score": 0.47449825454238154
+      },
+      {
+        "group": "ibl_witten_07",
+        "n": 166,
+        "score": 0.3958960077428921
+      },
+      {
+        "group": "ibl_witten_16",
+        "n": 166,
+        "score": 0.3481357517033687
+      }
+    ],
+    "pooled_log_loss": 0.4166187258358557,
+    "pooled_accuracy": 0.8105320304017373,
+    "score_clipping": [
+      1e-06,
+      0.999999
+    ]
+  },
+  {
+    "benchmark_id": "M01",
+    "slice_id": "expansion-v1",
+    "model": "gpt-6-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3",
+    "reference_type": "local_reproduction",
+    "n_units": 17,
+    "seconds": 1.1451152497902513,
+    "prediction_file": "results/predictions/M01/expansion-v1--gpt-6-sol.npz",
+    "prediction_sha256": "48375594a5554bdd190b80ba9d733791e8e2f1dd8093d2c2293c1e321ace2cee",
+    "input_sha256": {
+      "data/cache/M01/data.npz": "3ae8fd34be70bb7f3234ff470f6a6e40c3cbd3c5be5a4466cfa410cd293e841b"
+    },
+    "prompt_sha256": "ce3ed452b97ec306c8a587a1570be8bef6efd99f6fe5ca6756d7273f37d09691",
+    "superiority_eligible": false,
+    "superiority_reason": "Custom source/split, one generation, current strongest specialist and matched total effort unestablished",
+    "description": "Uses deterministic mouse-held-out validation with equal weight per mouse to select a regularized history-aware logistic model and its blend with gradient boosting. Fits calibration on out-of-fold predictions, then refits on all training mice.",
+    "code_sha256": "4f2206b949073e37aee4c3c5bdd81e9196078751654b2a784ef3464682d32bf5",
+    "code_lines": 120,
+    "line_limit_compliant": true,
+    "score": 0.43758408636020407,
+    "metric": "mouse_equal_binary_log_loss",
+    "direction": "lower",
+    "per_unit": [
+      0.5009453985980116,
+      0.3606525815416986,
+      0.5374732983665685,
+      0.4281560760302899,
+      0.4098346529883097,
+      0.32379629727618214,
+      0.673102310502811,
+      0.49763902695953544,
+      0.5258502852460877,
+      0.43239261863876016,
+      0.32274490132876593,
+      0.3875030725778662,
+      0.4481527687321534,
+      0.35612324318220023,
+      0.48701409341062485,
+      0.40235183874361524,
+      0.3451970039999891
+    ],
+    "group_results": [
+      {
+        "group": "CSHL_005",
+        "n": 77,
+        "score": 0.5009453985980116
+      },
+      {
+        "group": "CSH_ZAD_001",
+        "n": 166,
+        "score": 0.3606525815416986
+      },
+      {
+        "group": "CSH_ZAD_004",
+        "n": 99,
+        "score": 0.5374732983665685
+      },
+      {
+        "group": "CSH_ZAD_006",
+        "n": 30,
+        "score": 0.4281560760302899
+      },
+      {
+        "group": "DY_001",
+        "n": 80,
+        "score": 0.4098346529883097
+      },
+      {
+        "group": "DY_005",
+        "n": 81,
+        "score": 0.32379629727618214
+      },
+      {
+        "group": "KS015",
+        "n": 14,
+        "score": 0.673102310502811
+      },
+      {
+        "group": "KS023",
+        "n": 78,
+        "score": 0.49763902695953544
+      },
+      {
+        "group": "NYU-12",
+        "n": 109,
+        "score": 0.5258502852460877
+      },
+      {
+        "group": "SWC_001",
+        "n": 137,
+        "score": 0.43239261863876016
+      },
+      {
+        "group": "SWC_022",
+        "n": 138,
+        "score": 0.32274490132876593
+      },
+      {
+        "group": "ZM_1084",
+        "n": 112,
+        "score": 0.3875030725778662
+      },
+      {
+        "group": "ZM_1089",
+        "n": 124,
+        "score": 0.4481527687321534
+      },
+      {
+        "group": "ZM_1091",
+        "n": 99,
+        "score": 0.35612324318220023
+      },
+      {
+        "group": "ibl_witten_02",
+        "n": 166,
+        "score": 0.48701409341062485
+      },
+      {
+        "group": "ibl_witten_07",
+        "n": 166,
+        "score": 0.40235183874361524
+      },
+      {
+        "group": "ibl_witten_16",
+        "n": 166,
+        "score": 0.3451970039999891
+      }
+    ],
+    "pooled_log_loss": 0.41911423125534086,
+    "pooled_accuracy": 0.8148751357220413,
+    "score_clipping": [
+      1e-06,
+      0.999999
+    ]
+  },
+  {
+    "benchmark_id": "M01",
+    "slice_id": "expansion-v1",
+    "model": "gpt-6.1-sol",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "T3",
+    "reference_type": "local_reproduction",
+    "n_units": 17,
+    "seconds": 4.52850729203783,
+    "prediction_file": "results/predictions/M01/expansion-v1--gpt-6.1-sol.npz",
+    "prediction_sha256": "b454e761301e3453b6e5cabcd85c9567cd89283dccb29cebf986426d3bf6623e",
+    "input_sha256": {
+      "data/cache/M01/data.npz": "3ae8fd34be70bb7f3234ff470f6a6e40c3cbd3c5be5a4466cfa410cd293e841b"
+    },
+    "prompt_sha256": "ce3ed452b97ec306c8a587a1570be8bef6efd99f6fe5ca6756d7273f37d09691",
+    "superiority_eligible": false,
+    "superiority_reason": "Custom source/split, one generation, current strongest specialist and matched total effort unestablished",
+    "description": "Fits regularized stimulus/history logistic models and shallow gradient boosting. Deterministic four-fold mouse-disjoint validation selects a probability mixture using equal-mouse log loss; training also weights mice equally. Refits on all training mice and returns finite choice probabilities.",
+    "code_sha256": "1246f645241efc08ceef9d2ad04ef9cddfc2e1321ce01c536a23ff31002436e4",
+    "code_lines": 173,
+    "line_limit_compliant": true,
+    "score": 0.43663393063728134,
+    "metric": "mouse_equal_binary_log_loss",
+    "direction": "lower",
+    "per_unit": [
+      0.531557199010923,
+      0.35597105169710785,
+      0.541598029605623,
+      0.44014632242296786,
+      0.41098558537590824,
+      0.3256673839228219,
+      0.6427564512865418,
+      0.49574292099834905,
+      0.5247265740257355,
+      0.43225385032062974,
+      0.3201663478469039,
+      0.38351407000418053,
+      0.4433726797257866,
+      0.3547210541891235,
+      0.48219156918549433,
+      0.3932778953756282,
+      0.34412783584005796
+    ],
+    "group_results": [
+      {
+        "group": "CSHL_005",
+        "n": 77,
+        "score": 0.531557199010923
+      },
+      {
+        "group": "CSH_ZAD_001",
+        "n": 166,
+        "score": 0.35597105169710785
+      },
+      {
+        "group": "CSH_ZAD_004",
+        "n": 99,
+        "score": 0.541598029605623
+      },
+      {
+        "group": "CSH_ZAD_006",
+        "n": 30,
+        "score": 0.44014632242296786
+      },
+      {
+        "group": "DY_001",
+        "n": 80,
+        "score": 0.41098558537590824
+      },
+      {
+        "group": "DY_005",
+        "n": 81,
+        "score": 0.3256673839228219
+      },
+      {
+        "group": "KS015",
+        "n": 14,
+        "score": 0.6427564512865418
+      },
+      {
+        "group": "KS023",
+        "n": 78,
+        "score": 0.49574292099834905
+      },
+      {
+        "group": "NYU-12",
+        "n": 109,
+        "score": 0.5247265740257355
+      },
+      {
+        "group": "SWC_001",
+        "n": 137,
+        "score": 0.43225385032062974
+      },
+      {
+        "group": "SWC_022",
+        "n": 138,
+        "score": 0.3201663478469039
+      },
+      {
+        "group": "ZM_1084",
+        "n": 112,
+        "score": 0.38351407000418053
+      },
+      {
+        "group": "ZM_1089",
+        "n": 124,
+        "score": 0.4433726797257866
+      },
+      {
+        "group": "ZM_1091",
+        "n": 99,
+        "score": 0.3547210541891235
+      },
+      {
+        "group": "ibl_witten_02",
+        "n": 166,
+        "score": 0.48219156918549433
+      },
+      {
+        "group": "ibl_witten_07",
+        "n": 166,
+        "score": 0.3932778953756282
+      },
+      {
+        "group": "ibl_witten_16",
+        "n": 166,
+        "score": 0.34412783584005796
+      }
+    ],
+    "pooled_log_loss": 0.41795189523143317,
+    "pooled_accuracy": 0.8132464712269273,
+    "score_clipping": [
+      1e-06,
+      0.999999
+    ]
+  },
+  {
+    "benchmark_id": "M01",
+    "slice_id": "expansion-v1",
+    "model": "task-baseline",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "reference",
+    "reference_type": "local_reproduction",
+    "n_units": 17,
+    "seconds": 6.0999998822808266e-05,
+    "prediction_file": "results/predictions/M01/expansion-v1--task-baseline.npz",
+    "prediction_sha256": "e11dde0022ca750aec6be6a7820881e4a2cffdda7663dbec74c9fb03e825a037",
+    "input_sha256": {
+      "data/cache/M01/data.npz": "3ae8fd34be70bb7f3234ff470f6a6e40c3cbd3c5be5a4466cfa410cd293e841b"
+    },
+    "prompt_sha256": "ce3ed452b97ec306c8a587a1570be8bef6efd99f6fe5ca6756d7273f37d09691",
+    "superiority_eligible": false,
+    "superiority_reason": "Custom source/split, one generation, current strongest specialist and matched total effort unestablished",
+    "score": 0.6930802459843858,
+    "metric": "mouse_equal_binary_log_loss",
+    "direction": "lower",
+    "per_unit": [
+      0.6875384692121703,
+      0.6946639145987038,
+      0.692686650640391,
+      0.6986041341797603,
+      0.6904112860787563,
+      0.6948252260064071,
+      0.6931985436801289,
+      0.6944979644733097,
+      0.68975805890112,
+      0.699486981533259,
+      0.6921703063568294,
+      0.6935605251868007,
+      0.6912368374504239,
+      0.6939151939357618,
+      0.694053343382631,
+      0.6900235733565501,
+      0.691733172761554
+    ],
+    "group_results": [
+      {
+        "group": "CSHL_005",
+        "n": 77,
+        "score": 0.6875384692121703
+      },
+      {
+        "group": "CSH_ZAD_001",
+        "n": 166,
+        "score": 0.6946639145987038
+      },
+      {
+        "group": "CSH_ZAD_004",
+        "n": 99,
+        "score": 0.692686650640391
+      },
+      {
+        "group": "CSH_ZAD_006",
+        "n": 30,
+        "score": 0.6986041341797603
+      },
+      {
+        "group": "DY_001",
+        "n": 80,
+        "score": 0.6904112860787563
+      },
+      {
+        "group": "DY_005",
+        "n": 81,
+        "score": 0.6948252260064071
+      },
+      {
+        "group": "KS015",
+        "n": 14,
+        "score": 0.6931985436801289
+      },
+      {
+        "group": "KS023",
+        "n": 78,
+        "score": 0.6944979644733097
+      },
+      {
+        "group": "NYU-12",
+        "n": 109,
+        "score": 0.68975805890112
+      },
+      {
+        "group": "SWC_001",
+        "n": 137,
+        "score": 0.699486981533259
+      },
+      {
+        "group": "SWC_022",
+        "n": 138,
+        "score": 0.6921703063568294
+      },
+      {
+        "group": "ZM_1084",
+        "n": 112,
+        "score": 0.6935605251868007
+      },
+      {
+        "group": "ZM_1089",
+        "n": 124,
+        "score": 0.6912368374504239
+      },
+      {
+        "group": "ZM_1091",
+        "n": 99,
+        "score": 0.6939151939357618
+      },
+      {
+        "group": "ibl_witten_02",
+        "n": 166,
+        "score": 0.694053343382631
+      },
+      {
+        "group": "ibl_witten_07",
+        "n": 166,
+        "score": 0.6900235733565501
+      },
+      {
+        "group": "ibl_witten_16",
+        "n": 166,
+        "score": 0.691733172761554
+      }
+    ],
+    "pooled_log_loss": 0.6929344268804727,
+    "pooled_accuracy": 0.5130293159609121,
+    "score_clipping": [
+      1e-06,
+      0.999999
+    ]
+  },
+  {
+    "benchmark_id": "M01",
+    "slice_id": "expansion-v1",
+    "model": "behavioral-glm",
+    "status": "measured",
+    "date": "2026-10-30",
+    "track": "reference",
+    "reference_type": "local_domain_reference",
+    "n_units": 17,
+    "seconds": 0.007786457892507315,
+    "prediction_file": "results/predictions/M01/expansion-v1--behavioral-glm.npz",
+    "prediction_sha256": "a3730a258e186383c8a50e7b3dc05522160d2b151c202b3580484e3d22745a46",
+    "input_sha256": {
+      "data/cache/M01/data.npz": "3ae8fd34be70bb7f3234ff470f6a6e40c3cbd3c5be5a4466cfa410cd293e841b"
+    },
+    "prompt_sha256": "ce3ed452b97ec306c8a587a1570be8bef6efd99f6fe5ca6756d7273f37d09691",
+    "superiority_eligible": false,
+    "superiority_reason": "Custom source/split, one generation, current strongest specialist and matched total effort unestablished",
+    "code_sha256": "7b58596e7c2fb11aa6b52c23294557eeb7a67ce0011a9c4c699064f8d80e5adc",
+    "selection": "Fixed before model generation and reference test score; no test tuning",
+    "packages": {
+      "scikit-learn": "1.9.1",
+      "numpy": "2.3.5",
+      "scipy": "1.18.1"
+    },
+    "score": 0.46387700122945447,
+    "metric": "mouse_equal_binary_log_loss",
+    "direction": "lower",
+    "per_unit": [
+      0.5442667007446289,
+      0.3877483010292053,
+      0.5831557512283325,
+      0.46580857038497925,
+      0.4543573260307312,
+      0.30053508281707764,
+      0.7411627173423767,
+      0.46246618032455444,
+      0.546623170375824,
+      0.4915490746498108,
+      0.3543650805950165,
+      0.3867558538913727,
+      0.5387335419654846,
+      0.33937668800354004,
+      0.48710307478904724,
+      0.41487205028533936,
+      0.38702985644340515
+    ],
+    "group_results": [
+      {
+        "group": "CSHL_005",
+        "n": 77,
+        "score": 0.5442667007446289
+      },
+      {
+        "group": "CSH_ZAD_001",
+        "n": 166,
+        "score": 0.3877483010292053
+      },
+      {
+        "group": "CSH_ZAD_004",
+        "n": 99,
+        "score": 0.5831557512283325
+      },
+      {
+        "group": "CSH_ZAD_006",
+        "n": 30,
+        "score": 0.46580857038497925
+      },
+      {
+        "group": "DY_001",
+        "n": 80,
+        "score": 0.4543573260307312
+      },
+      {
+        "group": "DY_005",
+        "n": 81,
+        "score": 0.30053508281707764
+      },
+      {
+        "group": "KS015",
+        "n": 14,
+        "score": 0.7411627173423767
+      },
+      {
+        "group": "KS023",
+        "n": 78,
+        "score": 0.46246618032455444
+      },
+      {
+        "group": "NYU-12",
+        "n": 109,
+        "score": 0.546623170375824
+      },
+      {
+        "group": "SWC_001",
+        "n": 137,
+        "score": 0.4915490746498108
+      },
+      {
+        "group": "SWC_022",
+        "n": 138,
+        "score": 0.3543650805950165
+      },
+      {
+        "group": "ZM_1084",
+        "n": 112,
+        "score": 0.3867558538913727
+      },
+      {
+        "group": "ZM_1089",
+        "n": 124,
+        "score": 0.5387335419654846
+      },
+      {
+        "group": "ZM_1091",
+        "n": 99,
+        "score": 0.33937668800354004
+      },
+      {
+        "group": "ibl_witten_02",
+        "n": 166,
+        "score": 0.48710307478904724
+      },
+      {
+        "group": "ibl_witten_07",
+        "n": 166,
+        "score": 0.41487205028533936
+      },
+      {
+        "group": "ibl_witten_16",
+        "n": 166,
+        "score": 0.38702985644340515
+      }
+    ],
+    "pooled_log_loss": 0.4444306492805481,
+    "pooled_accuracy": 0.7964169381107492,
+    "score_clipping": [
+      1e-06,
+      0.999999
+    ]
+  }
+]

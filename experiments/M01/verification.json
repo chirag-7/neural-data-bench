@@ -1,0 +1,65 @@
+{
+  "source_checks": {
+    "archive_sha256_verified": true,
+    "latest_structurally_complete_session_verified": true,
+    "all_selected_target_and_history_values_verified": 9538,
+    "all100_mice_included": true,
+    "test_mice": 17,
+    "train_test_mice_disjoint": true,
+    "no_scored_test_targets_in_any_history": true,
+    "constant_half_log_loss_fixture": 0.6931471805599454
+  },
+  "prediction_checks": [
+    {
+      "model": "gpt-5.6-sol",
+      "prediction_sha256": "19ac1eda0f70dbf0b5f93493de1355b1cff58e82b9888f02244d028cceb9e51a",
+      "prediction_dtype": "float64",
+      "independent_float64_score": 0.436515244310296,
+      "independent_metric_error": 0.0,
+      "max_unit_error": 1.1102230246251565e-16,
+      "numerical_tolerance": 1e-12,
+      "note": "Independent arithmetic agrees within1e-12"
+    },
+    {
+      "model": "gpt-6-sol",
+      "prediction_sha256": "48375594a5554bdd190b80ba9d733791e8e2f1dd8093d2c2293c1e321ace2cee",
+      "prediction_dtype": "float64",
+      "independent_float64_score": 0.43758408636020407,
+      "independent_metric_error": 0.0,
+      "max_unit_error": 1.1102230246251565e-16,
+      "numerical_tolerance": 1e-12,
+      "note": "Independent arithmetic agrees within1e-12"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "prediction_sha256": "b454e761301e3453b6e5cabcd85c9567cd89283dccb29cebf986426d3bf6623e",
+      "prediction_dtype": "float64",
+      "independent_float64_score": 0.43663393063728134,
+      "independent_metric_error": 0.0,
+      "max_unit_error": 1.1102230246251565e-16,
+      "numerical_tolerance": 1e-12,
+      "note": "Independent arithmetic agrees within1e-12"
+    },
+    {
+      "model": "task-baseline",
+      "prediction_sha256": "e11dde0022ca750aec6be6a7820881e4a2cffdda7663dbec74c9fb03e825a037",
+      "prediction_dtype": "float64",
+      "independent_float64_score": 0.6930802459843858,
+      "independent_metric_error": 0.0,
+      "max_unit_error": 0.0,
+      "numerical_tolerance": 1e-12,
+      "note": "Independent arithmetic agrees within1e-12"
+    },
+    {
+      "model": "behavioral-glm",
+      "prediction_sha256": "a3730a258e186383c8a50e7b3dc05522160d2b151c202b3580484e3d22745a46",
+      "prediction_dtype": "float32",
+      "independent_float64_score": 0.4638769921606447,
+      "independent_metric_error": 9.068809758705498e-09,
+      "max_unit_error": 5.41916317375879e-08,
+      "numerical_tolerance": 1.1920928955078125e-07,
+      "note": "Frozen sklearn loss retains float32 arithmetic for float32 outputs; independent float64 audit bounded by one float32 epsilon"
+    }
+  ],
+  "scope": "Independent source joins, normalization and metric arithmetic; no proof of uncontaminated training or external expert validation"
+}

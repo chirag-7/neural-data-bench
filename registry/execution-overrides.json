@@ -1,0 +1,40 @@
+{
+  "K04": {
+    "task": "Cortical-layer label transfer",
+    "executed_slice": "HumanPilot DLPFC: 33,086 training spots from two donors/eight sections; 14,243 test spots from one donor/four sections; 500 training-selected genes.",
+    "resource": "Maynard2021 DLPFC HumanPilot; donor-held-out supervised layer transfer",
+    "dataset_group": "HumanPilot DLPFC 2021",
+    "data": "Prepared float32 log-normalized expression for 500 training-selected non-mitochondrial genes; no spatial coordinates or images",
+    "ground_truth": "Curated L1\u2013L6/white-matter annotations with expression and histology assistance; not fully orthogonal molecular truth",
+    "source_urls": [
+      "https://doi.org/10.1038/s41593-020-00787-0",
+      "https://github.com/LieberInstitute/HumanPilot/tree/044446d6bd8fc154aa74f7be62ec67effb1ec376",
+      "https://singler-inc.github.io/singler-py/api/singler.html",
+      "https://github.com/SingleR-inc/singler-py"
+    ],
+    "admission_evidence_file": "experiments/K04/protocol.md",
+    "recommended_metrics": "Section-equal seven-class macro-F1; pooled F1/accuracy secondary",
+    "recommended_split": "Train Br5292/Br5595, test Br8100; all four adjacent sections remain together",
+    "limitations": "Only one test donor; four sections are correlated. Curated labels use expression assistance, shared feature selection uses all outer-training spots, and no spatial context is supplied. Supervised transfer is not unsupervised spatial-domain discovery; global best unverified.",
+    "review_depth": "All12 original count matrices acquired/hashed; author donor metadata and label joins verified; all top500 training-only gene choices and36 spot normalizations independently reproduced; fixed SingleR reference"
+  },
+  "M01": {
+    "task": "Conditional mouse-choice prediction",
+    "executed_slice": "IBL Dec2019 choice data: all100 source mice, 83 train/17 held-out; 7,696/1,842 nonoverlapping conditional examples from latest archived sessions.",
+    "resource": "IBL Dec2019 behavior archive / Figshare11636748; custom mouse-held-out slice",
+    "dataset_group": "IBL behavior Dec2019",
+    "data": "Current contrasts/known experimenter block prior plus five past choice/feedback lags;13 features, no current/future response fields",
+    "ground_truth": "Recorded binary mouse turn choices, not latent cognitive parameter labels",
+    "source_urls": [
+      "https://figshare.com/articles/dataset/11636748",
+      "https://api.figshare.com/v2/articles/11636748",
+      "https://elifesciences.org/articles/63711",
+      "https://github.com/int-brain-lab/paper-behavior/blob/24b094226a84c8609c97cfd36c8387ea7c5d61e0/figure5_GLM_modelfit.py"
+    ],
+    "admission_evidence_file": "experiments/M01/protocol.md",
+    "recommended_metrics": "Mouse-equal clipped binary negative log-likelihood; pooled loss/accuracy secondary",
+    "recommended_split": "Hash-split whole mice, latest complete session, first\u22641000 trials, disjoint six-trial target/history blocks; nine labs overlap",
+    "limitations": "Conditional one-step forecast with observed history and known block prior; no autonomous rollout or held-out-lab claim. One historical beta-quality archive; prior target choices never reappear in another scored input. Paper-inspired pooled GLM is not original peranimal fits or established global best.",
+    "review_depth": "Original CC BY4 archive publisher MD5+localSHA verified; all100 mice and9,538 examples independently matched to source; target/history overlap excluded before scores"
+  }
+}

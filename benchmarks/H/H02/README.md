@@ -22,7 +22,7 @@ General-model route: Generic signal encoder or agent
 
 [Frozen protocol and artifacts](../../../experiments/H02). [Measured scores and references](../../../results/H02.json). [Central data](../../../results/measurements.csv). Missing or failed outputs are retained.
 
-[Three-generation follow-up and tuned-specialist sensitivity](../../../experiments/H02/replication-v1/results.md). Original primary and macro records remain unchanged.
+[Separate three-generation follow-up](../../../experiments/H02/replication-v1/results.md); repeated attempts are excluded from first-submission macro totals.
 
 ## Limitations
 
@@ -48,6 +48,6 @@ Decision: **deferred** (2026-10-30). Screened BNCI2014_008 original BNCI terms (
 
 ## Current admission and execution
 
-Preview 0.6: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
+Preview 0.8: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
 [Admission/source evidence](../../../experiments/H02/protocol.md). [Actual protocol/worklog](../../../experiments/H02). [Task measurements](../../../results/H02.json).
