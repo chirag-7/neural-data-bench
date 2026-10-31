@@ -1,0 +1,28 @@
+{
+  "release": "0.7",
+  "url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site",
+  "source_commit": "c982fa4d75b61217ef9a0848a99481384dd846e8",
+  "original_macro_attempts_unchanged": 75,
+  "new_generation_attempts": 6,
+  "new_generation_strict_valid": 6,
+  "new_specialist_attempts": 1,
+  "new_specialist_successful": 1,
+  "H02_prediction_records_independently_rescored": 12,
+  "original_prediction_files_verified_in_prior_release": 146,
+  "combined_unique_prediction_files_verified": 153,
+  "training_only_specialist_candidates_rescored": 12,
+  "source_render_routes": 311,
+  "original_task_plot_pairs": 19,
+  "separate_replication_plot_pair": true,
+  "browser_checks": [
+    "Published category selector to H02 original and replication tabs",
+    "All nine individual scores and named fixed/tuned specialist values visible",
+    "Two replication plots with three range whiskers each",
+    "Original fixed specialist label points to follow-up",
+    "Footer matches research preview0.7",
+    "390x844 responsive check: cards and plots within375px content width, no page overflow; viewport reset"
+  ],
+  "browser_console_errors": 0,
+  "browser_scope": "Representative flows only; not exhaustive live-browser testing of all routes",
+  "screenshot": "docs/assets/replication-v07.jpg"
+}
