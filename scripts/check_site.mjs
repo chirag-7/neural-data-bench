@@ -41,6 +41,8 @@ const catalog = JSON.parse(
   summary = JSON.parse(
     fs.readFileSync(path.join(root, "analysis/summary.json"), "utf8"),
   );
+const release = fs.readFileSync(path.join(root, "README.md"), "utf8").match(/Preview \*\*([0-9.]+)\*\*/)[1];
+if (!fs.readFileSync(path.join(root,"website/index.html"),"utf8").includes("Research preview · v"+release)) throw Error("Stale website release footer");
 let n = 0;
 for (const route of [
   "",
