@@ -1,6 +1,6 @@
-# Findings — exploratory preview 0.6
+# Findings — exploratory preview 0.7
 
-19 measured task IDs across 14 mapped families.75 model–slice attempts, 73 valid and 2 unrepaired program failures. GPT-5.6: 24/25 valid (18 strict-format valid); GPT-6: 25/25; GPT-6.1: 24/25. There are 57 generated programs, one per model/task, reused across C05 preparations and E01 sources. All 152 model/reference records remain; 146 stored prediction records passed rescoring/hash checks.
+19 measured task IDs across 14 mapped families.75 model–slice attempts, 73 valid and 2 unrepaired program failures. GPT-5.6: 24/25 valid (18 strict-format valid); GPT-6: 25/25; GPT-6.1: 24/25. The original panel has 57 generated programs, one per model/task, reused across C05 preparations and E01 sources. All 152 model/reference records remain; 146 stored prediction records passed rescoring/hash checks.
 
 The estimand is performance of generated analysis code fitted locally under an exact T3 contract, not native neural representations or universal neuroscience understanding. Current selection, public labels, one generation and unequal reference histories make the results exploratory.
 
@@ -49,6 +49,12 @@ H02 uses original CC BY 4.0 Brain Invaders 2012 calibration data: 25 people, 15 
 Person-equal ROC-AUC is 0.757195 /0.730548 /0.788537, fixed xDAWN/tangent-space/logistic reference 0.761230, conventional shrinkage-LDA 0.721891. GPT-6.1 exceeds xDAWN on all ten sampled people; 5.6 does so on 6/10 despite a slightly lower mean, 6 on 2/10. These are descriptive paired outcomes, not an externally replicated significance claim. All three submissions obey the 240 line/180 second constraints. Independent float64 rank-sum rescoring agrees with every stored person AUC and mean to 1e−12.
 
 The fixed specialist uses the same train/test signals and train-only fitting. General programs select among shrinkage/ensemble choices using training-person validation; total tuning and library effort are not matched. One public source, overlapping within-person epochs and one generation prevent a global-specialist or stable scaling conclusion. This tests offline target ranking, not online symbol selection or clinical BCI. [Protocol](../experiments/H02/protocol.md), [verification](../experiments/H02/result-verification.json).
+
+## H02 follow-up: variability and reference sensitivity
+
+Two further no-feedback submissions per model give three-attempt means **0.752374 / 0.744027 / 0.784685**. All nine H02 programs are numerically and strict-format valid. The additional xDAWN configuration selected by training-person-only five-fold CV scores **0.778541**, compared with fixed **0.761230**. All three GPT-6.1 attempts exceed the tuned reference, but the smallest margin is 0.000754. GPT-6's range is 0.730548–0.761932, illustrating why a single point was insufficient. Means/ranges over three generations do not establish stable rankings or significance.
+
+This is a retrospective follow-up on the same 25-person source, not another dataset/task. Original attempt 1 predates follow-up design. All six new programs, all 12 specialist validation configurations, predictions, provenance and independent rank-AUC checks are retained. The original 75-attempt macro records and comparator policy below are unchanged. [Follow-up results and every attempt](../experiments/H02/replication-v1/results.md), [separate combined ledger](../results/replications/H02.json).
 
 ## Reference comparisons remain stratified
 

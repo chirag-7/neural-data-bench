@@ -1,5 +1,9 @@
 # D02 worklog
 
+**Current status:** measured for the explicit executed slice. [Current protocol and execution artifacts](../../../experiments/D02) · [Original measured records](../../../results/D02.json). Initial mapping statements below describe an earlier project stage.
+
+## Historical initial mapping
+
 - 2026-10-30 — Resource mapped; source URLs and proposed metrics/splits recorded. Evidence: Primary documentation/paper located; downloads and execution not tested
 - 2026-10-30 — Admission decision: **candidate_pending_validation**. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
 - Acquisition, license audit, scorer implementation, specialist reproduction and model execution: **not completed**.

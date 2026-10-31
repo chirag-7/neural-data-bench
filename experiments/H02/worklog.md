@@ -23,3 +23,7 @@ Frozen local commit `d0f636f` predates model generation. One successful no-tool 
 - xdawn-tslr: measured, person-equal ROC-AUC=0.7612303198299977, execution seconds=3.4599052499979734.
 
 All five predictions match stored hashes. Independent rank-sum person AUCs and group aggregation reproduce scores to1e−12. An initial independent verifier accumulated float32 ranks for the LDA baseline and differed by up to2.6e−8; using float64 rank accumulation resolved the verifier precision issue without changing predictions or scores. See[result verification](result-verification.json). No model repair, threshold selection or new data exclusion followed test scores.
+
+## Retrospective 0.7 follow-up
+
+After original scores were known, froze the unchanged-prompt two-generation follow-up and training-only specialist selection in commit `9c67ae9` before new generation or reference fitting. Six no-tool fresh submissions all pass format and runtime requirements. Five-fold grouped validation selects 4 filters, both templates, C=10; equal-person test AUC 0.7785407675. Original primary records were not replaced. All 12 H02 prediction records and all 12 specialist OOF candidate scores pass independent rank-based checks. [Every result and limits](replication-v1/results.md).

@@ -22,6 +22,8 @@ General-model route: Generic signal encoder or agent
 
 [Frozen protocol and artifacts](../../../experiments/H02). [Measured scores and references](../../../results/H02.json). [Central data](../../../results/measurements.csv). Missing or failed outputs are retained.
 
+[Three-generation follow-up and tuned-specialist sensitivity](../../../experiments/H02/replication-v1/results.md). Original primary and macro records remain unchanged.
+
 ## Limitations
 
 One public source/fixedIDsplit, offline filtering and overlapping trials. No cross-lab,online control,currentSOTA or matched-total-effort claim.

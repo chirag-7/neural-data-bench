@@ -1,5 +1,9 @@
 # L04 worklog
 
+**Current status:** measured for the explicit executed slice. [Current protocol and execution artifacts](../../../experiments/L04) · [Original measured records](../../../results/L04.json). Initial mapping statements below describe an earlier project stage.
+
+## Historical initial mapping
+
 - 2026-10-30 — Resource mapped; source URLs and proposed metrics/splits recorded. Evidence: Primary documentation/paper located; downloads and execution not tested
 - 2026-10-30 — Admission decision: **deferred**. Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.
 - Acquisition, license audit, scorer implementation, specialist reproduction and model execution: **not completed**.

@@ -1,5 +1,9 @@
 # M04 worklog
 
+**Current status:** measured for the explicit executed slice. [Current protocol and execution artifacts](../../../experiments/M04) · [Original measured records](../../../results/M04.json). Initial mapping statements below describe an earlier project stage.
+
+## Historical initial mapping
+
 - 2026-10-30 — Resource mapped; source URLs and proposed metrics/splits recorded. Evidence: Primary paper/project located during bounded gap audit; not executed
 - 2026-10-30 — Admission decision: **measured**. A frozen local protocol, data, scorer, predictions and baseline exist; limits are documented.
 - 2026-10-30 — Frozen protocol and local measurements available in the linked experiment; consult centralized results and execution logs for each slice/model.

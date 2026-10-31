@@ -27,7 +27,8 @@ const NAMES = {
   "yasa-eeg": "YASA · pretrained EEG",
   "pyriemann-ts-svm": "pyRiemann · TS-SVM",
   "pyriemann-aligned": "pyRiemann · aligned TS-SVM",
-  "xdawn-tslr": "xDAWN · tangent-space LR",
+  "xdawn-tslr": "xDAWN · fixed",
+  "xdawn-tslr-tuned": "xDAWN · train-CV tuned",
   "canonical-posterior": "Posterior median · post-hoc audit",
   "canonical-mle": "Canonical MLE",
   "oasis-default": "OASIS · default AR1",
@@ -100,6 +101,7 @@ const DATASETS = {
 let b01Metric = "primary";
 let catalog,
   summary,
+  replication,
   records = [],
   excluded = [],
   selectedTask = "A09",
@@ -155,6 +157,7 @@ function isSpecialist(r) {
       "pyriemann-ts-svm",
       "pyriemann-aligned",
       "xdawn-tslr",
+      "xdawn-tslr-tuned",
     ].includes(r.model) ||
     r.model.startsWith("vassi-run-") ||
     (r.benchmark_id === "J08" && r.model === "task-baseline")
@@ -385,7 +388,7 @@ function renderChart(target, id, compact = false) {
       (m) => c.rs.find((r) => r.model === m) || { model: m, status: "missing" },
     );
   $(target).innerHTML =
-    `<div class="chart-card"><div class="chart-head"><div><h2>${compact ? route("benchmark/" + id, esc(title(e))) : esc(title(e))}</h2><p class="small">${esc(native.metric)} · ${native.direction === "higher" ? "higher" : "lower"} is better · ${id}</p></div><div class="segmented" role="group" aria-label="Chart or table"><button data-view="graph" class="${plotView === "graph" ? "active" : ""}">Graph</button><button data-view="table" class="${plotView === "table" ? "active" : ""}">Table</button></div></div><div class="plot-controls">${id === "B01" ? `<label>Plot metric <select id="metric-picker"><option value="primary" ${b01Metric === "primary" ? "selected" : ""}>Frozen mean GT-unit accuracy</option><option value="all-event-f1" ${b01Metric === "all-event-f1" ? "selected" : ""}>All-output event F1 · post-hoc</option></select></label>` : ""}<label>Evaluation slice <select id="slice-picker">${slices.map((s) => `<option value="${s}" ${s === selectedSlice ? "selected" : ""}>${id === "C05" ? "Preparation " + s : s}</option>`).join("")}</select></label><label><input id="show-ref" type="checkbox" ${showReferences ? "checked" : ""}>Include references</label><label><input id="all-ref" type="checkbox" ${showAllRefs ? "checked" : ""}>Show additional references</label>${plotView === "graph" ? `<label class="right"><input id="zero-axis" type="checkbox" ${startAtZero ? "checked" : ""}>Line axis starts at zero</label>` : ""}</div>${plotView === "graph" ? `${referenceCards(refs, c.frozen)}<p class="plot-reading-key"><span class="solid-key"></span>Solid connected points = general models. <span class="dashed-key"></span>Dashed horizontal lines = specialists. <span class="dotted-key"></span>Dotted lines = other references.</p><div class="chart-grid"><section><p class="chart-label">Performance across model versions</p>${linePlot(generals, refs, native.direction, c.specialists)}</section><section><p class="chart-label">General models and specialist references</p>${barPlot([...generals, ...refs], native.direction)}</section></div><div class="legend">${MODELS.map((m) => `<label><input type="checkbox" data-model="${m}" ${!hiddenModels.has(m) ? "checked" : ""}><i class="dot" style="background:${COLORS[m]}"></i>${label(m)}</label>`).join("")}${refs.map((r, i) => `<span><i class="dash" style="border-color:${refColor(r, i)}"></i>${esc(methodName(r))} · ${fmt(r.score)}</span>`).join("")}</div>` : `<div class="table-wrap">${scoreTable(c.rs)}</div>`}<div class="chart-foot">${chartCaveat(id, c)} ${compact ? route("benchmark/" + id, "Inspect protocol, sources and all scores →") : ""}<br>Connected points show version order, not elapsed time or a compute scaling law. Line axes ${startAtZero ? "include zero" : "adapt to the score range; inspect the ticks"}; bars include zero. One generated program per model/task.</div></div>`;
+    `<div class="chart-card"><div class="chart-head"><div><h2>${compact ? route("benchmark/" + id, esc(title(e))) : esc(title(e))}</h2><p class="small">${esc(native.metric)} · ${native.direction === "higher" ? "higher" : "lower"} is better · ${id}</p></div><div class="segmented" role="group" aria-label="Chart or table"><button data-view="graph" class="${plotView === "graph" ? "active" : ""}">Graph</button><button data-view="table" class="${plotView === "table" ? "active" : ""}">Table</button></div></div><div class="plot-controls">${id === "B01" ? `<label>Plot metric <select id="metric-picker"><option value="primary" ${b01Metric === "primary" ? "selected" : ""}>Frozen mean GT-unit accuracy</option><option value="all-event-f1" ${b01Metric === "all-event-f1" ? "selected" : ""}>All-output event F1 · post-hoc</option></select></label>` : ""}<label>Evaluation slice <select id="slice-picker">${slices.map((s) => `<option value="${s}" ${s === selectedSlice ? "selected" : ""}>${id === "C05" ? "Preparation " + s : s}</option>`).join("")}</select></label><label><input id="show-ref" type="checkbox" ${showReferences ? "checked" : ""}>Include references</label><label><input id="all-ref" type="checkbox" ${showAllRefs ? "checked" : ""}>Show additional references</label>${plotView === "graph" ? `<label class="right"><input id="zero-axis" type="checkbox" ${startAtZero ? "checked" : ""}>Line axis starts at zero</label>` : ""}</div>${plotView === "graph" ? `${referenceCards(refs, c.frozen)}<p class="plot-reading-key"><span class="solid-key"></span>Solid connected points = general models. <span class="dashed-key"></span>Dashed horizontal lines = specialists. <span class="dotted-key"></span>Dotted lines = other references.</p><div class="chart-grid"><section><p class="chart-label">Performance across model versions</p>${linePlot(generals, refs, native.direction, c.specialists)}</section><section><p class="chart-label">General models and specialist references</p>${barPlot([...generals, ...refs], native.direction)}</section></div><div class="legend">${MODELS.map((m) => `<label><input type="checkbox" data-model="${m}" ${!hiddenModels.has(m) ? "checked" : ""}><i class="dot" style="background:${COLORS[m]}"></i>${label(m)}</label>`).join("")}${refs.map((r, i) => `<span><i class="dash" style="border-color:${refColor(r, i)}"></i>${esc(methodName(r))} · ${fmt(r.score)}</span>`).join("")}</div>` : `<div class="table-wrap">${scoreTable(c.rs)}</div>`}<div class="chart-foot">${chartCaveat(id, c)} ${compact ? route("benchmark/" + id, "Inspect protocol, sources and all scores →") : ""}<br>Connected points show version order, not elapsed time or a compute scaling law. Line axes ${startAtZero ? "include zero" : "adapt to the score range; inspect the ticks"}; bars include zero. Original panel: one generated program per model/task.${id === "H02" ? " " + route("benchmark/H02/replication", "Inspect three-generation follow-up →") : ""}</div></div>`;
   $(target)
     .querySelectorAll?.("[data-view]")
     .forEach(
@@ -515,14 +518,14 @@ function linePlot(general, refs, direction, specialists = []) {
     )}<path d="${path}" fill="none" stroke="#547b97" stroke-width="2"/>${general
     .map((r) => {
       const xx = x(MODELS.indexOf(r.model));
-      return `${valid(r) ? `<circle cx="${xx}" cy="${y(r.score)}" r="5.5" fill="${COLORS[r.model]}"><title>${label(r.model)}: ${fmt(r.score)}</title></circle><text class="value-label" x="${xx}" y="${y(r.score) - 13}" text-anchor="middle">${fmt(r.score)}${r.line_limit_compliant === false ? "†" : ""}</text>` : `<text x="${xx}" y="${top + plotHeight / 2}" text-anchor="middle">Failed</text>`}<text x="${xx}" y="${bottom + 29}" text-anchor="middle">${label(r.model).replace("GPT-", "")}</text>`;
+      return `${valid(r) && Number.isFinite(r.range_min) ? `<g class="generation-range"><line x1="${xx}" x2="${xx}" y1="${y(r.range_min)}" y2="${y(r.range_max)}" stroke="${COLORS[r.model]}" stroke-width="2"/><path d="M${xx-6} ${y(r.range_min)}h12 M${xx-6} ${y(r.range_max)}h12" stroke="${COLORS[r.model]}"/><title>${label(r.model)} generation range ${fmt(r.range_min)} to ${fmt(r.range_max)}; not a confidence interval</title></g>` : ""}${valid(r) ? `<circle cx="${xx}" cy="${y(r.score)}" r="5.5" fill="${COLORS[r.model]}"><title>${label(r.model)}: ${fmt(r.score)}</title></circle><text class="value-label" x="${xx}" y="${y(r.range_max ?? r.score) - 13}" text-anchor="middle">${fmt(r.score)}${r.line_limit_compliant === false ? "†" : ""}</text>` : `<text x="${xx}" y="${top + plotHeight / 2}" text-anchor="middle">Failed</text>`}<text x="${xx}" y="${bottom + 29}" text-anchor="middle">${label(r.model).replace("GPT-", "")}</text>`;
     })
     .join(
       "",
     )}<text x="215" y="${bottom + 58}" text-anchor="middle">General model version</text></svg>`;
 }
 function barPlot(rs, direction) {
-  const vals = rs.filter(valid).map((r) => r.score);
+  const vals = rs.filter(valid).flatMap((r) => [r.score,r.range_min,r.range_max].filter(Number.isFinite));
   let lo = Math.min(0, ...vals),
     hi = Math.max(0, ...vals);
   if (hi === lo) hi = lo + 1;
@@ -537,7 +540,7 @@ function barPlot(rs, direction) {
     .join("")}${rs
     .map((r, i) => {
       const yy = 12 + i * 42;
-      return `<text x="181" y="${yy + 15}" text-anchor="end">${esc(methodName(r))}${r.line_limit_compliant === false ? "†" : ""}</text>${valid(r) ? `<rect x="${Math.min(zero, scale(r.score))}" y="${yy}" width="${Math.max(0.8, Math.abs(scale(r.score) - zero))}" height="23" fill="${COLORS[r.model] || refColor(r, i)}"><title>${esc(methodName(r))}: ${fmt(r.score)} · ${evidence(r)}</title></rect><text class="value-label" x="560" y="${yy + 15}" text-anchor="end">${fmt(r.score)}</text>` : `<text x="360" y="${yy + 15}">Failed</text>`}`;
+      return `<text x="181" y="${yy + 15}" text-anchor="end">${esc(methodName(r))}${r.line_limit_compliant === false ? "†" : ""}</text>${valid(r) ? `<rect x="${Math.min(zero, scale(r.score))}" y="${yy}" width="${Math.max(0.8, Math.abs(scale(r.score) - zero))}" height="23" fill="${COLORS[r.model] || refColor(r, i)}"><title>${esc(methodName(r))}: ${fmt(r.score)} · ${evidence(r)}</title></rect>${Number.isFinite(r.range_min) ? `<g class="generation-range"><line x1="${scale(r.range_min)}" x2="${scale(r.range_max)}" y1="${yy+12}" y2="${yy+12}" stroke="#233c50" stroke-width="2"/><path d="M${scale(r.range_min)} ${yy+7}v10 M${scale(r.range_max)} ${yy+7}v10" stroke="#233c50"/><title>Generation range ${fmt(r.range_min)} to ${fmt(r.range_max)}; not a confidence interval</title></g>` : ""}<text class="value-label" x="560" y="${yy + 15}" text-anchor="end">${fmt(r.score)}</text>` : `<text x="360" y="${yy + 15}">Failed</text>`}`;
     })
     .join("")}</svg>`;
 }
@@ -588,7 +591,8 @@ function benchmark(id, tab = "results") {
   const b = brief(id);
   $("#app").innerHTML =
     `<p class="breadcrumb">${route("", "Benchmarks")} / ${route("category/" + e.family_code, esc(CATEGORIES[e.family_code]))} / ${id}</p><p class="eyebrow">${id} · ${esc(CATEGORIES[e.family_code])}</p><h1>${esc(title(e))}</h1><p class="lede">${esc(e.executed_slice || e.resource)}</p><div class="detail-top"><span class="badge ${measured(id) ? "verified" : ""}">${measured(id) ? "Measured exploratory protocol" : "Candidate · not run"}</span><span class="badge">T3 · generated analysis code</span><span class="badge">Current global SOTA unverified</span></div><nav class="tabs" aria-label="Benchmark information">${[
-      ["results", "Results"],
+      ["results", "Original results"],
+      ...(id === "H02" ? [["replication", "Generation replication"]] : []),
       ["evaluation", "Evaluation details"],
       ["sources", "Data & sources"],
     ]
@@ -606,6 +610,8 @@ function benchmark(id, tab = "results") {
     $("#benchmark-content").innerHTML =
       `<div class="detail-summary"><div class="reference-box"><span class="small">Best measured general model${b.nSlices > 1 ? " · slice-equal mean" : ""}</span><strong>${fmt(b.bestModel?.score)}</strong><p>${b.bestModel ? label(b.bestModel.model) + (b.bestModel.line_limit_compliant === false ? " · format deviation" : "") : "All attempts failed"}</p></div><div class="reference-box specialist"><span class="small">${ref && isSpecialist(ref) ? "Best verified specialist in inspected set" : "Available baseline / reference"}</span><strong>${fmt(ref?.score)}</strong><p>${ref ? esc(methodName(ref)) : "Not established"} · training and selection histories differ</p></div></div><div id="detail-chart"></div><details><summary>What can this result establish?</summary><p>${esc(e.limitations)}</p><p>This measures a model-generated numerical analysis procedure. One submission per model; public-data contamination and provider checkpoint resolution remain unverified. Specialist training, feature access and tuning budgets can differ. Missing results are unknown, not zero.</p></details><div class="actions"><a class="button secondary" href="data/${id}.json" download>Detailed records ↓</a>${link(GH + "/tree/main/experiments/" + id, "Frozen code & protocol", "button secondary")}${link(GH + "/tree/main/results/predictions/" + id, "Predictions", "button secondary")}</div>`;
     renderChart("#detail-chart", id);
+  } else if (tab === "replication" && id === "H02") {
+    $("#benchmark-content").innerHTML = replicationPanel();
   } else if (tab === "evaluation") {
     $("#benchmark-content").innerHTML =
       `<div class="doc-grid"><section class="doc-panel"><h2>Evaluation contract</h2><dl class="kv"><dt>Input</dt><dd>${esc(e.data)}</dd><dt>Executed slice</dt><dd>${esc(e.executed_slice || "Not yet defined")}</dd><dt>Ground truth</dt><dd>${esc(e.ground_truth)}</dd><dt>Metric / split</dt><dd>${esc(e.recommended_metrics)}<br>${esc(e.recommended_split)}</dd></dl></section><section class="doc-panel"><h2>Validity and procedure</h2><p>${esc(e.limitations)}</p><p>${esc(e.admission_reason)}</p><div class="link-list">${measured(id) ? link(GH + "/blob/main/experiments/" + id + (id === "C05" ? "/phase2-protocol.md" : "/protocol.md"), "Exact frozen protocol") : ""}${link(GH + "/blob/main/benchmarks/" + e.family_code + "/" + id + "/worklog.md", "Steps actually completed")}${measured(id) ? link(GH + "/blob/main/experiments/" + id + (["C05", "M04"].includes(id) ? "/generation-provenance.json" : "/run-spec.json"), "Frozen input and prompt identities") : ""}${link(GH + "/blob/main/" + e.admission_evidence_file, "Admission assessment")}</div></section></div>`;
@@ -614,6 +620,17 @@ function benchmark(id, tab = "results") {
       `<div class="doc-panel"><h2>Primary data and method sources</h2><p>Sources retain their original terms. A source association is not a claim that every asset was acquired or every paper fully reviewed. Measured-task manifests describe the actual files used.</p><div class="link-list">${e.source_urls.map((u, i) => link(u, esc(u.replace(/^https?:\/\//, "")))).join("")}</div><div class="actions">${link(GH + "/tree/main/" + (measured(id) ? "experiments/" + id : "benchmarks/" + e.family_code + "/" + id), "Source manifests and preparation")}${link(GH + "/blob/main/benchmarks/" + e.family_code + "/" + id + "/data.json", "Data and rights assessment")}</div></div>`;
   }
 }
+
+function replicationPanel() {
+  if (!replication) return '<p class="empty">Replication data unavailable.</p>';
+  const generals = replication.generation_summary.map((s) => ({
+    model: s.model, score: s.mean, range_min: s.minimum, range_max: s.maximum,
+    status: s.valid ? "measured" : "failed", direction: "higher",
+  }));
+  const refs = replication.references.filter((r) => ["xdawn-tslr", "xdawn-tslr-tuned"].includes(r.model));
+  return `<p class="eyebrow">Retrospective follow-up · same dataset and split</p><h2>How much does a fresh generation change the result?</h2><p class="lede">Exactly two fresh submissions per model plus the original. Points and bars show the mean of all numerically valid attempts; whiskers show their minimum–maximum range, not confidence intervals.</p><div class="note">This task and follow-up were chosen after viewing the first scores. Three generations are not three datasets. Original 19-task / 75-attempt macro totals remain unchanged. No best-of-three selection or execution feedback.</div>${referenceCards(refs, refs.find((r) => r.model === "xdawn-tslr"))}<div class="chart-card"><p class="plot-reading-key"><span class="solid-key"></span>General-model means · whiskers = generation range. <span class="dashed-key"></span>Named specialist scores.</p><div class="chart-grid"><section><p class="chart-label">Mean ROC-AUC across model versions</p>${linePlot(generals, refs, "higher", refs)}</section><section><p class="chart-label">Generation means and specialist references</p>${barPlot([...generals, ...refs], "higher")}</section></div><p class="small">Equal weight to each held-out person. Line axis adapts to scores; bars include zero. Version order is not elapsed time. Specialist search/refit used a 180-second limit, but equal total development or tuning effort is unestablished.</p></div><div class="table-panel table-wrap"><table><thead><tr><th>Model</th><th>Attempt 1</th><th>Attempt 2</th><th>Attempt 3</th><th>Mean</th><th>Valid / planned</th><th>Strict valid</th></tr></thead><tbody>${replication.generation_summary.map((s) => `<tr><td>${label(s.model)}</td>${s.per_attempt.map((a) => `<td>${a.status === "measured" ? fmt(a.score) : "Failed"}${a.line_limit_compliant === false ? " †" : ""}</td>`).join("")}<td>${fmt(s.mean)}</td><td>${s.valid} / ${s.attempted}</td><td>${s.strict_valid} / ${s.attempted}</td></tr>`).join("")}</tbody></table></div><details open><summary>How was the specialist chosen?</summary><p>The additional xDAWN reference compares 12 configurations using five-fold grouped validation on the 15 training people: 2 or 4 spatial filters, target-only or both-class templates, and logistic C of 0.1, 1 or 10. Covariance estimates, tangent reference and scaling are fitted inside each training fold. Highest equal-person validation ROC-AUC selects the final configuration; test people enter only final inference and scoring.</p><p>The fixed original reference remains visible. The tuned reference is a retrospective sensitivity, not proof of current global best. All candidate validation scores and the selected configuration are retained.</p></details><div class="actions"><a class="button secondary" href="data/H02-replication.csv" download>Every follow-up record ↓</a>${link(GH + "/blob/main/experiments/H02/replication-v1/results.md", "Results and limits", "button secondary")}${link(GH + "/tree/main/experiments/H02/replication-v1", "Plan, programs and verification", "button secondary")}</div>`;
+}
+
 function modelsPage(model) {
   const summaries = summary.model_summaries.filter(
     (s) => !model || s.model === model,
@@ -636,7 +653,7 @@ function analysisPage() {
   ];
   if (!classes.includes(analysisClass)) analysisClass = classes[0];
   $("#app").innerHTML =
-    `<p class="eyebrow">Cross-task analysis</p><h1>Where do models improve?</h1><p class="lede">Track point-score changes and reference comparisons while keeping task, family, failure and evidence-class denominators visible.</p><div class="doc-panel" style="margin-top:26px"><h2>Comparison with references</h2><div class="toolbar"><label for="reference-class" class="small">Reference evidence</label><select id="reference-class">${classes.map((c) => `<option value="${c}" ${c === analysisClass ? "selected" : ""}>${esc(c.replaceAll("_", " "))}</option>`).join("")}</select></div><div class="table-wrap"><table><thead><tr><th>Model</th><th>Point wins / slices</th><th>Lost / tied / failed</th><th>Tasks / families</th><th>Family-equal win fraction</th><th>Strict-format wins / eligible slices</th></tr></thead><tbody>${summary.model_summaries
+    `<p class="eyebrow">Cross-task analysis</p><h1>Where do models improve?</h1><p class="note">Original suite: one generation per task. ${route("benchmark/H02/replication", "P300 now has a separate three-generation follow-up →")} Its repeated attempts are excluded from the cross-task totals below.</p><p class="lede">Track point-score changes and reference comparisons while keeping task, family, failure and evidence-class denominators visible.</p><div class="doc-panel" style="margin-top:26px"><h2>Comparison with references</h2><div class="toolbar"><label for="reference-class" class="small">Reference evidence</label><select id="reference-class">${classes.map((c) => `<option value="${c}" ${c === analysisClass ? "selected" : ""}>${esc(c.replaceAll("_", " "))}</option>`).join("")}</select></div><div class="table-wrap"><table><thead><tr><th>Model</th><th>Point wins / slices</th><th>Lost / tied / failed</th><th>Tasks / families</th><th>Family-equal win fraction</th><th>Strict-format wins / eligible slices</th></tr></thead><tbody>${summary.model_summaries
       .map((s) => {
         const c = s.reference_class_summaries[analysisClass],
           a = c?.exploratory,
@@ -662,7 +679,8 @@ function methodsPage() {
   $("#app").innerHTML =
     `<p class="eyebrow">Methods & data</p><h1>Trace every result.</h1><p class="lede">A benchmark is an exact input, target, split, scorer and model procedure. The broader neuroscience evidence map remains separate from the measured results explorer.</p><div class="doc-grid"><section class="doc-panel"><h2>What is measured</h2><p>T3: a single general-model code submission followed by local numerical execution. Models use general scientific libraries; specialist packages and pretrained assets are separate references. This does not directly measure native raw-signal understanding or full autonomous lab workflows.</p><p>Exact prompts, frozen data/code hashes, submitted programs, generation usage/tool counts, predictions and errors are retained. Current general models: GPT-5.6 Sol, GPT-6 Sol and GPT-6.1 Sol.</p></section><section class="doc-panel"><h2>Specialist evidence</h2><p>Named specialist methods appear on line charts and bar plots wherever verified matching predictions exist. Archived specialist masks/predictions, local specialist reproductions, conventional baselines and mathematical audits are identified separately.</p><p>The highest inspected point score is a descriptive test-selected envelope. It cannot certify the current global best, comparable training inputs or equal tuning effort. Published scores on a different split are not inserted into these plots.</p></section></div><div class="doc-grid"><section class="doc-panel"><h2>Coverage and exclusions</h2><p>The historical evidence map covers 114 task-resource associations across 14 families. The active catalog is pruned when a reusable endpoint, data rights, release or scorer is unresolved. Concrete high-effort tasks remain candidates, with missing results shown as unknown.</p><p>Pruning does not prove exhaustive coverage. Removed candidates retain their decision trail and reactivation requirements. Broad clinical, causal, control and mechanistic perspectives still have gaps.</p>${route("excluded", "Inspect archived candidates →")}</section><section class="doc-panel"><h2>Validity controls</h2><p>Biological grouping, human vs synthetic truth, adaptation policy and reference information access are explicit per task. Source identities, acquired-file/buffer hashes and scorer checks are recorded. Failures and formatting deviations stay visible.</p><p>Small biological samples, public-label contamination, unequal specialist histories and one-generation uncertainty remain. No neuron/frame pseudo-replication intervals or universal mixed-metric capability score.</p></section></div><div class="link-list">${[
       ["README.md", "Main research plan and status"],
-      ["docs/release-v06.md", "Current release report"],
+      ["docs/release-v07.md", "Current release report"],
+      ["docs/progress-assessment.md", "Progress assessment and evidence gaps"],
       ["docs/taxonomy.md", "Taxonomy and coverage justification"],
       ["docs/methodology.md", "Evaluation methodology"],
       ["docs/macro-analysis-plan.md", "Macro analysis and weighting"],
@@ -691,10 +709,15 @@ Promise.all([
   fetch("data/exclusions.json")
     .then((r) => (r.ok ? r.json() : []))
     .catch(() => []),
+  fetch("data/H02-replication.json").then((r) => {
+    if (!r.ok) throw new Error("Replication results unavailable");
+    return r.json();
+  }),
 ])
-  .then(([c, s, t, x]) => {
+  .then(([c, s, t, x, rep]) => {
     catalog = c;
     summary = s;
+    replication = rep;
     records = t
       .trim()
       .split("\n")

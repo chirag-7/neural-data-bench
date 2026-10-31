@@ -20,6 +20,8 @@ The repository is an auditable pilot, **not yet a paper-ready general-versus-spe
 
 ## Next evidence priorities
 
-First measure repeated-generation variability and stronger train-only reference selection on an existing task. Then prioritize independent datasets/participants for promising endpoints, matched specialist effort and a predeclared suite with enough tasks per family. Broader model modalities should be a distinct track with its own input and resource rules. New categories alone will not repair these weaknesses.
+H02 now has three code generations per model and an additional training-only CV-selected xDAWN reference; all six new submissions pass strict execution/format rules. This addresses generation variability on one dataset only. The remaining 18 tasks still have one original program per model. [Detailed results](../experiments/H02/replication-v1/results.md).
 
-The H02 [follow-up plan](../experiments/H02/replication-v1/amendment.md) addresses the first priority on one dataset. It is retrospective and cannot make the whole suite paper-ready.
+Extend repeated-generation variability and stronger train-only reference selection to other existing tasks. Then prioritize independent datasets/participants for promising endpoints, matched specialist effort and a predeclared suite with enough tasks per family. Broader model modalities should be a distinct track with its own input and resource rules. New categories alone will not repair these weaknesses.
+
+The H02 [completed follow-up plan](../experiments/H02/replication-v1/amendment.md) addresses the first priority on one dataset. It is retrospective and cannot make the whole suite paper-ready.

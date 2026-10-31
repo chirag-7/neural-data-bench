@@ -48,6 +48,7 @@ for (const route of [
   "analysis",
   "methods",
   "excluded",
+  "benchmark/H02/replication",
   ...summary.models.map((m) => "model/" + m),
   ...catalog.families.map((f) => "category/" + f.code),
   ...catalog.entries.flatMap((e) =>
@@ -115,6 +116,12 @@ if (
     "All-output event sensitivity must retain named values and post-hoc label",
   );
 vm.runInContext("b01Metric='primary'", ctx);
+ctx.location.hash = "#/benchmark/H02/replication";
+vm.runInContext("draw()", ctx);
+const replicationText = el("#benchmark-content").innerHTML;
+for (const text of ['generation-range', 'xDAWN · train-CV tuned', 'xDAWN · fixed', 'Attempt 3', 'not confidence intervals', 'All candidate validation scores']) {
+  if (!replicationText.includes(text)) throw Error('Missing replication component: '+text);
+}
 const result = {
   type: "In-memory source-render and direct-handler checks; not real-browser interaction or layout QA",
   routes: n,
@@ -126,6 +133,7 @@ const result = {
   graph_table_switch: "passed",
   search_and_benchmark_selector: "passed",
   javascript_syntax: "passed",
+  separate_generation_replication_plots_and_range: "passed",
 };
 fs.writeFileSync(
   path.join(root, "analysis/site-source-checks.json"),

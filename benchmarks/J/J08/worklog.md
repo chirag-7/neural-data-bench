@@ -1,5 +1,9 @@
 # J08 worklog
 
+**Current status:** measured for the explicit executed slice. [Current protocol and execution artifacts](../../../experiments/J08) · [Original measured records](../../../results/J08.json). Initial mapping statements below describe an earlier project stage.
+
+## Historical initial mapping
+
 - 2026-10-30 — Resource mapped; source URLs and proposed metrics/splits recorded. Evidence: Primary paper/project documentation reviewed; download, installation and scorer not run in this extension audit
 - 2026-10-30 — Admission decision: **deferred**. Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.
 - Acquisition, license audit, scorer implementation, specialist reproduction and model execution: **not completed**.

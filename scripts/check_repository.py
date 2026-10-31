@@ -51,4 +51,27 @@ for d in (R/'experiments').iterdir():
 for task in set(r['benchmark_id'] for r in records if r['model'] in ['gpt-5.6-sol','gpt-6-sol','gpt-6.1-sol']):
  for model in ['gpt-5.6-sol','gpt-6-sol','gpt-6.1-sol']:assert any(r['benchmark_id']==task and r['model']==model for r in records)
 assert not any('luna' in r['model'] for r in records)
+follow=R/'experiments/H02/replication-v1'
+spec=json.loads((follow/'run-spec.json').read_text())
+for filename,digest in spec['sealed_files'].items():assert hashlib.sha256((R/filename).read_bytes()).hexdigest()==digest
+rep=json.loads((R/'results/replications/H02.json').read_text())
+assert rep['original_primary_macro_unchanged'] and len(rep['attempts'])==9
+assert {(r['model'],r['replicate']) for r in rep['attempts']}=={(m,k) for m in ['gpt-5.6-sol','gpt-6-sol','gpt-6.1-sol'] for k in [1,2,3]}
+for r in rep['attempts']+rep['references']:
+ if r['status']=='measured':assert hashlib.sha256((R/r['prediction_file']).read_bytes()).hexdigest()==r['prediction_sha256']
+for p in json.loads((follow/'generation-provenance.json').read_text()):
+ assert p['tool_events']==0 and p['user_prompt_sha256']==hashlib.sha256((R/'experiments/H02/prompt.txt').read_bytes()).hexdigest()
+ for key in ['output','events']:
+  if p[key+'_file']:assert hashlib.sha256((R/p[key+'_file']).read_bytes()).hexdigest()==p[key+'_sha256']
+ if p['output_file']:
+  code=json.loads((R/p['output_file']).read_text())['code'];row=next(r for r in rep['attempts'] if r['model']==p['requested_model'] and r['replicate']==p['replicate'])
+  if row['status']=='measured':assert hashlib.sha256(code.encode()).hexdigest()==row['code_sha256'] and len(code.splitlines())==row['code_lines']
+choice=json.loads((follow/'selection.json').read_text());tuned=next(r for r in rep['references'] if r['model']=='xdawn-tslr-tuned')
+if tuned['status']=='measured':
+ assert hashlib.sha256((follow/'selection.json').read_bytes()).hexdigest()==tuned['selection_sha256']
+ assert len(choice['candidates'])==12 and choice['chosen_index']==max(range(12),key=lambda i:choice['candidates'][i]['validation_score'])
+ assert hashlib.sha256((follow/'validation-predictions.npz').read_bytes()).hexdigest()==json.loads((follow/'verification.json').read_text())['selection_checks']['oof_prediction_sha256']
+assert hashlib.sha256((R/'results/measurements.jsonl').read_bytes()).hexdigest()==json.loads((follow/'verification.json').read_text())['original_macro_measurements_sha256']
+for suffix in ['json','csv']:assert (R/f'results/replications/H02.{suffix}').read_bytes()==(R/f'website/data/H02-replication.{suffix}').read_bytes()
 print(f'Integrity checks passed: {len(ids)} task cards, {len(records)} records, linked files, predictions, provenance and synchronized site data.')
+print('H02 follow-up integrity passed: all 9 planned generations, separate results, unchanged original macro ledger.')

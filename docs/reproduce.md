@@ -156,3 +156,23 @@ node scripts/check_site.mjs
 H02's training-group argument is explicit and identical across methods. The independent person-level AUC verification uses float64 rank accumulation; the originally stored LDA scores can be float32. Stored prediction identity and rank order are unchanged. Its source author-code license is retained in `experiments/H02/UPSTREAM_LICENSE.txt`.
 
 The B01 event-accounting script is **post-hoc** and adds secondary fields only. It preserves original predictions, primary scores, tolerance and unit mapping. `posthoc_all_event_f1`, precision and recall are exported in the central CSV; other tasks have no value in those columns. They are not silently substituted into the macro score policy.
+
+## Preview 0.7 H02 follow-up
+
+The [retrospective amendment](../experiments/H02/replication-v1/amendment.md) preserves the original experiment. Stored follow-up programs are in `experiments/H02/replication-v1/generated/`; these are fresh generations, not repairs. Original macro scores remain in `results/measurements.*`. The separate combined follow-up ledger is `results/replications/H02.*` and includes original attempt 1 plus attempts 2/3 and references, with run labels.
+
+After preparing the original H02 arrays, execution of already-saved programs requires no provider calls:
+
+```sh
+# Core scientific environment; one-thread subprocess limit per saved submission.
+python scripts/replicate_erp.py evaluate
+# Separate pinned pyRiemann specialist environment; five-fold train-person selection.
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/replicate_erp.py specialist
+# Core scientific environment; independent rank-AUC/OOF checks and separate ledger.
+python scripts/summarize_erp_replication.py
+python scripts/build_website.py
+python scripts/check_repository.py
+node scripts/check_site.mjs
+```
+
+These execution commands replace local follow-up output files; run in a separate checkout to preserve the release artifacts. Do not rerun `freeze` or `generate` on the original study: generation refuses existing contexts/outputs and must use a separately named study for any future attempt. The plan, runner, inputs and reference implementation are sealed in the follow-up run-spec; a mismatch must be investigated rather than silently updating the seal. `verification.json` checks all saved person-level prediction scores, all 12 training-only candidate scores, fold person separation and the deterministic selection rule. It does not prove model contamination is absent.

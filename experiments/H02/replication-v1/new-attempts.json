@@ -1,0 +1,560 @@
+[
+  {
+    "benchmark_id": "H02",
+    "study": "replication-v1",
+    "model": "gpt-5.6-sol",
+    "replicate": 2,
+    "status": "measured",
+    "seconds": 2.292330167023465,
+    "code_sha256": "dd238ff5bd0bb0e6bfe336ca3d5bc00544cc8a8de31a64fa11158464edc8fcb2",
+    "code_lines": 164,
+    "line_limit_compliant": true,
+    "description": "Robust spatiotemporal shrinkage-LDA ensemble. EEG is summarized by overlapping 78 ms channel-wise windows, with raw and deterministic per-epoch amplitude-normalized variants. Five-fold person-held-out validation selects the time representation, covariance shrinkage, and\u2014only when validation improves\u2014an optional two-model blend using equal-person mean ROC-AUC. Robust scaling, clipping, class statistics, covariance models, and score normalization are fitted only on each training fold and finally on all training people; test trials are transformed independently without estimating test groups or population statistics.",
+    "prediction_file": "results/predictions/H02/replication-v1--gpt-5.6-sol--r2.npz",
+    "prediction_sha256": "7c4e8dd7641ccbba27b48a506c7654041e460bce21783bfeb75f7d1ede39ad5f",
+    "original_macro_eligible": false,
+    "score": 0.7464439216882754,
+    "metric": "subject_equal_roc_auc",
+    "direction": "higher",
+    "pooled_roc_auc": 0.7413489669183837,
+    "per_unit": [
+      0.6202270507812501,
+      0.7943239795918368,
+      0.7690451311140964,
+      0.9125244140625,
+      0.7064189851097179,
+      0.7074843260188088,
+      0.8981201171875001,
+      0.63795552507837,
+      0.651701504344924,
+      0.76663818359375
+    ],
+    "group_results": [
+      {
+        "group": "16",
+        "n": 768,
+        "score": 0.6202270507812501,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "17",
+        "n": 765,
+        "score": 0.7943239795918368,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "18",
+        "n": 764,
+        "score": 0.7690451311140964,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "19",
+        "n": 768,
+        "score": 0.9125244140625,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "20",
+        "n": 766,
+        "score": 0.7064189851097179,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "21",
+        "n": 766,
+        "score": 0.7074843260188088,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "22",
+        "n": 768,
+        "score": 0.8981201171875001,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "23",
+        "n": 766,
+        "score": 0.63795552507837,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "24",
+        "n": 764,
+        "score": 0.651701504344924,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "25",
+        "n": 768,
+        "score": 0.76663818359375,
+        "metric": "roc_auc"
+      }
+    ]
+  },
+  {
+    "benchmark_id": "H02",
+    "study": "replication-v1",
+    "model": "gpt-6-sol",
+    "replicate": 2,
+    "status": "measured",
+    "seconds": 0.5317539591342211,
+    "code_sha256": "118f0c4ca7a38ab4a74d31370dffa9e2e368ca3609b4304867453337dd2aa924",
+    "code_lines": 88,
+    "line_limit_compliant": true,
+    "description": "Uses smoothed, downsampled EEG features and a regularized linear discriminant. Ridge strength and per-trial amplitude scaling are selected by five-fold validation split by training person, using mean per-person ROC-AUC. All fitted values come from training people; test trials are processed independently.",
+    "prediction_file": "results/predictions/H02/replication-v1--gpt-6-sol--r2.npz",
+    "prediction_sha256": "cf51484019d9c1aadfcc2839fa541acb7ee04510800024a9f9545503cc34ae9e",
+    "original_macro_eligible": false,
+    "score": 0.739601737866133,
+    "metric": "subject_equal_roc_auc",
+    "direction": "higher",
+    "pooled_roc_auc": 0.7301834401359081,
+    "per_unit": [
+      0.621044921875,
+      0.8111999607535323,
+      0.7868587351345973,
+      0.8944091796875,
+      0.743485501567398,
+      0.7146355799373041,
+      0.901318359375,
+      0.6487191418495297,
+      0.5978689477002188,
+      0.67647705078125
+    ],
+    "group_results": [
+      {
+        "group": "16",
+        "n": 768,
+        "score": 0.621044921875,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "17",
+        "n": 765,
+        "score": 0.8111999607535323,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "18",
+        "n": 764,
+        "score": 0.7868587351345973,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "19",
+        "n": 768,
+        "score": 0.8944091796875,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "20",
+        "n": 766,
+        "score": 0.743485501567398,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "21",
+        "n": 766,
+        "score": 0.7146355799373041,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "22",
+        "n": 768,
+        "score": 0.901318359375,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "23",
+        "n": 766,
+        "score": 0.6487191418495297,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "24",
+        "n": 764,
+        "score": 0.5978689477002188,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "25",
+        "n": 768,
+        "score": 0.67647705078125,
+        "metric": "roc_auc"
+      }
+    ]
+  },
+  {
+    "benchmark_id": "H02",
+    "study": "replication-v1",
+    "model": "gpt-6.1-sol",
+    "replicate": 2,
+    "status": "measured",
+    "seconds": 2.0429715840145946,
+    "code_sha256": "1677407b5c5de237fe6021c8e906a708541eadcfba3323fec3f1245a501d9080",
+    "code_lines": 184,
+    "line_limit_compliant": true,
+    "description": "Ensembles shrinkage LDA on multiscale ERP waveforms with xDAWN-style covariance tangent features. Three-fold subject-held-out validation selects regularization, epoch amplitude normalization, and blending using mean per-person ROC-AUC. All learned transforms are fitted on training people only.",
+    "prediction_file": "results/predictions/H02/replication-v1--gpt-6.1-sol--r2.npz",
+    "prediction_sha256": "4e736fed961d2632fe7b7e4bb65a0f9f6ef692be96dafd273a0d812cb92a78a1",
+    "original_macro_eligible": false,
+    "score": 0.7792947901147846,
+    "metric": "subject_equal_roc_auc",
+    "direction": "higher",
+    "pooled_roc_auc": 0.7719817553129263,
+    "per_unit": [
+      0.68966064453125,
+      0.8152227237048666,
+      0.8172612827785241,
+      0.9038696289062499,
+      0.751677605799373,
+      0.7592819357366771,
+      0.90704345703125,
+      0.6875857170846396,
+      0.6683395344812666,
+      0.79300537109375
+    ],
+    "group_results": [
+      {
+        "group": "16",
+        "n": 768,
+        "score": 0.68966064453125,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "17",
+        "n": 765,
+        "score": 0.8152227237048666,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "18",
+        "n": 764,
+        "score": 0.8172612827785241,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "19",
+        "n": 768,
+        "score": 0.9038696289062499,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "20",
+        "n": 766,
+        "score": 0.751677605799373,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "21",
+        "n": 766,
+        "score": 0.7592819357366771,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "22",
+        "n": 768,
+        "score": 0.90704345703125,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "23",
+        "n": 766,
+        "score": 0.6875857170846396,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "24",
+        "n": 764,
+        "score": 0.6683395344812666,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "25",
+        "n": 768,
+        "score": 0.79300537109375,
+        "metric": "roc_auc"
+      }
+    ]
+  },
+  {
+    "benchmark_id": "H02",
+    "study": "replication-v1",
+    "model": "gpt-5.6-sol",
+    "replicate": 3,
+    "status": "measured",
+    "seconds": 0.8678168330807239,
+    "code_sha256": "435855c63909dc7c463e7fed1a2c70bfef32fd7c2d35df23260dbc280ef52a5f",
+    "code_lines": 129,
+    "line_limit_compliant": true,
+    "description": "Group-aware shrinkage LDA on 31.25 ms temporal averages. Training subject/class cells receive equal weight, normalization and covariance estimation use training rows only, and three subject-held-out folds select the time window and covariance shrinkage by equal-person mean ROC-AUC. The selected model is refit on all training people; test data are only transformed with the fitted training statistics.",
+    "prediction_file": "results/predictions/H02/replication-v1--gpt-5.6-sol--r3.npz",
+    "prediction_sha256": "d665e695ddff40b1b77dcfd67750a8c9a53b37ea424e3cca28630dde0ddd62a4",
+    "original_macro_eligible": false,
+    "score": 0.7534827853158592,
+    "metric": "subject_equal_roc_auc",
+    "direction": "higher",
+    "pooled_roc_auc": 0.7437878621034021,
+    "per_unit": [
+      0.6374633789062502,
+      0.7941400117739403,
+      0.7963750808578395,
+      0.9140747070312499,
+      0.7305177311912225,
+      0.7341790752351098,
+      0.91241455078125,
+      0.6348819553291536,
+      0.6411451315838268,
+      0.73963623046875
+    ],
+    "group_results": [
+      {
+        "group": "16",
+        "n": 768,
+        "score": 0.6374633789062502,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "17",
+        "n": 765,
+        "score": 0.7941400117739403,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "18",
+        "n": 764,
+        "score": 0.7963750808578395,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "19",
+        "n": 768,
+        "score": 0.9140747070312499,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "20",
+        "n": 766,
+        "score": 0.7305177311912225,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "21",
+        "n": 766,
+        "score": 0.7341790752351098,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "22",
+        "n": 768,
+        "score": 0.91241455078125,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "23",
+        "n": 766,
+        "score": 0.6348819553291536,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "24",
+        "n": 764,
+        "score": 0.6411451315838268,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "25",
+        "n": 768,
+        "score": 0.73963623046875,
+        "metric": "roc_auc"
+      }
+    ]
+  },
+  {
+    "benchmark_id": "H02",
+    "study": "replication-v1",
+    "model": "gpt-6-sol",
+    "replicate": 3,
+    "status": "measured",
+    "seconds": 0.6712212921120226,
+    "code_sha256": "e210082d31a7574c7a41f31d8efb2a28187591dfec972fb28d6f9b559feecc43",
+    "code_lines": 82,
+    "line_limit_compliant": true,
+    "description": "Uses clipped, four-sample-averaged EEG features and a regularized linear discriminant. Five-fold validation by training person selects the time window and regularization strength using mean person-level ROC-AUC. All fitted quantities use training people only; test trials receive a fixed linear score.",
+    "prediction_file": "results/predictions/H02/replication-v1--gpt-6-sol--r3.npz",
+    "prediction_sha256": "3a87f5748919f916682e2f7b50db9c7091911077bce7c19257079911a7ab1d63",
+    "original_macro_eligible": false,
+    "score": 0.7619323091265471,
+    "metric": "subject_equal_roc_auc",
+    "direction": "higher",
+    "pooled_roc_auc": 0.751046300626787,
+    "per_unit": [
+      0.6705078125,
+      0.7924475078492936,
+      0.7989874110563765,
+      0.91173095703125,
+      0.7264767829153604,
+      0.7359179075235109,
+      0.90718994140625,
+      0.668789184952978,
+      0.6405641602491996,
+      0.7667114257812501
+    ],
+    "group_results": [
+      {
+        "group": "16",
+        "n": 768,
+        "score": 0.6705078125,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "17",
+        "n": 765,
+        "score": 0.7924475078492936,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "18",
+        "n": 764,
+        "score": 0.7989874110563765,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "19",
+        "n": 768,
+        "score": 0.91173095703125,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "20",
+        "n": 766,
+        "score": 0.7264767829153604,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "21",
+        "n": 766,
+        "score": 0.7359179075235109,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "22",
+        "n": 768,
+        "score": 0.90718994140625,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "23",
+        "n": 766,
+        "score": 0.668789184952978,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "24",
+        "n": 764,
+        "score": 0.6405641602491996,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "25",
+        "n": 768,
+        "score": 0.7667114257812501,
+        "metric": "roc_auc"
+      }
+    ]
+  },
+  {
+    "benchmark_id": "H02",
+    "study": "replication-v1",
+    "model": "gpt-6.1-sol",
+    "replicate": 3,
+    "status": "measured",
+    "seconds": 3.447162249824032,
+    "code_sha256": "051e4e16842064664b3b8da087ec9825ef9cb9e1af8676e9849299e298ba85cd",
+    "code_lines": 177,
+    "line_limit_compliant": true,
+    "description": "Ensemble of shrinkage LDA models using ERP waveforms, amplitude-normalized waveforms, and xDAWN covariance tangent features. Five-fold person-held-out validation selects regularization and ensemble weights using mean per-person ROC-AUC. All learned transforms are fitted within training folds and refitted on training people only.",
+    "prediction_file": "results/predictions/H02/replication-v1--gpt-6.1-sol--r3.npz",
+    "prediction_sha256": "8af665a8dc24b5f926e377670724653e796b89584484070a7b867d1b56fa2637",
+    "original_macro_eligible": false,
+    "score": 0.7862249613505896,
+    "metric": "subject_equal_roc_auc",
+    "direction": "higher",
+    "pooled_roc_auc": 0.7761648731894677,
+    "per_unit": [
+      0.7353271484374999,
+      0.8148670525902669,
+      0.8046847788227098,
+      0.8995361328124999,
+      0.7507592084639498,
+      0.754836892633229,
+      0.90894775390625,
+      0.7209663989028214,
+      0.6775732703741704,
+      0.7947509765625
+    ],
+    "group_results": [
+      {
+        "group": "16",
+        "n": 768,
+        "score": 0.7353271484374999,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "17",
+        "n": 765,
+        "score": 0.8148670525902669,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "18",
+        "n": 764,
+        "score": 0.8046847788227098,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "19",
+        "n": 768,
+        "score": 0.8995361328124999,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "20",
+        "n": 766,
+        "score": 0.7507592084639498,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "21",
+        "n": 766,
+        "score": 0.754836892633229,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "22",
+        "n": 768,
+        "score": 0.90894775390625,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "23",
+        "n": 766,
+        "score": 0.7209663989028214,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "24",
+        "n": 764,
+        "score": 0.6775732703741704,
+        "metric": "roc_auc"
+      },
+      {
+        "group": "25",
+        "n": 768,
+        "score": 0.7947509765625,
+        "metric": "roc_auc"
+      }
+    ]
+  }
+]

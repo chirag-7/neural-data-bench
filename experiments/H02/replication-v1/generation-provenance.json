@@ -1,0 +1,122 @@
+[
+  {
+    "requested_model": "gpt-5.6-sol",
+    "replicate": 2,
+    "reasoning_effort": "high",
+    "user_prompt_sha256": "d311e0dd3acb26d3ee738adff31b7dc3639a3cc56e816db665bf7b5eac31d1f8",
+    "output_file": "experiments/H02/replication-v1/generated/gpt-5.6-sol--r2.json",
+    "output_sha256": "bcf94c1073e87b0acb56e1480bcf5b12c70851b45d9d739c9d1e57d5aafd779f",
+    "generation_exit": 0,
+    "events_file": "results/generation/H02-replication-v1/gpt-5.6-sol--r2.jsonl",
+    "events_sha256": "764b7a8d1fccdc70c624433cc6d990ac0d03c749664851547bb640d449cc9d17",
+    "tool_events": 0,
+    "usage": {
+      "input_tokens": 13889,
+      "cached_input_tokens": 11264,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 8874,
+      "reasoning_output_tokens": 6732
+    },
+    "effective_context": "Identical explicit user prompt; CLI/provider instructions and resolved checkpoint not independently controlled"
+  },
+  {
+    "requested_model": "gpt-6-sol",
+    "replicate": 2,
+    "reasoning_effort": "high",
+    "user_prompt_sha256": "d311e0dd3acb26d3ee738adff31b7dc3639a3cc56e816db665bf7b5eac31d1f8",
+    "output_file": "experiments/H02/replication-v1/generated/gpt-6-sol--r2.json",
+    "output_sha256": "d358f088288dfaeb287df0ee91a6497973051b4cc197a8d3ee58840b0c3ce087",
+    "generation_exit": 0,
+    "events_file": "results/generation/H02-replication-v1/gpt-6-sol--r2.jsonl",
+    "events_sha256": "f81e72f1688ee0fc508fdac30cf53751ce96ec47c17e5f6e7f8b5de5878a3b48",
+    "tool_events": 0,
+    "usage": {
+      "input_tokens": 14254,
+      "cached_input_tokens": 11776,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5314,
+      "reasoning_output_tokens": 4106
+    },
+    "effective_context": "Identical explicit user prompt; CLI/provider instructions and resolved checkpoint not independently controlled"
+  },
+  {
+    "requested_model": "gpt-6.1-sol",
+    "replicate": 2,
+    "reasoning_effort": "high",
+    "user_prompt_sha256": "d311e0dd3acb26d3ee738adff31b7dc3639a3cc56e816db665bf7b5eac31d1f8",
+    "output_file": "experiments/H02/replication-v1/generated/gpt-6.1-sol--r2.json",
+    "output_sha256": "d6483c548e2fb114f168020ad00fecc7dfef6a3ff49d7d68fc37a6b26e69df78",
+    "generation_exit": 0,
+    "events_file": "results/generation/H02-replication-v1/gpt-6.1-sol--r2.jsonl",
+    "events_sha256": "9b3a1def9e093dbf71024c4236f4d3d7d68aefd5cd890e4290504230daffa271",
+    "tool_events": 0,
+    "usage": {
+      "input_tokens": 14771,
+      "cached_input_tokens": 14592,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 10897,
+      "reasoning_output_tokens": 8286
+    },
+    "effective_context": "Identical explicit user prompt; CLI/provider instructions and resolved checkpoint not independently controlled"
+  },
+  {
+    "requested_model": "gpt-5.6-sol",
+    "replicate": 3,
+    "reasoning_effort": "high",
+    "user_prompt_sha256": "d311e0dd3acb26d3ee738adff31b7dc3639a3cc56e816db665bf7b5eac31d1f8",
+    "output_file": "experiments/H02/replication-v1/generated/gpt-5.6-sol--r3.json",
+    "output_sha256": "df844741b9465fe95ba6fb6dd72ea9cb44118ac9a709c6269c5b511c87048cd3",
+    "generation_exit": 0,
+    "events_file": "results/generation/H02-replication-v1/gpt-5.6-sol--r3.jsonl",
+    "events_sha256": "76474c492c8f68dc86aa2c9a22bcb8567f51d8118824fff2bd688f48be5a8fc7",
+    "tool_events": 0,
+    "usage": {
+      "input_tokens": 13889,
+      "cached_input_tokens": 11264,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5447,
+      "reasoning_output_tokens": 3860
+    },
+    "effective_context": "Identical explicit user prompt; CLI/provider instructions and resolved checkpoint not independently controlled"
+  },
+  {
+    "requested_model": "gpt-6-sol",
+    "replicate": 3,
+    "reasoning_effort": "high",
+    "user_prompt_sha256": "d311e0dd3acb26d3ee738adff31b7dc3639a3cc56e816db665bf7b5eac31d1f8",
+    "output_file": "experiments/H02/replication-v1/generated/gpt-6-sol--r3.json",
+    "output_sha256": "31de655265e11ea134f3e54bf2763370628a810fdac27417d533e9fadc8085b4",
+    "generation_exit": 0,
+    "events_file": "results/generation/H02-replication-v1/gpt-6-sol--r3.jsonl",
+    "events_sha256": "47513b675fd196fcb4d40451726cbfa27ae28de20bdf8c3b7eabd73b9443249f",
+    "tool_events": 0,
+    "usage": {
+      "input_tokens": 14254,
+      "cached_input_tokens": 11776,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7379,
+      "reasoning_output_tokens": 6333
+    },
+    "effective_context": "Identical explicit user prompt; CLI/provider instructions and resolved checkpoint not independently controlled"
+  },
+  {
+    "requested_model": "gpt-6.1-sol",
+    "replicate": 3,
+    "reasoning_effort": "high",
+    "user_prompt_sha256": "d311e0dd3acb26d3ee738adff31b7dc3639a3cc56e816db665bf7b5eac31d1f8",
+    "output_file": "experiments/H02/replication-v1/generated/gpt-6.1-sol--r3.json",
+    "output_sha256": "b2cd0d88e1bb8a8b7703d2971d983f92e11bfc8e240c0bca1930e63edd27af79",
+    "generation_exit": 0,
+    "events_file": "results/generation/H02-replication-v1/gpt-6.1-sol--r3.jsonl",
+    "events_sha256": "acb19fb0adbb4c65e79705591a8c0c92a68dc44fef75760856dbacc46011734f",
+    "tool_events": 0,
+    "usage": {
+      "input_tokens": 14771,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6654,
+      "reasoning_output_tokens": 4142
+    },
+    "effective_context": "Identical explicit user prompt; CLI/provider instructions and resolved checkpoint not independently controlled"
+  }
+]

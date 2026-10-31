@@ -23,3 +23,7 @@
 - [N05](../experiments/N05): One real legacy Allen NWB file, shared with D02: extract 61 deterministic fields covering six sweeps.
 
 C05 has five preparations; E01 has three official source slices, all reusing original programs. B01 post-hoc event F1 is a separate sensitivity, not another independent task or a changed primary. H02 passes training-person IDs explicitly. Budget/memory/adaptation limits are part of each contract.
+
+## Separate H02 generation follow-up (0.7)
+
+Six new submissions plus one train-only CV-selected specialist are retained in the [separate ledger](../results/replications/H02.json). Original attempt 1 is included for context, giving three attempts per model on the same dataset. These do not increase the 19-task/75-attempt original panel or its macro denominators. [Plan, outcomes and verification](../experiments/H02/replication-v1/results.md).

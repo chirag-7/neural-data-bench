@@ -1,0 +1,24 @@
+{
+  "model": "xdawn-tslr-tuned",
+  "seconds": 56.72144174994901,
+  "prediction_file": "results/predictions/H02/replication-v1--xdawn-tslr-tuned.npz",
+  "prediction_sha256": "58f0fbac32a0e92164376a71221711c5d79281425a7a6591197c064e6050c65a",
+  "selected_configuration": {
+    "nfilter": 4,
+    "classes": [
+      0,
+      1
+    ],
+    "C": 10
+  },
+  "selection_file": "experiments/H02/replication-v1/selection.json",
+  "selection_sha256": "99234c43bcdde45eaf79118a27b11ec3f1a58ae599d88f1a1f31ff29113b21d9",
+  "test_labels_loaded": false,
+  "code_sha256": "cb9a9b71c9e39d6f7c1e945e918abb3bb7e875a2be8f8a34203a5449a10c8f79",
+  "packages": {
+    "pyriemann": "0.12",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1"
+  }
+}
