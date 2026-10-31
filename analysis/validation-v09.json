@@ -24,7 +24,7 @@
     "javascript_syntax": "passed",
     "separate_generation_replication_plots_and_range": "passed"
   },
-  "browser_qa": "Pending publication; recorded separately after actual browser checks",
+  "browser_qa": "passed representative published flows; see analysis/browser-qa-v09.json",
   "model_attempts": 84,
   "model_valid_attempts": 82,
   "model_failed_attempts": 2,

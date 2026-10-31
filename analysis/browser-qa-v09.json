@@ -1,0 +1,21 @@
+{
+  "release": "0.9",
+  "url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site",
+  "status": "passed",
+  "scope": "Representative live-browser flows, not exhaustive visual inspection of311 routes",
+  "checks": [
+    "L06 all-ten primary scores and both named references match saved records",
+    "Both line and bar plots include explicit PG dashed and Laplace dotted labels",
+    "Secondary metric/observation4 updates all five methods; graph/table controls verified",
+    "Default observed-data scope24 slices/18 tasks/12 families; synthetic-inclusive26/20/13",
+    "Local-specialist reference scope changes from3 observed-data tasks to5 including synthetic tasks",
+    "390x844 responsive breakpoint:375px content/scrollwidth,reference cards34..341,controls inside viewport,no document overflow; viewport reset",
+    "Final published table identifies All-ten sampling seconds; no scientific change",
+    "Final footer preview0.9 and categoryL count2 confirmed"
+  ],
+  "console_errors": 0,
+  "screenshot": "docs/assets/posteriors-v09.png",
+  "screenshot_sha256": "d436a0185f14d75d0d258513bbd19b59112b19d3ce220ac25f2f440b79858583",
+  "final_source_commit": "b72e4b25c921dda30ab504a346a2e1ca729c9d8a",
+  "known_tool_issue": "Initial exact-label browser locator did not resolve; DOM-grounded IDs worked. No product blocker."
+}
