@@ -1,0 +1,21 @@
+{
+  "train_shape": [
+    11481,
+    16,
+    128
+  ],
+  "test_shape": [
+    7663,
+    16,
+    128
+  ],
+  "independent_people_train": 15,
+  "independent_people_test": 10,
+  "constant_score_fixture": 0.5,
+  "oracle_ranking_fixture": 1.0,
+  "independent_rank_sum_auc_tie_fixture": "passed",
+  "train_test_subject_isolation": "passed",
+  "finite_arrays": "passed",
+  "test_labels_only_scorer": true,
+  "scope": "Scorer/preparation integrity, no model or baseline performance evaluated"
+}

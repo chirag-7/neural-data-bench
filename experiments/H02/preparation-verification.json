@@ -1,0 +1,262 @@
+{
+  "subjects": [
+    {
+      "subject": 1,
+      "n_source_flash_events": 768,
+      "n_retained": 768,
+      "n_targets": 128,
+      "n_nontargets": 640,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 2,
+      "n_source_flash_events": 764,
+      "n_retained": 764,
+      "n_targets": 128,
+      "n_nontargets": 636,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 3,
+      "n_source_flash_events": 768,
+      "n_retained": 768,
+      "n_targets": 128,
+      "n_nontargets": 640,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 4,
+      "n_source_flash_events": 765,
+      "n_retained": 765,
+      "n_targets": 128,
+      "n_nontargets": 637,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 5,
+      "n_source_flash_events": 764,
+      "n_retained": 764,
+      "n_targets": 128,
+      "n_nontargets": 636,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 6,
+      "n_source_flash_events": 765,
+      "n_retained": 765,
+      "n_targets": 127,
+      "n_nontargets": 638,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 7,
+      "n_source_flash_events": 768,
+      "n_retained": 768,
+      "n_targets": 128,
+      "n_nontargets": 640,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 8,
+      "n_source_flash_events": 765,
+      "n_retained": 765,
+      "n_targets": 127,
+      "n_nontargets": 638,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 9,
+      "n_source_flash_events": 761,
+      "n_retained": 761,
+      "n_targets": 126,
+      "n_nontargets": 635,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 10,
+      "n_source_flash_events": 758,
+      "n_retained": 758,
+      "n_targets": 126,
+      "n_nontargets": 632,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 11,
+      "n_source_flash_events": 766,
+      "n_retained": 766,
+      "n_targets": 127,
+      "n_nontargets": 639,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 12,
+      "n_source_flash_events": 768,
+      "n_retained": 768,
+      "n_targets": 128,
+      "n_nontargets": 640,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 13,
+      "n_source_flash_events": 767,
+      "n_retained": 767,
+      "n_targets": 128,
+      "n_nontargets": 639,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 14,
+      "n_source_flash_events": 768,
+      "n_retained": 768,
+      "n_targets": 128,
+      "n_nontargets": 640,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 15,
+      "n_source_flash_events": 766,
+      "n_retained": 766,
+      "n_targets": 127,
+      "n_nontargets": 639,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 16,
+      "n_source_flash_events": 768,
+      "n_retained": 768,
+      "n_targets": 128,
+      "n_nontargets": 640,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 17,
+      "n_source_flash_events": 765,
+      "n_retained": 765,
+      "n_targets": 128,
+      "n_nontargets": 637,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 18,
+      "n_source_flash_events": 764,
+      "n_retained": 764,
+      "n_targets": 126,
+      "n_nontargets": 638,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 19,
+      "n_source_flash_events": 768,
+      "n_retained": 768,
+      "n_targets": 128,
+      "n_nontargets": 640,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 20,
+      "n_source_flash_events": 766,
+      "n_retained": 766,
+      "n_targets": 128,
+      "n_nontargets": 638,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 21,
+      "n_source_flash_events": 766,
+      "n_retained": 766,
+      "n_targets": 128,
+      "n_nontargets": 638,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 22,
+      "n_source_flash_events": 768,
+      "n_retained": 768,
+      "n_targets": 128,
+      "n_nontargets": 640,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 23,
+      "n_source_flash_events": 766,
+      "n_retained": 766,
+      "n_targets": 128,
+      "n_nontargets": 638,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 24,
+      "n_source_flash_events": 764,
+      "n_retained": 764,
+      "n_targets": 127,
+      "n_nontargets": 637,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    },
+    {
+      "subject": 25,
+      "n_source_flash_events": 768,
+      "n_retained": 768,
+      "n_targets": 128,
+      "n_nontargets": 640,
+      "geometry_skipped": [],
+      "mat_csv_marker_equivalence": true,
+      "mat_csv_max_timestamp_difference": 0.0049999999999954525
+    }
+  ],
+  "channel_order_matches_pinned_author_loader": true,
+  "removed_ground_channel": "Fz",
+  "no_amplitude_or_label_dependent_trial_exclusion": true,
+  "mat_csv_event_and_target_equivalence_all25": true,
+  "train_test_subjects_disjoint": true,
+  "n_train": 11481,
+  "n_test": 7663,
+  "data_sha256": "84c3635f9b32974cb03bb9e340e01fd34512e4483e034b1c000e828c6651376c"
+}

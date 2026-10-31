@@ -1,0 +1,166 @@
+{
+  "record_id": 2649069,
+  "version": "v3 (immutable record ID2649069)",
+  "title": "Building Brain Invaders: EEG data of an experimental validation",
+  "doi": "10.5281/zenodo.2649069",
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "url": "https://zenodo.org/records/2649069",
+  "metadata_url": "https://zenodo.org/api/records/2649069",
+  "author_source_commit": "1f2825d72ae1f5ceb1066aac48c614659db2d535",
+  "author_source_url": "https://raw.githubusercontent.com/plcrodrigues/py.BI.EEG.2012-GIPSA/1f2825d72ae1f5ceb1066aac48c614659db2d535/braininvaders2012/dataset.py",
+  "author_source_sha256": "91b62e3358144220305d15b3e31ea79e1bbb7d80168c62ba718bc43e88a70672",
+  "files": [
+    {
+      "name": "subject_17.zip",
+      "size": 27025815,
+      "checksum": "md5:a2037aa6497edd17609a202c94791945",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_17.zip/content"
+    },
+    {
+      "name": "subject_20.zip",
+      "size": 29446041,
+      "checksum": "md5:39e70709bea5d61f745d4fd0dae423c2",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_20.zip/content"
+    },
+    {
+      "name": "subject_12.zip",
+      "size": 28049552,
+      "checksum": "md5:284adc520dedc494f625659576119023",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_12.zip/content"
+    },
+    {
+      "name": "subject_09.zip",
+      "size": 30384426,
+      "checksum": "md5:4ab5e44fdced1349d04e1fbabf202d66",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_09.zip/content"
+    },
+    {
+      "name": "subject_08.zip",
+      "size": 25784841,
+      "checksum": "md5:9ab080deda7a85bca6cebccf59f43bf4",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_08.zip/content"
+    },
+    {
+      "name": "subject_07.zip",
+      "size": 26801017,
+      "checksum": "md5:bfff009b4bb840245211d53e65875ef4",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_07.zip/content"
+    },
+    {
+      "name": "subject_21.zip",
+      "size": 28693509,
+      "checksum": "md5:39c3dab90a1de2235a3f4d929114d4d9",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_21.zip/content"
+    },
+    {
+      "name": "subject_14.zip",
+      "size": 26440506,
+      "checksum": "md5:42ed9dd9f878b6c08cb3a685aa2b18f7",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_14.zip/content"
+    },
+    {
+      "name": "subject_23.zip",
+      "size": 26535879,
+      "checksum": "md5:cab85371f07e87e762db14279e9a5612",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_23.zip/content"
+    },
+    {
+      "name": "subject_13.zip",
+      "size": 27617090,
+      "checksum": "md5:62458729ad079e2a800db4750713c549",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_13.zip/content"
+    },
+    {
+      "name": "subject_06.zip",
+      "size": 26931447,
+      "checksum": "md5:e9313867f5a4b16e1e0d5d08dddf2b91",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_06.zip/content"
+    },
+    {
+      "name": "subject_05.zip",
+      "size": 27457327,
+      "checksum": "md5:9f633af359ee14e6089a2b9cb2fe3641",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_05.zip/content"
+    },
+    {
+      "name": "subject_04.zip",
+      "size": 20731861,
+      "checksum": "md5:7fb443cba5ab1ed82e3c9aa7542e69a7",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_04.zip/content"
+    },
+    {
+      "name": "subject_15.zip",
+      "size": 26682957,
+      "checksum": "md5:fe4612544a319c1c820a392b8b65f8c8",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_15.zip/content"
+    },
+    {
+      "name": "subject_18.zip",
+      "size": 25782327,
+      "checksum": "md5:24d3d348bc0372c106d9955e9c57668e",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_18.zip/content"
+    },
+    {
+      "name": "subject_19.zip",
+      "size": 27409304,
+      "checksum": "md5:f7c8b7737554ed5ef1692857aa41209d",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_19.zip/content"
+    },
+    {
+      "name": "subject_25.zip",
+      "size": 26242725,
+      "checksum": "md5:3d8b5415ce25797cf143dad5973e754b",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_25.zip/content"
+    },
+    {
+      "name": "subject_10.zip",
+      "size": 28566731,
+      "checksum": "md5:e0a4bf3da423f508c601b7e387b066bf",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_10.zip/content"
+    },
+    {
+      "name": "subject_11.zip",
+      "size": 28676567,
+      "checksum": "md5:625191d18edfac51009c7bf0acab6222",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_11.zip/content"
+    },
+    {
+      "name": "subject_16.zip",
+      "size": 27135922,
+      "checksum": "md5:2e2c5afb664e006b6464bfbe3998d8fe",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_16.zip/content"
+    },
+    {
+      "name": "subject_02.zip",
+      "size": 26346008,
+      "checksum": "md5:5c4a3ddfd4f03a2a9e0d6b122989bb53",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_02.zip/content"
+    },
+    {
+      "name": "subject_01.zip",
+      "size": 28717662,
+      "checksum": "md5:913df60775d29e6ebb62e4e566945aa6",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_01.zip/content"
+    },
+    {
+      "name": "subject_24.zip",
+      "size": 27021523,
+      "checksum": "md5:14ccbc795ea0fd9d24e19d6efa4d104f",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_24.zip/content"
+    },
+    {
+      "name": "subject_22.zip",
+      "size": 26384763,
+      "checksum": "md5:3a646075d7d5dc6216c36388086fd58e",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_22.zip/content"
+    },
+    {
+      "name": "subject_03.zip",
+      "size": 26241476,
+      "checksum": "md5:3ef9c9b1d3c4035ac2bc3abd3108ecc9",
+      "url": "https://zenodo.org/api/records/2649069/files/subject_03.zip/content"
+    }
+  ]
+}
