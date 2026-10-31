@@ -39,6 +39,6 @@ Decision: **candidate_pending_validation** (2026-10-30). MTNeuro released region
 
 ## Current admission and execution
 
-Preview 0.8: candidate_pending_validation. MTNeuro released region/semantic labels and dataCC BY4.0 make it plausible. Need exact volume-block split and image-to-label adapter; no acquisition attempted here. Region and pixel tasks share samples and must not count as independent datasets.
+Preview 0.9: candidate_pending_validation. MTNeuro released region/semantic labels and dataCC BY4.0 make it plausible. Need exact volume-block split and image-to-label adapter; no acquisition attempted here. Region and pixel tasks share samples and must not count as independent datasets.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

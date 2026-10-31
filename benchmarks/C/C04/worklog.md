@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). DeepCAD release offers 
 
 ## Current admission and execution
 
-Preview 0.8: candidate_pending_validation. DeepCAD release offers real movies and trained denoisers, but a paired independent low-noise reference or declared self-supervised scorer is needed. Denoised outputs cannot silently become target truth. Movie/clean reference pair not acquired here.
+Preview 0.9: candidate_pending_validation. DeepCAD release offers real movies and trained denoisers, but a paired independent low-noise reference or declared self-supervised scorer is needed. Denoised outputs cannot silently become target truth. Movie/clean reference pair not acquired here.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

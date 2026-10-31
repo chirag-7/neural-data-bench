@@ -253,20 +253,21 @@
     "decision": "candidate_pending_validation",
     "reason": "Current full atlas tables require authenticated Alyx/private-S3 access; no configured source credentials used. Public software test fixtures were not substituted for a representative benchmark.",
     "date": "2026-10-30",
-    "evidence_file": "literature/admission-v08.json",
+    "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://huggingface.co/int-brain-lab/ea-decoder-channel-xgboost"
     ],
-    "review_depth": "Original source access requirements checked; no scored proxy substituted"
+    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
     "benchmark_id": "B07",
     "decision": "candidate_pending_validation",
-    "reason": "Lossless compression is executable with small frozen raw ephys segments, exactbyte reconstruction and compression/runtime metrics. Need immutable raw-file URI, acquisition terms and canonical codec reference; no raw acquisition attempted here. Avoid different dtype or discarded channels confounding ratio.",
+    "reason": "Original public S3 listing and binary metadata acquired;16 experimental raw sources identified and CC BY4.0 recorded by original AWS registry. Raw chunks, lossless byte-exact codec contract/scorer and specialist execution remain unfrozen; no compression scores claimed.",
     "date": "2026-10-30",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
-      "https://allenneuraldynamics.github.io/data.html"
+      "https://allenneuraldynamics.github.io/data.html",
+      "https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml"
     ],
     "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
@@ -449,7 +450,7 @@
   {
     "benchmark_id": "E03",
     "decision": "candidate_pending_validation",
-    "reason": "BrainWideBench TS1 provides natural crossanimal decoding benchmark aligned with course. Needs exact pinned IBL sessionmanifest, labels and common neuron/input normalization under official split. Public data may require sizeable multises\u00adsion acquisition; not attempted here.",
+    "reason": "BrainWideBench TS1 provides natural crossanimal decoding benchmark aligned with course. Needs exact pinned IBL sessionmanifest, labels and common neuron/input normalization under official split. Public data may require sizeable multises­sion acquisition; not attempted here.",
     "date": "2026-10-30",
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
@@ -749,14 +750,14 @@
     "decision": "deferred",
     "reason": "MODA annotations/code are public, but raw MASS PSG requires a project/ethics access request. Annotation-only inputs cannot evaluate EEG detection; DREAMS remains a separate deferred alternative.",
     "date": "2026-10-30",
-    "evidence_file": "literature/admission-v08.json",
+    "evidence_file": "literature/admission-v04-electrical.json",
     "source_urls": [
       "https://zenodo.org/records/2650142",
       "https://www.nature.com/articles/s41598-026-53891-9",
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/",
       "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
     ],
-    "review_depth": "Original source access requirements checked; no scored proxy substituted"
+    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
   },
   {
     "benchmark_id": "H19",
@@ -1027,13 +1028,13 @@
   {
     "benchmark_id": "L01",
     "decision": "candidate_pending_validation",
-    "reason": "Original challenge data page verified; listed ETH mirror returnedHTTP403. Other mirrors not exhaustively tested; no source admitted.",
+    "reason": "Original challenge page and three author-listed mirrors checked: ETH(previous0.8),Duke andNYU(this0.9) returnedHTTP403. Authorized Kaggle competition access not established; no raw network data admitted. No universal-inaccessibility claim.",
     "date": "2026-10-30",
-    "evidence_file": "literature/admission-v08.json",
+    "evidence_file": "literature/admission-v04-inference-control.json",
     "source_urls": [
       "https://connectomics.chalearn.org/help/data"
     ],
-    "review_depth": "Original source access requirements checked; no scored proxy substituted"
+    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
   },
   {
     "benchmark_id": "L03",
@@ -1074,14 +1075,19 @@
   },
   {
     "benchmark_id": "L06",
-    "decision": "candidate_pending_validation",
-    "reason": "Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.",
-    "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-inference-control.json",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
+    "date": "2026-10-31",
+    "evidence_file": "experiments/L06/protocol.md",
     "source_urls": [
-      "https://github.com/sbi-benchmark/sbibm"
+      "https://github.com/sbi-benchmark/sbibm",
+      "https://proceedings.mlr.press/v130/lueckmann21a.html",
+      "https://github.com/sbi-benchmark/sbibm/tree/f0bc44039e6b7e095c18d4e9e64819d75be76587",
+      "https://github.com/sbi-benchmark/sbibm/blob/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/metrics/c2st.py",
+      "https://github.com/zoj613/polyagamma",
+      "https://arxiv.org/abs/1205.0310"
     ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    "review_depth": "All42 original files hashed; design reconstructed byte-for-value; all observations/sufficient statistics joined; frozen references/scorer/interface before generation; accuracy decisions and secondary distances independently auditable"
   },
   {
     "benchmark_id": "M01",

@@ -1842,5 +1842,59 @@
     ],
     "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
     "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S6ac625fa7d",
+    "url": "https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml",
+    "benchmark_ids": [
+      "B07"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S3e7d0fd35c",
+    "url": "https://proceedings.mlr.press/v130/lueckmann21a.html",
+    "benchmark_ids": [
+      "L06"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S1f0f4fe201",
+    "url": "https://github.com/sbi-benchmark/sbibm/tree/f0bc44039e6b7e095c18d4e9e64819d75be76587",
+    "benchmark_ids": [
+      "L06"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Scb46583c71",
+    "url": "https://github.com/sbi-benchmark/sbibm/blob/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/metrics/c2st.py",
+    "benchmark_ids": [
+      "L06"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S482b556c0d",
+    "url": "https://github.com/zoj613/polyagamma",
+    "benchmark_ids": [
+      "L06"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S3ca383170d",
+    "url": "https://arxiv.org/abs/1205.0310",
+    "benchmark_ids": [
+      "L06"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
   }
 ]

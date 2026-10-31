@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.8: One Allen cell: four training and two test negative-current sweeps; 500 Hz passive voltage interpolation.
+Preview 0.9: One Allen cell: four training and two test negative-current sweeps; 500 Hz passive voltage interpolation.
 
 [Actual frozen contract and implementation](../../../experiments/D02). [Measured method/reference records](../../../results/D02.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

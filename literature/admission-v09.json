@@ -1,0 +1,36 @@
+{
+  "reviewed_on": "2026-10-31",
+  "scope": "Bounded execution-focused screen of three candidates; not a systematic or exhaustive literature review",
+  "entries": [
+    {
+      "benchmark_id": "L06",
+      "decision": "admit_frozen_posterior_track",
+      "sources": [
+        "https://github.com/sbi-benchmark/sbibm/tree/f0bc44039e6b7e095c18d4e9e64819d75be76587",
+        "https://proceedings.mlr.press/v130/lueckmann21a.html"
+      ],
+      "reason": "All42 original source files acquired and hashed; all ten observations/reference posteriors, original design and sufficient statistics verified; frozen likelihood-informed sampling interface and local PG/Laplace references. Custom2000draw C2ST, not original simulator-only SBI leaderboard.",
+      "protocol": "experiments/L06/protocol.md"
+    },
+    {
+      "benchmark_id": "L01",
+      "decision": "pending_source_acquisition",
+      "sources": [
+        "https://connectomics.chalearn.org/help/data",
+        "https://openconnecto.me/data/public/chalearn/",
+        "https://www.nyuinformatics.org/downloads/connectomics/"
+      ],
+      "reason": "Revisited original challenge page and tried its author-listed Duke and NYU HTTPS mirrors; both returnedHTTP403. ETH returned403 in prior0.8 review. Kaggle authorized competition access has not been established; no third-party copies substituted. This does not establish universal inaccessibility or poor data."
+    },
+    {
+      "benchmark_id": "B07",
+      "decision": "public_source_verified_adapter_pending",
+      "sources": [
+        "https://allenneuraldynamics.github.io/data.html",
+        "https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml",
+        "https://aind-benchmark-data.s3.us-west-2.amazonaws.com/?list-type=2&prefix=ephys-compression/&max-keys=1000"
+      ],
+      "reason": "Original public S3 list acquired:190objects,16 experimental raw binaries plus metadata. One original binary.json acquired and inspected; AWS open-data registry states CC BY4.0. No raw chunk, codec interface, exact byte reconstruction scorer or specialist execution frozen in this batch; no compression performance claimed."
+    }
+  ]
+}

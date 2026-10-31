@@ -12,10 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Official challenge page
 
 ## Current admission and execution
 
-Preview 0.8: candidate_pending_validation. Official challenge page identifies simulated fluorescence and synaptic truth and mirror links. No mirror acquired/hashed; download terms, held-out network split and directed graph scorer remain unvalidated. Not rejected as bad data.
+Preview 0.9: candidate_pending_validation. Original challenge page and three author-listed mirrors checked: ETH(previous0.8),Duke andNYU(this0.9) returnedHTTP403. Authorized Kaggle competition access not established; no raw network data admitted. No universal-inaccessibility claim.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json).
-
-## Focused0.8 screening
-
-Original challenge data page verified; listed ETH mirror returnedHTTP403. Other mirrors not exhaustively tested; no source admitted. [Source-specific evidence](../../../literature/admission-v08.json). This is a bounded access outcome, not proof of universal infeasibility or bad scientific data.

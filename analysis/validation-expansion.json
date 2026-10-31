@@ -84,6 +84,11 @@
     "frozen_hashes": "passed",
     "generation_provenance": "3 submissions,zero observed tool events"
   },
+  "L06": {
+    "predictions_rescored": 5,
+    "frozen_hashes": "passed",
+    "source_and_posterior_audit": "All primary accuracies from heldout decisions and all secondary slicedW2 independently reproduced; no classifier refit"
+  },
   "M01": {
     "predictions_rescored": 5,
     "frozen_hashes": "passed",
@@ -95,6 +100,6 @@
     "generation_provenance": "3 submissions,zero observed tool events"
   },
   "scope": "Exact prediction rescoring/hash/provenance checks, not independent expert validation or proof of uncontaminated pretraining",
-  "expanded_tasks": 19,
-  "expanded_prediction_records_rescored": 109
+  "expanded_tasks": 20,
+  "expanded_prediction_records_rescored": 114
 }

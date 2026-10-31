@@ -1,28 +1,31 @@
 # Neural Data Bench
 
-**Traceable evidence and exploratory experiments on general coding models for neuroscience lab tasks.** Preview **0.8**, 30 October 2026. Course context: [Liam Paninski's Statistical Analysis of Neural Data](https://sites.stat.columbia.edu/liam/teaching/neurostat-fall26/).
+**Traceable evidence and exploratory experiments on general coding models for neuroscience lab tasks.** Preview **0.9**, 31 October 2026 (UTC). Course context: [Liam Paninski's Statistical Analysis of Neural Data](https://sites.stat.columbia.edu/liam/teaching/neurostat-fall26/).
 
-[Results explorer](https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site) · [Current release and review](docs/release-v08.md) · [Results and limits](analysis/findings.md) · [Reproduce](docs/reproduce.md)
+[Results explorer](https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site) · [Current release and review](docs/release-v09.md) · [Results and limits](analysis/findings.md) · [Reproduce](docs/reproduce.md)
 
 ## Completed evidence
 
 | Artifact | Current state |
 |---|---|
 | Active research map | 96 task–resource entries across 14 families; 18 further candidates archived with reasons; 114 historical entries preserved |
-| First-submission panel | **21 task IDs**, 27 evaluation slices per model; 63 single-shot generated programs |
-| First-submission executions | **81 attempts: 79 valid, 2 failures**; exact GPT-5.6 Sol, GPT-6 Sol, GPT-6.1 Sol |
-| Audit artifacts | 162 model/reference records; 156 stored prediction records rescored; source/manifests, hashes, unchanged programs and generation provenance |
+| First-submission panel | **22 task IDs**, 28 evaluation slices per model; 66 single-shot generated programs |
+| First-submission executions | **84 attempts: 82 valid, 2 failures**; exact GPT-5.6 Sol, GPT-6 Sol, GPT-6.1 Sol |
+| Audit artifacts | 167 model/reference records; 161 saved prediction/posterior outputs audited; source/manifests, hashes, unchanged programs and generation provenance |
 | H02 generation follow-up | Six fresh submissions, all strict-valid; three per model including the original, plus one train-only CV-selected specialist; kept outside original macro totals |
-| Specialist evidence | MountainSort5, pyRiemann motor-imagery/xDAWN pipelines, YASA, SingleR and a source-inspired behavioral GLM; aligned archived StarDist, VASSI, Spikefinder and MRIQC predictions |
+| Specialist evidence | MountainSort5, pyRiemann motor-imagery/xDAWN pipelines, YASA, SingleR, Polya–Gamma Gibbs and a source-inspired behavioral GLM; aligned archived StarDist, VASSI, Spikefinder and MRIQC predictions |
 | Interface | Measured-first directory, category navigation, searchable tasks, graph/table controls; specialist names and values directly label horizontal lines |
 
-Models **generate analysis code**, then saved programs train/predict locally. This is the T3 procedure, not native raw-signal comprehension or a full autonomous scientist. No Luna, open-weight, native image/video/world-model track or current-global-SOTA certification is included. **75 active entries remain unrun** (47 pending validation, 28 deferred). Representing 14 categories does not complete all their subfields. The source registry contains 201 associated URLs; this is a source inventory, not a count of fully reviewed papers.
+Models **generate analysis code**, then saved programs execute numerical procedures locally. This is the T3 procedure, not native raw-signal comprehension or a full autonomous scientist. No Luna, open-weight, native image/video/world-model track or current-global-SOTA certification is included. **74 active entries remain unrun** (46 pending validation, 28 deferred). Representing 14 categories does not complete all their subfields. The source registry contains 207 associated URLs; this is a source inventory, not a count of fully reviewed papers.
 
 [Candid progress assessment](docs/progress-assessment.md) · [H02 three-generation follow-up](experiments/H02/replication-v1/results.md)
 
 ## Why the latest review matters
 
-- **Two new real-data endpoints:** SingleR leads all three Sol versions on donor-held-out cortical-layer transfer; all three beat a source-inspired GLM on mouse-held-out conditional choice prediction. [Exact scores, source checks and limits](docs/release-v08.md). Neither result establishes current global best.
+- **New posterior-sampling endpoint:** all three generated samplers complete ten original synthetic spiking-neuron GLM posteriors; compare the frozen primary classifier diagnostic and secondary distribution distance against local Polya–Gamma/Laplace references. [Exact procedure and limits](docs/release-v09.md).
+- **Explicit analysis scopes:** observed-data sources are the default; include fully synthetic tasks with one selector. Both views retain task/family denominators.
+
+- **Earlier real-data additions:** SingleR leads all three Sol versions on donor-held-out cortical-layer transfer; all three beat a source-inspired GLM on mouse-held-out conditional choice prediction. [Exact scores, source checks and limits](docs/release-v08.md). Neither result establishes current global best.
 
 - **Metric sensitivity:** GPT-6 nearly matches MountainSort5 on frozen per-GT-unit spike-sorting accuracy (0.940011 vs 0.940896). Counting all emitted spikes yields post-hoc event F1 **0.599751 vs 0.962060**, exposing excess spikes. Both views remain available; the original primary and macro scores are unchanged.
 - **P300 replication:** three-attempt means are **0.752374 / 0.744027 / 0.784685**, versus train-only CV-selected xDAWN **0.778541**. All three GPT-6.1 attempts exceed this reference; minimum advantage is only 0.000754. Same dataset, retrospective follow-up, no global-superiority claim. Original endpoint below is preserved.

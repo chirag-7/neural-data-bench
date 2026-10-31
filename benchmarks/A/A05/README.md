@@ -38,6 +38,6 @@ Decision: **deferred** (2026-10-30). Calibrated multi-camera social-pose recordi
 
 ## Current admission and execution
 
-Preview 0.8: deferred. Calibrated multi-camera social-pose recordings require substantial video acquisition and geometry/GPU pipeline. No exact slice/calibration/scorer prepared. This is a resource deferral, not poor-data judgment.
+Preview 0.9: deferred. Calibrated multi-camera social-pose recordings require substantial video acquisition and geometry/GPU pipeline. No exact slice/calibration/scorer prepared. This is a resource deferral, not poor-data judgment.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

@@ -36,5 +36,26 @@
     "recommended_split": "Hash-split whole mice, latest complete session, first\u22641000 trials, disjoint six-trial target/history blocks; nine labs overlap",
     "limitations": "Conditional one-step forecast with observed history and known block prior; no autonomous rollout or held-out-lab claim. One historical beta-quality archive; prior target choices never reappear in another scored input. Paper-inspired pooled GLM is not original peranimal fits or established global best.",
     "review_depth": "Original CC BY4 archive publisher MD5+localSHA verified; all100 mice and9,538 examples independently matched to source; target/history overlap excluded before scores"
+  },
+  "L06": {
+    "task": "Spiking-neuron posterior inference",
+    "executed_slice": "All ten original sbibm Bernoulli GLM observations; ten parameters,100 bins,10000 posterior draws per observation; custom likelihood-informed track.",
+    "resource": "sbibm Bernoulli GLM; likelihood-informed posterior-sampling code generation",
+    "dataset_group": "sbibm Bernoulli GLM fixed stimulus",
+    "data": "Known100x10 causal design,ten100-bin observed synthetic spike trains,zero-mean Gaussian prior precision; hidden reference draws scorer-only",
+    "ground_truth": "Finite author Polya-Gamma MCMC posterior samples for ten simulated observations, not biological truth or analytic exact distributions",
+    "source_urls": [
+      "https://proceedings.mlr.press/v130/lueckmann21a.html",
+      "https://github.com/sbi-benchmark/sbibm/tree/f0bc44039e6b7e095c18d4e9e64819d75be76587",
+      "https://github.com/sbi-benchmark/sbibm/blob/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/metrics/c2st.py",
+      "https://github.com/zoj613/polyagamma",
+      "https://arxiv.org/abs/1205.0310"
+    ],
+    "admission_evidence_file": "experiments/L06/protocol.md",
+    "recommended_metrics": "Mean five-fold C2ST accuracy on2000 posterior draws; target0.5/lower better; prior-whitened slicedW2 secondary",
+    "recommended_split": "All ten original synthetic observations; each separate posterior; no supervised split, true parameters hidden",
+    "limitations": "Synthetic shared-design GLM; known likelihood changes original SBI information access. Custom2000draw C2ST and near-chance variation are not original leaderboard scores or superiority evidence. PG comparator is related to archived reference, shorter local chains have unproven convergence, one code generation/model.",
+    "review_depth": "All42 original files hashed; design reconstructed byte-for-value; all observations/sufficient statistics joined; frozen references/scorer/interface before generation; accuracy decisions and secondary distances independently auditable",
+    "execution_date": "2026-10-31"
   }
 }

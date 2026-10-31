@@ -1,6 +1,6 @@
-# Findings — exploratory preview 0.8
+# Findings — exploratory preview 0.9
 
-The first-submission panel has 21 measured tasks across 14 mapped families and 81 model–slice attempts: 79 valid predictions and two unrepaired failures. Its 63 generated programs are reused across source slices. All 162 model/reference records include 156 stored predictions. The separate H02 follow-up adds six programs and seven prediction files without increasing these macro totals.
+The first-submission panel has 22 measured tasks across 14 mapped families and 84 model–slice attempts: 82 valid predictions and two unrepaired failures. Its 66 generated programs are reused across source slices. All 167 model/reference records include 161 stored predictions/posteriors. The separate H02 follow-up adds six programs and seven prediction files without increasing these macro totals.
 
 The estimand is performance of generated analysis code fitted locally under an exact T3 contract, not native neural representations or universal neuroscience understanding. Current selection, public labels, one generation and unequal reference histories make the results exploratory.
 
@@ -24,6 +24,7 @@ The estimand is performance of generated analysis code fitted locally under an e
 | [K01](../experiments/K01) | Electrophysiological cell-type classification | macro_f1 ↑ | 0.940915 | 0.940915 | 0.943074 | 0.929975 | conventional_baseline |
 | [K04](../experiments/K04) | Cortical-layer label transfer | section_equal_macro_f1_7 classes ↑ | 0.505071 | 0.531942 | 0.550550 | 0.554585 | local_specialist |
 | [L04](../experiments/L04) | Point-process estimation and goodness of fit | bits_per_spike_train_mean ↑ | 3.194743 | 3.279951 | 3.263821 | 3.273676 | conventional_baseline |
+| [L06](../experiments/L06) | Likelihood-informed synthetic GLM posterior sampling | c2st_accuracy_2000 ↓ (chance 0.5) | 0.512500 | 0.497375 | 0.505600 | 0.494100 | local_specialist |
 | [M01](../experiments/M01) | Conditional mouse-choice prediction | mouse_equal_binary_log_loss ↓ | 0.436515 | 0.437584 | 0.436634 | 0.463877 | conventional_domain_reference |
 | [M04](../experiments/M04) | Cognitive model and parameter recovery | range_normalized_mae ↓ | 0.058223 | 0.058219 | 0.058221 | 0.070696 | synthetic_objective_mismatched |
 | [N05](../experiments/N05) | NWB data loading, units and reproducibility | field_accuracy ↑ | **Failed** | 1.000000 | 1.000000 | 1.000000 | deterministic_correctness |
@@ -31,7 +32,19 @@ The estimand is performance of generated analysis code fitted locally under an e
 
 C05 shows equal means of five preparation medians and historical per-preparation envelopes. E01 shows equal means across three source-specific bits/spike scores. These within-task means are not pooled-neuron scores; no values across different rows are averaged together. Failed attempts receive no invented numeric score. Exact data, scores, units, predictions and errors: [JSONL](../results/measurements.jsonl), [CSV](../results/measurements.csv), [summary](summary.json).
 
-## Two additional real-data candidates
+## New posterior-sampling task
+
+| Method | Primary C2ST accuracy ↓ | Secondary sliced W2 ↓ | Sampling seconds |
+|---|---:|---:|---:|
+| gpt-5.6-sol | 0.512500 | 0.014975 | 4.638 |
+| gpt-6-sol | 0.497375 | 0.015708 | 0.867 |
+| gpt-6.1-sol | 0.505600 | 0.016329 | 2.470 |
+| Local Polya–Gamma Gibbs | 0.494100 | 0.016785 | 5.305 |
+| Laplace approximation | 0.546250 | 0.078966 | 0.024 |
+
+The mean primary is a classifier distribution diagnostic with chance target0.5, not prediction accuracy where higher is better. All three generated samplers finish within budget. Near-chance point differences are not evidence of stable superiority; the secondary distribution metric can tell a different story. [Exact task, verification and interpretation](../docs/release-v09.md).
+
+## Two earlier real-data candidates
 
 K04: SingleR 0.5.0 scores 0.554585 seven-class macro-F1, versus 0.505071 / 0.531942 / 0.550550 for Sol 5.6 / 6 / 6.1. The specialist leads all three on this custom donor-held-out split; only one held-out donor underlies four sections. Prepared expression lacks spatial coordinates, and curated layer labels use expression assistance. This is not an unsupervised spatial-clustering benchmark.
 
@@ -64,9 +77,21 @@ The fixed specialist uses the same train/test signals and train-only fitting. Ge
 
 Two further no-feedback submissions per model give three-attempt means **0.752374 / 0.744027 / 0.784685**. All nine H02 programs are numerically and strict-format valid. The additional xDAWN configuration selected by training-person-only five-fold CV scores **0.778541**, compared with fixed **0.761230**. All three GPT-6.1 attempts exceed the tuned reference, but the smallest margin is 0.000754. GPT-6's range is 0.730548–0.761932, illustrating why a single point was insufficient. Means/ranges over three generations do not establish stable rankings or significance.
 
-This is a retrospective follow-up on the same 25-person source, not another dataset/task. Original attempt 1 predates follow-up design. All six new programs, all 12 specialist validation configurations, predictions, provenance and independent rank-AUC checks are retained. The original 75-attempt macro records and comparator policy below are unchanged. [Follow-up results and every attempt](../experiments/H02/replication-v1/results.md), [separate combined ledger](../results/replications/H02.json).
+This is a retrospective follow-up on the same 25-person source, not another dataset/task. Original attempt 1 predates follow-up design. All six new programs, all 12 specialist validation configurations, predictions, provenance and independent rank-AUC checks are retained. The original 75-attempt records remain unchanged; current summaries below add subsequent tasks and explicit data scopes. [Follow-up results and every attempt](../experiments/H02/replication-v1/results.md), [separate combined ledger](../results/replications/H02.json).
 
 ## Reference comparisons remain stratified
+
+### Observed-data sources (website default)
+
+| Reference class | Tasks / families / slices | GPT-5.6 win / loss / tie / failure | GPT-6 | GPT-6.1 |
+|---|---|---|---|---|
+| conventional_baseline | 9 / 9 / 11 | 9 / 2 / 0 / 0 | 10 / 1 / 0 / 0 | 9 / 2 / 0 / 0 |
+| conventional_domain_reference | 1 / 1 / 1 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 |
+| historical_specialist | 4 / 4 / 8 | 2 / 6 / 0 / 0 | 1 / 7 / 0 / 0 | 5 / 2 / 0 / 1 |
+| local_specialist | 3 / 2 / 3 | 1 / 2 / 0 / 0 | 1 / 2 / 0 / 0 | 2 / 1 / 0 / 0 |
+| pretrained_specialist | 1 / 1 / 1 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 |
+
+### Including fully synthetic tasks
 
 | Reference class | Tasks / families / slices | GPT-5.6 win / loss / tie / failure | GPT-6 | GPT-6.1 |
 |---|---|---|---|---|
@@ -74,23 +99,31 @@ This is a retrospective follow-up on the same 25-person source, not another data
 | conventional_domain_reference | 1 / 1 / 1 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 |
 | deterministic_correctness | 1 / 1 / 1 | 0 / 0 / 0 / 1 | 0 / 0 / 1 / 0 | 0 / 0 / 1 / 0 |
 | historical_specialist | 4 / 4 / 8 | 2 / 6 / 0 / 0 | 1 / 7 / 0 / 0 | 5 / 2 / 0 / 1 |
-| local_specialist | 4 / 3 / 4 | 1 / 3 / 0 / 0 | 1 / 3 / 0 / 0 | 2 / 2 / 0 / 0 |
+| local_specialist | 5 / 4 / 5 | 1 / 4 / 0 / 0 | 1 / 4 / 0 / 0 | 2 / 3 / 0 / 0 |
 | pretrained_specialist | 1 / 1 / 1 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 |
 | synthetic_objective_mismatched | 1 / 1 / 1 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 | 1 / 0 / 0 / 0 |
 
-
-These are slice-level point counts. Exact task/family-balanced fractions and strict-format denominators are in [summary](summary.json). Historical C05 envelopes are test-selected; A09 run 00 was preselected, with the highest-inspected alternative separately marked. YASApretraining, VASSIfull-frame inputs, MRIQClabels/features and specialist optimization histories differ. Local conventional baselines are not the strongest domain method. Current global SOTA and matched-total-effort superiority remain unestablished.
+These are descriptive point counts, not significance or equivalence. Default scope excludes B01/L06/M04/N05; artificial corruptions of observed data remain included. The synthetic-inclusive table retains the frozen primary-reference policy. In particular, near-chance L06 C2ST point counts should not be interpreted as meaningful posterior-quality ordering. Exact task/family fractions and strict-format denominators are in [summary](summary.json). Historical envelopes, unequal inputs/pretraining and reference selection histories remain explicit per task. Current global SOTA and matched-total-effort superiority remain unestablished.
 
 ## Model-version progress remains mixed
 
+### Observed-data sources (website default)
+
 | Model pair | Improved | Declined | Numerical ties | Failed/missing | Slices / tasks / families | Family-equal improvement fraction |
 |---|---:|---:|---:|---:|---|---:|
-| gpt-5.6-sol → gpt-6-sol | 10 | 14 | 1 | 0 | 25 / 19 / 13 | 0.434615 |
-| gpt-6-sol → gpt-6.1-sol | 18 | 6 | 0 | 1 | 25 / 19 / 13 | 0.615385 |
-| gpt-5.6-sol → gpt-6.1-sol | 17 | 7 | 0 | 1 | 25 / 19 / 13 | 0.593590 |
+| gpt-5.6-sol → gpt-6-sol | 9 | 14 | 1 | 0 | 24 / 18 / 12 | 0.387500 |
+| gpt-6-sol → gpt-6.1-sol | 18 | 5 | 0 | 1 | 24 / 18 / 12 | 0.666667 |
+| gpt-5.6-sol → gpt-6.1-sol | 17 | 6 | 0 | 1 | 24 / 18 / 12 | 0.643056 |
 
+### Including eligible fully synthetic tasks
 
-Progress aggregates exclude M04 numerical quadrature ordering and N05 deterministic correctness. They retain selected synthetic B01 and semisynthetic repair tasks. Failures remain in the denominator. Directional fractions are not effect sizes, statistical significance or causal scaling laws; version order is not training compute/time. B01'spost-hoc metric sensitivity does not silently change this table.
+| Model pair | Improved | Declined | Numerical ties | Failed/missing | Slices / tasks / families | Family-equal improvement fraction |
+|---|---:|---:|---:|---:|---|---:|
+| gpt-5.6-sol → gpt-6-sol | 11 | 14 | 1 | 0 | 26 / 20 / 13 | 0.434615 |
+| gpt-6-sol → gpt-6.1-sol | 18 | 7 | 0 | 1 | 26 / 20 / 13 | 0.615385 |
+| gpt-5.6-sol → gpt-6.1-sol | 18 | 7 | 0 | 1 | 26 / 20 / 13 | 0.593590 |
+
+Both version-change views exclude M04 quadrature ordering and N05 deterministic correctness. The synthetic-inclusive view retains B01 and L06. Observed-data scope includes artificial corruption in A14/H16; it does not imply every target is wholly natural. Failures remain in the denominator. Directional fractions are not effect sizes, significance, practical-equivalence statements or causal scaling laws. Near-chance posterior C2ST values and B01 metric sensitivity limit interpretation.
 
 ## Other material task limits
 
@@ -115,3 +148,7 @@ Progress aggregates exclude M04 numerical quadrature ordering and N05 determinis
 | N05 | One legacy NWBfile shared with D02, 61 fields; GPT-5.6 fails, 6/6.1 match all fields.61 fields are not 61 independent files. |
 
 No frame/neuron/epoch pseudo-replication intervals are claimed. Open-weight/native image/video/world models, raw drifting voltage, clinical/general causal/control perspectives and much of molecular/anatomical neuroscience remain unexecuted. The[coverage map](../docs/coverage-matrix.md) is explicit about those gaps. Useful outputs are reproducible algorithm baselines, concrete failure modes and traceable data/scorers, not a universal model ranking or completed paper.
+
+## Observed-data versus synthetic-inclusive summaries
+
+The default website analysis now excludes fully synthetic B01/L06/M04 and deterministic N05; artificial corruption of observed inputs remains explicit. The synthetic-inclusive view is still available. This retrospective display change does not alter prior scores. All native deltas and task/family denominators are exported; no universal mixed-metric score or significance claim is made. [Policy](../docs/macro-analysis-plan.md).

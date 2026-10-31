@@ -39,6 +39,6 @@ Decision: **candidate_pending_validation** (2026-10-30). AP-10K offers official 
 
 ## Current admission and execution
 
-Preview 0.8: candidate_pending_validation. AP-10K offers official image/keypoint splits, but raw-image inference needs vision/multimodal submissions and matched OKS scorer. Numeric pose-to-label A09 does not cover this operation. Dataset not downloaded in this expansion.
+Preview 0.9: candidate_pending_validation. AP-10K offers official image/keypoint splits, but raw-image inference needs vision/multimodal submissions and matched OKS scorer. Numeric pose-to-label A09 does not cover this operation. Dataset not downloaded in this expansion.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

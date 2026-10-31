@@ -1,6 +1,6 @@
 # Coverage and maturity
 
-21measured IDs represent 14 families through narrow selected slices, not complete coverage. Counts describe task–resource associations, not independent datasets.
+22 measured IDs represent 14 families through narrow selected slices, not complete coverage. Counts describe task–resource associations, not independent datasets.
 
 | Family | Active entries | Measured IDs | Pending validation | Deferred |
 |---|---:|---|---:|---:|
@@ -15,7 +15,7 @@
 | [I](../benchmarks/I/README.md) Human and mesoscopic neuroimaging | 6 | I07, I10 | 0 | 4 |
 | [J](../benchmarks/J/README.md) Anatomy, histology and connectomics | 9 | J08 | 4 | 4 |
 | [K](../benchmarks/K/README.md) Cell types and molecular neuroscience | 5 | K01, K04 | 3 | 0 |
-| [L](../benchmarks/L/README.md) Mechanistic and statistical inference | 5 | L04 | 3 | 1 |
+| [L](../benchmarks/L/README.md) Mechanistic and statistical inference | 5 | L04, L06 | 2 | 1 |
 | [M](../benchmarks/M/README.md) Experimental design and control | 4 | M01, M04 | 1 | 1 |
 | [N](../benchmarks/N/README.md) Scientific analysis workflows | 3 | N05 | 2 | 0 |
 
@@ -40,3 +40,7 @@ The [taxonomy](taxonomy.md) and [review protocol](review-protocol.md) provide sy
 ## ERP addition in preview 0.6
 
 H02 adds one 25-person P300 source with 15/10 subject split; it does not complete other ERPparadigms, online BCI or clinical generalization. Earlier BNCI 2014_008 assessment remains historical; its data were not substituted into the new endpoint.
+
+## Posterior-inference addition in preview 0.9
+
+L06 covers likelihood-informed posterior sampling for a ten-parameter spiking-neuron GLM. All ten simulated observations share a design. This adds an uncertainty/distribution endpoint but not broad mechanistic simulator fitting, likelihood-free SBI, causal recovery or biological validation. [Protocol](../experiments/L06/protocol.md). Original/public data access for B07 is now verified, but no compression contract or performance is admitted.

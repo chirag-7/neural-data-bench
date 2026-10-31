@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.8: Goldin 2022 retina: 3,160 training images and 30 test images repeated 30 times; 41 neurons, one preparation.
+Preview 0.9: Goldin 2022 retina: 3,160 training images and 30 test images repeated 30 times; 41 neurons, one preparation.
 
 [Actual frozen contract and implementation](../../../experiments/F04). [Measured method/reference records](../../../results/F04.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

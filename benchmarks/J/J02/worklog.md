@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). CREMI synapse detection
 
 ## Current admission and execution
 
-Preview 0.8: candidate_pending_validation. CREMI synapse detection requires actual pre/post partner instance annotations, separate from image segmentation labels. No synapse manifest or partner matching scorer acquired. Do not substitute arbitrary voxel classification.
+Preview 0.9: candidate_pending_validation. CREMI synapse detection requires actual pre/post partner instance annotations, separate from image segmentation labels. No synapse manifest or partner matching scorer acquired. Do not substitute arbitrary voxel classification.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

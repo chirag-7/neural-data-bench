@@ -45,6 +45,6 @@ Decision: **measured** (2026-10-30). Prepared custom real retinal static-image e
 
 ## Current admission and execution
 
-Preview 0.8: measured. Prepared custom real retinal static-image encoding slice from Goldin2022 mouse session via OpenRetina:3160 training images,30 unique held-out images with30 measured repeats and all41 neurons; exact image hashes disjoint, targets verified nonnegative integer counts. This is not an official CRCNS/full-image CNN/temporal-flicker benchmark.
+Preview 0.9: measured. Prepared custom real retinal static-image encoding slice from Goldin2022 mouse session via OpenRetina:3160 training images,30 unique held-out images with30 measured repeats and all41 neurons; exact image hashes disjoint, targets verified nonnegative integer counts. This is not an official CRCNS/full-image CNN/temporal-flicker benchmark.
 
 [Admission/source evidence](../../../literature/admission-v04-cell-workflow.json). [Actual protocol/worklog](../../../experiments/F04). [Task measurements](../../../results/F04.json).

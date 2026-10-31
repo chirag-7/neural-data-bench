@@ -27,6 +27,8 @@ const NAMES = {
   "yasa-eeg": "YASA · pretrained EEG",
   "pyriemann-ts-svm": "pyRiemann · TS-SVM",
   "pyriemann-aligned": "pyRiemann · aligned TS-SVM",
+  "polya-gamma": "Polya–Gamma Gibbs · local",
+  laplace: "Laplace approximation",
   singler: "SingleR · donor-layer profiles",
   "behavioral-glm": "Behavioral GLM · paper-inspired",
   "xdawn-tslr": "xDAWN · fixed",
@@ -75,6 +77,7 @@ const TITLES = {
   I10: "MRI scan-quality classification",
   J08: "Microscopy puncta segmentation",
   K01: "Cell morphology classification",
+  L06: "Spiking-neuron posterior inference",
   K04: "Cortical-layer label transfer",
   M01: "Conditional mouse-choice prediction",
   L04: "Place-cell count encoding",
@@ -98,6 +101,7 @@ const DATASETS = {
   I10: "MRIQC · ABIDE → DS030",
   J08: "SynAPSeg · two held-out 2D fields",
   K01: "Allen Cell Types · ephys features",
+  L06: "sbibm · ten synthetic GLM observations",
   K04: "HumanPilot DLPFC · held-out donor",
   M01: "IBL behavior · 17 held-out mice",
   L04: "Kramer · one rat place cell",
@@ -112,6 +116,8 @@ let catalog,
   excluded = [],
   selectedTask = "A09",
   selectedSlice = "",
+  l06Metric = "c2st",
+  l06Observation = "mean",
   plotView = "graph",
   showAllRefs = false,
   showReferences = true,
@@ -119,7 +125,8 @@ let catalog,
   query = "",
   listMode = "measured",
   hiddenModels = new Set(),
-  analysisClass = "historical_specialist";
+  analysisClass = "historical_specialist",
+  analysisScope = "observed_data";
 const label = (x) =>
     NAMES[x] ||
     (x.startsWith("vassi-run-") ? "VASSI · archived " + x.slice(-2) : x),
@@ -165,6 +172,7 @@ function isSpecialist(r) {
       "pyriemann-ts-svm",
       "pyriemann-aligned",
       "xdawn-tslr",
+      "polya-gamma",
       "singler",
       "behavioral-glm",
       "xdawn-tslr-tuned",
@@ -294,7 +302,7 @@ function explorer(fam = "") {
   if (scored.length && !scored.some((e) => e.id === selectedTask))
     selectedTask = scored[0].id;
   $("#app").innerHTML =
-    `<p class="eyebrow">General models × specialist methods</p><h1>${f ? esc(CATEGORIES[fam] || f.name) : "Neuroscience benchmark results"}</h1><p class="lede">${f ? esc(f.tasks) : "Explore measured performance by task, compare general models with verified specialist references, and follow each result to its data and evaluation protocol. Models generate analysis code, which is then fitted locally."}</p>${mobileFilter(fam)}${!fam ? `<p class="note">Newly evaluated: ${route("benchmark/K04", "Cortical-layer label transfer")} · ${route("benchmark/M01", "Conditional mouse-choice prediction")}. Inspect exact data, named references and both plots.</p>` : ""}${!fam ? `<div class="stats"><div class="stat"><strong>${summary.measured_tasks}</strong><span>tasks with model attempts</span></div><div class="stat"><strong>${summary.measured_families} / ${catalog.families.length}</strong><span>categories represented</span></div><div class="stat"><strong>3</strong><span>general models evaluated</span></div><div class="stat"><strong>${summary.model_attempts}</strong><span>model × slice attempts</span></div></div>` : ""}${scored.length ? `<div class="toolbar"><label for="benchmark-picker" class="small">Explore a benchmark</label><select id="benchmark-picker">${scored.map((e) => `<option value="${e.id}" ${selectedTask === e.id ? "selected" : ""}>${e.id} · ${esc(title(e))}</option>`).join("")}</select>${route("benchmark/" + selectedTask, "Open benchmark →", "button secondary")}</div><div id="featured-chart"></div>` : `<div class="note">No model results are available in this category yet. Its candidates remain separate from measured benchmarks.</div>`}<div class="section-head"><h2>${f ? "Benchmarks in this category" : "Benchmark directory"}</h2><span class="small">Native scores · no mixed-metric ranking</span></div><div class="toolbar"><input id="search" class="search" aria-label="Search benchmarks" placeholder="Search tasks, datasets or methods…" value="${esc(query)}"><select id="list-mode" aria-label="Result availability"><option value="measured" ${listMode === "measured" ? "selected" : ""}>Measured results</option><option value="all" ${listMode === "all" ? "selected" : ""}>All active candidates</option></select><a class="download-link" href="data/measurements.csv" download>Download results ↓</a></div><div id="benchmark-directory"></div><p class="small" style="margin-top:17px">† Code-line format deviation; see strict-format analysis. A published task score is conditional on its frozen slice and procedure. Directory scores use each task’s first submission. H02’s replication tab includes its stronger train-CV specialist and repeated submissions. The highest inspected reference score does not establish current global SOTA. ${route("methods", "Read the methodology →")}</p>`;
+    `<p class="eyebrow">General models × specialist methods</p><h1>${f ? esc(CATEGORIES[fam] || f.name) : "Neuroscience benchmark results"}</h1><p class="lede">${f ? esc(f.tasks) : "Explore measured performance by task, compare general models with verified specialist references, and follow each result to its data and evaluation protocol. Models generate analysis code, which is then fitted locally."}</p>${mobileFilter(fam)}${!fam ? `<p class="note">Newly evaluated: ${route("benchmark/L06", "Spiking-neuron posterior inference")}. Also available: ${route("benchmark/K04", "Cortical-layer label transfer")} · ${route("benchmark/M01", "Conditional mouse-choice prediction")}. Inspect exact data, named references and both plots.</p>` : ""}${!fam ? `<div class="stats"><div class="stat"><strong>${summary.measured_tasks}</strong><span>tasks with model attempts</span></div><div class="stat"><strong>${summary.measured_families} / ${catalog.families.length}</strong><span>categories represented</span></div><div class="stat"><strong>3</strong><span>general models evaluated</span></div><div class="stat"><strong>${summary.model_attempts}</strong><span>model × slice attempts</span></div></div>` : ""}${scored.length ? `<div class="toolbar"><label for="benchmark-picker" class="small">Explore a benchmark</label><select id="benchmark-picker">${scored.map((e) => `<option value="${e.id}" ${selectedTask === e.id ? "selected" : ""}>${e.id} · ${esc(title(e))}</option>`).join("")}</select>${route("benchmark/" + selectedTask, "Open benchmark →", "button secondary")}</div><div id="featured-chart"></div>` : `<div class="note">No model results are available in this category yet. Its candidates remain separate from measured benchmarks.</div>`}<div class="section-head"><h2>${f ? "Benchmarks in this category" : "Benchmark directory"}</h2><span class="small">Native scores · no mixed-metric ranking</span></div><div class="toolbar"><input id="search" class="search" aria-label="Search benchmarks" placeholder="Search tasks, datasets or methods…" value="${esc(query)}"><select id="list-mode" aria-label="Result availability"><option value="measured" ${listMode === "measured" ? "selected" : ""}>Measured results</option><option value="all" ${listMode === "all" ? "selected" : ""}>All active candidates</option></select><a class="download-link" href="data/measurements.csv" download>Download results ↓</a></div><div id="benchmark-directory"></div><p class="small" style="margin-top:17px">† Code-line format deviation; see strict-format analysis. A published task score is conditional on its frozen slice and procedure. Directory scores use each task’s first submission. H02’s replication tab includes its stronger train-CV specialist and repeated submissions. The highest inspected reference score does not establish current global SOTA. ${route("methods", "Read the methodology →")}</p>`;
   if ($("#mobile-category"))
     $("#mobile-category").onchange = (e) => {
       location.hash = e.target.value ? "#/category/" + e.target.value : "#/";
@@ -351,7 +359,7 @@ function referenceSelection(c) {
   };
   add(c.reference);
   add(c.frozen);
-  const baseline = c.rs.find((r) => r.model === "task-baseline");
+  const baseline = c.rs.find((r) => r.model === "task-baseline") || c.rs.find((r) => r.benchmark_id === "L06" && r.model === "laplace");
   if (valid(baseline)) add(baseline);
   if (showAllRefs)
     for (const r of c.rs)
@@ -388,6 +396,15 @@ function renderChart(target, id, compact = false) {
       frozen: convert(c.frozen),
     };
   }
+  if (id === "L06") {
+    const convert = (r) => {
+      if (!r) return r;
+      const per = l06Metric === "sliced-w2" ? r.per_observation_sliced_w2 : r.per_unit;
+      const score = l06Observation === "mean" ? (l06Metric === "sliced-w2" ? r.sliced_w2 : r.score) : per?.[Number(l06Observation)];
+      return { ...r, score, metric: l06Metric === "sliced-w2" ? "Prior-whitened sliced Wasserstein-2" : "Classifier accuracy · chance target 0.5", direction: "lower" };
+    };
+    c = { ...c, rs: c.rs.map(convert), specialists: c.specialists.map(convert), specialist: convert(c.specialist), reference: convert(c.reference), frozen: convert(c.frozen) };
+  }
   const native = c.rs.find(valid);
   if (!native) {
     $(target).innerHTML =
@@ -399,7 +416,7 @@ function renderChart(target, id, compact = false) {
       (m) => c.rs.find((r) => r.model === m) || { model: m, status: "missing" },
     );
   $(target).innerHTML =
-    `<div class="chart-card"><div class="chart-head"><div><h2>${compact ? route("benchmark/" + id, esc(title(e))) : esc(title(e))}</h2><p class="small">${esc(native.metric)} · ${native.direction === "higher" ? "higher" : "lower"} is better · ${id}</p></div><div class="segmented" role="group" aria-label="Chart or table"><button data-view="graph" class="${plotView === "graph" ? "active" : ""}">Graph</button><button data-view="table" class="${plotView === "table" ? "active" : ""}">Table</button></div></div><div class="plot-controls">${id === "B01" ? `<label>Plot metric <select id="metric-picker"><option value="primary" ${b01Metric === "primary" ? "selected" : ""}>Frozen mean GT-unit accuracy</option><option value="all-event-f1" ${b01Metric === "all-event-f1" ? "selected" : ""}>All-output event F1 · post-hoc</option></select></label>` : ""}<label>Evaluation slice <select id="slice-picker">${slices.map((s) => `<option value="${s}" ${s === selectedSlice ? "selected" : ""}>${id === "C05" ? "Preparation " + s : s}</option>`).join("")}</select></label><label><input id="show-ref" type="checkbox" ${showReferences ? "checked" : ""}>Include references</label><label><input id="all-ref" type="checkbox" ${showAllRefs ? "checked" : ""}>Show additional references</label>${plotView === "graph" ? `<label class="right"><input id="zero-axis" type="checkbox" ${startAtZero ? "checked" : ""}>Line axis starts at zero</label>` : ""}</div>${plotView === "graph" ? `${referenceCards(refs, c.frozen)}<p class="plot-reading-key"><span class="solid-key"></span>Solid connected points = general models. <span class="dashed-key"></span>Dashed horizontal lines = specialists or domain references. <span class="dotted-key"></span>Dotted lines = other references.</p><div class="chart-grid"><section><p class="chart-label">Performance across model versions</p>${linePlot(generals, refs, native.direction, c.specialists)}</section><section><p class="chart-label">General models and named references</p>${barPlot([...generals, ...refs], native.direction)}</section></div><div class="legend">${MODELS.map((m) => `<label><input type="checkbox" data-model="${m}" ${!hiddenModels.has(m) ? "checked" : ""}><i class="dot" style="background:${COLORS[m]}"></i>${label(m)}</label>`).join("")}${refs.map((r, i) => `<span><i class="dash" style="border-color:${refColor(r, i)}"></i>${esc(methodName(r))} · ${fmt(r.score)}</span>`).join("")}</div>` : `<div class="table-wrap">${scoreTable(c.rs)}</div>`}<div class="chart-foot">${chartCaveat(id, c)} ${compact ? route("benchmark/" + id, "Inspect protocol, sources and all scores →") : ""}<br>Connected points show version order, not elapsed time or a compute scaling law. Line axes ${startAtZero ? "include zero" : "adapt to the score range; inspect the ticks"}; bars include zero. First-submission panel: one generated program per model/task.${id === "H02" ? " " + route("benchmark/H02/replication", "Inspect three-generation follow-up →") : ""}</div></div>`;
+    `<div class="chart-card"><div class="chart-head"><div><h2>${compact ? route("benchmark/" + id, esc(title(e))) : esc(title(e))}</h2><p class="small">${esc(native.metric)} · ${native.direction === "higher" ? "higher" : "lower"} is better · ${id}</p></div><div class="segmented" role="group" aria-label="Chart or table"><button data-view="graph" class="${plotView === "graph" ? "active" : ""}">Graph</button><button data-view="table" class="${plotView === "table" ? "active" : ""}">Table</button></div></div><div class="plot-controls">${id === "L06" ? `<label>Posterior metric <select id="metric-picker"><option value="c2st" ${l06Metric === "c2st" ? "selected" : ""}>Primary · classifier accuracy (target 0.5)</option><option value="sliced-w2" ${l06Metric === "sliced-w2" ? "selected" : ""}>Secondary · sliced Wasserstein-2</option></select></label><label>Observation <select id="observation-picker"><option value="mean" ${l06Observation === "mean" ? "selected" : ""}>Mean of all ten</option>${Array.from({length:10},(_,i)=>`<option value="${i}" ${l06Observation === String(i) ? "selected" : ""}>Observation ${i+1}</option>`).join("")}</select></label>` : ""}${id === "B01" ? `<label>Plot metric <select id="metric-picker"><option value="primary" ${b01Metric === "primary" ? "selected" : ""}>Frozen mean GT-unit accuracy</option><option value="all-event-f1" ${b01Metric === "all-event-f1" ? "selected" : ""}>All-output event F1 · post-hoc</option></select></label>` : ""}<label>Evaluation slice <select id="slice-picker">${slices.map((s) => `<option value="${s}" ${s === selectedSlice ? "selected" : ""}>${id === "C05" ? "Preparation " + s : s}</option>`).join("")}</select></label><label><input id="show-ref" type="checkbox" ${showReferences ? "checked" : ""}>Include references</label><label><input id="all-ref" type="checkbox" ${showAllRefs ? "checked" : ""}>Show additional references</label>${plotView === "graph" ? `<label class="right"><input id="zero-axis" type="checkbox" ${startAtZero ? "checked" : ""}>Line axis starts at zero</label>` : ""}</div>${plotView === "graph" ? `${referenceCards(refs, c.frozen)}<p class="plot-reading-key"><span class="solid-key"></span>Solid connected points = general models. <span class="dashed-key"></span>Dashed horizontal lines = specialists or domain references. <span class="dotted-key"></span>Dotted lines = other references.</p><div class="chart-grid"><section><p class="chart-label">Performance across model versions</p>${linePlot(generals, refs, native.direction, c.specialists)}</section><section><p class="chart-label">General models and named references</p>${barPlot([...generals, ...refs], native.direction)}</section></div><div class="legend">${MODELS.map((m) => `<label><input type="checkbox" data-model="${m}" ${!hiddenModels.has(m) ? "checked" : ""}><i class="dot" style="background:${COLORS[m]}"></i>${label(m)}</label>`).join("")}${refs.map((r, i) => `<span><i class="dash" style="border-color:${refColor(r, i)}"></i>${esc(methodName(r))} · ${fmt(r.score)}</span>`).join("")}</div>` : `<div class="table-wrap">${scoreTable(c.rs)}</div>`}<div class="chart-foot">${chartCaveat(id, c)} ${compact ? route("benchmark/" + id, "Inspect protocol, sources and all scores →") : ""}<br>Connected points show version order, not elapsed time or a compute scaling law. Line axes ${startAtZero ? "include zero" : "adapt to the score range; inspect the ticks"}; bars include zero. First-submission panel: one generated program per model/task.${id === "H02" ? " " + route("benchmark/H02/replication", "Inspect three-generation follow-up →") : ""}</div></div>`;
   $(target)
     .querySelectorAll?.("[data-view]")
     .forEach(
@@ -411,9 +428,14 @@ function renderChart(target, id, compact = false) {
     );
   if ($("#metric-picker"))
     $("#metric-picker").onchange = (ev) => {
-      b01Metric = ev.target.value;
+      if (id === "L06") l06Metric = ev.target.value;
+      else b01Metric = ev.target.value;
       renderChart(target, id, compact);
     };
+  if (id === "L06") $("#observation-picker").onchange = (ev) => {
+    l06Observation = ev.target.value;
+    renderChart(target, id, compact);
+  };
   $("#slice-picker").onchange = (ev) => {
     selectedSlice = ev.target.value;
     renderChart(target, id, compact);
@@ -581,6 +603,7 @@ function chartCaveat(id, c) {
   if (id === "B01")
     text +=
       "One 10-second stationary simulation. The all-output event F1 sensitivity counts extra spikes: GPT-6 0.5998, MountainSort5 0.9621. Select it above to inspect both plots. This diagnostic was added post hoc; directory and macro statistics retain the frozen primary metric. ";
+  if (id === "L06") text += "Ten synthetic posteriors share one stimulus. Primary C2ST accuracy should approach 0.5; near-chance differences are noisy. Secondary sliced Wasserstein-2 should approach zero. The observation selector changes this plot only; directory and macro scores retain the mean primary over all ten. The dashed line is the local Polya–Gamma Gibbs sampler, related to the archived reference algorithm. Known likelihood and a custom 2,000-draw scorer: these are not original simulator-only SBI leaderboard scores. ";
   if (id === "K04") text += "Four test sections are one held-out donor. Curated layer labels use expression assistance; no spatial coordinates are provided. SingleR is a fixed local label-transfer reference, not a spatial-clustering leaderboard winner. ";
   if (id === "M01") text += "Seventeen held-out mice, with labs shared across train/test. Inputs include known block prior and observed histories; disjoint target/history blocks prevent target reuse. This is conditional prediction, not rollout. The source-inspired GLM is not an established strongest specialist. ";
   if (id === "J08")
@@ -623,7 +646,7 @@ function benchmark(id, tab = "results") {
     }
     const ref = b.reference;
     $("#benchmark-content").innerHTML =
-      `<div class="detail-summary"><div class="reference-box"><span class="small">Best measured general model${b.nSlices > 1 ? " · slice-equal mean" : ""}</span><strong>${fmt(b.bestModel?.score)}</strong><p>${b.bestModel ? label(b.bestModel.model) + (b.bestModel.line_limit_compliant === false ? " · format deviation" : "") : "All attempts failed"}</p></div><div class="reference-box specialist"><span class="small">${id === "M01" ? "Source-inspired domain reference" : id === "H02" ? "Original fixed specialist · see replication tab" : ref && isSpecialist(ref) ? "Best verified specialist in inspected set" : "Available baseline / reference"}</span><strong>${fmt(ref?.score)}</strong><p>${ref ? esc(methodName(ref)) : "Not established"} · training and selection histories differ</p></div></div><div id="detail-chart"></div><details><summary>What can this result establish?</summary><p>${esc(e.limitations)}</p><p>This measures a model-generated numerical analysis procedure. One submission per model; public-data contamination and provider checkpoint resolution remain unverified. Specialist training, feature access and tuning budgets can differ. Missing results are unknown, not zero.</p></details><div class="actions"><a class="button secondary" href="data/${id}.json" download>Detailed records ↓</a>${link(GH + "/tree/main/experiments/" + id, "Frozen code & protocol", "button secondary")}${link(GH + "/tree/main/results/predictions/" + id, "Predictions", "button secondary")}</div>`;
+      `<div class="detail-summary"><div class="reference-box"><span class="small">${id === "L06" ? "Lowest general C2ST · descriptive point" : "Best measured general model"}${b.nSlices > 1 ? " · slice-equal mean" : ""}</span><strong>${fmt(b.bestModel?.score)}</strong><p>${b.bestModel ? label(b.bestModel.model) + (b.bestModel.line_limit_compliant === false ? " · format deviation" : "") : "All attempts failed"}</p></div><div class="reference-box specialist"><span class="small">${id === "L06" ? "Fixed Polya–Gamma sampler reference" : id === "M01" ? "Source-inspired domain reference" : id === "H02" ? "Original fixed specialist · see replication tab" : ref && isSpecialist(ref) ? "Best verified specialist in inspected set" : "Available baseline / reference"}</span><strong>${fmt(ref?.score)}</strong><p>${ref ? esc(methodName(ref)) : "Not established"} · training and selection histories differ</p></div></div><div id="detail-chart"></div><details><summary>What can this result establish?</summary><p>${esc(e.limitations)}</p><p>This measures a model-generated numerical analysis procedure. One submission per model; public-data contamination and provider checkpoint resolution remain unverified. Specialist training, feature access and tuning budgets can differ. Missing results are unknown, not zero.</p></details><div class="actions"><a class="button secondary" href="data/${id}.json" download>Detailed records ↓</a>${link(GH + "/tree/main/experiments/" + id, "Frozen code & protocol", "button secondary")}${link(GH + "/tree/main/results/predictions/" + id, "Predictions", "button secondary")}</div>`;
     renderChart("#detail-chart", id);
   } else if (tab === "replication" && id === "H02") {
     $("#benchmark-content").innerHTML = replicationPanel();
@@ -664,13 +687,13 @@ function modelsPage(model) {
 }
 function analysisPage() {
   const classes = [
-    ...new Set(summary.reference_envelopes.map((r) => r.reference_class)),
+    ...new Set(summary.reference_envelopes.filter((r) => analysisScope === "all" || !["B01","L06","M04","N05"].includes(r.benchmark_id)).map((r) => r.reference_class)),
   ];
   if (!classes.includes(analysisClass)) analysisClass = classes[0];
   $("#app").innerHTML =
-    `<p class="eyebrow">Cross-task analysis</p><h1>Where do models improve?</h1><p class="note">First-submission suite: one generation per task. ${route("benchmark/H02/replication", "P300 now has a separate three-generation follow-up →")} Its repeated attempts are excluded from the cross-task totals below.</p><p class="lede">Track point-score changes and reference comparisons while keeping task, family, failure and evidence-class denominators visible.</p><div class="doc-panel" style="margin-top:26px"><h2>Comparison with references</h2><div class="toolbar"><label for="reference-class" class="small">Reference evidence</label><select id="reference-class">${classes.map((c) => `<option value="${c}" ${c === analysisClass ? "selected" : ""}>${esc(c.replaceAll("_", " "))}</option>`).join("")}</select></div><div class="table-wrap"><table><thead><tr><th>Model</th><th>Point wins / slices</th><th>Lost / tied / failed</th><th>Tasks / families</th><th>Family-equal win fraction</th><th>Strict-format wins / eligible slices</th></tr></thead><tbody>${summary.model_summaries
+    `<p class="eyebrow">Cross-task analysis</p><h1>Where do models improve?</h1><p class="note">First-submission suite: one generation per task. ${route("benchmark/H02/replication", "P300 now has a separate three-generation follow-up →")} Its repeated attempts are excluded from the cross-task totals below.</p><p class="lede">Track point-score changes and reference comparisons while keeping task, family, failure and evidence-class denominators visible.</p><div class="toolbar"><label for="analysis-scope" class="small">Data scope</label><select id="analysis-scope"><option value="observed_data" ${analysisScope === "observed_data" ? "selected" : ""}>Observed-data sources</option><option value="all" ${analysisScope === "all" ? "selected" : ""}>Include fully synthetic tasks</option></select></div><p class="small">Observed-data scope includes artificial corruption of real signals/trajectories (H16/A14). It excludes fully synthetic B01/L06/M04 and deterministic file task N05.</p><div class="doc-panel" style="margin-top:26px"><h2>Comparison with references</h2><div class="toolbar"><label for="reference-class" class="small">Reference evidence</label><select id="reference-class">${classes.map((c) => `<option value="${c}" ${c === analysisClass ? "selected" : ""}>${esc(c.replaceAll("_", " "))}</option>`).join("")}</select></div><div class="table-wrap"><table><thead><tr><th>Model</th><th>Point wins / slices</th><th>Lost / tied / failed</th><th>Tasks / families</th><th>Family-equal win fraction</th><th>Strict-format wins / eligible slices</th></tr></thead><tbody>${summary.model_summaries
       .map((s) => {
-        const c = s.reference_class_summaries[analysisClass],
+        const c = (analysisScope === "observed_data" ? s.observed_data_reference_class_summaries : s.reference_class_summaries)[analysisClass],
           a = c?.exploratory,
           b = c?.strict;
         return `<tr><td>${label(s.model)}</td><td>${a?.wins ?? 0} / ${a?.n_slice_comparisons ?? 0}</td><td>${a?.losses ?? 0} / ${a?.numerical_ties ?? 0} / ${a?.failed_or_missing ?? 0}</td><td>${a?.n_tasks ?? 0} / ${a?.n_families ?? 0}</td><td>${fmt(a?.family_equal_win_fraction)}</td><td>${b?.wins ?? 0} / ${b?.n_slice_comparisons ?? 0}</td></tr>`;
@@ -679,12 +702,16 @@ function analysisPage() {
         "",
       )}</tbody></table></div><p class="small">Primary scientific comparator selection follows the frozen/reference policy, which can differ from the best-inspected envelope displayed on benchmark plots. No current-SOTA or matched-total-effort superiority claim.</p></div><div class="doc-panel" style="margin-top:22px"><h2>Model-version changes</h2><div class="table-wrap"><table><thead><tr><th>Pair</th><th>Improved / slices</th><th>Declined</th><th>Ties</th><th>Failed / missing</th><th>Task / family count</th><th>Family-equal improvement fraction</th></tr></thead><tbody>${summary.paired_macro_summaries
       .map((p) => {
-        const a = p.exploratory;
+        const a = analysisScope === "observed_data" ? p.observed_data : p.exploratory;
         return `<tr><td>${label(p.older)} → ${label(p.newer)}</td><td>${a.wins} / ${a.n_slice_comparisons}</td><td>${a.losses}</td><td>${a.numerical_ties}</td><td>${a.failed_or_missing}</td><td>${a.n_tasks} / ${a.n_families}</td><td>${fmt(a.family_equal_win_fraction)}</td></tr>`;
       })
       .join(
         "",
-      )}</tbody></table></div><p class="small">M04 quadrature differences and N05 deterministic correctness are excluded from this progress aggregate. The aggregate includes synthetic B01 and semisynthetic repair tasks. Failures remain in the denominator. New datasets or simulations are not automatically independent biological replications.</p></div><details open><summary>How aggregation works</summary><p>For descriptive directional win fractions, average slices within task, tasks within category, then categories equally. Incompatible native metric deltas are never averaged. A numerical difference above1e−9 is a point win, not statistical significance or a practical-equivalence threshold. One generated program per version, convenience-selected tasks and public labels prevent causal scaling conclusions.</p></details><div class="actions"><a class="button secondary" href="data/summary.json" download>All derived statistics ↓</a><a class="button secondary" href="data/measurements.csv" download>Measurements ↓</a>${link(GH + "/blob/main/analysis/findings.md", "Interpretation & limitations", "button secondary")}</div>`;
+      )}</tbody></table></div><p class="small">M04 quadrature differences and N05 deterministic correctness are excluded from this progress aggregate. ${analysisScope === "observed_data" ? "This view excludes fully synthetic B01 and L06; artificial corruption tasks remain included." : "This view includes fully synthetic B01 and L06, plus artificial corruption tasks."} Failures remain in the denominator. New datasets or simulations are not automatically independent biological replications.</p></div><details open><summary>How aggregation works</summary><p>For descriptive directional win fractions, average slices within task, tasks within category, then categories equally. Incompatible native metric deltas are never averaged. A numerical difference above1e−9 is a point win, not statistical significance or a practical-equivalence threshold. One generated program per version, convenience-selected tasks and public labels prevent causal scaling conclusions.</p></details><div class="actions"><a class="button secondary" href="data/summary.json" download>All derived statistics ↓</a><a class="button secondary" href="data/measurements.csv" download>Measurements ↓</a>${link(GH + "/blob/main/analysis/findings.md", "Interpretation & limitations", "button secondary")}</div>`;
+  $("#analysis-scope").onchange = (e) => {
+    analysisScope = e.target.value;
+    analysisPage();
+  };
   $("#reference-class").onchange = (e) => {
     analysisClass = e.target.value;
     analysisPage();
@@ -694,7 +721,7 @@ function methodsPage() {
   $("#app").innerHTML =
     `<p class="eyebrow">Methods & data</p><h1>Trace every result.</h1><p class="lede">A benchmark is an exact input, target, split, scorer and model procedure. The broader neuroscience evidence map remains separate from the measured results explorer.</p><div class="doc-grid"><section class="doc-panel"><h2>What is measured</h2><p>T3: a single general-model code submission followed by local numerical execution. Models use general scientific libraries; specialist packages and pretrained assets are separate references. This does not directly measure native raw-signal understanding or full autonomous lab workflows.</p><p>Exact prompts, frozen data/code hashes, submitted programs, generation usage/tool counts, predictions and errors are retained. Current general models: GPT-5.6 Sol, GPT-6 Sol and GPT-6.1 Sol.</p></section><section class="doc-panel"><h2>Specialist evidence</h2><p>Named specialist methods appear on line charts and bar plots wherever verified matching predictions exist. Archived specialist masks/predictions, local specialist reproductions, conventional baselines and mathematical audits are identified separately.</p><p>The highest inspected point score is a descriptive test-selected envelope. It cannot certify the current global best, comparable training inputs or equal tuning effort. Published scores on a different split are not inserted into these plots.</p></section></div><div class="doc-grid"><section class="doc-panel"><h2>Coverage and exclusions</h2><p>The historical evidence map covers 114 task-resource associations across 14 families. The active catalog is pruned when a reusable endpoint, data rights, release or scorer is unresolved. Concrete high-effort tasks remain candidates, with missing results shown as unknown.</p><p>Pruning does not prove exhaustive coverage. Removed candidates retain their decision trail and reactivation requirements. Broad clinical, causal, control and mechanistic perspectives still have gaps.</p>${route("excluded", "Inspect archived candidates →")}</section><section class="doc-panel"><h2>Validity controls</h2><p>Biological grouping, human vs synthetic truth, adaptation policy and reference information access are explicit per task. Source identities, acquired-file/buffer hashes and scorer checks are recorded. Failures and formatting deviations stay visible.</p><p>Small biological samples, public-label contamination, unequal specialist histories and one-generation uncertainty remain. No neuron/frame pseudo-replication intervals or universal mixed-metric capability score.</p></section></div><div class="link-list">${[
       ["README.md", "Main research plan and status"],
-      ["docs/release-v08.md", "Current release report"],
+      ["docs/release-v09.md", "Current release report"],
       ["docs/progress-assessment.md", "Progress assessment and evidence gaps"],
       ["docs/taxonomy.md", "Taxonomy and coverage justification"],
       ["docs/methodology.md", "Evaluation methodology"],

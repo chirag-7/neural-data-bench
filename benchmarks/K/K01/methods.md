@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.8: Allen mouse electrophysiology: 11 features predict spiny/aspiny morphology; donor-disjoint 1,356 training and 457 test cells.
+Preview 0.9: Allen mouse electrophysiology: 11 features predict spiny/aspiny morphology; donor-disjoint 1,356 training and 457 test cells.
 
 [Actual frozen contract and implementation](../../../experiments/K01). [Measured method/reference records](../../../results/K01.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

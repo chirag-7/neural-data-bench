@@ -42,6 +42,10 @@ for e in c['entries']:
 for d in (R/'experiments').iterdir():
  if not (d/'run-spec.json').exists() or d.name in ['C05','M04']:continue
  spec=json.loads((d/'run-spec.json').read_text());assert hashlib.sha256((d/'prompt.txt').read_bytes()).hexdigest()==spec['prompt_sha256']
+ if d.name=='L06':
+  for filename,digest in spec['frozen_files'].items():
+   if filename.startswith('data/cache/'):continue
+   assert hashlib.sha256((R/filename).read_bytes()).hexdigest()==digest,filename
  codepath=d/('reference.py' if d.name=='N05' else 'adapter.py');assert hashlib.sha256(codepath.read_bytes()).hexdigest()==spec['reference_sha256' if d.name=='N05' else 'adapter_sha256']
  for filename,key in [('protocol.md','protocol_sha256'),('specialist.py','specialist_sha256')]:
   if key in spec:assert hashlib.sha256((d/filename).read_bytes()).hexdigest()==spec[key]
@@ -85,3 +89,17 @@ for task in ['K04','M01']:
   assert hashlib.sha256((R/entry['event_file']).read_bytes()).hexdigest()==entry['sha256'] and entry['tool_events']==0 and entry['submission_matches_final_generation_event']
  assert len(json.loads((d/'verification.json').read_text())['prediction_checks'])==5
 print('K04/M01 source, scorer, frozen runner and retained generation event evidence present.')
+posterior=R/'experiments/L06'
+if posterior.exists():
+ source_record=json.loads((posterior/'source-record.json').read_text())
+ for filename,digest in source_record['upstream_files'].items():assert hashlib.sha256((R/filename).read_bytes()).hexdigest()==digest
+ verification=json.loads((posterior/'verification.json').read_text())
+ assert len(verification['prediction_checks'])==5 and verification['source_files_verified']==42
+ for event in verification['generation_checks']:
+  assert hashlib.sha256((R/event['event_file']).read_bytes()).hexdigest()==event['sha256'] and event['tool_events']==0
+ for row in records:
+  if row['benchmark_id']=='L06' and row['status']=='measured':
+   assert hashlib.sha256((R/row['scorer_audit_file']).read_bytes()).hexdigest()==row['scorer_audit_sha256']
+ snapshot=R/'results/archive/v08-measurements.jsonl'
+ for line in snapshot.read_text().splitlines():assert json.loads(line) in records,'A v0.8 historical record changed'
+ print('L06 frozen posterior interface, all5 prediction/audit identities, sources and raw generation events passed; v0.8 records unchanged.')

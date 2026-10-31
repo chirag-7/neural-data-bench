@@ -1,0 +1,16 @@
+{
+  "original_project": "sbibm",
+  "source_commit": "f0bc44039e6b7e095c18d4e9e64819d75be76587",
+  "numerical_source_manifest": "data/manifests/L06.json",
+  "reference_samples_access": "Scorer only, not generation or sampler arguments",
+  "true_parameters_acquired": false,
+  "upstream_files": {
+    "experiments/L06/upstream/task.py": "4289be61d7b418cdfb3541e888ba4037380644272b9f97f4d8215358064abd33",
+    "experiments/L06/upstream/polyagamma-LICENSE": "b4cba9bbf5cb4fe2ed5229465f8d252e0ca7422de34af2f5cfb5538403fac943",
+    "experiments/L06/upstream/LICENSE": "2a2cbf7d2af3a14fe81822f4eb3855357c34a99af8a4910bd2c605c0b3e25d11",
+    "experiments/L06/upstream/c2st.py": "f5bc93847e2a6eee843d9e2ffc2121e64e1ba2b7b1e337edd89afc0492ea248f"
+  },
+  "scientific_freeze_commit": "93c6a9824916b57105063cdc41b234ae6782f2de",
+  "local_sampler": "polyagamma2.0.2,not originalpypolyagammaimplementation",
+  "rights_scope": "Original MIT author software and author-provided numerical simulation fixtures; source arrays kept in ignored cache, no unrelated biological data-license inference"
+}

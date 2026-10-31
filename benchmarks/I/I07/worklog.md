@@ -16,6 +16,6 @@ Decision: **measured** (2026-10-30). Original FRESH organizer description resolv
 
 ## Current admission and execution
 
-Preview 0.8: measured. Original FRESH organizer description resolves left/right2s finger tapping. CC0 versioned SNIRF data acquired/prepared with subject-disjoint2s condition decoding and optical-density conversion; explicit session/condition confounding, no Hb or cortical-activation gold-standard claim.
+Preview 0.9: measured. Original FRESH organizer description resolves left/right2s finger tapping. CC0 versioned SNIRF data acquired/prepared with subject-disjoint2s condition decoding and optical-density conversion; explicit session/condition confounding, no Hb or cortical-activation gold-standard claim.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json). [Actual protocol/worklog](../../../experiments/I07). [Task measurements](../../../results/I07.json).

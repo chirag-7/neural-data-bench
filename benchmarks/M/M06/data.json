@@ -27,7 +27,7 @@
     "evidence": "literature/admission-v04-inference-control.json"
   },
   "current_execution": {
-    "release": "0.8",
+    "release": "0.9",
     "status": "deferred",
     "slice": null,
     "evidence": "literature/admission-v04-inference-control.json"

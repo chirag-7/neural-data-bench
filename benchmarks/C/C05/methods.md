@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.8: Spikefinder: calcium-to-spike inference on five preparations; median 40 ms correlation per preparation.
+Preview 0.9: Spikefinder: calcium-to-spike inference on five preparations; median 40 ms correlation per preparation.
 
 [Actual frozen contract and implementation](../../../experiments/C05). [Measured method/reference records](../../../results/C05.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

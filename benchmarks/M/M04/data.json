@@ -27,7 +27,7 @@
     "evidence": "literature/admission-v04-inference-control.json"
   },
   "current_execution": {
-    "release": "0.8",
+    "release": "0.9",
     "status": "measured",
     "slice": "Synthetic two-choice Q-learning agents: recover learning rate and inverse temperature from choices and rewards.",
     "evidence": "literature/admission-v04-inference-control.json"

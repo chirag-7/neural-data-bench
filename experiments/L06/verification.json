@@ -1,0 +1,74 @@
+{
+  "source_files_verified": 42,
+  "source_design_prior_and_observations": "passed",
+  "all_ten_reference_posteriors_match_original_csv": true,
+  "frozen_files": "passed",
+  "hidden_true_parameter_files_acquired": false,
+  "prediction_checks": [
+    {
+      "model": "gpt-5.6-sol",
+      "prediction_sha256": "c373e455a4e80221a3909da77a6425339e3a21775c67cc6509c1cd338d0d64bf",
+      "n_observations": 10,
+      "c2st_heldout_decisions": 40000,
+      "accuracy_arithmetic": "passed",
+      "prior_whitened_sliced_w2": "independently reproduced within1e-12"
+    },
+    {
+      "model": "gpt-6-sol",
+      "prediction_sha256": "1dc87b6c36cc05ecba1837b947b792a665976769466b38f960af0c7c9e81386e",
+      "n_observations": 10,
+      "c2st_heldout_decisions": 40000,
+      "accuracy_arithmetic": "passed",
+      "prior_whitened_sliced_w2": "independently reproduced within1e-12"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "prediction_sha256": "09aa48fe1a03ecf1f91f5e924ab8d49d2f59f8828d15b413752ef5eac622b8e1",
+      "n_observations": 10,
+      "c2st_heldout_decisions": 40000,
+      "accuracy_arithmetic": "passed",
+      "prior_whitened_sliced_w2": "independently reproduced within1e-12"
+    },
+    {
+      "model": "polya-gamma",
+      "prediction_sha256": "b262f281cb209c2518bf9c8cc345978d58b5970e04cabeffd0631537660796a2",
+      "n_observations": 10,
+      "c2st_heldout_decisions": 40000,
+      "accuracy_arithmetic": "passed",
+      "prior_whitened_sliced_w2": "independently reproduced within1e-12"
+    },
+    {
+      "model": "laplace",
+      "prediction_sha256": "8c749b96203f444acf62509e694602e50279ebbef453b146a6ecddcbf860c0b2",
+      "n_observations": 10,
+      "c2st_heldout_decisions": 40000,
+      "accuracy_arithmetic": "passed",
+      "prior_whitened_sliced_w2": "independently reproduced within1e-12"
+    }
+  ],
+  "c2st_audit_scope": "Recompute all held-out decision accuracies/fold allocation, no classifier refit; frozen scorer and original decisions retained",
+  "reference_limit": "Original reference is finite Polya-Gamma MCMC, not analytic exact truth",
+  "generation_checks": [
+    {
+      "model": "gpt-5.6-sol",
+      "event_file": "experiments/L06/generation-events/gpt-5.6-sol.jsonl",
+      "sha256": "8f8932a928a2eba345af516571e225155642513070eae0f15a594b5c74079115",
+      "tool_events": 0,
+      "submission_matches_final_generation_event": true
+    },
+    {
+      "model": "gpt-6-sol",
+      "event_file": "experiments/L06/generation-events/gpt-6-sol.jsonl",
+      "sha256": "3ceaef9b9ee9234a4b9a80cc9ae4ea0548ad5d3afe0e622a6b0ece4d48f0d454",
+      "tool_events": 0,
+      "submission_matches_final_generation_event": true
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "event_file": "experiments/L06/generation-events/gpt-6.1-sol.jsonl",
+      "sha256": "c9616a339c9d08010d3ceccf8e3d09f433fe6aedaec5e3c591fdfb5c7fe2c573",
+      "tool_events": 0,
+      "submission_matches_final_generation_event": true
+    }
+  ]
+}

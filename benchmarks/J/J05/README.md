@@ -38,6 +38,6 @@ Decision: **deferred** (2026-10-30). MICrONS needs proofread graph release pinni
 
 ## Current admission and execution
 
-Preview 0.8: deferred. MICrONS needs proofread graph release pinning, cell-function joins and release-specific train/test units; substantial data engineering and evolving annotations. Not prepared under current CPU/lightweight acquisition budget.
+Preview 0.9: deferred. MICrONS needs proofread graph release pinning, cell-function joins and release-specific train/test units; substantial data engineering and evolving annotations. Not prepared under current CPU/lightweight acquisition budget.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

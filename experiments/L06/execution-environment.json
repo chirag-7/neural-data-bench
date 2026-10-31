@@ -1,0 +1,22 @@
+{
+  "python": "3.12.14",
+  "system": "Darwin",
+  "release": "25.6.0",
+  "machine": "arm64",
+  "numeric_threads": 1,
+  "memory_limit_enforced": false,
+  "scoring_outside_sampler_budget": true,
+  "model_sampler_seed": 20261031,
+  "mlp_classifier_seed": 1,
+  "c2st_folds": 5,
+  "draws_per_posterior": 10000,
+  "primary_draw_subset": "np.arange(0,10000,5)",
+  "full_provider_checkpoint_identity_verified": false,
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "polyagamma": "2.0.2"
+  },
+  "generation_cli_version": "codex-cli 0.162.0-alpha.17.2"
+}

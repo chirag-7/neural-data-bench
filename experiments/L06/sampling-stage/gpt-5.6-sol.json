@@ -1,0 +1,25 @@
+{
+  "benchmark_id": "L06",
+  "slice_id": "posterior-v1",
+  "model": "gpt-5.6-sol",
+  "status": "sampled",
+  "date": "2026-10-31",
+  "track": "T3",
+  "n_units": 10,
+  "n_posterior_draws_per_unit": 10000,
+  "seconds": 4.638300915947184,
+  "prediction_file": "results/predictions/L06/posterior-v1--gpt-5.6-sol.npz",
+  "prediction_sha256": "c373e455a4e80221a3909da77a6425339e3a21775c67cc6509c1cd338d0d64bf",
+  "input_sha256": {
+    "data/cache/L06/data.npz": "c3ae6e81458fd88dac7a1492443bfe4d6d49c62ed7a85b1f98486ab73c171e3e"
+  },
+  "prompt_sha256": "9fd8e357ecf8b9c42cfd13276af3c1492a9b3ccf7cee487b1a3e2a3802de5a4a",
+  "truth_type": "synthetic_reference_posterior",
+  "reference_type": "local_reproduction",
+  "superiority_eligible": false,
+  "superiority_reason": "Synthetic custom likelihood-informed track, one generation; no global-best/equal-research-effort claim",
+  "description": "Laplace-preconditioned Hamiltonian Monte Carlo for ten distinct logistic-GLM posteriors. Each observation gets its own MAP/Hessian whitening transform and independently evolved chain. The sampler uses exact supplied full prior precision, Metropolis correction, randomized trajectory lengths, 1,200 warm-up iterations, dual-averaging step-size tuning for the first 900 iterations, and deterministic per-observation RNG streams derived from the seed. Draw order is deterministically shuffled after sampling; no diagonal approximation is imposed.",
+  "code_sha256": "870c21e406cf864d67d57dfc640369db546fd5b95cd1b8fca0387f3016422d29",
+  "code_lines": 160,
+  "line_limit_compliant": true
+}

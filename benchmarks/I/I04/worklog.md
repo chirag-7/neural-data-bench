@@ -12,6 +12,6 @@ Decision: **deferred** (2026-10-30). Original Wakeman-Henson Nature article redi
 
 ## Current admission and execution
 
-Preview 0.8: deferred. Original Wakeman-Henson Nature article redirect failed through the web tool. No raw multimodal dataset or labels acquired; needs pinned EEG/MEG/fMRI release, face identities/conditions and subject/session split. Access failure is not permanent unavailability.
+Preview 0.9: deferred. Original Wakeman-Henson Nature article redirect failed through the web tool. No raw multimodal dataset or labels acquired; needs pinned EEG/MEG/fMRI release, face identities/conditions and subject/session split. Access failure is not permanent unavailability.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

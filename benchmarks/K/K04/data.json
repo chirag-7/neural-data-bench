@@ -40,7 +40,7 @@
     "evidence": "literature/admission-v04-cell-workflow.json"
   },
   "current_execution": {
-    "release": "0.8",
+    "release": "0.9",
     "status": "measured",
     "slice": "HumanPilot DLPFC: 33,086 training spots from two donors/eight sections; 14,243 test spots from one donor/four sections; 500 training-selected genes.",
     "evidence": "experiments/K04/protocol.md"

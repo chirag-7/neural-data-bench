@@ -1,12 +1,17 @@
 {
   "benchmark_id": "L06",
-  "input": "Bernoulli GLM and reference posterior tasks",
-  "ground_truth": "Reference posterior samples and known simulator",
+  "input": "Known100x10 causal design,ten100-bin observed synthetic spike trains,zero-mean Gaussian prior precision; hidden reference draws scorer-only",
+  "ground_truth": "Finite author Polya-Gamma MCMC posterior samples for ten simulated observations, not biological truth or analytic exact distributions",
   "sources": [
-    "https://github.com/sbi-benchmark/sbibm"
+    "https://github.com/sbi-benchmark/sbibm",
+    "https://proceedings.mlr.press/v130/lueckmann21a.html",
+    "https://github.com/sbi-benchmark/sbibm/tree/f0bc44039e6b7e095c18d4e9e64819d75be76587",
+    "https://github.com/sbi-benchmark/sbibm/blob/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/metrics/c2st.py",
+    "https://github.com/zoj613/polyagamma",
+    "https://arxiv.org/abs/1205.0310"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/L06.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "L06",
@@ -27,9 +32,10 @@
     "evidence": "literature/admission-v04-inference-control.json"
   },
   "current_execution": {
-    "release": "0.8",
-    "status": "candidate_pending_validation",
-    "slice": null,
-    "evidence": "literature/admission-v04-inference-control.json"
-  }
+    "release": "0.9",
+    "status": "measured",
+    "slice": "All ten original sbibm Bernoulli GLM observations; ten parameters,100 bins,10000 posterior draws per observation; custom likelihood-informed track.",
+    "evidence": "experiments/L06/protocol.md"
+  },
+  "executed_slice": "All ten original sbibm Bernoulli GLM observations; ten parameters,100 bins,10000 posterior draws per observation; custom likelihood-informed track."
 }

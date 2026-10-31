@@ -1,0 +1,36 @@
+{
+  "checked_on": "2026-10-31",
+  "scope": "Original-source access checks only, not benchmark execution or broad literature review",
+  "connectivity_requests": [
+    {
+      "url": "https://openconnecto.me/data/public/chalearn/",
+      "result": "HTTP403 returned by acquisition request; origin versus intermediary cause not independently diagnosed"
+    },
+    {
+      "url": "https://www.nyuinformatics.org/downloads/connectomics/",
+      "result": "HTTP403 returned by acquisition request; origin versus intermediary cause not independently diagnosed"
+    }
+  ],
+  "compression_public_listing": {
+    "source_url": "https://aind-benchmark-data.s3.us-west-2.amazonaws.com/?list-type=2&prefix=ephys-compression/&max-keys=1000",
+    "objects": 190,
+    "experimental_raw_objects": 16,
+    "listing_file": "literature/source-snapshots/v09/b07-s3-list.json",
+    "listing_sha256": "9c59a054dad4474874f29f7597e91031b9fa88fb74ba9670baf69c3cff0ec9ef",
+    "mutable_source": "Weekly-updated public bucket; no immutable raw-chunk experiment admitted"
+  },
+  "compression_example_metadata": {
+    "bytes": 47179,
+    "sha256": "11123129d34e74d3f1f136a5455392a98ede241d71a5f1d441c19aadab9205d8",
+    "class_name": "spikeinterface.core.binaryrecordingextractor.BinaryRecordingExtractor",
+    "dtype": "<i2",
+    "num_channels": 384,
+    "sampling_frequency": 30000.0
+  },
+  "compression_terms": {
+    "source": "https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml",
+    "stated_license": "CC-BY-4.0",
+    "snapshot": "literature/source-snapshots/v09/b07-terms.txt"
+  },
+  "raw_compression_bytes_acquired": false
+}

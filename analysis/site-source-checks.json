@@ -1,7 +1,7 @@
 {
   "type": "In-memory source-render and direct-handler checks; not real-browser interaction or layout QA",
   "routes": 311,
-  "measured_tasks_with_bar_and_line_plots": 21,
+  "measured_tasks_with_bar_and_line_plots": 22,
   "specialist_overlays": "passed",
   "direct_named_reference_labels_and_numeric_cards": "passed",
   "posthoc_metric_sensitivity": "passed",

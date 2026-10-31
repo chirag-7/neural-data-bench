@@ -5,6 +5,9 @@ from expansion import ROOT as R,MODELS,adapter,metadata,scoring,sha
 import workflow
 records=[json.loads(x) for x in (R/'results/measurements.jsonl').read_text().splitlines()];tasks=sorted(set(r['benchmark_id'] for r in records)-{'C05','M04'});checks={};count=0
 for task in tasks:
+ if task=='L06':
+  from verify_posteriors import verify
+  v=verify(write=False);n=len(v['prediction_checks']);checks[task]=dict(predictions_rescored=n,frozen_hashes='passed',source_and_posterior_audit='All primary accuracies from heldout decisions and all secondary slicedW2 independently reproduced; no classifier refit');count+=n;continue
  d=R/f'experiments/{task}';spec=json.loads((d/'run-spec.json').read_text());assert sha(d/'prompt.txt')==spec['prompt_sha256'];provenance=json.loads((d/'generation-provenance.json').read_text());assert len(provenance)==3
  for p in provenance:
   assert p['tool_events']==0 and p['usage'] is not None

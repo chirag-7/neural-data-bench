@@ -38,6 +38,6 @@ Decision: **candidate_pending_validation** (2026-10-30). CNMF-E onephoton exampl
 
 ## Current admission and execution
 
-Preview 0.8: candidate_pending_validation. CNMF-E onephoton examples may support ROI and source extraction endpoints; require independent masks/timecourse labels, background model definition and frozen recording split. No real labeled movie acquired here. Specialized outputs cannot serve as unquestioned true signals.
+Preview 0.9: candidate_pending_validation. CNMF-E onephoton examples may support ROI and source extraction endpoints; require independent masks/timecourse labels, background model definition and frozen recording split. No real labeled movie acquired here. Specialized outputs cannot serve as unquestioned true signals.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

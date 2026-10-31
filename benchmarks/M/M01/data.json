@@ -33,7 +33,7 @@
     "evidence": "literature/admission-v04-inference-control.json"
   },
   "current_execution": {
-    "release": "0.8",
+    "release": "0.9",
     "status": "measured",
     "slice": "IBL Dec2019 choice data: all100 source mice, 83 train/17 held-out; 7,696/1,842 nonoverlapping conditional examples from latest archived sessions.",
     "evidence": "experiments/M01/protocol.md"

@@ -38,6 +38,6 @@ Decision: **deferred** (2026-10-30). Original LibriBrain 2026 publications page 
 
 ## Current admission and execution
 
-Preview 0.8: deferred. Original LibriBrain 2026 publications page accessible and identifies LibriBrain100. Need audio-aligned MEG acquisition, official track split and controlled language-prior scorer. Not downloaded in this pass; not a data-quality rejection.
+Preview 0.9: deferred. Original LibriBrain 2026 publications page accessible and identifies LibriBrain100. Need audio-aligned MEG acquisition, official track split and controlled language-prior scorer. Not downloaded in this pass; not a data-quality rejection.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

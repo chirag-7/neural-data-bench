@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.8: FALCON M2 custom cross-day decoding: 1,169 training and 754 test trials, 96 causal features, two finger-velocity outputs, one monkey.
+Preview 0.9: FALCON M2 custom cross-day decoding: 1,169 training and 754 test trials, 96 causal features, two finger-velocity outputs, one monkey.
 
 [Actual frozen contract and implementation](../../../experiments/G01). [Measured method/reference records](../../../results/G01.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

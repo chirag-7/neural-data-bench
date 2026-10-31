@@ -1,6 +1,6 @@
 {
   "title": "Neural Data Bench: task–resource evidence map",
-  "as_of": "2026-10-30",
+  "as_of": "2026-10-31",
   "scope": "Active candidate catalog plus measured custom slices; excluded proposals/unresolved-access resources preserved in versioned evidence archive. Neither catalog count nor category coverage proves completeness.",
   "readiness": {
     "B": "Existing benchmark or published evaluation protocol; public execution still requires setup",
@@ -951,7 +951,8 @@
       "limitations": "Lossless byte equality differs from downstream-preserving lossy compression",
       "priority": "P2",
       "source_urls": [
-        "https://allenneuraldynamics.github.io/data.html"
+        "https://allenneuraldynamics.github.io/data.html",
+        "https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml"
       ],
       "verification": "Primary documentation/paper located; downloads and execution not tested",
       "reviewed_on": "2026-10-30",
@@ -960,7 +961,7 @@
       "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
       "added_in": "0.1",
       "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Lossless compression is executable with small frozen raw ephys segments, exactbyte reconstruction and compression/runtime metrics. Need immutable raw-file URI, acquisition terms and canonical codec reference; no raw acquisition attempted here. Avoid different dtype or discarded channels confounding ratio.",
+      "admission_reason": "Original public S3 listing and binary metadata acquired;16 experimental raw sources identified and CC BY4.0 recorded by original AWS registry. Raw chunks, lossless byte-exact codec contract/scorer and specialist execution remain unfrozen; no compression scores claimed.",
       "dataset_group": "AIND electrophysiology compression benchmark",
       "operation_tags": [
         "quality_control"
@@ -968,7 +969,8 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
       "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-      "active": true
+      "active": true,
+      "latest_screening_evidence": "literature/admission-v09.json"
     },
     {
       "id": "B08",
@@ -3334,7 +3336,7 @@
       "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
       "added_in": "0.1",
       "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Original challenge data page verified; listed ETH mirror returnedHTTP403. Other mirrors not exhaustively tested; no source admitted.",
+      "admission_reason": "Original challenge page and three author-listed mirrors checked: ETH(previous0.8),Duke andNYU(this0.9) returnedHTTP403. Authorized Kaggle competition access not established; no raw network data admitted. No universal-inaccessibility claim.",
       "dataset_group": "ChaLearn Connectomics Challenge",
       "operation_tags": [
         "inference"
@@ -3343,7 +3345,7 @@
       "admission_evidence_file": "literature/admission-v04-inference-control.json",
       "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
       "active": true,
-      "latest_screening_evidence": "literature/admission-v08.json"
+      "latest_screening_evidence": "literature/admission-v09.json"
     },
     {
       "id": "L03",
@@ -3464,37 +3466,44 @@
       "id": "L06",
       "family_code": "L",
       "family": "Mechanistic and statistical inference",
-      "task": "Calibrated statistical neural inference",
-      "data": "Bernoulli GLM and reference posterior tasks",
-      "resource": "sbibm neuroscience-linked GLM task",
+      "task": "Spiking-neuron posterior inference",
+      "data": "Known100x10 causal design,ten100-bin observed synthetic spike trains,zero-mean Gaussian prior precision; hidden reference draws scorer-only",
+      "resource": "sbibm Bernoulli GLM; likelihood-informed posterior-sampling code generation",
       "readiness": "B",
       "setup_effort": "Medium",
-      "ground_truth": "Reference posterior samples and known simulator",
-      "recommended_metrics": "Posterior accuracy; coverage; predictive fit; simulation cost",
-      "recommended_split": "Official task protocol and observations",
+      "ground_truth": "Finite author Polya-Gamma MCMC posterior samples for ten simulated observations, not biological truth or analytic exact distributions",
+      "recommended_metrics": "Mean five-fold C2ST accuracy on2000 posterior draws; target0.5/lower better; prior-whitened slicedW2 secondary",
+      "recommended_split": "All ten original synthetic observations; each separate posterior; no supervised split, true parameters hidden",
       "specialist_baselines": "Published SBI algorithms and classical inference",
       "general_model_route": "General inference or code agent",
-      "limitations": "Generic toy tasks outside neuroscience excluded from neural aggregate",
+      "limitations": "Synthetic shared-design GLM; known likelihood changes original SBI information access. Custom2000draw C2ST and near-chance variation are not original leaderboard scores or superiority evidence. PG comparator is related to archived reference, shorter local chains have unproven convergence, one code generation/model.",
       "priority": "P2",
       "source_urls": [
-        "https://github.com/sbi-benchmark/sbibm"
+        "https://github.com/sbi-benchmark/sbibm",
+        "https://proceedings.mlr.press/v130/lueckmann21a.html",
+        "https://github.com/sbi-benchmark/sbibm/tree/f0bc44039e6b7e095c18d4e9e64819d75be76587",
+        "https://github.com/sbi-benchmark/sbibm/blob/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/metrics/c2st.py",
+        "https://github.com/zoj613/polyagamma",
+        "https://arxiv.org/abs/1205.0310"
       ],
-      "verification": "Primary paper/project located during bounded gap audit; not executed",
+      "verification": "Actual acquired/extracted source arrays, frozen protocol, submitted programs and prediction/scorer artifacts; exact scope in experiments/L06",
       "reviewed_on": "2026-10-30",
       "added_in": "0.2",
-      "execution_status": "not evaluated",
-      "current_best_status": "not verified",
+      "execution_status": "measured exploratory slice",
+      "current_best_status": "not verified; named matched specialist/reference evidence retained separately",
       "score_comparability": "Per task, split, input, scorer and adaptation budget; never inferred from resource name.",
-      "execution_admission": "candidate_pending_validation",
-      "admission_reason": "Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.",
-      "dataset_group": "sbibm neuroscience-linked GLM task",
+      "execution_admission": "measured",
+      "admission_reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
+      "dataset_group": "sbibm Bernoulli GLM fixed stimulus",
       "operation_tags": [
         "inference"
       ],
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
-      "admission_evidence_file": "literature/admission-v04-inference-control.json",
-      "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-      "active": true
+      "admission_evidence_file": "experiments/L06/protocol.md",
+      "review_depth": "All42 original files hashed; design reconstructed byte-for-value; all observations/sufficient statistics joined; frozen references/scorer/interface before generation; accuracy decisions and secondary distances independently auditable",
+      "active": true,
+      "executed_slice": "All ten original sbibm Bernoulli GLM observations; ten parameters,100 bins,10000 posterior draws per observation; custom likelihood-informed track.",
+      "execution_date": "2026-10-31"
     },
     {
       "id": "M01",
@@ -3770,7 +3779,7 @@
     "Spatial molecular inference is represented, but developmental, evolutionary and comparative diversity remains incomplete.",
     "Analytical theory, formal proofs and open-ended scientific discovery need separate validity criteria."
   ],
-  "release": "0.8",
+  "release": "0.9",
   "historical_mapped_entries": 114,
   "archived_candidates": 18
 }

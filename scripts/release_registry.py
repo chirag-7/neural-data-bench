@@ -2,7 +2,7 @@
 from pathlib import Path
 import json,hashlib,re
 R=Path(__file__).resolve().parents[1]
-RELEASE='0.8'
+RELEASE='0.9'
 def read(p):return json.loads((R/p).read_text())
 def dump(p,o):p=R/p;p.parent.mkdir(exist_ok=True,parents=True);p.write_text(json.dumps(o,indent=2,ensure_ascii=False)+'\n')
 def main():
@@ -61,7 +61,7 @@ def main():
   if t in removals:continue
   if t in measured:e['execution_admission']='measured';e['execution_status']='measured exploratory slice'
   if t in additions:e['admission_reason']='Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.'
-  e['active']=True;active.append(e);decisions.append(dict(benchmark_id=t,decision=e['execution_admission'],reason=e['admission_reason'],date='2026-10-30',evidence_file=e['admission_evidence_file'],source_urls=e['source_urls'],review_depth=e.get('review_depth','Actual source preparation plus per-task documented checks')))
+  e['active']=True;active.append(e);decisions.append(dict(benchmark_id=t,decision=e['execution_admission'],reason=e['admission_reason'],date=e.get('execution_date','2026-10-30'),evidence_file=e['admission_evidence_file'],source_urls=e['source_urls'],review_depth=e.get('review_depth','Actual source preparation plus per-task documented checks')))
   folder=R/f'benchmarks/{t[0]}/{t}'
   for name in ['README.md','worklog.md']:
    p=folder/name;text=p.read_text().split('\n## v0.5 execution status\n')[0].split('\n## Current admission and execution\n')[0]

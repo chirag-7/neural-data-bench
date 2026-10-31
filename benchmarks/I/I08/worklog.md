@@ -12,6 +12,6 @@ Decision: **deferred** (2026-10-30). Original ConfUSIus collection docs permit s
 
 ## Current admission and execution
 
-Preview 0.8: deferred. Original ConfUSIus collection docs permit small filtered downloads (~30MBexample), anonymous immutable releases and per-source licenses. Data size alone is not an exclusion. Need define actual experimental target (e.g. speed annotations) and held-out-recording/animal scorer; derived GLM maps are not independent truth.
+Preview 0.9: deferred. Original ConfUSIus collection docs permit small filtered downloads (~30MBexample), anonymous immutable releases and per-source licenses. Data size alone is not an exclusion. Need define actual experimental target (e.g. speed annotations) and held-out-recording/animal scorer; derived GLM maps are not independent truth.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

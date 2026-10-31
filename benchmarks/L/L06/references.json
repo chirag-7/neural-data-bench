@@ -1,7 +1,12 @@
 {
   "benchmark_id": "L06",
   "source_urls": [
-    "https://github.com/sbi-benchmark/sbibm"
+    "https://github.com/sbi-benchmark/sbibm",
+    "https://proceedings.mlr.press/v130/lueckmann21a.html",
+    "https://github.com/sbi-benchmark/sbibm/tree/f0bc44039e6b7e095c18d4e9e64819d75be76587",
+    "https://github.com/sbi-benchmark/sbibm/blob/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/metrics/c2st.py",
+    "https://github.com/zoj613/polyagamma",
+    "https://arxiv.org/abs/1205.0310"
   ],
-  "admission_evidence": "literature/admission-v04-inference-control.json"
+  "admission_evidence": "experiments/L06/protocol.md"
 }

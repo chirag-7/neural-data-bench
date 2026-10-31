@@ -30,7 +30,7 @@
     "evidence": "literature/admission-v04-behavior-population.json"
   },
   "current_execution": {
-    "release": "0.8",
+    "release": "0.9",
     "status": "measured",
     "slice": "CalMS21 Task 1: processed pose context at 3 Hz; 70 training and 19 test recordings.",
     "evidence": "literature/admission-v04-behavior-population.json"

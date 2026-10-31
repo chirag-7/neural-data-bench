@@ -334,7 +334,8 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://allenneuraldynamics.github.io/data.html"
+      "https://allenneuraldynamics.github.io/data.html",
+      "https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -1348,10 +1349,18 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://github.com/sbi-benchmark/sbibm"
+      "https://github.com/sbi-benchmark/sbibm",
+      "https://proceedings.mlr.press/v130/lueckmann21a.html",
+      "https://github.com/sbi-benchmark/sbibm/tree/f0bc44039e6b7e095c18d4e9e64819d75be76587",
+      "https://github.com/sbi-benchmark/sbibm/blob/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/metrics/c2st.py",
+      "https://github.com/zoj613/polyagamma",
+      "https://arxiv.org/abs/1205.0310"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-10-31",
+    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA.",
+    "local_reference_evidence": "results/L06.json",
+    "current_global_best_verified": false,
+    "verification_limits": "Custom likelihood-informed sampling and2000drawC2ST; no matched original simulator-only leaderboard comparison or analytic exact truth"
   },
   {
     "benchmark_id": "M01",

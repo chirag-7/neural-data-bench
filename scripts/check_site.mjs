@@ -86,7 +86,7 @@ for (const id of summary.measured_task_ids) {
   )
     throw Error("Both plots required:" + id);
   if (
-    ["B01", "J08", "H08", "H01", "H02", "C05", "A09", "I10", "K04", "M01"].includes(id) &&
+    ["B01", "J08", "H08", "H01", "H02", "C05", "A09", "I10", "K04", "M01", "L06"].includes(id) &&
     (!text.includes('class="direct-reference-label"') ||
       !text.includes('aria-label="Named reference scores"'))
   )
@@ -97,6 +97,28 @@ for (const id of summary.measured_task_ids) {
   );
   plots++;
 }
+ctx.location.hash = "#/benchmark/L06/results";
+vm.runInContext("draw()", ctx);
+if (!el("#benchmark-content").innerHTML.includes("Fixed Polya–Gamma sampler reference")) throw Error("Posterior comparator must retain explicit method name");
+vm.runInContext("l06Metric='c2st';l06Observation='mean';renderChart('#test-chart','L06')",ctx);
+if (!el("#test-chart").innerHTML.includes("chance target 0.5")) throw Error("C2ST chance target missing");
+el("#metric-picker").onchange({target:{value:"sliced-w2"}});
+el("#observation-picker").onchange({target:{value:"3"}});
+const posteriorRows=JSON.parse(fs.readFileSync(path.join(root,"results/L06.json"),"utf8"));
+for (const row of posteriorRows.filter(r=>r.status==="measured")) {
+ const expected=row.per_observation_sliced_w2[3].toFixed(4);
+ if(!el("#test-chart").innerHTML.includes(expected)) throw Error("Posterior observation/secondary metric mismatch:"+row.model);
+}
+vm.runInContext("l06Metric='c2st';l06Observation='mean'",ctx);
+ctx.location.hash = "#/analysis";vm.runInContext("analysisScope='observed_data';draw()",ctx);
+if(!el("#app").innerHTML.includes("This view excludes fully synthetic B01 and L06")) throw Error("Default observed-data exclusion scope missing");
+el("#analysis-scope").onchange({target:{value:"all"}});
+if(!el("#app").innerHTML.includes("This view includes fully synthetic B01 and L06")) throw Error("Synthetic-inclusive scope handler failed");
+for(const pair of summary.paired_macro_summaries){
+ if(pair.exploratory.n_tasks-pair.observed_data.n_tasks!==2) throw Error("Two fully synthetic tasks must be separated from generation aggregates");
+ if(pair.observed_data.task_summaries.some(t=>["B01","L06","M04","N05"].includes(t.benchmark_id))) throw Error("Synthetic/correctness task leaked into observed-data view");
+}
+vm.runInContext("analysisScope='observed_data'",ctx);
 vm.runInContext("selectedSlice='';renderChart('#test-chart','G01')", ctx);
 if (!el("#test-chart").innerHTML.includes("FALCON-style ridge"))
   throw Error("Negative-R2 reference missing");

@@ -1,7 +1,8 @@
 {
   "benchmark_id": "B07",
   "source_urls": [
-    "https://allenneuraldynamics.github.io/data.html"
+    "https://allenneuraldynamics.github.io/data.html",
+    "https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml"
   ],
   "admission_evidence": "literature/admission-v04-behavior-population.json"
 }

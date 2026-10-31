@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). CaImAn annotated data c
 
 ## Current admission and execution
 
-Preview 0.8: candidate_pending_validation. CaImAn annotated data can support ROI/timecourse evaluation but labels and quality annotations are incomplete; must pin exact nine-dataset release and per-endpoint valid annotations. No movies acquired here; neuron masks alone do not establish full demixing groundtruth.
+Preview 0.9: candidate_pending_validation. CaImAn annotated data can support ROI/timecourse evaluation but labels and quality annotations are incomplete; must pin exact nine-dataset release and per-endpoint valid annotations. No movies acquired here; neuron masks alone do not establish full demixing groundtruth.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

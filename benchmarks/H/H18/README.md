@@ -41,6 +41,6 @@ Decision: **deferred** (2026-10-30). Original DREAMS Zenodo record explicitly wa
 
 ## Current admission and execution
 
-Preview 0.8: deferred. Original DREAMS Zenodo record explicitly warns Expert1 spindle annotations stop after1000s. A naive full-1800s negative-label benchmark is excluded. A masked interval/Expert2 consensus protocol remains feasible but has not been validated, and original DREAMS noncommercial/no-adaptation terms need an appropriate data handling policy.
+Preview 0.9: deferred. MODA annotations/code are public, but raw MASS PSG requires a project/ethics access request. Annotation-only inputs cannot evaluate EEG detection; DREAMS remains a separate deferred alternative.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

@@ -12,6 +12,6 @@ Decision: **deferred** (2026-10-30). Wildlife video/action localization requires
 
 ## Current admission and execution
 
-Preview 0.8: deferred. Wildlife video/action localization requires substantial visual data and temporal action scorer beyond CPU numeric adapter. Valid adjacent-domain task; not redundant with lab social behavior and not yet acquired.
+Preview 0.9: deferred. Wildlife video/action localization requires substantial visual data and temporal action scorer beyond CPU numeric adapter. Valid adjacent-domain task; not redundant with lab social behavior and not yet acquired.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

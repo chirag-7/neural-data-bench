@@ -3,7 +3,8 @@
   "input": "Neuropixels voltage recordings",
   "ground_truth": "Original bytes or original downstream output",
   "sources": [
-    "https://allenneuraldynamics.github.io/data.html"
+    "https://allenneuraldynamics.github.io/data.html",
+    "https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml"
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
@@ -27,7 +28,7 @@
     "evidence": "literature/admission-v04-behavior-population.json"
   },
   "current_execution": {
-    "release": "0.8",
+    "release": "0.9",
     "status": "candidate_pending_validation",
     "slice": null,
     "evidence": "literature/admission-v04-behavior-population.json"

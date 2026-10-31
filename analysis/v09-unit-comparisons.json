@@ -1,0 +1,62 @@
+[
+  {
+    "model": "gpt-5.6-sol",
+    "reference": "polya-gamma",
+    "per_observation_advantage": [
+      -0.02475002408027649,
+      -0.020249992609024048,
+      -0.02175000309944153,
+      -0.000500023365020752,
+      -0.02974998950958252,
+      -0.026000022888183594,
+      -0.005250006914138794,
+      -0.038000017404556274,
+      -0.0029999911785125732,
+      -0.014750003814697266
+    ],
+    "point_wins": 0,
+    "point_losses": 10,
+    "ties": 0,
+    "caution": "Shared-design simulations; near-chance C2ST differences are not significance or independent biological replication"
+  },
+  {
+    "model": "gpt-6-sol",
+    "reference": "polya-gamma",
+    "per_observation_advantage": [
+      0.0007500052452087402,
+      -0.004249989986419678,
+      -0.011000007390975952,
+      -0.010000050067901611,
+      0.0015000104904174805,
+      -0.003750026226043701,
+      -0.004250019788742065,
+      -0.011750012636184692,
+      0.007250010967254639,
+      0.0027499794960021973
+    ],
+    "point_wins": 4,
+    "point_losses": 6,
+    "ties": 0,
+    "caution": "Shared-design simulations; near-chance C2ST differences are not significance or independent biological replication"
+  },
+  {
+    "model": "gpt-6.1-sol",
+    "reference": "polya-gamma",
+    "per_observation_advantage": [
+      -0.00974997878074646,
+      -0.04875001311302185,
+      -0.032499998807907104,
+      0.0009999871253967285,
+      -0.007750004529953003,
+      0.008749991655349731,
+      -0.0004999935626983643,
+      -0.02800002694129944,
+      -0.0027499794960021973,
+      0.005249977111816406
+    ],
+    "point_wins": 3,
+    "point_losses": 7,
+    "ties": 0,
+    "caution": "Shared-design simulations; near-chance C2ST differences are not significance or independent biological replication"
+  }
+]

@@ -1,9 +1,11 @@
 # Current status
 
-Research preview **0.8**: [release](release-v08.md), [findings](../analysis/findings.md), [machine-readable summary](../analysis/summary.json).
+Research preview **0.9**: [release](release-v09.md), [findings](../analysis/findings.md), [machine-readable summary](../analysis/summary.json).
 
-The active map has 96 entries across 14 families: **21 measured tasks, 47 pending validation and 28 deferred**. Eighteen other candidates remain archived. The first-submission panel has 27 slices per model and **81 attempts: 79 valid predictions and two failures**. Its 63 generated programs plus the six H02 follow-up programs give 69 programs overall.
+The active map has 96 entries across 14 families: **22 measured tasks, 46 pending validation and 28 deferred**. Eighteen other candidates remain archived. The first-submission panel has 28 slices per model and **84 attempts: 82 valid predictions and two failures**. Its 66 generated programs plus six separate H02 follow-up programs give 72 programs overall.
 
-The central ledger has 162 model/reference records and 156 stored predictions. Seven additional H02 follow-up predictions give 163 unique prediction files across both panels. Repeated H02 generations do not enter the first-submission macro totals. The earlier 75-attempt snapshot remains unchanged.
+The central ledger has 167 model/reference records and 161 stored posterior/prediction outputs. Seven additional H02 outputs give 168 unique prediction files across both panels. H02 repetitions do not enter first-submission macro totals. Every 0.8 record remains unchanged.
 
-New K04 and M01 experiments add six strict-valid model submissions and four reference runs. Source selection and metric arithmetic have independent checks. Open-weight and native multimodal tracks remain unrun, as do 75 active candidates. Current global SOTA, exhaustive coverage and paper readiness remain unestablished.
+L06 adds three strict-valid generated posterior samplers and two fixed references on all ten original simulated GLM observations. Primary accuracy arithmetic, source joins, frozen artifacts and secondary distribution distances have independent audits. It is known-likelihood inference, not the original simulator-only SBI leaderboard or biological data. The observed-data macro view is now the default, with a synthetic-inclusive view available explicitly.
+
+There are 74 active unrun candidates. Current global best, exhaustive coverage and paper readiness remain unestablished. See the [candid progress assessment](progress-assessment.md).

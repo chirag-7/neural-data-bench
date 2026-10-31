@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.8: FRESH optical-density tapping classification: seven training and three test people; condition and session remain confounded.
+Preview 0.9: FRESH optical-density tapping classification: seven training and three test people; condition and session remain confounded.
 
 [Actual frozen contract and implementation](../../../experiments/I07). [Measured method/reference records](../../../results/I07.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

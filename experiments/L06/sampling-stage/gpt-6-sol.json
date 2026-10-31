@@ -1,0 +1,25 @@
+{
+  "benchmark_id": "L06",
+  "slice_id": "posterior-v1",
+  "model": "gpt-6-sol",
+  "status": "sampled",
+  "date": "2026-10-31",
+  "track": "T3",
+  "n_units": 10,
+  "n_posterior_draws_per_unit": 10000,
+  "seconds": 0.8670119170565158,
+  "prediction_file": "results/predictions/L06/posterior-v1--gpt-6-sol.npz",
+  "prediction_sha256": "1dc87b6c36cc05ecba1837b947b792a665976769466b38f960af0c7c9e81386e",
+  "input_sha256": {
+    "data/cache/L06/data.npz": "c3ae6e81458fd88dac7a1492443bfe4d6d49c62ed7a85b1f98486ab73c171e3e"
+  },
+  "prompt_sha256": "9fd8e357ecf8b9c42cfd13276af3c1492a9b3ccf7cee487b1a3e2a3802de5a4a",
+  "truth_type": "synthetic_reference_posterior",
+  "reference_type": "local_reproduction",
+  "superiority_eligible": false,
+  "superiority_reason": "Synthetic custom likelihood-informed track, one generation; no global-best/equal-research-effort claim",
+  "description": "Samples a separate joint posterior for each spike train using independent Student-t Metropolis-Hastings proposals. A 4,000-draw pilot follows 1,000 burn-in steps to tune each proposal\u2019s mean and full covariance. The final chain uses a fixed proposal, 1,000 burn-in steps, and saves every fifth state. Acceptance ratios use the supplied full prior precision and exact Bernoulli log posterior.",
+  "code_sha256": "02192fd759e5c1b02cca5c3b0bd5403cf82ff52de78343441328e7a1b98e9e4a",
+  "code_lines": 110,
+  "line_limit_compliant": true
+}

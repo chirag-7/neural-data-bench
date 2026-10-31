@@ -12,6 +12,6 @@ Decision: **deferred** (2026-10-30). IBL AI Agent is a real analysis toolkit, no
 
 ## Current admission and execution
 
-Preview 0.8: deferred. IBL AI Agent is a real analysis toolkit, not a frozen false-positive-rate benchmark. Need animal-held-out genuine/null task generation, exchangeability-preserving randomization and a blinded power/type-I-error protocol. No significance-searching substituted for benchmark completion.
+Preview 0.9: deferred. IBL AI Agent is a real analysis toolkit, not a frozen false-positive-rate benchmark. Need animal-held-out genuine/null task generation, exchangeability-preserving randomization and a blinded power/type-I-error protocol. No significance-searching substituted for benchmark completion.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json).

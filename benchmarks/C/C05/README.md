@@ -41,6 +41,6 @@ Decision: **measured** (2026-10-30). Root repository already contains measured S
 
 ## Current admission and execution
 
-Preview 0.8: measured. Root repository already contains measured Spikefinder preparation slices for all three Sol programs, predictions and archived references. This screening task did not rerun them; officialchallenge aggregate/currentSOTA remain distinct.
+Preview 0.9: measured. Root repository already contains measured Spikefinder preparation slices for all three Sol programs, predictions and archived references. This screening task did not rerun them; officialchallenge aggregate/currentSOTA remain distinct.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json). [Actual protocol/worklog](../../../experiments/C05). [Task measurements](../../../results/C05.json).

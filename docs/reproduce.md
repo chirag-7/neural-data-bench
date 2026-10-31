@@ -207,3 +207,26 @@ The evaluation runner refuses to overwrite a method attempt. To reproduce stored
 `verify_new_candidates.py` independently checks source joins, donor and mouse partitions, the exact training-only gene selection, all behavioral target/history values and group-equal metric arithmetic. The frozen sklearn loss preserves float32 arithmetic for the source-inspired GLM's float32 probabilities; its independent float64 audit is within one float32 epsilon. Other new scores agree within 1e-12. No primary scores were replaced to hide that precision difference.
 
 The prior first-submission ledger is preserved in `results/archive/v07-measurements.jsonl`; integrity checks require every historical record to remain unchanged in the expanded central ledger. H02's repeated generations remain in their separate directory and are not re-counted as new task attempts.
+
+## Preview 0.9: L06 posterior inference
+
+The [protocol](../experiments/L06/protocol.md) and sampler/scorer files were frozen in commit `93c6a9824916b57105063cdc41b234ae6782f2de` before generation or any method score. Reacquiring original data and auditing retained outputs requires no model account:
+
+```sh
+python scripts/acquire_posterior_candidates.py
+python experiments/L06/adapter.py
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/verify_posteriors.py
+```
+
+The acquisition helper checks all 42 original file hashes against the committed manifest. Independent verification reconstructs the original design and prior, checks all raw spike/sufficient-statistic joins and reference CSVs, recomputes all classifier held-out accuracies/fold assignments from retained decisions and independently reproduces all secondary sliced distances. It does **not** train the classifiers a second time. Full classifier regeneration uses the frozen scorer and requires scikit-learn 1.9.1; numerical environments and platform may change fitted decisions.
+
+To rerun saved programs, use a separate reproduction checkout and preserve the original `results/L06.json` elsewhere; the evaluator refuses existing attempts. With numpy 2.3.5, scipy 1.18.1 and scikit-learn 1.9.1 in the general environment and polyagamma 2.0.2 in the reference environment:
+
+```sh
+# Preserve the release's original ledger first; only in an isolated reproduction checkout.
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/posterior_candidates.py evaluate
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/posterior_candidates.py score
+python scripts/verify_posteriors.py
+```
+
+The reference-only dependency is not imported by generated model programs. The general and reference array stack is otherwise identical. Do not regenerate prompt/spec or use newly generated code to replace released attempts. C2ST classifier fitting is outside each 180-second posterior-sampling call and can take substantially longer. Posterior outputs and held-out classifier decisions are retained, with primary and secondary metrics separately named. Historical 0.8 records are retained in `results/archive/v08-measurements.jsonl` and must remain identical in the expanded ledger.

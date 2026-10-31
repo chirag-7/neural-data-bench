@@ -1,0 +1,1332 @@
+[
+  {
+    "Key": "ephys-compression/aind-np1/625749_2022-08-03_15-15-06_ProbeA/binary.json",
+    "LastModified": "2023-05-09T22:08:28.000Z",
+    "ETag": "\"c6d13082c31bd8674148ad53222aca2d\"",
+    "Size": "47179",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/625749_2022-08-03_15-15-06_ProbeA/probe.json",
+    "LastModified": "2023-05-09T22:08:28.000Z",
+    "ETag": "\"aa72ccd493d80e35fa2abbb998804b59\"",
+    "Size": "189588",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/625749_2022-08-03_15-15-06_ProbeA/properties/channel_name.npy",
+    "LastModified": "2023-05-09T22:58:49.000Z",
+    "ETag": "\"7c360eee298cff9538c633494b40d157\"",
+    "Size": "98432",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/625749_2022-08-03_15-15-06_ProbeA/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:58:49.000Z",
+    "ETag": "\"9ecfcafcb2709cee2cb257ac4f98684c\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/625749_2022-08-03_15-15-06_ProbeA/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:49.000Z",
+    "ETag": "\"81a2d3958570101d4d0cb4296ef9a436\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/625749_2022-08-03_15-15-06_ProbeA/properties/group.npy",
+    "LastModified": "2023-05-09T22:58:49.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/625749_2022-08-03_15-15-06_ProbeA/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:58:49.000Z",
+    "ETag": "\"e3605946e844f69f82725d88b27e025e\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/625749_2022-08-03_15-15-06_ProbeA/properties/location.npy",
+    "LastModified": "2023-05-09T22:58:49.000Z",
+    "ETag": "\"32ec3bb1e80b7825da12c28ccd728069\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/625749_2022-08-03_15-15-06_ProbeA/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:50.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/625749_2022-08-03_15-15-06_ProbeA/provenance.json",
+    "LastModified": "2023-05-09T22:08:28.000Z",
+    "ETag": "\"95b18f73256ea88497d98e77e3745e7d\"",
+    "Size": "54559",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/625749_2022-08-03_15-15-06_ProbeA/si_folder.json",
+    "LastModified": "2023-05-09T22:08:28.000Z",
+    "ETag": "\"98205c031181be3dda308c371cb161f9\"",
+    "Size": "54312",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/625749_2022-08-03_15-15-06_ProbeA/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T22:08:29.000Z",
+    "ETag": "\"30d41becbbb61ed75b3c569da56f1d36-7986\"",
+    "Size": "41864785920",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634568_2022-08-05_15-59-46_ProbeA/binary.json",
+    "LastModified": "2023-05-09T22:29:44.000Z",
+    "ETag": "\"ee2b04f83e65fe1a9b0bb0e0fa3af976\"",
+    "Size": "47188",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634568_2022-08-05_15-59-46_ProbeA/probe.json",
+    "LastModified": "2023-05-09T22:29:44.000Z",
+    "ETag": "\"04e4f467e8904a70a7e7296c4454bed9\"",
+    "Size": "189588",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634568_2022-08-05_15-59-46_ProbeA/properties/channel_name.npy",
+    "LastModified": "2023-05-09T22:58:52.000Z",
+    "ETag": "\"7c360eee298cff9538c633494b40d157\"",
+    "Size": "98432",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634568_2022-08-05_15-59-46_ProbeA/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:58:52.000Z",
+    "ETag": "\"9ecfcafcb2709cee2cb257ac4f98684c\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634568_2022-08-05_15-59-46_ProbeA/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:52.000Z",
+    "ETag": "\"81a2d3958570101d4d0cb4296ef9a436\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634568_2022-08-05_15-59-46_ProbeA/properties/group.npy",
+    "LastModified": "2023-05-09T22:58:52.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634568_2022-08-05_15-59-46_ProbeA/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:58:52.000Z",
+    "ETag": "\"e3605946e844f69f82725d88b27e025e\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634568_2022-08-05_15-59-46_ProbeA/properties/location.npy",
+    "LastModified": "2023-05-09T22:58:53.000Z",
+    "ETag": "\"32ec3bb1e80b7825da12c28ccd728069\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634568_2022-08-05_15-59-46_ProbeA/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:53.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634568_2022-08-05_15-59-46_ProbeA/provenance.json",
+    "LastModified": "2023-05-09T22:29:45.000Z",
+    "ETag": "\"7ca2f0d72c3619cccbd12edd829cd438\"",
+    "Size": "54595",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634568_2022-08-05_15-59-46_ProbeA/si_folder.json",
+    "LastModified": "2023-05-09T22:29:45.000Z",
+    "ETag": "\"a5b723f962347fa8960c81aa916c548a\"",
+    "Size": "54317",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634568_2022-08-05_15-59-46_ProbeA/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T22:29:45.000Z",
+    "ETag": "\"7fbea602c83682caeb4d7fd0eec86079-7762\"",
+    "Size": "40694077440",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634569_2022-08-09_16-14-38_ProbeA/binary.json",
+    "LastModified": "2023-05-09T22:31:23.000Z",
+    "ETag": "\"b5bdd7646e398d34675f1f2dfcb56871\"",
+    "Size": "47183",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634569_2022-08-09_16-14-38_ProbeA/probe.json",
+    "LastModified": "2023-05-09T22:31:23.000Z",
+    "ETag": "\"aa72ccd493d80e35fa2abbb998804b59\"",
+    "Size": "189588",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634569_2022-08-09_16-14-38_ProbeA/properties/channel_name.npy",
+    "LastModified": "2023-05-09T22:58:53.000Z",
+    "ETag": "\"7c360eee298cff9538c633494b40d157\"",
+    "Size": "98432",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634569_2022-08-09_16-14-38_ProbeA/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:58:53.000Z",
+    "ETag": "\"9ecfcafcb2709cee2cb257ac4f98684c\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634569_2022-08-09_16-14-38_ProbeA/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:53.000Z",
+    "ETag": "\"81a2d3958570101d4d0cb4296ef9a436\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634569_2022-08-09_16-14-38_ProbeA/properties/group.npy",
+    "LastModified": "2023-05-09T22:58:53.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634569_2022-08-09_16-14-38_ProbeA/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:58:53.000Z",
+    "ETag": "\"e3605946e844f69f82725d88b27e025e\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634569_2022-08-09_16-14-38_ProbeA/properties/location.npy",
+    "LastModified": "2023-05-09T22:58:53.000Z",
+    "ETag": "\"32ec3bb1e80b7825da12c28ccd728069\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634569_2022-08-09_16-14-38_ProbeA/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:53.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634569_2022-08-09_16-14-38_ProbeA/provenance.json",
+    "LastModified": "2023-05-09T22:31:23.000Z",
+    "ETag": "\"ff91c0266369d2d01c41219c9b4bfea9\"",
+    "Size": "129942",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634569_2022-08-09_16-14-38_ProbeA/si_folder.json",
+    "LastModified": "2023-05-09T22:31:23.000Z",
+    "ETag": "\"98205c031181be3dda308c371cb161f9\"",
+    "Size": "54312",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634569_2022-08-09_16-14-38_ProbeA/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T22:31:23.000Z",
+    "ETag": "\"c046f4e911c65d56487ff25e0622de68-7652\"",
+    "Size": "40115515392",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634571_2022-08-04_14-27-05_ProbeA/binary.json",
+    "LastModified": "2023-05-09T22:37:01.000Z",
+    "ETag": "\"28fa2f4df12022d52c68eb5839a656e3\"",
+    "Size": "47179",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634571_2022-08-04_14-27-05_ProbeA/probe.json",
+    "LastModified": "2023-05-09T22:37:02.000Z",
+    "ETag": "\"aa72ccd493d80e35fa2abbb998804b59\"",
+    "Size": "189588",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634571_2022-08-04_14-27-05_ProbeA/properties/channel_name.npy",
+    "LastModified": "2023-05-09T22:58:54.000Z",
+    "ETag": "\"7c360eee298cff9538c633494b40d157\"",
+    "Size": "98432",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634571_2022-08-04_14-27-05_ProbeA/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:58:54.000Z",
+    "ETag": "\"9ecfcafcb2709cee2cb257ac4f98684c\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634571_2022-08-04_14-27-05_ProbeA/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:54.000Z",
+    "ETag": "\"81a2d3958570101d4d0cb4296ef9a436\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634571_2022-08-04_14-27-05_ProbeA/properties/group.npy",
+    "LastModified": "2023-05-09T22:58:54.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634571_2022-08-04_14-27-05_ProbeA/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:58:54.000Z",
+    "ETag": "\"e3605946e844f69f82725d88b27e025e\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634571_2022-08-04_14-27-05_ProbeA/properties/location.npy",
+    "LastModified": "2023-05-09T22:58:54.000Z",
+    "ETag": "\"32ec3bb1e80b7825da12c28ccd728069\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634571_2022-08-04_14-27-05_ProbeA/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:54.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634571_2022-08-04_14-27-05_ProbeA/provenance.json",
+    "LastModified": "2023-05-09T22:37:02.000Z",
+    "ETag": "\"43b2c1ccb2c7398e56acbd14b4419325\"",
+    "Size": "129942",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634571_2022-08-04_14-27-05_ProbeA/si_folder.json",
+    "LastModified": "2023-05-09T22:37:02.000Z",
+    "ETag": "\"98205c031181be3dda308c371cb161f9\"",
+    "Size": "54312",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np1/634571_2022-08-04_14-27-05_ProbeA/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T22:37:02.000Z",
+    "ETag": "\"76e0734f7a3981ac5cfdd182d56a9c4f-7978\"",
+    "Size": "41822641152",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/595262_2022-02-21_15-18-07_ProbeA/binary.json",
+    "LastModified": "2023-05-09T22:22:01.000Z",
+    "ETag": "\"fd13eff33faf819a5e05a95ffb91a0cc\"",
+    "Size": "47185",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/595262_2022-02-21_15-18-07_ProbeA/probe.json",
+    "LastModified": "2023-05-09T22:22:01.000Z",
+    "ETag": "\"83fd241ddc1b071d70dbc48b27155d57\"",
+    "Size": "189837",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/595262_2022-02-21_15-18-07_ProbeA/properties/channel_name.npy",
+    "LastModified": "2023-05-09T22:58:51.000Z",
+    "ETag": "\"7c360eee298cff9538c633494b40d157\"",
+    "Size": "98432",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/595262_2022-02-21_15-18-07_ProbeA/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:58:51.000Z",
+    "ETag": "\"ed85eaa489d3f644c8f27e9ebcd01f37\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/595262_2022-02-21_15-18-07_ProbeA/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:51.000Z",
+    "ETag": "\"81a2d3958570101d4d0cb4296ef9a436\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/595262_2022-02-21_15-18-07_ProbeA/properties/group.npy",
+    "LastModified": "2023-05-09T22:58:52.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/595262_2022-02-21_15-18-07_ProbeA/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:58:52.000Z",
+    "ETag": "\"1a88e8b647785c374a1bef3052abe69b\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/595262_2022-02-21_15-18-07_ProbeA/properties/location.npy",
+    "LastModified": "2023-05-09T22:58:52.000Z",
+    "ETag": "\"ca489e91ddea39bc77502473869cd51c\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/595262_2022-02-21_15-18-07_ProbeA/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:52.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/595262_2022-02-21_15-18-07_ProbeA/provenance.json",
+    "LastModified": "2023-05-09T22:22:01.000Z",
+    "ETag": "\"5c651a3763b0be01b62de7f7539286d9\"",
+    "Size": "129274",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/595262_2022-02-21_15-18-07_ProbeA/si_folder.json",
+    "LastModified": "2023-05-09T22:22:01.000Z",
+    "ETag": "\"7acb19bd03bda21e2aff5ec020c3936f\"",
+    "Size": "53879",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/595262_2022-02-21_15-18-07_ProbeA/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T22:22:01.000Z",
+    "ETag": "\"65be29bb9e9ba88b0ac93a319b004f20-3219\"",
+    "Size": "16871636736",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/602454_2022-03-22_16-30-03_ProbeB/binary.json",
+    "LastModified": "2023-05-09T22:05:57.000Z",
+    "ETag": "\"3649b3309b003f34b93291973475b9c5\"",
+    "Size": "47187",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/602454_2022-03-22_16-30-03_ProbeB/probe.json",
+    "LastModified": "2023-05-09T22:05:57.000Z",
+    "ETag": "\"83fd241ddc1b071d70dbc48b27155d57\"",
+    "Size": "189837",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/602454_2022-03-22_16-30-03_ProbeB/properties/channel_name.npy",
+    "LastModified": "2023-05-09T22:56:10.000Z",
+    "ETag": "\"d138eff33ee0b22f82dd917070cc31f1\"",
+    "Size": "98432",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/602454_2022-03-22_16-30-03_ProbeB/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:56:10.000Z",
+    "ETag": "\"ed85eaa489d3f644c8f27e9ebcd01f37\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/602454_2022-03-22_16-30-03_ProbeB/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:56:11.000Z",
+    "ETag": "\"81a2d3958570101d4d0cb4296ef9a436\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/602454_2022-03-22_16-30-03_ProbeB/properties/group.npy",
+    "LastModified": "2023-05-09T22:56:11.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/602454_2022-03-22_16-30-03_ProbeB/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:56:11.000Z",
+    "ETag": "\"1a88e8b647785c374a1bef3052abe69b\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/602454_2022-03-22_16-30-03_ProbeB/properties/location.npy",
+    "LastModified": "2023-05-09T22:56:11.000Z",
+    "ETag": "\"ca489e91ddea39bc77502473869cd51c\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/602454_2022-03-22_16-30-03_ProbeB/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:56:11.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/602454_2022-03-22_16-30-03_ProbeB/provenance.json",
+    "LastModified": "2023-05-09T22:05:57.000Z",
+    "ETag": "\"97f3cdca5f2188d4e53a0396edacc040\"",
+    "Size": "54044",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/602454_2022-03-22_16-30-03_ProbeB/si_folder.json",
+    "LastModified": "2023-05-09T22:05:57.000Z",
+    "ETag": "\"7acb19bd03bda21e2aff5ec020c3936f\"",
+    "Size": "53879",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/602454_2022-03-22_16-30-03_ProbeB/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T22:05:58.000Z",
+    "ETag": "\"5b282bbac5233f60f3418c9b4d8ec6fa-3958\"",
+    "Size": "20749808640",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-13_19-18-04_ProbeB/binary.json",
+    "LastModified": "2023-05-09T22:16:08.000Z",
+    "ETag": "\"7ba0df4ef107813c19aad07b367f4a92\"",
+    "Size": "47188",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-13_19-18-04_ProbeB/probe.json",
+    "LastModified": "2023-05-09T22:16:08.000Z",
+    "ETag": "\"83fd241ddc1b071d70dbc48b27155d57\"",
+    "Size": "189837",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-13_19-18-04_ProbeB/properties/channel_name.npy",
+    "LastModified": "2023-05-09T22:58:50.000Z",
+    "ETag": "\"d138eff33ee0b22f82dd917070cc31f1\"",
+    "Size": "98432",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-13_19-18-04_ProbeB/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:58:50.000Z",
+    "ETag": "\"ed85eaa489d3f644c8f27e9ebcd01f37\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-13_19-18-04_ProbeB/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:50.000Z",
+    "ETag": "\"81a2d3958570101d4d0cb4296ef9a436\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-13_19-18-04_ProbeB/properties/group.npy",
+    "LastModified": "2023-05-09T22:58:50.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-13_19-18-04_ProbeB/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:58:50.000Z",
+    "ETag": "\"1a88e8b647785c374a1bef3052abe69b\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-13_19-18-04_ProbeB/properties/location.npy",
+    "LastModified": "2023-05-09T22:58:50.000Z",
+    "ETag": "\"ca489e91ddea39bc77502473869cd51c\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-13_19-18-04_ProbeB/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:50.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-13_19-18-04_ProbeB/provenance.json",
+    "LastModified": "2023-05-09T22:16:08.000Z",
+    "ETag": "\"5e72e3521c5249c6960f8ae43e8f25ab\"",
+    "Size": "129274",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-13_19-18-04_ProbeB/si_folder.json",
+    "LastModified": "2023-05-09T22:16:08.000Z",
+    "ETag": "\"7acb19bd03bda21e2aff5ec020c3936f\"",
+    "Size": "53879",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-13_19-18-04_ProbeB/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T22:16:08.000Z",
+    "ETag": "\"404bc22ab95417a229ff15677e6f7b77-4528\"",
+    "Size": "23738422272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-14_17-17-10_ProbeC/binary.json",
+    "LastModified": "2023-05-09T22:28:48.000Z",
+    "ETag": "\"82844c4a6e6dbf02f6ecc5cf4f4c8302\"",
+    "Size": "47188",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-14_17-17-10_ProbeC/probe.json",
+    "LastModified": "2023-05-09T22:28:48.000Z",
+    "ETag": "\"83fd241ddc1b071d70dbc48b27155d57\"",
+    "Size": "189837",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-14_17-17-10_ProbeC/properties/channel_name.npy",
+    "LastModified": "2023-05-09T22:58:50.000Z",
+    "ETag": "\"d138eff33ee0b22f82dd917070cc31f1\"",
+    "Size": "98432",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-14_17-17-10_ProbeC/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:58:51.000Z",
+    "ETag": "\"ed85eaa489d3f644c8f27e9ebcd01f37\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-14_17-17-10_ProbeC/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:51.000Z",
+    "ETag": "\"81a2d3958570101d4d0cb4296ef9a436\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-14_17-17-10_ProbeC/properties/group.npy",
+    "LastModified": "2023-05-09T22:58:51.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-14_17-17-10_ProbeC/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:58:51.000Z",
+    "ETag": "\"1a88e8b647785c374a1bef3052abe69b\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-14_17-17-10_ProbeC/properties/location.npy",
+    "LastModified": "2023-05-09T22:58:51.000Z",
+    "ETag": "\"ca489e91ddea39bc77502473869cd51c\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-14_17-17-10_ProbeC/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:51.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-14_17-17-10_ProbeC/provenance.json",
+    "LastModified": "2023-05-09T22:28:48.000Z",
+    "ETag": "\"c4e7260dfb41d3a4b35c5d25cac125ba\"",
+    "Size": "129274",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-14_17-17-10_ProbeC/si_folder.json",
+    "LastModified": "2023-05-09T22:28:48.000Z",
+    "ETag": "\"7acb19bd03bda21e2aff5ec020c3936f\"",
+    "Size": "53879",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/612962_2022-04-14_17-17-10_ProbeC/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T22:28:48.000Z",
+    "ETag": "\"52ba2e517b87160d49898c25ba6fb836-4635\"",
+    "Size": "24299574528",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618197_2022-06-21_14-08-06_ProbeC/binary.json",
+    "LastModified": "2023-05-09T21:57:34.000Z",
+    "ETag": "\"2185155961053d28017a9afd76a4a2e9\"",
+    "Size": "47187",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618197_2022-06-21_14-08-06_ProbeC/probe.json",
+    "LastModified": "2023-05-09T21:57:17.000Z",
+    "ETag": "\"83fd241ddc1b071d70dbc48b27155d57\"",
+    "Size": "189837",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618197_2022-06-21_14-08-06_ProbeC/properties/channel_name.npy",
+    "LastModified": "2023-05-09T22:08:27.000Z",
+    "ETag": "\"d138eff33ee0b22f82dd917070cc31f1\"",
+    "Size": "98432",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618197_2022-06-21_14-08-06_ProbeC/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:08:27.000Z",
+    "ETag": "\"ed85eaa489d3f644c8f27e9ebcd01f37\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618197_2022-06-21_14-08-06_ProbeC/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:08:27.000Z",
+    "ETag": "\"81a2d3958570101d4d0cb4296ef9a436\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618197_2022-06-21_14-08-06_ProbeC/properties/group.npy",
+    "LastModified": "2023-05-09T22:08:27.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618197_2022-06-21_14-08-06_ProbeC/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:08:28.000Z",
+    "ETag": "\"1a88e8b647785c374a1bef3052abe69b\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618197_2022-06-21_14-08-06_ProbeC/properties/location.npy",
+    "LastModified": "2023-05-09T22:08:28.000Z",
+    "ETag": "\"ca489e91ddea39bc77502473869cd51c\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618197_2022-06-21_14-08-06_ProbeC/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:08:28.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618197_2022-06-21_14-08-06_ProbeC/provenance.json",
+    "LastModified": "2023-05-09T21:57:34.000Z",
+    "ETag": "\"0d857b4e0753528d9a41461155d6693d\"",
+    "Size": "129274",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618197_2022-06-21_14-08-06_ProbeC/si_folder.json",
+    "LastModified": "2023-05-09T21:57:34.000Z",
+    "ETag": "\"7acb19bd03bda21e2aff5ec020c3936f\"",
+    "Size": "53879",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618197_2022-06-21_14-08-06_ProbeC/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T21:57:34.000Z",
+    "ETag": "\"a20e922e648796e85a1139984bf3ace1-3273\"",
+    "Size": "17156947200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618318_2022-04-13_14-59-07_ProbeB/binary.json",
+    "LastModified": "2023-05-09T21:57:35.000Z",
+    "ETag": "\"15dbce8a04eb4aea6d6437d2ffa4b880\"",
+    "Size": "47187",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618318_2022-04-13_14-59-07_ProbeB/probe.json",
+    "LastModified": "2023-05-09T21:57:35.000Z",
+    "ETag": "\"83fd241ddc1b071d70dbc48b27155d57\"",
+    "Size": "189837",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618318_2022-04-13_14-59-07_ProbeB/properties/channel_name.npy",
+    "LastModified": "2023-05-09T22:58:46.000Z",
+    "ETag": "\"d138eff33ee0b22f82dd917070cc31f1\"",
+    "Size": "98432",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618318_2022-04-13_14-59-07_ProbeB/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:58:47.000Z",
+    "ETag": "\"ed85eaa489d3f644c8f27e9ebcd01f37\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618318_2022-04-13_14-59-07_ProbeB/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:47.000Z",
+    "ETag": "\"81a2d3958570101d4d0cb4296ef9a436\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618318_2022-04-13_14-59-07_ProbeB/properties/group.npy",
+    "LastModified": "2023-05-09T22:58:47.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618318_2022-04-13_14-59-07_ProbeB/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:58:47.000Z",
+    "ETag": "\"1a88e8b647785c374a1bef3052abe69b\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618318_2022-04-13_14-59-07_ProbeB/properties/location.npy",
+    "LastModified": "2023-05-09T22:58:47.000Z",
+    "ETag": "\"ca489e91ddea39bc77502473869cd51c\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618318_2022-04-13_14-59-07_ProbeB/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:47.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618318_2022-04-13_14-59-07_ProbeB/provenance.json",
+    "LastModified": "2023-05-09T21:57:35.000Z",
+    "ETag": "\"940135fa5d60cefcd64bf2eae18b4685\"",
+    "Size": "54044",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618318_2022-04-13_14-59-07_ProbeB/si_folder.json",
+    "LastModified": "2023-05-09T21:57:35.000Z",
+    "ETag": "\"7acb19bd03bda21e2aff5ec020c3936f\"",
+    "Size": "53879",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618318_2022-04-13_14-59-07_ProbeB/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T21:57:35.000Z",
+    "ETag": "\"e5e90e29af3f39621b65774b5fa50764-4171\"",
+    "Size": "21867379200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618384_2022-04-14_15-11-00_ProbeB/binary.json",
+    "LastModified": "2023-05-09T22:07:20.000Z",
+    "ETag": "\"1027073dd0f32b75cd0e33f4e0e068b5\"",
+    "Size": "47188",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618384_2022-04-14_15-11-00_ProbeB/probe.json",
+    "LastModified": "2023-05-09T22:07:20.000Z",
+    "ETag": "\"83fd241ddc1b071d70dbc48b27155d57\"",
+    "Size": "189837",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618384_2022-04-14_15-11-00_ProbeB/properties/channel_name.npy",
+    "LastModified": "2023-05-09T22:58:48.000Z",
+    "ETag": "\"d138eff33ee0b22f82dd917070cc31f1\"",
+    "Size": "98432",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618384_2022-04-14_15-11-00_ProbeB/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:58:48.000Z",
+    "ETag": "\"ed85eaa489d3f644c8f27e9ebcd01f37\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618384_2022-04-14_15-11-00_ProbeB/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:48.000Z",
+    "ETag": "\"81a2d3958570101d4d0cb4296ef9a436\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618384_2022-04-14_15-11-00_ProbeB/properties/group.npy",
+    "LastModified": "2023-05-09T22:58:49.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618384_2022-04-14_15-11-00_ProbeB/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:58:49.000Z",
+    "ETag": "\"1a88e8b647785c374a1bef3052abe69b\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618384_2022-04-14_15-11-00_ProbeB/properties/location.npy",
+    "LastModified": "2023-05-09T22:58:49.000Z",
+    "ETag": "\"ca489e91ddea39bc77502473869cd51c\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618384_2022-04-14_15-11-00_ProbeB/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:49.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618384_2022-04-14_15-11-00_ProbeB/provenance.json",
+    "LastModified": "2023-05-09T22:07:21.000Z",
+    "ETag": "\"4da463676063a4b9dad00717ca283e53\"",
+    "Size": "54044",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618384_2022-04-14_15-11-00_ProbeB/si_folder.json",
+    "LastModified": "2023-05-09T22:07:21.000Z",
+    "ETag": "\"7acb19bd03bda21e2aff5ec020c3936f\"",
+    "Size": "53879",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/618384_2022-04-14_15-11-00_ProbeB/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T22:07:21.000Z",
+    "ETag": "\"6b87aa98eb63154a28ee9f68229a08ff-5594\"",
+    "Size": "29326485504",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/621362_2022-07-14_11-19-36_ProbeA/binary.json",
+    "LastModified": "2023-05-09T22:07:14.000Z",
+    "ETag": "\"7dc9143653a2bbac8c1f0a892697d848\"",
+    "Size": "47191",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/621362_2022-07-14_11-19-36_ProbeA/probe.json",
+    "LastModified": "2023-05-09T22:07:14.000Z",
+    "ETag": "\"83fd241ddc1b071d70dbc48b27155d57\"",
+    "Size": "189837",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/621362_2022-07-14_11-19-36_ProbeA/properties/channel_name.npy",
+    "LastModified": "2023-05-09T22:58:47.000Z",
+    "ETag": "\"d138eff33ee0b22f82dd917070cc31f1\"",
+    "Size": "98432",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/621362_2022-07-14_11-19-36_ProbeA/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:58:47.000Z",
+    "ETag": "\"ed85eaa489d3f644c8f27e9ebcd01f37\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/621362_2022-07-14_11-19-36_ProbeA/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:48.000Z",
+    "ETag": "\"81a2d3958570101d4d0cb4296ef9a436\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/621362_2022-07-14_11-19-36_ProbeA/properties/group.npy",
+    "LastModified": "2023-05-09T22:58:48.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/621362_2022-07-14_11-19-36_ProbeA/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:58:48.000Z",
+    "ETag": "\"1a88e8b647785c374a1bef3052abe69b\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/621362_2022-07-14_11-19-36_ProbeA/properties/location.npy",
+    "LastModified": "2023-05-09T22:58:48.000Z",
+    "ETag": "\"ca489e91ddea39bc77502473869cd51c\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/621362_2022-07-14_11-19-36_ProbeA/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:48.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/621362_2022-07-14_11-19-36_ProbeA/provenance.json",
+    "LastModified": "2023-05-09T22:07:14.000Z",
+    "ETag": "\"947529121a07738cedfc2acaf27da407\"",
+    "Size": "129274",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/621362_2022-07-14_11-19-36_ProbeA/si_folder.json",
+    "LastModified": "2023-05-09T22:07:14.000Z",
+    "ETag": "\"7acb19bd03bda21e2aff5ec020c3936f\"",
+    "Size": "53879",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/aind-np2/621362_2022-07-14_11-19-36_ProbeA/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T22:07:15.000Z",
+    "ETag": "\"664a9efc425ae482e260a5c74bf77252-8899\"",
+    "Size": "55982594304",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD026_2020-09-04_probe00/binary.json",
+    "LastModified": "2023-05-09T22:42:01.000Z",
+    "ETag": "\"b8af345c6bd129b2a066e5cf31b261c7\"",
+    "Size": "37932",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD026_2020-09-04_probe00/probe.json",
+    "LastModified": "2023-05-09T22:42:01.000Z",
+    "ETag": "\"12dba22f09e47aac314a5c2e04b5b7e2\"",
+    "Size": "189587",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD026_2020-09-04_probe00/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:58:54.000Z",
+    "ETag": "\"9ecfcafcb2709cee2cb257ac4f98684c\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD026_2020-09-04_probe00/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:55.000Z",
+    "ETag": "\"cd4e48451edaf16abc06ad0faa6d8114\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD026_2020-09-04_probe00/properties/group.npy",
+    "LastModified": "2023-05-09T22:58:55.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD026_2020-09-04_probe00/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:58:55.000Z",
+    "ETag": "\"e3605946e844f69f82725d88b27e025e\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD026_2020-09-04_probe00/properties/location.npy",
+    "LastModified": "2023-05-09T22:58:55.000Z",
+    "ETag": "\"32ec3bb1e80b7825da12c28ccd728069\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD026_2020-09-04_probe00/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:55.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD026_2020-09-04_probe00/provenance.json",
+    "LastModified": "2023-05-09T22:42:01.000Z",
+    "ETag": "\"222e4c3fc725d3e8ee4888f5e07d4152\"",
+    "Size": "49527",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD026_2020-09-04_probe00/si_folder.json",
+    "LastModified": "2023-05-09T22:42:01.000Z",
+    "ETag": "\"ab85168502df96568564a7394d678b82\"",
+    "Size": "49405",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD026_2020-09-04_probe00/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T22:42:01.000Z",
+    "ETag": "\"5312de9761aa9e29fb6fe79ac05abe58-5274\"",
+    "Size": "27648000000",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD029_2020-09-09_probe00/binary.json",
+    "LastModified": "2023-05-09T22:56:11.000Z",
+    "ETag": "\"b8af345c6bd129b2a066e5cf31b261c7\"",
+    "Size": "37932",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD029_2020-09-09_probe00/probe.json",
+    "LastModified": "2023-05-09T22:56:11.000Z",
+    "ETag": "\"12dba22f09e47aac314a5c2e04b5b7e2\"",
+    "Size": "189587",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD029_2020-09-09_probe00/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:58:57.000Z",
+    "ETag": "\"9ecfcafcb2709cee2cb257ac4f98684c\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD029_2020-09-09_probe00/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:57.000Z",
+    "ETag": "\"cd4e48451edaf16abc06ad0faa6d8114\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD029_2020-09-09_probe00/properties/group.npy",
+    "LastModified": "2023-05-09T22:58:57.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD029_2020-09-09_probe00/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:58:57.000Z",
+    "ETag": "\"e3605946e844f69f82725d88b27e025e\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD029_2020-09-09_probe00/properties/location.npy",
+    "LastModified": "2023-05-09T22:58:57.000Z",
+    "ETag": "\"32ec3bb1e80b7825da12c28ccd728069\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD029_2020-09-09_probe00/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:57.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD029_2020-09-09_probe00/provenance.json",
+    "LastModified": "2023-05-09T22:56:11.000Z",
+    "ETag": "\"2ec61aa7f676038a5f21f5eef2d333db\"",
+    "Size": "49527",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD029_2020-09-09_probe00/si_folder.json",
+    "LastModified": "2023-05-09T22:56:11.000Z",
+    "ETag": "\"ab85168502df96568564a7394d678b82\"",
+    "Size": "49405",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/CSHZAD029_2020-09-09_probe00/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T22:56:12.000Z",
+    "ETag": "\"a159b67fb9120e06ac2a0f1a043b58ef-5274\"",
+    "Size": "27648000000",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe00/binary.json",
+    "LastModified": "2023-05-09T22:52:11.000Z",
+    "ETag": "\"4cafa7509c860db8b9a6aad59570b729\"",
+    "Size": "37937",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe00/probe.json",
+    "LastModified": "2023-05-09T22:52:11.000Z",
+    "ETag": "\"12dba22f09e47aac314a5c2e04b5b7e2\"",
+    "Size": "189587",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe00/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:58:55.000Z",
+    "ETag": "\"9ecfcafcb2709cee2cb257ac4f98684c\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe00/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:55.000Z",
+    "ETag": "\"cd4e48451edaf16abc06ad0faa6d8114\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe00/properties/group.npy",
+    "LastModified": "2023-05-09T22:58:56.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe00/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:58:56.000Z",
+    "ETag": "\"e3605946e844f69f82725d88b27e025e\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe00/properties/location.npy",
+    "LastModified": "2023-05-09T22:58:56.000Z",
+    "ETag": "\"32ec3bb1e80b7825da12c28ccd728069\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe00/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:56.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe00/provenance.json",
+    "LastModified": "2023-05-09T22:52:11.000Z",
+    "ETag": "\"a4a51b81ae20b8d0f06653ff0794a851\"",
+    "Size": "49514",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe00/si_folder.json",
+    "LastModified": "2023-05-09T22:52:12.000Z",
+    "ETag": "\"ab85168502df96568564a7394d678b82\"",
+    "Size": "49405",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe00/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T22:52:12.000Z",
+    "ETag": "\"33f6a5dc79a83fab7dabdebd679f7c3b-5274\"",
+    "Size": "27648360192",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe01/binary.json",
+    "LastModified": "2023-05-09T22:52:06.000Z",
+    "ETag": "\"b8af345c6bd129b2a066e5cf31b261c7\"",
+    "Size": "37932",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe01/probe.json",
+    "LastModified": "2023-05-09T22:52:06.000Z",
+    "ETag": "\"12dba22f09e47aac314a5c2e04b5b7e2\"",
+    "Size": "189587",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe01/properties/contact_vector.npy",
+    "LastModified": "2023-05-09T22:58:56.000Z",
+    "ETag": "\"9ecfcafcb2709cee2cb257ac4f98684c\"",
+    "Size": "421248",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe01/properties/gain_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:56.000Z",
+    "ETag": "\"cd4e48451edaf16abc06ad0faa6d8114\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe01/properties/group.npy",
+    "LastModified": "2023-05-09T22:58:56.000Z",
+    "ETag": "\"e3803981cfe89a2169975232e5ce649c\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe01/properties/inter_sample_shift.npy",
+    "LastModified": "2023-05-09T22:58:56.000Z",
+    "ETag": "\"e3605946e844f69f82725d88b27e025e\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe01/properties/location.npy",
+    "LastModified": "2023-05-09T22:58:56.000Z",
+    "ETag": "\"32ec3bb1e80b7825da12c28ccd728069\"",
+    "Size": "6272",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe01/properties/offset_to_uV.npy",
+    "LastModified": "2023-05-09T22:58:56.000Z",
+    "ETag": "\"97001e42a4f736a4e0f0eeb0094d40c2\"",
+    "Size": "3200",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe01/provenance.json",
+    "LastModified": "2023-05-09T22:52:07.000Z",
+    "ETag": "\"3dee4ef657e0d1c533040cae18f9eff4\"",
+    "Size": "49524",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe01/si_folder.json",
+    "LastModified": "2023-05-09T22:52:07.000Z",
+    "ETag": "\"ab85168502df96568564a7394d678b82\"",
+    "Size": "49405",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/ibl-np1/SWC054_2020-10-05_probe01/traces_cached_seg0.raw",
+    "LastModified": "2023-05-09T22:52:07.000Z",
+    "ETag": "\"d470aaac6c2c2215de3bd295a9ea22ad-5274\"",
+    "Size": "27648000000",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/mearec/mearec_NP1.h5",
+    "LastModified": "2023-05-09T21:57:35.000Z",
+    "ETag": "\"da2621286d871650ed28b10e5ea6a167-3650\"",
+    "Size": "19131857840",
+    "StorageClass": "INTELLIGENT_TIERING"
+  },
+  {
+    "Key": "ephys-compression/mearec/mearec_NP2.h5",
+    "LastModified": "2023-05-09T21:57:35.000Z",
+    "ETag": "\"550d4218c5f159bff65b129356231db7-3650\"",
+    "Size": "19131665480",
+    "StorageClass": "INTELLIGENT_TIERING"
+  }
+]

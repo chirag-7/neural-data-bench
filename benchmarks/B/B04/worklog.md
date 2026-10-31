@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Hybrid insertion can pr
 
 ## Current admission and execution
 
-Preview 0.8: candidate_pending_validation. Hybrid insertion can provide known collision times, but must freeze inserted templates and distinguish synthetic labels from unknown endogenous spikes. Requires event-matching tolerance and collision definitions. Adapter not prepared.
+Preview 0.9: candidate_pending_validation. Hybrid insertion can provide known collision times, but must freeze inserted templates and distinguish synthetic labels from unknown endogenous spikes. Requires event-matching tolerance and collision definitions. Adapter not prepared.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

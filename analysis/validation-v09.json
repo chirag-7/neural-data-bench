@@ -1,0 +1,33 @@
+{
+  "release": "0.9",
+  "scientific_freeze_commit": "93c6a9824916b57105063cdc41b234ae6782f2de",
+  "new_task": "L06",
+  "new_generated_submissions": 3,
+  "new_valid_strict_submissions": 3,
+  "new_reference_outputs": 2,
+  "new_source_files": 42,
+  "heldout_classifier_decisions_audited": 200000,
+  "primary_accuracy_arithmetic": "passed;heldout decisions,not classifier refit",
+  "secondary_distances": "all50 observation/method slicedW2 values independently reproduced",
+  "central_prediction_records_audited": 161,
+  "historical_v08_records_unchanged": true,
+  "source_render_check": {
+    "type": "In-memory source-render and direct-handler checks; not real-browser interaction or layout QA",
+    "routes": 311,
+    "measured_tasks_with_bar_and_line_plots": 22,
+    "specialist_overlays": "passed",
+    "direct_named_reference_labels_and_numeric_cards": "passed",
+    "posthoc_metric_sensitivity": "passed",
+    "negative_R2_axis": "passed",
+    "graph_table_switch": "passed",
+    "search_and_benchmark_selector": "passed",
+    "javascript_syntax": "passed",
+    "separate_generation_replication_plots_and_range": "passed"
+  },
+  "browser_qa": "Pending publication; recorded separately after actual browser checks",
+  "model_attempts": 84,
+  "model_valid_attempts": 82,
+  "model_failed_attempts": 2,
+  "overall_measured_tasks": 22,
+  "unrun_active_candidates": 74
+}

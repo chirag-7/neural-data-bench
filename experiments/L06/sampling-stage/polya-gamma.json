@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "L06",
+  "slice_id": "posterior-v1",
+  "model": "polya-gamma",
+  "status": "sampled",
+  "date": "2026-10-31",
+  "track": "reference",
+  "n_units": 10,
+  "n_posterior_draws_per_unit": 10000,
+  "seconds": 5.305450333049521,
+  "prediction_file": "results/predictions/L06/posterior-v1--polya-gamma.npz",
+  "prediction_sha256": "b262f281cb209c2518bf9c8cc345978d58b5970e04cabeffd0631537660796a2",
+  "input_sha256": {
+    "data/cache/L06/data.npz": "c3ae6e81458fd88dac7a1492443bfe4d6d49c62ed7a85b1f98486ab73c171e3e"
+  },
+  "prompt_sha256": "9fd8e357ecf8b9c42cfd13276af3c1492a9b3ccf7cee487b1a3e2a3802de5a4a",
+  "truth_type": "synthetic_reference_posterior",
+  "reference_type": "local_specialist_reproduction",
+  "superiority_eligible": false,
+  "superiority_reason": "Synthetic custom likelihood-informed track, one generation; no global-best/equal-research-effort claim",
+  "code_sha256": "d7c72807819c276093b742c6a01ac5f9934c82ce2a9bcce22738c1ee0366fe10",
+  "selection": "Fixed before generation and any evaluated method score"
+}

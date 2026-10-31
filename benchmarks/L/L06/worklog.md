@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Official MIT sbibm repo
 
 ## Current admission and execution
 
-Preview 0.8: candidate_pending_validation. Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.
+Preview 0.9: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
-[Admission/source evidence](../../../literature/admission-v04-inference-control.json).
+[Admission/source evidence](../../../experiments/L06/protocol.md). [Actual protocol/worklog](../../../experiments/L06). [Task measurements](../../../results/L06.json).

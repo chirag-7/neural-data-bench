@@ -39,3 +39,9 @@ The fixed primary-reference classes now include local specialists and pretrained
 ## Preview 0.6 sensitivity boundary
 
 H02 contributes one task/slice in existing family H. Its person-equal ROC-AUC is the frozen native primary; correlated epochs do not inflate task or person denominators. B01's post-hoc all-output event F1 is a separately labeled sensitivity; it never replaces the frozen per-GT-unit accuracy in existing reference or progress summaries. Two of three within-B01 model-version directions reverse under that sensitivity, demonstrating metric dependence rather than authorizing a preferred post-hoc primary. All three new H02 submissions are strict-format compliant. Current counts and derived weighting are in the summary JSON.
+
+## Preview 0.9: fully synthetic posterior inference and visible scope control
+
+L06 adds one task with ten shared-design synthetic observations, not ten independently weighted tasks. The fixed primary is their mean 2,000-draw classifier two-sample-test accuracy; secondary sliced Wasserstein-2 remains separate. It tests likelihood-informed posterior construction, not the original simulator-only SBI procedure. Small numerical C2ST wins near chance remain only descriptive point wins under the historical 1e−9 rule. No practical equivalence or significance threshold was set after observing results.
+
+The synthetic-inclusive aggregate retains eligible B01/L06, and excludes M04/N05 from model-version progress as before. The new default observed-data view additionally excludes B01/L06; it also excludes M04/N05 from reference comparisons. A14/H16 still involve observed sources with artificial corruption, so the scope is named precisely and is not claimed to contain only wholly natural targets. Both reference and version-change tables respond to one scope selector. Denominators and computed task/family summaries are exported for both views. This scope display amendment is retrospective; all older records stay unchanged.

@@ -38,7 +38,7 @@
     "evidence": "literature/admission-v04-cell-workflow.json"
   },
   "current_execution": {
-    "release": "0.8",
+    "release": "0.9",
     "status": "measured",
     "slice": "Goldin 2022 retina: 3,160 training images and 30 test images repeated 30 times; 41 neurons, one preparation.",
     "evidence": "literature/admission-v04-cell-workflow.json"
