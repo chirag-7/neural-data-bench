@@ -73,6 +73,9 @@ for (const route of [
   }
   n++;
 }
+ctx.location.hash = "#/benchmark/M01/results";
+vm.runInContext("draw()", ctx);
+if (!el("#benchmark-content").innerHTML.includes("Source-inspired domain reference")) throw Error("Behavioral GLM must be labeled as a source-inspired domain reference");
 let plots = 0;
 for (const id of summary.measured_task_ids) {
   vm.runInContext(`selectedSlice='';renderChart('#test-chart','${id}')`, ctx);
