@@ -36,3 +36,7 @@ H02 completed with person-equal ROC-AUC **0.757195 / 0.730548 / 0.788537** for G
 The current panel has **19 task IDs, 75 model–slice attempts, 73 valid, two unchanged failures, 152 total records, 146 stored prediction records rescored**. There are 57 generated programs. Active catalog: 96 entries, 19 measured, 49 pending validation, 28 deferred; 77 remain unrun. Existing 18 archival decisions remain intact. The bounded review also corrected measured-task READMEs, method pages, data/source pointers and stale current-status headers while preserving dated historical decisions.
 
 [Findings](../analysis/findings.md), [central summary](../analysis/summary.json), [prediction validation](../analysis/validation-expansion.json), [source-render checks](../analysis/site-source-checks.json). Publication/browser evidence is recorded after deployment.
+
+## Publication evidence
+
+[Deployment receipt](../analysis/deployment-v06.json) records the exact source/research commits and successful private publication. [Browser verification](../analysis/browser-qa-v06.json) covers direct numeric line labels, reference cards, the post-hoc metric selector, P300 scores and mobile card bounds. [Primary-plot screenshot](assets/explorer-v06.jpg), [secondary event-F1 screenshot](assets/sorting-sensitivity-v06.jpg). All 27 archived site files match canonical hashes; generated programs and original primary scores remain unchanged.

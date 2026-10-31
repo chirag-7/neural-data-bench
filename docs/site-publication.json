@@ -1,11 +1,11 @@
 {
-  "release": "0.5",
-  "research_commit": "db1bb03fe733cba4ee43ea021551c8759e555376",
-  "source_commit": "c59ff6589795031908a3581ce2919c9dfde74375",
-  "id": "appgdep_6ae52fc671f4819198e4192f2d5f0226",
+  "release": "0.6",
+  "research_commit": "7c2233590ee7634eabca7557c399092ed8053340",
+  "source_commit": "8b619685768b785b2a68e27b3a850dfbfe7bd0c2",
+  "id": "appgdep_6ae53ed4f8948191b16bf4971bbf1298",
   "project_id": "appgprj_6ae4f438805c81919b082963db32f4f5",
   "title": "Neural Data Observatory",
-  "version_id": "appgprj_6ae4f438805c81919b082963db32f4f5~appgver_4a023196646481919f194537b212c751",
+  "version_id": "appgprj_6ae4f438805c81919b082963db32f4f5~appgver_a254b12e2aa08191a766663a678421ac",
   "type": "publish",
   "status": "succeeded",
   "url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site",
@@ -14,27 +14,34 @@
   "provider_deployment_id": "site---6ae4f438805c81919b082963db32f4f5",
   "failure_message": null,
   "env_set_revision": 0,
-  "updated_at": "2026-10-31T00:01:17.590464+00:00",
+  "updated_at": "2026-10-31T01:05:32.995678+00:00",
   "repository_url": "https://github.com/chirag-7/neural-data-bench",
   "audience": "owner-private, preserved",
-  "canonical_source_hash_manifest": "analysis/website-source-v05.json",
-  "canonical_deployment_file_hashes_verified": 26,
-  "verification": {
-    "stored_prediction_records_rescored": 141,
-    "model_slice_attempts": 72,
-    "numerically_valid_model_attempts": 70,
-    "failed_model_attempts": 2,
-    "static_render_routes": 310,
-    "native_task_charts": 18,
-    "browser_layout_interaction": "Passed representative real-browser flows on published owner-private site: categories, benchmark selection, graph/table switching, references, search, active/measured filter, source slices, macro denominators and negative score zero tick; default viewport and mobile390x844; override reset",
-    "browser_console_errors": 0,
-    "browser_scope": "Representative flows, not exhaustive interaction testing of every task",
-    "screenshot": "docs/assets/explorer-v05.jpg",
-    "screenshot_sha256": "ddcc762dc557b0dd1e6d78108ed4edc22f479a97d4f565523a0c7fe5ee6e542f"
-  },
   "github_ci": {
     "status": "success",
-    "url": "https://github.com/chirag-7/neural-data-bench/actions/runs/41147765470",
-    "commit": "db1bb03fe733cba4ee43ea021551c8759e555376"
-  }
+    "url": "https://github.com/chirag-7/neural-data-bench/actions/runs/41153589952",
+    "commit": "7c2233590ee7634eabca7557c399092ed8053340"
+  },
+  "canonical_source_hash_manifest": "analysis/website-source-v06.json",
+  "canonical_archive_file_hashes_verified": 27,
+  "verification": {
+    "stored_prediction_records_rescored": 146,
+    "model_slice_attempts": 75,
+    "numerically_valid_model_attempts": 73,
+    "failed_model_attempts": 2,
+    "static_render_routes": 310,
+    "native_task_charts": 19,
+    "browser_layout_interaction": "Passed representative published-site checks: named reference cards/direct line labels, primary/secondary B01 selector, graph/table views, P300 references/scores, close A09 reference callouts, mobile390x844 cards within375px content viewport; override reset",
+    "browser_console_errors": 0,
+    "browser_scope": "Representative flows, not exhaustive browser testing of all tasks",
+    "screenshots": [
+      "docs/assets/explorer-v06.jpg",
+      "docs/assets/sorting-sensitivity-v06.jpg"
+    ],
+    "screenshot_sha256": {
+      "docs/assets/explorer-v06.jpg": "716cc22f32031d98149a63961d75217ffc6663020ff2bfd69fccffc1877740f9",
+      "docs/assets/sorting-sensitivity-v06.jpg": "87e6e7d45133efb1568f13a182f06e29c76dcf3c860aedcf6a8a5ccae4641e85"
+    }
+  },
+  "packaging_note": "Unexpected duplicate build files were preserved outside the payload; one source-change package attempt was rejected. Retry archive matched all27 canonical site files before publication. Scientific data and frozen submissions unchanged."
 }

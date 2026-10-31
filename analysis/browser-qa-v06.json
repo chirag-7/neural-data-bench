@@ -1,0 +1,13 @@
+{
+  "checked_on_local_date": "2026-10-30 America/New_York",
+  "type": "Real browser on normally authenticated owner-private published site",
+  "source_commit": "8b619685768b785b2a68e27b3a850dfbfe7bd0c2",
+  "result": "passed representative flows",
+  "flows": "Passed representative published-site checks: named reference cards/direct line labels, primary/secondary B01 selector, graph/table views, P300 references/scores, close A09 reference callouts, mobile390x844 cards within375px content viewport; override reset",
+  "screenshot_hashes": {
+    "docs/assets/explorer-v06.jpg": "716cc22f32031d98149a63961d75217ffc6663020ff2bfd69fccffc1877740f9",
+    "docs/assets/sorting-sensitivity-v06.jpg": "87e6e7d45133efb1568f13a182f06e29c76dcf3c860aedcf6a8a5ccae4641e85"
+  },
+  "console_errors_observed": 0,
+  "limitations": "Representative workflows;19plot-pair/310route checks use a source VM, not exhaustive browser or independent scientific validation."
+}
