@@ -1,0 +1,227 @@
+{
+  "audit_id": "quick-audit-v12",
+  "date": "2026-10-31",
+  "status": "passed",
+  "scope": "Quick audit of all 30 measured tasks and all 200 successful retained first-attempt/reference predictions, preserving all 8 failed rows; no new experimental runs or method repairs",
+  "checks": [
+    {
+      "name": "portable_repository_integrity",
+      "command": "python3 scripts/check_repository.py",
+      "exit_code": 0,
+      "outcome": "passed",
+      "active_cards": 92,
+      "records": 208,
+      "checks": "Project Markdown links, frozen non-cache files, ledger/prediction/provenance hashes, site-data byte synchronization, historical rows and dependent-slice seals",
+      "new_batch": {
+        "tasks": 7,
+        "attempts": 35,
+        "measured": 33,
+        "generation_event_logs": 21,
+        "codec_payloads": 21,
+        "historical_v10_rows_unchanged": 173
+      }
+    },
+    {
+      "name": "scientific_expansion_rescoring",
+      "command": "bundled Python 3.12.14 scripts/validate_expansion.py with existing local dependency PYTHONPATH and single numerical CPU thread",
+      "exit_code": 0,
+      "outcome": "passed",
+      "tasks": 28,
+      "successful_predictions_rescored": 153,
+      "note": "Original-source independent auditors used for new batch; B08 only final independent report and saved payload hashes. Legacy B07 validation decodes 96 existing payloads across 6 methods, without encoding/fitting/generation. No model fit_predict or sorter rerun."
+    },
+    {
+      "name": "legacy_original_task_scientific_checks",
+      "command": "bundled Python 3.12.14 scripts/validate.py with same runtime/dependencies and single numerical CPU thread",
+      "exit_code": 0,
+      "outcome": "passed",
+      "tasks": [
+        "C05",
+        "M04"
+      ],
+      "successful_predictions_rescored": 47,
+      "acquired_input_hashes": 43,
+      "published_archive_cell_agreements": 16,
+      "official_calcium_scorer": "Pinned official _downsample/_corr parity, all complete predictions",
+      "cognitive_checks": "Likelihood hand fixture, existing MLE convergence metadata and all three original pilot reproductions; no optimization rerun"
+    },
+    {
+      "name": "summary_arithmetic_and_scope_review",
+      "outcome": "passed",
+      "checks": [
+        "record_count 208,measured_tasks 30,model_attempts 111 matched ledger",
+        "Each model attempted 37; valid/failed 35/2, 36/1, 36/1 matched statuses",
+        "Paired wins+losses+ties+failures exactly partition every scoped denominator",
+        "Per-task outcome fractions sum 1; equal-task and equal-family win fractions independently recomputed",
+        "Direction-aware differences respect higher/lower metric directions",
+        "B08 excluded from aggregates despite native rows/failures retained; confirmed summary and existing UI use explicit exclusion",
+        "Observed-data scope explicitly retains semisynthetic A14/H16, excludes fully synthetic tasks; native deltas are not averaged",
+        "New B03/C06/K05/K06/A15 source/group weighting and E06 dependent-slice definitions matched retained independent audits"
+      ]
+    }
+  ],
+  "coverage": {
+    "measured_tasks": 30,
+    "successful_records": 200,
+    "expanded_successes": 153,
+    "legacy_successes": 47,
+    "failed_records": 8,
+    "first_attempts_preserved": true,
+    "failures": [
+      {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "gpt-5.6-sol",
+        "status": "failed",
+        "disposition": "Retained unchanged; no repair, retry or deletion"
+      },
+      {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "gpt-6-sol",
+        "status": "failed",
+        "disposition": "Retained unchanged; no repair, retry or deletion"
+      },
+      {
+        "benchmark_id": "C05",
+        "slice_id": "2",
+        "model": "speiser",
+        "status": "failed",
+        "disposition": "Retained unchanged; no repair, retry or deletion"
+      },
+      {
+        "benchmark_id": "C05",
+        "slice_id": "4",
+        "model": "speiser",
+        "status": "failed",
+        "disposition": "Retained unchanged; no repair, retry or deletion"
+      },
+      {
+        "benchmark_id": "C05",
+        "slice_id": "5",
+        "model": "deneux",
+        "status": "failed",
+        "disposition": "Retained unchanged; no repair, retry or deletion"
+      },
+      {
+        "benchmark_id": "C05",
+        "slice_id": "5",
+        "model": "speiser",
+        "status": "failed",
+        "disposition": "Retained unchanged; no repair, retry or deletion"
+      },
+      {
+        "benchmark_id": "J08",
+        "slice_id": "expansion-v1",
+        "model": "gpt-6.1-sol",
+        "status": "failed",
+        "disposition": "Retained unchanged; no repair, retry or deletion"
+      },
+      {
+        "benchmark_id": "N05",
+        "slice_id": "expansion-v1",
+        "model": "gpt-5.6-sol",
+        "status": "failed",
+        "disposition": "Retained unchanged; no repair, retry or deletion"
+      }
+    ]
+  },
+  "findings": {
+    "glaring_arithmetic_or_scope_bugs_found": false,
+    "mandatory_fixes": [],
+    "recommendations": [
+      {
+        "priority": "clarity_only",
+        "recommendation": "When describing measured_biological_benchmarks, prefer biological-source/observed-source task wording rather than implying 24 independent biological cohorts; shared sources, processed endpoints and artificial corruptions are already documented.",
+        "impact": "No score or denominator change recommended."
+      }
+    ],
+    "limitations": [
+      "Hash/scorer checks do not prove uncontaminated model pretraining, exhaustive task coverage or current-best specialist selection",
+      "One generated program per version and unequal reference effort preclude causal scaling/SOTA claims",
+      "No generation, model/reference fitting, encoding, code repair, frozen-file modification or first-attempt replacement occurred; B07 existing decoder-only verification ran as part of the requested validator"
+    ]
+  },
+  "generated_artifacts": [
+    "analysis/quick-audit-v12.json",
+    "analysis/validation-expansion.json",
+    "analysis/validation.json"
+  ],
+  "artifacts": [
+    {
+      "path": "scripts/check_repository.py",
+      "bytes": 18684,
+      "sha256": "7cb90dc2be05d70de8cf6e35dfb8bb534a873caa68ba0ddb93f0c81256d28c3d"
+    },
+    {
+      "path": "scripts/validate_expansion.py",
+      "bytes": 10799,
+      "sha256": "7e3f276da4e9ab58a57e4616bc80907c295d4268215130da0cf5a0412e3be42b"
+    },
+    {
+      "path": "scripts/validate.py",
+      "bytes": 4329,
+      "sha256": "bd86ded92c522948685878a7f96501aa00e8870a8b489559aab854fe836b9d2f"
+    },
+    {
+      "path": "scripts/summarize.py",
+      "bytes": 17473,
+      "sha256": "6f61f299910a71218a3dc6ccbade5bdbc4c96394510a73a953b4571bc71a72b4"
+    },
+    {
+      "path": "analysis/summary.json",
+      "bytes": 417904,
+      "sha256": "f64ec0a4b3d6254e0c5aefcb4cc60ebadda5119de1ae65b1b477e9cb5a41487a"
+    },
+    {
+      "path": "analysis/validation-expansion.json",
+      "bytes": 7367,
+      "sha256": "6c061436f9a98c6858865035618d49cc037e0bbf9580f601889d981263ef73db"
+    },
+    {
+      "path": "analysis/validation.json",
+      "bytes": 494,
+      "sha256": "01c9f9886f1801fd1c74be803525bc7416a71d308130b858e8ae63861fced22e"
+    },
+    {
+      "path": "results/measurements.jsonl",
+      "bytes": 2135427,
+      "sha256": "0d29b6cf4f8a11359ce1b100f8db23bf19ccc5281fc3acecb617e189c33b32bb"
+    },
+    {
+      "path": "results/archive/v10-measurements.jsonl",
+      "bytes": 2065282,
+      "sha256": "9184b77b6fe66f832a78d837b5bbcc207e40852b7e2c176abf918671ec2bd66a"
+    },
+    {
+      "path": "results/audits/B03-batch-v11.json",
+      "bytes": 8744,
+      "sha256": "e35ca7c5d4c6444bd87d414f5848bd230d37933d1ce1da4566f52c2787699534"
+    },
+    {
+      "path": "results/audits/C06-batch-v11.json",
+      "bytes": 18027,
+      "sha256": "43596cc5efdd53c70a7b9a6f3943c208f3e5c29a94d558fc581edc0186c18040"
+    },
+    {
+      "path": "results/audits/cells-batch-v11.json",
+      "bytes": 7735,
+      "sha256": "cfcab2ad9cefa482e704aba4a3709e7dec0b25262f00478b3a544e22bf6b9786"
+    },
+    {
+      "path": "results/audits/A15-batch-v11.json",
+      "bytes": 1835,
+      "sha256": "86e0a24e9399db6dbfd5409719405c64cdfa9b695d8add905c8757b3b211ecb9"
+    },
+    {
+      "path": "results/verification/E06-batch-v11.json",
+      "bytes": 4520,
+      "sha256": "be35c29e48260540619cf8d7b933d7eebb9d78319085c8c2102bd2e6f294291d"
+    },
+    {
+      "path": "results/verification/B08-independent-final.json",
+      "bytes": 6277,
+      "sha256": "3126408bcbb02f6ad4c2cae01ef201f6b56fe69b385e3429150feb41d35526cb"
+    }
+  ]
+}

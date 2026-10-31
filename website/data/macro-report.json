@@ -1,0 +1,252 @@
+{
+  "revision": "2026-10-31-v12",
+  "snapshot": "0.11",
+  "title": "What patterns survive the checks?",
+  "conclusion": "There are useful descriptive signals, especially a GPT-6.1 directional advantage and metric/source-shift reversals. This panel establishes no universal improvement law, no reliable causal predictor of generalist success, and no general-model victory over current strongest specialists. Failure to reject the family-level null does not show that all variation is noise.",
+  "buckets": {
+    "quantitative": [
+      {
+        "id": "Q1",
+        "title": "GPT-6.1 has a directional advantage on this panel, with substantial uncertainty",
+        "status": "Descriptive signal; general superiority unestablished",
+        "text": "Against GPT-6: 23 wins, seven losses and one failed comparison across 31 slices from 24 tasks in 13 families. Family-equal win fraction 0.6090; task-equal fraction 0.6875. Penalizing the newer-only failure gives signed family contrast 0.2179. Exact conditional sign-flip p=0.4463; Holm-adjusted p=1.0000. Neither significance nor no-effect is established."
+      },
+      {
+        "id": "Q2",
+        "title": "The version sequence is not a monotonic improvement law",
+        "status": "Exact panel description",
+        "text": "Among 30 slices where all three models produced numerical scores, only nine improve monotonically (allowing a numerical tie), and six of 23 complete tasks do so on every slice. GPT-6.1 is best or numerically tied-best on 20 slices but worse than both older models on five. Missing J08 is excluded from these complete-case counts. Version names do not provide compute, parameter-count or training-data measurements."
+      },
+      {
+        "id": "Q3",
+        "title": "Reference strata produce different apparent win rates",
+        "status": "Descriptive; confounded by task and reference selection",
+        "text": "Task-equal point-win fractions against conventional baselines are 0.7500 / 0.8333 / 0.8333 for 5.6 / 6 / 6.1 (12 tasks). Against archived specialists they are 0.3000 / 0.2500 / 0.6500 (four tasks); local specialists give 0.6000 / 0.6000 / 0.8000 (five tasks). These are different task sets, with unequal inputs and optimization histories. This is not a causal effect of specialist status, and GPT-6.1\u2019s local-specialist rate is close to its conventional-baseline rate."
+      },
+      {
+        "id": "Q4",
+        "title": "Cell and molecular tasks show the most consistent multi-task category signal",
+        "status": "Retrospective category observation; hypothesis for replication",
+        "text": "GPT-6.1 beats both older versions on all four measured cell/molecular tasks: K01 morphology classification, K04 cortical-layer transfer, K05 marker-fraction calibration and K06 PV/SST waveform classification. These four are strict-format common support. This is the largest category with an all-task directional advantage for GPT-6.1 in the observed panel. It does not establish a modality law: broad source collections overlap, tasks were selected for feasibility, and K01 has a small native margin. SingleR still beats GPT-6.1 on K04 (0.5546 vs 0.5506). No category-specific significance claim is made after inspecting all categories."
+      }
+    ],
+    "qualitative": [
+      {
+        "id": "L1",
+        "title": "The tested capability is building analysis procedures",
+        "status": "Scope interpretation",
+        "text": "All three Sol models generate numerical programs that are then fitted locally. Their wins support trying a generated algorithm baseline on a well-defined numeric endpoint. They do not establish native raw neural-data perception, general multimodal/world-model skill, autonomous experiment execution or specialist-tool-agent performance."
+      },
+      {
+        "id": "L2",
+        "title": "A benchmark name does not specify the information contract",
+        "status": "Protocol interpretation",
+        "text": "Custom slices provide processed waveforms, calcium traces, pose features, expression columns, known simulator equations or small storage chunks. Supervised K05 fraction calibration differs from reference-only deconvolution; likelihood-informed L06 differs from simulator-only inference; E06 uses a subset and locally optimized NLinear. Those distinctions can explain what is feasible, but this panel cannot estimate their causal effect."
+      },
+      {
+        "id": "L3",
+        "title": "Biological replication remains the main evidence gap",
+        "status": "Unmeasured uncertainty",
+        "text": "Examples include one held-out bird in A15, two test fish in C06, one brain/session in E06 and one monkey shared by G01/B08. Many cells, frames or windows do not create independent cohorts. Most tasks have one code generation. Category resampling cannot recover missing animal, lab, generation or prompt uncertainty."
+      }
+    ],
+    "combined": [
+      {
+        "id": "C1",
+        "title": "Metric choice can reverse which model looks better",
+        "status": "Quantitative case evidence plus scientific interpretation",
+        "text": "C06 GPT-6.1 has higher correlation than GPT-5.6 (0.8676 vs 0.8564), but worse relative count error (3.2471 vs 1.9040). In B01, GPT-6 exceeds GPT-5.6 on the frozen unit metric (0.9400 vs 0.8750), but falls below it on post-hoc all-output event F1 (0.5998 vs 0.9000). Two of three B01 pairwise model orderings reverse. Calibration and extra events affect scientific use; a single primary leaderboard value cannot establish those properties."
+      },
+      {
+        "id": "C2",
+        "title": "Within-condition improvement does not guarantee transfer",
+        "status": "One controlled source-shift case; hypothesis for replication",
+        "text": "On E06, GPT-6.1 reduces MSE versus GPT-6 by 16.6% on temporal tails, but increases it by 8.5% on the prespecified unseen-taxis slice. The same programs, training arrays, neurons and brain are used; native target distributions differ. This is a real ordering reversal, not proof of a universal transfer law or a causal mechanism."
+      },
+      {
+        "id": "C3",
+        "title": "Failure definitions and reproducibility matter to the conclusion",
+        "status": "Direct procedural evidence",
+        "text": "The panel has 107 numerical successes in 111 model attempts, but only 100 meet the line-format criterion as well. Two B08 failures arise from ambiguous utility-import wording and stay visible while the task is excluded from aggregate claims. J08\u2019s GPT-6.1 numerical failure remains a loss in the conservative diagnostic. H02\u2019s three attempts per model are separate evidence on one source, not extra independent tasks."
+      }
+    ]
+  },
+  "pairs": [
+    {
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6-sol",
+      "n_tasks": 24,
+      "n_families": 13,
+      "n_slices": 31,
+      "counts": {
+        "win": 14,
+        "loss": 16,
+        "tie": 1
+      },
+      "family_win": 0.45769230769230773,
+      "composition_interval": [
+        0.24230769230769234,
+        0.6730769230769231
+      ],
+      "conservative_net": -0.06538461538461539,
+      "conditional_p": 0.80859375,
+      "holm_p": 1.0,
+      "common_strict_win": 0.4861111111111111
+    },
+    {
+      "older": "gpt-5.6-sol",
+      "newer": "gpt-6.1-sol",
+      "n_tasks": 24,
+      "n_families": 13,
+      "n_slices": 31,
+      "counts": {
+        "win": 22,
+        "loss": 8,
+        "failed_or_missing": 1
+      },
+      "family_win": 0.6076923076923076,
+      "composition_interval": [
+        0.3641025641025641,
+        0.8269230769230769
+      ],
+      "conservative_net": 0.2153846153846154,
+      "conditional_p": 0.41552734375,
+      "holm_p": 1.0,
+      "common_strict_win": 0.673611111111111
+    },
+    {
+      "older": "gpt-6-sol",
+      "newer": "gpt-6.1-sol",
+      "n_tasks": 24,
+      "n_families": 13,
+      "n_slices": 31,
+      "counts": {
+        "win": 23,
+        "loss": 7,
+        "failed_or_missing": 1
+      },
+      "family_win": 0.6089743589743589,
+      "composition_interval": [
+        0.358974358974359,
+        0.8333333333333333
+      ],
+      "conservative_net": 0.21794871794871792,
+      "conditional_p": 0.4462890625,
+      "holm_p": 1.0,
+      "common_strict_win": 0.6597222222222222
+    }
+  ],
+  "reference_strata": [
+    {
+      "model": "gpt-5.6-sol",
+      "reference_class": "conventional_baseline",
+      "n_tasks": 12,
+      "n_slices": 14,
+      "task_equal_win_fraction": 0.75
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reference_class": "conventional_domain_reference",
+      "n_tasks": 2,
+      "n_slices": 3,
+      "task_equal_win_fraction": 1.0
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reference_class": "historical_specialist",
+      "n_tasks": 4,
+      "n_slices": 8,
+      "task_equal_win_fraction": 0.3
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reference_class": "local_specialist",
+      "n_tasks": 5,
+      "n_slices": 5,
+      "task_equal_win_fraction": 0.6
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reference_class": "pretrained_specialist",
+      "n_tasks": 1,
+      "n_slices": 1,
+      "task_equal_win_fraction": 1.0
+    },
+    {
+      "model": "gpt-6-sol",
+      "reference_class": "conventional_baseline",
+      "n_tasks": 12,
+      "n_slices": 14,
+      "task_equal_win_fraction": 0.8333333333333334
+    },
+    {
+      "model": "gpt-6-sol",
+      "reference_class": "conventional_domain_reference",
+      "n_tasks": 2,
+      "n_slices": 3,
+      "task_equal_win_fraction": 1.0
+    },
+    {
+      "model": "gpt-6-sol",
+      "reference_class": "historical_specialist",
+      "n_tasks": 4,
+      "n_slices": 8,
+      "task_equal_win_fraction": 0.25
+    },
+    {
+      "model": "gpt-6-sol",
+      "reference_class": "local_specialist",
+      "n_tasks": 5,
+      "n_slices": 5,
+      "task_equal_win_fraction": 0.6
+    },
+    {
+      "model": "gpt-6-sol",
+      "reference_class": "pretrained_specialist",
+      "n_tasks": 1,
+      "n_slices": 1,
+      "task_equal_win_fraction": 1.0
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "reference_class": "conventional_baseline",
+      "n_tasks": 12,
+      "n_slices": 14,
+      "task_equal_win_fraction": 0.8333333333333334
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "reference_class": "conventional_domain_reference",
+      "n_tasks": 2,
+      "n_slices": 3,
+      "task_equal_win_fraction": 1.0
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "reference_class": "historical_specialist",
+      "n_tasks": 4,
+      "n_slices": 8,
+      "task_equal_win_fraction": 0.65
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "reference_class": "local_specialist",
+      "n_tasks": 5,
+      "n_slices": 5,
+      "task_equal_win_fraction": 0.8
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "reference_class": "pretrained_specialist",
+      "n_tasks": 1,
+      "n_slices": 1,
+      "task_equal_win_fraction": 1.0
+    }
+  ],
+  "input_sha256": {
+    "results/measurements.jsonl": "0d29b6cf4f8a11359ce1b100f8db23bf19ccc5281fc3acecb617e189c33b32bb",
+    "analysis/summary.json": "f64ec0a4b3d6254e0c5aefcb4cc60ebadda5119de1ae65b1b477e9cb5a41487a",
+    "registry/catalog.json": "2b4f7bca21f5fa1f68f812f3b25a9dda4965c4e76f2b471721f2b82097575b05"
+  },
+  "assumptions": "Retrospective convenience panel, one program/model/task; grouped tests assume independent symmetric family contrasts. Composition intervals are not biological or generation uncertainty. No global-SOTA or scaling-law claim."
+}

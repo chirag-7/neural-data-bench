@@ -1,0 +1,73 @@
+older,newer,task,analysis_policy,benchmark_id,family_code,n_slices,win_fraction,loss_fraction,tie_fraction,failure_fraction,net_direction
+gpt-5.6-sol,gpt-6-sol,Frame-level social behavior labels,descriptive_denominator_missing_as_neutral,A09,A,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6-sol,Missing pose imputation,descriptive_denominator_missing_as_neutral,A14,A,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6-sol,Annotated birdsong interval detection,descriptive_denominator_missing_as_neutral,A15,A,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6-sol,Lossless Neuropixels voltage compression,descriptive_denominator_missing_as_neutral,B07,B,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6-sol,Calcium-to-spike inference,descriptive_denominator_missing_as_neutral,C05,C,5,0.4,0.6,0.0,0.0,-0.2
+gpt-5.6-sol,gpt-6-sol,Calcium to electrical expected spike counts,descriptive_denominator_missing_as_neutral,C06,C,1,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6-sol,Current-to-voltage prediction,descriptive_denominator_missing_as_neutral,D02,D,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6-sol,Neural rate inference and co-smoothing,descriptive_denominator_missing_as_neutral,E01,E,3,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6-sol,Causal population calcium forecasting,descriptive_denominator_missing_as_neutral,E06,E,2,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6-sol,Retinal or other sensory encoding,descriptive_denominator_missing_as_neutral,F04,F,1,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6-sol,Robust cross-day motor decoding,descriptive_denominator_missing_as_neutral,G01,G,1,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6-sol,Motor imagery and noninvasive BCI,descriptive_denominator_missing_as_neutral,H01,H,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6-sol,ERP/P300 target decoding,descriptive_denominator_missing_as_neutral,H02,H,1,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6-sol,Sleep staging and sleep onset,descriptive_denominator_missing_as_neutral,H08,H,1,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6-sol,EEG ocular/muscle artifact repair,descriptive_denominator_missing_as_neutral,H16,H,1,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6-sol,fNIRS motor/hemodynamic decoding,descriptive_denominator_missing_as_neutral,I07,I,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6-sol,MRI quality assessment across sites,descriptive_denominator_missing_as_neutral,I10,I,1,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6-sol,Fluorescent synaptic puncta segmentation and quantification,descriptive_denominator_missing_as_neutral,J08,J,1,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6-sol,Electrophysiological cell-type classification,descriptive_denominator_missing_as_neutral,K01,K,1,0.0,0.0,1.0,0.0,0.0
+gpt-5.6-sol,gpt-6-sol,Cortical-layer label transfer,descriptive_denominator_missing_as_neutral,K04,K,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6-sol,Supervised bulk RNA to marker-positive fractions,descriptive_denominator_missing_as_neutral,K05,K,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6-sol,Optotagged PV/SST classification from waveform,descriptive_denominator_missing_as_neutral,K06,K,1,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6-sol,Point-process estimation and goodness of fit,descriptive_denominator_missing_as_neutral,L04,L,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6-sol,Conditional mouse-choice prediction,descriptive_denominator_missing_as_neutral,M01,M,1,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6.1-sol,Frame-level social behavior labels,descriptive_denominator_missing_as_neutral,A09,A,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,Missing pose imputation,descriptive_denominator_missing_as_neutral,A14,A,1,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6.1-sol,Annotated birdsong interval detection,descriptive_denominator_missing_as_neutral,A15,A,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,Lossless Neuropixels voltage compression,descriptive_denominator_missing_as_neutral,B07,B,1,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6.1-sol,Calcium-to-spike inference,descriptive_denominator_missing_as_neutral,C05,C,5,0.8,0.2,0.0,0.0,0.6
+gpt-5.6-sol,gpt-6.1-sol,Calcium to electrical expected spike counts,descriptive_denominator_missing_as_neutral,C06,C,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,Current-to-voltage prediction,descriptive_denominator_missing_as_neutral,D02,D,1,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6.1-sol,Neural rate inference and co-smoothing,descriptive_denominator_missing_as_neutral,E01,E,3,0.6666666666666666,0.3333333333333333,0.0,0.0,0.3333333333333333
+gpt-5.6-sol,gpt-6.1-sol,Causal population calcium forecasting,descriptive_denominator_missing_as_neutral,E06,E,2,0.5,0.5,0.0,0.0,0.0
+gpt-5.6-sol,gpt-6.1-sol,Retinal or other sensory encoding,descriptive_denominator_missing_as_neutral,F04,F,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,Robust cross-day motor decoding,descriptive_denominator_missing_as_neutral,G01,G,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,Motor imagery and noninvasive BCI,descriptive_denominator_missing_as_neutral,H01,H,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,ERP/P300 target decoding,descriptive_denominator_missing_as_neutral,H02,H,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,Sleep staging and sleep onset,descriptive_denominator_missing_as_neutral,H08,H,1,0.0,1.0,0.0,0.0,-1.0
+gpt-5.6-sol,gpt-6.1-sol,EEG ocular/muscle artifact repair,descriptive_denominator_missing_as_neutral,H16,H,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,fNIRS motor/hemodynamic decoding,descriptive_denominator_missing_as_neutral,I07,I,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,MRI quality assessment across sites,descriptive_denominator_missing_as_neutral,I10,I,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,Fluorescent synaptic puncta segmentation and quantification,descriptive_denominator_missing_as_neutral,J08,J,1,0.0,0.0,0.0,1.0,0.0
+gpt-5.6-sol,gpt-6.1-sol,Electrophysiological cell-type classification,descriptive_denominator_missing_as_neutral,K01,K,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,Cortical-layer label transfer,descriptive_denominator_missing_as_neutral,K04,K,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,Supervised bulk RNA to marker-positive fractions,descriptive_denominator_missing_as_neutral,K05,K,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,Optotagged PV/SST classification from waveform,descriptive_denominator_missing_as_neutral,K06,K,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,Point-process estimation and goodness of fit,descriptive_denominator_missing_as_neutral,L04,L,1,1.0,0.0,0.0,0.0,1.0
+gpt-5.6-sol,gpt-6.1-sol,Conditional mouse-choice prediction,descriptive_denominator_missing_as_neutral,M01,M,1,0.0,1.0,0.0,0.0,-1.0
+gpt-6-sol,gpt-6.1-sol,Frame-level social behavior labels,descriptive_denominator_missing_as_neutral,A09,A,1,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,Missing pose imputation,descriptive_denominator_missing_as_neutral,A14,A,1,0.0,1.0,0.0,0.0,-1.0
+gpt-6-sol,gpt-6.1-sol,Annotated birdsong interval detection,descriptive_denominator_missing_as_neutral,A15,A,1,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,Lossless Neuropixels voltage compression,descriptive_denominator_missing_as_neutral,B07,B,1,0.0,1.0,0.0,0.0,-1.0
+gpt-6-sol,gpt-6.1-sol,Calcium-to-spike inference,descriptive_denominator_missing_as_neutral,C05,C,5,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,Calcium to electrical expected spike counts,descriptive_denominator_missing_as_neutral,C06,C,1,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,Current-to-voltage prediction,descriptive_denominator_missing_as_neutral,D02,D,1,0.0,1.0,0.0,0.0,-1.0
+gpt-6-sol,gpt-6.1-sol,Neural rate inference and co-smoothing,descriptive_denominator_missing_as_neutral,E01,E,3,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,Causal population calcium forecasting,descriptive_denominator_missing_as_neutral,E06,E,2,0.5,0.5,0.0,0.0,0.0
+gpt-6-sol,gpt-6.1-sol,Retinal or other sensory encoding,descriptive_denominator_missing_as_neutral,F04,F,1,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,Robust cross-day motor decoding,descriptive_denominator_missing_as_neutral,G01,G,1,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,Motor imagery and noninvasive BCI,descriptive_denominator_missing_as_neutral,H01,H,1,0.0,1.0,0.0,0.0,-1.0
+gpt-6-sol,gpt-6.1-sol,ERP/P300 target decoding,descriptive_denominator_missing_as_neutral,H02,H,1,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,Sleep staging and sleep onset,descriptive_denominator_missing_as_neutral,H08,H,1,0.0,1.0,0.0,0.0,-1.0
+gpt-6-sol,gpt-6.1-sol,EEG ocular/muscle artifact repair,descriptive_denominator_missing_as_neutral,H16,H,1,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,fNIRS motor/hemodynamic decoding,descriptive_denominator_missing_as_neutral,I07,I,1,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,MRI quality assessment across sites,descriptive_denominator_missing_as_neutral,I10,I,1,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,Fluorescent synaptic puncta segmentation and quantification,descriptive_denominator_missing_as_neutral,J08,J,1,0.0,0.0,0.0,1.0,0.0
+gpt-6-sol,gpt-6.1-sol,Electrophysiological cell-type classification,descriptive_denominator_missing_as_neutral,K01,K,1,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,Cortical-layer label transfer,descriptive_denominator_missing_as_neutral,K04,K,1,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,Supervised bulk RNA to marker-positive fractions,descriptive_denominator_missing_as_neutral,K05,K,1,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,Optotagged PV/SST classification from waveform,descriptive_denominator_missing_as_neutral,K06,K,1,1.0,0.0,0.0,0.0,1.0
+gpt-6-sol,gpt-6.1-sol,Point-process estimation and goodness of fit,descriptive_denominator_missing_as_neutral,L04,L,1,0.0,1.0,0.0,0.0,-1.0
+gpt-6-sol,gpt-6.1-sol,Conditional mouse-choice prediction,descriptive_denominator_missing_as_neutral,M01,M,1,1.0,0.0,0.0,0.0,1.0

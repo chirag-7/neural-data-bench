@@ -76,6 +76,54 @@ for (const route of [
 ctx.location.hash = "#/benchmark/M01/results";
 vm.runInContext("draw()", ctx);
 if (!el("#benchmark-content").innerHTML.includes("Source-inspired domain reference")) throw Error("Behavioral GLM must be labeled as a source-inspired domain reference");
+// Category-first selectors must never render a mixed global task list.
+const optionIds = (html, id) => {
+ const select=html.match(new RegExp('<select id="'+id+'"[^>]*>([\\s\\S]*?)</select>'));
+ if(!select) throw Error("Missing navigation selector: "+id);
+ return [...select[1].matchAll(/<option value="([^"]+)"/g)].map(match=>match[1]).filter(Boolean);
+};
+ctx.location.hash="#/";vm.runInContext("query='';listMode='measured';selectedTask='A09';draw()",ctx);
+if(!el("#benchmark-directory").innerHTML.includes('class="category-card"')) throw Error("Homepage requires interactive category cards");
+for(const id of optionIds(el("#app").innerHTML,"benchmark-picker")) {
+ if(!id.startsWith("A")) throw Error("Homepage benchmark selector mixed categories");
+}
+el("#category-picker").onchange({target:{value:"B"}});
+for(const id of optionIds(el("#app").innerHTML,"benchmark-picker")) {
+ if(!id.startsWith("B")) throw Error("Category change did not scope benchmark choices");
+}
+el("#benchmark-picker").onchange({target:{value:"B03"}});
+if(!el("#app").innerHTML.includes('#/benchmark/B03')) throw Error("Scoped benchmark selection failed to update open link");
+if(el("#app").innerHTML.includes('id="featured-chart"')) throw Error("Homepage should lead with categories rather than an automatic plot");
+if(!el("#benchmark-directory").innerHTML.includes('<details class="category-task-details">')) throw Error("Category task lists must be optional expandable details");
+el("#search").oninput({target:{value:"calcium"}});
+if(!el("#benchmark-directory").innerHTML.includes("Calcium") || el("#benchmark-directory").innerHTML.includes('id="category-task-B"')) throw Error("Search must filter category cards and their tasks");
+el("#search").oninput({target:{value:""}});
+el("#list-mode").onchange({target:{value:"all"}});
+for(const family of catalog.families) {
+ const html=el("#benchmark-directory").innerHTML;
+ if(!html.includes('id="category-task-'+family.code+'"')) continue;
+ for(const id of optionIds(html,"category-task-"+family.code)) {
+  if(catalog.entries.find(entry=>entry.id===id)?.family_code!==family.code) throw Error("Category card contains a foreign task");
+ }
+}
+el("#category-task-C").onchange({target:{value:"C06"}});
+if(ctx.location.hash!=="#/benchmark/C06/results") throw Error("Category-card task navigation failed");
+ctx.location.hash="#/benchmark/C06/evaluation";vm.runInContext("draw()",ctx);
+for(const id of optionIds(el("#app").innerHTML,"detail-benchmark-picker")) {
+ if(!id.startsWith("C")) throw Error("Task detail selector mixed categories");
+}
+el("#detail-category-picker").onchange({target:{value:"K"}});
+for(const id of optionIds(el("#detail-jump").innerHTML,"detail-benchmark-picker")) {
+ if(!id.startsWith("K")) throw Error("Detail category change failed to scope task choices");
+}
+el("#detail-benchmark-picker").onchange({target:{value:"K06"}});
+if(ctx.location.hash!=="#/benchmark/K06/evaluation") throw Error("Detail quick jump must preserve evaluation tab");
+ctx.location.hash="#/analysis";vm.runInContext("draw()",ctx);
+if(!el("#app").innerHTML.includes('#/analysis/report')) throw Error("Analysis report entry link missing");
+vm.runInContext("globalThis.macroReportPage=()=>{document.querySelector('#app').innerHTML='Report route dispatched';}",ctx);
+ctx.location.hash="#/analysis/report";vm.runInContext("draw()",ctx);
+if(el("#app").innerHTML!=="Report route dispatched") throw Error("Deep report route dispatcher failed");
+vm.runInContext("query='';listMode='measured'",ctx);
 let plots = 0;
 for (const id of summary.measured_task_ids) {
   vm.runInContext(`selectedSlice='';renderChart('#test-chart','${id}')`, ctx);
@@ -151,9 +199,10 @@ ctx.location.hash = "#/";
 vm.runInContext("draw()", ctx);
 el("#search").oninput({ target: { value: "spike" } });
 el("#list-mode").onchange({ target: { value: "all" } });
+ctx.location.hash = "#/category/B";vm.runInContext("draw()",ctx);
 el("#benchmark-picker").onchange({ target: { value: "B01" } });
 if (!el("#featured-chart").innerHTML.includes("MountainSort5"))
-  throw Error("Selector failed to reveal specialist");
+  throw Error("Category-page selector failed to reveal specialist");
 vm.runInContext(
   "b01Metric='all-event-f1';selectedSlice='';renderChart('#test-chart','B01')",
   ctx,
@@ -184,6 +233,11 @@ const result = {
   negative_R2_axis: "passed",
   graph_table_switch: "passed",
   search_and_benchmark_selector: "passed",
+  category_cards_and_two_layer_navigation: "passed",
+  homepage_category_first_without_automatic_chart: "passed",
+  category_page_featured_chart: "passed",
+  task_detail_scoped_quick_jump_and_tab_preservation: "passed",
+  deep_analysis_route_dispatch: "passed",
   javascript_syntax: "passed",
   separate_generation_replication_plots_and_range: "passed",
 };

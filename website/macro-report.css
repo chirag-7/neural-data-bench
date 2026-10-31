@@ -1,0 +1,8 @@
+.macro-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 18px;border-bottom:1px solid var(--border,#dfe5e8);padding-bottom:12px}
+.macro-tabs button{border:1px solid #dce3e7;border-radius:5px;background:#fff;padding:11px 15px;color:#466073;font:inherit;cursor:pointer}
+.macro-tabs button[aria-selected=true]{background:#eaf1f5;border-color:#9ab0be;color:#243c4c;font-weight:600}
+.macro-tabs button:focus-visible{outline:2px solid #4c7e92;outline-offset:3px}
+.macro-findings{display:grid;gap:16px}.macro-findings p{line-height:1.75}
+.macro-section{margin-top:24px}.macro-figure{display:block;width:100%;height:auto}
+figure.macro-section{margin-left:0;margin-right:0}.macro-section summary{cursor:pointer;font-weight:600}
+@media(max-width:620px){.macro-tabs button{flex:1 1 auto;padding:10px;font-size:12px}.macro-findings h2{font-size:20px}.macro-section th,.macro-section td{font-size:11px}}

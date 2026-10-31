@@ -4,6 +4,10 @@
 
 [Results explorer](https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site) · [Current release and review](docs/release-v11.md) · [Results and limits](analysis/findings.md) · [Reproduce](docs/reproduce.md)
 
+## Macro findings and interactive navigation
+
+[Read the macro synthesis](analysis/macro-patterns/report.md) · [Methods and assumptions](analysis/macro-patterns/methods.md) · [Independent review](analysis/macro-patterns/independent-review.md). Findings are separated into quantitative, qualitative and combined evidence. GPT-6.1 has a descriptive directional advantage; family-level diagnostics do not establish general superiority or an improvement law. Category-first website navigation now limits each task selector to its chosen category. No benchmark scores or original failures changed.
+
 ## Completed evidence
 
 | Artifact | Current state |

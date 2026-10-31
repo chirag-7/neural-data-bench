@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Statistical Comparisons of Classifiers over Multiple Data Sets",
+    "authors": "Janez Dem\u0161ar",
+    "year": 2006,
+    "url": "https://jmlr.org/papers/v7/demsar06a.html",
+    "role": "Dataset-level ranks/nonparametric comparison context; our family sign-flip is separately specified",
+    "review_depth": "Publisher abstract verified; no claim of implementing its full procedure"
+  },
+  {
+    "title": "Deep Reinforcement Learning at the Edge of the Statistical Precipice",
+    "authors": "Agarwal et al.",
+    "year": 2021,
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/f514cec81cb148559cf475e7426eed5e-Abstract.html",
+    "role": "Uncertainty-aware benchmark reporting; repeated-run intervals not available in our panel",
+    "review_depth": "Publisher abstract and stated methodological aims verified"
+  }
+]

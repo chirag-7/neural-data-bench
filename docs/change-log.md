@@ -36,3 +36,7 @@ Added B07 byte-exact real-voltage compression:16 recordings/14 animals, frozen c
 ## 0.11 — audited parallel batch
 
 Seven newly measured task IDs, eight slices and 21 original programs add 24 model attempts and 35 model/reference rows. The central registry, macro analysis and site update together once. All 173 prior-release rows remain identical. Source acquisition, frozen contracts, no-tool generation events, numerical outputs, failures and independent audits are retained per task. Four candidates leave the active execution map with explicit reactivation conditions; E02 is deferred. B08's ambiguous utility restriction is disclosed and excluded from aggregate claims; A15's 268-line submission remains a visible format deviation. C06 native plots expose predeclared count calibration error alongside correlation.
+
+## Navigation and synthesis revision 2026-10-31-v12
+
+All 30 measured tasks and 200 successful records passed a quick saved-output/source-integrity check; original failures remain unchanged. Website home and detail navigation now use category then task, with interactive category sections. A separate macro-patterns folder contains the report, methods, reproducible statistics, native margins, sensitivity tables, independent review and figures; the website offers quantitative, qualitative and combined finding tabs. This is an analysis/presentation revision over unchanged measurement snapshot 0.11.

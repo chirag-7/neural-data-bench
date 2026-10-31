@@ -1,0 +1,123 @@
+{
+  "analysis_revision": "2026-10-31-v12",
+  "measurement_snapshot": "0.11",
+  "model_calls": 0,
+  "benchmark_fits": 0,
+  "files": [
+    {
+      "path": "analysis/macro-patterns/README.md",
+      "sha256": "5de8d390a5e5c89055fbf4b2f315f74f523f7f4e4ccd2e6fb1a400528c09e989",
+      "bytes": 391
+    },
+    {
+      "path": "analysis/macro-patterns/category-signals.csv",
+      "sha256": "ade325e696b6b2839a16dcea6d60b6c83da1f96173ec6955ebb709dae79fbb4f",
+      "bytes": 1683
+    },
+    {
+      "path": "analysis/macro-patterns/independent-review.md",
+      "sha256": "960a1c73f26a47971a4201af5d9dda216b483e18389940f6d4b486e9bfb6deb2",
+      "bytes": 5710
+    },
+    {
+      "path": "analysis/macro-patterns/macro-patterns.pdf",
+      "sha256": "e222c4235a30f19409529c38c9aab6e8f34b94902d9f4a929788f9d087f0ffdf",
+      "bytes": 30801
+    },
+    {
+      "path": "analysis/macro-patterns/macro-patterns.png",
+      "sha256": "0a218c2dda9aaf18801de7929c2ae13396166a92a5d0b30dbbd1bcdf001adf42",
+      "bytes": 127191
+    },
+    {
+      "path": "analysis/macro-patterns/main-conservative-families.csv",
+      "sha256": "38c17d0ab3027ecf92142109fcf7916d9b6eafd3c2dd169a94872d93b9e14965",
+      "bytes": 3035
+    },
+    {
+      "path": "analysis/macro-patterns/main-conservative-slices.csv",
+      "sha256": "5abaeee265ffbbe0a208695de6bd40660441d939a76876e6216651782ac0d714",
+      "bytes": 15322
+    },
+    {
+      "path": "analysis/macro-patterns/main-conservative-tasks.csv",
+      "sha256": "056366080efc0ac9da44938017b56b27c989782175874d1b467610bbc4e5de07",
+      "bytes": 5579
+    },
+    {
+      "path": "analysis/macro-patterns/methods.md",
+      "sha256": "bee3ae5213c7d53070914a607bfffd0bd79071056104d46c35665513470451f5",
+      "bytes": 4131
+    },
+    {
+      "path": "analysis/macro-patterns/monotonic-slices.csv",
+      "sha256": "f4de29944a6a0034f8826f24ee15a4f17cfb2c68c0e77391a9059c6c250ccbfc",
+      "bytes": 1014
+    },
+    {
+      "path": "analysis/macro-patterns/paired-families.csv",
+      "sha256": "93676f17be8f9c854fe3bbab8740d90a9f3d846b635b17efc34f74f008b2d859",
+      "bytes": 3774
+    },
+    {
+      "path": "analysis/macro-patterns/paired-slices.csv",
+      "sha256": "33bc4c37124d5efbed259d14546720c977709783e0bf6803ddaaad02eb8231e4",
+      "bytes": 17113
+    },
+    {
+      "path": "analysis/macro-patterns/paired-tasks.csv",
+      "sha256": "3fc60ef5c652e4317f55ea1d3d2076c5e4be0afe55e0f31c5f72ba6458370072",
+      "bytes": 9611
+    },
+    {
+      "path": "analysis/macro-patterns/reference-slices.csv",
+      "sha256": "586a88f3cedc38b5bbf8801e38a63f50d00c3296cd4e3f7b0b40cc78f5852513",
+      "bytes": 14926
+    },
+    {
+      "path": "analysis/macro-patterns/references.json",
+      "sha256": "c9f3cf2a7f11bdd98c36ec01ba4518fb02774cd45817ef318cf10795ba736e28",
+      "bytes": 860
+    },
+    {
+      "path": "analysis/macro-patterns/report.md",
+      "sha256": "bd844674ea8e7057788528108915f38157501f92d7b7a86c1a0a3a4bd8092c35",
+      "bytes": 15502
+    },
+    {
+      "path": "analysis/macro-patterns/requirements.txt",
+      "sha256": "b9ab7b1c9cf1afd3e21f00388da57f49e78788a70c54a284707154f1d3f1c33e",
+      "bytes": 63
+    },
+    {
+      "path": "analysis/macro-patterns/statistics.json",
+      "sha256": "69f8e361cccb1206846f84ccc72b4460c58201da59d382e0a531d6b97b68ace9",
+      "bytes": 642070
+    },
+    {
+      "path": "analysis/macro-patterns/task-context.csv",
+      "sha256": "5e4ba09e97471136544aff9c604b7d868b2539c6e46dcd44065867d745232219",
+      "bytes": 10168
+    },
+    {
+      "path": "analysis/macro-patterns/three-model-ranks.csv",
+      "sha256": "8f599d1d920a518f82573f5bc702c53f9961bf8e5398d5339574a8c5378de933",
+      "bytes": 2700
+    },
+    {
+      "path": "scripts/analyze_macro.py",
+      "sha256": "f297c1c3df5dd4a5a2cb633e6d7fb04e2663c24484438bca28eaeab3fcc6c32b",
+      "bytes": 20805
+    },
+    {
+      "path": "scripts/check_macro.py",
+      "sha256": "2548a0d5b20495a9ce502e90520f6f29a0703efc75470857025944f5b061f360",
+      "bytes": 4764
+    },
+    {
+      "path": "scripts/write_macro_report.py",
+      "sha256": "918dd1e0cc196cda1517f2c88c22f406aaa64edd0a004c883709b8a07740eb4e",
+      "bytes": 24201
+    }
+  ]
+}

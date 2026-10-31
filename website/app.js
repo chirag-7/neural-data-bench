@@ -335,6 +335,7 @@ function draw() {
   if (p[0] === "benchmark") benchmark(p[1], p[2] || "results");
   else if (p[0] === "models") modelsPage();
   else if (p[0] === "model") modelsPage(p[1]);
+  else if (p[0] === "analysis" && p[1] === "report") macroReportPage();
   else if (p[0] === "analysis") analysisPage();
   else if (p[0] === "methods") methodsPage();
   else if (p[0] === "excluded") excludedPage();
@@ -343,18 +344,47 @@ function draw() {
 function mobileFilter(fam) {
   return `<div class="mobile-filter"><label class="screen-reader" for="mobile-category">Category</label><select id="mobile-category"><option value="">All categories</option>${catalog.families.map((f) => `<option value="${f.code}" ${fam === f.code ? "selected" : ""}>${esc(CATEGORIES[f.code] || f.name)}</option>`).join("")}</select></div>`;
 }
+function categoryOptions(selected) {
+  return catalog.families.map((family) => `<option value="${family.code}" ${family.code === selected ? "selected" : ""}>${esc(CATEGORIES[family.code] || family.name)}</option>`).join("");
+}
+function categoryTasks(family, measuredOnly = false) {
+  return catalog.entries.filter((entry) => entry.family_code === family && (!measuredOnly || measured(entry.id)));
+}
+function taskOptions(entries, selected, placeholder = false) {
+  return (placeholder ? '<option value="">Choose a benchmark…</option>' : '') + entries.map((entry) => `<option value="${entry.id}" ${entry.id === selected ? "selected" : ""}>${entry.id} · ${esc(title(entry))}</option>`).join("");
+}
+function detailJumpMarkup(family, id) {
+  return `<div class="toolbar benchmark-jump" aria-label="Jump to a benchmark"><label>Category <select id="detail-category-picker">${categoryOptions(family)}</select></label><label>Benchmark <select id="detail-benchmark-picker">${taskOptions(categoryTasks(family), id, true)}</select></label></div>`;
+}
+function bindDetailJump(tab) {
+  $("#detail-category-picker").onchange = (event) => {
+    $("#detail-jump").innerHTML = detailJumpMarkup(event.target.value, "");
+    bindDetailJump(tab);
+  };
+  $("#detail-benchmark-picker").onchange = (event) => {
+    if (event.target.value) location.hash = "#/benchmark/" + event.target.value + "/" + (["evaluation", "sources"].includes(tab) ? tab : "results");
+  };
+}
 function explorer(fam = "") {
   const f = catalog.families.find((f) => f.code === fam),
     es = catalog.entries.filter((e) => !fam || e.family_code === fam),
-    scored = es.filter((e) => measured(e.id));
-  if (scored.length && !scored.some((e) => e.id === selectedTask))
-    selectedTask = scored[0].id;
+    selectedCategory = fam || catalog.entries.find((entry) => entry.id === selectedTask)?.family_code || catalog.families[0].code,
+    scored = categoryTasks(selectedCategory, true),
+    choices = scored.length ? scored : categoryTasks(selectedCategory);
+  if (choices.length && !choices.some((entry) => entry.id === selectedTask)) selectedTask = choices[0].id;
   $("#app").innerHTML =
-    `<p class="eyebrow">General models × specialist methods</p><h1>${f ? esc(CATEGORIES[fam] || f.name) : "Neuroscience benchmark results"}</h1><p class="lede">${f ? esc(f.tasks) : "Explore measured performance by task, compare general models with verified specialist references, and follow each result to its data and evaluation protocol. Models generate analysis code, which is then fitted locally."}</p>${mobileFilter(fam)}${!fam ? `<p class="note">New this batch: ${route("benchmark/B03", "Synthetic motion")} · ${route("benchmark/B08", "Event compression")} · ${route("benchmark/C06", "Held-out-fish inference")} · ${route("benchmark/E06", "Zebrafish forecasting")} · ${route("benchmark/K05", "Cell fractions")} · ${route("benchmark/K06", "PV/SST waveforms")} · ${route("benchmark/A15", "Birdsong events")}. Inspect exact data, named references and both plots.</p>` : ""}${!fam ? `<div class="stats"><div class="stat"><strong>${summary.measured_tasks}</strong><span>tasks with model attempts</span></div><div class="stat"><strong>${summary.measured_families} / ${catalog.families.length}</strong><span>categories represented</span></div><div class="stat"><strong>3</strong><span>general models evaluated</span></div><div class="stat"><strong>${summary.model_attempts}</strong><span>model × slice attempts</span></div></div>` : ""}${scored.length ? `<div class="toolbar"><label for="benchmark-picker" class="small">Explore a benchmark</label><select id="benchmark-picker">${scored.map((e) => `<option value="${e.id}" ${selectedTask === e.id ? "selected" : ""}>${e.id} · ${esc(title(e))}</option>`).join("")}</select>${route("benchmark/" + selectedTask, "Open benchmark →", "button secondary")}</div><div id="featured-chart"></div>` : `<div class="note">No model results are available in this category yet. Its candidates remain separate from measured benchmarks.</div>`}<div class="section-head"><h2>${f ? "Benchmarks in this category" : "Benchmark directory"}</h2><span class="small">Native scores · no mixed-metric ranking</span></div><div class="toolbar"><input id="search" class="search" aria-label="Search benchmarks" placeholder="Search tasks, datasets or methods…" value="${esc(query)}"><select id="list-mode" aria-label="Result availability"><option value="measured" ${listMode === "measured" ? "selected" : ""}>Measured results</option><option value="all" ${listMode === "all" ? "selected" : ""}>All active candidates</option></select><a class="download-link" href="data/measurements.csv" download>Download results ↓</a></div><div id="benchmark-directory"></div><p class="small" style="margin-top:17px">† Code-line format deviation; see strict-format analysis. A published task score is conditional on its frozen slice and procedure. Directory scores use each task’s first submission. H02’s replication tab includes its stronger train-CV specialist and repeated submissions. The highest inspected reference score does not establish current global SOTA. ${route("methods", "Read the methodology →")}</p>`;
+    `<p class="eyebrow">General models × specialist methods</p><h1>${f ? esc(CATEGORIES[fam] || f.name) : "Neuroscience benchmark results"}</h1><p class="lede">${f ? esc(f.tasks) : "Explore measured performance by task, compare general models with verified specialist references, and follow each result to its data and evaluation protocol. Models generate analysis code, which is then fitted locally."}</p>${!fam ? `<p class="note">Choose a category, then a benchmark. ${route("analysis/report", "Explore the cross-benchmark findings →")} for quantitative, qualitative and combined evidence.</p>` : ""}${!fam ? `<div class="stats"><div class="stat"><strong>${summary.measured_tasks}</strong><span>tasks with model attempts</span></div><div class="stat"><strong>${summary.measured_families} / ${catalog.families.length}</strong><span>categories represented</span></div><div class="stat"><strong>3</strong><span>general models evaluated</span></div><div class="stat"><strong>${summary.model_attempts}</strong><span>model × slice attempts</span></div></div>` : ""}${choices.length ? `<div class="toolbar benchmark-jump" aria-label="Explore by category and benchmark"><label>Category <select id="category-picker">${categoryOptions(selectedCategory)}</select></label><label>Benchmark <select id="benchmark-picker">${taskOptions(choices, selectedTask)}</select></label>${route("benchmark/" + selectedTask, "Open benchmark →", "button secondary")}</div>${fam ? '<div id="featured-chart"></div>' : ""}` : `<div class="note">No active benchmarks in this category.</div>`}<div class="section-head"><h2>${f ? "Benchmarks in this category" : "Explore benchmark categories"}</h2><span class="small">Native scores · no mixed-metric ranking</span></div><div class="toolbar"><input id="search" class="search" aria-label="Search benchmarks" placeholder="Search tasks, datasets or methods…" value="${esc(query)}"><select id="list-mode" aria-label="Result availability"><option value="measured" ${listMode === "measured" ? "selected" : ""}>Measured results</option><option value="all" ${listMode === "all" ? "selected" : ""}>All active candidates</option></select><a class="download-link" href="data/measurements.csv" download>Download results ↓</a></div><div id="benchmark-directory"></div><p class="small" style="margin-top:17px">† Code-line format deviation; see strict-format analysis. A published task score is conditional on its frozen slice and procedure. Directory scores use each task’s first submission. H02’s replication tab includes its stronger train-CV specialist and repeated submissions. The highest inspected reference score does not establish current global SOTA. ${route("methods", "Read the methodology →")}</p>`;
   if ($("#mobile-category"))
     $("#mobile-category").onchange = (e) => {
       location.hash = e.target.value ? "#/category/" + e.target.value : "#/";
     };
+  if ($("#category-picker")) $("#category-picker").onchange = (event) => {
+    const entries = categoryTasks(event.target.value, true);
+    selectedTask = (entries[0] || categoryTasks(event.target.value)[0])?.id || "";
+    selectedSlice = "";
+    if (fam) location.hash = "#/category/" + event.target.value;
+    else explorer("");
+  };
   if ($("#benchmark-picker"))
     $("#benchmark-picker").onchange = (e) => {
       selectedTask = e.target.value;
@@ -363,16 +393,16 @@ function explorer(fam = "") {
     };
   $("#search").oninput = (e) => {
     query = e.target.value;
-    directory(es);
+    directory(es, !fam);
   };
   $("#list-mode").onchange = (e) => {
     listMode = e.target.value;
-    directory(es);
+    directory(es, !fam);
   };
-  directory(es);
-  if (scored.length) renderChart("#featured-chart", selectedTask, true);
+  directory(es, !fam);
+  if (fam && scored.length) renderChart("#featured-chart", selectedTask, true);
 }
-function directory(es) {
+function directory(es, grouped = false) {
   const q = query.toLowerCase(),
     filtered = es.filter(
       (e) =>
@@ -389,6 +419,20 @@ function directory(es) {
             .toLowerCase()
             .includes(q)),
     );
+  if (grouped) {
+    const families = catalog.families.filter((family) => filtered.some((entry) => entry.family_code === family.code));
+    $("#benchmark-directory").innerHTML = `<div class="category-grid">${families.map((family) => {
+      const entries = filtered.filter((entry) => entry.family_code === family.code);
+      return `<section class="category-card" aria-labelledby="category-title-${family.code}"><div class="category-card-head"><h3 id="category-title-${family.code}">${route("category/" + family.code, esc(CATEGORIES[family.code] || family.name))}</h3><span class="count">${entries.length}</span></div><p class="small">${esc(family.tasks)}</p><label class="category-task-label" for="category-task-${family.code}">Open a benchmark</label><select id="category-task-${family.code}" aria-label="Benchmark in ${esc(CATEGORIES[family.code] || family.name)}">${taskOptions(entries, "", true)}</select><details class="category-task-details"><summary>Browse task names</summary><ul class="category-task-list">${entries.map((entry) => {
+        const result = brief(entry.id).bestModel;
+        return `<li>${route("benchmark/" + entry.id, `<span class="task-id">${entry.id}</span>${esc(title(entry))}`)}<span class="small">${result ? esc(metricLabel(result.metric)) : "Candidate · not run"}</span></li>`;
+      }).join("")}</ul></details></section>`;
+    }).join("")}</div>${families.length ? "" : '<p class="empty">No matching benchmarks. Try another search or result-availability filter.</p>'}`;
+    for (const family of families) $("#category-task-" + family.code).onchange = (event) => {
+      if (event.target.value) location.hash = "#/benchmark/" + event.target.value + "/results";
+    };
+    return;
+  }
   $("#benchmark-directory").innerHTML =
     `<div class="table-panel table-wrap"><table><thead><tr><th>Benchmark / dataset</th><th>Category</th><th>Best measured general model</th><th>Reference · first submission</th><th>Metric</th></tr></thead><tbody>${
       filtered
@@ -699,7 +743,7 @@ function benchmark(id, tab = "results") {
   }
   const b = brief(id);
   $("#app").innerHTML =
-    `<p class="breadcrumb">${route("", "Benchmarks")} / ${route("category/" + e.family_code, esc(CATEGORIES[e.family_code]))} / ${id}</p><p class="eyebrow">${id} · ${esc(CATEGORIES[e.family_code])}</p><h1>${esc(title(e))}</h1><p class="lede">${esc(e.executed_slice || e.resource)}</p><div class="detail-top"><span class="badge ${measured(id) ? "verified" : ""}">${measured(id) ? "Measured exploratory protocol" : "Candidate · not run"}</span><span class="badge">T3 · generated analysis code</span><span class="badge">Current global SOTA unverified</span></div><nav class="tabs" aria-label="Benchmark information">${[
+    `<div id="detail-jump">${detailJumpMarkup(e.family_code, id)}</div><p class="breadcrumb">${route("", "Benchmarks")} / ${route("category/" + e.family_code, esc(CATEGORIES[e.family_code]))} / ${id}</p><p class="eyebrow">${id} · ${esc(CATEGORIES[e.family_code])}</p><h1>${esc(title(e))}</h1><p class="lede">${esc(e.executed_slice || e.resource)}</p><div class="detail-top"><span class="badge ${measured(id) ? "verified" : ""}">${measured(id) ? "Measured exploratory protocol" : "Candidate · not run"}</span><span class="badge">T3 · generated analysis code</span><span class="badge">Current global SOTA unverified</span></div><nav class="tabs" aria-label="Benchmark information">${[
       ["results", id === "H02" ? "Original results" : "Results"],
       ...(id === "H02" ? [["replication", "Generation replication"]] : []),
       ["evaluation", "Evaluation details"],
@@ -709,6 +753,7 @@ function benchmark(id, tab = "results") {
         route("benchmark/" + id + "/" + v, t, tab === v ? "active" : ""),
       )
       .join("")}</nav><div id="benchmark-content"></div>`;
+  bindDetailJump(tab);
   if (tab === "results") {
     if (!measured(id)) {
       $("#benchmark-content").innerHTML =
@@ -762,7 +807,7 @@ function analysisPage() {
   ];
   if (!classes.includes(analysisClass)) analysisClass = classes[0];
   $("#app").innerHTML =
-    `<p class="eyebrow">Cross-task analysis</p><h1>Where do models improve?</h1><p class="note">First-submission suite: one generation per task. ${route("benchmark/H02/replication", "P300 now has a separate three-generation follow-up →")} Its repeated attempts are excluded from the cross-task totals below.</p><p class="lede">Track point-score changes and reference comparisons while keeping task, family, failure and evidence-class denominators visible.</p><div class="toolbar"><label for="analysis-scope" class="small">Data scope</label><select id="analysis-scope"><option value="observed_data" ${analysisScope === "observed_data" ? "selected" : ""}>Observed-data sources</option><option value="all" ${analysisScope === "all" ? "selected" : ""}>Include fully synthetic tasks</option></select></div><p class="small">Observed-data scope includes artificial corruption of real signals/trajectories (H16/A14). It excludes fully synthetic B01/B03/L06/M04 and deterministic file task N05. B08 remains visible but is excluded from aggregates in both scopes because its utility-import contract was ambiguous.</p><div class="doc-panel" style="margin-top:26px"><h2>Comparison with references</h2><div class="toolbar"><label for="reference-class" class="small">Reference evidence</label><select id="reference-class">${classes.map((c) => `<option value="${c}" ${c === analysisClass ? "selected" : ""}>${esc(c.replaceAll("_", " "))}</option>`).join("")}</select></div><div class="table-wrap"><table><thead><tr><th>Model</th><th>Point wins / slices</th><th>Lost / tied / failed</th><th>Tasks / families</th><th>Family-equal win fraction</th><th>Strict-format wins / eligible slices</th></tr></thead><tbody>${summary.model_summaries
+    `<p class="eyebrow">Cross-task analysis</p><h1>Where do models improve?</h1><div class="actions">${route("analysis/report", "Read the full cross-task analysis →", "button secondary")}</div><p class="note">First-submission suite: one generation per task. ${route("benchmark/H02/replication", "P300 now has a separate three-generation follow-up →")} Its repeated attempts are excluded from the cross-task totals below.</p><p class="lede">Track point-score changes and reference comparisons while keeping task, family, failure and evidence-class denominators visible.</p><div class="toolbar"><label for="analysis-scope" class="small">Data scope</label><select id="analysis-scope"><option value="observed_data" ${analysisScope === "observed_data" ? "selected" : ""}>Observed-data sources</option><option value="all" ${analysisScope === "all" ? "selected" : ""}>Include fully synthetic tasks</option></select></div><p class="small">Observed-data scope includes artificial corruption of real signals/trajectories (H16/A14). It excludes fully synthetic B01/B03/L06/M04 and deterministic file task N05. B08 remains visible but is excluded from aggregates in both scopes because its utility-import contract was ambiguous.</p><div class="doc-panel" style="margin-top:26px"><h2>Comparison with references</h2><div class="toolbar"><label for="reference-class" class="small">Reference evidence</label><select id="reference-class">${classes.map((c) => `<option value="${c}" ${c === analysisClass ? "selected" : ""}>${esc(c.replaceAll("_", " "))}</option>`).join("")}</select></div><div class="table-wrap"><table><thead><tr><th>Model</th><th>Point wins / slices</th><th>Lost / tied / failed</th><th>Tasks / families</th><th>Family-equal win fraction</th><th>Strict-format wins / eligible slices</th></tr></thead><tbody>${summary.model_summaries
       .map((s) => {
         const c = (analysisScope === "observed_data" ? s.observed_data_reference_class_summaries : s.reference_class_summaries)[analysisClass],
           a = c?.exploratory,

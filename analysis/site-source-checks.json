@@ -8,6 +8,11 @@
   "negative_R2_axis": "passed",
   "graph_table_switch": "passed",
   "search_and_benchmark_selector": "passed",
+  "category_cards_and_two_layer_navigation": "passed",
+  "homepage_category_first_without_automatic_chart": "passed",
+  "category_page_featured_chart": "passed",
+  "task_detail_scoped_quick_jump_and_tab_preservation": "passed",
+  "deep_analysis_route_dispatch": "passed",
   "javascript_syntax": "passed",
   "separate_generation_replication_plots_and_range": "passed"
 }

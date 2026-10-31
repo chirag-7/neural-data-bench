@@ -1,5 +1,7 @@
 # Findings — exploratory preview 0.11
 
+**New cross-benchmark synthesis:** [quantitative, qualitative and combined findings](macro-patterns/report.md), [methods](macro-patterns/methods.md), [independent review](macro-patterns/independent-review.md). The detailed family-level uncertainty analysis qualifies the directional summaries below; it finds no established scaling law or general superiority. No underlying measurement changed.
+
 The first-submission panel now contains **30 measured task IDs across 14 families, 37 slices/model and 111 attempts: 107 numerically valid and four failed**. The 208 model/reference rows identify 200 unique output files. Ninety first-submission programs plus six separate H02 follow-up programs give 96 overall. All 173 v0.10 rows remain identical. Source and scope limits remain task-specific.
 
 Seven new tasks add eight slices: acoustic event segmentation, synthetic ephys motion, timing-bounded event compression, paired calcium/electrical count inference, population forecasting, molecular fraction calibration and waveform-based cell classification. [Complete new score table and audits](../docs/batch-v11.md). Numerical results measure generated analysis programs, not native raw-data perception.
