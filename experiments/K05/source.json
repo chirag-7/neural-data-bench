@@ -1,0 +1,95 @@
+{
+  "benchmark_id": "K05",
+  "source_repository": "LieberInstitute/Human_DLPFC_Deconvolution",
+  "source_revision": "96131ef436fdaa9a9b2129983ac7bd6868204fc4",
+  "accessed_on": "2026-10-31",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/LieberInstitute/Human_DLPFC_Deconvolution/96131ef436fdaa9a9b2129983ac7bd6868204fc4/LICENSE",
+      "path": "data/cache/K05/LICENSE",
+      "bytes": 1096,
+      "sha256": "daf72ffa2ccfecd95d392ffade8f84df6a1b691ea4ffa69fef169bd6bfb22fe6"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LieberInstitute/Human_DLPFC_Deconvolution/96131ef436fdaa9a9b2129983ac7bd6868204fc4/README.md",
+      "path": "data/cache/K05/README.md",
+      "bytes": 11201,
+      "sha256": "43907f37fbc518e32643bac0a52049badbaa68388939e2a93f4d2d9581d2d825"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LieberInstitute/Human_DLPFC_Deconvolution/96131ef436fdaa9a9b2129983ac7bd6868204fc4/processed-data/03_HALO/08_explore_proportions/HALO_cell_type_proportions.csv",
+      "path": "data/cache/K05/HALO_cell_type_proportions.csv",
+      "bytes": 11510,
+      "sha256": "4d3c4bb8a310a39b1cdd92e7f4535fed5bdfb969d25cfd6361e720cf7dd6d74a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LieberInstitute/Human_DLPFC_Deconvolution/96131ef436fdaa9a9b2129983ac7bd6868204fc4/processed-data/03_HALO/08_explore_proportions/HALO_cell_type_proportions_adj.csv",
+      "path": "data/cache/K05/HALO_cell_type_proportions_adj.csv",
+      "bytes": 7791,
+      "sha256": "53074c1ba96e700b334445276992565190b8157df7cc2bee5df878e0554a04fb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LieberInstitute/Human_DLPFC_Deconvolution/96131ef436fdaa9a9b2129983ac7bd6868204fc4/processed-data/00_data_prep/sample_info.csv",
+      "path": "data/cache/K05/sample_info.csv",
+      "bytes": 1650,
+      "sha256": "84f27820c79aff05788974553bc3284f769ffe36dc501a7f143200f3cb5cfb10"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LieberInstitute/Human_DLPFC_Deconvolution/96131ef436fdaa9a9b2129983ac7bd6868204fc4/processed-data/08_bulk_deconvolution/07_deconvolution_CIBERSORTx_prep/DLPFC_bulk_counts.txt",
+      "path": "data/cache/K05/DLPFC_bulk_counts.txt",
+      "bytes": 9147333,
+      "sha256": "290861e3a23fd366fea2bb963c29657cd596f2481a9981bac9669f131420a8c3"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LieberInstitute/Human_DLPFC_Deconvolution/96131ef436fdaa9a9b2129983ac7bd6868204fc4/code/03_HALO/08_explore_proportions.R",
+      "path": "data/cache/K05/08_explore_proportions.R",
+      "bytes": 46080,
+      "sha256": "18076e72571f41fbdcf803c2ebea6811e0eb26d49a8dd8ecb6a67fce385f46c7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LieberInstitute/Human_DLPFC_Deconvolution/96131ef436fdaa9a9b2129983ac7bd6868204fc4/code/08_bulk_deconvolution/03_get_est_prop.R",
+      "path": "data/cache/K05/03_get_est_prop.R",
+      "bytes": 9043,
+      "sha256": "f189610b3f8c3c7ad8be2ee1c02b22a5927ded6715d6989b1aafd907aeb95595"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LieberInstitute/Human_DLPFC_Deconvolution/96131ef436fdaa9a9b2129983ac7bd6868204fc4/processed-data/11_raw_data_upload/biosample.tsv",
+      "path": "data/cache/K05/biosample.tsv",
+      "bytes": 35558,
+      "sha256": "5af66ce6a1d6fd13a616bbf66feeb2a4c5fe2c5aab430faabc297447a99a6f76"
+    },
+    {
+      "url": "https://zenodo.org/api/records/14969244",
+      "path": "data/cache/K05/zenodo-publication-record.json",
+      "bytes": 4460,
+      "sha256": "175c2cd47bd6c89482e62f9fa6d8eebe12a32311a0956901c7f0e4492eb0d7f3"
+    }
+  ],
+  "source_bytes": 9275722,
+  "prepared": {
+    "path": "data/cache/K05/data.npz",
+    "bytes": 723125,
+    "sha256": "8bd473e7aae9512cd4896e6911eaca9b20dbca0ca115718639ee57d784838d59"
+  },
+  "terms": "Upstream repository MIT includes downloaded processed count TSV, fraction CSV, analysis code and README; no raw human sequencing/images redistributed",
+  "redistribution": "All source bytes remain local in ignored data/cache; tracked manifest, downloader and analysis code only",
+  "rights_evidence": {
+    "accessed_on": "2026-10-31",
+    "publication_linked_archive": "https://doi.org/10.5281/zenodo.10616687",
+    "publication_version": "https://zenodo.org/records/14969244",
+    "metadata_url": "https://zenodo.org/api/records/14969244",
+    "archive_license": {
+      "id": "mit-license"
+    },
+    "archive_access": "open",
+    "repository_release": [
+      {
+        "identifier": "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution/tree/v2_pre_publication",
+        "relation": "isSupplementTo",
+        "resource_type": "software",
+        "scheme": "url"
+      }
+    ],
+    "interpretation": "Public repository-hosted processed arrays/tables accompany a publication-linked open archive declaring MIT. Retain MIT notice; do not extend paper CC BY4.0 to separate raw sequencing or image sources. No source-byte redistribution proposed."
+  }
+}

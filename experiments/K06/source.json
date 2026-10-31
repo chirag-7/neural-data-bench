@@ -1,0 +1,124 @@
+{
+  "benchmark_id": "K06",
+  "source_repository": "petersenpeter/CellExplorer",
+  "source_revision": "47148748886935c6bda208405f479a864a4add80",
+  "accessed_on": "2026-10-31",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_715093703.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_715093703.cell_metrics.cellinfo.mat",
+      "bytes": 1939465,
+      "sha256": "b3056ed40c28625039d027c7033847e95bdcadf9d00f4f46477786a7f2993c63"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_719161530.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_719161530.cell_metrics.cellinfo.mat",
+      "bytes": 3404526,
+      "sha256": "cb75d8eb6672d530460a6372c8212d1066bd3fe4758a9d20e5c22aac3e105787"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_721123822.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_721123822.cell_metrics.cellinfo.mat",
+      "bytes": 9761785,
+      "sha256": "d1c5b1cf368fdc65d032bfbc420d418c7e249dfd26221f6ce492b28d07f3e46a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_756029989.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_756029989.cell_metrics.cellinfo.mat",
+      "bytes": 4189334,
+      "sha256": "cadffb028a239d8c98fda673d4b4132784e356e2906115fd39e29adc7c41ff41"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_758798717.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_758798717.cell_metrics.cellinfo.mat",
+      "bytes": 1303741,
+      "sha256": "e5edc1d252f36b32a45659325006243efeec20b05314c8a04f82605a48c32b53"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_760345702.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_760345702.cell_metrics.cellinfo.mat",
+      "bytes": 1599371,
+      "sha256": "be275725b78e358fec2fbf79f012924baaa5b39432a2fb4949a446740a593524"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_762602078.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_762602078.cell_metrics.cellinfo.mat",
+      "bytes": 4297735,
+      "sha256": "8ed3cc00b9a8b470fa3e56b67ce714323e50d5c1c934a6aa2f8217b3488da6c2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_786091066.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_786091066.cell_metrics.cellinfo.mat",
+      "bytes": 7944498,
+      "sha256": "45092f14988bcde278d7d2769f3dc2f6f9d4fec632263e6e3623e9526136b7e5"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_787025148.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_787025148.cell_metrics.cellinfo.mat",
+      "bytes": 2271090,
+      "sha256": "dc724aed15d0d312b3f1f06dae885c20087ad2941bb0a4b7b2d828fa5803a003"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_789848216.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_789848216.cell_metrics.cellinfo.mat",
+      "bytes": 17958862,
+      "sha256": "b7dfe10037babae13e7e5d46c5d45cd4dee5e1940146f18fc60fbfdb5bb5a3f9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_794812542.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_794812542.cell_metrics.cellinfo.mat",
+      "bytes": 40855031,
+      "sha256": "ec7166c2a4c110fc9a3bab36e09a3964002ac1fb9d6a655115ca43905ee1b72e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_797828357.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_797828357.cell_metrics.cellinfo.mat",
+      "bytes": 44968780,
+      "sha256": "bf19959224f371620bc1620e542783f4c68db658b5d45615994e7fdf3be1d0a9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_831882777.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_831882777.cell_metrics.cellinfo.mat",
+      "bytes": 31055918,
+      "sha256": "e4f85bc15b6e254c3b59599668287ee5696418e10bf564ea0c7d939f5fb6b38e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_839068429.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_839068429.cell_metrics.cellinfo.mat",
+      "bytes": 25207805,
+      "sha256": "3fe7221e9440632aca907857a48f100c46e43d89291fccaf3b72c384f3a54a07"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_839557629.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_839557629.cell_metrics.cellinfo.mat",
+      "bytes": 30503864,
+      "sha256": "58d0564458f54138f725b94908c64f7fc176d3fc04844e56eee693657cb5c900"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/session_840012044.cell_metrics.cellinfo.mat",
+      "path": "data/cache/K06/session_840012044.cell_metrics.cellinfo.mat",
+      "bytes": 50387892,
+      "sha256": "92357e41b3bda3fd1aebc2f49e1f6e805c26b6acef3a4255df48f8f16a28eb7b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/petersenpeter/CellExplorer/47148748886935c6bda208405f479a864a4add80/+groundTruthData/groundTruth_cell_list.mat",
+      "path": "data/cache/K06/groundTruth_cell_list.mat",
+      "bytes": 2833832,
+      "sha256": "fb32387c12cd3924413643c5b7d99a70eb451bb066bcce8644c076e57237b5a3"
+    },
+    {
+      "url": "https://alleninstitute.org/legal/terms-of-use",
+      "path": "data/cache/K06/allen-terms.html",
+      "bytes": 229163,
+      "sha256": "39da20c71215ae38067b1038c83373d9b5b8fe7148f3fb0dff6e7b7226226362"
+    }
+  ],
+  "source_bytes": 280712692,
+  "prepared": {
+    "path": "data/cache/K06/data.npz",
+    "bytes": 136899,
+    "sha256": "b1cdab0c3433baacd59792a039e9726e34404ffa5ee539235673a42a301da4f9"
+  },
+  "terms": "Allen Institute Terms of Use, research/noncommercial with attribution, applies to original Allen source content; CellExplorer code BSD-3-Clause is retained separately and not asserted to license contributor data",
+  "redistribution": "All source bytes remain local in ignored data/cache; tracked manifest, downloader and analysis code only"
+}

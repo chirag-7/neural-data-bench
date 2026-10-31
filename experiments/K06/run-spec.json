@@ -1,0 +1,40 @@
+{
+  "benchmark_id": "K06",
+  "run_id": "batch-v11",
+  "slice_id": "batch-v11",
+  "date": "2026-10-31",
+  "track": "T3",
+  "models": [
+    "gpt-5.6-sol",
+    "gpt-6-sol",
+    "gpt-6.1-sol"
+  ],
+  "reasoning_effort": "high",
+  "generation_replicates": 1,
+  "timeout_seconds": 180,
+  "line_limit_exclusive": 240,
+  "memory_enforced": false,
+  "train_groups_supplied": true,
+  "prompt_sha256": "3c99ed7b37fb4066883ed6482a66d11fc0ffd3e41950889aaf156d7ae584e95f",
+  "adapter_sha256": "afb0a00c18ca8939c5a1b62614118ece123ea1ef0880f25f0ec9fe87f49608ec",
+  "frozen_files": {
+    "data/cache/K06/data.npz": "b1cdab0c3433baacd59792a039e9726e34404ffa5ee539235673a42a301da4f9",
+    "data/manifests/K06.json": "a9d555244753900e50c19ec781c649cca839dcbbc72cafad6c38c81020390110",
+    "experiments/K06/UPSTREAM_CODE_LICENSE.txt": "e78c408087ccdd07ac9bb324d75c3fbb2be7a1b4934d5e009e2f2ed21792d494",
+    "experiments/K06/acquire.py": "520d1579293a2ebb1572df848db68c096d029102eb46f5785a25c9c648580595",
+    "experiments/K06/adapter.py": "afb0a00c18ca8939c5a1b62614118ece123ea1ef0880f25f0ec9fe87f49608ec",
+    "experiments/K06/context-brief.txt": "4b986517a0adbb16ee7dade15d8db5b63f1707772ae7cff539593b31a30459f4",
+    "experiments/K06/execution-environment.json": "c001ba794f61f9c5722c3666f4adb2bd747b1f5ad817531bf440891d949bf506",
+    "experiments/K06/prompt.txt": "3c99ed7b37fb4066883ed6482a66d11fc0ffd3e41950889aaf156d7ae584e95f",
+    "experiments/K06/protocol.md": "4b0ec91465fbf0ec5a1c532da3abee53ac89e1f9858997c61767f746e87038ef",
+    "experiments/K06/response_schema.json": "5caff7b9bde2bc742e6c178602afccf9ab813b07806cdd2e7aa77d2a51d998d3",
+    "experiments/K06/source.json": "a9d555244753900e50c19ec781c649cca839dcbbc72cafad6c38c81020390110",
+    "experiments/K06/verification.json": "0e1b35ea2f16a975cbb536a7814382378bacdc888ce3fcf32ed25399851a4456",
+    "experiments/K06/verify.py": "2b2ba3b113b441e2f45af2efe552142cc6cd03476d657f969adcfca380ea9e1c",
+    "scripts/batch_candidates.py": "c5e018e59502dcde439c4753b07796caf8a9e90f8853a8b897d9d938b68c6b43",
+    "scripts/compression_candidates.py": "dab15f24be06c717d82321bc1eebbaaf88abb62c16db3cedc3b786884334ad21",
+    "scripts/expansion.py": "939c6297a67a4244b506cd32e2630c66de0bd11755c1029feb39bb0c23b46c6e"
+  },
+  "status": "Frozen before model calls and all real-slice method scores",
+  "data_sha256": "b1cdab0c3433baacd59792a039e9726e34404ffa5ee539235673a42a301da4f9"
+}

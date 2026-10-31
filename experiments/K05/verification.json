@@ -1,0 +1,18 @@
+{
+  "benchmark_id": "K05",
+  "status": "verified preparation; not frozen",
+  "source_files_verified": 10,
+  "checks": [
+    "Exact source hashes/bytes",
+    "63 one-to-one bulk sample IDs",
+    "Raw Circle n_cell/all-nuclei denominator reproduces prop",
+    "Only image Confidence OK/High",
+    "No prop_sn, adjusted composition or imputed truth",
+    "Donor and block disjointness",
+    "Exact 2000 train-only variable genes and logCPM values",
+    "Toy scorer verifies equal replicate/block/donor hierarchy"
+  ],
+  "method_runs": 0,
+  "model_calls": 0,
+  "real_slice_method_scores": 0
+}

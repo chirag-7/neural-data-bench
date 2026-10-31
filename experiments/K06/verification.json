@@ -1,0 +1,18 @@
+{
+  "benchmark_id": "K06",
+  "status": "verified preparation; not frozen",
+  "source_files_verified": 18,
+  "checks": [
+    "Exact source hashes/bytes",
+    "207 source mouse/session/UID matches",
+    "GT list agrees with per-session independent optotag classifications",
+    "All six scalar and81 waveform predictors independently reconstructed",
+    "11/5 mouse disjointness",
+    "3 training CV folds mouse-disjoint and class-covered",
+    "No genetic/ID/opto-response/firing/ACG/ISI predictor fields",
+    "Toy scorer verifies class-balanced mouse aggregation"
+  ],
+  "method_runs": 0,
+  "model_calls": 0,
+  "real_slice_method_scores": 0
+}

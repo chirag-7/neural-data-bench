@@ -1,0 +1,19 @@
+{
+  "accessed_on": "2026-10-31",
+  "publication_linked_archive": "https://doi.org/10.5281/zenodo.10616687",
+  "publication_version": "https://zenodo.org/records/14969244",
+  "metadata_url": "https://zenodo.org/api/records/14969244",
+  "archive_license": {
+    "id": "mit-license"
+  },
+  "archive_access": "open",
+  "repository_release": [
+    {
+      "identifier": "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution/tree/v2_pre_publication",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ],
+  "interpretation": "Public repository-hosted processed arrays/tables accompany a publication-linked open archive declaring MIT. Retain MIT notice; do not extend paper CC BY4.0 to separate raw sequencing or image sources. No source-byte redistribution proposed."
+}
