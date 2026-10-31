@@ -1,0 +1,15 @@
+{
+  "id": "appgdep_6ae57811455c81918b78dd365a241eea",
+  "project_id": "appgprj_6ae4f438805c81919b082963db32f4f5",
+  "title": "Neural Data Observatory",
+  "version_id": "appgprj_6ae4f438805c81919b082963db32f4f5~appgver_81042b9bf3488191a1c330990b3a1e52",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6ae4f438805c81919b082963db32f4f5",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-10-31T05:09:44.735421+00:00"
+}

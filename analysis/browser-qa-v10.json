@@ -1,0 +1,18 @@
+{
+  "release": "0.10",
+  "url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site",
+  "status": "passed",
+  "scope": "Representative local and live browser flows; source-render checks cover311 routes,not exhaustive browser inspection",
+  "checks": [
+    "Published B07 all six native scores match canonical records",
+    "WavPack and delta-Blosc codec references both dashed,directly named with numeric cards; raw zlib dotted; both plot types verified",
+    "Six-method table and graph controls work; all-16 codec time header",
+    "390x844 responsive override:375px client/scroll width; all reference cards within34..341px,no document overflow; viewport reset",
+    "Observed-data macro25slices/19tasks/13families; synthetic-inclusive27/21/13; local-reference scope6tasks/4families including synthetic",
+    "Published release0.10 footer,23 measured tasks and categoryB count2"
+  ],
+  "console_errors": 0,
+  "screenshot": "docs/assets/compression-v10.png",
+  "screenshot_sha256": "3bdb9d6b9cb38c3db83f1e4fa0e7f82f00585f9e15da32708a77242e0357c58c",
+  "final_source_commit": "7d6b24167400a9997284873d5be73df73884338b"
+}

@@ -35,5 +35,8 @@
     "style.css": "e09b97d2bcfa8c54137fd81b623d6647a9e19ab897b5ac0ecdca2fea1df18046"
   },
   "file_count": 33,
-  "scope": "Canonical website assets must equal managed dist and packaged archive"
+  "scope": "Canonical website assets must equal managed dist and packaged archive",
+  "source_commit": "7d6b24167400a9997284873d5be73df73884338b",
+  "archive_sha256": "4da19bae70e132c539dd74149948619e8fba93ef30d23ab7c797b1f94b1bc714",
+  "canonical_archive_payload_hashes_verified": 33
 }

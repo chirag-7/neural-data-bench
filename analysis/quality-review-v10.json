@@ -8,7 +8,8 @@
     "All167 original0.9 model/reference records remain identical",
     "All311 source routes and23 line/bar plot pairs pass",
     "Existing strict-format deviations and two previous failed attempts retained",
-    "Observed-data and synthetic-inclusive macro counts refreshed from canonical records"
+    "Observed-data and synthetic-inclusive macro counts refreshed from canonical records",
+    "Original WavPack encode/decode binaries and retained upstream source/license match frozen runtime hashes"
   ],
   "limitations": [
     "One shortchunk perrecording;16recordings represent14 sourceanimals",
