@@ -1,0 +1,123 @@
+{
+  "benchmark_id": "B08",
+  "verification_status": "incomplete_or_failed_attempts_preserved",
+  "complete": false,
+  "frozen_files_checked": 21,
+  "original_sources": [
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-19-Run1_behavior+ecephys",
+      "n_events": 202939,
+      "original_component_hashes_verified": true,
+      "stable_sort_reconstruction_exact": true
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-19-Run2_behavior+ecephys",
+      "n_events": 194904,
+      "original_component_hashes_verified": true,
+      "stable_sort_reconstruction_exact": true
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-20-Run1_behavior+ecephys",
+      "n_events": 137297,
+      "original_component_hashes_verified": true,
+      "stable_sort_reconstruction_exact": true
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-20-Run2_behavior+ecephys",
+      "n_events": 132486,
+      "original_component_hashes_verified": true,
+      "stable_sort_reconstruction_exact": true
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-27-Run1_behavior+ecephys",
+      "n_events": 93172,
+      "original_component_hashes_verified": true,
+      "stable_sort_reconstruction_exact": true
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-27-Run2_behavior+ecephys",
+      "n_events": 114382,
+      "original_component_hashes_verified": true,
+      "stable_sort_reconstruction_exact": true
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-28-Run1_behavior+ecephys",
+      "n_events": 177365,
+      "original_component_hashes_verified": true,
+      "stable_sort_reconstruction_exact": true
+    }
+  ],
+  "measured_attempts": [
+    {
+      "model": "gpt-6.1-sol",
+      "score": 8.636801620045114,
+      "per_record_bits_per_event": [
+        8.12050911850359,
+        8.202684398473094,
+        8.814118298287653,
+        8.853101459776882,
+        9.02150860773623,
+        8.953506670629995,
+        8.492182786908353
+      ],
+      "total_encoded_bytes": 1125082,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "fresh_decoder_pid": 59659,
+      "code_sha256": "6be104769ef7e6d3385b0da5160871504cec4c89164b8ba86bf85701e455e62b",
+      "seven_recordings_passed": true
+    },
+    {
+      "model": "spikepack",
+      "score": 8.142312213400157,
+      "per_record_bits_per_event": [
+        7.909174678105243,
+        7.908837171120141,
+        8.407117416986534,
+        8.421901182011684,
+        8.102691795818487,
+        8.059729677746498,
+        8.186733572012516
+      ],
+      "total_encoded_bytes": 1068184,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "fresh_decoder_pid": 59662,
+      "code_sha256": "e8ea58dc01558d728fc690560f8596889d4a02540190f4f402573c447eed0b42",
+      "seven_recordings_passed": true
+    },
+    {
+      "model": "task-baseline",
+      "score": 11.918156003544585,
+      "per_record_bits_per_event": [
+        11.382257722763983,
+        11.426507408775603,
+        12.159216880194032,
+        12.174207086031732,
+        12.219894388872193,
+        12.222762322743089,
+        11.842246215431455
+      ],
+      "total_encoded_bytes": 1557041,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "fresh_decoder_pid": 59668,
+      "code_sha256": "e8ea58dc01558d728fc690560f8596889d4a02540190f4f402573c447eed0b42",
+      "seven_recordings_passed": true
+    }
+  ],
+  "failed_attempts": [
+    {
+      "model": "gpt-5.6-sol",
+      "status": "failed",
+      "reason": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/batch_candidates.py\", line 88, in <module>\n    else:print(json.dumps(one(args.task,args.model,args.slice)))\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/batch_candidates.py\", line 41, in one\n    if task=='B08':ns=code_namespace(code)\n                      ^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/compression_candidates.py\", line 13, in code_namespace\n    if isinstance(n,ast.Import) and any(x.name.split('.')[0] not in allowed for x in n.names):raise ValueError('Disallowed import')\n                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Disallowed import\n"
+    },
+    {
+      "model": "gpt-6-sol",
+      "status": "failed",
+      "reason": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/batch_candidates.py\", line 88, in <module>\n    else:print(json.dumps(one(args.task,args.model,args.slice)))\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/batch_candidates.py\", line 41, in one\n    if task=='B08':ns=code_namespace(code)\n                      ^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/compression_candidates.py\", line 13, in code_namespace\n    if isinstance(n,ast.Import) and any(x.name.split('.')[0] not in allowed for x in n.names):raise ValueError('Disallowed import')\n                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Disallowed import\n"
+    }
+  ],
+  "missing_attempts": [],
+  "artifact_directory": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/verification/B08-fresh-decode-absolute-runtime",
+  "encoder_invoked": false,
+  "timing_contract": "Intentionally lossy <=50us+1e-10s/event; exact unit labels and event order; not exact source timing",
+  "shared_source": "All seven original FALCON M2 runs shared with G01; one monkey, not independent cohort"
+}

@@ -29,7 +29,7 @@
     "evidence": "literature/admission-v04-behavior-population.json"
   },
   "current_execution": {
-    "release": "0.10",
+    "release": "0.11",
     "status": "measured",
     "slice": "Spikefinder: calcium-to-spike inference on five preparations; median 40 ms correlation per preparation.",
     "evidence": "literature/admission-v04-behavior-population.json"

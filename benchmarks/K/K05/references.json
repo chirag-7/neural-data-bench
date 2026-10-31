@@ -4,7 +4,8 @@
     "https://doi.org/10.1186/s13059-025-03552-3",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
     "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution",
-    "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html"
+    "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html",
+    "https://zenodo.org/records/14969244"
   ],
-  "admission_evidence": "literature/admission-v04-cell-workflow.json"
+  "admission_evidence": "experiments/K05/protocol.md"
 }

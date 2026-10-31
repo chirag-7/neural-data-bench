@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). IBL spike trains could 
 
 ## Current admission and execution
 
-Preview 0.10: candidate_pending_validation. IBL spike trains could support lossless integer/event compression; reconstruction must preserve exact event times/unitIDs. Need exact release/chunk bounds and bits/event denominator; shared IBL recordings must not count twice as independent datasets. Not acquired here.
+Preview 0.11: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
-[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).
+[Admission/source evidence](../../../experiments/B08/protocol.md). [Actual protocol/worklog](../../../experiments/B08). [Task measurements](../../../results/B08.json).

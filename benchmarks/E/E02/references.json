@@ -3,5 +3,5 @@
   "source_urls": [
     "https://github.com/snel-repo/ComputationThroughDynamicsToolkit"
   ],
-  "admission_evidence": "literature/admission-v04-behavior-population.json"
+  "admission_evidence": "literature/batch-v11-population/E02-decision.md"
 }

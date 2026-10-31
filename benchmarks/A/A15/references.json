@@ -4,7 +4,11 @@
     "https://elifesciences.org/articles/68837",
     "https://data.goettingen-research-online.de/dataverse/das",
     "https://janclemenslab.org/das/",
-    "https://github.com/nianlonggu/WhisperSeg"
+    "https://github.com/nianlonggu/WhisperSeg",
+    "https://doi.org/10.25625/ENKMJS",
+    "https://doi.org/10.6084/m9.figshare.4805749",
+    "https://www.vocalpy.org/bfsongrepo/",
+    "https://figshare.com/articles/dataset/4805749"
   ],
-  "admission_evidence": "literature/admission-v04-behavior-population.json"
+  "admission_evidence": "experiments/A15/protocol.md"
 }

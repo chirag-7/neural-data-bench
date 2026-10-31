@@ -1,10 +1,15 @@
 """Portable integrity checks without raw-data downloads, scientific dependencies or model calls."""
 from pathlib import Path
-import hashlib,json,re,urllib.parse
+import hashlib,json,math,re,urllib.parse
 R=Path(__file__).resolve().parents[1]
 c=json.loads((R/'registry/catalog.json').read_text());ids=[e['id'] for e in c['entries']];assert len(ids)==len(set(ids))
 for p in R.rglob('*.md'):
  if 'data/cache' in str(p) or '.git' in p.parts:continue
+ # Verbatim upstream documentation keeps its original relative links/nested
+ # Markdown. Its bytes are checked by source/frozen seals, not rewritten for
+ # this repository. Continue checking all project-authored documentation.
+ relative=p.relative_to(R).parts
+ if relative[0]=='experiments' and p.name.lower()=='readme.md' and any(part in ['source','upstream'] for part in relative[2:-1]):continue
  for raw in re.findall(r'\]\(([^)]+)\)',p.read_text()):
   target=raw.strip('<>').split('#')[0]
   if not target or re.match(r'\w+://',target):continue
@@ -42,7 +47,7 @@ for e in c['entries']:
 for d in (R/'experiments').iterdir():
  if not (d/'run-spec.json').exists() or d.name in ['C05','M04']:continue
  spec=json.loads((d/'run-spec.json').read_text());assert hashlib.sha256((d/'prompt.txt').read_bytes()).hexdigest()==spec['prompt_sha256']
- if d.name in ['L06','B07']:
+ if 'frozen_files' in spec:
   for filename,digest in spec['frozen_files'].items():
    if filename.startswith('data/cache/'):continue
    assert hashlib.sha256((R/filename).read_bytes()).hexdigest()==digest,filename
@@ -118,3 +123,99 @@ if compression.exists():
   assert abs(sum(8*x['compressed_bytes']/(4096*384) for x in items)/16-row['score'])<1e-12
  for line in (R/'results/archive/v09-measurements.jsonl').read_text().splitlines():assert json.loads(line) in records,'A v0.9 historical record changed'
  print('B07 saved bitstream hashes/size arithmetic and source-audit evidence passed; all v0.9 records unchanged. CI does not redownload raw chunks or rerun decoders.')
+
+def check_batch_integrity(ledger):
+ """Portable batch evidence checks: no NumPy, source cache, decoder or fitting."""
+ models=('gpt-5.6-sol','gpt-6-sol','gpt-6.1-sol')
+ tasks=('B03','B08','C06','E06','K05','K06','A15')
+ reports={'B03':'results/audits/B03-batch-v11.json','C06':'results/audits/C06-batch-v11.json',
+  'E06':'results/verification/E06-batch-v11.json','K05':'results/audits/cells-batch-v11.json',
+  'K06':'results/audits/cells-batch-v11.json','B08':'results/verification/B08-independent-final.json',
+  'A15':'results/audits/A15-batch-v11.json'}
+ def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+ def path(rel):
+  p=(R/rel).resolve();assert p.is_relative_to(R.resolve()),'Batch artifact outside repository';return p
+ def read(rel):return json.loads(path(rel).read_text())
+ historical=[json.loads(line) for line in (R/'results/archive/v10-measurements.jsonl').read_text().splitlines()]
+ for row in historical:assert row in ledger,'A v0.10 first-submission row changed'
+ total=measured=event_count=payload_count=0
+ for task in tasks:
+  d=R/f'experiments/{task}';spec=json.loads((d/'run-spec.json').read_text())
+  assert spec['run_id']=='batch-v11' and spec['models']==list(models) and spec['reasoning_effort']=='high'
+  assert spec['generation_replicates']==1 and spec['timeout_seconds']==180 and spec['line_limit_exclusive']==240
+  assert digest(d/'prompt.txt')==spec['prompt_sha256']
+  for rel,h in spec['frozen_files'].items():
+   if not rel.startswith('data/cache/'):assert digest(path(rel))==h,rel
+  prov=json.loads((d/'generation-provenance.json').read_text());events=json.loads((d/'generation-event-files.json').read_text())
+  assert len(prov)==len(events)==3
+  assert {p['requested_model'] for p in prov}=={p['model'] for p in events}==set(models)
+  code_hashes={}
+  for model in models:
+   submission=json.loads((d/(model+'.json')).read_text());code=submission['code'];h=hashlib.sha256(code.encode()).hexdigest();code_hashes[model]=h
+   if (d/(model+'.py')).exists():assert (d/(model+'.py')).read_bytes()==code.encode(),'Saved batch code differs from generation'
+   p=next(p for p in prov if p['requested_model']==model);e=next(e for e in events if e['model']==model)
+   assert p['code_sha256']==h and p['code_lines']==len(code.splitlines()) and p['tool_events']==0
+   assert p['user_prompt_sha256']==spec['prompt_sha256'] and p['reasoning_effort']=='high' and p['generation_replicates']==1
+   assert p['usage'] is not None and e['tool_events']==0 and e['submission_matches_final_generation_event']
+   eventpath=path(e['event_file']);assert digest(eventpath)==e['sha256']
+   raw=[json.loads(line) for line in eventpath.read_text().splitlines() if line.strip()]
+   messages=[v['item']['text'] for v in raw if v.get('type')=='item.completed' and v.get('item',{}).get('type')=='agent_message']
+   assert messages and json.loads(messages[-1])==submission
+   assert sum(v.get('item',{}).get('type') not in [None,'agent_message','reasoning'] for v in raw)==0
+   assert next(v['usage'] for v in reversed(raw) if v.get('type')=='turn.completed')==p['usage'];event_count+=1
+  local=read(f'results/{task}.json');local=[r for r in local if r.get('run_id','batch-v11')=='batch-v11']
+  refs=('spikepack','task-baseline') if task=='B08' else ('task-baseline','mean-baseline') if task=='E06' else ('task-baseline',)
+  slices=('batch-v11','taxis') if task=='E06' else ('batch-v11',)
+  expected={(s,m) for s in slices for m in models+refs}
+  assert len(local)==len(expected) and {(r['slice_id'],r['model']) for r in local}==expected,'Missing/duplicate batch attempts'
+  audit=read(reports[task])
+  if task in ['K05','K06']:
+   assert audit['models_or_references_executed'] is False
+   audit=next(v for v in audit['tasks'] if v['benchmark_id']==task)
+   assert audit['source_labels_reconstructed'] and audit['group_disjoint']
+  assert not audit.get('missing_attempts',audit.get('missing_models',[])),'Independent audit has missing attempts'
+  if task!='B08':assert audit['complete'] and audit['models_or_references_executed'] is False
+  else:assert audit['encoder_invoked'] is False and len(audit['original_sources'])==7
+  audited={(a.get('slice_id','batch-v11'),a['model']):a for a in audit['measured_attempts']}
+  failures={(a.get('slice_id','batch-v11'),a['model']):a for a in audit['failed_attempts']}
+  assert set(audited).isdisjoint(failures) and set(audited)|set(failures)==expected
+  for row in local:
+   matching=[v for v in ledger if v['benchmark_id']==task and v.get('slice_id')==row['slice_id'] and v['model']==row['model']]
+   assert len(matching)==1 and all(matching[0].get(k)==v for k,v in row.items()),'Central batch row differs from retained attempt'
+   saved=matching[0];key=(row['slice_id'],row['model']);total+=1
+   if row['status']!='measured':
+    assert key in failures and failures[key]['status']==row['status'] and failures[key].get('reason')==row.get('reason')
+    assert row.get('reason') and 'score' not in row;continue
+   measured+=1;identity=audited[key]
+   prediction=path(row['prediction_file']);assert digest(prediction)==row['prediction_sha256']
+   assert row['prompt_sha256']==spec['prompt_sha256']
+   expected_code=code_hashes[row['model']] if row['model'] in models else digest(d/('reference.py' if task=='B08' else 'adapter.py'))
+   assert row['code_sha256']==expected_code
+   if row['model'] in models:assert (d/(row['model']+'.py')).exists()
+   assert identity.get('program_sha256',identity.get('code_sha256'))==expected_code
+   if 'prediction_sha256' in identity:assert identity['prediction_sha256']==row['prediction_sha256']
+   value=identity.get('score',identity.get('independent_metric',{}).get('score'))
+   assert math.isclose(value,row['score'],rel_tol=1e-7,abs_tol=2e-6),'Independent audit score differs'
+   if 'scorer_audit_file' in saved:
+    assert saved['scorer_audit_file']==reports[task] and digest(path(saved['scorer_audit_file']))==saved['scorer_audit_sha256']
+   if task=='B08':
+    items=json.loads(prediction.read_text());assert len(items)==7 and identity['seven_recordings_passed']
+    per=[]
+    for item,source in zip(items,audit['original_sources']):
+     blob=path(item['compressed_file']).read_bytes();assert len(blob)==item['compressed_bytes'] and hashlib.sha256(blob).hexdigest()==item['compressed_sha256']
+     assert item['recording']==source['recording'] and item['n_events']==source['n_events']
+     assert item['labels_exact'] and item['max_timing_error_seconds']<=50e-6+1e-10
+     per.append(8*len(blob)/item['n_events']);payload_count+=1
+    assert math.isclose(sum(per)/7,row['score'],rel_tol=0,abs_tol=1e-12)
+    assert all(math.isclose(a,b,rel_tol=0,abs_tol=1e-12) for a,b in zip(per,identity['per_record_bits_per_event']))
+    assert identity['max_timing_error_seconds']<=50e-6+1e-10
+    assert identity['total_encoded_bytes']==sum(i['compressed_bytes'] for i in items)
+  if task=='C06':assert audit['train_test_specimens_and_neurons_disjoint'] and audit['independent_event_binning_and_gaussian_reconstruction']
+  if task=='E06':assert audit['training_arrays_identical'] and audit['train_test_target_disjoint'] and audit['main_taxis_targets_disjoint'] and set(audit['program_reuse_verified_models'])==set(models+refs)
+  if task=='B03':assert not audit['source_voltage_regenerated'] and len(audit['simulation_checks'])==8
+  if task=='A15':assert audit['n_test_recordings']==20 and audit['n_test_birds']==1
+ assert total==35 and event_count==21
+ return dict(tasks=len(tasks),attempts=total,measured=measured,generation_event_logs=event_count,codec_payloads=payload_count,historical_rows_unchanged=len(historical))
+
+batch=check_batch_integrity(records)
+print('Batch v11 portable integrity passed:',batch,'No raw data, fitting, model calls or fresh decoding used.')

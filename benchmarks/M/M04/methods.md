@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.10: Synthetic two-choice Q-learning agents: recover learning rate and inverse temperature from choices and rewards.
+Preview 0.11: Synthetic two-choice Q-learning agents: recover learning rate and inverse temperature from choices and rewards.
 
 [Actual frozen contract and implementation](../../../experiments/M04). [Measured method/reference records](../../../results/M04.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

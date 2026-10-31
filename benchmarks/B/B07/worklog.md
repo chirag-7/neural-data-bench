@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Lossless compression is
 
 ## Current admission and execution
 
-Preview 0.10: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
+Preview 0.11: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
 [Admission/source evidence](../../../experiments/B07/protocol.md). [Actual protocol/worklog](../../../experiments/B07). [Task measurements](../../../results/B07.json).

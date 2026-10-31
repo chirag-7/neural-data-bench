@@ -35,7 +35,7 @@
     "evidence": "literature/admission-v04-electrical.json"
   },
   "current_execution": {
-    "release": "0.10",
+    "release": "0.11",
     "status": "measured",
     "slice": "Brain Invaders2012 calibration runs: 15 training and10 held-out people; 11,481/7,663 epochs,16 EEG channels; equal-person ROC-AUC.",
     "evidence": "experiments/H02/protocol.md"

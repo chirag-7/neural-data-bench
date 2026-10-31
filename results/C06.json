@@ -1,0 +1,448 @@
+[
+  {
+    "benchmark_id": "C06",
+    "slice_id": "batch-v11",
+    "run_id": "batch-v11",
+    "model": "gpt-5.6-sol",
+    "status": "measured",
+    "date": "2026-10-31",
+    "track": "T3",
+    "reference_type": "local_reproduction",
+    "n_units": 24,
+    "seconds": 25.68533904198557,
+    "prediction_file": "results/predictions/C06/batch-v11--gpt-5.6-sol.npz",
+    "prediction_sha256": "68488afbb983c28f507f4cbe0173bcc2f7a38802e535f4b521a9f5795b732b8b",
+    "prompt_sha256": "11593c2e786bc00f549dbd9cd16378f54c4ae312627a21ce2c5768b12ed32670",
+    "truth_type": "electrophysiological_event_times",
+    "baseline_name": null,
+    "superiority_eligible": false,
+    "superiority_reason": "Bounded custom source/split,one code generation,unequal total reference effort,current global best unverified",
+    "description": "Deterministic grouped-validation ensemble using native-time multiscale fluorescence, derivative, and AR-innovation features. All supervised scaling, calibration, blending, and model fitting use training data only; recording boundaries and masks are preserved.",
+    "code_sha256": "afcd04243ff45b814ad6d96e5f0eadb1268f248b3734925a70fec0c3e906401b",
+    "code_lines": 224,
+    "line_limit_compliant": true,
+    "score": 0.8564154409076183,
+    "metric": "animal_mean_neuron_pearson_smoothed200ms",
+    "direction": "higher",
+    "per_unit": [
+      0.8680721735563155,
+      0.8499222521313639,
+      0.8544056490267863,
+      0.9058444964481832,
+      0.8345142570347673,
+      0.8085403774032135,
+      0.8600536644022608,
+      0.8678681559303157
+    ],
+    "cell_results": [
+      {
+        "cell": "CAttached_OGB_pDp_190116_Fish1_cell2_mini",
+        "animal": "190116_Fish1",
+        "pearson": 0.8680721735563155,
+        "relative_error": 0.8012682330845047,
+        "relative_bias": -0.6338510956149124,
+        "n_frames": 5400
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190116_Fish1_cell3_mini",
+        "animal": "190116_Fish1",
+        "pearson": 0.8499222521313639,
+        "relative_error": 1.6354840231027252,
+        "relative_bias": 1.1619954327510271,
+        "n_frames": 469
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190116_Fish1_cell7_mini",
+        "animal": "190116_Fish1",
+        "pearson": 0.8544056490267863,
+        "relative_error": 1.2541609695425102,
+        "relative_bias": 0.8482173332334393,
+        "n_frames": 469
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell3_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.9058444964481832,
+        "relative_error": 0.7454630841087558,
+        "relative_bias": -0.722508328584473,
+        "n_frames": 3910
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell4_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.8345142570347673,
+        "relative_error": 2.6755431204641433,
+        "relative_bias": 2.0305913152676647,
+        "n_frames": 2700
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell6_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.8085403774032135,
+        "relative_error": 0.749688641664662,
+        "relative_bias": -0.0660390443273485,
+        "n_frames": 2700
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell8_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.8600536644022608,
+        "relative_error": 7.649936677098703,
+        "relative_bias": 7.489846901852644,
+        "n_frames": 2550
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cellB_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.8678681559303157,
+        "relative_error": 1.068056697579406,
+        "relative_bias": -0.26147822915717467,
+        "n_frames": 1800
+      }
+    ],
+    "animal_results": [
+      {
+        "animal": "190116_Fish1",
+        "pearson": 0.8574666915714886
+      },
+      {
+        "animal": "190301_Fish1",
+        "pearson": 0.8553641902437482
+      }
+    ]
+  },
+  {
+    "benchmark_id": "C06",
+    "slice_id": "batch-v11",
+    "run_id": "batch-v11",
+    "model": "gpt-6-sol",
+    "status": "measured",
+    "date": "2026-10-31",
+    "track": "T3",
+    "reference_type": "local_reproduction",
+    "n_units": 24,
+    "seconds": 14.66815191693604,
+    "prediction_file": "results/predictions/C06/batch-v11--gpt-6-sol.npz",
+    "prediction_sha256": "aee766c793ebb0400a8b63fdbc56ba82dedd7cc6df606c5a89e5913e349ab367",
+    "prompt_sha256": "11593c2e786bc00f549dbd9cd16378f54c4ae312627a21ce2c5768b12ed32670",
+    "truth_type": "electrophysiological_event_times",
+    "baseline_name": null,
+    "superiority_eligible": false,
+    "superiority_reason": "Bounded custom source/split,one code generation,unequal total reference effort,current global best unverified",
+    "description": "Fits a group-balanced ensemble of temporal fluorescence features and returns nonnegative expected spike counts per native frame. All model fitting uses training data only.",
+    "code_sha256": "d0bf401e8f976d315d039670ae807928adf1bad9709aaf6cb8c0da5b7b8def7a",
+    "code_lines": 114,
+    "line_limit_compliant": true,
+    "score": 0.8465793019998664,
+    "metric": "animal_mean_neuron_pearson_smoothed200ms",
+    "direction": "higher",
+    "per_unit": [
+      0.8462326472050302,
+      0.7810220492889157,
+      0.884818767330478,
+      0.8730376744591044,
+      0.8698619108612184,
+      0.8532725547422532,
+      0.7976103392874129,
+      0.8852214342746357
+    ],
+    "cell_results": [
+      {
+        "cell": "CAttached_OGB_pDp_190116_Fish1_cell2_mini",
+        "animal": "190116_Fish1",
+        "pearson": 0.8462326472050302,
+        "relative_error": 0.7660038444223893,
+        "relative_bias": -0.35850273842594976,
+        "n_frames": 5400
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190116_Fish1_cell3_mini",
+        "animal": "190116_Fish1",
+        "pearson": 0.7810220492889157,
+        "relative_error": 4.850252475168507,
+        "relative_bias": 4.850252475168507,
+        "n_frames": 469
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190116_Fish1_cell7_mini",
+        "animal": "190116_Fish1",
+        "pearson": 0.884818767330478,
+        "relative_error": 1.2363789969527186,
+        "relative_bias": 1.1141828076333677,
+        "n_frames": 469
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell3_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.8730376744591044,
+        "relative_error": 0.5194075931263535,
+        "relative_bias": -0.44165575718239686,
+        "n_frames": 3910
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell4_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.8698619108612184,
+        "relative_error": 2.191270058701705,
+        "relative_bias": 2.087532056162305,
+        "n_frames": 2700
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell6_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.8532725547422532,
+        "relative_error": 0.5894365242854679,
+        "relative_bias": -0.10885255839776597,
+        "n_frames": 2700
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell8_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.7976103392874129,
+        "relative_error": 24.107274065282635,
+        "relative_bias": 24.107274065282635,
+        "n_frames": 2550
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cellB_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.8852214342746357,
+        "relative_error": 0.8072949002213637,
+        "relative_bias": -0.11438230185963287,
+        "n_frames": 1800
+      }
+    ],
+    "animal_results": [
+      {
+        "animal": "190116_Fish1",
+        "pearson": 0.837357821274808
+      },
+      {
+        "animal": "190301_Fish1",
+        "pearson": 0.8558007827249249
+      }
+    ]
+  },
+  {
+    "benchmark_id": "C06",
+    "slice_id": "batch-v11",
+    "run_id": "batch-v11",
+    "model": "gpt-6.1-sol",
+    "status": "measured",
+    "date": "2026-10-31",
+    "track": "T3",
+    "reference_type": "local_reproduction",
+    "n_units": 24,
+    "seconds": 36.16194925014861,
+    "prediction_file": "results/predictions/C06/batch-v11--gpt-6.1-sol.npz",
+    "prediction_sha256": "a287d30d595958104d486862d4a7e0dfcafa2fb66f84e41bb9335ddd0f0830f8",
+    "prompt_sha256": "11593c2e786bc00f549dbd9cd16378f54c4ae312627a21ce2c5768b12ed32670",
+    "truth_type": "electrophysiological_event_times",
+    "baseline_name": null,
+    "superiority_eligible": false,
+    "superiority_reason": "Bounded custom source/split,one code generation,unequal total reference effort,current global best unverified",
+    "description": "Combines native-frame calcium deconvolution features with two supervised tree models. Uses training-animal-held-out validation for ensemble selection and amplitude calibration, processes recordings independently, and returns finite nonnegative counts with zero padding.",
+    "code_sha256": "d4555d744efdb94b89d980543612ffd73d7001b40b6a16591ff3b3832e9883ae",
+    "code_lines": 214,
+    "line_limit_compliant": true,
+    "score": 0.8675919925239051,
+    "metric": "animal_mean_neuron_pearson_smoothed200ms",
+    "direction": "higher",
+    "per_unit": [
+      0.8348858264034345,
+      0.7796763456714894,
+      0.9418221635547839,
+      0.8320196916855134,
+      0.8891434246470034,
+      0.8687678743648583,
+      0.8853139384122689,
+      0.9400344367465607
+    ],
+    "cell_results": [
+      {
+        "cell": "CAttached_OGB_pDp_190116_Fish1_cell2_mini",
+        "animal": "190116_Fish1",
+        "pearson": 0.8348858264034345,
+        "relative_error": 0.720574972530189,
+        "relative_bias": -0.26291293132872523,
+        "n_frames": 5400
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190116_Fish1_cell3_mini",
+        "animal": "190116_Fish1",
+        "pearson": 0.7796763456714894,
+        "relative_error": 4.841356575884086,
+        "relative_bias": 4.841356575884086,
+        "n_frames": 469
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190116_Fish1_cell7_mini",
+        "animal": "190116_Fish1",
+        "pearson": 0.9418221635547839,
+        "relative_error": 1.060132285798513,
+        "relative_bias": 1.060132285798513,
+        "n_frames": 469
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell3_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.8320196916855134,
+        "relative_error": 0.506048753308335,
+        "relative_bias": -0.3704305132424161,
+        "n_frames": 3910
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell4_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.8891434246470034,
+        "relative_error": 2.9078836409230098,
+        "relative_bias": 2.8057714887340017,
+        "n_frames": 2700
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell6_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.8687678743648583,
+        "relative_error": 0.5695953515541592,
+        "relative_bias": -0.19900371447759138,
+        "n_frames": 2700
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell8_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.8853139384122689,
+        "relative_error": 16.54368744847144,
+        "relative_bias": 16.54368744847144,
+        "n_frames": 2550
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cellB_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.9400344367465607,
+        "relative_error": 0.9066012712039967,
+        "relative_bias": -0.004596626015065103,
+        "n_frames": 1800
+      }
+    ],
+    "animal_results": [
+      {
+        "animal": "190116_Fish1",
+        "pearson": 0.8521281118765692
+      },
+      {
+        "animal": "190301_Fish1",
+        "pearson": 0.883055873171241
+      }
+    ]
+  },
+  {
+    "benchmark_id": "C06",
+    "slice_id": "batch-v11",
+    "run_id": "batch-v11",
+    "model": "task-baseline",
+    "status": "measured",
+    "date": "2026-10-31",
+    "track": "reference",
+    "reference_type": "local_specialist_reproduction",
+    "n_units": 24,
+    "seconds": 0.10317070805467665,
+    "prediction_file": "results/predictions/C06/batch-v11--task-baseline.npz",
+    "prediction_sha256": "4983b0b419d3e35aa022d1399e112d111a4c17f26373551b95e0e8dfcea7d82d",
+    "prompt_sha256": "11593c2e786bc00f549dbd9cd16378f54c4ae312627a21ce2c5768b12ed32670",
+    "truth_type": "electrophysiological_event_times",
+    "baseline_name": "OASIS default AR1 with training-only global count scaling",
+    "superiority_eligible": false,
+    "superiority_reason": "Bounded custom source/split,one code generation,unequal total reference effort,current global best unverified",
+    "code_sha256": "db8f979b1a28a18f5bccc892c7ec8a3d5744cbf9c1bcfed76984733d43acc69f",
+    "selection": "Fixed before model generation or evaluation scores",
+    "score": 0.7155173445914688,
+    "metric": "animal_mean_neuron_pearson_smoothed200ms",
+    "direction": "higher",
+    "per_unit": [
+      0.8340279365285117,
+      0.7554524096377457,
+      0.9319844342942605,
+      0.8389001993044134,
+      0.40363150120594704,
+      0.8292200140608263,
+      0.3007566888392847,
+      0.5802237417366859
+    ],
+    "cell_results": [
+      {
+        "cell": "CAttached_OGB_pDp_190116_Fish1_cell2_mini",
+        "animal": "190116_Fish1",
+        "pearson": 0.8340279365285117,
+        "relative_error": 0.8339516075342351,
+        "relative_bias": -0.7753062974007174,
+        "n_frames": 5400
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190116_Fish1_cell3_mini",
+        "animal": "190116_Fish1",
+        "pearson": 0.7554524096377457,
+        "relative_error": 3.6714623543618305,
+        "relative_bias": 3.3905398624854337,
+        "n_frames": 469
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190116_Fish1_cell7_mini",
+        "animal": "190116_Fish1",
+        "pearson": 0.9319844342942605,
+        "relative_error": 0.9603464851980618,
+        "relative_bias": 0.6810605244920571,
+        "n_frames": 469
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell3_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.8389001993044134,
+        "relative_error": 0.7678028038950091,
+        "relative_bias": -0.7565793146381818,
+        "n_frames": 3910
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell4_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.40363150120594704,
+        "relative_error": 34.823036942623695,
+        "relative_bias": 34.495580351670114,
+        "n_frames": 2700
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell6_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.8292200140608263,
+        "relative_error": 0.8472199902624415,
+        "relative_bias": -0.46734038242737064,
+        "n_frames": 2700
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cell8_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.3007566888392847,
+        "relative_error": 201.67902883234314,
+        "relative_bias": 201.67902883234314,
+        "n_frames": 2550
+      },
+      {
+        "cell": "CAttached_OGB_pDp_190301_Fish1_cellB_mini",
+        "animal": "190301_Fish1",
+        "pearson": 0.5802237417366859,
+        "relative_error": 3.559527566353107,
+        "relative_bias": 2.3943626426200986,
+        "n_frames": 1800
+      }
+    ],
+    "animal_results": [
+      {
+        "animal": "190116_Fish1",
+        "pearson": 0.840488260153506
+      },
+      {
+        "animal": "190301_Fish1",
+        "pearson": 0.5905464290294316
+      }
+    ]
+  }
+]

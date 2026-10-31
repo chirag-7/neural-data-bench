@@ -12,6 +12,6 @@ Decision: **deferred** (2026-10-30). Mapped FISBe release is approximately21.6GB
 
 ## Current admission and execution
 
-Preview 0.10: deferred. Mapped FISBe release is approximately21.6GB. Thin-neurite3D instance segmentation needs valid masks for partly labeled images and topology-sensitive scorer. No GPU3D pipeline prepared; not a valid tiny-patch substitute without protocol.
+Preview 0.11: deferred. Mapped FISBe release is approximately21.6GB. Thin-neurite3D instance segmentation needs valid masks for partly labeled images and topology-sensitive scorer. No GPU3D pipeline prepared; not a valid tiny-patch substitute without protocol.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

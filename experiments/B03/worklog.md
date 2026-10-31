@@ -11,3 +11,20 @@ Independent verification passed: reconstructed histograms directly from detected
 Reference API preflight used only an unrelated five-bin shifted random toy raster: finite shape/sign convention confirmed. No prepared-record reference prediction or score was computed. No model call, current-best/SOTA claim, central registry/site change, shared dependency install or Git commit.
 
 Reproduce with bundled Python3.12.14 plus PYTHONPATH=../../work/spike-deps:../../work/pilot-deps, NUMBA_CACHE_DIR=../../work/batch-v11-motion/numba-cache, and numerical thread environment variables set1. Run experiments/B03/adapter.py to prepare, then experiments/B03/verify.py. Source hashes and exact runtime versions are retained. Parent should review this explicitly synthetic, rigid-only processed-input scope before freeze.
+
+## Batch 0.11 completed outcome update
+
+31 October 2026. This dated append follows the preparation-only notes above; it does not modify the frozen contract, programs, source arrays or scores.
+
+Fully synthetic SpikeInterface drifting-voltage simulations: 4 train/4 held-out seeds, 90s each. Processed detected/localized peak-count rasters and rigid imposed displacement; not in-vivo motion or full DREDge reproduction. Official decentralized-registration routines are used on this custom front end. No held-out sign/scale/time alignment; only additive translation gauge removed.
+
+| Model/slice | Numeric status | Exact score | Lines / compliance |
+|---|---|---:|---|
+| gpt-5.6-sol/batch-v11 | measured | 3.6041552208003775 | 194 / True |
+| gpt-6-sol/batch-v11 | measured | 4.418263744475342 | 109 / True |
+| gpt-6.1-sol/batch-v11 | measured | 5.275098380741698 | 192 / True |
+| task-baseline/batch-v11 | measured | 4.850138078041406 | Reference or pre-execution rejection |
+
+Saved-output/source audit: results/audits/B03-batch-v11.json. Read-only score-blinded static review: literature/batch-v11-code-review.json (21 total submissions). No predictive method was rerun for this documentation.
+
+Current-global-best and matched-effort superiority remain unestablished. One code generation/model and bounded/cohort-dependent source coverage limit interpretation. Central integration is once for all seven tasks; no per-task release or commit.

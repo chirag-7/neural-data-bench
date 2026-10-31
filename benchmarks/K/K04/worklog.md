@@ -16,6 +16,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Primary spatialLIBD dow
 
 ## Current admission and execution
 
-Preview 0.10: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
+Preview 0.11: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
 [Admission/source evidence](../../../experiments/K04/protocol.md). [Actual protocol/worklog](../../../experiments/K04). [Task measurements](../../../results/K04.json).

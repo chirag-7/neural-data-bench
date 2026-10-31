@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.10: PhysioNet motor imagery: five training and three held-out people; 225 training and 135 test epochs.
+Preview 0.11: PhysioNet motor imagery: five training and three held-out people; 225 training and 135 test epochs.
 
 [Actual frozen contract and implementation](../../../experiments/H01). [Measured method/reference records](../../../results/H01.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

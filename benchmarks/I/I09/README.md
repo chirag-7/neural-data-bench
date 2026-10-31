@@ -38,6 +38,6 @@ Decision: **deferred** (2026-10-30). Original Tractometer page explicitly distin
 
 ## Current admission and execution
 
-Preview 0.10: deferred. Original Tractometer page explicitly distinguishes2015 Recobundles25bundles from2023 ROI21bundles and tractogram coordinate changes. Need pin matching truth/scorer and verify T1/DWI transforms. No arbitrary mixing of score versions admitted.
+Preview 0.11: deferred. Original Tractometer page explicitly distinguishes2015 Recobundles25bundles from2023 ROI21bundles and tractogram coordinate changes. Need pin matching truth/scorer and verify T1/DWI transforms. No arbitrary mixing of score versions admitted.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

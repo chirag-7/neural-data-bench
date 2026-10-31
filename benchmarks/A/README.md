@@ -18,7 +18,7 @@ RGB/IR/depth videos, calibrated multiview video, pose trajectories, audio and mi
 - [A12 — Behavioral features for neural prediction](A12/README.md) · candidate_pending_validation
 - [A13 — Dense 3D behavior representation](A13/README.md) · deferred
 - [A14 — Missing pose imputation](A14/README.md) · measured
-- [A15 — Animal vocalization event segmentation and syllable labeling](A15/README.md) · candidate_pending_validation
+- [A15 — Annotated birdsong interval detection](A15/README.md) · measured
 - [A16 — Caller localization and vocalization attribution](A16/README.md) · candidate_pending_validation
 
 Archived candidates remain in the [exclusion ledger](../../registry/excluded-candidates.json).

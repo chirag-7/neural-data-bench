@@ -1,7 +1,10 @@
 {
   "benchmark_id": "C06",
   "source_urls": [
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7611618/"
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7611618/",
+    "https://github.com/HelmchenLabSoftware/Cascade/tree/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f",
+    "https://github.com/HelmchenLabSoftware/Cascade/blob/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f/cascade2p/utils.py",
+    "https://github.com/HelmchenLabSoftware/Cascade/blob/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f/LICENSE"
   ],
-  "admission_evidence": "literature/admission-v04-behavior-population.json"
+  "admission_evidence": "experiments/C06/protocol.md"
 }

@@ -2,15 +2,15 @@
 
 [Family](../README.md) · [Project](../../../README.md) · [Methods](methods.md) · [Worklog](worklog.md)
 
-**Resource:** DAS multi-species annotated acoustic datasets
+**Resource:** DAS Bengalesefinch / Nicholson; held-out-bird annotated-song segmentation
 
-**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
+**State:** measured. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
-Input: Single/multi-channel raw audio and human annotations
+Input: Original 32 kHz monaural waveforms, NaN padding; training 1 ms binary activity labels
 
-Target/ground truth: Manual acoustic events/segments
+Target/ground truth: Source annotated song intervals, not exhaustive contact-call or vocalization labels
 
 Mapped specialist candidates (not all evaluated): DAS; TweetyNet; WhisperSeg (separate domain-adapted pretrained comparator)
 
@@ -18,11 +18,13 @@ General-model route: General audio features/readout or bounded code synthesis; a
 
 ## Execution and performance
 
-No experiment admitted yet. All measurements are centralized in [results](../../../results/). Current best: **not verified**. Missing scores are unknown, not zero. Literature resources are not newly executed results.
+**Executed slice:** 80 whole recordings: 60 from three training birds, 20 from one unseen test bird; 1,519 test annotated events.
+
+[Frozen protocol and artifacts](../../../experiments/A15). [Measured scores and references](../../../results/A15.json). [Central data](../../../results/measurements.csv). Missing or failed outputs are retained.
 
 ## Limitations
 
-Ultrasound sample rates exceed speech frontends; species and segment matching differ; tune thresholds only on validation
+One test bird; annotation boundaries originated from amplitude segmentation with human syllable labels. Custom binary event endpoint, no verified global best; source annotation milliseconds independently resolved against original archive before freeze. GPT-5.6 output exceeds 240-line contract and remains numerically measured but noncompliant.
 
 ## Sources
 
@@ -30,6 +32,10 @@ Ultrasound sample rates exceed speech frontends; species and segment matching di
 - [https://data.goettingen-research-online.de/dataverse/das](https://data.goettingen-research-online.de/dataverse/das)
 - [https://janclemenslab.org/das/](https://janclemenslab.org/das/)
 - [https://github.com/nianlonggu/WhisperSeg](https://github.com/nianlonggu/WhisperSeg)
+- [https://doi.org/10.25625/ENKMJS](https://doi.org/10.25625/ENKMJS)
+- [https://doi.org/10.6084/m9.figshare.4805749](https://doi.org/10.6084/m9.figshare.4805749)
+- [https://www.vocalpy.org/bfsongrepo/](https://www.vocalpy.org/bfsongrepo/)
+- [https://figshare.com/articles/dataset/4805749](https://figshare.com/articles/dataset/4805749)
 
 Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
 
@@ -41,6 +47,6 @@ Decision: **candidate_pending_validation** (2026-10-30). DAS annotated raw audio
 
 ## Current admission and execution
 
-Preview 0.10: candidate_pending_validation. DAS annotated raw audio can support real event-segmentation evaluation. Still need pinned species/recording slice, sampling rate and official event-matching tolerance; no audio acquisition attempted here. Temporal bouts must remain grouped.
+Preview 0.11: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
-[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).
+[Admission/source evidence](../../../experiments/A15/protocol.md). [Actual protocol/worklog](../../../experiments/A15). [Task measurements](../../../results/A15.json).

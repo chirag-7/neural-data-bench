@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.10: IBL Dec2019 choice data: all100 source mice, 83 train/17 held-out; 7,696/1,842 nonoverlapping conditional examples from latest archived sessions.
+Preview 0.11: IBL Dec2019 choice data: all100 source mice, 83 train/17 held-out; 7,696/1,842 nonoverlapping conditional examples from latest archived sessions.
 
 [Actual frozen contract and implementation](../../../experiments/M01). [Measured method/reference records](../../../results/M01.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

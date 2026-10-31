@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.10: Sleep-EDF first nights, fixed 20:00–08:00 windows: five training and three held-out people; 100 Hz Fpz-Cz EEG, five sleep stages.
+Preview 0.11: Sleep-EDF first nights, fixed 20:00–08:00 windows: five training and three held-out people; 100 Hz Fpz-Cz EEG, five sleep stages.
 
 [Actual frozen contract and implementation](../../../experiments/H08). [Measured method/reference records](../../../results/H08.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

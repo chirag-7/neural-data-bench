@@ -29,7 +29,7 @@
     "evidence": "literature/admission-v04-cell-workflow.json"
   },
   "current_execution": {
-    "release": "0.10",
+    "release": "0.11",
     "status": "deferred",
     "slice": null,
     "evidence": "literature/admission-v04-cell-workflow.json"

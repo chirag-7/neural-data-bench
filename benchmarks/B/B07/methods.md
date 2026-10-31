@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.10: All 16 original AIND/IBL recordings: one fixed 4,096-sample chunk, all 384 channels and original int16 bytes per recording; 14 source animals.
+Preview 0.11: All 16 original AIND/IBL recordings: one fixed 4,096-sample chunk, all 384 channels and original int16 bytes per recording; 14 source animals.
 
 [Actual frozen contract and implementation](../../../experiments/B07). [Measured method/reference records](../../../results/B07.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

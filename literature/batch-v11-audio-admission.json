@@ -1,0 +1,58 @@
+{
+  "benchmark_id": "A15",
+  "status": "ready for parent review/freeze",
+  "date": "2026-10-31",
+  "protocol": "experiments/A15/protocol.md",
+  "adapter": "experiments/A15/adapter.py",
+  "source_manifest": "experiments/A15/source.json",
+  "independent_preparation_checks": "experiments/A15/verification.json",
+  "post_output_audit": "scripts/verify_a15_batch.py",
+  "source_bytes": 105793176,
+  "prepared_bytes": 78627877,
+  "source_files": 163,
+  "train_shape": [
+    60,
+    2079712
+  ],
+  "test_shape": [
+    20,
+    587328
+  ],
+  "train_y_shape": [
+    60,
+    64991
+  ],
+  "test_y_shape": [
+    20,
+    18354
+  ],
+  "actual_train_birds": 3,
+  "actual_test_birds": 1,
+  "signature": "fit_predict(train_x,train_y,test_x,train_groups)",
+  "train_groups_supplied": false,
+  "fixed_reference": "Fixed log-spectral-feature HistGradientBoosting; every fifth whole training recording validates global threshold/gap/minimum duration, then refit all training recordings; no bird IDs or pretrained weights",
+  "primary_metric": "recording_macro_event_f1_20ms_onset_20ms_or_20pct_offset",
+  "event_matching": "One-to-one maximum-cardinality matching; abs onset error<=20ms AND abs offset error<=max(20ms,20% reference-event duration); original converted-source intervals are scorer truth",
+  "rights": "DAS Dataverse release CC0-1.0; underlying original Nicholson/Queen/Sober audio/annotations CC BY4.0, retained with attribution; combined reuse follows CC BY4.0 attribution",
+  "limitations": [
+    "Only one held-out bird; recordings correlated within bird and this does not establish multi-animal population generalization",
+    "Source annotations use amplitude-threshold segmentation followed by manual syllable labeling; boundaries are not wholly independently hand drawn",
+    "Source contact calls may be incompletely annotated; target is reproduction of annotated song intervals, not exhaustive detection of every animal sound",
+    "Source recordings were amplitude-triggered and curated for song bouts; background is not an unbiased continuous laboratory recording",
+    "Binary mapping merges arbitrary bird-specific syllable labels; no syllable taxonomy or species classification claim",
+    "Source audio is already float16 quantized; no calibrated acoustic level or native multimodal LLM perception claim",
+    "1ms target rasterization can merge rare gaps shorter than1ms; exact source-event truth and fixed20ms matching tolerance remain documented"
+  ],
+  "source_unit_resolution": {
+    "original_events": 90,
+    "all_labels_match": true,
+    "max_error_seconds": 8.881784197001252e-16,
+    "factor_from_mislabeled_DAS_columns": 0.001
+  },
+  "adapter_sha256": "024352b9c6daf559c20535c8b04eaa2ace2670d496e64fff0eccce779e675fba",
+  "data_sha256": "b365f56d812150311fb55ac58ab92b416cdd575c5b2b47badd39a7bec85e0804",
+  "blockers": [],
+  "model_calls": 0,
+  "predictive_method_runs": 0,
+  "real_slice_scores": 0
+}

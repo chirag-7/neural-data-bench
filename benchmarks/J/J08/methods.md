@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.10: SynAPSeg 2D puncta: 27 training fields yielding 1,262 crops; two held-out whole fields, five expert masks each; archived StarDist reference.
+Preview 0.11: SynAPSeg 2D puncta: 27 training fields yielding 1,262 crops; two held-out whole fields, five expert masks each; archived StarDist reference.
 
 [Actual frozen contract and implementation](../../../experiments/J08). [Measured method/reference records](../../../results/J08.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

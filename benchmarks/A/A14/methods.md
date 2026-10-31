@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.10: Rat7M: six-landmark, 31-frame windows with an artificial seven-frame HeadF gap; three training and two test rats.
+Preview 0.11: Rat7M: six-landmark, 31-frame windows with an artificial seven-frame HeadF gap; three training and two test rats.
 
 [Actual frozen contract and implementation](../../../experiments/A14). [Measured method/reference records](../../../results/A14.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

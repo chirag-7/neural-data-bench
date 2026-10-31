@@ -2,7 +2,8 @@
   "benchmark_id": "B08",
   "source_urls": [
     "https://github.com/int-brain-lab/spikepack",
-    "https://www.internationalbrainlab.com/data"
+    "https://www.internationalbrainlab.com/data",
+    "https://dandiarchive.org/dandiset/000953"
   ],
-  "admission_evidence": "literature/admission-v04-behavior-population.json"
+  "admission_evidence": "experiments/B08/protocol.md"
 }

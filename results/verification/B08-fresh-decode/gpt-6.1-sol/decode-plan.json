@@ -1,0 +1,38 @@
+{
+  "model": "gpt-6.1-sol",
+  "program": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/experiments/B08/gpt-6.1-sol.json",
+  "program_file_sha256": "72269ccdec306f96ec62718826c5df3ae3ec0b46a087628ec93f3a9f16f32cff",
+  "code_sha256": "6be104769ef7e6d3385b0da5160871504cec4c89164b8ba86bf85701e455e62b",
+  "blobs": [
+    {
+      "path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/bitstreams/B08/gpt-6.1-sol/00.bin",
+      "sha256": "cb65166dbf911d1630181e2ad189915f5d2e74ab783c615618bc655ca1590ff4"
+    },
+    {
+      "path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/bitstreams/B08/gpt-6.1-sol/01.bin",
+      "sha256": "8ccbd9f49b1dca7ba4cfdae65bf673e02678d4e76c1a0e0b745fb34853d6fe0d"
+    },
+    {
+      "path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/bitstreams/B08/gpt-6.1-sol/02.bin",
+      "sha256": "15949d78be9ff3a65913086c27b66baf7cd90a74b40bdc4d1e70a4000b8ba2e0"
+    },
+    {
+      "path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/bitstreams/B08/gpt-6.1-sol/03.bin",
+      "sha256": "5d1468269d18e4f69cedd0029f3ec84ff2d9ad41a77da7a33ff4b361b0ddb384"
+    },
+    {
+      "path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/bitstreams/B08/gpt-6.1-sol/04.bin",
+      "sha256": "818b22739a7c109adf54d922ac8f7487a419c676ffa194b8d594e73a78b92d5b"
+    },
+    {
+      "path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/bitstreams/B08/gpt-6.1-sol/05.bin",
+      "sha256": "cd809b98ea18af692e8ec154ae45f76dbbfd2bd6e87f3de2d4a10e5b81a9f33b"
+    },
+    {
+      "path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/bitstreams/B08/gpt-6.1-sol/06.bin",
+      "sha256": "25923e4c058e29cbfc2f521c6542d9e8438bef86a6df0cf87733ab74d90bd580"
+    }
+  ],
+  "output_dir": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/verification/B08-fresh-decode/gpt-6.1-sol",
+  "audit_path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/verification/B08-fresh-decode/gpt-6.1-sol/child-audit.json"
+}

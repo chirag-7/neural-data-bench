@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). DAS annotated raw audio
 
 ## Current admission and execution
 
-Preview 0.10: candidate_pending_validation. DAS annotated raw audio can support real event-segmentation evaluation. Still need pinned species/recording slice, sampling rate and official event-matching tolerance; no audio acquisition attempted here. Temporal bouts must remain grouped.
+Preview 0.11: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
-[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).
+[Admission/source evidence](../../../experiments/A15/protocol.md). [Actual protocol/worklog](../../../experiments/A15). [Task measurements](../../../results/A15.json).

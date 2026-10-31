@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). SpikeInterface/MEArec g
 
 ## Current admission and execution
 
-Preview 0.10: candidate_pending_validation. SpikeInterface/MEArec generators can supply exact drift and unit truth without restricted real data. Needs frozen simulation seed, geometry, waveform/noise/drift regime and event-matching scorer. This would be explicitly synthetic, not real in-vivo drift validation.
+Preview 0.11: candidate_pending_validation. SpikeInterface/MEArec generators can supply exact drift and unit truth without restricted real data. Needs frozen simulation seed, geometry, waveform/noise/drift regime and event-matching scorer. This would be explicitly synthetic, not real in-vivo drift validation.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

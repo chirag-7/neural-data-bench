@@ -1,15 +1,16 @@
 {
   "benchmark_id": "K05",
-  "input": "Bulk RNA-seq, reference snRNA-seq and orthogonal RNAScope/IF fractions",
-  "ground_truth": "Cell fractions estimated by orthogonal RNAScope/IF from matched tissue blocks",
+  "input": "2,000 outer-training-selected log2(1+CPM) genes; equal donor/block metadata access",
+  "ground_truth": "Orthogonal Circle GFAP/CLDN5/GAD1 positive-cell fractions with all Circle cells in denominator; targets do not sum to one",
   "sources": [
     "https://doi.org/10.1186/s13059-025-03552-3",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
     "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution",
-    "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html"
+    "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html",
+    "https://zenodo.org/records/14969244"
   ],
-  "license_status": "Not independently reviewed",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/K05.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "K05",
@@ -33,9 +34,10 @@
     "evidence": "literature/admission-v04-cell-workflow.json"
   },
   "current_execution": {
-    "release": "0.10",
-    "status": "candidate_pending_validation",
-    "slice": null,
-    "evidence": "literature/admission-v04-cell-workflow.json"
-  }
+    "release": "0.11",
+    "status": "measured",
+    "slice": "63 eligible bulk samples: 39 train/24 test, five/three donors and seven/four blocks.",
+    "evidence": "experiments/K05/protocol.md"
+  },
+  "executed_slice": "63 eligible bulk samples: 39 train/24 test, five/three donors and seven/four blocks."
 }

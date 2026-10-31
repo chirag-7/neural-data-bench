@@ -9,16 +9,56 @@
     "frozen_hashes": "passed",
     "generation_provenance": "3 submissions,zero observed tool events"
   },
+  "A15": {
+    "predictions_rescored": 4,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 unchanged submissions; raw retained no-tool events/usage checked",
+    "independent_audit_file": "results/audits/A15-batch-v11.json",
+    "independent_audit_sha256": "86e0a24e9399db6dbfd5409719405c64cdfa9b695d8add905c8757b3b211ecb9",
+    "source_and_scorer_audit": "Original source targets independently reconstructed and saved predictions rescored",
+    "failed_attempts_preserved": 0,
+    "models_references_generators_or_decoders_executed": false
+  },
   "B01": {
     "predictions_rescored": 4,
     "frozen_hashes": "passed",
     "generation_provenance": "3 submissions,zero observed tool events"
+  },
+  "B03": {
+    "predictions_rescored": 4,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 unchanged submissions; raw retained no-tool events/usage checked",
+    "independent_audit_file": "results/audits/B03-batch-v11.json",
+    "independent_audit_sha256": "e35ca7c5d4c6444bd87d414f5848bd230d37933d1ce1da4566f52c2787699534",
+    "source_and_scorer_audit": "Original source targets independently reconstructed and saved predictions rescored",
+    "failed_attempts_preserved": 0,
+    "models_references_generators_or_decoders_executed": false
   },
   "B07": {
     "predictions_rescored": 6,
     "frozen_hashes": "passed",
     "bitstreams_verified": 96,
     "source_bytes_verified": 50331648
+  },
+  "B08": {
+    "predictions_rescored": 3,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 unchanged submissions; raw retained no-tool events/usage checked",
+    "independent_audit_file": "results/verification/B08-independent-final.json",
+    "independent_audit_sha256": "3126408bcbb02f6ad4c2cae01ef201f6b56fe69b385e3429150feb41d35526cb",
+    "source_and_scorer_audit": "Completed independent decoder report and all retained payload hashes/byte counts",
+    "failed_attempts_preserved": 2,
+    "models_references_generators_or_decoders_executed": false
+  },
+  "C06": {
+    "predictions_rescored": 4,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 unchanged submissions; raw retained no-tool events/usage checked",
+    "independent_audit_file": "results/audits/C06-batch-v11.json",
+    "independent_audit_sha256": "43596cc5efdd53c70a7b9a6f3943c208f3e5c29a94d558fc581edc0186c18040",
+    "source_and_scorer_audit": "Original source targets independently reconstructed and saved predictions rescored",
+    "failed_attempts_preserved": 0,
+    "models_references_generators_or_decoders_executed": false
   },
   "D02": {
     "predictions_rescored": 4,
@@ -29,6 +69,16 @@
     "predictions_rescored": 12,
     "frozen_hashes": "passed",
     "generation_provenance": "3 submissions,zero observed tool events"
+  },
+  "E06": {
+    "predictions_rescored": 10,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 unchanged submissions; raw retained no-tool events/usage checked",
+    "independent_audit_file": "results/verification/E06-batch-v11.json",
+    "independent_audit_sha256": "be35c29e48260540619cf8d7b933d7eebb9d78319085c8c2102bd2e6f294291d",
+    "source_and_scorer_audit": "Original source targets independently reconstructed and saved predictions rescored",
+    "failed_attempts_preserved": 0,
+    "models_references_generators_or_decoders_executed": false
   },
   "F04": {
     "predictions_rescored": 4,
@@ -85,6 +135,26 @@
     "frozen_hashes": "passed",
     "generation_provenance": "3 submissions,zero observed tool events"
   },
+  "K05": {
+    "predictions_rescored": 4,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 unchanged submissions; raw retained no-tool events/usage checked",
+    "independent_audit_file": "results/audits/cells-batch-v11.json",
+    "independent_audit_sha256": "cfcab2ad9cefa482e704aba4a3709e7dec0b25262f00478b3a544e22bf6b9786",
+    "source_and_scorer_audit": "Original source targets independently reconstructed and saved predictions rescored",
+    "failed_attempts_preserved": 0,
+    "models_references_generators_or_decoders_executed": false
+  },
+  "K06": {
+    "predictions_rescored": 4,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 unchanged submissions; raw retained no-tool events/usage checked",
+    "independent_audit_file": "results/audits/cells-batch-v11.json",
+    "independent_audit_sha256": "cfcab2ad9cefa482e704aba4a3709e7dec0b25262f00478b3a544e22bf6b9786",
+    "source_and_scorer_audit": "Original source targets independently reconstructed and saved predictions rescored",
+    "failed_attempts_preserved": 0,
+    "models_references_generators_or_decoders_executed": false
+  },
   "L04": {
     "predictions_rescored": 4,
     "frozen_hashes": "passed",
@@ -106,6 +176,6 @@
     "generation_provenance": "3 submissions,zero observed tool events"
   },
   "scope": "Exact prediction rescoring/hash/provenance checks, not independent expert validation or proof of uncontaminated pretraining",
-  "expanded_tasks": 21,
-  "expanded_prediction_records_rescored": 120
+  "expanded_tasks": 28,
+  "expanded_prediction_records_rescored": 153
 }

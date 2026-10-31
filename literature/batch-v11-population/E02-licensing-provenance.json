@@ -1,0 +1,7 @@
+{
+  "source": "https://github.com/snel-repo/ComputationThroughDynamicsToolkit/blob/051e11e9063ae958ddf01035c701c61d35f67e6a/LICENSES.md",
+  "original_download_sha256": "7206281f9693cc41055db37207c672c8b946bd50baf5338fd14596cc8291e77f",
+  "adaptation": "Only relative links expanded to pinned original repository URLs; license text unchanged.",
+  "data_release_notice_original_sha256": "f13e431e56a11360f7a67175952730ab3e2ba52113349ab576e64ff606e36f86",
+  "data_notice_adaptation": "Relative DATA_LICENSE link expanded to CC0 legal text; body unchanged."
+}

@@ -5,7 +5,7 @@
     "resource": "Maynard2021 DLPFC HumanPilot; donor-held-out supervised layer transfer",
     "dataset_group": "HumanPilot DLPFC 2021",
     "data": "Prepared float32 log-normalized expression for 500 training-selected non-mitochondrial genes; no spatial coordinates or images",
-    "ground_truth": "Curated L1\u2013L6/white-matter annotations with expression and histology assistance; not fully orthogonal molecular truth",
+    "ground_truth": "Curated L1–L6/white-matter annotations with expression and histology assistance; not fully orthogonal molecular truth",
     "source_urls": [
       "https://doi.org/10.1038/s41593-020-00787-0",
       "https://github.com/LieberInstitute/HumanPilot/tree/044446d6bd8fc154aa74f7be62ec67effb1ec376",
@@ -33,7 +33,7 @@
     ],
     "admission_evidence_file": "experiments/M01/protocol.md",
     "recommended_metrics": "Mouse-equal clipped binary negative log-likelihood; pooled loss/accuracy secondary",
-    "recommended_split": "Hash-split whole mice, latest complete session, first\u22641000 trials, disjoint six-trial target/history blocks; nine labs overlap",
+    "recommended_split": "Hash-split whole mice, latest complete session, first≤1000 trials, disjoint six-trial target/history blocks; nine labs overlap",
     "limitations": "Conditional one-step forecast with observed history and known block prior; no autonomous rollout or held-out-lab claim. One historical beta-quality archive; prior target choices never reappear in another scored input. Paper-inspired pooled GLM is not original peranimal fits or established global best.",
     "review_depth": "Original CC BY4 archive publisher MD5+localSHA verified; all100 mice and9,538 examples independently matched to source; target/history overlap excluded before scores"
   },
@@ -77,8 +77,150 @@
     "admission_evidence_file": "experiments/B07/protocol.md",
     "recommended_metrics": "Mean encoded bits per raw scalar int16 sample, lower better; all 16 chunks must reconstruct byte-exactly; throughput secondary",
     "recommended_split": "No supervised split. All 16 original recordings selected from the source inventory; fixed cached samples [1000000:1004096), all channels; no score-based selection",
-    "limitations": "One roughly 0.137-second chunk per recording; 16 recordings from 14 animals. This tests short-chunk lossless storage, not full streaming or neural interpretation. Fixed local WavPack/delta\u2013Blosc references have unequal implementation/library effort; current global best remains unverified.",
+    "limitations": "One roughly 0.137-second chunk per recording; 16 recordings from 14 animals. This tests short-chunk lossless storage, not full streaming or neural interpretation. Fixed local WavPack/delta–Blosc references have unequal implementation/library effort; current global best remains unverified.",
     "review_depth": "All 16 range responses and metadata hashed; ETag and Content-Range guarded. Protocol, prompt, references and scorer frozen before generation/scores; every successful saved bitstream decoded independently",
+    "execution_date": "2026-10-31"
+  },
+  "A15": {
+    "task": "Annotated birdsong interval detection",
+    "resource": "DAS Bengalesefinch / Nicholson; held-out-bird annotated-song segmentation",
+    "dataset_group": "DAS Bengalesefinch",
+    "executed_slice": "80 whole recordings: 60 from three training birds, 20 from one unseen test bird; 1,519 test annotated events.",
+    "data": "Original 32 kHz monaural waveforms, NaN padding; training 1 ms binary activity labels",
+    "ground_truth": "Source annotated song intervals, not exhaustive contact-call or vocalization labels",
+    "recommended_metrics": "Recording-equal event F1 with onset ≤20 ms and offset ≤max(20 ms,20% event duration)",
+    "recommended_split": "Three birds train, one bird test; 20 deterministic recordings per bird",
+    "limitations": "One test bird; annotation boundaries originated from amplitude segmentation with human syllable labels. Custom binary event endpoint, no verified global best; source annotation milliseconds independently resolved against original archive before freeze. GPT-5.6 output exceeds 240-line contract and remains numerically measured but noncompliant.",
+    "source_urls": [
+      "https://elifesciences.org/articles/68837",
+      "https://doi.org/10.25625/ENKMJS",
+      "https://doi.org/10.6084/m9.figshare.4805749",
+      "https://www.vocalpy.org/bfsongrepo/",
+      "https://doi.org/10.25625/ENKMJS",
+      "https://figshare.com/articles/dataset/4805749"
+    ],
+    "admission_evidence_file": "experiments/A15/protocol.md",
+    "review_depth": "Original source acquisition and checksums, frozen interface/reference/scorer before generation, all planned submissions retained, separate read-only code review and independent saved-output/source audit; see per-task worklog",
+    "execution_date": "2026-10-31"
+  },
+  "B03": {
+    "task": "Rigid drift recovery from synthetic ephys rasters",
+    "resource": "SpikeInterface procedural drifting voltage; processed localization-count rasters",
+    "dataset_group": "SpikeInterface synthetic rigid motion",
+    "executed_slice": "Eight independent 90-second simulations, 64 contacts/neurons; four train and four test recordings.",
+    "data": "Observed-voltage peak detection and localization summarized as 1 s by 5 μm depth count rasters",
+    "ground_truth": "Known injected synthetic physical displacement averaged to 1 s; not real biological drift",
+    "recommended_metrics": "Recording-equal mean-centered displacement RMSE in μm",
+    "recommended_split": "Four train/four test simulation seeds; triangular and random-walk regimes balanced",
+    "limitations": "Fully synthetic, fixed front-end and rigid motion only. Simulations are Monte Carlo instances, not independent animals. Same raster supplied to fixed SpikeInterface decentralized reference. No real drift, raw voltage inference, nonrigid recovery or global-best claim.",
+    "source_urls": [
+      "https://spikeinterface.readthedocs.io/en/latest/api.html",
+      "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+      "https://github.com/SpikeInterface/spikeinterface",
+      "https://proceedings.neurips.cc/paper/2021/hash/b950ea26ca12daae142bd74dba4427c8-Abstract.html"
+    ],
+    "admission_evidence_file": "experiments/B03/protocol.md",
+    "review_depth": "Original source acquisition and checksums, frozen interface/reference/scorer before generation, all planned submissions retained, separate read-only code review and independent saved-output/source audit; see per-task worklog",
+    "execution_date": "2026-10-31"
+  },
+  "B08": {
+    "task": "Timing-bounded spike-event compression",
+    "resource": "FALCON M2 events / original Spikepack; custom timing-lossy storage",
+    "dataset_group": "FALCON M2 public calibration",
+    "executed_slice": "All seven original G01 FALCON M2 recordings: 1,052,545 events, four days, one monkey.",
+    "data": "Sorted float64 spike times and int32 unit labels; complete recordings",
+    "ground_truth": "Exact labels/order/count, nondecreasing decoded times and ≤50 μs event timing error",
+    "recommended_metrics": "Recording-equal encoded bits/event, lower better, conditional on all fidelity checks",
+    "recommended_split": "No supervised split; codecs adapt independently to each complete recording",
+    "limitations": "Shares G01 source, one monkey. Timing is intentionally lossy; all metadata bytes count. Frozen whitelist rejects heapq used by two models while prompt permits ambiguously described ordinary utilities: failures retained but task excluded retrospectively from aggregate capability/version comparisons. Original Spikepack local execution, not global best.",
+    "source_urls": [
+      "https://github.com/int-brain-lab/spikepack",
+      "https://dandiarchive.org/dandiset/000953"
+    ],
+    "admission_evidence_file": "experiments/B08/protocol.md",
+    "review_depth": "Original source acquisition and checksums, frozen interface/reference/scorer before generation, all planned submissions retained, separate read-only code review and independent saved-output/source audit; see per-task worklog",
+    "execution_date": "2026-10-31"
+  },
+  "C06": {
+    "task": "Calcium to electrical expected spike counts",
+    "resource": "CASCADE DS04 native-rate held-out-fish inference",
+    "dataset_group": "CASCADE DS04",
+    "executed_slice": "All 15 neurons / 45 recordings, 81.66 minutes; two training and two held-out test fish.",
+    "data": "Native-rate dF/F, valid-frame mask and frame interval; no resampling",
+    "ground_truth": "Simultaneous electrical spike counts smoothed at 200 ms and binned to native optical support",
+    "recommended_metrics": "Fish-equal neuron-equal Pearson; relative absolute count error and signed bias secondary",
+    "recommended_split": "Whole fish disjoint: seven neurons/21 recordings train; eight neurons/24 recordings test",
+    "limitations": "Only two test fish; Pearson ignores amplitude calibration and all models show substantial count error. Fixed training-scaled OASIS AR1 is not CASCADE or strongest verified specialist; global released CASCADE weights include test source. Repository GPL-3.0 with no separate data-specific declaration located; raw cache kept local.",
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7611618/",
+      "https://github.com/HelmchenLabSoftware/Cascade/tree/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f",
+      "https://github.com/HelmchenLabSoftware/Cascade/blob/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f/cascade2p/utils.py",
+      "https://github.com/HelmchenLabSoftware/Cascade/blob/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f/LICENSE"
+    ],
+    "admission_evidence_file": "experiments/C06/protocol.md",
+    "review_depth": "Original source acquisition and checksums, frozen interface/reference/scorer before generation, all planned submissions retained, separate read-only code review and independent saved-output/source audit; see per-task worklog",
+    "execution_date": "2026-10-31"
+  },
+  "E06": {
+    "task": "Causal population calcium forecasting",
+    "resource": "ZAPBench fixed 256-neuron temporal and unseen-taxis slices",
+    "dataset_group": "ZAPBench 240930_traces",
+    "executed_slice": "One zebrafish brain/session; 272 training windows, 43 temporal-tail tests and 12 unseen-taxis tests; same programs reused.",
+    "data": "64 observed past frames by 256 response-independently selected neurons",
+    "ground_truth": "Next 32 observed calcium frames in native dF/F units",
+    "recommended_metrics": "Pooled mean squared error; lower better",
+    "recommended_split": "Official condition temporal cuts; unseen taxis excluded from all fitting; no joining or borrowing across test rows",
+    "limitations": "One brain/session and two dependent slices; later observed contexts may contain earlier test-period history, so not free-running forecasting. NLinear architecture locally fit with fixed analytical ridge is a conventional domain reference, not official trained weights/full-neuron leaderboard or global best.",
+    "source_urls": [
+      "https://google-research.github.io/zapbench/",
+      "https://arxiv.org/abs/2503.02618",
+      "https://zapbench-release.storage.googleapis.com/volumes/README.html",
+      "https://github.com/google-research/zapbench/tree/7347b3b21a3f332e281b774c945f1505dd966abf"
+    ],
+    "admission_evidence_file": "experiments/E06/protocol.md",
+    "review_depth": "Original source acquisition and checksums, frozen interface/reference/scorer before generation, all planned submissions retained, separate read-only code review and independent saved-output/source audit; see per-task worklog",
+    "execution_date": "2026-10-31"
+  },
+  "K05": {
+    "task": "Supervised bulk RNA to marker-positive fractions",
+    "resource": "LieberInstitute orthogonal marker-fraction calibration",
+    "dataset_group": "LieberInstitute Circle fractions",
+    "executed_slice": "63 eligible bulk samples: 39 train/24 test, five/three donors and seven/four blocks.",
+    "data": "2,000 outer-training-selected log2(1+CPM) genes; equal donor/block metadata access",
+    "ground_truth": "Orthogonal Circle GFAP/CLDN5/GAD1 positive-cell fractions with all Circle cells in denominator; targets do not sum to one",
+    "recommended_metrics": "Equal-donor/equal-block replicate MSE then per-target RMSE averaged over three targets",
+    "recommended_split": "Whole donors and tissue blocks held out; training-only grouped ridge selection",
+    "limitations": "Supervised fraction calibration, not reference-only deconvolution; only three marker-defined fractions. Frozen protocol says gene identities supplied but actual numeric-only interface omits them equally from all methods. Conventional donor-CV ridge is not verified global best.",
+    "source_urls": [
+      "https://doi.org/10.1186/s13059-025-03552-3",
+      "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution",
+      "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html",
+      "https://zenodo.org/records/14969244",
+      "https://zenodo.org/records/14969244"
+    ],
+    "admission_evidence_file": "experiments/K05/protocol.md",
+    "review_depth": "Original source acquisition and checksums, frozen interface/reference/scorer before generation, all planned submissions retained, separate read-only code review and independent saved-output/source audit; see per-task worklog",
+    "execution_date": "2026-10-31"
+  },
+  "K06": {
+    "task": "Optotagged PV/SST classification from waveform",
+    "resource": "Allen-contributed optotagged cells; mouse-held-out waveform classification",
+    "dataset_group": "Allen optotagged waveform collection",
+    "executed_slice": "207 cells from 16 mice: 136 train/11 mice, 71 test/five mice.",
+    "data": "87 waveform-only features; genetic IDs, anatomical region, firing/ISI/ACG and optoresponses excluded",
+    "ground_truth": "Optotagged PV/SST labels independently joined to original cell IDs",
+    "recommended_metrics": "Class-balanced mouse-equal accuracy; pooled balanced accuracy secondary",
+    "recommended_split": "Whole mice disjoint; same training mice and fixed CV-fold metadata for all methods",
+    "limitations": "Binary classes and one contributor; genetic class is mouse-level and cohort effects may confound. Not comprehensive cell taxonomy. Research/noncommercial source terms retained; fixed SVM/ExtraTrees CV is conventional reference, not established neuroscience SOTA.",
+    "source_urls": [
+      "https://doi.org/10.1016/j.neuron.2021.09.002",
+      "https://cellexplorer.org/publicdata/ground-truth-data/",
+      "https://cellexplorer.org/tutorials/ground-truth-tutorial/",
+      "https://github.com/petersenpeter/CellExplorer",
+      "https://alleninstitute.org/legal/terms-of-use"
+    ],
+    "admission_evidence_file": "experiments/K06/protocol.md",
+    "review_depth": "Original source acquisition and checksums, frozen interface/reference/scorer before generation, all planned submissions retained, separate read-only code review and independent saved-output/source audit; see per-task worklog",
     "execution_date": "2026-10-31"
   }
 }

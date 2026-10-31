@@ -45,6 +45,6 @@ Decision: **candidate_pending_validation** (2026-10-30). SpikeForest offers pair
 
 ## Current admission and execution
 
-Preview 0.10: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
+Preview 0.11: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
 [Admission/source evidence](../../../literature/admission-v05-extracellular.json). [Actual protocol/worklog](../../../experiments/B01). [Task measurements](../../../results/B01.json).

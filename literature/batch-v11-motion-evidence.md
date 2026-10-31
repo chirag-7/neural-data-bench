@@ -1,0 +1,9 @@
+# B03 motion endpoint admission
+
+Prepared a substantive explicitly synthetic motion endpoint using the [official SpikeInterface generator](https://spikeinterface.readthedocs.io/en/latest/api.html) and [motion-benchmark workflow](https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html), not an estimated-motion pseudo-label. Eight90second64channel simulations yield four independent training/four heldout count rasters of voltage-detected/localized peaks. Noise, waveform/amplitude variability, spike collisions and boundary effects remain. Exact physical imposed displacement is retained as gold.
+
+Prepared arrays58,748bytes; retained source simulation archives3,948,715bytes. Runtime generation76seconds on one numerical thread using existing dependencies, with no installs. Independent checks regenerate every original spike vector, actual per-spike template displacement and first-second voltage checksum, and reconstruct histograms/targets. See experiments/B03/protocol.md, data-manifest.json and validation.json.
+
+Fixed reference is original SpikeInterface0.105.4 decentralized-registration numerical code on the same supplied rasters; no prepared-record reference execution/scores or model calls occurred. Scope is synthetic rigid motion from processed rasters, not real drift validation or a whole raw-voltage DREDge evaluation. MIT source licenses retained. No additional access/compute/dependency blocker for this CPU batch. B02 was not expanded because B03 supplies the requested additional feasible endpoint.
+
+Important admission constraint: simulator seeds, heldout periods and actual displacement traces remain scorer-only and must not enter the shared generation prompt. The public web docs contextualize the method; exact installed source files and runtime versions are separately hash-pinned because a version-specific web page was unavailable.

@@ -2,7 +2,7 @@
 from pathlib import Path
 import json,hashlib,re
 R=Path(__file__).resolve().parents[1]
-RELEASE='0.10'
+RELEASE='0.11'
 def read(p):return json.loads((R/p).read_text())
 def dump(p,o):p=R/p;p.parent.mkdir(exist_ok=True,parents=True);p.write_text(json.dumps(o,indent=2,ensure_ascii=False)+'\n')
 def main():
@@ -16,6 +16,8 @@ def main():
  'I01':('Algonauts original test responses require remote challenge scoring and data access steps; no locally verifiable held-out target release for this protocol. Archived from the runnable catalog, not declared scientifically invalid.','Complete authorized access and official scoring contract, or define a licensed public-response split with explicit deviation.','literature/admission-v04-electrical.json'),
  'I02':('NSD requires a data-access agreement; the required access process has not been completed. Removed from the active local execution list until access is established.','User-authorized source access and a frozen stimulus/subject split with neural labels.','literature/admission-v04-electrical.json'),
  'I05':('fastMRI brain access requires an investigator application/data agreement; no credentialed acquisition is available in this release.','Complete authorized access and pin brain release,subject split and reconstruction scorer.','literature/admission-v04-electrical.json')}
+ if (R/'registry/batch-exclusions.json').exists():
+  for item in read('registry/batch-exclusions.json'):removals[item['benchmark_id']]=item
  for t,(reason,requirement,source) in extra.items():removals[t]=dict(benchmark_id=t,decision='REMOVE_ACTIVE',reason=reason,reactivation_requirements=requirement,evidence_file=source,source_urls=all_entries[t]['source_urls'],reviewed_on='2026-10-30',review_depth='Source-specific access/rights screen, no data acquisition claim',preserve_evidence_archive=True)
  additions={
  'B01':dict(executed_slice='Blind unsupervised sorting of one10second32channel MEArec simulation; official unit/event scorer',resource='Standard SpikeInterface/MEArec fixture; MountainSort5 reference',data='Simulated filtered extracellular voltage32kHz,32channels; hidden generated spike events',ground_truth='Known simulation spike events and neuron IDs; not paired biological truth',source_urls=['https://gin.g-node.org/NeuralEnsemble/ephy_testing_data','https://spikeinterface.readthedocs.io/en/0.96.1/modules/comparison/plot_3_compare_sorter_with_ground_truth.html','https://github.com/flatironinstitute/mountainsort5'],admission_evidence_file='literature/admission-v05-extracellular.json',recommended_metrics='Mean GT-unit accuracy/Jaccard; precision/recall and redundant/extra-unit diagnostics',recommended_split='One scored unsupervised recording; no independent recording-generalization claim',limitations='Short stationary public simulation, no drift/real paired/animal generalization. Extra unit diagnostics required.'),
@@ -48,6 +50,7 @@ def main():
   else:all_entries[t]['executed_slice']=text
  for t,fields in additions.items():
   e=all_entries[t];urls=fields.pop('source_urls');e.update(fields);e['source_urls']=list(dict.fromkeys(e['source_urls']+urls));e['verification']='Actual acquired/extracted source arrays, frozen protocol, submitted programs and prediction/scorer artifacts; exact scope in experiments/'+t;e['current_best_status']='not verified; named matched specialist/reference evidence retained separately'
+ all_entries['E02'].update(execution_admission='deferred',admission_reason='Original CC0 publication archive acquired and verified, but globally projected trajectories and exemplar spikes do not establish independent trial-level latent recovery. Canonical artifacts require an isolated trusted generator and coordinate-invariant scorer; rights/access/size are not the blockers.',admission_evidence_file='literature/batch-v11-population/E02-decision.md',review_depth='Original publication archive and canonical artifact pointers assessed; no model evaluation or scientific invalidity claim')
  measured=set()
  for p in (R/'results').glob('*.json'):
   rows=json.loads(p.read_text())
@@ -55,7 +58,7 @@ def main():
  assert not measured & set(removals),'Cannot prune measured failures or poor results'
  exclusions=[]
  for t,d in sorted(removals.items()):
-  e=all_entries[t];exclusions.append(dict(id=t,resource=e['resource'],task=e['task'],family_code=e['family_code'],reason=d['reason'],reactivation_requirements=d['reactivation_requirements'],source_urls=d.get('source_urls',e['source_urls']),evidence_file=d['evidence_file'],review_depth=d.get('review_depth','Bounded primary-source assessment'),date='2026-10-30',historical_card=f'benchmarks/{t[0]}/{t}',permanent_rejection=False))
+  e=all_entries[t];exclusions.append(dict(id=t,resource=e['resource'],task=e['task'],family_code=e['family_code'],reason=d['reason'],reactivation_requirements=d['reactivation_requirements'],source_urls=d.get('source_urls',e['source_urls']),evidence_file=d['evidence_file'],review_depth=d.get('review_depth','Bounded primary-source assessment'),date=d.get('reviewed_on','2026-10-30'),historical_card=f'benchmarks/{t[0]}/{t}',permanent_rejection=False))
  active=[];decisions=[]
  for t,e in sorted(all_entries.items()):
   if t in removals:continue

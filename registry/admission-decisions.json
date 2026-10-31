@@ -160,17 +160,21 @@
   },
   {
     "benchmark_id": "A15",
-    "decision": "candidate_pending_validation",
-    "reason": "DAS annotated raw audio can support real event-segmentation evaluation. Still need pinned species/recording slice, sampling rate and official event-matching tolerance; no audio acquisition attempted here. Temporal bouts must remain grouped.",
-    "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
+    "date": "2026-10-31",
+    "evidence_file": "experiments/A15/protocol.md",
     "source_urls": [
       "https://elifesciences.org/articles/68837",
       "https://data.goettingen-research-online.de/dataverse/das",
       "https://janclemenslab.org/das/",
-      "https://github.com/nianlonggu/WhisperSeg"
+      "https://github.com/nianlonggu/WhisperSeg",
+      "https://doi.org/10.25625/ENKMJS",
+      "https://doi.org/10.6084/m9.figshare.4805749",
+      "https://www.vocalpy.org/bfsongrepo/",
+      "https://figshare.com/articles/dataset/4805749"
     ],
-    "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion"
+    "review_depth": "Original source acquisition and checksums, frozen interface/reference/scorer before generation, all planned submissions retained, separate read-only code review and independent saved-output/source audit; see per-task worklog"
   },
   {
     "benchmark_id": "A16",
@@ -215,15 +219,18 @@
   },
   {
     "benchmark_id": "B03",
-    "decision": "candidate_pending_validation",
-    "reason": "Synthetic drift with known displacement supports motion-estimation error; real DREDge drift estimates themselves are not groundtruth. Need fixed simulator/probe mapping and matched motion pipeline; no acquisition/execution attempted here.",
-    "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
+    "date": "2026-10-31",
+    "evidence_file": "experiments/B03/protocol.md",
     "source_urls": [
       "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
-      "https://github.com/evarol/dredge"
+      "https://github.com/evarol/dredge",
+      "https://spikeinterface.readthedocs.io/en/latest/api.html",
+      "https://github.com/SpikeInterface/spikeinterface",
+      "https://proceedings.neurips.cc/paper/2021/hash/b950ea26ca12daae142bd74dba4427c8-Abstract.html"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+    "review_depth": "Original source acquisition and checksums, frozen interface/reference/scorer before generation, all planned submissions retained, separate read-only code review and independent saved-output/source audit; see per-task worklog"
   },
   {
     "benchmark_id": "B04",
@@ -249,17 +256,6 @@
     "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
   {
-    "benchmark_id": "B06",
-    "decision": "candidate_pending_validation",
-    "reason": "Current full atlas tables require authenticated Alyx/private-S3 access; no configured source credentials used. Public software test fixtures were not substituted for a representative benchmark.",
-    "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
-    "source_urls": [
-      "https://huggingface.co/int-brain-lab/ea-decoder-channel-xgboost"
-    ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
-  },
-  {
     "benchmark_id": "B07",
     "decision": "measured",
     "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
@@ -278,27 +274,16 @@
   },
   {
     "benchmark_id": "B08",
-    "decision": "candidate_pending_validation",
-    "reason": "IBL spike trains could support lossless integer/event compression; reconstruction must preserve exact event times/unitIDs. Need exact release/chunk bounds and bits/event denominator; shared IBL recordings must not count twice as independent datasets. Not acquired here.",
-    "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
+    "date": "2026-10-31",
+    "evidence_file": "experiments/B08/protocol.md",
     "source_urls": [
       "https://github.com/int-brain-lab/spikepack",
-      "https://www.internationalbrainlab.com/data"
+      "https://www.internationalbrainlab.com/data",
+      "https://dandiarchive.org/dandiset/000953"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
-  },
-  {
-    "benchmark_id": "C01",
-    "decision": "candidate_pending_validation",
-    "reason": "Neurofinder supplies true labeled calcium ROI masks and image stacks. Needs image/mask archive pinning, original heldout recording split and official ROI matching scorer. Segmentation image adapter not acquired in this expansion.",
-    "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
-    "source_urls": [
-      "https://github.com/codeneuro/neurofinder-datasets",
-      "https://github.com/codeneuro/neurofinder"
-    ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+    "review_depth": "Original source acquisition and checksums, frozen interface/reference/scorer before generation, all planned submissions retained, separate read-only code review and independent saved-output/source audit; see per-task worklog"
   },
   {
     "benchmark_id": "C02",
@@ -348,14 +333,17 @@
   },
   {
     "benchmark_id": "C06",
-    "decision": "candidate_pending_validation",
-    "reason": "CASCADE paired fluorescence/electrophysiology is a credible additional deconvolution source. Need exact indicator/preparation noise/rate matching, neuron/recording-disjointsplit and baseline. Shared Spikefinder cells must be deduplicated, not counted as new independent recordings. Not acquired here.",
-    "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
+    "date": "2026-10-31",
+    "evidence_file": "experiments/C06/protocol.md",
     "source_urls": [
-      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7611618/"
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7611618/",
+      "https://github.com/HelmchenLabSoftware/Cascade/tree/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f",
+      "https://github.com/HelmchenLabSoftware/Cascade/blob/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f/cascade2p/utils.py",
+      "https://github.com/HelmchenLabSoftware/Cascade/blob/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f/LICENSE"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+    "review_depth": "Original source acquisition and checksums, frozen interface/reference/scorer before generation, all planned submissions retained, separate read-only code review and independent saved-output/source audit; see per-task worklog"
   },
   {
     "benchmark_id": "C07",
@@ -376,17 +364,6 @@
     "evidence_file": "literature/admission-v04-behavior-population.json",
     "source_urls": [
       "https://github.com/LernerLab/GuPPy"
-    ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
-  },
-  {
-    "benchmark_id": "C09",
-    "decision": "candidate_pending_validation",
-    "reason": "CNMF-E onephoton examples may support ROI and source extraction endpoints; require independent masks/timecourse labels, background model definition and frozen recording split. No real labeled movie acquired here. Specialized outputs cannot serve as unquestioned true signals.",
-    "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
-    "source_urls": [
-      "https://elifesciences.org/articles/28728"
     ],
     "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
   },
@@ -443,14 +420,14 @@
   },
   {
     "benchmark_id": "E02",
-    "decision": "candidate_pending_validation",
-    "reason": "CtDB can supply synthetic mechanistic dynamics groundtruth and known task variables. Needs pinned generator, stimulus/trajectory/seed split and metric for actual recovered dynamics, not arbitrary latent-coordinateRMSE. Synthetic extension remains useful but unprepared.",
+    "decision": "deferred",
+    "reason": "Original CC0 publication archive acquired and verified, but globally projected trajectories and exemplar spikes do not establish independent trial-level latent recovery. Canonical artifacts require an isolated trusted generator and coordinate-invariant scorer; rights/access/size are not the blockers.",
     "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "evidence_file": "literature/batch-v11-population/E02-decision.md",
     "source_urls": [
       "https://github.com/snel-repo/ComputationThroughDynamicsToolkit"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+    "review_depth": "Original publication archive and canonical artifact pointers assessed; no model evaluation or scientific invalidity claim"
   },
   {
     "benchmark_id": "E03",
@@ -490,16 +467,17 @@
   },
   {
     "benchmark_id": "E06",
-    "decision": "candidate_pending_validation",
-    "reason": "ZAPBench real larval zebrafish wholebrain activity forecasting is a distinct real task. Needs pinned release, official heldout temporal blocks and neuron mappings; complete brain arrays may be large. No acquisition attempted here, so no permanent infeasibility claim.",
-    "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-behavior-population.json",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
+    "date": "2026-10-31",
+    "evidence_file": "experiments/E06/protocol.md",
     "source_urls": [
       "https://google-research.github.io/zapbench/",
       "https://arxiv.org/abs/2503.02618",
-      "https://zapbench-release.storage.googleapis.com/volumes/README.html"
+      "https://zapbench-release.storage.googleapis.com/volumes/README.html",
+      "https://github.com/google-research/zapbench/tree/7347b3b21a3f332e281b774c945f1505dd966abf"
     ],
-    "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted"
+    "review_depth": "Original source acquisition and checksums, frozen interface/reference/scorer before generation, all planned submissions retained, separate read-only code review and independent saved-output/source audit; see per-task worklog"
   },
   {
     "benchmark_id": "F01",
@@ -1004,42 +982,35 @@
   },
   {
     "benchmark_id": "K05",
-    "decision": "candidate_pending_validation",
-    "reason": "Primary DeconvoBuddies fetch documentation identifies bulk 110x21k (41 MB), snRNA 77kx36k (172 MB) and example 10kx557. Need match orthogonal IF/RNAScope fractions to bulk samples, donor/tissue blocks and fixed reference/marker policy. Bioconductor S4 readers absent and ground-truth alignment not completed. Data size itself is manageable; do not call impossible or bad.",
-    "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
+    "date": "2026-10-31",
+    "evidence_file": "experiments/K05/protocol.md",
     "source_urls": [
       "https://doi.org/10.1186/s13059-025-03552-3",
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
       "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution",
-      "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html"
+      "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html",
+      "https://zenodo.org/records/14969244"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+    "review_depth": "Original source acquisition and checksums, frozen interface/reference/scorer before generation, all planned submissions retained, separate read-only code review and independent saved-output/source audit; see per-task worklog"
   },
   {
     "benchmark_id": "K06",
-    "decision": "candidate_pending_validation",
-    "reason": "Primary ground-truth tutorial and GitHub folder inspected; 87 files total ~500 MB. Downloaded one 189 kB cell metrics example and consolidated 2.83 MB gt list; MATLAB v7.3 HDF5 parsed with isolated h5py3.15.1. Consolidated list has 430 entries and animal/session/truth labels, but no predictor feature matrix; example has Juxta tag (not a molecular cell class). Must select nonnested independently tagged classes, extract only scalar physiology/waveform metrics from session files, group animals, resolve contributor data terms, and exclude putativeCellType/geneticLine/brainRegion proxies. No validated table yet.",
-    "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-cell-workflow.json",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
+    "date": "2026-10-31",
+    "evidence_file": "experiments/K06/protocol.md",
     "source_urls": [
       "https://cellexplorer.org/publicdata/ground-truth-data/",
       "https://cellexplorer.org/tutorials/ground-truth-tutorial/",
       "https://alleninstitute.github.io/openscope_databook/optotagging/",
-      "https://api.github.com/repos/petersenpeter/CellExplorer/contents/%2BgroundTruthData"
+      "https://api.github.com/repos/petersenpeter/CellExplorer/contents/%2BgroundTruthData",
+      "https://doi.org/10.1016/j.neuron.2021.09.002",
+      "https://github.com/petersenpeter/CellExplorer",
+      "https://alleninstitute.org/legal/terms-of-use"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
-  },
-  {
-    "benchmark_id": "L01",
-    "decision": "candidate_pending_validation",
-    "reason": "Original challenge page and three author-listed mirrors checked: ETH(previous0.8),Duke andNYU(this0.9) returnedHTTP403. Authorized Kaggle competition access not established; no raw network data admitted. No universal-inaccessibility claim.",
-    "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-inference-control.json",
-    "source_urls": [
-      "https://connectomics.chalearn.org/help/data"
-    ],
-    "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim"
+    "review_depth": "Original source acquisition and checksums, frozen interface/reference/scorer before generation, all planned submissions retained, separate read-only code review and independent saved-output/source audit; see per-task worklog"
   },
   {
     "benchmark_id": "L03",

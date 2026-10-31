@@ -29,7 +29,7 @@
     "evidence": "literature/admission-v05-bci.json"
   },
   "current_execution": {
-    "release": "0.10",
+    "release": "0.11",
     "status": "measured",
     "slice": "FALCON M2 custom cross-day decoding: 1,169 training and 754 test trials, 96 causal features, two finger-velocity outputs, one monkey.",
     "evidence": "literature/admission-v05-bci.json"

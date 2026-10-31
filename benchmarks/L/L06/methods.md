@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.10: All ten original sbibm Bernoulli GLM observations; ten parameters,100 bins,10000 posterior draws per observation; custom likelihood-informed track.
+Preview 0.11: All ten original sbibm Bernoulli GLM observations; ten parameters,100 bins,10000 posterior draws per observation; custom likelihood-informed track.
 
 [Actual frozen contract and implementation](../../../experiments/L06). [Measured method/reference records](../../../results/L06.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

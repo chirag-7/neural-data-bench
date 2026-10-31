@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). UnitMatch crossday matc
 
 ## Current admission and execution
 
-Preview 0.10: candidate_pending_validation. UnitMatch crossday matching needs real paired sessions with independently supported identities; algorithm outputs cannot be used as target labels. Need exact released validation identities/sessions and potential calcium or optotagging corroboration. No paired acquisition attempted here.
+Preview 0.11: candidate_pending_validation. UnitMatch crossday matching needs real paired sessions with independently supported identities; algorithm outputs cannot be used as target labels. Need exact released validation identities/sessions and potential calcium or optotagging corroboration. No paired acquisition attempted here.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

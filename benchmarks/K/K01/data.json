@@ -36,7 +36,7 @@
     "evidence": "literature/admission-v04-cell-workflow.json"
   },
   "current_execution": {
-    "release": "0.10",
+    "release": "0.11",
     "status": "measured",
     "slice": "Allen mouse electrophysiology: 11 features predict spiny/aspiny morphology; donor-disjoint 1,356 training and 457 test cells.",
     "evidence": "literature/admission-v04-cell-workflow.json"

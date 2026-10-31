@@ -38,6 +38,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Official NeuroGym task 
 
 ## Current admission and execution
 
-Preview 0.10: candidate_pending_validation. Official NeuroGym task collection exists. Need versioned finite suite, trial-generation seeds, observation/action contract and task-trained controller reference. Static supervised score is not closed-loop policy evaluation.
+Preview 0.11: candidate_pending_validation. Official NeuroGym task collection exists. Need versioned finite suite, trial-generation seeds, observation/action contract and task-trained controller reference. Static supervised score is not closed-loop policy evaluation.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json).

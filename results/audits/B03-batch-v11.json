@@ -1,0 +1,245 @@
+{
+  "benchmark_id": "B03",
+  "run_id": "batch-v11",
+  "verification_status": "passed",
+  "complete": true,
+  "frozen_files_verified": 25,
+  "data_sha256": "f10ca63a49e7179322e61116025eb2466a0d3f3d7628620a32d228ce597ae487",
+  "simulation_checks": [
+    {
+      "simulation": 0,
+      "split": "train",
+      "archive_sha256": "7b70cda61a623cf5155392e7444af15d4f96b6ae75787bac39f4199f34a9451e",
+      "true_events": 27691,
+      "observed_peaks": 23311,
+      "state_quantization_and_timebin_reconstruction": true,
+      "observation_raster_reconstruction": true
+    },
+    {
+      "simulation": 1,
+      "split": "train",
+      "archive_sha256": "7fc06f3e4e316d80e2bdc1dbcc1dc9208a1165ad28efa7beaf5cfcaaeb33e276",
+      "true_events": 30113,
+      "observed_peaks": 23000,
+      "state_quantization_and_timebin_reconstruction": true,
+      "observation_raster_reconstruction": true
+    },
+    {
+      "simulation": 2,
+      "split": "train",
+      "archive_sha256": "e5b3569f585d3e468ee24c3cd6d6d5de601a458cb68de535174b52a0961c771e",
+      "true_events": 28578,
+      "observed_peaks": 22040,
+      "state_quantization_and_timebin_reconstruction": true,
+      "observation_raster_reconstruction": true
+    },
+    {
+      "simulation": 3,
+      "split": "train",
+      "archive_sha256": "9100a2eaf6a8dab70fe0816076cca89bedce089db90afd2a47d57647d80b0114",
+      "true_events": 28301,
+      "observed_peaks": 21271,
+      "state_quantization_and_timebin_reconstruction": true,
+      "observation_raster_reconstruction": true
+    },
+    {
+      "simulation": 4,
+      "split": "test",
+      "archive_sha256": "c7e179e2452a075d3c90a0e2ac22b7472eda7eeec210639471f9de956f9f5e80",
+      "true_events": 28644,
+      "observed_peaks": 22817,
+      "state_quantization_and_timebin_reconstruction": true,
+      "observation_raster_reconstruction": true
+    },
+    {
+      "simulation": 5,
+      "split": "test",
+      "archive_sha256": "92f1bc9da005b3e93645425fd7dc6a7f7dbd2c51fe05db8796f8795914f7e722",
+      "true_events": 26959,
+      "observed_peaks": 22471,
+      "state_quantization_and_timebin_reconstruction": true,
+      "observation_raster_reconstruction": true
+    },
+    {
+      "simulation": 6,
+      "split": "test",
+      "archive_sha256": "aca63a6dc1dfaad77455fe9eccca01824856f71cab3fd7e9077f4be9a1ef110b",
+      "true_events": 28755,
+      "observed_peaks": 20052,
+      "state_quantization_and_timebin_reconstruction": true,
+      "observation_raster_reconstruction": true
+    },
+    {
+      "simulation": 7,
+      "split": "test",
+      "archive_sha256": "2d769fd13a24b9cb4c3b34349f1e35c7c06408fc40268f838a7ba18d483dc529",
+      "true_events": 27231,
+      "observed_peaks": 21769,
+      "state_quantization_and_timebin_reconstruction": true,
+      "observation_raster_reconstruction": true
+    }
+  ],
+  "generated_code_checks": {
+    "gpt-5.6-sol": {
+      "generation_json_sha256": "f950262fe354a50c84fd6914c4ee8d93405e121adddb324e246d3648a21ab423",
+      "code_sha256": "a1465c9f9e039da402aa481eb93a927e57785a6058bb97b9bb48fd9784040eb9",
+      "code_lines": 194,
+      "line_limit_compliant": true,
+      "retained_program_exists": true,
+      "saved_program_matches_generation": true,
+      "ast_parsed": true,
+      "imports": [
+        "numpy",
+        "scipy"
+      ],
+      "forbidden_imports_or_calls": false,
+      "hidden_seed_literals_found": [],
+      "simulator_regeneration_calls_found": [],
+      "period_value_literals_for_human_review": [],
+      "limitation": "Numeric periods can legitimately be filter sizes or inferred-trajectory priors; listed literals alone do not prove forbidden regeneration. Static checks do not prove arbitrary semantic compliance."
+    },
+    "gpt-6-sol": {
+      "generation_json_sha256": "c3e67b491044a17ba1402a235ce5c55dd5d8840c4554462c20a714ac4787a2c8",
+      "code_sha256": "8352df8f4dde5fb77cfbbf0b368ab8c9b752975a009bf1a569bbdd5d18121f9c",
+      "code_lines": 109,
+      "line_limit_compliant": true,
+      "retained_program_exists": true,
+      "saved_program_matches_generation": true,
+      "ast_parsed": true,
+      "imports": [
+        "numpy",
+        "scipy"
+      ],
+      "forbidden_imports_or_calls": false,
+      "hidden_seed_literals_found": [],
+      "simulator_regeneration_calls_found": [],
+      "period_value_literals_for_human_review": [],
+      "limitation": "Numeric periods can legitimately be filter sizes or inferred-trajectory priors; listed literals alone do not prove forbidden regeneration. Static checks do not prove arbitrary semantic compliance."
+    },
+    "gpt-6.1-sol": {
+      "generation_json_sha256": "de8f129eb1f060b0e3eb3bc1005b11bdf2c85ade88d7e9a5958fe22cf3ee8ae5",
+      "code_sha256": "12129f8a1c0210674a9a847455b6dbe76ceec32bff7d094f527d147e61943aef",
+      "code_lines": 192,
+      "line_limit_compliant": true,
+      "retained_program_exists": true,
+      "saved_program_matches_generation": true,
+      "ast_parsed": true,
+      "imports": [
+        "numpy",
+        "scipy"
+      ],
+      "forbidden_imports_or_calls": false,
+      "hidden_seed_literals_found": [],
+      "simulator_regeneration_calls_found": [],
+      "period_value_literals_for_human_review": [],
+      "limitation": "Numeric periods can legitimately be filter sizes or inferred-trajectory priors; listed literals alone do not prove forbidden regeneration. Static checks do not prove arbitrary semantic compliance."
+    }
+  },
+  "measured_attempts": [
+    {
+      "model": "gpt-5.6-sol",
+      "score": 3.6041552208003775,
+      "per_recording_rmse_um": [
+        4.474410693117807,
+        2.0330632499049655,
+        4.423963599116542,
+        3.485183341062197
+      ],
+      "per_recording_mae_um": [
+        3.629652469478156,
+        1.7185740000317944,
+        3.7814582610766108,
+        2.587361709216326
+      ],
+      "per_recording_max_error_um": [
+        11.490209871745968,
+        5.483024412712336,
+        12.062644140548372,
+        12.695963735436077
+      ],
+      "prediction_sha256": "d91fc0b143791ddca2bbce86cbb40ab94be1d0e6729844d804345c5dec6248d1",
+      "code_sha256": "a1465c9f9e039da402aa481eb93a927e57785a6058bb97b9bb48fd9784040eb9",
+      "original_simulator_state_metrics_match": true
+    },
+    {
+      "model": "gpt-6-sol",
+      "score": 4.418263744475341,
+      "per_recording_rmse_um": [
+        7.554221028734139,
+        2.096954700125737,
+        6.5407986176535315,
+        1.4810806313879592
+      ],
+      "per_recording_mae_um": [
+        6.682873965529999,
+        1.6079264820226236,
+        5.739944069841307,
+        1.221180834579459
+      ],
+      "per_recording_max_error_um": [
+        14.649880919196221,
+        6.417233430621193,
+        11.871547965647956,
+        3.585952372010551
+      ],
+      "prediction_sha256": "41fe987be36ba2840ae2596260c2c0dccd4528df5ddc65e5c1e4edd5f9b2e0dc",
+      "code_sha256": "8352df8f4dde5fb77cfbbf0b368ab8c9b752975a009bf1a569bbdd5d18121f9c",
+      "original_simulator_state_metrics_match": true
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "score": 5.275098380741698,
+      "per_recording_rmse_um": [
+        10.713258970140295,
+        2.0195651903248057,
+        6.795472890869712,
+        1.5720964716319787
+      ],
+      "per_recording_mae_um": [
+        9.43184563669447,
+        1.4713000628869621,
+        5.882335193568313,
+        1.1935938296191761
+      ],
+      "per_recording_max_error_um": [
+        20.847325870637206,
+        7.983126084971804,
+        12.399952969012993,
+        4.042489723860779
+      ],
+      "prediction_sha256": "f4b8010ef011b9d96dac029f313e243bb188998dbcfb6a4786e19befd6aa6047",
+      "code_sha256": "12129f8a1c0210674a9a847455b6dbe76ceec32bff7d094f527d147e61943aef",
+      "original_simulator_state_metrics_match": true
+    },
+    {
+      "model": "task-baseline",
+      "score": 4.850138078041406,
+      "per_recording_rmse_um": [
+        5.423607062122834,
+        3.3427063978862113,
+        6.736299265618599,
+        3.8979395865379804
+      ],
+      "per_recording_mae_um": [
+        4.054239899906111,
+        2.7319045903266947,
+        5.39185236018381,
+        3.1098821912935852
+      ],
+      "per_recording_max_error_um": [
+        19.234112331602308,
+        8.910715105715727,
+        19.670468399259775,
+        9.17526623453531
+      ],
+      "prediction_sha256": "f3627573ce9aa9d3dd968f84a749141a665985a50be225fed07eab600ce3b59d",
+      "code_sha256": "0ef051fc783fce8880803bb7e428f077193b1cde25692c2bf8ea89c9bf679683",
+      "original_simulator_state_metrics_match": true
+    }
+  ],
+  "failed_attempts": [],
+  "missing_attempts": [],
+  "source_voltage_regenerated": false,
+  "models_or_references_executed": false,
+  "scope": "Synthetic rigid processed-raster endpoint; seed replication, not biological subjects"
+}

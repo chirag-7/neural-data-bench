@@ -32,3 +32,7 @@ One bounded review plus one new task. Specialists now have named numeric cards a
 ## 0.10 —31 October 2026
 
 Added B07 byte-exact real-voltage compression:16 recordings/14 animals, frozen codec interfaces/references and every successful payload retained/independently decoded. Current totals:23 tasks,87 attempts,85 valid,2 preserved failures,173 model/reference records. Updated named specialist line/bar plots, source evidence, decentralized task documents and both macro scopes;0.9 ledger unchanged. [Review](release-v10.md).
+
+## 0.11 — audited parallel batch
+
+Seven newly measured task IDs, eight slices and 21 original programs add 24 model attempts and 35 model/reference rows. The central registry, macro analysis and site update together once. All 173 prior-release rows remain identical. Source acquisition, frozen contracts, no-tool generation events, numerical outputs, failures and independent audits are retained per task. Four candidates leave the active execution map with explicit reactivation conditions; E02 is deferred. B08's ambiguous utility restriction is disclosed and excluded from aggregate claims; A15's 268-line submission remains a visible format deviation. C06 native plots expose predeclared count calibration error alongside correlation.

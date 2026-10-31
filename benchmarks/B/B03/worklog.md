@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Synthetic drift with kn
 
 ## Current admission and execution
 
-Preview 0.10: candidate_pending_validation. Synthetic drift with known displacement supports motion-estimation error; real DREDge drift estimates themselves are not groundtruth. Need fixed simulator/probe mapping and matched motion pipeline; no acquisition/execution attempted here.
+Preview 0.11: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
-[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).
+[Admission/source evidence](../../../experiments/B03/protocol.md). [Actual protocol/worklog](../../../experiments/B03). [Task measurements](../../../results/B03.json).

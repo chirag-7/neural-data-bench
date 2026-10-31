@@ -1,0 +1,244 @@
+{
+  "run_id": "batch-v11",
+  "tasks": [
+    {
+      "benchmark_id": "K05",
+      "verification_status": "passed",
+      "complete": true,
+      "source_files_verified": 10,
+      "source_labels_reconstructed": true,
+      "group_disjoint": true,
+      "measured_attempts": [
+        {
+          "model": "gpt-5.6-sol",
+          "prediction_sha256": "4d6faa57759c663ff74611aa665b9e5eb822018b59181e20995069713fbe3fb7",
+          "program_sha256": "06848234db5e5b0809992d0c5eddac734c99a33fbf9e750a74d7a001054ce492",
+          "original_target_mapping_verified": true,
+          "independent_metric": {
+            "score": 0.06742367203503653,
+            "metric": "donor_block_macro_rmse",
+            "direction": "lower",
+            "per_unit": [
+              0.028310577600208903,
+              0.07735114493495421,
+              0.08037952555173537
+            ],
+            "unit_ids": [
+              "Br2720",
+              "Br6423",
+              "Br6471"
+            ]
+          }
+        },
+        {
+          "model": "gpt-6-sol",
+          "prediction_sha256": "2c24541f6ea9637d283fd1081b2ad4404b900fbc7b505fd6f1fa981cd21e0a33",
+          "program_sha256": "1d60582016efe41c4fb151a31010991176fc309c1b276e869da223e9c88cac97",
+          "original_target_mapping_verified": true,
+          "independent_metric": {
+            "score": 0.057937995627723386,
+            "metric": "donor_block_macro_rmse",
+            "direction": "lower",
+            "per_unit": [
+              0.041825462750361204,
+              0.06199793100687497,
+              0.06612170694014657
+            ],
+            "unit_ids": [
+              "Br2720",
+              "Br6423",
+              "Br6471"
+            ]
+          }
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "prediction_sha256": "1192e7b14f60601a94a69f9ad306e0e95a1527b7861c843f4b9752e00fbeb307",
+          "program_sha256": "a8437d185b4feddff1cf7e5922afb48d238aba3e9bd31864e716b29988c0e8fc",
+          "original_target_mapping_verified": true,
+          "independent_metric": {
+            "score": 0.0552287462339175,
+            "metric": "donor_block_macro_rmse",
+            "direction": "lower",
+            "per_unit": [
+              0.040116035361275955,
+              0.062123249669631474,
+              0.0602725131073448
+            ],
+            "unit_ids": [
+              "Br2720",
+              "Br6423",
+              "Br6471"
+            ]
+          }
+        },
+        {
+          "model": "task-baseline",
+          "prediction_sha256": "8ca76172ab4640210a9a2f4021f8fcfb2010aed935aea7ecc13ee3339602715e",
+          "program_sha256": "7e23056a1cea95f637dfcf35bbd5432b6b07274e288d3635ca9d59c9e4de2410",
+          "original_target_mapping_verified": true,
+          "independent_metric": {
+            "score": 0.05759104442612498,
+            "metric": "donor_block_macro_rmse",
+            "direction": "lower",
+            "per_unit": [
+              0.042291983880109345,
+              0.06522092901870886,
+              0.06227975183311236
+            ],
+            "unit_ids": [
+              "Br2720",
+              "Br6423",
+              "Br6471"
+            ]
+          }
+        }
+      ],
+      "failed_attempts": [],
+      "missing_models": [],
+      "models_or_references_executed": false
+    },
+    {
+      "benchmark_id": "K06",
+      "verification_status": "passed",
+      "complete": true,
+      "source_files_verified": 18,
+      "source_labels_reconstructed": true,
+      "group_disjoint": true,
+      "measured_attempts": [
+        {
+          "model": "gpt-5.6-sol",
+          "prediction_sha256": "daa041e521e46a33f95a05b7f974d060c61e32f8d38205fbc67c587382c8acf6",
+          "program_sha256": "a3d73b5d7d34c04c5f92907039167d5d9bffe94188d873849a75de4f18e47cee",
+          "original_target_mapping_verified": true,
+          "independent_metric": {
+            "score": 0.8777777777777778,
+            "metric": "class_balanced_mouse_accuracy",
+            "direction": "higher",
+            "per_unit": [
+              1.0,
+              1.0,
+              0.6666666666666666,
+              0.9,
+              0.8
+            ],
+            "unit_ids": [
+              "AllenInstitute_707296982",
+              "AllenInstitute_735109609",
+              "AllenInstitute_744915204",
+              "AllenInstitute_817060751",
+              "AllenInstitute_820866121"
+            ],
+            "unit_labels": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "model": "gpt-6-sol",
+          "prediction_sha256": "2ddfbc5f61c456ecec4f968b641d5967ea19bb0b9a5cff16674ed53a4a069769",
+          "program_sha256": "385c5387ccd45eb7f5280c54144abe292870c8d6e32aca994c08b861da1cc21b",
+          "original_target_mapping_verified": true,
+          "independent_metric": {
+            "score": 0.8694444444444445,
+            "metric": "class_balanced_mouse_accuracy",
+            "direction": "higher",
+            "per_unit": [
+              1.0,
+              1.0,
+              0.6666666666666666,
+              0.85,
+              0.8
+            ],
+            "unit_ids": [
+              "AllenInstitute_707296982",
+              "AllenInstitute_735109609",
+              "AllenInstitute_744915204",
+              "AllenInstitute_817060751",
+              "AllenInstitute_820866121"
+            ],
+            "unit_labels": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "prediction_sha256": "7b22eee05f00b91913e48d0d7f534667de0ccfa7b567bd6618420c53df9fab7e",
+          "program_sha256": "50d9dafff2c4883b9bb26670e6ca3e79201998f1798e994f2a3d1024f2fe3117",
+          "original_target_mapping_verified": true,
+          "independent_metric": {
+            "score": 0.8902777777777777,
+            "metric": "class_balanced_mouse_accuracy",
+            "direction": "higher",
+            "per_unit": [
+              1.0,
+              1.0,
+              0.6666666666666666,
+              0.9,
+              0.85
+            ],
+            "unit_ids": [
+              "AllenInstitute_707296982",
+              "AllenInstitute_735109609",
+              "AllenInstitute_744915204",
+              "AllenInstitute_817060751",
+              "AllenInstitute_820866121"
+            ],
+            "unit_labels": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "model": "task-baseline",
+          "prediction_sha256": "3113566cbecca8566d54f9ec79c3899b69c417f66dcbeec9a6b9481c3860cf0f",
+          "program_sha256": "afb0a00c18ca8939c5a1b62614118ece123ea1ef0880f25f0ec9fe87f49608ec",
+          "original_target_mapping_verified": true,
+          "independent_metric": {
+            "score": 0.8381944444444444,
+            "metric": "class_balanced_mouse_accuracy",
+            "direction": "higher",
+            "per_unit": [
+              1.0,
+              1.0,
+              0.6666666666666666,
+              0.7,
+              0.775
+            ],
+            "unit_ids": [
+              "AllenInstitute_707296982",
+              "AllenInstitute_735109609",
+              "AllenInstitute_744915204",
+              "AllenInstitute_817060751",
+              "AllenInstitute_820866121"
+            ],
+            "unit_labels": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "failed_attempts": [],
+      "missing_models": [],
+      "models_or_references_executed": false
+    }
+  ],
+  "models_or_references_executed": false
+}

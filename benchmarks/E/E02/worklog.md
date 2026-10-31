@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). CtDB can supply synthet
 
 ## Current admission and execution
 
-Preview 0.10: candidate_pending_validation. CtDB can supply synthetic mechanistic dynamics groundtruth and known task variables. Needs pinned generator, stimulus/trajectory/seed split and metric for actual recovered dynamics, not arbitrary latent-coordinateRMSE. Synthetic extension remains useful but unprepared.
+Preview 0.11: deferred. Original CC0 publication archive acquired and verified, but globally projected trajectories and exemplar spikes do not establish independent trial-level latent recovery. Canonical artifacts require an isolated trusted generator and coordinate-invariant scorer; rights/access/size are not the blockers.
 
-[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).
+[Admission/source evidence](../../../literature/batch-v11-population/E02-decision.md).

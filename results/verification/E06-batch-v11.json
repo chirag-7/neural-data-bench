@@ -1,0 +1,118 @@
+{
+  "benchmark_id": "E06",
+  "run_id": "batch-v11",
+  "verification_status": "passed",
+  "complete": true,
+  "frozen_file_count": 27,
+  "source_array_sha256": "62557b63b62104743deb484072d5c27ba56590df6d026bb8e8f0069e32f85a2e",
+  "data_checks": {
+    "batch-v11": {
+      "data_sha256": "dfbd6553dccd99d7f0c8af4daeb98435d9afb200dd3b957d5bd376fa74ebcf3c",
+      "test_windows": 43,
+      "train_windows": 272,
+      "all_windows_match_original": true
+    },
+    "taxis": {
+      "data_sha256": "944fa61ecf480096efef3ca3242e22693ab346ce26d25346c2c3f057cf12f3de",
+      "test_windows": 12,
+      "train_windows": 272,
+      "all_windows_match_original": true
+    }
+  },
+  "train_test_target_disjoint": true,
+  "main_taxis_targets_disjoint": true,
+  "training_arrays_identical": true,
+  "program_reuse_verified_models": [
+    "gpt-5.6-sol",
+    "gpt-6-sol",
+    "gpt-6.1-sol",
+    "task-baseline",
+    "mean-baseline"
+  ],
+  "measured_attempts": [
+    {
+      "slice_id": "batch-v11",
+      "model": "gpt-5.6-sol",
+      "score": 0.002794122521015086,
+      "prediction_sha256": "78286d167eca642341cd3070e012525748de2d395171aab608169eee525a43ae",
+      "program_sha256": "61f566bf6c27518a938f5b5ce7e7518e34891e65d71ff2e5622e014b4ed408dd",
+      "original_trace_mse_matches": true
+    },
+    {
+      "slice_id": "batch-v11",
+      "model": "gpt-6-sol",
+      "score": 0.0027332145893643007,
+      "prediction_sha256": "a6eaf5f255822497ea3daa41c5a0337706dc5edcbee1f78a7156c893e6e396a6",
+      "program_sha256": "938e29151bc584e7352f0261c984d560a30f7cece5c47e96835023857ac84f2d",
+      "original_trace_mse_matches": true
+    },
+    {
+      "slice_id": "batch-v11",
+      "model": "gpt-6.1-sol",
+      "score": 0.0022787300259792874,
+      "prediction_sha256": "96cfab228d959becb5e6d2684c1ae0e943f966c1a9d7ac56750da2ff4fa702b7",
+      "program_sha256": "8deffc454e5f51c5bf17c0e49aa251e844c944392e67a45997cd20867728d67d",
+      "original_trace_mse_matches": true
+    },
+    {
+      "slice_id": "batch-v11",
+      "model": "task-baseline",
+      "score": 0.0029695846280500785,
+      "prediction_sha256": "2c2b9c5da8f1a533b4de6653d26631edd78578ef3ca026a58afa7ec5540c6a3c",
+      "program_sha256": "77b6b3dea939d0fb819e0d92675f7f642c860c561a591fe89f5bcacc428c554b",
+      "original_trace_mse_matches": true
+    },
+    {
+      "slice_id": "batch-v11",
+      "model": "mean-baseline",
+      "score": 0.003415334342318256,
+      "prediction_sha256": "d86493d2637eacaf1ee428c8bdec67f7437a036b239675d2c772a67ca5dffb9e",
+      "program_sha256": "77b6b3dea939d0fb819e0d92675f7f642c860c561a591fe89f5bcacc428c554b",
+      "original_trace_mse_matches": true
+    },
+    {
+      "slice_id": "taxis",
+      "model": "gpt-5.6-sol",
+      "score": 0.0026811504487823626,
+      "prediction_sha256": "2e2db437b70ad4477ec4cfe80297181e73781fb32db014b74c5ba7a776f90f90",
+      "program_sha256": "61f566bf6c27518a938f5b5ce7e7518e34891e65d71ff2e5622e014b4ed408dd",
+      "original_trace_mse_matches": true
+    },
+    {
+      "slice_id": "taxis",
+      "model": "gpt-6-sol",
+      "score": 0.002521834009582198,
+      "prediction_sha256": "933528fa490b09cd13e0826abd5e2292407e50031e25b0c747b9e44d7ac18a3d",
+      "program_sha256": "938e29151bc584e7352f0261c984d560a30f7cece5c47e96835023857ac84f2d",
+      "original_trace_mse_matches": true
+    },
+    {
+      "slice_id": "taxis",
+      "model": "gpt-6.1-sol",
+      "score": 0.0027351108729422925,
+      "prediction_sha256": "cac6c6d2bc03d1cefae50b2a357d5617aa18cd1487eb7fe91b6c6abbe448136f",
+      "program_sha256": "8deffc454e5f51c5bf17c0e49aa251e844c944392e67a45997cd20867728d67d",
+      "original_trace_mse_matches": true
+    },
+    {
+      "slice_id": "taxis",
+      "model": "task-baseline",
+      "score": 0.0028550085312202254,
+      "prediction_sha256": "c0757c599bc143ee72f5c36b68da7385ddf22d6b24f3f032800444dc438ce063",
+      "program_sha256": "77b6b3dea939d0fb819e0d92675f7f642c860c561a591fe89f5bcacc428c554b",
+      "original_trace_mse_matches": true
+    },
+    {
+      "slice_id": "taxis",
+      "model": "mean-baseline",
+      "score": 0.003118734721556067,
+      "prediction_sha256": "a0f451748b5ee0f81d29464aa88da5264936999b1d0636a2b86b9bbdeda63727",
+      "program_sha256": "77b6b3dea939d0fb819e0d92675f7f642c860c561a591fe89f5bcacc428c554b",
+      "original_trace_mse_matches": true
+    }
+  ],
+  "failed_attempts": [],
+  "missing_attempts": [],
+  "models_or_references_executed": false,
+  "scope": "One animal/session; dependent stimulus slice, not independent biological replication"
+}

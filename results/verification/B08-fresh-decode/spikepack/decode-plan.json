@@ -1,0 +1,38 @@
+{
+  "model": "spikepack",
+  "program": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/experiments/B08/reference.py",
+  "program_file_sha256": "e8ea58dc01558d728fc690560f8596889d4a02540190f4f402573c447eed0b42",
+  "code_sha256": "e8ea58dc01558d728fc690560f8596889d4a02540190f4f402573c447eed0b42",
+  "blobs": [
+    {
+      "path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/bitstreams/B08/spikepack/00.bin",
+      "sha256": "41cdb57f94ab778ba48abfe44d01a6c506617799536a525f7fdf808c274c4677"
+    },
+    {
+      "path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/bitstreams/B08/spikepack/01.bin",
+      "sha256": "9ff858a32cf20e55fe70b18de1f767c3a37d1a5435c31414bece3c2ed548d5a6"
+    },
+    {
+      "path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/bitstreams/B08/spikepack/02.bin",
+      "sha256": "06e5d40a4dcbd98d7e3068d36f10558405a3370b37b85025549c4b18e9204b9d"
+    },
+    {
+      "path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/bitstreams/B08/spikepack/03.bin",
+      "sha256": "455d928d57e7d04757a32680efedcd65bb905d8cd52e4f902feab06dd64b19df"
+    },
+    {
+      "path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/bitstreams/B08/spikepack/04.bin",
+      "sha256": "2290e87b62a749f00855f14a336b3e9ee27e99d450b28e78dc590ffb53201d19"
+    },
+    {
+      "path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/bitstreams/B08/spikepack/05.bin",
+      "sha256": "189f629313898e26f6718d7af60df0c9e4431f27becf418e65069ced1c649ae9"
+    },
+    {
+      "path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/bitstreams/B08/spikepack/06.bin",
+      "sha256": "42049700928e7ab471a50ea080a5b5cdd3c2de26637f9f344776bcaef830a04e"
+    }
+  ],
+  "output_dir": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/verification/B08-fresh-decode/spikepack",
+  "audit_path": "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/verification/B08-fresh-decode/spikepack/child-audit.json"
+}

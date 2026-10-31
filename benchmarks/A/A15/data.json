@@ -1,15 +1,19 @@
 {
   "benchmark_id": "A15",
-  "input": "Single/multi-channel raw audio and human annotations",
-  "ground_truth": "Manual acoustic events/segments",
+  "input": "Original 32 kHz monaural waveforms, NaN padding; training 1 ms binary activity labels",
+  "ground_truth": "Source annotated song intervals, not exhaustive contact-call or vocalization labels",
   "sources": [
     "https://elifesciences.org/articles/68837",
     "https://data.goettingen-research-online.de/dataverse/das",
     "https://janclemenslab.org/das/",
-    "https://github.com/nianlonggu/WhisperSeg"
+    "https://github.com/nianlonggu/WhisperSeg",
+    "https://doi.org/10.25625/ENKMJS",
+    "https://doi.org/10.6084/m9.figshare.4805749",
+    "https://www.vocalpy.org/bfsongrepo/",
+    "https://figshare.com/articles/dataset/4805749"
   ],
-  "license_status": "Not independently reviewed",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/A15.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "A15",
@@ -33,9 +37,10 @@
     "evidence": "literature/admission-v04-behavior-population.json"
   },
   "current_execution": {
-    "release": "0.10",
-    "status": "candidate_pending_validation",
-    "slice": null,
-    "evidence": "literature/admission-v04-behavior-population.json"
-  }
+    "release": "0.11",
+    "status": "measured",
+    "slice": "80 whole recordings: 60 from three training birds, 20 from one unseen test bird; 1,519 test annotated events.",
+    "evidence": "experiments/A15/protocol.md"
+  },
+  "executed_slice": "80 whole recordings: 60 from three training birds, 20 from one unseen test bird; 1,519 test annotated events."
 }

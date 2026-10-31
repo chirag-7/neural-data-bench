@@ -2,15 +2,15 @@
 
 [Family](../README.md) · [Project](../../../README.md) · [Methods](methods.md) · [Worklog](worklog.md)
 
-**Resource:** ZAPBench (ICLR 2025)
+**Resource:** ZAPBench fixed 256-neuron temporal and unseen-taxis slices
 
-**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
+**State:** measured. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
-Input: Larval zebrafish light-sheet volumes and extracted cellular traces
+Input: 64 observed past frames by 256 response-independently selected neurons
 
-Target/ground truth: Future measured calcium activity
+Target/ground truth: Next 32 observed calcium frames in native dF/F units
 
 Mapped specialist candidates (not all evaluated): Published naive, time-series and volumetric video baselines
 
@@ -18,17 +18,20 @@ General-model route: General time-series/world/video models; code agents in sepa
 
 ## Execution and performance
 
-No experiment admitted yet. All measurements are centralized in [results](../../../results/). Current best: **not verified**. Missing scores are unknown, not zero. Literature resources are not newly executed results.
+**Executed slice:** One zebrafish brain/session; 272 training windows, 43 temporal-tail tests and 12 unseen-taxis tests; same programs reused.
+
+[Frozen protocol and artifacts](../../../experiments/E06). [Measured scores and references](../../../results/E06.json). [Central data](../../../results/measurements.csv). Missing or failed outputs are retained.
 
 ## Limitations
 
-One brain cannot establish cross-animal generalization; 70k neurons do not equal 70k independent subjects; anatomical pairing was future-facing in original paper
+One brain/session and two dependent slices; later observed contexts may contain earlier test-period history, so not free-running forecasting. NLinear architecture locally fit with fixed analytical ridge is a conventional domain reference, not official trained weights/full-neuron leaderboard or global best.
 
 ## Sources
 
 - [https://google-research.github.io/zapbench/](https://google-research.github.io/zapbench/)
 - [https://arxiv.org/abs/2503.02618](https://arxiv.org/abs/2503.02618)
 - [https://zapbench-release.storage.googleapis.com/volumes/README.html](https://zapbench-release.storage.googleapis.com/volumes/README.html)
+- [https://github.com/google-research/zapbench/tree/7347b3b21a3f332e281b774c945f1505dd966abf](https://github.com/google-research/zapbench/tree/7347b3b21a3f332e281b774c945f1505dd966abf)
 
 Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
 
@@ -40,6 +43,6 @@ Decision: **candidate_pending_validation** (2026-10-30). ZAPBench real larval ze
 
 ## Current admission and execution
 
-Preview 0.10: candidate_pending_validation. ZAPBench real larval zebrafish wholebrain activity forecasting is a distinct real task. Needs pinned release, official heldout temporal blocks and neuron mappings; complete brain arrays may be large. No acquisition attempted here, so no permanent infeasibility claim.
+Preview 0.11: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
-[Admission/source evidence](../../../literature/admission-v04-behavior-population.json).
+[Admission/source evidence](../../../experiments/E06/protocol.md). [Actual protocol/worklog](../../../experiments/E06). [Task measurements](../../../results/E06.json).

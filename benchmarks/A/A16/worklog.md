@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). VCL controlled speaker 
 
 ## Current admission and execution
 
-Preview 0.10: candidate_pending_validation. VCL controlled speaker localization supplies positions, but multi-mic calibration/time synchronization and recording-group split must be acquired. Do not infer source identity solely from event detection; no adapter prepared.
+Preview 0.11: candidate_pending_validation. VCL controlled speaker localization supplies positions, but multi-mic calibration/time synchronization and recording-group split must be acquired. Do not infer source identity solely from event detection; no adapter prepared.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

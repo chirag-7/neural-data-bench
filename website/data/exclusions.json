@@ -1,5 +1,54 @@
 [
   {
+    "id": "B06",
+    "resource": "IBL Ephys Atlas feature release",
+    "task": "Brain-region/probe localization from ephys",
+    "family_code": "B",
+    "reason": "Original full atlas tables require private S3/Alyx access not established here; public package fixtures are not a representative atlas benchmark.",
+    "reactivation_requirements": "Establish authorized full-source access and representative specimen-held-out split; alternatives remain possible.",
+    "source_urls": [
+      "https://huggingface.co/int-brain-lab/ea-decoder-channel-xgboost"
+    ],
+    "evidence_file": "literature/admission-v08.json",
+    "review_depth": "Bounded source-specific execution review; no exhaustive unavailability claim",
+    "date": "2026-10-31",
+    "historical_card": "benchmarks/B/B06",
+    "permanent_rejection": false
+  },
+  {
+    "id": "C01",
+    "resource": "Neurofinder",
+    "task": "Calcium ROI detection",
+    "family_code": "C",
+    "reason": "Original data-specific reuse terms unresolved and official hidden test masks unavailable; custom whole-recording training-set holdout is possible once terms resolved.",
+    "reactivation_requirements": "Resolve source data rights, acquire whole-recording groups and independently verify original center-matching scorer.",
+    "source_urls": [
+      "https://github.com/codeneuro/neurofinder-datasets",
+      "https://github.com/codeneuro/neurofinder"
+    ],
+    "evidence_file": "literature/batch-v11-calcium-evidence.json",
+    "review_depth": "Bounded source-specific execution review; no exhaustive unavailability claim",
+    "date": "2026-10-31",
+    "historical_card": "benchmarks/C/C01",
+    "permanent_rejection": false
+  },
+  {
+    "id": "C09",
+    "resource": "CNMF-E published evaluation datasets",
+    "task": "One-photon microendoscopic demixing",
+    "family_code": "C",
+    "reason": "Public real movies are CC0 but no independent real accuracy targets located; algorithm outputs are not independent gold labels.",
+    "reactivation_requirements": "Locate independent multi-recording masks or paired targets, or define explicitly synthetic/semi-synthetic recovery.",
+    "source_urls": [
+      "https://elifesciences.org/articles/28728"
+    ],
+    "evidence_file": "literature/batch-v11-calcium-evidence.json",
+    "review_depth": "Bounded source-specific execution review; no exhaustive unavailability claim",
+    "date": "2026-10-31",
+    "historical_card": "benchmarks/C/C09",
+    "permanent_rejection": false
+  },
+  {
     "id": "D03",
     "resource": "Jaxley examples and simulated dendritic recordings",
     "task": "Dendritic voltage/calcium recovery",
@@ -175,6 +224,22 @@
     "review_depth": "Specific substantive review reusing cited registry/v04 admission evidence; no new acquisition attempt",
     "date": "2026-10-30",
     "historical_card": "benchmarks/K/K03",
+    "permanent_rejection": false
+  },
+  {
+    "id": "L01",
+    "resource": "ChaLearn Connectomics Challenge",
+    "task": "Functional connectivity recovery",
+    "family_code": "L",
+    "reason": "Original author-listed ETH, Duke and NYU mirrors returned HTTP403; authorized Kaggle access not established. This does not show universal inaccessibility or poor data.",
+    "reactivation_requirements": "Complete authorized official challenge access and verify source/scorer contract.",
+    "source_urls": [
+      "https://connectomics.chalearn.org/help/data"
+    ],
+    "evidence_file": "literature/admission-v09.json",
+    "review_depth": "Bounded source-specific execution review; no exhaustive unavailability claim",
+    "date": "2026-10-31",
+    "historical_card": "benchmarks/L/L01",
     "permanent_rejection": false
   },
   {

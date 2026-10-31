@@ -1,0 +1,1300 @@
+{
+  "review_date": "2026-10-31",
+  "scope": "21 requested single-shot submissions across B08,C06,E06,K05,K06,B03,A15; read-only source review",
+  "reviewed": 21,
+  "pending": [],
+  "score_blinding": "Reviewer did not read result scores or execute any candidate/reference.",
+  "global_limitations": [
+    "K05 frozen protocol says selected feature IDs supplied equally, but actual4argument numerical interface supplies no source gene IDs to either general model or reference. Interpret as supervised anonymous selected numeric expression features; no marker-identity-informed comparison.",
+    "B08 frozen harness utility whitelist excludes heapq, whereas prompt ordinary/utilities wording does not clearly expose this exact exclusion. Any whitelist failure mixes interface disclosure and code construction compliance, not scientific compression fidelity alone.",
+    "C06 permits acausal context and unsupervised normalization within each whole test recording; this is distinct from forbidden pooled-test fitted transforms in E06/K05/K06."
+  ],
+  "submissions": [
+    {
+      "benchmark_id": "B08",
+      "model": "gpt-5.6-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/B08/gpt-5.6-sol.json",
+      "submission_file_sha256": "012828dda836d7949cbb660321c2a708739163ed18802317994a504ccc2ccc3e",
+      "code_sha256": "df4a658b8d254695d11ea4e55b2ece66f69cc4f4535caeb097c9471f1141a245",
+      "prompt_sha256": "7572f4c6280846afd010cd76e368f64121dc1379dab09adb88f16d8c1fd40b6d",
+      "code_lines": 177,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import struct, zlib, heapq, numpy as np",
+          "roots": [
+            "struct",
+            "zlib",
+            "heapq",
+            "numpy"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [
+        {
+          "line": 1,
+          "module": "heapq"
+        }
+      ],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_tree": 60,
+        "_add": 66,
+        "_sum": 69,
+        "_find": 73,
+        "_put": 80,
+        "_get": 84,
+        "_gamma_e": 90,
+        "_bit_d": 96,
+        "_gamma_d": 98,
+        "compress": 104,
+        "decompress": 149,
+        "__init__": 4,
+        "_out": 7,
+        "_emit": 11,
+        "put": 15,
+        "finish": 28,
+        "_in": 37,
+        "target": 43,
+        "take": 46
+      },
+      "overall_static_assessment": "harness_whitelist_violation_with_prompt_disclosure_ambiguity",
+      "observations": [
+        "Arithmetic-codes quantized time gaps plus exact label sequence, including per-label refractory minimum in charged metadata. Origin, event count, label dictionary and count tables serialized into blob. Decoder rebuilds state from blob only; no encoder mutation read observed.",
+        "Imports heapq (line1), rejected by frozen codec harness allowed imports. Prompt says usual numerical/utilities and protocol ordinary utilities, so exact exclusion is not clearly disclosed; distinguish harness enforcement from unambiguous scientific-fidelity violation.",
+        "The custom Python arithmetic coder loops over events; runtime and round-trip correctness need independent execution evidence."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "B08",
+      "model": "gpt-6-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/B08/gpt-6-sol.json",
+      "submission_file_sha256": "095e610dd14cfb3a7d7147f26a728cbd9ae7959cd2830c918da9fe2340a7651e",
+      "code_sha256": "64c1b27442585c1da465548be48cd65cecae91d47844d3f06bdb34b263122373",
+      "prompt_sha256": "7572f4c6280846afd010cd76e368f64121dc1379dab09adb88f16d8c1fd40b6d",
+      "code_lines": 178,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import heapq",
+          "roots": [
+            "heapq"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "import struct",
+          "roots": [
+            "struct"
+          ]
+        },
+        {
+          "line": 3,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [
+        {
+          "line": 1,
+          "module": "heapq"
+        }
+      ],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_lengths": 6,
+        "_codes": 32,
+        "compress": 96,
+        "decompress": 141,
+        "__init__": 47,
+        "write": 52,
+        "finish": 60,
+        "read": 75,
+        "symbol": 86
+      },
+      "overall_static_assessment": "harness_whitelist_violation_with_prompt_disclosure_ambiguity",
+      "observations": [
+        "Canonical Huffman gap and label codes; blob contains origin/count/unit dictionary/code lengths and payload sizes. Decoder reconstructs event sequence from blob, with monotone quantized time sums.",
+        "Imports heapq (line1), rejected by frozen codec harness allowed imports; broad prompt ordinary/utilities language makes whitelist disclosure ambiguous.",
+        "100us nearest-grid timing intent meets stated50us tolerance mathematically; floating-point edges, actual equality and runtime remain empirical."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "B08",
+      "model": "gpt-6.1-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/B08/gpt-6.1-sol.json",
+      "submission_file_sha256": "72269ccdec306f96ec62718826c5df3ae3ec0b46a087628ec93f3a9f16f32cff",
+      "code_sha256": "6be104769ef7e6d3385b0da5160871504cec4c89164b8ba86bf85701e455e62b",
+      "prompt_sha256": "7572f4c6280846afd010cd76e368f64121dc1379dab09adb88f16d8c1fd40b6d",
+      "code_lines": 191,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import struct, zlib, lzma, math",
+          "roots": [
+            "struct",
+            "zlib",
+            "lzma",
+            "math"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_pack": 4,
+        "_unpack": 10,
+        "_frame": 14,
+        "_parts": 16,
+        "_model": 22,
+        "_ans": 34,
+        "_unans": 47,
+        "_cat": 62,
+        "_uncat": 71,
+        "_low": 78,
+        "_unlow": 85,
+        "_encd": 93,
+        "_decd": 104,
+        "_groups": 110,
+        "_ties": 113,
+        "_unties": 126,
+        "compress": 140,
+        "decompress": 165
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "Allowed struct/zlib/lzma/math/NumPy imports only. Builds self-contained byte frames containing unit dictionary/counts, origin and adaptive entropy tables; selects global-stream or per-unit interval encoding based only on current input.",
+        "Per-unit decode stably sorts reconstructed quantized times and explicitly restores within-tick label permutation from charged tie metadata. No encoder state or original-array lookup observed; raw float64 fallback exists if quantization check fails.",
+        "100us nearest-grid timing is intentionally lossy and labels/order are intended exact. Source review does not establish ANS/bitpacking/tie permutation round-trip correctness or runtime; independent saved-blob audit is required."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "C06",
+      "model": "gpt-5.6-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/C06/gpt-5.6-sol.json",
+      "submission_file_sha256": "a358578e7fc2d4781c0469044716e1ea3d76f1949ce3d74558bec8943acff8ed",
+      "code_sha256": "afcd04243ff45b814ad6d96e5f0eadb1268f248b3734925a70fec0c3e906401b",
+      "prompt_sha256": "11593c2e786bc00f549dbd9cd16378f54c4ae312627a21ce2c5768b12ed32670",
+      "code_lines": 224,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "from scipy.ndimage import gaussian_filter1d",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 3,
+          "text": "from sklearn.ensemble import ExtraTreesRegressor, HistGradientBoostingRegressor",
+          "roots": [
+            "sklearn"
+          ]
+        },
+        {
+          "line": 4,
+          "text": "from sklearn.linear_model import Ridge",
+          "roots": [
+            "sklearn"
+          ]
+        },
+        {
+          "line": 5,
+          "text": "from sklearn.model_selection import GroupKFold",
+          "roots": [
+            "sklearn"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_shift": 8,
+        "_row_features": 18,
+        "_base_weights": 73,
+        "_fit_models": 82,
+        "_predict_models": 115,
+        "_group_correlation": 125,
+        "_choose_blend": 136,
+        "fit_predict": 156
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "Actual training specimen vector is mapped to group integers solely for weights/GroupKFold and training-only blend calibration.",
+        "Per-record baseline/noise/amplitude/shift features include acausal context and test-row unsupervised statistics. These are allowed within each complete recording. Features are constructed per recording before concatenating tabular examples; no filtering across record boundaries observed.",
+        "Training-only scaler/tree/ridge fits and output clipping are visible. Internal blend metric pools within specimen, whereas official scorer averages neurons within specimen; this is a selection surrogate, not a scorer violation."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "C06",
+      "model": "gpt-6-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/C06/gpt-6-sol.json",
+      "submission_file_sha256": "18198f95575d06026be16c191195638da6709378d5387752a20a82d575de8ddb",
+      "code_sha256": "d0bf401e8f976d315d039670ae807928adf1bad9709aaf6cb8c0da5b7b8def7a",
+      "prompt_sha256": "11593c2e786bc00f549dbd9cd16378f54c4ae312627a21ce2c5768b12ed32670",
+      "code_lines": 114,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "from scipy.ndimage import gaussian_filter1d, percentile_filter",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 3,
+          "text": "from sklearn.ensemble import ExtraTreesRegressor",
+          "roots": [
+            "sklearn"
+          ]
+        },
+        {
+          "line": 4,
+          "text": "from sklearn.linear_model import Ridge",
+          "roots": [
+            "sklearn"
+          ]
+        },
+        {
+          "line": 5,
+          "text": "from sklearn.preprocessing import StandardScaler",
+          "roots": [
+            "sklearn"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "fit_predict": 8,
+        "features": 15
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "Accepts actual specimen vector; groups affect sample weights only. StandardScaler and all regressors fit on training features only.",
+        "Test recording median/noise/percentiles/acausal smoothing are row-local unsupervised feature computations, allowed by this recording contract. No cross-record temporal smoothing observed.",
+        "Final outputs are zero-padded, finite and nonnegative by explicit clipping/sanitization; return units intended expected counts, no conversion to Hz."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "C06",
+      "model": "gpt-6.1-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/C06/gpt-6.1-sol.json",
+      "submission_file_sha256": "284267129e357a0a148e3003f98be323a56e448c63a1b8ff16db13e9385a6d5b",
+      "code_sha256": "d4555d744efdb94b89d980543612ffd73d7001b40b6a16591ff3b3832e9883ae",
+      "prompt_sha256": "11593c2e786bc00f549dbd9cd16378f54c4ae312627a21ce2c5768b12ed32670",
+      "code_lines": 214,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "from scipy.ndimage import gaussian_filter1d, percentile_filter",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 3,
+          "text": "from sklearn.ensemble import ExtraTreesRegressor, GradientBoostingRegressor",
+          "roots": [
+            "sklearn"
+          ]
+        },
+        {
+          "line": 4,
+          "text": "import gc",
+          "roots": [
+            "gc"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_ar1_events": 7,
+        "_record_features": 40,
+        "_fit_models": 96,
+        "_predict_models": 115,
+        "_smooth_blocks": 123,
+        "_validation_score": 131,
+        "fit_predict": 144,
+        "smooth": 53,
+        "shift": 55,
+        "baseline": 57
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "AR1/OASIS-style event extraction is implemented directly in NumPy, with allowed scipy/sklearn calls; no specialist package or external weights imported.",
+        "Per-record fluorescence percentile baselines, AR1 extraction and acausal Gaussian smoothing stay within each record. Training groups define specimen-held-out predictions and training-only blend/amplitude calibration.",
+        "Training validation uses recording correlations averaged within animal, not exact per-neuron concatenation aggregation of final scorer. This is an internal surrogate; no observed outer-test leakage."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "E06",
+      "model": "gpt-5.6-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/E06/gpt-5.6-sol.json",
+      "submission_file_sha256": "cac1c29e0adc969e6735ff4e30a6e339e4a23789072675833797540b5493803f",
+      "code_sha256": "61f566bf6c27518a938f5b5ce7e7518e34891e65d71ff2e5622e014b4ed408dd",
+      "prompt_sha256": "a9b8184757172ae629aa1cdf93d53927bc420d61356e7d6b66dc8b239230727e",
+      "code_lines": 207,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_solve": 4,
+        "_fit_shared": 11,
+        "_predict_shared": 26,
+        "_fit_neuron": 36,
+        "_predict_neuron": 56,
+        "_latent_features": 67,
+        "_fit_latent": 82,
+        "_predict_latent": 109,
+        "_baselines": 119,
+        "_candidates": 134,
+        "_fit_models": 143,
+        "_simplex_weights": 147,
+        "fit_predict": 191
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "Shared/neuron-specific temporal ridge, training-fitted latent basis, and training-validation ensemble weights. All fitted means/bases/coefficients/weights derive from training x/y.",
+        "Every test operation reduces over within-row time/features or applies fixed training coefficients. Output allocates len(test), and no cross-test-row fitting, adjacency inference, smoothing or target access observed; taxis12rows supported.",
+        "Chronological75% inner split has no purge although training windows overlap at stride16 with64context and32targets. Inner training/validation physical frames can overlap; optimistic internal model selection is possible, without contamination of outer test."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "E06",
+      "model": "gpt-6-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/E06/gpt-6-sol.json",
+      "submission_file_sha256": "1408bfeba8191a8e70feb643586997bc0ec6ab6f9d27ac750d5a5eaf1da70d59",
+      "code_sha256": "938e29151bc584e7352f0261c984d560a30f7cece5c47e96835023857ac84f2d",
+      "prompt_sha256": "a9b8184757172ae629aa1cdf93d53927bc420d61356e7d6b66dc8b239230727e",
+      "code_lines": 125,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "from scipy.optimize import minimize",
+          "roots": [
+            "scipy"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_features": 5,
+        "_fit": 20,
+        "_predict": 62,
+        "fit_predict": 83
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "Training-only blocked validation with distance>5 training-row embargo; all scales/means/decays/ensemble weights fitted using training.",
+        "Forecast outputs use each64frame history independently; hardcoded64input/32output lengths match frozen contract, while row count is dynamic and supports taxis.",
+        "No cross-test-row computation or future target access observed. scipy SLSQP and NumPy fits are allowed; finite-output sanitization present."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "E06",
+      "model": "gpt-6.1-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/E06/gpt-6.1-sol.json",
+      "submission_file_sha256": "22e6a34d3ca2287100a0db7fcf82012d7e00b01512f71a8a3d2f29496fe88062",
+      "code_sha256": "8deffc454e5f51c5bf17c0e49aa251e844c944392e67a45997cd20867728d67d",
+      "prompt_sha256": "a9b8184757172ae629aa1cdf93d53927bc420d61356e7d6b66dc8b239230727e",
+      "code_lines": 218,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "from scipy.linalg import eigh",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 4,
+          "text": "from sklearn.utils.parallel import _get_threadpool_controller",
+          "roots": [
+            "sklearn"
+          ]
+        },
+        {
+          "line": 7,
+          "text": "from sklearn.utils.fixes import threadpool_limits",
+          "roots": [
+            "sklearn"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_moments": 11,
+        "_shared_features": 19,
+        "_shared_state": 26,
+        "_shared_predict": 38,
+        "_local_features": 46,
+        "_local_state": 56,
+        "_local_predict": 65,
+        "_global_raw": 71,
+        "_global_state": 80,
+        "_global_features": 99,
+        "_kernel": 104,
+        "_global_path": 113,
+        "_split": 129,
+        "_fit_predict": 149,
+        "fit_predict": 215
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "Training `_split` infers training-window adjacency from shared observations and purges5rows at its chronological boundary; no such inference is applied to test rows.",
+        "Training-only means/scales/eigenbases, shared/local/global regressors and validation hyperparameters. Test kernel compares each test feature vector to fixed training features, not test-to-test fitting.",
+        "Dynamic row count supports taxis;32horizon/64context constants match contract. Private sklearn threadpool utility imports are within allowed sklearn root but version compatibility remains empirical."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "K05",
+      "model": "gpt-5.6-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/K05/gpt-5.6-sol.json",
+      "submission_file_sha256": "3f5941081861b1d92f39b0e1e0a534b2d37cd14396aa6b1c576c1721c4e0f57c",
+      "code_sha256": "06848234db5e5b0809992d0c5eddac734c99a33fbf9e750a74d7a001054ce492",
+      "prompt_sha256": "1a0663291d4f692a158c576d6639ce242f6cf3e28ab8b3bb4b222d2ecbe6162d",
+      "code_lines": 216,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_weights": 4,
+        "_weighted_standardize": 27,
+        "_transform_y": 41,
+        "_inverse_y": 48,
+        "_fit_model": 55,
+        "_predict_model": 110,
+        "_grouped_loss": 120,
+        "_candidates": 137,
+        "_fit_one_target": 151,
+        "fit_predict": 196
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "Correct dictionary contract: group_ids donor and block_ids vectors are used for weighting/leave-one-donor-out validation, never included as predictors.",
+        "Weighted imputation/scaling/supervised numeric-column selection is refitted within each donor fold and on full training; no test-fitted statistics. Numeric features alone are used, no feature-name/marker dictionary access.",
+        "Internal `_grouped_loss` squares mean prediction minus mean truth within block; official scorer averages per-replicate squared errors first. This changes selection risk by ignoring within-block prediction dispersion, but final outputs remain scored by unchanged canonical evaluator."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "K05",
+      "model": "gpt-6-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/K05/gpt-6-sol.json",
+      "submission_file_sha256": "e1f2bae89830f86d830c54f1145eb2de60f7aa71c7675b06ce2e718cafb971ba",
+      "code_sha256": "1d60582016efe41c4fb151a31010991176fc309c1b276e869da223e9c88cac97",
+      "prompt_sha256": "1a0663291d4f692a158c576d6639ce242f6cf3e28ab8b3bb4b222d2ecbe6162d",
+      "code_lines": 154,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 4,
+          "text": "from sklearn.utils.fixes import threadpool_limits",
+          "roots": [
+            "sklearn"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_weights": 15,
+        "_collapse": 27,
+        "_ridge_predictions": 39,
+        "_score_predictions": 63,
+        "_fit_predict": 76,
+        "fit_predict": 152,
+        "__init__": 7,
+        "__enter__": 9,
+        "__exit__": 11
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "Correct donor/block dictionary contract. Training-block collapsing, weights, variance selection and ridge candidates use training data; query predictions do not fit on test.",
+        "Missing-value fill is computed on complete outer-training x before inner donor CV; this leaks inner-validation feature statistics into imputation if NaNs exist, not outer-test statistics. Prepared expression inputs are intended finite; practical effect requires data verification.",
+        "Internal `_score_predictions` matches order of per-row squared errors\u2192block\u2192donor\u2192per-target sqrt. sklearn threadpool utility optional import has fallback; package compatibility not established by static reading."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "K05",
+      "model": "gpt-6.1-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/K05/gpt-6.1-sol.json",
+      "submission_file_sha256": "bbf53e46efb5938bb8ba246386517108aa517d80a64493628f02ad0a9e8d574a",
+      "code_sha256": "a8437d185b4feddff1cf7e5922afb48d238aba3e9bd31864e716b29988c0e8fc",
+      "prompt_sha256": "1a0663291d4f692a158c576d6639ce242f6cf3e28ab8b3bb4b222d2ecbe6162d",
+      "code_lines": 178,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_balanced_weights": 4,
+        "_ridge_path": 16,
+        "_prediction_bank": 40,
+        "_soft_weights": 99,
+        "fit_predict": 106
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "Correct donor/block dictionary contract. Weighted imputation/scaling, variance/correlation screening and ridge bases are fit separately inside donor folds; final transforms fit full training only.",
+        "No external gene names/reference markers or test identifiers used. Model computes each query prediction from fixed training coefficients and explicitly clips fractions[0,1].",
+        "Donor/block-balanced validation weights preserve intended grouping; conservative soft ensemble uses training OOF errors only."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "K06",
+      "model": "gpt-5.6-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/K06/gpt-5.6-sol.json",
+      "submission_file_sha256": "722c333cafb7c42bf8596d3e51e6a22dbf448c6d996fa4e552822763fabf7a36",
+      "code_sha256": "a3d73b5d7d34c04c5f92907039167d5d9bffe94188d873849a75de4f18e47cee",
+      "prompt_sha256": "3c99ed7b37fb4066883ed6482a66d11fc0ffd3e41950889aaf156d7ae584e95f",
+      "code_lines": 214,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "from sklearn.svm import SVC",
+          "roots": [
+            "sklearn"
+          ]
+        },
+        {
+          "line": 3,
+          "text": "from sklearn.ensemble import ExtraTreesClassifier",
+          "roots": [
+            "sklearn"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_unique": 8,
+        "_features": 12,
+        "_prep_fit": 63,
+        "_prep_apply": 79,
+        "_weights": 86,
+        "_metric": 105,
+        "_make_model": 121,
+        "_candidates": 136,
+        "fit_predict": 154
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "Correct group_ids/cv_fold dictionary contract. Mouse/class weights and supplied folds only drive validation/weighting; no ID feature column or test IDs.",
+        "Waveform feature engineering is row-local. Missing-value imputation/scaling refitted inside each supplied fold, then full training. Supervised SVC/ExtraTrees candidates never fit on test.",
+        "Dynamic integer output0/1; deterministic seeds and n_jobs1 tree settings visible. Runtime of many candidate fits remains empirical."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "K06",
+      "model": "gpt-6-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/K06/gpt-6-sol.json",
+      "submission_file_sha256": "445c1946f7bc8e20dae601413c2356887c52c960088faf9f8ae79ab851a4bdc8",
+      "code_sha256": "385c5387ccd45eb7f5280c54144abe292870c8d6e32aca994c08b861da1cc21b",
+      "prompt_sha256": "3c99ed7b37fb4066883ed6482a66d11fc0ffd3e41950889aaf156d7ae584e95f",
+      "code_lines": 125,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "from scipy.ndimage import gaussian_filter1d",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 3,
+          "text": "from scipy.spatial.distance import cdist",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 4,
+          "text": "from sklearn.svm import SVC",
+          "roots": [
+            "sklearn"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "fit_predict": 7,
+        "mouse_weights": 15,
+        "features": 24,
+        "mouse_score": 53
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "Correct mouse IDs/fixed-fold dictionary use for training validation/weights only. Scalar imputation/scaling and waveform centering/scaling trained inside each fold and refit full training.",
+        "RBF distance/kernel scale uses train-train distances; test-train distances only apply fixed fitted classifier. No pooled-test scaling or label fitting.",
+        "Scalar robust-scale expression reverses percentile subtraction and is negative for varying columns, triggering standard-deviation fallback. This is an implementation detail/possible method bug, not outer-test leakage or contract violation."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "K06",
+      "model": "gpt-6.1-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/K06/gpt-6.1-sol.json",
+      "submission_file_sha256": "f0798e7921564fb9a41a6729671bc285ac071de43514c8700ca44d6e7d1ae71b",
+      "code_sha256": "50d9dafff2c4883b9bb26670e6ca3e79201998f1798e994f2a3d1024f2fe3117",
+      "prompt_sha256": "3c99ed7b37fb4066883ed6482a66d11fc0ffd3e41950889aaf156d7ae584e95f",
+      "code_lines": 194,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "from sklearn.svm import SVC",
+          "roots": [
+            "sklearn"
+          ]
+        },
+        {
+          "line": 3,
+          "text": "from sklearn.ensemble import ExtraTreesClassifier",
+          "roots": [
+            "sklearn"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_weights": 9,
+        "_engineer": 20,
+        "_make_model": 103,
+        "_margin": 117,
+        "_utility": 126,
+        "fit_predict": 132,
+        "fit": 65,
+        "fill": 82,
+        "transform": 85
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "Correct group_ids/cv_fold use. Row-local waveform engineering followed by training-fold imputation/scaling and class/mouse-balanced SVC/ExtraTrees.",
+        "Training OOF utility selects mixture; final preprocessing/models refit training only. Test rows only transform/predict.",
+        "Finite fallback and int64 thresholded labels present. No forbidden tools/imports or test-fit transforms observed."
+      ],
+      "limits": [
+        "Read-only source inspection and AST parsing; submitted program not executed by this review.",
+        "No formal proof of causality, codec fidelity, numerical correctness, resource budget or absence of all possible implicit side effects.",
+        "Generation-time no-tool behavior cannot be established from submitted source alone; inspect generation provenance separately."
+      ]
+    },
+    {
+      "benchmark_id": "B03",
+      "model": "gpt-5.6-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/B03/gpt-5.6-sol.json",
+      "submission_file_sha256": "f950262fe354a50c84fd6914c4ee8d93405e121adddb324e246d3648a21ab423",
+      "code_sha256": "a1465c9f9e039da402aa481eb93a927e57785a6058bb97b9bb48fd9784040eb9",
+      "prompt_sha256": "ad53c3a97af54d2ab10051a493b7ab73a718a3ea290810a838e73797d776aec1",
+      "code_lines": 194,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "from scipy.ndimage import gaussian_filter1d",
+          "roots": [
+            "scipy"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_normalize_rows": 5,
+        "_pairwise_shifts": 11,
+        "_linear_solve": 57,
+        "_synchronize": 80,
+        "_registered_feature": 99,
+        "_base_features": 115,
+        "_correction_design": 141,
+        "_fit_correction": 147,
+        "_apply_correction": 159,
+        "fit_predict": 164
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "No simulator imports, hidden recording seeds/periods, source lookup or target regeneration observed. The constants are generic registration/smoothing/regularization settings;5um depth scaling is public prompt information.",
+        "Pairwise shifts/global synchronization and acausal temporal smoothing are computed independently per recording, then whole-training-recording CV fits a ridge correction/scale. No test-to-test borrowing or test-target fitting observed; train_groups is unused None.",
+        "Cross-correlation lag convention uses positive shift for increased depth. Output temporal centering fixes the allowed additive gauge per recording; no test-target sign/scale/time alignment is performed. Learned signed correction derives only from training labels. Actual physical-sign accuracy remains empirical."
+      ],
+      "limits": [
+        "Submitted/reference code not executed; result scores not read.",
+        "No formal proof of numerical correctness, runtime, physiological validity or complete absence of implicit side effects.",
+        "No repairs or frozen-file edits performed."
+      ]
+    },
+    {
+      "benchmark_id": "B03",
+      "model": "gpt-6-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/B03/gpt-6-sol.json",
+      "submission_file_sha256": "c3e67b491044a17ba1402a235ce5c55dd5d8840c4554462c20a714ac4787a2c8",
+      "code_sha256": "8352df8f4dde5fb77cfbbf0b368ab8c9b752975a009bf1a569bbdd5d18121f9c",
+      "prompt_sha256": "ad53c3a97af54d2ab10051a493b7ab73a718a3ea290810a838e73797d776aec1",
+      "code_lines": 109,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "from scipy.ndimage import gaussian_filter1d",
+          "roots": [
+            "scipy"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_trace": 5,
+        "fit_predict": 60
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "No hidden simulator seeds/periods, template truth, procedural target reconstruction or source-identity lookup observed. Public5um spatial scaling is explicit.",
+        "Per-record iterative spatial alignment updates an unsupervised template using only that complete recording. This is allowed offline context, not shared test-population fitting. Test rows processed independently.",
+        "Whole-record training CV chooses spatial/temporal preprocessing and positive scale; full-training scale is bounded0.5\u20132.0. Interpolation grid-minus-shift corresponds to increased-depth positive displacement. Mean subtraction gives allowed per-record gauge; scorer-only sign selection is not present."
+      ],
+      "limits": [
+        "Submitted/reference code not executed; result scores not read.",
+        "No formal proof of numerical correctness, runtime, physiological validity or complete absence of implicit side effects.",
+        "No repairs or frozen-file edits performed."
+      ]
+    },
+    {
+      "benchmark_id": "B03",
+      "model": "gpt-6.1-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/B03/gpt-6.1-sol.json",
+      "submission_file_sha256": "de8f129eb1f060b0e3eb3bc1005b11bdf2c85ade88d7e9a5958fe22cf3ee8ae5",
+      "code_sha256": "12129f8a1c0210674a9a847455b6dbe76ceec32bff7d094f527d147e61943aef",
+      "prompt_sha256": "ad53c3a97af54d2ab10051a493b7ab73a718a3ea290810a838e73797d776aec1",
+      "code_lines": 192,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "from scipy.ndimage import gaussian_filter1d",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 3,
+          "text": "from scipy.sparse import csr_matrix, diags, eye",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 4,
+          "text": "from scipy.sparse.linalg import spsolve",
+          "roots": [
+            "scipy"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_center": 7,
+        "_scale": 11,
+        "_graph": 19,
+        "_refine": 79,
+        "_estimate": 112,
+        "_smooth": 120,
+        "fit_predict": 139
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "np.random.seed(0) is generic algorithm determinism; no use of hidden simulator seeds/periods, simulator generation API or reconstructed target profiles observed. All imposed-motion knowledge is limited to public5um depth-bin scale and broad registration ranges.",
+        "Pairwise displacement graph, robust weights, template refinement and temporal trend denoising operate independently per recording. Training whole-record CV selects preprocessing/smoothers/ensemble and calibrates positive gain; train_groups is unused None.",
+        "Graph equations solve d[j]-d[i]=positive-depth shift with5um scale. Per-record mean centering fixes additive gauge; no heldout sign/scale/temporal alignment or score access. Realized fidelity/sign and sparse solver behavior require independent execution audit."
+      ],
+      "limits": [
+        "Submitted/reference code not executed; result scores not read.",
+        "No formal proof of numerical correctness, runtime, physiological validity or complete absence of implicit side effects.",
+        "No repairs or frozen-file edits performed."
+      ]
+    },
+    {
+      "benchmark_id": "A15",
+      "model": "gpt-5.6-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/A15/gpt-5.6-sol.json",
+      "submission_file_sha256": "e211bce1d9da7a23436aa45668f2cea30d9ffca077bedb975b529df2d0ce9a6c",
+      "code_sha256": "38e5beabf8e313f73dc297ab58364034bad20bb8e7897c478cd03382c1bfeeef",
+      "prompt_sha256": "623cd3f6590b0a8aed01cd5dc99035816884eeac58dd73296ed6ee80936c6f52",
+      "code_lines": 268,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": false,
+      "imports": [
+        {
+          "line": 6,
+          "text": "import gc",
+          "roots": [
+            "gc"
+          ]
+        },
+        {
+          "line": 7,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 8,
+          "text": "from scipy.signal import stft",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 9,
+          "text": "from scipy.ndimage import uniform_filter1d",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 10,
+          "text": "from sklearn.ensemble import HistGradientBoostingClassifier",
+          "roots": [
+            "sklearn"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_finite_length": 16,
+        "_valid_bins": 27,
+        "_edges": 38,
+        "_features": 55,
+        "_sample_map": 91,
+        "_runs": 107,
+        "_processed_intervals": 114,
+        "_reference_intervals": 135,
+        "_matches": 142,
+        "_event_f1": 172,
+        "_classifier": 179,
+        "fit_predict": 191,
+        "augment": 154
+      },
+      "overall_static_assessment": "line_limit_violation",
+      "observations": [
+        "Source is268lines including blanks, violating frozen exclusive240line limit. This is observed submission noncompliance; do not trim/repair or retrospectively redefine counting. Empirical validity and any score must be labeled separately.",
+        "NaN-padded audio valid lengths and-1target tails are found via binary search, consistent with contiguous padding contract. Test output dimensions derive from test_x.shape[1]//32, not longer training dimensions; returned array initialized0and only assigned1inside intervals.",
+        "Feature extraction/STFT/smoothing and20th-percentile noise-floor normalization are applied per recording. Such deterministic unsupervised test-record normalization/acausal context is explicitly allowed. No cross-record temporal filtering or jointly fitted test transform observed.",
+        "train_groups deleted (None); no hidden bird IDs/source filenames. Classifier fitting, event-threshold/gap/duration selection and final refit use training recordings only, including exposed fixed row0,5,...validation recipe."
+      ],
+      "limits": [
+        "Submitted/reference code not executed; result scores not read.",
+        "No formal proof of numerical correctness, runtime, physiological validity or complete absence of implicit side effects.",
+        "No repairs or frozen-file edits performed."
+      ]
+    },
+    {
+      "benchmark_id": "A15",
+      "model": "gpt-6-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/A15/gpt-6-sol.json",
+      "submission_file_sha256": "0dd8675adb7e99a7fa0a4caf10facef8e1ab608ce076d03aa1bb6866e496db56",
+      "code_sha256": "87016ef571285cbc0497c451a7da7d38ba7d0f02a7012f5c40a48c6f13ed706f",
+      "prompt_sha256": "623cd3f6590b0a8aed01cd5dc99035816884eeac58dd73296ed6ee80936c6f52",
+      "code_lines": 142,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "from scipy import fft, ndimage, signal, sparse",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 3,
+          "text": "from scipy.sparse.csgraph import maximum_bipartite_matching",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 4,
+          "text": "from sklearn.ensemble import HistGradientBoostingClassifier",
+          "roots": [
+            "sklearn"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_valid_samples": 13,
+        "_features": 18,
+        "_runs": 41,
+        "_segments": 46,
+        "_event_f1": 60,
+        "_fit_model": 84,
+        "fit_predict": 95
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "Allowed NumPy/SciPy/sklearn imports. Complete finite audio prefix is used before feature construction; number of output bins is dynamic test length//32 and every assignment is integer0/1with padding0.",
+        "STFT/band energy/20th-percentile normalization and temporal smoothing are recording-local. The model never joins recordings into a continuous signal or estimates a pooled test transform. Analytic per-record normalization and offline/acausal context are allowed.",
+        "train_groups unused(None), no hidden IDs. Classifier sampling uses only training labels; exposed whole-record validation row recipe selects event postprocessing. Expanded threshold grid is a training-only procedure choice, not use of heldout labels."
+      ],
+      "limits": [
+        "Submitted/reference code not executed; result scores not read.",
+        "No formal proof of numerical correctness, runtime, physiological validity or complete absence of implicit side effects.",
+        "No repairs or frozen-file edits performed."
+      ]
+    },
+    {
+      "benchmark_id": "A15",
+      "model": "gpt-6.1-sol",
+      "status": "reviewed_read_only",
+      "file": "experiments/A15/gpt-6.1-sol.json",
+      "submission_file_sha256": "03085ecb1a02bb17361247e4fc6150d910dabe15a20efe070c28ea2184ac7524",
+      "code_sha256": "fc558f009ee33ecd5ab28437d52793eab2aa577093e705a96bdf4c52988d1f17",
+      "prompt_sha256": "623cd3f6590b0a8aed01cd5dc99035816884eeac58dd73296ed6ee80936c6f52",
+      "code_lines": 195,
+      "line_limit_exclusive": 240,
+      "line_limit_compliant": true,
+      "imports": [
+        {
+          "line": 1,
+          "text": "import numpy as np",
+          "roots": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 2,
+          "text": "from scipy.fft import rfft",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 3,
+          "text": "from scipy.ndimage import uniform_filter1d",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 4,
+          "text": "from scipy.sparse import csr_matrix",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 5,
+          "text": "from scipy.sparse.csgraph import maximum_bipartite_matching",
+          "roots": [
+            "scipy"
+          ]
+        },
+        {
+          "line": 6,
+          "text": "from sklearn.ensemble import HistGradientBoostingClassifier",
+          "roots": [
+            "sklearn"
+          ]
+        },
+        {
+          "line": 7,
+          "text": "import gc",
+          "roots": [
+            "gc"
+          ]
+        },
+        {
+          "line": 189,
+          "text": "from sklearn.utils.parallel import _get_threadpool_controller",
+          "roots": [
+            "sklearn"
+          ]
+        },
+        {
+          "line": 192,
+          "text": "from sklearn.utils.fixes import threadpool_limits",
+          "roots": [
+            "sklearn"
+          ]
+        }
+      ],
+      "harness_disallowed_imports": [],
+      "observed_forbidden_named_calls": [],
+      "function_start_lines": {
+        "_runs": 17,
+        "_merge": 23,
+        "_event_f1": 32,
+        "_features": 51,
+        "_model": 97,
+        "_fit_predict": 106,
+        "fit_predict": 186
+      },
+      "overall_static_assessment": "no_observed_material_contract_violation",
+      "observations": [
+        "Allowed NumPy/SciPy/sklearn/gc imports only; optional private sklearn threadpool-control utility is allowed by package root, while runtime version compatibility remains empirical. No files, source lookups, bird IDs or external model assets observed.",
+        "Finite sample counts determine each complete32sample bin count. Each recording is separately trimmed before STFT; output shape derives from current test_x length//32 and is initialized0with only interval slices assigned1. Different train/test padding widths do not create hardcoded output mismatch.",
+        "Within-record20th/95th energy percentiles, spectral noise floor, bidirectional lags and smoothing use allowed deterministic analytic/acausal test context. No cross-record temporal borrowing, pooled test fit or test-label access observed.",
+        "Fixed whole-training-record validation controls ensemble, smoothing and event threshold/gap/minimum duration; all classifier fitting/refitting is training-only. train_groups remains unusedNone; source attribution/modification notice is included."
+      ],
+      "limits": [
+        "Submitted/reference code not executed; result scores not read.",
+        "No formal proof of numerical correctness, runtime, physiological validity or complete absence of implicit side effects.",
+        "No repairs or frozen-file edits performed."
+      ]
+    }
+  ]
+}

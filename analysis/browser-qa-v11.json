@@ -1,0 +1,16 @@
+{
+  "release": "0.11",
+  "local_preview_http_status": 200,
+  "published_release_verified": true,
+  "tested": [
+    "C06 primary and predeclared count-error selection updates bothplots",
+    "B08 named Spikepack reference and two preserved failures",
+    "Analysis observed/synthetic scope selector changes task/slice denominators and excludes B08",
+    "Mobile B08 at390x844 has2charts,documentwidth375 with no horizontal overflow"
+  ],
+  "mobile_viewport_reset": true,
+  "console_errors": 0,
+  "screenshot": "docs/assets/batch-v11.png",
+  "screenshot_sha256": "94a4810f05043f002c73fd55a8043c52c4d7b46ad4d5c578dc5db07c16b9927a",
+  "limitations": "Browser exercises representative controls; complete source-render route checks are separate, not all299realbrowserinteractions."
+}

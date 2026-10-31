@@ -1,0 +1,47 @@
+{
+  "benchmark_id": "A15",
+  "run_id": "batch-v11",
+  "verification_status": "passed",
+  "complete": true,
+  "source_files_verified": 163,
+  "n_test_recordings": 20,
+  "n_test_birds": 1,
+  "source_label_events": 1519,
+  "measured_attempts": [
+    {
+      "model": "gpt-5.6-sol",
+      "score": 0.9863118287200278,
+      "prediction_sha256": "9c7a7aecb371a875294912762bb62a492015ca3409610d964ceff2f974aae617",
+      "program_sha256": "38e5beabf8e313f73dc297ab58364034bad20bb8e7897c478cd03382c1bfeeef",
+      "independent_maximum_bipartite_event_matching": true,
+      "original_source_intervals_verified": true
+    },
+    {
+      "model": "gpt-6-sol",
+      "score": 0.9868545569755686,
+      "prediction_sha256": "6f6045bbe84f807a00f58948ec4ac680ee122addfd26486da135aeaaf36a8132",
+      "program_sha256": "87016ef571285cbc0497c451a7da7d38ba7d0f02a7012f5c40a48c6f13ed706f",
+      "independent_maximum_bipartite_event_matching": true,
+      "original_source_intervals_verified": true
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "score": 0.9920795405521152,
+      "prediction_sha256": "5e78d6ad989433f3d401f62f6bacf4ea9e9d94f843d42df77e9bcef69c315c0c",
+      "program_sha256": "fc558f009ee33ecd5ab28437d52793eab2aa577093e705a96bdf4c52988d1f17",
+      "independent_maximum_bipartite_event_matching": true,
+      "original_source_intervals_verified": true
+    },
+    {
+      "model": "task-baseline",
+      "score": 0.9809624469472951,
+      "prediction_sha256": "5e9e6b11b11244d12710bfed1e3f14db58b4998cd40fbd2dfd671cf82a2e18f6",
+      "program_sha256": "024352b9c6daf559c20535c8b04eaa2ace2670d496e64fff0eccce779e675fba",
+      "independent_maximum_bipartite_event_matching": true,
+      "original_source_intervals_verified": true
+    }
+  ],
+  "failed_attempts": [],
+  "missing_models": [],
+  "models_or_references_executed": false
+}

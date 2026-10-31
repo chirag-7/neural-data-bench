@@ -1,0 +1,6 @@
+{
+  "model.pkl": "version https://git-lfs.github.com/spec/v1\noid sha256:8416f4c7b6477c52105e1fa0ece379ae60eeaac2d18aac0b719ee0924ce6ea13\nsize 59762\n",
+  "datamodule_sim.pkl": "version https://git-lfs.github.com/spec/v1\noid sha256:d985c4bdccbd7e5aeedde85833f12f824c426bc3a44086c087b4f5adab030978\nsize 18031030\n",
+  "datamodule_train.pkl": "version https://git-lfs.github.com/spec/v1\noid sha256:7c1f76fda99c217d8e0cd17b8085aa55112f8d99d0858d5f226d827b4f2f761b\nsize 18223748\n",
+  "simulator.pkl": "version https://git-lfs.github.com/spec/v1\noid sha256:a8674123b65bb2b29733ac563f5bd7baf3f7bac59706e9dc9f5dbead2d6d9a9e\nsize 31885\n"
+}

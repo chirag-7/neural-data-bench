@@ -44,3 +44,9 @@ H02 adds one 25-person P300 source with 15/10 subject split; it does not complet
 ## Posterior-inference addition in preview 0.9
 
 L06 covers likelihood-informed posterior sampling for a ten-parameter spiking-neuron GLM. All ten simulated observations share a design. This adds an uncertainty/distribution endpoint but not broad mechanistic simulator fitting, likelihood-free SBI, causal recovery or biological validation. [Protocol](../experiments/L06/protocol.md). B07 is now executed under a separate short chunk lossless-compression contract; see [release0.10](release-v10.md).
+
+## Preview 0.11 execution update
+
+The active execution map now has 92 tasks across 14 families; 30 task IDs have measured custom slices. This is 32.6% of the active map, not a percentage of all neuroscience or of paper completion. Sixty-two active tasks remain unrun. Twenty-two historical candidates are archived with reactivation conditions; all 114 mapped historical IDs remain traceable. Four newly archived proposals are C01 (rights/test contract), C09 (independent real targets), B06 (configured full-source access) and L01 (original mirrors/access). E02 is deferred for independent-trial/generator/scorer construction despite accessible CC0 artifacts.
+
+The seven-task batch broadens measured operations within existing families: acoustic event segmentation; synthetic motion recovery; spike-event storage; paired calcium/electrical inference; population forecasting; molecular fraction calibration; and waveform-based cell classification. It adds no new family and cannot establish exhaustive subtask coverage. The current track tests general models generating numerical programs, not direct raw-data perception, pretrained world models or unrestricted specialist-tool agents. Claims about those tracks remain untested. See [release](release-v11.md), [exclusions](../registry/excluded-candidates.json) and [coverage audit](neuroscience_coverage_audit.md).

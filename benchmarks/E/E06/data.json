@@ -1,14 +1,15 @@
 {
   "benchmark_id": "E06",
-  "input": "Larval zebrafish light-sheet volumes and extracted cellular traces",
-  "ground_truth": "Future measured calcium activity",
+  "input": "64 observed past frames by 256 response-independently selected neurons",
+  "ground_truth": "Next 32 observed calcium frames in native dF/F units",
   "sources": [
     "https://google-research.github.io/zapbench/",
     "https://arxiv.org/abs/2503.02618",
-    "https://zapbench-release.storage.googleapis.com/volumes/README.html"
+    "https://zapbench-release.storage.googleapis.com/volumes/README.html",
+    "https://github.com/google-research/zapbench/tree/7347b3b21a3f332e281b774c945f1505dd966abf"
   ],
-  "license_status": "CC BY 4.0 explicitly stated in official dataset README",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "experiments/E06/data-manifest.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "E06",
@@ -31,9 +32,10 @@
     "evidence": "literature/admission-v04-behavior-population.json"
   },
   "current_execution": {
-    "release": "0.10",
-    "status": "candidate_pending_validation",
-    "slice": null,
-    "evidence": "literature/admission-v04-behavior-population.json"
-  }
+    "release": "0.11",
+    "status": "measured",
+    "slice": "One zebrafish brain/session; 272 training windows, 43 temporal-tail tests and 12 unseen-taxis tests; same programs reused.",
+    "evidence": "experiments/E06/protocol.md"
+  },
+  "executed_slice": "One zebrafish brain/session; 272 training windows, 43 temporal-tail tests and 12 unseen-taxis tests; same programs reused."
 }

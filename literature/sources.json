@@ -1685,7 +1685,8 @@
     "id": "S8a63470177",
     "url": "https://dandiarchive.org/dandiset/000953",
     "benchmark_ids": [
-      "G01"
+      "G01",
+      "B08"
     ],
     "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
     "reviewed_on": "2026-10-30"
@@ -1938,6 +1939,141 @@
     "url": "https://www.biorxiv.org/content/10.1101/2023.05.22.541700v2",
     "benchmark_ids": [
       "B07"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S205fff98f6",
+    "url": "https://doi.org/10.25625/ENKMJS",
+    "benchmark_ids": [
+      "A15"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S486a6eba12",
+    "url": "https://doi.org/10.6084/m9.figshare.4805749",
+    "benchmark_ids": [
+      "A15"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sa3f7dcddc7",
+    "url": "https://www.vocalpy.org/bfsongrepo/",
+    "benchmark_ids": [
+      "A15"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S6ed84f71ae",
+    "url": "https://figshare.com/articles/dataset/4805749",
+    "benchmark_ids": [
+      "A15"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S4e20f600b1",
+    "url": "https://spikeinterface.readthedocs.io/en/latest/api.html",
+    "benchmark_ids": [
+      "B03"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S9a924078c7",
+    "url": "https://github.com/SpikeInterface/spikeinterface",
+    "benchmark_ids": [
+      "B03"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sa426c8758c",
+    "url": "https://proceedings.neurips.cc/paper/2021/hash/b950ea26ca12daae142bd74dba4427c8-Abstract.html",
+    "benchmark_ids": [
+      "B03"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S2328ee2627",
+    "url": "https://github.com/HelmchenLabSoftware/Cascade/tree/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f",
+    "benchmark_ids": [
+      "C06"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sa551f088ba",
+    "url": "https://github.com/HelmchenLabSoftware/Cascade/blob/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f/cascade2p/utils.py",
+    "benchmark_ids": [
+      "C06"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sbe4340aacb",
+    "url": "https://github.com/HelmchenLabSoftware/Cascade/blob/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f/LICENSE",
+    "benchmark_ids": [
+      "C06"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S40982f7e9a",
+    "url": "https://github.com/google-research/zapbench/tree/7347b3b21a3f332e281b774c945f1505dd966abf",
+    "benchmark_ids": [
+      "E06"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "Sc6ee503fe5",
+    "url": "https://zenodo.org/records/14969244",
+    "benchmark_ids": [
+      "K05"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S3351baeea8",
+    "url": "https://doi.org/10.1016/j.neuron.2021.09.002",
+    "benchmark_ids": [
+      "K06"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S55d6bbb0b1",
+    "url": "https://github.com/petersenpeter/CellExplorer",
+    "benchmark_ids": [
+      "K06"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S0013cedea3",
+    "url": "https://alleninstitute.org/legal/terms-of-use",
+    "benchmark_ids": [
+      "K06"
     ],
     "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
     "reviewed_on": "2026-10-30"

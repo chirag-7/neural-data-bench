@@ -1,0 +1,55 @@
+[
+  {
+    "benchmark_id": "C01",
+    "decision": "REMOVE_ACTIVE",
+    "reason": "Original data-specific reuse terms unresolved and official hidden test masks unavailable; custom whole-recording training-set holdout is possible once terms resolved.",
+    "reactivation_requirements": "Resolve source data rights, acquire whole-recording groups and independently verify original center-matching scorer.",
+    "evidence_file": "literature/batch-v11-calcium-evidence.json",
+    "source_urls": [
+      "https://github.com/codeneuro/neurofinder-datasets",
+      "https://github.com/codeneuro/neurofinder"
+    ],
+    "reviewed_on": "2026-10-31",
+    "review_depth": "Bounded source-specific execution review; no exhaustive unavailability claim",
+    "preserve_evidence_archive": true
+  },
+  {
+    "benchmark_id": "C09",
+    "decision": "REMOVE_ACTIVE",
+    "reason": "Public real movies are CC0 but no independent real accuracy targets located; algorithm outputs are not independent gold labels.",
+    "reactivation_requirements": "Locate independent multi-recording masks or paired targets, or define explicitly synthetic/semi-synthetic recovery.",
+    "evidence_file": "literature/batch-v11-calcium-evidence.json",
+    "source_urls": [
+      "https://elifesciences.org/articles/28728"
+    ],
+    "reviewed_on": "2026-10-31",
+    "review_depth": "Bounded source-specific execution review; no exhaustive unavailability claim",
+    "preserve_evidence_archive": true
+  },
+  {
+    "benchmark_id": "B06",
+    "decision": "REMOVE_ACTIVE",
+    "reason": "Original full atlas tables require private S3/Alyx access not established here; public package fixtures are not a representative atlas benchmark.",
+    "reactivation_requirements": "Establish authorized full-source access and representative specimen-held-out split; alternatives remain possible.",
+    "evidence_file": "literature/admission-v08.json",
+    "source_urls": [
+      "https://huggingface.co/int-brain-lab/ea-decoder-channel-xgboost"
+    ],
+    "reviewed_on": "2026-10-31",
+    "review_depth": "Bounded source-specific execution review; no exhaustive unavailability claim",
+    "preserve_evidence_archive": true
+  },
+  {
+    "benchmark_id": "L01",
+    "decision": "REMOVE_ACTIVE",
+    "reason": "Original author-listed ETH, Duke and NYU mirrors returned HTTP403; authorized Kaggle access not established. This does not show universal inaccessibility or poor data.",
+    "reactivation_requirements": "Complete authorized official challenge access and verify source/scorer contract.",
+    "evidence_file": "literature/admission-v09.json",
+    "source_urls": [
+      "https://connectomics.chalearn.org/help/data"
+    ],
+    "reviewed_on": "2026-10-31",
+    "review_depth": "Bounded source-specific execution review; no exhaustive unavailability claim",
+    "preserve_evidence_archive": true
+  }
+]

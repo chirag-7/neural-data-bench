@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.10: Brain Invaders2012 calibration runs: 15 training and10 held-out people; 11,481/7,663 epochs,16 EEG channels; equal-person ROC-AUC.
+Preview 0.11: Brain Invaders2012 calibration runs: 15 training and10 held-out people; 11,481/7,663 epochs,16 EEG channels; equal-person ROC-AUC.
 
 [Actual frozen contract and implementation](../../../experiments/H02). [Measured method/reference records](../../../results/H02.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

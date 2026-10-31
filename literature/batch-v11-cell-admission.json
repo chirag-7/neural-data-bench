@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-31",
+  "endpoints": [
+    {
+      "benchmark_id": "K05",
+      "status": "ready for parent review and freeze",
+      "protocol": "outputs/neural-data-bench/experiments/K05/protocol.md",
+      "adapter": "outputs/neural-data-bench/experiments/K05/adapter.py",
+      "source_manifest": "outputs/neural-data-bench/experiments/K05/source.json",
+      "metadata": "outputs/neural-data-bench/data/cache/K05/metadata.json",
+      "verification": "outputs/neural-data-bench/experiments/K05/verification.json",
+      "source_bytes": 9275722,
+      "prepared_bytes": 723125,
+      "train_shape": [
+        39,
+        2000
+      ],
+      "test_shape": [
+        24,
+        2000
+      ],
+      "contract": "fit_predict(train_x,train_y,test_x,train_groups)",
+      "primary_metric": "donor_block_macro_rmse",
+      "source_revision": "96131ef436fdaa9a9b2129983ac7bd6868204fc4",
+      "source_terms": "Upstream repository MIT includes downloaded processed count TSV, fraction CSV, analysis code and README; no raw human sequencing/images redistributed",
+      "blockers": [],
+      "scope_limit": "Supervised bulk-to-orthogonal-fraction calibration; not reference-only deconvolution",
+      "adapter_sha256": "7e23056a1cea95f637dfcf35bbd5432b6b07274e288d3635ca9d59c9e4de2410",
+      "data_sha256": "8bd473e7aae9512cd4896e6911eaca9b20dbca0ca115718639ee57d784838d59",
+      "predictive_method_executions": 0,
+      "model_calls": 0,
+      "notes": "Parent may freeze only after reviewing exact scientific scope, split, rights and grouped scorer. Group IDs supplied to training validation only. No publication/site/central-registry changes."
+    },
+    {
+      "benchmark_id": "K06",
+      "status": "ready for parent review and freeze",
+      "protocol": "outputs/neural-data-bench/experiments/K06/protocol.md",
+      "adapter": "outputs/neural-data-bench/experiments/K06/adapter.py",
+      "source_manifest": "outputs/neural-data-bench/experiments/K06/source.json",
+      "metadata": "outputs/neural-data-bench/data/cache/K06/metadata.json",
+      "verification": "outputs/neural-data-bench/experiments/K06/verification.json",
+      "source_bytes": 280712692,
+      "prepared_bytes": 136899,
+      "train_shape": [
+        136,
+        87
+      ],
+      "test_shape": [
+        71,
+        87
+      ],
+      "contract": "fit_predict(train_x,train_y,test_x,train_groups)",
+      "primary_metric": "class_balanced_mouse_accuracy",
+      "source_revision": "47148748886935c6bda208405f479a864a4add80",
+      "source_terms": "Allen Institute Terms of Use, research/noncommercial with attribution, applies to original Allen source content; CellExplorer code BSD-3-Clause is retained separately and not asserted to license contributor data",
+      "blockers": [],
+      "scope_limit": "Binary Allen-only optotagged PV/SST waveform inference",
+      "adapter_sha256": "afb0a00c18ca8939c5a1b62614118ece123ea1ef0880f25f0ec9fe87f49608ec",
+      "data_sha256": "b1cdab0c3433baacd59792a039e9726e34404ffa5ee539235673a42a301da4f9",
+      "predictive_method_executions": 0,
+      "model_calls": 0,
+      "notes": "Parent may freeze only after reviewing exact scientific scope, split, rights and grouped scorer. Group IDs supplied to training validation only. No publication/site/central-registry changes."
+    }
+  ]
+}

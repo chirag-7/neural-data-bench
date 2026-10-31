@@ -86,7 +86,7 @@ for (const id of summary.measured_task_ids) {
   )
     throw Error("Both plots required:" + id);
   if (
-    ["B01", "J08", "H08", "H01", "H02", "C05", "A09", "I10", "K04", "M01", "L06", "B07"].includes(id) &&
+    ["B01", "J08", "H08", "H01", "H02", "C05", "A09", "I10", "K04", "M01", "L06", "B07", "B03", "B08", "C06", "E06", "K05", "K06", "A15"].includes(id) &&
     (!text.includes('class="direct-reference-label"') ||
       !text.includes('aria-label="Named reference scores"'))
   )
@@ -111,13 +111,38 @@ for (const row of posteriorRows.filter(r=>r.status==="measured")) {
 }
 vm.runInContext("l06Metric='c2st';l06Observation='mean'",ctx);
 ctx.location.hash = "#/analysis";vm.runInContext("analysisScope='observed_data';draw()",ctx);
-if(!el("#app").innerHTML.includes("This view excludes fully synthetic B01 and L06")) throw Error("Default observed-data exclusion scope missing");
+if(!el("#app").innerHTML.includes("This view excludes fully synthetic B01, B03 and L06")) throw Error("Default observed-data exclusion scope missing");
 el("#analysis-scope").onchange({target:{value:"all"}});
-if(!el("#app").innerHTML.includes("This view includes fully synthetic B01 and L06")) throw Error("Synthetic-inclusive scope handler failed");
+if(!el("#app").innerHTML.includes("This view includes fully synthetic B01, B03 and L06")) throw Error("Synthetic-inclusive scope handler failed");
 for(const pair of summary.paired_macro_summaries){
- if(pair.exploratory.n_tasks-pair.observed_data.n_tasks!==2) throw Error("Two fully synthetic tasks must be separated from generation aggregates");
- if(pair.observed_data.task_summaries.some(t=>["B01","L06","M04","N05"].includes(t.benchmark_id))) throw Error("Synthetic/correctness task leaked into observed-data view");
+ if(pair.exploratory.n_tasks-pair.observed_data.n_tasks!==3) throw Error("Three fully synthetic tasks must be separated from generation aggregates");
+ if(pair.observed_data.task_summaries.some(t=>["B01","B03","L06","M04","N05","B08"].includes(t.benchmark_id))) throw Error("Synthetic/correctness task leaked into observed-data view");
 }
+for (const pair of summary.paired_macro_summaries) {
+ if ([pair.exploratory,pair.observed_data].some(scope=>scope.task_summaries.some(task=>task.benchmark_id==="B08"))) throw Error("Ambiguous B08 contract leaked into version aggregates");
+}
+for (const reference of summary.reference_envelopes.filter(row=>row.benchmark_id==="B08")) {
+ if (reference.aggregate_eligible !== false) throw Error("B08 reference must be explicitly aggregate-ineligible");
+}
+for (const [id,name] of [["B03","SpikeInterface · decentralized registration"],["B08","Spikepack · 100 µs grid"],["C06","OASIS AR1 · training-calibrated"],["E06","NLinear · analytical ridge1"],["K05","Donor-CV weighted ridge"],["K06","Mouse-CV SVM / ExtraTrees"],["A15","Spectral boosting · event-CV"]]) {
+ vm.runInContext(`selectedSlice='';renderChart('#test-chart','${id}')`,ctx);
+ if (!el("#test-chart").innerHTML.includes(name)) throw Error("Missing readable batch reference: "+id);
+}
+vm.runInContext("selectedSlice='';c06Metric='primary';renderChart('#test-chart','C06')",ctx);
+if (!el("#test-chart").innerHTML.includes("Pearson correlation ignores amplitude calibration")) throw Error("Calcium calibration caveat missing");
+el("#metric-picker").onchange({target:{value:"relative-error"}});
+const calciumRows=JSON.parse(fs.readFileSync(path.join(root,"website/data/C06.json"),"utf8"));
+for(const row of calciumRows.filter(row=>row.status==="measured")) {
+ const totals=new Map();
+ for(const cell of row.cell_results) {
+  const state=totals.get(cell.animal)||[0,0];state[0]+=cell.relative_error;state[1]++;totals.set(cell.animal,state);
+ }
+ const expected=[...totals.values()].reduce((total,[sum,n])=>total+sum/n,0)/totals.size;
+ if(!el("#test-chart").innerHTML.includes(expected.toFixed(4))) throw Error("Animal-equal relative count-error plot mismatch: "+row.model);
+}
+if(!el("#test-chart").innerHTML.includes("predeclared secondary")) throw Error("Secondary count error must be labeled predeclared");
+vm.runInContext("c06Metric='primary';selectedSlice='';renderChart('#test-chart','B08')",ctx);
+if(!el("#test-chart").innerHTML.includes("Two heapq import-whitelist failures are retained")) throw Error("B08 whitelist ambiguity not visible");
 vm.runInContext("analysisScope='observed_data'",ctx);
 vm.runInContext("selectedSlice='';renderChart('#test-chart','G01')", ctx);
 if (!el("#test-chart").innerHTML.includes("FALCON-style ridge"))

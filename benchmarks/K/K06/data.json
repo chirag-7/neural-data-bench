@@ -1,15 +1,18 @@
 {
   "benchmark_id": "K06",
-  "input": "Waveform/firing metrics and optotagged/identified cell classes",
-  "ground_truth": "Curated PV, SST, pyramidal, axo-axonic, VGAT and VIP identities",
+  "input": "87 waveform-only features; genetic IDs, anatomical region, firing/ISI/ACG and optoresponses excluded",
+  "ground_truth": "Optotagged PV/SST labels independently joined to original cell IDs",
   "sources": [
     "https://cellexplorer.org/publicdata/ground-truth-data/",
     "https://cellexplorer.org/tutorials/ground-truth-tutorial/",
     "https://alleninstitute.github.io/openscope_databook/optotagging/",
-    "https://api.github.com/repos/petersenpeter/CellExplorer/contents/%2BgroundTruthData"
+    "https://api.github.com/repos/petersenpeter/CellExplorer/contents/%2BgroundTruthData",
+    "https://doi.org/10.1016/j.neuron.2021.09.002",
+    "https://github.com/petersenpeter/CellExplorer",
+    "https://alleninstitute.org/legal/terms-of-use"
   ],
-  "license_status": "Not independently reviewed",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/K06.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "K06",
@@ -33,9 +36,10 @@
     "evidence": "literature/admission-v04-cell-workflow.json"
   },
   "current_execution": {
-    "release": "0.10",
-    "status": "candidate_pending_validation",
-    "slice": null,
-    "evidence": "literature/admission-v04-cell-workflow.json"
-  }
+    "release": "0.11",
+    "status": "measured",
+    "slice": "207 cells from 16 mice: 136 train/11 mice, 71 test/five mice.",
+    "evidence": "experiments/K06/protocol.md"
+  },
+  "executed_slice": "207 cells from 16 mice: 136 train/11 mice, 71 test/five mice."
 }

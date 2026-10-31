@@ -33,7 +33,7 @@
     "evidence": "literature/admission-v04-behavior-population.json"
   },
   "current_execution": {
-    "release": "0.10",
+    "release": "0.11",
     "status": "measured",
     "slice": "All 16 original AIND/IBL recordings: one fixed 4,096-sample chunk, all 384 channels and original int16 bytes per recording; 14 source animals.",
     "evidence": "experiments/B07/protocol.md"

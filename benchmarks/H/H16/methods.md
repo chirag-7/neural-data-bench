@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.10: EEGdenoiseNet: 2,000 training and 600 test clean-plus-EOG mixtures, with disjoint source components.
+Preview 0.11: EEGdenoiseNet: 2,000 training and 600 test clean-plus-EOG mixtures, with disjoint source components.
 
 [Actual frozen contract and implementation](../../../experiments/H16). [Measured method/reference records](../../../results/H16.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

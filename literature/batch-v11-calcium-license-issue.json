@@ -1,0 +1,9 @@
+{
+  "html_url": "https://github.com/codeneuro/neurofinder/issues/28",
+  "title": "License for datasets?",
+  "state": "open",
+  "comments": 0,
+  "created_at": "2019-08-19T14:45:27Z",
+  "updated_at": "2019-08-19T14:45:27Z",
+  "body": "What is the license for the example datasets provided on http://neurofinder.codeneuro.org?\r\n\r\nI'd like to repackage/redistribute some of this as NWBv2 files for testing some of our tools (https://github.com/OpenSourceBrain/NWBShowcase), and they could provide good examples for testing other NWB applications."
+}

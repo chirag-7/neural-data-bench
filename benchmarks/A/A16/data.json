@@ -31,7 +31,7 @@
     "evidence": "literature/admission-v04-behavior-population.json"
   },
   "current_execution": {
-    "release": "0.10",
+    "release": "0.11",
     "status": "candidate_pending_validation",
     "slice": null,
     "evidence": "literature/admission-v04-behavior-population.json"

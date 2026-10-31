@@ -2,7 +2,10 @@
   "benchmark_id": "B03",
   "source_urls": [
     "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
-    "https://github.com/evarol/dredge"
+    "https://github.com/evarol/dredge",
+    "https://spikeinterface.readthedocs.io/en/latest/api.html",
+    "https://github.com/SpikeInterface/spikeinterface",
+    "https://proceedings.neurips.cc/paper/2021/hash/b950ea26ca12daae142bd74dba4427c8-Abstract.html"
   ],
-  "admission_evidence": "literature/admission-v04-behavior-population.json"
+  "admission_evidence": "experiments/B03/protocol.md"
 }

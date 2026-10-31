@@ -1,0 +1,63 @@
+{
+  "benchmark_id": "B03",
+  "reviewed_on": "2026-10-31",
+  "status": "prepared_awaiting_parent_review_and_freeze",
+  "source_type": "official procedural synthetic generator",
+  "source_urls": [
+    "https://spikeinterface.readthedocs.io/en/latest/api.html",
+    "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+    "https://github.com/SpikeInterface/spikeinterface"
+  ],
+  "software_versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "spikeinterface": "0.105.4",
+    "probeinterface": "0.4.2",
+    "numba": "0.68.1",
+    "numerical_threads": 1,
+    "dependencies": "Existing work/spike-deps and work/pilot-deps read-only. NUMBA_CACHE_DIR isolated under work/batch-v11-motion/numba-cache. No installations or shared dependency changes."
+  },
+  "protocol": "experiments/B03/protocol.md",
+  "adapter": "experiments/B03/adapter.py",
+  "source_manifest": "experiments/B03/source-manifest.json",
+  "data_manifest": "experiments/B03/data-manifest.json",
+  "validation": "experiments/B03/validation.json",
+  "prepared_bytes": 58748,
+  "retained_simulation_archive_bytes": 3948715,
+  "data_sha256": "f10ca63a49e7179322e61116025eb2466a0d3f3d7628620a32d228ce597ae487",
+  "contract": {
+    "simulations": 8,
+    "seconds_per_simulation": 90,
+    "channels": 64,
+    "units": 64,
+    "fs_hz": 20000,
+    "train_simulations": 4,
+    "test_simulations": 4,
+    "input_shape": [
+      4,
+      90,
+      132
+    ],
+    "target_shape": [
+      4,
+      90
+    ],
+    "time_bin_seconds": 1,
+    "depth_bin_um": 5,
+    "target": "1second mean of actual quantized5Hz injected rigid displacement, per-recording mean removed",
+    "primary": "equal-recording RMSE micrometers after per-recording offset removal"
+  },
+  "fixed_reference": "Original SI0.105.4 decentralized pairwise-registration+globalLSMR numerical routines on identical count rasters; explicit custom front end, not full DREDge/current SOTA",
+  "evidence": "All simulator metadata regenerated, every source spike vector and per-spike template displacement checked, every first-second voltage checksum reproduced; no algorithm-estimated motion gold.",
+  "limitations": [
+    "Synthetic ellipsoid waveform family and rigid-only motion",
+    "Processed count rasters, no raw-voltage motion capability claim",
+    "Four heldout simulator seeds, no biological subject generalization",
+    "Seeds/periods/gold trajectories must stay outside model prompt",
+    "Version-specific0.105.4 web pages unavailable; exact local installed source pinned by content hashes"
+  ],
+  "no_real_method_scores": true,
+  "no_model_calls": true,
+  "no_central_edits": true
+}

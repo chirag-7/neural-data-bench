@@ -4,7 +4,10 @@
     "https://cellexplorer.org/publicdata/ground-truth-data/",
     "https://cellexplorer.org/tutorials/ground-truth-tutorial/",
     "https://alleninstitute.github.io/openscope_databook/optotagging/",
-    "https://api.github.com/repos/petersenpeter/CellExplorer/contents/%2BgroundTruthData"
+    "https://api.github.com/repos/petersenpeter/CellExplorer/contents/%2BgroundTruthData",
+    "https://doi.org/10.1016/j.neuron.2021.09.002",
+    "https://github.com/petersenpeter/CellExplorer",
+    "https://alleninstitute.org/legal/terms-of-use"
   ],
-  "admission_evidence": "literature/admission-v04-cell-workflow.json"
+  "admission_evidence": "experiments/K06/protocol.md"
 }

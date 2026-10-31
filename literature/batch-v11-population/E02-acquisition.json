@@ -1,0 +1,25 @@
+{
+  "benchmark_id": "E02",
+  "status": "not admitted for this batch; reacquirable canonical extension",
+  "source_commit": "051e11e9063ae958ddf01035c701c61d35f67e6a",
+  "source_repo": "https://github.com/snel-repo/ComputationThroughDynamicsToolkit",
+  "publication_release": "https://doi.org/10.5281/zenodo.22236312",
+  "archive": "data/cache/E02/raw/CtDToolkit-publication-data-v1.0.0.zip",
+  "bytes": 20234744,
+  "sha256": "5be2e40202b145137a4b3f61130567af9df3828d7f1a5732557240fd2ac282d6",
+  "zenodo_md5_verified": true,
+  "rights": {
+    "source": "BSD-3-Clause except specified MIT subdirectory",
+    "project_data_and_pretrained": "CC0-1.0"
+  },
+  "blocker": "Compact portable publication arrays cannot support independent neural dynamics recovery: multi-trial examples are pre-fitted PCA/model-derived trajectories; raw spike/truth pair is one exemplar trial. Canonical per-trial generator and full latent truth not executed in this bounded batch.",
+  "not_a_blocker": "Rights verified; public canonical3BFF subset only36346425 bytes and can be acquired directly. Do not describe full1.5GB artifact tree as compulsory.",
+  "reactivation": [
+    "Fetch only canonical3BFF model.pkl/datamodule_sim.pkl/datamodule_train.pkl/simulator.pkl with pinned LFS SHA256 in E02-3bff-lfs-pointers.json",
+    "Use isolated trusted original repository environment and Torch/Lightning/MotorNet; current runtime lacks these; do not install shared environment",
+    "Generate clean training/evaluation simulations with disjoint stimulus trajectories/seeds and fix neuron observation map on training only",
+    "Use simulator known latent/flow/fixed-point properties as explicit synthetic mechanistic truth; do not relabel a learned teacher prediction as experimental truth",
+    "Freeze coordinate-invariant or training-aligned dynamical recovery metric; score only after freeze",
+    "Generic Lorenz/Rossler S10 validation exists but was not substituted as a neural endpoint"
+  ]
+}

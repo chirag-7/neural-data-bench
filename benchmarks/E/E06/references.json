@@ -3,7 +3,8 @@
   "source_urls": [
     "https://google-research.github.io/zapbench/",
     "https://arxiv.org/abs/2503.02618",
-    "https://zapbench-release.storage.googleapis.com/volumes/README.html"
+    "https://zapbench-release.storage.googleapis.com/volumes/README.html",
+    "https://github.com/google-research/zapbench/tree/7347b3b21a3f332e281b774c945f1505dd966abf"
   ],
-  "admission_evidence": "literature/admission-v04-behavior-population.json"
+  "admission_evidence": "experiments/E06/protocol.md"
 }

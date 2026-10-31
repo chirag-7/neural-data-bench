@@ -27,6 +27,6 @@ For unexecuted entries all seven gates remain pending; listing these steps is no
 
 ## Current executed protocol
 
-Preview 0.10: Neural Latents Benchmark: MC_Maze_Small, Area2_Bump and DMFC_RSG; held-in to held-out neuron readout using unchanged generated programs.
+Preview 0.11: Neural Latents Benchmark: MC_Maze_Small, Area2_Bump and DMFC_RSG; held-in to held-out neuron readout using unchanged generated programs.
 
 [Actual frozen contract and implementation](../../../experiments/E01). [Measured method/reference records](../../../results/E01.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

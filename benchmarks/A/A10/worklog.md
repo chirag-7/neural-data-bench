@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Representation assessme
 
 ## Current admission and execution
 
-Preview 0.10: candidate_pending_validation. Representation assessment requires multiple downstream task labels and recording-group splits. CalMS21 Task1 is not equivalent to MABe22. Need pin exact track release and fixed downstream evaluation wrapper.
+Preview 0.11: candidate_pending_validation. Representation assessment requires multiple downstream task labels and recording-group splits. CalMS21 Task1 is not equivalent to MABe22. Need pin exact track release and fixed downstream evaluation wrapper.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

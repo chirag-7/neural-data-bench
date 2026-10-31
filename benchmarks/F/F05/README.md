@@ -38,6 +38,6 @@ Decision: **candidate_pending_validation** (2026-10-30). Musall behavior-to-wide
 
 ## Current admission and execution
 
-Preview 0.10: candidate_pending_validation. Musall behavior-to-widefield data can support real regression, but exact movies/behavior regressors, temporalalignment and session/animal split must be pinned. Training/testing adjacentframes invalid. No paired behavior/neural arrays acquired here.
+Preview 0.11: candidate_pending_validation. Musall behavior-to-widefield data can support real regression, but exact movies/behavior regressors, temporalalignment and session/animal split must be pinned. Training/testing adjacentframes invalid. No paired behavior/neural arrays acquired here.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

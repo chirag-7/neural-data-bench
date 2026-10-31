@@ -1,0 +1,67 @@
+{
+  "batch": "v11-calcium",
+  "reviewed_on": "2026-10-31",
+  "C01": {
+    "status": "deferred_rights_and_contract",
+    "sources": [
+      {
+        "url": "https://github.com/codeneuro/neurofinder/blob/master/README.md",
+        "finding": "18 public training recordings include JSON ROI annotations; official testing images omit ground truth. Provider prefixes group laboratories, not independently resolved animal IDs."
+      },
+      {
+        "url": "https://github.com/codeneuro/neurofinder/issues/28",
+        "finding": "Unresolved dataset-license question",
+        "state": "open",
+        "comments": 0,
+        "updated_at": "2019-08-19T14:45:27Z"
+      },
+      {
+        "url": "https://github.com/codeneuro/neurofinder-datasets",
+        "finding": "Publisher describes each image-stack archive as around 1GB zipped and several GB unzipped."
+      },
+      {
+        "url": "https://github.com/codeneuro/neurofinder-python",
+        "finding": "MIT scorer code available. Uses center-distance matching plus separate overlap/exactness measures; cannot substitute generic IoU F1 without a custom-endpoint disclaimer."
+      }
+    ],
+    "reason": "No data-specific reuse/redistribution terms resolved in source; no official hidden test masks. A true ROI endpoint is technically possible by holding out complete annotated training recordings, but requires an explicitly custom split, exact legacy center matcher, streaming movie summaries or adequate full-movie budget, and resolved data rights. Do not call a convenient single frame or one small archive the Neurofinder benchmark.",
+    "reactivation": "Resolve upstream data terms, pin archives for all recording groups, keep entire recording groups disjoint, retain original ROI coordinates including overlaps, port/verify official scorer, prerecord custom processing and split before generation.",
+    "downloads": "No multi-GB image stacks downloaded during this bounded audit."
+  },
+  "C06": {
+    "status": "prepared_awaiting_parent_review_and_freeze",
+    "protocol": "experiments/C06/protocol.md",
+    "manifest": "experiments/C06/data-manifest.json",
+    "validation": "experiments/C06/validation.json",
+    "data": "data/cache/C06/data.npz",
+    "raw_source_bytes": 15077557,
+    "neurons": 15,
+    "recordings": 45,
+    "source_commit": "1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f",
+    "rights": "Repository GPL-3.0; no separate data-specific license declaration located; local cache only, preserve original attribution and acquisition metadata.",
+    "strongest_defensible_available_fixed_reference": "OASIS default AR1 with training-only global scaling; NOT uncontaminated CASCADE/SOTA. Public global CASCADE weights include DS04 test cells."
+  },
+  "C09": {
+    "status": "deferred_no_independent_real_data_accuracy_targets",
+    "sources": [
+      {
+        "url": "https://elifesciences.org/articles/28728",
+        "finding": "Paper quantitative ground-truth recovery experiments are simulated; real recordings are evaluated by decomposition, detected components, and between-algorithm comparisons."
+      },
+      {
+        "url": "https://datadryad.org/dataset/doi:10.5061/dryad.kr17k",
+        "finding": "CC0; four real MAT movies totaling 1.88GB, striatum/PFC/hippocampus/BNST, with four README files, no independent annotation archive listed."
+      },
+      {
+        "url": "https://github.com/zhoupc/eLife_submission",
+        "commit": "f23d80e8f56033040ae06e0810d05f053bd78807",
+        "finding": "Pinned Git tree has data/.gitignore and results/.gitignore only; README links externally downloaded movies. No released independent manual instance masks or simultaneous electrophysiology labels located."
+      }
+    ],
+    "reason": "CC0 real movies are accessible, but source extraction accuracy cannot use CNMF-E outputs as independent ground truth. Simulations would be a valid separate synthetic operation but do not satisfy requested real-data endpoint. Four large movies alone do not produce train_y.",
+    "reactivation": "Locate independently annotated multi-recording masks or paired spike/trace truth, with explicit scoring and specimen split. Alternatively authorize an explicitly simulated/semi-synthetic endpoint with simulation-native truth and a fixed generator."
+  },
+  "no_model_calls": true,
+  "no_real_slice_scores": true,
+  "no_central_registry_or_website_changes": true
+}

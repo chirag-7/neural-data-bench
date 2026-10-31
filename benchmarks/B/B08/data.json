@@ -1,13 +1,14 @@
 {
   "benchmark_id": "B08",
-  "input": "Integer event times and unit identifiers",
-  "ground_truth": "Original integer event arrays",
+  "input": "Sorted float64 spike times and int32 unit labels; complete recordings",
+  "ground_truth": "Exact labels/order/count, nondecreasing decoded times and \u226450 \u03bcs event timing error",
   "sources": [
     "https://github.com/int-brain-lab/spikepack",
-    "https://www.internationalbrainlab.com/data"
+    "https://www.internationalbrainlab.com/data",
+    "https://dandiarchive.org/dandiset/000953"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/B08.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "B08",
@@ -29,9 +30,10 @@
     "evidence": "literature/admission-v04-behavior-population.json"
   },
   "current_execution": {
-    "release": "0.10",
-    "status": "candidate_pending_validation",
-    "slice": null,
-    "evidence": "literature/admission-v04-behavior-population.json"
-  }
+    "release": "0.11",
+    "status": "measured",
+    "slice": "All seven original G01 FALCON M2 recordings: 1,052,545 events, four days, one monkey.",
+    "evidence": "experiments/B08/protocol.md"
+  },
+  "executed_slice": "All seven original G01 FALCON M2 recordings: 1,052,545 events, four days, one monkey."
 }

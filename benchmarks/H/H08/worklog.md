@@ -16,6 +16,6 @@ Decision: **deferred** (2026-10-30). NeuralBench/challenge primary sites accessi
 
 ## Current admission and execution
 
-Preview 0.10: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
+Preview 0.11: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
 [Admission/source evidence](../../../experiments/H08/protocol.md). [Actual protocol/worklog](../../../experiments/H08). [Task measurements](../../../results/H08.json).

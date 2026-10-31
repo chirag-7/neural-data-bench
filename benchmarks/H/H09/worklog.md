@@ -12,6 +12,6 @@ Decision: **deferred** (2026-10-30). SzCORE primary framework explicitly disting
 
 ## Current admission and execution
 
-Preview 0.10: deferred. SzCORE primary framework explicitly distinguishes sample/event scoring and participant independence. CHB-MIT/Siena require long continuous recordings to estimate false alarms/hour; no cherry-picked balanced seizure clips admitted as replacement. Full event pipeline and sufficient recording duration not yet prepared.
+Preview 0.11: deferred. SzCORE primary framework explicitly distinguishes sample/event scoring and participant independence. CHB-MIT/Siena require long continuous recordings to estimate false alarms/hour; no cherry-picked balanced seizure clips admitted as replacement. Full event pipeline and sufficient recording duration not yet prepared.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

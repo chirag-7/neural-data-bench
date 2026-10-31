@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/verify_event_batch.py", line 163, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/verify_event_batch.py", line 151, in main
+    if a.child_plan:child(a.child_plan);return
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/verify_event_batch.py", line 36, in child
+    s=importlib.util.spec_from_file_location('frozen_event_reference',program);m=importlib.util.module_from_spec(s);s.loader.exec_module(m)
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/experiments/B08/reference.py", line 7, in <module>
+    from numcodecs.blosc import set_nthreads
+ModuleNotFoundError: No module named 'numcodecs'

@@ -1,0 +1,5 @@
+{
+  "model": "task-baseline",
+  "status": "independent_decode_failed",
+  "reason": "Fresh decode subprocess failed; retained stderr: /Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/results/verification/B08-fresh-decode/task-baseline/child-stderr.txt"
+}

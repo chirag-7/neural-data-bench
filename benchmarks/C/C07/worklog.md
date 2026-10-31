@@ -12,6 +12,6 @@ Decision: **candidate_pending_validation** (2026-10-30). CellReg examples contai
 
 ## Current admission and execution
 
-Preview 0.10: candidate_pending_validation. CellReg examples contain multi-session ROI images, but cell-identity scoring needs independent manuallyvalidated crossday pairs; CellReg matching outputs cannot serve as truth for evaluating a competing matcher. Verify identity groundtruth before admission.
+Preview 0.11: candidate_pending_validation. CellReg examples contain multi-session ROI images, but cell-identity scoring needs independent manuallyvalidated crossday pairs; CellReg matching outputs cannot serve as truth for evaluating a competing matcher. Verify identity groundtruth before admission.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

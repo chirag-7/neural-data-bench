@@ -38,6 +38,6 @@ Decision: **candidate_pending_validation** (2026-10-30). WormND provides detecti
 
 ## Current admission and execution
 
-Preview 0.10: candidate_pending_validation. WormND provides detection/identity tracks, but crossworm split, template annotations and exact organism normalization remain unvalidated. No3D image adapter acquired. Candidate remains eligible for later execution.
+Preview 0.11: candidate_pending_validation. WormND provides detection/identity tracks, but crossworm split, template annotations and exact organism normalization remain unvalidated. No3D image adapter acquired. Candidate remains eligible for later execution.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

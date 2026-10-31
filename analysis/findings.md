@@ -1,4 +1,22 @@
-# Findings — exploratory preview 0.10
+# Findings — exploratory preview 0.11
+
+The first-submission panel now contains **30 measured task IDs across 14 families, 37 slices/model and 111 attempts: 107 numerically valid and four failed**. The 208 model/reference rows identify 200 unique output files. Ninety first-submission programs plus six separate H02 follow-up programs give 96 overall. All 173 v0.10 rows remain identical. Source and scope limits remain task-specific.
+
+Seven new tasks add eight slices: acoustic event segmentation, synthetic ephys motion, timing-bounded event compression, paired calcium/electrical count inference, population forecasting, molecular fraction calibration and waveform-based cell classification. [Complete new score table and audits](../docs/batch-v11.md). Numerical results measure generated analysis programs, not native raw-data perception.
+
+GPT-6.1 has the best general-model primary score on C06, K05, K06, A15 and E06's main forecast; older models do better on B03 and the dependent unseen-taxis forecast. B08's two heapq whitelist rejections have an ambiguous written contract: all results stay visible, but the whole task is retrospectively excluded from aggregate claims. A15 GPT-5.6 exceeds the line limit and is excluded from strict-format subsets. High C06 correlation coexists with substantial relative count error; those predeclared secondary results are now selectable in the plots.
+
+## Current descriptive progress
+
+Default observed-data scope excludes fully synthetic B01/B03/L06/M04, deterministic N05 and ambiguous B08. A14/H16 artificial corruption remains included and labeled. Across 24 eligible tasks in 13 families and 31 slices, GPT-6.1 improves over GPT-6 on 23 slices, declines on seven and has one failed comparison. The family-equal directional improvement fraction is 0.608974. GPT-6 versus GPT-5.6 improves on 14, declines on 16 and ties on one, with family-equal fraction 0.457692. These descriptive point-score fractions use the existing numerical 1e−9 rule, not practical equivalence or statistical significance. They do not establish causal model scaling. Strict and synthetic-inclusive summaries remain separately exported in [summary](summary.json).
+
+The active map has 92 entries, including 30 measured, 33 pending and 29 deferred; 22 candidates are archived with reactivation conditions. Coverage is convenience-selected and not exhaustive. Conventional A15/K05/K06 references, local OASIS/SpikeInterface/Spikepack and locally optimized NLinear do not verify current strongest specialized performance or matched total research effort. One generation per task and few biological sources prevent broad superiority claims.
+
+## Historical v0.10 findings retained
+
+The following report describes the previous release. Current counts, scope and conclusions are above.
+
+### Original v0.10 report
 
 The first-submission panel has 23 measured tasks across 14 mapped families and 87 model–slice attempts: 85 valid outputs and 2 unrepaired failures. Its 69 generated programs are reused across source slices. All 173 model/reference records include 167 saved prediction/posterior/output manifests. B07 additionally retains 96 compressed payloads. The separate H02 follow-up adds six programs and seven prediction files outside these macro totals.
 
