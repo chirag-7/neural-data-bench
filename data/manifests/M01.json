@@ -1,0 +1,21 @@
+{
+  "benchmark_id": "M01",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "source": "https://figshare.com/articles/dataset/A_standardized_and_reproducible_method_to_measure_decision-making_in_mice_Data/11636748",
+  "files": [
+    {
+      "path": "data/cache/M01/raw/ibl-behavior-data-Dec2019.zip",
+      "url": "https://ndownloader.figshare.com/files/21623715",
+      "bytes": 228602597,
+      "publisher_md5": "fd219c14ff0f3caa88d5f8bed9a96443",
+      "publisher_md5_verified": true,
+      "sha256": "18bfacccf615a767dd6e3935473b628fe4266e9b12c09200ee7f4eac2c54c4e6"
+    }
+  ],
+  "prepared_file": "data/cache/M01/data.npz",
+  "prepared_sha256": "3ae8fd34be70bb7f3234ff470f6a6e40c3cbd3c5be5a4466cfa410cd293e841b"
+}

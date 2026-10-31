@@ -1,0 +1,1725 @@
+{
+  "subjects": [
+    {
+      "subject": "CSHL049",
+      "lab": "churchlandlab",
+      "session": "ibl-behavioral-data-Dec2019/churchlandlab/Subjects/CSHL049/2019-11-27/001/alf",
+      "split": "train",
+      "n_source_trials": 754,
+      "n_candidate_targets": 125,
+      "n_retained": 125,
+      "sessions_available": 17,
+      "source_members": {
+        "choice": "fb12724f08d9f6dd5fcfd87386144fd0c12ed067e3a77b75d8f4af5bbdb9f381",
+        "contrastLeft": "16ce6b878a8ea71f65c737e8971a15dd825975ba72dfda6ad19389b427f34e36",
+        "contrastRight": "1650b8c4c9dd3615502f976de11959df9dad2068076d6906515c94af731975fa",
+        "feedbackType": "28c78180d99449a0498ac114b768c41146ec42e5ae7d00fccba920dd581c3c99",
+        "probabilityLeft": "6a163380d74de1fcf00434e119b68681b335046a6b83f02c5547a171d0edb745"
+      }
+    },
+    {
+      "subject": "CSHL_001",
+      "lab": "churchlandlab",
+      "session": "ibl-behavioral-data-Dec2019/churchlandlab/Subjects/CSHL_001/2019-08-16/001/alf",
+      "split": "train",
+      "n_source_trials": 435,
+      "n_candidate_targets": 72,
+      "n_retained": 71,
+      "sessions_available": 82,
+      "source_members": {
+        "choice": "efafa791e731cca9bc1363930413a844523a610c90608affabc0ee243438793f",
+        "contrastLeft": "a61f030da6b47e5124b58f5efdd3a2d468ffe93a1ca678b88918e00c14e52936",
+        "contrastRight": "aa4d1c0a1273110260bbc34d57ecfbfc768e273fc17dcddb4dadc4acef56aeb0",
+        "feedbackType": "54d9d8ad48ed440abafd66558fb681e9378499d05a2429cf185ce6c4d23cbb66",
+        "probabilityLeft": "5e7a5cc126424964ff1daaf5e2cce2958169234fcccad5e8667a2f5ff67806e1"
+      }
+    },
+    {
+      "subject": "CSHL_002",
+      "lab": "churchlandlab",
+      "session": "ibl-behavioral-data-Dec2019/churchlandlab/Subjects/CSHL_002/2019-08-16/001/alf",
+      "split": "train",
+      "n_source_trials": 566,
+      "n_candidate_targets": 94,
+      "n_retained": 94,
+      "sessions_available": 79,
+      "source_members": {
+        "choice": "65eba9c5f43b69a2a7f27c3654e4c3cfd7bb51cd3a63d366807b540cab844a3a",
+        "contrastLeft": "dd12aac5d33578b21c57cb0561bbcba872af620bdbe2748e7b3572492d6adefb",
+        "contrastRight": "5b4db5a5c33d6a4503eb3650518fc4581ea5e58e1c2351bd0985d738e456f37f",
+        "feedbackType": "6c7eadc9fbb402ddcc35599679ec792530f296f3ebade41e6e1101a1d2834f62",
+        "probabilityLeft": "629a3da46eb216870fcb649c8869af995cb81188256fd6215484085803eaedf6"
+      }
+    },
+    {
+      "subject": "CSHL_003",
+      "lab": "churchlandlab",
+      "session": "ibl-behavioral-data-Dec2019/churchlandlab/Subjects/CSHL_003/2019-08-16/001/alf",
+      "split": "train",
+      "n_source_trials": 440,
+      "n_candidate_targets": 73,
+      "n_retained": 73,
+      "sessions_available": 79,
+      "source_members": {
+        "choice": "b0438e28cd53fb40aaf7f21a6accb3212c13dea605a291b2b6366407d05cb6e4",
+        "contrastLeft": "7a59f376a57ae40f102de9c57cfce4f2cfcb450396e432b4be3226d879b5ff19",
+        "contrastRight": "38f6cbcb3759a09813026029323e1cbe05d4f9541473fcb3fef770fad5c66dff",
+        "feedbackType": "4124d2a1c86b2500a23fca83616e10c8601db291a98d335b87024ce2ffddd256",
+        "probabilityLeft": "cda0e1a1940ed7d4b5f0aa17b404afe41c08433d696e802b2f08687437dbff20"
+      }
+    },
+    {
+      "subject": "CSHL_004",
+      "lab": "churchlandlab",
+      "session": "ibl-behavioral-data-Dec2019/churchlandlab/Subjects/CSHL_004/2019-05-08/003/alf",
+      "split": "train",
+      "n_source_trials": 164,
+      "n_candidate_targets": 27,
+      "n_retained": 27,
+      "sessions_available": 55,
+      "source_members": {
+        "choice": "a4cedc32a61e4c293527b4ba19a03191812889a8215d1bc2f06f82fe644b2654",
+        "contrastLeft": "f17a54e6d53a41c6e2616b1d0bfed765db8f99258b1aae4bd55c9e9e8b7b7ff2",
+        "contrastRight": "fc100be15d4506518fdc75e373a79a516da47c497a0c9d655ca0b64200cfaeac",
+        "feedbackType": "9ad3e732732dee9a0d07f4571c395eca39327412c16087b9c75710349fae5766",
+        "probabilityLeft": "6fda93f2b1f967efeaa5c5101ef9132fbb2faa2163539af1c55c177cb0c22083"
+      }
+    },
+    {
+      "subject": "CSHL_005",
+      "lab": "churchlandlab",
+      "session": "ibl-behavioral-data-Dec2019/churchlandlab/Subjects/CSHL_005/2019-07-18/001/alf",
+      "split": "test",
+      "n_source_trials": 465,
+      "n_candidate_targets": 77,
+      "n_retained": 77,
+      "sessions_available": 71,
+      "source_members": {
+        "choice": "9529b432be96a51d9bec554cdc76e68c08d5c978cb70e891d40f19583c43d186",
+        "contrastLeft": "b0535acb27bc527c7122ea256e954646926ec46972542e958eabeacaae90de64",
+        "contrastRight": "dc70a7f292c93720673230f129bda345c0e7c57d1e41fcef3ff4fe43ceccaabe",
+        "feedbackType": "00fc210c81601afb443e26643c8bae668daad0f734921d45d408fbacdef4d184",
+        "probabilityLeft": "b51164f06a19bb45bc74b790cb0905b045059698eb51ff2e94458e281495380b"
+      }
+    },
+    {
+      "subject": "CSHL_006",
+      "lab": "churchlandlab",
+      "session": "ibl-behavioral-data-Dec2019/churchlandlab/Subjects/CSHL_006/2019-06-07/001/alf",
+      "split": "train",
+      "n_source_trials": 593,
+      "n_candidate_targets": 98,
+      "n_retained": 98,
+      "sessions_available": 59,
+      "source_members": {
+        "choice": "5ea3e573a5f1cad27d921215bb3029a838c9fb09d301f0813640ca4387c0fe15",
+        "contrastLeft": "7dc36184f255056c28795d721d8a28695d0f6904911a1de97e490007bafcd568",
+        "contrastRight": "3dba5335ee0c6d116227aa6545e0a2da5c1635318e8c5fb105cab8e303430754",
+        "feedbackType": "a17f24a407b99d38e40c3a7aa5382f106fc655c018c3588921023508cf9bbd8a",
+        "probabilityLeft": "fbb7cfdf8c6c863eeda8ec4742b1c5b7e6d669ebba0bc7c823f101e7b594f154"
+      }
+    },
+    {
+      "subject": "CSHL_007",
+      "lab": "churchlandlab",
+      "session": "ibl-behavioral-data-Dec2019/churchlandlab/Subjects/CSHL_007/2019-11-06/001/alf",
+      "split": "train",
+      "n_source_trials": 253,
+      "n_candidate_targets": 42,
+      "n_retained": 40,
+      "sessions_available": 80,
+      "source_members": {
+        "choice": "f02ddc0d69f8459f8b7bf0205da4020ff6812b40c9ceb3752ab24a8d337dd189",
+        "contrastLeft": "69e11e155bf872665e3ce24319edd58ea04997d6d0013e2d9a01f4da7f2e8494",
+        "contrastRight": "ea86b36b558683da8f8c1a808f2563e54236fb2740cd7e94d6cdcc9eb4ea23e5",
+        "feedbackType": "5d4ad08960d567ca700b44cc92cd94363ae7a3829d60242b5bdceb42ed78263a",
+        "probabilityLeft": "8c7acad0e7219fd7b6e686dcd899931f394164292b51a4009c154fc3b035b92e"
+      }
+    },
+    {
+      "subject": "CSHL_008",
+      "lab": "churchlandlab",
+      "session": "ibl-behavioral-data-Dec2019/churchlandlab/Subjects/CSHL_008/2019-08-07/001/alf",
+      "split": "train",
+      "n_source_trials": 647,
+      "n_candidate_targets": 107,
+      "n_retained": 105,
+      "sessions_available": 73,
+      "source_members": {
+        "choice": "7263fa34e77fe41bce7e965f1c85c5de1c7f058131a270a80bb4fdb879ed328e",
+        "contrastLeft": "4014eed29967376686aa87a6778102530850f75bb066d375574300b065564507",
+        "contrastRight": "86e705e4f14fa694853a2969733100f6f5f175db732d21a94294e22199eeb3c3",
+        "feedbackType": "37263c157d33d981df186091009765b45dbc2564dfd57424dfa261f4e48f56a5",
+        "probabilityLeft": "71638cf6d7c9d341803cbfb1e603d789fb2c5b5bad15f48c88e640338256438a"
+      }
+    },
+    {
+      "subject": "CSHL_010",
+      "lab": "churchlandlab",
+      "session": "ibl-behavioral-data-Dec2019/churchlandlab/Subjects/CSHL_010/2019-08-16/001/alf",
+      "split": "train",
+      "n_source_trials": 913,
+      "n_candidate_targets": 152,
+      "n_retained": 152,
+      "sessions_available": 73,
+      "source_members": {
+        "choice": "d1f771038b376b94ef0902a3c8482dd83b60e4a1428a379aac9195b3808cca22",
+        "contrastLeft": "55ad4e79c9b03bafb107c6492008c582c417c2473087ba9738882c7bb411a887",
+        "contrastRight": "134b99de275550e5632147338de58687fd3b275224f380c69e957df4b489afd8",
+        "feedbackType": "086be229e40221965a30585f460e15d9dfa5737e8c7031be3deb16ed6671f9f3",
+        "probabilityLeft": "ef2dbe9a72eea2fd7e56406a7a140585abd214bc6db1fab7adb2c777d13e142e"
+      }
+    },
+    {
+      "subject": "CSHL_012",
+      "lab": "churchlandlab",
+      "session": "ibl-behavioral-data-Dec2019/churchlandlab/Subjects/CSHL_012/2019-11-22/001/alf",
+      "split": "train",
+      "n_source_trials": 210,
+      "n_candidate_targets": 35,
+      "n_retained": 26,
+      "sessions_available": 71,
+      "source_members": {
+        "choice": "fbb13e8c29de7ef476356cdf0a59414b50f440fb43a2f3ea717d10c9be52cf46",
+        "contrastLeft": "6c91382f259d7bbe317408ec6c9c739898c9aecef45e2123316aea5742f71d2d",
+        "contrastRight": "80ba9de4d6e46b0706991a558e7d2e29946d0da6534a6dca216c67cb8a10a701",
+        "feedbackType": "bdd671e2460eb97e54919f671c059ba3c172367ed218682bab7324cdae603a58",
+        "probabilityLeft": "a331250f5aa0676e4937eb775e3337da5657358bb3e1620c23c54371da1ce09f"
+      }
+    },
+    {
+      "subject": "CSHL_014",
+      "lab": "churchlandlab",
+      "session": "ibl-behavioral-data-Dec2019/churchlandlab/Subjects/CSHL_014/2019-11-22/001/alf",
+      "split": "train",
+      "n_source_trials": 393,
+      "n_candidate_targets": 65,
+      "n_retained": 63,
+      "sessions_available": 71,
+      "source_members": {
+        "choice": "d1368d150624b1600a57040fe053c8b65c35926206c09a4fdad9023d58f287bf",
+        "contrastLeft": "b9dd6c39081b95ca4c0352c92e4a9a6f2853c4a58be910b85538bc576ea0d1a4",
+        "contrastRight": "53306d26d8b4220528fbef5845fad7c3f50e3c5702da9ed9da0773a22c6bae17",
+        "feedbackType": "a24b10fc59bcb1a2e4e4eda9cbfae3211d51988aacfa017a391de657d7081e44",
+        "probabilityLeft": "95b4f3aab083ee367e3daa71bf5af5c687ec9cd26215553f5963f418ea5fcf26"
+      }
+    },
+    {
+      "subject": "CSHL_015",
+      "lab": "churchlandlab",
+      "session": "ibl-behavioral-data-Dec2019/churchlandlab/Subjects/CSHL_015/2019-11-14/001/alf",
+      "split": "train",
+      "n_source_trials": 176,
+      "n_candidate_targets": 29,
+      "n_retained": 22,
+      "sessions_available": 70,
+      "source_members": {
+        "choice": "81e8fc27075bbdcb4ef7a07464ed6636c49650b0b9b61015877ab3502761ba2a",
+        "contrastLeft": "575dc6694e63240a418f6e2726cf6065473d7b06792f81395447782ea34b4003",
+        "contrastRight": "84c368373f8612e37e8dedfda236644f87697f2b570c7678e28be4aabeeace9c",
+        "feedbackType": "13310647f29bb75d217eb1c6611799701844888ef2c347897cb5b6bc1179eea7",
+        "probabilityLeft": "b5b1e6836d097992458c5b1ed168d2c1b6a4bf50cad509bc84f80a497c004f0f"
+      }
+    },
+    {
+      "subject": "CSH_ZAD_001",
+      "lab": "zadorlab",
+      "session": "ibl-behavioral-data-Dec2019/zadorlab/Subjects/CSH_ZAD_001/2019-11-12/001/alf",
+      "split": "test",
+      "n_source_trials": 1033,
+      "n_candidate_targets": 166,
+      "n_retained": 166,
+      "sessions_available": 31,
+      "source_members": {
+        "choice": "6668a236e4982878b592204736d4cdfb5d03b0e2f534f2d14e92570d90b8dc51",
+        "contrastLeft": "186d4cc67c474ea12111eb1fd2624ef339ee8438c0b7dfa44f528f37ba16d304",
+        "contrastRight": "e24ed9477248024c0e7a7fbbe5d89dada53e3136b463c6af2c3dd8491c02d8b5",
+        "feedbackType": "0d23b59f36aa12265e318a14e789850dea47c552d7e9e44c0c46cb7406536736",
+        "probabilityLeft": "9f7b88d787934e55969d600d8ccf857d8bd2003551e85a13f3dc0c0d35e454b4"
+      }
+    },
+    {
+      "subject": "CSH_ZAD_002",
+      "lab": "zadorlab",
+      "session": "ibl-behavioral-data-Dec2019/zadorlab/Subjects/CSH_ZAD_002/2019-11-12/001/alf",
+      "split": "train",
+      "n_source_trials": 844,
+      "n_candidate_targets": 140,
+      "n_retained": 139,
+      "sessions_available": 33,
+      "source_members": {
+        "choice": "b72f77930528c513b3a8eb4b6700612f92e66d5db8864e815790cd876b037649",
+        "contrastLeft": "bfdbaeb3fbbf51b78ca8d24c46f0e4f23e496ed05a30a1adb17d4c56698495dc",
+        "contrastRight": "12078603c4eecee2da6e8bcc6084106d71432abc538cc67ae852c9c1f87907bb",
+        "feedbackType": "4c8e2778e3eaaaed4aec56dcb7f4a1c1a697dee1de91f91d2a5a8b19d3efe05e",
+        "probabilityLeft": "cccd17201977a6961c5aa0d7219577ed651b80b83656cd4b4d1ead3455959f40"
+      }
+    },
+    {
+      "subject": "CSH_ZAD_003",
+      "lab": "zadorlab",
+      "session": "ibl-behavioral-data-Dec2019/zadorlab/Subjects/CSH_ZAD_003/2019-11-12/001/alf",
+      "split": "train",
+      "n_source_trials": 643,
+      "n_candidate_targets": 107,
+      "n_retained": 106,
+      "sessions_available": 30,
+      "source_members": {
+        "choice": "526ccdc758ef58966fee9f2168f8873b983195ed276e328b9124151ef8f0a347",
+        "contrastLeft": "df70e7dd91046f13629ec075f567e03c6fea4d0e14f5a9cdb5f3552386ae4b07",
+        "contrastRight": "a7775700a5471014110643446ab7a4cb51ada12f4c051b58dd52e711eabe5379",
+        "feedbackType": "046f55250deadaabef707f4437f5d2e2a392676e82d29c00af0b01c53800c2b9",
+        "probabilityLeft": "b3666b4937adbc2789a0bb973395c4b1160fc61e44839840d0dc9346f3bbdafa"
+      }
+    },
+    {
+      "subject": "CSH_ZAD_004",
+      "lab": "zadorlab",
+      "session": "ibl-behavioral-data-Dec2019/zadorlab/Subjects/CSH_ZAD_004/2019-11-12/001/alf",
+      "split": "test",
+      "n_source_trials": 605,
+      "n_candidate_targets": 100,
+      "n_retained": 99,
+      "sessions_available": 31,
+      "source_members": {
+        "choice": "7cd0d55ccd840cd183af47e980201c00f86c331d02cc0984ee0e5c2430d0a73d",
+        "contrastLeft": "4a9ddb2137ccb89bde51d9db27b08dbb02af625f55998dacd562edccfd5fe30f",
+        "contrastRight": "564fdffeac880d7d8ff5599078d4bc3f5d97e640be1bfd8509b638aea7d23093",
+        "feedbackType": "1d897d79ef77ac5d71857946e00fe5f7a3730e11b1173b8d38881edcbc99431c",
+        "probabilityLeft": "81843ad4ec2c75874432e66fa7bdbe3bc2e972d02942ccbb1c96a0ca520ff738"
+      }
+    },
+    {
+      "subject": "CSH_ZAD_005",
+      "lab": "zadorlab",
+      "session": "ibl-behavioral-data-Dec2019/zadorlab/Subjects/CSH_ZAD_005/2019-11-12/001/alf",
+      "split": "train",
+      "n_source_trials": 464,
+      "n_candidate_targets": 77,
+      "n_retained": 77,
+      "sessions_available": 33,
+      "source_members": {
+        "choice": "bf22891f89d1101a1844afacecf019dfc6ac4fbb350b1551f28cb3aaf47c22fe",
+        "contrastLeft": "87e67a2408c110b65736d3fdd49841a822dbcd2bce15e0618e7571fa41c7b17c",
+        "contrastRight": "1bba92fbb0b7f16a4578fccb32c8353514c562f4d8092153330dd1b3a44b1fcc",
+        "feedbackType": "5e7c6e679ba6bb017ecc32a3aa630a868ab3a14f20b692a42f05c9af5ebd9fcd",
+        "probabilityLeft": "5d205645367c46f96e52dc3242b0e9904ce692b6737ce7e2974ba5a3ce5bbc15"
+      }
+    },
+    {
+      "subject": "CSH_ZAD_006",
+      "lab": "zadorlab",
+      "session": "ibl-behavioral-data-Dec2019/zadorlab/Subjects/CSH_ZAD_006/2019-09-24/001/alf",
+      "split": "test",
+      "n_source_trials": 185,
+      "n_candidate_targets": 30,
+      "n_retained": 30,
+      "sessions_available": 17,
+      "source_members": {
+        "choice": "aa393810128126c2c50e96e835fa0b8fd0985bf4404e585aa02f6c394bcedd14",
+        "contrastLeft": "f263979214aa8a1331c659b6c3c71f5c099fc0b7ea479dd52be71282abfeb610",
+        "contrastRight": "67ae09f6a94b7534cf59720b6f2198ed740c16db2a373a37753a61477c7b27da",
+        "feedbackType": "cc89e5159698ee5e5264026958ccf04691eb21da494bd4c46bb885e371f99869",
+        "probabilityLeft": "9f7e957c862b50c441904bef48ea5a829f9a37586acd140526c360ad1aecbed9"
+      }
+    },
+    {
+      "subject": "CSH_ZAD_007",
+      "lab": "zadorlab",
+      "session": "ibl-behavioral-data-Dec2019/zadorlab/Subjects/CSH_ZAD_007/2019-09-26/001/alf",
+      "split": "train",
+      "n_source_trials": 805,
+      "n_candidate_targets": 134,
+      "n_retained": 134,
+      "sessions_available": 21,
+      "source_members": {
+        "choice": "fbf50b04dd01aa0b05705e31c01220551078f87b02b7cd54322e8cdbc800d67d",
+        "contrastLeft": "6eacfbf4135d16f81ce663191fb1846eea516bcc48be2dead088ae8f2df1f6fc",
+        "contrastRight": "f4994b5a8adfa9a45626c99113e7118c084c84ceae2d44cb32c4b1da7a837795",
+        "feedbackType": "8ebae3b095a22d7f2cb998e1e2d8e487d86f1b3fe02343988a15035d1db0d805",
+        "probabilityLeft": "a53bf333b853125845a491e543a002294c03fd737e0f3843915be7e5a7b850ba"
+      }
+    },
+    {
+      "subject": "CSH_ZAD_010",
+      "lab": "zadorlab",
+      "session": "ibl-behavioral-data-Dec2019/zadorlab/Subjects/CSH_ZAD_010/2019-09-26/001/alf",
+      "split": "train",
+      "n_source_trials": 623,
+      "n_candidate_targets": 103,
+      "n_retained": 103,
+      "sessions_available": 17,
+      "source_members": {
+        "choice": "d7ce4214855340f0c90c9ce7c58e17ed61cf7e98f7a3e0a3fe4a1011875a577a",
+        "contrastLeft": "b14731d6780bc4a179150380a7726d802770c3b48316b339f97ef39f84804cc9",
+        "contrastRight": "079781369177096d3631380433eaf50bc882f7de716fbd11b73da477f07b85a5",
+        "feedbackType": "4a020689c9aaac610ee35da2e05c531e7532237c8bbbf0e5dd66bd5901c5ddc5",
+        "probabilityLeft": "52342f0c9e98f26d3a3e933b0f8e28659b6be37e2d28deba6b41e7242d6333e7"
+      }
+    },
+    {
+      "subject": "DY_001",
+      "lab": "danlab",
+      "session": "ibl-behavioral-data-Dec2019/danlab/Subjects/DY_001/2019-06-13/001/alf",
+      "split": "test",
+      "n_source_trials": 482,
+      "n_candidate_targets": 80,
+      "n_retained": 80,
+      "sessions_available": 50,
+      "source_members": {
+        "choice": "00c04bcb5a4c1917c4fa2d45a4d60fa91eca13710eb302a0359639596b799305",
+        "contrastLeft": "9580f29dfb58b190e7d032ac1eda562b00e9ac813134345b1051fdf5ac4120aa",
+        "contrastRight": "fb207cbaaa033ce6bf90f049f1ea51482dce618d3c0072a8d6c46de11e0e546d",
+        "feedbackType": "4095680a6d60c7848f495ff26f055f8f3988e90db289b150b5890d4bb39cdb77",
+        "probabilityLeft": "fe1cd9f448df7f038809c42385e5f01edb438cfeeed0409de49ec5ef6c57adc1"
+      }
+    },
+    {
+      "subject": "DY_002",
+      "lab": "danlab",
+      "session": "ibl-behavioral-data-Dec2019/danlab/Subjects/DY_002/2019-06-13/001/alf",
+      "split": "train",
+      "n_source_trials": 236,
+      "n_candidate_targets": 39,
+      "n_retained": 38,
+      "sessions_available": 48,
+      "source_members": {
+        "choice": "0ea9b1024342730c6be414bef9747a68cb17c2df764d951b514b7560913eb78c",
+        "contrastLeft": "520382723c2bd6021f31c923b93d2058746524952b39c0f03df86e340137d0e4",
+        "contrastRight": "a15759e5b398e03ff90f386fa47520e9fe638f713bfc8e5858654f1abac37953",
+        "feedbackType": "cb23f1c31e3724b88361e8f1b642dbc6fcefc3a240a59a5c404a8b94dbef059e",
+        "probabilityLeft": "084d4035e3e2746e66b7615c946c5f74b9d30f83c62175f016a2a3ff0517fb28"
+      }
+    },
+    {
+      "subject": "DY_003",
+      "lab": "danlab",
+      "session": "ibl-behavioral-data-Dec2019/danlab/Subjects/DY_003/2019-06-13/001/alf",
+      "split": "train",
+      "n_source_trials": 486,
+      "n_candidate_targets": 81,
+      "n_retained": 81,
+      "sessions_available": 39,
+      "source_members": {
+        "choice": "617ebb65db9613f5c144f6297c7a948cc3328dd94d25f4d1cbacdcc08bf88e71",
+        "contrastLeft": "4f84ac762f149066305af4a1377bff08d39d059a1f441f1239b72bcf5568e9cf",
+        "contrastRight": "a72ee92192c576fd0b51cb007ae033a75d88d09f5bd77bb4d46d9c94c665c21a",
+        "feedbackType": "9917456b5ec5ab0e47b31fb7850d16edba147ee44917b0e8783e9479a4a00fc2",
+        "probabilityLeft": "5f005948432b755bc94120923588f4ef2bb2848e17a25c707a14eb9e21f5beb2"
+      }
+    },
+    {
+      "subject": "DY_005",
+      "lab": "danlab",
+      "session": "ibl-behavioral-data-Dec2019/danlab/Subjects/DY_005/2019-07-06/001/alf",
+      "split": "test",
+      "n_source_trials": 486,
+      "n_candidate_targets": 81,
+      "n_retained": 81,
+      "sessions_available": 40,
+      "source_members": {
+        "choice": "c695d463656ad21cf774a2eb52a5a98e1dd2802a367f091400bfa54ea813c579",
+        "contrastLeft": "d318101134ad6770c31e5157c8e641569dde53612dec95d332874fbdf464fe56",
+        "contrastRight": "625b134e7ef226e0327445f5a6546ecf303318c695e983e80ef637f90e820804",
+        "feedbackType": "d8559d63d054ae5be43204d633846c7e3842fa3e4b642aa93f4c25c5f4d1a800",
+        "probabilityLeft": "7031e4eab4ceb0aca95e95d908d0baef065fc09e3fb1844bbb25f1a4f8c1630a"
+      }
+    },
+    {
+      "subject": "DY_006",
+      "lab": "danlab",
+      "session": "ibl-behavioral-data-Dec2019/danlab/Subjects/DY_006/2019-11-28/001/alf",
+      "split": "train",
+      "n_source_trials": 641,
+      "n_candidate_targets": 106,
+      "n_retained": 106,
+      "sessions_available": 19,
+      "source_members": {
+        "choice": "a1c601007abd16a41ba268926d19383714f499ba2a9643f4b13820201a33ad2a",
+        "contrastLeft": "9b3da99ce77c18c6d3babeb14d3f9e32c3122f71294f66c1efd786124cefdfe3",
+        "contrastRight": "dd7aa12f737e0c3c10372c5571df286ba23136d954503726eab71a889bd82833",
+        "feedbackType": "3063757ecf205c47743d5d47b706eb5f5db9d8ee65b08de3f4125d4c80890201",
+        "probabilityLeft": "67bca30053ace35a00c6291c03e68d27af6e29fb5e17b8ee82f4da02c232935f"
+      }
+    },
+    {
+      "subject": "DY_007",
+      "lab": "danlab",
+      "session": "ibl-behavioral-data-Dec2019/danlab/Subjects/DY_007/2019-11-28/001/alf",
+      "split": "train",
+      "n_source_trials": 395,
+      "n_candidate_targets": 65,
+      "n_retained": 64,
+      "sessions_available": 16,
+      "source_members": {
+        "choice": "8e6e436f9590b12407467a334421fe9c8f235ef3e954eb90d58629ce138eefc7",
+        "contrastLeft": "7056cc48c2261551f641e0a5fb487fc1cfd55f33edb923e9639a6a418dabb213",
+        "contrastRight": "db6b01ef05a486f799385fe008f278ecd87fdf60c1b732fcdb6b9482562006d7",
+        "feedbackType": "5ce6db0fd4a7e75b7a3ce1d3d5cae7960a7a00e19d90e12d24e131abd5980358",
+        "probabilityLeft": "cac639b975f3cf9e2fa87cfcfefca70ffda6bcc8d6a5085436eab08800087b1f"
+      }
+    },
+    {
+      "subject": "DY_009",
+      "lab": "danlab",
+      "session": "ibl-behavioral-data-Dec2019/danlab/Subjects/DY_009/2019-11-28/001/alf",
+      "split": "train",
+      "n_source_trials": 419,
+      "n_candidate_targets": 69,
+      "n_retained": 69,
+      "sessions_available": 6,
+      "source_members": {
+        "choice": "71feff4596d4c8aa6e093d318911c6dc794dea36dfb34b21c6173b2663530125",
+        "contrastLeft": "93621b1d41c3f7c43be8a1a8d4f6225a962f8611fd1a45eead5eb4875405c393",
+        "contrastRight": "c58cff2b74ce89bfca2711c5ee57f166a8327f741f8690ad86874fab70cfbcbf",
+        "feedbackType": "378f35db8ac59f27509b7b877f228033cc9da8e69e497eb5a73f73f97b758650",
+        "probabilityLeft": "b3619f2f76a67db3dcf4081e0002ec158b90160459aebbf89ae6ccc5e09d8301"
+      }
+    },
+    {
+      "subject": "DY_010",
+      "lab": "danlab",
+      "session": "ibl-behavioral-data-Dec2019/danlab/Subjects/DY_010/2019-11-28/001/alf",
+      "split": "train",
+      "n_source_trials": 457,
+      "n_candidate_targets": 76,
+      "n_retained": 73,
+      "sessions_available": 6,
+      "source_members": {
+        "choice": "cb69f810c17af1a08c66f59c3590d212bd7e22c13695d5bd4867778e307d54a1",
+        "contrastLeft": "5a4ca2a262e922364c1475865f0d784fe943cca033d099b344495e63e55efda1",
+        "contrastRight": "e98f0ff529a0ef7198ad621994ee73ccdc0b7cd50bed10f412d8a0e147cd7c4c",
+        "feedbackType": "1e4c9d2bb80d8a64de4c1e80bb186ffc0b4f710f07d351c3bd9617baac7314aa",
+        "probabilityLeft": "3450a09d326eec5d5ad4f80bb7182c3fd1031e09c13b5842b4e28685ce24cbe3"
+      }
+    },
+    {
+      "subject": "DY_011",
+      "lab": "danlab",
+      "session": "ibl-behavioral-data-Dec2019/danlab/Subjects/DY_011/2019-11-28/001/alf",
+      "split": "train",
+      "n_source_trials": 444,
+      "n_candidate_targets": 74,
+      "n_retained": 72,
+      "sessions_available": 6,
+      "source_members": {
+        "choice": "24066d16082438ae5cc7cf1d69e2a10daaa55c9c8ba8df1f08791191d1711af8",
+        "contrastLeft": "850d2efd28b85bb196d6569cd0af352e105521467254e20a0c7f6d4842f97a4c",
+        "contrastRight": "2266b76994f809d98dc5887dc88fc1763fda1a3eec485e55318b6d9e40c4857f",
+        "feedbackType": "b581d0303c11460bcba320050a00f706b13e9c138c1bfb1f144a7b30a88a0b2c",
+        "probabilityLeft": "25c6f2dace7c447513c34b7fbfee70de2e0bb75d5d15fc1aa8c03b4cb3c58bea"
+      }
+    },
+    {
+      "subject": "IBL-T1",
+      "lab": "angelakilab",
+      "session": "ibl-behavioral-data-Dec2019/angelakilab/Subjects/IBL-T1/2019-09-19/001/alf",
+      "split": "train",
+      "n_source_trials": 44,
+      "n_candidate_targets": 7,
+      "n_retained": 0,
+      "sessions_available": 96,
+      "source_members": {
+        "choice": "7ba42d449fff4d595fec3f52f66649ffeca1033edbee11b6e26bb00f9542b04a",
+        "contrastLeft": "b1bb50b8871e23f34cd134decca15589916ad50dabe199afa5a37f5cf02974ac",
+        "contrastRight": "cb8a26415001eeaf7f12f91bbd176805f0fb65f9ef82ee081b2cf1bf1390bec3",
+        "feedbackType": "185b968fd5416c6954072a84634d0c576e884ff07d514e6f348c69d2cd733ec2",
+        "probabilityLeft": "8b09fd31e9b266c990d232475afb88bf1e709959d33b330ee103960b2fc32808"
+      }
+    },
+    {
+      "subject": "IBL-T2",
+      "lab": "angelakilab",
+      "session": "ibl-behavioral-data-Dec2019/angelakilab/Subjects/IBL-T2/2019-08-29/004/alf",
+      "split": "train",
+      "n_source_trials": 261,
+      "n_candidate_targets": 43,
+      "n_retained": 43,
+      "sessions_available": 91,
+      "source_members": {
+        "choice": "4c4ae8a586a08fee342547d2c52b345b858aaacb9aeb6eeeea2201c3d7c7be12",
+        "contrastLeft": "f485d3bbe96d143e14788ce91caf5c7f666b516e909ed19b878b072690dbacaf",
+        "contrastRight": "d78ee1b1b4d5054b8ba2b570043db067fe825f3f1d6004a4cfae566a278a292e",
+        "feedbackType": "5d2ee90dbab5782be82a2c88dbeceb4e0fe772e7679f9ef0896dc303cc021d64",
+        "probabilityLeft": "94b23973440439174aca90e364e2d107b2bc15f0c292cd24ad6979261a4230cb"
+      }
+    },
+    {
+      "subject": "IBL-T3",
+      "lab": "angelakilab",
+      "session": "ibl-behavioral-data-Dec2019/angelakilab/Subjects/IBL-T3/2019-09-17/001/alf",
+      "split": "train",
+      "n_source_trials": 486,
+      "n_candidate_targets": 81,
+      "n_retained": 79,
+      "sessions_available": 90,
+      "source_members": {
+        "choice": "2ee958a39d1bcea87b10fb7ccb698298667baa72adfd71bc6b1c6fd2ee970d48",
+        "contrastLeft": "ec593ad20c7ed12cd6a95f0d7d9b2737b2d9d832296b71f2e4218f01a3f27735",
+        "contrastRight": "445e4149de5b878c7c16d152c05771fb5d8b3967463486bf92ea7e0ed2f4217c",
+        "feedbackType": "7f9505ed06bf19040591d53016f30346460389145a0135041219c38e1cf64587",
+        "probabilityLeft": "f2665435c2c2859e6bcccbbbe6e42a60e05682416a4f581331f81fc17454367f"
+      }
+    },
+    {
+      "subject": "IBL-T4",
+      "lab": "angelakilab",
+      "session": "ibl-behavioral-data-Dec2019/angelakilab/Subjects/IBL-T4/2019-10-30/001/alf",
+      "split": "train",
+      "n_source_trials": 291,
+      "n_candidate_targets": 48,
+      "n_retained": 44,
+      "sessions_available": 93,
+      "source_members": {
+        "choice": "9d58286e0774b31166ff2cf3a8d99789e0f80bea92c06972041e4dc0c199c2e0",
+        "contrastLeft": "b9ac58b5302ce2083ddaaa63eadb288d4a6f6f973a909e45eeda6956ba1b448e",
+        "contrastRight": "c9b2b78cfaecce503649a54b207994859a876df59b35d09bfbee8a93d536ed90",
+        "feedbackType": "74d36b3823596dce027f33461e727add0bb50ea21e177af14d20d1975f784ae6",
+        "probabilityLeft": "342066eff9e4a24fe24b64fcce43782c314f1df0714bba087061b1a684ea7a45"
+      }
+    },
+    {
+      "subject": "IBL_001",
+      "lab": "mrsicflogellab",
+      "session": "ibl-behavioral-data-Dec2019/mrsicflogellab/Subjects/IBL_001/2019-07-04/001/alf",
+      "split": "train",
+      "n_source_trials": 1222,
+      "n_candidate_targets": 166,
+      "n_retained": 166,
+      "sessions_available": 56,
+      "source_members": {
+        "choice": "d8df42cf4676fbf14013a73f1ef4258eaccf16d4b3672ea6982f8743a7682a91",
+        "contrastLeft": "3dbed582ce70b650060fa5dc8dc9289cde6be502a190efbdce2969e07a4a64c8",
+        "contrastRight": "8aee084f6ab7bf71b972286cde9e61f3173611acfe054648b3b7b6849b032027",
+        "feedbackType": "9a48ea783ba63658b9d790661f9ff92467cca6ca404b53b281a7a34c1675f93a",
+        "probabilityLeft": "54207cdec2c3d80f94391c7436a7ffebaf6217358cb7596121c684a8ac68c76f"
+      }
+    },
+    {
+      "subject": "IBL_002",
+      "lab": "mrsicflogellab",
+      "session": "ibl-behavioral-data-Dec2019/mrsicflogellab/Subjects/IBL_002/2019-07-03/001/alf",
+      "split": "train",
+      "n_source_trials": 618,
+      "n_candidate_targets": 103,
+      "n_retained": 102,
+      "sessions_available": 56,
+      "source_members": {
+        "choice": "139d699817463afdb3f9b0abbbe6a3aff9e7be610f5b26d02d0ed2eb4c4ac6d6",
+        "contrastLeft": "57507150b04a8a71ba4bd7b38e22b4e631130adeb8e6b91022afc43340116c29",
+        "contrastRight": "ccf2bc205c1a0d2ed35aa91c88be730676c654efeac7226121ef797a4a97492b",
+        "feedbackType": "b6ff3e15dda7e8cfd32f1a9f549cc30fc61fcb02e924f57ca119444c8409c50d",
+        "probabilityLeft": "ebf2d5a61843a275738b2602a5472a917f0eaa8cd11783c97c3d60581f80fa76"
+      }
+    },
+    {
+      "subject": "KS002",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS002/2019-10-12/001/alf",
+      "split": "train",
+      "n_source_trials": 267,
+      "n_candidate_targets": 44,
+      "n_retained": 44,
+      "sessions_available": 86,
+      "source_members": {
+        "choice": "d1414ff8e027f6e4fb4167621c195f0708453b6bb9c317e1840243ddf016617b",
+        "contrastLeft": "b28d0b92be8c2cec60fcfc84be30b1435bc7f18f5c1d8735205fbe86367586c9",
+        "contrastRight": "8f2790644c0a7dc3c1e54c481b3bd2c867b2ee567bf2e67b6d5b1705d04819fe",
+        "feedbackType": "868ad6d50cebcde47464b956ae39a1172eabda26501679c57ae6e97b24f81162",
+        "probabilityLeft": "57ff41418564c98325a13d782092c458f6cc09b0776b83f453a77fe874c731ba"
+      }
+    },
+    {
+      "subject": "KS003",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS003/2019-10-11/001/alf",
+      "split": "train",
+      "n_source_trials": 401,
+      "n_candidate_targets": 66,
+      "n_retained": 66,
+      "sessions_available": 85,
+      "source_members": {
+        "choice": "d463e8afc9647a75ce8b3814ec8aed8522ef2393c14f1d32bd44289da77a1243",
+        "contrastLeft": "bea7ea91a32b539e9cba09491aaba098decdf2b59c97936e65b5a666e22b6795",
+        "contrastRight": "826059f8fa013beaa4bda883ea575d6ae506ffe25b1376da388dc3f4930c4150",
+        "feedbackType": "dbde3ea1343c46fd3f693aa7551985a455ed415b5da61934087582cef85f6e3e",
+        "probabilityLeft": "ed1b4bfc9cfc8c1464c95158673daa511ea8f73d6c59110d95330ecf7b37ea85"
+      }
+    },
+    {
+      "subject": "KS004",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS004/2019-09-29/001/alf",
+      "split": "train",
+      "n_source_trials": 201,
+      "n_candidate_targets": 33,
+      "n_retained": 33,
+      "sessions_available": 84,
+      "source_members": {
+        "choice": "542eea71de8a2c5c5e14cf581554143da057570ab2cececcbbaac060a37cacf7",
+        "contrastLeft": "51253f1232ab7ad19679c217690a590ed0e26c205324dd86b451fe0a7d5119d9",
+        "contrastRight": "d249b248993b7e3dbe6fa0f154d94e511067b12b08efab7ff09a61225db36fe0",
+        "feedbackType": "7c03a198ee198d30f739e5a449af9787cd09202097a22a1eaa7e2e5bd42453c8",
+        "probabilityLeft": "b7b98156877569d385063c6fda1007523be20ad1328112a4d6cb6b7c4b4b92af"
+      }
+    },
+    {
+      "subject": "KS005",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS005/2019-08-30/001/alf",
+      "split": "train",
+      "n_source_trials": 436,
+      "n_candidate_targets": 72,
+      "n_retained": 72,
+      "sessions_available": 77,
+      "source_members": {
+        "choice": "c77de627addf202cf50c97fc99639c5d6f0d52aea8297530194d8e98fffdb578",
+        "contrastLeft": "e9444bfcb5b5ddf38a76ec9e4b41105fb8cbb0228039acd4be8e35f2b696f0e2",
+        "contrastRight": "ec8fd3261a1cb93f81d9f7bf6728a6e6fe612db67d6f56acc0039794d602263b",
+        "feedbackType": "b1a27fe74df2efde0dc34ac1f4c2a64c335174eadfb13b1a22a4cbf47c3b12ca",
+        "probabilityLeft": "7ceef715c44953854042589dd58971a37290c6946f3e90db2dbcc01bfb648278"
+      }
+    },
+    {
+      "subject": "KS014",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS014/2019-11-29/001/alf",
+      "split": "train",
+      "n_source_trials": 770,
+      "n_candidate_targets": 128,
+      "n_retained": 128,
+      "sessions_available": 43,
+      "source_members": {
+        "choice": "8aa3ff7223283bab0c687a69481761e74bc64f2e564f45ded6d00527aef265ce",
+        "contrastLeft": "63bec27f5d15d4dc2ec931bb03c55e364fa7566e73286b5c3c15ba59b0c8ee45",
+        "contrastRight": "a026897ea31e4ffed3ca43208dd5b156e99bd04ef33a3c3b5f097edd7197e9f9",
+        "feedbackType": "332f53b6ecc47b3dc9f22a974aa884cd3deb3266c2e78fc232e9955e262095de",
+        "probabilityLeft": "037c3ee99344752f235eb67cf68ce10d036c3b13ef42ebbf46fdaba5afe335d1"
+      }
+    },
+    {
+      "subject": "KS015",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS015/2019-11-14/001/alf",
+      "split": "test",
+      "n_source_trials": 84,
+      "n_candidate_targets": 14,
+      "n_retained": 14,
+      "sessions_available": 35,
+      "source_members": {
+        "choice": "0f022b84b023c9c9f721059611533a06dcd2c65d1e3ed7e7631a208086a846f4",
+        "contrastLeft": "6d1bf6e3d8a78dd53f753bb3e2a3cbbf7835fd7fc5db30b6e73f20bb4821e77e",
+        "contrastRight": "23335a6dc1e06d3c80b04b3c5908e6a82d83f7c07c301c2740985fe4b0b3b357",
+        "feedbackType": "027650f7bf58c119ae8f4cce08ef111336e434b5bc0b1b92848067f0f3b25cc8",
+        "probabilityLeft": "33c70ded99006f3219414e52e31a8bda441aba6540cb2133c6610626cd9b20e9"
+      }
+    },
+    {
+      "subject": "KS016",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS016/2019-11-29/001/alf",
+      "split": "train",
+      "n_source_trials": 618,
+      "n_candidate_targets": 103,
+      "n_retained": 103,
+      "sessions_available": 44,
+      "source_members": {
+        "choice": "52ba608a409d0a708676d7ffa8214b2391c3c17c8d396d899e091e562719340e",
+        "contrastLeft": "c62e8436632d3b2c50b6eee6e962657c0375965eacf82aacbb1187d65143e0db",
+        "contrastRight": "be71e089709c086fc280944036b9f5e1e5be79da454da79d87ddc51d50ee8106",
+        "feedbackType": "470a0914a291f18cf4466d6e713d1b545c04eef2283102824691341ad217d86d",
+        "probabilityLeft": "66fc999994320d095bc2c0dc0d19d5fc2f82249ccec5fbe864faa8db0b4cb1ae"
+      }
+    },
+    {
+      "subject": "KS017",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS017/2019-10-11/002/alf",
+      "split": "train",
+      "n_source_trials": 775,
+      "n_candidate_targets": 129,
+      "n_retained": 128,
+      "sessions_available": 39,
+      "source_members": {
+        "choice": "5b138759ed40f3c7e6fee7f713db95cab10c78a007c852e7e893e8ff5fbfb194",
+        "contrastLeft": "11d2870915b358613d00855c5d9181cbdfcd7905c48fa8077d8b84815ffb7f25",
+        "contrastRight": "9f5ba8766b7eb28597531f1755c15142e833b8c0ed21b8b556801994260a5ee3",
+        "feedbackType": "6781c387ba7417a9b4c68a2f1c0bf7d4133aae1d0e6a2bd0311bc4602065eb07",
+        "probabilityLeft": "299368dcf78299ea49af4215a8b747977674f58f6fc0a3ea9d384ae00f21c761"
+      }
+    },
+    {
+      "subject": "KS018",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS018/2019-11-29/001/alf",
+      "split": "train",
+      "n_source_trials": 520,
+      "n_candidate_targets": 86,
+      "n_retained": 85,
+      "sessions_available": 65,
+      "source_members": {
+        "choice": "df8f5e6127c5b62773b8ec4fb9427e8bebef44fc1e9543e03ae7c1d96526dd13",
+        "contrastLeft": "021c3807d44eaca551fb029d38ccf49c765df4c9356cb2891abd3f3153102299",
+        "contrastRight": "9e531d79020933c2dc31713884d8a2137b66550045bc186725ed173c817161fc",
+        "feedbackType": "b2b6a0d75578695f46b3b805eb397affbbb6129d63f84fca9e1c1dd776208a7f",
+        "probabilityLeft": "6554308549d4a91dea217c8db0044712a56aedcd4a1b53fd43dca6e367af6ecc"
+      }
+    },
+    {
+      "subject": "KS019",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS019/2019-11-29/001/alf",
+      "split": "train",
+      "n_source_trials": 709,
+      "n_candidate_targets": 118,
+      "n_retained": 118,
+      "sessions_available": 67,
+      "source_members": {
+        "choice": "b79ec71dafc615ab170dc67c4e0ea955ab0a3087817fcfeb00eb8fad66b2b6bc",
+        "contrastLeft": "80c889c872d1f21487bc4e68be952c8d1d8cbb6d0fe88f1b46e6c9a01c049d74",
+        "contrastRight": "901d6491d2da566c33559b906047057b64cdd77b08cef5daac1c85045ace81eb",
+        "feedbackType": "b640a3036defd4db27b8e72a774e3b8e7a558bfa9338e23f688f8f61558347fb",
+        "probabilityLeft": "818baee0fd14623eab9ec94b43ab0770f188b870d1e9b50dc55dd7793a7e92fe"
+      }
+    },
+    {
+      "subject": "KS020",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS020/2019-11-29/001/alf",
+      "split": "train",
+      "n_source_trials": 426,
+      "n_candidate_targets": 71,
+      "n_retained": 71,
+      "sessions_available": 41,
+      "source_members": {
+        "choice": "67b76ba2e849dc8a7f9e44e8cd140c4373496aaac951a56a8a687c6710dd92ee",
+        "contrastLeft": "4b4af8aa82f0692c32b5bf65ff90efcd69e796b3c24877da2580fac5ea68d2d3",
+        "contrastRight": "a50498d37dd31cbc8ea9a12e467ace6eff6d724549b1790d4b4de044d4fef4d4",
+        "feedbackType": "529b4d9b823cd6bf17c89080cea1480ebe060dfa6e3fe4eb9996f0dca761986e",
+        "probabilityLeft": "f8120e9c793146a5fae7907d5e932f7e198032628bc59fd3c9d491e3cdbb8a79"
+      }
+    },
+    {
+      "subject": "KS021",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS021/2019-11-29/001/alf",
+      "split": "train",
+      "n_source_trials": 403,
+      "n_candidate_targets": 67,
+      "n_retained": 67,
+      "sessions_available": 42,
+      "source_members": {
+        "choice": "a2bcba65fe7b2eb29ac2b9e5ca34a6978f505e9169b7d5cf9511363ca06f546a",
+        "contrastLeft": "616e21f7988c01b98c192e4259823df650f75818f4f42ce06890e804362517bc",
+        "contrastRight": "94ab2c35e6c915476f7bb702365202471ca6f1f3fe765deb2a48ee19940ff75c",
+        "feedbackType": "f1e722730b037e9e0d4c35ba112abcfc47980bae06f443a49162bfdc5ee49a7c",
+        "probabilityLeft": "f6f96daa90c837e11d462c9bf73a14fa302afd73ee5f190ed78b2310b8657576"
+      }
+    },
+    {
+      "subject": "KS022",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS022/2019-11-29/001/alf",
+      "split": "train",
+      "n_source_trials": 734,
+      "n_candidate_targets": 122,
+      "n_retained": 122,
+      "sessions_available": 40,
+      "source_members": {
+        "choice": "b49f7f25ea846f40d82c598473f81f47a09611b13c39d7b5b402baade6a26964",
+        "contrastLeft": "9e355b75b108cd12e82949e513f4f251430ad40bc3386315ba7d4b301a4c8c0f",
+        "contrastRight": "385f2ddfa9035fd60aaf58cae4e262e6db390d2ac86b88b34838593f3f1f5091",
+        "feedbackType": "66d17f88d9d7a44435db8ce45d38cc2e087ce7282009e6338b482c8530b9828f",
+        "probabilityLeft": "05f1b47a9d6ab08029bbb91c5c6ea3afd48305396287ff735a77cdcbdd8e8b04"
+      }
+    },
+    {
+      "subject": "KS023",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS023/2019-11-28/001/alf",
+      "split": "test",
+      "n_source_trials": 482,
+      "n_candidate_targets": 80,
+      "n_retained": 78,
+      "sessions_available": 32,
+      "source_members": {
+        "choice": "bd90e14dcc17d3f6c6e002c8ecf31c65b8f83b6287a0af1b8f518adc73a453b0",
+        "contrastLeft": "7c1d7f4ebc0c83360701acab5ada7e74a3f8545fa28005d6d59bffc23e1f367e",
+        "contrastRight": "c9fdeee26370535d861e05639053a155924c1812e5f81376e0e66265e9497367",
+        "feedbackType": "5c8ce58e2aa3b9c09dbae9b35f04e4d1d45dec7080a047c57efa7922e13f93d8",
+        "probabilityLeft": "2bee74788a9acdced944c0d2150b85f79691c33aaaf3832b85cf8c3ee17d5d9f"
+      }
+    },
+    {
+      "subject": "KS024",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS024/2019-11-13/001/alf",
+      "split": "train",
+      "n_source_trials": 620,
+      "n_candidate_targets": 103,
+      "n_retained": 103,
+      "sessions_available": 25,
+      "source_members": {
+        "choice": "4b0e7c1b903fbe8ead6fbf86f2667e2e9e1d25d770827a1087bda7a0c2aef773",
+        "contrastLeft": "f692c5d5f504c19a851210b3d9841d26dec5f29fa11a920729936524a1772267",
+        "contrastRight": "8cd25d7f21df66c405d20ca685e0faf749433c229372bdfef64a7362077e66f9",
+        "feedbackType": "fa6c0b04d39ce7b596d3505c9f12c755ffb81a709dc4bc532953aa2583f008e7",
+        "probabilityLeft": "77d57c6f92fb68a99d23cf5d811e2445c5db5e14755284261c7a9162fe0a1b51"
+      }
+    },
+    {
+      "subject": "KS025",
+      "lab": "cortexlab",
+      "session": "ibl-behavioral-data-Dec2019/cortexlab/Subjects/KS025/2019-11-13/001/alf",
+      "split": "train",
+      "n_source_trials": 420,
+      "n_candidate_targets": 70,
+      "n_retained": 70,
+      "sessions_available": 23,
+      "source_members": {
+        "choice": "c4f797ab9730f78e63d940af36f2de71d546de76a995e7a98195f752637976ad",
+        "contrastLeft": "4e6aa89d4ef337673a3bfbc4f6ce978056951d7d8c3505186c7e95b0065fcf4e",
+        "contrastRight": "f3f5d2a5b60b18e2529b6e6218a1c536ed17277eb9025813d598e41c0dc95b28",
+        "feedbackType": "548817aafdd2604898ca6c7423a785318cbeec576587cfcca2560a0d4d82a183",
+        "probabilityLeft": "29068c515b60f5b90a1e9e79383347878c4e725fa39f8e8786518048cfeb2fc7"
+      }
+    },
+    {
+      "subject": "NYU-01",
+      "lab": "angelakilab",
+      "session": "ibl-behavioral-data-Dec2019/angelakilab/Subjects/NYU-01/2019-09-16/002/alf",
+      "split": "train",
+      "n_source_trials": 126,
+      "n_candidate_targets": 21,
+      "n_retained": 12,
+      "sessions_available": 99,
+      "source_members": {
+        "choice": "a82368d328e8446db9f980738a92c27fc3bcd81e51d9a59acbf52c7b72370f29",
+        "contrastLeft": "822300dcb2d0333179cb21e5b14aae200599c3bdf4e2b6e6bee84ecf0f11d58b",
+        "contrastRight": "1d583176d1d06708462afc7ba01c1cfa6c99d36135890828628e367751ec05de",
+        "feedbackType": "b4cecb4eb139f346c7d56df18a8553ce95a5bdb3eb081166cb0e0999de5e0401",
+        "probabilityLeft": "5a4a0b0e1f132acf958a6bd8ed91e9af3d2f1e946c2f750c46be044222fc5a15"
+      }
+    },
+    {
+      "subject": "NYU-02",
+      "lab": "angelakilab",
+      "session": "ibl-behavioral-data-Dec2019/angelakilab/Subjects/NYU-02/2019-09-04/004/alf",
+      "split": "train",
+      "n_source_trials": 177,
+      "n_candidate_targets": 29,
+      "n_retained": 22,
+      "sessions_available": 104,
+      "source_members": {
+        "choice": "0a22a7126fa7a5cbba299c87dc56939f8f35dc1acdce94140dba7458f46a07f1",
+        "contrastLeft": "8b8453bdfd0228d9d2d71635698e5bf30ac04b05e00e0f36b2156ccb00b2507c",
+        "contrastRight": "c8450b483d2537d6e7fdbd411dbce678bf3b96cb11ef385084fecff9ccd9b58b",
+        "feedbackType": "2f13d14d19571ee7468cf2528019e6108bb1040cbf99db094391781beb31f334",
+        "probabilityLeft": "79808f3198cb546243f32bbc681c0ceea8e97c3255613ae6a33898c695898fe0"
+      }
+    },
+    {
+      "subject": "NYU-04",
+      "lab": "angelakilab",
+      "session": "ibl-behavioral-data-Dec2019/angelakilab/Subjects/NYU-04/2019-09-16/001/alf",
+      "split": "train",
+      "n_source_trials": 992,
+      "n_candidate_targets": 165,
+      "n_retained": 165,
+      "sessions_available": 106,
+      "source_members": {
+        "choice": "6350a632ba057c3863c3d4781145f8609267ddbda15882062e8f623f46454e58",
+        "contrastLeft": "34bbe0c3aa21335394a55ccbffdc669d9e9212de1255988de6970a349aa60153",
+        "contrastRight": "e05f2a83ff34146cca1f2767f356ea815e0a02c5383a18d07d2eae83532583ba",
+        "feedbackType": "7bd83017799e714db167cea9fdc4f86c92c38c7e44f0b6813bcd4f0655ef0b8b",
+        "probabilityLeft": "aaca7fa30d6e49cd346e46b3cc6a3ca2004022752aafaa957d7372b0602fbee5"
+      }
+    },
+    {
+      "subject": "NYU-06",
+      "lab": "angelakilab",
+      "session": "ibl-behavioral-data-Dec2019/angelakilab/Subjects/NYU-06/2019-10-04/002/alf",
+      "split": "train",
+      "n_source_trials": 144,
+      "n_candidate_targets": 24,
+      "n_retained": 24,
+      "sessions_available": 59,
+      "source_members": {
+        "choice": "ff848097004a32b2d86bf04d1a788971c73d3fc5e2559966a1848f4cee4a2528",
+        "contrastLeft": "e72730a72f4b843ffebc12ccc06b6e5d73974b96cc0133e7bbd6a95870dbe8c4",
+        "contrastRight": "dd36a95d5ae625e2a1fff84b184ae1ed1509695801312d586c9afef01224d654",
+        "feedbackType": "fa45bddd059f16d1dd940c0c3b222a072de576615a7212428c4f36a9aa7cb7cb",
+        "probabilityLeft": "f0bb0c9c94a3fc218a9ea272dcd3c3c5f2dd890fb913c901b99cf9bdea3d8756"
+      }
+    },
+    {
+      "subject": "NYU-07",
+      "lab": "angelakilab",
+      "session": "ibl-behavioral-data-Dec2019/angelakilab/Subjects/NYU-07/2019-10-16/001/alf",
+      "split": "train",
+      "n_source_trials": 181,
+      "n_candidate_targets": 30,
+      "n_retained": 21,
+      "sessions_available": 62,
+      "source_members": {
+        "choice": "a92cb4b7cec12056c94d551bf83cf41533ac141b999c288e566d0fa70782f450",
+        "contrastLeft": "00c1e9ffddc2483e87039a5387682dad222ce063d1de60409ed2d8fee4ebe8b2",
+        "contrastRight": "ece5dfb91bb5a512c112237d3a1dca06985f59d3cc24b3bcf68d19dafe6253a3",
+        "feedbackType": "4f53ece2c4b25fbd791cbe12e9f7948762dd2521d2a7b21e5e14f4ccabe4f726",
+        "probabilityLeft": "61b915bbad17915d4534f70b30a9f1ce1160d199741885b5d3d8adefc795157d"
+      }
+    },
+    {
+      "subject": "NYU-09",
+      "lab": "angelakilab",
+      "session": "ibl-behavioral-data-Dec2019/angelakilab/Subjects/NYU-09/2019-11-26/001/alf",
+      "split": "train",
+      "n_source_trials": 352,
+      "n_candidate_targets": 58,
+      "n_retained": 58,
+      "sessions_available": 23,
+      "source_members": {
+        "choice": "97631c360385bdf66c8914db1c9866e9785878e1f1e1ccf0c2d9cb670ee06e32",
+        "contrastLeft": "836922dd5485b16206a54f990c39d0274c7590e29120d5331b7120bf57bf7942",
+        "contrastRight": "3d53d6e639fec30622617823b7de86c59f8af0d9ec3f8dbbe630e60b58db5677",
+        "feedbackType": "06fca8ebe953409d5b2d49aed320905485d71556e08351e825f507d4003a199f",
+        "probabilityLeft": "302b5c00646471860f9ac4b9b6f354aa826e3d6d4365b90add654e7e4c51fb40"
+      }
+    },
+    {
+      "subject": "NYU-12",
+      "lab": "angelakilab",
+      "session": "ibl-behavioral-data-Dec2019/angelakilab/Subjects/NYU-12/2019-11-26/002/alf",
+      "split": "test",
+      "n_source_trials": 654,
+      "n_candidate_targets": 109,
+      "n_retained": 109,
+      "sessions_available": 19,
+      "source_members": {
+        "choice": "426dbd6fb002b769854e2fd7494dd7efe8d1b23cd0103c75b828e20f7a9fde23",
+        "contrastLeft": "2e335bd1905ca6d240099f393d54e3a01b5d2458bd65fc0416f256a458f386f1",
+        "contrastRight": "99028432515819686554949f5395778b8e637fb61918c421e1d040a5973bc2b2",
+        "feedbackType": "8f79feb42f10c1c5328825abbf921755fa87f7ba3cd17bfdc517d26c3a256d5d",
+        "probabilityLeft": "1dfdcc1e6ed23236278720202bf5ae583406ddda406379d29181b0f63001db0e"
+      }
+    },
+    {
+      "subject": "NYU-13",
+      "lab": "angelakilab",
+      "session": "ibl-behavioral-data-Dec2019/angelakilab/Subjects/NYU-13/2019-11-26/001/alf",
+      "split": "train",
+      "n_source_trials": 569,
+      "n_candidate_targets": 94,
+      "n_retained": 94,
+      "sessions_available": 21,
+      "source_members": {
+        "choice": "775f36d2554ec142d49cb078b31c2d869d2e85bcff10fd675ed23d7bbe2b65e8",
+        "contrastLeft": "5d54b4192b84d11c0dd8d39061dde54e8e5f54d7325d1d94b794acef859afbc8",
+        "contrastRight": "f07f36ace2cb50a9ea272a784b48bae51c9f72eeeba32bf71e0b0bbb291dbc9e",
+        "feedbackType": "8fe3a2701563e3a4ca49ef57718cd8f151e9ba679cbc6e8a0d4db02cbbddd688",
+        "probabilityLeft": "a5397c122e3d35a2cc516cb2ae1e525ecd60b6e15cc88e56959c933c74b802fb"
+      }
+    },
+    {
+      "subject": "SWC_001",
+      "lab": "hoferlab",
+      "session": "ibl-behavioral-data-Dec2019/hoferlab/Subjects/SWC_001/2019-08-22/001/alf",
+      "split": "test",
+      "n_source_trials": 826,
+      "n_candidate_targets": 137,
+      "n_retained": 137,
+      "sessions_available": 68,
+      "source_members": {
+        "choice": "2f116c96af3b5e1fc03b41296208d0816f0efa6eb263cc6bac4c2aa69932a7e8",
+        "contrastLeft": "e20b678d693c16101126516305115254862b5bf807330ae3c2da7eede7a38197",
+        "contrastRight": "e209e0b73550104bc4bad2ce027b5aac1c3a56f83689bc409b48002a69dbae43",
+        "feedbackType": "599fae0e836dd1691b54ab358290a536a542a3de060b09ab790b1a605df3dce3",
+        "probabilityLeft": "1bc987fef18a9590dee33c00c2f50f736d3ddb8276b856b86d52e9724ae89fef"
+      }
+    },
+    {
+      "subject": "SWC_008",
+      "lab": "mrsicflogellab",
+      "session": "ibl-behavioral-data-Dec2019/mrsicflogellab/Subjects/SWC_008/2019-11-20/001/alf",
+      "split": "train",
+      "n_source_trials": 407,
+      "n_candidate_targets": 67,
+      "n_retained": 67,
+      "sessions_available": 78,
+      "source_members": {
+        "choice": "c53c9b0d2f4d616ffc76d5a6dafa459332c1b59f11570ba93a996c786b2ac885",
+        "contrastLeft": "6bf9921cce82f9709a80243d7fec7a547c3101dd7a4bdd4412f338eaf9ee3ab1",
+        "contrastRight": "d50902f1a3e7ad2109d677bd31efaf392d996a82492b15f204c7697212b51b27",
+        "feedbackType": "6732d4c6614c80c6ed4377479fa9c6e4cb0119e5d8c57945eece7b8d8567756d",
+        "probabilityLeft": "53698b4c258cc9617ef31476808a95c90ac44725f543bab2b7cfd7c78cdb4330"
+      }
+    },
+    {
+      "subject": "SWC_012",
+      "lab": "hoferlab",
+      "session": "ibl-behavioral-data-Dec2019/hoferlab/Subjects/SWC_012/2019-10-30/001/alf",
+      "split": "train",
+      "n_source_trials": 592,
+      "n_candidate_targets": 98,
+      "n_retained": 98,
+      "sessions_available": 49,
+      "source_members": {
+        "choice": "4b90f3ca27ccc4bcb3477d4fa211eee3bf14c93b5c2876ab83c34e26a230e10a",
+        "contrastLeft": "af20197daa8f6a889494135371a1f15dec278adc47c0f12bfe4938b848d8e188",
+        "contrastRight": "96392561933a0e72c990e7332a7f0749cc368e30d3d6181f866663d4868f3c97",
+        "feedbackType": "9bdf988012dedf5558181249f5723c143bcba09aebabfc94e938a836d4ad46ac",
+        "probabilityLeft": "9f9e672a6d3a39acfa083b5b7104e40abf98d9ca3dcfd84368020e8be820695a"
+      }
+    },
+    {
+      "subject": "SWC_013",
+      "lab": "hoferlab",
+      "session": "ibl-behavioral-data-Dec2019/hoferlab/Subjects/SWC_013/2019-11-27/001/alf",
+      "split": "train",
+      "n_source_trials": 1144,
+      "n_candidate_targets": 166,
+      "n_retained": 166,
+      "sessions_available": 47,
+      "source_members": {
+        "choice": "ee81869fc44a23d8ce76af1815b40c2fa81c3c09f313abbb10fc9cde4057b5b4",
+        "contrastLeft": "d714c5c9d48f31a281622382d0cf284433f7df6df19356aa37dac7529688ee49",
+        "contrastRight": "6928397b6b4654ab6e2be99b7e2cc7f073116baa9cacbf6e2d61103e50e9b495",
+        "feedbackType": "f035a0ffe3a3e8745e300949e7025338e23893f238e9942505cf8475dc0fc358",
+        "probabilityLeft": "64bc4a275749a572c473323ed9824f44b536e20f3ee2358ed9c8a67f6cae2c7f"
+      }
+    },
+    {
+      "subject": "SWC_014",
+      "lab": "hoferlab",
+      "session": "ibl-behavioral-data-Dec2019/hoferlab/Subjects/SWC_014/2019-11-22/002/alf",
+      "split": "train",
+      "n_source_trials": 579,
+      "n_candidate_targets": 96,
+      "n_retained": 96,
+      "sessions_available": 41,
+      "source_members": {
+        "choice": "d1fcc13aaef4c7248b8a92aaec4d1f76031acadc2c203110bf6a7ff7dee11995",
+        "contrastLeft": "96d7f992d384f22966588e3c840e5ac1842dbf239fac3bcb8ebb70e10a9f43cf",
+        "contrastRight": "bb34fad7d467ab83fc17962d6b27133705c1395afedd220f99889abf93aadcd3",
+        "feedbackType": "036a01895a28668099a233a816a71cb6fcce181d603a387d1024eb5f658176a8",
+        "probabilityLeft": "bd00cc0714bcbc952ffab87dff6ab87e3330e94b032060b5d14460ede506cecc"
+      }
+    },
+    {
+      "subject": "SWC_015",
+      "lab": "hoferlab",
+      "session": "ibl-behavioral-data-Dec2019/hoferlab/Subjects/SWC_015/2019-11-29/002/alf",
+      "split": "train",
+      "n_source_trials": 534,
+      "n_candidate_targets": 89,
+      "n_retained": 89,
+      "sessions_available": 63,
+      "source_members": {
+        "choice": "e5225b9c597baeba9adf76f00959c409b2c48da298634aaa82b6feafa4904991",
+        "contrastLeft": "504dc579ac5be420f0efb6536734d2304aad5548f9efa245a8948dda77d79769",
+        "contrastRight": "9604b1ff9b2d2c30b6b44e26afa833435c780e78b6a5c1fc18180d5c2185df85",
+        "feedbackType": "ddf3c64695c71c84ba80e6106f03d79677d85c683a30dd3492a86fe3e1137ac7",
+        "probabilityLeft": "1c1d561d52a62fa84360f61c4a1c9aa54e11bf08b9247e0f7df3d535f99de3c2"
+      }
+    },
+    {
+      "subject": "SWC_017",
+      "lab": "mrsicflogellab",
+      "session": "ibl-behavioral-data-Dec2019/mrsicflogellab/Subjects/SWC_017/2019-11-29/001/alf",
+      "split": "train",
+      "n_source_trials": 751,
+      "n_candidate_targets": 125,
+      "n_retained": 125,
+      "sessions_available": 59,
+      "source_members": {
+        "choice": "eb7a1a45f65d5f537003e18b9187cbeac260c94b731215f8eccc9b715bd4139b",
+        "contrastLeft": "33f5bccf50547191a2b95da7792b4e5c25aa3799599ab274104b3783e2d08ec7",
+        "contrastRight": "6ad52cb754b50fb17384de80a6b086e13f785a362d2ca4152384c6e339ce2bd4",
+        "feedbackType": "f5cc00988ea7968124be313d80a0aa62fe8e9d5da1462fd2bae6ac30491a9678",
+        "probabilityLeft": "ea3b264c97a74339688f8ea89029df6792a2fd8e6998afbe428aa30b9bf96db0"
+      }
+    },
+    {
+      "subject": "SWC_018",
+      "lab": "mrsicflogellab",
+      "session": "ibl-behavioral-data-Dec2019/mrsicflogellab/Subjects/SWC_018/2019-11-29/001/alf",
+      "split": "train",
+      "n_source_trials": 669,
+      "n_candidate_targets": 111,
+      "n_retained": 110,
+      "sessions_available": 55,
+      "source_members": {
+        "choice": "eea4075550124e2fed65efb0500c3486651bbf3b0787d9830c8ef0e1ccef3051",
+        "contrastLeft": "122704e5c9156a84f4b8d4c48fd0ef2946b1fead9b0ef0b5804d59b75916da78",
+        "contrastRight": "3c6aabc86ec508410296691ec432bca5771a772f7836f1ff4f34e6a1cc686590",
+        "feedbackType": "759bc8a1c356d4471c448d72707a4d752f58878c64279d5c165035583d0748ae",
+        "probabilityLeft": "483eb0963506688114885ae9a63c71f080755a954816c971fdcc063751b18e87"
+      }
+    },
+    {
+      "subject": "SWC_021",
+      "lab": "hoferlab",
+      "session": "ibl-behavioral-data-Dec2019/hoferlab/Subjects/SWC_021/2019-11-29/001/alf",
+      "split": "train",
+      "n_source_trials": 316,
+      "n_candidate_targets": 52,
+      "n_retained": 52,
+      "sessions_available": 44,
+      "source_members": {
+        "choice": "f3ac8dc68cb04279eafd7cca473b1d512cb00706cc36b31f7bbf8cc6adf3b7c5",
+        "contrastLeft": "11eab550ba36dfd3d1af73c6f693dd32341133c8acb2c8e723ce395ea9407adf",
+        "contrastRight": "df2efd4541f21e17719eecbeedc4e577e3eebe79fb89dfa35807dc9f62c3ebcc",
+        "feedbackType": "1d2caa3f3d5d32c9a8c44296a6dbc5f676854b5e7f3e8768b4d5364a51261c80",
+        "probabilityLeft": "1aea05cb4ad0685dfc392224084c5ee32ba44e3f2dfa7a69533e459c827e9d90"
+      }
+    },
+    {
+      "subject": "SWC_022",
+      "lab": "mrsicflogellab",
+      "session": "ibl-behavioral-data-Dec2019/mrsicflogellab/Subjects/SWC_022/2019-11-20/001/alf",
+      "split": "test",
+      "n_source_trials": 829,
+      "n_candidate_targets": 138,
+      "n_retained": 138,
+      "sessions_available": 42,
+      "source_members": {
+        "choice": "03b04f86db9e5b6f0b346b4053b6d4ca78b1cc11808e5222791d76e766a809aa",
+        "contrastLeft": "f46b147f7406aae4b66a77d818695149dec7233db2c8ae4ecdb014bc13d238ad",
+        "contrastRight": "9e798e155ec5dea978ffa01fe47dd658fb692042367b264930c8e102a11ddf91",
+        "feedbackType": "c02e19faf1c33fa155462f2fbd2a082fe1a1e75e1fb5ee13f7e650f3e9cec04f",
+        "probabilityLeft": "fc5b3f85ad0c6eb22073c1e1edcec64f1023eace4257270a6b6ed49d06556756"
+      }
+    },
+    {
+      "subject": "SWC_023",
+      "lab": "mrsicflogellab",
+      "session": "ibl-behavioral-data-Dec2019/mrsicflogellab/Subjects/SWC_023/2019-11-20/001/alf",
+      "split": "train",
+      "n_source_trials": 730,
+      "n_candidate_targets": 121,
+      "n_retained": 121,
+      "sessions_available": 38,
+      "source_members": {
+        "choice": "0db23594612af2bfc4754ddd4e25614338c2a92df18f99212282cce6818af46c",
+        "contrastLeft": "5f100a7c37e2cad23fd93f68f3db05f18d208782d29ebcab3af8bb05bcdcdd4f",
+        "contrastRight": "95a7bd3cd7939a3548689d7d3a7eeba158de39608275c41db1c745070d1a5c52",
+        "feedbackType": "340c469c9a05df060cfc639121a3d82e2a95f851037b32de9f343b61087f2fdd",
+        "probabilityLeft": "27dba58ae65eaa265cab8d7cd13a92cc5ed59e6224740980d05024aa30cb3b85"
+      }
+    },
+    {
+      "subject": "ZM_1084",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1084/2019-02-25/001/alf",
+      "split": "test",
+      "n_source_trials": 676,
+      "n_candidate_targets": 112,
+      "n_retained": 112,
+      "sessions_available": 22,
+      "source_members": {
+        "choice": "68e90818134fdc95eaaec63eb3c9ff46fb76dd8439f249a786a1bfe0261456a4",
+        "contrastLeft": "a0d1792a54b9e437b1f2ef07857a605d99c392fa01c8030178f4c25a0ecf0673",
+        "contrastRight": "841ec9feb9ddb3c801f25f5a1d888932bd0c9e0e204ac3bd4588d7ff23fbf70f",
+        "feedbackType": "71e1616f08ebd2827f856915cb596fcff12f157c408086f411c4dbfe1c8e0b67",
+        "probabilityLeft": "157aae224c8b71096790d6b933d69c8226e141d2236bdc2fea1a5e7ccb1b951d"
+      }
+    },
+    {
+      "subject": "ZM_1085",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1085/2019-02-25/001/alf",
+      "split": "train",
+      "n_source_trials": 579,
+      "n_candidate_targets": 96,
+      "n_retained": 96,
+      "sessions_available": 22,
+      "source_members": {
+        "choice": "85692f60890d686649a9274803d0b86640b5da26436ed0f1ef4200d235343b24",
+        "contrastLeft": "decd32c0dad37658d572545cdebfabfe1884fcb98c15a5fbb4399623a4f73fb5",
+        "contrastRight": "8b4291702f1f632a32791c4bbf2136144612f76c8e4e7d2c7ac32cf949d986d4",
+        "feedbackType": "ad10bf89616e8fec3c905541c20bb8f41cbb7efdc5b8cd1ddcc856eb10ac47c5",
+        "probabilityLeft": "e2bf0aaccf800ce5c520ffdc821dc323e1e7f8ea1ebec44fea5d142028c96479"
+      }
+    },
+    {
+      "subject": "ZM_1086",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1086/2019-02-25/001/alf",
+      "split": "train",
+      "n_source_trials": 897,
+      "n_candidate_targets": 149,
+      "n_retained": 149,
+      "sessions_available": 22,
+      "source_members": {
+        "choice": "289e2ce4e62f514f9c783e5c22a6e45ad762521429cb447308f31c6f3c3c5ab1",
+        "contrastLeft": "acd7e893ccb3c6d146fc2dc7e6a09cd51c6dc2211a07bfaac4fd431a6a7a9de3",
+        "contrastRight": "4bfc53530aa8a730858918270e354fd87588ec0c7b640d2305d685132f9ad0da",
+        "feedbackType": "2a1219e489771f79fc1e31af3bf568850355e3e6dcc15689b9a3262f10e7bafb",
+        "probabilityLeft": "eb604bc483f53fceb7f076f7be0ebab2672d3aa0d1105fa4c3ec2d29840d1108"
+      }
+    },
+    {
+      "subject": "ZM_1087",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1087/2019-02-25/001/alf",
+      "split": "train",
+      "n_source_trials": 1097,
+      "n_candidate_targets": 166,
+      "n_retained": 166,
+      "sessions_available": 21,
+      "source_members": {
+        "choice": "fb22a25b7e4dffa6dcc6b7918977f9b41a8c54f8f84949d5bdc25a6476dcc969",
+        "contrastLeft": "bde44421482752b65d209be7d83d0f6a34f4f7c4c88ef2444d8f20b0a95ffad4",
+        "contrastRight": "34216eb9f804921aa5bb055a52d6f117e49c80dba3d7d0f5bb70ab350092749b",
+        "feedbackType": "39c80a586b69dd829ee1217757977de0ae67c7dde2c6038571c419cbb65ac442",
+        "probabilityLeft": "115d9a89459f10d66d5103607f2f946b104a2897c2cd80f00fd4df49da45999d"
+      }
+    },
+    {
+      "subject": "ZM_1089",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1089/2019-02-25/002/alf",
+      "split": "test",
+      "n_source_trials": 749,
+      "n_candidate_targets": 124,
+      "n_retained": 124,
+      "sessions_available": 22,
+      "source_members": {
+        "choice": "f5c7cf9eb91d277b349d72dc5befca4281a4f0ba835deb60621cd47b0395eb7f",
+        "contrastLeft": "e23670b0ee956543788aecf85cc6604e16d65e6bc1f32ac9830da7f9429e144a",
+        "contrastRight": "4f8de48fdb90c82f85675587a374fd87c9375ecacac05b62a62f8e2295bcf43a",
+        "feedbackType": "626cf04b35988cf8b7a48f5aaa8e35c99f750e7e7c652de70856f7baee158a84",
+        "probabilityLeft": "00e36c53237303d42083ee92e3b08d47d23c348b07f71f902ee8a7b7dda54adb"
+      }
+    },
+    {
+      "subject": "ZM_1091",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1091/2019-02-25/001/alf",
+      "split": "test",
+      "n_source_trials": 598,
+      "n_candidate_targets": 99,
+      "n_retained": 99,
+      "sessions_available": 23,
+      "source_members": {
+        "choice": "2ddc528bdbb6fc317091ae1bfb357f3e4f60744dffbca18808d45b2d22b06ab6",
+        "contrastLeft": "9db35430b5ed2cd8e4164ebc59dc88208f99600fcf4486d64d4df0a835e7e221",
+        "contrastRight": "59e0659f10facc9df604fed66ff18e27ba14de0f82f0d95be91c741a5453e116",
+        "feedbackType": "99cd60064330384cccf3e99cd4f592ffa974fdaf4d07d979875a8720f515ef54",
+        "probabilityLeft": "55df5926fd26ca3fff60bdcf01e7971c55dea93968b6f3631a4ac0f8f8df31e5"
+      }
+    },
+    {
+      "subject": "ZM_1092",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1092/2019-02-25/001/alf",
+      "split": "train",
+      "n_source_trials": 728,
+      "n_candidate_targets": 121,
+      "n_retained": 121,
+      "sessions_available": 21,
+      "source_members": {
+        "choice": "1b828467782998672d4d93b6496d9815bf1a44f576b077a423e2afd84be267fa",
+        "contrastLeft": "e31f2401220aca753d042c19faebcafe5c80c871ae294eda90ab56be9ca8f46c",
+        "contrastRight": "15a7a464f5ac413f6abd58792b41d7174091e9a0c2ff6b946f24261bad163853",
+        "feedbackType": "29dcd5271133508f8b74cbc558824b67b60cfcde63966a3eb822736e3eb9f654",
+        "probabilityLeft": "5504a0fff219d3e5b58c442fc08c7829e8a094582a8690eba00860238d3d0a40"
+      }
+    },
+    {
+      "subject": "ZM_1093",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1093/2019-02-25/001/alf",
+      "split": "train",
+      "n_source_trials": 694,
+      "n_candidate_targets": 115,
+      "n_retained": 115,
+      "sessions_available": 18,
+      "source_members": {
+        "choice": "039be8ccc5460546a520456e8b4a4a522e21483f577b827578dc078c67d7d005",
+        "contrastLeft": "0e746424fc912b319f022764b72ed6a064ac7726bac837d0ba09004fc4543070",
+        "contrastRight": "86126a666359cdd1e30d7cf73f39fc5ed844f3eca49e086767f40793759add89",
+        "feedbackType": "f74d18e24b2e4dcd4dd6b58385ab975a51f27311fdb1e8e008816edbb5bffaf2",
+        "probabilityLeft": "7960b510452a159b3929599ab874505f7574f29c26c1d92ea53457f6a28a8ef3"
+      }
+    },
+    {
+      "subject": "ZM_1095",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1095/2019-02-25/001/alf",
+      "split": "train",
+      "n_source_trials": 439,
+      "n_candidate_targets": 73,
+      "n_retained": 73,
+      "sessions_available": 18,
+      "source_members": {
+        "choice": "1a7b84e39f518482be9cd72d44cc9f7d371a8288c9312ffff886077b7ce2f474",
+        "contrastLeft": "80340544c2260f86d74b54d18c7f406db07f6b70bf59a8b715fe53c18353829f",
+        "contrastRight": "ae1635e12d71220911f36eb907de88ca7bc42ee9a7bb075d0eb1f2b753a685c4",
+        "feedbackType": "c39877e8f10fb14c5ab6708b00e12d76e2f0eb61ce214998520ea99fcd56be4b",
+        "probabilityLeft": "948ea6d6b258b3414d42e1f9311c7356c86e652f2552499e6927f2420d3bd298"
+      }
+    },
+    {
+      "subject": "ZM_1097",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1097/2019-02-25/001/alf",
+      "split": "train",
+      "n_source_trials": 586,
+      "n_candidate_targets": 97,
+      "n_retained": 97,
+      "sessions_available": 18,
+      "source_members": {
+        "choice": "69a45a0c4fa742aa8c6c4d0d6196d201d22a92a742f2217498e72854d5c5ee47",
+        "contrastLeft": "f7d556c4ffc8f974c33641f7e63046f9930483f4daff33242979d136f7d33e65",
+        "contrastRight": "f711c87b858997f8fd9b42abf08fb86af64704d80c17018109b3d4b63a7431a1",
+        "feedbackType": "9d47a29d6ff8b6ce0899e98e82217c55cf1c89da41766451e180833b5b405a23",
+        "probabilityLeft": "81d13ed42202badfe264f3f78ebd6a39e3283bcfd493ef179a824a72cee9caba"
+      }
+    },
+    {
+      "subject": "ZM_1098",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1098/2019-02-27/001/alf",
+      "split": "train",
+      "n_source_trials": 171,
+      "n_candidate_targets": 28,
+      "n_retained": 28,
+      "sessions_available": 19,
+      "source_members": {
+        "choice": "ff8ea860735b1a9e00ee1db796fa998aea20a87ca0649a93b5a6e698ba2c2dfd",
+        "contrastLeft": "a2a0df5e22530223d0cb0f867509ee00859b732724b76db9a438ed9f8d76f13f",
+        "contrastRight": "2b4f570f1ba3a9a1e3bb67f071caabb2de2f86cdb93111e16e778f256979de7b",
+        "feedbackType": "eff57d2ad5cff4a279012615a882e9a0f5003159cceca54e7eb2f4c7ac567fdc",
+        "probabilityLeft": "47e05c98c016e4d726a1cb4a70adc822c80ab7f5c8e004e308052a784f29ec9c"
+      }
+    },
+    {
+      "subject": "ZM_1367",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1367/2019-09-18/002/alf",
+      "split": "train",
+      "n_source_trials": 773,
+      "n_candidate_targets": 128,
+      "n_retained": 128,
+      "sessions_available": 73,
+      "source_members": {
+        "choice": "195da0be723bb068ae64b3ad52a7f9e0f44accdfb8a105e1c1d489d47ae445f6",
+        "contrastLeft": "d136e7a9083b3c11f446ff28e7c5bd2a288dcb1123fda5850f573df2197e409c",
+        "contrastRight": "b7c2cc6012c2f0b10393e85129685eb52bb077a80f41436bd05d81eddfd592f2",
+        "feedbackType": "9e17440b790f9fc299b3a79f659582ce83c117e25bbc731cd8311443103efa46",
+        "probabilityLeft": "e3e831a5199ca3b6712d9b134c53453886cbe1f2d58c7c71d76d0c6d7650e0b9"
+      }
+    },
+    {
+      "subject": "ZM_1369",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1369/2019-09-18/001/alf",
+      "split": "train",
+      "n_source_trials": 591,
+      "n_candidate_targets": 98,
+      "n_retained": 98,
+      "sessions_available": 72,
+      "source_members": {
+        "choice": "e9e7820bcbb548a9ed1f55f030ebcc55e382810f39a14ca80278021b6831829c",
+        "contrastLeft": "5d5eacb487ce778bebeb1febb661b12f6789cf9e5b8597728504c937570e7df8",
+        "contrastRight": "3202ee07902a646a0aaedf850d7b4f0fdaf646636908b2bf024e685b9b53785f",
+        "feedbackType": "21f7294b8d9ef45dbc65c97e0690955e9b75236f61ac45dae225b366f2894f4b",
+        "probabilityLeft": "cb21fc2b4679665cff9f5d39a3011411b118959e49d67fa8ab4afe5fb91c4d4d"
+      }
+    },
+    {
+      "subject": "ZM_1371",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1371/2019-09-18/001/alf",
+      "split": "train",
+      "n_source_trials": 922,
+      "n_candidate_targets": 153,
+      "n_retained": 153,
+      "sessions_available": 73,
+      "source_members": {
+        "choice": "6d38a5c455c3dddcc0041a81bf861e6f3dbe2d7f6e1f5fad6ab6557d29067834",
+        "contrastLeft": "d4e7b5e509839cd40147420a729f417ba812f2e80b6455deb7afc31b56d86325",
+        "contrastRight": "3c007012e23433b5b4c409f6b9a72acd42f123b886686df6675e9fdd362f1e07",
+        "feedbackType": "c4d9fc3d678eda727617ef1ca16c7bb83e9ac1f6bbebb4ad3a8e1b050e237315",
+        "probabilityLeft": "23baddf62a3a6f2a4348027054a2bd3d71d894564036a46a718fe79cbd077aa1"
+      }
+    },
+    {
+      "subject": "ZM_1372",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1372/2019-09-18/001/alf",
+      "split": "train",
+      "n_source_trials": 911,
+      "n_candidate_targets": 151,
+      "n_retained": 151,
+      "sessions_available": 79,
+      "source_members": {
+        "choice": "3222ba835d8e7d480898ef9952585f1b444aac2a5f777a4e36853006c297f108",
+        "contrastLeft": "16d6542f5090f43ff9b41dddfc08957166d78e8a3a015c7ebe0c5c64c1b71346",
+        "contrastRight": "852460e4886125fe9d4f155f9c5cc2a6f35b3f82460cf99ef3d12733c630b160",
+        "feedbackType": "085c132278b5480634669e2680e049b9e7897b796890329a35b666a5e55e7657",
+        "probabilityLeft": "d2033ceb37fe4b762a9cdb48c8e2d80d61f3781971b9ac389dbf2af395624f53"
+      }
+    },
+    {
+      "subject": "ZM_1373",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1373/2019-04-22/001/alf",
+      "split": "train",
+      "n_source_trials": 581,
+      "n_candidate_targets": 96,
+      "n_retained": 96,
+      "sessions_available": 14,
+      "source_members": {
+        "choice": "baa9d87eaa3e21a5c88a9d514b5dc58110a2807561ae64cab07d00b431df928f",
+        "contrastLeft": "23d33a095a95f7aae59cdfa992965dadc1cd47d5d473224868cca15fbd322245",
+        "contrastRight": "0717032f2c9fd6592c4ee5b933aed4bca71a5b0fe91dcc3deb01945b6c0117fb",
+        "feedbackType": "003f0a003a5d69e8ff94107bfdfedc95ae7bdbf7d079125bb04567dcfc3f3c04",
+        "probabilityLeft": "1eaef0afbd3e06d0d201104b1abf927c1adadeb6ec3bdf98810d4adddeb17204"
+      }
+    },
+    {
+      "subject": "ZM_1743",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1743/2019-11-04/001/alf",
+      "split": "train",
+      "n_source_trials": 477,
+      "n_candidate_targets": 79,
+      "n_retained": 79,
+      "sessions_available": 79,
+      "source_members": {
+        "choice": "87ff07d8117886793c1478338516804a7fe935b03ea6c6cd0fda728e554f758f",
+        "contrastLeft": "2640572ef768773610ed6ec341424500d74da16a55523c3a41490b02e576f900",
+        "contrastRight": "e021dfd5aed2aeb464d8bba88ae35d200b26e99197b32d0c303b6a9dd072fa7d",
+        "feedbackType": "bb80b0c3ed68b40e50c88f8a292733f80e882f382eda89216e4fea8dbdd94508",
+        "probabilityLeft": "0ede54a145b909a1e30979bedd2cb8eb316f1bbf156ed2a3461fc0b4ad7a2cf2"
+      }
+    },
+    {
+      "subject": "ZM_1745",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1745/2019-11-25/001/alf",
+      "split": "train",
+      "n_source_trials": 404,
+      "n_candidate_targets": 67,
+      "n_retained": 67,
+      "sessions_available": 75,
+      "source_members": {
+        "choice": "5fa6e109cd25ade5078873f349f2a9c126ce30d4e5be1ede8bb3cdb12b704aed",
+        "contrastLeft": "62d644178bde0f902132d671510d674185481c27dadbb1b6daa461aba4e3922e",
+        "contrastRight": "8fc65d8a956e157d8e9342ae30f9a23024da07d141f02d8fa8ceaabf7b45f221",
+        "feedbackType": "ce6e2f6c0a7e8c418810f64a079fbd9e0cafd8dc7e2f9e1f388bb12a810568c5",
+        "probabilityLeft": "dc6a1f49ed6545231df2cdea1f4301544149cd46b7f7d5d32ecde3ad2e5d3d18"
+      }
+    },
+    {
+      "subject": "ZM_1746",
+      "lab": "mainenlab",
+      "session": "ibl-behavioral-data-Dec2019/mainenlab/Subjects/ZM_1746/2019-09-26/001/alf",
+      "split": "train",
+      "n_source_trials": 992,
+      "n_candidate_targets": 165,
+      "n_retained": 165,
+      "sessions_available": 51,
+      "source_members": {
+        "choice": "47811dd592c2f37b622d9aea02b19dbcd24c76a463d10d214665ff1a69fd9f00",
+        "contrastLeft": "3fe7bc69a6fcca02cec61d34f071c77b213c9bbbe1012f1d0f2b452d40560cde",
+        "contrastRight": "e2261080aa1a0870112f74364cefaff5dc075650e19a2ab012a650c09b955127",
+        "feedbackType": "a7bf7633f564555887ee8c24d40b3fd06bd8b2f9dbd30df7bb4de6190bc25717",
+        "probabilityLeft": "8be868119219fa47cd91459fbf9473f119f61d0b4540a625b76e2ef557e6bd6c"
+      }
+    },
+    {
+      "subject": "ibl_witten_02",
+      "lab": "wittenlab",
+      "session": "ibl-behavioral-data-Dec2019/wittenlab/Subjects/ibl_witten_02/2019-02-01/001/alf",
+      "split": "test",
+      "n_source_trials": 1214,
+      "n_candidate_targets": 166,
+      "n_retained": 166,
+      "sessions_available": 27,
+      "source_members": {
+        "choice": "d8df2cdffd7c5b80ddcfc5fe550d0d6acd2ab986b8908f12a7637aaf4e2897fe",
+        "contrastLeft": "ec7978f50fcb7b6f355ca6684914dfd9a9239294e4a61322a3f5606f0c931bfa",
+        "contrastRight": "01047745ba5ce768de9e3c3a41c64dced25c9ed301aca381032d2162580b6f18",
+        "feedbackType": "406e7796cbf249efb41f14352a90959f630b70e46ac61760f11b4eb6d80ca82d",
+        "probabilityLeft": "f07d3e6285b723751cfa3230c08c15f58abc739f3fa475c6f6823d60d39951f0"
+      }
+    },
+    {
+      "subject": "ibl_witten_03",
+      "lab": "wittenlab",
+      "session": "ibl-behavioral-data-Dec2019/wittenlab/Subjects/ibl_witten_03/2019-02-01/001/alf",
+      "split": "train",
+      "n_source_trials": 1323,
+      "n_candidate_targets": 166,
+      "n_retained": 166,
+      "sessions_available": 26,
+      "source_members": {
+        "choice": "afc224ee7015e1a8fe676e64e15ba9b7998505d869b4b88c1cb0e802f18c3443",
+        "contrastLeft": "e523547b37de6054109d745860bc7d8eb7fef10a91b44d27277eef2075ce6499",
+        "contrastRight": "209f4b96d9a8c060cb28bf9c1a63b94d4d2390a774d57fe73b16db10a030a65c",
+        "feedbackType": "2eb208293071c55a73d8fb232abc2f2e495d3b90b718e9239e7f2348570fcac0",
+        "probabilityLeft": "71677bc57f458b04325d32fbc81818ae143ab4c9fcaf21b1c4bfeadbd9a62745"
+      }
+    },
+    {
+      "subject": "ibl_witten_04",
+      "lab": "wittenlab",
+      "session": "ibl-behavioral-data-Dec2019/wittenlab/Subjects/ibl_witten_04/2019-08-06/002/alf",
+      "split": "train",
+      "n_source_trials": 899,
+      "n_candidate_targets": 149,
+      "n_retained": 149,
+      "sessions_available": 83,
+      "source_members": {
+        "choice": "a42e99bcdfa919c044727ae8eb58675742cc0f3978fc17354f2c1da931480f1b",
+        "contrastLeft": "ae01c81cb2a162cc4a699947bd365eae701edab3b6c561c53228db4bf5dfdc6f",
+        "contrastRight": "55ae6e9cce39f04dda696bcb1e2d938ece6d2a3096332ea6860aa65bb5178364",
+        "feedbackType": "5e31b94059cfcd916a586cad02a2b8e7b95fb3f2f9a4f44ceda4b37f5cf1cfd3",
+        "probabilityLeft": "a9b76fe29ba68671970a43782efd768e46b102645a827569e843636ffc34e453"
+      }
+    },
+    {
+      "subject": "ibl_witten_05",
+      "lab": "wittenlab",
+      "session": "ibl-behavioral-data-Dec2019/wittenlab/Subjects/ibl_witten_05/2019-09-20/001/alf",
+      "split": "train",
+      "n_source_trials": 533,
+      "n_candidate_targets": 88,
+      "n_retained": 88,
+      "sessions_available": 101,
+      "source_members": {
+        "choice": "ce169b08dc3889d50a055cecd1f86ed8565dcadb8d2b9d4436738e8f5932fcb5",
+        "contrastLeft": "43936caa6c26fb3185295b097413d70de101ae6a1cec4d0e1b821e529abbb9c0",
+        "contrastRight": "f8f38ddeb6d38aea3e4c2058ca3e07dd04feb17cc3a0c8ada773328a2e9f5f91",
+        "feedbackType": "da6d175ea2be9b0bb415f37f36beb94aa0060358e33c580bd71e66255763c542",
+        "probabilityLeft": "33c1c35886c9b0acdb650337805362f69c449dcd9f942cfa8bb3ab1e939ca369"
+      }
+    },
+    {
+      "subject": "ibl_witten_06",
+      "lab": "wittenlab",
+      "session": "ibl-behavioral-data-Dec2019/wittenlab/Subjects/ibl_witten_06/2019-09-24/001/alf",
+      "split": "train",
+      "n_source_trials": 671,
+      "n_candidate_targets": 111,
+      "n_retained": 111,
+      "sessions_available": 106,
+      "source_members": {
+        "choice": "4bb347af726cd90549c9ff216a3ecca7a49dc253084bfa54fe7d4553bb4cb8eb",
+        "contrastLeft": "5e57ae36074da34632da63d78000114eccfd5e1815c9d997e9c206237d7fa743",
+        "contrastRight": "a8479f8de9ae76da0d6a211b21e6b7962adeb471207de0eb347618c7876dba14",
+        "feedbackType": "0c19c438e583205640beaba9ea8499cfc2e27ed3248a2d4459ec5da0b148802a",
+        "probabilityLeft": "3b51feb84471bca193711f380e7c7274715ce0089da79fd06fa0f363bc53a31e"
+      }
+    },
+    {
+      "subject": "ibl_witten_07",
+      "lab": "wittenlab",
+      "session": "ibl-behavioral-data-Dec2019/wittenlab/Subjects/ibl_witten_07/2019-11-05/002/alf",
+      "split": "test",
+      "n_source_trials": 1156,
+      "n_candidate_targets": 166,
+      "n_retained": 166,
+      "sessions_available": 127,
+      "source_members": {
+        "choice": "939519c4727f4fc5045c36eaf50625a2ef1eda9f432e0d7a5225e35c57afe730",
+        "contrastLeft": "a28d26cf7f7360c3aa3a03ab5c0d1b7647e395417c4245662a0e4d3ae017f402",
+        "contrastRight": "6b7ad85477d731a613e952b40cfb1ff6cadc7808e23cdffd70d4200279a78da3",
+        "feedbackType": "f7e9ea80af13db2151d547875631bf858dbcf14364346cc6d56a009b807cd526",
+        "probabilityLeft": "f9958fd2cbe5c8952576e673edf6f4dd5804debd4da5f8dabbe2fa22844591fb"
+      }
+    },
+    {
+      "subject": "ibl_witten_12",
+      "lab": "wittenlab",
+      "session": "ibl-behavioral-data-Dec2019/wittenlab/Subjects/ibl_witten_12/2019-11-22/001/alf",
+      "split": "train",
+      "n_source_trials": 932,
+      "n_candidate_targets": 155,
+      "n_retained": 154,
+      "sessions_available": 91,
+      "source_members": {
+        "choice": "a0bfb1bbd34541e0094b2ba609953331c8d3380cdc23d07a67b59a555dd37912",
+        "contrastLeft": "9b615f3861ef4f7db688c48e4f5edc5d3ad2db0613def5ebcea7c155aa3321b1",
+        "contrastRight": "cfd34e0ebe2913eb974fbdfc6495a7c08a272014d23a410abef61aadb22ae175",
+        "feedbackType": "94f1b0a2ba8b444794d46932feb20c73b3c8c8ba05b6f07551a5c87dd7b2eae7",
+        "probabilityLeft": "f78f1317504036b3b7307b8790c0fd0a4773780c3308fa726e2ab41ecc5f02c1"
+      }
+    },
+    {
+      "subject": "ibl_witten_13",
+      "lab": "wittenlab",
+      "session": "ibl-behavioral-data-Dec2019/wittenlab/Subjects/ibl_witten_13/2019-11-27/001/alf",
+      "split": "train",
+      "n_source_trials": 544,
+      "n_candidate_targets": 90,
+      "n_retained": 90,
+      "sessions_available": 66,
+      "source_members": {
+        "choice": "b7125a0a904665f5bb16b942939963dba01377eab9d3feeef720f46f053d6ca6",
+        "contrastLeft": "ef38b414061ce99f11a9b02f7125c77bb6e3c64994c34caf985f7e115aa0e114",
+        "contrastRight": "84232855e986881402fe45585f400cbb993307b3393ac95d1880f1bb4cbe68b2",
+        "feedbackType": "e613aa615741c47c5510914662000606c52306af644af8dace6d636e682d4476",
+        "probabilityLeft": "603334df1199e1f73ca4dbba57f6d4ca57a482ec34a3342ba7ddf4bd3e6a7163"
+      }
+    },
+    {
+      "subject": "ibl_witten_14",
+      "lab": "wittenlab",
+      "session": "ibl-behavioral-data-Dec2019/wittenlab/Subjects/ibl_witten_14/2019-11-27/004/alf",
+      "split": "train",
+      "n_source_trials": 411,
+      "n_candidate_targets": 68,
+      "n_retained": 68,
+      "sessions_available": 48,
+      "source_members": {
+        "choice": "cb24cfdc842d5c58b5b358df3785b23ced17d2a2ef71a3da643d27d0f25e61ec",
+        "contrastLeft": "912be0d1107ed3aa076ce8eb99f690b66f88d3fe66a3cf68aa8277f80cd42cfe",
+        "contrastRight": "a85014f3d7717803bd9faaf05ac18d3a14ae6234e13716dd99bba5556bdd33bf",
+        "feedbackType": "da23843fcf1cbfcb5aafe6dc3389859cc375318688dbd55259bbd0ec54e619b3",
+        "probabilityLeft": "3e1f60001d197459cc57f38422f2cb22f3dbcd15be4077965fec28c6d2761679"
+      }
+    },
+    {
+      "subject": "ibl_witten_15",
+      "lab": "wittenlab",
+      "session": "ibl-behavioral-data-Dec2019/wittenlab/Subjects/ibl_witten_15/2019-11-27/001/alf",
+      "split": "train",
+      "n_source_trials": 1416,
+      "n_candidate_targets": 166,
+      "n_retained": 166,
+      "sessions_available": 70,
+      "source_members": {
+        "choice": "72d3dc6cf743a7ce8aa08226009b95bdee81465168f4759938cb2e2359517097",
+        "contrastLeft": "aa3b1ffbebe3087c767a6dca39c9a51ab3d85b6169b1d7aa18e07e7f9bc4762e",
+        "contrastRight": "aa65f17f4fe44014da6ac5ab033bb9ab816f2942508a876f7801dc415dae56e5",
+        "feedbackType": "0d6a37853ea600eada9c6b95713b3a2d40d9427ed10d3b8d13330bc926c44f2e",
+        "probabilityLeft": "6592fdcab421ce766683a9c58554d4e7df5b93c045ed21a9b4e94ce2e677aff0"
+      }
+    },
+    {
+      "subject": "ibl_witten_16",
+      "lab": "wittenlab",
+      "session": "ibl-behavioral-data-Dec2019/wittenlab/Subjects/ibl_witten_16/2019-11-27/001/alf",
+      "split": "test",
+      "n_source_trials": 1181,
+      "n_candidate_targets": 166,
+      "n_retained": 166,
+      "sessions_available": 71,
+      "source_members": {
+        "choice": "fa6207d5f2596fcdeeb1e989cdef5ee9573bb3f8c6deccae7a4f4d91b03f3cb3",
+        "contrastLeft": "65b89972740c518a6c2528cfee3b4407cd443b603bae7b899965e7cfbef25bee",
+        "contrastRight": "b38cb79fe7bf16b7d7870e9aafc8b20ae49f29df327c30b2465ea5c671f13ef3",
+        "feedbackType": "4da8e759ebd0708cd0f8783520bf42a6fd44027c6f238b9b2b3a9dc9db49d5d2",
+        "probabilityLeft": "fb519f9afa3fd37ed7d3b323da133c145d8d4899c0e93144762c7ec12cffba76"
+      }
+    }
+  ],
+  "source_sessions": 5268,
+  "train_test_mice_disjoint": true,
+  "target_history_trial_sets_disjoint": true,
+  "source_zip_md5_verified": true
+}

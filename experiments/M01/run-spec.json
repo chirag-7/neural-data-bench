@@ -1,0 +1,25 @@
+{
+  "benchmark_id": "M01",
+  "run_id": "expansion-v1",
+  "date": "2026-10-30",
+  "track": "T3",
+  "models": [
+    "gpt-5.6-sol",
+    "gpt-6-sol",
+    "gpt-6.1-sol"
+  ],
+  "generation_replicates": 1,
+  "reasoning_effort": "high",
+  "timeout_seconds": 180,
+  "line_limit_exclusive": 240,
+  "memory_enforced": false,
+  "prompt_sha256": "ce3ed452b97ec306c8a587a1570be8bef6efd99f6fe5ca6756d7273f37d09691",
+  "adapter_sha256": "bd4deff39fc6d900e73b9f6b2022d153bc17c04ea350d0a2c85b95e9c927ffd9",
+  "data_sha256": "3ae8fd34be70bb7f3234ff470f6a6e40c3cbd3c5be5a4466cfa410cd293e841b",
+  "protocol_sha256": "85c3348a501e1b11941a1185c1604e202ed1871bd35f8200e970b4c66bb8e89e",
+  "specialist_sha256": "7b58596e7c2fb11aa6b52c23294557eeb7a67ce0011a9c4c699064f8d80e5adc",
+  "metadata_sha256": "216f67a5101cc12575fddb349227a831332765ab038f5ea4de8439c4f1a879f8",
+  "runner_sha256": "56344ed71de5f9e6ccfe4f99aecfdd7c18095af5ce80f33b7b024a02a83d448d",
+  "status": "frozen before any evaluated model generation or method test score",
+  "test_targets_not_in_prompt": true
+}
