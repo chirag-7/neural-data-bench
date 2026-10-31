@@ -25,7 +25,7 @@
   },
   "v05_actual_execution": {
     "status": "measured",
-    "slice": null,
+    "slice": "Spikefinder: calcium-to-spike inference on five preparations; median 40 ms correlation per preparation.",
     "evidence": "literature/admission-v04-behavior-population.json"
   }
 }

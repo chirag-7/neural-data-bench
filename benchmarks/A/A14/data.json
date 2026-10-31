@@ -25,7 +25,7 @@
   "executed_slice": "Rat7M six-landmark31frame windows;7frame artificialHeadF gap;heldout rats4\u20135",
   "v05_actual_execution": {
     "status": "measured",
-    "slice": "Rat7M six-landmark31frame windows;7frame artificialHeadF gap;heldout rats4\u20135",
+    "slice": "Rat7M: six-landmark, 31-frame windows with an artificial seven-frame HeadF gap; three training and two test rats.",
     "evidence": "literature/admission-v04-behavior-population.json"
   }
 }

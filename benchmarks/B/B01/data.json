@@ -27,7 +27,7 @@
   },
   "v05_actual_execution": {
     "status": "measured",
-    "slice": "Blind unsupervised sorting of one10second32channel MEArec simulation; official unit/event scorer",
+    "slice": "Blind unsupervised spike sorting of one 10-second, 32-channel stationary MEArec simulation; official unit/event matching.",
     "evidence": "literature/admission-v05-extracellular.json"
   }
 }

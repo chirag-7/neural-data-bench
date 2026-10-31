@@ -23,7 +23,7 @@
   },
   "v05_actual_execution": {
     "status": "measured",
-    "slice": null,
+    "slice": "Synthetic two-choice Q-learning agents: recover learning rate and inverse temperature from choices and rewards.",
     "evidence": "literature/admission-v04-inference-control.json"
   }
 }

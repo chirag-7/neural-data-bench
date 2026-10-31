@@ -27,7 +27,7 @@
   },
   "v05_actual_execution": {
     "status": "measured",
-    "slice": "SynAPSeg2Dpuncta instances:27trainingfields,1262crops;twoheldoutwholefields\u00d7fiveexpertmasks;archivedStarDistreference",
+    "slice": "SynAPSeg 2D puncta: 27 training fields yielding 1,262 crops; two held-out whole fields, five expert masks each; archived StarDist reference.",
     "evidence": "experiments/J08/protocol.md"
   }
 }

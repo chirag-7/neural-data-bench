@@ -29,7 +29,7 @@
   "executed_slice": "Allen mouse ephys11features\u2192spiny/aspiny morphology,donor-disjoint1356/457cells",
   "v05_actual_execution": {
     "status": "measured",
-    "slice": "Allen mouse ephys11features\u2192spiny/aspiny morphology,donor-disjoint1356/457cells",
+    "slice": "Allen mouse electrophysiology: 11 features predict spiny/aspiny morphology; donor-disjoint 1,356 training and 457 test cells.",
     "evidence": "literature/admission-v04-cell-workflow.json"
   }
 }

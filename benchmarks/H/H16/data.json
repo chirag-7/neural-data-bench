@@ -28,7 +28,7 @@
   "executed_slice": "EEGdenoiseNet clean+EOG2000train/600test component-disjoint mixtures",
   "v05_actual_execution": {
     "status": "measured",
-    "slice": "EEGdenoiseNet clean+EOG2000train/600test component-disjoint mixtures",
+    "slice": "EEGdenoiseNet: 2,000 training and 600 test clean-plus-EOG mixtures, with disjoint source components.",
     "evidence": "literature/admission-v04-electrical.json"
   }
 }

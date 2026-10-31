@@ -464,12 +464,10 @@ function barPlot(rs, direction) {
   const scale = (v) => 195 + ((v - lo) / (hi - lo)) * 300,
     zero = scale(0),
     height = rs.length * 42 + 50;
-  return `<svg class="plot" viewBox="0 0 570 ${height}" role="img" aria-label="Bar chart including general models and named specialist or baseline scores"><title>Native metric; ${direction} is better. Bar axis includes zero.</title>${[
-    0, 0.5, 1,
-  ]
-    .map((t) => {
-      const v = lo + t * (hi - lo);
-      return `<line x1="${scale(v)}" x2="${scale(v)}" y1="5" y2="${height - 32}" stroke="#e9edf0"/><text x="${scale(v)}" y="${height - 10}" text-anchor="middle">${fmt(v)}</text>`;
+  const ticks = [...new Set([lo, (lo + hi) / 2, 0, hi])].sort((a, b) => a - b);
+  return `<svg class="plot" viewBox="0 0 570 ${height}" role="img" aria-label="Bar chart including general models and named specialist or baseline scores"><title>Native metric; ${direction} is better. Bar axis includes zero.</title>${ticks
+    .map((v) => {
+      return `<line x1="${scale(v)}" x2="${scale(v)}" y1="5" y2="${height - 32}" stroke="${v === 0 ? '#b5c2cc' : '#e9edf0'}"/><text x="${scale(v)}" y="${height - 10}" text-anchor="middle">${fmt(v)}</text>`;
     })
     .join("")}${rs
     .map((r, i) => {

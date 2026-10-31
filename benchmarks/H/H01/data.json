@@ -28,7 +28,7 @@
   "executed_slice": "PhysioNet motorimagery;5train/3heldout subjects,225/135epochs",
   "v05_actual_execution": {
     "status": "measured",
-    "slice": "PhysioNet motorimagery;5train/3heldout subjects,225/135epochs",
+    "slice": "PhysioNet motor imagery: five training and three held-out people; 225 training and 135 test epochs.",
     "evidence": "literature/admission-v04-electrical.json"
   }
 }

@@ -28,7 +28,7 @@
   "executed_slice": "One real legacyNWB file sharedD02;61deterministic fields,6sweeps",
   "v05_actual_execution": {
     "status": "measured",
-    "slice": "One real legacyNWB file sharedD02;61deterministic fields,6sweeps",
+    "slice": "One real legacy Allen NWB file, shared with D02: extract 61 deterministic fields covering six sweeps.",
     "evidence": "literature/admission-v04-cell-workflow.json"
   }
 }

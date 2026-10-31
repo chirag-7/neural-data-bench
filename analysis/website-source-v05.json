@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "app.js",
-      "sha256": "1e5abbb87b8dfcc3b927ab2ed1944db3be0bf870fbcc1df82191aa60f0863c56",
-      "bytes": 43024
+      "sha256": "cbb9f5eb45ae997140b30a24519e3f081ef5d5a46292c863f220a467320e672c",
+      "bytes": 43080
     },
     {
       "path": "data/A09.json",
@@ -98,8 +98,8 @@
     },
     {
       "path": "data/catalog.json",
-      "sha256": "9e48c8ba047301913e58dde5954d0ca707967887bf0e095faa1b60dd5ad716a0",
-      "bytes": 219998
+      "sha256": "04aff06657f32f8815d3ec604a3fc311953778f73004f3e805ae756fca6be771",
+      "bytes": 220765
     },
     {
       "path": "data/exclusions.json",

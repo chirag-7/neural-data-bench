@@ -21,6 +21,28 @@ def main():
  'G01':dict(executed_slice='FALCON M2 custom cross-day finger-velocity decoding:1169train/754testtrials,96causalfeatures,twooutputs,one monkey',resource='FALCON M2 public calibration NWBs; custom chronological split',source_urls=['https://dandiarchive.org/dandiset/000953','https://github.com/snel-repo/falcon-challenge'],admission_evidence_file='literature/admission-v05-bci.json',recommended_metrics='Variance-weighted R² and perdayR², native velocityAU',recommended_split='Oct19/20training;Oct27/28heldout; no minival or official FALCONscore',limitations='One monkey,two testdays; fixed causal features but no closed-loop/online latency evaluation. Full sourceSHAreported,partial extractedbufferhashesverified.'),
  'H08':dict(executed_slice='SleepEDF fixed20:00–08:00firstnightwindows;5train/3heldoutpeople,100HzFpz-Cz;fiveclassstaging',resource='Sleep-EDF Expanded1.0.0; custom subject-held-out diagnostic with YASA checkpoint',data='Raw EEG Fpz-Cz,1440consecutive30second epochs/night',ground_truth='Independent technician R&K stages; stages3/4merged,unknown/movement excluded',source_urls=['https://physionet.org/content/sleep-edfx/1.0.0/','https://doi.org/10.13026/C2X676','https://doi.org/10.7554/eLife.70092','https://github.com/raphaelvallat/yasa_classifier'],admission_evidence_file='experiments/H08/protocol.md',recommended_metrics='Pooled fiveclassmacroF1,accuracy,balancedaccuracy,pernightmacroF1',recommended_split='FirstnightSC400–404train,SC405–407test;fixedclockwindowwithoutlabel-basedcrop',limitations='Three testpeople;singlederivation;customclockwindow not officialSleepEDF20protocol;YASANSRRpretraining differs from five targettrainingnights.'),
  'J08':dict(executed_slice='SynAPSeg2Dpuncta instances:27trainingfields,1262crops;twoheldoutwholefields×fiveexpertmasks;archivedStarDistreference',resource='SynAPSeg Zenodo18988899; 2D multi-rater instance-segmentation slice',data='Normalized microscopy intensities and known training annotation ROI/geometry masks',ground_truth='Five independent human instance annotations per held-out field; no majority oracle',source_urls=['https://zenodo.org/records/18988899','https://doi.org/10.1371/journal.pcbi.1014571'],admission_evidence_file='experiments/J08/protocol.md',recommended_metrics='Equal image/rater instanceF1 atIoU≥0.5; Hungarian objectmatching',recommended_split='All27released2Dtrainingfields vs both official2Dbenchmarkfields; crop correlations preserved',limitations='Only two testfields and unresolved animal identities. Archived StarDist optimization history differs; no inference timing or currentSOTAclaim.')}
+ readable_slices={
+ 'A09':'CalMS21 Task 1: processed pose context at 3 Hz; 70 training and 19 test recordings.',
+ 'A14':'Rat7M: six-landmark, 31-frame windows with an artificial seven-frame HeadF gap; three training and two test rats.',
+ 'B01':'Blind unsupervised spike sorting of one 10-second, 32-channel stationary MEArec simulation; official unit/event matching.',
+ 'C05':'Spikefinder: calcium-to-spike inference on five preparations; median 40 ms correlation per preparation.',
+ 'D02':'One Allen cell: four training and two test negative-current sweeps; 500 Hz passive voltage interpolation.',
+ 'E01':'Neural Latents Benchmark: MC_Maze_Small, Area2_Bump and DMFC_RSG; held-in to held-out neuron readout using unchanged generated programs.',
+ 'F04':'Goldin 2022 retina: 3,160 training images and 30 test images repeated 30 times; 41 neurons, one preparation.',
+ 'G01':'FALCON M2 custom cross-day decoding: 1,169 training and 754 test trials, 96 causal features, two finger-velocity outputs, one monkey.',
+ 'H01':'PhysioNet motor imagery: five training and three held-out people; 225 training and 135 test epochs.',
+ 'H08':'Sleep-EDF first nights, fixed 20:00–08:00 windows: five training and three held-out people; 100 Hz Fpz-Cz EEG, five sleep stages.',
+ 'H16':'EEGdenoiseNet: 2,000 training and 600 test clean-plus-EOG mixtures, with disjoint source components.',
+ 'I07':'FRESH optical-density tapping classification: seven training and three test people; condition and session remain confounded.',
+ 'I10':'MRIQC: 600 ABIDE training scans and 265 DS030 test scans; 68 numeric quality metrics and rater-1 exclusion labels.',
+ 'J08':'SynAPSeg 2D puncta: 27 training fields yielding 1,262 crops; two held-out whole fields, five expert masks each; archived StarDist reference.',
+ 'K01':'Allen mouse electrophysiology: 11 features predict spiny/aspiny morphology; donor-disjoint 1,356 training and 457 test cells.',
+ 'L04':'One rat place cell: 20 ms spike counts predicted from position and velocity; chronological 60/40 split with a one-second gap.',
+ 'M04':'Synthetic two-choice Q-learning agents: recover learning rate and inverse temperature from choices and rewards.',
+ 'N05':'One real legacy Allen NWB file, shared with D02: extract 61 deterministic fields covering six sweeps.'}
+ for t,text in readable_slices.items():
+  if t in additions:additions[t]['executed_slice']=text
+  else:all_entries[t]['executed_slice']=text
  for t,fields in additions.items():
   e=all_entries[t];urls=fields.pop('source_urls');e.update(fields);e['source_urls']=list(dict.fromkeys(e['source_urls']+urls));e['verification']='Actual acquired/extracted source arrays, frozen protocol, submitted programs and prediction/scorer artifacts; exact scope in experiments/'+t;e['current_best_status']='not verified; named matched specialist/reference evidence retained separately'
  measured=set()

@@ -25,7 +25,7 @@
   "executed_slice": "MRIQC600ABIDEtrain/265DS030test,68numeric IQMs,rater1exclude labels",
   "v05_actual_execution": {
     "status": "measured",
-    "slice": "MRIQC600ABIDEtrain/265DS030test,68numeric IQMs,rater1exclude labels",
+    "slice": "MRIQC: 600 ABIDE training scans and 265 DS030 test scans; 68 numeric quality metrics and rater-1 exclusion labels.",
     "evidence": "literature/admission-v04-inference-control.json"
   }
 }

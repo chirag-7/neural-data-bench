@@ -25,7 +25,7 @@
   "executed_slice": "CalMS21 Task1,3Hz centers and seven pose offsets,19 test recordings",
   "v05_actual_execution": {
     "status": "measured",
-    "slice": "CalMS21 Task1,3Hz centers and seven pose offsets,19 test recordings",
+    "slice": "CalMS21 Task 1: processed pose context at 3 Hz; 70 training and 19 test recordings.",
     "evidence": "literature/admission-v04-behavior-population.json"
   }
 }

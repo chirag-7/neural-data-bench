@@ -29,7 +29,7 @@
   "executed_slice": "Goldin2022 retina,3160trainimages/30testimages\u00d730repeats,41neurons,18\u00d718imagefeatures",
   "v05_actual_execution": {
     "status": "measured",
-    "slice": "Goldin2022 retina,3160trainimages/30testimages\u00d730repeats,41neurons,18\u00d718imagefeatures",
+    "slice": "Goldin 2022 retina: 3,160 training images and 30 test images repeated 30 times; 41 neurons, one preparation.",
     "evidence": "literature/admission-v04-cell-workflow.json"
   }
 }

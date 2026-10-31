@@ -30,7 +30,7 @@
   "executed_slice": "FRESH opticaldensity tapping condition,7train/3test subjects;condition/session confounded",
   "v05_actual_execution": {
     "status": "measured",
-    "slice": "FRESH opticaldensity tapping condition,7train/3test subjects;condition/session confounded",
+    "slice": "FRESH optical-density tapping classification: seven training and three test people; condition and session remain confounded.",
     "evidence": "literature/admission-v04-electrical.json"
   }
 }

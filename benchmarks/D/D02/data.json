@@ -27,7 +27,7 @@
   "executed_slice": "One Allen cell,4train/2test negative-current sweeps;500Hz passive voltage-deflection interpolation",
   "v05_actual_execution": {
     "status": "measured",
-    "slice": "One Allen cell,4train/2test negative-current sweeps;500Hz passive voltage-deflection interpolation",
+    "slice": "One Allen cell: four training and two test negative-current sweeps; 500 Hz passive voltage interpolation.",
     "evidence": "literature/admission-v04-cell-workflow.json"
   }
 }

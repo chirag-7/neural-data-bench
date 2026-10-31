@@ -439,7 +439,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
       "review_depth": "direct acquisition and schema validation",
-      "executed_slice": "CalMS21 Task1,3Hz centers and seven pose offsets,19 test recordings",
+      "executed_slice": "CalMS21 Task 1: processed pose context at 3 Hz; 70 training and 19 test recordings.",
       "active": true
     },
     {
@@ -622,7 +622,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
       "review_depth": "direct acquisition and schema validation",
-      "executed_slice": "Rat7M six-landmark31frame windows;7frame artificialHeadF gap;heldout rats4–5",
+      "executed_slice": "Rat7M: six-landmark, 31-frame windows with an artificial seven-frame HeadF gap; three training and two test rats.",
       "active": true
     },
     {
@@ -747,7 +747,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v05-extracellular.json",
       "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-      "executed_slice": "Blind unsupervised sorting of one10second32channel MEArec simulation; official unit/event scorer",
+      "executed_slice": "Blind unsupervised spike sorting of one 10-second, 32-channel stationary MEArec simulation; official unit/event matching.",
       "active": true
     },
     {
@@ -1187,7 +1187,8 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
       "review_depth": "Previously measured root experiment",
-      "active": true
+      "active": true,
+      "executed_slice": "Spikefinder: calcium-to-spike inference on five preparations; median 40 ms correlation per preparation."
     },
     {
       "id": "C06",
@@ -1409,7 +1410,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
       "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "executed_slice": "One Allen cell,4train/2test negative-current sweeps;500Hz passive voltage-deflection interpolation",
+      "executed_slice": "One Allen cell: four training and two test negative-current sweeps; 500 Hz passive voltage interpolation.",
       "active": true
     },
     {
@@ -1487,7 +1488,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-behavior-population.json",
       "review_depth": "Actual acquisition, officialreader and tensorvalidation",
-      "executed_slice": "NLBMC_Maze_Small99train/100test movement-aligned trials;20ms supervised107→35neuron readout",
+      "executed_slice": "Neural Latents Benchmark: MC_Maze_Small, Area2_Bump and DMFC_RSG; held-in to held-out neuron readout using unchanged generated programs.",
       "active": true
     },
     {
@@ -1826,7 +1827,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
       "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "executed_slice": "Goldin2022 retina,3160trainimages/30testimages×30repeats,41neurons,18×18imagefeatures",
+      "executed_slice": "Goldin 2022 retina: 3,160 training images and 30 test images repeated 30 times; 41 neurons, one preparation.",
       "executed_source_deviation": "Goldin2022 reusable retina release is the measured slice; other listed CRCNS datasets not thereby evaluated",
       "active": true
     },
@@ -1903,7 +1904,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v05-bci.json",
       "review_depth": "Mapped primary-source protocol/admission assessment, no acquisition attempted",
-      "executed_slice": "FALCON M2 custom cross-day finger-velocity decoding:1169train/754testtrials,96causalfeatures,twooutputs,one monkey",
+      "executed_slice": "FALCON M2 custom cross-day decoding: 1,169 training and 754 test trials, 96 causal features, two finger-velocity outputs, one monkey.",
       "active": true
     },
     {
@@ -2018,7 +2019,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
       "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "executed_slice": "PhysioNet motorimagery;5train/3heldout subjects,225/135epochs",
+      "executed_slice": "PhysioNet motor imagery: five training and three held-out people; 225 training and 135 test epochs.",
       "active": true
     },
     {
@@ -2134,7 +2135,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "experiments/H08/protocol.md",
       "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "executed_slice": "SleepEDF fixed20:00–08:00firstnightwindows;5train/3heldoutpeople,100HzFpz-Cz;fiveclassstaging",
+      "executed_slice": "Sleep-EDF first nights, fixed 20:00–08:00 windows: five training and three held-out people; 100 Hz Fpz-Cz EEG, five sleep stages.",
       "active": true
     },
     {
@@ -2393,7 +2394,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
       "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "executed_slice": "EEGdenoiseNet clean+EOG2000train/600test component-disjoint mixtures",
+      "executed_slice": "EEGdenoiseNet: 2,000 training and 600 test clean-plus-EOG mixtures, with disjoint source components.",
       "active": true
     },
     {
@@ -2631,7 +2632,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-electrical.json",
       "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "executed_slice": "FRESH opticaldensity tapping condition,7train/3test subjects;condition/session confounded",
+      "executed_slice": "FRESH optical-density tapping classification: seven training and three test people; condition and session remain confounded.",
       "active": true
     },
     {
@@ -2742,7 +2743,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-inference-control.json",
       "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-      "executed_slice": "MRIQC600ABIDEtrain/265DS030test,68numeric IQMs,rater1exclude labels",
+      "executed_slice": "MRIQC: 600 ABIDE training scans and 265 DS030 test scans; 68 numeric quality metrics and rater-1 exclusion labels.",
       "active": true
     },
     {
@@ -3046,7 +3047,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "experiments/J08/protocol.md",
       "review_depth": "mapped primary-source protocol assessment; acquisition not attempted in this bounded expansion",
-      "executed_slice": "SynAPSeg2Dpuncta instances:27trainingfields,1262crops;twoheldoutwholefields×fiveexpertmasks;archivedStarDistreference",
+      "executed_slice": "SynAPSeg 2D puncta: 27 training fields yielding 1,262 crops; two held-out whole fields, five expert masks each; archived StarDist reference.",
       "active": true
     },
     {
@@ -3127,7 +3128,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
       "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "executed_slice": "Allen mouse ephys11features→spiny/aspiny morphology,donor-disjoint1356/457cells",
+      "executed_slice": "Allen mouse electrophysiology: 11 features predict spiny/aspiny morphology; donor-disjoint 1,356 training and 457 test cells.",
       "active": true
     },
     {
@@ -3405,7 +3406,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-inference-control.json",
       "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-      "executed_slice": "One real rat placecell,20mscounts,chronological60/40split with1sgap;position/velocity",
+      "executed_slice": "One rat place cell: 20 ms spike counts predicted from position and velocity; chronological 60/40 split with a one-second gap.",
       "original_mapping_preserved": "Originally proposed synthetic GLM construction; new execution is real-data encoding only",
       "active": true
     },
@@ -3589,7 +3590,8 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-inference-control.json",
       "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
-      "active": true
+      "active": true,
+      "executed_slice": "Synthetic two-choice Q-learning agents: recover learning rate and inverse temperature from choices and rewards."
     },
     {
       "id": "M06",
@@ -3736,7 +3738,7 @@
       "operation_tag_status": "heuristic navigation aid; expert adjudication pending",
       "admission_evidence_file": "literature/admission-v04-cell-workflow.json",
       "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
-      "executed_slice": "One real legacyNWB file sharedD02;61deterministic fields,6sweeps",
+      "executed_slice": "One real legacy Allen NWB file, shared with D02: extract 61 deterministic fields covering six sweeps.",
       "active": true
     }
   ],
