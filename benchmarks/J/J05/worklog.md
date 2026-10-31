@@ -10,8 +10,8 @@ Decision: **deferred** (2026-10-30). MICrONS needs proofread graph release pinni
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. MICrONS needs proofread graph release pinning, cell-function joins and release-specific train/test units; substantial data engineering and evolving annotations. Not prepared under current CPU/lightweight acquisition budget.
+Preview 0.6: deferred. MICrONS needs proofread graph release pinning, cell-function joins and release-specific train/test units; substantial data engineering and evolving annotations. Not prepared under current CPU/lightweight acquisition budget.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

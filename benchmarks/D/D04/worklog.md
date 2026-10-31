@@ -10,8 +10,8 @@ Decision: **deferred** (2026-10-30). Primary HippoUnit repository requires simul
 
 [Source-linked admission evidence](../../../literature/admission-v04-cell-workflow.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Primary HippoUnit repository requires simulation-capable model interfaces, NEURON/eFEL/SciUnit and standalone model adaptation. Published validation target features and model outputs are available, but no new generated mechanistic model plus independent held-out tests was implemented in this CPU/lightweight estimator batch. Do not substitute recalculating published outputs for new agent performance.
+Preview 0.6: deferred. Primary HippoUnit repository requires simulation-capable model interfaces, NEURON/eFEL/SciUnit and standalone model adaptation. Published validation target features and model outputs are available, but no new generated mechanistic model plus independent held-out tests was implemented in this CPU/lightweight estimator batch. Do not substitute recalculating published outputs for new agent performance.
 
 [Admission/source evidence](../../../literature/admission-v04-cell-workflow.json).

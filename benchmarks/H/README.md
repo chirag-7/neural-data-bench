@@ -5,7 +5,7 @@
 EEG/MEG/LFP/ECoG time series, ERP, sEMG, montage and event metadata
 
 - [H01 — Motor imagery and noninvasive BCI](H01/README.md) · measured
-- [H02 — ERP/P300 target decoding](H02/README.md) · deferred
+- [H02 — ERP/P300 target decoding](H02/README.md) · measured
 - [H04 — EEG transfer under limited calibration](H04/README.md) · deferred
 - [H08 — Sleep staging and sleep onset](H08/README.md) · measured
 - [H09 — Seizure detection with useful event scoring](H09/README.md) · deferred

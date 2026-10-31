@@ -24,3 +24,9 @@ These catalog recommendations become an executable protocol only after choosing 
 [Experiment protocol](../../../experiments/C05/phase2-protocol.md)
 
 For unexecuted entries all seven gates remain pending; listing these steps is not a claim they were performed. The actual state is in [worklog](worklog.md).
+
+## Current executed protocol
+
+Preview 0.6: Spikefinder: calcium-to-spike inference on five preparations; median 40 ms correlation per preparation.
+
+[Actual frozen contract and implementation](../../../experiments/C05). [Measured method/reference records](../../../results/C05.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

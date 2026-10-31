@@ -4,7 +4,7 @@
 
 **Resource:** LibriBrain / PNPL 2025-2026
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: MEG responses aligned to speech/audio
 
 Target/ground truth: Speech/phoneme/word timing and labels
 
-Specialist candidates: Published LibriBrain baselines
+Mapped specialist candidates (not all evaluated): Published LibriBrain baselines
 
 General-model route: General sequence model plus controlled language prior
 
@@ -28,14 +28,16 @@ No experiment admitted yet. All measurements are centralized in [results](../../
 
 - [https://libribrain.com/editions/2026/publications/](https://libribrain.com/editions/2026/publications/)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). Original LibriBrain 2026 publications page accessible and identifies LibriBrain100. Need audio-aligned MEG acquisition, official track split and controlled language-prior scorer. Not downloaded in this pass; not a data-quality rejection.
 
 [Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Original LibriBrain 2026 publications page accessible and identifies LibriBrain100. Need audio-aligned MEG acquisition, official track split and controlled language-prior scorer. Not downloaded in this pass; not a data-quality rejection.
+Preview 0.6: deferred. Original LibriBrain 2026 publications page accessible and identifies LibriBrain100. Need audio-aligned MEG acquisition, official track split and controlled language-prior scorer. Not downloaded in this pass; not a data-quality rejection.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

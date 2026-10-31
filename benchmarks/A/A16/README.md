@@ -4,7 +4,7 @@
 
 **Resource:** Vocal Call Locator (VCL) Benchmark
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Synchronized multi-microphone audio with overhead video-derived source po
 
 Target/ground truth: 2D source positions, including controlled speaker conditions
 
-Specialist candidates: VCL localization models; classical sound source localization
+Mapped specialist candidates (not all evaluated): VCL localization models; classical sound source localization
 
 General-model route: Generic audio model or code-agent localization under fixed calibration information
 
@@ -30,14 +30,16 @@ Speaker-ground-truth and freely moving animals are distinct conditions; paper re
 - [https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11430026/)
 - [https://github.com/neurostatslab/vocalocator](https://github.com/neurostatslab/vocalocator)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). VCL controlled speaker localization supplies positions, but multi-mic calibration/time synchronization and recording-group split must be acquired. Do not infer source identity solely from event detection; no adapter prepared.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. VCL controlled speaker localization supplies positions, but multi-mic calibration/time synchronization and recording-group split must be acquired. Do not infer source identity solely from event detection; no adapter prepared.
+Preview 0.6: candidate_pending_validation. VCL controlled speaker localization supplies positions, but multi-mic calibration/time synchronization and recording-group split must be acquired. Do not infer source identity solely from event detection; no adapter prepared.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

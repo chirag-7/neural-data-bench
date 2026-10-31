@@ -3,10 +3,16 @@
   "input": "Optical hemodynamic time series and task events",
   "ground_truth": "Experimental event labels",
   "sources": [
-    "https://www.nemar.org/dataset/on005963"
+    "https://www.nemar.org/dataset/on005963",
+    "https://openfnirs.org/community/fresh/welcome-to-the-fnirs-fresh-project/",
+    "https://data.nemar.org/on005963/v1.0.0/dataset_description.json",
+    "https://data.nemar.org/on005963/v1.0.0/manifest.json",
+    "https://data.nemar.org/on005963/v1.0.0/code/validation.ipynb",
+    "https://openneuro.org/datasets/ds005963/versions/1.0.0",
+    "https://doi.org/10.1038/s42003-025-08412-1"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/I07.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "I07",
@@ -27,8 +33,14 @@
     "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
     "permanent_rejection": false
   },
-  "executed_slice": "FRESH opticaldensity tapping condition,7train/3test subjects;condition/session confounded",
+  "executed_slice": "FRESH optical-density tapping classification: seven training and three test people; condition and session remain confounded.",
   "v05_actual_execution": {
+    "status": "measured",
+    "slice": "FRESH optical-density tapping classification: seven training and three test people; condition and session remain confounded.",
+    "evidence": "literature/admission-v04-electrical.json"
+  },
+  "current_execution": {
+    "release": "0.6",
     "status": "measured",
     "slice": "FRESH optical-density tapping classification: seven training and three test people; condition and session remain confounded.",
     "evidence": "literature/admission-v04-electrical.json"

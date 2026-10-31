@@ -4,7 +4,7 @@
 
 **Resource:** DREAMS Artifacts database
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: PSG excerpts with expert artifact labels
 
 Target/ground truth: Expert temporal annotations in 20 fifteen-minute excerpts
 
-Specialist candidates: Signal-processing detectors; declared artifact classification baseline
+Mapped specialist candidates (not all evaluated): Signal-processing detectors; declared artifact classification baseline
 
 General-model route: Generic signal classifier or code agent
 
@@ -27,15 +27,18 @@ Small single-annotator corpus; do not confuse real artifact detection with EEGde
 ## Sources
 
 - [https://zenodo.org/records/2650142](https://zenodo.org/records/2650142)
+- [https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1](https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). Original DREAMS record has20expert-annotated15min artifact excerpts and explicit artifact types. Original DREAMS license was downloaded/read; noncommercial and no-adaptation terms complicate distributing prepared arrays. Need local-only extraction/annotation schema and exact event metric; no false claim that real artifact detection equals H16 mixture repair.
 
 [Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Original DREAMS record has20expert-annotated15min artifact excerpts and explicit artifact types. Original DREAMS license was downloaded/read; noncommercial and no-adaptation terms complicate distributing prepared arrays. Need local-only extraction/annotation schema and exact event metric; no false claim that real artifact detection equals H16 mixture repair.
+Preview 0.6: deferred. Original DREAMS record has20expert-annotated15min artifact excerpts and explicit artifact types. Original DREAMS license was downloaded/read; noncommercial and no-adaptation terms complicate distributing prepared arrays. Need local-only extraction/annotation schema and exact event metric; no false claim that real artifact detection equals H16 mixture repair.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

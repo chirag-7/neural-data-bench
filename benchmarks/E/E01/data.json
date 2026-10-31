@@ -3,10 +3,12 @@
   "input": "Binned spike-count tensors",
   "ground_truth": "Held-out observed spikes; behavioral covariates",
   "sources": [
-    "https://neurallatents.github.io/"
+    "https://neurallatents.github.io/",
+    "https://dandiarchive.org/dandiset/000140/0.220113.0408",
+    "https://github.com/neurallatents/nlb_tools"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "experiments/E01/data-manifest.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "E01",
@@ -23,8 +25,14 @@
     "review_depth": "Actual acquisition, officialreader and tensorvalidation",
     "permanent_rejection": false
   },
-  "executed_slice": "NLBMC_Maze_Small99train/100test movement-aligned trials;20ms supervised107\u219235neuron readout",
+  "executed_slice": "Neural Latents Benchmark: MC_Maze_Small, Area2_Bump and DMFC_RSG; held-in to held-out neuron readout using unchanged generated programs.",
   "v05_actual_execution": {
+    "status": "measured",
+    "slice": "Neural Latents Benchmark: MC_Maze_Small, Area2_Bump and DMFC_RSG; held-in to held-out neuron readout using unchanged generated programs.",
+    "evidence": "literature/admission-v04-behavior-population.json"
+  },
+  "current_execution": {
+    "release": "0.6",
     "status": "measured",
     "slice": "Neural Latents Benchmark: MC_Maze_Small, Area2_Bump and DMFC_RSG; held-in to held-out neuron readout using unchanged generated programs.",
     "evidence": "literature/admission-v04-behavior-population.json"

@@ -154,7 +154,18 @@
     "description": "Deterministic, fully unsupervised sorter. It common-median references the recording, estimates per-channel noise with robust MAD statistics, detects negative spatiotemporal peaks with geometry-aware nonmaximum suppression, and extracts aligned multichannel snippets. Waveform PCA, estimated source location, and amplitude features are clustered by diagonal Gaussian mixtures; component count is selected using BIC on the supplied recording. Highly similar or coincident components are merged, while low-support, weak, edge-dominated, or temporally unstable templates are rejected. Final within-unit refractory deduplication prevents duplicate events. Validation uses only internal template stability, morphology, support, and refractory consistency\u2014never hidden labels, a prescribed unit count, or external templates.",
     "code_sha256": "2b66587ada96abb6ad99683342f8fff9f6d610ad9bab21effbbf89d809b93ca5",
     "code_lines": 225,
-    "line_limit_compliant": true
+    "line_limit_compliant": true,
+    "posthoc_secondary_metrics": {
+      "tp": 612,
+      "fp": 1,
+      "fn": 135,
+      "n_true_events": 747,
+      "n_predicted_events": 613,
+      "all_event_precision": 0.99836867862969,
+      "all_event_recall": 0.8192771084337349,
+      "all_event_f1": 0.9
+    },
+    "secondary_amendment": "experiments/B01/secondary-amendment.md"
   },
   {
     "benchmark_id": "B01",
@@ -323,7 +334,18 @@
     "description": "Unsupervised local peak detection, waveform clustering, template merging, and template based event filtering. Unit count is inferred from supported clusters. Validation uses only waveform consistency and timing within the supplied recording; no labels, ground truth, or claimed score are used.",
     "code_sha256": "a699000dad24ef0c5ea9f3170dcbe69162a730df8c27db08aeed566321af7fd0",
     "code_lines": 170,
-    "line_limit_compliant": true
+    "line_limit_compliant": true,
+    "posthoc_secondary_metrics": {
+      "tp": 723,
+      "fp": 941,
+      "fn": 24,
+      "n_true_events": 747,
+      "n_predicted_events": 1664,
+      "all_event_precision": 0.4344951923076923,
+      "all_event_recall": 0.9678714859437751,
+      "all_event_f1": 0.5997511406055579
+    },
+    "secondary_amendment": "experiments/B01/secondary-amendment.md"
   },
   {
     "benchmark_id": "B01",
@@ -483,7 +505,18 @@
     "description": "Unsupervised spatial whitening, local spike detection, waveform PCA and overclustering with projection-based mode merging. Robust templates drive iterative matching and whole-recording refinement. Unit counts come from voltage-derived clusters; no labels, external templates, or claimed benchmark score are used.",
     "code_sha256": "4b6047ddbb35b0009248e30192372afc956558d5c8f46867a4832a3d8e9789e6",
     "code_lines": 225,
-    "line_limit_compliant": true
+    "line_limit_compliant": true,
+    "posthoc_secondary_metrics": {
+      "tp": 648,
+      "fp": 98,
+      "fn": 99,
+      "n_true_events": 747,
+      "n_predicted_events": 746,
+      "all_event_precision": 0.868632707774799,
+      "all_event_recall": 0.8674698795180723,
+      "all_event_f1": 0.8680509042196919
+    },
+    "secondary_amendment": "experiments/B01/secondary-amendment.md"
   },
   {
     "benchmark_id": "B01",
@@ -765,6 +798,17 @@
       "selection": "One preregistered configuration; no test-score selection",
       "status": "succeeded",
       "infrastructure_repair": "Distance-preserving projection of planar source geometry from xyz to yz; failure archived before any predictions"
-    }
+    },
+    "posthoc_secondary_metrics": {
+      "tp": 710,
+      "fp": 19,
+      "fn": 37,
+      "n_true_events": 747,
+      "n_predicted_events": 729,
+      "all_event_precision": 0.9739368998628258,
+      "all_event_recall": 0.9504685408299867,
+      "all_event_f1": 0.962059620596206
+    },
+    "secondary_amendment": "experiments/B01/secondary-amendment.md"
   }
 ]

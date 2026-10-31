@@ -1,0 +1,37 @@
+{
+  "check": "Independent float64 rank-sum per-person AUC and prediction/source-code identity checks",
+  "ten_people": true,
+  "precision_note": "Initial verifier preserved float32 ranks for LDA scores, producing up to2.6e-8rounding differences. Float64 rank accumulation resolves this; original scores and predictions unchanged.",
+  "records": [
+    {
+      "model": "gpt-5.6-sol",
+      "score": 0.7571945899092973,
+      "seconds": 1.3594105001538992,
+      "independent_person_rank_auc_equivalence": "passed"
+    },
+    {
+      "model": "gpt-6-sol",
+      "score": 0.73054818684538,
+      "seconds": 0.39200912485830486,
+      "independent_person_rank_auc_equivalence": "passed"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "score": 0.7885365446735593,
+      "seconds": 2.4475768750999123,
+      "independent_person_rank_auc_equivalence": "passed"
+    },
+    {
+      "model": "task-baseline",
+      "score": 0.7218908794859147,
+      "seconds": 0.14297358389012516,
+      "independent_person_rank_auc_equivalence": "passed"
+    },
+    {
+      "model": "xdawn-tslr",
+      "score": 0.7612303198299977,
+      "seconds": 3.4599052499979734,
+      "independent_person_rank_auc_equivalence": "passed"
+    }
+  ]
+}

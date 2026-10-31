@@ -4,7 +4,7 @@
 
 **Resource:** PAIR-R24M
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Multiview interacting rats
 
 Target/ground truth: 3D motion capture and identities
 
-Specialist candidates: Published multi-animal 3D baselines; s-DANNCE where compatible
+Mapped specialist candidates (not all evaluated): Published multi-animal 3D baselines; s-DANNCE where compatible
 
 General-model route: Multiview features plus geometry
 
@@ -28,14 +28,16 @@ Large downloads; collisions; mocap-to-image correspondence
 
 - [https://olveczkylab.oeb.harvard.edu/publications/pair-r24m-dataset-multi-animal-3d-pose-estimation](https://olveczkylab.oeb.harvard.edu/publications/pair-r24m-dataset-multi-animal-3d-pose-estimation)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). Calibrated multi-camera social-pose recordings require substantial video acquisition and geometry/GPU pipeline. No exact slice/calibration/scorer prepared. This is a resource deferral, not poor-data judgment.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Calibrated multi-camera social-pose recordings require substantial video acquisition and geometry/GPU pipeline. No exact slice/calibration/scorer prepared. This is a resource deferral, not poor-data judgment.
+Preview 0.6: deferred. Calibrated multi-camera social-pose recordings require substantial video acquisition and geometry/GPU pipeline. No exact slice/calibration/scorer prepared. This is a resource deferral, not poor-data judgment.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

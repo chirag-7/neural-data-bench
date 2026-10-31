@@ -4,7 +4,7 @@
 
 **Resource:** SzCORE / CHB-MIT and supported corpora
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Long EEG recordings and seizure annotations
 
 Target/ground truth: Expert event intervals
 
-Specialist candidates: Published seizure detector; simple spectral baseline
+Mapped specialist candidates (not all evaluated): Published seizure detector; simple spectral baseline
 
 General-model route: General signal encoder or analysis agent
 
@@ -28,14 +28,16 @@ Epoch accuracy can hide unacceptable false-alarm rates
 
 - [https://epilepsybenchmarks.com/framework/](https://epilepsybenchmarks.com/framework/)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). SzCORE primary framework explicitly distinguishes sample/event scoring and participant independence. CHB-MIT/Siena require long continuous recordings to estimate false alarms/hour; no cherry-picked balanced seizure clips admitted as replacement. Full event pipeline and sufficient recording duration not yet prepared.
 
 [Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. SzCORE primary framework explicitly distinguishes sample/event scoring and participant independence. CHB-MIT/Siena require long continuous recordings to estimate false alarms/hour; no cherry-picked balanced seizure clips admitted as replacement. Full event pipeline and sufficient recording duration not yet prepared.
+Preview 0.6: deferred. SzCORE primary framework explicitly distinguishes sample/event scoring and participant independence. CHB-MIT/Siena require long continuous recordings to estimate false alarms/hour; no cherry-picked balanced seizure clips admitted as replacement. Full event pipeline and sufficient recording duration not yet prepared.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

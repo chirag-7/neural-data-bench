@@ -4,10 +4,13 @@
   "ground_truth": "Published cell taxonomy labels",
   "sources": [
     "https://brain-map.org/our-research/cell-types-taxonomies",
-    "https://brain-map.org/support/documentation/documentation-cell-types-database"
+    "https://brain-map.org/support/documentation/documentation-cell-types-database",
+    "https://brain-map.org/support/documentation/cell-types-database-api",
+    "https://celltypes.brain-map.org/",
+    "https://alleninstitute.org/terms-of-use/"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/K01.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "K01",
@@ -26,8 +29,14 @@
     "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
     "permanent_rejection": false
   },
-  "executed_slice": "Allen mouse ephys11features\u2192spiny/aspiny morphology,donor-disjoint1356/457cells",
+  "executed_slice": "Allen mouse electrophysiology: 11 features predict spiny/aspiny morphology; donor-disjoint 1,356 training and 457 test cells.",
   "v05_actual_execution": {
+    "status": "measured",
+    "slice": "Allen mouse electrophysiology: 11 features predict spiny/aspiny morphology; donor-disjoint 1,356 training and 457 test cells.",
+    "evidence": "literature/admission-v04-cell-workflow.json"
+  },
+  "current_execution": {
+    "release": "0.6",
     "status": "measured",
     "slice": "Allen mouse electrophysiology: 11 features predict spiny/aspiny morphology; donor-disjoint 1,356 training and 457 test cells.",
     "evidence": "literature/admission-v04-cell-workflow.json"

@@ -10,8 +10,8 @@ Decision: **deferred** (2026-10-30). Inspected official BigNeuron gold166 releas
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Inspected official BigNeuron gold166 release: paired raw images plus gold reconstructions exist, and traced outputs from40+ algorithms are archived. SWC-only morphology statistics do not evaluate image-to-skeleton tracing. No raw optical-volume slice or DIADEM scorer prepared, so no invented morphology classification proxy admitted.
+Preview 0.6: deferred. Inspected official BigNeuron gold166 release: paired raw images plus gold reconstructions exist, and traced outputs from40+ algorithms are archived. SWC-only morphology statistics do not evaluate image-to-skeleton tracing. No raw optical-volume slice or DIADEM scorer prepared, so no invented morphology classification proxy admitted.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

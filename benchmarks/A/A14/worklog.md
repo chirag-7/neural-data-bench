@@ -10,8 +10,8 @@ Decision: **measured** (2026-10-30). Rat7M raw measured mocap246MB archive acqui
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). [Actual protocol and artifacts](../../../experiments/A14). [Central task results](../../../results/A14.json).
 
-## v0.5 execution status
+## Current admission and execution
 
-measured. Rat7M raw measured mocap246MB archive acquired from immutable DISK Zenodo18405201 CC BY4.0; seven original recordings, real measured targets and controlled synthetic gaps. Three trainingrats versus two test rats, six head/spine landmarks, nonoverlapping31frame windows. Custom endpoint, not official DISK full distribution.
+Preview 0.6: measured. Rat7M raw measured mocap246MB archive acquired from immutable DISK Zenodo18405201 CC BY4.0; seven original recordings, real measured targets and controlled synthetic gaps. Three trainingrats versus two test rats, six head/spine landmarks, nonoverlapping31frame windows. Custom endpoint, not official DISK full distribution.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json). [Actual protocol/worklog](../../../experiments/A14). [Task measurements](../../../results/A14.json).

@@ -863,3 +863,107 @@ footer {
     display: none;
   }
 }
+
+.reference-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 3px 22px 12px;
+}
+.reference-card {
+  flex: 1;
+  min-width: 180px;
+  padding: 11px 13px;
+  border: 1px solid #dce5e1;
+  border-left: 3px solid var(--green);
+  border-radius: 4px;
+  background: #f5faf7;
+}
+.reference-card.baseline {
+  background: #f8f9fa;
+  border-left-color: #8a939c;
+}
+.reference-kicker {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+.reference-key {
+  font-size: 10px;
+  font-weight: 650;
+}
+.reference-policy {
+  font-size: 10px;
+  color: var(--muted);
+}
+.reference-value {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  font-size: 12px;
+}
+.reference-value strong {
+  font-size: 18px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.plot-reading-key {
+  font-size: 10px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin: 0;
+  padding: 0 22px 10px;
+}
+.solid-key,
+.dashed-key,
+.dotted-key {
+  display: inline-block;
+  width: 17px;
+  vertical-align: middle;
+  margin: 0 4px 0 8px;
+  border-top: 2px solid #547b97;
+}
+.dashed-key {
+  border-top-style: dashed;
+  border-color: var(--green);
+}
+.dotted-key {
+  border-top-style: dotted;
+  border-color: #8a939c;
+}
+.plot .reference-label-name {
+  font-size: 9px;
+  font-weight: 650;
+}
+.plot .reference-label-score {
+  font-size: 10px;
+  fill: var(--ink);
+}
+.line-plot .value-label {
+  paint-order: stroke;
+  stroke: white;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+.reference-empty {
+  font-size: 11px;
+  color: var(--muted);
+  padding: 0 22px;
+}
+.line-plot {
+  max-height: none !important;
+}
+@media (max-width: 760px) {
+  .reference-strip {
+    padding: 0 15px 12px;
+  }
+  .reference-card {
+    min-width: 100%;
+  }
+  .plot-reading-key {
+    padding: 0 15px 10px;
+  }
+}

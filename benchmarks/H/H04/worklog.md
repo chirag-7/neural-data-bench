@@ -10,8 +10,8 @@ Decision: **deferred** (2026-10-30). Official BEETL introduction URL timed out i
 
 [Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Official BEETL introduction URL timed out in web access. No raw transfer track, license or labels acquired in this screening pass; preserve candidate and retry via original competition release.
+Preview 0.6: deferred. Official BEETL introduction URL timed out in web access. No raw transfer track, license or labels acquired in this screening pass; preserve candidate and retry via original competition release.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

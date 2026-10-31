@@ -4,7 +4,7 @@
 
 **Resource:** IBL-agent genuine/null analysis tasks
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: IBL spikes, trial variables and behavioral history
 
 Target/ground truth: Known randomized/null labels; expert analysis of genuine data
 
-Specialist candidates: Prespecified GLM/decoder and valid randomization test
+Mapped specialist candidates (not all evaluated): Prespecified GLM/decoder and valid randomization test
 
 General-model route: General coding agent with/without domain skills
 
@@ -29,14 +29,16 @@ Naive permutation breaks trial history; significance shopping
 - [https://github.com/int-brain-lab/ibl-ai-agent](https://github.com/int-brain-lab/ibl-ai-agent)
 - [https://www.internationalbrainlab.com/data](https://www.internationalbrainlab.com/data)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). IBL AI Agent is a real analysis toolkit, not a frozen false-positive-rate benchmark. Need animal-held-out genuine/null task generation, exchangeability-preserving randomization and a blinded power/type-I-error protocol. No significance-searching substituted for benchmark completion.
 
 [Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. IBL AI Agent is a real analysis toolkit, not a frozen false-positive-rate benchmark. Need animal-held-out genuine/null task generation, exchangeability-preserving randomization and a blinded power/type-I-error protocol. No significance-searching substituted for benchmark completion.
+Preview 0.6: deferred. IBL AI Agent is a real analysis toolkit, not a frozen false-positive-rate benchmark. Need animal-held-out genuine/null task generation, exchangeability-preserving randomization and a blinded power/type-I-error protocol. No significance-searching substituted for benchmark completion.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json).

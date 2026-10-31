@@ -10,8 +10,8 @@ Decision: **candidate_pending_validation** (2026-10-30). Complete-video identity
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. Complete-video identity assignments require persistent IDs and track-matching scorer. No reference trajectories/video pair acquired. Random frame classification would not be a valid substitute.
+Preview 0.6: candidate_pending_validation. Complete-video identity assignments require persistent IDs and track-matching scorer. No reference trajectories/video pair acquired. Random frame classification would not be a valid substitute.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

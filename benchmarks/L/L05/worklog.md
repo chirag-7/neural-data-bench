@@ -10,8 +10,8 @@ Decision: **candidate_pending_validation** (2026-10-30). Perturbation-response a
 
 [Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. Perturbation-response atlas primary source mapped; Nature full-text access redirected in this audit. Animal/experiment identities, perturbation matching, source reuse terms and missing-response policy require acquisition/validation before an intervention-prediction score.
+Preview 0.6: candidate_pending_validation. Perturbation-response atlas primary source mapped; Nature full-text access redirected in this audit. Animal/experiment identities, perturbation matching, source reuse terms and missing-response policy require acquisition/validation before an intervention-prediction score.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json).

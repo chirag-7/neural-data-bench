@@ -4,7 +4,7 @@
 
 **Resource:** emg2pose; related emg2qwerty resources
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Wrist surface EMG and hand pose
 
 Target/ground truth: Motion capture or keypress labels
 
-Specialist candidates: Released neuromotor baselines
+Mapped specialist candidates (not all evaluated): Released neuromotor baselines
 
 General-model route: General time-series model
 
@@ -28,14 +28,16 @@ Peripheral interface extension; EMG is not a brain recording
 
 - [https://github.com/facebookresearch/emg2pose](https://github.com/facebookresearch/emg2pose)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). Original emg2pose repo reports full data431GiB and a ~600MiB sanity-check subset. Full held-out-user benchmark not downloaded; sanity subset cannot substitute for population evaluation without verifying participants and split metadata. EMG is explicitly peripheral.
 
 [Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Original emg2pose repo reports full data431GiB and a ~600MiB sanity-check subset. Full held-out-user benchmark not downloaded; sanity subset cannot substitute for population evaluation without verifying participants and split metadata. EMG is explicitly peripheral.
+Preview 0.6: deferred. Original emg2pose repo reports full data431GiB and a ~600MiB sanity-check subset. Full held-out-user benchmark not downloaded; sanity subset cannot substitute for population evaluation without verifying participants and split metadata. EMG is explicitly peripheral.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

@@ -4,7 +4,7 @@
 
 **Resource:** BigNeuron gold166 / DIADEM
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Optical stacks and skeletons
 
 Target/ground truth: Gold/manual skeleton reconstructions
 
-Specialist candidates: Published tracing algorithms
+Mapped specialist candidates (not all evaluated): Published tracing algorithms
 
 General-model route: Generic volumetric features and code agent
 
@@ -29,14 +29,16 @@ Sparse manual traces are incomplete; topology matters
 - [https://github.com/BigNeuron/Data/releases](https://github.com/BigNeuron/Data/releases)
 - [https://diadem.janelia.org/metric.html](https://diadem.janelia.org/metric.html)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). Inspected official BigNeuron gold166 release: paired raw images plus gold reconstructions exist, and traced outputs from40+ algorithms are archived. SWC-only morphology statistics do not evaluate image-to-skeleton tracing. No raw optical-volume slice or DIADEM scorer prepared, so no invented morphology classification proxy admitted.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Inspected official BigNeuron gold166 release: paired raw images plus gold reconstructions exist, and traced outputs from40+ algorithms are archived. SWC-only morphology statistics do not evaluate image-to-skeleton tracing. No raw optical-volume slice or DIADEM scorer prepared, so no invented morphology classification proxy admitted.
+Preview 0.6: deferred. Inspected official BigNeuron gold166 release: paired raw images plus gold reconstructions exist, and traced outputs from40+ algorithms are archived. SWC-only morphology statistics do not evaluate image-to-skeleton tracing. No raw optical-volume slice or DIADEM scorer prepared, so no invented morphology classification proxy admitted.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

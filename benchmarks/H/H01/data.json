@@ -3,10 +3,14 @@
   "input": "EEG epochs, montage and labels",
   "ground_truth": "Task labels",
   "sources": [
-    "https://moabb.neurotechx.com/"
+    "https://moabb.neurotechx.com/",
+    "https://physionet.org/content/eegmmidb/1.0.0/",
+    "https://physionet.org/files/eegmmidb/1.0.0/S001/",
+    "https://moabb.neurotechx.com/docs/generated/moabb.datasets.PhysionetMI.html",
+    "https://mne.tools/stable/auto_examples/decoding/decoding_csp_eeg.html"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/H01.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "H01",
@@ -25,8 +29,14 @@
     "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
     "permanent_rejection": false
   },
-  "executed_slice": "PhysioNet motorimagery;5train/3heldout subjects,225/135epochs",
+  "executed_slice": "PhysioNet motor imagery: five training and three held-out people; 225 training and 135 test epochs.",
   "v05_actual_execution": {
+    "status": "measured",
+    "slice": "PhysioNet motor imagery: five training and three held-out people; 225 training and 135 test epochs.",
+    "evidence": "literature/admission-v04-electrical.json"
+  },
+  "current_execution": {
+    "release": "0.6",
     "status": "measured",
     "slice": "PhysioNet motor imagery: five training and three held-out people; 225 training and 135 test epochs.",
     "evidence": "literature/admission-v04-electrical.json"

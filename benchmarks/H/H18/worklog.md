@@ -10,8 +10,8 @@ Decision: **deferred** (2026-10-30). Original DREAMS Zenodo record explicitly wa
 
 [Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Original DREAMS Zenodo record explicitly warns Expert1 spindle annotations stop after1000s. A naive full-1800s negative-label benchmark is excluded. A masked interval/Expert2 consensus protocol remains feasible but has not been validated, and original DREAMS noncommercial/no-adaptation terms need an appropriate data handling policy.
+Preview 0.6: deferred. Original DREAMS Zenodo record explicitly warns Expert1 spindle annotations stop after1000s. A naive full-1800s negative-label benchmark is excluded. A masked interval/Expert2 consensus protocol remains feasible but has not been validated, and original DREAMS noncommercial/no-adaptation terms need an appropriate data handling policy.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

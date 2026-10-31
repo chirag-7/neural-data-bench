@@ -3,10 +3,12 @@
   "input": "Intracortical neural activity and kinematics",
   "ground_truth": "Recorded kinematics on held-out days",
   "sources": [
-    "https://snel-repo.github.io/falcon/"
+    "https://snel-repo.github.io/falcon/",
+    "https://dandiarchive.org/dandiset/000953",
+    "https://github.com/snel-repo/falcon-challenge"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/G01.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "G01",
@@ -25,5 +27,12 @@
     "status": "measured",
     "slice": "FALCON M2 custom cross-day decoding: 1,169 training and 754 test trials, 96 causal features, two finger-velocity outputs, one monkey.",
     "evidence": "literature/admission-v05-bci.json"
-  }
+  },
+  "current_execution": {
+    "release": "0.6",
+    "status": "measured",
+    "slice": "FALCON M2 custom cross-day decoding: 1,169 training and 754 test trials, 96 causal features, two finger-velocity outputs, one monkey.",
+    "evidence": "literature/admission-v05-bci.json"
+  },
+  "executed_slice": "FALCON M2 custom cross-day decoding: 1,169 training and 754 test trials, 96 causal features, two finger-velocity outputs, one monkey."
 }

@@ -4,7 +4,7 @@
 
 **Resource:** AIND electrophysiology compression benchmark
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Neuropixels voltage recordings
 
 Target/ground truth: Original bytes or original downstream output
 
-Specialist candidates: WavPack; Zstd/Blosc codecs
+Mapped specialist candidates (not all evaluated): WavPack; Zstd/Blosc codecs
 
 General-model route: Generic learned compression model
 
@@ -28,14 +28,16 @@ Lossless byte equality differs from downstream-preserving lossy compression
 
 - [https://allenneuraldynamics.github.io/data.html](https://allenneuraldynamics.github.io/data.html)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). Lossless compression is executable with small frozen raw ephys segments, exactbyte reconstruction and compression/runtime metrics. Need immutable raw-file URI, acquisition terms and canonical codec reference; no raw acquisition attempted here. Avoid different dtype or discarded channels confounding ratio.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. Lossless compression is executable with small frozen raw ephys segments, exactbyte reconstruction and compression/runtime metrics. Need immutable raw-file URI, acquisition terms and canonical codec reference; no raw acquisition attempted here. Avoid different dtype or discarded channels confounding ratio.
+Preview 0.6: candidate_pending_validation. Lossless compression is executable with small frozen raw ephys segments, exactbyte reconstruction and compression/runtime metrics. Need immutable raw-file URI, acquisition terms and canonical codec reference; no raw acquisition attempted here. Avoid different dtype or discarded channels confounding ratio.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

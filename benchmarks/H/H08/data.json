@@ -1,13 +1,17 @@
 {
   "benchmark_id": "H08",
-  "input": "Continuous overnight EEG/PSG",
-  "ground_truth": "Human sleep-stage labels",
+  "input": "Raw EEG Fpz-Cz,1440consecutive30second epochs/night",
+  "ground_truth": "Independent technician R&K stages; stages3/4merged,unknown/movement excluded",
   "sources": [
     "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
-    "https://neural-interfaces26.github.io/"
+    "https://neural-interfaces26.github.io/",
+    "https://physionet.org/content/sleep-edfx/1.0.0/",
+    "https://doi.org/10.13026/C2X676",
+    "https://doi.org/10.7554/eLife.70092",
+    "https://github.com/raphaelvallat/yasa_classifier"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/H08.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "H08",
@@ -27,5 +31,12 @@
     "status": "measured",
     "slice": "Sleep-EDF first nights, fixed 20:00\u201308:00 windows: five training and three held-out people; 100 Hz Fpz-Cz EEG, five sleep stages.",
     "evidence": "experiments/H08/protocol.md"
-  }
+  },
+  "current_execution": {
+    "release": "0.6",
+    "status": "measured",
+    "slice": "Sleep-EDF first nights, fixed 20:00\u201308:00 windows: five training and three held-out people; 100 Hz Fpz-Cz EEG, five sleep stages.",
+    "evidence": "experiments/H08/protocol.md"
+  },
+  "executed_slice": "Sleep-EDF first nights, fixed 20:00\u201308:00 windows: five training and three held-out people; 100 Hz Fpz-Cz EEG, five sleep stages."
 }

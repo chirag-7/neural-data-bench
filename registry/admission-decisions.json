@@ -608,16 +608,20 @@
   },
   {
     "benchmark_id": "H02",
-    "decision": "deferred",
-    "reason": "Screened BNCI2014_008 original BNCI terms (CC BY-NC-ND4.0) and MOABB loader/context. Data are real and useful, but derivative-array distribution and the exact cross-subject ERP preparation protocol have not been validated for this release. Alternate openly licensed ERP resources can be admitted later; no claim of bad quality.",
+    "decision": "measured",
+    "reason": "Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.",
     "date": "2026-10-30",
-    "evidence_file": "literature/admission-v04-electrical.json",
+    "evidence_file": "experiments/H02/protocol.md",
     "source_urls": [
       "https://moabb.neurotechx.com/",
       "https://bnci-horizon-2020.eu/database/data-sets",
-      "https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_008.html"
+      "https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_008.html",
+      "https://zenodo.org/records/2649069",
+      "https://arxiv.org/abs/1905.05182",
+      "https://github.com/plcrodrigues/py.BI.EEG.2012-GIPSA",
+      "https://pyriemann.readthedocs.io/en/latest/auto_examples/biosignal-erp/plot_classify_EEG_tangentspace.html"
     ],
-    "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence"
+    "review_depth": "All25 original archives checksum-verified; MAT/CSV markers independently compared, grouped scorer fixtures and frozen model procedure documented"
   },
   {
     "benchmark_id": "H04",

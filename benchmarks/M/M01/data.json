@@ -27,5 +27,11 @@
     "status": "candidate_pending_validation",
     "slice": null,
     "evidence": "literature/admission-v04-inference-control.json"
+  },
+  "current_execution": {
+    "release": "0.6",
+    "status": "candidate_pending_validation",
+    "slice": null,
+    "evidence": "literature/admission-v04-inference-control.json"
   }
 }

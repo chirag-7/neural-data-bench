@@ -1,0 +1,55 @@
+{
+  "policy": "Post-hoc, original frozen primary unchanged",
+  "implementation_sha256": "48aaeb82fc45cbfdae7984032a6f217a628a4cd1799a14d018c476392d5b78c7",
+  "independent_pair_count_equivalence": "passed for every matched pair and three fixtures",
+  "records": [
+    {
+      "model": "gpt-5.6-sol",
+      "primary_mean_gt_accuracy": 0.8749905140758875,
+      "tp": 612,
+      "fp": 1,
+      "fn": 135,
+      "n_true_events": 747,
+      "n_predicted_events": 613,
+      "all_event_precision": 0.99836867862969,
+      "all_event_recall": 0.8192771084337349,
+      "all_event_f1": 0.9
+    },
+    {
+      "model": "gpt-6-sol",
+      "primary_mean_gt_accuracy": 0.9400114619192405,
+      "tp": 723,
+      "fp": 941,
+      "fn": 24,
+      "n_true_events": 747,
+      "n_predicted_events": 1664,
+      "all_event_precision": 0.4344951923076923,
+      "all_event_recall": 0.9678714859437751,
+      "all_event_f1": 0.5997511406055579
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "primary_mean_gt_accuracy": 0.7504504504504504,
+      "tp": 648,
+      "fp": 98,
+      "fn": 99,
+      "n_true_events": 747,
+      "n_predicted_events": 746,
+      "all_event_precision": 0.868632707774799,
+      "all_event_recall": 0.8674698795180723,
+      "all_event_f1": 0.8680509042196919
+    },
+    {
+      "model": "mountainsort5",
+      "primary_mean_gt_accuracy": 0.9408960583730381,
+      "tp": 710,
+      "fp": 19,
+      "fn": 37,
+      "n_true_events": 747,
+      "n_predicted_events": 729,
+      "all_event_precision": 0.9739368998628258,
+      "all_event_recall": 0.9504685408299867,
+      "all_event_f1": 0.962059620596206
+    }
+  ]
+}

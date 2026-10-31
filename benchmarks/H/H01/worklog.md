@@ -10,8 +10,8 @@ Decision: **measured** (2026-10-30). Real public PhysioNet EEGMMI EDF files acqu
 
 [Source-linked admission evidence](../../../literature/admission-v04-electrical.json). [Actual protocol and artifacts](../../../experiments/H01). [Central task results](../../../results/H01.json).
 
-## v0.5 execution status
+## Current admission and execution
 
-measured. Real public PhysioNet EEGMMI EDF files acquired and validated; fixed subject-disjoint MI slice prepared. This admits one explicitly scoped slice, not the whole MOABB umbrella.
+Preview 0.6: measured. Real public PhysioNet EEGMMI EDF files acquired and validated; fixed subject-disjoint MI slice prepared. This admits one explicitly scoped slice, not the whole MOABB umbrella.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json). [Actual protocol/worklog](../../../experiments/H01). [Task measurements](../../../results/H01.json).

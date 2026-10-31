@@ -39,6 +39,11 @@
     "frozen_hashes": "passed",
     "generation_provenance": "3 submissions,zero observed tool events"
   },
+  "H02": {
+    "predictions_rescored": 5,
+    "frozen_hashes": "passed",
+    "generation_provenance": "3 submissions,zero observed tool events"
+  },
   "H08": {
     "predictions_rescored": 5,
     "frozen_hashes": "passed",
@@ -80,6 +85,6 @@
     "generation_provenance": "3 submissions,zero observed tool events"
   },
   "scope": "Exact prediction rescoring/hash/provenance checks, not independent expert validation or proof of uncontaminated pretraining",
-  "expanded_tasks": 16,
-  "expanded_prediction_records_rescored": 94
+  "expanded_tasks": 17,
+  "expanded_prediction_records_rescored": 99
 }

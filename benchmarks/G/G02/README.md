@@ -4,7 +4,7 @@
 
 **Resource:** FALCON communication tracks
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Intracortical activity and character/sequence labels
 
 Target/ground truth: Recorded target character or vocal sequence labels
 
-Specialist candidates: Released track baseline
+Mapped specialist candidates (not all evaluated): Released track baseline
 
 General-model route: General sequence decoder with fixed label interface
 
@@ -28,14 +28,16 @@ Keep each track separate; language priors can dominate
 
 - [https://snel-repo.github.io/falcon/](https://snel-repo.github.io/falcon/)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). FALCON communication decoding requires sequentialoutputs, official word/character scorer, sessionadaptation and heavier inputdata/training pipeline. Not executed within CPU numeric regression/classification interface. No evidence dataset is bad or universally impossible.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. FALCON communication decoding requires sequentialoutputs, official word/character scorer, sessionadaptation and heavier inputdata/training pipeline. Not executed within CPU numeric regression/classification interface. No evidence dataset is bad or universally impossible.
+Preview 0.6: deferred. FALCON communication decoding requires sequentialoutputs, official word/character scorer, sessionadaptation and heavier inputdata/training pipeline. Not executed within CPU numeric regression/classification interface. No evidence dataset is bad or universally impossible.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

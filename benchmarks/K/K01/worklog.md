@@ -10,8 +10,8 @@ Decision: **measured** (2026-10-30). Real primary API data acquired and hashed; 
 
 [Source-linked admission evidence](../../../literature/admission-v04-cell-workflow.json). [Actual protocol and artifacts](../../../experiments/K01). [Central task results](../../../results/K01.json).
 
-## v0.5 execution status
+## Current admission and execution
 
-measured. Real primary API data acquired and hashed; independent morphology endpoint, ephys-only whitelist, donor-disjoint split and train-only baseline protocol frozen. Prepared n_train=1356 and n_test=457, 11 features; 678/226 disjoint mouse donors. Adapter ready for root model evaluation.
+Preview 0.6: measured. Real primary API data acquired and hashed; independent morphology endpoint, ephys-only whitelist, donor-disjoint split and train-only baseline protocol frozen. Prepared n_train=1356 and n_test=457, 11 features; 678/226 disjoint mouse donors. Adapter ready for root model evaluation.
 
 [Admission/source evidence](../../../literature/admission-v04-cell-workflow.json). [Actual protocol/worklog](../../../experiments/K01). [Task measurements](../../../results/K01.json).

@@ -4,7 +4,7 @@
 
 **Resource:** Lightning Pose datasets: IBL-pupil, IBL-paw, mirror-mouse/fish, CRIM13
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: RGB/IR videos; labeled keypoints
 
 Target/ground truth: Human keypoint annotations
 
-Specialist candidates: Lightning Pose; DLC; SLEAP; EKS
+Mapped specialist candidates (not all evaluated): Lightning Pose; DLC; SLEAP; EKS
 
 General-model route: Frozen vision features plus head; VLM coordinate outputs
 
@@ -28,14 +28,16 @@ Frame-adjacent train/test leakage; pupil occlusion
 
 - [https://pmc.ncbi.nlm.nih.gov/articles/PMC12087009/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12087009/)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). Human-labeled pose images are a valid endpoint. Need pin image/label archive, verify published session split and matched coordinate scorer; no image adapter or vision submission interface acquired in this bounded expansion. Not rejected as bad data.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. Human-labeled pose images are a valid endpoint. Need pin image/label archive, verify published session split and matched coordinate scorer; no image adapter or vision submission interface acquired in this bounded expansion. Not rejected as bad data.
+Preview 0.6: candidate_pending_validation. Human-labeled pose images are a valid endpoint. Need pin image/label archive, verify published session split and matched coordinate scorer; no image adapter or vision submission interface acquired in this bounded expansion. Not rejected as bad data.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

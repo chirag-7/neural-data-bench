@@ -1,0 +1,15 @@
+{
+  "model": "xdawn-tslr",
+  "seconds": 3.4599052499979734,
+  "prediction_file": "results/predictions/H02/expansion-v1--xdawn-tslr.npz",
+  "prediction_sha256": "753ecf4792b64d23509e460da2cc0b633d5d19fefba7203158696cb7290e8349",
+  "packages": {
+    "pyriemann": "0.12",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1"
+  },
+  "code_sha256": "abee160d1c565a18f2ded14ef96eed77464c954f0d7e8bdcaa88fa2974e70ba2",
+  "selection": "Frozen before generation; no reference/test-score-based tuning",
+  "test_labels_loaded": false
+}

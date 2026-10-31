@@ -18,3 +18,7 @@ The normalized [central admission ledger](../registry/admission-decisions.json) 
 - Actual [SynAPSeg source record](../experiments/J08/source-record.json) and verification, [Sleep-EDF protocol and license](../experiments/H08/protocol.md), [E01 source-transfer preparation](../experiments/E01/slices/).
 
 The new admissions resolve specific data/access/scorer questions, not every literature or current-SOTA question in a category. The stronger H01 specialist amendment is post-hoc and does not retroactively change the original experimental design.
+
+## Preview 0.6 focused review
+
+The review targets ambiguously labeled plots, stale current-status documents, metric sensitivity and one concrete ERP admission. It does not repeat or relabel earlier searches as exhaustive. [Review/release](../docs/release-v06.md), [bounded source log](searches-v06.jsonl), [H02 original source/license](../experiments/H02/source-record.json), [B01 post-hoc audit](../experiments/B01/secondary-amendment.md). H02's original source is separately licensed from the previously deferred BNCI proposal; all 25 original files were acquired and verified.

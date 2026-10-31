@@ -130,3 +130,29 @@ The original H01 selection outputs include all out-of-fold predictions and a sep
 E01 extra sources reuse the exact original generated programs. The original prompt describes MC_Maze_Small dimensions, so this is a deliberately disclosed frozen-program portability test, not a matched fresh-prompt comparison. DMFC preserves official masked target coordinates. Prepared data hashes and source preparation seals must match; never fix a mismatch by silently changing an original run-spec.
 
 Scoring checks need acquired arrays. Portable CI uses no raw-data downloads or provider calls and verifies metadata, links, frozen source/prompt/code identities and stored prediction hashes. Browser verification is recorded separately; source-VM checks alone do not establish layout or click behavior.
+
+## Preview 0.6 ERP and metric sensitivity
+
+H02 uses a separately licensed source (original Brain Invaders 2012, CC BY 4.0). Its preparation acquires all 25 original ZIPs (~677 MB), validates publisher MD5s and independent MAT/CSV markers, and writes ignored prepared arrays. The frozen original programs can be evaluated without calling any model. Read the task protocol before acquisition; do not rerun `freeze` or replace original submissions.
+
+```sh
+python experiments/H02/adapter.py
+# Separate specialist environment: pyriemann==0.12 and declared runtime stack.
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python experiments/H02/specialist.py
+# Core numerical environment; fixed model programs plus both references.
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/erp.py evaluate
+# SpikeInterface 0.105.4 environment, no fitting or new model calls.
+python experiments/B01/secondary_audit.py
+# Return to core environment to rebuild current central artifacts.
+python scripts/release_registry.py
+python scripts/summarize.py
+python scripts/validate.py
+python scripts/validate_expansion.py
+python scripts/build_website.py
+python scripts/check_repository.py
+node scripts/check_site.mjs
+```
+
+H02's training-group argument is explicit and identical across methods. The independent person-level AUC verification uses float64 rank accumulation; the originally stored LDA scores can be float32. Stored prediction identity and rank order are unchanged. Its source author-code license is retained in `experiments/H02/UPSTREAM_LICENSE.txt`.
+
+The B01 event-accounting script is **post-hoc** and adds secondary fields only. It preserves original predictions, primary scores, tolerance and unit mapping. `posthoc_all_event_f1`, precision and recall are exported in the central CSV; other tasks have no value in those columns. They are not silently substituted into the macro score policy.

@@ -10,8 +10,8 @@ Decision: **deferred** (2026-10-30). Original CBICA BraTS page lists multiple se
 
 [Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Original CBICA BraTS page lists multiple separate Synapse challenge instances. Need choose task/release, dataset access terms, subject-level split and official tumor-region/Dice/HD95 rules. No raw records acquired or multiple releases mixed.
+Preview 0.6: deferred. Original CBICA BraTS page lists multiple separate Synapse challenge instances. Need choose task/release, dataset access terms, subject-level split and official tumor-region/Dice/HD95 rules. No raw records acquired or multiple releases mixed.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

@@ -11,3 +11,15 @@ Verified constant-score ROC-AUC0.5, perfect-ranking fixture1.0, and independent 
 A metadata export initially expected an optional `version` key absent from Zenodo's API; record identity and the publisher page's v3 label were used explicitly before preparation/model freeze. This was a metadata-handling repair, with no dataset/score selection. All subsequent source checksum and preparation checks passed.
 
 Frozen contract and model execution outcomes are recorded in `run-spec.json`, exact submissions, generation provenance and the central task records. No unrecorded model generations or score-driven repairs are allowed. The evaluation section will be appended after all attempts finish.
+
+## Completed evaluation
+
+Frozen local commit `d0f636f` predates model generation. One successful no-tool generation per requested model, high reasoning; unchanged programs have154/115/190lines. All fit calls complete within180seconds.
+
+- gpt-5.6-sol: measured, person-equal ROC-AUC=0.7571945899092973, execution seconds=1.3594105001538992.
+- gpt-6-sol: measured, person-equal ROC-AUC=0.73054818684538, execution seconds=0.39200912485830486.
+- gpt-6.1-sol: measured, person-equal ROC-AUC=0.7885365446735593, execution seconds=2.4475768750999123.
+- task-baseline: measured, person-equal ROC-AUC=0.7218908794859147, execution seconds=0.14297358389012516.
+- xdawn-tslr: measured, person-equal ROC-AUC=0.7612303198299977, execution seconds=3.4599052499979734.
+
+All five predictions match stored hashes. Independent rank-sum person AUCs and group aggregation reproduce scores to1e−12. An initial independent verifier accumulated float32 ranks for the LDA baseline and differed by up to2.6e−8; using float64 rank accumulation resolved the verifier precision issue without changing predictions or scores. See[result verification](result-verification.json). No model repair, threshold selection or new data exclusion followed test scores.

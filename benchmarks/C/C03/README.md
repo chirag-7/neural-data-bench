@@ -4,7 +4,7 @@
 
 **Resource:** NAOMi
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Simulated calcium movies and spikes
 
 Target/ground truth: Simulated masks, fluorescence, spikes and motion
 
-Specialist candidates: NoRMCorre; CNMF; Suite2p
+Mapped specialist candidates (not all evaluated): NoRMCorre; CNMF; Suite2p
 
 General-model route: Generic restoration/segmentation/sequence models
 
@@ -28,14 +28,16 @@ Simulator truth may not capture real tissue/indicator shift
 
 - [https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8217135/)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). NAOMi can provide full synthetic calcium movie truth. Requires frozen physicalsimulation parameters and randomseeds, compute budget and exact ROI/timecourse scoring. Clearly synthetic; simulator outputs do not validate real in-vivo robustness.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. NAOMi can provide full synthetic calcium movie truth. Requires frozen physicalsimulation parameters and randomseeds, compute budget and exact ROI/timecourse scoring. Clearly synthetic; simulator outputs do not validate real in-vivo robustness.
+Preview 0.6: candidate_pending_validation. NAOMi can provide full synthetic calcium movie truth. Requires frozen physicalsimulation parameters and randomseeds, compute budget and exact ROI/timecourse scoring. Clearly synthetic; simulator outputs do not validate real in-vivo robustness.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

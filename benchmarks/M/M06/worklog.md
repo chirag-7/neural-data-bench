@@ -10,8 +10,8 @@ Decision: **deferred** (2026-10-30). Official MyoChallenge site lists musculoske
 
 [Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Official MyoChallenge site lists musculoskeletal control environments and editions. Need pinned MuJoCo/MyoSuite state/action environments, rollout/time budgets and trained policy references; policy training/evaluation outside180s array-code slice.
+Preview 0.6: deferred. Official MyoChallenge site lists musculoskeletal control environments and editions. Need pinned MuJoCo/MyoSuite state/action environments, rollout/time budgets and trained policy references; policy training/evaluation outside180s array-code slice.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json).

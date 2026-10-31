@@ -21,6 +21,12 @@ These catalog recommendations become an executable protocol only after choosing 
 6. Execute once under the frozen contract; retain failures, predictions, code and provenance; add repeated generations for confirmatory comparisons.
 7. Re-score independently, document deviations and add eligible rows to the central results store.
 
-No experiment admitted yet.
+An explicitly scoped exploratory slice has been executed; broader proposed operations above remain separate.
 
 For unexecuted entries all seven gates remain pending; listing these steps is not a claim they were performed. The actual state is in [worklog](worklog.md).
+
+## Current executed protocol
+
+Preview 0.6: FALCON M2 custom cross-day decoding: 1,169 training and 754 test trials, 96 causal features, two finger-velocity outputs, one monkey.
+
+[Actual frozen contract and implementation](../../../experiments/G01). [Measured method/reference records](../../../results/G01.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

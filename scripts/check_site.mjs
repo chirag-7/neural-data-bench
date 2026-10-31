@@ -80,8 +80,9 @@ for (const id of summary.measured_task_ids) {
   )
     throw Error("Both plots required:" + id);
   if (
-    ["B01", "J08", "H08", "H01", "C05", "A09", "I10"].includes(id) &&
-    !text.includes("dash")
+    ["B01", "J08", "H08", "H01", "H02", "C05", "A09", "I10"].includes(id) &&
+    (!text.includes('class="direct-reference-label"') ||
+      !text.includes('aria-label="Named reference scores"'))
   )
     throw Error("Specialist overlay missing:" + id);
   vm.runInContext(
@@ -100,11 +101,27 @@ el("#list-mode").onchange({ target: { value: "all" } });
 el("#benchmark-picker").onchange({ target: { value: "B01" } });
 if (!el("#featured-chart").innerHTML.includes("MountainSort5"))
   throw Error("Selector failed to reveal specialist");
+vm.runInContext(
+  "b01Metric='all-event-f1';selectedSlice='';renderChart('#test-chart','B01')",
+  ctx,
+);
+const sensitivity = el("#test-chart").innerHTML;
+if (
+  !sensitivity.includes("0.9621") ||
+  !sensitivity.includes("0.5998") ||
+  !sensitivity.includes("post-hoc")
+)
+  throw Error(
+    "All-output event sensitivity must retain named values and post-hoc label",
+  );
+vm.runInContext("b01Metric='primary'", ctx);
 const result = {
   type: "In-memory source-render and direct-handler checks; not real-browser interaction or layout QA",
   routes: n,
   measured_tasks_with_bar_and_line_plots: plots,
   specialist_overlays: "passed",
+  direct_named_reference_labels_and_numeric_cards: "passed",
+  posthoc_metric_sensitivity: "passed",
   negative_R2_axis: "passed",
   graph_table_switch: "passed",
   search_and_benchmark_selector: "passed",

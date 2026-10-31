@@ -4,7 +4,7 @@
 
 **Resource:** Sensorium 2022
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Images with mouse calcium responses
 
 Target/ground truth: Measured neural responses
 
-Specialist candidates: Sensorium baseline CNN/readout
+Mapped specialist candidates (not all evaluated): Sensorium baseline CNN/readout
 
 General-model route: Frozen generic image encoder with matched readout
 
@@ -28,14 +28,16 @@ ImageNet features plus neural head are adapted models
 
 - [https://sensorium-competition.net/](https://sensorium-competition.net/)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). Sensorium2022 stimulus-response encoding is feasible with official split and responses, but current CPU numerical-code interface lacks reproducible visualstimulus decoding/encoder and a matched published model. Need exact response availability and heldoutanimal protocol before execution.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Sensorium2022 stimulus-response encoding is feasible with official split and responses, but current CPU numerical-code interface lacks reproducible visualstimulus decoding/encoder and a matched published model. Need exact response availability and heldoutanimal protocol before execution.
+Preview 0.6: deferred. Sensorium2022 stimulus-response encoding is feasible with official split and responses, but current CPU numerical-code interface lacks reproducible visualstimulus decoding/encoder and a matched published model. Need exact response availability and heldoutanimal protocol before execution.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

@@ -3,10 +3,11 @@
   "input": "MRI scans, quality metrics and expert ratings",
   "ground_truth": "Expert quality ratings with label disagreement",
   "sources": [
-    "https://doi.org/10.1371/journal.pone.0184661"
+    "https://doi.org/10.1371/journal.pone.0184661",
+    "https://github.com/nipreps/mriqc/tree/c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8/mriqc/data/csv"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/I10.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "I10",
@@ -22,8 +23,14 @@
     "review_depth": "Bounded primary-source screen; no systematic-review or universal-infeasibility claim",
     "permanent_rejection": false
   },
-  "executed_slice": "MRIQC600ABIDEtrain/265DS030test,68numeric IQMs,rater1exclude labels",
+  "executed_slice": "MRIQC: 600 ABIDE training scans and 265 DS030 test scans; 68 numeric quality metrics and rater-1 exclusion labels.",
   "v05_actual_execution": {
+    "status": "measured",
+    "slice": "MRIQC: 600 ABIDE training scans and 265 DS030 test scans; 68 numeric quality metrics and rater-1 exclusion labels.",
+    "evidence": "literature/admission-v04-inference-control.json"
+  },
+  "current_execution": {
+    "release": "0.6",
     "status": "measured",
     "slice": "MRIQC: 600 ABIDE training scans and 265 DS030 test scans; 68 numeric quality metrics and rater-1 exclusion labels.",
     "evidence": "literature/admission-v04-inference-control.json"

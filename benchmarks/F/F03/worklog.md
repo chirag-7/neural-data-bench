@@ -10,8 +10,8 @@ Decision: **candidate_pending_validation** (2026-10-30). Allen Visual Coding can
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. Allen Visual Coding can support real stimulus-to-response encoding with immutable sessionIDs and repeatedstimulus splits. Need specific experiments/moviefeatures and train-only learned readout; preprocessing leakage from repeatframes must be prevented. Not acquired here.
+Preview 0.6: candidate_pending_validation. Allen Visual Coding can support real stimulus-to-response encoding with immutable sessionIDs and repeatedstimulus splits. Need specific experiments/moviefeatures and train-only learned readout; preprocessing leakage from repeatframes must be prevented. Not acquired here.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

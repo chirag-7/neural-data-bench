@@ -4,7 +4,7 @@
 
 **Resource:** SpikeInterface motion benchmarks / DREDge
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Spike localizations or LFP with probe coordinates
 
 Target/ground truth: Known imposed/simulated displacement
 
-Specialist candidates: DREDge; Kilosort motion correction
+Mapped specialist candidates (not all evaluated): DREDge; Kilosort motion correction
 
 General-model route: Generic registration or signal model
 
@@ -29,14 +29,16 @@ Real motion estimates are often proxy truth
 - [https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html](https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html)
 - [https://github.com/evarol/dredge](https://github.com/evarol/dredge)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). Synthetic drift with known displacement supports motion-estimation error; real DREDge drift estimates themselves are not groundtruth. Need fixed simulator/probe mapping and matched motion pipeline; no acquisition/execution attempted here.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. Synthetic drift with known displacement supports motion-estimation error; real DREDge drift estimates themselves are not groundtruth. Need fixed simulator/probe mapping and matched motion pipeline; no acquisition/execution attempted here.
+Preview 0.6: candidate_pending_validation. Synthetic drift with known displacement supports motion-estimation error; real DREDge drift estimates themselves are not groundtruth. Need fixed simulator/probe mapping and matched motion pipeline; no acquisition/execution attempted here.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

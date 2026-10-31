@@ -3,7 +3,8 @@
   "input": "fUS volumes, time series and templates",
   "ground_truth": "Available task/region annotations vary",
   "sources": [
-    "https://registry.opendata.aws/confusius/"
+    "https://registry.opendata.aws/confusius/",
+    "https://confusius.tools/latest/user-guide/datasets/"
   ],
   "license_status": "Not independently verified",
   "local_manifest": null,
@@ -23,6 +24,12 @@
     "permanent_rejection": false
   },
   "v05_actual_execution": {
+    "status": "deferred",
+    "slice": null,
+    "evidence": "literature/admission-v04-electrical.json"
+  },
+  "current_execution": {
+    "release": "0.6",
     "status": "deferred",
     "slice": null,
     "evidence": "literature/admission-v04-electrical.json"

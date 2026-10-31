@@ -10,8 +10,8 @@ Decision: **deferred** (2026-10-30). Dataset license unresolved in earlier mappi
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
+Preview 0.6: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
 [Admission/source evidence](../../../experiments/J08/protocol.md). [Actual protocol/worklog](../../../experiments/J08). [Task measurements](../../../results/J08.json).

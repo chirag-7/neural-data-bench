@@ -4,7 +4,7 @@
 
 **Resource:** CREMI segmentation
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Serial-section EM volumes
 
 Target/ground truth: Expert instance labels
 
-Specialist candidates: 3D U-Net/affinity segmentation
+Mapped specialist candidates (not all evaluated): 3D U-Net/affinity segmentation
 
 General-model route: Generic segmentation features with matched prompts
 
@@ -28,14 +28,16 @@ No experiment admitted yet. All measurements are centralized in [results](../../
 
 - [https://cremi.janelia.org/](https://cremi.janelia.org/)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). CREMI real volumetric image segmentation needs3D inputs and topology-sensitive adapted Rand/VI scoring. GPU specialist weights/scorer not prepared; a small randomvoxel classifier would not validate neurite segmentation.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. CREMI real volumetric image segmentation needs3D inputs and topology-sensitive adapted Rand/VI scoring. GPU specialist weights/scorer not prepared; a small randomvoxel classifier would not validate neurite segmentation.
+Preview 0.6: deferred. CREMI real volumetric image segmentation needs3D inputs and topology-sensitive adapted Rand/VI scoring. GPU specialist weights/scorer not prepared; a small randomvoxel classifier would not validate neurite segmentation.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

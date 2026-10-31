@@ -21,6 +21,12 @@ These catalog recommendations become an executable protocol only after choosing 
 6. Execute once under the frozen contract; retain failures, predictions, code and provenance; add repeated generations for confirmatory comparisons.
 7. Re-score independently, document deviations and add eligible rows to the central results store.
 
-No experiment admitted yet.
+An explicitly scoped exploratory slice has been executed; broader proposed operations above remain separate.
 
 For unexecuted entries all seven gates remain pending; listing these steps is not a claim they were performed. The actual state is in [worklog](worklog.md).
+
+## Current executed protocol
+
+Preview 0.6: SynAPSeg 2D puncta: 27 training fields yielding 1,262 crops; two held-out whole fields, five expert masks each; archived StarDist reference.
+
+[Actual frozen contract and implementation](../../../experiments/J08). [Measured method/reference records](../../../results/J08.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

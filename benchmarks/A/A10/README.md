@@ -4,7 +4,7 @@
 
 **Resource:** MABe22
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Videos and trajectories across species
 
 Target/ground truth: Experimental metadata and behavioral annotations
 
-Specialist candidates: Published MABe representation baselines
+Mapped specialist candidates (not all evaluated): Published MABe representation baselines
 
 General-model route: General video/trajectory pretrained features
 
@@ -28,14 +28,16 @@ One aggregate can hide failures by species or task
 
 - [https://arxiv.org/abs/2207.10553](https://arxiv.org/abs/2207.10553)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). Representation assessment requires multiple downstream task labels and recording-group splits. CalMS21 Task1 is not equivalent to MABe22. Need pin exact track release and fixed downstream evaluation wrapper.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. Representation assessment requires multiple downstream task labels and recording-group splits. CalMS21 Task1 is not equivalent to MABe22. Need pin exact track release and fixed downstream evaluation wrapper.
+Preview 0.6: candidate_pending_validation. Representation assessment requires multiple downstream task labels and recording-group splits. CalMS21 Task1 is not equivalent to MABe22. Need pin exact track release and fixed downstream evaluation wrapper.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

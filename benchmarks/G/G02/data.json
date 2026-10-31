@@ -25,5 +25,11 @@
     "status": "deferred",
     "slice": null,
     "evidence": "literature/admission-v04-behavior-population.json"
+  },
+  "current_execution": {
+    "release": "0.6",
+    "status": "deferred",
+    "slice": null,
+    "evidence": "literature/admission-v04-behavior-population.json"
   }
 }

@@ -1,12 +1,18 @@
 {
   "benchmark_id": "H02",
-  "input": "Stimulus-locked EEG",
-  "ground_truth": "Target/nontarget event labels",
+  "input": "Stimulus-locked16channel EEG epochs,128Hz,0\u20131s afterflash; EEG only, groundFz removed",
+  "ground_truth": "Original all-flash/target event markers; higher score denotes target",
   "sources": [
-    "https://moabb.neurotechx.com/"
+    "https://moabb.neurotechx.com/",
+    "https://bnci-horizon-2020.eu/database/data-sets",
+    "https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_008.html",
+    "https://zenodo.org/records/2649069",
+    "https://arxiv.org/abs/1905.05182",
+    "https://github.com/plcrodrigues/py.BI.EEG.2012-GIPSA",
+    "https://pyriemann.readthedocs.io/en/latest/auto_examples/biosignal-erp/plot_classify_EEG_tangentspace.html"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/H02.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "H02",
@@ -27,5 +33,12 @@
     "status": "deferred",
     "slice": null,
     "evidence": "literature/admission-v04-electrical.json"
-  }
+  },
+  "current_execution": {
+    "release": "0.6",
+    "status": "measured",
+    "slice": "Brain Invaders2012 calibration runs: 15 training and10 held-out people; 11,481/7,663 epochs,16 EEG channels; equal-person ROC-AUC.",
+    "evidence": "experiments/H02/protocol.md"
+  },
+  "executed_slice": "Brain Invaders2012 calibration runs: 15 training and10 held-out people; 11,481/7,663 epochs,16 EEG channels; equal-person ROC-AUC."
 }

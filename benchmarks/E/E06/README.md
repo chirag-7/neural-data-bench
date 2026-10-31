@@ -4,7 +4,7 @@
 
 **Resource:** ZAPBench (ICLR 2025)
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Larval zebrafish light-sheet volumes and extracted cellular traces
 
 Target/ground truth: Future measured calcium activity
 
-Specialist candidates: Published naive, time-series and volumetric video baselines
+Mapped specialist candidates (not all evaluated): Published naive, time-series and volumetric video baselines
 
 General-model route: General time-series/world/video models; code agents in separate track
 
@@ -30,14 +30,16 @@ One brain cannot establish cross-animal generalization; 70k neurons do not equal
 - [https://arxiv.org/abs/2503.02618](https://arxiv.org/abs/2503.02618)
 - [https://zapbench-release.storage.googleapis.com/volumes/README.html](https://zapbench-release.storage.googleapis.com/volumes/README.html)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). ZAPBench real larval zebrafish wholebrain activity forecasting is a distinct real task. Needs pinned release, official heldout temporal blocks and neuron mappings; complete brain arrays may be large. No acquisition attempted here, so no permanent infeasibility claim.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. ZAPBench real larval zebrafish wholebrain activity forecasting is a distinct real task. Needs pinned release, official heldout temporal blocks and neuron mappings; complete brain arrays may be large. No acquisition attempted here, so no permanent infeasibility claim.
+Preview 0.6: candidate_pending_validation. ZAPBench real larval zebrafish wholebrain activity forecasting is a distinct real task. Needs pinned release, official heldout temporal blocks and neuron mappings; complete brain arrays may be large. No acquisition attempted here, so no permanent infeasibility claim.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

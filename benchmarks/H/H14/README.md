@@ -4,7 +4,7 @@
 
 **Resource:** Bycycle examples plus selected public LFP and synthetic controls
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: LFP/field time series with labeled or injected events
 
 Target/ground truth: Injected known bursts; expert/proxy annotations for real events
 
-Specialist candidates: Bycycle; spectral threshold/bandpass baseline
+Mapped specialist candidates (not all evaluated): Bycycle; spectral threshold/bandpass baseline
 
 General-model route: General time-series model or analysis agent
 
@@ -29,14 +29,16 @@ Oscillation/burst definitions are method dependent; real ground truth is limited
 - [https://github.com/bycycle-tools/bycycle](https://github.com/bycycle-tools/bycycle)
 - [https://about.dandiarchive.org/](https://about.dandiarchive.org/)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). Original bycycle code/documentation accessible. Tool features computed from real LFP are not independent gold labels; need expert burst annotations or separately labeled synthetic calibration. Do not grade generic code against bycycle output and label it physiological truth.
 
 [Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. Original bycycle code/documentation accessible. Tool features computed from real LFP are not independent gold labels; need expert burst annotations or separately labeled synthetic calibration. Do not grade generic code against bycycle output and label it physiological truth.
+Preview 0.6: candidate_pending_validation. Original bycycle code/documentation accessible. Tool features computed from real LFP are not independent gold labels; need expert burst annotations or separately labeled synthetic calibration. Do not grade generic code against bycycle output and label it physiological truth.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

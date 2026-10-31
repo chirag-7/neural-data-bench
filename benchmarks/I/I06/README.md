@@ -4,7 +4,7 @@
 
 **Resource:** BraTS releases
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Multicontrast MRI volumes
 
 Target/ground truth: Expert tumor labels
 
-Specialist candidates: nnU-Net; release-specific specialist
+Mapped specialist candidates (not all evaluated): nnU-Net; release-specific specialist
 
 General-model route: Generic segmentation model with stated prompts/adaptation
 
@@ -28,14 +28,16 @@ Clinical imaging extension beyond course; access rules vary by release
 
 - [https://www.med.upenn.edu/cbica/brats/](https://www.med.upenn.edu/cbica/brats/)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). Original CBICA BraTS page lists multiple separate Synapse challenge instances. Need choose task/release, dataset access terms, subject-level split and official tumor-region/Dice/HD95 rules. No raw records acquired or multiple releases mixed.
 
 [Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Original CBICA BraTS page lists multiple separate Synapse challenge instances. Need choose task/release, dataset access terms, subject-level split and official tumor-region/Dice/HD95 rules. No raw records acquired or multiple releases mixed.
+Preview 0.6: deferred. Original CBICA BraTS page lists multiple separate Synapse challenge instances. Need choose task/release, dataset access terms, subject-level split and official tumor-region/Dice/HD95 rules. No raw records acquired or multiple releases mixed.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

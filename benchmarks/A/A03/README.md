@@ -4,7 +4,7 @@
 
 **Resource:** SuperAnimal leave-one-dataset-out releases
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Animal videos and keypoints
 
 Target/ground truth: Held-out human keypoints
 
-Specialist candidates: SuperAnimal; task-trained DLC
+Mapped specialist candidates (not all evaluated): SuperAnimal; task-trained DLC
 
 General-model route: Generic vision features with same labels
 
@@ -28,14 +28,16 @@ SuperAnimal is animal-domain pretraining, not a general-purpose model
 
 - [https://www.nature.com/articles/s41467-024-48792-2](https://www.nature.com/articles/s41467-024-48792-2)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). Needs exact leave-one-dataset-out weights and proof held-out training set was excluded from domain pretraining. Cannot treat animal-specialist SuperAnimal as a general-purpose baseline. Weights/splits not yet validated.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. Needs exact leave-one-dataset-out weights and proof held-out training set was excluded from domain pretraining. Cannot treat animal-specialist SuperAnimal as a general-purpose baseline. Weights/splits not yet validated.
+Preview 0.6: candidate_pending_validation. Needs exact leave-one-dataset-out weights and proof held-out training set was excluded from domain pretraining. Cannot treat animal-specialist SuperAnimal as a general-purpose baseline. Weights/splits not yet validated.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

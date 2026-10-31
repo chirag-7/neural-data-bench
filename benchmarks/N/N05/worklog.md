@@ -10,8 +10,8 @@ Decision: **measured** (2026-10-30). Constructed and validated deterministic loa
 
 [Source-linked admission evidence](../../../literature/admission-v04-cell-workflow.json). [Actual protocol and artifacts](../../../experiments/N05). [Central task results](../../../results/N05.json).
 
-## v0.5 execution status
+## Current admission and execution
 
-measured. Constructed and validated deterministic loader/unit/timing audit using actual Allen NWB shared withD02, six sweeps and61 leaf fields; reference crosschecked with official EphysSweep metadata plus independent block-averaged D02 arrays. No claim of DANDI archive benchmark, format-general robustness, or scientific discovery.
+Preview 0.6: measured. Constructed and validated deterministic loader/unit/timing audit using actual Allen NWB shared withD02, six sweeps and61 leaf fields; reference crosschecked with official EphysSweep metadata plus independent block-averaged D02 arrays. No claim of DANDI archive benchmark, format-general robustness, or scientific discovery.
 
 [Admission/source evidence](../../../literature/admission-v04-cell-workflow.json). [Actual protocol/worklog](../../../experiments/N05). [Task measurements](../../../results/N05.json).

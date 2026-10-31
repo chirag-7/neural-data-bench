@@ -10,8 +10,8 @@ Decision: **candidate_pending_validation** (2026-10-30). UnitMatch crossday matc
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. UnitMatch crossday matching needs real paired sessions with independently supported identities; algorithm outputs cannot be used as target labels. Need exact released validation identities/sessions and potential calcium or optotagging corroboration. No paired acquisition attempted here.
+Preview 0.6: candidate_pending_validation. UnitMatch crossday matching needs real paired sessions with independently supported identities; algorithm outputs cannot be used as target labels. Need exact released validation identities/sessions and potential calcium or optotagging corroboration. No paired acquisition attempted here.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

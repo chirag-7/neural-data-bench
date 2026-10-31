@@ -10,8 +10,8 @@ Decision: **candidate_pending_validation** (2026-10-30). Need raw or published f
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. Need raw or published fixed behavior features jointly aligned to neural recordings and recording-level heldout responses. No common numerical endpoint independently acquired; do not score predicted behavior labels as neural encoding.
+Preview 0.6: candidate_pending_validation. Need raw or published fixed behavior features jointly aligned to neural recordings and recording-level heldout responses. No common numerical endpoint independently acquired; do not score predicted behavior labels as neural encoding.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

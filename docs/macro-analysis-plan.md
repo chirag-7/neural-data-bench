@@ -35,3 +35,7 @@ Charts connect only model versions on the same native endpoint. Native line axes
 ## Preview 0.5 exploratory extension
 
 The fixed primary-reference classes now include local specialists and pretrained specialists. E01 has three source slices averaged within one task; C05 retains five preparations. Model-progress comparisons exclude M04 and N05, and now include synthetic B01; never label this a purely biological aggregate. All comparisons remain descriptive, not preregistered. Failure stays in the denominator; strict-format results use explicit eligible denominators. No synthetic/biological population-wide inference or mixed-native-metric averaging.
+
+## Preview 0.6 sensitivity boundary
+
+H02 contributes one task/slice in existing family H. Its person-equal ROC-AUC is the frozen native primary; correlated epochs do not inflate task or person denominators. B01's post-hoc all-output event F1 is a separately labeled sensitivity; it never replaces the frozen per-GT-unit accuracy in existing reference or progress summaries. Two of three within-B01 model-version directions reverse under that sensitivity, demonstrating metric dependence rather than authorizing a preferred post-hoc primary. All three new H02 submissions are strict-format compliant. Current counts and derived weighting are in the summary JSON.

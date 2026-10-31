@@ -5,8 +5,8 @@
   "sources": [
     "https://elifesciences.org/articles/49547"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": "../../../data/manifests/cognitive.json",
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/cognitive.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "M04",
@@ -25,5 +25,12 @@
     "status": "measured",
     "slice": "Synthetic two-choice Q-learning agents: recover learning rate and inverse temperature from choices and rewards.",
     "evidence": "literature/admission-v04-inference-control.json"
-  }
+  },
+  "current_execution": {
+    "release": "0.6",
+    "status": "measured",
+    "slice": "Synthetic two-choice Q-learning agents: recover learning rate and inverse temperature from choices and rewards.",
+    "evidence": "literature/admission-v04-inference-control.json"
+  },
+  "executed_slice": "Synthetic two-choice Q-learning agents: recover learning rate and inverse temperature from choices and rewards."
 }

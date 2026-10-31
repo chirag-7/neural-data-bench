@@ -10,8 +10,8 @@ Decision: **deferred** (2026-10-30). FALCON communication decoding requires sequ
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. FALCON communication decoding requires sequentialoutputs, official word/character scorer, sessionadaptation and heavier inputdata/training pipeline. Not executed within CPU numeric regression/classification interface. No evidence dataset is bad or universally impossible.
+Preview 0.6: deferred. FALCON communication decoding requires sequentialoutputs, official word/character scorer, sessionadaptation and heavier inputdata/training pipeline. Not executed within CPU numeric regression/classification interface. No evidence dataset is bad or universally impossible.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

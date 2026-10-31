@@ -3,7 +3,11 @@
   "source_urls": [
     "https://moabb.neurotechx.com/",
     "https://bnci-horizon-2020.eu/database/data-sets",
-    "https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_008.html"
+    "https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_008.html",
+    "https://zenodo.org/records/2649069",
+    "https://arxiv.org/abs/1905.05182",
+    "https://github.com/plcrodrigues/py.BI.EEG.2012-GIPSA",
+    "https://pyriemann.readthedocs.io/en/latest/auto_examples/biosignal-erp/plot_classify_EEG_tangentspace.html"
   ],
-  "admission_evidence": "literature/admission-v04-electrical.json"
+  "admission_evidence": "experiments/H02/protocol.md"
 }

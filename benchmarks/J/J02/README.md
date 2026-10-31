@@ -4,7 +4,7 @@
 
 **Resource:** CREMI synapse/connectivity categories
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: EM images and neuron instances
 
 Target/ground truth: Synapse and pre/post partner annotations
 
-Specialist candidates: Specialist synapse/partner networks
+Mapped specialist candidates (not all evaluated): Specialist synapse/partner networks
 
 General-model route: Generic 3D vision representation
 
@@ -28,14 +28,16 @@ Detection and correct synaptic partners are different tasks
 
 - [https://cremi.janelia.org/](https://cremi.janelia.org/)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). CREMI synapse detection requires actual pre/post partner instance annotations, separate from image segmentation labels. No synapse manifest or partner matching scorer acquired. Do not substitute arbitrary voxel classification.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. CREMI synapse detection requires actual pre/post partner instance annotations, separate from image segmentation labels. No synapse manifest or partner matching scorer acquired. Do not substitute arbitrary voxel classification.
+Preview 0.6: candidate_pending_validation. CREMI synapse detection requires actual pre/post partner instance annotations, separate from image segmentation labels. No synapse manifest or partner matching scorer acquired. Do not substitute arbitrary voxel classification.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

@@ -4,7 +4,7 @@
 
 **Resource:** Animal3D
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Animal images with fitted shape labels
 
 Target/ground truth: Annotated 2D/3D model-derived shape/pose
 
-Specialist candidates: SMAL-based and published Animal3D methods
+Mapped specialist candidates (not all evaluated): SMAL-based and published Animal3D methods
 
 General-model route: Generic 3D reconstruction; frozen vision model
 
@@ -28,14 +28,16 @@ Fitted shape labels are not direct physical motion capture
 
 - [https://arxiv.org/abs/2308.11737](https://arxiv.org/abs/2308.11737)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). Fitted 3D animal shape labels are a valid separate proxy-label endpoint, but need model parameter conventions and source image acquisition; do not equate fitted SMAL annotations to physical groundtruth. Not acquired.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. Fitted 3D animal shape labels are a valid separate proxy-label endpoint, but need model parameter conventions and source image acquisition; do not equate fitted SMAL annotations to physical groundtruth. Not acquired.
+Preview 0.6: candidate_pending_validation. Fitted 3D animal shape labels are a valid separate proxy-label endpoint, but need model parameter conventions and source image acquisition; do not equate fitted SMAL annotations to physical groundtruth. Not acquired.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

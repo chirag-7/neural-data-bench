@@ -4,7 +4,7 @@
 
 **Resource:** Computation-through-Dynamics Benchmark
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Synthetic spikes from task-trained networks
 
 Target/ground truth: Ground-truth simulated dynamics and states
 
-Specialist candidates: LFADS; sequential autoencoders
+Mapped specialist candidates (not all evaluated): LFADS; sequential autoencoders
 
 General-model route: General sequence/world model
 
@@ -28,14 +28,16 @@ Good neural prediction does not guarantee correct dynamical mechanism
 
 - [https://github.com/snel-repo/ComputationThroughDynamicsToolkit](https://github.com/snel-repo/ComputationThroughDynamicsToolkit)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). CtDB can supply synthetic mechanistic dynamics groundtruth and known task variables. Needs pinned generator, stimulus/trajectory/seed split and metric for actual recovered dynamics, not arbitrary latent-coordinateRMSE. Synthetic extension remains useful but unprepared.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. CtDB can supply synthetic mechanistic dynamics groundtruth and known task variables. Needs pinned generator, stimulus/trajectory/seed split and metric for actual recovered dynamics, not arbitrary latent-coordinateRMSE. Synthetic extension remains useful but unprepared.
+Preview 0.6: candidate_pending_validation. CtDB can supply synthetic mechanistic dynamics groundtruth and known task variables. Needs pinned generator, stimulus/trajectory/seed split and metric for actual recovered dynamics, not arbitrary latent-coordinateRMSE. Synthetic extension remains useful but unprepared.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

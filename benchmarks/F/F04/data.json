@@ -3,10 +3,15 @@
   "input": "Stimulus movies and retinal spike trains",
   "ground_truth": "Measured spike trains with aligned stimuli",
   "sources": [
-    "https://crcns.org/data-sets"
+    "https://crcns.org/data-sets",
+    "https://open-retina.org/api_reference/data_io/goldin_2022/",
+    "https://doi.org/10.5281/zenodo.6868362",
+    "https://doi.org/10.1038/s41467-022-33242-8",
+    "https://huggingface.co/datasets/open-retina/open-retina/blob/fc7b91e93c9bd4e76d4e3205fcbcc6a31601985a/README.md",
+    "https://huggingface.co/datasets/open-retina/open-retina"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/F04.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "F04",
@@ -26,8 +31,14 @@
     "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
     "permanent_rejection": false
   },
-  "executed_slice": "Goldin2022 retina,3160trainimages/30testimages\u00d730repeats,41neurons,18\u00d718imagefeatures",
+  "executed_slice": "Goldin 2022 retina: 3,160 training images and 30 test images repeated 30 times; 41 neurons, one preparation.",
   "v05_actual_execution": {
+    "status": "measured",
+    "slice": "Goldin 2022 retina: 3,160 training images and 30 test images repeated 30 times; 41 neurons, one preparation.",
+    "evidence": "literature/admission-v04-cell-workflow.json"
+  },
+  "current_execution": {
+    "release": "0.6",
     "status": "measured",
     "slice": "Goldin 2022 retina: 3,160 training images and 30 test images repeated 30 times; 41 neurons, one preparation.",
     "evidence": "literature/admission-v04-cell-workflow.json"

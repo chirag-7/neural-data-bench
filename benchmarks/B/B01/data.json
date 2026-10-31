@@ -1,14 +1,17 @@
 {
   "benchmark_id": "B01",
-  "input": "Raw extracellular voltage and probe geometry",
-  "ground_truth": "Paired recordings and/or simulated known spikes",
+  "input": "Simulated filtered extracellular voltage32kHz,32channels; hidden generated spike events",
+  "ground_truth": "Known simulation spike events and neuron IDs; not paired biological truth",
   "sources": [
     "https://github.com/flatironinstitute/spikeforest",
     "https://elifesciences.org/articles/55167",
-    "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+    "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+    "https://gin.g-node.org/NeuralEnsemble/ephy_testing_data",
+    "https://spikeinterface.readthedocs.io/en/0.96.1/modules/comparison/plot_3_compare_sorter_with_ground_truth.html",
+    "https://github.com/flatironinstitute/mountainsort5"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/B01.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "B01",
@@ -29,5 +32,12 @@
     "status": "measured",
     "slice": "Blind unsupervised spike sorting of one 10-second, 32-channel stationary MEArec simulation; official unit/event matching.",
     "evidence": "literature/admission-v05-extracellular.json"
-  }
+  },
+  "current_execution": {
+    "release": "0.6",
+    "status": "measured",
+    "slice": "Blind unsupervised spike sorting of one 10-second, 32-channel stationary MEArec simulation; official unit/event matching.",
+    "evidence": "literature/admission-v05-extracellular.json"
+  },
+  "executed_slice": "Blind unsupervised spike sorting of one 10-second, 32-channel stationary MEArec simulation; official unit/event matching."
 }

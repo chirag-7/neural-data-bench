@@ -4,10 +4,11 @@
   "ground_truth": "Measured voltage and recorded stimulation",
   "sources": [
     "https://brain-map.org/support/documentation/documentation-cell-types-database",
-    "https://alleninstitute.github.io/AllenSDK/cell_types.html"
+    "https://alleninstitute.github.io/AllenSDK/cell_types.html",
+    "https://brain-map.org/support/documentation/cell-types-database-api"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/D02.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "D02",
@@ -24,8 +25,14 @@
     "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
     "permanent_rejection": false
   },
-  "executed_slice": "One Allen cell,4train/2test negative-current sweeps;500Hz passive voltage-deflection interpolation",
+  "executed_slice": "One Allen cell: four training and two test negative-current sweeps; 500 Hz passive voltage interpolation.",
   "v05_actual_execution": {
+    "status": "measured",
+    "slice": "One Allen cell: four training and two test negative-current sweeps; 500 Hz passive voltage interpolation.",
+    "evidence": "literature/admission-v04-cell-workflow.json"
+  },
+  "current_execution": {
+    "release": "0.6",
     "status": "measured",
     "slice": "One Allen cell: four training and two test negative-current sweeps; 500 Hz passive voltage interpolation.",
     "evidence": "literature/admission-v04-cell-workflow.json"

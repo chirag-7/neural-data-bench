@@ -3,10 +3,14 @@
   "input": "Curated EEG and artifact segments; synthetic mixtures",
   "ground_truth": "Curated clean reference under controlled synthetic contamination",
   "sources": [
-    "https://doi.org/10.1088/1741-2552/ac2bf8"
+    "https://doi.org/10.1088/1741-2552/ac2bf8",
+    "https://github.com/ncclabsustech/EEGdenoiseNet",
+    "https://arxiv.org/html/2009.11662v4",
+    "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/master/LICENSE",
+    "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/code/benchmark_networks/data_prepare.py"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/H16.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "H16",
@@ -25,8 +29,14 @@
     "review_depth": "Bounded admission assessment; actual access and license facts in linked evidence",
     "permanent_rejection": false
   },
-  "executed_slice": "EEGdenoiseNet clean+EOG2000train/600test component-disjoint mixtures",
+  "executed_slice": "EEGdenoiseNet: 2,000 training and 600 test clean-plus-EOG mixtures, with disjoint source components.",
   "v05_actual_execution": {
+    "status": "measured",
+    "slice": "EEGdenoiseNet: 2,000 training and 600 test clean-plus-EOG mixtures, with disjoint source components.",
+    "evidence": "literature/admission-v04-electrical.json"
+  },
+  "current_execution": {
+    "release": "0.6",
     "status": "measured",
     "slice": "EEGdenoiseNet: 2,000 training and 600 test clean-plus-EOG mixtures, with disjoint source components.",
     "evidence": "literature/admission-v04-electrical.json"

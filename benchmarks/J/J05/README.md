@@ -4,7 +4,7 @@
 
 **Resource:** MICrONS
 
-**State:** not evaluated; deferred. Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Coregistered EM, neurons, calcium responses
 
 Target/ground truth: Released proofread connectivity and activity
 
-Specialist candidates: Connectomics-specific models; activity-only baseline
+Mapped specialist candidates (not all evaluated): Connectomics-specific models; activity-only baseline
 
 General-model route: General graph/image model
 
@@ -28,14 +28,16 @@ Evolving proofreading; adjacent neuron leakage; substantial data engineering
 
 - [https://www.microns-explorer.org/](https://www.microns-explorer.org/)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). MICrONS needs proofread graph release pinning, cell-function joins and release-specific train/test units; substantial data engineering and evolving annotations. Not prepared under current CPU/lightweight acquisition budget.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. MICrONS needs proofread graph release pinning, cell-function joins and release-specific train/test units; substantial data engineering and evolving annotations. Not prepared under current CPU/lightweight acquisition budget.
+Preview 0.6: deferred. MICrONS needs proofread graph release pinning, cell-function joins and release-specific train/test units; substantial data engineering and evolving annotations. Not prepared under current CPU/lightweight acquisition budget.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

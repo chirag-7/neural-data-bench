@@ -1,6 +1,6 @@
 # Coverage and maturity
 
-Counts describe task–resource pairings, not independent datasets, full literature coverage or completed scientific operations. All 14 families have a measured slice; this does not establish coverage of each family's subfields.
+19 measured IDs represent 14 families through narrow selected slices, not complete coverage. Counts describe task–resource associations, not independent datasets.
 
 | Family | Active entries | Measured IDs | Pending validation | Deferred |
 |---|---:|---|---:|---:|
@@ -11,14 +11,13 @@ Counts describe task–resource pairings, not independent datasets, full literat
 | [E](../benchmarks/E/README.md) Population activity and dynamics | 6 | E01 | 5 | 0 |
 | [F](../benchmarks/F/README.md) Sensory and behavioral encoding | 5 | F04 | 2 | 2 |
 | [G](../benchmarks/G/README.md) Intracortical BCI | 3 | G01 | 0 | 2 |
-| [H](../benchmarks/H/README.md) EEG, MEG, field signals and peripheral interfaces | 14 | H01, H08, H16 | 1 | 10 |
+| [H](../benchmarks/H/README.md) EEG, MEG, field signals and peripheral interfaces | 14 | H01, H02, H08, H16 | 1 | 9 |
 | [I](../benchmarks/I/README.md) Human and mesoscopic neuroimaging | 6 | I07, I10 | 0 | 4 |
 | [J](../benchmarks/J/README.md) Anatomy, histology and connectomics | 9 | J08 | 4 | 4 |
 | [K](../benchmarks/K/README.md) Cell types and molecular neuroscience | 5 | K01 | 4 | 0 |
 | [L](../benchmarks/L/README.md) Mechanistic and statistical inference | 5 | L04 | 3 | 1 |
 | [M](../benchmarks/M/README.md) Experimental design and control | 4 | M04 | 2 | 1 |
 | [N](../benchmarks/N/README.md) Scientific analysis workflows | 3 | N05 | 2 | 0 |
-
 
 ## Removed from the active map
 
@@ -27,7 +26,7 @@ Counts describe task–resource pairings, not independent datasets, full literat
 ## Material gaps
 
 - B01 is a ten-second stationary simulation: biological extracellular voltage, drift, collisions and multi-hour stability remain unmeasured.
-- J08 has two 2D fields: 3D microscopy, EM connectomics, registration, tractography and independent-specimen replication remain unmeasured.
+- J08 has two 2 D fields: 3 D microscopy, EM connectomics, registration, tractography and independent-specimen replication remain unmeasured.
 - G01 is offline monkey finger-velocity decoding across four recording days: clinical speech BCI, online control, adaptation latency and human safety remain unmeasured.
 - H08 has three held-out first nights from healthy volunteers; clinical disorders, sites, demographics and full polysomnography generalization remain unmeasured. MEG, seizure detection and other electrophysiology endpoints remain candidates.
 - Calcium motion correction/segmentation, whole-brain fMRI encoding, molecular/spatial omics, causal perturbation inference, mechanistic simulator fitting, active experiment design and embodied control have little or no execution here.
@@ -35,3 +34,7 @@ Counts describe task–resource pairings, not independent datasets, full literat
 - Every measured model is a constrained general coding model. Native image/video/world models, open-weight models, retrieval-assisted agents and unconstrained autonomous lab workflows are not compared.
 
 The [taxonomy](taxonomy.md) and [review protocol](review-protocol.md) provide systematic axes and bounded searches. External neuroscience expert review and prospective validation on independent resources remain necessary. A claim that nothing is missing would be unjustified.
+
+## ERP addition in preview 0.6
+
+H02 adds one 25-person P300 source with 15/10 subject split; it does not complete other ERPparadigms, online BCI or clinical generalization. Earlier BNCI 2014_008 assessment remains historical; its data were not substituted into the new endpoint.

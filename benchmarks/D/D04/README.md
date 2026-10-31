@@ -4,7 +4,7 @@
 
 **Resource:** HippoUnit / SciUnit
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Biophysical neuron models and stimulation protocols
 
 Target/ground truth: Experimental feature distributions and held-out physiological protocols
 
-Specialist candidates: Published NEURON models and HippoUnit tests
+Mapped specialist candidates (not all evaluated): Published NEURON models and HippoUnit tests
 
 General-model route: Code agent constructs/fits a model, external physiological tests
 
@@ -27,15 +27,19 @@ One fitted trace does not validate a mechanism
 ## Sources
 
 - [https://doi.org/10.1371/journal.pcbi.1008114](https://doi.org/10.1371/journal.pcbi.1008114)
+- [https://github.com/KaliLab/hippounit](https://github.com/KaliLab/hippounit)
+- [https://github.com/KaliLab/HippoUnit_demo](https://github.com/KaliLab/HippoUnit_demo)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). Primary HippoUnit repository requires simulation-capable model interfaces, NEURON/eFEL/SciUnit and standalone model adaptation. Published validation target features and model outputs are available, but no new generated mechanistic model plus independent held-out tests was implemented in this CPU/lightweight estimator batch. Do not substitute recalculating published outputs for new agent performance.
 
 [Source-linked admission evidence](../../../literature/admission-v04-cell-workflow.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Primary HippoUnit repository requires simulation-capable model interfaces, NEURON/eFEL/SciUnit and standalone model adaptation. Published validation target features and model outputs are available, but no new generated mechanistic model plus independent held-out tests was implemented in this CPU/lightweight estimator batch. Do not substitute recalculating published outputs for new agent performance.
+Preview 0.6: deferred. Primary HippoUnit repository requires simulation-capable model interfaces, NEURON/eFEL/SciUnit and standalone model adaptation. Published validation target features and model outputs are available, but no new generated mechanistic model plus independent held-out tests was implemented in this CPU/lightweight estimator batch. Do not substitute recalculating published outputs for new agent performance.
 
 [Admission/source evidence](../../../literature/admission-v04-cell-workflow.json).

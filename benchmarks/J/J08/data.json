@@ -1,14 +1,15 @@
 {
   "benchmark_id": "J08",
-  "input": "2D/3D confocal synaptic marker images",
-  "ground_truth": "Pixel-wise instance annotations; five raters for three held-out benchmark images",
+  "input": "Normalized microscopy intensities and known training annotation ROI/geometry masks",
+  "ground_truth": "Five independent human instance annotations per held-out field; no majority oracle",
   "sources": [
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
     "https://github.com/pascalschamber/SynAPSeg",
-    "https://zenodo.org/records/18988899"
+    "https://zenodo.org/records/18988899",
+    "https://doi.org/10.1371/journal.pcbi.1014571"
   ],
-  "license_status": "Repository code BSD-3-Clause; dataset license must be independently resolved before redistribution",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "experiments/J08/data-manifest.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "J08",
@@ -29,5 +30,12 @@
     "status": "measured",
     "slice": "SynAPSeg 2D puncta: 27 training fields yielding 1,262 crops; two held-out whole fields, five expert masks each; archived StarDist reference.",
     "evidence": "experiments/J08/protocol.md"
-  }
+  },
+  "current_execution": {
+    "release": "0.6",
+    "status": "measured",
+    "slice": "SynAPSeg 2D puncta: 27 training fields yielding 1,262 crops; two held-out whole fields, five expert masks each; archived StarDist reference.",
+    "evidence": "experiments/J08/protocol.md"
+  },
+  "executed_slice": "SynAPSeg 2D puncta: 27 training fields yielding 1,262 crops; two held-out whole fields, five expert masks each; archived StarDist reference."
 }

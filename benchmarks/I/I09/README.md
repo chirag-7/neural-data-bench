@@ -4,7 +4,7 @@
 
 **Resource:** Tractometer / ISMRM 2015 with versioned scorer
 
-**State:** not evaluated; deferred. Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Diffusion phantom images and tract labels
 
 Target/ground truth: Phantom bundles and connectivity labels
 
-Specialist candidates: Published tractography pipeline
+Mapped specialist candidates (not all evaluated): Published tractography pipeline
 
 General-model route: General volumetric representation or pipeline agent
 
@@ -28,14 +28,16 @@ Scorer changes alter bundle counts and comparability
 
 - [https://tractometer.org/ismrm2015/tools/](https://tractometer.org/ismrm2015/tools/)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). Original Tractometer page explicitly distinguishes2015 Recobundles25bundles from2023 ROI21bundles and tractogram coordinate changes. Need pin matching truth/scorer and verify T1/DWI transforms. No arbitrary mixing of score versions admitted.
 
 [Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Original Tractometer page explicitly distinguishes2015 Recobundles25bundles from2023 ROI21bundles and tractogram coordinate changes. Need pin matching truth/scorer and verify T1/DWI transforms. No arbitrary mixing of score versions admitted.
+Preview 0.6: deferred. Original Tractometer page explicitly distinguishes2015 Recobundles25bundles from2023 ROI21bundles and tractogram coordinate changes. Need pin matching truth/scorer and verify T1/DWI transforms. No arbitrary mixing of score versions admitted.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json).

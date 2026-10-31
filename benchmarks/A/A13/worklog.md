@@ -10,8 +10,8 @@ Decision: **deferred** (2026-10-30). Gaussian/multiview reconstruction requires 
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Gaussian/multiview reconstruction requires GPU training and substantial calibrated synchronized images. Current numeric code-generation budget cannot reproduce the published task. No claim of data invalidity.
+Preview 0.6: deferred. Gaussian/multiview reconstruction requires GPU training and substantial calibrated synchronized images. Current numeric code-generation budget cannot reproduce the published task. No claim of data invalidity.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

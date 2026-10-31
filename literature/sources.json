@@ -1743,5 +1743,41 @@
     ],
     "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
     "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S422df377a9",
+    "url": "https://zenodo.org/records/2649069",
+    "benchmark_ids": [
+      "H02"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S65a5dd0d9d",
+    "url": "https://arxiv.org/abs/1905.05182",
+    "benchmark_ids": [
+      "H02"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S36dd4a3772",
+    "url": "https://github.com/plcrodrigues/py.BI.EEG.2012-GIPSA",
+    "benchmark_ids": [
+      "H02"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
+  },
+  {
+    "id": "S4aba4d0003",
+    "url": "https://pyriemann.readthedocs.io/en/latest/auto_examples/biosignal-erp/plot_classify_EEG_tangentspace.html",
+    "benchmark_ids": [
+      "H02"
+    ],
+    "evidence": "See task-specific verification depth; source mapping does not imply full-text/acquisition audit",
+    "reviewed_on": "2026-10-30"
   }
 ]

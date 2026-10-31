@@ -14,6 +14,9 @@ for r in records:
  assert r['benchmark_id'] in ids
  if r['status']=='measured':
   assert isinstance(r['score'],(float,int));p=R/r['prediction_file'];assert hashlib.sha256(p.read_bytes()).hexdigest()==r['prediction_sha256']
+  if r.get('posthoc_secondary_metrics'):
+   v=r['posthoc_secondary_metrics'];assert v['tp']+v['fp']==v['n_predicted_events'] and v['tp']+v['fn']==v['n_true_events']
+   assert abs(v['all_event_f1']-2*v['tp']/(v['n_predicted_events']+v['n_true_events']))<1e-12
 for a,b in [('registry/catalog.json','website/data/catalog.json'),('analysis/summary.json','website/data/summary.json'),('results/measurements.jsonl','website/data/measurements.jsonl'),('results/measurements.csv','website/data/measurements.csv')]:
  assert (R/a).read_bytes()==(R/b).read_bytes(),f'Stale site data: {b}'
 for task,base in [('C05','experiments/C05/pilot-v1'),('M04','experiments/M04')]:
@@ -32,10 +35,16 @@ for d in (R/'experiments/E01/slices').iterdir():
   code=json.loads((R/'experiments/E01'/(model+'.json')).read_text())['code'];assert hashlib.sha256(code.encode()).hexdigest()==digest
 for e in c['entries']:
  assert (R/e['admission_evidence_file']).exists()
+ if e['execution_admission']=='measured':
+  d=R/f'benchmarks/{e["family_code"]}/{e["id"]}';intro=(d/'README.md').read_text().split('## Historical')[0]
+  assert '**State:** measured.' in intro and 'No experiment admitted yet' not in intro
+  assert 'No experiment admitted yet' not in (d/'methods.md').read_text()
 for d in (R/'experiments').iterdir():
  if not (d/'run-spec.json').exists() or d.name in ['C05','M04']:continue
  spec=json.loads((d/'run-spec.json').read_text());assert hashlib.sha256((d/'prompt.txt').read_bytes()).hexdigest()==spec['prompt_sha256']
  codepath=d/('reference.py' if d.name=='N05' else 'adapter.py');assert hashlib.sha256(codepath.read_bytes()).hexdigest()==spec['reference_sha256' if d.name=='N05' else 'adapter_sha256']
+ for filename,key in [('protocol.md','protocol_sha256'),('specialist.py','specialist_sha256')]:
+  if key in spec:assert hashlib.sha256((d/filename).read_bytes()).hexdigest()==spec[key]
  prov=json.loads((d/'generation-provenance.json').read_text());assert len(prov)==3
  for p in prov:
   code=json.loads((d/(p['requested_model']+'.json')).read_text())['code'];assert hashlib.sha256(code.encode()).hexdigest()==p['code_sha256'];assert p['tool_events']==0 and p['usage'] is not None

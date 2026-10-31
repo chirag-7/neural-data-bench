@@ -4,7 +4,7 @@
 
 **Resource:** IBL trial tables; Psych-101 cognitive tasks
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Psychophysics trials and choices
 
 Target/ground truth: Recorded choices; synthetic recovery targets when added
 
-Specialist candidates: Psychometric/logistic/RL models; Centaur as domain comparator
+Mapped specialist candidates (not all evaluated): Psychometric/logistic/RL models; Centaur as domain comparator
 
 General-model route: General language/sequence models
 
@@ -29,14 +29,16 @@ Predicting choices is distinct from identifying a cognitive mechanism
 - [https://www.internationalbrainlab.com/data](https://www.internationalbrainlab.com/data)
 - [https://www.nature.com/articles/s41586-025-09215-4](https://www.nature.com/articles/s41586-025-09215-4)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). IBL data and Psych-101/Centaur primary resource mapped. Real choice prediction requires participant/animal-held-out chronology, a bounded task selection and data-specific terms; M04 synthetic parameter recovery does not complete this endpoint.
 
 [Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. IBL data and Psych-101/Centaur primary resource mapped. Real choice prediction requires participant/animal-held-out chronology, a bounded task selection and data-specific terms; M04 synthetic parameter recovery does not complete this endpoint.
+Preview 0.6: candidate_pending_validation. IBL data and Psych-101/Centaur primary resource mapped. Real choice prediction requires participant/animal-held-out chronology, a bounded task selection and data-specific terms; M04 synthetic parameter recovery does not complete this endpoint.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json).

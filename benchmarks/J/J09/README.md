@@ -4,7 +4,7 @@
 
 **Resource:** MTNeuro
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Mouse brain X-ray microtomography with regional and pixel labels
 
 Target/ground truth: Brain-region and cell/axon/vasculature labels
 
-Specialist candidates: Published supervised and self-supervised 2D/3D baselines
+Mapped specialist candidates (not all evaluated): Published supervised and self-supervised 2D/3D baselines
 
 General-model route: Generic vision embeddings/readout or 3D segmentation
 
@@ -29,14 +29,16 @@ Same underlying sample across endpoints; count shared dataset once for macro ind
 - [https://mtneuro.github.io/](https://mtneuro.github.io/)
 - [https://github.com/MTNeuro/MTNeuro](https://github.com/MTNeuro/MTNeuro)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). MTNeuro released region/semantic labels and dataCC BY4.0 make it plausible. Need exact volume-block split and image-to-label adapter; no acquisition attempted here. Region and pixel tasks share samples and must not count as independent datasets.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. MTNeuro released region/semantic labels and dataCC BY4.0 make it plausible. Need exact volume-block split and image-to-label adapter; no acquisition attempted here. Region and pixel tasks share samples and must not count as independent datasets.
+Preview 0.6: candidate_pending_validation. MTNeuro released region/semantic labels and dataCC BY4.0 make it plausible. Need exact volume-block split and image-to-label adapter; no acquisition attempted here. Region and pixel tasks share samples and must not count as independent datasets.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

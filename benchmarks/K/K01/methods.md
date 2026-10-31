@@ -21,6 +21,12 @@ These catalog recommendations become an executable protocol only after choosing 
 6. Execute once under the frozen contract; retain failures, predictions, code and provenance; add repeated generations for confirmatory comparisons.
 7. Re-score independently, document deviations and add eligible rows to the central results store.
 
-No experiment admitted yet.
+An explicitly scoped exploratory slice has been executed; broader proposed operations above remain separate.
 
 For unexecuted entries all seven gates remain pending; listing these steps is not a claim they were performed. The actual state is in [worklog](worklog.md).
+
+## Current executed protocol
+
+Preview 0.6: Allen mouse electrophysiology: 11 features predict spiny/aspiny morphology; donor-disjoint 1,356 training and 457 test cells.
+
+[Actual frozen contract and implementation](../../../experiments/K01). [Measured method/reference records](../../../results/K01.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

@@ -10,8 +10,8 @@ Decision: **deferred** (2026-10-30). Paired voltage movie/ephys extraction needs
 
 [Source-linked admission evidence](../../../literature/admission-v04-cell-workflow.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Paired voltage movie/ephys extraction needs validated movie-to-truth alignment, ROI policy, and sampling-time scorer. Primary PMC article web access returned recaptcha in this screening; CaImAn VolPy source documentation located. No acquisition/fit was completed; this is a protocol/resource limitation of this batch, not evidence of bad data.
+Preview 0.6: deferred. Paired voltage movie/ephys extraction needs validated movie-to-truth alignment, ROI policy, and sampling-time scorer. Primary PMC article web access returned recaptcha in this screening; CaImAn VolPy source documentation located. No acquisition/fit was completed; this is a protocol/resource limitation of this batch, not evidence of bad data.
 
 [Admission/source evidence](../../../literature/admission-v04-cell-workflow.json).

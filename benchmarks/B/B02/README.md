@@ -4,7 +4,7 @@
 
 **Resource:** SpikeInterface drifting generators / MEArec integration
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Simulated/hybrid raw multichannel voltage
 
 Target/ground truth: Known spike times, units and simulated motion
 
-Specialist candidates: Kilosort4; DARTsort
+Mapped specialist candidates (not all evaluated): Kilosort4; DARTsort
 
 General-model route: General multichannel time-series model
 
@@ -29,14 +29,16 @@ Simulation-to-real gap; do not reuse templates in test
 - [https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html](https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html)
 - [https://github.com/cwindolf/dartsort](https://github.com/cwindolf/dartsort)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). SpikeInterface/MEArec generators can supply exact drift and unit truth without restricted real data. Needs frozen simulation seed, geometry, waveform/noise/drift regime and event-matching scorer. This would be explicitly synthetic, not real in-vivo drift validation.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. SpikeInterface/MEArec generators can supply exact drift and unit truth without restricted real data. Needs frozen simulation seed, geometry, waveform/noise/drift regime and event-matching scorer. This would be explicitly synthetic, not real in-vivo drift validation.
+Preview 0.6: candidate_pending_validation. SpikeInterface/MEArec generators can supply exact drift and unit truth without restricted real data. Needs frozen simulation seed, geometry, waveform/noise/drift regime and event-matching scorer. This would be explicitly synthetic, not real in-vivo drift validation.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

@@ -4,7 +4,7 @@
 
 **Resource:** Rat7M / DANNCE
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Calibrated multiview rat videos
 
 Target/ground truth: Motion-capture landmarks; incomplete frames
 
-Specialist candidates: DANNCE; published 3D pose baselines
+Mapped specialist candidates (not all evaluated): DANNCE; published 3D pose baselines
 
 General-model route: Generic visual features plus triangulation or pose head
 
@@ -29,14 +29,16 @@ Dense frames are correlated; mocap missingness
 - [https://figshare.com/collections/Rat_7M/5295370/3](https://figshare.com/collections/Rat_7M/5295370/3)
 - [https://www.nature.com/articles/s41592-025-02893-y](https://www.nature.com/articles/s41592-025-02893-y)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). Real Rat7M mocap labels acquired through DISK for A14. This does not admit 3D pose-from-video: its synchronized six-camera inputs and calibrations have not been downloaded or evaluated. Share dataset group with A14 for independence accounting.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. Real Rat7M mocap labels acquired through DISK for A14. This does not admit 3D pose-from-video: its synchronized six-camera inputs and calibrations have not been downloaded or evaluated. Share dataset group with A14 for independence accounting.
+Preview 0.6: candidate_pending_validation. Real Rat7M mocap labels acquired through DISK for A14. This does not admit 3D pose-from-video: its synchronized six-camera inputs and calibrations have not been downloaded or evaluated. Share dataset group with A14 for independence accounting.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

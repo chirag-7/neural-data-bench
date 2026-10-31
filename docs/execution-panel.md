@@ -1,26 +1,25 @@
 # Executed panel
 
-18 measured IDs; exact scores and references in [findings](../analysis/findings.md). Frozen contracts and actual data provenance under [experiments](../experiments/).
+19 measured task IDs. Exact scores and caveats:[findings](../analysis/findings.md); source contracts:[experiments](../experiments/).
 
-- [A09](../experiments/A09): CalMS21 Task1,3Hz centers and seven pose offsets,19 test recordings
-- [A14](../experiments/A14): Rat7M six-landmark31frame windows;7frame artificialHeadF gap;heldout rats4–5
-- [B01](../experiments/B01): Blind unsupervised sorting of one10second32channel MEArec simulation; official unit/event scorer
-- [C05](../experiments/C05): Calcium-to-spike inference
-- [D02](../experiments/D02): One Allen cell,4train/2test negative-current sweeps;500Hz passive voltage-deflection interpolation
-- [E01](../experiments/E01): NLBMC_Maze_Small99train/100test movement-aligned trials;20ms supervised107→35neuron readout
-- [F04](../experiments/F04): Goldin2022 retina,3160trainimages/30testimages×30repeats,41neurons,18×18imagefeatures
-- [G01](../experiments/G01): FALCON M2 custom cross-day finger-velocity decoding:1169train/754testtrials,96causalfeatures,twooutputs,one monkey
-- [H01](../experiments/H01): PhysioNet motorimagery;5train/3heldout subjects,225/135epochs
-- [H08](../experiments/H08): SleepEDF fixed20:00–08:00firstnightwindows;5train/3heldoutpeople,100HzFpz-Cz;fiveclassstaging
-- [H16](../experiments/H16): EEGdenoiseNet clean+EOG2000train/600test component-disjoint mixtures
-- [I07](../experiments/I07): FRESH opticaldensity tapping condition,7train/3test subjects;condition/session confounded
-- [I10](../experiments/I10): MRIQC600ABIDEtrain/265DS030test,68numeric IQMs,rater1exclude labels
-- [J08](../experiments/J08): SynAPSeg2Dpuncta instances:27trainingfields,1262crops;twoheldoutwholefields×fiveexpertmasks;archivedStarDistreference
-- [K01](../experiments/K01): Allen mouse ephys11features→spiny/aspiny morphology,donor-disjoint1356/457cells
-- [L04](../experiments/L04): One real rat placecell,20mscounts,chronological60/40split with1sgap;position/velocity
-- [M04](../experiments/M04): Cognitive model and parameter recovery
-- [N05](../experiments/N05): One real legacyNWB file sharedD02;61deterministic fields,6sweeps
+- [A09](../experiments/A09): CalMS21 Task 1: processed pose context at 3 Hz; 70 training and 19 test recordings.
+- [A14](../experiments/A14): Rat7 M: six-landmark, 31-frame windows with an artificial seven-frame HeadF gap; three training and two test rats.
+- [B01](../experiments/B01): Blind unsupervised spike sorting of one 10-second, 32-channel stationary MEArec simulation; official unit/event matching.
+- [C05](../experiments/C05): Spikefinder: calcium-to-spike inference on five preparations; median 40 ms correlation per preparation.
+- [D02](../experiments/D02): One Allen cell: four training and two test negative-current sweeps; 500 Hz passive voltage interpolation.
+- [E01](../experiments/E01): Neural Latents Benchmark: MC_Maze_Small, Area 2_Bump and DMFC_RSG; held-in to held-out neuron readout using unchanged generated programs.
+- [F04](../experiments/F04): Goldin 2022 retina: 3, 160 training images and 30 test images repeated 30 times; 41 neurons, one preparation.
+- [G01](../experiments/G01): FALCON M2 custom cross-day decoding: 1, 169 training and 754 test trials, 96 causal features, two finger-velocity outputs, one monkey.
+- [H01](../experiments/H01): PhysioNet motor imagery: five training and three held-out people; 225 training and 135 test epochs.
+- [H02](../experiments/H02): Brain Invaders 2012 calibration runs: 15 training and 10 held-out people; 11, 481/7, 663 epochs, 16 EEG channels; equal-person ROC-AUC.
+- [H08](../experiments/H08): Sleep-EDF first nights, fixed 20: 00–08: 00 windows: five training and three held-out people; 100 Hz Fpz-Cz EEG, five sleep stages.
+- [H16](../experiments/H16): EEGdenoiseNet: 2, 000 training and 600 test clean-plus-EOG mixtures, with disjoint source components.
+- [I07](../experiments/I07): FRESH optical-density tapping classification: seven training and three test people; condition and session remain confounded.
+- [I10](../experiments/I10): MRIQC: 600 ABIDE training scans and 265 DS030 test scans; 68 numeric quality metrics and rater-1 exclusion labels.
+- [J08](../experiments/J08): SynAPSeg 2 D puncta: 27 training fields yielding 1, 262 crops; two held-out whole fields, five expert masks each; archived StarDist reference.
+- [K01](../experiments/K01): Allen mouse electrophysiology: 11 features predict spiny/aspiny morphology; donor-disjoint 1, 356 training and 457 test cells.
+- [L04](../experiments/L04): One rat place cell: 20 ms spike counts predicted from position and velocity; chronological 60/40 split with a one-second gap.
+- [M04](../experiments/M04): Synthetic two-choice Q-learning agents: recover learning rate and inverse temperature from choices and rewards.
+- [N05](../experiments/N05): One real legacy Allen NWB file, shared with D02: extract 61 deterministic fields covering six sweeps.
 
-C05 has five preparations; E01 has MC_Maze_Small, Area2_Bump and DMFC_RSG source slices. Each remains one task ID for macro weighting. E01 transfers unchanged task-specific-prompt programs to new array shapes; this is not a fresh prompt per source. B01/M04 are fully synthetic; A14/H16 have artificial corruption; D02/N05 share a source file.
-
-The 180-second, one-numerical-thread code track favors bounded offline arrays. Approximate memory budgets were requested but not enforced. Generation and data preparation time differ from estimator execution time. See [reproduction](reproduce.md) for separate specialist stacks and [admissions](../registry/admission-decisions.json) for unrun endpoints.
+C05 has five preparations; E01 has three official source slices, all reusing original programs. B01 post-hoc event F1 is a separate sensitivity, not another independent task or a changed primary. H02 passes training-person IDs explicitly. Budget/memory/adaptation limits are part of each contract.

@@ -4,7 +4,7 @@
 
 **Resource:** BEAST3D / Pose Splatter released data and code
 
-**State:** not evaluated; deferred. Current release excludes execution: new research construction, uncertain release/rights, or setup outside lightweight budget.
+**State:** deferred. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Synchronized calibrated multiview videos
 
 Target/ground truth: Held-out camera images; selected pose/neural labels
 
-Specialist candidates: BEAST3D; Pose Splatter; pose-only baseline
+Mapped specialist candidates (not all evaluated): BEAST3D; Pose Splatter; pose-only baseline
 
 General-model route: General 3D/world representations
 
@@ -29,14 +29,16 @@ Photorealistic rendering alone does not show correct neuroscience features
 - [https://arxiv.org/abs/2606.02937](https://arxiv.org/abs/2606.02937)
 - [https://arxiv.org/abs/2505.18342](https://arxiv.org/abs/2505.18342)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **deferred** (2026-10-30). Gaussian/multiview reconstruction requires GPU training and substantial calibrated synchronized images. Current numeric code-generation budget cannot reproduce the published task. No claim of data invalidity.
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Gaussian/multiview reconstruction requires GPU training and substantial calibrated synchronized images. Current numeric code-generation budget cannot reproduce the published task. No claim of data invalidity.
+Preview 0.6: deferred. Gaussian/multiview reconstruction requires GPU training and substantial calibrated synchronized images. Current numeric code-generation budget cannot reproduce the published task. No claim of data invalidity.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

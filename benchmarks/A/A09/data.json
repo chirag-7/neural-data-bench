@@ -3,10 +3,11 @@
   "input": "Mouse video and/or tracked poses",
   "ground_truth": "Expert behavioral labels",
   "sources": [
-    "https://arxiv.org/abs/2104.02710"
+    "https://arxiv.org/abs/2104.02710",
+    "https://doi.org/10.17617/3.3R0QYI"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "experiments/A09/data-manifest.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "A09",
@@ -22,8 +23,14 @@
     "review_depth": "direct acquisition and schema validation",
     "permanent_rejection": false
   },
-  "executed_slice": "CalMS21 Task1,3Hz centers and seven pose offsets,19 test recordings",
+  "executed_slice": "CalMS21 Task 1: processed pose context at 3 Hz; 70 training and 19 test recordings.",
   "v05_actual_execution": {
+    "status": "measured",
+    "slice": "CalMS21 Task 1: processed pose context at 3 Hz; 70 training and 19 test recordings.",
+    "evidence": "literature/admission-v04-behavior-population.json"
+  },
+  "current_execution": {
+    "release": "0.6",
     "status": "measured",
     "slice": "CalMS21 Task 1: processed pose context at 3 Hz; 70 training and 19 test recordings.",
     "evidence": "literature/admission-v04-behavior-population.json"

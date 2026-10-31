@@ -21,6 +21,12 @@ These catalog recommendations become an executable protocol only after choosing 
 6. Execute once under the frozen contract; retain failures, predictions, code and provenance; add repeated generations for confirmatory comparisons.
 7. Re-score independently, document deviations and add eligible rows to the central results store.
 
-No experiment admitted yet.
+An explicitly scoped exploratory slice has been executed; broader proposed operations above remain separate.
 
 For unexecuted entries all seven gates remain pending; listing these steps is not a claim they were performed. The actual state is in [worklog](worklog.md).
+
+## Current executed protocol
+
+Preview 0.6: Sleep-EDF first nights, fixed 20:00–08:00 windows: five training and three held-out people; 100 Hz Fpz-Cz EEG, five sleep stages.
+
+[Actual frozen contract and implementation](../../../experiments/H08). [Measured method/reference records](../../../results/H08.json). The proposed checklist above does not imply every broader operation or specialist was evaluated.

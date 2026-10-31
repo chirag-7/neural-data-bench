@@ -4,7 +4,7 @@
 
 **Resource:** Allen Cell Types / Patch-seq resources
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** measured. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,13 +12,15 @@ Input: Patch clamp features, morphology, labels
 
 Target/ground truth: Published cell taxonomy labels
 
-Specialist candidates: Feature+RF/XGBoost; domain cell classifiers
+Mapped specialist candidates (not all evaluated): Feature+RF/XGBoost; domain cell classifiers
 
 General-model route: Tabular foundation model; multimodal embeddings
 
 ## Execution and performance
 
-No experiment admitted yet. All measurements are centralized in [results](../../../results/). Current best: **not verified**. Missing scores are unknown, not zero. Literature resources are not newly executed results.
+**Executed slice:** Allen mouse electrophysiology: 11 features predict spiny/aspiny morphology; donor-disjoint 1,356 training and 457 test cells.
+
+[Frozen protocol and artifacts](../../../experiments/K01). [Measured scores and references](../../../results/K01.json). [Central data](../../../results/measurements.csv). Missing or failed outputs are retained.
 
 ## Limitations
 
@@ -28,15 +30,20 @@ Taxonomy label uncertainty; donor and acquisition batch confounds
 
 - [https://brain-map.org/our-research/cell-types-taxonomies](https://brain-map.org/our-research/cell-types-taxonomies)
 - [https://brain-map.org/support/documentation/documentation-cell-types-database](https://brain-map.org/support/documentation/documentation-cell-types-database)
+- [https://brain-map.org/support/documentation/cell-types-database-api](https://brain-map.org/support/documentation/cell-types-database-api)
+- [https://celltypes.brain-map.org/](https://celltypes.brain-map.org/)
+- [https://alleninstitute.org/terms-of-use/](https://alleninstitute.org/terms-of-use/)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **measured** (2026-10-30). Real primary API data acquired and hashed; independent morphology endpoint, ephys-only whitelist, donor-disjoint split and train-only baseline protocol frozen. Prepared n_train=1356 and n_test=457, 11 features; 678/226 disjoint mouse donors. Adapter ready for root model evaluation.
 
 [Source-linked admission evidence](../../../literature/admission-v04-cell-workflow.json). [Actual protocol and artifacts](../../../experiments/K01). [Central task results](../../../results/K01.json).
 
-## v0.5 execution status
+## Current admission and execution
 
-measured. Real primary API data acquired and hashed; independent morphology endpoint, ephys-only whitelist, donor-disjoint split and train-only baseline protocol frozen. Prepared n_train=1356 and n_test=457, 11 features; 678/226 disjoint mouse donors. Adapter ready for root model evaluation.
+Preview 0.6: measured. Real primary API data acquired and hashed; independent morphology endpoint, ephys-only whitelist, donor-disjoint split and train-only baseline protocol frozen. Prepared n_train=1356 and n_test=457, 11 features; 678/226 disjoint mouse donors. Adapter ready for root model evaluation.
 
 [Admission/source evidence](../../../literature/admission-v04-cell-workflow.json). [Actual protocol/worklog](../../../experiments/K01). [Task measurements](../../../results/K01.json).

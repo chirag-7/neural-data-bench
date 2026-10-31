@@ -3,10 +3,11 @@
   "input": "Partially observed 2D/3D skeleton time series",
   "ground_truth": "Observed positions hidden under known masks",
   "sources": [
-    "https://www.nature.com/articles/s41592-025-02893-y"
+    "https://www.nature.com/articles/s41592-025-02893-y",
+    "https://zenodo.org/records/18405201"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": null,
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "experiments/A14/data-manifest.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "A14",
@@ -22,8 +23,14 @@
     "review_depth": "direct acquisition and schema validation",
     "permanent_rejection": false
   },
-  "executed_slice": "Rat7M six-landmark31frame windows;7frame artificialHeadF gap;heldout rats4\u20135",
+  "executed_slice": "Rat7M: six-landmark, 31-frame windows with an artificial seven-frame HeadF gap; three training and two test rats.",
   "v05_actual_execution": {
+    "status": "measured",
+    "slice": "Rat7M: six-landmark, 31-frame windows with an artificial seven-frame HeadF gap; three training and two test rats.",
+    "evidence": "literature/admission-v04-behavior-population.json"
+  },
+  "current_execution": {
+    "release": "0.6",
     "status": "measured",
     "slice": "Rat7M: six-landmark, 31-frame windows with an artificial seven-frame HeadF gap; three training and two test rats.",
     "evidence": "literature/admission-v04-behavior-population.json"

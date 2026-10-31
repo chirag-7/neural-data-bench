@@ -10,8 +10,8 @@ Decision: **candidate_pending_validation** (2026-10-30). WormND provides detecti
 
 [Source-linked admission evidence](../../../literature/admission-v04-behavior-population.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. WormND provides detection/identity tracks, but crossworm split, template annotations and exact organism normalization remain unvalidated. No3D image adapter acquired. Candidate remains eligible for later execution.
+Preview 0.6: candidate_pending_validation. WormND provides detection/identity tracks, but crossworm split, template annotations and exact organism normalization remain unvalidated. No3D image adapter acquired. Candidate remains eligible for later execution.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json).

@@ -10,8 +10,8 @@ Decision: **deferred** (2026-10-30). Screened BNCI2014_008 original BNCI terms (
 
 [Source-linked admission evidence](../../../literature/admission-v04-electrical.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-deferred. Screened BNCI2014_008 original BNCI terms (CC BY-NC-ND4.0) and MOABB loader/context. Data are real and useful, but derivative-array distribution and the exact cross-subject ERP preparation protocol have not been validated for this release. Alternate openly licensed ERP resources can be admitted later; no claim of bad quality.
+Preview 0.6: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
-[Admission/source evidence](../../../literature/admission-v04-electrical.json).
+[Admission/source evidence](../../../experiments/H02/protocol.md). [Actual protocol/worklog](../../../experiments/H02). [Task measurements](../../../results/H02.json).

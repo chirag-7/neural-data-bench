@@ -6,8 +6,8 @@
     "https://github.com/codeneuro/spikefinder-datasets",
     "https://github.com/berenslab/spikefinder_analysis"
   ],
-  "license_status": "Not independently verified",
-  "local_manifest": "../../../data/manifests/spikefinder.json",
+  "license_status": "Actual executed-source terms recorded in linked manifest/protocol; no blanket license for all mapped resources",
+  "local_manifest": "data/manifests/spikefinder.json",
   "raw_data_in_git": false,
   "v04_admission": {
     "benchmark_id": "C05",
@@ -27,5 +27,12 @@
     "status": "measured",
     "slice": "Spikefinder: calcium-to-spike inference on five preparations; median 40 ms correlation per preparation.",
     "evidence": "literature/admission-v04-behavior-population.json"
-  }
+  },
+  "current_execution": {
+    "release": "0.6",
+    "status": "measured",
+    "slice": "Spikefinder: calcium-to-spike inference on five preparations; median 40 ms correlation per preparation.",
+    "evidence": "literature/admission-v04-behavior-population.json"
+  },
+  "executed_slice": "Spikefinder: calcium-to-spike inference on five preparations; median 40 ms correlation per preparation."
 }

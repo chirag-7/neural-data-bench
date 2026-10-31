@@ -4,7 +4,7 @@
 
 **Resource:** sbibm neuroscience-linked GLM task
 
-**State:** not evaluated; candidate_pending_validation. Mapped resource only; license, acquisition, split, scorer and baseline gates are not yet all validated.
+**State:** candidate_pending_validation. Current status for this exact task-resource slice; current global best remains unverified.
 
 ## Scientific use
 
@@ -12,7 +12,7 @@ Input: Bernoulli GLM and reference posterior tasks
 
 Target/ground truth: Reference posterior samples and known simulator
 
-Specialist candidates: Published SBI algorithms and classical inference
+Mapped specialist candidates (not all evaluated): Published SBI algorithms and classical inference
 
 General-model route: General inference or code agent
 
@@ -28,14 +28,16 @@ Generic toy tasks outside neuroscience excluded from neural aggregate
 
 - [https://github.com/sbi-benchmark/sbibm](https://github.com/sbi-benchmark/sbibm)
 
-## v0.4 admission and execution
+Source associations include historical alternatives; actual acquired files are identified in the executed protocol/manifest.
+
+## Historical v0.4 admission and execution
 
 Decision: **candidate_pending_validation** (2026-10-30). Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.
 
 [Source-linked admission evidence](../../../literature/admission-v04-inference-control.json). This endpoint was not run in this release; absence is unknown, not zero or proof of poor data.
 
-## v0.5 execution status
+## Current admission and execution
 
-candidate_pending_validation. Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.
+Preview 0.6: candidate_pending_validation. Official MIT sbibm repository and GLM task exist. Requires frozen observations/simulation budget, posterior-sample interface and reference posterior/calibration scorer; array prediction harness cannot validly replace posterior evaluation.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json).

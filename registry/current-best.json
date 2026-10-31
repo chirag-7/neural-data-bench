@@ -122,7 +122,8 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://arxiv.org/abs/2104.02710"
+      "https://arxiv.org/abs/2104.02710",
+      "https://doi.org/10.17617/3.3R0QYI"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -193,7 +194,8 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://www.nature.com/articles/s41592-025-02893-y"
+      "https://www.nature.com/articles/s41592-025-02893-y",
+      "https://zenodo.org/records/18405201"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -242,7 +244,10 @@
     "source_urls": [
       "https://github.com/flatironinstitute/spikeforest",
       "https://elifesciences.org/articles/55167",
-      "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+      "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+      "https://gin.g-node.org/NeuralEnsemble/ephy_testing_data",
+      "https://spikeinterface.readthedocs.io/en/0.96.1/modules/comparison/plot_3_compare_sorter_with_ground_truth.html",
+      "https://github.com/flatironinstitute/mountainsort5"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -487,7 +492,8 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8075204/"
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8075204/",
+      "https://github.com/flatironinstitute/CaImAn/tree/main/caiman/source_extraction/volpy"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -502,7 +508,8 @@
     "supervision": null,
     "source_urls": [
       "https://brain-map.org/support/documentation/documentation-cell-types-database",
-      "https://alleninstitute.github.io/AllenSDK/cell_types.html"
+      "https://alleninstitute.github.io/AllenSDK/cell_types.html",
+      "https://brain-map.org/support/documentation/cell-types-database-api"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -516,7 +523,9 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://doi.org/10.1371/journal.pcbi.1008114"
+      "https://doi.org/10.1371/journal.pcbi.1008114",
+      "https://github.com/KaliLab/hippounit",
+      "https://github.com/KaliLab/HippoUnit_demo"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -530,7 +539,9 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://neurallatents.github.io/"
+      "https://neurallatents.github.io/",
+      "https://dandiarchive.org/dandiset/000140/0.220113.0408",
+      "https://github.com/neurallatents/nlb_tools"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -661,7 +672,12 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://crcns.org/data-sets"
+      "https://crcns.org/data-sets",
+      "https://open-retina.org/api_reference/data_io/goldin_2022/",
+      "https://doi.org/10.5281/zenodo.6868362",
+      "https://doi.org/10.1038/s41467-022-33242-8",
+      "https://huggingface.co/datasets/open-retina/open-retina/blob/fc7b91e93c9bd4e76d4e3205fcbcc6a31601985a/README.md",
+      "https://huggingface.co/datasets/open-retina/open-retina"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -689,7 +705,9 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://snel-repo.github.io/falcon/"
+      "https://snel-repo.github.io/falcon/",
+      "https://dandiarchive.org/dandiset/000953",
+      "https://github.com/snel-repo/falcon-challenge"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -732,7 +750,11 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://moabb.neurotechx.com/"
+      "https://moabb.neurotechx.com/",
+      "https://physionet.org/content/eegmmidb/1.0.0/",
+      "https://physionet.org/files/eegmmidb/1.0.0/S001/",
+      "https://moabb.neurotechx.com/docs/generated/moabb.datasets.PhysionetMI.html",
+      "https://mne.tools/stable/auto_examples/decoding/decoding_csp_eeg.html"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -746,7 +768,13 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://moabb.neurotechx.com/"
+      "https://moabb.neurotechx.com/",
+      "https://bnci-horizon-2020.eu/database/data-sets",
+      "https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_008.html",
+      "https://zenodo.org/records/2649069",
+      "https://arxiv.org/abs/1905.05182",
+      "https://github.com/plcrodrigues/py.BI.EEG.2012-GIPSA",
+      "https://pyriemann.readthedocs.io/en/latest/auto_examples/biosignal-erp/plot_classify_EEG_tangentspace.html"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -775,7 +803,11 @@
     "supervision": null,
     "source_urls": [
       "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
-      "https://neural-interfaces26.github.io/"
+      "https://neural-interfaces26.github.io/",
+      "https://physionet.org/content/sleep-edfx/1.0.0/",
+      "https://doi.org/10.13026/C2X676",
+      "https://doi.org/10.7554/eLife.70092",
+      "https://github.com/raphaelvallat/yasa_classifier"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -874,7 +906,11 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://doi.org/10.1088/1741-2552/ac2bf8"
+      "https://doi.org/10.1088/1741-2552/ac2bf8",
+      "https://github.com/ncclabsustech/EEGdenoiseNet",
+      "https://arxiv.org/html/2009.11662v4",
+      "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/master/LICENSE",
+      "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/code/benchmark_networks/data_prepare.py"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -905,7 +941,8 @@
     "source_urls": [
       "https://zenodo.org/records/2650142",
       "https://www.nature.com/articles/s41598-026-53891-9",
-      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/"
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10762090/",
+      "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -919,7 +956,8 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://zenodo.org/records/2650142"
+      "https://zenodo.org/records/2650142",
+      "https://zenodo.org/records/2650142/files/Dreams%20License.txt?download=1"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -961,7 +999,13 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://www.nemar.org/dataset/on005963"
+      "https://www.nemar.org/dataset/on005963",
+      "https://openfnirs.org/community/fresh/welcome-to-the-fnirs-fresh-project/",
+      "https://data.nemar.org/on005963/v1.0.0/dataset_description.json",
+      "https://data.nemar.org/on005963/v1.0.0/manifest.json",
+      "https://data.nemar.org/on005963/v1.0.0/code/validation.ipynb",
+      "https://openneuro.org/datasets/ds005963/versions/1.0.0",
+      "https://doi.org/10.1038/s42003-025-08412-1"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -975,7 +1019,8 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://registry.opendata.aws/confusius/"
+      "https://registry.opendata.aws/confusius/",
+      "https://confusius.tools/latest/user-guide/datasets/"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -1003,7 +1048,8 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://doi.org/10.1371/journal.pone.0184661"
+      "https://doi.org/10.1371/journal.pone.0184661",
+      "https://github.com/nipreps/mriqc/tree/c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8/mriqc/data/csv"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -1120,7 +1166,8 @@
     "source_urls": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
       "https://github.com/pascalschamber/SynAPSeg",
-      "https://zenodo.org/records/18988899"
+      "https://zenodo.org/records/18988899",
+      "https://doi.org/10.1371/journal.pcbi.1014571"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -1150,7 +1197,10 @@
     "supervision": null,
     "source_urls": [
       "https://brain-map.org/our-research/cell-types-taxonomies",
-      "https://brain-map.org/support/documentation/documentation-cell-types-database"
+      "https://brain-map.org/support/documentation/documentation-cell-types-database",
+      "https://brain-map.org/support/documentation/cell-types-database-api",
+      "https://celltypes.brain-map.org/",
+      "https://alleninstitute.org/terms-of-use/"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -1181,7 +1231,10 @@
     "source_urls": [
       "https://research.libd.org/spatialLIBD/",
       "https://github.com/LieberInstitute/spatialLIBD",
-      "https://doi.org/10.1038/s42003-024-07001-y"
+      "https://doi.org/10.1038/s42003-024-07001-y",
+      "https://research.libd.org/spatialLIBD/reference/fetch_data.html",
+      "https://raw.githubusercontent.com/LieberInstitute/spatialLIBD/master/R/fetch_data.R",
+      "https://doi.org/10.1038/s41593-020-00787-0"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -1214,7 +1267,8 @@
     "source_urls": [
       "https://cellexplorer.org/publicdata/ground-truth-data/",
       "https://cellexplorer.org/tutorials/ground-truth-tutorial/",
-      "https://alleninstitute.github.io/openscope_databook/optotagging/"
+      "https://alleninstitute.github.io/openscope_databook/optotagging/",
+      "https://api.github.com/repos/petersenpeter/CellExplorer/contents/%2BgroundTruthData"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -1258,7 +1312,9 @@
     "supervision": null,
     "source_urls": [
       "https://neurallatents.github.io/",
-      "https://github.com/snel-repo/ComputationThroughDynamicsToolkit"
+      "https://github.com/snel-repo/ComputationThroughDynamicsToolkit",
+      "https://mark-kramer.github.io/Case-Studies-Python/09.html",
+      "https://github.com/Mark-Kramer/Case-Studies-Python"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
@@ -1386,7 +1442,9 @@
     "supervision": null,
     "source_urls": [
       "https://about.dandiarchive.org/",
-      "https://www.internationalbrainlab.com/data"
+      "https://www.internationalbrainlab.com/data",
+      "https://brain-map.org/support/documentation/cell-types-database-api",
+      "https://alleninstitute.github.io/AllenSDK/cell_types.html"
     ],
     "checked_on": "2026-10-30",
     "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
