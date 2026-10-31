@@ -111,8 +111,8 @@
     },
     {
       "path": "scripts/check_macro.py",
-      "sha256": "2548a0d5b20495a9ce502e90520f6f29a0703efc75470857025944f5b061f360",
-      "bytes": 4764
+      "sha256": "270a142c015444e4a84f9d3343633a1995a42968eafb8a16475c9b0192a86aaf",
+      "bytes": 5011
     },
     {
       "path": "scripts/write_macro_report.py",

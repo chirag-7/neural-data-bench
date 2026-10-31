@@ -1,0 +1,35 @@
+{
+  "analysis_revision": "2026-10-31-v12",
+  "local_preview_http_status": 200,
+  "published_site_verified": true,
+  "desktop_checks": [
+    "Home contains14categorycards and no automatic chart",
+    "Category selector restricts benchmark options tochosenfamily: K01/K04/K05/K06 forK",
+    "Categorycard C06 opens correct benchmark",
+    "Detailcategory/task quickjump and chart preserved",
+    "All three report finding buckets render and switch",
+    "PublishedQ4, conditionalp values and combinedcase evidence load"
+  ],
+  "mobile_checks": {
+    "viewport": [
+      390,
+      844
+    ],
+    "home_document_width": 375,
+    "report_document_width": 375,
+    "keyboard_report_link": "passed",
+    "pointer_link_automation": "inconclusive at overridden viewport; keyboard navigation verified"
+  },
+  "viewport_reset": true,
+  "console_errors": 0,
+  "screenshots": [
+    {
+      "path": "docs/assets/navigation-v12.png",
+      "sha256": "9a86dce1a2855442afdeb7c6da6346f42afae37fadbae3ec5d43eaf2fc53cf53"
+    },
+    {
+      "path": "docs/assets/macro-v12.png",
+      "sha256": "8be746551188f1a1a62faad242f1471a16e168dbd5ea580d14c6b30236f38e1f"
+    }
+  ]
+}

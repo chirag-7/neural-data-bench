@@ -61,3 +61,8 @@ for r in payload['pairs']:
 assert (R/'website/data/macro-patterns.png').read_bytes()==(D/'macro-patterns.png').read_bytes()
 assert set(payload['buckets'])=={'quantitative','qualitative','combined'} and {k:len(v) for k,v in payload['buckets'].items()}=={'quantitative':4,'qualitative':3,'combined':3}
 print('Macro checks passed: unchanged input hashes, exact rational family effects/p-values, common support, CSV contributions and published payload.')
+
+manifest=json.loads((D/"artifact-manifest.json").read_text())
+for r in manifest["files"]:
+    assert hashlib.sha256((R/r["path"]).read_bytes()).hexdigest()==r["sha256"],r["path"]
+print("Macro report artifacts and analysis source hashes passed.")
