@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.18.1",
+  "spikeinterface": "0.105.4",
+  "probeinterface": "0.4.2",
+  "numba": "0.68.1",
+  "numerical_threads": 1,
+  "dependencies": "Existing work/spike-deps and work/pilot-deps read-only. NUMBA_CACHE_DIR isolated under work/batch-v11-motion/numba-cache. No installations or shared dependency changes."
+}

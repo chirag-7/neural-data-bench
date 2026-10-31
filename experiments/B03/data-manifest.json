@@ -1,0 +1,847 @@
+{
+  "benchmark_id": "B03",
+  "origin": "SIMULATED; SpikeInterface official procedural ellipsoid templates, noise and drift, not measured biological recordings",
+  "software": {
+    "spikeinterface": "0.105.4",
+    "probeinterface": "0.4.2"
+  },
+  "records": [
+    {
+      "simulation": 0,
+      "split": "train",
+      "parameters": {
+        "num_units": 64,
+        "duration": 90.0,
+        "sampling_frequency": 20000.0,
+        "seed": 2026110101,
+        "generate_probe_kwargs": {
+          "num_columns": 2,
+          "num_contact_per_column": 32,
+          "xpitch": 32,
+          "ypitch": 20,
+          "y_shift_per_column": [
+            0,
+            0
+          ],
+          "contact_shapes": "circle",
+          "contact_shape_params": {
+            "radius": 5
+          }
+        },
+        "generate_unit_locations_kwargs": {
+          "margin_um": 20.0,
+          "minimum_z": 5.0,
+          "maximum_z": 45.0,
+          "minimum_distance": 18.0,
+          "distribution": "uniform",
+          "distance_strict": false,
+          "max_iteration": 100
+        },
+        "generate_displacement_vector_kwargs": {
+          "displacement_sampling_frequency": 5.0,
+          "drift_start_um": [
+            0.0,
+            30.0
+          ],
+          "drift_stop_um": [
+            0.0,
+            -30.0
+          ],
+          "drift_step_um": 2.0,
+          "motion_list": [
+            {
+              "drift_mode": "zigzag",
+              "amplitude_factor": 1.0,
+              "non_rigid_gradient": null,
+              "t_start_drift": 0.0,
+              "t_end_drift": null,
+              "period_s": 31.0
+            }
+          ]
+        },
+        "generate_templates_kwargs": {
+          "mode": "ellipsoid",
+          "ms_before": 1.5,
+          "ms_after": 3.0,
+          "unit_params": {
+            "alpha": [
+              100.0,
+              500.0
+            ],
+            "spatial_decay": [
+              10.0,
+              45.0
+            ],
+            "ellipse_angle": [
+              0.0,
+              6.283185307179586
+            ],
+            "ellipse_shrink": [
+              0.4,
+              1.0
+            ]
+          }
+        },
+        "generate_sorting_kwargs": {
+          "firing_rates": [
+            2.0,
+            8.0
+          ],
+          "refractory_period_ms": 4.0
+        },
+        "generate_noise_kwargs": {
+          "noise_levels": [
+            6.0,
+            10.0
+          ],
+          "spatial_decay": 25.0
+        },
+        "amplitude_std": 0.15,
+        "extra_outputs": true
+      },
+      "raw_n_events": 27691,
+      "detected_peaks": 23311,
+      "histogram_count": 23311,
+      "noise_median_uv": 5.9925360679626465,
+      "voltage_first_second_sha256": "2d830ff37078f7b2f061de4d918da3a73dab87ea0579b2e109c73923f7973301",
+      "source_array_sha256": "7b70cda61a623cf5155392e7444af15d4f96b6ae75787bac39f4199f34a9451e",
+      "seconds_prepare": 11.153502250090241
+    },
+    {
+      "simulation": 1,
+      "split": "train",
+      "parameters": {
+        "num_units": 64,
+        "duration": 90.0,
+        "sampling_frequency": 20000.0,
+        "seed": 2026110102,
+        "generate_probe_kwargs": {
+          "num_columns": 2,
+          "num_contact_per_column": 32,
+          "xpitch": 32,
+          "ypitch": 20,
+          "y_shift_per_column": [
+            0,
+            0
+          ],
+          "contact_shapes": "circle",
+          "contact_shape_params": {
+            "radius": 5
+          }
+        },
+        "generate_unit_locations_kwargs": {
+          "margin_um": 20.0,
+          "minimum_z": 5.0,
+          "maximum_z": 45.0,
+          "minimum_distance": 18.0,
+          "distribution": "uniform",
+          "distance_strict": false,
+          "max_iteration": 100
+        },
+        "generate_displacement_vector_kwargs": {
+          "displacement_sampling_frequency": 5.0,
+          "drift_start_um": [
+            0.0,
+            30.0
+          ],
+          "drift_stop_um": [
+            0.0,
+            -30.0
+          ],
+          "drift_step_um": 2.0,
+          "motion_list": [
+            {
+              "drift_mode": "random_walk",
+              "amplitude_factor": 1.0,
+              "non_rigid_gradient": null,
+              "t_start_drift": 0.0,
+              "t_end_drift": null
+            }
+          ]
+        },
+        "generate_templates_kwargs": {
+          "mode": "ellipsoid",
+          "ms_before": 1.5,
+          "ms_after": 3.0,
+          "unit_params": {
+            "alpha": [
+              100.0,
+              500.0
+            ],
+            "spatial_decay": [
+              10.0,
+              45.0
+            ],
+            "ellipse_angle": [
+              0.0,
+              6.283185307179586
+            ],
+            "ellipse_shrink": [
+              0.4,
+              1.0
+            ]
+          }
+        },
+        "generate_sorting_kwargs": {
+          "firing_rates": [
+            2.0,
+            8.0
+          ],
+          "refractory_period_ms": 4.0
+        },
+        "generate_noise_kwargs": {
+          "noise_levels": [
+            6.0,
+            10.0
+          ],
+          "spatial_decay": 25.0
+        },
+        "amplitude_std": 0.15,
+        "extra_outputs": true
+      },
+      "raw_n_events": 30113,
+      "detected_peaks": 23000,
+      "histogram_count": 23000,
+      "noise_median_uv": 6.335666179656982,
+      "voltage_first_second_sha256": "c60009e7dbbec07f03347d12da119de47b4e47027f085084ae8c59471f7bbda4",
+      "source_array_sha256": "7fc06f3e4e316d80e2bdc1dbcc1dc9208a1165ad28efa7beaf5cfcaaeb33e276",
+      "seconds_prepare": 9.367823124863207
+    },
+    {
+      "simulation": 2,
+      "split": "train",
+      "parameters": {
+        "num_units": 64,
+        "duration": 90.0,
+        "sampling_frequency": 20000.0,
+        "seed": 2026110103,
+        "generate_probe_kwargs": {
+          "num_columns": 2,
+          "num_contact_per_column": 32,
+          "xpitch": 32,
+          "ypitch": 20,
+          "y_shift_per_column": [
+            0,
+            0
+          ],
+          "contact_shapes": "circle",
+          "contact_shape_params": {
+            "radius": 5
+          }
+        },
+        "generate_unit_locations_kwargs": {
+          "margin_um": 20.0,
+          "minimum_z": 5.0,
+          "maximum_z": 45.0,
+          "minimum_distance": 18.0,
+          "distribution": "uniform",
+          "distance_strict": false,
+          "max_iteration": 100
+        },
+        "generate_displacement_vector_kwargs": {
+          "displacement_sampling_frequency": 5.0,
+          "drift_start_um": [
+            0.0,
+            30.0
+          ],
+          "drift_stop_um": [
+            0.0,
+            -30.0
+          ],
+          "drift_step_um": 2.0,
+          "motion_list": [
+            {
+              "drift_mode": "zigzag",
+              "amplitude_factor": 1.0,
+              "non_rigid_gradient": null,
+              "t_start_drift": 0.0,
+              "t_end_drift": null,
+              "period_s": 31.0
+            }
+          ]
+        },
+        "generate_templates_kwargs": {
+          "mode": "ellipsoid",
+          "ms_before": 1.5,
+          "ms_after": 3.0,
+          "unit_params": {
+            "alpha": [
+              100.0,
+              500.0
+            ],
+            "spatial_decay": [
+              10.0,
+              45.0
+            ],
+            "ellipse_angle": [
+              0.0,
+              6.283185307179586
+            ],
+            "ellipse_shrink": [
+              0.4,
+              1.0
+            ]
+          }
+        },
+        "generate_sorting_kwargs": {
+          "firing_rates": [
+            2.0,
+            8.0
+          ],
+          "refractory_period_ms": 4.0
+        },
+        "generate_noise_kwargs": {
+          "noise_levels": [
+            10.0,
+            14.0
+          ],
+          "spatial_decay": 25.0
+        },
+        "amplitude_std": 0.15,
+        "extra_outputs": true
+      },
+      "raw_n_events": 28578,
+      "detected_peaks": 22040,
+      "histogram_count": 22040,
+      "noise_median_uv": 9.05897331237793,
+      "voltage_first_second_sha256": "6d648eef70082bef7d4f35ff0e0799ef1de93110b96c618b6f19a42a7a368db1",
+      "source_array_sha256": "e5b3569f585d3e468ee24c3cd6d6d5de601a458cb68de535174b52a0961c771e",
+      "seconds_prepare": 9.222920916974545
+    },
+    {
+      "simulation": 3,
+      "split": "train",
+      "parameters": {
+        "num_units": 64,
+        "duration": 90.0,
+        "sampling_frequency": 20000.0,
+        "seed": 2026110104,
+        "generate_probe_kwargs": {
+          "num_columns": 2,
+          "num_contact_per_column": 32,
+          "xpitch": 32,
+          "ypitch": 20,
+          "y_shift_per_column": [
+            0,
+            0
+          ],
+          "contact_shapes": "circle",
+          "contact_shape_params": {
+            "radius": 5
+          }
+        },
+        "generate_unit_locations_kwargs": {
+          "margin_um": 20.0,
+          "minimum_z": 5.0,
+          "maximum_z": 45.0,
+          "minimum_distance": 18.0,
+          "distribution": "uniform",
+          "distance_strict": false,
+          "max_iteration": 100
+        },
+        "generate_displacement_vector_kwargs": {
+          "displacement_sampling_frequency": 5.0,
+          "drift_start_um": [
+            0.0,
+            30.0
+          ],
+          "drift_stop_um": [
+            0.0,
+            -30.0
+          ],
+          "drift_step_um": 2.0,
+          "motion_list": [
+            {
+              "drift_mode": "random_walk",
+              "amplitude_factor": 1.0,
+              "non_rigid_gradient": null,
+              "t_start_drift": 0.0,
+              "t_end_drift": null
+            }
+          ]
+        },
+        "generate_templates_kwargs": {
+          "mode": "ellipsoid",
+          "ms_before": 1.5,
+          "ms_after": 3.0,
+          "unit_params": {
+            "alpha": [
+              100.0,
+              500.0
+            ],
+            "spatial_decay": [
+              10.0,
+              45.0
+            ],
+            "ellipse_angle": [
+              0.0,
+              6.283185307179586
+            ],
+            "ellipse_shrink": [
+              0.4,
+              1.0
+            ]
+          }
+        },
+        "generate_sorting_kwargs": {
+          "firing_rates": [
+            2.0,
+            8.0
+          ],
+          "refractory_period_ms": 4.0
+        },
+        "generate_noise_kwargs": {
+          "noise_levels": [
+            10.0,
+            14.0
+          ],
+          "spatial_decay": 25.0
+        },
+        "amplitude_std": 0.15,
+        "extra_outputs": true
+      },
+      "raw_n_events": 28301,
+      "detected_peaks": 21271,
+      "histogram_count": 21271,
+      "noise_median_uv": 8.919079780578613,
+      "voltage_first_second_sha256": "a6e81ab5a2a6e88f0c1d9f30c34871db43567e9cb1b2981525125ff9bff2c043",
+      "source_array_sha256": "9100a2eaf6a8dab70fe0816076cca89bedce089db90afd2a47d57647d80b0114",
+      "seconds_prepare": 9.436364500084892
+    },
+    {
+      "simulation": 4,
+      "split": "test",
+      "parameters": {
+        "num_units": 64,
+        "duration": 90.0,
+        "sampling_frequency": 20000.0,
+        "seed": 2026110201,
+        "generate_probe_kwargs": {
+          "num_columns": 2,
+          "num_contact_per_column": 32,
+          "xpitch": 32,
+          "ypitch": 20,
+          "y_shift_per_column": [
+            0,
+            0
+          ],
+          "contact_shapes": "circle",
+          "contact_shape_params": {
+            "radius": 5
+          }
+        },
+        "generate_unit_locations_kwargs": {
+          "margin_um": 20.0,
+          "minimum_z": 5.0,
+          "maximum_z": 45.0,
+          "minimum_distance": 18.0,
+          "distribution": "uniform",
+          "distance_strict": false,
+          "max_iteration": 100
+        },
+        "generate_displacement_vector_kwargs": {
+          "displacement_sampling_frequency": 5.0,
+          "drift_start_um": [
+            0.0,
+            30.0
+          ],
+          "drift_stop_um": [
+            0.0,
+            -30.0
+          ],
+          "drift_step_um": 2.0,
+          "motion_list": [
+            {
+              "drift_mode": "zigzag",
+              "amplitude_factor": 1.0,
+              "non_rigid_gradient": null,
+              "t_start_drift": 0.0,
+              "t_end_drift": null,
+              "period_s": 37.0
+            }
+          ]
+        },
+        "generate_templates_kwargs": {
+          "mode": "ellipsoid",
+          "ms_before": 1.5,
+          "ms_after": 3.0,
+          "unit_params": {
+            "alpha": [
+              100.0,
+              500.0
+            ],
+            "spatial_decay": [
+              10.0,
+              45.0
+            ],
+            "ellipse_angle": [
+              0.0,
+              6.283185307179586
+            ],
+            "ellipse_shrink": [
+              0.4,
+              1.0
+            ]
+          }
+        },
+        "generate_sorting_kwargs": {
+          "firing_rates": [
+            2.0,
+            8.0
+          ],
+          "refractory_period_ms": 4.0
+        },
+        "generate_noise_kwargs": {
+          "noise_levels": [
+            6.0,
+            10.0
+          ],
+          "spatial_decay": 25.0
+        },
+        "amplitude_std": 0.15,
+        "extra_outputs": true
+      },
+      "raw_n_events": 28644,
+      "detected_peaks": 22817,
+      "histogram_count": 22817,
+      "noise_median_uv": 6.1992082595825195,
+      "voltage_first_second_sha256": "4ab0399f89a6e871e88035b3a288a4bb078b786bacfbf60a1312faa9e501d97b",
+      "source_array_sha256": "c7e179e2452a075d3c90a0e2ac22b7472eda7eeec210639471f9de956f9f5e80",
+      "seconds_prepare": 9.503528333036229
+    },
+    {
+      "simulation": 5,
+      "split": "test",
+      "parameters": {
+        "num_units": 64,
+        "duration": 90.0,
+        "sampling_frequency": 20000.0,
+        "seed": 2026110202,
+        "generate_probe_kwargs": {
+          "num_columns": 2,
+          "num_contact_per_column": 32,
+          "xpitch": 32,
+          "ypitch": 20,
+          "y_shift_per_column": [
+            0,
+            0
+          ],
+          "contact_shapes": "circle",
+          "contact_shape_params": {
+            "radius": 5
+          }
+        },
+        "generate_unit_locations_kwargs": {
+          "margin_um": 20.0,
+          "minimum_z": 5.0,
+          "maximum_z": 45.0,
+          "minimum_distance": 18.0,
+          "distribution": "uniform",
+          "distance_strict": false,
+          "max_iteration": 100
+        },
+        "generate_displacement_vector_kwargs": {
+          "displacement_sampling_frequency": 5.0,
+          "drift_start_um": [
+            0.0,
+            30.0
+          ],
+          "drift_stop_um": [
+            0.0,
+            -30.0
+          ],
+          "drift_step_um": 2.0,
+          "motion_list": [
+            {
+              "drift_mode": "random_walk",
+              "amplitude_factor": 1.0,
+              "non_rigid_gradient": null,
+              "t_start_drift": 0.0,
+              "t_end_drift": null
+            }
+          ]
+        },
+        "generate_templates_kwargs": {
+          "mode": "ellipsoid",
+          "ms_before": 1.5,
+          "ms_after": 3.0,
+          "unit_params": {
+            "alpha": [
+              100.0,
+              500.0
+            ],
+            "spatial_decay": [
+              10.0,
+              45.0
+            ],
+            "ellipse_angle": [
+              0.0,
+              6.283185307179586
+            ],
+            "ellipse_shrink": [
+              0.4,
+              1.0
+            ]
+          }
+        },
+        "generate_sorting_kwargs": {
+          "firing_rates": [
+            2.0,
+            8.0
+          ],
+          "refractory_period_ms": 4.0
+        },
+        "generate_noise_kwargs": {
+          "noise_levels": [
+            6.0,
+            10.0
+          ],
+          "spatial_decay": 25.0
+        },
+        "amplitude_std": 0.15,
+        "extra_outputs": true
+      },
+      "raw_n_events": 26959,
+      "detected_peaks": 22471,
+      "histogram_count": 22471,
+      "noise_median_uv": 5.980649948120117,
+      "voltage_first_second_sha256": "b9ef8e9b44292a451f216cda8e0e4d9e437f4ef7cf7b74eea66eedb475f0cb8e",
+      "source_array_sha256": "92f1bc9da005b3e93645425fd7dc6a7f7dbd2c51fe05db8796f8795914f7e722",
+      "seconds_prepare": 9.560182832879946
+    },
+    {
+      "simulation": 6,
+      "split": "test",
+      "parameters": {
+        "num_units": 64,
+        "duration": 90.0,
+        "sampling_frequency": 20000.0,
+        "seed": 2026110203,
+        "generate_probe_kwargs": {
+          "num_columns": 2,
+          "num_contact_per_column": 32,
+          "xpitch": 32,
+          "ypitch": 20,
+          "y_shift_per_column": [
+            0,
+            0
+          ],
+          "contact_shapes": "circle",
+          "contact_shape_params": {
+            "radius": 5
+          }
+        },
+        "generate_unit_locations_kwargs": {
+          "margin_um": 20.0,
+          "minimum_z": 5.0,
+          "maximum_z": 45.0,
+          "minimum_distance": 18.0,
+          "distribution": "uniform",
+          "distance_strict": false,
+          "max_iteration": 100
+        },
+        "generate_displacement_vector_kwargs": {
+          "displacement_sampling_frequency": 5.0,
+          "drift_start_um": [
+            0.0,
+            30.0
+          ],
+          "drift_stop_um": [
+            0.0,
+            -30.0
+          ],
+          "drift_step_um": 2.0,
+          "motion_list": [
+            {
+              "drift_mode": "zigzag",
+              "amplitude_factor": 1.0,
+              "non_rigid_gradient": null,
+              "t_start_drift": 0.0,
+              "t_end_drift": null,
+              "period_s": 37.0
+            }
+          ]
+        },
+        "generate_templates_kwargs": {
+          "mode": "ellipsoid",
+          "ms_before": 1.5,
+          "ms_after": 3.0,
+          "unit_params": {
+            "alpha": [
+              100.0,
+              500.0
+            ],
+            "spatial_decay": [
+              10.0,
+              45.0
+            ],
+            "ellipse_angle": [
+              0.0,
+              6.283185307179586
+            ],
+            "ellipse_shrink": [
+              0.4,
+              1.0
+            ]
+          }
+        },
+        "generate_sorting_kwargs": {
+          "firing_rates": [
+            2.0,
+            8.0
+          ],
+          "refractory_period_ms": 4.0
+        },
+        "generate_noise_kwargs": {
+          "noise_levels": [
+            10.0,
+            14.0
+          ],
+          "spatial_decay": 25.0
+        },
+        "amplitude_std": 0.15,
+        "extra_outputs": true
+      },
+      "raw_n_events": 28755,
+      "detected_peaks": 20052,
+      "histogram_count": 20052,
+      "noise_median_uv": 9.071638107299805,
+      "voltage_first_second_sha256": "321dc9612bf275a164b567729c011d73cdfeaa22047bd9fa2a09aadad441a9b5",
+      "source_array_sha256": "aca63a6dc1dfaad77455fe9eccca01824856f71cab3fd7e9077f4be9a1ef110b",
+      "seconds_prepare": 9.200059541966766
+    },
+    {
+      "simulation": 7,
+      "split": "test",
+      "parameters": {
+        "num_units": 64,
+        "duration": 90.0,
+        "sampling_frequency": 20000.0,
+        "seed": 2026110204,
+        "generate_probe_kwargs": {
+          "num_columns": 2,
+          "num_contact_per_column": 32,
+          "xpitch": 32,
+          "ypitch": 20,
+          "y_shift_per_column": [
+            0,
+            0
+          ],
+          "contact_shapes": "circle",
+          "contact_shape_params": {
+            "radius": 5
+          }
+        },
+        "generate_unit_locations_kwargs": {
+          "margin_um": 20.0,
+          "minimum_z": 5.0,
+          "maximum_z": 45.0,
+          "minimum_distance": 18.0,
+          "distribution": "uniform",
+          "distance_strict": false,
+          "max_iteration": 100
+        },
+        "generate_displacement_vector_kwargs": {
+          "displacement_sampling_frequency": 5.0,
+          "drift_start_um": [
+            0.0,
+            30.0
+          ],
+          "drift_stop_um": [
+            0.0,
+            -30.0
+          ],
+          "drift_step_um": 2.0,
+          "motion_list": [
+            {
+              "drift_mode": "random_walk",
+              "amplitude_factor": 1.0,
+              "non_rigid_gradient": null,
+              "t_start_drift": 0.0,
+              "t_end_drift": null
+            }
+          ]
+        },
+        "generate_templates_kwargs": {
+          "mode": "ellipsoid",
+          "ms_before": 1.5,
+          "ms_after": 3.0,
+          "unit_params": {
+            "alpha": [
+              100.0,
+              500.0
+            ],
+            "spatial_decay": [
+              10.0,
+              45.0
+            ],
+            "ellipse_angle": [
+              0.0,
+              6.283185307179586
+            ],
+            "ellipse_shrink": [
+              0.4,
+              1.0
+            ]
+          }
+        },
+        "generate_sorting_kwargs": {
+          "firing_rates": [
+            2.0,
+            8.0
+          ],
+          "refractory_period_ms": 4.0
+        },
+        "generate_noise_kwargs": {
+          "noise_levels": [
+            10.0,
+            14.0
+          ],
+          "spatial_decay": 25.0
+        },
+        "amplitude_std": 0.15,
+        "extra_outputs": true
+      },
+      "raw_n_events": 27231,
+      "detected_peaks": 21769,
+      "histogram_count": 21769,
+      "noise_median_uv": 8.830841064453125,
+      "voltage_first_second_sha256": "289d4d404a6c6dad0f2770fd1f4c7268b766f92cb28f06e701b74405e756f6fa",
+      "source_array_sha256": "2d769fd13a24b9cb4c3b34349f1e35c7c06408fc40268f838a7ba18d483dc529",
+      "seconds_prepare": 9.15636962489225
+    }
+  ],
+  "n_simulations": 8,
+  "total_duration_seconds": 720,
+  "data_sha256": "f10ca63a49e7179322e61116025eb2466a0d3f3d7628620a32d228ce597ae487",
+  "prepared_bytes": 58748,
+  "retained_simulation_archive_bytes": 3948715,
+  "shapes": {
+    "train_x": [
+      4,
+      90,
+      132
+    ],
+    "train_y": [
+      4,
+      90
+    ],
+    "test_x": [
+      4,
+      90,
+      132
+    ],
+    "test_y": [
+      4,
+      90
+    ],
+    "train_groups": [
+      4
+    ],
+    "test_groups": [
+      4
+    ]
+  },
+  "selection": "Every simulation, all90one-second bins, no scoring/activity-based exclusions",
+  "license": "Generated procedural arrays; source generator and preserved code MIT. No third-party real voltage or paired biological labels included."
+}

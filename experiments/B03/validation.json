@@ -1,0 +1,101 @@
+{
+  "status": "passed",
+  "data_sha256": "f10ca63a49e7179322e61116025eb2466a0d3f3d7628620a32d228ce597ae487",
+  "all_simulations_retained": true,
+  "distinct_simulation_seeds": true,
+  "voltage_observable_rasters_reconstructed": true,
+  "nearest_template_displacement_targets_reconstructed": true,
+  "recording_equal_gauge_invariant_scorer_toy_checks": true,
+  "real_method_execution": false,
+  "real_method_scores": false,
+  "simulations": [
+    {
+      "simulation": 0,
+      "source_sha256": "7b70cda61a623cf5155392e7444af15d4f96b6ae75787bac39f4199f34a9451e",
+      "n_true_spikes": 27691,
+      "n_observed_peaks": 23311,
+      "noise_median_uv": 5.9925360679626465,
+      "target_std_um": 17.55795426650529,
+      "known_simulator_truth": true,
+      "actual_per_spike_template_displacement_verified": true,
+      "first_second_voltage_regenerated_exactly": true
+    },
+    {
+      "simulation": 1,
+      "source_sha256": "7fc06f3e4e316d80e2bdc1dbcc1dc9208a1165ad28efa7beaf5cfcaaeb33e276",
+      "n_true_spikes": 30113,
+      "n_observed_peaks": 23000,
+      "noise_median_uv": 6.335666179656982,
+      "target_std_um": 9.292142970685198,
+      "known_simulator_truth": true,
+      "actual_per_spike_template_displacement_verified": true,
+      "first_second_voltage_regenerated_exactly": true
+    },
+    {
+      "simulation": 2,
+      "source_sha256": "e5b3569f585d3e468ee24c3cd6d6d5de601a458cb68de535174b52a0961c771e",
+      "n_true_spikes": 28578,
+      "n_observed_peaks": 22040,
+      "noise_median_uv": 9.05897331237793,
+      "target_std_um": 17.55795426650529,
+      "known_simulator_truth": true,
+      "actual_per_spike_template_displacement_verified": true,
+      "first_second_voltage_regenerated_exactly": true
+    },
+    {
+      "simulation": 3,
+      "source_sha256": "9100a2eaf6a8dab70fe0816076cca89bedce089db90afd2a47d57647d80b0114",
+      "n_true_spikes": 28301,
+      "n_observed_peaks": 21271,
+      "noise_median_uv": 8.919079780578613,
+      "target_std_um": 11.950859052752879,
+      "known_simulator_truth": true,
+      "actual_per_spike_template_displacement_verified": true,
+      "first_second_voltage_regenerated_exactly": true
+    },
+    {
+      "simulation": 4,
+      "source_sha256": "c7e179e2452a075d3c90a0e2ac22b7472eda7eeec210639471f9de956f9f5e80",
+      "n_true_spikes": 28644,
+      "n_observed_peaks": 22817,
+      "noise_median_uv": 6.1992082595825195,
+      "target_std_um": 17.264879644405358,
+      "known_simulator_truth": true,
+      "actual_per_spike_template_displacement_verified": true,
+      "first_second_voltage_regenerated_exactly": true
+    },
+    {
+      "simulation": 5,
+      "source_sha256": "92f1bc9da005b3e93645425fd7dc6a7f7dbd2c51fe05db8796f8795914f7e722",
+      "n_true_spikes": 26959,
+      "n_observed_peaks": 22471,
+      "noise_median_uv": 5.980649948120117,
+      "target_std_um": 7.638090382507791,
+      "known_simulator_truth": true,
+      "actual_per_spike_template_displacement_verified": true,
+      "first_second_voltage_regenerated_exactly": true
+    },
+    {
+      "simulation": 6,
+      "source_sha256": "aca63a6dc1dfaad77455fe9eccca01824856f71cab3fd7e9077f4be9a1ef110b",
+      "n_true_spikes": 28755,
+      "n_observed_peaks": 20052,
+      "noise_median_uv": 9.071638107299805,
+      "target_std_um": 17.264879644405358,
+      "known_simulator_truth": true,
+      "actual_per_spike_template_displacement_verified": true,
+      "first_second_voltage_regenerated_exactly": true
+    },
+    {
+      "simulation": 7,
+      "source_sha256": "2d769fd13a24b9cb4c3b34349f1e35c7c06408fc40268f838a7ba18d483dc529",
+      "n_true_spikes": 27231,
+      "n_observed_peaks": 21769,
+      "noise_median_uv": 8.830841064453125,
+      "target_std_um": 8.650405257044962,
+      "known_simulator_truth": true,
+      "actual_per_spike_template_displacement_verified": true,
+      "first_second_voltage_regenerated_exactly": true
+    }
+  ]
+}

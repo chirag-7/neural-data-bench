@@ -1,0 +1,28 @@
+{
+  "benchmark_id": "B03",
+  "status": "prepared awaiting scientific review/freeze",
+  "primary_metric": "recording_mean_motion_rmse_um",
+  "truth_type": "known quantized simulator displacement, never algorithm-estimated gold",
+  "input": "N independent simulated recordings x90 timebins x132 depthbins, detected peak counts;1second x5micrometer bins, spatialrange[-20,640]um",
+  "input_description": "Processed rasters of detected/center-of-mass-localized peaks from noisy drifting64channel voltage. No true events, true positions, templates, seeds or drift trajectories given for test.",
+  "units": {
+    "inputs": "detected peak counts/bin",
+    "outputs": "relative rigid tissue displacement micrometers"
+  },
+  "normalization": "None; raw count histograms, no smoothing. Target and scorer remove constant temporal mean per recording to fix translation gauge.",
+  "baseline_name": "SpikeInterface0.105.4 decentralized pairwise raster registration + global LSMR, fixed parameters",
+  "test_groups": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "train_groups": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "superiority_eligible": false,
+  "limitations": "Synthetic ellipsoid waveform family, rigid-only processed-raster diagnostic;4heldout seeds, not biological generalization or current DREDge/SOTA claim"
+}

@@ -1,0 +1,72 @@
+{
+  "benchmark_id": "B03",
+  "software": "SpikeInterface0.105.4,probeinterface0.4.2",
+  "license": "MIT (both packages)",
+  "source_origin": "Installed official package source from previously acquired work/spike-deps; original source files retained unchanged, package version and content hashes pinned.",
+  "source_urls": [
+    "https://github.com/SpikeInterface/spikeinterface",
+    "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+  ],
+  "files": [
+    {
+      "path": "experiments/B03/source/LICENSE-probeinterface",
+      "bytes": 1071,
+      "sha256": "50cb530922c7b4cf15b8fe34071aea1c97c2225b11b841bf97ea0aabfa387dd0"
+    },
+    {
+      "path": "experiments/B03/source/LICENSE-spikeinterface",
+      "bytes": 1071,
+      "sha256": "a38131a45bb35c90fe528ca5378bc238e5e3cc9850a75a6f7a3cb8dff2b1f20d"
+    },
+    {
+      "path": "experiments/B03/source/benchmark_motion_estimation.py",
+      "bytes": 35949,
+      "sha256": "9cc1a7b5ffe03fe099dd67c696bf486922b6b2219fb082a2614a86f7cf625231"
+    },
+    {
+      "path": "experiments/B03/source/center_of_mass.py",
+      "bytes": 2478,
+      "sha256": "d0a6c4d87e83a39d553e728d1645731d057a3f270ce21cddd11d3f522b81f246"
+    },
+    {
+      "path": "experiments/B03/source/core_generate.py",
+      "bytes": 100047,
+      "sha256": "df63ee69f20c3842ac1f6a7c868dfff2e1b6142afe57681b2bf1f4324a646c60"
+    },
+    {
+      "path": "experiments/B03/source/decentralized.py",
+      "bytes": 32678,
+      "sha256": "04ca48c4cd8ad2ada729c9ac948ed0b815b979fecdc20f3700b48f0a8e3e106b"
+    },
+    {
+      "path": "experiments/B03/source/dredge.py",
+      "bytes": 47445,
+      "sha256": "4e992d79970b8e04902d8b902e21ca58496fb003ec0512b6714f79e337b7e736"
+    },
+    {
+      "path": "experiments/B03/source/drift_tools.py",
+      "bytes": 26958,
+      "sha256": "5622a6f1b7673b58b332aa3935df0ba666da5402e37dbe4c7d7a51a5d2ee8f8a"
+    },
+    {
+      "path": "experiments/B03/source/drifting_generator.py",
+      "bytes": 23349,
+      "sha256": "59635f0a01e97fb7da22068373ff5fa11ef5143b50696477da960b50a13bef55"
+    },
+    {
+      "path": "experiments/B03/source/locally_exclusive.py",
+      "bytes": 17880,
+      "sha256": "68903e27ea76334deaafe2be86c438b5cb464c9673cdc41c7ac1ac2afa6d77b9"
+    },
+    {
+      "path": "experiments/B03/source/motion_utils.py",
+      "bytes": 12470,
+      "sha256": "7bdcd9cb1ab3d758ee9826a1c3041671d7d7be08278282d3785678dd10c581d9"
+    },
+    {
+      "path": "experiments/B03/source/noise_tools.py",
+      "bytes": 10972,
+      "sha256": "240081bd79816cb8be4a7736e16651aaeb0639b788f9ce308319148791dd6b06"
+    }
+  ]
+}
