@@ -1,0 +1,42 @@
+{
+  "python": "3.12.14",
+  "system": "Darwin",
+  "release": "25.6.0",
+  "machine": "arm64",
+  "numeric_threads": 1,
+  "memory_limit_enforced": false,
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "numcodecs": "0.15.2"
+  },
+  "wavpack": {
+    "version": "5.8.0",
+    "source_url": "https://www.wavpack.com/wavpack-5.8.0.tar.bz2",
+    "source_sha256": "d2079e339582d43a0ee58626d9ed5e2d46c6886e788700093faf3753db68e6cd",
+    "configure": [
+      "--disable-shared",
+      "--disable-threads"
+    ],
+    "binary_sha256": {
+      "wavpack": "e90f1af9afe24d5f5f961f9af8e08cfea4e400cf7e47bdcf174af96f11f1d130",
+      "wvunpack": "9610b3b361dc6e39107fffdf68ff214027b4225a4922f37f25f2fd1014e73225"
+    },
+    "encode_arguments": [
+      "--raw-pcm-ex=30000,16,384",
+      "-hh",
+      "-m",
+      "-q",
+      "-y",
+      "-",
+      "-o",
+      "-"
+    ]
+  },
+  "upstream_commit": "c89e8e481435f39e3bf041bfc0eaac5ef6d93900",
+  "upstream_sha256": {
+    "LICENSE": "53463b0778192475e98c954b81342333c7bf73cc38249a4b80684876ca054756",
+    "benchmark-lossless.py": "3f72159df05861ca6e19b4680ccb8e2e419ef2083f5bb1cba1ff07443cd421d6"
+  }
+}

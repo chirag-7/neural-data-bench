@@ -1,0 +1,29 @@
+{
+  "benchmark_id": "B07",
+  "run_id": "compression-v1",
+  "date": "2026-10-31",
+  "track": "T3",
+  "models": [
+    "gpt-5.6-sol",
+    "gpt-6-sol",
+    "gpt-6.1-sol"
+  ],
+  "reasoning_effort": "high",
+  "generation_replicates": 1,
+  "timeout_seconds": 180,
+  "line_limit_exclusive": 240,
+  "memory_enforced": false,
+  "adapter_sha256": "25d413557c4a8f752a95293379c6eb256d5e4068a45ff653ef01224c62b9cdb1",
+  "prompt_sha256": "777c70b21cad61c1d9f3e6570eeead07001eb8cbeead506c3bcaf2354f5ce0b0",
+  "frozen_files": {
+    "experiments/B07/adapter.py": "25d413557c4a8f752a95293379c6eb256d5e4068a45ff653ef01224c62b9cdb1",
+    "experiments/B07/specialist.py": "6b0ea3378c338a15b42d81959a425b16483661144a583328da95db0d7d0770da",
+    "experiments/B07/protocol.md": "3e631c53c74d2bbe185ef6e15624c618d0ab797cfec44317586aebf31f426ad5",
+    "experiments/B07/runtime.json": "00c3297446eab45b946de7263bdf995b2933edcb8db88b7188e2a4bee1903aa6",
+    "experiments/B07/prompt.txt": "777c70b21cad61c1d9f3e6570eeead07001eb8cbeead506c3bcaf2354f5ce0b0",
+    "experiments/B07/response_schema.json": "5caff7b9bde2bc742e6c178602afccf9ab813b07806cdd2e7aa77d2a51d998d3",
+    "scripts/compression_candidates.py": "dab15f24be06c717d82321bc1eebbaaf88abb62c16db3cedc3b786884334ad21",
+    "data/manifests/B07.json": "f248d060b39caa7df5ab8e8afa0578c54a5e5454d02607c86bce2bab43655c16"
+  },
+  "status": "frozen before generation and every real-slice method score"
+}
