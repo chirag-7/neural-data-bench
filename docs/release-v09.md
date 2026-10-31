@@ -52,3 +52,5 @@ The current panel has **22 measured task IDs, 84 first-submission model–slice 
 - Polson, Scott and Windle (2013), [Bayesian inference for logistic models using Polya–Gamma latent variables](https://arxiv.org/abs/1205.0310): methodological basis of the domain-specific Gibbs reference.
 - [polyagamma author repository](https://github.com/zoj613/polyagamma): separate local specialist sampler, version 2.0.2.
 - [Original connectivity challenge data page](https://connectomics.chalearn.org/help/data) and [AIND original compression-data documentation](https://allenneuraldynamics.github.io/data.html): bounded candidate access checks.
+
+Live-browser review verified the metric/observation selectors and both data scopes. It prompted a wording correction to label table times as the full ten-posterior sampling call; scoring time is separate. No scientific contract, generated code, prediction or score changed.
