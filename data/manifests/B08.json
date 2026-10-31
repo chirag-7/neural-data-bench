@@ -1,0 +1,138 @@
+{
+  "benchmark_id": "B08",
+  "license": "CC-BY-4.0",
+  "source": "DANDI000953 FALCON M2 original calibration recordings;alternate to proposed IBL source",
+  "source_license_evidence": "data/manifests/G01.json",
+  "selection": "All7 previously acquired calibration runs,4days,1monkey,96units/run;no score/quality subset",
+  "original_data_dependency": "G01 shares all seven source recordings;not independent datasets/animals",
+  "source_reported_full_hashes_vs_local": "Original asset fullSHA provider-reported;local extracted component byte hashes independently checked",
+  "upstream_spikepack_commit": "30ab06ff7794d89cab17cb54338db869ad90d036",
+  "files": [
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-19-Run1_behavior+ecephys",
+      "path": "data/cache/B08/sub-MonkeyN-held-in-calib_ses-2020-10-19-Run1_behavior+ecephys.npz",
+      "bytes": 645756,
+      "sha256": "0a00150002da1a283a073b40ec4bb4e67e069c60915f49f08ff121e4cd13059a",
+      "n_events": 202939,
+      "animal": "MonkeyN",
+      "source_cache": "data/cache/G01/extracted/sub-MonkeyN-held-in-calib_ses-2020-10-19-Run1_behavior+ecephys.npz",
+      "source_cache_sha256": "7a195a1725a4df7b7d1385534259dd423e990bb7701fd93ee4eaf3807b0fdc48",
+      "source_asset_id": "08243690-f05a-4b1a-8980-6bb6115d67c2",
+      "source_url": "https://api.dandiarchive.org/api/assets/08243690-f05a-4b1a-8980-6bb6115d67c2/download/",
+      "original_component_sha256": {
+        "unit_ids": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65",
+        "spike_times": "b0615dcb0162484342095476a65d784581a5c3d7cf7cbc7f64c7eb40ae93210b",
+        "spike_times_index": "f5781c541d1a2d752f1d5f109b80a8636f14ee717be8f981bd43cf8155e59445"
+      },
+      "preparation": "Expand original units ragged indices to int32 labels;stable global sort by originalfloat64 time;no quantization before method calls"
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-19-Run2_behavior+ecephys",
+      "path": "data/cache/B08/sub-MonkeyN-held-in-calib_ses-2020-10-19-Run2_behavior+ecephys.npz",
+      "bytes": 624413,
+      "sha256": "a6343c8b977bee677fbe857926b0b58e3d59fc229deeb57317652e0e59f4553f",
+      "n_events": 194904,
+      "animal": "MonkeyN",
+      "source_cache": "data/cache/G01/extracted/sub-MonkeyN-held-in-calib_ses-2020-10-19-Run2_behavior+ecephys.npz",
+      "source_cache_sha256": "fb9277bdeac551bb482d9fd9cb4cc10f1f2965f766610d3d682e6481687e1d25",
+      "source_asset_id": "ebf0646b-3a66-41e3-b395-1d973bc694ff",
+      "source_url": "https://api.dandiarchive.org/api/assets/ebf0646b-3a66-41e3-b395-1d973bc694ff/download/",
+      "original_component_sha256": {
+        "unit_ids": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65",
+        "spike_times": "22ac386ea1c727edc786e2bc5ce9b69a6e8ae13ef8c4c5b84d950d24047f72a2",
+        "spike_times_index": "a86fa2e89443f05a72c4ec31666c8cb1a2084a37fd04426bc724fede133609c2"
+      },
+      "preparation": "Expand original units ragged indices to int32 labels;stable global sort by originalfloat64 time;no quantization before method calls"
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-20-Run1_behavior+ecephys",
+      "path": "data/cache/B08/sub-MonkeyN-held-in-calib_ses-2020-10-20-Run1_behavior+ecephys.npz",
+      "bytes": 449051,
+      "sha256": "5cce47af6a578934eeeeb74302a854b39fd025b5684475eef58ff8992c0d0904",
+      "n_events": 137297,
+      "animal": "MonkeyN",
+      "source_cache": "data/cache/G01/extracted/sub-MonkeyN-held-in-calib_ses-2020-10-20-Run1_behavior+ecephys.npz",
+      "source_cache_sha256": "445bd7fa72348aee87b9706eb751654a53891ec3c84eb27e630ded73448969c7",
+      "source_asset_id": "8ce86e3b-0166-4a98-b08a-dfb60afe6201",
+      "source_url": "https://api.dandiarchive.org/api/assets/8ce86e3b-0166-4a98-b08a-dfb60afe6201/download/",
+      "original_component_sha256": {
+        "unit_ids": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65",
+        "spike_times": "481a89c765dd2596ae14e4fe58555ad5c08a515d51e6c51417d7bbb3965cb165",
+        "spike_times_index": "d247dde29c28b46b7f820c054340c9f7f1e4f3295275ba51e0beb559d564a151"
+      },
+      "preparation": "Expand original units ragged indices to int32 labels;stable global sort by originalfloat64 time;no quantization before method calls"
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-20-Run2_behavior+ecephys",
+      "path": "data/cache/B08/sub-MonkeyN-held-in-calib_ses-2020-10-20-Run2_behavior+ecephys.npz",
+      "bytes": 435782,
+      "sha256": "9bf7d3d2fd60224e5953b1a0a1918b6be44af88be7165a5837ee1193f4a30de7",
+      "n_events": 132486,
+      "animal": "MonkeyN",
+      "source_cache": "data/cache/G01/extracted/sub-MonkeyN-held-in-calib_ses-2020-10-20-Run2_behavior+ecephys.npz",
+      "source_cache_sha256": "9d61bb6589a1daa9421f766fea52075ef0b584e0f630dc191b2be5049fc121f5",
+      "source_asset_id": "25ff78b8-62d3-435c-8ae1-a82acc265802",
+      "source_url": "https://api.dandiarchive.org/api/assets/25ff78b8-62d3-435c-8ae1-a82acc265802/download/",
+      "original_component_sha256": {
+        "unit_ids": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65",
+        "spike_times": "9ad39b1631f6667538a6db6496159a1d961d6183830695841ec6d9ee4100ef94",
+        "spike_times_index": "b2ce898cdca5142669932d3247773a62e87d129408f070ebf55e43b06509cb1a"
+      },
+      "preparation": "Expand original units ragged indices to int32 labels;stable global sort by originalfloat64 time;no quantization before method calls"
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-27-Run1_behavior+ecephys",
+      "path": "data/cache/B08/sub-MonkeyN-held-in-calib_ses-2020-10-27-Run1_behavior+ecephys.npz",
+      "bytes": 314800,
+      "sha256": "657f8c2f34b81c038ce228116d924ec3fc4b1379e326acb53ec514bfeffa9f2f",
+      "n_events": 93172,
+      "animal": "MonkeyN",
+      "source_cache": "data/cache/G01/extracted/sub-MonkeyN-held-in-calib_ses-2020-10-27-Run1_behavior+ecephys.npz",
+      "source_cache_sha256": "3f15d219420ac6247090f4fdc63d43f6fa382cceb2871cd823147f12c4b3087f",
+      "source_asset_id": "d80bc39d-0052-4468-bb4f-c1137c8ca985",
+      "source_url": "https://api.dandiarchive.org/api/assets/d80bc39d-0052-4468-bb4f-c1137c8ca985/download/",
+      "original_component_sha256": {
+        "unit_ids": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65",
+        "spike_times": "5e380c67b677101003484954842d7776123806664653d06c84fbd44fb7bbd2d7",
+        "spike_times_index": "db96b68cbd38b2096c8ca555df3f027e812e095550561e5c825de51bd96af360"
+      },
+      "preparation": "Expand original units ragged indices to int32 labels;stable global sort by originalfloat64 time;no quantization before method calls"
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-27-Run2_behavior+ecephys",
+      "path": "data/cache/B08/sub-MonkeyN-held-in-calib_ses-2020-10-27-Run2_behavior+ecephys.npz",
+      "bytes": 383613,
+      "sha256": "114043b2e8207cff64f6326a44955c3fb88b3bb44909d1dad7e56d16231d312f",
+      "n_events": 114382,
+      "animal": "MonkeyN",
+      "source_cache": "data/cache/G01/extracted/sub-MonkeyN-held-in-calib_ses-2020-10-27-Run2_behavior+ecephys.npz",
+      "source_cache_sha256": "154f7dfa48afa5cdfccfa793c4ed5fa1121dc5fc115f99745baff67d3bf744dd",
+      "source_asset_id": "43f6c095-b7d3-4599-a9a8-a8b111813a56",
+      "source_url": "https://api.dandiarchive.org/api/assets/43f6c095-b7d3-4599-a9a8-a8b111813a56/download/",
+      "original_component_sha256": {
+        "unit_ids": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65",
+        "spike_times": "6d40ec43e0399f2094100637754ede3e16d871e6990bde323b5efe7d9d7ec721",
+        "spike_times_index": "467c792d994cb80105aa4188b65495285d5d71b8cfb5a0a5fbc543bb2db742bd"
+      },
+      "preparation": "Expand original units ragged indices to int32 labels;stable global sort by originalfloat64 time;no quantization before method calls"
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-28-Run1_behavior+ecephys",
+      "path": "data/cache/B08/sub-MonkeyN-held-in-calib_ses-2020-10-28-Run1_behavior+ecephys.npz",
+      "bytes": 575020,
+      "sha256": "0c02f77ed2f21c8bbacabb652dab1b8b92e1207d8bbdb98654f0e283c34def35",
+      "n_events": 177365,
+      "animal": "MonkeyN",
+      "source_cache": "data/cache/G01/extracted/sub-MonkeyN-held-in-calib_ses-2020-10-28-Run1_behavior+ecephys.npz",
+      "source_cache_sha256": "a5118a1567de2e3888ea3ebfb88abdccb8b1eab7f9c2a99f1ea6c48788fb2f74",
+      "source_asset_id": "66179cbd-a1a7-4c63-97fe-d92339f20f2d",
+      "source_url": "https://api.dandiarchive.org/api/assets/66179cbd-a1a7-4c63-97fe-d92339f20f2d/download/",
+      "original_component_sha256": {
+        "unit_ids": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65",
+        "spike_times": "d2af321b4132d0dea4e04936196914f64a79e1c93c84eaeb862a391d96cd1746",
+        "spike_times_index": "dbb3b7e55ec98ce5ea4b31ea5af242eb4dfc16841150ed34b2016caae6e92cab"
+      },
+      "preparation": "Expand original units ragged indices to int32 labels;stable global sort by originalfloat64 time;no quantization before method calls"
+    }
+  ]
+}

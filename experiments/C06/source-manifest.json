@@ -1,0 +1,51 @@
+{
+  "commit": "1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f",
+  "files": [
+    {
+      "path": "experiments/C06/source/Demo_benchmark_model_within_dataset.py",
+      "bytes": 4297,
+      "sha256": "8cb51adab6705121be750eb4daed69580d1064fe3253126089e5b9c79028597b",
+      "publisher_git_blob_sha1": "11f7055b541ee03312842c63711fd9cbdb9cc47e",
+      "publisher_blob_verified": true
+    },
+    {
+      "path": "experiments/C06/source/LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "publisher_git_blob_sha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "publisher_blob_verified": true
+    },
+    {
+      "path": "experiments/C06/source/Model-based-algorithms-best-parameteres.csv",
+      "bytes": 4023,
+      "sha256": "25ce5e66ec3136a719fe375fe8b5535b95f5557c0c4ac4ef083f19c980408e8d",
+      "publisher_git_blob_sha1": "581c50c04165242d54d10e13ae1e22b5485ef5a5",
+      "publisher_blob_verified": true
+    },
+    {
+      "path": "experiments/C06/source/README.md",
+      "bytes": 48968,
+      "sha256": "161c8d31aeab913232c87d085780792bfce5d7eba082fd05ff164b5dcf320706",
+      "publisher_git_blob_sha1": "2f13754f4a64842b2083c0df386c81ac3cac6d11",
+      "publisher_blob_verified": true
+    },
+    {
+      "path": "experiments/C06/source/acquisition-index.json",
+      "bytes": 5390,
+      "sha256": "5e6c4d0dfc7030d7f2a9a671229e8e54277ee15fef9e2a6e89f90642e951f217"
+    },
+    {
+      "path": "experiments/C06/source/tree.json",
+      "bytes": 312989,
+      "sha256": "c287a077035e139e5ce2c51cf940d8316bae74c397d24e8149cc43ca0b8a4044"
+    },
+    {
+      "path": "experiments/C06/source/utils.py",
+      "bytes": 30969,
+      "sha256": "0b9c9485d610e8de19c186bc0de9575509f358fedbe43b248b222a4ed91e0f63",
+      "publisher_git_blob_sha1": "c95b94760a6b37a901a6a0fd3fd76faf16213c41",
+      "publisher_blob_verified": true
+    }
+  ],
+  "notes": "Original source files retained unchanged. README and tree acquired at same current HEAD; MAT acquisition pinned to commit and Git blob SHA1 verified."
+}

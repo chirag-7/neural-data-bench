@@ -1,0 +1,4 @@
+numpy
+scipy
+# Optional later specialist execution:
+# oasis-deconv==0.3.2

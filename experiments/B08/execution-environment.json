@@ -1,0 +1,21 @@
+{
+  "python": "3.12.14",
+  "machine": "arm64",
+  "platform": "Darwin",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "numcodecs": "0.15.2",
+    "oasis-deconv": "0.3.2"
+  },
+  "numeric_threads": 1,
+  "memory_enforced": false,
+  "generation_models": [
+    "gpt-5.6-sol",
+    "gpt-6-sol",
+    "gpt-6.1-sol"
+  ],
+  "reasoning_effort": "high",
+  "cpu_runtime_scope": "one numerical thread per method;wall timeout180seconds per task/slice;shared host not hardware-isolated"
+}

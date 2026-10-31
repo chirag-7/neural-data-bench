@@ -1,0 +1,40 @@
+{
+  "commit": "7347b3b21a3f332e281b774c945f1505dd966abf",
+  "files": [
+    {
+      "file": "source-nlinear.py",
+      "source_path": "zapbench/models/nlinear.py",
+      "git_blob_sha1": "f2d308cb33fe6360b747ad51d0c8b1b0d8429238",
+      "sha256": "dac6387411ab97d305c9e030baca083769ab376fa8c4943f712dc3a7efe6c872",
+      "bytes": 2214
+    },
+    {
+      "file": "source-naive.py",
+      "source_path": "zapbench/models/naive.py",
+      "git_blob_sha1": "36c6e0ddaca8106435b84804248e99e92946bb1c",
+      "sha256": "af8add09178d2e9df0b7eba168d6ce9a1565d85996735e3a810f37f930c7ec41",
+      "bytes": 2111
+    },
+    {
+      "file": "source-data_utils.py",
+      "source_path": "zapbench/data_utils.py",
+      "git_blob_sha1": "3d7a000266234cc8e9dc7ca0dbed42ba7170d1c0",
+      "sha256": "3bedc6a63c7e935434efa45ef0c13942e4ed73bf93bad639886fb233ebea0d8a",
+      "bytes": 8105
+    },
+    {
+      "file": "source-constants.py",
+      "source_path": "zapbench/constants.py",
+      "git_blob_sha1": "2b2dfa2d0ef52ae40e7f70ef5178988ff7fed162",
+      "sha256": "433830cc9bc204ba8fb4ea2f671f39fcf1b54a81d7a4d3fc7afe1d478baa5ab7",
+      "bytes": 4228
+    },
+    {
+      "file": "LICENSE-source.txt",
+      "source_path": "LICENSE",
+      "git_blob_sha1": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "bytes": 11357
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "object": "volumes/20240930/traces/c/0/0",
+      "generation": "1728993426166462",
+      "sha256": "d1a4baef56593297ba4431b68b9c99897790f5084e5604c8592df5d8fab81808",
+      "publisher_md5_matches": true,
+      "selected_column_matches": true,
+      "frames_verified": 512,
+      "feature_index": 0
+    },
+    {
+      "object": "volumes/20240930/traces/c/7/69",
+      "generation": "1728993434576253",
+      "sha256": "bebde2243426865920609e68a085c453cf65855870ed1ca9dd18c3240032fe9b",
+      "publisher_md5_matches": true,
+      "selected_column_matches": true,
+      "frames_verified": 512,
+      "feature_index": 127
+    },
+    {
+      "object": "volumes/20240930/traces/c/15/139",
+      "generation": "1728993430755512",
+      "sha256": "107e13d3ec099c015d46818993991dcd4f3e814dbb23421830b0d96448a62962",
+      "publisher_md5_matches": true,
+      "selected_column_matches": true,
+      "frames_verified": 199,
+      "feature_index": 255
+    }
+  ],
+  "scope": "Three fixed source chunks checked independently; not a full download revalidation"
+}

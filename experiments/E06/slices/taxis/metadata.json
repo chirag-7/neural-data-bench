@@ -1,0 +1,40 @@
+{
+  "benchmark_id": "E06",
+  "primary_metric": "mse_dff",
+  "direction": "lower",
+  "truth_type": "real experimentally measured normalized calcium activity",
+  "input": "64 observed past frames for256 fixed original neurons; predict subsequent32frames",
+  "units": "normalized activity (df/f), native source values",
+  "normalization": "none fitted; native upstream df/f",
+  "baseline_name": "ZAPBench NLinear architecture, analytical fixed-ridge1 local reproduction",
+  "test_groups": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "train_groups": [
+    "0",
+    "1",
+    "2",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "group_semantics": "condition block IDs within one animal/session; not independent animals",
+  "input_description": "Each row has64past frames; predict32future frames. Row count may differ for portability slices; do not borrow across rows.",
+  "slice_id": "taxis",
+  "test_group_semantics": "heldout taxis condition3; same animal/session",
+  "model_train_groups": null,
+  "model_signature": "fit_predict(train_x,train_y,test_x,train_groups)"
+}

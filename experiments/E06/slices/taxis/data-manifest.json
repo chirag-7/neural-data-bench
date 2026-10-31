@@ -1,0 +1,70 @@
+{
+  "benchmark_id": "E06",
+  "slice_id": "taxis",
+  "status": "prepared; parent freeze pending",
+  "same_program_as": "E06",
+  "shared_source_dependence": "Same animal/session, fixed neurons and same training arrays; distinct heldout stimulus condition3",
+  "official_holdout_bounds": [
+    3079,
+    3734
+  ],
+  "first_target": 3335,
+  "context": 64,
+  "horizon": 32,
+  "official_max_context_padding": 256,
+  "test_stride": 32,
+  "test_targets": [
+    3335,
+    3367,
+    3399,
+    3431,
+    3463,
+    3495,
+    3527,
+    3559,
+    3591,
+    3623,
+    3655,
+    3687
+  ],
+  "shapes": {
+    "train_x": [
+      272,
+      64,
+      256
+    ],
+    "train_y": [
+      272,
+      32,
+      256
+    ],
+    "train_groups": [
+      272
+    ],
+    "train_target_starts": [
+      272
+    ],
+    "neuron_indices": [
+      256
+    ],
+    "test_x": [
+      12,
+      64,
+      256
+    ],
+    "test_y": [
+      12,
+      32,
+      256
+    ],
+    "test_groups": [
+      12
+    ],
+    "test_target_starts": [
+      12
+    ]
+  },
+  "prepared_sha256": "944fa61ecf480096efef3ca3242e22693ab346ce26d25346c2c3f057cf12f3de",
+  "parent_data_sha256": "dfbd6553dccd99d7f0c8af4daeb98435d9afb200dd3b957d5bd376fa74ebcf3c",
+  "raw_subset_sha256": "62557b63b62104743deb484072d5c27ba56590df6d026bb8e8f0069e32f85a2e"
+}

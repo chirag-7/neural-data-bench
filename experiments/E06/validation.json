@@ -1,0 +1,52 @@
+{
+  "parent": {
+    "train_x": [
+      272,
+      64,
+      256
+    ],
+    "train_y": [
+      272,
+      32,
+      256
+    ],
+    "test_x": [
+      43,
+      64,
+      256
+    ],
+    "test_y": [
+      43,
+      32,
+      256
+    ]
+  },
+  "taxis": {
+    "train_x": [
+      272,
+      64,
+      256
+    ],
+    "train_y": [
+      272,
+      32,
+      256
+    ],
+    "test_x": [
+      12,
+      64,
+      256
+    ],
+    "test_y": [
+      12,
+      32,
+      256
+    ]
+  },
+  "status": "passed",
+  "official_source_blob_checks": true,
+  "all_windows_exact_raw_reconstruction": true,
+  "official_split_helpers_parity": true,
+  "toy_reference_and_scorer": true,
+  "no_real_method_scores": true
+}

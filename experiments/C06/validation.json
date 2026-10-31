@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "raw_files": 15,
+  "recordings": 45,
+  "all_publisher_traces_match": true,
+  "train_test_neurons_and_specimens_disjoint": true,
+  "all_histogram_and_smoothing_checks_pass": true,
+  "synthetic_grouped_scorer_checks_pass": true,
+  "method_execution": false,
+  "real_slice_method_scores": false,
+  "data_sha256": "91154dac913910f2a0dd4c60985fc886eecb426970b3589a24e919836a4f543b"
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Datasets</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400&family=Google+Sans:wght@500&display=swap" as="style">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400&family=Google+Sans:wght@500&display=swap">
+<style>
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Google Sans', Arial, sans-serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+code {
+    color: #000;
+}
+</style>
+</head>
+<body>
+<div class="content">
+<section class="section">
+<div class="container">
+<div class="columns">
+<div class="column">
+<h1>Datasets</h1>
+
+<p>Datasets associated with <a href="https://openreview.net/forum?id=oCHsDpyawq">ZAPBench</a> are hosted on Google Cloud Storage in the <code>zapbench-release</code> bucket (<a href="https://storage.googleapis.com/zapbench-release/browse.html#zapbench-release/volumes/">browse</a>). Datasets that may be especially relevant include:</p>
+
+<ul>
+<li>Functional activity volume (<code>gs://zapbench-release/volumes/20240930/raw</code>)</li>
+<li>Functional anatomy volume (<code>gs://zapbench-release/volumes/20240930/anatomy</code>)</li>
+<li>Aligned activity volume (<code>gs://zapbench-release/volumes/20240930/aligned</code>)</li>
+<li>Aligned and normalized activity volume (<code>gs://zapbench-release/volumes/20240930/df_over_f</code>)</li>
+<li>Annotations used for segmentation model training and eval (<code>gs://zapbench-release/volumes/20240930/annotations/...</code>)</li>
+<li>Segmentation used to extract traces (<code>gs://zapbench-release/volumes/20240930/segmentation</code>)</li>
+<li>Traces used for time-series forecasting (<code>gs://zapbench-release/volumes/20240930/traces</code>)</li>
+</ul>
+
+<p>We provide guidance for accessing these datasets with Python <a href="https://colab.research.google.com/github/google-research/zapbench/blob/main/colabs/datasets.ipynb">in a colab tutorial</a>. Datasets can also be downloaded directly using <a href="https://cloud.google.com/storage/docs/gsutil">gsutil</a>.</p>
+
+<h2>Acknowledgements</h2>
+
+<p>Functional activity recordings were acquired by Alex Bo-Yuan Chen in the Ahrens lab at HHMI Janelia. Annotations for segmentations were collected by The CellMap Project Team at HHMI Janelia. Google Research created datasets processing these data, including alignment, segmentation, and trace extraction.</p>
+
+<h2>License</h2>
+
+<p>All datasets are licensed under <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC-BY 4.0</a>.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</body>
+</html>
