@@ -1,0 +1,4 @@
+# Preserve byte-exact retained execution logs and unified patch context.
+# Scientific source files keep the normal whitespace checks.
+experiments/repairs-v1/**/*.txt -whitespace
+experiments/repairs-v1/**/*.diff -whitespace

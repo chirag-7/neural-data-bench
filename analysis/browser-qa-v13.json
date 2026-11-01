@@ -1,0 +1,42 @@
+{
+  "analysis_revision": "2026-11-01-v13",
+  "date": "2026-11-01",
+  "browser": "Codex In-app Browser",
+  "local_origin": "http://127.0.0.1:8765",
+  "published_origin": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site",
+  "checks": [
+    {
+      "surface": "practical analysis",
+      "result": "passed",
+      "details": "Actual category, evidence-track and task selects; B08 scores7.5856/7.6931/8.6368; named Spikepack line8.1423 and bar; revised qualitative/quantitative findings."
+    },
+    {
+      "surface": "N05 repair tab",
+      "result": "passed",
+      "details": "61/61 recovery, all three points1.0, GPT5.6 original failure and retained format deviation."
+    },
+    {
+      "surface": "K06 specialists",
+      "result": "passed",
+      "details": "Current candidates and primary links; HIPPIE extra-input and source-overlap warnings."
+    },
+    {
+      "surface": "C05 unresolved at mobile width",
+      "result": "passed",
+      "details": "Four archive cases, zero plot elements; document clientWidth375 and scrollWidth375, no horizontal document overflow; temporary viewport reset."
+    },
+    {
+      "surface": "published B08 repair tab",
+      "result": "passed",
+      "details": "Real private production page shows recovered codes, original failures and control scores; screenshot retained."
+    },
+    {
+      "surface": "published practical analysis",
+      "result": "passed",
+      "details": "Findings loaded, K category limits task menu to K01/K04/K05/K06; deliverable tab retained."
+    }
+  ],
+  "console_error_and_warning_entries": 0,
+  "screenshot": "docs/assets/benchmark-repairs-v13.png",
+  "scope": "Representative actual-browser interactions and layout QA; exhaustive route/handler checks separately in analysis/site-source-checks.json."
+}
