@@ -17,3 +17,7 @@ The central ledger contains 208 model/reference records and 200 unique saved pre
 The seven-task batch adds eight evaluation slices and 21 original programs; all planned attempts and independent audits are retained. B08's prompt/import-whitelist ambiguity excludes it retrospectively from aggregate claims, while both failures remain counted. A15's 268-line GPT-5.6 program remains numerically scored but violates the 240-line contract. C06's high correlation does not imply calibrated spike counts.
 
 Thirty of 92 active tasks is **32.6% execution coverage of this map**, not progress toward a complete paper or exhaustive neuroscience coverage. Current global best, matched-effort specialist superiority and stable scaling remain unestablished. See the [progress assessment](progress-assessment.md).
+
+## Lag and change-size sensitivity follow-up
+
+[Three lag tables](../analysis/generation-lags-v1/report.md) distinguish ordinal lag 1 (three comparisons), lag 2 (two) and lag 3 (one). Native direction counts and two explicit IQR-relative filters retain all 180 task-pair rows. An independent rational-arithmetic checker verifies source scores, quartiles, direction, counts and normalization. Four points define each scale; no statistical significance, practical equivalence or scaling-law inference is claimed. The 30-task scores and all original attempts are unchanged.

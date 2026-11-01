@@ -1,0 +1,38 @@
+{
+  "estimand": "Descriptive task counts on the final repair-assisted panel; each task once.",
+  "order": [
+    "gpt-4.1-2025-04-14",
+    "gpt-5-2025-08-07",
+    "gpt-5.6-sol",
+    "gpt-6.1-sol"
+  ],
+  "lag": "Ordinal model-index distance; not time, parameter count or training compute.",
+  "scale": "IQR of the same four model task means; inclusive linear quantiles (Hyndman-Fan type 7). With sorted a<=b<=c<=d: Q1=.25a+.75b; Q3=.75c+.25d.",
+  "formula": "R = preferred-direction sign * (later score - earlier score) / panel IQR",
+  "thresholds": [
+    0.1,
+    0.5
+  ],
+  "threshold_status": "Analyst-selected post-hoc sensitivity bands, not validated small/large effect standards or equivalence margins.",
+  "raw_numerical_tie_tolerance": 1e-09,
+  "normalized_boundary_tolerance": 1e-12,
+  "within_band": "Absolute normalized gap at or below threshold (plus boundary tolerance), including raw numerical ties. Not evidence of equivalence or randomness.",
+  "missing_or_zero_scale": "Missing four-model scores: normalization not estimable. Zero IQR: no ratio; numerical pair ties within band, other pairs not estimable. Never add epsilon to the denominator.",
+  "invariance": "Ratio is invariant to positive affine changes of native score units/origin, apart from the separately retained native numerical-tie tolerance. Not invariant to nonlinear metric transformations.",
+  "limitations": [
+    "Only four selected model points define each spread: estimates can be unstable and change with the model roster.",
+    "A large ratio can still be a tiny or practically unimportant native difference. This is not Cohen d, biological variability, error reduction, a z-score or a signal-to-noise ratio.",
+    "IQR is a robust spread statistic in general; that does not make this four-point application a robust inferential result.",
+    "Lags share tasks/models and are not independent repetitions. No pooled lag p-values, significance, confidence intervals or scaling-law fit are claimed.",
+    "Convenience tasks, overlapping sources, unequal wrappers and selective repairs limit generalization. J08 GPT-4.1 has a documented manual training-budget adaptation.",
+    "C2ST retains the original lower-is-better direction, but the diagnostic target is 0.5; near-chance ordering need not indicate a better sampler."
+  ],
+  "stronger_next_analysis": "Predeclare task-specific worthwhile-effect/equivalence margins; rescore with paired resampling of independent people, animals or recordings; preserve hierarchy and metric aggregation; repeat model generations under matched conditions. Report unresolved intervals rather than forcing small/large labels.",
+  "citations": [
+    {
+      "title": "NIST: Measures of Scale",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm",
+      "supports": "IQR as a robust measure of spread, not the selected thresholds or conclusions."
+    }
+  ]
+}

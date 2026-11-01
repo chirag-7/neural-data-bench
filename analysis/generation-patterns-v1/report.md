@@ -62,6 +62,7 @@ All 30 tasks and reference rows pass an explicit direction audit: 18 higher-is-b
 
 Run `python3 scripts/analyze_generation_patterns.py` and `python3 scripts/check_generation_patterns.py`. No new generation or score fitting occurs. Original measurements and previous macro snapshots remain intact.
 
+- [Lag-1/2/3 comparisons and change-size sensitivity bands](../generation-lags-v1/report.md)
 - [Methods and limits](methods.json)
 - [All per-task classifications](task-patterns.csv)
 - [Category counts](category-patterns.csv)

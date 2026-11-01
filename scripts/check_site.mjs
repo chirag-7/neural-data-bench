@@ -32,6 +32,7 @@ const ctx = {
 };
 vm.createContext(ctx);
 vm.runInContext(fs.readFileSync(path.join(root, "website/generation-patterns.js"), "utf8"), ctx);
+vm.runInContext(fs.readFileSync(path.join(root, "website/generation-lags.js"), "utf8"), ctx);
 vm.runInContext(fs.readFileSync(path.join(root, "website/practical-review.js"), "utf8"), ctx);
 vm.runInContext(
   fs.readFileSync(path.join(root, "website/app.js"), "utf8"),
@@ -328,9 +329,16 @@ ctx.location.hash='#/analysis/patterns';vm.runInContext('draw()',ctx);await new 
 if(!el('#app').innerHTML.includes('Do newer models improve?') || !el('#app').innerHTML.includes('28') || !el('#app').innerHTML.includes('Mixed changes / reversals'))throw Error('Macro route/data failed');
 ctx.location.hash='#/analysis/practical';vm.runInContext("practicalCategory='J';practicalTask='J08';draw()",ctx);await new Promise(resolve=>setImmediate(resolve));
 if(!el('#app').innerHTML.includes('manually adapted training budget') || el('#app').innerHTML.includes('Not scored within the 180-second computation limit'))throw Error('Final J08 repair score or budget provenance missing');
+ctx.location.hash='#/analysis/lags';vm.runInContext('draw()',ctx);await new Promise(resolve=>setImmediate(resolve));
+if(!el('#app').innerHTML.includes('Does a larger model gap mean more progress?') || !el('#app').innerHTML.includes('post-hoc sensitivity choices') || (el('#app').innerHTML.match(/<tr>/g)||[]).length!==21)throw Error('Lag route, three complete tables or limitations missing');
+for(const [lag,nRows] of [['1',12],['2',9],['3',6]]) {
+ vm.runInContext(`generationLagFilter='${lag}';generationLagsPage()`,ctx);await new Promise(resolve=>setImmediate(resolve));
+ if((el('#app').innerHTML.match(/<tr>/g)||[]).length!==nRows)throw Error('Lag filter table row count: '+lag);
+}
 const result = {
   type: "In-memory source-render and direct-handler checks; not real-browser interaction or layout QA",
   routes: n,
+  ordinal_lag_tables_and_three_filters: "passed · 180 source task-pairs; all six comparisons and both IQR sensitivity bands",
   measured_tasks_with_bar_and_line_plots: plots,
   specialist_overlays: "passed",
   practical_review: practicalChecks,

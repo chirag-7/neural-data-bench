@@ -14,6 +14,7 @@ jobs:
           node --check website/macro-report.js
           node --check website/practical-review.js
           node --check website/generation-patterns.js
+          node --check website/generation-lags.js
           node scripts/check_site.mjs
       - name: Validate registry, local Markdown links and measurement provenance
         run: |
@@ -23,3 +24,4 @@ jobs:
           python3 scripts/check_generation_comparison.py --no-website
           python3 scripts/check_generation_comparison_v2.py
           python3 scripts/check_generation_patterns.py
+          python3 scripts/check_generation_lags.py

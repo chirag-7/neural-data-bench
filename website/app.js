@@ -345,6 +345,7 @@ function draw() {
   if (p[0] === "benchmark") benchmark(p[1], p[2] || "results");
   else if (p[0] === "models") modelsPage();
   else if (p[0] === "model") modelsPage(p[1]);
+  else if (p[0] === "analysis" && p[1] === "lags") generationLagsPage();
   else if (p[0] === "analysis" && p[1] === "patterns") generationPatternsPage();
   else if (p[0] === "analysis" && p[1] === "practical") practicalReviewPage();
   else if (p[0] === "analysis" && p[1] === "report") macroReportPage();

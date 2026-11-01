@@ -1,6 +1,7 @@
 {
   "type": "In-memory source-render and direct-handler checks; not real-browser interaction or layout QA",
   "routes": 299,
+  "ordinal_lag_tables_and_three_filters": "passed · 180 source task-pairs; all six comparisons and both IQR sensitivity bands",
   "measured_tasks_with_bar_and_line_plots": 30,
   "specialist_overlays": "passed",
   "practical_review": "passed · 30 specialist views, 4 repair tabs, final results/category/task handlers, immutable original records",
