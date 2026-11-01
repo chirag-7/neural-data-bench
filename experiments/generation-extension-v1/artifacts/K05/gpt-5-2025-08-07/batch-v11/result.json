@@ -1,0 +1,43 @@
+{
+  "benchmark_id": "K05",
+  "slice_id": "batch-v11",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "measured",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "1a0663291d4f692a158c576d6639ce242f6cf3e28ab8b3bb4b222d2ecbe6162d",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/K05/gpt-5-2025-08-07.json",
+  "submission_sha256": "036e3d74e48cc24d1de8fbf66a6d11d3c664137494a2939615e6532ddd03a06b",
+  "code_sha256": "beed39bdd4da01a1a87d99f350bfea8121e8f3633f83c47f543aa7b45a8706a9",
+  "description": "Multi-output ridge baseline for K05. Implements donor-grouped cross-validation with block/donor macro-RMSE selection and donor/block-balanced training weights. Pipeline: within each CV fold, select top-1000 variance genes from the training fold only, z-score features using training-fold statistics, fit Ridge for alphas in {1,10,100,1000,10000}, evaluate with the primary donor_block_macro_rmse (replicates averaged within block, blocks equally weighted within donor, donors equally weighted), and pick the alpha with lowest mean RMSE across the three targets. Final model refits on all training data using the same procedure (top-1000 variance from all training, z-scored using training stats) and predicts on test; outputs are clipped to [0,1]. All transforms learned solely from training data; sample weights give each donor equal total influence and each block equal influence within donor. Deterministic ordering and seeds are used.",
+  "code_lines": 150,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true,
+  "seconds": 0.021674541058018804,
+  "score": 0.05803003834470389,
+  "metric": "donor_block_macro_rmse",
+  "direction": "lower",
+  "per_unit": [
+    0.04293951992451481,
+    0.06459403395717238,
+    0.06360288131790034
+  ],
+  "unit_ids": [
+    "Br2720",
+    "Br6423",
+    "Br6471"
+  ],
+  "unit_definition": "donor-level macro RMSE; primary recomputes square root after pooling donor MSEs",
+  "n_units": 24,
+  "scoring_seconds": 0.10620229202322662,
+  "prediction_file": "experiments/generation-extension-v1/artifacts/K05/gpt-5-2025-08-07/batch-v11/predictions.npz",
+  "prediction_sha256": "b025d22cd6f199f1930f465cd467ecee75ab360634f3485bd718f01e2013a0bc",
+  "strict_format_compliant": true
+}

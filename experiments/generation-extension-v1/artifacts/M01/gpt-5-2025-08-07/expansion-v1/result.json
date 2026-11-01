@@ -1,0 +1,144 @@
+{
+  "benchmark_id": "M01",
+  "slice_id": "expansion-v1",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "measured",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "ce3ed452b97ec306c8a587a1570be8bef6efd99f6fe5ca6756d7273f37d09691",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/M01/gpt-5-2025-08-07.json",
+  "submission_sha256": "b6334e21dc28983addaf9a0f88bce41bf1ad9fc2cd59404d72d3fb0a8722e5f9",
+  "code_sha256": "3b752f9fc3201798683b54cbc45581c48d2282b7c83e46dfb4515782d5339093",
+  "description": "Model: L2-regularized logistic regression trained only on training mice with group-aware cross-validation and per-mouse equalization. Features include sensory evidence (right/left contrasts), experimenter block prior (and its logit), their interactions, and history terms from the last five choices/feedbacks plus reinforcement-like products and recency-weighted aggregates. All transforms are fitted on training data only; no identifiers or ordering are used. Hyperparameter C is chosen by 5-fold GroupKFold on mouse IDs, optimizing the primary metric: mean negative log-likelihood averaged per validation mouse. Fitting uses sample weights that make each training mouse contribute equally. Final probabilities on test are clipped to [1e-6, 1-1e-6], representing P(turn CW = source choice +1) per test row.",
+  "code_lines": 162,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true,
+  "seconds": 0.31458549993112683,
+  "score": 0.4492946398022002,
+  "metric": "mouse_equal_binary_log_loss",
+  "direction": "lower",
+  "per_unit": [
+    0.5076518136762339,
+    0.35277619942808625,
+    0.5490560506788841,
+    0.4551302989421018,
+    0.4401902481605271,
+    0.3358188455195443,
+    0.7455409400773475,
+    0.5091848948477777,
+    0.5487539259306459,
+    0.4211529011914339,
+    0.31610323870410667,
+    0.38979836784726557,
+    0.42774197240395234,
+    0.37160280934327916,
+    0.5013284997833757,
+    0.4128026457587874,
+    0.35337522434405383
+  ],
+  "group_results": [
+    {
+      "group": "CSHL_005",
+      "n": 77,
+      "score": 0.5076518136762339
+    },
+    {
+      "group": "CSH_ZAD_001",
+      "n": 166,
+      "score": 0.35277619942808625
+    },
+    {
+      "group": "CSH_ZAD_004",
+      "n": 99,
+      "score": 0.5490560506788841
+    },
+    {
+      "group": "CSH_ZAD_006",
+      "n": 30,
+      "score": 0.4551302989421018
+    },
+    {
+      "group": "DY_001",
+      "n": 80,
+      "score": 0.4401902481605271
+    },
+    {
+      "group": "DY_005",
+      "n": 81,
+      "score": 0.3358188455195443
+    },
+    {
+      "group": "KS015",
+      "n": 14,
+      "score": 0.7455409400773475
+    },
+    {
+      "group": "KS023",
+      "n": 78,
+      "score": 0.5091848948477777
+    },
+    {
+      "group": "NYU-12",
+      "n": 109,
+      "score": 0.5487539259306459
+    },
+    {
+      "group": "SWC_001",
+      "n": 137,
+      "score": 0.4211529011914339
+    },
+    {
+      "group": "SWC_022",
+      "n": 138,
+      "score": 0.31610323870410667
+    },
+    {
+      "group": "ZM_1084",
+      "n": 112,
+      "score": 0.38979836784726557
+    },
+    {
+      "group": "ZM_1089",
+      "n": 124,
+      "score": 0.42774197240395234
+    },
+    {
+      "group": "ZM_1091",
+      "n": 99,
+      "score": 0.37160280934327916
+    },
+    {
+      "group": "ibl_witten_02",
+      "n": 166,
+      "score": 0.5013284997833757
+    },
+    {
+      "group": "ibl_witten_07",
+      "n": 166,
+      "score": 0.4128026457587874
+    },
+    {
+      "group": "ibl_witten_16",
+      "n": 166,
+      "score": 0.35337522434405383
+    }
+  ],
+  "pooled_log_loss": 0.4252212636681073,
+  "pooled_accuracy": 0.8056460369163952,
+  "score_clipping": [
+    1e-06,
+    0.999999
+  ],
+  "n_units": 1842,
+  "scoring_seconds": 0.9076095409691334,
+  "prediction_file": "experiments/generation-extension-v1/artifacts/M01/gpt-5-2025-08-07/expansion-v1/predictions.npz",
+  "prediction_sha256": "63cd5b8b96065085f89554dcb9f9966fa540232ce2486d3d8edf3831ce4ea4a8",
+  "strict_format_compliant": true
+}

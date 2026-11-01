@@ -1,0 +1,112 @@
+{
+  "id": "resp_052eb0d228776d45016ae79a2ef99487d299ff928ad61048f8",
+  "object": "response",
+  "created_at": 1793563183,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1793563187,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-4.1-2025-04-14",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_052eb0d228776d45016ae79a2f508887d29074cb1fbdf078ab",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"description\":\"This code estimates the Q-learning parameters (alpha: learning rate, beta: inverse temperature) for each independent agent based on their choice and reward history. The fitting is done via maximum likelihood estimation, explicitly simulating the Q-learning process per parameter candidate. The code uses bounded optimization (L-BFGS-B) with multiple restarts for each agent to minimize the negative log-likelihood, carefully handling the initialization and constraints. The final result is a (N,2) ndarray of agent-wise (alpha, beta) estimates.\",\"code\":\"import numpy as np\\nfrom scipy.optimize import minimize\\nfrom scipy.special import expit as sigmoid\\n\\ndef _negloglike(params, choices, rewards):\\n    \\\"\\\"\\\"\\n    Negative log-likelihood for single agent.\\n    params: [alpha, beta]\\n    choices: (T,) array in {0,1}\\n    rewards: (T,) array in {0,1}\\n    \\\"\\\"\\\"\\n    alpha, beta = params\\n    Q = np.array([0.5, 0.5], dtype=np.float64)\\n    nll = 0.0\\n    for t, (a, r) in enumerate(zip(choices, rewards)):\\n        delta_Q = Q[1] - Q[0]\\n        p1 = sigmoid(beta * delta_Q)\\n        p = p1 if a == 1 else 1 - p1\\n        # Avoid log(0) with proper clipping\\n        p = np.clip(p, 1e-8, 1. - 1e-8)\\n        nll -= np.log(p)\\n        # Q update\\n        Q[a] += alpha * (r - Q[a])\\n    return nll\\n\\ndef _fit_agent(choices, rewards, n_restarts=5):\\n    bounds = [(0.01, 0.99), (0.1, 10)]\\n    best_loss = np.inf\\n    best_params = None\\n    T = len(choices)\\n    # Different starting guesses covering range, plus central value\\n    startparams = [\\n        [0.2, 0.5],\\n        [0.5, 2.0],\\n        [0.8, 5.0],\\n        [0.05, 9.0],\\n        [0.95, 0.12]\\n    ]\\n    # if n_restarts > hardcoded starts:\\n    rng = np.random.RandomState(0)\\n    while len(startparams) < n_restarts:\\n        startparams.append([\\n            rng.uniform(0.01, 0.99),\\n            rng.uniform(0.1, 10),\\n        ])\\n    for x0 in startparams[:n_restarts]:\\n        res = minimize(\\n            _negloglike,\\n            x0,\\n            args=(choices, rewards),\\n            method='L-BFGS-B',\\n            bounds=bounds,\\n            options={'ftol': 1e-9, 'gtol':1e-7, 'disp': False, 'maxiter': 400}\\n        )\\n        if res.success and res.fun < best_loss:\\n            best_loss = res.fun\\n            best_params = res.x\\n    # fallback: if optimizer failed, fall back to midrange values\\n    if best_params is None:\\n        best_params = np.array([0.5, 2.0])\\n    return best_params\\n\\ndef estimate(choices, rewards):\\n    \\\"\\\"\\\"\\n    Estimate Q-learning alpha and beta for each agent.\\n    choices: (N,T) int array, values 0 or 1\\n    rewards: (N,T) int array, 0 or 1\\n    Returns: (N,2) array: estimated [alpha, beta] per agent\\n    \\\"\\\"\\\"\\n    choices = np.asarray(choices)\\n    rewards = np.asarray(rewards)\\n    N, T = choices.shape\\n    est = np.zeros((N, 2), dtype=np.float64)\\n    for i in range(N):\\n        est[i] = _fit_agent(choices[i], rewards[i], n_restarts=7)\\n    return est\\n\"}"
+        }
+      ],
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "in_memory",
+  "reasoning": {
+    "context": null,
+    "effort": null,
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "neural_program",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 1.0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 396,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 922,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1318
+  },
+  "user": null,
+  "metadata": {}
+}

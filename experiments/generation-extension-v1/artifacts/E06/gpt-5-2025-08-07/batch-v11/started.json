@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "E06",
+  "slice_id": "batch-v11",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "a9b8184757172ae629aa1cdf93d53927bc420d61356e7d6b66dc8b239230727e",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/E06/gpt-5-2025-08-07.json",
+  "submission_sha256": "7e7c2960e445aaee896795b8c5b36eb4ed0990e334fb2c59dc8f0400ab1b4620",
+  "code_sha256": "3e5259ef60034c5ecf8bbe9c7ed7d9593b83d3a43c52d9b6ac9d3fe213e56f86",
+  "description": "Analytic NLinear-style forecaster with training-only fitting and per-horizon shrinkage.\n- Pool every neuron and window: for each (example, neuron), form a 64-D history vector and a 32-D target.\n- Subtract the last observed frame from both history and target to learn future deltas.\n- Fit a shared temporal affine map (64\u219232) with ridge regularization (alpha=1.0) and an unpenalized bias using closed-form normal equations on training data only.\n- Calibrate a per-horizon shrinkage factor gamma (size 32) by least-squares mixing against the naive \"repeat last frame\" baseline, clipped to [0,1] for stability.\n- Predict on test: subtract last frame, apply the affine map, shrink deltas by gamma, and add the last frame back. If any numerical issue occurs, fall back to repeating the last input frame.\n- Deterministic, NumPy-only, vectorized across all neurons and windows; returns finite outputs with shape (len(test_x), 32, 256).",
+  "code_lines": 142,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

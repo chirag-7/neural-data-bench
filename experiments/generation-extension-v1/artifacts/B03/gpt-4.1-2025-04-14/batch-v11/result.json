@@ -1,0 +1,50 @@
+{
+  "benchmark_id": "B03",
+  "slice_id": "batch-v11",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "measured",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "ad53c3a97af54d2ab10051a493b7ab73a718a3ea290810a838e73797d776aec1",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/B03/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "4645b30ebb8f56ca76ff01afd5ecf9fa80d855dd69ff878ce40c37da4a9d7f63",
+  "code_sha256": "c19f85f3890c6b4666075e97704aea99b6c26ef44576bc1af6ef97122f4fa203",
+  "description": "General numerical strategy for B03 rigid-motion prediction from detected-peak spatial temporal raster: Estimate recording displacement time-series for each test simulation, using only training data for parameter selection and never accessing true test targets. The method builds on the principle that rigid axial displacements cause column-wide translations in detected-peak distributions, visible as depth shifts in the raster. We extract a depth activation profile for each second, then measure per-bin shifts using cross-correlation across time. Without knowledge of any fixed spatial reference, we treat the mean depth distribution for each recording as a moving template and track displacement as the best-aligned shift relative to this template. We apply robust normalization and parabolic refinement for sub-bin precision. The temporal mean is subtracted per recording. No training target access, fit to test data, or SI code is used; only sklearn, numpy, scipy are imported. One consistent random seed; test simulations processed independently. The entire fit_predict code below is stand-alone and self-contained.",
+  "code_lines": 71,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true,
+  "seconds": 0.028580666054040194,
+  "score": 12.704563694454103,
+  "metric": "recording_mean_motion_rmse_um",
+  "direction": "lower",
+  "per_unit": [
+    17.264879601579104,
+    7.638090317521062,
+    17.264879601579104,
+    8.650405257137145
+  ],
+  "recording_mae_um": [
+    14.923160454358584,
+    6.491456744994647,
+    14.923160454358584,
+    6.694518512818548
+  ],
+  "recording_max_error_um": [
+    31.764444350534013,
+    19.484443697664474,
+    31.764444350534013,
+    19.626667000353336
+  ],
+  "n_units": 4,
+  "scoring_seconds": 0.09632533392868936,
+  "prediction_file": "experiments/generation-extension-v1/artifacts/B03/gpt-4.1-2025-04-14/batch-v11/predictions.npz",
+  "prediction_sha256": "ed9e41c89e822897d948398f5f21f69baa4366197de3896874fd03c517007eae",
+  "strict_format_compliant": true
+}

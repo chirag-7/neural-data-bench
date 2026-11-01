@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5-2025-08-07",
+  "input": "You are in a single-shot computational-neuroscience code-synthesis evaluation. Do not call tools, browse, read files, or execute code. Return only JSON with description and code.\nImplement Python estimate(choices, rewards) returning an ndarray shape (N,2) of estimated alpha and beta for each independent agent. choices and rewards are arrays shape (N,T), choices in {0,1}, binary rewards; N is approximately 24, T approximately 240.\nThe known generating model is two-action Q learning: Q starts at [0.5,0.5]; before each choice P(action=1)=sigmoid(beta*(Q[1]-Q[0])); after observing chosen action a and reward r, update Q[a] += alpha*(r-Q[a]); leave the other Q unchanged. No lapse, decay or perseveration. Reward probabilities reverse periodically; rewards are observed and can be conditioned on when fitting. Recover alpha in [.01,.99] and beta in [.1,10]. No generating parameters are supplied.\nPrimary score is parameter recovery: mean absolute error divided by allowed parameter ranges, averaged over parameters and independent agents (lower is better). Secondary is negative log-likelihood per observed trial. Consider finite-sample identifiability. Do not report a score.\nAllowed imports: numpy, scipy, sklearn and standard math/collections utilities. No specialist neuroscience package, external pretrained assets, file/network/subprocess access, exec/eval, or tools. Use deterministic randomness if needed. The complete estimate call must run in at most 180 seconds on one CPU thread, approximately 3 GB memory. Keep code under 180 lines. One submission, no execution feedback. Return JSON: description (string), code (complete self-contained Python source with estimate and helpers).\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "reasoning": {
+    "effort": "high"
+  },
+  "max_output_tokens": 24000
+}

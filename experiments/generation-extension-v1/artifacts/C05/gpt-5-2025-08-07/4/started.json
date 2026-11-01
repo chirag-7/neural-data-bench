@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "C05",
+  "slice_id": "4",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "00b53eb24dffcad2a9f3d1c4696f7078165bd897b9bac2595f3fae5d2a784b5c",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/C05/gpt-5-2025-08-07.json",
+  "submission_sha256": "9cc9916b7ad53d0c961a83b237a5ce88bddf690a17275cb562fab4a7df0ea392",
+  "code_sha256": "3bc6f60b6e10a1f05ea26468939f863eb8c6a6847a999a99e5c70a80127e5bbc",
+  "description": "Global linear deconvolution via Wiener filter learned from training neurons. We robustly standardize each train trace (median/MAD), compute aggregated auto-correlation of calcium and cross-correlation with spikes using FFT-based convolution, then solve a ridge-regularized Toeplitz normal equation to obtain a single two-sided FIR filter (acausal and causal lags \u00b10.8 s at 100 Hz). For test neurons, we robustly standardize each trace, apply the learned two-sided filter via efficient lagged additions, and rectify to enforce nonnegativity. Trailing NaNs in inputs remain NaN in outputs; predictions are finite where inputs are finite. No mixing across neuron boundaries or use of test labels. The method is simple, fast, and scale/offset agnostic (correlation metric is scale-invariant).",
+  "code_lines": 135,
+  "line_limit_exclusive": 180,
+  "line_limit_compliant": true
+}

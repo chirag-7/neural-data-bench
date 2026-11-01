@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5-2025-08-07",
+  "input": "You are participating in a single-shot neuroscience code-synthesis experiment. Do not call tools, browse, read files or execute code. Return only JSON with description and code.\n\nImplement Python fit_predict(train_x,train_y,test_x) returning predictions with the specified shape. No test target labels are supplied.\n\nPredict whether an MRI structural scan is acceptable from precomputed MRIQC image quality metrics. Each row is a distinct participant scan. Train ABIDE, test independent DS030 cohort. Target0=include (rater_1 doubtful0 oraccept1),1=exclude (rater_1=-1), following the original binary classifier convention. No identifiers, site, rater or label fields are input features. Features are numeric image-quality measurements only and may contain NaNs. Return integer labels shape(n_test,). Primary balanced accuracy. Do not fit to test labels; unsupervised per-feature input statistics allowed only if disclosed. Prefer train-only imputation/scaling. This is IQM classification, not raw-image QC.\n\nPrepared input context: {\"train_x_shape\": [600, 68], \"train_y_shape\": [600], \"test_x_shape\": [265, 68], \"feature_names\": [\"cjv\", \"cnr\", \"efc\", \"fber\", \"fwhm_avg\", \"fwhm_x\", \"fwhm_y\", \"fwhm_z\", \"icvs_csf\", \"icvs_gm\", \"icvs_wm\", \"inu_med\", \"inu_range\", \"qi_1\", \"qi_2\", \"rpve_csf\", \"rpve_gm\", \"rpve_wm\", \"size_x\", \"size_y\", \"size_z\", \"snr_csf\", \"snr_gm\", \"snr_total\", \"snr_wm\", \"snrd_csf\", \"snrd_gm\", \"snrd_total\", \"snrd_wm\", \"spacing_x\", \"spacing_y\", \"spacing_z\", \"summary_bg_k\", \"summary_bg_mad\", \"summary_bg_mean\", \"summary_bg_median\", \"summary_bg_n\", \"summary_bg_p05\", \"summary_bg_p95\", \"summary_bg_stdv\", \"summary_csf_k\", \"summary_csf_mad\", \"summary_csf_mean\", \"summary_csf_median\", \"summary_csf_n\", \"summary_csf_p05\", \"summary_csf_p95\", \"summary_csf_stdv\", \"summary_gm_k\", \"summary_gm_mad\", \"summary_gm_mean\", \"summary_gm_median\", \"summary_gm_n\", \"summary_gm_p05\", \"summary_gm_p95\", \"summary_gm_stdv\", \"summary_wm_k\", \"summary_wm_mad\", \"summary_wm_mean\", \"summary_wm_median\", \"summary_wm_n\", \"summary_wm_p05\", \"summary_wm_p95\", \"summary_wm_stdv\", \"tpm_overlap_csf\", \"tpm_overlap_gm\", \"tpm_overlap_wm\", \"wm2max\"], \"label_encoding\": {\"0\": \"include: original rater1 doubtful0 oraccept1\", \"1\": \"exclude: original rater1=-1\"}, \"input\": \"float64 (participant scan,68 precomputed structural MRI quality metrics), missing values possible\"}\n\nAllowed imports: numpy, scipy, sklearn, math, collections, functools, itertools, statistics, gc. No file/network/subprocess access, dynamic exec/eval, pretrained assets or specialist neuroscience packages. Use deterministic seeds. One submission, no execution feedback. The entire fit_predict call must finish in180 seconds on one numerical CPU thread, approximately4GB working memory (memory request is not enforced). Keep code below240 lines including blanks. Return JSON fields description (method and training/validation policy), code (complete self-contained Python source with fit_predict and helpers). Do not claim a score.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "reasoning": {
+    "effort": "high"
+  },
+  "max_output_tokens": 24000
+}

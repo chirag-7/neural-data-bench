@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5-2025-08-07",
+  "input": "You are participating in a single-shot neuroscience code-synthesis experiment. Do not call tools, browse, read files or execute code. Return only JSON with description and code.\n\nImplement Python fit_predict(train_x,train_y,test_x) returning predictions with the specified shape. No test target labels are supplied.\n\nDecode left-vs-right imagined hand movement from real EEG. train_x/test_x shape (trials,64 channels,480 samples),160Hz,3-second epochs from 1 to4 seconds after cue. Training subjects1–5 and held-out test subjects6–8 are disjoint. Inputs microvolts, 64 EEG channels in PhysioNet order. Each trial is independent; do not join adjacent trials into continuous signals. train_y=0 left imagined fist,1 right imagined fist. Return integer predictions shape(n_test,). Primary balanced accuracy. General signal processing and spatial/statistical features may be implemented using NumPy/SciPy/sklearn; no specialist library. This is processed epoch decoding, no test calibration labels.\n\nPrepared input context: {\"train_x_shape\": [225, 64, 480], \"train_y_shape\": [225], \"test_x_shape\": [135, 64, 480], \"input\": \"float32 (trial,64 channels,480 samples), microvolts, common-average referenced\", \"input_details\": {\"sampling_rate_hz\": 160, \"epoch_seconds\": [1.0, 4.0], \"channels\": [\"FC5\", \"FC3\", \"FC1\", \"FCZ\", \"FC2\", \"FC4\", \"FC6\", \"C5\", \"C3\", \"C1\", \"CZ\", \"C2\", \"C4\", \"C6\", \"CP5\", \"CP3\", \"CP1\", \"CPZ\", \"CP2\", \"CP4\", \"CP6\", \"FP1\", \"FPZ\", \"FP2\", \"AF7\", \"AF3\", \"AFZ\", \"AF4\", \"AF8\", \"F7\", \"F5\", \"F3\", \"F1\", \"FZ\", \"F2\", \"F4\", \"F6\", \"F8\", \"FT7\", \"FT8\", \"T7\", \"T8\", \"T9\", \"T10\", \"TP7\", \"TP8\", \"P7\", \"P5\", \"P3\", \"P1\", \"PZ\", \"P2\", \"P4\", \"P6\", \"P8\", \"PO7\", \"PO3\", \"POZ\", \"PO4\", \"PO8\", \"O1\", \"OZ\", \"O2\", \"IZ\"], \"prefilter\": null, \"label_encoding\": {\"0\": \"imagined left fist\", \"1\": \"imagined right fist\"}}}\n\nAllowed imports: numpy, scipy, sklearn, math, collections, functools, itertools, statistics, gc. No file/network/subprocess access, dynamic exec/eval, pretrained assets or specialist neuroscience packages. Use deterministic seeds. One submission, no execution feedback. The entire fit_predict call must finish in180 seconds on one numerical CPU thread, approximately4GB working memory (memory request is not enforced). Keep code below240 lines including blanks. Return JSON fields description (method and training/validation policy), code (complete self-contained Python source with fit_predict and helpers). Do not claim a score.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "reasoning": {
+    "effort": "high"
+  },
+  "max_output_tokens": 24000
+}

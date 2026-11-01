@@ -1,0 +1,2 @@
+{"score": 0.8548611111111111, "metric": "class_balanced_mouse_accuracy", "direction": "higher", "per_unit": [1.0, 1.0, 0.6666666666666666, 0.8, 0.775], "unit_ids": ["AllenInstitute_707296982", "AllenInstitute_735109609", "AllenInstitute_744915204", "AllenInstitute_817060751", "AllenInstitute_820866121"], "unit_labels": [0, 1, 1, 1, 0], "unit_definition": "mouse accuracy; primary averages mice within each class before averaging classes", "n_units": 71}
+

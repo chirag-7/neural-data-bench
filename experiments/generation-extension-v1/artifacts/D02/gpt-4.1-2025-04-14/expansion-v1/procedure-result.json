@@ -1,0 +1,10 @@
+{
+  "seconds": 0.02649900014512241,
+  "submission_file": "experiments/generation-extension-v1/submissions/D02/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "2443b3cfdb0a11e0655e72906d63eaddb2e2b22e76bfbb20e542214ff9031bba",
+  "code_sha256": "9cabf17b322400cab8db283c4098c0db8ed981728e29480317302232e7579c6d",
+  "description": "This method models the cell's passive voltage response as a linear, time-invariant (LTI) system, justified by the sweep-aligned, subthreshold experimental regime, negative-only input amplitudes, and constant step inputs. The code estimates the cell's impulse response (finite impulse response kernel) using the four training sweeps, via ordinary least squares solution to the multichannel convolution equation: input current predicts voltage deflection. This learned filter is then convolved with each of the two held-out test steps to predict their voltage responses. The kernel length (impulse response duration) is chosen by cross-validation on training sweeps (leave-one-out RMSE), with an upper bound of 100 ms (50 samples) to avoid overfitting slow drifts. No nonlinearity, regularization, or feature engineering is used: this is interpolation of subthreshold, time-aligned, baseline-subtracted traces. Predictions are clipped to be finite and precisely match test_x shape. The code is fully deterministic and suitable for single-run evaluation.",
+  "code_lines": 82,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

@@ -1,0 +1,10 @@
+{
+  "seconds": 24.407013667048886,
+  "submission_file": "experiments/generation-extension-v1/submissions/F04/gpt-5-2025-08-07.json",
+  "submission_sha256": "26d125b7ff63be782588d6ebdc3f1617e44aa290a6eb032cfd6ddbaa94eea882",
+  "code_sha256": "5cb7cfa3563c26f0d61057293fd9b019b3ee61ddee467fd3bcfd9ee37a21d05f",
+  "description": "Deterministic per-neuron Poisson GLM with L2 (ridge) regularization. Features (18x18=324) are standardized once using train set mean/std. For each neuron, alpha (regularization strength) is selected by 3-fold cross-validation over a small log-spaced grid using primary objective (Poisson negative log-likelihood). The final model for each neuron is refit on all training data with the chosen alpha. Predictions for test are computed only as a function of image features; identical test images are deduplicated so their predicted rates are identical. Outputs are positive expected spike counts per 300 ms. Implementation uses sklearn.linear_model.PoissonRegressor when available, otherwise falls back to TweedieRegressor(power=1, link='log'). Randomness is fixed for reproducibility. No use of test target labels or trial indices; no external models.",
+  "code_lines": 120,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "F04",
+  "slice_id": "expansion-v1",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "ebc1de0f4cfb016e5d2e7020e7c983165f0ae438294c6020922f6e4789e32788",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/F04/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "24fed3364bb6d1f43fe32418164a092131e84f9e41ad1246a6d0d19644680123",
+  "code_sha256": "b1817939e78756b03cfce998151f26e8d01669337ae00fa7a016d7fefa4970a9",
+  "description": "We implement a regularized linear Poisson encoding model for image-driven spike counts. Each neuron is fit independently using Poisson regression (generalized linear model with log link), regularized via L2 (ridge) penalty to prevent overfitting given high-dimensional image features. To identify an appropriate regularization strength per neuron, we use 3-fold cross-validation on the training set, optimizing the mean Poisson negative log-likelihood. Predictions on the test set are computed as expected spike counts (per 300 ms) for each unique image in the test set. Identical test images (repeats) are recognized and assigned consistent rates by hashing image vectors. The final output shape is (900, 41), positive and finite, as required. All code is deterministic and uses only allowed libraries (numpy, sklearn).",
+  "code_lines": 85,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

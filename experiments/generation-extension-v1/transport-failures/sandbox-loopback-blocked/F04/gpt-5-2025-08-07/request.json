@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5-2025-08-07",
+  "input": "You are participating in a single-shot neuroscience code-synthesis experiment. Do not call tools, browse, read files or execute code. Return only JSON with description and code.\n\nImplement Python fit_predict(train_x,train_y,test_x) returning predictions with the specified shape. No test target labels are supplied.\n\nPredict expected real retinal spike counts during300ms static naturalimage flashes. Inputs are324grayscale imagefeatures (18x18 response-independent blockaverages of original108x108 pixels, upstreamimage scaling, consistenttrain/test). train_y shape(ntrain,41neurons) contains integer counts. testimages are30newimages each repeated30times (900rows); identicalimages mustget identical expectedrates (not memorize pertrial index). Return shape(ntest,41) finite positive expectedcounts per300ms,NOTHz. Primary meanPoisson negative loglikelihood over alltestrows andneurons,lowerbetter; differentneuron rates vary. Testindividual spikecountrepeats hidden; never fit to them. Trainonly regularization/validation and imagefeatures allowed, no externalmodels/weights orspecialistpackages. Rows andneurons haveconsistentordering. This is static imagecount encoding,notspikegenerationorrawimagecomprehension.\n\nPrepared input context: {\"train_x_shape\": [3160, 324], \"train_y_shape\": [3160, 41], \"test_x_shape\": [900, 324], \"input\": \"float64 (image presentation,324) fixed block-averaged intensity pixels, row-major18x18\"}\n\nAllowed imports: numpy, scipy, sklearn, math, collections, functools, itertools, statistics, gc. No file/network/subprocess access, dynamic exec/eval, pretrained assets or specialist neuroscience packages. Use deterministic seeds. One submission, no execution feedback. The entire fit_predict call must finish in180 seconds on one numerical CPU thread, approximately4GB working memory (memory request is not enforced). Keep code below240 lines including blanks. Return JSON fields description (method and training/validation policy), code (complete self-contained Python source with fit_predict and helpers). Do not claim a score.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "reasoning": {
+    "effort": "high"
+  },
+  "max_output_tokens": 24000
+}

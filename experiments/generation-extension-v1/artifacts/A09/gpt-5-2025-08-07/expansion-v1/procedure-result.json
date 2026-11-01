@@ -1,0 +1,10 @@
+{
+  "seconds": 18.235992999980226,
+  "submission_file": "experiments/generation-extension-v1/submissions/A09/gpt-5-2025-08-07.json",
+  "submission_sha256": "3105e33356a5f2c95e0757b92a00c66f506093e1b4450ee0b6a9ba023b060020",
+  "code_sha256": "4e0825b52cef42b9f9e06055f1fb3b18dd3d6a68e06aedac0d4113f630cf46bf",
+  "description": "Train a deterministic classifier on engineered spatiotemporal pose features without any cross-example smoothing. For each sample (already containing the 7 temporal offsets at [-15,-5,-1,0,1,5,15]) we build translation- and scale-robust features from the two animals\u2019 keypoints: distances (nose\u2013nose, center\u2013center, and minimum landmark distance across animals) at each offset; instantaneous separation change and approach speeds over \u00b11/\u00b15/\u00b115; individual nose speeds; head/body orientation cosines and their alignment with the inter-animal axis; head turning (cosine of angle change) over \u00b11 and \u00b15; intra-animal shape features normalized by body length (ear gap, hip gap, neck\u2013tail, nose\u2013tail, nose\u2013to\u2013center) for each animal; and several pair-centric projections (e.g., longitudinal offsets). Distances are normalized by the geometric mean of both animals\u2019 body lengths at t=0. Inputs with NaN/inf are imputed per example using the mean across its 7 offsets (fallback to 0 if all NaN). A single HistGradientBoostingClassifier (no early stopping; fixed random seed) is trained on all training data with class-balanced sample weights (inverse-frequency). Predictions are class argmax for each target frame. No features are computed across example boundaries and no temporal smoothing of outputs is performed.",
+  "code_lines": 209,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

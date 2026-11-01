@@ -1,0 +1,10 @@
+{
+  "seconds": 0.021674541058018804,
+  "submission_file": "experiments/generation-extension-v1/submissions/K05/gpt-5-2025-08-07.json",
+  "submission_sha256": "036e3d74e48cc24d1de8fbf66a6d11d3c664137494a2939615e6532ddd03a06b",
+  "code_sha256": "beed39bdd4da01a1a87d99f350bfea8121e8f3633f83c47f543aa7b45a8706a9",
+  "description": "Multi-output ridge baseline for K05. Implements donor-grouped cross-validation with block/donor macro-RMSE selection and donor/block-balanced training weights. Pipeline: within each CV fold, select top-1000 variance genes from the training fold only, z-score features using training-fold statistics, fit Ridge for alphas in {1,10,100,1000,10000}, evaluate with the primary donor_block_macro_rmse (replicates averaged within block, blocks equally weighted within donor, donors equally weighted), and pick the alpha with lowest mean RMSE across the three targets. Final model refits on all training data using the same procedure (top-1000 variance from all training, z-scored using training stats) and predicts on test; outputs are clipped to [0,1]. All transforms learned solely from training data; sample weights give each donor equal total influence and each block equal influence within donor. Deterministic ordering and seeds are used.",
+  "code_lines": 150,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

@@ -1,0 +1,37 @@
+{
+  "score": 0.0,
+  "metric": "mean_gt_accuracy",
+  "direction": "higher",
+  "n_units": 10,
+  "per_unit": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "scoring_diagnostics": {
+    "mean_gt_accuracy": 0.0,
+    "mean_precision": 0.0,
+    "mean_recall": 0.0,
+    "n_predicted_units": 0,
+    "n_gt_units": 10,
+    "per_gt_unit_accuracy": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0
+    }
+  }
+}

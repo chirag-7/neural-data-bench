@@ -1,0 +1,10 @@
+{
+  "seconds": 0.6284306249581277,
+  "submission_file": "experiments/generation-extension-v1/submissions/B08/gpt-5-2025-08-07.json",
+  "submission_sha256": "10f206ca9cdeb9158a877a4314de73b0efaa0e4d54956bd9eb9691587086e9d7",
+  "code_sha256": "843138746acc22fc38aed34a6f10e224b3e578fdc9faf7ceb6c089ba193c15eb",
+  "description": "Spike-event compressor/decompressor for task B08. Times are quantized onto a fixed 50 \u00b5s grid via monotone floor, guaranteeing nondecreasing decoded times and absolute timing error < 50 \u00b5s. The pipeline:\n- Quantize times: tick = floor(t / 5e-5) with a small positive bias to avoid boundary underflow.\n- Encode ticks: store first tick as signed varint (zigzag), then unsigned varint deltas for subsequent ticks.\n- Encode labels: build a palette of sorted unique int32 labels, encode the palette using delta + zigzag varints, and store per-event palette indices as a compact fixed-width byte array (1/2/4 bytes depending on palette size).\n- The whole payload is LZMA (XZ) compressed. Decoder uses only the blob and shared code constants; no external state. Labels are exact and order preserved; times are nondecreasing with error bound met. Implementation stays under resource limits and uses deterministic behavior.\n",
+  "code_lines": 170,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

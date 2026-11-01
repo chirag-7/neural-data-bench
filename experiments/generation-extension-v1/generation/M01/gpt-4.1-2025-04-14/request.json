@@ -1,0 +1,29 @@
+{
+  "model": "gpt-4.1-2025-04-14",
+  "input": "Single-shot neuroscience code-construction experiment. Do not call tools, browse, read files or execute during generation. Return only JSON fields description and code.\n\nImplement fit_predict(train_x,train_y,test_x,train_groups).\n\nPredict real mouse choices conditional on the current visual stimulus, known experimenter block prior, and five previously observed choices/feedbacks. This is one-step conditional probability prediction, not cognitive parameter recovery or autonomous behavioral rollout. train_groups supplies training mouse IDs for mouse-held-out validation; test mouse IDs are scorer-only. Return a finite probability P(source choice+1)=P(turnCW),one pertest row, in[0,1]. Label0sourcechoice-1(turnCCW),label1sourcechoice+1(turnCW); do not assume sign mapping from left/right, learn it from training.\nInputs13columns: contrastLeft,contrastRight,probabilityLeft,previous_choice_lag1..lag5,previous_feedback_lag1..lag5. Contrasts/blockprior in0..1; absent-side contrast=0. Past choices-1/0/+1 (0nonresponse/missing),pastfeedback-1/0/+1 (0missing). Only past responses/feedback are supplied; current/future choice, feedback, reaction time, inclusion mask, identifiers and session performance are excluded. The known block prior is experimenter metadata, not an explicitly cued animal input.\nAll100 archived animals use their latest structurally complete session by date/run/lab and first≤1000source trials. Fixed nonoverlapping six-trial blocks supply targettrial5,11,17,...with five preceding observations. Target nonresponses or invalid current contrast/prior are excluded by a fixed structural rule. Crucially, no scored test target occurs in any other test example's history. Train83mice/7696examples,test17mice/1842examples,hash-based mouse-disjoint split; nine labs appear on both sides, NOT held-out labs. Mice are weighted equally in the primary binary log-loss: compute pertestmouse meannegative log-likelihood then average mice. Scorerclipsprobabilities to[1e-6,1-1e-6]. Lowerbetter. TraininggroupIDspermitpropervalidation. No joining, ordering, matching or reconstructing examples/trials; each already has its permitted context. Fit all transformations and supervised choices on training mice only, with deterministic seeds.\n\nPrepared context: {\"train_x_shape\": [7696, 13], \"train_y_shape\": [7696], \"test_x_shape\": [1842, 13], \"feature_names\": [\"contrastLeft\", \"contrastRight\", \"probabilityLeft\", \"previous_choice_lag1\", \"previous_choice_lag2\", \"previous_choice_lag3\", \"previous_choice_lag4\", \"previous_choice_lag5\", \"previous_feedback_lag1\", \"previous_feedback_lag2\", \"previous_feedback_lag3\", \"previous_feedback_lag4\", \"previous_feedback_lag5\"], \"label_encoding\": {\"0\": \"source choice -1 turn CCW\", \"1\": \"source choice +1 turn CW\"}, \"units\": \"contrast and block probability in0..1; historical choice -1/0/+1, feedback -1/0/+1\"}\n\nAllowed imports numpy,scipy,sklearn,math,collections,functools,itertools,statistics,gc. No file/network/subprocess access, dynamic exec/eval, pretrained assets or specialist packages. One submission, no execution feedback. Entire fit_predict call must finish in180seconds on one numerical CPUthread, approximately4GB requested memory (not enforced). Keep code below240lines including blanks; deterministic seeds. Return complete self-contained Python code and concise description of training/validation policy. Do not claim a score.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "max_output_tokens": 8192
+}

@@ -1,0 +1,10 @@
+{
+  "seconds": 2.0463029998354614,
+  "submission_file": "experiments/generation-extension-v1/submissions/E01/gpt-5-2025-08-07.json",
+  "submission_sha256": "64c0fe623494f90c10509d9cdde75562331ad8fcf1a7b713e6fce0ea6588f79f",
+  "code_sha256": "22ca5d536242727ba2f3d8f07f01fb7991d2b6cdcced4d38aad9dc195f3a6fd9",
+  "description": "Multi-output ridge regression on log-counts with within-trial acausal temporal context. We model the expected spike counts of 35 held-out neurons from 107 observed neurons using a linear readout applied to lagged features of the observed population. Steps: (1) log1p-transform observed and target counts; (2) build a symmetric within-trial temporal window of observed activity (\u00b15 bins, zero-padded at trial edges so no information crosses trial boundaries); (3) flatten trials\u00d7time to a design matrix; (4) select the ridge regularization strength via 5-fold GroupKFold cross-validation over trials to avoid leakage across the same trial; (5) fit a single multi-target Ridge to predict log1p(targets) from standardized lagged features; (6) predict on test, invert with expm1, clip to nonnegative finite counts. Offline acausal context is only within the same trial, no joining/smoothing across trials. Outputs are expected counts per 20 ms bin with shape (100, 35, 35), finite and nonnegative. Deterministic seed is set.",
+  "code_lines": 129,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

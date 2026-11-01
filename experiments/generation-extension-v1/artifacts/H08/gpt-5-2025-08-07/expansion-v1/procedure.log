@@ -1,0 +1,14 @@
+
+Traceback (most recent call last):
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py", line 314, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py", line 308, in main
+    if phase == 'procedure': result = procedure(task, sid, model)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py", line 186, in procedure
+    pred = ns['fit_predict'](*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "extension-generated", line 169, in fit_predict
+  File "extension-generated", line 30, in _extract_features_night
+AttributeError: `ptp` was removed from the ndarray class in NumPy 2.0. Use np.ptp(arr, ...) instead.

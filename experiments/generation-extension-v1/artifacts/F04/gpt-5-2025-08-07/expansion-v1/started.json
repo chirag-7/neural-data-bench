@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "F04",
+  "slice_id": "expansion-v1",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "ebc1de0f4cfb016e5d2e7020e7c983165f0ae438294c6020922f6e4789e32788",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/F04/gpt-5-2025-08-07.json",
+  "submission_sha256": "26d125b7ff63be782588d6ebdc3f1617e44aa290a6eb032cfd6ddbaa94eea882",
+  "code_sha256": "5cb7cfa3563c26f0d61057293fd9b019b3ee61ddee467fd3bcfd9ee37a21d05f",
+  "description": "Deterministic per-neuron Poisson GLM with L2 (ridge) regularization. Features (18x18=324) are standardized once using train set mean/std. For each neuron, alpha (regularization strength) is selected by 3-fold cross-validation over a small log-spaced grid using primary objective (Poisson negative log-likelihood). The final model for each neuron is refit on all training data with the chosen alpha. Predictions for test are computed only as a function of image features; identical test images are deduplicated so their predicted rates are identical. Outputs are positive expected spike counts per 300 ms. Implementation uses sklearn.linear_model.PoissonRegressor when available, otherwise falls back to TweedieRegressor(power=1, link='log'). Randomness is fixed for reproducibility. No use of test target labels or trial indices; no external models.",
+  "code_lines": 120,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

@@ -253,3 +253,10 @@ Frozen contracts are in experiments/{A15,B03,B08,C06,E06,K05,K06}; E06/slices/ta
 Run python3 scripts/check_repository.py and node scripts/check_site.mjs for portable integrity. With the scientific dependencies and original local caches present, python3 scripts/validate_expansion.py independently rescores retained outputs without model calls or reference fitting. The task-specific verify_*_batch.py files expose source/scorer checks. B08's completed fresh-process decoding report is results/verification/B08-independent-final.json; do not confuse the earlier audit environment failure with a submitted method failure.
 
 Only after a complete audited batch, run scripts/release_registry.py, scripts/summarize.py and scripts/build_website.py in that order. These derive registry, central CSV/JSONL, macro data and site assets. The v0.10 ledger snapshot must remain a subset of unchanged rows. See [batch report](batch-v11.md) for source deviations and failures.
+
+
+## Four-model API extension
+
+The [GPT-4.1/GPT-5 extension](generation-extension.md) preserves the original source ledger and adds a separate sealed experiment. Its prospective manifest is a historical preparation artifact; use the separate final run-status and consolidated extension ledger for completion. Existing retained code and outputs can be audited without a paid generation. Rebuilding the new read-only summaries uses `python3 scripts/build_generation_comparison.py` and `python3 scripts/check_generation_comparison.py`; the website loads those assets atomically. Do not run the older release-building commands over sealed reports when preserving this exact study snapshot.
+
+The scientific evaluator additionally verifies the exact local interpreter, dependencies and acquired-data identities in its execution seal. A different machine should create a versioned reproduction study with its own environment record, rather than weakening the original seal or silently replacing historical results. New API generations require separately authorized credentials and spending; published responses and retained submissions make further API calls unnecessary for reviewing this run.

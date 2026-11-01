@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5-2025-08-07",
+  "input": "You are participating in a single-shot neuroscience code-synthesis experiment. Do not call tools, browse, read files or execute code. Return only JSON with description and code.\n\nImplement Python fit_predict(train_x,train_y,test_x) returning predictions with the specified shape. No test target labels are supplied.\n\nRepair ocular artifacts in EEG segments. Input rows are noisy EEG segments, train_y is matching clean EEG segments, test_x are noisy held-out segments. Data consist of semisynthetic clean+EOG mixtures from EEGdenoiseNet; neither clean nor artifact source segment crosses train/test. Return denoised array of test_x.shape. This is offline semisynthetic repair, not pristine in-vivo ground truth. Sampling and normalization context below must be respected. Primary relative RMSE = average per-segment norm(pred-clean)/norm(clean), lower better. General scipy signal processing, regression or learned estimators allowed; no external weights or specialist packages.\n\nPrepared input context: {\"train_x_shape\": [2000, 512], \"train_y_shape\": [2000, 512], \"test_x_shape\": [600, 512], \"sampling_rate_hz\": 256, \"input\": \"float32 (segments,512 samples),2 seconds,mixture standardized per segment\", \"input_details\": {\"channels\": 1, \"sampling_rate_hz\": 256, \"n_samples\": 512, \"snr_levels\": [-7, -6, -5, -4, -3, -2, -1, 0, 1, 2], \"snr_convention\": \"10 log10(RMS(clean)/RMS(scaled artifact)), literal original code convention\", \"normalization\": \"both mixture and clean target divided by mixture standard deviation\"}}\n\nAllowed imports: numpy, scipy, sklearn, math, collections, functools, itertools, statistics, gc. No file/network/subprocess access, dynamic exec/eval, pretrained assets or specialist neuroscience packages. Use deterministic seeds. One submission, no execution feedback. The entire fit_predict call must finish in180 seconds on one numerical CPU thread, approximately4GB working memory (memory request is not enforced). Keep code below240 lines including blanks. Return JSON fields description (method and training/validation policy), code (complete self-contained Python source with fit_predict and helpers). Do not claim a score.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "reasoning": {
+    "effort": "high"
+  },
+  "max_output_tokens": 24000
+}

@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "E06",
+  "slice_id": "batch-v11",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "a9b8184757172ae629aa1cdf93d53927bc420d61356e7d6b66dc8b239230727e",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/E06/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "b9195704544478058e6cc1c13a21ad19e62f2ad769d7e5f3233118484bec4643",
+  "code_sha256": "91ab7e44d3b43b3e892489e13b8bad1cc5b444c56b85cce079a530ef8651acf8",
+  "description": "Implements a high-effort ZAPBench E06 fit_predict procedure using the same architecture and transformations as the analytic NLinear reference. The model fits a separate dense temporal mapping (64\u219232 frames) over all neuron/window pairs, using ridge regression (alpha=1), with a bias term fitted without penalty. The model subtracts the last observed context frame from both input and target during fitting/prediction and restores it to output after mapping. Only training data is used for parameter fitting; no test leakage or tuning. Training and test/test-holdout samples are handled generically. Deterministic seed is set for internal repeatability. Returns a numpy array of predictions (float64, shape (len(test_x),32,256)). Adheres to requirements: no conditions, groups or non-numeric features; all test data strictly out-of-sample; no test-window joining or pooled test fitting; no nonstandard packages or pretrained networks; fit+predict in a single process/thread with bounded memory.\n\nNote: No fit/execution/repair is performed here, as per the prompt. The explicit numpy-based closed-form (ridge) regression is pooled over all neurons, stacking all training windows/neurons for efficient full-batch fit.",
+  "code_lines": 57,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

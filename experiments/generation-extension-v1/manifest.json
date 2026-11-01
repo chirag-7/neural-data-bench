@@ -1,0 +1,466 @@
+{
+  "study": "generation-extension-v1",
+  "status": "prepared_not_run_waiting_for_API_access",
+  "requested_on": "2026-11-01",
+  "new_models": [
+    {
+      "label": "GPT-4.1",
+      "requested_snapshot": "gpt-4.1-2025-04-14",
+      "reasoning_effort": null
+    },
+    {
+      "label": "GPT-5",
+      "requested_snapshot": "gpt-5-2025-08-07",
+      "reasoning_effort": "high"
+    }
+  ],
+  "main_comparison": [
+    "gpt-4.1-2025-04-14",
+    "gpt-5-2025-08-07",
+    "gpt-5.6-sol",
+    "gpt-6.1-sol"
+  ],
+  "historical_only": [
+    "gpt-6-sol"
+  ],
+  "tasks": [
+    {
+      "benchmark_id": "A09",
+      "family": "A",
+      "prompt_file": "experiments/A09/prompt.txt",
+      "prompt_sha256": "03e8846ff3619bbb94d925af4476bf125f2956f9d0bf472d1bb33a2c2f9a4a50",
+      "prompt_bytes": 2559,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/A09/protocol.md",
+      "existing_reference": [
+        "vassi-run-00"
+      ]
+    },
+    {
+      "benchmark_id": "A14",
+      "family": "A",
+      "prompt_file": "experiments/A14/prompt.txt",
+      "prompt_sha256": "699888b30f9bbf7cf8276d65cef489c028855be58504c154e9b3fb04ffcf55af",
+      "prompt_bytes": 2266,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/A14/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "A15",
+      "family": "A",
+      "prompt_file": "experiments/A15/prompt.txt",
+      "prompt_sha256": "623cd3f6590b0a8aed01cd5dc99035816884eeac58dd73296ed6ee80936c6f52",
+      "prompt_bytes": 8361,
+      "original_slices": [
+        "batch-v11"
+      ],
+      "protocol_file": "experiments/A15/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "B01",
+      "family": "B",
+      "prompt_file": "experiments/B01/prompt.txt",
+      "prompt_sha256": "81bf9c612bd66845fbed58ca676a178779cf5015f7e7ae7c62d1145caccd633d",
+      "prompt_bytes": 2094,
+      "original_slices": [
+        "sorting-v1"
+      ],
+      "protocol_file": "experiments/B01/protocol.md",
+      "existing_reference": [
+        "mountainsort5"
+      ]
+    },
+    {
+      "benchmark_id": "B03",
+      "family": "B",
+      "prompt_file": "experiments/B03/prompt.txt",
+      "prompt_sha256": "ad53c3a97af54d2ab10051a493b7ab73a718a3ea290810a838e73797d776aec1",
+      "prompt_bytes": 8584,
+      "original_slices": [
+        "batch-v11"
+      ],
+      "protocol_file": "experiments/B03/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "B07",
+      "family": "B",
+      "prompt_file": "experiments/B07/prompt.txt",
+      "prompt_sha256": "777c70b21cad61c1d9f3e6570eeead07001eb8cbeead506c3bcaf2354f5ce0b0",
+      "prompt_bytes": 2568,
+      "original_slices": [
+        "compression-v1"
+      ],
+      "protocol_file": "experiments/B07/protocol.md",
+      "existing_reference": [
+        "wavpack-high"
+      ]
+    },
+    {
+      "benchmark_id": "B08",
+      "family": "B",
+      "prompt_file": "experiments/B08/prompt.txt",
+      "prompt_sha256": "7572f4c6280846afd010cd76e368f64121dc1379dab09adb88f16d8c1fd40b6d",
+      "prompt_bytes": 5763,
+      "original_slices": [
+        "batch-v11"
+      ],
+      "protocol_file": "experiments/B08/protocol.md",
+      "existing_reference": [
+        "spikepack"
+      ]
+    },
+    {
+      "benchmark_id": "C05",
+      "family": "C",
+      "prompt_file": "experiments/C05/pilot-v1/prompt.txt",
+      "prompt_sha256": "00b53eb24dffcad2a9f3d1c4696f7078165bd897b9bac2595f3fae5d2a784b5c",
+      "prompt_bytes": 2421,
+      "original_slices": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "protocol_file": null,
+      "existing_reference": [
+        "deneux",
+        "friedrich",
+        "rupprecht"
+      ]
+    },
+    {
+      "benchmark_id": "C06",
+      "family": "C",
+      "prompt_file": "experiments/C06/prompt.txt",
+      "prompt_sha256": "11593c2e786bc00f549dbd9cd16378f54c4ae312627a21ce2c5768b12ed32670",
+      "prompt_bytes": 7943,
+      "original_slices": [
+        "batch-v11"
+      ],
+      "protocol_file": "experiments/C06/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "D02",
+      "family": "D",
+      "prompt_file": "experiments/D02/prompt.txt",
+      "prompt_sha256": "d077b7128181f627f40d6aec35bb6ca5e9a993e9e353dd946e01f7dd57aca010",
+      "prompt_bytes": 2032,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/D02/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "E01",
+      "family": "E",
+      "prompt_file": "experiments/E01/prompt.txt",
+      "prompt_sha256": "5227b10093eb9498f09a5a8625440d8192a730e5b5fdf92bb88e1e97a2c34ba2",
+      "prompt_bytes": 2326,
+      "original_slices": [
+        "area2_bump",
+        "dmfc_rsg",
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/E01/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "E06",
+      "family": "E",
+      "prompt_file": "experiments/E06/prompt.txt",
+      "prompt_sha256": "a9b8184757172ae629aa1cdf93d53927bc420d61356e7d6b66dc8b239230727e",
+      "prompt_bytes": 8390,
+      "original_slices": [
+        "batch-v11",
+        "taxis"
+      ],
+      "protocol_file": "experiments/E06/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "F04",
+      "family": "F",
+      "prompt_file": "experiments/F04/prompt.txt",
+      "prompt_sha256": "ebc1de0f4cfb016e5d2e7020e7c983165f0ae438294c6020922f6e4789e32788",
+      "prompt_bytes": 2062,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/F04/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "G01",
+      "family": "G",
+      "prompt_file": "experiments/G01/prompt.txt",
+      "prompt_sha256": "85debe58c087d2d1dc15333e763a5e80148e10474aac9571111a9f24faf0c1dd",
+      "prompt_bytes": 2607,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/G01/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "H01",
+      "family": "H",
+      "prompt_file": "experiments/H01/prompt.txt",
+      "prompt_sha256": "41454b3897f30741b80205c97c040937334ec70465a9d3b03bebaee9d8f2edd3",
+      "prompt_bytes": 2433,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/H01/protocol.md",
+      "existing_reference": [
+        "pyriemann-aligned"
+      ]
+    },
+    {
+      "benchmark_id": "H02",
+      "family": "H",
+      "prompt_file": "experiments/H02/prompt.txt",
+      "prompt_sha256": "d311e0dd3acb26d3ee738adff31b7dc3639a3cc56e816db665bf7b5eac31d1f8",
+      "prompt_bytes": 2374,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/H02/protocol.md",
+      "existing_reference": [
+        "xdawn-tslr"
+      ]
+    },
+    {
+      "benchmark_id": "H08",
+      "family": "H",
+      "prompt_file": "experiments/H08/prompt.txt",
+      "prompt_sha256": "18c7e3aab36bdbcce6a507bffe17300687548cec4bd3007e2184a876599dd339",
+      "prompt_bytes": 2424,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/H08/protocol.md",
+      "existing_reference": [
+        "yasa-eeg"
+      ]
+    },
+    {
+      "benchmark_id": "H16",
+      "family": "H",
+      "prompt_file": "experiments/H16/prompt.txt",
+      "prompt_sha256": "e5c842e5ee0d09b39b55bb2eaa655c380130dd80102a096e2da0bd4ad400a650",
+      "prompt_bytes": 2151,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/H16/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "I07",
+      "family": "I",
+      "prompt_file": "experiments/I07/prompt.txt",
+      "prompt_sha256": "e6e8905bd6dd0da46002200a77d5694ab3776b844ec80184b849b30524839742",
+      "prompt_bytes": 4393,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/I07/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "I10",
+      "family": "I",
+      "prompt_file": "experiments/I10/prompt.txt",
+      "prompt_sha256": "4590a046debb006047917f33a00fa0824a22a8a258be915da29252ccbb27ea57",
+      "prompt_bytes": 2976,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/I10/protocol.md",
+      "existing_reference": [
+        "mriqc-rfc-2017"
+      ]
+    },
+    {
+      "benchmark_id": "J08",
+      "family": "J",
+      "prompt_file": "experiments/J08/prompt.txt",
+      "prompt_sha256": "02f3ff23dfb5f22bd10ebf8e5ad43ff635b5913bb31af03090541eac15ea9196",
+      "prompt_bytes": 3114,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/J08/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "K01",
+      "family": "K",
+      "prompt_file": "experiments/K01/prompt.txt",
+      "prompt_sha256": "e25facd2e8f286ab6593c710ead89f41b411934a38b0668bcc054f1d7e50ceb7",
+      "prompt_bytes": 2041,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/K01/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "K04",
+      "family": "K",
+      "prompt_file": "experiments/K04/prompt.txt",
+      "prompt_sha256": "8ea1145c80e2bc90e94a0bb8a33233c83627ab17edddadc3f38636f51a52097a",
+      "prompt_bytes": 16849,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/K04/protocol.md",
+      "existing_reference": [
+        "singler"
+      ]
+    },
+    {
+      "benchmark_id": "K05",
+      "family": "K",
+      "prompt_file": "experiments/K05/prompt.txt",
+      "prompt_sha256": "1a0663291d4f692a158c576d6639ce242f6cf3e28ab8b3bb4b222d2ecbe6162d",
+      "prompt_bytes": 6870,
+      "original_slices": [
+        "batch-v11"
+      ],
+      "protocol_file": "experiments/K05/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "K06",
+      "family": "K",
+      "prompt_file": "experiments/K06/prompt.txt",
+      "prompt_sha256": "3c99ed7b37fb4066883ed6482a66d11fc0ffd3e41950889aaf156d7ae584e95f",
+      "prompt_bytes": 7117,
+      "original_slices": [
+        "batch-v11"
+      ],
+      "protocol_file": "experiments/K06/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "L04",
+      "family": "L",
+      "prompt_file": "experiments/L04/prompt.txt",
+      "prompt_sha256": "a935729e11e4e7c41cef174723c52e29042ef96d3dcaf7cde69cda533a2c6eca",
+      "prompt_bytes": 2067,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/L04/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    },
+    {
+      "benchmark_id": "L06",
+      "family": "L",
+      "prompt_file": "experiments/L06/prompt.txt",
+      "prompt_sha256": "9fd8e357ecf8b9c42cfd13276af3c1492a9b3ccf7cee487b1a3e2a3802de5a4a",
+      "prompt_bytes": 2627,
+      "original_slices": [
+        "posterior-v1"
+      ],
+      "protocol_file": "experiments/L06/protocol.md",
+      "existing_reference": [
+        "polya-gamma"
+      ]
+    },
+    {
+      "benchmark_id": "M01",
+      "family": "M",
+      "prompt_file": "experiments/M01/prompt.txt",
+      "prompt_sha256": "ce3ed452b97ec306c8a587a1570be8bef6efd99f6fe5ca6756d7273f37d09691",
+      "prompt_bytes": 3390,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/M01/protocol.md",
+      "existing_reference": [
+        "behavioral-glm"
+      ]
+    },
+    {
+      "benchmark_id": "M04",
+      "family": "M",
+      "prompt_file": "experiments/M04/prompt.txt",
+      "prompt_sha256": "a2dabc0280992e3d59521b83b15b027437590d02e2e116b6e5788a8229e24600",
+      "prompt_bytes": 1695,
+      "original_slices": [
+        "synthetic-v1"
+      ],
+      "protocol_file": "experiments/M04/protocol.md",
+      "existing_reference": [
+        "canonical-mle"
+      ]
+    },
+    {
+      "benchmark_id": "N05",
+      "family": "N",
+      "prompt_file": "experiments/N05/prompt.txt",
+      "prompt_sha256": "3d816aec642b0385d82343a5074e0049cf89f5f2740856d5a3ff87c276b43538",
+      "prompt_bytes": 4115,
+      "original_slices": [
+        "expansion-v1"
+      ],
+      "protocol_file": "experiments/N05/protocol.md",
+      "existing_reference": [
+        "task-baseline"
+      ]
+    }
+  ],
+  "planned_generations": 60,
+  "planned_model_slice_executions": 74,
+  "source_measurements_sha256": "0d29b6cf4f8a11359ce1b100f8db23bf19ccc5281fc3acecb617e189c33b32bb",
+  "original_ledger_will_not_be_rewritten": true,
+  "explicit_prompts": "Reuse the saved original prompt bytes; record provider/system-wrapper differences. Do not pass test labels, older submissions, scores or specialist code to generation.",
+  "cost_control": "Reserve request maximum token cost before dispatch; stop before a conservative total API ceiling of USD15. No automatic purchase or recharge.",
+  "generation_policy": "One generation per model/task, no tool calls or execution feedback. GPT-5 high; GPT-4.1 has no matching reasoning-effort setting.",
+  "repair_policy": "Any repair is separate and auditable, never silently replaces first-shot output; compare matching evidence tracks.",
+  "freeze_note": "This preparation manifest is not a completed run or final execution seal; validate adapter sources/runtime and seal the implementation before the first paid generation."
+}

@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5-2025-08-07",
+  "input": "You are participating in a single-shot neuroscience code-synthesis experiment. Do not call tools, browse, read files or execute code. Return only JSON with description and code.\n\nImplement Python fit_predict(train_x,train_y,test_x) returning predictions with the specified shape. No test target labels are supplied.\n\nImpute an interior missing landmark gap in measured rat motion-capture trajectories. Input shape(Nwindows,31 timeframes,18 coordinate features): six 3D landmarks in Rat7M order HeadF,HeadB,HeadL,SpineF,SpineM,SpineL (x,y,z each). One HeadF 7-frame gap is replaced with NaNs in each example, while other coordinates and timepoints are observed. train_y contains complete observed trajectories for training windows. Train animals1–3 and test animals4–5; windows independent and do not join them. Return full array of test_x.shape, with finite predictions at missing positions. Primary RMSE only at artificially missing positions with finite measured truth (lower better), in native mocap coordinate units (physical calibration unverified). Do not claim raw image pose capability. Offline/acausal interpolation allowed.\n\nPrepared input context: {\"train_x_shape\": [10167, 31, 18], \"train_y_shape\": [10167, 31, 18], \"test_x_shape\": [8035, 31, 18], \"feature_description\": \"Each timestep concatenates 6 landmarks xyz; HeadF xyz is NaN at window indices12:19. Recover masked entries. Other coordinates are visible and not scored.\", \"input_units\": \"native motioncapture coordinates; physical units not independently confirmed\", \"landmarks\": [\"HeadF\", \"HeadB\", \"HeadL\", \"SpineF\", \"SpineM\", \"SpineL\"], \"sample_rate_hz\": 30}\n\nAllowed imports: numpy, scipy, sklearn, math, collections, functools, itertools, statistics, gc. No file/network/subprocess access, dynamic exec/eval, pretrained assets or specialist neuroscience packages. Use deterministic seeds. One submission, no execution feedback. The entire fit_predict call must finish in180 seconds on one numerical CPU thread, approximately4GB working memory (memory request is not enforced). Keep code below240 lines including blanks. Return JSON fields description (method and training/validation policy), code (complete self-contained Python source with fit_predict and helpers). Do not claim a score.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "reasoning": {
+    "effort": "high"
+  },
+  "max_output_tokens": 24000
+}

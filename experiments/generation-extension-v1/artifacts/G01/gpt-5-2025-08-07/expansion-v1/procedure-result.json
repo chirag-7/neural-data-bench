@@ -1,0 +1,10 @@
+{
+  "seconds": 10.845795333152637,
+  "submission_file": "experiments/generation-extension-v1/submissions/G01/gpt-5-2025-08-07.json",
+  "submission_sha256": "2e05ec9fe7d4f05a637e1bbca3b083c686de3ebf847aab7e89bb0121f1984f49",
+  "code_sha256": "1943c9757f70af841d4d3662aefe51dc060dabe194b4828e8826248decbee074",
+  "description": "Causal, per-row decoder with train-only fitting. We build static, non-temporal features from each 96-D spike-count row (no smoothing across time or use of future test rows): concatenate raw nonnegative counts, sqrt-variance-stabilized counts, log1p counts, elementwise squares, and several rowwise aggregates (sum, sqrt(sum), log1p(sum), squared L2-norm). Features are standardized with a StandardScaler fit only on training data. A multi-output Ridge regression is trained. To handle cross-day drift, we select both the L2 strength (alpha) and a chronological sample-weight ramp (uniform to end-weighted) using a strictly time-ordered cross-validation (TimeSeriesSplit). Model selection uses variance-weighted R^2 across both outputs, computed on validation folds. Final model is refit on all training data with the chosen hyperparameters and applied to the test set. No operations are fit on test data; transforms are per-row and causal. Deterministic seed used. Returns continuous finite predictions shaped (n_test, 2).",
+  "code_lines": 101,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

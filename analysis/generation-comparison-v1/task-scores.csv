@@ -1,0 +1,31 @@
+benchmark_id,family,task,metric,direction,gpt-4.1-2025-04-14,gpt-5-2025-08-07,gpt-5.6-sol,gpt-6.1-sol,primary_reference,trajectory
+A09,A,Frame-level social behavior labels,macro_f1,higher,0.8532434326100573,0.825643120297422,0.8689719505732656,0.8806960154913499,0.8695177327504425,nonmonotonic or partly tied
+A14,A,Missing pose imputation,rmse_missing,lower,17.05943489074707,1.8538062020757753,0.4485493561358864,0.45059488811841064,2.4370992183685303,nonmonotonic or partly tied
+A15,A,Annotated birdsong interval detection,recording_macro_event_f1_20ms_onset_20ms_or_20pct_offset,higher,0.9919605878099995,0.979201212547653,0.9863118287200278,0.9920795405521152,0.9809624469472951,nonmonotonic or partly tied
+B01,B,Spike sorting and event detection,mean_gt_accuracy,higher,0.0,0.0803921568627451,0.8749905140758875,0.7504504504504504,0.9408960583730381,nonmonotonic or partly tied
+B03,B,Rigid drift recovery from synthetic ephys rasters,recording_mean_motion_rmse_um,lower,12.704563694454103,3.9114990756015873,3.6041552208003775,5.275098380741698,4.850138078041406,nonmonotonic or partly tied
+B07,B,Lossless Neuropixels voltage compression,encoded_bits_per_int16_sample,lower,6.63548723856608,,7.0198300679524746,7.2145891189575195,7.690052032470703,incomplete
+B08,B,Timing-bounded spike-event compression,mean_encoded_bits_per_event_50us,lower,10.79480738185973,8.1652552072995,7.585598308443002,8.636801620045114,8.142312213400157,nonmonotonic or partly tied
+C05,C,Calcium-to-spike inference,median_pearson_40ms,higher,0.19131056627303558,0.42015600087620875,0.45219611758394257,0.46789571463086227,0.47533724021819806,all steps improve
+C06,C,Calcium to electrical expected spike counts,animal_mean_neuron_pearson_smoothed200ms,higher,,0.49931548987762076,0.8564154409076183,0.8675919925239051,0.7155173445914688,incomplete
+D02,D,Current-to-voltage prediction,rmse_mV,lower,2.477160409962793,1.351431040403821,0.21777564495208945,0.23553334017447436,0.2207856527515162,nonmonotonic or partly tied
+E01,E,Neural rate inference and co-smoothing,bits_per_spike,higher,-4.27607211958728,-2.547485403373772,0.20350701311578648,0.20737613865378843,0.07200097225994366,all steps improve
+E06,E,Causal population calcium forecasting,mse_dff,lower,0.0029125121760502594,0.004443808369689206,0.0027376364848987244,0.00250692044946079,0.002912296579635152,nonmonotonic or partly tied
+F04,F,Retinal or other sensory encoding,poisson_nll,lower,2.105494692482995,1.6302367572480365,1.5506315044426546,1.5108013652511572,1.5514570822549862,all steps improve
+G01,G,Robust cross-day motor decoding,r2_variance_weighted,higher,,-0.224704814552475,0.09128554368236495,0.09464088827371597,-0.22748267650604248,incomplete
+H01,H,Motor imagery and noninvasive BCI,balanced_accuracy,higher,0.5513833992094861,0.5770750988142292,0.6488801054018445,0.6979578392621871,0.6139657444005271,all steps improve
+H02,H,ERP/P300 target decoding,subject_equal_roc_auc,higher,0.5730845665809128,0.7457725743654655,0.7571945899092973,0.7885365446735593,0.7612303198299977,all steps improve
+H08,H,Sleep staging and sleep onset,macro_f1_sleep,higher,,,0.8027158427646084,0.7922358672484364,0.7647374833018176,incomplete
+H16,H,EEG ocular/muscle artifact repair,temporal_rrmse,lower,0.6570072770118713,0.6595370769500732,0.4616066515445709,0.45338359475135803,0.6539532784253276,nonmonotonic or partly tied
+I07,I,fNIRS motor/hemodynamic decoding,balanced_accuracy,higher,0.47309941520467835,0.5950292397660819,0.4361111111111111,0.5505847953216374,0.48464912280701755,nonmonotonic or partly tied
+I10,I,MRI quality assessment across sites,balanced_accuracy,higher,0.6326315789473684,0.6707017543859649,0.6352631578947369,0.6378947368421053,0.6136842105263158,nonmonotonic or partly tied
+J08,J,Fluorescent synaptic puncta segmentation and quantification,instance_f1_iou50_multirater,higher,,,0.6433683295437704,0.57563018487252,0.8625343802858836,incomplete
+K01,K,Electrophysiological cell-type classification,macro_f1,higher,0.9277844018905058,0.9321663019693655,0.9409145106376866,0.943074240159442,0.9299751005554491,all steps improve
+K04,K,Cortical-layer label transfer,section_equal_macro_f1_7classes,higher,,,0.5050711426219323,0.5505501906955991,0.5545850046572878,incomplete
+K05,K,Supervised bulk RNA to marker-positive fractions,donor_block_macro_rmse,lower,0.04239776846005213,0.05803003834470389,0.06742367203503653,0.0552287462339175,0.05759104442612498,nonmonotonic or partly tied
+K06,K,Optotagged PV/SST classification from waveform,class_balanced_mouse_accuracy,higher,0.810813492063492,0.8548611111111111,0.8777777777777778,0.8902777777777777,0.8381944444444444,all steps improve
+L04,L,Point-process estimation and goodness of fit,bits_per_spike_train_mean,higher,-6.664439464819634,2.81716688224358,3.1947434653493336,3.263821403265054,3.273675852044799,all steps improve
+L06,L,Spiking-neuron posterior inference,c2st_accuracy_2000,lower,0.7063249886035919,0.5353500038385391,0.5125000059604645,0.5056000024080276,0.4940999984741211,all steps improve
+M01,M,Conditional mouse-choice prediction,mouse_equal_binary_log_loss,lower,0.4741733542464717,0.4492946398022002,0.436515244310296,0.43663393063728134,0.46387700122945447,nonmonotonic or partly tied
+M04,M,Cognitive model and parameter recovery,range_normalized_mae,lower,0.07069645781617521,0.07069656357491515,0.05822260584692529,0.058221490095125596,0.0706964586193028,nonmonotonic or partly tied
+N05,N,"NWB data loading, units and reproducibility",field_accuracy,higher,0.0,,1.0,1.0,1.0,incomplete

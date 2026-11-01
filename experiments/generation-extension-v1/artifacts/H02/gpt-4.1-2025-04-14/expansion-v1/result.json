@@ -1,0 +1,107 @@
+{
+  "benchmark_id": "H02",
+  "slice_id": "expansion-v1",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "measured",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "d311e0dd3acb26d3ee738adff31b7dc3639a3cc56e816db665bf7b5eac31d1f8",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/H02/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "2bc4523d5eaceba1e19688abfce3914f7d9748ed726c190336b361d9c193ed69",
+  "code_sha256": "67fff427cee86353b32864190e59e2dddcbcd102eb5e0741740a09ef21151a67",
+  "description": "This method implements a cross-person EEG P300 target detection using a linear ensemble classifier. 1) Preprocessing: Each trial is z-scored channel-wise using statistics computed from training data only. 2) Feature extraction: Temporal windows are selected based on typical P300 latency (e.g., mean signal in 300\u2013600ms after flash), and means are extracted per channel. 3) A channel-wise linear discriminant analysis (LDA) classifier is trained and combined into a meta-LDA. Regularization is selected using Leave-One-Group-Out (LOGO) cross-validation across training people, validating generalization to new people. The trained classifier is then applied to test trials after the same preprocessing and feature steps, returning one score per test trial. Calibration or threshold fitting is not performed on test data or across person boundaries.",
+  "code_lines": 81,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true,
+  "seconds": 0.7069444169756025,
+  "score": 0.5730845665809128,
+  "metric": "subject_equal_roc_auc",
+  "direction": "higher",
+  "pooled_roc_auc": 0.5700175305171526,
+  "per_unit": [
+    0.5092529296875,
+    0.5584895015698587,
+    0.6301189232223715,
+    0.6237304687499999,
+    0.5313846982758621,
+    0.5247477468652038,
+    0.6670288085937499,
+    0.5087064067398119,
+    0.5558041508547695,
+    0.6215820312500001
+  ],
+  "group_results": [
+    {
+      "group": "16",
+      "n": 768,
+      "score": 0.5092529296875,
+      "metric": "roc_auc"
+    },
+    {
+      "group": "17",
+      "n": 765,
+      "score": 0.5584895015698587,
+      "metric": "roc_auc"
+    },
+    {
+      "group": "18",
+      "n": 764,
+      "score": 0.6301189232223715,
+      "metric": "roc_auc"
+    },
+    {
+      "group": "19",
+      "n": 768,
+      "score": 0.6237304687499999,
+      "metric": "roc_auc"
+    },
+    {
+      "group": "20",
+      "n": 766,
+      "score": 0.5313846982758621,
+      "metric": "roc_auc"
+    },
+    {
+      "group": "21",
+      "n": 766,
+      "score": 0.5247477468652038,
+      "metric": "roc_auc"
+    },
+    {
+      "group": "22",
+      "n": 768,
+      "score": 0.6670288085937499,
+      "metric": "roc_auc"
+    },
+    {
+      "group": "23",
+      "n": 766,
+      "score": 0.5087064067398119,
+      "metric": "roc_auc"
+    },
+    {
+      "group": "24",
+      "n": 764,
+      "score": 0.5558041508547695,
+      "metric": "roc_auc"
+    },
+    {
+      "group": "25",
+      "n": 768,
+      "score": 0.6215820312500001,
+      "metric": "roc_auc"
+    }
+  ],
+  "n_units": 7663,
+  "scoring_seconds": 1.2550007910467684,
+  "prediction_file": "experiments/generation-extension-v1/artifacts/H02/gpt-4.1-2025-04-14/expansion-v1/predictions.npz",
+  "prediction_sha256": "a84cd149523dfed5e7344dec0e2a7d4b989c850d689463904850a8ce4c11f872",
+  "strict_format_compliant": true
+}

@@ -1,0 +1,10 @@
+{
+  "seconds": 0.7495281251613051,
+  "submission_file": "experiments/generation-extension-v1/submissions/M01/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "432e6780c2fff29b8a2ccf95b94aaaf5f00e1471a39b4afc446c29e9a59c23cf",
+  "code_sha256": "53098d6fc3efe7fee4423f0406d04f35648be5f55b8781796277cf45a2a96dc8",
+  "description": "Fit a regularized logistic regression using sklearn, treating each mouse as a group for cross-validation hyperparameter selection. Only training mice (IDs) are used for fitting and hyperparameter tuning (via GroupKFold cross-validation). Categorical history features (choices, feedbacks) are numerically encoded as provided. Data is standardized on train only, including contrasts and block prior, using means/stds from training mice. The best C (inverse regularization strength) is chosen by mouse-disjoint log-loss. Predict turnCW probability for each test example (from test-only mice), with deterministic RNG for reproducibility. All code fits in <240 lines, uses only allowed numpy, scipy, and sklearn, and does not reference any session info or joining. Probabilities are clipped to [1e-6,1-1e-6] as per scoring protocol. The design fairly estimates generalization to new mice by exclusively holding test-mouse data separate throughout all model selection and fitting.",
+  "code_lines": 70,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

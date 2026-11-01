@@ -1,0 +1,14 @@
+[
+  {
+    "requested": "gpt-4.1-2025-04-14",
+    "returned": "gpt-4.1-2025-04-14",
+    "object": "model",
+    "available": true
+  },
+  {
+    "requested": "gpt-5-2025-08-07",
+    "returned": "gpt-5-2025-08-07",
+    "object": "model",
+    "available": true
+  }
+]

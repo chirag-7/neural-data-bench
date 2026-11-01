@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "I07",
+  "slice_id": "expansion-v1",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "e6e8905bd6dd0da46002200a77d5694ab3776b844ec80184b849b30524839742",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/I07/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "6cd7c573823294b6e78a4b55b1c557328c90d71cbf411e8ae15f8a41a70afd36",
+  "code_sha256": "05f1dab9a13a78253033da4ec08a61bf68f8da838cf88a198be5d50d8bbcb9f3",
+  "description": "This solution decodes left vs right 2-second finger-tapping fNIRS optical-density trials by flattening the (136,8) trial arrays to vectors, then z-scales (standardizes) each channel/bin using only the training set. Feature selection is performed via univariate ANOVA F-score on the training trials, keeping the top 120 features (empirically safe for ~400 trials, high-dimensional data). A Linear Support Vector Machine with L2 penalty, balanced class weights, and a deterministic seed is fit to train_x and train_y. This fast and robust approach suits high-dimensional, moderate-sample-size fNIRS data and avoids overfitting. The trained pipeline is then used to predict test_x; test trials are standardized (and selected) with metrics from the training set only. Each trial is predicted independently, one label per test trial. No information about test_y is used for model selection, fitting, or transforms. The code is suitable for held-out subject/session generalization.",
+  "code_lines": 38,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

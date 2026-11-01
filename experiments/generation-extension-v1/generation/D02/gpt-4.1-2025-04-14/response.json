@@ -1,0 +1,112 @@
+{
+  "id": "resp_07705faf2328212b016ae799b8dec887d2b7b1634e1ed21156",
+  "object": "response",
+  "created_at": 1793563064,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1793563071,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-4.1-2025-04-14",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_07705faf2328212b016ae799b9382487d299d19a3e3cecc71e",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"description\":\"This method models the cell's passive voltage response as a linear, time-invariant (LTI) system, justified by the sweep-aligned, subthreshold experimental regime, negative-only input amplitudes, and constant step inputs. The code estimates the cell's impulse response (finite impulse response kernel) using the four training sweeps, via ordinary least squares solution to the multichannel convolution equation: input current predicts voltage deflection. This learned filter is then convolved with each of the two held-out test steps to predict their voltage responses. The kernel length (impulse response duration) is chosen by cross-validation on training sweeps (leave-one-out RMSE), with an upper bound of 100 ms (50 samples) to avoid overfitting slow drifts. No nonlinearity, regularization, or feature engineering is used: this is interpolation of subthreshold, time-aligned, baseline-subtracted traces. Predictions are clipped to be finite and precisely match test_x shape. The code is fully deterministic and suitable for single-run evaluation.\",\"code\":\"import numpy as np\\nimport scipy.linalg\\n\\ndef fit_predict(train_x, train_y, test_x):\\n    \\\"\\\"\\\"\\n    Predicts voltage sweeps using a linear time-invariant filter (impulse response)\\n    fitted on train_x/train_y, and applies the filter to test_x.\\n    Args:\\n        train_x: (4, 500), input currents (pA), 4 sweeps\\n        train_y: (4, 500), output voltages (mV), 4 sweeps\\n        test_x: (2, 500), input currents (pA), 2 sweeps\\n    Returns:\\n        predictions: (2, 500) float64, predicted voltage deflection (mV)\\n    \\\"\\\"\\\"\\n    n_train, T = train_x.shape\\n    n_test = test_x.shape[0]\\n    # Grid of kernel lengths to try (ms): 10, 20, ..., 100 ms = 5, 10, ..., 50 samples\\n    kernel_sizes = [5, 10, 15, 20, 25, 30, 40, 50]\\n    best_rmse = np.inf\\n    best_kernel = None\\n    best_k_size = None\\n    np.random.seed(42)\\n\\n    for k_size in kernel_sizes:\\n        # Collate input/output for linear regression (all sweeps stack up)\\n        # Each sweep: design matrix X_i is (T-k_size+1, k_size)\\n        # Each row is input_current[t:t+k_size] (reversed for convolution matching)\\n        X_blocks = []\\n        y_blocks = []\\n        for i in range(n_train):\\n            Xi = np.lib.stride_tricks.sliding_window_view(train_x[i], k_size)\\n            X_blocks.append(Xi[::-1])  # reverse for convolution correspondence\\n            y_blocks.append(train_y[i][k_size-1:])\\n        X = np.concatenate(X_blocks, axis=0)  # shape (total_timepoints, k_size)\\n        y = np.concatenate(y_blocks, axis=0)  # shape (total_timepoints,)\\n        # Fit kernel\\n        kernel, _, _, _ = np.linalg.lstsq(X, y, rcond=None)\\n\\n        # Leave-one-sweep-out validation\\n        rmses = []\\n        for i in range(n_train):\\n            idx = np.arange(n_train) != i\\n            # Concatenate all but i sweeps\\n            X_val = [np.lib.stride_tricks.sliding_window_view(train_x[j], k_size)[::-1] for j in np.where(idx)[0]]\\n            y_val = [train_y[j][k_size-1:] for j in np.where(idx)[0]]\\n            Xtr = np.concatenate(X_val, axis=0)\\n            ytr = np.concatenate(y_val, axis=0)\\n            krn, _, _, _ = np.linalg.lstsq(Xtr, ytr, rcond=None)\\n            # Predict on left-out sweep\\n            xi = np.lib.stride_tricks.sliding_window_view(train_x[i], k_size)[::-1]\\n            pred = xi @ krn\\n            tgt = train_y[i][k_size-1:]\\n            rmse = np.sqrt(np.mean((pred - tgt)**2))\\n            rmses.append(rmse)\\n        mean_rmse = np.mean(rmses)\\n        if mean_rmse < best_rmse:\\n            best_rmse = mean_rmse\\n            best_kernel = kernel.copy()\\n            best_k_size = k_size\\n    # Use best_kernel for final fit on all training data\\n    k_size = best_k_size\\n    # Refit IMPULSE RESPONSE FILTER on all training data\\n    X_blocks = []\\n    y_blocks = []\\n    for i in range(n_train):\\n        Xi = np.lib.stride_tricks.sliding_window_view(train_x[i], k_size)\\n        X_blocks.append(Xi[::-1])\\n        y_blocks.append(train_y[i][k_size-1:])\\n    X = np.concatenate(X_blocks, axis=0)\\n    y = np.concatenate(y_blocks, axis=0)\\n    kernel, _, _, _ = np.linalg.lstsq(X, y, rcond=None)\\n    # Predict on test_x sweeps\\n    preds = np.zeros((n_test, T))\\n    for j in range(n_test):\\n        # To preserve time alignment (output must be (500,)), produce lin. filter response\\n        # Pad left with zeros for convolution\\n        conv_full = np.convolve(test_x[j], kernel[::-1], mode='full')\\n        conv_resp = conv_full[:T]  # cut to 500\\n        preds[j] = conv_resp\\n    # Defensive, though not expected to need it:\\n    preds = np.where(np.isfinite(preds), preds, 0.)\\n    return preds\\n\"}"
+        }
+      ],
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "in_memory",
+  "reasoning": {
+    "context": null,
+    "effort": null,
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "neural_program",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 1.0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 476,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 1289,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1765
+  },
+  "user": null,
+  "metadata": {}
+}

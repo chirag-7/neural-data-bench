@@ -1,0 +1,29 @@
+{
+  "model": "gpt-4.1-2025-04-14",
+  "input": "You are participating in a single-shot neuroscience code-synthesis pilot.\nDo not call tools, read files, browse, or execute code. Return only the requested JSON object.\n\nTask: infer a nonnegative spike-rate/event-intensity signal from calcium fluorescence.\nImplement Python code defining:\n    fit_predict(train_calcium, train_spikes, test_calcium)\nreturning a numpy ndarray of exactly test_calcium.shape.\n\nInputs are float64 arrays. Rows are time samples at 100 Hz, columns are individual neurons.\ntrain_calcium and train_spikes have shape approximately (72000, 11), including trailing NaNs for shorter neurons.\ntest_calcium has shape approximately (72000, 5); these are different held-out neurons from the same original dataset/preparation.\nEach train column has paired calcium and ground-truth spikes. No test spike labels are provided.\nTreat neurons as separate time series; do not mix temporal boundaries between columns.\nThe test set has no correspondence to particular train-neuron columns.\nThe fluorescence is already a preprocessed trace, not raw pixels. Its scale and offset vary across neurons.\nThe runner scores each finite test neuron by Pearson correlation after summing every four adjacent 100-Hz samples (40-ms non-overlapping bins), then reports median and mean across the five neurons. Multiplying a prediction by a positive constant does not change this metric.\nOffline acausal context is allowed. This is not online BCI inference.\n\nAllowed imports: numpy, scipy, sklearn and Python standard math/collections utilities. No other packages, no specialist neuroscience solvers or pretrained weights.\nNo file I/O, network, subprocesses, dynamic exec/eval, or loading external assets.\nUse deterministic seeds, if needed. Fit or select parameters using training data only.\nThe full function must run in at most 180 seconds on one CPU thread with approximately 3 GB working memory. Avoid large dense sample-by-sample matrices.\nYou get one submission and no execution feedback. Keep code below 180 lines. Favor a robust, computationally practical solution.\nAt finite test inputs predictions must be finite and nonnegative; trailing NaNs may remain NaN.\n\nJSON output fields:\n  description: concise description of your method and any internal training/validation scheme.\n  code: complete self-contained Python source containing fit_predict and any helpers.\n\nDo not claim a score; the external runner computes it.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "max_output_tokens": 8192
+}

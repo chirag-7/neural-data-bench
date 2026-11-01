@@ -1,0 +1,10 @@
+{
+  "seconds": 2.821652292041108,
+  "submission_file": "experiments/generation-extension-v1/submissions/L06/gpt-5-2025-08-07.json",
+  "submission_sha256": "b359f11fbd08a980e80ba91a6445dc86485527aa20de140fb1916039fab9eb51",
+  "code_sha256": "4ec7ce079871c2a308cd274584cf9cbdef8ce6a80bcf297d151d003c052d91af",
+  "description": "Ten separate posteriors are sampled for a 10-parameter Bernoulli-GLM with a shared stimulus design matrix and Gaussian prior N(0, Q^{-1}). For each observation (row of spike_trains), we first find the MAP by Newton\u2019s method on the exact log posterior and compute the Laplace curvature H = X^T W X + Q at the mode (W = diag(sigma*(1-sigma))). The inverse H^{-1} is used as a fixed preconditioning (mass) matrix for a Metropolis-Adjusted Langevin Algorithm (MALA). Proposals are preconditioned: beta' = beta + 0.5 * eps^2 * H^{-1} grad(beta) + eps * L z, with L the Cholesky of H^{-1}, and the MH correction uses the exact asymmetric Gaussian proposal densities. The log posterior and gradient are evaluated exactly at both current and proposed states. The step size eps is adapted during burn-in via a Robbins\u2013Monro update on log eps to target an average acceptance rate of about 0.57, then frozen. Burn-in defaults to max(600, min(1200, n_samples//8)). After burn-in, exactly n_samples draws are returned per observation. This approach captures joint covariance and dependence while keeping computation fast (small p, n=100). RNG is deterministic via the provided seed. Output shape is (10, n_samples, 10) with finite float64 values.",
+  "code_lines": 142,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

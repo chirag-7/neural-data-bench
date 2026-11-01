@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "K01",
+  "slice_id": "expansion-v1",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "e25facd2e8f286ab6593c710ead89f41b411934a38b0668bcc054f1d7e50ceb7",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/K01/gpt-5-2025-08-07.json",
+  "submission_sha256": "44d1e6f970a407acc99e5acb0bf40f7fd27524b0013620b36cdef29a53c8bebf",
+  "code_sha256": "e9788d887ed6c53112a6a9599441a19a9968718f286083d2a14e5d32cdba97bf",
+  "description": "Deterministic, donor-disjoint-ready classifier for spiny/aspiny morphology from 11 electrophysiological features. Training-time preprocessing is applied only on training folds. The method builds an equal-weight ensemble of four complementary models: (1) logistic regression on standardized, median-imputed features with missing-value indicators; (2) HistGradientBoosting (handles NaNs natively; falls back to GradientBoosting + imputation if HGB is unavailable), fit with class-balanced sample weights; (3) RandomForest with class_weight balanced and imputation; (4) ExtraTrees with class_weight balanced and imputation. We perform 5-fold StratifiedKFold to generate out-of-fold (OOF) ensemble probabilities for the training set: for each fold, every base model is fit on the fold\u2019s training split (preprocessing fitted only on that split), produces validation probabilities, and also predicts the test set. Within each fold, base probabilities are averaged to form the fold-ensemble probability. OOF ensemble probabilities are concatenated to cover all training rows; test ensemble probabilities are averaged across folds. A single decision threshold is chosen by maximizing macro-F1 on the OOF ensemble probabilities (balanced accuracy is used as a tie-breaker, with preference toward thresholds close to 0.5 if still tied). The final test labels are obtained by applying this threshold to the averaged test ensemble probabilities. Seeds are fixed for reproducibility and all tree models use n_jobs=1 to comply with single-thread constraints.",
+  "code_lines": 232,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

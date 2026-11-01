@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "D02",
+  "slice_id": "expansion-v1",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "d077b7128181f627f40d6aec35bb6ca5e9a993e9e353dd946e01f7dd57aca010",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/D02/gpt-5-2025-08-07.json",
+  "submission_sha256": "b94825608cc48f4b2c32fd2502edb2af4c47a5135c4ec7eb7e1415b6fedc52b9",
+  "code_sha256": "128bbe596a0a35a17679a2198dea9227e707d3501195ef43a5a758e326104ba2",
+  "description": "Deterministic passive interpolation using a time-varying linear gain estimated from training sweeps. For each time sample t, we fit a zero-intercept ordinary least-squares slope g(t) between voltage deflection and injected current across the four training amplitudes: g(t) = sum_j x_j(t)*y_j(t) / sum_j x_j(t)^2. This yields the step response shape per unit current. We then smooth g(t) with a short symmetric Hamming window, calibrate its steady-state scale to match the slope estimated from the last 20% of samples (preserving the correct resistance), and enforce physical constraints (non-negativity, monotonic increase via cumulative maximum, and g(0)=0). Predictions for the two held-out sweeps are obtained by pointwise multiplication y_pred(t) = g_hat(t) * x_test(t). No test labels are used; rows are treated independently; only linear passive interpolation within a single cell is assumed. The method is vectorized, uses no randomness, and returns finite outputs with the same shape as test_x.",
+  "code_lines": 95,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

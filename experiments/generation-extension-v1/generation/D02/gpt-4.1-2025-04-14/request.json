@@ -1,0 +1,29 @@
+{
+  "model": "gpt-4.1-2025-04-14",
+  "input": "You are participating in a single-shot neuroscience code-synthesis experiment. Do not call tools, browse, read files or execute code. Return only JSON with description and code.\n\nImplement Python fit_predict(train_x,train_y,test_x) returning predictions with the specified shape. No test target labels are supplied.\n\nPredict passive intracellular voltage deflection from injected hyperpolarizing current for one mouse cell. Each row is an independently held-out stimulus sweep: train4 sweeps, test2 sweeps; each has500 consecutive samples at500Hz (dt=.002s), one-second constant-current step. Input currents in pA, outputs voltage deflection mV relative to each sweep's measured PRE-stimulus rest. This initial reference voltage is allowed to establish zero; test pulse responses are hidden. Negative current gives negative deflection. Training amplitudes -110,-70,-30,-10pA, heldout -90,-50pA. Return test_x.shape (2,500) voltage deflections, finite. Primary RMSE over both complete sweeps, lower better. Rows must not be joined; arbitrary future/offline fitting allowed. This is interpolation within a single cell's passive response regime, no spike or cross-cell claim.\n\nPrepared input context: {\"train_x_shape\": [4, 500], \"train_y_shape\": [4, 500], \"test_x_shape\": [2, 500], \"sampling_rate_hz\": 500, \"input\": \"float64 (sweep,500), current pA relative to pre-step current, block-averaged 500 Hz\"}\n\nAllowed imports: numpy, scipy, sklearn, math, collections, functools, itertools, statistics, gc. No file/network/subprocess access, dynamic exec/eval, pretrained assets or specialist neuroscience packages. Use deterministic seeds. One submission, no execution feedback. The entire fit_predict call must finish in180 seconds on one numerical CPU thread, approximately4GB working memory (memory request is not enforced). Keep code below240 lines including blanks. Return JSON fields description (method and training/validation policy), code (complete self-contained Python source with fit_predict and helpers). Do not claim a score.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "max_output_tokens": 8192
+}

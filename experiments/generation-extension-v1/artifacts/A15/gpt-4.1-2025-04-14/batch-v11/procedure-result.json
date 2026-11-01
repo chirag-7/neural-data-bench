@@ -1,0 +1,10 @@
+{
+  "seconds": 20.281917584128678,
+  "submission_file": "experiments/generation-extension-v1/submissions/A15/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "873bcb010468c9822cf8cc147757eed538f9a81c5c28968f9bcaa333c78a53c2",
+  "code_sha256": "084ca27e4e8cc0e3227cc75785465b68a563018a009d1ae580d6ed503a50f042",
+  "description": "Fit a scipy+sklearn pipeline for supervised binary (event) detection in 1ms frames, trained on annotated Bengalese finch audio. The feature pipeline computes log-mel-like band energies from the STFT, noise-floor normalizes per recording, then augments with broadband power and temporal smoothing. Classifier is HistGradientBoosting (with fixed seeds and hyperparameters), trained and threshold optimized on 60 training recordings using held-out whole recording rows for validation. At prediction, test recordings undergo identical STFT/feature extraction and normalization, then are classified, thresholded and post-processed (gap fill, minimum duration enforcement). NaN padded regions in input are ignored and predicted as zeros. The output is an (20, 18354) binary int ndarray with required units and mask semantics. No source annotations, files or test-grouping are visible during fitting.",
+  "code_lines": 200,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

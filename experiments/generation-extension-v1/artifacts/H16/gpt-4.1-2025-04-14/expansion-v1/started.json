@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "H16",
+  "slice_id": "expansion-v1",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "e5c842e5ee0d09b39b55bb2eaa655c380130dd80102a096e2da0bd4ad400a650",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/H16/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "f032ed0846c30affce6facb262ebd1409af36caa97c233f28fe87b1ba7c9456a",
+  "code_sha256": "a46d5c4294621e2c47780df2acb103806d5e7fd6e946f76d42bfd18e1e598c73",
+  "description": "This solution repairs ocular (EOG) artifacts in EEG segments using a supervised regression approach with frequency-wise Wiener filtering, leveraging the matched pairs of noisy (mixture) and clean EEG segments. The core concept is that ocular artifacts are stereotyped, broadly low-frequency, and their mixing is linear, so learned linear spectral-domain filtering is a practical approach. All segments are one channel, standardized per segment, with 512 samples (2 seconds at 256 Hz). The algorithm proceeds as follows: \n\n1. Both train_x (mixture) and train_y (matched clean EEG) are transformed with the real FFT (rFFT) along the time axis per segment, yielding frequency coefficients.\n2. For each frequency bin, a linear regression model (Ridge regression, \u0001=0.05 for robustness to collinearity and noise) is fit from the noisy train_x rFFT coefficient to the clean train_y rFFT coefficient.\n3. For each held-out noisy segment in test_x, rFFT is applied, frequency-wise denoised coefficients are predicted using the learned regression weights, and the inverse rFFT reconstructs the time-domain denoised segment.\n4. Output shape matches test_x.\n\nThis method handles both amplitude and phase adjustments per frequency, robustly attenuates linear ocular artifacts, and internalizes the normalization regime of the data. Ridge regression (rather than OLS) helps avoid overfitting or instability due to the semi-synthetic mixing. The method uses no external weights nor specialist packages. All inference and reconstruction is vectorized for efficiency; only numpy and sklearn (for Ridge) are used. No information about test target labels is used, in accord with standard offline artifact removal expectations.",
+  "code_lines": 54,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

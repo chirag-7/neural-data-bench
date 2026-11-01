@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "K01",
+  "slice_id": "expansion-v1",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "e25facd2e8f286ab6593c710ead89f41b411934a38b0668bcc054f1d7e50ceb7",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/K01/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "bdb437266deb2ffb158771a156199b46316a7a75e0600da28266f866329d8886",
+  "code_sha256": "df75efc7495c6bbb8303576e38d8e9b79a92e9505d6665f33e4d2bf3d8d1c9fb",
+  "description": "This implementation predicts independent expert morphology labels (0: aspiny, 1: spiny) from 11 electrophysiology features per cell, with possible NaNs. The task requires donor-generalizing predictions: no overlap between train and test donors. To maximize macro-F1 and balanced accuracy, it preprocesses features using robust median imputation (to avoid train/test leakage), then standardizes with RobustScaler (median and IQR) fitted on training data. For classification, a deterministic RandomForestClassifier with class_weight='balanced' is used to mitigate class imbalance and provide non-linear decision boundaries. 5-fold (StratifiedKFold) CV is run on training data to set the best max_depth (macro-F1), restricted to a grid [3,5,7,9,13,17,21] as a compromise between expressiveness and overfitting risk (due to donor split). A deterministic (seeded) model is used. The final model with this hyperparameter is then fitted to all training data and used for test prediction. All pipeline steps (imputation, scaling, classifier) are composed in a sklearn Pipeline for robust and easy transformation. Predictions for the test set are returned as a 1D numpy array of integers of length n_test. No file/network I/O or external dependencies are used.",
+  "code_lines": 66,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

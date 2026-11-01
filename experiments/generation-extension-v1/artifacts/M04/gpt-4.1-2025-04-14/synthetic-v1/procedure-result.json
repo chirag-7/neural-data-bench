@@ -1,0 +1,10 @@
+{
+  "seconds": 5.842791457893327,
+  "submission_file": "experiments/generation-extension-v1/submissions/M04/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "4d0b2e2305f9cf7dd8d0e7960c815dd53134e4d4172324fdab5d376545ff824d",
+  "code_sha256": "4c83823ab6b24c04d110588a6d34539a5a7e0d0127bf6c28b39b9923806b48ae",
+  "description": "This code estimates the Q-learning parameters (alpha: learning rate, beta: inverse temperature) for each independent agent based on their choice and reward history. The fitting is done via maximum likelihood estimation, explicitly simulating the Q-learning process per parameter candidate. The code uses bounded optimization (L-BFGS-B) with multiple restarts for each agent to minimize the negative log-likelihood, carefully handling the initialization and constraints. The final result is a (N,2) ndarray of agent-wise (alpha, beta) estimates.",
+  "code_lines": 76,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

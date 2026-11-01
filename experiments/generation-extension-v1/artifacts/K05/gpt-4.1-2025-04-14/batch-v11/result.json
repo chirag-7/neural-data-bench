@@ -1,0 +1,43 @@
+{
+  "benchmark_id": "K05",
+  "slice_id": "batch-v11",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "measured",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "1a0663291d4f692a158c576d6639ce242f6cf3e28ab8b3bb4b222d2ecbe6162d",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/K05/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "67f10b13217b88c0145e46560bbb9ad2b60931dba36f92a338f976d38f7eca58",
+  "code_sha256": "3a407923989cffebfab8d18e867853d85d7c350149f10a2315d74616a4d9e51a",
+  "description": "Implements group-aware multi-output Ridge regression to predict IF/RNAScope nuclear fractions (Astro, EndoMural, Inhib) from bulk RNA-seq using only information available from training data. Performs grouped cross-validation by donor (from train_groups) with block-adjusted weighting to select regularization (alpha), gene scaling, and reduces overfitting to technical/training replicate structure. All hyperparameters and feature selection are learned solely from the training set. The model outputs clipped predicted fractions for the held-out test set, with shape (24,3).",
+  "code_lines": 130,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true,
+  "seconds": 0.029988290974870324,
+  "score": 0.04239776846005213,
+  "metric": "donor_block_macro_rmse",
+  "direction": "lower",
+  "per_unit": [
+    0.021489889987547754,
+    0.04770704942156764,
+    0.0475279234914348
+  ],
+  "unit_ids": [
+    "Br2720",
+    "Br6423",
+    "Br6471"
+  ],
+  "unit_definition": "donor-level macro RMSE; primary recomputes square root after pooling donor MSEs",
+  "n_units": 24,
+  "scoring_seconds": 0.14176149992272258,
+  "prediction_file": "experiments/generation-extension-v1/artifacts/K05/gpt-4.1-2025-04-14/batch-v11/predictions.npz",
+  "prediction_sha256": "a945ad0eec283e4f49a5db6cffd9833d6ff371c0acb6cd7b3dd5e702938ffc80",
+  "strict_format_compliant": true
+}

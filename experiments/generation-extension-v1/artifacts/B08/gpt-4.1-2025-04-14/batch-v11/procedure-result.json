@@ -1,0 +1,10 @@
+{
+  "seconds": 3.7851392088923603,
+  "submission_file": "experiments/generation-extension-v1/submissions/B08/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "7917e41f0443819cd6d98c68e2fe8fb269d746af50525a499e4482ba71aeb5ce",
+  "code_sha256": "fe805a3b4188299c247b73664ff2d496b25bc4bfaa56d1fd8af271149a84026f",
+  "description": "A lossy compression scheme for globally time-sorted float64 event times (sec) and int32 labels, optimized for sub-50\u03bcs precision and mean bits/event. Timestamps are delta-encoded at 10\u03bcs quantization, then packed as unsigned varints for size efficiency. Labels are stored as int32s. All data is streamed with headers, and compressed with zlib at max compression. Decompression unpacks and reconstructs approximate event times and exact labels. No dynamic state or file access; all standard Python3/NumPy/struct/zlib; deterministic output via seeded shuffling is not required. Meets B08 contract under specified constraints.",
+  "code_lines": 73,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

@@ -1,0 +1,10 @@
+{
+  "seconds": 26.549525832990184,
+  "submission_file": "experiments/generation-extension-v1/submissions/B07/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "49704863357bf37c6744024f41308672bc38cc4674c3f5a8cf20e8aa4f2f58b8",
+  "code_sha256": "8f2a5c1f975b295ede3ec41242c90feedee1178552385bfbf654268e61bf823a",
+  "description": "This codec compresses Neuropixels voltage recordings (C-contiguous int16 arrays, shape (4096,384), dtype '<i2') losslessly and decodes them exactly. Compression uses a two-stage process: 1) a simple predictive coding step (per-channel delta, i.e., storing differences along time for each channel), followed by 2) standard entropy compression (zlib, bz2, or lzma) selected for best compression per-chunk. The first row of each channel is stored verbatim for reconstruction. The compressed blob stores a header with a mode selector and all necessary metadata for decoding. Decompression uses the shape/dtype arguments and the header to restore the original array exactly. No cross-chunk state, external source info, or learning is used. All prediction and compression steps use reproducible, deterministic logic. The output blob size is minimized while satisfying exact reconstruction requirements.",
+  "code_lines": 86,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

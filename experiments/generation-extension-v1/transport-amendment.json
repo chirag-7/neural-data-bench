@@ -1,0 +1,33 @@
+{
+  "reason": "Sandbox blocked loopback before bridge dispatch; no provider response or generation occurred. Preserve failed local invocations, resume identical sealed requests with network permission.",
+  "tasks": [
+    "H16",
+    "C06",
+    "K05",
+    "G01",
+    "M01",
+    "K04",
+    "I07",
+    "J08",
+    "F04",
+    "L04",
+    "B03",
+    "C05",
+    "K06",
+    "M04",
+    "A09",
+    "E01",
+    "E06",
+    "I10",
+    "A14",
+    "A15",
+    "B01",
+    "H08",
+    "H01",
+    "B08",
+    "D02",
+    "L06",
+    "N05",
+    "B07"
+  ]
+}

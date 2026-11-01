@@ -1,0 +1,13 @@
+# Earlier-generation extension: prepared, not run
+
+The user requested replacing GPT-6 Sol in the main 30-task comparison with GPT-5 and GPT-4.1 while retaining GPT-5.6 Sol and GPT-6.1 Sol. GPT-6 results stay in historical evidence. New requested snapshots are `gpt-5-2025-08-07` and `gpt-4.1-2025-04-14`; account access must be verified before any generation. No scores or completed experiments are claimed by this folder.
+
+The manifest records all 30 existing prompt hashes and 37 evaluation slices per model. The new cohort plans 60 code generations and 74 slice executions, reusing saved data/splits/scorers. The original measurement ledger and frozen runners remain unchanged. Implement the new runner separately and seal it before calls. B08 uses the already documented heapq-only harness correction, disclosed for every effective comparison. Complete output and code-length requirements remain visible.
+
+Use the original saved prompt bytes, one generation, no tools or feedback, deterministic local numerical execution and each task's original line/time/import rules. GPT-5 uses high reasoning; GPT-4.1 has no equivalent setting. Save snapshot returned by the provider, request ID, prompt/response/code hashes, usage, elapsed time, failed/truncated responses and all paid attempts. Do not silently retry a bad scientific answer. Any manual repair must form a separate track under the same disclosure rules as prior repairs.
+
+The existing Sol programs were generated through Codex, while new programs would use the OpenAI API. Identical explicit prompts do not make hidden instructions or inference resources identical. Describe this as a historical model-and-provider comparison; it does not identify a pure training-compute scaling law. The 30 tasks were already inspected before this extension, so the extension is retrospective, not a new blind benchmark.
+
+Keep credentials outside the repository, website and ordinary chat. The user completes login/payment/key setup through the browser. Never commit tokens or place them in a frontend bundle. API generation should reserve a conservative maximum request cost before dispatch and stop before USD15 total. No automatic purchase/recharge is authorized by this plan. Any API billing purchase is completed by the user.
+
+Publish the four-model comparison after real outputs have been executed and audited. Do not create placeholder scores or treat access failures as scientific performance. Preserve the sealed three-model macro report as historical; calculate a separately versioned four-model analysis with explicit missingness, compliance, provider and repair sensitivities.

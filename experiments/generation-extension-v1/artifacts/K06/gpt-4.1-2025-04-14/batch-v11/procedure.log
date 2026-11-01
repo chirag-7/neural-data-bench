@@ -1,0 +1,28 @@
+{"seconds": 0.9689302088227123, "submission_file": "experiments/generation-extension-v1/submissions/K06/gpt-4.1-2025-04-14.json", "submission_sha256": "e119efbf97ab6dd84fbe85b77edb187c81112893cb7df91044425dc03ea6ba0b", "code_sha256": "324420e92839dea582de9f525b26056956c56addc966c09fad0a5f374617e7e2", "description": "This implementation solves the specified task\u2014mouse-disjoint optotagged PV/SST waveform classification\u2014using a rigorous, neuroscience-appropriate cross-validation and pipeline selection scheme. It precisely heeds grouping and class balance for validation, never using leak-prone test or biological info for training processes. Preprocessing uses median imputation and standardization on training data only. Two model types (RBF SVM and ExtraTrees) are compared using three-fold, mouse-stratified cross-validation, strictly via the provided cv_fold vector and using only the provided mouse IDs for grouping. Within the given computational constraints and deterministic seeding, it selects the best CV performer and predicts labels for the held-out test set. The solution is complete, self-contained, and consistent with the provided context.", "code_lines": 117, "line_limit_compliant": true, "line_limit_exclusive": 240}
+
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(

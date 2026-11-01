@@ -1,0 +1,35 @@
+{
+  "benchmark_id": "N05",
+  "requested_model": "gpt-4.1-2025-04-14",
+  "prompt_sha256": "3d816aec642b0385d82343a5074e0049cf89f5f2740856d5a3ff87c276b43538",
+  "request_sha256": "893212ada0aa55041c5af23fce398087900c6b44bb10102dcdcff0b5342dc499",
+  "generation_seal_sha256": "7655fe3656b1dc371248b7f1134bbab21e5cea929028f7e306ad2961af062531",
+  "provider": "OpenAI Responses API",
+  "tools_enabled": false,
+  "generation_replicate": 1,
+  "execution_feedback": false,
+  "started_unix": 1793563187.450454,
+  "response_sha256": "c6f2c36100a46965d57b9c77ec09049102d0cd8a28619b158cfe9f2fea217db4",
+  "response_id": "resp_011ec2910c3b11c1016ae79a3393b887d28dd0631eb4767929",
+  "returned_model": "gpt-4.1-2025-04-14",
+  "usage": {
+    "input_tokens": 947,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 3141,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4088
+  },
+  "provider_status": "completed",
+  "status": "generated",
+  "submission_file": "experiments/generation-extension-v1/submissions/N05/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "bf0fb759d3e58c58f9f02a6ac0f76d5707e3694b4c477088276c5d7987a089b4",
+  "code_sha256": "345735bc2e07662052eeb32ea735bd2dcd444b33a8ca0ea5dbe15396beb7f5b7",
+  "code_lines": 252,
+  "python_syntax_valid": true,
+  "elapsed_seconds": 15.618174076080322
+}

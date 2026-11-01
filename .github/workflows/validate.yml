@@ -19,3 +19,4 @@ jobs:
           python3 scripts/check_repository.py
           python3 scripts/check_macro.py
           python3 scripts/check_practical_review.py
+          python3 scripts/check_generation_comparison.py

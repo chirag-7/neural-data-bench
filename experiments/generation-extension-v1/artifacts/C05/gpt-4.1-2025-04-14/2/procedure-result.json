@@ -1,0 +1,10 @@
+{
+  "seconds": 0.45059524988755584,
+  "submission_file": "experiments/generation-extension-v1/submissions/C05/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "d135423f6eca0d2809348bc41914f35b81ebd3b510cc2134f382e39968364a32",
+  "code_sha256": "b84909a7983a7d41fe9b1c8ae86a009e6806f3631f00d5eb14e86e258f1f0fb0",
+  "description": "This method fits a simple parametric nonnegative deconvolution model, separately for each train neuron, to approximate spike rates from the calcium trace. For each train neuron, we use non-negative least squares (scipy.optimize.nnls) to learn a calcium\u2192spike kernel of configurable lag (default 6 lags, 0.06 s). This is equivalent to fitting a temporal convolution kernel that predicts spike rate from past fluorescence. After removing trailing NaNs, the kernel is fit on each train neuron's available data, with optional z-scoring for fluorescence and spikes to handle scale differences. For test neurons, we standardize using their own mean and std (ignoring NaNs), and for each test neuron we select the train neuron (kernel) whose fit on held-out train data best matches the test neuron's own calcium standard deviation (and number of available samples). The selected kernel is convolved with the test fluorescence (acausally, as the function is run offline) and predictions are re-centered and rescaled as needed. Negative values are set to zero, and original NaNs are retained. Prediction shape matches test_calcium. All code is vectorized across time. No cross-neuron mixing occurs in any step.",
+  "code_lines": 87,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 180
+}

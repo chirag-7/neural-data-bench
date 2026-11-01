@@ -1,0 +1,36 @@
+{
+  "study": "generation-extension-v1",
+  "completed_utc": "2026-11-01T20:28:47.505081+00:00",
+  "models": [
+    "gpt-4.1-2025-04-14",
+    "gpt-5-2025-08-07"
+  ],
+  "task_count": 30,
+  "family_count": 14,
+  "planned_generations": 60,
+  "provider_call_count": 60,
+  "model_slice_attempts": 74,
+  "counts": [
+    {
+      "model": "gpt-4.1-2025-04-14",
+      "measured": 32,
+      "failed": 5
+    },
+    {
+      "model": "gpt-5-2025-08-07",
+      "measured": 32,
+      "failed": 5
+    }
+  ],
+  "cost_policy": "Conservative uncached-rate token accounting; unused credit remains in the account; no automatic recharge.",
+  "conservative_spent_or_reserved_usd": 4.1264015,
+  "actual_uncached_rate_usd": 4.1264015,
+  "budget_ceiling_usd": 15,
+  "input_sha256": {
+    "experiments/generation-extension-v1/manifest.json": "e6dd423326c238fd1c2d4cef9d16de597e08446ae2aa3201c56efaf088f87ada",
+    "experiments/generation-extension-v1/generation-seal.json": "7655fe3656b1dc371248b7f1134bbab21e5cea929028f7e306ad2961af062531",
+    "experiments/generation-extension-v1/execution-seal.json": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+    "experiments/generation-extension-v1/api-cost-ledger.json": "f512534fcaea51213cc344af77bf088ad0d627d2d8f98a4c98ffb7baa9b87958",
+    "experiments/generation-extension-v1/saved-output-audits.json": "dd4208536b919c62dca6e812628735492d191223d1a2fd87723d1218dace6b76"
+  }
+}

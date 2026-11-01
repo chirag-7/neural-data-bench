@@ -1,0 +1,77 @@
+{
+  "nwb_version": "unknown",
+  "sweeps": {
+    "19": {
+      "sampling_rate_hz": null,
+      "n_samples": null,
+      "dt_seconds": null,
+      "response_stored_unit": null,
+      "stimulus_stored_unit": null,
+      "main_pulse_onset_s": null,
+      "main_pulse_duration_s": null,
+      "main_pulse_amplitude_pa": null,
+      "pre_stimulus_voltage_mv": null,
+      "mean_pulse_voltage_deflection_mv": null
+    },
+    "20": {
+      "sampling_rate_hz": null,
+      "n_samples": null,
+      "dt_seconds": null,
+      "response_stored_unit": null,
+      "stimulus_stored_unit": null,
+      "main_pulse_onset_s": null,
+      "main_pulse_duration_s": null,
+      "main_pulse_amplitude_pa": null,
+      "pre_stimulus_voltage_mv": null,
+      "mean_pulse_voltage_deflection_mv": null
+    },
+    "21": {
+      "sampling_rate_hz": null,
+      "n_samples": null,
+      "dt_seconds": null,
+      "response_stored_unit": null,
+      "stimulus_stored_unit": null,
+      "main_pulse_onset_s": null,
+      "main_pulse_duration_s": null,
+      "main_pulse_amplitude_pa": null,
+      "pre_stimulus_voltage_mv": null,
+      "mean_pulse_voltage_deflection_mv": null
+    },
+    "22": {
+      "sampling_rate_hz": null,
+      "n_samples": null,
+      "dt_seconds": null,
+      "response_stored_unit": null,
+      "stimulus_stored_unit": null,
+      "main_pulse_onset_s": null,
+      "main_pulse_duration_s": null,
+      "main_pulse_amplitude_pa": null,
+      "pre_stimulus_voltage_mv": null,
+      "mean_pulse_voltage_deflection_mv": null
+    },
+    "23": {
+      "sampling_rate_hz": null,
+      "n_samples": null,
+      "dt_seconds": null,
+      "response_stored_unit": null,
+      "stimulus_stored_unit": null,
+      "main_pulse_onset_s": null,
+      "main_pulse_duration_s": null,
+      "main_pulse_amplitude_pa": null,
+      "pre_stimulus_voltage_mv": null,
+      "mean_pulse_voltage_deflection_mv": null
+    },
+    "24": {
+      "sampling_rate_hz": null,
+      "n_samples": null,
+      "dt_seconds": null,
+      "response_stored_unit": null,
+      "stimulus_stored_unit": null,
+      "main_pulse_onset_s": null,
+      "main_pulse_duration_s": null,
+      "main_pulse_amplitude_pa": null,
+      "pre_stimulus_voltage_mv": null,
+      "mean_pulse_voltage_deflection_mv": null
+    }
+  }
+}

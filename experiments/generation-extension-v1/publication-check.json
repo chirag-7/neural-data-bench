@@ -1,0 +1,6 @@
+{
+  "credential_pattern_scan": "passed",
+  "exception": "Opaque provider-returned reasoning encrypted_content is retained byte-identically; random base64 substrings are not API keys. No credential is sent in a generation request body or returned as an output field.",
+  "provider_reasoning_ciphertext_fields_retained": 30,
+  "api_credentials_in_repository": false
+}

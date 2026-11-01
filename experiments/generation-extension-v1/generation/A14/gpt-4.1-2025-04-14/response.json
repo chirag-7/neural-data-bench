@@ -1,0 +1,112 @@
+{
+  "id": "resp_0bbdc93a93125521016ae79976521087d281cc62ad55e00209",
+  "object": "response",
+  "created_at": 1793562998,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1793563004,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-4.1-2025-04-14",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0bbdc93a93125521016ae79977023c87d2889c2e0640f1c45c",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"description\":\"This method imputes missing 7-frame interior gaps of HeadF xyz landmarks in rat 3D motion-capture windows using a non-iterative K-Nearest Neighbors (KNN) regression approach, fitted per HeadF coordinate. For each of the 7 masked frames (window indices 12:19), a separate KNN regressor is trained using valid frames from the training set (excluding masked test animal indices, leveraging only animals 1–3 from training). The regressors predict HeadF's missing values based on the 15 other fully-observed features (all non-HeadF landmark xyz positions at the same timepoint), using the corresponding features in test windows. The approach is fully offline and acausal, making predictions for masked frames solely from their observed coordinates. Predictions are reassembled into the original test_x shape with only the masked locations replaced, ensuring finite values at those locations and strict separation of animals by dataset split. The number of neighbors is fixed (k=5), and regression is non-weighted for simplicity; training points with NaNs in predictors or targets are excluded. The method is deterministic, using no random processes. No temporal dynamics or sequence modeling is invoked; the prediction leverages only spatial geometric context at each imputation frame. No browsing or file I/O occurs. All computation fits in a single fit_predict function, conforming to time and memory constraints.\",\"code\":\"import numpy as np\\nfrom sklearn.neighbors import KNeighborsRegressor\\n\\ndef fit_predict(train_x, train_y, test_x):\\n    # Landmark indices (each has x, y, z):\\n    # HeadF=0, HeadB=1, HeadL=2, SpineF=3, SpineM=4, SpineL=5\\n    # Features: [HeadF_x, HeadF_y, HeadF_z, HeadB_x, ..., SpineL_z] -> 6*3=18\\n    # Masked HeadF frames: indices 12:19\\n    HEADF_IDX = 0\\n    HEADF_COORDS = [0,1,2]\\n    MASK_START, MASK_END = 12, 19  # 7-frame gap (inclusive)\\n\\n    # Features to use for KNN predictors: all except HeadF (coords 3:18)\\n    FEAT_IDX = list(range(3, 18))\\n    n_neighbors = 5\\n\\n    n_test, n_time, n_feat = test_x.shape\\n    test_pred = np.copy(test_x)\\n\\n    # Precompute train predictors and mask for animal separation\\n    # All train_x and train_y come from animals 1-3; test_x is from animals 4-5.\\n    # So, it's enough just to fit on all train windows.\\n    \\n    # For each masked frame\\n    for t in range(MASK_START, MASK_END+1):\\n        # Prepare predictors/targets for this frame\\n        X_train = train_x[:, t, FEAT_IDX].copy()       # (Ntrain, 15)\\n        y_train = train_y[:, t, :3].copy()             # (Ntrain, 3)\\n\\n        # Exclude training samples with any missing predictors or targets\\n        mask = (~np.isnan(X_train).any(axis=1)) & (~np.isnan(y_train).any(axis=1))\\n        X_train_valid = X_train[mask]\\n        y_train_valid = y_train[mask]  # (n_valid, 3)\\n\\n        # Prepare test predictors for this frame\\n        X_test = test_x[:, t, FEAT_IDX].copy()   # (Ntest, 15)\\n\\n        # For each HeadF coordinate (x, y, z), fit a separate regressor\\n        for i in range(3):\\n            y_train_coord = y_train_valid[:, i]\\n            # Only fit/predict if y_train_coord has enough samples\\n            if X_train_valid.shape[0] >= n_neighbors:\\n                knn = KNeighborsRegressor(n_neighbors=n_neighbors, weights='uniform', metric='minkowski', p=2)\\n                knn.fit(X_train_valid, y_train_coord)\\n                # Predict for all test set\\n                y_pred = knn.predict(X_test)\\n            else:\\n                # Not enough data, fall back to global mean (from train set, for this coordinate)\\n                finite = np.isfinite(y_train_coord)\\n                y_pred = np.full(X_test.shape[0], np.nanmean(y_train_coord[finite]))\\n            # Place predictions into output at masked slots\\n            test_pred[:, t, i] = y_pred\\n    # At this point, masked HeadF positions (coords 0,1,2 at frames 12:19) have been imputed.\\n    return test_pred\\n\"}"
+        }
+      ],
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "in_memory",
+  "reasoning": {
+    "context": null,
+    "effort": null,
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "neural_program",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 1.0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 535,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 1023,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1558
+  },
+  "user": null,
+  "metadata": {}
+}

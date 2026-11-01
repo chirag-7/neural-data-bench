@@ -1,0 +1,112 @@
+{
+  "id": "resp_01c4d90e6464a849016ae799a1f3cc87d2af0da58d3829b34d",
+  "object": "response",
+  "created_at": 1793563041,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1793563047,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-4.1-2025-04-14",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_01c4d90e6464a849016ae799a2593c87d2adc89f64744ead6b",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"description\":\"A lossy compression scheme for globally time-sorted float64 event times (sec) and int32 labels, optimized for sub-50μs precision and mean bits/event. Timestamps are delta-encoded at 10μs quantization, then packed as unsigned varints for size efficiency. Labels are stored as int32s. All data is streamed with headers, and compressed with zlib at max compression. Decompression unpacks and reconstructs approximate event times and exact labels. No dynamic state or file access; all standard Python3/NumPy/struct/zlib; deterministic output via seeded shuffling is not required. Meets B08 contract under specified constraints.\",\"code\":\"import numpy as np\\nimport zlib\\nimport struct\\nimport io\\n\\n# Quantization grid (<=50 μs allowed error)\\nQUANT = 1e-5  # 10 microseconds\\nINV_QUANT = 1e5\\n\\n# Helper: encode uint64 as varint stream\\ndef encode_varints_uint64(arr):\\n    out = bytearray()\\n    for x in arr:\\n        while x >= 0x80:\\n            out.append((x & 0x7F) | 0x80)\\n            x >>= 7\\n        out.append(x & 0x7F)\\n    return bytes(out)\\n\\ndef decode_varints_uint64(byts, n):\\n    arr = np.empty(n, dtype=np.uint64)\\n    offset = 0\\n    for i in range(n):\\n        shift = 0\\n        val = 0\\n        while True:\\n            b = byts[offset]\\n            offset += 1\\n            val |= (b & 0x7F) << shift\\n            if not (b & 0x80): break\\n            shift += 7\\n        arr[i] = val\\n    return arr, offset\\n\\n# Compress routine\\ndef compress(times, labels):\\n    times = np.asarray(times, dtype=np.float64)\\n    labels = np.asarray(labels, dtype=np.int32)\\n    assert len(times) == len(labels)\\n    n = len(times)\\n    if n == 0:\\n        # Write an empty header and return\\n        return struct.pack('<Qdd', 0, 0.0, QUANT)\\n    # Time delta coding: quantize to grid\\n    # First store t0\\n    t0 = times[0]\\n    t_quantized = np.round((times - t0) * INV_QUANT).astype(np.uint64)\\n    deltas = np.empty(n, dtype=np.uint64)\\n    deltas[0] = t_quantized[0]\\n    deltas[1:] = t_quantized[1:] - t_quantized[:-1]\\n    varint_times = encode_varints_uint64(deltas)\\n    labels_raw = labels.astype(np.int32).tobytes()\\n    # Header: n (events, QWord), t0 (float64), quant (float64), section lengths (2x QWord)\\n    hdr = struct.pack('<QddQQ', n, t0, QUANT, len(varint_times), len(labels_raw))\\n    payload = varint_times + labels_raw\\n    cmpd = zlib.compress(payload, level=9)\\n    return hdr + cmpd\\n\\n# Decompress routine\\ndef decompress(blob):\\n    # Header: n, t0, quant, l_varint, l_labels\\n    hdrsize = struct.calcsize('<QddQQ')\\n    n, t0, quant, l_varint, l_labels = struct.unpack('<QddQQ', blob[:hdrsize])\\n    if n == 0:\\n        return np.zeros(0, dtype=np.float64), np.zeros(0, dtype=np.int32)\\n    decomp = zlib.decompress(blob[hdrsize:])\\n    varint_bytes = decomp[:l_varint]\\n    label_bytes = decomp[l_varint:l_varint + l_labels]\\n    deltas, _ = decode_varints_uint64(varint_bytes, n)\\n    tgrid = np.cumsum(deltas)\\n    times = t0 + tgrid * quant\\n    labels = np.frombuffer(label_bytes, dtype=np.int32)\\n    return times, labels\\n\"}"
+        }
+      ],
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "in_memory",
+  "reasoning": {
+    "context": null,
+    "effort": null,
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "neural_program",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 1.0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1209,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 927,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2136
+  },
+  "user": null,
+  "metadata": {}
+}

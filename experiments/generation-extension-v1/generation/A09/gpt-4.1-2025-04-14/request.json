@@ -1,0 +1,29 @@
+{
+  "model": "gpt-4.1-2025-04-14",
+  "input": "You are participating in a single-shot neuroscience code-synthesis experiment. Do not call tools, browse, read files or execute code. Return only JSON with description and code.\n\nImplement Python fit_predict(train_x,train_y,test_x) returning predictions with the specified shape. No test target labels are supplied.\n\nClassify mouse social behavior from pose. Inputs shape(frames,7 temporal offsets,28 coordinates), offsets[-15,-5,-1,0,1,5,15] frames relative to target frame. There are two animals×7 keypoints×xy=28 pixel coordinates, original CalMS21 flattening order (mouse, coordinate x/y, landmark); seven landmarks are nose,left ear,right ear,neck,left hip,right hip,tail base. Context windows were built independently within each recording and labels use distinct official train/test recordings. Labels0attack,1investigation,2mount,3other. Return integer label per target frame. Each example already has context; do not smooth or create windows across examples (recordings are concatenated without IDs). Primary macro-F1. Temporal features, distances and conventional classifiers may be built with general libraries. Repeated frames/animals within recordings are correlated; no independent-animal claim.\n\nPrepared input context: {\"train_x_shape\": [50597, 7, 28], \"train_y_shape\": [50597], \"test_x_shape\": [26162, 7, 28], \"classes\": {\"0\": \"attack\", \"1\": \"investigation\", \"2\": \"mount\", \"3\": \"other\"}, \"feature_description\": \"Seven temporal offsets [-15,-5,-1,0,1,5,15] frames. At each offset flatten original keypoints shape(2 mice,2 coordinates x/y,7 landmarks) in C order: resident x landmarks0:7, resident y landmarks0:7, intruder x landmarks0:7, intruder y landmarks0:7. Landmark order nose,left ear,right ear,neck,left hip,right hip,tail base. Pose estimates are inputs; human behavior labels are targets. Do not smooth across examples or recording boundaries.\", \"input_units\": \"image pixels\", \"sample_rate_hz\": 30}\n\nAllowed imports: numpy, scipy, sklearn, math, collections, functools, itertools, statistics, gc. No file/network/subprocess access, dynamic exec/eval, pretrained assets or specialist neuroscience packages. Use deterministic seeds. One submission, no execution feedback. The entire fit_predict call must finish in180 seconds on one numerical CPU thread, approximately4GB working memory (memory request is not enforced). Keep code below240 lines including blanks. Return JSON fields description (method and training/validation policy), code (complete self-contained Python source with fit_predict and helpers). Do not claim a score.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "max_output_tokens": 8192
+}

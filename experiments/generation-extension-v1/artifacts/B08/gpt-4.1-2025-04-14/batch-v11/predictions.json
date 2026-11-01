@@ -1,0 +1,79 @@
+[
+  {
+    "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-19-Run1_behavior+ecephys",
+    "compressed_file": "experiments/generation-extension-v1/artifacts/B08/gpt-4.1-2025-04-14/batch-v11/00.bin",
+    "compressed_bytes": 260093,
+    "compressed_sha256": "dfd9c38fa8b74afb0bed03e8cada4e283500f58f87a2500e8df4ada2a386f20b",
+    "encode_seconds": 0.7619474590755999,
+    "decode_seconds": 0.027616375125944614,
+    "n_events": 202939,
+    "max_timing_error_seconds": 5.684341886080802e-14,
+    "labels_exact": true
+  },
+  {
+    "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-19-Run2_behavior+ecephys",
+    "compressed_file": "experiments/generation-extension-v1/artifacts/B08/gpt-4.1-2025-04-14/batch-v11/01.bin",
+    "compressed_bytes": 250889,
+    "compressed_sha256": "9692d6d9b6d61790418a93ea7ba2350a4a0ccde719ccc4ed5a9a8aba467e2d5c",
+    "encode_seconds": 0.6542242499999702,
+    "decode_seconds": 0.0269660830963403,
+    "n_events": 194904,
+    "max_timing_error_seconds": 5.684341886080802e-14,
+    "labels_exact": true
+  },
+  {
+    "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-20-Run1_behavior+ecephys",
+    "compressed_file": "experiments/generation-extension-v1/artifacts/B08/gpt-4.1-2025-04-14/batch-v11/02.bin",
+    "compressed_bytes": 188543,
+    "compressed_sha256": "63fce5f35c963330d05581106f0f12bd8e9fb4301c61520aabcbaf60678d201c",
+    "encode_seconds": 0.4577247081324458,
+    "decode_seconds": 0.0190332920756191,
+    "n_events": 137297,
+    "max_timing_error_seconds": 5.684341886080802e-14,
+    "labels_exact": true
+  },
+  {
+    "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-20-Run2_behavior+ecephys",
+    "compressed_file": "experiments/generation-extension-v1/artifacts/B08/gpt-4.1-2025-04-14/batch-v11/03.bin",
+    "compressed_bytes": 181983,
+    "compressed_sha256": "1459317eccde55c0f2cdada4d9228cc49d9f5eb3c87e0e5634e5fe86153b7e0d",
+    "encode_seconds": 0.4396130000241101,
+    "decode_seconds": 0.01866995799355209,
+    "n_events": 132486,
+    "max_timing_error_seconds": 8.526512829121202e-14,
+    "labels_exact": true
+  },
+  {
+    "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-27-Run1_behavior+ecephys",
+    "compressed_file": "experiments/generation-extension-v1/artifacts/B08/gpt-4.1-2025-04-14/batch-v11/04.bin",
+    "compressed_bytes": 130472,
+    "compressed_sha256": "6156287f60aa1a260620015be4c8e52ac83d1d5198052a667329361aec44f515",
+    "encode_seconds": 0.29175041685812175,
+    "decode_seconds": 0.013477499829605222,
+    "n_events": 93172,
+    "max_timing_error_seconds": 2.842170943040401e-14,
+    "labels_exact": true
+  },
+  {
+    "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-27-Run2_behavior+ecephys",
+    "compressed_file": "experiments/generation-extension-v1/artifacts/B08/gpt-4.1-2025-04-14/batch-v11/05.bin",
+    "compressed_bytes": 158602,
+    "compressed_sha256": "4768d934f95fbbf797a1a914251ef56b5776d2f53f8b542ac827d698b317c47e",
+    "encode_seconds": 0.37959845806472003,
+    "decode_seconds": 0.016151624964550138,
+    "n_events": 114382,
+    "max_timing_error_seconds": 5.684341886080802e-14,
+    "labels_exact": true
+  },
+  {
+    "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-28-Run1_behavior+ecephys",
+    "compressed_file": "experiments/generation-extension-v1/artifacts/B08/gpt-4.1-2025-04-14/batch-v11/06.bin",
+    "compressed_bytes": 238165,
+    "compressed_sha256": "eb0b39d6218ace60363c836ff775e1192b440fe134155aaa355ae2488404b3b8",
+    "encode_seconds": 0.6213684170506895,
+    "decode_seconds": 0.023717042058706284,
+    "n_events": 177365,
+    "max_timing_error_seconds": 1.1368683772161603e-13,
+    "labels_exact": true
+  }
+]

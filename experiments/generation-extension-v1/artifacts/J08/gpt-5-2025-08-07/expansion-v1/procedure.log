@@ -1,0 +1,15 @@
+
+Traceback (most recent call last):
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py", line 314, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py", line 308, in main
+    if phase == 'procedure': result = procedure(task, sid, model)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py", line 186, in procedure
+    pred = ns['fit_predict'](*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "extension-generated", line 215, in fit_predict
+  File "extension-generated", line 190, in _segment_image
+  File "extension-generated", line 168, in _voronoi_label_from_seeds
+IndexError: arrays used as indices must be of integer (or boolean) type

@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "M04",
+  "slice_id": "synthetic-v1",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "a2dabc0280992e3d59521b83b15b027437590d02e2e116b6e5788a8229e24600",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/M04/gpt-5-2025-08-07.json",
+  "submission_sha256": "12c02b8f06d2f817736bb0a90aca12cae8f89be0c15f7ea637279ec3feea0c18",
+  "code_sha256": "16ef2e8a22ad972c7e75fef24e36126aedf45385056aa1201eb93651cc7bd6f9",
+  "description": "Estimate per-agent learning rate (alpha) and inverse temperature (beta) for a two-action Q-learning model by maximum likelihood. For each agent, we compute a coarse grid search over alpha and beta to find good starting points, then refine using L-BFGS-B under bounds alpha in [0.01, 0.99] and beta in [0.1, 10]. The likelihood is computed with stable log-sigmoid math, updating only the chosen action\u2019s Q with observed rewards. Missing trials (NaN or invalid choices/rewards) are skipped for both likelihood and learning updates. Returns an (N,2) array with [alpha, beta] for each agent.",
+  "code_lines": 119,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

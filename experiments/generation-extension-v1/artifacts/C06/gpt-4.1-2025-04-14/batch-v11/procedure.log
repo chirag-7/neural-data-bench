@@ -1,0 +1,42 @@
+
+extension-generated:90: RuntimeWarning: invalid value encountered in sqrt
+Traceback (most recent call last):
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py", line 314, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py", line 308, in main
+    if phase == 'procedure': result = procedure(task, sid, model)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py", line 186, in procedure
+    pred = ns['fit_predict'](*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "extension-generated", line 123, in fit_predict
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/base.py", line 1403, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/linear_model/_ridge.py", line 2843, in fit
+    super().fit(X, y, sample_weight=sample_weight, **params)
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/linear_model/_ridge.py", line 2594, in fit
+    grid_search.fit(X, y, **params)
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/base.py", line 1403, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/model_selection/_search.py", line 1134, in fit
+    self._run_search(evaluate_candidates, callback_ctx=root_callback_ctx)
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/model_selection/_search.py", line 1721, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid), callback_ctx=search_ctx)
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/model_selection/_search.py", line 1051, in evaluate_candidates
+    cv_splits = list(cv.split(X, y, **routed_params.splitter.split))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/model_selection/_split.py", line 411, in split
+    for train, test in super().split(X, y, groups):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/model_selection/_split.py", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/model_selection/_split.py", line 154, in _iter_test_masks
+    for test_index in self._iter_test_indices(X, y, groups):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/work/pilot-deps/sklearn/model_selection/_split.py", line 613, in _iter_test_indices
+    raise ValueError("The 'groups' parameter should not be None.")
+ValueError: The 'groups' parameter should not be None.

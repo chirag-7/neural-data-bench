@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "A14",
+  "slice_id": "expansion-v1",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "699888b30f9bbf7cf8276d65cef489c028855be58504c154e9b3fb04ffcf55af",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/A14/gpt-5-2025-08-07.json",
+  "submission_sha256": "cf7ac79910aabf122620206805b80df3ff7b8d8d440470f25ee54db920a642e8",
+  "code_sha256": "18c4dde1df545bde898472dd0f857d76769de0473984f99f657d38025a204539",
+  "description": "Gap imputation for HeadF (x,y,z) over frames 12\u201318 using a two-step method. 1) Per-window acausal linear interpolation baseline anchored at the two observed endpoints (frames 11 and 19). 2) Learn a residual correction from observed context using ridge regression trained on animals 1\u20133 (train_x -> train_y). For each missing frame t, features include: other 5 landmarks (15 dims) at t\u00b12..t\u00b10 (75 dims), the baseline HeadF at t (3), the two HeadF endpoints (6), and timing features within-gap and absolute frame index (2); total 86 features. We train a single multi-target closed-form ridge (no randomness) on residuals (y_true \u2212 baseline) for the three HeadF coordinates jointly, with feature standardization and no penalty on the intercept. At test time (animals 4\u20135), we compute the same features and add predicted residuals to the linear baseline, then write back only the masked HeadF frames; all other coordinates/timepoints are left unchanged. Windows are treated independently and no temporal stitching across windows is performed. Hyperparameters fixed (alpha=1.0); no cross-validation; deterministic linear algebra only.",
+  "code_lines": 148,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5-2025-08-07",
+  "input": "You are participating in a single-shot neuroscience code-synthesis experiment. Do not call tools, browse, read files or execute code. Return only JSON with description and code.\n\nImplement Python fit_predict(train_x,train_y,test_x) returning predictions with the specified shape. No test target labels are supplied.\n\nDecode known left vsright2s finger-tapping condition from real fNIRS optical-density features. Input shape(trials,136 wavelengthchannels,8 temporalbins):136 continuous-wave channels at760/850nm,each has eight1smean opticaldensity bins spanning3–11s afterevent,minuspre-event3sbaseline. Inputs are opticaldensity, NOT hemoglobin concentration; sourceintensity channels were volts andpositive. train subjects1–7,heldoutsubjects8–10. Labels0left2stapping,1right2stapping. Condition is confounded with separate session/run, so this tests subject-held-out condition/session decoding, NOT localized motorcortex activation. Return one integer label pertrial. Primarybalancedaccuracy. Each trial is independent; do not join rows. Train-only transforms and deterministicseed. General libraries only.\n\nPrepared input context: {\"train_x_shape\": [378, 136, 8], \"train_y_shape\": [378], \"test_x_shape\": [166, 136, 8], \"input\": \"float32 (trial,136 optical measurement channels,8 one-second bins), baseline-relative dimensionless optical density\", \"input_details\": {\"raw_units\": \"V\", \"raw_sampling_rate_hz\": 8.928571428571429, \"output_units\": \"dimensionless natural-log optical density change\", \"conversion\": \"-ln(I/mean(I)), subtract mean optical density from -3<=t<0 seconds per event\", \"time_bins_seconds\": [[3, 4], [4, 5], [5, 6], [6, 7], [7, 8], [8, 9], [9, 10], [10, 11]], \"wavelengths_nm\": [760, 850], \"channel_names\": [\"S1_D11 760\", \"S1_D11 850\", \"S1_D12 760\", \"S1_D12 850\", \"S1_D15 760\", \"S1_D15 850\", \"S1_D16 760\", \"S1_D16 850\", \"S2_D1 760\", \"S2_D1 850\", \"S2_D4 760\", \"S2_D4 850\", \"S2_D5 760\", \"S2_D5 850\", \"S2_D6 760\", \"S2_D6 850\", \"S3_D1 760\", \"S3_D1 850\", \"S3_D2 760\", \"S3_D2 850\", \"S3_D3 760\", \"S3_D3 850\", \"S3_D5 760\", \"S3_D5 850\", \"S3_D7 760\", \"S3_D7 850\", \"S3_D8 760\", \"S3_D8 850\", \"S3_D9 760\", \"S3_D9 850\", \"S4_D8 760\", \"S4_D8 850\", \"S4_D9 760\", \"S4_D9 850\", \"S4_D10 760\", \"S4_D10 850\", \"S4_D14 760\", \"S4_D14 850\", \"S5_D1 760\", \"S5_D1 850\", \"S5_D2 760\", \"S5_D2 850\", \"S5_D4 760\", \"S5_D4 850\", \"S5_D12 760\", \"S5_D12 850\", \"S5_D13 760\", \"S5_D13 850\", \"S5_D16 760\", \"S5_D16 850\", \"S6_D2 760\", \"S6_D2 850\", \"S6_D9 760\", \"S6_D9 850\", \"S6_D10 760\", \"S6_D10 850\", \"S6_D11 760\", \"S6_D11 850\", \"S6_D12 760\", \"S6_D12 850\", \"S7_D10 760\", \"S7_D10 850\", \"S7_D11 760\", \"S7_D11 850\", \"S7_D14 760\", \"S7_D14 850\", \"S7_D15 760\", \"S7_D15 850\", \"S8_D27 760\", \"S8_D27 850\", \"S8_D28 760\", \"S8_D28 850\", \"S8_D31 760\", \"S8_D31 850\", \"S8_D32 760\", \"S8_D32 850\", \"S9_D17 760\", \"S9_D17 850\", \"S9_D20 760\", \"S9_D20 850\", \"S9_D21 760\", \"S9_D21 850\", \"S9_D22 760\", \"S9_D22 850\", \"S10_D17 760\", \"S10_D17 850\", \"S10_D18 760\", \"S10_D18 850\", \"S10_D19 760\", \"S10_D19 850\", \"S10_D21 760\", \"S10_D21 850\", \"S10_D23 760\", \"S10_D23 850\", \"S10_D24 760\", \"S10_D24 850\", \"S10_D25 760\", \"S10_D25 850\", \"S11_D24 760\", \"S11_D24 850\", \"S11_D25 760\", \"S11_D25 850\", \"S11_D26 760\", \"S11_D26 850\", \"S11_D30 760\", \"S11_D30 850\", \"S12_D17 760\", \"S12_D17 850\", \"S12_D18 760\", \"S12_D18 850\", \"S12_D20 760\", \"S12_D20 850\", \"S12_D28 760\", \"S12_D28 850\", \"S12_D29 760\", \"S12_D29 850\", \"S12_D32 760\", \"S12_D32 850\", \"S13_D18 760\", \"S13_D18 850\", \"S13_D25 760\", \"S13_D25 850\", \"S13_D26 760\", \"S13_D26 850\", \"S13_D27 760\", \"S13_D27 850\", \"S13_D28 760\", \"S13_D28 850\", \"S14_D26 760\", \"S14_D26 850\", \"S14_D27 760\", \"S14_D27 850\", \"S14_D30 760\", \"S14_D30 850\", \"S14_D31 760\", \"S14_D31 850\"], \"label_encoding\": {\"0\": \"left-hand 2-second finger tapping\", \"1\": \"right-hand 2-second finger tapping\"}}}\n\nAllowed imports: numpy, scipy, sklearn, math, collections, functools, itertools, statistics, gc. No file/network/subprocess access, dynamic exec/eval, pretrained assets or specialist neuroscience packages. Use deterministic seeds. One submission, no execution feedback. The entire fit_predict call must finish in180 seconds on one numerical CPU thread, approximately4GB working memory (memory request is not enforced). Keep code below240 lines including blanks. Return JSON fields description (method and training/validation policy), code (complete self-contained Python source with fit_predict and helpers). Do not claim a score.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "reasoning": {
+    "effort": "high"
+  },
+  "max_output_tokens": 24000
+}

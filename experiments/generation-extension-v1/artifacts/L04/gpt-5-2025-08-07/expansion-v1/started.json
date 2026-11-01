@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "L04",
+  "slice_id": "expansion-v1",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "a935729e11e4e7c41cef174723c52e29042ef96d3dcaf7cde69cda533a2c6eca",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/L04/gpt-5-2025-08-07.json",
+  "submission_sha256": "18b417699ac7a8612fb95fcf5693783cdf9ff1819e90094cf0acc199beb975c4",
+  "code_sha256": "a60b74bdd6e029e1876132068072ac5bee9c28348b1a4dbb32292bd57ae2413e",
+  "description": "Poisson generalized linear model with nonlinear feature expansion. We construct a compact, smooth encoding of firing as a function of position and movement speed. Features include: (a) third-order polynomials of position, velocity, and absolute speed; (b) Gaussian radial basis functions (RBFs) over position; (c) Gaussian RBFs over absolute speed; and (d) multiplicative interactions between position-RBFs and speed-RBFs to capture position-by-speed modulation. Feature columns are standardized using training statistics. We fit a PoissonRegressor (log link, L2 penalty) and select the regularization strength alpha by a strictly chronological split of the provided training segment (first 80% for fitting, last 20% for validation), maximizing validation Poisson log-likelihood (ignoring the constant log-factorial term). The final model is refit on the full training segment with the chosen alpha and used to predict expected spike counts per 20 ms bin on the test segment. No spike history or test labels are used, and time order is preserved throughout. Predictions are nonnegative expected counts per bin (not Hz).",
+  "code_lines": 180,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

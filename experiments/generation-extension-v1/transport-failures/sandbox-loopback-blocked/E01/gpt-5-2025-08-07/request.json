@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5-2025-08-07",
+  "input": "You are participating in a single-shot neuroscience code-synthesis experiment. Do not call tools, browse, read files or execute code. Return only JSON with description and code.\n\nImplement Python fit_predict(train_x,train_y,test_x) returning predictions with the specified shape. No test target labels are supplied.\n\nInfer expected spike counts of35 held-outneurons from107 observedneurons of a real primate reaching-task population. train_x=(99trials,35timebins,107neurons),train_y=(99,35,35otherneurons);test_x=(100,35,107),return(100,35,35). Bins20ms; eachtrial700ms movement-aligned. Trials are separate and must not be joined/smoothed acrossboundaries. The same neuronal columns are recorded in trainingandtest; trials areheldout accordingtopublishedsplit. Primary officialNLB-style bits/spike improvement overevaluation-setneuronmean null normalization (onlyscorer cansee this); predictedoutputs mustbe finite andnonnegative expectedcounts/bin,notHz. Offline/acausal temporalcontext withintrial allowed. General regressors/latentfactor orPoissonmodels maybefit with NumPy/SciPy/sklearn; no specialistpackages orpretrainedweights. This is a bounded population-readout diagnostic, not a full generative-model benchmarksubmission.\n\nPrepared input context: {\"train_x_shape\": [99, 35, 107], \"train_y_shape\": [99, 35, 35], \"test_x_shape\": [100, 35, 107], \"feature_description\": \"35 successive20ms time bins of107held-in neurons, movement-onset aligned from-250to+450ms. Predict corresponding35held-out neurons. Temporal smoothing may use whole same-trial context; no smoothing across trials. Return nonnegative finite expected counts shape(N,35,35).\", \"input_units\": \"spike count per20ms bin\"}\n\nAllowed imports: numpy, scipy, sklearn, math, collections, functools, itertools, statistics, gc. No file/network/subprocess access, dynamic exec/eval, pretrained assets or specialist neuroscience packages. Use deterministic seeds. One submission, no execution feedback. The entire fit_predict call must finish in180 seconds on one numerical CPU thread, approximately4GB working memory (memory request is not enforced). Keep code below240 lines including blanks. Return JSON fields description (method and training/validation policy), code (complete self-contained Python source with fit_predict and helpers). Do not claim a score.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "reasoning": {
+    "effort": "high"
+  },
+  "max_output_tokens": 24000
+}

@@ -1,0 +1,8 @@
+{
+  "score": 2.81716688224358,
+  "metric": "bits_per_spike_train_mean",
+  "direction": "higher",
+  "poisson_nll_per_bin": 0.06706127665875189,
+  "per_unit": null,
+  "n_units": 3506
+}

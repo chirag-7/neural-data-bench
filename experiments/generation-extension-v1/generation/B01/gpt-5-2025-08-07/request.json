@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5-2025-08-07",
+  "input": "Single-shot neuroscience algorithm-code benchmark. Do not call tools, browse, read files or execute during generation. Return JSON description and code only.\nImplement sort(recording_uv,fs,channel_positions_um) returning an integer NumPy array(n_events,2) of[sample_index, arbitrary nonnegative unit_id]. No supervision is supplied.\n\nBlind unsupervised spike sorting. Receive a float32 extracellular recording of shape(320000,32), sampling rate32000Hz, and32x3 electrode positions in micrometers. Signal amplitudes are microvolts; source signal is already bandpass filtered300–6000Hz. Return an integer array(n_events,2) with sample index in column0 and arbitrary nonnegative neuron/cluster ID in column1, sorted bysample thenunit. Infer unit count and templates from the supplied voltage only; no ground-truth times, labels, simulated source templates or true unit count are supplied. The entire10-second recording may be used unsupervised for detection/clustering; this is not supervised train/test fitting. Predictions are matched to hidden truth by the official SpikeInterface event/unit scorer.\nScoring: official SpikeInterface one-to-one Hungarian ground-truth unit matching with0.4ms nominal event tolerance (12samples at32kHz). Primary mean GT-unit accuracy=TP/(TP+FN+FP), averaged over hidden true units; extra/redundant output-unit counts reported. Do not manufacture units using hidden true counts. Empty valid output scores0. Whole-recording unsupervised adaptation and acausal snippets allowed.\nAllowed imports numpy,scipy,sklearn,math,collections,functools,itertools,statistics,gc. No file/network/subprocess access, dynamic exec/eval, specialist packages, external assets, source file or truth. One submission/no feedback. Finish entire call in180seconds on one numerical CPUthread, approximately4GB unmeasured working memory. Keep code below240lines includingblanks. Use deterministic seeds; finite integer eventindices andnonnegativeIDs, no duplicate eventwithinunit. Return JSON description(method/validation policy) and code(complete sortandhelpers). Do not claim a score.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "reasoning": {
+    "effort": "high"
+  },
+  "max_output_tokens": 24000
+}

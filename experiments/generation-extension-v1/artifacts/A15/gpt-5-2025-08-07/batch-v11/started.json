@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "A15",
+  "slice_id": "batch-v11",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "623cd3f6590b0a8aed01cd5dc99035816884eeac58dd73296ed6ee80936c6f52",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/A15/gpt-5-2025-08-07.json",
+  "submission_sha256": "0af4a9ad33b528a7532125234d2ca4aed8245efcdb7050ec4840149134b480c3",
+  "code_sha256": "f290170e3760b86c20d38711d74c41bc9c38d90024e39784e058eb806d5a23cc",
+  "description": "Neuroscience A15 event detector: deterministic per-recording STFT feature extraction with 1 ms hop, 24 log-spaced triangular bands (250\u201312000 Hz), broadband log-energy, and 5/15 ms smoothed broadband features. Noise-floor normalization subtracts each recording\u2019s 20th-percentile log-energy (exact for validation/test, approximate via sparse sampling for non-validation training). A HistGradientBoostingClassifier is trained using up to 60k uniformly sampled frames. Threshold, gap-fill, and minimum-duration hyperparameters are selected by mean event F1 on a fixed validation subset of training recordings, using maximum-cardinality bipartite matching under the specified onset/offset tolerances. The classifier is then refit on all training recordings (re-using computed features where possible), and predictions are post-processed on test recordings to produce 1 ms binary rasters with zeros in padding. Deterministic seeds used; single-thread numeric workload; memory-conscious, streaming per recording.",
+  "code_lines": 422,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": false
+}

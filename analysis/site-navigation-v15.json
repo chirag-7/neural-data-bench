@@ -1,0 +1,30 @@
+{
+  "date_utc": "2026-11-01T20:32:50.452364+00:00",
+  "method": "Real Codex in-app browser at localhost:8767 plus separate source-render checks",
+  "checks": {
+    "category_H_task_options": [
+      "H01",
+      "H02",
+      "H08",
+      "H16"
+    ],
+    "H02_four_model_line_points": [
+      0.5730845665809128,
+      0.7457725743654655,
+      0.7571945899092973,
+      0.7885365446735593
+    ],
+    "H02_named_specialist": "xDAWN fixed 0.7612303198299977; dashed named reference plus measured bar",
+    "E01_multi_slice_task_means": [
+      -4.27607211958728,
+      -2.547485403373772,
+      0.20350701311578648,
+      0.20737613865378843
+    ],
+    "negative_metric_axis": "verified in DOM and source checks",
+    "controls": "Category and Task detail only; category filtering verified",
+    "summary": "concise actual pair counts and nine monotonic tasks",
+    "asset_refresh": "content-hash query strings on changed scripts"
+  },
+  "limitations": "No mobile viewport override or exhaustive browser interaction across every task; all 30 plots checked separately in source-render harness."
+}

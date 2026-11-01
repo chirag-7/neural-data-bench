@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "B07",
+  "slice_id": "compression-v1",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "777c70b21cad61c1d9f3e6570eeead07001eb8cbeead506c3bcaf2354f5ce0b0",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/B07/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "49704863357bf37c6744024f41308672bc38cc4674c3f5a8cf20e8aa4f2f58b8",
+  "code_sha256": "8f2a5c1f975b295ede3ec41242c90feedee1178552385bfbf654268e61bf823a",
+  "description": "This codec compresses Neuropixels voltage recordings (C-contiguous int16 arrays, shape (4096,384), dtype '<i2') losslessly and decodes them exactly. Compression uses a two-stage process: 1) a simple predictive coding step (per-channel delta, i.e., storing differences along time for each channel), followed by 2) standard entropy compression (zlib, bz2, or lzma) selected for best compression per-chunk. The first row of each channel is stored verbatim for reconstruction. The compressed blob stores a header with a mode selector and all necessary metadata for decoding. Decompression uses the shape/dtype arguments and the header to restore the original array exactly. No cross-chunk state, external source info, or learning is used. All prediction and compression steps use reproducible, deterministic logic. The output blob size is minimized while satisfying exact reconstruction requirements.",
+  "code_lines": 86,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

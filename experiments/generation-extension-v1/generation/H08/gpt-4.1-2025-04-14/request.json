@@ -1,0 +1,29 @@
+{
+  "model": "gpt-4.1-2025-04-14",
+  "input": "You are participating in a single-shot neuroscience code-synthesis experiment. Do not call tools, browse, read files or execute code. Return only JSON with description and code.\n\nImplement Python fit_predict(train_x,train_y,test_x) returning predictions with the specified shape. No test target labels are supplied.\n\nClassify real sleep EEG into five expert sleep stages. train_x shape(5nights,1440epochs,3000samples),train_y(5,1440);test_x(3,1440,3000),return intlabels(3,1440). Each night is a distinct person,trainpeopleSC400–SC404,testSC405–SC407. EEGFpz-Cz100Hz in microvolts,30second epochs;1440consecutive epochs cover a fixed20:00–08:00clock window pernight, no label-based crop. Labels0Wake,1N1,2N2,3N3(R&K3/4merged),4REM. Traininglabels-1areunknown/movement;ignorethem whenfitting. All test epochs need0..4predictions;scorer excludesunknownexpertlabels. Offline/acausal temporalcontext and unsupervised pernight normalization allowed. Keepnight boundaries,do not concatenate people into one continuous signal. You may use signal/spectralfeatures and classifiers,train-only supervisedvalidation/grouping. Primary macroF1 over all scoredtestepochs withfixedfiveclasses; perperson metrics secondary. No pretrainedassets/specialistpackages. One generation,180seconds,oneCPUthread.\n\nPrepared input context: {\"train_x_shape\": [5, 1440, 3000], \"train_y_shape\": [5, 1440], \"test_x_shape\": [3, 1440, 3000], \"label_encoding\": {\"0\": \"Wake\", \"1\": \"N1\", \"2\": \"N2\", \"3\": \"N3=R&Kstages3and4\", \"4\": \"REM\", \"-1\": \"unknown/movement/crossannotation epoch,trainingignore,excludedfromscore\"}, \"sampling_hz\": 100, \"units\": \"microvolts\", \"input\": \"(night,1440 consecutive30second epochs,3000EEGsamples);100Hz,EEG Fpz-Cz in microvolts;full12hwallclockwindow starting20:00 roundedupto source30sgrid\"}\n\nAllowed imports: numpy, scipy, sklearn, math, collections, functools, itertools, statistics, gc. No file/network/subprocess access, dynamic exec/eval, pretrained assets or specialist neuroscience packages. Use deterministic seeds. One submission, no execution feedback. The entire fit_predict call must finish in180 seconds on one numerical CPU thread, approximately4GB working memory (memory request is not enforced). Keep code below240 lines including blanks. Return JSON fields description (method and training/validation policy), code (complete self-contained Python source with fit_predict and helpers). Do not claim a score.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "max_output_tokens": 8192
+}

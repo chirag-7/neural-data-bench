@@ -1,0 +1,8 @@
+{
+  "closed_utc": "2026-11-01T20:25:22.206777+00:00",
+  "memory_only_bridge_process_stopped": true,
+  "paid_requests_in_flight": 0,
+  "credential_written_to_files": false,
+  "replacement_key_account_expiry": "Seven days from creation; the bridge no longer retains it.",
+  "first_key_pasted_in_chat": "Revoked unused before replacement; never used for generations."
+}

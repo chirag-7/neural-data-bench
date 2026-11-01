@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5-2025-08-07",
+  "input": "Single-shot neuroscience code-construction experiment. Do not call tools, browse, read files or execute during generation. Return only JSON fields description and code.\n\nImplement fit_predict(train_x,train_y,test_x,train_groups) returning one finite real TARGET score per test trial (higher means more likely target; probability calibration is not required).\nData: real Brain Invaders2012 P300 EEG calibration runs, all25people. People1–15 train,16–25 are held-out test people. train_groups gives training person IDs for subject-held-out validation; test person identifiers are not passed. No test labels.\nEach trial is16EEGchannels×128samples at128Hz,0≤t<1s after flash. Units microvolts. Prepared using common-average reference, per-recording fourth-order0.5–20Hz zero-phase Butterworth filtering, preceding26sample baseline subtraction, and removal of groundFz. Inputs contain EEG only, no stimulus marker/time/identifier predictors. train_y1target,0nontarget. Trials overlap within people; never join rows into a continuous recording. This is offline cross-person target ranking, not online game/symbol selection.\nPrimary metric: compute ROC-AUC separately for each held-out person and average people equally; scorer alone has test groups. Same target-score direction1for all people. Fit all normalization, feature transforms, covariance references, classifiers and supervised tuning using training people only. Do not fit transforms or thresholds to test inputs, infer their row/person boundaries, or use transductive adaptation. Deterministic per-epoch feature calculations allowed. Use train_groups when validating generalization.\n{\"train_x_shape\": [11481, 16, 128], \"train_y_shape\": [11481], \"test_x_shape\": [7663, 16, 128], \"channels\": [\"F7\", \"F3\", \"F4\", \"F8\", \"T7\", \"C3\", \"Cz\", \"C4\", \"T8\", \"P7\", \"P3\", \"Pz\", \"P4\", \"P8\", \"O1\", \"O2\"]}\nAllowed imports numpy,scipy,sklearn,math,collections,functools,itertools,statistics,gc. No file/network/subprocess access, dynamic exec/eval, pretrained assets or specialist packages. One submission and no execution feedback. Entire fit_predict call must finish in180seconds on one numerical CPUthread, approximately4GB requested memory (not enforced). Code below240lines including blanks; deterministic seeds. Return complete Python code and concise description of method and train-only validation. Do not claim a score.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "reasoning": {
+    "effort": "high"
+  },
+  "max_output_tokens": 24000
+}

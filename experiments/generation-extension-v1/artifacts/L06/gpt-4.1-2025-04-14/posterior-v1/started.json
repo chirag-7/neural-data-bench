@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "L06",
+  "slice_id": "posterior-v1",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "9fd8e357ecf8b9c42cfd13276af3c1492a9b3ccf7cee487b1a3e2a3802de5a4a",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/L06/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "02c754fc39e1c01dd3394ee6d14aea15a14da2fe4857670ccd2ee1c2a7c178d0",
+  "code_sha256": "afffc3bc2d6fe9d46807d88f92e8168d9be550a7a0b387d0a84f80f155461f37",
+  "description": "This implementation samples from the posterior of a ten-parameter Bernoulli GLM for ten independent observations. For each, we use elliptical slice sampling (ESS), a robust Markov chain Monte Carlo method for non-conjugate posteriors with zero-mean Gaussian priors with known precision Q. Each chain draws 10,000 posterior samples of the parameter vector (beta), skipping the first 2,000 as burn-in, with deterministic PRNG splitting per observation. Likelihood, gradient, and log-density computations use efficient numpy vectorization to ensure fast iteration. The code handles the full covariance of the prior without assuming independence. No external or specialist packages are used. The output shape is (10, 10000, 10): ten per-observation posteriors, each of 10,000 draws, dimension 10.",
+  "code_lines": 94,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

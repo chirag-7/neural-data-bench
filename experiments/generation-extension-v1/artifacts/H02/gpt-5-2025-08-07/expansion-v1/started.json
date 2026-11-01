@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "H02",
+  "slice_id": "expansion-v1",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "d311e0dd3acb26d3ee738adff31b7dc3639a3cc56e816db665bf7b5eac31d1f8",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/H02/gpt-5-2025-08-07.json",
+  "submission_sha256": "ac945606c665d6b206a2fb449ebce5b3c73776d336c734f2e673f857fdcca46b",
+  "code_sha256": "378fd7973ac594e9099ff83fd811508f85ef3bf84236cef1ea00895a5beee7ea",
+  "description": "Approach: learn a cross-subject linear spatio\u2011temporal discriminator of P300 by using only training people for all fitting and validation.\n\nPipeline\n- Feature extraction per trial (train/test):\n  - Temporal smoothing with a short centered moving average (edge-padded, zero\u2011phase by symmetry) to reduce noise.\n  - Temporal binning (mean over non-overlapping bins) with decimation factor 4 (128 Hz \u2192 32 time bins in 1 s) to obtain compact ERP features.\n  - Flatten time\u00d7channel features; no use of any test data statistics.\n- Standardization: per-feature z\u2011score using training data only (and fold\u2011specific training data during CV), with safe std floor.\n- Classifier: L2\u2011regularized Logistic Regression (liblinear, class_weight='balanced', deterministic seed). Scores are decision_function values (higher \u21d2 more likely target) and are not probability-calibrated.\n\nValidation/tuning using training people only\n- Use subject-held-out GroupKFold with 5 splits (groups=train_groups).\n- Grid over temporal smoothing length L in {1,5} samples and logistic C in {0.5,1.0,2.0} (decimation fixed at 4).\n- For each candidate, gather cross-validated predictions so each person is evaluated exactly once; compute ROC-AUC per person and report the mean across persons equally (skip persons with a single class, though that should not occur here).\n- Refit the chosen configuration on the full training data and score the test set.\n\nNotes\n- No transforms fitted on test inputs; no test grouping inferred; no transductive steps. Deterministic behavior with fixed seed. Runtime/memory kept modest by compact features (16 channels \u00d7 32 time bins = 512 dims) and a small grid.\n",
+  "code_lines": 190,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

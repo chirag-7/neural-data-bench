@@ -1,0 +1,17 @@
+{
+  "score": 0.05803003834470389,
+  "metric": "donor_block_macro_rmse",
+  "direction": "lower",
+  "per_unit": [
+    0.04293951992451481,
+    0.06459403395717238,
+    0.06360288131790034
+  ],
+  "unit_ids": [
+    "Br2720",
+    "Br6423",
+    "Br6471"
+  ],
+  "unit_definition": "donor-level macro RMSE; primary recomputes square root after pooling donor MSEs",
+  "n_units": 24
+}

@@ -1,5 +1,9 @@
 # Current status
 
+The [four-model extension](../analysis/generation-comparison-v1/report.md) adds GPT-4.1 and GPT-5 to GPT-5.6 Sol and GPT-6.1 Sol on the existing 30 tasks / 14 categories. Its 60 API generations produce 74 new slice attempts: 64 numeric results and ten failures; all 64 successful outputs pass independent saved-output audits. Cost is approximately $4.13. GPT-6 Sol remains in the historical record. [Simple findings](../analysis/generation-comparison-v1/plain-language.md), [methods](generation-extension.md), [per-task pages](../experiments/generation-extension-v1/tasks/).
+
+The counts below describe the unchanged original 0.11 scientific snapshot.
+
 Research preview **0.11**: [release](release-v11.md), [batch report](batch-v11.md), [findings](../analysis/findings.md), [machine-readable summary](../analysis/summary.json).
 
 The active map has 92 entries across 14 families: **30 measured tasks, 33 pending validation and 29 deferred**. Twenty-two others remain archived, preserving all 114 historical candidates. Sixty-two active tasks remain unrun.

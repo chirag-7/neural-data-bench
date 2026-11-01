@@ -1,0 +1,112 @@
+{
+  "id": "resp_040f5be7c73a9260016ae79a0e4aec87d296a839a74571cb0f",
+  "object": "response",
+  "created_at": 1793563150,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1793563157,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-4.1-2025-04-14",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_040f5be7c73a9260016ae79a0e9e2c87d291f23ea62e435283",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"description\": \"Implements group-aware multi-output Ridge regression to predict IF/RNAScope nuclear fractions (Astro, EndoMural, Inhib) from bulk RNA-seq using only information available from training data. Performs grouped cross-validation by donor (from train_groups) with block-adjusted weighting to select regularization (alpha), gene scaling, and reduces overfitting to technical/training replicate structure. All hyperparameters and feature selection are learned solely from the training set. The model outputs clipped predicted fractions for the held-out test set, with shape (24,3).\",\n  \"code\": \"\\nimport numpy as np\\nfrom collections import defaultdict, Counter\\nfrom sklearn.preprocessing import StandardScaler\\nfrom sklearn.linear_model import Ridge\\nfrom sklearn.model_selection import KFold\\nimport math\\n\\n\\ndef fit_predict(train_x, train_y, test_x, train_groups):\\n    # Deterministic seed\\n    rng = np.random.default_rng(20261031)\\n\\n    train_x = np.asarray(train_x)\\n    train_y = np.asarray(train_y)\\n    test_x = np.asarray(test_x)\\n\\n    n_train, n_feat = train_x.shape\\n    n_targets = train_y.shape[1]\\n\\n    # Get group information\\n    group_ids = np.array(train_groups['group_ids'])    # donor IDs\\n    block_ids = np.array(train_groups['block_ids'])    # block IDs\\n\\n    # Compute sample weights: Each donor (group) gets equal total weight, blocks equal within donor\\n    unique_donors = np.unique(group_ids)\\n    donor_counts = Counter(group_ids)\\n    block_ids_per_donor = defaultdict(list)\\n    for i, donor in enumerate(group_ids):\\n        block_ids_per_donor[donor].append(block_ids[i])\\n    sample_weights = np.zeros(n_train, dtype=float)\\n    n_donors = len(unique_donors)\\n    for donor in unique_donors:\\n        # Find the indices for this donor\\n        donor_mask = (group_ids == donor)\\n        donor_indices = np.flatnonzero(donor_mask)\\n        donor_blocks = np.unique(block_ids[donor_indices])\\n        n_blocks = len(donor_blocks)\\n        # For each block, find how many samples\\n        for block in donor_blocks:\\n            block_mask = (group_ids == donor) & (block_ids == block)\\n            block_indices = np.flatnonzero(block_mask)\\n            block_weight = 1.0 / n_blocks / np.sum(block_mask)     # block splits donor equally, block's samples split block equally\\n            sample_weights[block_indices] = (1.0 / n_donors) * block_weight\\n\\n    # Prepare cross-validation splits: group kfold on donor_ids (not block_ids)\\n    n_cv = min(4, n_donors)\\n    kf = KFold(n_splits=n_cv, shuffle=True, random_state=20261031)\\n    \\n    # Hyperparams and feature CV grid\\n    ALPHAS = [1, 10, 100, 1000, 10000]\\n    N_TOPGENES_CV = 1000\\n    \\n    # For feature selection: train_x is already 2000 features (variance-ranked outer-training/non-test)\\n    n_feat_select = N_TOPGENES_CV if N_TOPGENES_CV <= train_x.shape[1] else train_x.shape[1]\\n    # Compute variance\\n    feature_var = np.var(train_x, axis=0)\\n    sort_idx = np.argsort(-feature_var, kind='stable')[:n_feat_select]\\n    train_x_sel = train_x[:, sort_idx]\\n    test_x_sel = test_x[:, sort_idx]\\n    \\n    # Standardization: fit on train only\\n    scaler = StandardScaler().fit(train_x_sel)\\n    train_x_scaled = scaler.transform(train_x_sel)\\n    test_x_scaled = scaler.transform(test_x_sel)\\n\\n    # Use grouped CV for alpha selection\\n    cv_scores = dict()\\n    for alpha in ALPHAS:\\n        y_true = []\\n        y_pred = []\\n        for train_idx, val_idx in kf.split(np.zeros(n_train), group_ids):\\n            # Each split is by donor\\n            xtr, xval = train_x_scaled[train_idx], train_x_scaled[val_idx]\\n            ytr, yval = train_y[train_idx], train_y[val_idx]\\n            wtr = sample_weights[train_idx]\\n            # Fit multioutput ridge\\n            model = Ridge(alpha=alpha, fit_intercept=True, random_state=20261031)\\n            model.fit(xtr, ytr, sample_weight=wtr)\\n            ypred_val = model.predict(xval)\\n            y_true.append(yval)\\n            y_pred.append(ypred_val)\\n        # Aggregate error per macro-rmse contract (donor_block_macro_rmse)\\n        y_true = np.vstack(y_true)\\n        y_pred = np.vstack(y_pred)\\n        agg_rmse = macro_rmse(y_true, y_pred, group_ids, block_ids)\\n        cv_scores[alpha] = agg_rmse\\n    # Choose alpha with lowest mean RMSE\\n    best_alpha = sorted(cv_scores, key=cv_scores.get)[0]\\n\\n    # Retrain on full training set, output on test\\n    final_model = Ridge(alpha=best_alpha, fit_intercept=True, random_state=20261031)\\n    final_model.fit(train_x_scaled, train_y, sample_weight=sample_weights)\\n    y_test_pred = final_model.predict(test_x_scaled)\\n    # Clip to [0,1], finite output\\n    y_test_pred = np.clip(y_test_pred, 0.0, 1.0)\\n    return y_test_pred\\n\\n\\ndef macro_rmse(y_true, y_pred, group_ids, block_ids):\\n    # y_true/y_pred: (n,3). group_ids: donor_id per row, block_ids: block_id per row.\\n    macro_rmse = []\\n    for t in range(y_true.shape[1]):\\n        # Target-wise aggregation\\n        per_donor = []\\n        for donor in np.unique(group_ids):\\n            donor_mask = (group_ids == donor)\\n            ids_in_donor = np.flatnonzero(donor_mask)\\n            blockids_donor = np.unique(block_ids[ids_in_donor])\\n            per_block = []\\n            for block in blockids_donor:\\n                block_mask = donor_mask & (block_ids == block)\\n                block_rows = np.flatnonzero(block_mask)\\n                if len(block_rows) == 0:\\n                    continue\\n                true_block = np.mean(y_true[block_rows, t])\\n                pred_block = np.mean(y_pred[block_rows, t])\\n                per_block.append((true_block, pred_block))\\n            # donor mean over blocks\\n            if per_block:\\n                true_blocks, pred_blocks = zip(*per_block)\\n                donor_rmse = np.sqrt(np.mean(np.square(np.subtract(true_blocks, pred_blocks))))\\n                per_donor.append(donor_rmse)\\n        # mean over donors\\n        if per_donor:\\n            macro_rmse.append(float(np.mean(per_donor)))\\n    if macro_rmse:\\n        return float(np.mean(macro_rmse))\\n    else:\\n        return float('nan')\\n\"\n}"
+        }
+      ],
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "in_memory",
+  "reasoning": {
+    "context": null,
+    "effort": null,
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "neural_program",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 1.0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1473,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 1609,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3082
+  },
+  "user": null,
+  "metadata": {}
+}

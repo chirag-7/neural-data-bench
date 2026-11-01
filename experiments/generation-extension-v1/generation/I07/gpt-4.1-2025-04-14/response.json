@@ -1,0 +1,112 @@
+{
+  "id": "resp_006f173590db2fbe016ae799f226c887d285203cf31ed9e8bf",
+  "object": "response",
+  "created_at": 1793563122,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1793563125,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-4.1-2025-04-14",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_006f173590db2fbe016ae799f28ed887d2accf278aef505df5",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"description\":\"This solution decodes left vs right 2-second finger-tapping fNIRS optical-density trials by flattening the (136,8) trial arrays to vectors, then z-scales (standardizes) each channel/bin using only the training set. Feature selection is performed via univariate ANOVA F-score on the training trials, keeping the top 120 features (empirically safe for ~400 trials, high-dimensional data). A Linear Support Vector Machine with L2 penalty, balanced class weights, and a deterministic seed is fit to train_x and train_y. This fast and robust approach suits high-dimensional, moderate-sample-size fNIRS data and avoids overfitting. The trained pipeline is then used to predict test_x; test trials are standardized (and selected) with metrics from the training set only. Each trial is predicted independently, one label per test trial. No information about test_y is used for model selection, fitting, or transforms. The code is suitable for held-out subject/session generalization.\",\"code\":\"import numpy as np\\nfrom sklearn.svm import LinearSVC\\nfrom sklearn.preprocessing import StandardScaler\\nfrom sklearn.feature_selection import SelectKBest, f_classif\\n\\n# Deterministic seed\\nRANDOM_STATE = 42\\n\\n# Feature selection parameters\\nN_FEATURES = 120\\n\\n# The main function\\ndef fit_predict(train_x, train_y, test_x):\\n    # Reshape (n_trials, 136, 8) -> (n_trials, 136*8) = (n_trials, 1088)\\n    n_train = train_x.shape[0]\\n    n_test = test_x.shape[0]\\n    train_x_flat = train_x.reshape((n_train, -1))\\n    test_x_flat = test_x.reshape((n_test, -1))\\n\\n    # Standardize (mean=0, std=1) using only the training set statistics\\n    scaler = StandardScaler()\\n    train_x_std = scaler.fit_transform(train_x_flat)\\n    test_x_std = scaler.transform(test_x_flat)\\n\\n    # Univariate feature selection (top N_FEATURES)\\n    selector = SelectKBest(f_classif, k=N_FEATURES)\\n    train_x_sel = selector.fit_transform(train_x_std, train_y)\\n    test_x_sel = selector.transform(test_x_std)\\n\\n    # Linear SVM, balanced classes, deterministic\\n    clf = LinearSVC(class_weight='balanced', dual=False, max_iter=10000, random_state=RANDOM_STATE)\\n    clf.fit(train_x_sel, train_y)\\n    pred_y = clf.predict(test_x_sel)\\n\\n    # Return as integer numpy array\\n    return pred_y.astype(int)\\n\\n# End of code.\\n\"}"
+        }
+      ],
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "in_memory",
+  "reasoning": {
+    "context": null,
+    "effort": null,
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "neural_program",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 1.0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1702,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 578,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2280
+  },
+  "user": null,
+  "metadata": {}
+}

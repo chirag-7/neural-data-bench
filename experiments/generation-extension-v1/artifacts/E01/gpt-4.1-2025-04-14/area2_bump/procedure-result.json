@@ -1,0 +1,10 @@
+{
+  "seconds": 0.8850021669641137,
+  "submission_file": "experiments/generation-extension-v1/submissions/E01/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "8a4f72f26973f8dc23c50e129971feb8dc51ccaa85b1453336846d688f4e761c",
+  "code_sha256": "f33850e9612d82fdf00925393a5cbb4f9be2f4b63cdcf43dc4394058bda5c558",
+  "description": "This fit_predict implementation creates a non-causal (acausal) single-trial regression model mapping observed neurons to held-out neurons, leveraging temporal and cross-neuron context within each trial while not using data from other trials for smoothing. The approach is as follows: (1) For each time bin, form a per-trial feature vector by stacking all held-in (observed) neuron counts at all 35 time bins (flattened as a feature vector of size 35x107). The decoder predicts the expected spike count of each held-out neuron at each time bin, using as input the activity of all held-in neurons over the entire time course of the trial. (2) A separate Ridge regression is fit independently for each held-out neuron and each time bin. (3) The regressors are trained on the 99 training trials only, without any data leakage between trials, and predictions are made for each trial independently, producing nonnegative expected counts per bin. (4) Negative predictions (impossible as expected spike counts) are thresholded to zero. This model makes full use of within-trial temporal context (whole-trial regression), but does not transfer smoothing or features across trials. All computations use NumPy and sklearn's Ridge regression (L2 regularization, deterministic random_state).",
+  "code_lines": 53,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

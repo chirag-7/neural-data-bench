@@ -1,0 +1,10 @@
+{
+  "seconds": 2.335499749984592,
+  "submission_file": "experiments/generation-extension-v1/submissions/I10/gpt-5-2025-08-07.json",
+  "submission_sha256": "ff3dca3747a56bd786fb05a823e34572026061ea3269d3dd7c3c0e9fdeda0dbd",
+  "code_sha256": "188bf39e553bcebe176e2187bd62a4e6c51d88c199a0f1d937b7ee760aa8c085",
+  "description": "Binary IQM-based MRI QC classifier for ABIDE\u2192DS030 generalization. Pipeline: (1) replace \u00b1inf with NaN; (2) train-only per-feature median imputation; (3) append missingness indicators (one per original feature); (4) train-only standardization (mean 0, std 1; zero-std features left unscaled). Classifier ensemble: RandomForestClassifier (class_weight='balanced_subsample', depth-limited) + LogisticRegression (L2, class_weight='balanced'). A 5-fold stratified CV on ABIDE yields out-of-fold probabilities for both models; we grid-search a convex blending weight \u03b1\u2208[0,1] and a decision threshold \u03c4\u2208[0.05,0.95] to maximize balanced accuracy on OOF predictions. Final models are refit on all training data, test probabilities are blended with the chosen \u03b1, and labels are produced using \u03c4. Deterministic seed (42); RandomForest n_jobs=1. Only training-derived statistics are used for imputation and scaling; no test labels are used. Predictions are integer labels with shape (n_test,).",
+  "code_lines": 145,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

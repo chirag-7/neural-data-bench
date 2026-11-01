@@ -4,6 +4,7 @@
   "measured_tasks_with_bar_and_line_plots": 30,
   "specialist_overlays": "passed",
   "practical_review": "passed · 30 specialist views, 4 repair tabs, final results/category/task handlers, immutable original records",
+  "four_model_comparison": "passed · four points, six pairs, category/task filtering, provenance, immutable rows, historical audit",
   "direct_named_reference_labels_and_numeric_cards": "passed",
   "posthoc_metric_sensitivity": "passed",
   "negative_R2_axis": "passed",

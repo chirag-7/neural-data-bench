@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "A09",
+  "slice_id": "expansion-v1",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "03e8846ff3619bbb94d925af4476bf125f2956f9d0bf472d1bb33a2c2f9a4a50",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/A09/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "482f0d8e47683830d7bec4b4cdb94eefe5689b84ebcad3a2260375da5b453ed2",
+  "code_sha256": "c9db7311dcf55be87fe955d13638766959ee6dcbade678291878fa5296b08c13",
+  "description": "This solution classifies mouse social behavior from pose using hand-crafted features extracted from the context window for each frame, followed by a gradient boosting classifier. The features include within-frame and across-window statistics of inter-animal distances, within-animal body part distances (e.g., nose-to-neck), displacement and velocity features based on position differences across time offsets, and relative orientation angles between keypoints. The model employs scikit-learn's HistGradientBoostingClassifier for efficient training and robust generalization, and the code sets numpy RNG and model seeds to ensure determinism. Cross-validation is done via five-fold stratified split on the training set to select the best model configuration (using macro-F1 score); however, due to constraints, hyperparameter tuning is light and deterministic. The entire pipeline keeps memory usage and runtime suitable for a single CPU. Output is the integer label per test sample, matching the input shape.",
+  "code_lines": 113,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

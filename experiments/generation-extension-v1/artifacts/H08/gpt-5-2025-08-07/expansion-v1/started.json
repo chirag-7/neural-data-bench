@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "H08",
+  "slice_id": "expansion-v1",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "18c7e3aab36bdbcce6a507bffe17300687548cec4bd3007e2184a876599dd339",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/H08/gpt-5-2025-08-07.json",
+  "submission_sha256": "bedc5ec17c8cafabc7a7167874cabe2cb26cb9b576d365592b79141b9f6ee01a",
+  "code_sha256": "3f6a78531baaf0726b915a8281601cfc37163e43cfdf9a4680a0bedcb6c1d950",
+  "description": "EEG sleep staging with compact spectral/time-domain features, per-night unsupervised normalization, multinomial logistic regression, and HMM-style temporal decoding. For each night we: (1) detrend each epoch by mean, (2) extract vectorized features: time-domain (std, peak-to-peak, mean absolute value, line length, zero-crossing rate, Hjorth mobility/complexity, skewness, kurtosis), frequency-domain via rFFT with Hamming window (relative bandpowers in delta/theta/alpha/sigma/beta for 0.5\u201330 Hz, three log band ratios, spectral centroid, spectral entropy, SEF90), and time-of-night features (index, sin, cos). Features are z-scored per night (unsupervised adaptation). We train a multinomial LogisticRegression (class_weight='balanced') on all labeled epochs (ignoring -1). A 5x5 Markov transition matrix and initial distribution are estimated from labeled training sequences with Laplace smoothing and diagonal self-bias. Test emissions are classifier probabilities mapped into 5 classes (missing classes get tiny mass). We decode each test night offline with Viterbi, then apply a light de-islanding pass to replace 1-epoch flips. Nights are processed independently, preserving boundaries. Deterministic seeds, single-thread classifiers, and no external assets.\n",
+  "code_lines": 207,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

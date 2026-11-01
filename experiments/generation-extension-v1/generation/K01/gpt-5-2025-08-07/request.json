@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5-2025-08-07",
+  "input": "You are participating in a single-shot neuroscience code-synthesis experiment. Do not call tools, browse, read files or execute code. Return only JSON with description and code.\n\nImplement Python fit_predict(train_x,train_y,test_x) returning predictions with the specified shape. No test target labels are supplied.\n\nPredict independent expert morphology labels from 11 electrophysiological cell features, mouse Allen Cell Types. Rows are distinct cells; train/test donors are disjoint. Labels 0/1 and exact mapping/features are in the context below. Features may contain NaNs. No morphology, genetic, anatomical or identifier predictors are included. Return integer class labels of shape (n_test,). Primary macro-F1 (higher is better); balanced accuracy secondary. Fit preprocessing on training only; use deterministic seeds. It is a donor-held-out processed-feature task, not raw trace classification.\n\nPrepared input context: {\"train_x_shape\": [1356, 11], \"train_y_shape\": [1356], \"test_x_shape\": [457, 11], \"feature_names\": [\"ef__adaptation\", \"ef__avg_firing_rate\", \"ef__avg_isi\", \"ef__f_i_curve_slope\", \"ef__fast_trough_v_long_square\", \"ef__peak_t_ramp\", \"ef__ri\", \"ef__tau\", \"ef__threshold_i_long_square\", \"ef__upstroke_downstroke_ratio_long_square\", \"ef__vrest\"], \"label_encoding\": {\"0\": \"aspiny\", \"1\": \"spiny\"}, \"input\": \"float64 (cell,11 electrophysiological features); NaN denotes missing feature\"}\n\nAllowed imports: numpy, scipy, sklearn, math, collections, functools, itertools, statistics, gc. No file/network/subprocess access, dynamic exec/eval, pretrained assets or specialist neuroscience packages. Use deterministic seeds. One submission, no execution feedback. The entire fit_predict call must finish in180 seconds on one numerical CPU thread, approximately4GB working memory (memory request is not enforced). Keep code below240 lines including blanks. Return JSON fields description (method and training/validation policy), code (complete self-contained Python source with fit_predict and helpers). Do not claim a score.\n",
+  "store": false,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "neural_program",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "reasoning": {
+    "effort": "high"
+  },
+  "max_output_tokens": 24000
+}

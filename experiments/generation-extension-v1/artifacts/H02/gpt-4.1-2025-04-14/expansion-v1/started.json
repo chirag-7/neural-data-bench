@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "H02",
+  "slice_id": "expansion-v1",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "d311e0dd3acb26d3ee738adff31b7dc3639a3cc56e816db665bf7b5eac31d1f8",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/H02/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "2bc4523d5eaceba1e19688abfce3914f7d9748ed726c190336b361d9c193ed69",
+  "code_sha256": "67fff427cee86353b32864190e59e2dddcbcd102eb5e0741740a09ef21151a67",
+  "description": "This method implements a cross-person EEG P300 target detection using a linear ensemble classifier. 1) Preprocessing: Each trial is z-scored channel-wise using statistics computed from training data only. 2) Feature extraction: Temporal windows are selected based on typical P300 latency (e.g., mean signal in 300\u2013600ms after flash), and means are extracted per channel. 3) A channel-wise linear discriminant analysis (LDA) classifier is trained and combined into a meta-LDA. Regularization is selected using Leave-One-Group-Out (LOGO) cross-validation across training people, validating generalization to new people. The trained classifier is then applied to test trials after the same preprocessing and feature steps, returning one score per test trial. Calibration or threshold fitting is not performed on test data or across person boundaries.",
+  "code_lines": 81,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

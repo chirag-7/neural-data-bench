@@ -24,6 +24,7 @@ const ctx = {
   console,
   fetch: async (p) => ({
     ok: fs.existsSync(path.join(root, "website", p)),
+    status: fs.existsSync(path.join(root, "website", p)) ? 200 : 404,
     json: async () =>
       JSON.parse(fs.readFileSync(path.join(root, "website", p), "utf8")),
     text: async () => fs.readFileSync(path.join(root, "website", p), "utf8"),
@@ -42,6 +43,12 @@ const catalog = JSON.parse(
   summary = JSON.parse(
     fs.readFileSync(path.join(root, "analysis/summary.json"), "utf8"),
   );
+// Run frozen-snapshot assertions against the preserved historical assets, even
+// when the independently assembled current comparison is present.
+vm.runInContext(`MODELS=[...HISTORICAL_MODELS]; comparisonActive=false;
+summary=${JSON.stringify(summary)};
+records=${fs.readFileSync(path.join(root, "website/data/measurements.jsonl"), "utf8").trim().split("\n").map(line=>JSON.stringify(JSON.parse(line))).join(",").replace(/^/,"[").concat("]")};
+historicalRecords=records.map(row=>({...row}));`,ctx);
 const release = fs.readFileSync(path.join(root, "README.md"), "utf8").match(/Preview \*\*([0-9.]+)\*\*/)[1];
 if (!fs.readFileSync(path.join(root,"website/index.html"),"utf8").includes("Research preview · v"+release)) throw Error("Stale website release footer");
 let n = 0;
@@ -262,12 +269,59 @@ const replicationText = el("#benchmark-content").innerHTML;
 for (const text of ['generation-range', 'xDAWN · train-CV tuned', 'xDAWN · fixed', 'Attempt 3', 'not confidence intervals', 'All candidate validation scores']) {
   if (!replicationText.includes(text)) throw Error('Missing replication component: '+text);
 }
+// Four-model rendering contract. Fixtures live only in this VM test: they are
+// never serialized as benchmark data or interpreted as scientific results.
+const frozenReview = JSON.parse(fs.readFileSync(practicalPath, "utf8"));
+const newReviewPath = path.join(root,"website/data/generation-comparison.json");
+const newSummaryPath = path.join(root,"website/data/comparison-summary.json");
+const newRowsPath = path.join(root,"website/data/comparison-measurements.jsonl");
+const fourModels = ["gpt-4.1-2025-04-14","gpt-5-2025-08-07","gpt-5.6-sol","gpt-6.1-sol"];
+const pairsFor = scores => fourModels.flatMap((older,i)=>fourModels.slice(i+1).map(newer=>({older,newer,raw_native_delta:scores[newer]-scores[older],outcome:"fixture_only"})));
+const fourReview = fs.existsSync(newReviewPath) ? JSON.parse(fs.readFileSync(newReviewPath,"utf8")) : {
+ ...frozenReview, models:fourModels, findings:["VM test fixture, not empirical evidence"],
+ tasks:frozenReview.tasks.map(task=>{
+  const old=task.repair_assisted || task, values=Object.values(old.scores).filter(Number.isFinite), scores=Object.fromEntries(fourModels.map((model,i)=>[model,values[i%values.length]]));
+  return {...task,scores,pairs:pairsFor(scores),repair_assisted:{...old,scores,pairs:pairsFor(scores),chart_rows:[]}};
+ })
+};
+const fourSummary=fs.existsSync(newSummaryPath)?JSON.parse(fs.readFileSync(newSummaryPath,"utf8")):{...summary,models:fourModels,model_summaries:fourModels.map(model=>({...summary.model_summaries[0],model}))};
+const fourRows=fs.existsSync(newRowsPath)?fs.readFileSync(newRowsPath,"utf8").trim().split("\n").map(line=>JSON.parse(line)):vm.runInContext("records.filter(row=>!HISTORICAL_MODELS.includes(row.model)).concat(COMPARISON_MODELS.flatMap(model=>records.filter(row=>row.model==='gpt-6.1-sol').map(row=>({...row,model}))))",ctx);
+vm.runInContext(`MODELS=[...COMPARISON_MODELS];comparisonActive=true;summary=${JSON.stringify(fourSummary)};records=${JSON.stringify(fourRows)};practicalData=${JSON.stringify(fourReview)};practicalCategory='';practicalTask='A09';`,ctx);
+const beforeFour=vm.runInContext("JSON.stringify(records)",ctx);
+ctx.location.hash="#/analysis/practical";vm.runInContext("draw()",ctx);await new Promise(resolve=>setImmediate(resolve));
+const fourHTML=el("#app").innerHTML;
+for(const name of ["GPT-4.1","GPT-5","GPT-5.6 Sol","GPT-6.1 Sol"]) if(!fourHTML.includes(name)) throw Error("Four-model native table missing "+name);
+if(!fourHTML.includes("Historical three-model audit · includes GPT-6 Sol")) throw Error("Historical audit disclosure missing");
+if(fourHTML.includes("Δ 5.6 → 6</th>") || fourHTML.includes("GPT-6 is mixed relative")) throw Error("Old GPT6 current comparison leaked");
+if((fourHTML.match(/<th>Δ /g)||[]).length!==6) throw Error("Four-model table needs all six pair columns");
+for(const id of ["practical-track","practical-detail-category"]) if(fourHTML.includes('id="'+id+'"')) throw Error("Redundant comparison selector "+id);
+el("#practical-category").onchange({target:{value:"K"}});await new Promise(resolve=>setImmediate(resolve));
+for(const id of optionIds(el("#app").innerHTML,"practical-task")) if(!id.startsWith("K")) throw Error("Four-model category filtering failed");
+el("#practical-task").onchange({target:{value:"K04"}});
+const details=el("#practical-task-detail").innerHTML;
+if(!details.includes("Model-version line chart") || !details.includes("Bar chart including")) throw Error("Four-model detail needs line and bar plots");
+for(const model of fourModels) if(!details.includes(vm.runInContext(`label('${model}')`,ctx))) throw Error("Missing native plot model "+model);
+if(vm.runInContext("JSON.stringify(records)",ctx)!==beforeFour) throw Error("Four-model practical view mutated records");
+// Multi-slice practical plots must use task means, never the first slice.
+for (const task of fourReview.tasks.filter(task=>task.n_slices>1)) {
+ const series=task.repair_assisted || task;
+ const displayed=vm.runInContext(`practicalRows(${JSON.stringify(task)},${JSON.stringify(series)})`,ctx);
+ for (const row of displayed) if(row.score!==(series.scores[row.model] ?? null)) throw Error("Task-mean plot mismatch: "+task.benchmark_id);
+ const html=vm.runInContext(`practicalPlots(${JSON.stringify(task)},${JSON.stringify(series)})`,ctx);
+ for(const row of displayed.filter(row=>Number.isFinite(row.score))) if(!html.includes(vm.runInContext(`fmt(${row.score})`,ctx))) throw Error("Task mean absent from rendered plot");
+}
+const line=vm.runInContext(`linePlot(MODELS.map((model,i)=>({model,score:i+1})),[{model:'task-baseline',score:2.5}], 'higher')`,ctx);
+const circleX=[...line.matchAll(/<circle cx="([0-9.]+)"/g)].map(match=>Number(match[1]));
+if(circleX.length!==4 || circleX.some(x=>x<65||x>365) || new Set(circleX).size!==4) throw Error("Four points must fit before named reference labels");
+ctx.location.hash="#/benchmark/H02/replication";vm.runInContext("draw()",ctx);
+if(!el("#benchmark-content").innerHTML.includes("Historical three-model follow-up")) throw Error("Old replication must be labeled historical");
 const result = {
   type: "In-memory source-render and direct-handler checks; not real-browser interaction or layout QA",
   routes: n,
   measured_tasks_with_bar_and_line_plots: plots,
   specialist_overlays: "passed",
   practical_review: practicalChecks,
+  four_model_comparison: "passed · four points, six pairs, category/task filtering, provenance, immutable rows, historical audit",
   direct_named_reference_labels_and_numeric_cards: "passed",
   posthoc_metric_sensitivity: "passed",
   negative_R2_axis: "passed",

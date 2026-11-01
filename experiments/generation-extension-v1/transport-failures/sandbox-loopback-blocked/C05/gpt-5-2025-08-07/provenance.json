@@ -1,0 +1,15 @@
+{
+  "benchmark_id": "C05",
+  "requested_model": "gpt-5-2025-08-07",
+  "prompt_sha256": "00b53eb24dffcad2a9f3d1c4696f7078165bd897b9bac2595f3fae5d2a784b5c",
+  "request_sha256": "106bfdcda95addcb8df7097088475bbd75b6c6d97de178d0c751ba8fc36ed893",
+  "generation_seal_sha256": "7655fe3656b1dc371248b7f1134bbab21e5cea929028f7e306ad2961af062531",
+  "provider": "OpenAI Responses API",
+  "tools_enabled": false,
+  "generation_replicate": 1,
+  "execution_feedback": false,
+  "started_unix": 1793563123.517656,
+  "status": "generation_invalid_or_incomplete",
+  "error": "<urlopen error [Errno 1] Operation not permitted>",
+  "elapsed_seconds": 0.00010085105895996094
+}

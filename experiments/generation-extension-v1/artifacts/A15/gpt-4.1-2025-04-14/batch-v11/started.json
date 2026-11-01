@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "A15",
+  "slice_id": "batch-v11",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "623cd3f6590b0a8aed01cd5dc99035816884eeac58dd73296ed6ee80936c6f52",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/A15/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "873bcb010468c9822cf8cc147757eed538f9a81c5c28968f9bcaa333c78a53c2",
+  "code_sha256": "084ca27e4e8cc0e3227cc75785465b68a563018a009d1ae580d6ed503a50f042",
+  "description": "Fit a scipy+sklearn pipeline for supervised binary (event) detection in 1ms frames, trained on annotated Bengalese finch audio. The feature pipeline computes log-mel-like band energies from the STFT, noise-floor normalizes per recording, then augments with broadband power and temporal smoothing. Classifier is HistGradientBoosting (with fixed seeds and hyperparameters), trained and threshold optimized on 60 training recordings using held-out whole recording rows for validation. At prediction, test recordings undergo identical STFT/feature extraction and normalization, then are classified, thresholded and post-processed (gap fill, minimum duration enforcement). NaN padded regions in input are ignored and predicted as zeros. The output is an (20, 18354) binary int ndarray with required units and mask semantics. No source annotations, files or test-grouping are visible during fitting.",
+  "code_lines": 200,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

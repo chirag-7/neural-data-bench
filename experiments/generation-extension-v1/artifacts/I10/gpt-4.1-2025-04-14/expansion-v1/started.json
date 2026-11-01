@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "I10",
+  "slice_id": "expansion-v1",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "4590a046debb006047917f33a00fa0824a22a8a258be915da29252ccbb27ea57",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/I10/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "e454e307ce9ef555bf37c8edad01da7f28b013a689e94f33ce5a8c80e9ab1df1",
+  "code_sha256": "2ba2a9d1f114869fc1cea6b8855237443c53e79d4c02fb2b83c9e58092b3c538",
+  "description": "This solution builds a binary classifier to determine MRI scan acceptability based on precomputed image quality metrics (IQMs). The approach uses a pipeline with (1) train-set-only median imputation for missing values, (2) train-set-only robust scaling (median/IQR), and (3) a balanced random forest classifier (class_weight='balanced', random_state fixed, 100 trees). Cross-validation is used internally on the training set (stratified 5-fold, balanced accuracy scoring) to grid-search both max_depth and min_samples_leaf hyperparameters. No information from the test set is used beyond applying the fitted imputer/scaler. Test data is not used for statistics or model tuning. Integer predictions (0=include, 1=exclude) are returned with shape (n_test,). No identifiers, site, or label fields are used. All IQMs are treated as numeric. No tuning based on test outcomes is performed. This is a straightforward single-model solution maximizing generalizability with careful handling of missing data and class imbalance.",
+  "code_lines": 48,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

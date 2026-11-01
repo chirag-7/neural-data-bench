@@ -1,0 +1,72 @@
+{
+  "study": "generation-extension-v1",
+  "status": "sealed_before_new_API_generations",
+  "sources": {
+    "experiments/generation-extension-v1/manifest.json": "e6dd423326c238fd1c2d4cef9d16de597e08446ae2aa3201c56efaf088f87ada",
+    "experiments/generation-extension-v1/plan.md": "39cc170f2dd00ff452dd1b5aad29fb7c11febc63168c725229c07db0d83be6d2",
+    "experiments/generation-extension-v1/execution-seal.json": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+    "scripts/extension_api_bridge.py": "ce40d05b8a9e253c12c858fe4ba2a1a6e2d33bdb9a4abe4ab21fd082b350d416",
+    "scripts/extension_generate.py": "4b85298f26dfdde822efdcb1419ab5c1fa67dd3bded16fd2aa7d7d9051e53d65",
+    "experiments/A09/prompt.txt": "03e8846ff3619bbb94d925af4476bf125f2956f9d0bf472d1bb33a2c2f9a4a50",
+    "experiments/A14/prompt.txt": "699888b30f9bbf7cf8276d65cef489c028855be58504c154e9b3fb04ffcf55af",
+    "experiments/A15/prompt.txt": "623cd3f6590b0a8aed01cd5dc99035816884eeac58dd73296ed6ee80936c6f52",
+    "experiments/B01/prompt.txt": "81bf9c612bd66845fbed58ca676a178779cf5015f7e7ae7c62d1145caccd633d",
+    "experiments/B03/prompt.txt": "ad53c3a97af54d2ab10051a493b7ab73a718a3ea290810a838e73797d776aec1",
+    "experiments/B07/prompt.txt": "777c70b21cad61c1d9f3e6570eeead07001eb8cbeead506c3bcaf2354f5ce0b0",
+    "experiments/B08/prompt.txt": "7572f4c6280846afd010cd76e368f64121dc1379dab09adb88f16d8c1fd40b6d",
+    "experiments/C05/pilot-v1/prompt.txt": "00b53eb24dffcad2a9f3d1c4696f7078165bd897b9bac2595f3fae5d2a784b5c",
+    "experiments/C06/prompt.txt": "11593c2e786bc00f549dbd9cd16378f54c4ae312627a21ce2c5768b12ed32670",
+    "experiments/D02/prompt.txt": "d077b7128181f627f40d6aec35bb6ca5e9a993e9e353dd946e01f7dd57aca010",
+    "experiments/E01/prompt.txt": "5227b10093eb9498f09a5a8625440d8192a730e5b5fdf92bb88e1e97a2c34ba2",
+    "experiments/E06/prompt.txt": "a9b8184757172ae629aa1cdf93d53927bc420d61356e7d6b66dc8b239230727e",
+    "experiments/F04/prompt.txt": "ebc1de0f4cfb016e5d2e7020e7c983165f0ae438294c6020922f6e4789e32788",
+    "experiments/G01/prompt.txt": "85debe58c087d2d1dc15333e763a5e80148e10474aac9571111a9f24faf0c1dd",
+    "experiments/H01/prompt.txt": "41454b3897f30741b80205c97c040937334ec70465a9d3b03bebaee9d8f2edd3",
+    "experiments/H02/prompt.txt": "d311e0dd3acb26d3ee738adff31b7dc3639a3cc56e816db665bf7b5eac31d1f8",
+    "experiments/H08/prompt.txt": "18c7e3aab36bdbcce6a507bffe17300687548cec4bd3007e2184a876599dd339",
+    "experiments/H16/prompt.txt": "e5c842e5ee0d09b39b55bb2eaa655c380130dd80102a096e2da0bd4ad400a650",
+    "experiments/I07/prompt.txt": "e6e8905bd6dd0da46002200a77d5694ab3776b844ec80184b849b30524839742",
+    "experiments/I10/prompt.txt": "4590a046debb006047917f33a00fa0824a22a8a258be915da29252ccbb27ea57",
+    "experiments/J08/prompt.txt": "02f3ff23dfb5f22bd10ebf8e5ad43ff635b5913bb31af03090541eac15ea9196",
+    "experiments/K01/prompt.txt": "e25facd2e8f286ab6593c710ead89f41b411934a38b0668bcc054f1d7e50ceb7",
+    "experiments/K04/prompt.txt": "8ea1145c80e2bc90e94a0bb8a33233c83627ab17edddadc3f38636f51a52097a",
+    "experiments/K05/prompt.txt": "1a0663291d4f692a158c576d6639ce242f6cf3e28ab8b3bb4b222d2ecbe6162d",
+    "experiments/K06/prompt.txt": "3c99ed7b37fb4066883ed6482a66d11fc0ffd3e41950889aaf156d7ae584e95f",
+    "experiments/L04/prompt.txt": "a935729e11e4e7c41cef174723c52e29042ef96d3dcaf7cde69cda533a2c6eca",
+    "experiments/L06/prompt.txt": "9fd8e357ecf8b9c42cfd13276af3c1492a9b3ccf7cee487b1a3e2a3802de5a4a",
+    "experiments/M01/prompt.txt": "ce3ed452b97ec306c8a587a1570be8bef6efd99f6fe5ca6756d7273f37d09691",
+    "experiments/M04/prompt.txt": "a2dabc0280992e3d59521b83b15b027437590d02e2e116b6e5788a8229e24600",
+    "experiments/N05/prompt.txt": "3d816aec642b0385d82343a5074e0049cf89f5f2740856d5a3ff87c276b43538"
+  },
+  "models": [
+    "gpt-4.1-2025-04-14",
+    "gpt-5-2025-08-07"
+  ],
+  "settings": {
+    "gpt-5-2025-08-07": {
+      "reasoning": {
+        "effort": "high"
+      },
+      "max_output_tokens": 24000
+    },
+    "gpt-4.1-2025-04-14": {
+      "max_output_tokens": 8192
+    }
+  },
+  "store": false,
+  "tools": [],
+  "one_generation_per_task_model": true,
+  "no_execution_feedback": true,
+  "provider": "OpenAI Responses API; Codex provider wrapper differs from historical Sol programs",
+  "prices_per_million": {
+    "gpt-5-2025-08-07": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gpt-4.1-2025-04-14": {
+      "input": 2,
+      "output": 8
+    }
+  },
+  "budget_ceiling_usd": 15
+}

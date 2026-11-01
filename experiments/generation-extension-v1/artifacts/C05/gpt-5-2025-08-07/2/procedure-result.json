@@ -1,0 +1,10 @@
+{
+  "seconds": 0.5725641250610352,
+  "submission_file": "experiments/generation-extension-v1/submissions/C05/gpt-5-2025-08-07.json",
+  "submission_sha256": "9cc9916b7ad53d0c961a83b237a5ce88bddf690a17275cb562fab4a7df0ea392",
+  "code_sha256": "3bc6f60b6e10a1f05ea26468939f863eb8c6a6847a999a99e5c70a80127e5bbc",
+  "description": "Global linear deconvolution via Wiener filter learned from training neurons. We robustly standardize each train trace (median/MAD), compute aggregated auto-correlation of calcium and cross-correlation with spikes using FFT-based convolution, then solve a ridge-regularized Toeplitz normal equation to obtain a single two-sided FIR filter (acausal and causal lags \u00b10.8 s at 100 Hz). For test neurons, we robustly standardize each trace, apply the learned two-sided filter via efficient lagged additions, and rectify to enforce nonnegativity. Trailing NaNs in inputs remain NaN in outputs; predictions are finite where inputs are finite. No mixing across neuron boundaries or use of test labels. The method is simple, fast, and scale/offset agnostic (correlation metric is scale-invariant).",
+  "code_lines": 135,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 180
+}

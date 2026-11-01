@@ -1,0 +1,112 @@
+{
+  "id": "resp_0e81d6ebfd678e44016ae799ece59487d2af40715c61f56a76",
+  "object": "response",
+  "created_at": 1793563116,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1793563121,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-4.1-2025-04-14",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0e81d6ebfd678e44016ae799ed338c87d2b4ae7c3fcadc468e",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"description\": \"This solution repairs ocular (EOG) artifacts in EEG segments using a supervised regression approach with frequency-wise Wiener filtering, leveraging the matched pairs of noisy (mixture) and clean EEG segments. The core concept is that ocular artifacts are stereotyped, broadly low-frequency, and their mixing is linear, so learned linear spectral-domain filtering is a practical approach. All segments are one channel, standardized per segment, with 512 samples (2 seconds at 256 Hz). The algorithm proceeds as follows: \\n\\n1. Both train_x (mixture) and train_y (matched clean EEG) are transformed with the real FFT (rFFT) along the time axis per segment, yielding frequency coefficients.\\n2. For each frequency bin, a linear regression model (Ridge regression, \\u0001=0.05 for robustness to collinearity and noise) is fit from the noisy train_x rFFT coefficient to the clean train_y rFFT coefficient.\\n3. For each held-out noisy segment in test_x, rFFT is applied, frequency-wise denoised coefficients are predicted using the learned regression weights, and the inverse rFFT reconstructs the time-domain denoised segment.\\n4. Output shape matches test_x.\\n\\nThis method handles both amplitude and phase adjustments per frequency, robustly attenuates linear ocular artifacts, and internalizes the normalization regime of the data. Ridge regression (rather than OLS) helps avoid overfitting or instability due to the semi-synthetic mixing. The method uses no external weights nor specialist packages. All inference and reconstruction is vectorized for efficiency; only numpy and sklearn (for Ridge) are used. No information about test target labels is used, in accord with standard offline artifact removal expectations.\",\n  \"code\": \"import numpy as np\\nfrom sklearn.linear_model import Ridge\\n\\ndef fit_predict(train_x, train_y, test_x):\\n    \\\"\\\"\\\"\\n    EEG artifact repair via frequency-domain ridge regression filtering.\\n    Args:\\n      train_x: (n_train, n_samples) noisy (mixture) segments, float32\\n      train_y: (n_train, n_samples) clean matching segments, float32\\n      test_x: (n_test, n_samples) noisy (mixture) segments, float32 (to denoise)\\n    Returns:\\n      denoised: (n_test, n_samples), np.ndarray(float32)\\n    \\\"\\\"\\\"\\n    # Consistent FFT setup\\n    n_freq = train_x.shape[1] // 2 + 1  # for rFFT\\n\\n    # rFFT along last axis for each segment\\n    X_fft = np.fft.rfft(train_x, axis=1)  # (n_train, n_freq), complex\\n    Y_fft = np.fft.rfft(train_y, axis=1)  # (n_train, n_freq), complex\\n    T_fft = np.fft.rfft(test_x, axis=1)   # (n_test, n_freq), complex\\n\\n    # For each frequency bin, learn a linear complex mapping (via real regression over real/imag)\\n    denoised_fft = np.zeros_like(T_fft, dtype=np.complex128)\\n    alpha = 0.05  # Ridge strength\\n\\n    for f in range(n_freq):\\n        # Regress both real/imag parts as 2-D target\\n        # Each: shape (n_train,)\\n        X_feat = np.vstack([\\n            X_fft[:,f].real,  # (n_train,)\\n            X_fft[:,f].imag\\n        ]).T  # shape: (n_train, 2)\\n        Y_feat = np.vstack([\\n            Y_fft[:,f].real,\\n            Y_fft[:,f].imag\\n        ]).T # shape: (n_train, 2)\\n\\n        # Regression: simple mapping, Ridge is stable\\n        model = Ridge(alpha=alpha, fit_intercept=True, random_state=42)\\n        model.fit(X_feat, Y_feat)\\n\\n        # Prepare test feature\\n        T_feat = np.vstack([\\n            T_fft[:,f].real,\\n            T_fft[:,f].imag\\n        ]).T  # (n_test, 2)\\n        pred = model.predict(T_feat) # (n_test, 2)\\n        denoised_fft[:,f] = pred[:,0] + 1j*pred[:,1]\\n\\n    # Inverse rFFT per segment\\n    denoised = np.fft.irfft(denoised_fft, n=train_x.shape[1], axis=1)\\n    # Final shape and dtype\\n    denoised = denoised.astype(np.float32)\\n    return denoised\\n\"\n}"
+        }
+      ],
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "in_memory",
+  "reasoning": {
+    "context": null,
+    "effort": null,
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "neural_program",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 1.0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 517,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 999,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1516
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,112 @@
+{
+  "id": "resp_006a55a7ad299ce8016ae799bf4f4087d290515cef766d209d",
+  "object": "response",
+  "created_at": 1793563071,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1793563077,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-4.1-2025-04-14",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_006a55a7ad299ce8016ae799bfa18887d29375dbdffe7d7243",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\n  \"description\": \"This fit_predict implementation creates a non-causal (acausal) single-trial regression model mapping observed neurons to held-out neurons, leveraging temporal and cross-neuron context within each trial while not using data from other trials for smoothing. The approach is as follows: (1) For each time bin, form a per-trial feature vector by stacking all held-in (observed) neuron counts at all 35 time bins (flattened as a feature vector of size 35x107). The decoder predicts the expected spike count of each held-out neuron at each time bin, using as input the activity of all held-in neurons over the entire time course of the trial. (2) A separate Ridge regression is fit independently for each held-out neuron and each time bin. (3) The regressors are trained on the 99 training trials only, without any data leakage between trials, and predictions are made for each trial independently, producing nonnegative expected counts per bin. (4) Negative predictions (impossible as expected spike counts) are thresholded to zero. This model makes full use of within-trial temporal context (whole-trial regression), but does not transfer smoothing or features across trials. All computations use NumPy and sklearn's Ridge regression (L2 regularization, deterministic random_state).\",\n  \"code\": \"import numpy as np\\nfrom sklearn.linear_model import Ridge\\n\\ndef fit_predict(train_x, train_y, test_x):\\n    # train_x: (99, 35, 107), held-in neuron counts\\n    # train_y: (99, 35, 35), held-out neuron counts\\n    # test_x:  (100, 35, 107)\\n    # Returns: (100, 35, 35), nonnegative expected spike counts per bin\\n    \\n    n_train, n_bins, n_obs = train_x.shape\\n    _, _, n_ho = train_y.shape\\n    n_test = test_x.shape[0]\\n\\n    assert train_y.shape == (n_train, n_bins, n_ho)\\n    assert test_x.shape == (n_test, n_bins, n_obs)\\n\\n    # Flatten temporal and neuronal dimensions for input features of each trial\\n    # For each trial we have features: 35 timebins x 107 neurons = 3745\\n    X_train = train_x.reshape(n_train, n_bins * n_obs)\\n    X_test = test_x.reshape(n_test, n_bins * n_obs)\\n\\n    # For each held-out neuron and target time-bin, fit a separate Ridge\\n    # Target for y: per trial, for each time bin, for each neuron\\n    preds = np.zeros((n_test, n_bins, n_ho), dtype=np.float32)\\n    \\n    # Reshape train_y to (n_train, n_bins, n_ho)\\n    rng = np.random.RandomState(42)\\n    alpha = 10.0  # Moderate regularization; can be adjusted\\n\\n    for neuron in range(n_ho):\\n        for t in range(n_bins):\\n            # Target: shape (n_train,)\\n            ytr = train_y[:, t, neuron]\\n            # Train Ridge regression\\n            reg = Ridge(\\n                alpha=alpha,\\n                fit_intercept=True,\\n                random_state=42\\n            )\\n            # The feature is the whole held-in neuron activity in the trial\\n            reg.fit(X_train, ytr)\\n            # Predict for test trials\\n            ypr = reg.predict(X_test)\\n            # Ensure predictions are finite and non-negative\\n            ypr = np.maximum(ypr, 0.0)\\n            # Save to prediction array\\n            preds[:, t, neuron] = ypr.astype(np.float32)\\n    \\n    # check for any non-finite values (shouldn't occur)\\n    if not np.isfinite(preds).all():\\n        preds = np.nan_to_num(preds, nan=0.0, posinf=0.0, neginf=0.0)\\n        preds = np.maximum(preds, 0.0)\\n    return preds\\n\"\n}"
+        }
+      ],
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "in_memory",
+  "reasoning": {
+    "context": null,
+    "effort": null,
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "neural_program",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description",
+          "code"
+        ],
+        "additionalProperties": false
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 1.0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 552,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 881,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1433
+  },
+  "user": null,
+  "metadata": {}
+}

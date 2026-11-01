@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "I07",
+  "slice_id": "expansion-v1",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "e6e8905bd6dd0da46002200a77d5694ab3776b844ec80184b849b30524839742",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/I07/gpt-5-2025-08-07.json",
+  "submission_sha256": "582438790ed8632209f5d9d917d6ea922551998b8da2fb4f971a279ce313f756",
+  "code_sha256": "cbbc76ba95fcc46613ce63dbd50084f22424a79c31b4d5a0c1a570f19e723aae",
+  "description": "Deterministic linear decoder with train-only preprocessing and small CV for hyperparameters. Steps: (1) Build features per trial from optical-density (OD) data shaped (136 channels, 8 bins). Besides the flattened OD values, construct wavelength-pair features by assuming the provided channel order alternates 760/850 nm per spatial channel: compute per-time-bin 850\u2013760 (difference) and 850+760 (sum). Add temporal summaries to capture the hemodynamic-like shape: for each pair-difference, compute early mean (3\u20136 s), late mean (7\u201311 s), late\u2013early difference, and linear trend (slope) across the 8 bins; also compute per-channel OD slope, plus global time-wise means for OD and for pair-difference. Concatenate all to form a ~2600-D feature vector per trial. (2) Standardize features using StandardScaler fit on training data only. (3) Dimensionality reduction using PCA with components chosen from a small grid (64 or 128), or no PCA skipped, depending on candidate; PCA is fit only on the training set within CV folds. (4) Linear classifier: either LinearSVC (balanced class weights) or L2-regularized LogisticRegression (balanced), with a small grid of C values. (5) Hyperparameter selection by 5-fold StratifiedKFold CV optimizing balanced accuracy. (6) Refit the best pipeline on the full training data and predict integer labels for test. All randomness is fixed with seed=0; no trial joining; each sample handled independently.",
+  "code_lines": 151,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

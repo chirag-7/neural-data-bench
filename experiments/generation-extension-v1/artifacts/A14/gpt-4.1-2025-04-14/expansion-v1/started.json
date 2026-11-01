@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "A14",
+  "slice_id": "expansion-v1",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "699888b30f9bbf7cf8276d65cef489c028855be58504c154e9b3fb04ffcf55af",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-extension-v1/submissions/A14/gpt-4.1-2025-04-14.json",
+  "submission_sha256": "da8cd0a1d13ede633a87e82cd918f53aea7d781e921f6c6bd188002c444da3aa",
+  "code_sha256": "d436fbca81062b7378af73b71bb29ba47973e92655c7d5b8572a448bf4edd5e9",
+  "description": "This method imputes missing 7-frame interior gaps of HeadF xyz landmarks in rat 3D motion-capture windows using a non-iterative K-Nearest Neighbors (KNN) regression approach, fitted per HeadF coordinate. For each of the 7 masked frames (window indices 12:19), a separate KNN regressor is trained using valid frames from the training set (excluding masked test animal indices, leveraging only animals 1\u20133 from training). The regressors predict HeadF's missing values based on the 15 other fully-observed features (all non-HeadF landmark xyz positions at the same timepoint), using the corresponding features in test windows. The approach is fully offline and acausal, making predictions for masked frames solely from their observed coordinates. Predictions are reassembled into the original test_x shape with only the masked locations replaced, ensuring finite values at those locations and strict separation of animals by dataset split. The number of neighbors is fixed (k=5), and regression is non-weighted for simplicity; training points with NaNs in predictors or targets are excluded. The method is deterministic, using no random processes. No temporal dynamics or sequence modeling is invoked; the prediction leverages only spatial geometric context at each imputation frame. No browsing or file I/O occurs. All computation fits in a single fit_predict function, conforming to time and memory constraints.",
+  "code_lines": 54,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}
