@@ -47,6 +47,8 @@ At least one of the three general programs beats the declared primary reference 
 5. **A09 behavior, H08 sleep staging and I10 MRI quality:** wins are against archived or restricted-input specialist references. Reproduce modern methods under matched inputs and source-overlap controls before replacing tools. YASA restricted to this EEG channel is not a test against multimodal sleep staging.
 6. **Keep specialist-first workflows for K04 cortical transfer, J08 puncta segmentation, C05 archived spike inference and L06 posterior inference.** Tested strong references lead all general programs on their primary endpoints; repaired J08 remains well behind archived StarDist. B01 also needs all-output spike accounting: nearly matching per-GT-unit accuracy hides many excess spikes.
 
+C05 uses a test-selected per-preparation envelope among inspected 2017 archives, potentially choosing different methods for different preparations; it is not a single deployable estimator or a prospectively selected specialist. Other reference-class details and budget mismatches remain in the source-linked evidence.
+
 The all-task matrix below identifies exactly which reference was beaten. An ordinary ridge/GLM/interpolation reference is not a certified strongest specialist. Source-specific recommendations and candidate information/compute mismatches are in every linked review.
 
 | Task | Tested reference | General programs above tested reference | Next specialist comparison |
