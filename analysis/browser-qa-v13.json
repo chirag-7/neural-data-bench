@@ -34,9 +34,15 @@
       "surface": "published practical analysis",
       "result": "passed",
       "details": "Findings loaded, K category limits task menu to K01/K04/K05/K06; deliverable tab retained."
+    },
+    {
+      "surface": "final published C05 practical view",
+      "result": "passed",
+      "details": "Actual selector interaction displays the per-slice test-selected envelope warning; fresh production screenshot of B08 repairs saved; no console errors or warnings."
     }
   ],
   "console_error_and_warning_entries": 0,
   "screenshot": "docs/assets/benchmark-repairs-v13.png",
-  "scope": "Representative actual-browser interactions and layout QA; exhaustive route/handler checks separately in analysis/site-source-checks.json."
+  "scope": "Representative actual-browser interactions and layout QA; exhaustive route/handler checks separately in analysis/site-source-checks.json.",
+  "final_source_commit": "766b08283532b80062cd85e8061324f30a4dc128"
 }
