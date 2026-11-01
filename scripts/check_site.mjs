@@ -135,13 +135,14 @@ if (fs.existsSync(practicalPath)) {
  const originalRecords = vm.runInContext("JSON.stringify(records)",ctx);
  ctx.location.hash="#/analysis/practical";vm.runInContext("draw()",ctx);
  await new Promise(resolve=>setImmediate(resolve));
- if(!el("#app").innerHTML.includes("FIRST ATTEMPT") || !el("#app").innerHTML.includes("30 tasks")) throw Error("First-attempt practical table incomplete");
- for(const id of optionIds(el("#app").innerHTML,"practical-task")) if(!id.startsWith("A")) throw Error("Practical detail dropdown must be scoped to category");
+ if(!el("#app").innerHTML.includes("REPAIR-ASSISTED") || !el("#app").innerHTML.includes("30 tasks")) throw Error("Final practical table incomplete");
+ if(el("#app").innerHTML.includes('id="practical-track"') || el("#app").innerHTML.includes('id="practical-detail-category"')) throw Error("Redundant explorer controls remain");
+ if(optionIds(el("#app").innerHTML,"practical-task").length!==30) throw Error("All-category task choices incomplete");
  el("#practical-category").onchange({target:{value:"B"}});await new Promise(resolve=>setImmediate(resolve));
  for(const id of optionIds(el("#app").innerHTML,"practical-task")) if(!id.startsWith("B")) throw Error("Practical category handler failed");
  el("#practical-task").onchange({target:{value:"B08"}});
  if(!el("#practical-task-detail").innerHTML.includes("B08")) throw Error("Practical task handler failed");
- el("#practical-track").onchange({target:{value:"repair"}});await new Promise(resolve=>setImmediate(resolve));
+ await new Promise(resolve=>setImmediate(resolve));
  if(!el("#app").innerHTML.includes("not an unbiased model comparison")) throw Error("Repair assistance disclosure missing");
  const b08=payload.tasks.find(task=>task.benchmark_id==="B08");
  for(const model of summary.models) if(Number.isFinite(b08.repair_assisted?.scores?.[model]) && !el("#app").innerHTML.includes(b08.repair_assisted.scores[model].toFixed(4))) throw Error("B08 repaired score missing:"+model);
@@ -160,7 +161,7 @@ if (fs.existsSync(practicalPath)) {
   if(!el("#benchmark-content").innerHTML.includes("unchanged first-attempt results")) throw Error("Repair notice missing on original results:"+id);
  }
  if(vm.runInContext("JSON.stringify(records)",ctx)!==originalRecords) throw Error("Practical view mutated original records");
- practicalChecks="passed · 30 specialist views, 4 repair tabs, track/category/task handlers, immutable original records";
+ practicalChecks="passed · 30 specialist views, 4 repair tabs, final results/category/task handlers, immutable original records";
 }
 let plots = 0;
 for (const id of summary.measured_task_ids) {
