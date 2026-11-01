@@ -9,5 +9,12 @@
     "manual_repairs": "asterisk on repaired points/bars; direct repair audit and original API evidence links",
     "category_task_controls": "J and A filtering verified",
     "source_checks": "all 30 plots, both directions, 299 legacy routes and new macro route"
+  },
+  "production_verification": {
+    "url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site/#/analysis/patterns",
+    "status": "passed",
+    "endpoint_counts": "27/2/0/1",
+    "trajectory_counts": "9/19/1/1",
+    "screenshot": "docs/assets/repaired-macro-patterns-v1.png"
   }
 }
