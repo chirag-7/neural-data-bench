@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "C05",
+  "slice_id": "3",
+  "model": "gpt-5.6-sol",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "00b53eb24dffcad2a9f3d1c4696f7078165bd897b9bac2595f3fae5d2a784b5c",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-repairs-v1/submissions/C05/gpt-5.6-sol/format-r1.json",
+  "submission_sha256": "6691eddacfa33b624b186a7abf645f653d644d0f0c9fde9367ccdcff47fe891b",
+  "code_sha256": "4008691381e7a2cbac9b80bcfa5964655b08fd79d2a02d960d65c7547250909f",
+  "description": "Bins calcium and spikes into the exact 40-ms evaluation grid, normalizes each neuron robustly, and extracts acausal multiscale level, slope, curvature, and candidate-deconvolution features. A Poisson histogram gradient booster is blended with a ridge model; the blend weight is selected by held-out-neuron validation, then both models are refit on all training neurons. Bin predictions are expanded back to 100 Hz, preserving trailing NaNs.",
+  "code_lines": 166,
+  "line_limit_exclusive": 180,
+  "line_limit_compliant": true
+}

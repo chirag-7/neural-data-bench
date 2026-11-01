@@ -1,0 +1,31 @@
+benchmark_id,family,task,metric,direction,step_pattern,trajectory_class,n_sign_reversals,complete_trajectory,strict_complete,diminishing_every_step,last_gain_smaller_than_first,randomness_assessment,equivalence_assessment
+A09,A,Frame-level social behavior labels,macro_f1,higher,- + +,mixed_reversals,1,True,True,,,not_estimated,not_established
+A14,A,Missing pose imputation,rmse_missing,lower,+ + -,mixed_reversals,1,True,True,,,not_estimated,not_established
+A15,A,Annotated birdsong interval detection,recording_macro_event_f1_20ms_onset_20ms_or_20pct_offset,higher,- + +,mixed_reversals,1,True,True,,,not_estimated,not_established
+B01,B,Spike sorting and event detection,mean_gt_accuracy,higher,+ + -,mixed_reversals,1,True,True,,,not_estimated,not_established
+B03,B,Rigid drift recovery from synthetic ephys rasters,recording_mean_motion_rmse_um,lower,+ + -,mixed_reversals,1,True,True,,,not_estimated,not_established
+B07,B,Lossless Neuropixels voltage compression,encoded_bits_per_int16_sample,lower,- + -,mixed_reversals,2,True,True,,,not_estimated,not_established
+B08,B,Timing-bounded spike-event compression,mean_encoded_bits_per_event_50us,lower,+ + -,mixed_reversals,1,True,True,,,not_estimated,not_established
+C05,C,Calcium-to-spike inference,median_pearson_40ms,higher,+ + +,strictly_improving,0,True,True,True,True,not_estimated,not_established
+C06,C,Calcium to electrical expected spike counts,animal_mean_neuron_pearson_smoothed200ms,higher,- + +,mixed_reversals,1,True,True,,,not_estimated,not_established
+D02,D,Current-to-voltage prediction,rmse_mV,lower,+ + -,mixed_reversals,1,True,True,,,not_estimated,not_established
+E01,E,Neural rate inference and co-smoothing,bits_per_spike,higher,+ + +,strictly_improving,0,True,True,False,True,not_estimated,not_established
+E06,E,Causal population calcium forecasting,mse_dff,lower,- + +,mixed_reversals,1,True,True,,,not_estimated,not_established
+F04,F,Retinal or other sensory encoding,poisson_nll,lower,+ + +,strictly_improving,0,True,True,True,True,not_estimated,not_established
+G01,G,Robust cross-day motor decoding,r2_variance_weighted,higher,- + +,mixed_reversals,1,True,True,,,not_estimated,not_established
+H01,H,Motor imagery and noninvasive BCI,balanced_accuracy,higher,+ + +,strictly_improving,0,True,True,False,False,not_estimated,not_established
+H02,H,ERP/P300 target decoding,subject_equal_roc_auc,higher,+ + +,strictly_improving,0,True,True,False,True,not_estimated,not_established
+H08,H,Sleep staging and sleep onset,macro_f1_sleep,higher,- + -,mixed_reversals,2,True,True,,,not_estimated,not_established
+H16,H,EEG ocular/muscle artifact repair,temporal_rrmse,lower,- + +,mixed_reversals,1,True,True,,,not_estimated,not_established
+I07,I,fNIRS motor/hemodynamic decoding,balanced_accuracy,higher,+ - +,mixed_reversals,2,True,True,,,not_estimated,not_established
+I10,I,MRI quality assessment across sites,balanced_accuracy,higher,+ - +,mixed_reversals,2,True,True,,,not_estimated,not_established
+J08,J,Fluorescent synaptic puncta segmentation and quantification,instance_f1_iou50_multirater,higher,? + -,incomplete,,False,False,,,not_estimated,not_established
+K01,K,Electrophysiological cell-type classification,macro_f1,higher,+ + +,strictly_improving,0,True,True,False,True,not_estimated,not_established
+K04,K,Cortical-layer label transfer,section_equal_macro_f1_7classes,higher,- - +,mixed_reversals,1,True,True,,,not_estimated,not_established
+K05,K,Supervised bulk RNA to marker-positive fractions,donor_block_macro_rmse,lower,- - +,mixed_reversals,1,True,True,,,not_estimated,not_established
+K06,K,Optotagged PV/SST classification from waveform,class_balanced_mouse_accuracy,higher,+ + +,strictly_improving,0,True,True,True,True,not_estimated,not_established
+L04,L,Point-process estimation and goodness of fit,bits_per_spike_train_mean,higher,+ + +,strictly_improving,0,True,True,True,True,not_estimated,not_established
+L06,L,Spiking-neuron posterior inference,c2st_accuracy_2000,lower,+ + +,strictly_improving,0,True,True,True,True,not_estimated,not_established
+M01,M,Conditional mouse-choice prediction,mouse_equal_binary_log_loss,lower,+ + -,mixed_reversals,1,True,True,,,not_estimated,not_established
+M04,M,Cognitive model and parameter recovery,range_normalized_mae,lower,- + +,mixed_reversals,1,True,True,,,not_estimated,not_established
+N05,N,"NWB data loading, units and reproducibility",field_accuracy,higher,+ = =,nondecreasing_with_ties,0,True,True,,,not_estimated,not_established

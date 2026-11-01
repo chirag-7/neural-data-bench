@@ -1,0 +1,2 @@
+{"score": 0.6783412614813794, "metric": "macro_f1_sleep", "direction": "higher", "accuracy": 0.7840277777777778, "balanced_accuracy": 0.7041700506813882, "per_unit": [0.31025137930688496, 0.8087189353051867, 0.7534639886982808], "night_results": [{"group": "5", "score": 0.31025137930688496, "metric": "macro_f1_sleep", "n": 1440}, {"group": "6", "score": 0.8087189353051867, "metric": "macro_f1_sleep", "n": 1440}, {"group": "7", "score": 0.7534639886982808, "metric": "macro_f1_sleep", "n": 1440}], "n_scored_epochs": 4320, "n_units": 3}
+

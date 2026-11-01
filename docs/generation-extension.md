@@ -27,3 +27,10 @@ The new API calls and historical Codex Sol procedures have different provider wr
 Task-native differences, all six model-pair directions and category-balanced directional summaries are appropriate descriptive outcomes. Scores from different metrics cannot be averaged directly. Model order does not measure training compute; four ordered points cannot establish a scaling law or forecast when specialists will be surpassed. Existing tested references and current-specialist literature candidates are distinct: an unexecuted literature model never becomes a plotted measured score.
 
 After all attempts and audits finish, regenerate the current website data once with `scripts/build_generation_comparison.py` and validate it with `scripts/check_generation_comparison.py`. The original sealed ledgers and earlier macro reports remain intact.
+
+
+## Manual repair-assisted follow-up
+
+The [repair/exclusion record](../experiments/generation-repairs-v1/README.md) is separate from the sealed first-attempt extension. Nine runtime failures were recovered; the remaining GPT-4.1 puncta-segmentation implementation exceeded the original 180-second limit even after compatibility and repeated-work fixes, so it has no numeric score under that contract. This is not proof that the model is intrinsically inapplicable to images or neuroscience. Its other task results remain in the panel.
+
+Runtime fixes, same-objective optimizer changes and AST-identical formatting are explicitly versioned. Manual formatting can satisfy a physical line cap but cannot retroactively establish original model compliance or algorithmic simplicity. Low but valid scores were not optimized using test results. Every attempted revision and successful saved-output audit is retained. Rebuild the final usability comparison with `scripts/build_generation_comparison_v2.py`, then `scripts/analyze_generation_patterns.py`; the original v1 files remain intact. No additional model calls or API spending are required.

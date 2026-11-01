@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "J08",
+  "slice_id": "expansion-v1",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "02f3ff23dfb5f22bd10ebf8e5ad43ff635b5913bb31af03090541eac15ea9196",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-repairs-v1/submissions/J08/gpt-4.1-2025-04-14/r1.json",
+  "submission_sha256": "7db27d124007bd74ae12601bd224fbfcb635d7dbd6855f79f82d9875952c461f",
+  "code_sha256": "1c7f9c883f02d78762f0a0a6e65e5ab6df6ed8b3dde9662294e553b42bcce59f",
+  "description": "This method segments puncta in fluorescence microscopy images using classical image processing and machine learning based feature learning. Workflow: (1) For training, each 128x128 patch is featurized with pixel intensities, geometric coordinates (normalized xy), local gradients, and simple multi-scale shape-texture statistics. Only labeled regions (channel1 == 1) and valid pixels (train_y >= 0) are used. For each labeled object in a patch, we extract centroid locations and create instance-specific foreground masks. A RandomForestClassifier is trained to predict background vs punctum center. A per-training-patch global threshold is grid-searched to maximize foreground F1>0.5 under synthetic instance separation (patch-wise local IDs), using only annotated pixels. At test time, each whole test image is split into 128x128 overlapping windows (step 64). Per-pixel features are extracted and pixels are classified. Patch probabilities are averaged at overlaps. Pixelwise probability map is then thresholded and postprocessed: (a) valid extent mask applied; (b) small holes and objects <4 px are removed; (c) watershed with local maxima as seeds separates instances. Final label IDs are distinct for each test image. No pixels outside valid geometric test extent are labeled. The output is a (2,727,546) numpy array of labeled images for both test images. All computation is strictly local to individual images; no smoothing/config leakage/correlation across source fields or samples. Deterministic result due to fixed seed. No specialized packages or pretrained weights are used.",
+  "code_lines": 163,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

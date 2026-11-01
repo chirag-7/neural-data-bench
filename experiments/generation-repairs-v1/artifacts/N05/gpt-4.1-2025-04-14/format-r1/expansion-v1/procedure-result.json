@@ -1,0 +1,10 @@
+{
+  "seconds": 0.0034719170071184635,
+  "submission_file": "experiments/generation-repairs-v1/submissions/N05/gpt-4.1-2025-04-14/format-r1.json",
+  "submission_sha256": "4c52a6b930ce56718a7156fe546a24596897b2c9d39fa5c7aab72b357ebf499c",
+  "code_sha256": "852d57af6f2b4a751666b495ea5b1de8acceef6b58407b8664ad17a5e56676bf",
+  "description": "This function extracts metadata and quantitative measurements for sweeps 19\u201324 from an NWB file. It programmatically locates acquisition response and stimulus TimeSeries for each sweep, determines sampling rates, units, and conversion factors, computes sample counts and dt. It loads and scales each stimulus and response signal, identifies the main hyperpolarizing (negative going) current step relative to stimulus holding median (using a -1e-6 pA threshold for at least one sample and selecting the longest such run), extracts main pulse onset/duration, then computes main pulse amplitude, pre-stimulus voltage (50ms before pulse), and mean voltage deflection during the pulse\u2014all with unit conversions as required (pA for current, mV for voltage). It decodes all relevant string or byte-string attributes robustly, and supports legacy as well as modern NWB storage patterns.",
+  "code_lines": 213,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

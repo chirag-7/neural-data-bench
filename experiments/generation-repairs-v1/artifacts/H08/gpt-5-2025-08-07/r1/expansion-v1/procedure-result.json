@@ -1,0 +1,10 @@
+{
+  "seconds": 1.291821249993518,
+  "submission_file": "experiments/generation-repairs-v1/submissions/H08/gpt-5-2025-08-07/r1.json",
+  "submission_sha256": "ae1fb841ad2a6426d2f4651945ca79a4f40d4712e9289e4b6ab00215471dab64",
+  "code_sha256": "1a0aa1f26b079af764ccdd02b216611e9107259129500c640f389d7ac9cd35ad",
+  "description": "EEG sleep staging with compact spectral/time-domain features, per-night unsupervised normalization, multinomial logistic regression, and HMM-style temporal decoding. For each night we: (1) detrend each epoch by mean, (2) extract vectorized features: time-domain (std, peak-to-peak, mean absolute value, line length, zero-crossing rate, Hjorth mobility/complexity, skewness, kurtosis), frequency-domain via rFFT with Hamming window (relative bandpowers in delta/theta/alpha/sigma/beta for 0.5\u201330 Hz, three log band ratios, spectral centroid, spectral entropy, SEF90), and time-of-night features (index, sin, cos). Features are z-scored per night (unsupervised adaptation). We train a multinomial LogisticRegression (class_weight='balanced') on all labeled epochs (ignoring -1). A 5x5 Markov transition matrix and initial distribution are estimated from labeled training sequences with Laplace smoothing and diagonal self-bias. Test emissions are classifier probabilities mapped into 5 classes (missing classes get tiny mass). We decode each test night offline with Viterbi, then apply a light de-islanding pass to replace 1-epoch flips. Nights are processed independently, preserving boundaries. Deterministic seeds, single-thread classifiers, and no external assets.\n",
+  "code_lines": 207,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

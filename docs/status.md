@@ -1,6 +1,8 @@
 # Current status
 
-The [four-model extension](../analysis/generation-comparison-v1/report.md) adds GPT-4.1 and GPT-5 to GPT-5.6 Sol and GPT-6.1 Sol on the existing 30 tasks / 14 categories. Its 60 API generations produce 74 new slice attempts: 64 numeric results and ten failures; all 64 successful outputs pass independent saved-output audits. Cost is approximately $4.13. GPT-6 Sol remains in the historical record. [Simple findings](../analysis/generation-comparison-v1/plain-language.md), [methods](generation-extension.md), [per-task pages](../experiments/generation-extension-v1/tasks/).
+The [current macro analysis](../analysis/generation-patterns-v1/report.md) follows the [manual repair/exclusion audit](../experiments/generation-repairs-v1/README.md): nine of ten older-API runtime failures recovered; GPT-4.1/J08 remains unscored within the original 180-second limit. Seven physically over-limit programs were mechanically reformatted with identical ASTs and independently rerun. Current four-model totals: 147 numeric outputs of 148 model/slice attempts across 30 tasks and 14 categories. All numeric current procedures meet line limits after any explicit repairs. Original model compliance is a separate historical outcome.
+
+The current endpoint count is 27 better / 2 worse / 0 numerical ties / 1 incomplete for GPT-6.1 versus GPT-4.1. Nine four-point trajectories improve strictly, 19 have reversals, one improves with ceiling ties and one is incomplete. No task is classified as statistically equivalent or random. [Current native scores](../analysis/generation-comparison-v2/report.md), [original API panel](../analysis/generation-comparison-v1/report.md). No new API calls were used.
 
 The counts below describe the unchanged original 0.11 scientific snapshot.
 

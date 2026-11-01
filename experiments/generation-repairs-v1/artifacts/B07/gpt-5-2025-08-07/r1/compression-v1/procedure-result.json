@@ -1,0 +1,10 @@
+{
+  "seconds": 11.70058016711846,
+  "submission_file": "experiments/generation-repairs-v1/submissions/B07/gpt-5-2025-08-07/r1.json",
+  "submission_sha256": "e4a4d2c7c3ae6b0ff42e7931c40822f360b78ceceec6657e1706d4b7bb3c54e6",
+  "code_sha256": "e9697acfc1ee0ccd100279ee08ee1f1cfb7d82d7cee301bff7c33a9a35e370ed",
+  "description": "Lossless codec for Neuropixels int16 (little-endian) data shaped (time, channels). It uses fast, fully reversible integer transforms tailored to spatiotemporal correlations, then strong entropy coding:\n- Temporal first-order differencing per channel (along rows/time).\n- Spatial first-order differencing across channels (along columns).\n- ZigZag mapping of signed 16-bit residuals to unsigned 16-bit magnitudes.\n- Byte shuffling (all low bytes first, then all high bytes) to expose long runs of 0x00/0xFF for better compression.\n- LZMA compression (preset=6) with a tiny header.\nDecoding reverses: LZMA decompress \u2192 unshuffle bytes \u2192 inverse ZigZag \u2192 prefix sums across channels \u2192 prefix sums across time. All arithmetic is exact under 16-bit two\u2019s-complement wrap-around by using 32-bit accumulators and final casting. No external metadata beyond provided shape/dtype is used. Deterministic, fast, and memory-efficient, while typically achieving strong compression on neural voltage traces.\n",
+  "code_lines": 132,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

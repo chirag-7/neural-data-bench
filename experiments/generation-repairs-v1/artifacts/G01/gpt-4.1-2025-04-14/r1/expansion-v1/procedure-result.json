@@ -1,0 +1,10 @@
+{
+  "seconds": 0.22889895807020366,
+  "submission_file": "experiments/generation-repairs-v1/submissions/G01/gpt-4.1-2025-04-14/r1.json",
+  "submission_sha256": "b6221d6dd720a2591780360abac8e4bf9e21e91cc45cfb869029c70238d146ed",
+  "code_sha256": "3fb1b6503c17dff43d0c74aac951cea743bb0ca99d50d47299395795f3628e1e",
+  "description": "This solution uses a regularized linear regression (Ridge) to predict two-dimensional monkey finger velocities from 96-dimensional causal filtered spike count features. The approach is motivated by the high sample count, linearity assumptions in similar neuroprosthetic decoding regimes, and the need to mitigate overfitting and account for cross-day neural variability via chronologically-aware validation. The regularization parameter (alpha) is selected by grid-searching a few candidate values using Ridge regression and time-series split: the training set is split chronologically into 5 sequential folds, each preserving trial/session boundaries. We select the model with the highest mean variance-weighted R2 (calculated according to the main metric) across validation folds. The chosen model is retrained on the whole training set and used to predict on test data. No normalization or fitting occurs on test data per rules, and all operations are completed in a deterministic and memory-efficient manner.",
+  "code_lines": 72,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

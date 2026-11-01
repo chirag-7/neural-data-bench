@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "A15",
+  "slice_id": "batch-v11",
+  "model": "gpt-5.6-sol",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "623cd3f6590b0a8aed01cd5dc99035816884eeac58dd73296ed6ee80936c6f52",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-repairs-v1/submissions/A15/gpt-5.6-sol/format-r1.json",
+  "submission_sha256": "029db0f53a72c1c0403824f256facd1595c2396af6d6b17d2d4fa48fa193e97f",
+  "code_sha256": "18c44313912f31cb669497ad8e1253809d7dfc5e33aaa84fde7add019a947b90",
+  "description": "Deterministic training-only spectral event detector with fixed whole-recording validation, event-level parameter selection, and finite binary output.",
+  "code_lines": 222,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

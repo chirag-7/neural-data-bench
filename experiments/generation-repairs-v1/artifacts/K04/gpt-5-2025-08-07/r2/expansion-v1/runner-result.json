@@ -1,0 +1,62 @@
+{
+  "benchmark_id": "K04",
+  "slice_id": "expansion-v1",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "measured",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "8ea1145c80e2bc90e94a0bb8a33233c83627ab17edddadc3f38636f51a52097a",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-repairs-v1/submissions/K04/gpt-5-2025-08-07/r2.json",
+  "submission_sha256": "e36c4bf4ddd99f2722b672dd0ad9b49987bd1936559a92c627610b98f9fc3314",
+  "code_sha256": "f07cfddaf750a51775c1b4985eb2530cdc1956329ee22f346265f478c4905aff",
+  "description": "Supervised donor-held-out transfer from expression to cortical layers. Genes are already the 500 outer-training variance-selected non-mitochondrial features and have identical order in train/test. Pipeline:\n- Per-gene z-score using only training data (mean/std). No test-fit or any neighbor/batch adaptation; fixed per-row computation only arises from this linear transform.\n- Multinomial Logistic Regression (solver=saga, L2) with deterministic seed. Sample weights balance both class imbalance and donor imbalance: weight = class_weight(y) * group_weight(donor), where each donor contributes equally and classes are inversely proportional to their training frequency. This also makes the CV robust to folds missing some classes.\n- Hyperparameter C is chosen by GroupKFold over donors (2 folds). For each fold, the scaler is refit on the fold\u2019s training split only; macro-F1 across all seven labels [0..6] with zero_division=0 is averaged across folds. Missing classes in a fold are handled naturally (no training samples \u2192 no weights for that class; evaluation still includes all 7 labels).\n- Final model is retrained on all training donors with the chosen C and the training-only scaler, then predicts argmax labels for the test spots.\nThe method uses only expression, respects grouped validation by donor, avoids any test-driven selection/normalization, and outputs one integer label 0..6 per test row.",
+  "code_lines": 99,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true,
+  "seconds": 3.161221583141014,
+  "score": 0.5175064764639699,
+  "metric": "section_equal_macro_f1_7classes",
+  "direction": "higher",
+  "per_unit": [
+    0.5324232845050662,
+    0.48689297622808575,
+    0.5282113363640685,
+    0.522498308758659
+  ],
+  "group_results": [
+    {
+      "group": "151673",
+      "n": 3611,
+      "score": 0.5324232845050662
+    },
+    {
+      "group": "151674",
+      "n": 3635,
+      "score": 0.48689297622808575
+    },
+    {
+      "group": "151675",
+      "n": 3566,
+      "score": 0.5282113363640685
+    },
+    {
+      "group": "151676",
+      "n": 3431,
+      "score": 0.522498308758659
+    }
+  ],
+  "pooled_macro_f1": 0.5176383512982895,
+  "accuracy": 0.5821105104261742,
+  "n_units": 14243,
+  "scoring_seconds": 1.0432224159594625,
+  "prediction_file": "experiments/generation-repairs-v1/artifacts/K04/gpt-5-2025-08-07/r2/expansion-v1/predictions.npz",
+  "prediction_sha256": "e22fea8482930f86314177c1f1c9774a4c48620f4300fae8d8dab8eb46b75a4b",
+  "strict_format_compliant": true
+}

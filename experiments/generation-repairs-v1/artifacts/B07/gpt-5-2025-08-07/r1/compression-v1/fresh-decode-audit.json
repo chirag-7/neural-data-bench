@@ -1,0 +1,98 @@
+[
+  {
+    "index": 0,
+    "status": "passed",
+    "compressed_sha256": "0c67f814de49b6342f53b2fb1b29b31920568043979f2044bcf3b7dad5854336",
+    "lossless": true
+  },
+  {
+    "index": 1,
+    "status": "passed",
+    "compressed_sha256": "b71e5ca096f17a01fa56ddd6efbae22c290ca171c9c202e26573a1a46cfbdbda",
+    "lossless": true
+  },
+  {
+    "index": 2,
+    "status": "passed",
+    "compressed_sha256": "359c7fbb39001bf33055a981064b2f2d79bc0ff0e5bef11d3245a3f90b8a4c27",
+    "lossless": true
+  },
+  {
+    "index": 3,
+    "status": "passed",
+    "compressed_sha256": "90edfa85105b45f5eac0ccf36ce3b0b93fa1e6624e30adc59e935cecfdebe03f",
+    "lossless": true
+  },
+  {
+    "index": 4,
+    "status": "passed",
+    "compressed_sha256": "1f0f4b52396bd0cc7df350864cb80f5be67864f06c5b70d2619cae97f04ef707",
+    "lossless": true
+  },
+  {
+    "index": 5,
+    "status": "passed",
+    "compressed_sha256": "c04aa700a6c25a7237c5a8daa0c4b9eb28a65cd9b6d7bc22da5ff59bfeaf384d",
+    "lossless": true
+  },
+  {
+    "index": 6,
+    "status": "passed",
+    "compressed_sha256": "e235ac83503824721ae7a855caeecbe16ee8472ae46a0ec5dc6f5f5a0391263f",
+    "lossless": true
+  },
+  {
+    "index": 7,
+    "status": "passed",
+    "compressed_sha256": "27d039bfd00187000206bbdbb5b5249bf1fea12815bbb7d560b6a19668a57f3e",
+    "lossless": true
+  },
+  {
+    "index": 8,
+    "status": "passed",
+    "compressed_sha256": "8706c44c7c7a1c5ba258402289493add79d67c9ee7be107a5de99c31d83651da",
+    "lossless": true
+  },
+  {
+    "index": 9,
+    "status": "passed",
+    "compressed_sha256": "08a33a88d034f6bca5ab886564a4ebc2c3a4452cd005032bb9800efb8a24876f",
+    "lossless": true
+  },
+  {
+    "index": 10,
+    "status": "passed",
+    "compressed_sha256": "696fe9c2e3d29990ce6f7016ae166e923b95731d8cdc88bcc178de435758a2c6",
+    "lossless": true
+  },
+  {
+    "index": 11,
+    "status": "passed",
+    "compressed_sha256": "509a3ca501665d6ffd61d22a41a2ae88b54c8684447638d4f66749a6a5116389",
+    "lossless": true
+  },
+  {
+    "index": 12,
+    "status": "passed",
+    "compressed_sha256": "bdedf6757c8504aeb0aa7bab993387626f19f1ad6fea770bdc3517d46c29cf91",
+    "lossless": true
+  },
+  {
+    "index": 13,
+    "status": "passed",
+    "compressed_sha256": "ced2b72be8dfc894d3f568a2fe8748c787277f3546b07b772b7a77cb1cd11992",
+    "lossless": true
+  },
+  {
+    "index": 14,
+    "status": "passed",
+    "compressed_sha256": "64c933d8e5b96eb77b74310f4d385ecd97bde095ee742fbb2fa7624c8c84fd96",
+    "lossless": true
+  },
+  {
+    "index": 15,
+    "status": "passed",
+    "compressed_sha256": "9e6c4bd1a3204196720acaffdb1538c6c242817f744a9efb5a7d527d0788ab9a",
+    "lossless": true
+  }
+]

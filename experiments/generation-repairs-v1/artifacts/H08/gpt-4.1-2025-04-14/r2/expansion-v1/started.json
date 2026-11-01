@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "H08",
+  "slice_id": "expansion-v1",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "18c7e3aab36bdbcce6a507bffe17300687548cec4bd3007e2184a876599dd339",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-repairs-v1/submissions/H08/gpt-4.1-2025-04-14/r2.json",
+  "submission_sha256": "b953056229b93d4244ab3949fc16499497d78162baa67ff573e6300cabbf8159",
+  "code_sha256": "6bac055b33acdbcc3d37fad25987df94e306ade317089079c9d768b2f6f3585d",
+  "description": "This solution performs classification of sleep EEG epochs into five sleep stages (Wake, N1, N2, N3, REM) using feature-based machine learning. For each night, it normalizes the raw EEG per night (z-score), extracts signal and spectral features from each epoch (such as power in delta/theta/alpha/sigma/beta bands, zero-crossing rate, and signal variance), and uses a RandomForestClassifier (scikit-learn) trained only on labeled epochs (y != -1) from five training individuals. It uses stratified validation splits by night during training to tune hyperparameters and avoid overfitting to individual sleep patterns. The classifier learns on all training nights jointly, but always preserves night boundaries and does NOT treat the sleep data as a single continuous stream. For prediction, it applies the same per-night normalization and feature extraction on the three test nights and predicts labels for all epochs. The output follows the required shape. The code uses numpy, scipy, and sklearn, and is self-contained without any external dependencies.",
+  "code_lines": 158,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

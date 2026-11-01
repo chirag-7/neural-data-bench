@@ -345,6 +345,7 @@ function draw() {
   if (p[0] === "benchmark") benchmark(p[1], p[2] || "results");
   else if (p[0] === "models") modelsPage();
   else if (p[0] === "model") modelsPage(p[1]);
+  else if (p[0] === "analysis" && p[1] === "patterns") generationPatternsPage();
   else if (p[0] === "analysis" && p[1] === "practical") practicalReviewPage();
   else if (p[0] === "analysis" && p[1] === "report") macroReportPage();
   else if (p[0] === "analysis") analysisPage();
@@ -599,6 +600,11 @@ function referenceCards(refs, frozen) {
     )
     .join("")}</div>`;
 }
+function notScoredLabel(row) {
+  if (row.not_scored_reason) return row.not_scored_reason;
+  if (!MODELS.includes(row.model) && !HISTORICAL_MODELS.includes(row.model)) return 'Reference output unavailable from archive';
+  return /exceeded|timed out/i.test(row.reason || '') ? 'Not scored within computation limit' : 'Not scored under task requirements';
+}
 function linePlot(general, refs, direction, specialists = [], zeroAxis = startAtZero, modelOrder = MODELS) {
   let vals = [...general, ...refs].filter(valid).map((r) => r.score);
   if (showReferences)
@@ -617,8 +623,9 @@ function linePlot(general, refs, direction, specialists = [], zeroAxis = startAt
     padding = Math.max((hi - lo) * 0.16, Math.abs(hi) * 0.025, 1e-6);
   lo = zeroAxis ? Math.min(0, lo - padding) : lo - padding;
   hi += padding;
+  if (direction === "lower" && vals.every(v => v >= 0)) lo = Math.max(0, lo);
   const x = (i) => 88 + (250 / Math.max(1, modelOrder.length - 1)) * i,
-    y = (v) => bottom - ((v - lo) / (hi - lo)) * plotHeight;
+    y = (v) => direction === 'lower' ? top + ((v - lo) / (hi - lo)) * plotHeight : bottom - ((v - lo) / (hi - lo)) * plotHeight;
   const labels = shown
     .map((r, i) => ({ r, i, ideal: y(r.score), position: y(r.score) }))
     .sort((a, b) => a.ideal - b.ideal);
@@ -647,7 +654,7 @@ function linePlot(general, refs, direction, specialists = [], zeroAxis = startAt
     } else prior = false;
   }
   const archives = specialists.filter((r) => r.model.startsWith("vassi-run-"));
-  return `<svg class="plot line-plot" viewBox="0 0 570 ${bottom + 68}" role="img" aria-label="Model-version line chart with named specialist reference lines"><title>Solid connected points: general model scores. Horizontal dashed lines: specialists. Dotted lines: other references. ${direction} is better.</title>${[
+  return `<p class="small metric-direction-key">* = manually repaired, where marked. Better performance ↑ · ${direction === "lower" ? "lower native score is better; vertical axis reversed" : "higher native score is better"}</p><svg class="plot line-plot" viewBox="0 0 570 ${bottom + 68}" role="img" aria-label="Model-version line chart with named specialist reference lines"><title>Solid connected points: general model scores. Horizontal dashed lines: specialists. Dotted lines: other references. ${direction} is better. Better scores are higher on the page; lower-is-better axes are reversed.</title>${[
     0, 0.25, 0.5, 0.75, 1,
   ]
     .map((t) => {
@@ -669,7 +676,7 @@ function linePlot(general, refs, direction, specialists = [], zeroAxis = startAt
     )}<path d="${path}" fill="none" stroke="#547b97" stroke-width="2"/>${general
     .map((r) => {
       const xx = x(modelOrder.indexOf(r.model));
-      return `${valid(r) && Number.isFinite(r.range_min) ? `<g class="generation-range"><line x1="${xx}" x2="${xx}" y1="${y(r.range_min)}" y2="${y(r.range_max)}" stroke="${COLORS[r.model]}" stroke-width="2"/><path d="M${xx-6} ${y(r.range_min)}h12 M${xx-6} ${y(r.range_max)}h12" stroke="${COLORS[r.model]}"/><title>${label(r.model)} generation range ${fmt(r.range_min)} to ${fmt(r.range_max)}; not a confidence interval</title></g>` : ""}${valid(r) ? `<circle cx="${xx}" cy="${y(r.score)}" r="5.5" fill="${COLORS[r.model]}"><title>${label(r.model)}: ${fmt(r.score)}</title></circle><text class="value-label" x="${xx}" y="${y(r.range_max ?? r.score) - 13}" text-anchor="middle">${fmt(r.score)}${r.line_limit_compliant === false ? "†" : ""}</text>` : `<text x="${xx}" y="${top + plotHeight / 2}" text-anchor="middle">Failed</text>`}<text x="${xx}" y="${bottom + 29}" text-anchor="middle">${label(r.model).replace("GPT-", "")}</text>`;
+      return `${valid(r) && Number.isFinite(r.range_min) ? `<g class="generation-range"><line x1="${xx}" x2="${xx}" y1="${y(r.range_min)}" y2="${y(r.range_max)}" stroke="${COLORS[r.model]}" stroke-width="2"/><path d="M${xx-6} ${y(r.range_min)}h12 M${xx-6} ${y(r.range_max)}h12" stroke="${COLORS[r.model]}"/><title>${label(r.model)} generation range ${fmt(r.range_min)} to ${fmt(r.range_max)}; not a confidence interval</title></g>` : ""}${valid(r) ? `<circle cx="${xx}" cy="${y(r.score)}" r="5.5" fill="${COLORS[r.model]}"><title>${label(r.model)}: ${fmt(r.score)}</title></circle><text class="value-label" x="${xx}" y="${y((direction === "lower" ? r.range_min : r.range_max) ?? r.score) - 13}" text-anchor="middle">${fmt(r.score)}${r.line_limit_compliant === false ? "†" : ""}${r.repair_applied ? " *" : ""}</text>` : `<text x="${xx}" y="${top + plotHeight / 2}" text-anchor="middle">Not scored<title>${esc(notScoredLabel(r))}</title></text>`}<text x="${xx}" y="${bottom + 29}" text-anchor="middle">${label(r.model).replace("GPT-", "")}</text>`;
     })
     .join(
       "",
@@ -684,14 +691,14 @@ function barPlot(rs, direction) {
     zero = scale(0),
     height = rs.length * 42 + 50;
   const ticks = [...new Set([lo, (lo + hi) / 2, 0, hi])].sort((a, b) => a - b);
-  return `<svg class="plot" viewBox="0 0 570 ${height}" role="img" aria-label="Bar chart including general models and named specialist or baseline scores"><title>Native metric; ${direction} is better. Bar axis includes zero.</title>${ticks
+  return `<p class="small metric-direction-key">* = manually repaired, where marked. Raw native scores · ${direction === "lower" ? "lower is better" : "higher is better"}; read the values rather than bar length.</p><svg class="plot" viewBox="0 0 570 ${height}" role="img" aria-label="Bar chart including general models and named specialist or baseline scores"><title>Native metric; ${direction} is better. Bar axis includes zero.</title>${ticks
     .map((v) => {
       return `<line x1="${scale(v)}" x2="${scale(v)}" y1="5" y2="${height - 32}" stroke="${v === 0 ? "#b5c2cc" : "#e9edf0"}"/><text x="${scale(v)}" y="${height - 10}" text-anchor="middle">${fmt(v)}</text>`;
     })
     .join("")}${rs
     .map((r, i) => {
       const yy = 12 + i * 42;
-      return `<text x="181" y="${yy + 15}" text-anchor="end">${esc(methodName(r))}${r.line_limit_compliant === false ? "†" : ""}</text>${valid(r) ? `<rect x="${Math.min(zero, scale(r.score))}" y="${yy}" width="${Math.max(0.8, Math.abs(scale(r.score) - zero))}" height="23" fill="${COLORS[r.model] || refColor(r, i)}"><title>${esc(methodName(r))}: ${fmt(r.score)} · ${evidence(r)}</title></rect>${Number.isFinite(r.range_min) ? `<g class="generation-range"><line x1="${scale(r.range_min)}" x2="${scale(r.range_max)}" y1="${yy+12}" y2="${yy+12}" stroke="#233c50" stroke-width="2"/><path d="M${scale(r.range_min)} ${yy+7}v10 M${scale(r.range_max)} ${yy+7}v10" stroke="#233c50"/><title>Generation range ${fmt(r.range_min)} to ${fmt(r.range_max)}; not a confidence interval</title></g>` : ""}<text class="value-label" x="560" y="${yy + 15}" text-anchor="end">${fmt(r.score)}</text>` : `<text x="360" y="${yy + 15}">Failed</text>`}`;
+      return `<text x="181" y="${yy + 15}" text-anchor="end">${esc(methodName(r))}${r.line_limit_compliant === false ? "†" : ""}${r.repair_applied ? " *" : ""}</text>${valid(r) ? `<rect x="${Math.min(zero, scale(r.score))}" y="${yy}" width="${Math.max(0.8, Math.abs(scale(r.score) - zero))}" height="23" fill="${COLORS[r.model] || refColor(r, i)}"><title>${esc(methodName(r))}: ${fmt(r.score)} · ${evidence(r)}</title></rect>${Number.isFinite(r.range_min) ? `<g class="generation-range"><line x1="${scale(r.range_min)}" x2="${scale(r.range_max)}" y1="${yy+12}" y2="${yy+12}" stroke="#233c50" stroke-width="2"/><path d="M${scale(r.range_min)} ${yy+7}v10 M${scale(r.range_max)} ${yy+7}v10" stroke="#233c50"/><title>Generation range ${fmt(r.range_min)} to ${fmt(r.range_max)}; not a confidence interval</title></g>` : ""}<text class="value-label" x="560" y="${yy + 15}" text-anchor="end">${fmt(r.score)}</text>` : `<text x="360" y="${yy + 15}">Not scored<title>${esc(notScoredLabel(r))}</title></text>`}`;
     })
     .join("")}</svg>`;
 }
@@ -741,7 +748,7 @@ function chartCaveat(id, c) {
   );
 }
 function scoreTable(rs) {
-  return `<table><thead><tr><th>Method</th><th>Score</th><th>Evidence</th><th>${rs.some((r) => r.benchmark_id === "B07") ? "All-16 codec seconds" : rs.some((r) => r.benchmark_id === "L06") ? "All-ten sampling seconds" : "Execution seconds"}</th><th>Details</th></tr></thead><tbody>${rs.map((r) => `<tr><td><span class="dot" style="background:${COLORS[r.model] || refColor(r)}"></span> ${esc(methodName(r))}${r.line_limit_compliant === false ? " †" : ""}</td><td>${valid(r) ? fmt(r.score) : "Failed"}</td><td><span class="badge ${isSpecialist(r) ? "verified" : MODELS.includes(r.model) ? "general" : ""}">${evidence(r)}</span></td><td>${Number.isFinite(r.seconds) ? r.seconds.toFixed(2) : "Unavailable"}</td><td class="wrap small">${r.status === "failed" ? esc((r.reason || "Execution failed").trim().split("\n").pop()) : r.scoring_diagnostics ? esc(`${r.posthoc_secondary_metrics ? "All-output event F1 " + fmt(r.posthoc_secondary_metrics.all_event_f1) + " (post-hoc); " : ""}${r.scoring_diagnostics.n_predicted_units} predicted units; ${(r.scoring_diagnostics.redundant_unit_ids || []).length} redundant; ${(r.scoring_diagnostics.false_positive_unit_ids || []).length} false-positive units`) : r.model === "canonical-posterior" ? "Added post hoc; objective-aligned audit" : r.line_limit_compliant === false ? "Unchanged format deviation" : "See protocol and prediction artifacts"}</td></tr>`).join("")}</tbody></table>`;
+  return `<table><thead><tr><th>Method</th><th>Score</th><th>Evidence</th><th>${rs.some((r) => r.benchmark_id === "B07") ? "All-16 codec seconds" : rs.some((r) => r.benchmark_id === "L06") ? "All-ten sampling seconds" : "Execution seconds"}</th><th>Details</th></tr></thead><tbody>${rs.map((r) => `<tr><td><span class="dot" style="background:${COLORS[r.model] || refColor(r)}"></span> ${esc(methodName(r))}${r.line_limit_compliant === false ? " †" : ""}</td><td>${valid(r) ? fmt(r.score) : esc(notScoredLabel(r))}</td><td><span class="badge ${isSpecialist(r) ? "verified" : MODELS.includes(r.model) ? "general" : ""}">${evidence(r)}</span></td><td>${Number.isFinite(r.seconds) ? r.seconds.toFixed(2) : "Unavailable"}</td><td class="wrap small">${r.status === "failed" ? esc(r.not_scored_reason || (r.reason || "Output unavailable").trim().split("\n").pop()) : r.scoring_diagnostics ? esc(`${r.posthoc_secondary_metrics ? "All-output event F1 " + fmt(r.posthoc_secondary_metrics.all_event_f1) + " (post-hoc); " : ""}${r.scoring_diagnostics.n_predicted_units} predicted units; ${(r.scoring_diagnostics.redundant_unit_ids || []).length} redundant; ${(r.scoring_diagnostics.false_positive_unit_ids || []).length} false-positive units`) : r.model === "canonical-posterior" ? "Added post hoc; objective-aligned audit" : r.line_limit_compliant === false ? "Unchanged format deviation" : "See protocol and prediction artifacts"}</td></tr>`).join("")}</tbody></table>`;
 }
 function benchmark(id, tab = "results") {
   const e = catalog.entries.find((e) => e.id === id);
@@ -811,7 +818,7 @@ function modelsPage(model) {
     (s) => !model || s.model === model,
   );
   $("#app").innerHTML =
-    `<p class="eyebrow">Model comparisons</p><h1>${model ? label(model) : "Models in the experiment"}</h1><p class="lede">Exact requested model IDs and retained execution results. ${comparisonActive ? "GPT-4.1 and GPT-5 use the Responses API; existing Sol programs use Codex. Reasoning controls and provider context differ, so version order is not a controlled scaling experiment." : "One high-reasoning no-tool code submission per task; full provider context and checkpoint identity are not independently observable."}</p><div class="model-cards">${summaries.map((s) => route("model/" + s.model, `<h2>${label(s.model)}</h2><strong>${s.valid} / ${s.attempted}</strong><p>Numerically valid evaluation slices</p><p>${s.strict_format_valid} strict-format valid · ${s.failed} failed</p>`, "model-card")).join("")}</div><div class="section-head"><h2>Native scores by task</h2><span class="small">Slice-equal mean where multiple slices exist</span></div><div class="table-panel table-wrap"><table><thead><tr><th>Benchmark</th>${MODELS.map((m) => `<th>${label(m)}</th>`).join("")}<th>Tested reference</th><th>Metric</th></tr></thead><tbody>${summary.measured_task_ids
+    `<p class="eyebrow">Model comparisons</p><h1>${model ? label(model) : "Models in the experiment"}</h1><p class="lede">Exact requested model IDs and retained execution results. ${comparisonActive ? "GPT-4.1 and GPT-5 use the Responses API; existing Sol programs use Codex. Reasoning controls and provider context differ, so version order is not a controlled scaling experiment." : "One high-reasoning no-tool code submission per task; full provider context and checkpoint identity are not independently observable."}</p><div class="model-cards">${summaries.map((s) => route("model/" + s.model, `<h2>${label(s.model)}</h2><strong>${s.valid} / ${s.attempted}</strong><p>${comparisonActive ? "Final numeric slices · includes manual repairs" : "Numerically valid evaluation slices"}</p><p>${s.strict_format_valid} meet line limits${comparisonActive ? " after any documented repairs" : ""} · ${s.failed} not scored</p>`, "model-card")).join("")}</div><div class="section-head"><h2>Native scores by task</h2><span class="small">Slice-equal mean where multiple slices exist</span></div><div class="table-panel table-wrap"><table><thead><tr><th>Benchmark</th>${MODELS.map((m) => `<th>${label(m)}</th>`).join("")}<th>Tested reference</th><th>Metric</th></tr></thead><tbody>${summary.measured_task_ids
       .map((id) => {
         const e = catalog.entries.find((e) => e.id === id);
         if (!e) return "";
@@ -823,7 +830,7 @@ function modelsPage(model) {
       )}</tbody></table></div><p class="note">These native metrics cannot be averaged into a universal model ranking. Reliability, directional improvement and reference comparisons have separate denominators. ${route("analysis", "Explore the analysis →")}</p>`;
 }
 function analysisPage() {
-  if (comparisonActive) { practicalReviewPage(); return; }
+  if (comparisonActive) { generationPatternsPage(); return; }
   const classes = [
     ...new Set(summary.reference_envelopes.filter((r) => r.aggregate_eligible !== false && r.benchmark_id !== "B08" && (analysisScope === "all" || !(summary.analysis_scopes?.observed_data?.excluded_task_ids || ["B01","B03","L06","M04","N05"]).includes(r.benchmark_id))).map((r) => r.reference_class)),
   ];

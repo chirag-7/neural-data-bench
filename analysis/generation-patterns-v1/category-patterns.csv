@@ -1,0 +1,15 @@
+family,name,n_tasks,complete_trajectories,strictly_improving,mixed_reversals,incomplete,endpoint_better,endpoint_worse,endpoint_numerical_tie,endpoint_incomplete,endpoint_format_ineligible
+A,"Behavior, kinematics and vocalization",3,3,0,3,0,3,0,0,0,0
+B,Extracellular signal acquisition,4,4,0,4,0,3,1,0,0,0
+C,Calcium imaging and photometry,2,2,1,1,0,2,0,0,0,0
+D,"Voltage, intracellular and dendrites",1,1,0,1,0,1,0,0,0,0
+E,Population activity and dynamics,2,2,1,1,0,2,0,0,0,0
+F,Sensory and behavioral encoding,1,1,1,0,0,1,0,0,0,0
+G,Intracortical BCI,1,1,0,1,0,1,0,0,0,0
+H,"EEG, MEG, field signals and peripheral interfaces",4,4,2,2,0,4,0,0,0,0
+I,Human and mesoscopic neuroimaging,2,2,0,2,0,2,0,0,0,0
+J,"Anatomy, histology and connectomics",1,0,0,0,1,0,0,0,1,0
+K,Cell types and molecular neuroscience,4,4,2,2,0,3,1,0,0,0
+L,Mechanistic and statistical inference,2,2,2,0,0,2,0,0,0,0
+M,Experimental design and control,2,2,0,2,0,2,0,0,0,0
+N,Scientific analysis workflows,1,1,0,0,0,1,0,0,0,0

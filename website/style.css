@@ -1002,3 +1002,9 @@ footer {
 .practical-table td:last-child { min-width: 155px; white-space: normal; }
 .practical-pad { padding: 0 22px 16px; }
 @media (max-width: 800px) { .practical-candidates { grid-template-columns: 1fr; } .tabs { flex-wrap: wrap; } }
+
+.metric-direction-key{margin:4px 0 10px;color:#285d56;font-weight:600;line-height:1.5}
+.pattern-stack{display:flex;min-height:42px;border-radius:7px;overflow:hidden;margin:16px 0 9px;background:#edf1f3}
+.pattern-stack>div{display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;min-width:0}
+.pattern-legend{display:flex;gap:12px 22px;flex-wrap:wrap;margin:8px 0 22px;font-size:13px;color:#415664}
+.pattern-legend i{display:inline-block;width:10px;height:10px;margin-right:6px;border-radius:2px}

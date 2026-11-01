@@ -1,0 +1,10 @@
+{
+  "numerical_tolerance": 1e-09,
+  "orientation": "higher: +1; lower: -1; multiply every adjacent and endpoint delta by orientation",
+  "task_weighting": "Each task once; source report equal-slice native mean, only if every slice succeeds",
+  "missing_policy": "Incomplete, never zero; partial trajectories not assigned full four-point shapes",
+  "strict_sensitivity": "All four models numeric and line-compliant on every slice",
+  "inference": "No p-values, confidence intervals, statistical-equivalence or randomness labels. Generation replicates and independent biological units differ by task. Source cohorts overlap across categories.",
+  "retrospective": "Trajectory and diminishing-gain analyses selected after seeing results; exploratory. Nine monotonic tasks are not nine independent confirmations of a scaling law.",
+  "provenance": "Final usability uses explicit historical repair overlay. API/Codex wrappers, reasoning controls and repair histories differ. First-attempt and observed-data sensitivities retained."
+}

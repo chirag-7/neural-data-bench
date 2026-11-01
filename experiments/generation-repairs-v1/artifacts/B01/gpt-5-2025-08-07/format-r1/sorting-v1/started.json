@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "B01",
+  "slice_id": "sorting-v1",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "81bf9c612bd66845fbed58ca676a178779cf5015f7e7ae7c62d1145caccd633d",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-repairs-v1/submissions/B01/gpt-5-2025-08-07/format-r1.json",
+  "submission_sha256": "237eb84f537c86723d41ca8237e1e5a12d196742ab6ad6fcce68f7b43228b255",
+  "code_sha256": "7b148c29be1908dc47cc345a1ffdecddd4ab9a102e489bd15e471e7a540928b4",
+  "description": "Unsupervised, single-shot spike sorting for a 32-channel, 10 s extracellular recording. Steps:\n- Common-average referencing (subtract per-sample median across channels) and robust per-channel noise estimation via MAD to get sigma.\n- Negative threshold detection on each channel using robust threshold (4.5\u00b7sigma), local-minimum selection with per-channel refractory (12 samples \u2248 0.375 ms).\n- Cross-channel deduplication: merge candidate peaks within \u00b112 samples across all channels, keep the most negative trough as a single event and record its primary channel and amplitude.\n- Discard events too close to recording edges for waveform extraction.\n- Geometry-aware feature extraction: for each event, take 8 nearest channels by electrode geometry, extract 48-sample snippets (0.5 ms pre, 1.0 ms post), whiten by per-channel sigma, flatten, and compute low-dimensional features using PCA (8 components) learned on an evenly spaced subset (up to 5000 events). Concatenate a normalized amplitude feature.\n- Robust feature scaling (median/MAD) and clustering with KMeans using a heuristic K (3\u201316 depending on spike count). Discard tiny clusters.\n- Template merging: build per-cluster mean templates across all 32 channels from up to 150 events/cluster (whitened). Merge clusters whose template cosine similarity > 0.95 and with primary channels within 65 \u00b5m (union-find).\n- Enforce intra-unit refractory: within each unit, allow at most one spike per 12 samples, keeping the more negative amplitude event.\n- Return integer array [sample_index, unit_id], sorted by sample then unit, with contiguous nonnegative unit IDs. No supervision, deterministic seeds, no ground-truth use.\nValidation policy: purely unsupervised on the full 10 s recording; no use of any hidden labels/true unit counts/templates. Parameters chosen conservatively for generality and speed on a single CPU thread. No duplicate events within a unit are emitted; empty output is valid if no spikes are detected.",
+  "code_lines": 239,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

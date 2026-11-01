@@ -1,0 +1,13 @@
+{
+  "date_utc": "2026-11-01T21:16:45.045845+00:00",
+  "method": "Real Codex in-app browser, localhost:8767; source-render route and direction checks separately",
+  "checks": {
+    "macro_endpoint": "27 better / 2 worse / 0 numerical ties / 1 excluded",
+    "four_point_shapes": "9 strictly improving / 19 reversals / 1 improves with ties / 1 incomplete",
+    "lower_metric_A14": "Visually verified better-up reversed RMSE axis, nonnegative tick range, explicit raw-bar direction",
+    "J08_exclusion": "GPT-4.1 no numeric point/bar; visible 180-second limit explanation; three remaining models plus StarDist",
+    "manual_repairs": "asterisk on repaired points/bars; direct repair audit and original API evidence links",
+    "category_task_controls": "J and A filtering verified",
+    "source_checks": "all 30 plots, both directions, 299 legacy routes and new macro route"
+  }
+}

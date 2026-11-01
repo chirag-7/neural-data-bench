@@ -1,0 +1,73 @@
+{
+  "benchmark_id": "K04",
+  "slice_id": "expansion-v1",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-repairs-v1",
+  "status": "measured",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "8ea1145c80e2bc90e94a0bb8a33233c83627ab17edddadc3f38636f51a52097a",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "Manual debugging after observed failure; final usability only, not fresh model capability.",
+  "no_new_generation": true,
+  "code_repaired": true,
+  "submission_file": "experiments/generation-repairs-v1/submissions/K04/gpt-4.1-2025-04-14/r2.json",
+  "submission_sha256": "f3f15b8ccff77ed2c7c7c81a35b1c46bfa52371e5fa75d342f96c1f00f803514",
+  "code_sha256": "a53475845b9b4412a74c253b2253df8513d39c48a843c762a3d396c4ee3f0cfa",
+  "description": "This solution assigns human cortical-layer labels from SRT spot expression using a robust supervised approach suitable for donor-held-out cross-validation and full section transfer. First, it standardizes training and test data using robust per-gene normalization fit on training alone (Median+MAD). To handle highly skewed class count imbalances and donor/section variation, the model exploits a stratified GroupKFold inner-validation using the donor IDs in train_groups. For model selection, we combine a multinomial logistic regression (multi-class, one-vs-rest, balanced class weights) and a RandomForestClassifier (100 trees, max_depth=15). Their predicted class probabilities are weighted and averaged for each spot, providing smooth probabilistic outputs even when some labels are missing in individual validation folds. Prediction is performed by fitting both models on the full training set and averaging their test predicted probabilities. If a label was never observed in a training fold, its probability is set to zero and probabilities are renormalized, ensuring the output always covers all 7 layers (as required for test sections). The 7-class predictions are output as integer indices 0..6, one per test row. All feature transforms and model hyperparameters are strictly fit on training data only; gene order is preserved throughout. NumPy's random seed is fixed for consistency. No features, normalization, or adaptation use test data or image context, and the workflow adheres to all contest/data constraints.",
+  "code_lines": 127,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true,
+  "seconds": 54.21628962503746,
+  "score": 0.5290441742064551,
+  "metric": "section_equal_macro_f1_7classes",
+  "direction": "higher",
+  "per_unit": [
+    0.5481573906880177,
+    0.49445175530078295,
+    0.5431934220608299,
+    0.5303741287761901
+  ],
+  "group_results": [
+    {
+      "group": "151673",
+      "n": 3611,
+      "score": 0.5481573906880177
+    },
+    {
+      "group": "151674",
+      "n": 3635,
+      "score": 0.49445175530078295
+    },
+    {
+      "group": "151675",
+      "n": 3566,
+      "score": 0.5431934220608299
+    },
+    {
+      "group": "151676",
+      "n": 3431,
+      "score": 0.5303741287761901
+    }
+  ],
+  "pooled_macro_f1": 0.529466572589295,
+  "accuracy": 0.5946780874815699,
+  "n_units": 14243,
+  "scoring_seconds": 1.270006167003885,
+  "prediction_file": "experiments/generation-repairs-v1/artifacts/K04/gpt-4.1-2025-04-14/r2/expansion-v1/predictions.npz",
+  "prediction_sha256": "184b09d9fc6fc171a12cdd66ac5d8d310a02690376a0ca112e4308c383ee107b",
+  "strict_format_compliant": true,
+  "repair_revision": "r2",
+  "repair_type": "manual_optimizer_budget_repair",
+  "patch_description": "Remove removed multi_class keyword; retain original multinomial-capable solver and train-only model selection. Use the deterministic LBFGS optimizer for the same multinomial L2 logistic objective, preserving original regularization grid, group folds, weights and input transforms, after SAGA timed out. No test-score tuning.",
+  "original_key": {
+    "benchmark_id": "K04",
+    "slice_id": "expansion-v1",
+    "model": "gpt-4.1-2025-04-14"
+  },
+  "original_code_sha256": "31fac50ac5fa679f97a7e9d71f1f9b2a5e21124e111cf332e09310e2c8dad0cd",
+  "test_labels_used_for_patch": false,
+  "manual_debugging": true
+}

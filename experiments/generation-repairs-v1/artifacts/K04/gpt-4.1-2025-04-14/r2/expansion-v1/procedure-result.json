@@ -1,0 +1,10 @@
+{
+  "seconds": 54.21628962503746,
+  "submission_file": "experiments/generation-repairs-v1/submissions/K04/gpt-4.1-2025-04-14/r2.json",
+  "submission_sha256": "f3f15b8ccff77ed2c7c7c81a35b1c46bfa52371e5fa75d342f96c1f00f803514",
+  "code_sha256": "a53475845b9b4412a74c253b2253df8513d39c48a843c762a3d396c4ee3f0cfa",
+  "description": "This solution assigns human cortical-layer labels from SRT spot expression using a robust supervised approach suitable for donor-held-out cross-validation and full section transfer. First, it standardizes training and test data using robust per-gene normalization fit on training alone (Median+MAD). To handle highly skewed class count imbalances and donor/section variation, the model exploits a stratified GroupKFold inner-validation using the donor IDs in train_groups. For model selection, we combine a multinomial logistic regression (multi-class, one-vs-rest, balanced class weights) and a RandomForestClassifier (100 trees, max_depth=15). Their predicted class probabilities are weighted and averaged for each spot, providing smooth probabilistic outputs even when some labels are missing in individual validation folds. Prediction is performed by fitting both models on the full training set and averaging their test predicted probabilities. If a label was never observed in a training fold, its probability is set to zero and probabilities are renormalized, ensuring the output always covers all 7 layers (as required for test sections). The 7-class predictions are output as integer indices 0..6, one per test row. All feature transforms and model hyperparameters are strictly fit on training data only; gene order is preserved throughout. NumPy's random seed is fixed for consistency. No features, normalization, or adaptation use test data or image context, and the workflow adheres to all contest/data constraints.",
+  "code_lines": 127,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

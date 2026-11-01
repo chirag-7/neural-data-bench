@@ -1,0 +1,10 @@
+{
+  "seconds": 0.5086137088946998,
+  "submission_file": "experiments/generation-repairs-v1/submissions/N05/gpt-5.6-sol/format-r1.json",
+  "submission_sha256": "b0658efd8176328d74f6d7a7b6e740fed7a5eec0057d1112d1eb673b085694c7",
+  "code_sha256": "c3847b1d3bcd4664389f99b82184382df80bb705bd7ee3e29f9df2c0673cabb8",
+  "description": "Prior explicitly repaired metadata parser; mechanical reformat only.",
+  "code_lines": 231,
+  "line_limit_compliant": true,
+  "line_limit_exclusive": 240
+}

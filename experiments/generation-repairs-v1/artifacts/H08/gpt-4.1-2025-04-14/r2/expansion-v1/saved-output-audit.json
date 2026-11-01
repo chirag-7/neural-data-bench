@@ -1,0 +1,35 @@
+{
+  "score": 0.7252734503405033,
+  "metric": "macro_f1_sleep",
+  "direction": "higher",
+  "accuracy": 0.8685185185185185,
+  "balanced_accuracy": 0.7034610532364776,
+  "per_unit": [
+    0.6496075223435049,
+    0.7623814801441403,
+    0.7267886849977973
+  ],
+  "night_results": [
+    {
+      "group": "5",
+      "score": 0.6496075223435049,
+      "metric": "macro_f1_sleep",
+      "n": 1440
+    },
+    {
+      "group": "6",
+      "score": 0.7623814801441403,
+      "metric": "macro_f1_sleep",
+      "n": 1440
+    },
+    {
+      "group": "7",
+      "score": 0.7267886849977973,
+      "metric": "macro_f1_sleep",
+      "n": 1440
+    }
+  ],
+  "n_scored_epochs": 4320,
+  "n_units": 3,
+  "status": "passed"
+}

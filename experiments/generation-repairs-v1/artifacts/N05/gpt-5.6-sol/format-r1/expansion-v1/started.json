@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "N05",
+  "slice_id": "expansion-v1",
+  "model": "gpt-5.6-sol",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "3d816aec642b0385d82343a5074e0049cf89f5f2740856d5a3ff87c276b43538",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-repairs-v1/submissions/N05/gpt-5.6-sol/format-r1.json",
+  "submission_sha256": "b0658efd8176328d74f6d7a7b6e740fed7a5eec0057d1112d1eb673b085694c7",
+  "code_sha256": "c3847b1d3bcd4664389f99b82184382df80bb705bd7ee3e29f9df2c0673cabb8",
+  "description": "Prior explicitly repaired metadata parser; mechanical reformat only.",
+  "code_lines": 231,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

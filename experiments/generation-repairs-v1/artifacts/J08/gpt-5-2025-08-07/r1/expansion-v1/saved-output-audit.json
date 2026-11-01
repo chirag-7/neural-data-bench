@@ -1,0 +1,11 @@
+{
+  "score": 0.24323205422323543,
+  "metric": "instance_f1_iou50_multirater",
+  "direction": "higher",
+  "per_unit": [
+    0.31042364599178457,
+    0.17604046245468621
+  ],
+  "n_units": 2,
+  "status": "passed"
+}

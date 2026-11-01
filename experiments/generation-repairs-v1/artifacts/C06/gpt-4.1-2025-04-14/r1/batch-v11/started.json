@@ -1,0 +1,23 @@
+{
+  "benchmark_id": "C06",
+  "slice_id": "batch-v11",
+  "model": "gpt-4.1-2025-04-14",
+  "run_id": "generation-extension-v1",
+  "status": "failed",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "11593c2e786bc00f549dbd9cd16378f54c4ae312627a21ce2c5768b12ed32670",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "One API generation; provider wrapper differs; custom slices and current strongest specialist unverified",
+  "no_new_generation": false,
+  "code_repaired": false,
+  "submission_file": "experiments/generation-repairs-v1/submissions/C06/gpt-4.1-2025-04-14/r1.json",
+  "submission_sha256": "a2f92352dc1e8c942bc2f592e994a84d4924611fec1c655480dd78a188dc2d25",
+  "code_sha256": "bd535ceae327697650de4c51efb155f5a8b7248488233a3233182177e8238867",
+  "description": "\nThis procedure implements single-shot, group-aware, specimen-held-out spike rate inference for OGB-1 zebrafish data. It performs group-k-fold cross-validation on training specimens, trains a pipeline on full training data, and predicts for held-out test animals. Each input recording is handled independently; no resampling, no cross-record smoothing. The method constructs a compact sequence of steps: per-record Z-score normalization (mask-aware), extraction of per-record statistics, linear regression with group-k-fold cross-validation grouped by train specimen, and a nonnegativity constraint enforced post-prediction. Padding/invalid frames (channel 1 mask == 0) are handled carefully: normalization, model fitting and loss computation are restricted to valid frames; training targets with value -1 are excluded. Standard errors are returned for every step. Deterministic seed ensures fixed splits and reproducibility.\n",
+  "code_lines": 145,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true
+}

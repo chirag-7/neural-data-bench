@@ -31,6 +31,7 @@ const ctx = {
   }),
 };
 vm.createContext(ctx);
+vm.runInContext(fs.readFileSync(path.join(root, "website/generation-patterns.js"), "utf8"), ctx);
 vm.runInContext(fs.readFileSync(path.join(root, "website/practical-review.js"), "utf8"), ctx);
 vm.runInContext(
   fs.readFileSync(path.join(root, "website/app.js"), "utf8"),
@@ -315,6 +316,18 @@ const circleX=[...line.matchAll(/<circle cx="([0-9.]+)"/g)].map(match=>Number(ma
 if(circleX.length!==4 || circleX.some(x=>x<65||x>365) || new Set(circleX).size!==4) throw Error("Four points must fit before named reference labels");
 ctx.location.hash="#/benchmark/H02/replication";vm.runInContext("draw()",ctx);
 if(!el("#benchmark-content").innerHTML.includes("Historical three-model follow-up")) throw Error("Old replication must be labeled historical");
+// Both metric directions must put the better score higher on the page.
+for(const direction of ['higher','lower']) {
+ const html=vm.runInContext(`linePlot([{model:MODELS[0],score:1},{model:MODELS[1],score:2}],[], '${direction}')`,ctx);
+ const points=[...html.matchAll(/<circle cx="[0-9.]+" cy="([0-9.]+)"/g)].map(x=>Number(x[1]));
+ if(points.length!==2 || (direction==='higher' ? points[1]>=points[0] : points[0]>=points[1])) throw Error('Inverted improvement direction: '+direction);
+ if(!html.includes('Better performance ↑'))throw Error('Missing line metric-direction key');
+ const bar=vm.runInContext(`barPlot([{model:MODELS[0],score:1}], '${direction}')`,ctx);if(!bar.includes(direction+' is better'))throw Error('Missing bar direction key');
+}
+ctx.location.hash='#/analysis/patterns';vm.runInContext('draw()',ctx);await new Promise(resolve=>setImmediate(resolve));
+if(!el('#app').innerHTML.includes('Do newer models improve?') || !el('#app').innerHTML.includes('27') || !el('#app').innerHTML.includes('Mixed changes / reversals'))throw Error('Macro route/data failed');
+ctx.location.hash='#/analysis/practical';vm.runInContext("practicalCategory='J';practicalTask='J08';draw()",ctx);await new Promise(resolve=>setImmediate(resolve));
+if(!el('#app').innerHTML.includes('Not scored within the 180-second computation limit'))throw Error('Excluded model reason missing from task graph');
 const result = {
   type: "In-memory source-render and direct-handler checks; not real-browser interaction or layout QA",
   routes: n,
@@ -325,6 +338,8 @@ const result = {
   direct_named_reference_labels_and_numeric_cards: "passed",
   posthoc_metric_sensitivity: "passed",
   negative_R2_axis: "passed",
+  metric_direction_better_up_and_raw_bar_labels: "passed · both directions",
+  generation_macro_patterns_and_exclusion_labels: "passed",
   graph_table_switch: "passed",
   search_and_benchmark_selector: "passed",
   category_cards_and_two_layer_navigation: "passed",

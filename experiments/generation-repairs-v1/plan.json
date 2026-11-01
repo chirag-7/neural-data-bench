@@ -1,0 +1,194 @@
+{
+  "scope": "Repair ten failed API-generated procedures without new model calls, algorithm search or test-label access. Retain every original and failed repair; 180s procedure/1800s score; no automatic unbounded retry. Inspect each next failure before a new version.",
+  "attempts": [
+    {
+      "benchmark_id": "B07",
+      "slice_id": "compression-v1",
+      "model": "gpt-5-2025-08-07",
+      "revision": "r1",
+      "patch": "Restore the declared (time, channel) shape before inverse channel cumulative sum; retain bitstream algorithm."
+    },
+    {
+      "benchmark_id": "C06",
+      "slice_id": "batch-v11",
+      "model": "gpt-4.1-2025-04-14",
+      "revision": "r1",
+      "patch": "Materialize the original GroupKFold splits using provided training groups; clip roundoff-negative rolling variances before sqrt. No label/test feedback or estimator replacement."
+    },
+    {
+      "benchmark_id": "G01",
+      "slice_id": "expansion-v1",
+      "model": "gpt-4.1-2025-04-14",
+      "revision": "r1",
+      "patch": "Restore missing indentation of the existing alpha list inside fit_predict."
+    },
+    {
+      "benchmark_id": "H08",
+      "slice_id": "expansion-v1",
+      "model": "gpt-4.1-2025-04-14",
+      "revision": "r1",
+      "patch": "Use NumPy 2-compatible np.ptp; remove removed multi_class keyword where present, retaining multinomial-capable original solver."
+    },
+    {
+      "benchmark_id": "H08",
+      "slice_id": "expansion-v1",
+      "model": "gpt-5-2025-08-07",
+      "revision": "r1",
+      "patch": "Use NumPy 2-compatible np.ptp; remove removed multi_class keyword where present, retaining multinomial-capable original solver."
+    },
+    {
+      "benchmark_id": "J08",
+      "slice_id": "expansion-v1",
+      "model": "gpt-4.1-2025-04-14",
+      "revision": "r1",
+      "patch": "Remove invalid hash-based caching of mutable ndarray instance labels."
+    },
+    {
+      "benchmark_id": "J08",
+      "slice_id": "expansion-v1",
+      "model": "gpt-5-2025-08-07",
+      "revision": "r1",
+      "patch": "Request only EDT index arrays, rather than indexing the default distances-and-indices tuple."
+    },
+    {
+      "benchmark_id": "K04",
+      "slice_id": "expansion-v1",
+      "model": "gpt-4.1-2025-04-14",
+      "revision": "r1",
+      "patch": "Remove removed multi_class keyword; retain original multinomial-capable solver and train-only model selection."
+    },
+    {
+      "benchmark_id": "K04",
+      "slice_id": "expansion-v1",
+      "model": "gpt-5-2025-08-07",
+      "revision": "r1",
+      "patch": "Remove removed multi_class keyword; retain original multinomial-capable solver and train-only model selection."
+    },
+    {
+      "benchmark_id": "N05",
+      "slice_id": "expansion-v1",
+      "model": "gpt-5-2025-08-07",
+      "revision": "r1",
+      "patch": "Classify time-series groups by the visit path (including stimulus/acquisition hard-link aliases), rather than a resolved object name. Preserve the returned schema and extraction algorithm."
+    },
+    {
+      "benchmark_id": "H08",
+      "slice_id": "expansion-v1",
+      "model": "gpt-4.1-2025-04-14",
+      "revision": "r2",
+      "patch": "Use NumPy 2-compatible np.ptp; remove removed multi_class keyword where present, retaining multinomial-capable original solver. Correct the allocated feature width to the actual 17 features; feature formulas unchanged."
+    },
+    {
+      "benchmark_id": "A15",
+      "slice_id": "batch-v11",
+      "model": "gpt-5-2025-08-07",
+      "revision": "format-r1",
+      "patch": "Mechanical AST-preserving reformat; no estimator, parameter, operation, literal or statement order changes. Original line violation remains historical."
+    },
+    {
+      "benchmark_id": "B01",
+      "slice_id": "sorting-v1",
+      "model": "gpt-5-2025-08-07",
+      "revision": "format-r1",
+      "patch": "Mechanical AST-preserving reformat; no estimator, parameter, operation, literal or statement order changes. Original line violation remains historical."
+    },
+    {
+      "benchmark_id": "N05",
+      "slice_id": "expansion-v1",
+      "model": "gpt-4.1-2025-04-14",
+      "revision": "format-r1",
+      "patch": "Mechanical AST-preserving reformat; no estimator, parameter, operation, literal or statement order changes. Original line violation remains historical."
+    },
+    {
+      "benchmark_id": "A15",
+      "slice_id": "batch-v11",
+      "model": "gpt-5.6-sol",
+      "revision": "format-r1",
+      "patch": "Mechanical AST-preserving reformat; no estimator, parameter, operation, literal or statement order changes. Original line violation remains historical."
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "1",
+      "model": "gpt-5.6-sol",
+      "revision": "format-r1",
+      "patch": "Mechanical AST-preserving reformat; no estimator, parameter, operation, literal or statement order changes. Original line violation remains historical."
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "2",
+      "model": "gpt-5.6-sol",
+      "revision": "format-r1",
+      "patch": "Mechanical AST-preserving reformat; no estimator, parameter, operation, literal or statement order changes. Original line violation remains historical."
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "3",
+      "model": "gpt-5.6-sol",
+      "revision": "format-r1",
+      "patch": "Mechanical AST-preserving reformat; no estimator, parameter, operation, literal or statement order changes. Original line violation remains historical."
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "4",
+      "model": "gpt-5.6-sol",
+      "revision": "format-r1",
+      "patch": "Mechanical AST-preserving reformat; no estimator, parameter, operation, literal or statement order changes. Original line violation remains historical."
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "5",
+      "model": "gpt-5.6-sol",
+      "revision": "format-r1",
+      "patch": "Mechanical AST-preserving reformat; no estimator, parameter, operation, literal or statement order changes. Original line violation remains historical."
+    },
+    {
+      "benchmark_id": "H08",
+      "slice_id": "expansion-v1",
+      "model": "gpt-5.6-sol",
+      "revision": "format-r1",
+      "patch": "Mechanical AST-preserving reformat; no estimator, parameter, operation, literal or statement order changes. Original line violation remains historical."
+    },
+    {
+      "benchmark_id": "N05",
+      "slice_id": "expansion-v1",
+      "model": "gpt-5.6-sol",
+      "revision": "format-r1",
+      "patch": "Mechanical AST-preserving reformat; no estimator, parameter, operation, literal or statement order changes. Original line violation remains historical."
+    },
+    {
+      "benchmark_id": "K04",
+      "slice_id": "expansion-v1",
+      "model": "gpt-4.1-2025-04-14",
+      "revision": "r2",
+      "patch": "Remove removed multi_class keyword; retain original multinomial-capable solver and train-only model selection. Use the deterministic LBFGS optimizer for the same multinomial L2 logistic objective, preserving original regularization grid, group folds, weights and input transforms, after SAGA timed out. No test-score tuning."
+    },
+    {
+      "benchmark_id": "K04",
+      "slice_id": "expansion-v1",
+      "model": "gpt-5-2025-08-07",
+      "revision": "r2",
+      "patch": "Remove removed multi_class keyword; retain original multinomial-capable solver and train-only model selection. Use the deterministic LBFGS optimizer for the same multinomial L2 logistic objective, preserving original regularization grid, group folds, weights and input transforms, after SAGA timed out. No test-score tuning."
+    },
+    {
+      "benchmark_id": "J08",
+      "slice_id": "expansion-v1",
+      "model": "gpt-4.1-2025-04-14",
+      "revision": "r2",
+      "patch": "Remove invalid hash-based caching of mutable ndarray instance labels. Cache identical training-patch probabilities outside the existing threshold loop. Same training forest, thresholds and predictions; remove repeated work after timeout."
+    },
+    {
+      "benchmark_id": "N05",
+      "slice_id": "expansion-v1",
+      "model": "gpt-5-2025-08-07",
+      "revision": "r2",
+      "patch": "Classify time-series groups by the visit path (including stimulus/acquisition hard-link aliases), rather than a resolved object name. Preserve the returned schema and extraction algorithm. Traverse stimulus and acquisition aliases independently with ancestor-cycle protection; visititems skips previously visited hard-linked objects. Parse actual supplied-file metadata, never expected answers. Normalize visit paths to absolute form before prefix classification."
+    },
+    {
+      "benchmark_id": "N05",
+      "slice_id": "expansion-v1",
+      "model": "gpt-5-2025-08-07",
+      "revision": "r3",
+      "patch": "Classify time-series groups by the visit path (including stimulus/acquisition hard-link aliases), rather than a resolved object name. Preserve the returned schema and extraction algorithm. Traverse stimulus and acquisition aliases independently with ancestor-cycle protection; visititems skips previously visited hard-linked objects. Parse actual supplied-file metadata, never expected answers. Normalize visit paths to absolute form before prefix classification. Mechanical AST-identical physical-line formatting; original format violation remains historical."
+    }
+  ]
+}

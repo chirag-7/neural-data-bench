@@ -1,0 +1,71 @@
+{
+  "benchmark_id": "H08",
+  "slice_id": "expansion-v1",
+  "model": "gpt-5-2025-08-07",
+  "run_id": "generation-repairs-v1",
+  "status": "measured",
+  "track": "T3",
+  "generation_replicates": 1,
+  "date": "2026-11-01",
+  "prompt_sha256": "18c7e3aab36bdbcce6a507bffe17300687548cec4bd3007e2184a876599dd339",
+  "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+  "superiority_eligible": false,
+  "superiority_reason": "Manual debugging after observed failure; final usability only, not fresh model capability.",
+  "no_new_generation": true,
+  "code_repaired": true,
+  "submission_file": "experiments/generation-repairs-v1/submissions/H08/gpt-5-2025-08-07/r1.json",
+  "submission_sha256": "ae1fb841ad2a6426d2f4651945ca79a4f40d4712e9289e4b6ab00215471dab64",
+  "code_sha256": "1a0aa1f26b079af764ccdd02b216611e9107259129500c640f389d7ac9cd35ad",
+  "description": "EEG sleep staging with compact spectral/time-domain features, per-night unsupervised normalization, multinomial logistic regression, and HMM-style temporal decoding. For each night we: (1) detrend each epoch by mean, (2) extract vectorized features: time-domain (std, peak-to-peak, mean absolute value, line length, zero-crossing rate, Hjorth mobility/complexity, skewness, kurtosis), frequency-domain via rFFT with Hamming window (relative bandpowers in delta/theta/alpha/sigma/beta for 0.5\u201330 Hz, three log band ratios, spectral centroid, spectral entropy, SEF90), and time-of-night features (index, sin, cos). Features are z-scored per night (unsupervised adaptation). We train a multinomial LogisticRegression (class_weight='balanced') on all labeled epochs (ignoring -1). A 5x5 Markov transition matrix and initial distribution are estimated from labeled training sequences with Laplace smoothing and diagonal self-bias. Test emissions are classifier probabilities mapped into 5 classes (missing classes get tiny mass). We decode each test night offline with Viterbi, then apply a light de-islanding pass to replace 1-epoch flips. Nights are processed independently, preserving boundaries. Deterministic seeds, single-thread classifiers, and no external assets.\n",
+  "code_lines": 207,
+  "line_limit_exclusive": 240,
+  "line_limit_compliant": true,
+  "seconds": 1.291821249993518,
+  "score": 0.6783412614813794,
+  "metric": "macro_f1_sleep",
+  "direction": "higher",
+  "accuracy": 0.7840277777777778,
+  "balanced_accuracy": 0.7041700506813882,
+  "per_unit": [
+    0.31025137930688496,
+    0.8087189353051867,
+    0.7534639886982808
+  ],
+  "night_results": [
+    {
+      "group": "5",
+      "score": 0.31025137930688496,
+      "metric": "macro_f1_sleep",
+      "n": 1440
+    },
+    {
+      "group": "6",
+      "score": 0.8087189353051867,
+      "metric": "macro_f1_sleep",
+      "n": 1440
+    },
+    {
+      "group": "7",
+      "score": 0.7534639886982808,
+      "metric": "macro_f1_sleep",
+      "n": 1440
+    }
+  ],
+  "n_scored_epochs": 4320,
+  "n_units": 3,
+  "scoring_seconds": 1.0523659591563046,
+  "prediction_file": "experiments/generation-repairs-v1/artifacts/H08/gpt-5-2025-08-07/r1/expansion-v1/predictions.npz",
+  "prediction_sha256": "8bdd891e1207d0baccb302269b045f58cdb93657386517fa7a9e5f5c66813a8a",
+  "strict_format_compliant": true,
+  "repair_revision": "r1",
+  "repair_type": "manual_runtime_compatibility_or_shape_patch",
+  "patch_description": "Use NumPy 2-compatible np.ptp; remove removed multi_class keyword where present, retaining multinomial-capable original solver.",
+  "original_key": {
+    "benchmark_id": "H08",
+    "slice_id": "expansion-v1",
+    "model": "gpt-5-2025-08-07"
+  },
+  "original_code_sha256": "3f6a78531baaf0726b915a8281601cfc37163e43cfdf9a4680a0bedcb6c1d950",
+  "test_labels_used_for_patch": false,
+  "manual_debugging": true
+}

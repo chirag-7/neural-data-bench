@@ -1,0 +1,15 @@
+
+Traceback (most recent call last):
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_repair_evaluate.py", line 39, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_repair_evaluate.py", line 37, in main
+    result=e.procedure(t,s,m) if phase=='procedure' else e.audit_one(t,s,m,a.index) if phase=='decode' else e.score(t,s,m)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py", line 186, in procedure
+    pred = ns['fit_predict'](*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "extension-generated", line 101, in fit_predict
+  File "extension-generated", line 87, in build_feature_matrix
+  File "extension-generated", line 77, in extract_features_block
+ValueError: could not broadcast input array from shape (17,) into shape (18,)
