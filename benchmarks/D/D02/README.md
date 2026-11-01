@@ -45,3 +45,7 @@ Decision: **measured** (2026-10-30). Acquired and hashed one 61,980,832-byte off
 Preview 0.11: measured. Acquired and hashed one 61,980,832-byte official Allen NWB, specimen and sweep annotations; prepared four train/two held-out negative-amplitude sweeps from cell464212183. Explicitly conditional PRE-stimulus-rest-relative 500Hz passive deflection prediction only, no spiking or cross-cell claim. Adapter/protocol and train-only reference ready.
 
 [Admission/source evidence](../../../literature/admission-v04-cell-workflow.json). [Actual protocol/worklog](../../../experiments/D02). [Task measurements](../../../results/D02.json).
+
+## Current specialists and repair sensitivity — 1 November 2026
+
+[Current specialist review](../../../literature/specialist-review-2026-11-01/D02.json) · [Native version trajectories and practical interpretation](../../../analysis/practical-review-2026-11-01/report.md). The review distinguishes tested references from unexecuted newer candidates; no matched current global winner is certified.

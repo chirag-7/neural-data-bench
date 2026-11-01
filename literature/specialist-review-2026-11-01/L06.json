@@ -1,0 +1,176 @@
+{
+  "benchmark_id": "L06",
+  "title": "Known-likelihood Bernoulli GLM posterior sampling",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "All ten original sbibm Bernoulli spiking-GLM observations, 100 × 10 design and 100 binary spikes, correlated Gaussian prior, explicit logistic likelihood. Return 10000 posterior draws. Custom primary C2ST uses 2000 subsampled draws, chance 0.5; secondary prior-whitened sliced Wasserstein-2.",
+  "local_protocol": "experiments/L06/protocol.md",
+  "existing_reference": {
+    "name": "Local Polya–Gamma Gibbs plus Laplace; original author posterior samples are scoring reference",
+    "evidence": "A: local matched-likelihood comparator, finite chains only.",
+    "strength": "Problem-specific PG conditional updates are mathematically exact and efficient; unlike amortized SBI they exploit the provided likelihood.",
+    "problems": [
+      "Finite chains are not exact posterior guarantees.",
+      "Local PG and source reference use related algorithms, so independent sampler validation matters.",
+      "Original source chain initialized at truth; local comparator does not.",
+      "C2ST near/below chance cannot rank tiny differences as substantive gains."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "Independent NUTS/HMC on exact logistic likelihood",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/sbi-benchmark/sbibm",
+        "https://proceedings.mlr.press/v130/lueckmann21a.html"
+      ],
+      "evidence": "C: proposed matched likelihood-based comparator.",
+      "matched_to_our_slice": false,
+      "information_match": "Direct information match, no simulator training; require convergence/ESS diagnostics and multiple chains under declared budget.",
+      "role": "candidate"
+    },
+    {
+      "name": "Longer independently initialized Polya–Gamma chains",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/sbi-benchmark/sbibm"
+      ],
+      "evidence": "B/C: source PG family and local shorter-chain evidence exist; the proposed longer independent-chain sensitivity is not executed.",
+      "matched_to_our_slice": false,
+      "information_match": "Exact inputs match; extra warmup/compute must be declared and retained separately.",
+      "role": "candidate"
+    },
+    {
+      "name": "sbi FMPE / NPSE / NPE",
+      "year": 2026,
+      "source_urls": [
+        "https://sbi.readthedocs.io/en/stable/how_to_guide/06_choosing_inference_method.html"
+      ],
+      "evidence": "B: maintained current inference families.",
+      "matched_to_our_slice": false,
+      "information_match": "Can use simulator, but simulation-trained amortization adds budget absent from this known-likelihood task.",
+      "role": "candidate"
+    },
+    {
+      "name": "OneFlowSBI",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2601.22951"
+      ],
+      "evidence": "C: current primary joint-flow method with sbibm coverage.",
+      "matched_to_our_slice": false,
+      "information_match": "Must verify raw vs sufficient-statistic GLM and common prior/design/observations; no imported aggregate C2ST.",
+      "role": "candidate"
+    },
+    {
+      "name": "GenSBI flow/score joint estimators",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2605.27499",
+        "https://gensbi.com/benchmarks.html"
+      ],
+      "evidence": "C: current author methods and benchmark docs.",
+      "matched_to_our_slice": false,
+      "information_match": "Published x=10 sufficient-statistic GLM differs from this raw-spike interface; exact matching/retraining needed.",
+      "role": "candidate"
+    },
+    {
+      "name": "DynaMEchs",
+      "year": null,
+      "source_urls": [
+        "https://dynamechs.sourceforge.net/"
+      ],
+      "evidence": "D: requested name unresolved as a relevant method.",
+      "matched_to_our_slice": false,
+      "information_match": "Search finds multibody dynamics software; do not conflate it with SBI or claim a cognitive benchmark result.",
+      "role": "unresolved_name"
+    }
+  ],
+  "recommended_next_comparator": "Independent exact-likelihood NUTS/HMC and well-diagnosed PG sensitivity, keeping the same observations and canonical scorer; neural SBI only in a separate simulation-budget track.",
+  "switching_assessment": "RETAIN PG as a strong matched specialist, add an independent sampler check, Tier B/C. No evidence supports replacing it with a newer amortized neural method on this tiny known-likelihood problem. Report posterior discrepancies and convergence jointly, not C2ST winner labels near chance.",
+  "limitations": [
+    "Synthetic numerical observations are not biological cohorts.",
+    "C2ST is classifier- and sample-count-dependent; original leaderboard numbers are not this metric.",
+    "Target chance is 0.5; lower numerical values below chance are noise, despite frozen lower-is-better policy.",
+    "Source-reference algorithm dependence and finite reference error remain.",
+    "Original SBI simulation budgets and GPU training are not comparable to one 180-second CPU sampler.",
+    "Exact-name DynaMEchs relevance unresolved after bounded searches."
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/sbi-benchmark/sbibm",
+      "title": "Simulation-based inference benchmark: official repository",
+      "publication_date": "2021 (associated benchmark paper)",
+      "accessed_on": "2026-11-01",
+      "finding": "Supplies task reference posteriors and C2ST; task and raw-data variants must be distinguished.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://proceedings.mlr.press/v130/lueckmann21a.html",
+      "title": "Benchmarking Simulation-Based Inference",
+      "publication_date": "2021",
+      "accessed_on": "2026-11-01",
+      "finding": "Original benchmark uses simulation-budget comparisons; L06 instead exposes the likelihood.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://sbi.readthedocs.io/en/stable/how_to_guide/06_choosing_inference_method.html",
+      "title": "sbi: How to choose an inference method",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Current supported families include NPE/NLE/NRE and FMPE/NPSE, with different simulation and amortization tradeoffs.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.22951",
+      "title": "OneFlowSBI: One Model, Many Queries for Simulation-Based Inference",
+      "publication_date": "2026-01-30; v2 2026-10-21",
+      "accessed_on": "2026-11-01",
+      "finding": "Current joint flow-matching method covers standard sbibm tasks; simulation budget and task variant must match.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.27499",
+      "title": "GenSBI: Generative Methods for Simulation-Based Inference in JAX",
+      "publication_date": "2026-05-26",
+      "accessed_on": "2026-11-01",
+      "finding": "Current flow/diffusion SBI package; its reported Bernoulli GLM is a sufficient-statistic task, not automatically L06 raw observation scoring.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://gensbi.com/benchmarks.html",
+      "title": "GenSBI benchmark documentation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Lists Bernoulli GLM dimension x=10; L06 supplies 100 raw spikes and a known design/likelihood.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://dynamechs.sourceforge.net/",
+      "title": "DYNAMECHS: A Multibody Dynamic Simulation Library",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Exact-name searches resolve a legacy multibody simulator, not a validated cognitive/SBI benchmark.",
+      "access": "Accessible project page; no relevant modern neuroscience method identified by bounded exact-name searches."
+    }
+  ],
+  "search_queries": [
+    "2026 simulation based inference benchmark sbibm flow matching posterior estimation sbi",
+    "\"DynaMEchs\" benchmark",
+    "\"DynaMEchs\"",
+    "\"DynaMEchs\" \"cognitive\"",
+    "\"mechanistic\" \"benchmark\" \"Dyna\" neuroscience 2026"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

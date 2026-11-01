@@ -1,0 +1,27 @@
+--- original/gpt-5.6-sol.py
++++ repairs-v1/N05/revision-2/gpt-5.6-sol.py
+@@ -105,7 +105,23 @@
+             sn = sweep_number(obj.parent)
+             if sn in candidates:
+                 candidates[sn].append(obj)
+-        handle.visititems(visitor)
++        def visit_paths(group, ancestors):
++            address = h5py.h5o.get_info(group.id).addr
++            if address in ancestors:
++                return
++            active = ancestors | {address}
++            for name in group:
++                link = group.get(name, getlink=True)
++                if isinstance(link, h5py.ExternalLink):
++                    continue
++                try:
++                    obj = group[name]
++                except (KeyError, OSError):
++                    continue
++                visitor(obj.name.lstrip("/"), obj)
++                if isinstance(obj, h5py.Group):
++                    visit_paths(obj, active)
++        visit_paths(handle, set())
+         result = {}
+         for sn in sweep_ids:
+             items = candidates[sn]

@@ -44,3 +44,7 @@ Decision: **measured** (2026-10-30). Rat7M raw measured mocap246MB archive acqui
 Preview 0.11: measured. Rat7M raw measured mocap246MB archive acquired from immutable DISK Zenodo18405201 CC BY4.0; seven original recordings, real measured targets and controlled synthetic gaps. Three trainingrats versus two test rats, six head/spine landmarks, nonoverlapping31frame windows. Custom endpoint, not official DISK full distribution.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json). [Actual protocol/worklog](../../../experiments/A14). [Task measurements](../../../results/A14.json).
+
+## Current specialists and repair sensitivity — 1 November 2026
+
+[Current specialist review](../../../literature/specialist-review-2026-11-01/A14.json) · [Native version trajectories and practical interpretation](../../../analysis/practical-review-2026-11-01/report.md). The review distinguishes tested references from unexecuted newer candidates; no matched current global winner is certified.

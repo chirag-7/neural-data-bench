@@ -1,0 +1,141 @@
+{
+  "benchmark_id": "K01",
+  "title": "Morphology label prediction from scalar intrinsic electrophysiology",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "Allen mouse Cell Types binary aspiny/spiny annotation, excluding sparsely spiny; 1356 training and 457 test cells, held-out donors; 11 intrinsic-electrophysiology scalar inputs, macro-F1. No traces, morphology image, transcriptome or genotype predictor.",
+  "local_protocol": "experiments/K01/protocol.md",
+  "existing_reference": {
+    "name": "Donor-CV-selected RF500 / ExtraTrees500",
+    "evidence": "A: fixed donor validation and exact local result.",
+    "strength": "Strong conventional small-tabular comparator.",
+    "problems": [
+      "Not a current domain-specific foundation model or a complete cell taxonomy.",
+      "Scalar summaries cannot support claims about raw electrophysiology understanding."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "TabPFN-3.5",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2609.17895",
+        "https://github.com/PriorLabs/TabPFN"
+      ],
+      "evidence": "B: current tabular foundation candidate.",
+      "matched_to_our_slice": false,
+      "information_match": "Direct numerical classification fit; exact donor-shift performance and weight permissions remain to be checked.",
+      "role": "candidate"
+    },
+    {
+      "name": "TabICLv2",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2602.11139",
+        "https://github.com/soda-inria/tabicl"
+      ],
+      "evidence": "B: current open classification model.",
+      "matched_to_our_slice": false,
+      "information_match": "Direct feature match with train-only imputation and donor validation; no published frozen-slice score.",
+      "role": "candidate"
+    },
+    {
+      "name": "Regularized boosted-tree / kernel classifier panel",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2602.11139"
+      ],
+      "evidence": "C: conventional proposal motivated by current comparative tabular benchmark, not a cell-specific published win.",
+      "matched_to_our_slice": false,
+      "information_match": "Same 11 inputs and donor validation; likely feasible without extra biological modalities.",
+      "role": "candidate"
+    },
+    {
+      "name": "Allen morpho-electric taxonomy pipeline",
+      "year": 2019,
+      "source_urls": [
+        "https://www.nature.com/articles/s41593-019-0417-0",
+        "https://allenswdb.github.io/cell-types/cell-types.html"
+      ],
+      "evidence": "B: primary source taxonomy, not a supervised classifier for this endpoint.",
+      "matched_to_our_slice": false,
+      "information_match": "Richer morphology/physiology clustering changes both inputs and target; do not use its taxonomy scores.",
+      "role": "candidate"
+    }
+  ],
+  "recommended_next_comparator": "Pinned TabICLv2 and locally licensed TabPFN-3.5 alongside a donor-selected boosted-tree/kernel panel, all on the same 11 scalar inputs.",
+  "switching_assessment": "ADD modern tabular contenders, medium priority, Tier B. Retain tree reference; no evidence yet that any newer model wins donor-held-out binary morphology. Do not relabel transcriptomic or extracellular foundation models as direct replacements.",
+  "limitations": [
+    "Donor grouping must be respected in validation.",
+    "Aspiny/spiny is a morphology label, not exhaustive molecular cell identity.",
+    "Published full taxonomy classification is not this binary endpoint.",
+    "Current TabPFN license and external pretraining are separate from general-code runtime budgets."
+  ],
+  "sources": [
+    {
+      "url": "https://www.nature.com/articles/s41593-019-0417-0",
+      "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+      "publication_date": "2019",
+      "accessed_on": "2026-11-01",
+      "finding": "Original multimodal taxonomy uses richer data than K01 binary morphology prediction from 11 scalar electrophysiology features.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://allenswdb.github.io/cell-types/cell-types.html",
+      "title": "Allen Institute SWDB 2026 Cell Types Data Book",
+      "publication_date": "2026",
+      "accessed_on": "2026-11-01",
+      "finding": "Current institutional reference distinguishes electrophysiology, morphology, connectivity and transcriptomic identities.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.17895",
+      "title": "TabPFN-3.5: Technical Report",
+      "publication_date": "2026-09-15; v2 2026-09-22",
+      "accessed_on": "2026-11-01",
+      "finding": "Current tabular candidate with grouped-split evaluation; task-specific superiority untested.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://github.com/PriorLabs/TabPFN",
+      "title": "TabPFN: official repository",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Current weights have noncommercial terms and license acceptance; hosted data transfer is not assumed authorized.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.11139",
+      "title": "TabICLv2: A better, faster, scalable, and open tabular foundation model",
+      "publication_date": "2026-02-11; v2 2026-09-16",
+      "accessed_on": "2026-11-01",
+      "finding": "ICML 2026 tabular classification/regression contender; no matched neuroscience result.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://github.com/soda-inria/tabicl",
+      "title": "TabICLv2 official code and models",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Author repository makes inference and pretraining resources available; releases must be pinned.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    }
+  ],
+  "search_queries": [
+    "site.nature.com Allen cell types electrophysiological features morphology spiny aspiny classification machine learning",
+    "TabPFN v2.5 2026 official tabular foundation model Nature 2025",
+    "site.github.com soda-inria tabicl v2 2026"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

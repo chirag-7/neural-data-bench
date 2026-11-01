@@ -1,0 +1,308 @@
+[
+  {
+    "benchmark_id": "C05",
+    "slice_id": "2",
+    "model": "speiser",
+    "original_status": "failed",
+    "status": "not_repairable_without_new_predictions",
+    "score": null,
+    "original_failure": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 110, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 92, in main\n    if args.one:print(json.dumps(one(*args.one)));return\n                                 ^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 74, in one\n    truth=load('test.spikes');scores=score(pred,truth)\n                                     ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 12, in score\n    if pred.shape!=truth.shape:raise ValueError('Prediction shape mismatch')\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Prediction shape mismatch\n",
+    "source_file": "data/cache/spikefinder/2.speiser.csv",
+    "source_sha256": "b8b32a80a5d05b0535449a542265db5fef47e35c83e2eeb22f38064e74851f98",
+    "source_shape": [
+      77872,
+      10
+    ],
+    "input_shape": [
+      77873,
+      10
+    ],
+    "numeric_headers_are_present": true,
+    "coverage": [
+      {
+        "cell": 0,
+        "input_observations": 77873,
+        "missing_archived_predictions": 1,
+        "first_missing_indices": [
+          77872
+        ]
+      },
+      {
+        "cell": 1,
+        "input_observations": 34667,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 2,
+        "input_observations": 69617,
+        "missing_archived_predictions": 3,
+        "first_missing_indices": [
+          69614,
+          69615,
+          69616
+        ]
+      },
+      {
+        "cell": 3,
+        "input_observations": 9198,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 4,
+        "input_observations": 47674,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 5,
+        "input_observations": 38004,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 6,
+        "input_observations": 47691,
+        "missing_archived_predictions": 1,
+        "first_missing_indices": [
+          47690
+        ]
+      },
+      {
+        "cell": 7,
+        "input_observations": 45558,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 8,
+        "input_observations": 42456,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 9,
+        "input_observations": 26650,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      }
+    ],
+    "reason": "Archived values are genuinely absent/nonfinite on observed input support; no documented invertible row/cell alignment recovers missing scientific predictions. Complete-coverage contract cannot be repaired by padding, interpolation, copying truth or dropping target samples.",
+    "legacy_scorer_note": "Original upstream scorer jointly masks prediction/target NaNs and truncates after40ms downsampling. That is a different partial-coverage scoring contract; adopting it would not repair complete-coverage predictions. No legacy score is substituted."
+  },
+  {
+    "benchmark_id": "C05",
+    "slice_id": "4",
+    "model": "speiser",
+    "original_status": "failed",
+    "status": "not_repairable_without_new_predictions",
+    "score": null,
+    "original_failure": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 110, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 92, in main\n    if args.one:print(json.dumps(one(*args.one)));return\n                                 ^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 74, in one\n    truth=load('test.spikes');scores=score(pred,truth)\n                                     ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 16, in score\n    if not np.all(np.isfinite(x)):raise ValueError('Nonfinite predictions on labels')\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Nonfinite predictions on labels\n",
+    "source_file": "data/cache/spikefinder/4.speiser.csv",
+    "source_sha256": "3d4b5bf286fc3136faa824b13d1cbe4ecc05a564fe430b8271c1a9ab3a52bb3f",
+    "source_shape": [
+      33280,
+      3
+    ],
+    "input_shape": [
+      33280,
+      3
+    ],
+    "numeric_headers_are_present": true,
+    "coverage": [
+      {
+        "cell": 0,
+        "input_observations": 33280,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 1,
+        "input_observations": 33280,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 2,
+        "input_observations": 30810,
+        "missing_archived_predictions": 2,
+        "first_missing_indices": [
+          30808,
+          30809
+        ]
+      }
+    ],
+    "reason": "Archived values are genuinely absent/nonfinite on observed input support; no documented invertible row/cell alignment recovers missing scientific predictions. Complete-coverage contract cannot be repaired by padding, interpolation, copying truth or dropping target samples.",
+    "legacy_scorer_note": "Original upstream scorer jointly masks prediction/target NaNs and truncates after40ms downsampling. That is a different partial-coverage scoring contract; adopting it would not repair complete-coverage predictions. No legacy score is substituted."
+  },
+  {
+    "benchmark_id": "C05",
+    "slice_id": "5",
+    "model": "deneux",
+    "original_status": "failed",
+    "status": "not_repairable_without_new_predictions",
+    "score": null,
+    "original_failure": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 110, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 92, in main\n    if args.one:print(json.dumps(one(*args.one)));return\n                                 ^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 74, in one\n    truth=load('test.spikes');scores=score(pred,truth)\n                                     ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 16, in score\n    if not np.all(np.isfinite(x)):raise ValueError('Nonfinite predictions on labels')\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Nonfinite predictions on labels\n",
+    "source_file": "data/cache/spikefinder/5.deneux.csv",
+    "source_sha256": "1c65c3ee30091741cef426d9311fbe9f4c535e4ce22e0b29c88df4504d87d821",
+    "source_shape": [
+      16919,
+      8
+    ],
+    "input_shape": [
+      16919,
+      8
+    ],
+    "numeric_headers_are_present": true,
+    "coverage": [
+      {
+        "cell": 0,
+        "input_observations": 16919,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 1,
+        "input_observations": 16919,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 2,
+        "input_observations": 16919,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 3,
+        "input_observations": 16919,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 4,
+        "input_observations": 16919,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 5,
+        "input_observations": 1700,
+        "missing_archived_predictions": 44,
+        "first_missing_indices": [
+          1484,
+          1485,
+          1486,
+          1487,
+          1488,
+          1489,
+          1490,
+          1491,
+          1492,
+          1493,
+          1494,
+          1495
+        ]
+      },
+      {
+        "cell": 6,
+        "input_observations": 2501,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 7,
+        "input_observations": 11720,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      }
+    ],
+    "reason": "Archived values are genuinely absent/nonfinite on observed input support; no documented invertible row/cell alignment recovers missing scientific predictions. Complete-coverage contract cannot be repaired by padding, interpolation, copying truth or dropping target samples.",
+    "legacy_scorer_note": "Original upstream scorer jointly masks prediction/target NaNs and truncates after40ms downsampling. That is a different partial-coverage scoring contract; adopting it would not repair complete-coverage predictions. No legacy score is substituted."
+  },
+  {
+    "benchmark_id": "C05",
+    "slice_id": "5",
+    "model": "speiser",
+    "original_status": "failed",
+    "status": "not_repairable_without_new_predictions",
+    "score": null,
+    "original_failure": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 110, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 92, in main\n    if args.one:print(json.dumps(one(*args.one)));return\n                                 ^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 74, in one\n    truth=load('test.spikes');scores=score(pred,truth)\n                                     ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 12, in score\n    if pred.shape!=truth.shape:raise ValueError('Prediction shape mismatch')\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Prediction shape mismatch\n",
+    "source_file": "data/cache/spikefinder/5.speiser.csv",
+    "source_sha256": "86be293f10f75501a3b519f528dea03bc233eb361dfbd2f38b9c693f0f2a9a8a",
+    "source_shape": [
+      16918,
+      8
+    ],
+    "input_shape": [
+      16919,
+      8
+    ],
+    "numeric_headers_are_present": true,
+    "coverage": [
+      {
+        "cell": 0,
+        "input_observations": 16919,
+        "missing_archived_predictions": 1,
+        "first_missing_indices": [
+          16918
+        ]
+      },
+      {
+        "cell": 1,
+        "input_observations": 16919,
+        "missing_archived_predictions": 1,
+        "first_missing_indices": [
+          16918
+        ]
+      },
+      {
+        "cell": 2,
+        "input_observations": 16919,
+        "missing_archived_predictions": 1,
+        "first_missing_indices": [
+          16918
+        ]
+      },
+      {
+        "cell": 3,
+        "input_observations": 16919,
+        "missing_archived_predictions": 1,
+        "first_missing_indices": [
+          16918
+        ]
+      },
+      {
+        "cell": 4,
+        "input_observations": 16919,
+        "missing_archived_predictions": 1,
+        "first_missing_indices": [
+          16918
+        ]
+      },
+      {
+        "cell": 5,
+        "input_observations": 1700,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      },
+      {
+        "cell": 6,
+        "input_observations": 2501,
+        "missing_archived_predictions": 1,
+        "first_missing_indices": [
+          2500
+        ]
+      },
+      {
+        "cell": 7,
+        "input_observations": 11720,
+        "missing_archived_predictions": 0,
+        "first_missing_indices": []
+      }
+    ],
+    "reason": "Archived values are genuinely absent/nonfinite on observed input support; no documented invertible row/cell alignment recovers missing scientific predictions. Complete-coverage contract cannot be repaired by padding, interpolation, copying truth or dropping target samples.",
+    "legacy_scorer_note": "Original upstream scorer jointly masks prediction/target NaNs and truncates after40ms downsampling. That is a different partial-coverage scoring contract; adopting it would not repair complete-coverage predictions. No legacy score is substituted."
+  }
+]

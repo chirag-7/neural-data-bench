@@ -1,0 +1,192 @@
+{
+  "benchmark_id": "B01",
+  "title": "Extracellular sorting of a 10-second stationary MEArec fixture",
+  "reviewed_on": "2026-11-01",
+  "retrieval_date_semantics": "accessed_on is this fresh retrieval, not publication date or proof of exhaustive indexing; null publication_date means not verified",
+  "search_queries": [
+    "SpikeInterface spike sorting benchmark Kilosort4 2025 2026 mountainsort5 spikeforest",
+    "DARTsort github2026",
+    "Spike Sorting with VanillaSort",
+    "SimSort spike sorting benchmark"
+  ],
+  "candidates": [
+    {
+      "name": "Kilosort4",
+      "year": 2024,
+      "source_urls": [
+        "https://www.nature.com/articles/s41592-024-02232-7",
+        "https://github.com/MouseLand/Kilosort"
+      ],
+      "evidence": "Widely used maintained sorter with peer-reviewed hybrid benchmarks and 2026 AIND head-to-head evidence; dense-probe assumptions and ten-second fixture require explicit same-data run.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "DARTsort",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/cwindolf/dartsort"
+      ],
+      "evidence": "Actively developed modular drift sorter; official repository explicitly does not recommend production use yet.",
+      "matched_to_our_slice": false,
+      "role": "research contender, explicit maintainer production warning"
+    },
+    {
+      "name": "MountainSort5",
+      "year": 2023,
+      "source_urls": [
+        "https://github.com/flatironinstitute/mountainsort5"
+      ],
+      "evidence": "Official code is current local specialist family; this run is not a multi-sorter best claim.",
+      "matched_to_our_slice": true,
+      "role": "existing matched reference"
+    },
+    {
+      "name": "SpyKINGCIRCUS2 / Tridesclous2 / Lupin",
+      "year": 2026,
+      "source_urls": [
+        "https://spikeinterface.readthedocs.io/en/latest/",
+        "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+      ],
+      "evidence": "Current SpikeInterface in-house alternatives; geometry/noise can change which method wins.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "VanillaSort",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2609.22322"
+      ],
+      "evidence": "15 September 2026 preprint improves detection over SimSort on HybridJanelia; no evaluated fixture parity/code and weights verified.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "SimSort / SpikeSift",
+      "year": 2025,
+      "source_urls": [
+        "https://arxiv.org/abs/2504.01604",
+        "https://openreview.net/pdf?id=IwjkwtkPGb"
+      ],
+      "evidence": "Recent learning/drift-oriented methods; published comparisons differ in datasets, SNR filtering and metric.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    }
+  ],
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_claim_scope": "Exact executed custom input/split/metric protocol, not best within our small inspected local set",
+  "current_reference": "MountainSort5 scheme 1 plus primary matched-GT accuracy and posthoc all-event F1",
+  "current_reference_limitations": [
+    "Stationary ten-second simulation cannot establish real neuropixels sorting quality.",
+    "Matched-GT score can hide false positive/oversplit units; retain all-event diagnostic.",
+    "Hardware/runtime and specialist development effort differ.",
+    "No transplant of published hybrid scores."
+  ],
+  "recommended_next_comparator": "Prospectively pin/run Kilosort4, MountainSort5, SpyKINGCIRCUS2 and Tridesclous2 on identical voltage, geometry and ten-second selection; include all returned units and fixed matching. Add longer independent fixtures and DARTsort research tier. Tune only training/simulated development seeds.",
+  "switching_assessment": "NO GENERAL REPLACEMENT RECOMMENDATION. Current evidence supports a bounded code-synthesis/pilot comparison to the named local reference. Establish prospective same-input/split/metric contender runs, biological/source replication, calibration and runtime/reliability before switching production tools.",
+  "limitations": [
+    "Stationary ten-second simulation cannot establish real neuropixels sorting quality.",
+    "Matched-GT score can hide false positive/oversplit units; retain all-event diagnostic.",
+    "Hardware/runtime and specialist development effort differ.",
+    "No transplant of published hybrid scores."
+  ],
+  "negative_findings": [
+    "SpikeForest is historically useful but the 2026 AIND paper notes lack of recent algorithm updates.",
+    "No single current winner across probes/drift/SNR classes; the current local one-sorter comparison is insufficient."
+  ],
+  "sources": [
+    {
+      "url": "https://www.nature.com/articles/s41592-024-02232-7",
+      "title": "Spike sorting with Kilosort4",
+      "publication_date": "2024",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Primary 2024 performance paper; broad hybrid data not our ten-second fixture."
+    },
+    {
+      "url": "https://github.com/MouseLand/Kilosort",
+      "title": "Kilosort official implementation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Maintained fast spike sorting with drift correction."
+    },
+    {
+      "url": "https://spikeinterface.readthedocs.io/en/latest/",
+      "title": "SpikeInterface current documentation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Current sorter ecosystem includes multiple alternatives beyond MountainSort."
+    },
+    {
+      "url": "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+      "title": "SpikeInterface benchmark module",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Supports independent noise/drift/SNR controlled hybrid/procedural comparisons."
+    },
+    {
+      "url": "https://github.com/cwindolf/dartsort",
+      "title": "DARTsort official implementation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Maintainer explicitly warns against production use despite active development."
+    },
+    {
+      "url": "https://github.com/flatironinstitute/mountainsort5",
+      "title": "MountainSort5 official implementation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Current local sorter family source."
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.22322",
+      "title": "Spike Sorting with VanillaSort",
+      "publication_date": "2026-09-15",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Recent preprint detection and clustering claims limited to its reported comparisons."
+    },
+    {
+      "url": "https://arxiv.org/abs/2504.01604",
+      "title": "SpikeSift: A Computationally Efficient and Drift-Resilient Spike Sorting Algorithm",
+      "publication_date": "2025-04-02",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Preprint with short-stationary-segment strategy."
+    },
+    {
+      "url": "https://openreview.net/pdf?id=IwjkwtkPGb",
+      "title": "SimSort: A Data-Driven Framework for Spike Sorting",
+      "publication_date": "2025",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Primary 2025 benchmark comparison; not matched to fixture."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13441294/",
+      "title": "Efficient and reproducible pipelines for spike sorting large-scale electrophysiology data",
+      "publication_date": "2026",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "2026 author hybrid study favors Kilosort4 over Kilosort2.5 on its probes; no universal winner across probe geometries."
+    }
+  ],
+  "local_protocol": {
+    "path": "experiments/B01/protocol.md",
+    "sha256": "586a2efbcf72f6ecb79b27d35018a6124e92284601a3327a3adf3377e237c264"
+  },
+  "review_actions": {
+    "fresh_primary_source_browsing": true,
+    "trained_models": false,
+    "downloaded_large_weights": false,
+    "changed_scores": false,
+    "changed_website": false
+  },
+  "unmatched_published_scores_imported": false
+}

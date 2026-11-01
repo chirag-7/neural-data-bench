@@ -44,3 +44,7 @@ Decision: **measured** (2026-10-30). Official Task1 pose/behavior archive acquir
 Preview 0.11: measured. Official Task1 pose/behavior archive acquired and publisher MD5 verified; current-record/paper license discrepancy documented, raw data cache only. Real expert labels, all70train19test recordings retained in fixed3Hz custom slice, official animal split. Adapter and baseline ready; not full benchmark or SOTA.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json). [Actual protocol/worklog](../../../experiments/A09). [Task measurements](../../../results/A09.json).
+
+## Current specialists and repair sensitivity — 1 November 2026
+
+[Current specialist review](../../../literature/specialist-review-2026-11-01/A09.json) · [Native version trajectories and practical interpretation](../../../analysis/practical-review-2026-11-01/report.md). The review distinguishes tested references from unexecuted newer candidates; no matched current global winner is certified.

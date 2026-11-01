@@ -1,0 +1,161 @@
+{
+  "benchmark_id": "K04",
+  "title": "Donor-held-out expression-only cortical-layer transfer",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "HumanPilot DLPFC Visium: two donors/eight sections train, one donor/four sections test; 33086 × 500 training expression features selected using outer-training variance, 14243 test spots. Seven anatomical layer/white-matter labels. Equal-section macro-F1; no coordinates, histology, external reference or gene-token interface supplied.",
+  "local_protocol": "experiments/K04/protocol.md",
+  "existing_reference": {
+    "name": "SingleR Python 0.5.0, train-donor×label mean profiles, fixed classic marker/fine-tuning settings",
+    "evidence": "A: exact frozen supervised slice, scorer and same expression features.",
+    "strength": "A genuine reference-transfer specialist and strong local comparator; retain its measured advantage wherever present.",
+    "problems": [
+      "Not a spatial-clustering algorithm.",
+      "Only two training donors and one held-out donor.",
+      "Curated labels used histology and expression, so labels are not wholly orthogonal."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "SingleR 0.5.0 frozen reference; later release/tuning separate",
+      "year": 2026,
+      "source_urls": [
+        "https://singler-inc.github.io/singler-py/api/singler.html"
+      ],
+      "evidence": "B/A: maintained specialist family; frozen 0.5.0 is already executed.",
+      "matched_to_our_slice": true,
+      "information_match": "The 0.5.0 configuration is already measured. Current 0.5.1 or new tuning is unexecuted and would require a separate prospective record.",
+      "role": "existing_reference"
+    },
+    {
+      "name": "scGPT / Nicheformer expression representations",
+      "year": 2025,
+      "source_urls": [
+        "https://www.nature.com/articles/s41592-025-02814-z",
+        "https://arxiv.org/abs/2607.17227"
+      ],
+      "evidence": "B: relevant current transfer methods with conditional benchmark performance.",
+      "matched_to_our_slice": false,
+      "information_match": "Require gene identities/tokenization and appropriate Visium preprocessing; anonymous 500-column vectors cannot silently gain those identities. Nicheformer need not require coordinates at inference, but its cell-level task differs.",
+      "role": "candidate"
+    },
+    {
+      "name": "Novae / GraphST / spatial domain models",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2607.17227",
+        "https://www.nature.com/articles/s41592-026-03194-8"
+      ],
+      "evidence": "B: relevant spatial-domain contenders on different information.",
+      "matched_to_our_slice": false,
+      "information_match": "Coordinates/neighborhoods and often within-section clustering/label matching are unavailable here; ARI cannot become supervised F1.",
+      "role": "candidate"
+    },
+    {
+      "name": "VINTER",
+      "year": 2026,
+      "source_urls": [
+        "https://www.biorxiv.org/content/10.64898/2026.10.01.752251v1.full"
+      ],
+      "evidence": "C: recent DLPFC-specific vision–language preprint.",
+      "matched_to_our_slice": false,
+      "information_match": "Image/gene interface and held-out-pair tuning violate the frozen expression-only unseen-donor information boundary.",
+      "role": "candidate"
+    },
+    {
+      "name": "Training-only expression classifier / scalable tabular representation",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2602.11139"
+      ],
+      "evidence": "C: feasible numerical challenger, not a published layer winner.",
+      "matched_to_our_slice": false,
+      "information_match": "Compatible only with the supplied columns and training donors; no test-batch adaptation.",
+      "role": "candidate"
+    }
+  ],
+  "recommended_next_comparator": "Keep SingleR; prospectively compare train-donor-selected linear/kernel or scalable tabular methods on the same features. Create a separate gene-identified track before testing scGPT/Nicheformer.",
+  "switching_assessment": "RETAIN SingleR as the strongest defensible already matched specialist; ADD challengers separately, Tier B. Do not replace it with a spatial leaderboard or multimodal VLM result. A current global best remains unresolved even when a local reference wins.",
+  "limitations": [
+    "Four held-out sections share one donor.",
+    "Spatial smoothing inferred from test row order is prohibited.",
+    "Gene identities/coordinates/images are additional information if added later; provide equally to all arms in a new contract.",
+    "Current SingleR documentation is 0.5.1; frozen 0.5.0 must not be silently upgraded.",
+    "No published cortical-layer ARI or matched-cluster accuracy is imported."
+  ],
+  "sources": [
+    {
+      "url": "https://singler-inc.github.io/singler-py/api/singler.html",
+      "title": "SingleR Python API: official documentation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Current documentation identifies 0.5.1; existing K04 reference is pinned 0.5.0, not silently upgraded.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41592-025-02814-z",
+      "title": "Nicheformer: a foundation model for single-cell and spatial omics",
+      "publication_date": "2025-10-30",
+      "accessed_on": "2026-11-01",
+      "finding": "Gene-token model supports cell/niche/region transfer; not the same as anonymous 500-column Visium layer prediction.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.17227",
+      "title": "Harmonised benchmarking of foundation models for single-cell and spatial transcriptomics reveals context-dependent generalisation",
+      "publication_date": "2026-07-19; v2 2026-09-17",
+      "accessed_on": "2026-11-01",
+      "finding": "Primary multi-model benchmark reports context-dependent rankings, not a universal annotation winner.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.01.752251v1.full",
+      "title": "VINTER: a generative vision–language model for annotating and interrogating spatial tissues",
+      "publication_date": "2026-10-01 (preprint identifier)",
+      "accessed_on": "2026-11-01",
+      "finding": "DLPFC-specific contender uses image/gene inputs and held-out-pair tuning; incompatible with K04 expression-only unseen-donor protocol.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41592-026-03194-8",
+      "title": "Beyond benchmarking: an expert-guided consensus approach to spatially aware clustering",
+      "publication_date": "2026",
+      "accessed_on": "2026-11-01",
+      "finding": "Primary benchmark warns DLPFC curated layers combine histology and marker information absent from transcriptome-only predictors.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.11139",
+      "title": "TabICLv2: A better, faster, scalable, and open tabular foundation model",
+      "publication_date": "2026-02-11; v2 2026-09-16",
+      "accessed_on": "2026-11-01",
+      "finding": "ICML 2026 tabular classification/regression contender; no matched neuroscience result.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://github.com/soda-inria/tabicl",
+      "title": "TabICLv2 official code and models",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Author repository makes inference and pretraining resources available; releases must be pinned.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    }
+  ],
+  "search_queries": [
+    "2026 spatial transcriptomics annotation benchmark DLPFC SingleR scGPT scANVI supervised cell layer",
+    "site.nature.com scGPT spatial 2025 Nicheformer foundation model",
+    "site.bioconductor.org SingleR 2026 reference annotation fine tune"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

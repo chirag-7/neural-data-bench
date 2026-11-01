@@ -1,0 +1,143 @@
+{
+  "benchmark_id": "H16",
+  "title": "Single-channel ocular-artifact reconstruction",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "EEGdenoiseNet semisynthetic EOG mixtures: 2000 paired training and 600 test 512-sample segments; component-disjoint split; per-mixture standardization. Primary mean per-segment temporal relative RMSE; not downstream clinical efficacy.",
+  "local_protocol": "experiments/H16/protocol.md",
+  "existing_reference": {
+    "name": "Training-pair stationary Wiener spectral shrinkage",
+    "evidence": "A: exact local baseline.",
+    "strength": "Transparent same-data supervised traditional reference.",
+    "problems": [
+      "Weak compared with task-trained neural denoisers; never label current specialist best.",
+      "Original clean EEG has algorithmic processing and no recoverable participant IDs."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "EEGdenoiseNet original CNN/RNN models",
+      "year": 2021,
+      "source_urls": [
+        "https://doi.org/10.1088/1741-2552/ac2bf8"
+      ],
+      "evidence": "B: original paired task baselines.",
+      "matched_to_our_slice": false,
+      "information_match": "Closest reproducible initial neural comparator; retrain on these exact pairs, not original randomized mixtures.",
+      "role": "candidate"
+    },
+    {
+      "name": "Gated WGAN with multi-scale/multi-domain features",
+      "year": 2026,
+      "source_urls": [
+        "https://www.mdpi.com/2076-3425/16/10/1124"
+      ],
+      "evidence": "B/C: recent EOG-specific primary article; executable weights unverified.",
+      "matched_to_our_slice": false,
+      "information_match": "Single-channel paired EOG target is close; source partition, SNR and normalization still differ.",
+      "role": "candidate"
+    },
+    {
+      "name": "FARU-Net",
+      "year": 2026,
+      "source_urls": [
+        "https://www.mdpi.com/2073-8994/18/6/988"
+      ],
+      "evidence": "B/C: recent frequency-aware paired denoiser.",
+      "matched_to_our_slice": false,
+      "information_match": "Potential direct architecture fit; requires retraining on supplied training pairs.",
+      "role": "candidate"
+    },
+    {
+      "name": "Diff-ADN",
+      "year": 2026,
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42772331/"
+      ],
+      "evidence": "B/C: current primary single-channel denoising abstract.",
+      "matched_to_our_slice": false,
+      "information_match": "Promising reconstruction candidate; no confirmed code/checkpoint and no matched test execution.",
+      "role": "candidate"
+    },
+    {
+      "name": "ART",
+      "year": 2025,
+      "source_urls": [
+        "https://www.sciencedirect.com/science/article/pii/S1053811925001259"
+      ],
+      "evidence": "B: published multichannel artifact transformer.",
+      "matched_to_our_slice": false,
+      "information_match": "Native multichannel inputs unavailable; not a drop-in H16 comparator.",
+      "role": "candidate"
+    }
+  ],
+  "recommended_next_comparator": "Retrain a pinned EEGdenoiseNet residual CNN/U-Net on the fixed paired training components; consider the 2026 EOG-specific gated-WGAN/FARU-Net once code is audited.",
+  "switching_assessment": "UPGRADE comparator coverage prospectively, high priority, Tier B for neural task fit and C for unverified recent artifacts. Preserve Wiener as conventional baseline. Do not import spectral-RMSE, correlation or BCI-accuracy claims as temporal RRMSE.",
+  "limitations": [
+    "No participant IDs: component disjointness does not prove person disjointness.",
+    "Mixture/SNR generation and normalization differ among publications.",
+    "MDPI pages rate-limited; some recent methods have only primary indexed abstracts available.",
+    "Diff-ADN publication date verified as 2026-10-30, not confused with indexing/search dates.",
+    "Training a neural denoiser exceeds the existing no-specialist-import one-shot code regime and needs its own declared budget."
+  ],
+  "sources": [
+    {
+      "url": "https://doi.org/10.1088/1741-2552/ac2bf8",
+      "title": "EEGdenoiseNet: a benchmark dataset for deep learning solutions of EEG denoising",
+      "publication_date": "2021",
+      "accessed_on": "2026-11-01",
+      "finding": "Original paired EEG/artifact benchmark and supervised neural baselines.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://www.mdpi.com/2076-3425/16/10/1124",
+      "title": "EOG Artifact Removal from EEG Using a Gated WGAN with Multi-Scale and Multi-Domain Feature Extraction",
+      "publication_date": "2026-10",
+      "accessed_on": "2026-11-01",
+      "finding": "Recent EOG-specific EEGdenoiseNet candidate; source-component split described.",
+      "access": "Publisher search extract available; direct page returned HTTP 429; code/weights not verified."
+    },
+    {
+      "url": "https://www.mdpi.com/2073-8994/18/6/988",
+      "title": "Dual-Domain Symmetry: A Frequency-Aware Residual U-Net for High-Fidelity EEG Artifact Removal",
+      "publication_date": "2026",
+      "accessed_on": "2026-11-01",
+      "finding": "Paired EEGdenoiseNet frequency-aware residual U-Net; source mixture and scoring differ.",
+      "access": "Publisher indexed primary extract; no executable artifact validated."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42772331/",
+      "title": "Diff-ADN: a diffusion-guided artifact denoising network with deterministic residual refinement for EEG",
+      "publication_date": "2026-10-30",
+      "accessed_on": "2026-11-01",
+      "finding": "Current single-channel denoising candidate; evaluate reconstruction and decoding separately.",
+      "access": "PubMed abstract and DOI verified; full executable checkpoint not verified."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S1053811925001259",
+      "title": "Augmenting brain-computer interfaces with ART: An artifact removal transformer for reconstructing multichannel EEG signals",
+      "publication_date": "2025-04-15",
+      "accessed_on": "2026-11-01",
+      "finding": "Multichannel reconstruction approach; not directly interchangeable with this single-channel mixture contract.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    }
+  ],
+  "search_queries": [
+    "EEGdenoiseNet ocular 2025 2026 diffusion transformer",
+    "Diff ADN EEGdenoiseNet github 2026",
+    "EEGdenoiseNet transformer 2025",
+    "EOG Artifact Removal gated WGAN 2026"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

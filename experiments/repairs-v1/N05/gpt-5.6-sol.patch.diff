@@ -1,0 +1,11 @@
+--- original/gpt-5.6-sol.py
++++ repairs-v1/gpt-5.6-sol.py
+@@ -105,7 +105,7 @@
+             sn = sweep_number(obj.parent)
+             if sn in candidates:
+                 candidates[sn].append(obj)
+-        handle.visititems(visitor)
++        handle.visititems_links(lambda name, link: visitor(name, handle[name]) if isinstance(link, h5py.HardLink) else None)
+         result = {}
+         for sn in sweep_ids:
+             items = candidates[sn]

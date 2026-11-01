@@ -1,0 +1,106 @@
+{
+  "benchmark_id": "L04",
+  "title": "Single-neuron position/direction encoding",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "One rat hippocampal teaching recording; position in cm and velocity in cm/s every 20 ms, chronological 60/40 split with one-second buffer. Predict 20-ms spike counts. Bits per spike against training-mean rate; no test spike history, population recordings or stimulus video supplied.",
+  "local_protocol": "experiments/L04/protocol.md",
+  "existing_reference": {
+    "name": "Fixed quadratic position × movement-direction Poisson GLM with tiny L2",
+    "evidence": "A: exact local supervised encoding reference.",
+    "strength": "Correct observation model and a valid simple place-field basis.",
+    "problems": [
+      "A quadratic basis can severely underfit place-field geometry.",
+      "One cell/session is not a neural population encoding benchmark.",
+      "Fixed tiny regularization was not broad training-only model selection."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "NeMoS spline/tensor-product Poisson GLM",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/flatironinstitute/nemos",
+        "https://nemos-neuro.org/en/stable/quickstart.html"
+      ],
+      "evidence": "B: maintained domain software; exact frozen-slice result absent.",
+      "matched_to_our_slice": false,
+      "information_match": "Direct position/direction/count input match; tune basis complexity and regularization on contiguous training blocks.",
+      "role": "candidate"
+    },
+    {
+      "name": "Poisson generalized additive model with direction interaction",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/flatironinstitute/nemos"
+      ],
+      "evidence": "C: matched proposed conventional implementation.",
+      "matched_to_our_slice": false,
+      "information_match": "Same available covariates, nonnegative rates, training-only smoothness selection; velocity magnitude can be used without adding measurements.",
+      "role": "candidate"
+    },
+    {
+      "name": "Spike-history / population latent neural models",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/flatironinstitute/nemos"
+      ],
+      "evidence": "B as broad software capability, D for input match.",
+      "matched_to_our_slice": false,
+      "information_match": "Need withheld spike histories, simultaneous units or richer stimuli; not valid replacements under L04.",
+      "role": "candidate"
+    }
+  ],
+  "recommended_next_comparator": "Train-block-selected spline position × direction Poisson GLM/GAM implemented in NeMoS or equivalent numerical code, with a small predeclared penalty/basis grid.",
+  "switching_assessment": "UPGRADE the flexible conventional encoding reference, high priority, Tier B/C. Preserve original quadratic GLM. A modern population foundation model would change the observation/information regime; no current universal place-cell winner is identified.",
+  "limitations": [
+    "Chronological drift and buffer influence apparent generalization.",
+    "Only one rat/cell/session: no biological-population confidence or cross-animal claim.",
+    "Training CV must be contiguous with a buffer, not shuffled 20-ms bins.",
+    "No test count conditioning or recurrent update with scored targets.",
+    "NeMoS is a toolkit; choosing it does not itself certify optimal basis or fitting.",
+    "The live tutorial displays a nonconvergence warning in its example; comparator implementation must check convergence rather than copy settings blindly."
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/flatironinstitute/nemos",
+      "title": "NeMoS: NEural MOdelS official repository",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Maintained composable basis functions and GLMs support flexible position/direction encoding.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://nemos-neuro.org/en/stable/quickstart.html",
+      "title": "NeMoS official quickstart",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Documents regularized single-neuron and population GLMs; no single-rat frozen-slice winner is claimed.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://nemos-neuro.org/en/latest/tutorials/plot_05_place_cells.html",
+      "title": "NeMoS: Fit place cell official tutorial",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Current place-cell GLM example demonstrates relevant nonlinear feature construction, on a different dataset."
+    }
+  ],
+  "search_queries": [
+    "NeMoS generalized linear models neural 2025 2026 software paper",
+    "2026 neuronal encoding GLM generalized additive place cell position NeMoS benchmark",
+    "site.nature.com NeMoS place cells Poisson GLM"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

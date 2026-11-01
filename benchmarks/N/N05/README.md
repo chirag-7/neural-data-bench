@@ -46,3 +46,9 @@ Decision: **measured** (2026-10-30). Constructed and validated deterministic loa
 Preview 0.11: measured. Constructed and validated deterministic loader/unit/timing audit using actual Allen NWB shared withD02, six sweeps and61 leaf fields; reference crosschecked with official EphysSweep metadata plus independent block-averaged D02 arrays. No claim of DANDI archive benchmark, format-general robustness, or scientific discovery.
 
 [Admission/source evidence](../../../literature/admission-v04-cell-workflow.json). [Actual protocol/worklog](../../../experiments/N05). [Task measurements](../../../results/N05.json).
+
+## Current specialists and repair sensitivity — 1 November 2026
+
+[Current specialist review](../../../literature/specialist-review-2026-11-01/N05.json) · [Native version trajectories and practical interpretation](../../../analysis/practical-review-2026-11-01/report.md). The review distinguishes tested references from unexecuted newer candidates; no matched current global winner is certified.
+
+[Separate repair-assisted track](../../../experiments/repairs-v1/README.md). Original first attempts remain unchanged.

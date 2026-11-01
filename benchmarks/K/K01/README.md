@@ -47,3 +47,7 @@ Decision: **measured** (2026-10-30). Real primary API data acquired and hashed; 
 Preview 0.11: measured. Real primary API data acquired and hashed; independent morphology endpoint, ephys-only whitelist, donor-disjoint split and train-only baseline protocol frozen. Prepared n_train=1356 and n_test=457, 11 features; 678/226 disjoint mouse donors. Adapter ready for root model evaluation.
 
 [Admission/source evidence](../../../literature/admission-v04-cell-workflow.json). [Actual protocol/worklog](../../../experiments/K01). [Task measurements](../../../results/K01.json).
+
+## Current specialists and repair sensitivity — 1 November 2026
+
+[Current specialist review](../../../literature/specialist-review-2026-11-01/K01.json) · [Native version trajectories and practical interpretation](../../../analysis/practical-review-2026-11-01/report.md). The review distinguishes tested references from unexecuted newer candidates; no matched current global winner is certified.

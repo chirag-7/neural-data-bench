@@ -1,0 +1,229 @@
+{
+  "benchmark_id": "C05",
+  "title": "Spikefinder five-preparation calcium inference",
+  "reviewed_on": "2026-11-01",
+  "retrieval_date_semantics": "accessed_on is this fresh retrieval, not publication date or proof of exhaustive indexing; null publication_date means not verified",
+  "search_queries": [
+    "spikefinder benchmark2025 calcium deconvolution supervised CASCADE ENS2",
+    "CASCADE calcium spike inference2025 2026 benchmark",
+    "SpikeSSL universal spike inference2026",
+    "spikefinder analysis Berens github",
+    "Predicting neuronal firing control theoretic2025"
+  ],
+  "candidates": [
+    {
+      "name": "CASCADE / CascadeTorch",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/HelmchenLabSoftware/Cascade",
+        "https://github.com/PTRRupprecht/CascadeTorch",
+        "https://www.nature.com/articles/s41592-026-03183-x"
+      ],
+      "evidence": "Established supervised family with active 2026 support. Port preserves predictions; blind use of global checkpoints may include evaluation neurons.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "ENS2",
+      "year": 2023,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10261900/",
+        "https://github.com/TinLab/ENS2"
+      ],
+      "evidence": "Supervised compact U-Net; paper claims accuracy/efficiency advantages under its protocols. Refit or provenance-audit checkpoints.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "SpikeSSL",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2610.11456",
+        "https://arxiv.org/html/2610.11456v1",
+        "https://github.com/detimage123/SpikeSSL"
+      ],
+      "evidence": "October 2026 preprint contender, bidirectional dynamics layers and simulation augmentation. DS04 appears in published OGB evaluation set, but not our exact fish split.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "C-SPIKES BiophysSMC / BiophysML",
+      "year": 2026,
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42282678/",
+        "https://github.com/gerardjb/C-SPIKES"
+      ],
+      "evidence": "Mechanistic-kinetics Bayesian/synthetic-training family. Current characterized indicators include GCaMP6f/7f/8f; OGB applicability not established.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "OASIS / MLspike / PGBAR",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/HelmchenLabSoftware/Cascade",
+        "https://doi.org/10.7554/eLife.94723.3"
+      ],
+      "evidence": "Important model-based/calibration and posterior references; performance depends on indicator, temporal resolution and tuning.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "slugFind model-predictive-control",
+      "year": 2025,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12194039/"
+      ],
+      "evidence": "Recent direct Spikefinder contender; resource/runtime and matched preprocessing require reproduction.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    }
+  ],
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_claim_scope": "Exact executed custom input/split/metric protocol, not best within our small inspected local set",
+  "current_reference": "Archived 2017 Deneux/Speiser/Friedrich/Rupprecht predictions plus local OASIS",
+  "current_reference_limitations": [
+    "Historical archive scores establish historical comparators, not 2026 best.",
+    "Some CASCADE/ENS2/SpikeSSL training corpora overlap Spikefinder-source recordings; generic public weights can leak labels.",
+    "Different smoothing, trial handling, dataset grouping and test-time parameter fits can change rank.",
+    "The five preparations are one endpoint, not five independent task discoveries."
+  ],
+  "recommended_next_comparator": "Freeze a modern same-source rerun: CASCADE and ENS2 retrained excluding each evaluated preparation, SpikeSSL with explicit train/evaluation source audit, and train-tuned OASIS/MLspike. Preserve official 40 ms binning, per-cell correlations and equal-preparation aggregation; report error/bias and all training resources separately.",
+  "switching_assessment": "NO GENERAL REPLACEMENT RECOMMENDATION. Current evidence supports a bounded code-synthesis/pilot comparison to the named local reference. Establish prospective same-input/split/metric contender runs, biological/source replication, calibration and runtime/reliability before switching production tools.",
+  "limitations": [
+    "Historical archive scores establish historical comparators, not 2026 best.",
+    "Some CASCADE/ENS2/SpikeSSL training corpora overlap Spikefinder-source recordings; generic public weights can leak labels.",
+    "Different smoothing, trial handling, dataset grouping and test-time parameter fits can change rank.",
+    "The five preparations are one endpoint, not five independent task discoveries."
+  ],
+  "negative_findings": [
+    "No active official 2026 Spikefinder leaderboard with these current models and our exact protocol verified.",
+    "New GCaMP8 and synthetic-kinetics victories cannot establish OGB/GCaMP6 or whole-challenge superiority."
+  ],
+  "sources": [
+    {
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006157",
+      "title": "Community-based benchmarking improves spike rate inference from two-photon calcium imaging data",
+      "publication_date": "2018-05-21",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Original Spikefinder challenge publication; historical ranking, not an ongoing 2026 leaderboard."
+    },
+    {
+      "url": "https://github.com/berenslab/spikefinder_analysis",
+      "title": "Spikefinder official analysis and archived results",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Challenge ran in 2016–2017; prediction arrays and evaluation notebooks are available."
+    },
+    {
+      "url": "https://github.com/HelmchenLabSoftware/Cascade",
+      "title": "CASCADE official repository",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Maintained inference toolbox; 2026 GCaMP8 updates and Torch counterpart documented."
+    },
+    {
+      "url": "https://github.com/PTRRupprecht/CascadeTorch",
+      "title": "CascadeTorch official repository",
+      "publication_date": "2026",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Converted original CASCADE weights and same architecture; framework port is not an accuracy improvement."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41592-026-03183-x",
+      "title": "Spike inference from calcium imaging data acquired with GCaMP8 indicators",
+      "publication_date": "2026-07-27",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Indicator-specific CASCADE/OASIS/MLSpike evaluation, not OGB1 zebrafish proof."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10261900/",
+      "title": "Effective and efficient neural networks for spike inference from in vivo calcium imaging",
+      "publication_date": "2023-05-22",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "ENS2 supervised U-Net comparison against prior methods."
+    },
+    {
+      "url": "https://github.com/TinLab/ENS2",
+      "title": "ENS2 official implementation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Uses paired calcium/electrophysiology training data from CASCADE."
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.11456",
+      "title": "SpikeSSL: A Universal Spike Inference Framework with Dynamics-Informed State-Space Layers",
+      "publication_date": "2026-10-08",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "New preprint with in-domain/leave-one-indicator comparisons; claims are authors’ own benchmark evidence, not independently reproduced here."
+    },
+    {
+      "url": "https://arxiv.org/html/2610.11456v1",
+      "title": "SpikeSSL full paper and split definitions",
+      "publication_date": "2026-10-08",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Appendix identifies DS04 among OGB evaluation recordings; its split and aggregation differ from our specimen split."
+    },
+    {
+      "url": "https://github.com/detimage123/SpikeSSL",
+      "title": "SpikeSSL official implementation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Author-linked code located; weights, rights, dependencies and exact training exclusions need pinning."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42282678/",
+      "title": "Precise calcium-to-spike inference using biophysical generative models",
+      "publication_date": "2026-06-04",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "C-SPIKES biophysical SMC/ML methods; indexed publication status is preprint, not peer-reviewed Nature evidence."
+    },
+    {
+      "url": "https://github.com/gerardjb/C-SPIKES",
+      "title": "C-SPIKES official inference framework",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "BiophysSMC/ML, ENS2, CASCADE and OASIS runners; native-rate settings and semantic distinctions documented."
+    },
+    {
+      "url": "https://doi.org/10.7554/eLife.94723.3",
+      "title": "High frequency spike inference with particle Gibbs sampling",
+      "publication_date": "2026",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "PGBAR compares model-based methods and CASCADE, with different posterior/computation goals."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12194039/",
+      "title": "Predicting neuronal firing from calcium imaging using a control theoretic approach",
+      "publication_date": "2025",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "2025 model-predictive-control approach directly evaluates Spikefinder and links slugFind code."
+    }
+  ],
+  "local_protocol": {
+    "path": "experiments/C05/phase2-protocol.md",
+    "sha256": "7b3b9b2b20e7e04c9ac11eebd720a084fb2971db63f1c61fa01a73483f0c928d"
+  },
+  "review_actions": {
+    "fresh_primary_source_browsing": true,
+    "trained_models": false,
+    "downloaded_large_weights": false,
+    "changed_scores": false,
+    "changed_website": false
+  },
+  "unmatched_published_scores_imported": false
+}

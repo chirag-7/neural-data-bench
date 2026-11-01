@@ -1,0 +1,142 @@
+{
+  "benchmark_id": "F04",
+  "title": "Static natural-image retinal spike-count encoding",
+  "reviewed_on": "2026-11-01",
+  "retrieval_date_semantics": "accessed_on is this fresh retrieval, not publication date or proof of exhaustive indexing; null publication_date means not verified",
+  "search_queries": [
+    "retina Goldin2022 neural encoding CNN benchmark",
+    "Context-dependent selectivity github Goldin",
+    "OpenRetina2025 2026 pretrained models encoding"
+  ],
+  "candidates": [
+    {
+      "name": "Goldin source CNN / contrast-sensitive encoding models",
+      "year": 2022,
+      "source_urls": [
+        "https://www.nature.com/articles/s41467-022-33242-8",
+        "https://github.com/samuelevirgili/Context-dependent-selectivity-to-natural-images-in-the-retina",
+        "https://open-retina.org/api_reference/data_io/goldin_2022/"
+      ],
+      "evidence": "Original study directly models relevant static natural-image responses; source inputs and training evaluation must align to 18 × 18 processed pixels.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "OpenRetina core/readout CNN",
+      "year": 2026,
+      "source_urls": [
+        "https://open-retina.org/api_reference/data_io/goldin_2022/",
+        "https://open-retina.org/package_docs/model_zoo/",
+        "https://github.com/open-retina/open-retina",
+        "https://open-retina.org/package_docs/training/core_readout/"
+      ],
+      "evidence": "Current maintained framework and model zoo includes goldin_2022_mouse and axolotl checkpoints; dataset support is not evidence checkpoint obeys our exact image/session split.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "Regularized LN/Poisson GLM",
+      "year": 2026,
+      "source_urls": [
+        "https://open-retina.org/package_docs/training/core_readout/"
+      ],
+      "evidence": "Current matched training-only conventional baseline family; strongest rank not verified.",
+      "matched_to_our_slice": true,
+      "role": "existing matched conventional reference"
+    },
+    {
+      "name": "Multi-session/pretrained retinal cores",
+      "year": 2026,
+      "source_urls": [
+        "https://open-retina.org/package_docs/model_zoo/",
+        "https://github.com/open-retina/open-retina"
+      ],
+      "evidence": "Modern models from other species/datasets available; require heldout-neuron/session readout fitting and task leakage audit.",
+      "matched_to_our_slice": false,
+      "role": "transfer-learning tier; extra training information"
+    }
+  ],
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_claim_scope": "Exact executed custom input/split/metric protocol, not best within our small inspected local set",
+  "current_reference": "Training-only scaled PCA with 48 components + per-neuron Poisson GLM, alpha selected within train",
+  "current_reference_limitations": [
+    "Original source 108 × 108 images are reduced to 18 × 18; full-resolution model comparisons have unequal information.",
+    "One retinal session and 30 test images with repeats, not 900 independent samples.",
+    "Poisson NLL is not published noise-corrected correlation or explained variance.",
+    "Pretrained model support is not proof of uncontaminated evaluation provenance."
+  ],
+  "recommended_next_comparator": "Train a compact Goldin/OpenRetina-style CNN directly on identical 18 × 18 pixels and 41 training-count columns, using training-image validation only. Score positive expected counts for all 900 repeats under exact Poisson NLL; compare LN/nonlinear subunit models. Audit released Goldin weights for source/test-image overlap before any pretrained tier.",
+  "switching_assessment": "NO GENERAL REPLACEMENT RECOMMENDATION. Current evidence supports a bounded code-synthesis/pilot comparison to the named local reference. Establish prospective same-input/split/metric contender runs, biological/source replication, calibration and runtime/reliability before switching production tools.",
+  "limitations": [
+    "Original source 108 × 108 images are reduced to 18 × 18; full-resolution model comparisons have unequal information.",
+    "One retinal session and 30 test images with repeats, not 900 independent samples.",
+    "Poisson NLL is not published noise-corrected correlation or explained variance.",
+    "Pretrained model support is not proof of uncontaminated evaluation provenance."
+  ],
+  "negative_findings": [
+    "No official leaderboard for this exact 18 × 18, 41-neuron, 900-repeat Poisson NLL slice located.",
+    "Other retinal species/movie benchmarks do not establish this static-flash winner."
+  ],
+  "sources": [
+    {
+      "url": "https://www.nature.com/articles/s41467-022-33242-8",
+      "title": "Context-dependent selectivity to natural images in the retina",
+      "publication_date": "2022-09-22",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Source Goldin natural-image study and CNN modeling context."
+    },
+    {
+      "url": "https://github.com/samuelevirgili/Context-dependent-selectivity-to-natural-images-in-the-retina",
+      "title": "Goldin source analysis code",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Author repository with modeling/quantification notebooks."
+    },
+    {
+      "url": "https://open-retina.org/api_reference/data_io/goldin_2022/",
+      "title": "OpenRetina Goldin2022 loader documentation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Links exact original data and processed mirror."
+    },
+    {
+      "url": "https://open-retina.org/package_docs/model_zoo/",
+      "title": "OpenRetina model zoo",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Currently includes Goldin mouse/axolotl models alongside other species; no common exact-slice ranking."
+    },
+    {
+      "url": "https://github.com/open-retina/open-retina",
+      "title": "OpenRetina official repository",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Maintained training/model architectures and pretrained access."
+    },
+    {
+      "url": "https://open-retina.org/package_docs/training/core_readout/",
+      "title": "OpenRetina core-readout training documentation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Provides CNN/shared-core and neuron-readout approach for fresh matched training."
+    }
+  ],
+  "local_protocol": {
+    "path": "experiments/F04/protocol.md",
+    "sha256": "d114274ee60470a4e0babbece885b7246a4b7c0eb5c8db67f235898f3ccf75b5"
+  },
+  "review_actions": {
+    "fresh_primary_source_browsing": true,
+    "trained_models": false,
+    "downloaded_large_weights": false,
+    "changed_scores": false,
+    "changed_website": false
+  },
+  "unmatched_published_scores_imported": false
+}

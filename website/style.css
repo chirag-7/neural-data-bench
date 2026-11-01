@@ -990,3 +990,15 @@ footer {
 
 .category-task-details { margin: 12px 0 0; padding: 0; border: 0; background: transparent; }
 .category-task-details > summary { font-size: 11px; color: var(--muted); }
+
+/* Practical review preserves native metric units and visibly separates repair evidence. */
+.practical-section { margin-top: 24px; }
+.practical-detail { margin-top: 32px; scroll-margin-top: 80px; }
+.practical-candidates { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.practical-candidates .doc-panel { min-width: 0; }
+.practical-metric { display: block; margin-top: 5px; }
+.practical-table td { white-space: nowrap; }
+.practical-table td:first-child { min-width: 230px; white-space: normal; }
+.practical-table td:last-child { min-width: 155px; white-space: normal; }
+.practical-pad { padding: 0 22px 16px; }
+@media (max-width: 800px) { .practical-candidates { grid-template-columns: 1fr; } .tabs { flex-wrap: wrap; } }

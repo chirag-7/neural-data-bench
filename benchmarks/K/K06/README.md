@@ -49,3 +49,7 @@ Decision: **candidate_pending_validation** (2026-10-30). Primary ground-truth tu
 Preview 0.11: measured. Source-specific rights/data/scorer checks and frozen model procedure completed for the explicit custom slice; no broader resource or current-SOTA claim.
 
 [Admission/source evidence](../../../experiments/K06/protocol.md). [Actual protocol/worklog](../../../experiments/K06). [Task measurements](../../../results/K06.json).
+
+## Current specialists and repair sensitivity — 1 November 2026
+
+[Current specialist review](../../../literature/specialist-review-2026-11-01/K06.json) · [Native version trajectories and practical interpretation](../../../analysis/practical-review-2026-11-01/report.md). The review distinguishes tested references from unexecuted newer candidates; no matched current global winner is certified.

@@ -1,0 +1,107 @@
+{
+  "benchmark_id": "N05",
+  "title": "Deterministic real-NWB extraction and unit audit",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "UNRESOLVED",
+  "current_best_explanation": "A current best predictive model is not a meaningful category for this deterministic extraction contract; retain an audited correctness reference.",
+  "executed_endpoint": "One legacy Allen intracellular NWB file shared with D02; six sweeps 19–24, 61 defined output fields: stored metadata, physical-unit conversions, main-pulse timing/amplitude and voltage summaries. extract(path) uses standard library, NumPy and h5py. Field accuracy, not predictive neuroscience performance.",
+  "local_protocol": "experiments/N05/protocol.md",
+  "existing_reference": {
+    "name": "Audited direct-HDF5 deterministic extraction, independently crosschecked against Allen sweep API and D02 arrays",
+    "evidence": "A: exact contract and independent implementation/source checks; reference correctness is by construction.",
+    "strength": "Appropriate for a deterministic parser/calculation fixture.",
+    "problems": [
+      "A perfect reference score is tautological and is not measured specialist SOTA.",
+      "One file shares a dataset with D02, so breadth is not independent.",
+      "Does not establish general NWB standards compliance or robustness across formats."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "Direct HDF5 extraction with independent unit/timing implementation",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/NeurodataWithoutBorders/pynwb/blob/dev/CHANGELOG.md"
+      ],
+      "evidence": "C/A: audited local correctness route; software compatibility still explicit.",
+      "matched_to_our_slice": true,
+      "information_match": "Best match to the legacy layout and allowed runtime; compare exact calculations, not learned predictions.",
+      "role": "candidate"
+    },
+    {
+      "name": "PyNWB current validated I/O",
+      "year": 2026,
+      "source_urls": [
+        "https://pynwb.readthedocs.io/en/stable/validation.html",
+        "https://github.com/NeurodataWithoutBorders/pynwb/blob/dev/CHANGELOG.md"
+      ],
+      "evidence": "B: official maintained NWB library.",
+      "matched_to_our_slice": false,
+      "information_match": "Useful for supported schema versions; legacy Allen NWB compatibility and any conversion must be checked, not assumed.",
+      "role": "candidate"
+    },
+    {
+      "name": "NWBInspector",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/NeurodataWithoutBorders/nwbinspector",
+        "https://pynwb.readthedocs.io/en/stable/validation.html"
+      ],
+      "evidence": "B: official best-practice checker.",
+      "matched_to_our_slice": false,
+      "information_match": "Complementary structural/data-quality checks; does not compute this specific 61-field answer and is outside the existing import whitelist.",
+      "role": "candidate"
+    }
+  ],
+  "recommended_next_comparator": "Keep independent HDF5/source-API correctness checks. Add PyNWB/NWBInspector as separate supported-format validation fixtures if broader NWB workflow coverage is desired.",
+  "switching_assessment": "DO NOT replace a deterministic correctness reference with a predictive model. Tier A supports the existing calculation audit, Tier B supports complementary standards checks. Current best model is not applicable; new fixtures are needed to measure robustness.",
+  "limitations": [
+    "Legacy schema may not be readable by current PyNWB without conversion.",
+    "NWBInspector findings are not extraction accuracy.",
+    "61 fields and six sweeps are correlated within one file/cell.",
+    "No held-out file, animal, lab or acquisition system.",
+    "Source data retain Allen research/noncommercial terms."
+  ],
+  "sources": [
+    {
+      "url": "https://pynwb.readthedocs.io/en/stable/validation.html",
+      "title": "PyNWB: Validating NWB files",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Schema validation and NWBInspector best-practice checks are complementary; neither computes this custom 61-field answer.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://github.com/NeurodataWithoutBorders/nwbinspector",
+      "title": "NWBInspector official repository",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Maintained NWB best-practice inspection tool, not a pretrained neural predictor.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://github.com/NeurodataWithoutBorders/pynwb/blob/dev/CHANGELOG.md",
+      "title": "PyNWB official changelog",
+      "publication_date": "2026-06-29 for version 4.0.0",
+      "accessed_on": "2026-11-01",
+      "finding": "Current API and legacy-format compatibility need explicit handling; library upgrades alone do not strengthen a deterministic answer.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    }
+  ],
+  "search_queries": [
+    "site.pynwb.readthedocs.io validation NWB Inspector validate namespaces",
+    "NWB Inspector official repository 2026",
+    "PyNWB legacy Allen NWB 1 compatibility validation"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

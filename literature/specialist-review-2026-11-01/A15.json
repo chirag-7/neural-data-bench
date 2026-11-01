@@ -1,0 +1,129 @@
+{
+  "benchmark_id": "A15",
+  "title": "Held-out-bird binary acoustic-event detection",
+  "reviewed_on": "2026-11-01",
+  "retrieval_date_semantics": "accessed_on is this fresh retrieval, not publication date or proof of exhaustive indexing; null publication_date means not verified",
+  "search_queries": [
+    "DAS Deep Audio Segmenter Bengalese finch song segmentation WhisperSeg AVN comparison",
+    "WhisperSeg Bengalese finch segmentation benchmark",
+    "site:github.com/janclemenslab/das"
+  ],
+  "candidates": [
+    {
+      "name": "DAS",
+      "year": 2021,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8560090/",
+        "https://github.com/janclemenslab/das"
+      ],
+      "evidence": "Original cross-species supervised audio segmenter; fresh official repository now documents torch backend and final TensorFlow release 0.32.13. Closest established source-aligned specialist.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "TweetyNet",
+      "year": 2022,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8860439/"
+      ],
+      "evidence": "Spectrogram segmentation/labeling; must train/test by our bird split and merge labels consistently, not import bird-specific classification scores.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "WhisperSeg",
+      "year": 2024,
+      "source_urls": [
+        "https://github.com/nianlonggu/WhisperSeg"
+      ],
+      "evidence": "Domain-adapted Whisper transformer includes Bengalese finch examples; checkpoint training overlap with held-out bird must be audited.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "AVN segmentation comparisons",
+      "year": 2024,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11370480/"
+      ],
+      "evidence": "Primary zebra finch study compares WhisperSeg/TweetyNet; relevant transfer evidence, different species and scoring.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    }
+  ],
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_claim_scope": "Exact executed custom input/split/metric protocol, not best within our small inspected local set",
+  "current_reference": "Training-only spectral boosting and event-postprocessing CV",
+  "current_reference_limitations": [
+    "Current reference is conventional boosted spectral features, not DAS reproduction.",
+    "Boundary annotations are amplitude-segmented/human-labeled, not pristine/exhaustive vocalization truth.",
+    "Published frame/sample/label metrics do not match our event F1.",
+    "One held-out bird; A15 GPT-5.6 has a 268-line deviation."
+  ],
+  "recommended_next_comparator": "Train DAS and TweetyNet using only our 60 training recordings with no bird IDs; score merged binary events on the exact 20 test recordings from bird or60yw70 and onset/offset tolerances. Add WhisperSeg as a separately labeled adapted-pretrained tier only after checking training overlap; retain all outputs/annotations.",
+  "switching_assessment": "NO GENERAL REPLACEMENT RECOMMENDATION. Current evidence supports a bounded code-synthesis/pilot comparison to the named local reference. Establish prospective same-input/split/metric contender runs, biological/source replication, calibration and runtime/reliability before switching production tools.",
+  "limitations": [
+    "Current reference is conventional boosted spectral features, not DAS reproduction.",
+    "Boundary annotations are amplitude-segmented/human-labeled, not pristine/exhaustive vocalization truth.",
+    "Published frame/sample/label metrics do not match our event F1.",
+    "One held-out bird; A15 GPT-5.6 has a 268-line deviation."
+  ],
+  "negative_findings": [
+    "No matched 20-recording held-out bird event F1 leaderboard verified.",
+    "AVN zebra finch ranking does not establish Bengalese winner."
+  ],
+  "sources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8560090/",
+      "title": "Fast and accurate annotation of acoustic signals with deep neural networks",
+      "publication_date": "2021",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "DAS paper compares established vocalization tools including TweetyNet."
+    },
+    {
+      "url": "https://github.com/janclemenslab/das",
+      "title": "Deep Audio Segmenter official repository",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Current maintained code and torch installation; backend migration is not proof of a new best score."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8860439/",
+      "title": "Automated annotation of birdsong with a neural network that segments spectrograms",
+      "publication_date": "2022",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "TweetyNet primary paper; explicit Bengalese threshold-derived annotation context."
+    },
+    {
+      "url": "https://github.com/nianlonggu/WhisperSeg",
+      "title": "WhisperSeg official code",
+      "publication_date": "2024",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Human/animal voice activity adaptation and explicit Bengalese examples."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11370480/",
+      "title": "AVN: A Deep Learning Approach for the Analysis of Birdsong",
+      "publication_date": "2024",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "WhisperSeg and TweetyNet comparisons on zebra finch datasets."
+    }
+  ],
+  "local_protocol": {
+    "path": "experiments/A15/protocol.md",
+    "sha256": "e658b331e88b890a3d5bd0a972a670b7d153a01beddc3d76212d81f818265754"
+  },
+  "review_actions": {
+    "fresh_primary_source_browsing": true,
+    "trained_models": false,
+    "downloaded_large_weights": false,
+    "changed_scores": false,
+    "changed_website": false
+  },
+  "unmatched_published_scores_imported": false
+}

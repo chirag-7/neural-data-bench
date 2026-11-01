@@ -6,6 +6,8 @@
 
 ## Macro findings and interactive navigation
 
+[Latest: per-task version progress, repaired runs and current specialists](analysis/practical-review-2026-11-01/report.md) · [Interactive review](https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site/#/analysis/practical) · [All 30 specialist reviews](analysis/practical-review-2026-11-01/specialist-matrix.csv). Updated 1 November 2026: four model execution failures recovered in a separate repair-assisted track (three meet the original line cap); four incomplete calcium reference archives remain unresolved. Across 30 repair-assisted numeric task means, GPT-6 vs 5.6 is 14 better / 14 worse / 2 ties; GPT-6.1 vs 5.6 is 20 better / 9 worse / 1 tie. Selective debugging is a usability sensitivity, not fresh single-shot model evidence. The first-attempt panel and its formal macro diagnostics stay unchanged. The fresh specialist review covers 137 candidate entries and 166 distinct source URLs, with no current global winner certified on these custom contracts.
+
 [Read the macro synthesis](analysis/macro-patterns/report.md) · [Methods and assumptions](analysis/macro-patterns/methods.md) · [Independent review](analysis/macro-patterns/independent-review.md). Findings are separated into quantitative, qualitative and combined evidence. GPT-6.1 has a descriptive directional advantage; family-level diagnostics do not establish general superiority or an improvement law. Category-first website navigation now limits each task selector to its chosen category. No benchmark scores or original failures changed.
 
 ## Completed evidence
@@ -17,6 +19,8 @@
 | First-submission executions | **111 attempts: 107 numerically valid, 4 execution failures**; strict-format-valid counts 28 / 36 / 36 for GPT-5.6 / GPT-6 / GPT-6.1 out of 37 each |
 | Audit artifacts | 208 model/reference records; 200 unique central prediction/output manifests; source hashes, unchanged programs, generation provenance and independent saved-output audits |
 | H02 generation follow-up | Six further programs and seven outputs, separate from first-submission macros; 96 programs and 207 output manifests across both panels |
+| Repair-assisted sensitivity | Four model runtime failures recovered, three within the original line cap; seven successful repair/control artifacts; four incomplete C05 archives unresolved; original panel unchanged |
+| Current-specialist review | All 30 measured tasks, 137 candidate entries and 166 distinct source URLs; exact-contract current global winners remain unverified |
 | Specialist and domain references | SpikeInterface registration, Spikepack, OASIS, NLinear architecture, grouped molecular/cell classifiers, spectral acoustic classification, and prior named specialist references |
 | Interface | Measured-first directory, category navigation, searchable tasks, native metric tables/plots and explicit compliance/aggregate-exclusion policies |
 

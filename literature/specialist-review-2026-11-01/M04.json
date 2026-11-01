@@ -1,0 +1,171 @@
+{
+  "benchmark_id": "M04",
+  "title": "Synthetic two-parameter Q-learning recovery",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "24 independent synthetic agents, 240 trials each, chosen-only Q updates from Q=[0.5,0.5], softmax beta, no lapses/perseveration, reversal each 60 trials. Recover alpha and beta from observed choices/rewards; primary allowed-range-normalized MAE. No labeled training agents; hidden generating prior/ranges must not be supplied only to a reference.",
+  "local_protocol": "experiments/M04/protocol.md",
+  "existing_reference": {
+    "name": "Correctly specified deterministic multistart likelihood MLE",
+    "evidence": "A: exact model fit and local parameter recovery, not published SOTA.",
+    "strength": "Exact two-dimensional likelihood is preferable to an unnecessary learned surrogate.",
+    "problems": [
+      "MLE optimizes likelihood, not expected absolute parameter error.",
+      "Finite-sample shrinkage can improve MAE without better mechanistic recovery.",
+      "The hidden generator distribution differs from declared fitting bounds; using it only in a reference is unfair."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "Exact-likelihood bounded quadrature posterior median",
+      "year": 2026,
+      "source_urls": [
+        "https://elifesciences.org/articles/49547"
+      ],
+      "evidence": "C: mathematical decision-theoretic proposed comparator, not a published benchmark winner.",
+      "matched_to_our_slice": false,
+      "information_match": "Posterior componentwise medians target absolute error under a declared prior; use only common exposed bounds, not hidden generating priors. Verify quadrature convergence.",
+      "role": "candidate"
+    },
+    {
+      "name": "HSSM choice-only RL/custom likelihood",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/lnccbrown/HSSM/releases",
+        "https://lnccbrown.github.io/HSSM/"
+      ],
+      "evidence": "B: maintained Bayesian cognitive toolbox with real choice-only RL support.",
+      "matched_to_our_slice": false,
+      "information_match": "Must instantiate exactly the chosen-only Q update and softmax policy, initial Q and bounds; standard RLDDM adds unobserved RT/decision dynamics.",
+      "role": "candidate"
+    },
+    {
+      "name": "BayesFlow 2 / sbi posterior estimator",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2306.16015",
+        "https://sbi.readthedocs.io/en/stable/how_to_guide/06_choosing_inference_method.html",
+        "https://arxiv.org/abs/2602.07098"
+      ],
+      "evidence": "B: current amortized inference tools; exact M04 result absent.",
+      "matched_to_our_slice": false,
+      "information_match": "Needs additional simulations, prior and training budget; not the best first comparator when exact two-parameter likelihood is cheap.",
+      "role": "candidate"
+    },
+    {
+      "name": "Hybrid neural–cognitive models",
+      "year": 2026,
+      "source_urls": [
+        "https://deepmind.google/research/publications/94006/"
+      ],
+      "evidence": "B/C: current research on richer learning mechanisms.",
+      "matched_to_our_slice": false,
+      "information_match": "Changes the specified generative model; richer mechanism does not imply better exact-parameter estimation.",
+      "role": "candidate"
+    },
+    {
+      "name": "DynaMEchs",
+      "year": null,
+      "source_urls": [
+        "https://dynamechs.sourceforge.net/"
+      ],
+      "evidence": "D: exact-name searches did not identify a relevant current cognitive-model benchmark.",
+      "matched_to_our_slice": false,
+      "information_match": "Legacy multibody simulator is not a parameter-recovery model.",
+      "role": "unresolved_name"
+    }
+  ],
+  "recommended_next_comparator": "Prospectively fixed exact-likelihood quadrature posterior medians with an openly specified prior on the common allowed bounds, compared with MLE and posterior mean; HSSM exact choice-only implementation as an independent crosscheck.",
+  "switching_assessment": "ADD an objective-aligned reference, high priority, Tier C mathematical proposal plus Tier B tooling. Keep MLE because it answers fit quality. Do not claim the quadrature method is current SOTA or use the hidden generator prior. No need to substitute a large amortized model.",
+  "limitations": [
+    "Synthetic custom slice; no official Wilson–Collins leaderboard.",
+    "Parameter MAE and in-sample log likelihood answer different questions.",
+    "Prior sensitivity and weak identifiability dominate rankings in small datasets.",
+    "HSSM current documentation may be newer than a pinned release; prospective implementation needs version and exact likelihood audit.",
+    "DynaMEchs identity/relevance unresolved; no fabricated paper or match."
+  ],
+  "sources": [
+    {
+      "url": "https://elifesciences.org/articles/49547",
+      "title": "Ten simple rules for the computational modeling of behavioral data",
+      "publication_date": "2019",
+      "accessed_on": "2026-11-01",
+      "finding": "Primary methodological source motivates parameter recovery and identifiability checks, not a leaderboard for M04.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://github.com/lnccbrown/HSSM/releases",
+      "title": "HSSM official releases: choice-only RL and Bayesian cognitive modeling",
+      "publication_date": "2026-07-15 for v0.4.0; current release page lists v0.5.0 on 8 September",
+      "accessed_on": "2026-11-01",
+      "finding": "Choice-only RL support is real; larger sequential-sampling workflows must not be mistaken for the exact softmax Q-learning model.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://lnccbrown.github.io/HSSM/",
+      "title": "HSSM official documentation",
+      "publication_date": "2026 (associated toolbox preprint)",
+      "accessed_on": "2026-11-01",
+      "finding": "Supports custom likelihoods and RL models; likelihood/priors still require exact endpoint matching.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2306.16015",
+      "title": "BayesFlow: Amortized Bayesian Workflows With Neural Networks",
+      "publication_date": "2023",
+      "accessed_on": "2026-11-01",
+      "finding": "Simulation-trained posterior inference is a relevant alternative but adds simulation/training budget.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://sbi.readthedocs.io/en/stable/how_to_guide/06_choosing_inference_method.html",
+      "title": "sbi: How to choose an inference method",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Current supported families include NPE/NLE/NRE and FMPE/NPSE, with different simulation and amortization tradeoffs.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://deepmind.google/research/publications/94006/",
+      "title": "Hybrid neural–cognitive models reveal how memory shapes human reward learning",
+      "publication_date": "2026-02-05",
+      "accessed_on": "2026-11-01",
+      "finding": "Current author research on human reward-learning models; different species/task and purpose from this frozen transfer slice.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://dynamechs.sourceforge.net/",
+      "title": "DYNAMECHS: A Multibody Dynamic Simulation Library",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Exact-name searches resolve a legacy multibody simulator, not a validated cognitive/SBI benchmark.",
+      "access": "Accessible project page; no relevant modern neuroscience method identified by bounded exact-name searches."
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.07098",
+      "title": "BayesFlow 2: Multi-Backend Amortized Bayesian Inference in Python",
+      "publication_date": "2026-02-06; v2 2026-03-23",
+      "accessed_on": "2026-11-01",
+      "finding": "Current multi-backend amortized Bayesian inference release; official code https://github.com/bayesflow-org/bayesflow."
+    }
+  ],
+  "search_queries": [
+    "HSSM reinforcement learning RLSSM 2025 2026 Q learning parameter recovery",
+    "2026 cognitive modeling benchmark mechanistic models learning rules parameter recovery BayesFlow",
+    "\"DynaMEchs\"",
+    "\"DynaMEchs\" \"cognitive\"",
+    "BayesFlow 2 2026 amortized inference cognitive models github"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

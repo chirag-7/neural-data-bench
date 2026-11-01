@@ -1,0 +1,58 @@
+{
+  "pid": 76859,
+  "parent_pid": 76805,
+  "encoder_invoked": false,
+  "source_arrays_loaded": false,
+  "code_sha256": "6be104769ef7e6d3385b0da5160871504cec4c89164b8ba86bf85701e455e62b",
+  "items": [
+    {
+      "decoded_file": "experiments/repairs-v1/B08/artifacts/gpt-6.1-sol/fresh-decode/00.npz",
+      "sha256": "43073d6705027b6120991bb2be434f4d24b50928283ae3ccb61def22c1712654",
+      "n_events": 202939,
+      "times_sha256": "ad0fb9e6b95db3825270b1e653ce1b8c8c945ebd93f2fc647d2049d85f8e519e",
+      "labels_sha256": "80670dd7ee4eb1f2135c816390eafbc29eb2846488b721ecd8f863457d17ed1b"
+    },
+    {
+      "decoded_file": "experiments/repairs-v1/B08/artifacts/gpt-6.1-sol/fresh-decode/01.npz",
+      "sha256": "a6466c818b9b295fdb853c4fe5c433b58cad9b26d5eff2145c734f30d8e24475",
+      "n_events": 194904,
+      "times_sha256": "eeac78c5cbb95a43eb5dd57e18a99f839e17d9682c9956523ea4de1638460bf4",
+      "labels_sha256": "bcd0a5897e66a6034b1cb9e43ae86942287d66d140815d5b05d9b4197d8b3af0"
+    },
+    {
+      "decoded_file": "experiments/repairs-v1/B08/artifacts/gpt-6.1-sol/fresh-decode/02.npz",
+      "sha256": "d6cda0f57662888b27192cb5e9b506cc2757262f73215015d7df4e06486bea4d",
+      "n_events": 137297,
+      "times_sha256": "970b59e989c78e4b0a7f838702afecd2e7450f8122e7f22c37550c7df85661ce",
+      "labels_sha256": "48fc02fa6d9c4f8ec7c855a13637ed70841da9f1166dbed3b738897e38d00158"
+    },
+    {
+      "decoded_file": "experiments/repairs-v1/B08/artifacts/gpt-6.1-sol/fresh-decode/03.npz",
+      "sha256": "071c658c0e68c8a58cd8754373863798ce14a1fa8a51511e9e8fbd8fa5ba345c",
+      "n_events": 132486,
+      "times_sha256": "cf87137ca80e6bf2f688f2cf10ffc204fe02cb2473620df0a5894a3309ed3555",
+      "labels_sha256": "0407f653dadd365db4a7947186a3b9805e552a3fcee252c0ba2fcf5e46feca55"
+    },
+    {
+      "decoded_file": "experiments/repairs-v1/B08/artifacts/gpt-6.1-sol/fresh-decode/04.npz",
+      "sha256": "4b7665fcb3a592f896a3c32e8e9c53f62c73fcbd9389e18931d6002815d5526a",
+      "n_events": 93172,
+      "times_sha256": "1e3f485b8494e42bb686963c8b4572b7c07a224d5f8e22193cbb9d0e4117f5dd",
+      "labels_sha256": "4072f53a3f6ad2e4049c2ca8b25d71e5b8625e706ed36257ebf04a474667e8ec"
+    },
+    {
+      "decoded_file": "experiments/repairs-v1/B08/artifacts/gpt-6.1-sol/fresh-decode/05.npz",
+      "sha256": "f7b8d36b5689c260bed8f955c7b4a688dd71cc16bc7e1ef53ad2286e66856cc5",
+      "n_events": 114382,
+      "times_sha256": "18fd0508c09ca61daf5a6b0c571bbe47bd712333f813db3929456c4ecc7a8693",
+      "labels_sha256": "209d95b4fa8a333a05c51fecf4ef3e939827404e5cd753e03a4f1bb0886f91f5"
+    },
+    {
+      "decoded_file": "experiments/repairs-v1/B08/artifacts/gpt-6.1-sol/fresh-decode/06.npz",
+      "sha256": "761add6beb546e39a0b5c64b425a6c71a8866f631b88ca72935e501bef717d19",
+      "n_events": 177365,
+      "times_sha256": "09aadd94b3bc7e6199123d0f70abb58cebf8c548c6ec1d59e74f9eeb932df1f2",
+      "labels_sha256": "b1942ce36f0800815b81d9b7889f2a85de1ec3f00d149e91019275cf3c70170d"
+    }
+  ]
+}

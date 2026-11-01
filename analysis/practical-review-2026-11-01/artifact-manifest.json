@@ -1,0 +1,66 @@
+{
+  "revision": "2026-11-01-v13",
+  "original_input_sha256": {
+    "results/measurements.jsonl": "0d29b6cf4f8a11359ce1b100f8db23bf19ccc5281fc3acecb617e189c33b32bb",
+    "analysis/summary.json": "f64ec0a4b3d6254e0c5aefcb4cc60ebadda5119de1ae65b1b477e9cb5a41487a"
+  },
+  "repair_results_sha256": "c1a7882d16a254b8441fdc3feeac11e43a78f80f92b5a46af81eb85c9c63f762",
+  "files": [
+    {
+      "path": "analysis/practical-review-2026-11-01/README.md",
+      "sha256": "98e48fd70a082fc9579a68169b930151297ac5f20e02d0325c983d0e9dae0505"
+    },
+    {
+      "path": "analysis/practical-review-2026-11-01/all-model-slices.csv",
+      "sha256": "de21c54719cd41414bc49f2197ac700c214f425a894bb7801a94cf2008417680"
+    },
+    {
+      "path": "analysis/practical-review-2026-11-01/methods.md",
+      "sha256": "9f65a9289fdfbd8eaa1280e2ee54cd40d33fe6c868ef8218dd3d3ad4e218d24b"
+    },
+    {
+      "path": "analysis/practical-review-2026-11-01/reference-point-wins.csv",
+      "sha256": "deee845a1010ed97481df15c02e0e5f11e5f9cb1c4ed957416268128c2129d55"
+    },
+    {
+      "path": "analysis/practical-review-2026-11-01/report.md",
+      "sha256": "7f6e47e7958e75ccdb37eb0443b8ca46d2f522ff597ba954ce184d651612faaa"
+    },
+    {
+      "path": "analysis/practical-review-2026-11-01/review-fingerprints.json",
+      "sha256": "8873e77f7432d8ef24b09106afd38af31ab326b9b3ba0a90c8e76a952a3ce3c0"
+    },
+    {
+      "path": "analysis/practical-review-2026-11-01/specialist-coverage.json",
+      "sha256": "1b23211ebd1fe9b5f9aa48abcc40df143ddc912291b6414b7e5846909d29b020"
+    },
+    {
+      "path": "analysis/practical-review-2026-11-01/specialist-matrix.csv",
+      "sha256": "4a09b4f6c3468c8aa2483721d58cbae2cd423bfdf9fbbc3f0a2c08a79e48ed35"
+    },
+    {
+      "path": "analysis/practical-review-2026-11-01/specialist-source-ledger.json",
+      "sha256": "314966fdafb8125388680c493fff7c27a394285c20ec29e708bd6a6425f6114b"
+    },
+    {
+      "path": "analysis/practical-review-2026-11-01/task-trajectories.csv",
+      "sha256": "00f233e41b649a88395768e711af63602871c7b9059d888d2d21267da87fdd47"
+    },
+    {
+      "path": "analysis/practical-review-2026-11-01/trajectories.json",
+      "sha256": "3afbc965d9efb53816169de4fcfbda993b944ef7c46b85403baec53b49c1390c"
+    },
+    {
+      "path": "scripts/analyze_practical_trends.py",
+      "sha256": "1f73855fbd8cfcd3a00f39fbc9124b305d9985119e75ac6fb5f299c11fdffe7e"
+    },
+    {
+      "path": "scripts/check_practical_review.py",
+      "sha256": "22d385aa9b39cdf32570dcf46354e573d722a0e910a62c4949e11ee529c6ebc2"
+    },
+    {
+      "path": "scripts/write_practical_review.py",
+      "sha256": "2abc7800dfe719dbcb846ad9b4809eba24c5207c72a9018a9af64cb90fbff310"
+    }
+  ]
+}

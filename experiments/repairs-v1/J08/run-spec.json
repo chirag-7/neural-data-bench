@@ -1,0 +1,46 @@
+{
+  "repair_track": "posthoc-repairs-v1",
+  "benchmark_id": "J08",
+  "methods": [
+    "gpt-6.1-sol"
+  ],
+  "date": "2026-11-01",
+  "original_outputs_preserved": true,
+  "originals": [
+    {
+      "model": "gpt-6.1-sol",
+      "source_json": "experiments/J08/gpt-6.1-sol.json",
+      "source_json_sha256": "26d8961953d3e7d2f0b3723f53e2dfdaa660ee8a194d041489387392ccfbe6bf",
+      "original_code_sha256": "4170ca4539b551057115fbc31ceb37e96eeff24394601fcbf70d6464a2525805",
+      "repaired_code_sha256": "abf6c4ea5cd9775e8fbb2eff866c4c1bda09e00f6695d4ff12638aef8d5a2496",
+      "code_unchanged": false,
+      "original_code_lines": 226,
+      "repaired_code_lines": 226
+    }
+  ],
+  "patches": [
+    {
+      "model": "gpt-6.1-sol",
+      "diff_file": "experiments/repairs-v1/J08/gpt-6.1-sol.patch.diff"
+    }
+  ],
+  "rationale": "Two-line shape repair: flatten arrays before np.unique(return_inverse=True), so inverse labels and flattened pixel masks share dimensions under current NumPy. No thresholds, features, hyperparameters, labels, matching rules or scoring are changed.",
+  "no_new_model_calls": true,
+  "no_test_targets_in_patch_logic": true,
+  "timeout_seconds": 180,
+  "numerical_threads": 1,
+  "procedure": "single repaired extract/fit_predict call",
+  "frozen_files": {
+    "data/cache/J08/data.npz": "fac163a34bc8efdbd4cc20e0b21cc6ab10d9306010a648a310ca85e997f87909",
+    "experiments/J08/adapter.py": "9dc6a36a057bcfa766f227c497b47f46d0d4657682dd4a7eb1d32645662dd3f1",
+    "experiments/J08/gpt-6.1-sol.json": "26d8961953d3e7d2f0b3723f53e2dfdaa660ee8a194d041489387392ccfbe6bf",
+    "experiments/J08/run-spec.json": "928c088b64ffa3d5d6e430bd93187bc763a02c07b9c83da99e273fbf3d9a6196",
+    "experiments/repairs-v1/J08/gpt-6.1-sol.original.py": "4170ca4539b551057115fbc31ceb37e96eeff24394601fcbf70d6464a2525805",
+    "experiments/repairs-v1/J08/gpt-6.1-sol.patch.diff": "0f36296e6508b6995ed317151e872cb8a85b436f6ba042ea8a07d11fb0f22b81",
+    "experiments/repairs-v1/J08/gpt-6.1-sol.py": "abf6c4ea5cd9775e8fbb2eff866c4c1bda09e00f6695d4ff12638aef8d5a2496",
+    "experiments/repairs-v1/J08/rationale.md": "e52e84c3f3928ac3e0d328eb67e0f2536bda1f567ab838dc895d58c4ee6f37d9",
+    "results/J08.json": "365340290b55c5887b4ffcc5b229dc8060b5ab9f5e2852ec9cc2335871fa5163",
+    "scripts/repair_failed.py": "6ce382b04bd769f2e6ff2e1631f0d2e0a83ea5741363ce7f4c5dd7d949ff600a"
+  },
+  "status": "sealed before repaired execution and scoring"
+}

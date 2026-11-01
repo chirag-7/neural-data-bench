@@ -44,3 +44,9 @@ Decision: **measured** (2026-10-30). Root repository already contains measured S
 Preview 0.11: measured. Root repository already contains measured Spikefinder preparation slices for all three Sol programs, predictions and archived references. This screening task did not rerun them; officialchallenge aggregate/currentSOTA remain distinct.
 
 [Admission/source evidence](../../../literature/admission-v04-behavior-population.json). [Actual protocol/worklog](../../../experiments/C05). [Task measurements](../../../results/C05.json).
+
+## Current specialists and repair sensitivity — 1 November 2026
+
+[Current specialist review](../../../literature/specialist-review-2026-11-01/C05.json) · [Native version trajectories and practical interpretation](../../../analysis/practical-review-2026-11-01/report.md). The review distinguishes tested references from unexecuted newer candidates; no matched current global winner is certified.
+
+[Separate repair-assisted track](../../../experiments/repairs-v1/README.md). Original first attempts remain unchanged.

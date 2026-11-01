@@ -47,3 +47,7 @@ Decision: **measured** (2026-10-30). Real public PhysioNet EEGMMI EDF files acqu
 Preview 0.11: measured. Real public PhysioNet EEGMMI EDF files acquired and validated; fixed subject-disjoint MI slice prepared. This admits one explicitly scoped slice, not the whole MOABB umbrella.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json). [Actual protocol/worklog](../../../experiments/H01). [Task measurements](../../../results/H01.json).
+
+## Current specialists and repair sensitivity — 1 November 2026
+
+[Current specialist review](../../../literature/specialist-review-2026-11-01/H01.json) · [Native version trajectories and practical interpretation](../../../analysis/practical-review-2026-11-01/report.md). The review distinguishes tested references from unexecuted newer candidates; no matched current global winner is certified.

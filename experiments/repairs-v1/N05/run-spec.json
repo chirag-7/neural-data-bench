@@ -1,0 +1,48 @@
+{
+  "repair_track": "posthoc-repairs-v1",
+  "benchmark_id": "N05",
+  "methods": [
+    "gpt-5.6-sol"
+  ],
+  "date": "2026-11-01",
+  "original_outputs_preserved": true,
+  "originals": [
+    {
+      "model": "gpt-5.6-sol",
+      "source_json": "experiments/N05/gpt-5.6-sol.json",
+      "source_json_sha256": "e6d5db5a80930840f6f8407c94d3b6e8dc30a1293e7d9590f079a897eb49566a",
+      "original_code_sha256": "9c568f8b0d190b78f699018e89dfdaa5eed62aaefd54150cbcb185f1d1a34e83",
+      "repaired_code_sha256": "0d276d029b0ed0974d3b99e21651e6c9f8f86f3f53dac5a1dee2f4d4be8bfb5d",
+      "code_unchanged": false,
+      "original_code_lines": 249,
+      "repaired_code_lines": 249
+    }
+  ],
+  "patches": [
+    {
+      "model": "gpt-5.6-sol",
+      "diff_file": "experiments/repairs-v1/N05/gpt-5.6-sol.patch.diff"
+    }
+  ],
+  "rationale": "One-line metadata traversal repair: visititems deduplicates hard-linked HDF5 objects and misses stimulus aliases under the sweep path. visititems_links visits every hard-link path; resolve handle[name], then preserve original sweep/role/unit metadata logic. No expected numerical answers or source-specific measured values are introduced.",
+  "no_new_model_calls": true,
+  "no_test_targets_in_patch_logic": true,
+  "timeout_seconds": 180,
+  "numerical_threads": 1,
+  "procedure": "single repaired extract/fit_predict call",
+  "frozen_files": {
+    "data/cache/N05/expected.json": "89c9eeace3b6e3adc8f072a375b42b3c9847ba00e321a53dcbef58887a63f25b",
+    "data/cache/N05/fixture.nwb": "6e663e329261c4302748df0286edd6a3168ff3e20f2433f413e2ac6240d10ddb",
+    "data/cache/N05/tolerances.json": "9f88a1e99cca223dfc400ce208d81c8f0605d74c6948d3a590b8b39769664ddf",
+    "experiments/N05/gpt-5.6-sol.json": "e6d5db5a80930840f6f8407c94d3b6e8dc30a1293e7d9590f079a897eb49566a",
+    "experiments/N05/run-spec.json": "237670478bc944642a5659dc1bbfe62c0d56378b36e9e9a339bade48d8342b4a",
+    "experiments/repairs-v1/N05/gpt-5.6-sol.original.py": "9c568f8b0d190b78f699018e89dfdaa5eed62aaefd54150cbcb185f1d1a34e83",
+    "experiments/repairs-v1/N05/gpt-5.6-sol.patch.diff": "1ace7dcc0f6b7b7359dd6ee4cd477f4d93c1c85d2de98fde66d6f8fa77fdee8e",
+    "experiments/repairs-v1/N05/gpt-5.6-sol.py": "0d276d029b0ed0974d3b99e21651e6c9f8f86f3f53dac5a1dee2f4d4be8bfb5d",
+    "experiments/repairs-v1/N05/rationale.md": "979ec85292dbd74dab75fb2c60dfcc247fe25a9b94cd6d50723f85ed704f7f9c",
+    "results/N05.json": "90b6f5720bcedc3ff38c26e64450afc73dfca96af67c357ba622b21425b1267d",
+    "scripts/repair_failed.py": "6ce382b04bd769f2e6ff2e1631f0d2e0a83ea5741363ce7f4c5dd7d949ff600a",
+    "scripts/workflow.py": "6d951f3e38e9b0b5bda24cca2d127a4ea2e40c3ff74c27a5ab9c071ed484c8ad"
+  },
+  "status": "sealed before repaired execution and scoring"
+}

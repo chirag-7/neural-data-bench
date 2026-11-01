@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "first_attempt_results_and_ledger_unchanged": true,
+  "all_repair_seals_and_original_code_hashes_pass": true,
+  "B08": [
+    {
+      "benchmark_id": "B08",
+      "model": "gpt-5.6-sol",
+      "n_payloads": 7,
+      "saved_fresh_decode_identity_and_metric_arithmetic_passed": true
+    },
+    {
+      "benchmark_id": "B08",
+      "model": "gpt-6-sol",
+      "n_payloads": 7,
+      "saved_fresh_decode_identity_and_metric_arithmetic_passed": true
+    },
+    {
+      "benchmark_id": "B08",
+      "model": "gpt-6.1-sol",
+      "n_payloads": 7,
+      "saved_fresh_decode_identity_and_metric_arithmetic_passed": true
+    },
+    {
+      "benchmark_id": "B08",
+      "model": "spikepack",
+      "n_payloads": 7,
+      "saved_fresh_decode_identity_and_metric_arithmetic_passed": true
+    },
+    {
+      "benchmark_id": "B08",
+      "model": "task-baseline",
+      "n_payloads": 7,
+      "saved_fresh_decode_identity_and_metric_arithmetic_passed": true
+    }
+  ],
+  "J08": {
+    "repaired_shape": [
+      2,
+      727,
+      546
+    ],
+    "finite_integer_instances": true
+  },
+  "N05": {
+    "status": "passed",
+    "all_fields_correct": true,
+    "n_fields": 61,
+    "metadata_only_patch": true
+  },
+  "result_file": "results/repairs-v1.json",
+  "result_sha256": "c1a7882d16a254b8441fdc3feeac11e43a78f80f92b5a46af81eb85c9c63f762",
+  "method_or_encoder_or_decoder_executed_by_finalizer": false
+}

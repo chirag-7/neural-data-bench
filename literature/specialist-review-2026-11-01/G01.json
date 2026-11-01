@@ -1,0 +1,141 @@
+{
+  "benchmark_id": "G01",
+  "title": "Zero-target-calibration cross-day FALCON M2 diagnostic",
+  "reviewed_on": "2026-11-01",
+  "retrieval_date_semantics": "accessed_on is this fresh retrieval, not publication date or proof of exhaustive indexing; null publication_date means not verified",
+  "search_queries": [
+    "FALCON leaderboard M2 NDT3",
+    "FALCON M22026 decoding",
+    "FALCON SPINT decoder",
+    "APST Association Profile arxiv"
+  ],
+  "candidates": [
+    {
+      "name": "NDT3 pretrained transformer",
+      "year": 2024,
+      "source_urls": [
+        "https://github.com/joel99/ndt3/blob/main/model_card.md"
+      ],
+      "evidence": "Model card explicitly includes FALCON H1/M1/M2 downstream datasets; audit pretraining source membership before using on custom held-in-calibration-date split.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "SPINT",
+      "year": 2025,
+      "source_urls": [
+        "https://arxiv.org/html/2507.08402v1"
+      ],
+      "evidence": "Published spatially permutation-invariant decoder uses a small unlabeled target calibration pool; adaptation access exceeds our frozen training-only transforms.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "APST",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2609.39080"
+      ],
+      "evidence": "30 September 2026 preprint reports official private FALCON M2 evaluation; uses labeled target-session calibration trials, which our diagnostic forbids.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "FALCON ridge / recurrent / session-specific baselines",
+      "year": 2024,
+      "source_urls": [
+        "https://snel-repo.github.io/falcon/",
+        "https://github.com/snel-repo/falcon-challenge"
+      ],
+      "evidence": "Official code provides matched starting point; fresh custom-date training and exact causal features required.",
+      "matched_to_our_slice": true,
+      "role": "ridge family currently matched; recurrent contender"
+    }
+  ],
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_claim_scope": "Exact executed custom input/split/metric protocol, not best within our small inspected local set",
+  "current_reference": "FALCON-style train-only ridge on trial-reset causal 240 ms features",
+  "current_reference_limitations": [
+    "Custom 19–20 October→27–28 October split uses public calibration runs, not official hidden M2 test.",
+    "One monkey; no animal/clinical/closed-loop generalization.",
+    "Feature interface omits session IDs/trial boundaries; rowwise causal summaries cannot support arbitrary new future history.",
+    "Current reference is a classical decoder, not current neural foundation model best.",
+    "Unlabeled and labeled target adaptation change scientific information access."
+  ],
+  "recommended_next_comparator": "First train a causal recurrent/compact neural decoder using only 19–20 October features and targets, no target-day normalization, preserving reset boundaries and exact variance-weighted R². Add NDT3 only after auditing all pretraining days; SPINT/APST require separate adaptation-permitted protocols with explicit target data budgets, never direct leaderboard score import.",
+  "switching_assessment": "NO GENERAL REPLACEMENT RECOMMENDATION. Current evidence supports a bounded code-synthesis/pilot comparison to the named local reference. Establish prospective same-input/split/metric contender runs, biological/source replication, calibration and runtime/reliability before switching production tools.",
+  "limitations": [
+    "Custom 19–20 October→27–28 October split uses public calibration runs, not official hidden M2 test.",
+    "One monkey; no animal/clinical/closed-loop generalization.",
+    "Feature interface omits session IDs/trial boundaries; rowwise causal summaries cannot support arbitrary new future history.",
+    "Current reference is a classical decoder, not current neural foundation model best.",
+    "Unlabeled and labeled target adaptation change scientific information access."
+  ],
+  "negative_findings": [
+    "Official dynamic leaderboard provided no reliable current numerical ordering in retrieval.",
+    "FALCON LLM, magnet and Falcon aircraft search hits unrelated and excluded.",
+    "No exact zero-target-calibration/custom-date winner verified."
+  ],
+  "sources": [
+    {
+      "url": "https://snel-repo.github.io/falcon/",
+      "title": "FALCON official benchmark project",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Benchmark distinguishes few-shot/zero-shot/adaptive methods and new-day calibration."
+    },
+    {
+      "url": "https://github.com/snel-repo/falcon-challenge",
+      "title": "FALCON official implementation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Decoder examples, evaluation rules and task interfaces."
+    },
+    {
+      "url": "https://eval.ai/web/challenges/challenge-page/2319/leaderboard/5750",
+      "title": "FALCON M2 EvalAI leaderboard",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh search/open; dynamic results not available",
+      "finding": "Fresh retrieval exposed metric labels but no readable submission results; no current best row verified."
+    },
+    {
+      "url": "https://github.com/joel99/ndt3/blob/main/model_card.md",
+      "title": "NDT3 model card",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "FALCON downstream use and pretraining context; potential overlap audit required."
+    },
+    {
+      "url": "https://arxiv.org/html/2507.08402v1",
+      "title": "SPINT: Spatial Permutation-Invariant Neural Transformer for Consistent Intracortical Motor Decoding",
+      "publication_date": "2025",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Primary fulltext describes unlabeled target adaptation and continuous motor tasks."
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.39080",
+      "title": "Association profile conditioning in a set-temporal transformer for cross-session intracortical motor decoding",
+      "publication_date": "2026-09-30",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "APST preprint explicitly relies on few labeled calibration trials on target session."
+    }
+  ],
+  "local_protocol": {
+    "path": "experiments/G01/protocol.md",
+    "sha256": "15f944fc36802b4676a6c6051a16e00bb7246e035b08badd058683d4e63dd715"
+  },
+  "review_actions": {
+    "fresh_primary_source_browsing": true,
+    "trained_models": false,
+    "downloaded_large_weights": false,
+    "changed_scores": false,
+    "changed_website": false
+  },
+  "unmatched_published_scores_imported": false
+}

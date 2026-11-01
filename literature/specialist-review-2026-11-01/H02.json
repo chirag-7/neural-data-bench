@@ -1,0 +1,130 @@
+{
+  "benchmark_id": "H02",
+  "title": "Cross-person P300/ERP classification",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "Brain Invaders 2012 calibration runs, 15 training and 10 test people; 16-channel 0–1 s epochs at 128 Hz with fixed baseline/reference/filtering; equal-person ROC-AUC.",
+  "local_protocol": "experiments/H02/protocol.md",
+  "existing_reference": {
+    "name": "Fixed time-bin shrinkage LDA and pyRiemann xDAWN specialist; H02 repeated-generation study is separate",
+    "evidence": "A: locally executed references; repeats have their own training-only selection.",
+    "strength": "xDAWN is directly suited to the ERP target and available channels.",
+    "problems": [
+      "Within-session BI2012 accuracy leaderboards are not cross-person AUC.",
+      "Do not merge repeat-selected specialist or repeated programs into the one-shot result."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "xDAWN covariance → tangent-space SVM",
+      "year": 2024,
+      "source_urls": [
+        "https://moabb.neurotechx.com/docs/paper_results.html",
+        "https://arxiv.org/abs/2404.15319"
+      ],
+      "evidence": "B: relevant primary BI2012 benchmark family.",
+      "matched_to_our_slice": false,
+      "information_match": "Exact epochs and training-person CV can be reused; no target-person fitting.",
+      "role": "candidate"
+    },
+    {
+      "name": "Riemannian Means Field classifier with xDAWN",
+      "year": 2025,
+      "source_urls": [
+        "https://www.mdpi.com/1424-8220/25/7/2305"
+      ],
+      "evidence": "B: primary P300 study; direct full text rate-limited.",
+      "matched_to_our_slice": false,
+      "information_match": "Available ERP inputs fit; covariance regularization and training-only selection must be fixed.",
+      "role": "candidate"
+    },
+    {
+      "name": "CBraMod / REVE ERP fine-tuning",
+      "year": 2025,
+      "source_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2025/hash/bbbd6d915cb90be21c1254a82d45cedd-Abstract-Conference.html",
+        "https://brain-bzh.github.io/reve/",
+        "https://arxiv.org/abs/2601.17883"
+      ],
+      "evidence": "B: broad EEG models with primary benchmark context, not a BI2012 winner.",
+      "matched_to_our_slice": false,
+      "information_match": "Possible raw EEG adaptation; resampling, short-epoch tokenization, channels, pretraining overlap and compute differ.",
+      "role": "candidate"
+    }
+  ],
+  "recommended_next_comparator": "Train-person-selected xDAWN covariance/tangent-space SVM versus Means Field panel, selected by equal-person AUC; foundation-model arm only after ERP adapter validation.",
+  "switching_assessment": "RETAIN xDAWN as a credible specialist and ADD current conventional contenders. Tier B. No evidence supports replacing it solely because a general EEG foundation model is newer.",
+  "limitations": [
+    "Strong BI2012 published within-session results use a different split and metric.",
+    "MDPI direct access returned 429.",
+    "Calibration-only selection and short epochs must remain unchanged.",
+    "No prevalence-dependent accuracy substitution for ROC-AUC."
+  ],
+  "sources": [
+    {
+      "url": "https://moabb.neurotechx.com/docs/paper_results.html",
+      "title": "The largest EEG-based Benchmark for Open Science: MOABB results",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "BI2012 table is within-session five-fold evaluation, unlike this held-out-person endpoint.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2404.15319",
+      "title": "The largest EEG-based BCI reproducibility study for open science: the MOABB benchmark",
+      "publication_date": "2024-04-23",
+      "accessed_on": "2026-11-01",
+      "finding": "Primary reproducibility study compares conventional, Riemannian and deep pipelines.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://www.mdpi.com/1424-8220/25/7/2305",
+      "title": "Riemannian Means Field Classifier for EEG-Based BCI Data",
+      "publication_date": "2025",
+      "accessed_on": "2026-11-01",
+      "finding": "P300 comparison includes xDAWN and BI2012; no matching cross-person frozen result established.",
+      "access": "Publisher search extract available; direct page returned HTTP 429."
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/bbbd6d915cb90be21c1254a82d45cedd-Abstract-Conference.html",
+      "title": "CBraMod: A Criss-Cross Brain Foundation Model for EEG Decoding",
+      "publication_date": "2025 (ICLR)",
+      "accessed_on": "2026-11-01",
+      "finding": "Peer-reviewed EEG foundation model; author code at https://github.com/wjq-learning/CBraMod.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://brain-bzh.github.io/reve/",
+      "title": "REVE: A Foundation Model for EEG",
+      "publication_date": "2025 (NeurIPS)",
+      "accessed_on": "2026-11-01",
+      "finding": "Author project supplies paper, code and model weights; flexible electrode geometry.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.17883",
+      "title": "EEG-FM-Compass: Progress, Benchmarking, and Future Directions for EEG Foundation Models",
+      "publication_date": "2026-01-25; v3 2026-08-03",
+      "accessed_on": "2026-11-01",
+      "finding": "LOSO and few-shot comparisons find task-dependent foundation-model and specialist performance.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    }
+  ],
+  "search_queries": [
+    "P300 ERP xDAWN Brain Invaders 2012 foundation 2025 2026",
+    "site.github.com MOABB benchmark P300 BrainInvaders2012 xDAWN EEGNet 2026",
+    "Riemannian Means Field Classifier EEG Based BCI Data 2025"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

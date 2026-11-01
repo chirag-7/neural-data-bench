@@ -1,0 +1,212 @@
+[
+  {
+    "benchmark_id": "A09",
+    "review_file": "literature/specialist-review-2026-11-01/A09.json",
+    "review_sha256": "11095c24a2cf07523038f33b84ca48f4f7aed40c25f7bc83863ca00e214a22bf",
+    "protocol_file": "experiments/A09/protocol.md",
+    "protocol_sha256": "8cf05be6670b9c58816b5990851b091991b9fe27a3456f6baff86366977d2f23"
+  },
+  {
+    "benchmark_id": "A14",
+    "review_file": "literature/specialist-review-2026-11-01/A14.json",
+    "review_sha256": "4200f23b02459a8d75755f1a33098e7f5145699817ea7e2b6f9ae30bbf6afb01",
+    "protocol_file": "experiments/A14/protocol.md",
+    "protocol_sha256": "bd15dbd171befe15c90b14d7459c192e7d5fa0bf11d3ad5bd7c1327fc17f7418"
+  },
+  {
+    "benchmark_id": "A15",
+    "review_file": "literature/specialist-review-2026-11-01/A15.json",
+    "review_sha256": "5fa8dde2c6742aa08df95ffefe2516be7e25394760a231ac76c48c428fba1f23",
+    "protocol_file": "experiments/A15/protocol.md",
+    "protocol_sha256": "e658b331e88b890a3d5bd0a972a670b7d153a01beddc3d76212d81f818265754"
+  },
+  {
+    "benchmark_id": "B01",
+    "review_file": "literature/specialist-review-2026-11-01/B01.json",
+    "review_sha256": "57ac0ee5dfeaf8ee8f583231c5f824a49618efa4ffe58cf4e52fbcadca2e4e50",
+    "protocol_file": "experiments/B01/protocol.md",
+    "protocol_sha256": "586a2efbcf72f6ecb79b27d35018a6124e92284601a3327a3adf3377e237c264"
+  },
+  {
+    "benchmark_id": "B03",
+    "review_file": "literature/specialist-review-2026-11-01/B03.json",
+    "review_sha256": "f9206d8e41e8d087c012269b10d94852e6e75395d432917cc2f755d02f36e85d",
+    "protocol_file": "experiments/B03/protocol.md",
+    "protocol_sha256": "5850c014ec703e42c5e1a6b31abca825043e1c68abda2770f5785ed53135424e"
+  },
+  {
+    "benchmark_id": "B07",
+    "review_file": "literature/specialist-review-2026-11-01/B07.json",
+    "review_sha256": "86e672895de80be33bca57793c7b9ebfc7852be1d5715c268ad678898dffbe02",
+    "protocol_file": "experiments/B07/protocol.md",
+    "protocol_sha256": "3e631c53c74d2bbe185ef6e15624c618d0ab797cfec44317586aebf31f426ad5"
+  },
+  {
+    "benchmark_id": "B08",
+    "review_file": "literature/specialist-review-2026-11-01/B08.json",
+    "review_sha256": "361df1fbd31c180f2b90c29e91d1b2b45a0e11e781b35c957d4523a5c19812f7",
+    "protocol_file": "experiments/B08/protocol.md",
+    "protocol_sha256": "545f02e47e7a2b66477256c33218f5c3f88f1b4ced373fff9bde6f3fdf8fbedd"
+  },
+  {
+    "benchmark_id": "C05",
+    "review_file": "literature/specialist-review-2026-11-01/C05.json",
+    "review_sha256": "8be58e7645e997b259d75df994cea86a2afea8b97a514c6e3132259c68cfbfbf",
+    "protocol_file": "experiments/C05/phase2-protocol.md",
+    "protocol_sha256": "7b3b9b2b20e7e04c9ac11eebd720a084fb2971db63f1c61fa01a73483f0c928d"
+  },
+  {
+    "benchmark_id": "C06",
+    "review_file": "literature/specialist-review-2026-11-01/C06.json",
+    "review_sha256": "1d1c37aec5b7d6f5a48f4bf7ca974e2f3d12a0961b1243005d4a74ecdbdcdfe7",
+    "protocol_file": "experiments/C06/protocol.md",
+    "protocol_sha256": "0fbf4700d1edb36157cd1d51d0d528a3d5931bdf3e43604d692767d90795b8be"
+  },
+  {
+    "benchmark_id": "D02",
+    "review_file": "literature/specialist-review-2026-11-01/D02.json",
+    "review_sha256": "cd0593a9a201c74178278cfb2ccb78d31bb9c2a88a9889e157fbb9b8c4fd3aa3",
+    "protocol_file": "experiments/D02/protocol.md",
+    "protocol_sha256": "877e867512c9f9ba36cb0ccfe3f1691bf0f1b3bf75091dde60e5ac92992ab8dc"
+  },
+  {
+    "benchmark_id": "E01",
+    "review_file": "literature/specialist-review-2026-11-01/E01.json",
+    "review_sha256": "176f3f7fa12566d1b027a522b10349003dc119bd1c066ffac723154b96ea7917",
+    "protocol_file": "experiments/E01/protocol.md",
+    "protocol_sha256": "d4834aab3507ceb3ad7a8ae137f11014a5caaefc8d19c7003a1b855b19fe620f"
+  },
+  {
+    "benchmark_id": "E06",
+    "review_file": "literature/specialist-review-2026-11-01/E06.json",
+    "review_sha256": "3d2a3231ff4fc7ff030c4d2efb62ea706789e7c589f04217aac4cfa8e556efbc",
+    "protocol_file": "experiments/E06/protocol.md",
+    "protocol_sha256": "4859d3aeaf402acac3c3a6ffe44a262b2b3d4acef3f8cd6a74f0e1c8606d60e8"
+  },
+  {
+    "benchmark_id": "F04",
+    "review_file": "literature/specialist-review-2026-11-01/F04.json",
+    "review_sha256": "91185ea15b1458d903a3d01991770d96f730a6731b1035c7d3473267de355d91",
+    "protocol_file": "experiments/F04/protocol.md",
+    "protocol_sha256": "d114274ee60470a4e0babbece885b7246a4b7c0eb5c8db67f235898f3ccf75b5"
+  },
+  {
+    "benchmark_id": "G01",
+    "review_file": "literature/specialist-review-2026-11-01/G01.json",
+    "review_sha256": "7ec6c2fd44dd4ed4fc1a5500556ae78dca60612efb1cc65ffe1cb9218ac13e16",
+    "protocol_file": "experiments/G01/protocol.md",
+    "protocol_sha256": "15f944fc36802b4676a6c6051a16e00bb7246e035b08badd058683d4e63dd715"
+  },
+  {
+    "benchmark_id": "H01",
+    "review_file": "literature/specialist-review-2026-11-01/H01.json",
+    "review_sha256": "47670b3ba5c48a6cf5706a74b5be0291794446cec2e3e04b4de7861d0e429974",
+    "protocol_file": "experiments/H01/protocol.md",
+    "protocol_sha256": "dcb8ba5df232d7e9987fe54bef07b1bfe4986907ab54ccd2cb54eef2d8ba8280"
+  },
+  {
+    "benchmark_id": "H02",
+    "review_file": "literature/specialist-review-2026-11-01/H02.json",
+    "review_sha256": "0132153b30189d7fb52acb23df467532f70ee79fd8ebc567fc70a5f548ca7915",
+    "protocol_file": "experiments/H02/protocol.md",
+    "protocol_sha256": "212c76c63972ed7305a935e35d9039f47767a9f7bfc34d410c162035cba6543c"
+  },
+  {
+    "benchmark_id": "H08",
+    "review_file": "literature/specialist-review-2026-11-01/H08.json",
+    "review_sha256": "d736334225a215d9c043e78c3c82654046fca99ffe7a0f3ee55da13d3f28ecf0",
+    "protocol_file": "experiments/H08/protocol.md",
+    "protocol_sha256": "a164e1d9921eba69e7c05a8dc415166d86201af560f4fe346a8323e84612e512"
+  },
+  {
+    "benchmark_id": "H16",
+    "review_file": "literature/specialist-review-2026-11-01/H16.json",
+    "review_sha256": "32f14eb92d42d9609407737f19084a28d89a191e962ff8eb6861c7ca29624611",
+    "protocol_file": "experiments/H16/protocol.md",
+    "protocol_sha256": "4e275752e18b11f717867dacfa58af355529f89b29b779678f9937a7e5deb7b7"
+  },
+  {
+    "benchmark_id": "I07",
+    "review_file": "literature/specialist-review-2026-11-01/I07.json",
+    "review_sha256": "87f6e8cda13129a979dc0561e128204bfe342cfabca5b3b42fa9923ee7d9c8da",
+    "protocol_file": "experiments/I07/protocol.md",
+    "protocol_sha256": "2c12234984cdd4d3782fa57a85fccb20ca6979d6c8ecbd674328ab4ff4af6f6c"
+  },
+  {
+    "benchmark_id": "I10",
+    "review_file": "literature/specialist-review-2026-11-01/I10.json",
+    "review_sha256": "935e3e62aa2724d2d93f7452f23aed3c5cc8a3454f351e23744244e22bed5eba",
+    "protocol_file": "experiments/I10/protocol.md",
+    "protocol_sha256": "7b6c1f4b33911a46306dcbf2eb16166af90629ffeee4a37fe54a306fde78d7bb"
+  },
+  {
+    "benchmark_id": "J08",
+    "review_file": "literature/specialist-review-2026-11-01/J08.json",
+    "review_sha256": "4bcb830831be8e866caa2bf12d9927b9e2ab66be977f0ddf21ba480fad404f66",
+    "protocol_file": "experiments/J08/protocol.md",
+    "protocol_sha256": "1fa4983162a42f78c7880d14d2b92a35f63d6689032a9183a260772cb4b9f778"
+  },
+  {
+    "benchmark_id": "K01",
+    "review_file": "literature/specialist-review-2026-11-01/K01.json",
+    "review_sha256": "16619be22aabd3b0d4190c1e52423e053c738761cbe7be9a041aebca268d42bd",
+    "protocol_file": "experiments/K01/protocol.md",
+    "protocol_sha256": "4212bf48ebdde8f850faf3b505548dd94386b8d5ae55bb79c653009ae343bcd5"
+  },
+  {
+    "benchmark_id": "K04",
+    "review_file": "literature/specialist-review-2026-11-01/K04.json",
+    "review_sha256": "42a91ae759433a14edc32aaec2d70fe87ca3c0b0950e2817f080dd28467cc2aa",
+    "protocol_file": "experiments/K04/protocol.md",
+    "protocol_sha256": "c0b0c26079c156a0c89abebd5c292d791024e0bd48bba25fed290464a836410f"
+  },
+  {
+    "benchmark_id": "K05",
+    "review_file": "literature/specialist-review-2026-11-01/K05.json",
+    "review_sha256": "609a53865b627b738338bdc1174a42b6c9ad88711dec2af6ef1bb886ac2e853f",
+    "protocol_file": "experiments/K05/protocol.md",
+    "protocol_sha256": "d9e2b5ad712f25c521a64192c311fbb92d8a810f329ca49806ac096ef375efe1"
+  },
+  {
+    "benchmark_id": "K06",
+    "review_file": "literature/specialist-review-2026-11-01/K06.json",
+    "review_sha256": "c8b5c140a05b4f506a96645351bf960f0a2888c3d8bcab87e72b7a155aa132a4",
+    "protocol_file": "experiments/K06/protocol.md",
+    "protocol_sha256": "4b0ec91465fbf0ec5a1c532da3abee53ac89e1f9858997c61767f746e87038ef"
+  },
+  {
+    "benchmark_id": "L04",
+    "review_file": "literature/specialist-review-2026-11-01/L04.json",
+    "review_sha256": "19bfe5d79996db81738842dbb837bba039328054fb01e91dbd0cc357ea92344a",
+    "protocol_file": "experiments/L04/protocol.md",
+    "protocol_sha256": "2e1651c341cbdca2451e10a87a01ffc47c6b95afb0c695f17c7f9d15bd46b36d"
+  },
+  {
+    "benchmark_id": "L06",
+    "review_file": "literature/specialist-review-2026-11-01/L06.json",
+    "review_sha256": "1f08b0ffd1aee7badf0fc5add7c36fbb86d5a985ee27bc72a1460f8943f73b76",
+    "protocol_file": "experiments/L06/protocol.md",
+    "protocol_sha256": "5847db040121e034cd732ae5c036da891bbf8ef55e099d057e21828a0c18fb35"
+  },
+  {
+    "benchmark_id": "M01",
+    "review_file": "literature/specialist-review-2026-11-01/M01.json",
+    "review_sha256": "ae379806f39fdc1a0af274c9919998869737632c25b10efdae4df31c680ce930",
+    "protocol_file": "experiments/M01/protocol.md",
+    "protocol_sha256": "85c3348a501e1b11941a1185c1604e202ed1871bd35f8200e970b4c66bb8e89e"
+  },
+  {
+    "benchmark_id": "M04",
+    "review_file": "literature/specialist-review-2026-11-01/M04.json",
+    "review_sha256": "fbc3c0bfee4ab681764dfd7b47fdaf423e298090f0821cd9fea14f9d65f443f7",
+    "protocol_file": "experiments/M04/protocol.md",
+    "protocol_sha256": "a4fd3a36bb086de15dfb5131fff543be2b62591302795016e4370db41ce0410d"
+  },
+  {
+    "benchmark_id": "N05",
+    "review_file": "literature/specialist-review-2026-11-01/N05.json",
+    "review_sha256": "13e2074339e26f3596741ff8e34a5aa696101c12a37a0dacc458a3b2bad3626f",
+    "protocol_file": "experiments/N05/protocol.md",
+    "protocol_sha256": "b81dcaacde26a38cd707cb6416b6cea7a7348dfebe95a39725158901375619c0"
+  }
+]

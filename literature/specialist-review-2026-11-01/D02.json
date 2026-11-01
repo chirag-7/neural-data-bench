@@ -1,0 +1,140 @@
+{
+  "benchmark_id": "D02",
+  "title": "One-cell hyperpolarizing step interpolation",
+  "reviewed_on": "2026-11-01",
+  "retrieval_date_semantics": "accessed_on is this fresh retrieval, not publication date or proof of exhaustive indexing; null publication_date means not verified",
+  "search_queries": [
+    "Allen passive GLIF biophysical models benchmark current injection cell types",
+    "Accurately fitting biophysical neuron models meta learning github2026",
+    "Passive neuron RC Allen fitting benchmark"
+  ],
+  "candidates": [
+    {
+      "name": "Training-only passive RC / constrained multi-exponential response",
+      "year": 2026,
+      "source_urls": [
+        "https://brain-map.org/support/documentation/documentation-cell-types-database"
+      ],
+      "evidence": "Protocol-matched mechanistic family; four amplitudes can identify effective resistance/relaxation, not full ionic mechanisms.",
+      "matched_to_our_slice": true,
+      "role": "recommended matched conventional baseline"
+    },
+    {
+      "name": "Allen GLIF and perisomatic/all-active models",
+      "year": 2018,
+      "source_urls": [
+        "https://brain-map.org/support/documentation/documentation-cell-types-database",
+        "https://celltypes.brain-map.org/",
+        "https://www.nature.com/articles/s41467-017-02717-4"
+      ],
+      "evidence": "Official downloadable fitted cell models target broader electrophysiology; provenance may include our heldout sweeps.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "CoMParE",
+      "year": 2026,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13252523/",
+        "https://github.com/xanderladd/axonstandardized"
+      ],
+      "evidence": "Meta-learned feature objectives for conductance fitting using broader stimuli and substantial compute. Current work is a preprint-level candidate; no exact cell/sweep match verified.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "BluePyOpt/eFEL NEURON optimization",
+      "year": 2016,
+      "source_urls": [
+        "https://github.com/BlueBrain/BluePyOpt",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13252523/"
+      ],
+      "evidence": "Established specialist optimization stack; overparameterized relative to this passive interpolation diagnostic.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    }
+  ],
+  "current_best_claim": "UNRESOLVED",
+  "current_best_claim_scope": "Exact executed custom input/split/metric protocol, not best within our small inspected local set",
+  "current_reference": "Leave-one-amplitude-out selection among interpolation/quadratic/passive RC",
+  "current_reference_limitations": [
+    "One cell and two unseen current amplitudes; not a biophysical parameter recovery or spiking test.",
+    "Known pre-step rest, 500 Hz averaging and amplitude interpolation simplify the task.",
+    "No meaningful continuously ranked specialist benchmark for this exact passive endpoint located.",
+    "Broader model priors, morphology and full-cell fitting are extra information."
+  ],
+  "recommended_next_comparator": "Retain train-only constrained RC and amplitude-interpolation selection as the fair first comparator. If adding a richer specialist, fit a small passive/cable or multi-exponential model on four permitted sweeps only. Audit any downloaded Allen model for training on hidden amplitudes; otherwise place it in a broader-information tier.",
+  "switching_assessment": "NO GENERAL REPLACEMENT RECOMMENDATION. Current evidence supports a bounded code-synthesis/pilot comparison to the named local reference. Establish prospective same-input/split/metric contender runs, biological/source replication, calibration and runtime/reliability before switching production tools.",
+  "limitations": [
+    "One cell and two unseen current amplitudes; not a biophysical parameter recovery or spiking test.",
+    "Known pre-step rest, 500 Hz averaging and amplitude interpolation simplify the task.",
+    "No meaningful continuously ranked specialist benchmark for this exact passive endpoint located.",
+    "Broader model priors, morphology and full-cell fitting are extra information."
+  ],
+  "negative_findings": [
+    "No exact specimen 464212183, sweep split and held-out current amplitudes in 2026 winner verified.",
+    "Full-neuron GLIF spike-time explained variance is not comparable to our deflection RMSE."
+  ],
+  "sources": [
+    {
+      "url": "https://brain-map.org/support/documentation/documentation-cell-types-database",
+      "title": "Allen Cell Types model documentation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Defines GLIF variants, biophysical models and their evaluation metrics; these differ from passive voltage RMSE."
+    },
+    {
+      "url": "https://celltypes.brain-map.org/",
+      "title": "Allen Cell Types database overview",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Official data/model downloads and SDK/NEURON model execution."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-017-02717-4",
+      "title": "Generalized leaky integrate-and-fire models classify multiple neuron types",
+      "publication_date": "2018",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Broader spike-time model evaluation; not our two hidden hyperpolarizing sweeps."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13252523/",
+      "title": "Accurately fitting biophysical neuron models to experimental voltage data enabled by meta-learning",
+      "publication_date": "2026",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh primary indexed retrieval; direct open CAPTCHA",
+      "finding": "CoMParE primary indexed paper; fulltext retrieval CAPTCHA on one attempt, rich indexed methods text available."
+    },
+    {
+      "url": "https://github.com/xanderladd/axonstandardized",
+      "title": "CoMParE axonstandardized official pipeline",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Author-linked implementation; inspected repository rather than executed fits."
+    },
+    {
+      "url": "https://github.com/BlueBrain/BluePyOpt",
+      "title": "BluePyOpt official code",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Author primary paper describes this optimization dependency; no training attempted."
+    }
+  ],
+  "local_protocol": {
+    "path": "experiments/D02/protocol.md",
+    "sha256": "877e867512c9f9ba36cb0ccfe3f1691bf0f1b3bf75091dde60e5ac92992ab8dc"
+  },
+  "review_actions": {
+    "fresh_primary_source_browsing": true,
+    "trained_models": false,
+    "downloaded_large_weights": false,
+    "changed_scores": false,
+    "changed_website": false
+  },
+  "unmatched_published_scores_imported": false
+}

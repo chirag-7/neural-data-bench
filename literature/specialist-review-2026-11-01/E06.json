@@ -1,0 +1,192 @@
+{
+  "benchmark_id": "E06",
+  "title": "ZAPBench 64-frame, 256-neuron, 32-step forecasting",
+  "reviewed_on": "2026-11-01",
+  "retrieval_date_semantics": "accessed_on is this fresh retrieval, not publication date or proof of exhaustive indexing; null publication_date means not verified",
+  "search_queries": [
+    "ZAPBench2026 benchmark best TiDE Nlinear NUNet",
+    "ZAPBench forecasting2026 model",
+    "ZAPBench ERA github",
+    "POCO neural prediction arxiv",
+    "POCO ZAPBench github",
+    "SimpleTES paper neural forecasting"
+  ],
+  "candidates": [
+    {
+      "name": "POCO",
+      "year": 2025,
+      "source_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2025/file/21fbf654963f9e455e8eec48e45bdea0-Paper-Conference.pdf",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13151936/"
+      ],
+      "evidence": "Population-conditioned forecasting; published ZAPBench short-context performance comparable to video U-Net, but long context underperforms U-Net/TSMixer in paper. No 64-frame-context, 256-selected-neuron result.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "Time-Mix / TSMixer / TiDE",
+      "year": 2025,
+      "source_urls": [
+        "https://arxiv.org/html/2503.02618v1",
+        "https://google-research.github.io/zapbench/",
+        "https://github.com/google-research/zapbench"
+      ],
+      "evidence": "Original trace-model suite; long-context differences modest, linear worse. TiDE stimulus covariates are out-of-distribution on taxis and absent from our interface.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "Volumetric U-Net",
+      "year": 2025,
+      "source_urls": [
+        "https://arxiv.org/html/2503.02618v1",
+        "https://google-research.github.io/zapbench/",
+        "https://github.com/google-research/zapbench"
+      ],
+      "evidence": "Original paper strongest overall short-context model; raw spatial volumes are richer input, not eligible as a same-trace comparator.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "ERA tree-search generated forecaster",
+      "year": 2026,
+      "source_urls": [
+        "https://www.nature.com/articles/s41586-026-10658-6",
+        "https://github.com/google-research/era"
+      ],
+      "evidence": "Published iterative AI software system includes ZAPBench; relevant strong learned procedure, not a one-shot general baseline or traditional handbuilt specialist.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "SimpleTES generated programs",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2604.19341",
+        "https://github.com/wq-will/SimpleTES/blob/main/datasets/zapbench/README.md"
+      ],
+      "evidence": "Current released whole-brain 4-context, 32-horizon task and result artifacts; repeated evaluation-driven search and official MAE differ from our MSE with 64-context and a neuron subset.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "Analytical NLinear with ridge penalty 1",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/google-research/zapbench"
+      ],
+      "evidence": "Current matched conventional domain baseline; changed optimization is explicitly documented.",
+      "matched_to_our_slice": true,
+      "role": "existing matched conventional reference"
+    }
+  ],
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_claim_scope": "Exact executed custom input/split/metric protocol, not best within our small inspected local set",
+  "current_reference": "Shared temporal NLinear architecture analytically fitted with fixed ridge penalty 1",
+  "current_reference_limitations": [
+    "Our 64-context, 256-neuron-subset MSE differs from published 4- or 256-context, full-brain MAE.",
+    "Taxis slice shares the same brain, neurons, training arrays and program; not independent evidence.",
+    "Published U-Net uses spatial raw video and cannot be transplanted into trace-only ranking.",
+    "Official NLinear architecture plus ridge penalty 1 is conventional, not best baseline.",
+    "Iterative AI search budgets differ substantially from one no-tool generation."
+  ],
+  "recommended_next_comparator": "Highest-priority matched shortlist: POCO plus Time-Mix/TSMixer trained from scratch using exactly 64 past frames, the same 256 neuron columns and same training windows; no stimulus covariates. Use training-only validation and exact MSE on both frozen slices. Treat U-Net/full-brain pretrained or ERA/SimpleTES search as separate richer-input/resource tiers unless fully adapted and refrozen.",
+  "switching_assessment": "NO GENERAL REPLACEMENT RECOMMENDATION. Current evidence supports a bounded code-synthesis/pilot comparison to the named local reference. Establish prospective same-input/split/metric contender runs, biological/source replication, calibration and runtime/reliability before switching production tools.",
+  "limitations": [
+    "Our 64-context, 256-neuron-subset MSE differs from published 4- or 256-context, full-brain MAE.",
+    "Taxis slice shares the same brain, neurons, training arrays and program; not independent evidence.",
+    "Published U-Net uses spatial raw video and cannot be transplanted into trace-only ranking.",
+    "Official NLinear architecture plus ridge penalty 1 is conventional, not best baseline.",
+    "Iterative AI search budgets differ substantially from one no-tool generation."
+  ],
+  "negative_findings": [
+    "No published exact 64-context, 256-neuron-subset MSE leaderboard winner verified.",
+    "2026 in-silico zebrafish mechanistic discovery papers use different simulated truth and are not real ZAPBench matches."
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2503.02618v1",
+      "title": "ZAPBench: A Benchmark for Whole-Brain Activity Prediction in Zebrafish",
+      "publication_date": "2025-03-04",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Original published protocol uses short 4-frame and long 256-frame contexts and MAE; U-Net short-context advantage and long-context ties are conditional."
+    },
+    {
+      "url": "https://google-research.github.io/zapbench/",
+      "title": "ZAPBench official project results",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Initial-baseline visualizations, model prediction tutorials and heldout taxis caveat."
+    },
+    {
+      "url": "https://github.com/google-research/zapbench",
+      "title": "ZAPBench official model/training code",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "JAX time-series and video model implementations; current source inspected."
+    },
+    {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/21fbf654963f9e455e8eec48e45bdea0-Paper-Conference.pdf",
+      "title": "POCO: Scalable Neural Forecasting through Population Conditioning",
+      "publication_date": "2025",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "NeurIPS 2025 paper includes ZAPBench appendix, 25-epoch training and checkpoint selection on validation."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13151936/",
+      "title": "POCO primary paper fulltext",
+      "publication_date": "2025",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Explicitly reports different short/long-context results, precluding blanket best claim."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41586-026-10658-6",
+      "title": "An AI system to help scientists write expert-level empirical software",
+      "publication_date": "2026-06-09",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "ERA final Nature paper, including neural forecasting; quality-driven tree search differs from one-shot code generation."
+    },
+    {
+      "url": "https://github.com/google-research/era",
+      "title": "ERA official implementation and generated programs",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Author source and generated-code artifacts available; no new model calls performed."
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.19341",
+      "title": "Evaluation-driven Scaling for Scientific Discovery",
+      "publication_date": "2026",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "2026 SimpleTES preprint, evaluation-driven search; claims not independently reproduced."
+    },
+    {
+      "url": "https://github.com/wq-will/SimpleTES/blob/main/datasets/zapbench/README.md",
+      "title": "SimpleTES official ZAPBench task package",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Released 4-context, 32-step whole-brain task scored by negative MAE; source pin and result artifacts documented."
+    }
+  ],
+  "local_protocol": {
+    "path": "experiments/E06/protocol.md",
+    "sha256": "4859d3aeaf402acac3c3a6ffe44a262b2b3d4acef3f8cd6a74f0e1c8606d60e8"
+  },
+  "review_actions": {
+    "fresh_primary_source_browsing": true,
+    "trained_models": false,
+    "downloaded_large_weights": false,
+    "changed_scores": false,
+    "changed_website": false
+  },
+  "unmatched_published_scores_imported": false
+}

@@ -1,0 +1,126 @@
+{
+  "benchmark_id": "K05",
+  "title": "Supervised orthogonal abundance calibration from bulk expression",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "DeconvoBuddies DLPFC, 39 bulk samples/five donors/seven blocks train, 24 samples/three donors/four blocks test; 2000 training-variable logCPM columns. Predict unadjusted Circle-panel Astro/GFAP, EndoMural/CLDN5, Inhib/GAD1 fractions from adjacent-section IF/RNAScope. Equal-donor/equal-block RMSE; fractions need not sum to one. No snRNA reference supplied.",
+  "local_protocol": "experiments/K05/protocol.md",
+  "existing_reference": {
+    "name": "Training-donor-CV ridge with inner-training gene selection, scaling and donor/block weighting",
+    "evidence": "A: fixed same-information conventional reference.",
+    "strength": "Appropriate regularized small-n, high-p supervised abundance baseline.",
+    "problems": [
+      "Not a reference-only cellular deconvolution specialist.",
+      "39 measurements contain only seven distinct training blocks; bulk replicates repeat labels.",
+      "Anonymous numerical columns prevent gene-token or marker-reference methods without an amended interface."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "BisqueRNA / hspe with Mean Ratio markers",
+      "year": 2025,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
+        "https://bioconductor.org/packages/release/bioc/html/DeconvoBuddies.html"
+      ],
+      "evidence": "B: strongest directly relevant source orthogonal-validation evidence among evaluated deconvolution methods.",
+      "matched_to_our_slice": false,
+      "information_match": "Requires acquired cell-reference matrix, gene mapping and normalization; original seven-cell-class endpoint and split differ from this three-output supervised slice.",
+      "role": "candidate"
+    },
+    {
+      "name": "DECONVersation with Geneformer / Cell2Sentence embeddings",
+      "year": 2026,
+      "source_urls": [
+        "https://www.biorxiv.org/content/10.64898/2026.10.02.756356v1.full"
+      ],
+      "evidence": "C: current foundation-assisted deconvolution preprint, includes brain comparisons.",
+      "matched_to_our_slice": false,
+      "information_match": "Needs gene identities and cell reference; not direct anonymous supervised calibration and not verified on held-out donor/block scorer.",
+      "role": "candidate"
+    },
+    {
+      "name": "BayesPrism / InstaPrism, MuSiC, CIBERSORTx",
+      "year": 2024,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11245312/"
+      ],
+      "evidence": "B: established reference-based contenders, with context-dependent source performance.",
+      "matched_to_our_slice": false,
+      "information_match": "Need external cell reference and broader composition; computational speed or pseudobulk performance is insufficient.",
+      "role": "candidate"
+    },
+    {
+      "name": "Nested donor-CV PLS / elastic net / reduced-rank regression",
+      "year": 2026,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/"
+      ],
+      "evidence": "C: proposed matched supervised alternative, not a published deconvolution win.",
+      "matched_to_our_slice": false,
+      "information_match": "Uses the existing features and measured targets only; block-equal weights and all preprocessing inside training splits.",
+      "role": "candidate"
+    }
+  ],
+  "recommended_next_comparator": "For unchanged K05, add donor/block-weighted PLS/elastic-net shrinkage. For a separate reference-deconvolution track, acquire a donor-independent snRNA reference and compare Bisque/hspe, fixed marker NNLS and DECONVersation under equal reference access.",
+  "switching_assessment": "KEEP the supervised-deviation label and ridge reference. Do not present it as beating the best deconvolution model. Tier B supports Bisque/hspe for a new reference track, Tier C supports supervised challengers. No target substitution with prop_sn or renormalization is allowed.",
+  "limitations": [
+    "Original IF/RNAScope prop, not algorithmic snRNA composition, remains target.",
+    "Adjacent sections and cell-size/RNA-content differences complicate reference-deconvolution calibration.",
+    "Three target fractions do not exhaust all detected nuclei and must not sum to one.",
+    "DECONVersation primary indexed extract was available but direct page returned 403; exact code availability unverified.",
+    "Original paper winner among six methods is not proof of current global best or a matched K05 result."
+  ],
+  "sources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
+      "title": "Benchmark of cellular deconvolution methods using a multi-assay dataset from postmortem human prefrontal cortex",
+      "publication_date": "2025",
+      "accessed_on": "2026-11-01",
+      "finding": "Source orthogonal RNAScope/IF comparison supports Bisque and hspe among evaluated reference-based methods.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://bioconductor.org/packages/release/bioc/html/DeconvoBuddies.html",
+      "title": "DeconvoBuddies: official Bioconductor package",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Maintained source resource supplies marker-finding utilities and the DLPFC benchmark vignette.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.02.756356v1.full",
+      "title": "DECONVersation: Single Cell Foundation Model-Derived Embeddings for Robust Cell Type Deconvolution of Bulk RNA-seq",
+      "publication_date": "2026-10-02 (preprint identifier)",
+      "accessed_on": "2026-11-01",
+      "finding": "Recent foundation-embedding deconvolution candidate includes brain data; needs cell reference and gene identities.",
+      "access": "Indexed primary full-text extract available; direct open returned HTTP 403; runnable repository not verified."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11245312/",
+      "title": "InstaPrism: an R package for fast implementation of BayesPrism",
+      "publication_date": "2024",
+      "accessed_on": "2026-11-01",
+      "finding": "Faster BayesPrism implementation still requires bulk expression plus a single-cell reference; speed is not target-accuracy proof.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    }
+  ],
+  "search_queries": [
+    "DeconvoBuddies Huuki Myers 2025 Bisque hspe RNAScope immunofluorescence bulk deconvolution",
+    "2026 brain bulk RNA deconvolution orthogonal RNAScope Bisque hspe benchmark",
+    "2026 cell deconvolution foundation model bulk RNA BayesPrism InstaPrism brain benchmark"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

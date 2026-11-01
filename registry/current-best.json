@@ -122,11 +122,28 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://arxiv.org/abs/2104.02710",
-      "https://doi.org/10.17617/3.3R0QYI"
+      "https://arxiv.org/abs/2603.07279",
+      "https://elifesciences.org/reviewed-preprints/108329",
+      "https://github.com/Skovorp/feral",
+      "https://github.com/nebw/mabe",
+      "https://github.com/neuroethology/TREBA",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12667788/",
+      "https://sites.google.com/view/computational-behavior/our-datasets/calms21-dataset",
+      "https://www.biorxiv.org/content/10.64898/2026.04.14.718392v2.full",
+      "https://zenodo.org/records/22119864"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/A09.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "VASSI",
+      "MABe2021 Top-1 ensemble",
+      "TREBA + pose classifier",
+      "ResiFuse",
+      "FERAL / V-JEPA2",
+      "V-TRACE"
+    ]
   },
   {
     "benchmark_id": "A10",
@@ -194,11 +211,22 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://www.nature.com/articles/s41592-025-02893-y",
-      "https://zenodo.org/records/18405201"
+      "https://github.com/bozeklab/DISK",
+      "https://github.com/bozeklab/DISK_paper_code",
+      "https://github.com/tqxli/sdannce/blob/master/README.md",
+      "https://www.nature.com/articles/s41592-021-01106-6",
+      "https://www.nature.com/articles/s41592-025-02893-y"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/A14.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "DISK Transformer / bidirectional GRU",
+      "MarkerBasedImputation / OptiPose / Keypoint-MoSeq",
+      "DANNCE",
+      "s-DANNCE"
+    ]
   },
   {
     "benchmark_id": "A15",
@@ -209,17 +237,22 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://elifesciences.org/articles/68837",
-      "https://data.goettingen-research-online.de/dataverse/das",
-      "https://janclemenslab.org/das/",
+      "https://github.com/janclemenslab/das",
       "https://github.com/nianlonggu/WhisperSeg",
-      "https://doi.org/10.25625/ENKMJS",
-      "https://doi.org/10.6084/m9.figshare.4805749",
-      "https://www.vocalpy.org/bfsongrepo/",
-      "https://figshare.com/articles/dataset/4805749"
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11370480/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8560090/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8860439/"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/A15.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "DAS",
+      "TweetyNet",
+      "WhisperSeg",
+      "AVN segmentation comparisons"
+    ]
   },
   {
     "benchmark_id": "A16",
@@ -246,15 +279,29 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://github.com/flatironinstitute/spikeforest",
-      "https://elifesciences.org/articles/55167",
+      "https://arxiv.org/abs/2504.01604",
+      "https://arxiv.org/abs/2609.22322",
+      "https://github.com/MouseLand/Kilosort",
+      "https://github.com/cwindolf/dartsort",
+      "https://github.com/flatironinstitute/mountainsort5",
+      "https://openreview.net/pdf?id=IwjkwtkPGb",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13441294/",
+      "https://spikeinterface.readthedocs.io/en/latest/",
       "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
-      "https://gin.g-node.org/NeuralEnsemble/ephy_testing_data",
-      "https://spikeinterface.readthedocs.io/en/0.96.1/modules/comparison/plot_3_compare_sorter_with_ground_truth.html",
-      "https://github.com/flatironinstitute/mountainsort5"
+      "https://www.nature.com/articles/s41592-024-02232-7"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/B01.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "Kilosort4",
+      "DARTsort",
+      "MountainSort5",
+      "SpyKINGCIRCUS2 / Tridesclous2 / Lupin",
+      "VanillaSort",
+      "SimSort / SpikeSift"
+    ]
   },
   {
     "benchmark_id": "B02",
@@ -280,14 +327,24 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+      "https://github.com/MouseLand/Kilosort",
+      "https://github.com/SpikeInterface/spikeinterface/blob/main/src/spikeinterface/preprocessing/motion.py",
+      "https://github.com/SpikeInterface/spikeinterface/blob/main/src/spikeinterface/sortingcomponents/motion/dredge.py",
       "https://github.com/evarol/dredge",
-      "https://spikeinterface.readthedocs.io/en/latest/api.html",
-      "https://github.com/SpikeInterface/spikeinterface",
-      "https://proceedings.neurips.cc/paper/2021/hash/b950ea26ca12daae142bd74dba4427c8-Abstract.html"
+      "https://github.com/jazlab/medicine",
+      "https://www.eneuro.org/content/12/3/ENEURO.0529-24.2025",
+      "https://www.nature.com/articles/s41592-025-02614-5"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/B03.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "Current DREDge AP",
+      "MEDiCINe rigid",
+      "Kilosort4 datashift",
+      "SpikeInterface decentralized rigid numerical solver"
+    ]
   },
   {
     "benchmark_id": "B04",
@@ -327,19 +384,25 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://allenneuraldynamics.github.io/data.html",
-      "https://github.com/awslabs/open-data-registry/blob/main/datasets/allen-nd-ephys-compression.yaml",
-      "https://github.com/AllenNeuralDynamics/ephys-compression/tree/c89e8e481435f39e3bf041bfc0eaac5ef6d93900",
-      "https://www.wavpack.com/",
-      "https://numcodecs.readthedocs.io/en/stable/compression/blosc.html",
-      "https://doi.org/10.1088/1741-2552/acf5a4",
+      "https://github.com/AllenNeuralDynamics/aind-capsule-ephys-compression-results",
+      "https://github.com/AllenNeuralDynamics/ephys-compression",
+      "https://github.com/dbry/WavPack/blob/master/doc/wavpack_doc.html",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13441294/",
       "https://www.biorxiv.org/content/10.1101/2023.05.22.541700v2"
     ],
-    "checked_on": "2026-10-31",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA.",
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
     "local_reference_evidence": "results/B07.json",
     "current_global_best_verified": false,
-    "verification_limits": "Custom fixed4096sample chunks,not fullstreaming/originalpaper/currentglobalbest;unequal implementation effort"
+    "verification_limits": "Custom fixed4096sample chunks,not fullstreaming/originalpaper/currentglobalbest;unequal implementation effort",
+    "review_file": "literature/specialist-review-2026-11-01/B07.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "WavPack high/very-high with extra processing",
+      "FLAC",
+      "Blosc/Zstd with reversible time/space delta",
+      "LZMA/Zstd lossless with predictors"
+    ]
   },
   {
     "benchmark_id": "B08",
@@ -350,12 +413,21 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
+      "https://github.com/AllenNeuralDynamics/ephys-compression",
+      "https://github.com/int-brain-lab/lfpack",
       "https://github.com/int-brain-lab/spikepack",
-      "https://www.internationalbrainlab.com/data",
-      "https://dandiarchive.org/dandiset/000953"
+      "https://int-brain-lab.github.io/spikepack/explanation/benchmark.html"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/B08.json",
+    "review_status": "UNRESOLVED",
+    "candidate_names": [
+      "Spikepack Blosc-shard",
+      "Spikepack Zarr container",
+      "Per-unit delta + entropy coding",
+      "LFpack"
+    ]
   },
   {
     "benchmark_id": "C02",
@@ -402,18 +474,40 @@
   },
   {
     "benchmark_id": "C05",
-    "status": "not verified; archived same-slice and local default references available",
+    "status": "not verified",
     "score": null,
     "metric": null,
     "split": null,
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://github.com/codeneuro/spikefinder-datasets",
-      "https://github.com/berenslab/spikefinder_analysis"
+      "https://arxiv.org/abs/2610.11456",
+      "https://arxiv.org/html/2610.11456v1",
+      "https://doi.org/10.7554/eLife.94723.3",
+      "https://github.com/HelmchenLabSoftware/Cascade",
+      "https://github.com/PTRRupprecht/CascadeTorch",
+      "https://github.com/TinLab/ENS2",
+      "https://github.com/berenslab/spikefinder_analysis",
+      "https://github.com/detimage123/SpikeSSL",
+      "https://github.com/gerardjb/C-SPIKES",
+      "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006157",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10261900/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12194039/",
+      "https://pubmed.ncbi.nlm.nih.gov/42282678/",
+      "https://www.nature.com/articles/s41592-026-03183-x"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/C05.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "CASCADE / CascadeTorch",
+      "ENS2",
+      "SpikeSSL",
+      "C-SPIKES BiophysSMC / BiophysML",
+      "OASIS / MLspike / PGBAR",
+      "slugFind model-predictive-control"
+    ]
   },
   {
     "benchmark_id": "C06",
@@ -424,13 +518,31 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7611618/",
-      "https://github.com/HelmchenLabSoftware/Cascade/tree/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f",
-      "https://github.com/HelmchenLabSoftware/Cascade/blob/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f/cascade2p/utils.py",
-      "https://github.com/HelmchenLabSoftware/Cascade/blob/1f9f98bf93b9b554ab68d6304aa365ab7c7ee34f/LICENSE"
+      "https://arxiv.org/abs/2610.11456",
+      "https://arxiv.org/html/2610.11456v1",
+      "https://doi.org/10.7554/eLife.94723.3",
+      "https://github.com/HelmchenLabSoftware/Cascade",
+      "https://github.com/PTRRupprecht/CascadeTorch",
+      "https://github.com/TinLab/ENS2",
+      "https://github.com/detimage123/SpikeSSL",
+      "https://github.com/gerardjb/C-SPIKES",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10261900/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12194039/",
+      "https://pubmed.ncbi.nlm.nih.gov/42282678/",
+      "https://www.nature.com/articles/s41592-026-03183-x"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/C06.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "CASCADE / CascadeTorch",
+      "ENS2",
+      "SpikeSSL",
+      "C-SPIKES BiophysSMC / BiophysML",
+      "OASIS / MLspike / PGBAR",
+      "slugFind model-predictive-control"
+    ]
   },
   {
     "benchmark_id": "C07",
@@ -485,11 +597,22 @@
     "supervision": null,
     "source_urls": [
       "https://brain-map.org/support/documentation/documentation-cell-types-database",
-      "https://alleninstitute.github.io/AllenSDK/cell_types.html",
-      "https://brain-map.org/support/documentation/cell-types-database-api"
+      "https://celltypes.brain-map.org/",
+      "https://github.com/BlueBrain/BluePyOpt",
+      "https://github.com/xanderladd/axonstandardized",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13252523/",
+      "https://www.nature.com/articles/s41467-017-02717-4"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/D02.json",
+    "review_status": "UNRESOLVED",
+    "candidate_names": [
+      "Training-only passive RC / constrained multi-exponential response",
+      "Allen GLIF and perisomatic/all-active models",
+      "CoMParE",
+      "BluePyOpt/eFEL NEURON optimization"
+    ]
   },
   {
     "benchmark_id": "D04",
@@ -516,12 +639,25 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://neurallatents.github.io/",
-      "https://dandiarchive.org/dandiset/000140/0.220113.0408",
-      "https://github.com/neurallatents/nlb_tools"
+      "https://arxiv.org/html/2507.11531v2",
+      "https://eval.ai/web/challenges/challenge-page/1256/leaderboard/3183",
+      "https://github.com/KingJamesSong/LangevinFlow_CCN",
+      "https://github.com/joel99/ndt3/blob/main/model_card.md",
+      "https://github.com/neurallatents/nlb_tools",
+      "https://neurallatents.github.io/challenge.html",
+      "https://openreview.net/pdf/ff49552c1704e62be9f48f4a1aa6648f9338f669.pdf"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/E01.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "LangevinFlow",
+      "AutoLFADS / NDT / STNDT / RNN_F",
+      "S5",
+      "DPAD smoothing / ensemble",
+      "NDT3"
+    ]
   },
   {
     "benchmark_id": "E02",
@@ -591,13 +727,28 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
+      "https://arxiv.org/abs/2604.19341",
+      "https://arxiv.org/html/2503.02618v1",
+      "https://github.com/google-research/era",
+      "https://github.com/google-research/zapbench",
+      "https://github.com/wq-will/SimpleTES/blob/main/datasets/zapbench/README.md",
       "https://google-research.github.io/zapbench/",
-      "https://arxiv.org/abs/2503.02618",
-      "https://zapbench-release.storage.googleapis.com/volumes/README.html",
-      "https://github.com/google-research/zapbench/tree/7347b3b21a3f332e281b774c945f1505dd966abf"
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13151936/",
+      "https://proceedings.neurips.cc/paper_files/paper/2025/file/21fbf654963f9e455e8eec48e45bdea0-Paper-Conference.pdf",
+      "https://www.nature.com/articles/s41586-026-10658-6"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/E06.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "POCO",
+      "Time-Mix / TSMixer / TiDE",
+      "Volumetric U-Net",
+      "ERA tree-search generated forecaster",
+      "SimpleTES generated programs",
+      "Analytical NLinear with ridge penalty 1"
+    ]
   },
   {
     "benchmark_id": "F01",
@@ -650,15 +801,23 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://crcns.org/data-sets",
+      "https://github.com/open-retina/open-retina",
+      "https://github.com/samuelevirgili/Context-dependent-selectivity-to-natural-images-in-the-retina",
       "https://open-retina.org/api_reference/data_io/goldin_2022/",
-      "https://doi.org/10.5281/zenodo.6868362",
-      "https://doi.org/10.1038/s41467-022-33242-8",
-      "https://huggingface.co/datasets/open-retina/open-retina/blob/fc7b91e93c9bd4e76d4e3205fcbcc6a31601985a/README.md",
-      "https://huggingface.co/datasets/open-retina/open-retina"
+      "https://open-retina.org/package_docs/model_zoo/",
+      "https://open-retina.org/package_docs/training/core_readout/",
+      "https://www.nature.com/articles/s41467-022-33242-8"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/F04.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "Goldin source CNN / contrast-sensitive encoding models",
+      "OpenRetina core/readout CNN",
+      "Regularized LN/Poisson GLM",
+      "Multi-session/pretrained retinal cores"
+    ]
   },
   {
     "benchmark_id": "F05",
@@ -683,12 +842,23 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://snel-repo.github.io/falcon/",
-      "https://dandiarchive.org/dandiset/000953",
-      "https://github.com/snel-repo/falcon-challenge"
+      "https://arxiv.org/abs/2609.39080",
+      "https://arxiv.org/html/2507.08402v1",
+      "https://eval.ai/web/challenges/challenge-page/2319/leaderboard/5750",
+      "https://github.com/joel99/ndt3/blob/main/model_card.md",
+      "https://github.com/snel-repo/falcon-challenge",
+      "https://snel-repo.github.io/falcon/"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/G01.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "NDT3 pretrained transformer",
+      "SPINT",
+      "APST",
+      "FALCON ridge / recurrent / session-specific baselines"
+    ]
   },
   {
     "benchmark_id": "G02",
@@ -728,14 +898,24 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://moabb.neurotechx.com/",
-      "https://physionet.org/content/eegmmidb/1.0.0/",
-      "https://physionet.org/files/eegmmidb/1.0.0/S001/",
-      "https://moabb.neurotechx.com/docs/generated/moabb.datasets.PhysionetMI.html",
-      "https://mne.tools/stable/auto_examples/decoding/decoding_csp_eeg.html"
+      "https://arxiv.org/abs/2404.15319",
+      "https://arxiv.org/abs/2507.20254",
+      "https://arxiv.org/abs/2601.17883",
+      "https://arxiv.org/abs/2607.24519",
+      "https://brain-bzh.github.io/reve/",
+      "https://huggingface.co/brain-bzh/reve-base",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/bbbd6d915cb90be21c1254a82d45cedd-Abstract-Conference.html"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/H01.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "CBraMod",
+      "REVE",
+      "MIRepNet",
+      "Training-only filter-bank CSP and tangent-space SVM panel"
+    ]
   },
   {
     "benchmark_id": "H02",
@@ -746,16 +926,22 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://moabb.neurotechx.com/",
-      "https://bnci-horizon-2020.eu/database/data-sets",
-      "https://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014_008.html",
-      "https://zenodo.org/records/2649069",
-      "https://arxiv.org/abs/1905.05182",
-      "https://github.com/plcrodrigues/py.BI.EEG.2012-GIPSA",
-      "https://pyriemann.readthedocs.io/en/latest/auto_examples/biosignal-erp/plot_classify_EEG_tangentspace.html"
+      "https://arxiv.org/abs/2404.15319",
+      "https://arxiv.org/abs/2601.17883",
+      "https://brain-bzh.github.io/reve/",
+      "https://moabb.neurotechx.com/docs/paper_results.html",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/bbbd6d915cb90be21c1254a82d45cedd-Abstract-Conference.html",
+      "https://www.mdpi.com/1424-8220/25/7/2305"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/H02.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "xDAWN covariance → tangent-space SVM",
+      "Riemannian Means Field classifier with xDAWN",
+      "CBraMod / REVE ERP fine-tuning"
+    ]
   },
   {
     "benchmark_id": "H04",
@@ -780,15 +966,25 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://facebookresearch.github.io/neuroai/neuralbench/index.html",
-      "https://neural-interfaces26.github.io/",
-      "https://physionet.org/content/sleep-edfx/1.0.0/",
-      "https://doi.org/10.13026/C2X676",
-      "https://doi.org/10.7554/eLife.70092",
-      "https://github.com/raphaelvallat/yasa_classifier"
+      "https://arxiv.org/abs/2609.06849",
+      "https://arxiv.org/abs/2609.22105",
+      "https://github.com/zou-group/sleepfm-clinical",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12663716/",
+      "https://www.nature.com/articles/s41467-025-67970-4",
+      "https://www.nature.com/articles/s41746-021-00440-5"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/H08.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "SleepGPT",
+      "SleepFM-Clinical",
+      "SleepFM-2",
+      "PFTSleep",
+      "U-Sleep",
+      "BIOT / LaBraM EEG-only probes"
+    ]
   },
   {
     "benchmark_id": "H09",
@@ -885,13 +1081,22 @@
     "supervision": null,
     "source_urls": [
       "https://doi.org/10.1088/1741-2552/ac2bf8",
-      "https://github.com/ncclabsustech/EEGdenoiseNet",
-      "https://arxiv.org/html/2009.11662v4",
-      "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/master/LICENSE",
-      "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/code/benchmark_networks/data_prepare.py"
+      "https://pubmed.ncbi.nlm.nih.gov/42772331/",
+      "https://www.mdpi.com/2073-8994/18/6/988",
+      "https://www.mdpi.com/2076-3425/16/10/1124",
+      "https://www.sciencedirect.com/science/article/pii/S1053811925001259"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/H16.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "EEGdenoiseNet original CNN/RNN models",
+      "Gated WGAN with multi-scale/multi-domain features",
+      "FARU-Net",
+      "Diff-ADN",
+      "ART"
+    ]
   },
   {
     "benchmark_id": "H17",
@@ -977,16 +1182,21 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://www.nemar.org/dataset/on005963",
+      "https://arxiv.org/abs/2610.36159",
+      "https://arxiv.org/abs/2610.40277",
+      "https://arxiv.org/pdf/2610.36159",
       "https://openfnirs.org/community/fresh/welcome-to-the-fnirs-fresh-project/",
-      "https://data.nemar.org/on005963/v1.0.0/dataset_description.json",
-      "https://data.nemar.org/on005963/v1.0.0/manifest.json",
-      "https://data.nemar.org/on005963/v1.0.0/code/validation.ipynb",
-      "https://openneuro.org/datasets/ds005963/versions/1.0.0",
-      "https://doi.org/10.1038/s42003-025-08412-1"
+      "https://www.nature.com/articles/s42003-025-08412-1"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/I07.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "MtReNIRS",
+      "67-dataset fNIRS corpus/dataloaders",
+      "Training-only regularized OD temporal decoder / SVM"
+    ]
   },
   {
     "benchmark_id": "I08",
@@ -1026,11 +1236,26 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
+      "https://arxiv.org/abs/2602.11139",
+      "https://arxiv.org/abs/2609.17895",
       "https://doi.org/10.1371/journal.pone.0184661",
-      "https://github.com/nipreps/mriqc/tree/c5767827abba6c1c01f7cc26b5fb1d0cd32a7fe8/mriqc/data/csv"
+      "https://github.com/Medical-Image-Analysis-Laboratory/fetmrqc",
+      "https://github.com/PriorLabs/TabPFN",
+      "https://github.com/ashish-code/MI-DQA",
+      "https://github.com/nipreps/mriqc",
+      "https://github.com/soda-inria/tabicl"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/I10.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "Archived original MRIQC classifier, locally rescored",
+      "TabPFN-3.5",
+      "TabICLv2",
+      "MI-DQA IQM-only branch",
+      "FetMRQC"
+    ]
   },
   {
     "benchmark_id": "J01",
@@ -1142,13 +1367,23 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
+      "https://cellpose.readthedocs.io/en/latest/models.html",
+      "https://doi.org/10.1038/s41592-025-02879-w",
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
-      "https://github.com/pascalschamber/SynAPSeg",
-      "https://zenodo.org/records/18988899",
-      "https://doi.org/10.1371/journal.pcbi.1014571"
+      "https://www.biorxiv.org/content/10.1101/2025.04.28.651001v1",
+      "https://www.nature.com/articles/s41592-024-02580-4.pdf"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/J08.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "Archived SynAPSeg 2D StarDist predictions",
+      "SynAPSeg fine-tuned Cellpose-SAM",
+      "Cellpose-SAM v2 / CellposeDINO",
+      "CellSAM",
+      "microSAM / DeepD3"
+    ]
   },
   {
     "benchmark_id": "J09",
@@ -1174,14 +1409,23 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://brain-map.org/our-research/cell-types-taxonomies",
-      "https://brain-map.org/support/documentation/documentation-cell-types-database",
-      "https://brain-map.org/support/documentation/cell-types-database-api",
-      "https://celltypes.brain-map.org/",
-      "https://alleninstitute.org/terms-of-use/"
+      "https://allenswdb.github.io/cell-types/cell-types.html",
+      "https://arxiv.org/abs/2602.11139",
+      "https://arxiv.org/abs/2609.17895",
+      "https://github.com/PriorLabs/TabPFN",
+      "https://github.com/soda-inria/tabicl",
+      "https://www.nature.com/articles/s41593-019-0417-0"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/K01.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "TabPFN-3.5",
+      "TabICLv2",
+      "Regularized boosted-tree / kernel classifier panel",
+      "Allen morpho-electric taxonomy pipeline"
+    ]
   },
   {
     "benchmark_id": "K02",
@@ -1207,21 +1451,28 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://research.libd.org/spatialLIBD/",
-      "https://github.com/LieberInstitute/spatialLIBD",
-      "https://doi.org/10.1038/s42003-024-07001-y",
-      "https://research.libd.org/spatialLIBD/reference/fetch_data.html",
-      "https://raw.githubusercontent.com/LieberInstitute/spatialLIBD/master/R/fetch_data.R",
-      "https://doi.org/10.1038/s41593-020-00787-0",
-      "https://github.com/LieberInstitute/HumanPilot/tree/044446d6bd8fc154aa74f7be62ec67effb1ec376",
+      "https://arxiv.org/abs/2602.11139",
+      "https://arxiv.org/abs/2607.17227",
+      "https://github.com/soda-inria/tabicl",
       "https://singler-inc.github.io/singler-py/api/singler.html",
-      "https://github.com/SingleR-inc/singler-py"
+      "https://www.biorxiv.org/content/10.64898/2026.10.01.752251v1.full",
+      "https://www.nature.com/articles/s41592-025-02814-z",
+      "https://www.nature.com/articles/s41592-026-03194-8"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA.",
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
     "local_reference_evidence": "results/K04.json",
     "current_global_best_verified": false,
-    "verification_limits": "Custom supervised endpoint/source split; matched local references do not establish published/global best"
+    "verification_limits": "Custom supervised endpoint/source split; matched local references do not establish published/global best",
+    "review_file": "literature/specialist-review-2026-11-01/K04.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "SingleR 0.5.0 frozen reference; later release/tuning separate",
+      "scGPT / Nicheformer expression representations",
+      "Novae / GraphST / spatial domain models",
+      "VINTER",
+      "Training-only expression classifier / scalable tabular representation"
+    ]
   },
   {
     "benchmark_id": "K05",
@@ -1232,14 +1483,21 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://doi.org/10.1186/s13059-025-03552-3",
+      "https://bioconductor.org/packages/release/bioc/html/DeconvoBuddies.html",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11245312/",
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
-      "https://github.com/LieberInstitute/Human_DLPFC_Deconvolution",
-      "https://research.libd.org/DeconvoBuddies/reference/fetch_deconvo_data.html",
-      "https://zenodo.org/records/14969244"
+      "https://www.biorxiv.org/content/10.64898/2026.10.02.756356v1.full"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/K05.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "BisqueRNA / hspe with Mean Ratio markers",
+      "DECONVersation with Geneformer / Cell2Sentence embeddings",
+      "BayesPrism / InstaPrism, MuSiC, CIBERSORTx",
+      "Nested donor-CV PLS / elastic net / reduced-rank regression"
+    ]
   },
   {
     "benchmark_id": "K06",
@@ -1250,16 +1508,27 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://cellexplorer.org/publicdata/ground-truth-data/",
-      "https://cellexplorer.org/tutorials/ground-truth-tutorial/",
-      "https://alleninstitute.github.io/openscope_databook/optotagging/",
-      "https://api.github.com/repos/petersenpeter/CellExplorer/contents/%2BgroundTruthData",
-      "https://doi.org/10.1016/j.neuron.2021.09.002",
-      "https://github.com/petersenpeter/CellExplorer",
-      "https://alleninstitute.org/legal/terms-of-use"
+      "https://arxiv.org/abs/2602.11139",
+      "https://arxiv.org/abs/2609.17895",
+      "https://elifesciences.org/articles/67490",
+      "https://github.com/PriorLabs/TabPFN",
+      "https://github.com/soda-inria/tabicl",
+      "https://huggingface.co/Jesusgf23/hippie",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12373126/",
+      "https://www.nature.com/articles/s41467-026-71331-0",
+      "https://www.nature.com/articles/s41467-026-76939-w"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/K06.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "WaveMAP plus training-only supervised label transfer",
+      "CEED waveform encoder",
+      "PhysMAP waveform-only ablation",
+      "HIPPIE waveform-only encoder/probe",
+      "TabICLv2 / TabPFN-3.5"
+    ]
   },
   {
     "benchmark_id": "L03",
@@ -1285,13 +1554,19 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://neurallatents.github.io/",
-      "https://github.com/snel-repo/ComputationThroughDynamicsToolkit",
-      "https://mark-kramer.github.io/Case-Studies-Python/09.html",
-      "https://github.com/Mark-Kramer/Case-Studies-Python"
+      "https://github.com/flatironinstitute/nemos",
+      "https://nemos-neuro.org/en/latest/tutorials/plot_05_place_cells.html",
+      "https://nemos-neuro.org/en/stable/quickstart.html"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/L04.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "NeMoS spline/tensor-product Poisson GLM",
+      "Poisson generalized additive model with direction interaction",
+      "Spike-history / population latent neural models"
+    ]
   },
   {
     "benchmark_id": "L05",
@@ -1316,18 +1591,29 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
+      "https://arxiv.org/abs/2601.22951",
+      "https://arxiv.org/abs/2605.27499",
+      "https://dynamechs.sourceforge.net/",
+      "https://gensbi.com/benchmarks.html",
       "https://github.com/sbi-benchmark/sbibm",
       "https://proceedings.mlr.press/v130/lueckmann21a.html",
-      "https://github.com/sbi-benchmark/sbibm/tree/f0bc44039e6b7e095c18d4e9e64819d75be76587",
-      "https://github.com/sbi-benchmark/sbibm/blob/f0bc44039e6b7e095c18d4e9e64819d75be76587/sbibm/metrics/c2st.py",
-      "https://github.com/zoj613/polyagamma",
-      "https://arxiv.org/abs/1205.0310"
+      "https://sbi.readthedocs.io/en/stable/how_to_guide/06_choosing_inference_method.html"
     ],
-    "checked_on": "2026-10-31",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA.",
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
     "local_reference_evidence": "results/L06.json",
     "current_global_best_verified": false,
-    "verification_limits": "Custom likelihood-informed sampling and2000drawC2ST; no matched original simulator-only leaderboard comparison or analytic exact truth"
+    "verification_limits": "Custom likelihood-informed sampling and2000drawC2ST; no matched original simulator-only leaderboard comparison or analytic exact truth",
+    "review_file": "literature/specialist-review-2026-11-01/L06.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "Independent NUTS/HMC on exact logistic likelihood",
+      "Longer independently initialized Polya–Gamma chains",
+      "sbi FMPE / NPSE / NPE",
+      "OneFlowSBI",
+      "GenSBI flow/score joint estimators",
+      "DynaMEchs"
+    ]
   },
   {
     "benchmark_id": "M01",
@@ -1338,18 +1624,25 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://www.internationalbrainlab.com/data",
-      "https://www.nature.com/articles/s41586-025-09215-4",
-      "https://figshare.com/articles/dataset/11636748",
-      "https://api.figshare.com/v2/articles/11636748",
-      "https://elifesciences.org/articles/63711",
-      "https://github.com/int-brain-lab/paper-behavior/blob/24b094226a84c8609c97cfd36c8387ea7c5d61e0/figure5_GLM_modelfit.py"
+      "https://deepmind.google/research/publications/94006/",
+      "https://github.com/int-brain-lab/behavior_models",
+      "https://github.com/nicholas-roy/psytrack",
+      "https://vocal.gatsby.ucl.ac.uk/~pel/papers/prior_ibl_2025.pdf",
+      "https://www.nature.com/articles/s41593-021-01007-z.pdf"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA.",
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
     "local_reference_evidence": "results/M01.json",
     "current_global_best_verified": false,
-    "verification_limits": "Custom supervised endpoint/source split; matched local references do not establish published/global best"
+    "verification_limits": "Custom supervised endpoint/source split; matched local references do not establish published/global best",
+    "review_file": "literature/specialist-review-2026-11-01/M01.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "Regularized multi-lag task-specific behavioral GLM",
+      "IBL ActionKernel / StimulusKernel / OptimalBayesian models",
+      "PsyTrack / GLM-HMM strategy model",
+      "Hybrid neural–cognitive reward-learning models"
+    ]
   },
   {
     "benchmark_id": "M03",
@@ -1367,17 +1660,33 @@
   },
   {
     "benchmark_id": "M04",
-    "status": "not verified; canonical local fitting baseline available",
+    "status": "not verified",
     "score": null,
     "metric": null,
     "split": null,
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://elifesciences.org/articles/49547"
+      "https://arxiv.org/abs/2306.16015",
+      "https://arxiv.org/abs/2602.07098",
+      "https://deepmind.google/research/publications/94006/",
+      "https://dynamechs.sourceforge.net/",
+      "https://elifesciences.org/articles/49547",
+      "https://github.com/lnccbrown/HSSM/releases",
+      "https://lnccbrown.github.io/HSSM/",
+      "https://sbi.readthedocs.io/en/stable/how_to_guide/06_choosing_inference_method.html"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/M04.json",
+    "review_status": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+    "candidate_names": [
+      "Exact-likelihood bounded quadrature posterior median",
+      "HSSM choice-only RL/custom likelihood",
+      "BayesFlow 2 / sbi posterior estimator",
+      "Hybrid neural–cognitive models",
+      "DynaMEchs"
+    ]
   },
   {
     "benchmark_id": "M06",
@@ -1430,12 +1739,18 @@
     "scorer_version": null,
     "supervision": null,
     "source_urls": [
-      "https://about.dandiarchive.org/",
-      "https://www.internationalbrainlab.com/data",
-      "https://brain-map.org/support/documentation/cell-types-database-api",
-      "https://alleninstitute.github.io/AllenSDK/cell_types.html"
+      "https://github.com/NeurodataWithoutBorders/nwbinspector",
+      "https://github.com/NeurodataWithoutBorders/pynwb/blob/dev/CHANGELOG.md",
+      "https://pynwb.readthedocs.io/en/stable/validation.html"
     ],
-    "checked_on": "2026-10-30",
-    "reason": "No verified current strongest matched-protocol result; see source-linked admission evidence. Historical references and local baselines, where measured, are explicitly not current SOTA."
+    "checked_on": "2026-11-01",
+    "reason": "Fresh primary-source review completed; no current global winner verified on this exact custom input/split/metric contract. Named candidates are not new measured scores.",
+    "review_file": "literature/specialist-review-2026-11-01/N05.json",
+    "review_status": "UNRESOLVED",
+    "candidate_names": [
+      "Direct HDF5 extraction with independent unit/timing implementation",
+      "PyNWB current validated I/O",
+      "NWBInspector"
+    ]
   }
 ]

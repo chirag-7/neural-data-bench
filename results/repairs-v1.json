@@ -1,0 +1,2257 @@
+{
+  "track": "posthoc-repairs-v1",
+  "status": "complete",
+  "not_single_shot": true,
+  "excluded_from_original_macro": true,
+  "new_model_calls": 0,
+  "attempts": [
+    {
+      "benchmark_id": "B08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "gpt-5.6-sol",
+      "status": "measured",
+      "original_status": "failed",
+      "repair_kind": "harness_only",
+      "control_originally_successful": false,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 11.157908792141825,
+      "code_sha256": "df4a658b8d254695d11ea4e55b2ece66f69cc4f4535caeb097c9471f1141a245",
+      "code_lines": 177,
+      "line_limit_compliant": true,
+      "repair_spec_sha256": "8710f3111ec5f5c573d27b454b0a6b95fc3d30d1c4acb668007faa258941b253",
+      "prediction_file": "experiments/repairs-v1/B08/artifacts/gpt-5.6-sol/payloads.json",
+      "prediction_sha256": "ff9a224ba138a4ad9d300761d30a49c1bbc3dda80cb80053519806756d814b21",
+      "score": 7.585598308443002,
+      "metric": "mean_encoded_bits_per_event_50us",
+      "direction": "lower",
+      "per_unit": [
+        7.188642892691893,
+        7.22185280958831,
+        7.776018412638295,
+        7.786120797669188,
+        7.816768986390761,
+        7.773460859226102,
+        7.536323400896457
+      ],
+      "n_recordings": 7,
+      "n_events": 1052545,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "encode_seconds": 4.88781779166311,
+      "decode_seconds": 6.204770292155445,
+      "independent_decode": {
+        "status": "passed",
+        "fresh_process": true,
+        "encoder_invoked": false,
+        "original_arrays_only_loaded_after_child_exit": true,
+        "n_recordings": 7,
+        "max_timing_error_seconds": 5.684341886080802e-14,
+        "report_file": "experiments/repairs-v1/B08/artifacts/gpt-5.6-sol/fresh-decode/audit.json",
+        "report_sha256": "75ec74e3b7678bf45a4ec37d7d78e2aa7430426557d3931accdcaeccca4b04b8"
+      },
+      "execution_log": "experiments/repairs-v1/B08/execution/gpt-5.6-sol.txt",
+      "model": "gpt-5.6-sol",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "gpt-5.6-sol"
+      },
+      "repair_type": "harness_only",
+      "repair_revision": 1,
+      "history_only": true,
+      "code_file": "experiments/repairs-v1/B08/gpt-5.6-sol.py"
+    },
+    {
+      "benchmark_id": "B08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "gpt-6-sol",
+      "status": "measured",
+      "original_status": "failed",
+      "repair_kind": "harness_only",
+      "control_originally_successful": false,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 1.9647667498793453,
+      "code_sha256": "64c1b27442585c1da465548be48cd65cecae91d47844d3f06bdb34b263122373",
+      "code_lines": 178,
+      "line_limit_compliant": true,
+      "repair_spec_sha256": "8710f3111ec5f5c573d27b454b0a6b95fc3d30d1c4acb668007faa258941b253",
+      "prediction_file": "experiments/repairs-v1/B08/artifacts/gpt-6-sol/payloads.json",
+      "prediction_sha256": "037c37bdb5545767752819d08a957291dbedf25339247a6796ae3d155bd88b99",
+      "score": 7.693066944185707,
+      "metric": "mean_encoded_bits_per_event_50us",
+      "direction": "lower",
+      "per_unit": [
+        7.304106159979107,
+        7.337355826458154,
+        7.878395012272664,
+        7.887686246093927,
+        7.922380114197399,
+        7.874805476386145,
+        7.646739773912553
+      ],
+      "n_recordings": 7,
+      "n_events": 1052545,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "encode_seconds": 0.36975800106301904,
+      "decode_seconds": 1.5427437089383602,
+      "independent_decode": {
+        "status": "passed",
+        "fresh_process": true,
+        "encoder_invoked": false,
+        "original_arrays_only_loaded_after_child_exit": true,
+        "n_recordings": 7,
+        "max_timing_error_seconds": 5.684341886080802e-14,
+        "report_file": "experiments/repairs-v1/B08/artifacts/gpt-6-sol/fresh-decode/audit.json",
+        "report_sha256": "59016cf93f97364dea300e9922cc06d75cfd8b4f5db9ac3fb70c35d96e496292"
+      },
+      "execution_log": "experiments/repairs-v1/B08/execution/gpt-6-sol.txt",
+      "model": "gpt-6-sol",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "gpt-6-sol"
+      },
+      "repair_type": "harness_only",
+      "repair_revision": 1,
+      "history_only": true,
+      "code_file": "experiments/repairs-v1/B08/gpt-6-sol.py"
+    },
+    {
+      "benchmark_id": "B08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "gpt-6.1-sol",
+      "status": "measured",
+      "original_status": "measured",
+      "repair_kind": "harness_only",
+      "control_originally_successful": true,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 11.083451291080564,
+      "code_sha256": "6be104769ef7e6d3385b0da5160871504cec4c89164b8ba86bf85701e455e62b",
+      "code_lines": 191,
+      "line_limit_compliant": true,
+      "repair_spec_sha256": "8710f3111ec5f5c573d27b454b0a6b95fc3d30d1c4acb668007faa258941b253",
+      "prediction_file": "experiments/repairs-v1/B08/artifacts/gpt-6.1-sol/payloads.json",
+      "prediction_sha256": "e19d8fade5cfcabdf237e4ec4ecf74d4529728693d788e32efdc9ec84e6db8e3",
+      "score": 8.636801620045114,
+      "metric": "mean_encoded_bits_per_event_50us",
+      "direction": "lower",
+      "per_unit": [
+        8.12050911850359,
+        8.202684398473094,
+        8.814118298287653,
+        8.853101459776882,
+        9.02150860773623,
+        8.953506670629995,
+        8.492182786908353
+      ],
+      "n_recordings": 7,
+      "n_events": 1052545,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "encode_seconds": 10.66905887518078,
+      "decode_seconds": 0.34916154271923006,
+      "independent_decode": {
+        "status": "passed",
+        "fresh_process": true,
+        "encoder_invoked": false,
+        "original_arrays_only_loaded_after_child_exit": true,
+        "n_recordings": 7,
+        "max_timing_error_seconds": 5.684341886080802e-14,
+        "report_file": "experiments/repairs-v1/B08/artifacts/gpt-6.1-sol/fresh-decode/audit.json",
+        "report_sha256": "5151574fd3deec930c686b2711e70a78b71ff98bbaa84e2a97aa80b0207a5a92"
+      },
+      "execution_log": "experiments/repairs-v1/B08/execution/gpt-6.1-sol.txt",
+      "model": "gpt-6.1-sol",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "gpt-6.1-sol"
+      },
+      "repair_type": "harness_only",
+      "repair_revision": 1,
+      "history_only": true,
+      "code_file": "experiments/repairs-v1/B08/gpt-6.1-sol.py"
+    },
+    {
+      "benchmark_id": "B08",
+      "method": "spikepack",
+      "repair_track": "posthoc-repairs-v1",
+      "status": "repair_failed",
+      "reason": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/repair_failed.py\", line 219, in <module>\n    else:decode(args.plan)\n         ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/repair_failed.py\", line 157, in decode\n    ref=module(program,'repair_decode_reference');fn=lambda b:ref.decompress(b,method);codehash=sha(program)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/repair_failed.py\", line 20, in module\n    spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m\n                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap_external>\", line 999, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/experiments/B08/reference.py\", line 7, in <module>\n    from numcodecs.blosc import set_nthreads\nModuleNotFoundError: No module named 'numcodecs'\n",
+      "original_first_attempt_replaced": false,
+      "execution_log": "experiments/repairs-v1/B08/execution/spikepack.txt",
+      "model": "spikepack",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "spikepack"
+      },
+      "repair_type": "harness_only",
+      "repair_revision": 1,
+      "history_only": true,
+      "control_originally_successful": false
+    },
+    {
+      "benchmark_id": "B08",
+      "method": "task-baseline",
+      "repair_track": "posthoc-repairs-v1",
+      "status": "repair_failed",
+      "reason": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/repair_failed.py\", line 219, in <module>\n    else:decode(args.plan)\n         ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/repair_failed.py\", line 157, in decode\n    ref=module(program,'repair_decode_reference');fn=lambda b:ref.decompress(b,method);codehash=sha(program)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/repair_failed.py\", line 20, in module\n    spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m\n                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap_external>\", line 999, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/experiments/B08/reference.py\", line 7, in <module>\n    from numcodecs.blosc import set_nthreads\nModuleNotFoundError: No module named 'numcodecs'\n",
+      "original_first_attempt_replaced": false,
+      "execution_log": "experiments/repairs-v1/B08/execution/task-baseline.txt",
+      "model": "task-baseline",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "task-baseline"
+      },
+      "repair_type": "harness_only",
+      "repair_revision": 1,
+      "history_only": true,
+      "control_originally_successful": false
+    },
+    {
+      "benchmark_id": "J08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "gpt-6.1-sol",
+      "status": "measured",
+      "original_status": "failed",
+      "repair_kind": "manual_minimal_algorithm_patch",
+      "control_originally_successful": false,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 10.884486875031143,
+      "code_sha256": "abf6c4ea5cd9775e8fbb2eff866c4c1bda09e00f6695d4ff12638aef8d5a2496",
+      "code_lines": 226,
+      "line_limit_compliant": true,
+      "repair_spec_sha256": "eac920d120f81141160a19ad23d8acb9577e889d6b6116d3a16f72816eb7827a",
+      "prediction_file": "experiments/repairs-v1/J08/artifacts/gpt-6.1-sol/predictions.npz",
+      "prediction_sha256": "c482cf28e498671457b750a1aace7e1ccd8bd449eb647e721f652d3c530dcf8d",
+      "score": 0.57563018487252,
+      "metric": "instance_f1_iou50_multirater",
+      "direction": "higher",
+      "per_unit": [
+        0.5518050021405446,
+        0.5994553676044955
+      ],
+      "estimator_seconds": 10.579864750150591,
+      "execution_log": "experiments/repairs-v1/J08/execution/gpt-6.1-sol.txt",
+      "model": "gpt-6.1-sol",
+      "original_key": {
+        "benchmark_id": "J08",
+        "slice_id": "expansion-v1",
+        "model": "gpt-6.1-sol"
+      },
+      "repair_type": "manual_minimal_algorithm_patch",
+      "repair_revision": 1,
+      "history_only": true,
+      "code_file": "experiments/repairs-v1/J08/gpt-6.1-sol.py"
+    },
+    {
+      "benchmark_id": "N05",
+      "method": "gpt-5.6-sol",
+      "repair_track": "posthoc-repairs-v1",
+      "status": "repair_failed",
+      "reason": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/repair_failed.py\", line 218, in <module>\n    elif args.action=='one':print(json.dumps(one(args.task,args.method),allow_nan=False))\n                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/repair_failed.py\", line 141, in one\n    then=time.perf_counter();answer=ns['extract'](str(ROOT/'data/cache/N05/fixture.nwb'));elapsed=time.perf_counter()-then\n                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"posthoc-repaired-program\", line 204, in extract\n  File \"posthoc-repaired-program\", line 121, in find_series\nValueError: Could not distinguish sweep 19 stimulus\n",
+      "original_first_attempt_replaced": false,
+      "execution_log": "experiments/repairs-v1/N05/execution/gpt-5.6-sol.txt",
+      "model": "gpt-5.6-sol",
+      "original_key": {
+        "benchmark_id": "N05",
+        "slice_id": "expansion-v1",
+        "model": "gpt-5.6-sol"
+      },
+      "repair_type": "manual_minimal_algorithm_patch",
+      "repair_revision": 1,
+      "history_only": true,
+      "control_originally_successful": false
+    },
+    {
+      "benchmark_id": "N05",
+      "method": "gpt-5.6-sol",
+      "repair_track": "posthoc-repairs-v1",
+      "repair_revision": 2,
+      "status": "measured",
+      "original_status": "failed",
+      "repair_kind": "manual_minimal_algorithm_patch",
+      "original_first_attempt_replaced": false,
+      "new_model_calls": 0,
+      "seconds": 0.5306162498891354,
+      "code_lines": 265,
+      "line_limit_compliant": false,
+      "code_sha256": "ff40988903b1bbc78ef1d8cc73d80760771c3c56b589fbbe86cdc0d81a6982b4",
+      "repair_spec_sha256": "e821ce023da5f5f9c45ec1503b01793567203ff71e6e2aeccbb117df1c6169ec",
+      "prediction_file": "experiments/repairs-v1/N05/revision-2/answer.json",
+      "prediction_sha256": "89c9eeace3b6e3adc8f072a375b42b3c9847ba00e321a53dcbef58887a63f25b",
+      "score": 1.0,
+      "metric": "field_accuracy",
+      "direction": "higher",
+      "n_units": 61,
+      "per_unit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "field_results": [
+        {
+          "field": "/nwb_version",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/sampling_rate_hz",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/n_samples",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/dt_seconds",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/response_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/stimulus_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/main_pulse_onset_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/main_pulse_duration_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/main_pulse_amplitude_pa",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/pre_stimulus_voltage_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/mean_pulse_voltage_deflection_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/sampling_rate_hz",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/n_samples",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/dt_seconds",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/response_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/stimulus_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/main_pulse_onset_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/main_pulse_duration_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/main_pulse_amplitude_pa",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/pre_stimulus_voltage_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/mean_pulse_voltage_deflection_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/sampling_rate_hz",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/n_samples",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/dt_seconds",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/response_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/stimulus_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/main_pulse_onset_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/main_pulse_duration_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/main_pulse_amplitude_pa",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/pre_stimulus_voltage_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/mean_pulse_voltage_deflection_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/sampling_rate_hz",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/n_samples",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/dt_seconds",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/response_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/stimulus_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/main_pulse_onset_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/main_pulse_duration_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/main_pulse_amplitude_pa",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/pre_stimulus_voltage_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/mean_pulse_voltage_deflection_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/sampling_rate_hz",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/n_samples",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/dt_seconds",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/response_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/stimulus_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/main_pulse_onset_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/main_pulse_duration_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/main_pulse_amplitude_pa",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/pre_stimulus_voltage_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/mean_pulse_voltage_deflection_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/sampling_rate_hz",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/n_samples",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/dt_seconds",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/response_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/stimulus_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/main_pulse_onset_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/main_pulse_duration_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/main_pulse_amplitude_pa",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/pre_stimulus_voltage_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/mean_pulse_voltage_deflection_mv",
+          "correct": true
+        }
+      ],
+      "all_fields_correct": true,
+      "model": "gpt-5.6-sol",
+      "original_key": {
+        "benchmark_id": "N05",
+        "slice_id": "expansion-v1",
+        "model": "gpt-5.6-sol"
+      },
+      "repair_type": "manual_minimal_algorithm_patch",
+      "history_only": false,
+      "control_originally_successful": false,
+      "code_file": "experiments/repairs-v1/N05/revision-2/gpt-5.6-sol.py",
+      "execution_log": "experiments/repairs-v1/N05/revision-2/execution.txt"
+    },
+    {
+      "benchmark_id": "B08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "gpt-5.6-sol",
+      "status": "measured",
+      "original_status": "failed",
+      "repair_kind": "harness_only",
+      "control_originally_successful": false,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 11.157908792141825,
+      "code_sha256": "df4a658b8d254695d11ea4e55b2ece66f69cc4f4535caeb097c9471f1141a245",
+      "code_lines": 177,
+      "line_limit_compliant": true,
+      "repair_spec_sha256": "8710f3111ec5f5c573d27b454b0a6b95fc3d30d1c4acb668007faa258941b253",
+      "prediction_file": "experiments/repairs-v1/B08/artifacts/gpt-5.6-sol/payloads.json",
+      "prediction_sha256": "ff9a224ba138a4ad9d300761d30a49c1bbc3dda80cb80053519806756d814b21",
+      "score": 7.585598308443002,
+      "metric": "mean_encoded_bits_per_event_50us",
+      "direction": "lower",
+      "per_unit": [
+        7.188642892691893,
+        7.22185280958831,
+        7.776018412638295,
+        7.786120797669188,
+        7.816768986390761,
+        7.773460859226102,
+        7.536323400896457
+      ],
+      "n_recordings": 7,
+      "n_events": 1052545,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "encode_seconds": 4.88781779166311,
+      "decode_seconds": 6.204770292155445,
+      "repair_revision": 2,
+      "encoder_rerun": false,
+      "independent_decode": {
+        "status": "passed",
+        "fresh_process": true,
+        "encoder_invoked": false,
+        "n_recordings": 7,
+        "max_timing_error_seconds": 5.684341886080802e-14,
+        "report_file": "experiments/repairs-v1/B08/decode-revision-2/gpt-5.6-sol/audit.json",
+        "report_sha256": "1ec812285c32ccdeae41c90d28b9e5dc8e5eaacc5b8adf1f91aaa4d8d99da46c"
+      },
+      "decode_repair_spec_sha256": "15c2b0c8ac78219f57ebbdbc900cb7f879286245b6589bbaae8f48f9e09524a4",
+      "model": "gpt-5.6-sol",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "gpt-5.6-sol"
+      },
+      "repair_type": "harness_only",
+      "history_only": false,
+      "code_file": "experiments/repairs-v1/B08/gpt-5.6-sol.py",
+      "program_byte_unchanged": true
+    },
+    {
+      "benchmark_id": "B08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "gpt-6-sol",
+      "status": "measured",
+      "original_status": "failed",
+      "repair_kind": "harness_only",
+      "control_originally_successful": false,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 1.9647667498793453,
+      "code_sha256": "64c1b27442585c1da465548be48cd65cecae91d47844d3f06bdb34b263122373",
+      "code_lines": 178,
+      "line_limit_compliant": true,
+      "repair_spec_sha256": "8710f3111ec5f5c573d27b454b0a6b95fc3d30d1c4acb668007faa258941b253",
+      "prediction_file": "experiments/repairs-v1/B08/artifacts/gpt-6-sol/payloads.json",
+      "prediction_sha256": "037c37bdb5545767752819d08a957291dbedf25339247a6796ae3d155bd88b99",
+      "score": 7.693066944185707,
+      "metric": "mean_encoded_bits_per_event_50us",
+      "direction": "lower",
+      "per_unit": [
+        7.304106159979107,
+        7.337355826458154,
+        7.878395012272664,
+        7.887686246093927,
+        7.922380114197399,
+        7.874805476386145,
+        7.646739773912553
+      ],
+      "n_recordings": 7,
+      "n_events": 1052545,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "encode_seconds": 0.36975800106301904,
+      "decode_seconds": 1.5427437089383602,
+      "repair_revision": 2,
+      "encoder_rerun": false,
+      "independent_decode": {
+        "status": "passed",
+        "fresh_process": true,
+        "encoder_invoked": false,
+        "n_recordings": 7,
+        "max_timing_error_seconds": 5.684341886080802e-14,
+        "report_file": "experiments/repairs-v1/B08/decode-revision-2/gpt-6-sol/audit.json",
+        "report_sha256": "066edc15c8d350d157e5d42c013d0970d4f565b699cecb8b0e3f9b5c140471c5"
+      },
+      "decode_repair_spec_sha256": "15c2b0c8ac78219f57ebbdbc900cb7f879286245b6589bbaae8f48f9e09524a4",
+      "model": "gpt-6-sol",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "gpt-6-sol"
+      },
+      "repair_type": "harness_only",
+      "history_only": false,
+      "code_file": "experiments/repairs-v1/B08/gpt-6-sol.py",
+      "program_byte_unchanged": true
+    },
+    {
+      "benchmark_id": "B08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "gpt-6.1-sol",
+      "status": "measured",
+      "original_status": "measured",
+      "repair_kind": "harness_only",
+      "control_originally_successful": true,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 11.083451291080564,
+      "code_sha256": "6be104769ef7e6d3385b0da5160871504cec4c89164b8ba86bf85701e455e62b",
+      "code_lines": 191,
+      "line_limit_compliant": true,
+      "repair_spec_sha256": "8710f3111ec5f5c573d27b454b0a6b95fc3d30d1c4acb668007faa258941b253",
+      "prediction_file": "experiments/repairs-v1/B08/artifacts/gpt-6.1-sol/payloads.json",
+      "prediction_sha256": "e19d8fade5cfcabdf237e4ec4ecf74d4529728693d788e32efdc9ec84e6db8e3",
+      "score": 8.636801620045114,
+      "metric": "mean_encoded_bits_per_event_50us",
+      "direction": "lower",
+      "per_unit": [
+        8.12050911850359,
+        8.202684398473094,
+        8.814118298287653,
+        8.853101459776882,
+        9.02150860773623,
+        8.953506670629995,
+        8.492182786908353
+      ],
+      "n_recordings": 7,
+      "n_events": 1052545,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "encode_seconds": 10.66905887518078,
+      "decode_seconds": 0.34916154271923006,
+      "repair_revision": 2,
+      "encoder_rerun": false,
+      "independent_decode": {
+        "status": "passed",
+        "fresh_process": true,
+        "encoder_invoked": false,
+        "n_recordings": 7,
+        "max_timing_error_seconds": 5.684341886080802e-14,
+        "report_file": "experiments/repairs-v1/B08/decode-revision-2/gpt-6.1-sol/audit.json",
+        "report_sha256": "6f85421d3dc1d6335bd60cbe59d7f191d94d106856036e30d8ec00ff80380453"
+      },
+      "decode_repair_spec_sha256": "15c2b0c8ac78219f57ebbdbc900cb7f879286245b6589bbaae8f48f9e09524a4",
+      "model": "gpt-6.1-sol",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "gpt-6.1-sol"
+      },
+      "repair_type": "harness_only",
+      "history_only": false,
+      "code_file": "experiments/repairs-v1/B08/gpt-6.1-sol.py",
+      "control_score_matches_original": true,
+      "control_payloads_match_original": true,
+      "program_byte_unchanged": true
+    },
+    {
+      "benchmark_id": "B08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "spikepack",
+      "status": "measured",
+      "original_status": "measured",
+      "repair_kind": "harness_only",
+      "control_originally_successful": true,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 0.21010504197329283,
+      "code_sha256": "e8ea58dc01558d728fc690560f8596889d4a02540190f4f402573c447eed0b42",
+      "code_lines": null,
+      "line_limit_compliant": null,
+      "repair_spec_sha256": "8710f3111ec5f5c573d27b454b0a6b95fc3d30d1c4acb668007faa258941b253",
+      "prediction_file": "experiments/repairs-v1/B08/artifacts/spikepack/payloads.json",
+      "prediction_sha256": "936515e781b822f80db6c278685eff4cdd93ba2665f907d75462dca668b1d23f",
+      "score": 8.142312213400157,
+      "metric": "mean_encoded_bits_per_event_50us",
+      "direction": "lower",
+      "per_unit": [
+        7.909174678105243,
+        7.908837171120141,
+        8.407117416986534,
+        8.421901182011684,
+        8.102691795818487,
+        8.059729677746498,
+        8.186733572012516
+      ],
+      "n_recordings": 7,
+      "n_events": 1052545,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "encode_seconds": 0.09935941617004573,
+      "decode_seconds": 0.014788333093747497,
+      "repair_revision": 2,
+      "encoder_rerun": false,
+      "independent_decode": {
+        "status": "passed",
+        "fresh_process": true,
+        "encoder_invoked": false,
+        "n_recordings": 7,
+        "max_timing_error_seconds": 5.684341886080802e-14,
+        "report_file": "experiments/repairs-v1/B08/decode-revision-2/spikepack/audit.json",
+        "report_sha256": "f8d15e2fa47c1e0e6e71b762ae855bb3bffc612b8676a95e9137102af74623c4"
+      },
+      "decode_repair_spec_sha256": "15c2b0c8ac78219f57ebbdbc900cb7f879286245b6589bbaae8f48f9e09524a4",
+      "model": "spikepack",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "spikepack"
+      },
+      "repair_type": "harness_only",
+      "history_only": false,
+      "code_file": "experiments/B08/reference.py",
+      "control_score_matches_original": true,
+      "control_payloads_match_original": true
+    },
+    {
+      "benchmark_id": "B08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "task-baseline",
+      "status": "measured",
+      "original_status": "measured",
+      "repair_kind": "harness_only",
+      "control_originally_successful": true,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 5.325231041992083,
+      "code_sha256": "e8ea58dc01558d728fc690560f8596889d4a02540190f4f402573c447eed0b42",
+      "code_lines": null,
+      "line_limit_compliant": null,
+      "repair_spec_sha256": "8710f3111ec5f5c573d27b454b0a6b95fc3d30d1c4acb668007faa258941b253",
+      "prediction_file": "experiments/repairs-v1/B08/artifacts/task-baseline/payloads.json",
+      "prediction_sha256": "1cd7762214e65b944115b0ee3eea190576f9c895c1706415ac71c59e5815fa43",
+      "score": 11.918156003544585,
+      "metric": "mean_encoded_bits_per_event_50us",
+      "direction": "lower",
+      "per_unit": [
+        11.382257722763983,
+        11.426507408775603,
+        12.159216880194032,
+        12.174207086031732,
+        12.219894388872193,
+        12.222762322743089,
+        11.842246215431455
+      ],
+      "n_recordings": 7,
+      "n_events": 1052545,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "encode_seconds": 5.260120457038283,
+      "decode_seconds": 0.008819374954327941,
+      "repair_revision": 2,
+      "encoder_rerun": false,
+      "independent_decode": {
+        "status": "passed",
+        "fresh_process": true,
+        "encoder_invoked": false,
+        "n_recordings": 7,
+        "max_timing_error_seconds": 5.684341886080802e-14,
+        "report_file": "experiments/repairs-v1/B08/decode-revision-2/task-baseline/audit.json",
+        "report_sha256": "05f701cdbc717c4fc99a43c7458206e2607e5465fcee25b7decc7bf7bf546d77"
+      },
+      "decode_repair_spec_sha256": "15c2b0c8ac78219f57ebbdbc900cb7f879286245b6589bbaae8f48f9e09524a4",
+      "model": "task-baseline",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "task-baseline"
+      },
+      "repair_type": "harness_only",
+      "history_only": false,
+      "code_file": "experiments/B08/reference.py",
+      "control_score_matches_original": true,
+      "control_payloads_match_original": true
+    }
+  ],
+  "latest_successes": [
+    {
+      "benchmark_id": "J08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "gpt-6.1-sol",
+      "status": "measured",
+      "original_status": "failed",
+      "repair_kind": "manual_minimal_algorithm_patch",
+      "control_originally_successful": false,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 10.884486875031143,
+      "code_sha256": "abf6c4ea5cd9775e8fbb2eff866c4c1bda09e00f6695d4ff12638aef8d5a2496",
+      "code_lines": 226,
+      "line_limit_compliant": true,
+      "repair_spec_sha256": "eac920d120f81141160a19ad23d8acb9577e889d6b6116d3a16f72816eb7827a",
+      "prediction_file": "experiments/repairs-v1/J08/artifacts/gpt-6.1-sol/predictions.npz",
+      "prediction_sha256": "c482cf28e498671457b750a1aace7e1ccd8bd449eb647e721f652d3c530dcf8d",
+      "score": 0.57563018487252,
+      "metric": "instance_f1_iou50_multirater",
+      "direction": "higher",
+      "per_unit": [
+        0.5518050021405446,
+        0.5994553676044955
+      ],
+      "estimator_seconds": 10.579864750150591,
+      "execution_log": "experiments/repairs-v1/J08/execution/gpt-6.1-sol.txt",
+      "model": "gpt-6.1-sol",
+      "original_key": {
+        "benchmark_id": "J08",
+        "slice_id": "expansion-v1",
+        "model": "gpt-6.1-sol"
+      },
+      "repair_type": "manual_minimal_algorithm_patch",
+      "repair_revision": 1,
+      "history_only": false,
+      "code_file": "experiments/repairs-v1/J08/gpt-6.1-sol.py"
+    },
+    {
+      "benchmark_id": "N05",
+      "method": "gpt-5.6-sol",
+      "repair_track": "posthoc-repairs-v1",
+      "repair_revision": 2,
+      "status": "measured",
+      "original_status": "failed",
+      "repair_kind": "manual_minimal_algorithm_patch",
+      "original_first_attempt_replaced": false,
+      "new_model_calls": 0,
+      "seconds": 0.5306162498891354,
+      "code_lines": 265,
+      "line_limit_compliant": false,
+      "code_sha256": "ff40988903b1bbc78ef1d8cc73d80760771c3c56b589fbbe86cdc0d81a6982b4",
+      "repair_spec_sha256": "e821ce023da5f5f9c45ec1503b01793567203ff71e6e2aeccbb117df1c6169ec",
+      "prediction_file": "experiments/repairs-v1/N05/revision-2/answer.json",
+      "prediction_sha256": "89c9eeace3b6e3adc8f072a375b42b3c9847ba00e321a53dcbef58887a63f25b",
+      "score": 1.0,
+      "metric": "field_accuracy",
+      "direction": "higher",
+      "n_units": 61,
+      "per_unit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "field_results": [
+        {
+          "field": "/nwb_version",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/sampling_rate_hz",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/n_samples",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/dt_seconds",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/response_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/stimulus_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/main_pulse_onset_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/main_pulse_duration_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/main_pulse_amplitude_pa",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/pre_stimulus_voltage_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/19/mean_pulse_voltage_deflection_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/sampling_rate_hz",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/n_samples",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/dt_seconds",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/response_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/stimulus_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/main_pulse_onset_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/main_pulse_duration_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/main_pulse_amplitude_pa",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/pre_stimulus_voltage_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/20/mean_pulse_voltage_deflection_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/sampling_rate_hz",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/n_samples",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/dt_seconds",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/response_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/stimulus_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/main_pulse_onset_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/main_pulse_duration_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/main_pulse_amplitude_pa",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/pre_stimulus_voltage_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/21/mean_pulse_voltage_deflection_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/sampling_rate_hz",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/n_samples",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/dt_seconds",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/response_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/stimulus_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/main_pulse_onset_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/main_pulse_duration_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/main_pulse_amplitude_pa",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/pre_stimulus_voltage_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/22/mean_pulse_voltage_deflection_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/sampling_rate_hz",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/n_samples",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/dt_seconds",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/response_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/stimulus_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/main_pulse_onset_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/main_pulse_duration_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/main_pulse_amplitude_pa",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/pre_stimulus_voltage_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/23/mean_pulse_voltage_deflection_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/sampling_rate_hz",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/n_samples",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/dt_seconds",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/response_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/stimulus_stored_unit",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/main_pulse_onset_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/main_pulse_duration_s",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/main_pulse_amplitude_pa",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/pre_stimulus_voltage_mv",
+          "correct": true
+        },
+        {
+          "field": "/sweeps/24/mean_pulse_voltage_deflection_mv",
+          "correct": true
+        }
+      ],
+      "all_fields_correct": true,
+      "model": "gpt-5.6-sol",
+      "original_key": {
+        "benchmark_id": "N05",
+        "slice_id": "expansion-v1",
+        "model": "gpt-5.6-sol"
+      },
+      "repair_type": "manual_minimal_algorithm_patch",
+      "history_only": false,
+      "control_originally_successful": false,
+      "code_file": "experiments/repairs-v1/N05/revision-2/gpt-5.6-sol.py",
+      "execution_log": "experiments/repairs-v1/N05/revision-2/execution.txt"
+    },
+    {
+      "benchmark_id": "B08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "gpt-5.6-sol",
+      "status": "measured",
+      "original_status": "failed",
+      "repair_kind": "harness_only",
+      "control_originally_successful": false,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 11.157908792141825,
+      "code_sha256": "df4a658b8d254695d11ea4e55b2ece66f69cc4f4535caeb097c9471f1141a245",
+      "code_lines": 177,
+      "line_limit_compliant": true,
+      "repair_spec_sha256": "8710f3111ec5f5c573d27b454b0a6b95fc3d30d1c4acb668007faa258941b253",
+      "prediction_file": "experiments/repairs-v1/B08/artifacts/gpt-5.6-sol/payloads.json",
+      "prediction_sha256": "ff9a224ba138a4ad9d300761d30a49c1bbc3dda80cb80053519806756d814b21",
+      "score": 7.585598308443002,
+      "metric": "mean_encoded_bits_per_event_50us",
+      "direction": "lower",
+      "per_unit": [
+        7.188642892691893,
+        7.22185280958831,
+        7.776018412638295,
+        7.786120797669188,
+        7.816768986390761,
+        7.773460859226102,
+        7.536323400896457
+      ],
+      "n_recordings": 7,
+      "n_events": 1052545,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "encode_seconds": 4.88781779166311,
+      "decode_seconds": 6.204770292155445,
+      "repair_revision": 2,
+      "encoder_rerun": false,
+      "independent_decode": {
+        "status": "passed",
+        "fresh_process": true,
+        "encoder_invoked": false,
+        "n_recordings": 7,
+        "max_timing_error_seconds": 5.684341886080802e-14,
+        "report_file": "experiments/repairs-v1/B08/decode-revision-2/gpt-5.6-sol/audit.json",
+        "report_sha256": "1ec812285c32ccdeae41c90d28b9e5dc8e5eaacc5b8adf1f91aaa4d8d99da46c"
+      },
+      "decode_repair_spec_sha256": "15c2b0c8ac78219f57ebbdbc900cb7f879286245b6589bbaae8f48f9e09524a4",
+      "model": "gpt-5.6-sol",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "gpt-5.6-sol"
+      },
+      "repair_type": "harness_only",
+      "history_only": false,
+      "code_file": "experiments/repairs-v1/B08/gpt-5.6-sol.py",
+      "program_byte_unchanged": true
+    },
+    {
+      "benchmark_id": "B08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "gpt-6-sol",
+      "status": "measured",
+      "original_status": "failed",
+      "repair_kind": "harness_only",
+      "control_originally_successful": false,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 1.9647667498793453,
+      "code_sha256": "64c1b27442585c1da465548be48cd65cecae91d47844d3f06bdb34b263122373",
+      "code_lines": 178,
+      "line_limit_compliant": true,
+      "repair_spec_sha256": "8710f3111ec5f5c573d27b454b0a6b95fc3d30d1c4acb668007faa258941b253",
+      "prediction_file": "experiments/repairs-v1/B08/artifacts/gpt-6-sol/payloads.json",
+      "prediction_sha256": "037c37bdb5545767752819d08a957291dbedf25339247a6796ae3d155bd88b99",
+      "score": 7.693066944185707,
+      "metric": "mean_encoded_bits_per_event_50us",
+      "direction": "lower",
+      "per_unit": [
+        7.304106159979107,
+        7.337355826458154,
+        7.878395012272664,
+        7.887686246093927,
+        7.922380114197399,
+        7.874805476386145,
+        7.646739773912553
+      ],
+      "n_recordings": 7,
+      "n_events": 1052545,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "encode_seconds": 0.36975800106301904,
+      "decode_seconds": 1.5427437089383602,
+      "repair_revision": 2,
+      "encoder_rerun": false,
+      "independent_decode": {
+        "status": "passed",
+        "fresh_process": true,
+        "encoder_invoked": false,
+        "n_recordings": 7,
+        "max_timing_error_seconds": 5.684341886080802e-14,
+        "report_file": "experiments/repairs-v1/B08/decode-revision-2/gpt-6-sol/audit.json",
+        "report_sha256": "066edc15c8d350d157e5d42c013d0970d4f565b699cecb8b0e3f9b5c140471c5"
+      },
+      "decode_repair_spec_sha256": "15c2b0c8ac78219f57ebbdbc900cb7f879286245b6589bbaae8f48f9e09524a4",
+      "model": "gpt-6-sol",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "gpt-6-sol"
+      },
+      "repair_type": "harness_only",
+      "history_only": false,
+      "code_file": "experiments/repairs-v1/B08/gpt-6-sol.py",
+      "program_byte_unchanged": true
+    },
+    {
+      "benchmark_id": "B08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "gpt-6.1-sol",
+      "status": "measured",
+      "original_status": "measured",
+      "repair_kind": "harness_only",
+      "control_originally_successful": true,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 11.083451291080564,
+      "code_sha256": "6be104769ef7e6d3385b0da5160871504cec4c89164b8ba86bf85701e455e62b",
+      "code_lines": 191,
+      "line_limit_compliant": true,
+      "repair_spec_sha256": "8710f3111ec5f5c573d27b454b0a6b95fc3d30d1c4acb668007faa258941b253",
+      "prediction_file": "experiments/repairs-v1/B08/artifacts/gpt-6.1-sol/payloads.json",
+      "prediction_sha256": "e19d8fade5cfcabdf237e4ec4ecf74d4529728693d788e32efdc9ec84e6db8e3",
+      "score": 8.636801620045114,
+      "metric": "mean_encoded_bits_per_event_50us",
+      "direction": "lower",
+      "per_unit": [
+        8.12050911850359,
+        8.202684398473094,
+        8.814118298287653,
+        8.853101459776882,
+        9.02150860773623,
+        8.953506670629995,
+        8.492182786908353
+      ],
+      "n_recordings": 7,
+      "n_events": 1052545,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "encode_seconds": 10.66905887518078,
+      "decode_seconds": 0.34916154271923006,
+      "repair_revision": 2,
+      "encoder_rerun": false,
+      "independent_decode": {
+        "status": "passed",
+        "fresh_process": true,
+        "encoder_invoked": false,
+        "n_recordings": 7,
+        "max_timing_error_seconds": 5.684341886080802e-14,
+        "report_file": "experiments/repairs-v1/B08/decode-revision-2/gpt-6.1-sol/audit.json",
+        "report_sha256": "6f85421d3dc1d6335bd60cbe59d7f191d94d106856036e30d8ec00ff80380453"
+      },
+      "decode_repair_spec_sha256": "15c2b0c8ac78219f57ebbdbc900cb7f879286245b6589bbaae8f48f9e09524a4",
+      "model": "gpt-6.1-sol",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "gpt-6.1-sol"
+      },
+      "repair_type": "harness_only",
+      "history_only": false,
+      "code_file": "experiments/repairs-v1/B08/gpt-6.1-sol.py",
+      "control_score_matches_original": true,
+      "control_payloads_match_original": true,
+      "program_byte_unchanged": true
+    },
+    {
+      "benchmark_id": "B08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "spikepack",
+      "status": "measured",
+      "original_status": "measured",
+      "repair_kind": "harness_only",
+      "control_originally_successful": true,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 0.21010504197329283,
+      "code_sha256": "e8ea58dc01558d728fc690560f8596889d4a02540190f4f402573c447eed0b42",
+      "code_lines": null,
+      "line_limit_compliant": null,
+      "repair_spec_sha256": "8710f3111ec5f5c573d27b454b0a6b95fc3d30d1c4acb668007faa258941b253",
+      "prediction_file": "experiments/repairs-v1/B08/artifacts/spikepack/payloads.json",
+      "prediction_sha256": "936515e781b822f80db6c278685eff4cdd93ba2665f907d75462dca668b1d23f",
+      "score": 8.142312213400157,
+      "metric": "mean_encoded_bits_per_event_50us",
+      "direction": "lower",
+      "per_unit": [
+        7.909174678105243,
+        7.908837171120141,
+        8.407117416986534,
+        8.421901182011684,
+        8.102691795818487,
+        8.059729677746498,
+        8.186733572012516
+      ],
+      "n_recordings": 7,
+      "n_events": 1052545,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "encode_seconds": 0.09935941617004573,
+      "decode_seconds": 0.014788333093747497,
+      "repair_revision": 2,
+      "encoder_rerun": false,
+      "independent_decode": {
+        "status": "passed",
+        "fresh_process": true,
+        "encoder_invoked": false,
+        "n_recordings": 7,
+        "max_timing_error_seconds": 5.684341886080802e-14,
+        "report_file": "experiments/repairs-v1/B08/decode-revision-2/spikepack/audit.json",
+        "report_sha256": "f8d15e2fa47c1e0e6e71b762ae855bb3bffc612b8676a95e9137102af74623c4"
+      },
+      "decode_repair_spec_sha256": "15c2b0c8ac78219f57ebbdbc900cb7f879286245b6589bbaae8f48f9e09524a4",
+      "model": "spikepack",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "spikepack"
+      },
+      "repair_type": "harness_only",
+      "history_only": false,
+      "code_file": "experiments/B08/reference.py",
+      "control_score_matches_original": true,
+      "control_payloads_match_original": true
+    },
+    {
+      "benchmark_id": "B08",
+      "repair_track": "posthoc-repairs-v1",
+      "method": "task-baseline",
+      "status": "measured",
+      "original_status": "measured",
+      "repair_kind": "harness_only",
+      "control_originally_successful": true,
+      "no_new_model_calls": true,
+      "original_first_attempt_replaced": false,
+      "seconds": 5.325231041992083,
+      "code_sha256": "e8ea58dc01558d728fc690560f8596889d4a02540190f4f402573c447eed0b42",
+      "code_lines": null,
+      "line_limit_compliant": null,
+      "repair_spec_sha256": "8710f3111ec5f5c573d27b454b0a6b95fc3d30d1c4acb668007faa258941b253",
+      "prediction_file": "experiments/repairs-v1/B08/artifacts/task-baseline/payloads.json",
+      "prediction_sha256": "1cd7762214e65b944115b0ee3eea190576f9c895c1706415ac71c59e5815fa43",
+      "score": 11.918156003544585,
+      "metric": "mean_encoded_bits_per_event_50us",
+      "direction": "lower",
+      "per_unit": [
+        11.382257722763983,
+        11.426507408775603,
+        12.159216880194032,
+        12.174207086031732,
+        12.219894388872193,
+        12.222762322743089,
+        11.842246215431455
+      ],
+      "n_recordings": 7,
+      "n_events": 1052545,
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "encode_seconds": 5.260120457038283,
+      "decode_seconds": 0.008819374954327941,
+      "repair_revision": 2,
+      "encoder_rerun": false,
+      "independent_decode": {
+        "status": "passed",
+        "fresh_process": true,
+        "encoder_invoked": false,
+        "n_recordings": 7,
+        "max_timing_error_seconds": 5.684341886080802e-14,
+        "report_file": "experiments/repairs-v1/B08/decode-revision-2/task-baseline/audit.json",
+        "report_sha256": "05f701cdbc717c4fc99a43c7458206e2607e5465fcee25b7decc7bf7bf546d77"
+      },
+      "decode_repair_spec_sha256": "15c2b0c8ac78219f57ebbdbc900cb7f879286245b6589bbaae8f48f9e09524a4",
+      "model": "task-baseline",
+      "original_key": {
+        "benchmark_id": "B08",
+        "slice_id": "batch-v11",
+        "model": "task-baseline"
+      },
+      "repair_type": "harness_only",
+      "history_only": false,
+      "code_file": "experiments/B08/reference.py",
+      "control_score_matches_original": true,
+      "control_payloads_match_original": true
+    }
+  ],
+  "unresolved": [
+    {
+      "benchmark_id": "C05",
+      "slice_id": "2",
+      "model": "speiser",
+      "original_status": "failed",
+      "status": "not_repairable_without_new_predictions",
+      "score": null,
+      "original_failure": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 110, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 92, in main\n    if args.one:print(json.dumps(one(*args.one)));return\n                                 ^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 74, in one\n    truth=load('test.spikes');scores=score(pred,truth)\n                                     ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 12, in score\n    if pred.shape!=truth.shape:raise ValueError('Prediction shape mismatch')\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Prediction shape mismatch\n",
+      "source_file": "data/cache/spikefinder/2.speiser.csv",
+      "source_sha256": "b8b32a80a5d05b0535449a542265db5fef47e35c83e2eeb22f38064e74851f98",
+      "source_shape": [
+        77872,
+        10
+      ],
+      "input_shape": [
+        77873,
+        10
+      ],
+      "numeric_headers_are_present": true,
+      "coverage": [
+        {
+          "cell": 0,
+          "input_observations": 77873,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            77872
+          ]
+        },
+        {
+          "cell": 1,
+          "input_observations": 34667,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 2,
+          "input_observations": 69617,
+          "missing_archived_predictions": 3,
+          "first_missing_indices": [
+            69614,
+            69615,
+            69616
+          ]
+        },
+        {
+          "cell": 3,
+          "input_observations": 9198,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 4,
+          "input_observations": 47674,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 5,
+          "input_observations": 38004,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 6,
+          "input_observations": 47691,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            47690
+          ]
+        },
+        {
+          "cell": 7,
+          "input_observations": 45558,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 8,
+          "input_observations": 42456,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 9,
+          "input_observations": 26650,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        }
+      ],
+      "reason": "Archived values are genuinely absent/nonfinite on observed input support; no documented invertible row/cell alignment recovers missing scientific predictions. Complete-coverage contract cannot be repaired by padding, interpolation, copying truth or dropping target samples.",
+      "legacy_scorer_note": "Original upstream scorer jointly masks prediction/target NaNs and truncates after40ms downsampling. That is a different partial-coverage scoring contract; adopting it would not repair complete-coverage predictions. No legacy score is substituted.",
+      "original_key": {
+        "benchmark_id": "C05",
+        "slice_id": "2",
+        "model": "speiser"
+      },
+      "repair_type": "archived_output_incomplete_no_fabrication"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "4",
+      "model": "speiser",
+      "original_status": "failed",
+      "status": "not_repairable_without_new_predictions",
+      "score": null,
+      "original_failure": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 110, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 92, in main\n    if args.one:print(json.dumps(one(*args.one)));return\n                                 ^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 74, in one\n    truth=load('test.spikes');scores=score(pred,truth)\n                                     ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 16, in score\n    if not np.all(np.isfinite(x)):raise ValueError('Nonfinite predictions on labels')\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Nonfinite predictions on labels\n",
+      "source_file": "data/cache/spikefinder/4.speiser.csv",
+      "source_sha256": "3d4b5bf286fc3136faa824b13d1cbe4ecc05a564fe430b8271c1a9ab3a52bb3f",
+      "source_shape": [
+        33280,
+        3
+      ],
+      "input_shape": [
+        33280,
+        3
+      ],
+      "numeric_headers_are_present": true,
+      "coverage": [
+        {
+          "cell": 0,
+          "input_observations": 33280,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 1,
+          "input_observations": 33280,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 2,
+          "input_observations": 30810,
+          "missing_archived_predictions": 2,
+          "first_missing_indices": [
+            30808,
+            30809
+          ]
+        }
+      ],
+      "reason": "Archived values are genuinely absent/nonfinite on observed input support; no documented invertible row/cell alignment recovers missing scientific predictions. Complete-coverage contract cannot be repaired by padding, interpolation, copying truth or dropping target samples.",
+      "legacy_scorer_note": "Original upstream scorer jointly masks prediction/target NaNs and truncates after40ms downsampling. That is a different partial-coverage scoring contract; adopting it would not repair complete-coverage predictions. No legacy score is substituted.",
+      "original_key": {
+        "benchmark_id": "C05",
+        "slice_id": "4",
+        "model": "speiser"
+      },
+      "repair_type": "archived_output_incomplete_no_fabrication"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "5",
+      "model": "deneux",
+      "original_status": "failed",
+      "status": "not_repairable_without_new_predictions",
+      "score": null,
+      "original_failure": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 110, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 92, in main\n    if args.one:print(json.dumps(one(*args.one)));return\n                                 ^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 74, in one\n    truth=load('test.spikes');scores=score(pred,truth)\n                                     ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 16, in score\n    if not np.all(np.isfinite(x)):raise ValueError('Nonfinite predictions on labels')\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Nonfinite predictions on labels\n",
+      "source_file": "data/cache/spikefinder/5.deneux.csv",
+      "source_sha256": "1c65c3ee30091741cef426d9311fbe9f4c535e4ce22e0b29c88df4504d87d821",
+      "source_shape": [
+        16919,
+        8
+      ],
+      "input_shape": [
+        16919,
+        8
+      ],
+      "numeric_headers_are_present": true,
+      "coverage": [
+        {
+          "cell": 0,
+          "input_observations": 16919,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 1,
+          "input_observations": 16919,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 2,
+          "input_observations": 16919,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 3,
+          "input_observations": 16919,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 4,
+          "input_observations": 16919,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 5,
+          "input_observations": 1700,
+          "missing_archived_predictions": 44,
+          "first_missing_indices": [
+            1484,
+            1485,
+            1486,
+            1487,
+            1488,
+            1489,
+            1490,
+            1491,
+            1492,
+            1493,
+            1494,
+            1495
+          ]
+        },
+        {
+          "cell": 6,
+          "input_observations": 2501,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 7,
+          "input_observations": 11720,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        }
+      ],
+      "reason": "Archived values are genuinely absent/nonfinite on observed input support; no documented invertible row/cell alignment recovers missing scientific predictions. Complete-coverage contract cannot be repaired by padding, interpolation, copying truth or dropping target samples.",
+      "legacy_scorer_note": "Original upstream scorer jointly masks prediction/target NaNs and truncates after40ms downsampling. That is a different partial-coverage scoring contract; adopting it would not repair complete-coverage predictions. No legacy score is substituted.",
+      "original_key": {
+        "benchmark_id": "C05",
+        "slice_id": "5",
+        "model": "deneux"
+      },
+      "repair_type": "archived_output_incomplete_no_fabrication"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "5",
+      "model": "speiser",
+      "original_status": "failed",
+      "status": "not_repairable_without_new_predictions",
+      "score": null,
+      "original_failure": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 110, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 92, in main\n    if args.one:print(json.dumps(one(*args.one)));return\n                                 ^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 74, in one\n    truth=load('test.spikes');scores=score(pred,truth)\n                                     ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 12, in score\n    if pred.shape!=truth.shape:raise ValueError('Prediction shape mismatch')\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Prediction shape mismatch\n",
+      "source_file": "data/cache/spikefinder/5.speiser.csv",
+      "source_sha256": "86be293f10f75501a3b519f528dea03bc233eb361dfbd2f38b9c693f0f2a9a8a",
+      "source_shape": [
+        16918,
+        8
+      ],
+      "input_shape": [
+        16919,
+        8
+      ],
+      "numeric_headers_are_present": true,
+      "coverage": [
+        {
+          "cell": 0,
+          "input_observations": 16919,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            16918
+          ]
+        },
+        {
+          "cell": 1,
+          "input_observations": 16919,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            16918
+          ]
+        },
+        {
+          "cell": 2,
+          "input_observations": 16919,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            16918
+          ]
+        },
+        {
+          "cell": 3,
+          "input_observations": 16919,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            16918
+          ]
+        },
+        {
+          "cell": 4,
+          "input_observations": 16919,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            16918
+          ]
+        },
+        {
+          "cell": 5,
+          "input_observations": 1700,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 6,
+          "input_observations": 2501,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            2500
+          ]
+        },
+        {
+          "cell": 7,
+          "input_observations": 11720,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        }
+      ],
+      "reason": "Archived values are genuinely absent/nonfinite on observed input support; no documented invertible row/cell alignment recovers missing scientific predictions. Complete-coverage contract cannot be repaired by padding, interpolation, copying truth or dropping target samples.",
+      "legacy_scorer_note": "Original upstream scorer jointly masks prediction/target NaNs and truncates after40ms downsampling. That is a different partial-coverage scoring contract; adopting it would not repair complete-coverage predictions. No legacy score is substituted.",
+      "original_key": {
+        "benchmark_id": "C05",
+        "slice_id": "5",
+        "model": "speiser"
+      },
+      "repair_type": "archived_output_incomplete_no_fabrication"
+    }
+  ],
+  "repair_attempt_history_file": "results/repairs-v1/round-1.json",
+  "repair_attempt_history_sha256": "90216c01fa05329044dcba40733c3e875632b3d6190abff10a0abae472ed9f87",
+  "original_results_and_ledger_unchanged": true,
+  "original_failures_considered": 8,
+  "repair_assisted_failures_recovered": 4,
+  "controls_reexecuted": 3,
+  "strict_format_recovered_failures": 3,
+  "irreparable_archived_cases": 4,
+  "c05_cases": [
+    {
+      "benchmark_id": "C05",
+      "slice_id": "2",
+      "model": "speiser",
+      "original_status": "failed",
+      "status": "not_repairable_without_new_predictions",
+      "score": null,
+      "original_failure": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 110, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 92, in main\n    if args.one:print(json.dumps(one(*args.one)));return\n                                 ^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 74, in one\n    truth=load('test.spikes');scores=score(pred,truth)\n                                     ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 12, in score\n    if pred.shape!=truth.shape:raise ValueError('Prediction shape mismatch')\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Prediction shape mismatch\n",
+      "source_file": "data/cache/spikefinder/2.speiser.csv",
+      "source_sha256": "b8b32a80a5d05b0535449a542265db5fef47e35c83e2eeb22f38064e74851f98",
+      "source_shape": [
+        77872,
+        10
+      ],
+      "input_shape": [
+        77873,
+        10
+      ],
+      "numeric_headers_are_present": true,
+      "coverage": [
+        {
+          "cell": 0,
+          "input_observations": 77873,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            77872
+          ]
+        },
+        {
+          "cell": 1,
+          "input_observations": 34667,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 2,
+          "input_observations": 69617,
+          "missing_archived_predictions": 3,
+          "first_missing_indices": [
+            69614,
+            69615,
+            69616
+          ]
+        },
+        {
+          "cell": 3,
+          "input_observations": 9198,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 4,
+          "input_observations": 47674,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 5,
+          "input_observations": 38004,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 6,
+          "input_observations": 47691,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            47690
+          ]
+        },
+        {
+          "cell": 7,
+          "input_observations": 45558,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 8,
+          "input_observations": 42456,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 9,
+          "input_observations": 26650,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        }
+      ],
+      "reason": "Archived values are genuinely absent/nonfinite on observed input support; no documented invertible row/cell alignment recovers missing scientific predictions. Complete-coverage contract cannot be repaired by padding, interpolation, copying truth or dropping target samples.",
+      "legacy_scorer_note": "Original upstream scorer jointly masks prediction/target NaNs and truncates after40ms downsampling. That is a different partial-coverage scoring contract; adopting it would not repair complete-coverage predictions. No legacy score is substituted.",
+      "original_key": {
+        "benchmark_id": "C05",
+        "slice_id": "2",
+        "model": "speiser"
+      },
+      "repair_type": "archived_output_incomplete_no_fabrication"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "4",
+      "model": "speiser",
+      "original_status": "failed",
+      "status": "not_repairable_without_new_predictions",
+      "score": null,
+      "original_failure": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 110, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 92, in main\n    if args.one:print(json.dumps(one(*args.one)));return\n                                 ^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 74, in one\n    truth=load('test.spikes');scores=score(pred,truth)\n                                     ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 16, in score\n    if not np.all(np.isfinite(x)):raise ValueError('Nonfinite predictions on labels')\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Nonfinite predictions on labels\n",
+      "source_file": "data/cache/spikefinder/4.speiser.csv",
+      "source_sha256": "3d4b5bf286fc3136faa824b13d1cbe4ecc05a564fe430b8271c1a9ab3a52bb3f",
+      "source_shape": [
+        33280,
+        3
+      ],
+      "input_shape": [
+        33280,
+        3
+      ],
+      "numeric_headers_are_present": true,
+      "coverage": [
+        {
+          "cell": 0,
+          "input_observations": 33280,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 1,
+          "input_observations": 33280,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 2,
+          "input_observations": 30810,
+          "missing_archived_predictions": 2,
+          "first_missing_indices": [
+            30808,
+            30809
+          ]
+        }
+      ],
+      "reason": "Archived values are genuinely absent/nonfinite on observed input support; no documented invertible row/cell alignment recovers missing scientific predictions. Complete-coverage contract cannot be repaired by padding, interpolation, copying truth or dropping target samples.",
+      "legacy_scorer_note": "Original upstream scorer jointly masks prediction/target NaNs and truncates after40ms downsampling. That is a different partial-coverage scoring contract; adopting it would not repair complete-coverage predictions. No legacy score is substituted.",
+      "original_key": {
+        "benchmark_id": "C05",
+        "slice_id": "4",
+        "model": "speiser"
+      },
+      "repair_type": "archived_output_incomplete_no_fabrication"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "5",
+      "model": "deneux",
+      "original_status": "failed",
+      "status": "not_repairable_without_new_predictions",
+      "score": null,
+      "original_failure": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 110, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 92, in main\n    if args.one:print(json.dumps(one(*args.one)));return\n                                 ^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 74, in one\n    truth=load('test.spikes');scores=score(pred,truth)\n                                     ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 16, in score\n    if not np.all(np.isfinite(x)):raise ValueError('Nonfinite predictions on labels')\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Nonfinite predictions on labels\n",
+      "source_file": "data/cache/spikefinder/5.deneux.csv",
+      "source_sha256": "1c65c3ee30091741cef426d9311fbe9f4c535e4ce22e0b29c88df4504d87d821",
+      "source_shape": [
+        16919,
+        8
+      ],
+      "input_shape": [
+        16919,
+        8
+      ],
+      "numeric_headers_are_present": true,
+      "coverage": [
+        {
+          "cell": 0,
+          "input_observations": 16919,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 1,
+          "input_observations": 16919,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 2,
+          "input_observations": 16919,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 3,
+          "input_observations": 16919,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 4,
+          "input_observations": 16919,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 5,
+          "input_observations": 1700,
+          "missing_archived_predictions": 44,
+          "first_missing_indices": [
+            1484,
+            1485,
+            1486,
+            1487,
+            1488,
+            1489,
+            1490,
+            1491,
+            1492,
+            1493,
+            1494,
+            1495
+          ]
+        },
+        {
+          "cell": 6,
+          "input_observations": 2501,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 7,
+          "input_observations": 11720,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        }
+      ],
+      "reason": "Archived values are genuinely absent/nonfinite on observed input support; no documented invertible row/cell alignment recovers missing scientific predictions. Complete-coverage contract cannot be repaired by padding, interpolation, copying truth or dropping target samples.",
+      "legacy_scorer_note": "Original upstream scorer jointly masks prediction/target NaNs and truncates after40ms downsampling. That is a different partial-coverage scoring contract; adopting it would not repair complete-coverage predictions. No legacy score is substituted.",
+      "original_key": {
+        "benchmark_id": "C05",
+        "slice_id": "5",
+        "model": "deneux"
+      },
+      "repair_type": "archived_output_incomplete_no_fabrication"
+    },
+    {
+      "benchmark_id": "C05",
+      "slice_id": "5",
+      "model": "speiser",
+      "original_status": "failed",
+      "status": "not_repairable_without_new_predictions",
+      "score": null,
+      "original_failure": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 110, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 92, in main\n    if args.one:print(json.dumps(one(*args.one)));return\n                                 ^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 74, in one\n    truth=load('test.spikes');scores=score(pred,truth)\n                                     ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/evaluate.py\", line 12, in score\n    if pred.shape!=truth.shape:raise ValueError('Prediction shape mismatch')\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Prediction shape mismatch\n",
+      "source_file": "data/cache/spikefinder/5.speiser.csv",
+      "source_sha256": "86be293f10f75501a3b519f528dea03bc233eb361dfbd2f38b9c693f0f2a9a8a",
+      "source_shape": [
+        16918,
+        8
+      ],
+      "input_shape": [
+        16919,
+        8
+      ],
+      "numeric_headers_are_present": true,
+      "coverage": [
+        {
+          "cell": 0,
+          "input_observations": 16919,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            16918
+          ]
+        },
+        {
+          "cell": 1,
+          "input_observations": 16919,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            16918
+          ]
+        },
+        {
+          "cell": 2,
+          "input_observations": 16919,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            16918
+          ]
+        },
+        {
+          "cell": 3,
+          "input_observations": 16919,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            16918
+          ]
+        },
+        {
+          "cell": 4,
+          "input_observations": 16919,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            16918
+          ]
+        },
+        {
+          "cell": 5,
+          "input_observations": 1700,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        },
+        {
+          "cell": 6,
+          "input_observations": 2501,
+          "missing_archived_predictions": 1,
+          "first_missing_indices": [
+            2500
+          ]
+        },
+        {
+          "cell": 7,
+          "input_observations": 11720,
+          "missing_archived_predictions": 0,
+          "first_missing_indices": []
+        }
+      ],
+      "reason": "Archived values are genuinely absent/nonfinite on observed input support; no documented invertible row/cell alignment recovers missing scientific predictions. Complete-coverage contract cannot be repaired by padding, interpolation, copying truth or dropping target samples.",
+      "legacy_scorer_note": "Original upstream scorer jointly masks prediction/target NaNs and truncates after40ms downsampling. That is a different partial-coverage scoring contract; adopting it would not repair complete-coverage predictions. No legacy score is substituted.",
+      "original_key": {
+        "benchmark_id": "C05",
+        "slice_id": "5",
+        "model": "speiser"
+      },
+      "repair_type": "archived_output_incomplete_no_fabrication"
+    }
+  ],
+  "finalizer": {
+    "script": "scripts/finalize_repairs.py",
+    "sha256": "e3a7aaa630963ac3fa8e604138c7b17729f907973e5b12f09231da9f45841129",
+    "reason": "Sealed round2 runner completed outputs but failed only assembling controls count because None was summed. Finalizer uses retained successful worker/decode reports; no procedure rerun or scientific code change."
+  },
+  "scientific_caveats": [
+    "Repair-assisted output is never a replacement for single-shot evidence.",
+    "Four runtime failures were recovered numerically; three meet the original line limit. N05 originally had249lines and revision2 remains over the limit; no cosmetic rewrite.",
+    "First N05patch failure and first independent-reference decoder dependency-resolution failures remain in round1 history.",
+    "C05source archives cannot satisfy full-support prediction contract; original source jointly-masked-NaN scoring is a different partial-coverage endpoint, not a complete-output repair. No missing values filled."
+  ]
+}

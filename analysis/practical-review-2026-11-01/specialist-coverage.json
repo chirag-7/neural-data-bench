@@ -1,0 +1,15 @@
+{
+  "reviewed_tasks": 30,
+  "families": 14,
+  "candidate_entries": 137,
+  "unique_candidate_name_strings": 128,
+  "source_task_associations": 199,
+  "unique_source_urls": 166,
+  "matched_current_global_winners": 0,
+  "claims": {
+    "STRONG_CANDIDATES_NO_MATCHED_WINNER": 27,
+    "UNRESOLVED": 3
+  },
+  "review_scope": "All 30 measured custom tasks; not all 92 active entries or an exhaustive literature census. Candidates/source URLs are not distinct fully reviewed papers.",
+  "reviewed_on": "2026-11-01"
+}

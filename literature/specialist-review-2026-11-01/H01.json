@@ -1,0 +1,148 @@
+{
+  "benchmark_id": "H01",
+  "title": "Cross-person motor imagery",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "EEGMMIDB, 225 training trials from five people and 135 test trials from three other people; 64 channels × 480 samples, binary imagery, balanced accuracy. Custom small-person slice; not a standard full MOABB evaluation.",
+  "local_protocol": "experiments/H01/protocol.md",
+  "existing_reference": {
+    "name": "CSP/shrinkage LDA and subsequently audited Riemannian tangent-space SVM references",
+    "evidence": "A: local fixed inputs/split; specialist-aligned train-person validation is recorded separately.",
+    "strength": "Appropriate low-data conventional EEG comparators.",
+    "problems": [
+      "A poor small-sample cross-person reference is not the best MI decoder.",
+      "Alignment amendment and reference search effort differ from initial first-program generation."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "CBraMod",
+      "year": 2025,
+      "source_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2025/hash/bbbd6d915cb90be21c1254a82d45cedd-Abstract-Conference.html"
+      ],
+      "evidence": "B: peer-reviewed model and code; no exact-slice result.",
+      "matched_to_our_slice": false,
+      "information_match": "Raw multichannel EEG fits after predeclared resampling/tokenization; audit pretraining overlap.",
+      "role": "candidate"
+    },
+    {
+      "name": "REVE",
+      "year": 2025,
+      "source_urls": [
+        "https://brain-bzh.github.io/reve/",
+        "https://huggingface.co/brain-bzh/reve-base"
+      ],
+      "evidence": "B: peer-reviewed model with weights.",
+      "matched_to_our_slice": false,
+      "information_match": "Potential montage-aware input match after 200 Hz conversion; model license and pretraining-subject overlap require audit.",
+      "role": "candidate"
+    },
+    {
+      "name": "MIRepNet",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2507.20254"
+      ],
+      "evidence": "B: MI-specific model, journal publication and author code.",
+      "matched_to_our_slice": false,
+      "information_match": "Paradigm match is strong; supervised pretraining may include EEGMMIDB, so training-corpus audit must precede use.",
+      "role": "candidate"
+    },
+    {
+      "name": "Training-only filter-bank CSP and tangent-space SVM panel",
+      "year": 2024,
+      "source_urls": [
+        "https://arxiv.org/abs/2404.15319"
+      ],
+      "evidence": "B: standard primary benchmark families; exact candidate grid not executed here.",
+      "matched_to_our_slice": false,
+      "information_match": "Uses available EEG and training people only; retain fixed outer test.",
+      "role": "candidate"
+    }
+  ],
+  "recommended_next_comparator": "Prospectively freeze a small train-person-selected filter-bank CSP/Riemannian panel; add CBraMod and REVE as separate pretrained references after corpus-overlap checks.",
+  "switching_assessment": "ADD, do not replace historical scores. Priority high. Tier B supports stronger references, not a current best claim. Keep pretrained and same-data conventional tracks separate; full fine-tuning probably needs a separately declared GPU/runtime budget.",
+  "limitations": [
+    "Only five training and three test people.",
+    "Public EEGMMIDB can overlap supervised or self-supervised pretraining.",
+    "EEG-Arena dynamic table was not extractable; no stable leaderboard rank asserted.",
+    "No new contender has been run on these exact frozen trials."
+  ],
+  "sources": [
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/bbbd6d915cb90be21c1254a82d45cedd-Abstract-Conference.html",
+      "title": "CBraMod: A Criss-Cross Brain Foundation Model for EEG Decoding",
+      "publication_date": "2025 (ICLR)",
+      "accessed_on": "2026-11-01",
+      "finding": "Peer-reviewed EEG foundation model; author code at https://github.com/wjq-learning/CBraMod.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://brain-bzh.github.io/reve/",
+      "title": "REVE: A Foundation Model for EEG",
+      "publication_date": "2025 (NeurIPS)",
+      "accessed_on": "2026-11-01",
+      "finding": "Author project supplies paper, code and model weights; flexible electrode geometry.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://huggingface.co/brain-bzh/reve-base",
+      "title": "brain-bzh/reve-base model card",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Model card specifies 200 Hz inputs and its own responsible-use weight license; this is not a permissive-license assumption.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2507.20254",
+      "title": "MIRepNet: A Pipeline and Foundation Model for EEG-Based Motor Imagery Classification",
+      "publication_date": "2025-07-27; journal 2026-06-15",
+      "accessed_on": "2026-11-01",
+      "finding": "MI-specific pretraining; author implementation https://github.com/staraink/MIRepNet is available.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.17883",
+      "title": "EEG-FM-Compass: Progress, Benchmarking, and Future Directions for EEG Foundation Models",
+      "publication_date": "2026-01-25; v3 2026-08-03",
+      "accessed_on": "2026-11-01",
+      "finding": "LOSO and few-shot comparisons find task-dependent foundation-model and specialist performance.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2404.15319",
+      "title": "The largest EEG-based BCI reproducibility study for open science: the MOABB benchmark",
+      "publication_date": "2024-04-23",
+      "accessed_on": "2026-11-01",
+      "finding": "Primary reproducibility study compares conventional, Riemannian and deep pipelines.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.24519",
+      "title": "A Negative-Control Protocol for Clinical EEG Foundation-Model Benchmarks: Dataset Identity and External-Cohort Stress Testing",
+      "publication_date": "2026-07-27; v3 2026-08-13",
+      "accessed_on": "2026-11-01",
+      "finding": "Primary control study illustrates montage/cohort and preprocessing dependence; its clinical endpoints differ.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    }
+  ],
+  "search_queries": [
+    "EEG foundation motor imagery cross subject PhysioNet EEGMMIDB CBraMod LaBraM 2025 2026 github paper",
+    "CBraMod official github ICLR 2025",
+    "REVE official brain bzh 2025",
+    "EEG Foundation Models benchmarking 2026"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

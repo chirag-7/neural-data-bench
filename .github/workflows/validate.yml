@@ -12,8 +12,10 @@ jobs:
         run: |
           node --check website/app.js
           node --check website/macro-report.js
+          node --check website/practical-review.js
           node scripts/check_site.mjs
       - name: Validate registry, local Markdown links and measurement provenance
         run: |
           python3 scripts/check_repository.py
           python3 scripts/check_macro.py
+          python3 scripts/check_practical_review.py

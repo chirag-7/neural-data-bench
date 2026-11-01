@@ -30,6 +30,7 @@ const ctx = {
   }),
 };
 vm.createContext(ctx);
+vm.runInContext(fs.readFileSync(path.join(root, "website/practical-review.js"), "utf8"), ctx);
 vm.runInContext(
   fs.readFileSync(path.join(root, "website/app.js"), "utf8"),
   ctx,
@@ -120,10 +121,47 @@ el("#detail-benchmark-picker").onchange({target:{value:"K06"}});
 if(ctx.location.hash!=="#/benchmark/K06/evaluation") throw Error("Detail quick jump must preserve evaluation tab");
 ctx.location.hash="#/analysis";vm.runInContext("draw()",ctx);
 if(!el("#app").innerHTML.includes('#/analysis/report')) throw Error("Analysis report entry link missing");
+if(!el("#app").innerHTML.includes('#/analysis/practical')) throw Error("Practical analysis entry link missing");
 vm.runInContext("globalThis.macroReportPage=()=>{document.querySelector('#app').innerHTML='Report route dispatched';}",ctx);
 ctx.location.hash="#/analysis/report";vm.runInContext("draw()",ctx);
 if(el("#app").innerHTML!=="Report route dispatched") throw Error("Deep report route dispatcher failed");
 vm.runInContext("query='';listMode='measured'",ctx);
+let practicalChecks = "awaiting assembled payload";
+const practicalPath = path.join(root, "website/data/practical-review.json");
+if (fs.existsSync(practicalPath)) {
+ const payload = JSON.parse(fs.readFileSync(practicalPath, "utf8"));
+ if(payload.tasks.length !== 30) throw Error("Practical review must include all 30 tasks");
+ vm.runInContext(`practicalData=${JSON.stringify(payload)}`,ctx);
+ const originalRecords = vm.runInContext("JSON.stringify(records)",ctx);
+ ctx.location.hash="#/analysis/practical";vm.runInContext("draw()",ctx);
+ await new Promise(resolve=>setImmediate(resolve));
+ if(!el("#app").innerHTML.includes("FIRST ATTEMPT") || !el("#app").innerHTML.includes("30 tasks")) throw Error("First-attempt practical table incomplete");
+ for(const id of optionIds(el("#app").innerHTML,"practical-task")) if(!id.startsWith("A")) throw Error("Practical detail dropdown must be scoped to category");
+ el("#practical-category").onchange({target:{value:"B"}});await new Promise(resolve=>setImmediate(resolve));
+ for(const id of optionIds(el("#app").innerHTML,"practical-task")) if(!id.startsWith("B")) throw Error("Practical category handler failed");
+ el("#practical-task").onchange({target:{value:"B08"}});
+ if(!el("#practical-task-detail").innerHTML.includes("B08")) throw Error("Practical task handler failed");
+ el("#practical-track").onchange({target:{value:"repair"}});await new Promise(resolve=>setImmediate(resolve));
+ if(!el("#app").innerHTML.includes("not an unbiased model comparison")) throw Error("Repair assistance disclosure missing");
+ const b08=payload.tasks.find(task=>task.benchmark_id==="B08");
+ for(const model of summary.models) if(Number.isFinite(b08.repair_assisted?.scores?.[model]) && !el("#app").innerHTML.includes(b08.repair_assisted.scores[model].toFixed(4))) throw Error("B08 repaired score missing:"+model);
+ for(const task of payload.tasks) {
+  ctx.location.hash=`#/benchmark/${task.benchmark_id}/specialists`;vm.runInContext("draw()",ctx);await new Promise(resolve=>setImmediate(resolve));
+  const html=el("#benchmark-content").innerHTML;
+  if(!html.includes("Candidate methods and evidence") || !html.includes("Recommended next comparator")) throw Error("Specialist review missing:"+task.benchmark_id);
+ }
+ for(const id of ["B08","J08","N05","C05"]) {
+  ctx.location.hash=`#/benchmark/${id}/repairs`;vm.runInContext("draw()",ctx);await new Promise(resolve=>setImmediate(resolve));
+  const html=el("#benchmark-content").innerHTML;
+  if(id==="C05") {
+   if(html.includes('<svg') || !html.includes("Four archive cases remain unresolved")) throw Error("C05 must show unresolved archives without invented points");
+  } else if(!html.includes("Model-version line chart") || !html.includes("Bar chart including") || !html.includes("Original first attempt")) throw Error("Repaired plots/table missing:"+id);
+  ctx.location.hash=`#/benchmark/${id}/results`;vm.runInContext("draw()",ctx);
+  if(!el("#benchmark-content").innerHTML.includes("unchanged first-attempt results")) throw Error("Repair notice missing on original results:"+id);
+ }
+ if(vm.runInContext("JSON.stringify(records)",ctx)!==originalRecords) throw Error("Practical view mutated original records");
+ practicalChecks="passed · 30 specialist views, 4 repair tabs, track/category/task handlers, immutable original records";
+}
 let plots = 0;
 for (const id of summary.measured_task_ids) {
   vm.runInContext(`selectedSlice='';renderChart('#test-chart','${id}')`, ctx);
@@ -228,6 +266,7 @@ const result = {
   routes: n,
   measured_tasks_with_bar_and_line_plots: plots,
   specialist_overlays: "passed",
+  practical_review: practicalChecks,
   direct_named_reference_labels_and_numeric_cards: "passed",
   posthoc_metric_sensitivity: "passed",
   negative_R2_axis: "passed",

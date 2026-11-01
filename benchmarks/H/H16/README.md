@@ -47,3 +47,7 @@ Decision: **measured** (2026-10-30). Pinned original EEG/EOG pools and literal o
 Preview 0.11: measured. Pinned original EEG/EOG pools and literal original RMS-ratio SNR convention; component-disjoint semisynthetic repair slice prepared with exact temporal RRMSE. Clean target is algorithmically cleaned/expert-inspected, not pristine physiology. Source participant IDs absent; no subject-generalization claim.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json). [Actual protocol/worklog](../../../experiments/H16). [Task measurements](../../../results/H16.json).
+
+## Current specialists and repair sensitivity — 1 November 2026
+
+[Current specialist review](../../../literature/specialist-review-2026-11-01/H16.json) · [Native version trajectories and practical interpretation](../../../analysis/practical-review-2026-11-01/report.md). The review distinguishes tested references from unexecuted newer candidates; no matched current global winner is certified.

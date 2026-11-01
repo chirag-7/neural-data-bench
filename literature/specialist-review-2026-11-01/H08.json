@@ -1,0 +1,163 @@
+{
+  "benchmark_id": "H08",
+  "title": "Single-channel overnight sleep staging",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "SleepEDF first eight first-night subjects, five train/three test; fixed 20:00–08:00 interval, 1440 30-second epochs/night, 100 Hz Fpz-Cz only, five R&K-derived classes, macro-F1. Wake retained by wall clock rather than label trimming.",
+  "local_protocol": "experiments/H08/protocol.md",
+  "existing_reference": {
+    "name": "Training-night spectral/statistical gradient boosting and pretrained YASA",
+    "evidence": "A: exact-slice reference audit exists.",
+    "strength": "YASA is a practical EEG-only specialist with usable pretrained staging.",
+    "problems": [
+      "Not proof of current best sleep staging.",
+      "External pretraining and optional clinical channels/demographics must be disclosed.",
+      "Very small custom night selection differs from SleepEDF20/78 literature."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "SleepGPT",
+      "year": 2026,
+      "source_urls": [
+        "https://www.nature.com/articles/s41467-025-67970-4"
+      ],
+      "evidence": "B: peer-reviewed channel-adaptive model, single-channel experiments and author code.",
+      "matched_to_our_slice": false,
+      "information_match": "Most promising new EEG-only candidate; Fpz-Cz adaptation, 100 Hz conversion, full-night head and corpus overlap need explicit verification.",
+      "role": "candidate"
+    },
+    {
+      "name": "SleepFM-Clinical",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/zou-group/sleepfm-clinical"
+      ],
+      "evidence": "B: released sleep-staging checkpoint.",
+      "matched_to_our_slice": false,
+      "information_match": "Multimodal native model; use only a documented missing-channel/EEG-only configuration, never fabricated EOG/ECG.",
+      "role": "candidate"
+    },
+    {
+      "name": "SleepFM-2",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2609.06849"
+      ],
+      "evidence": "C: recent preprint, exact executable single-channel artifacts not verified.",
+      "matched_to_our_slice": false,
+      "information_match": "Wearable transfer is relevant but does not certify this five-stage Fpz-Cz protocol.",
+      "role": "candidate"
+    },
+    {
+      "name": "PFTSleep",
+      "year": 2025,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12663716/"
+      ],
+      "evidence": "B: published full-night model; weights on request.",
+      "matched_to_our_slice": false,
+      "information_match": "Multichannel design and missing public weights limit immediate matched use.",
+      "role": "candidate"
+    },
+    {
+      "name": "U-Sleep",
+      "year": 2021,
+      "source_urls": [
+        "https://www.nature.com/articles/s41746-021-00440-5"
+      ],
+      "evidence": "B: established resilient staging specialist.",
+      "matched_to_our_slice": false,
+      "information_match": "Its EEG+EOG interface does not directly match this EEG-only slice; a documented ablation is required.",
+      "role": "candidate"
+    },
+    {
+      "name": "BIOT / LaBraM EEG-only probes",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2609.22105"
+      ],
+      "evidence": "C: recent primary reduced-channel comparison.",
+      "matched_to_our_slice": false,
+      "information_match": "Direct single-channel candidates; unrelated published splits and metrics cannot decide this slice.",
+      "role": "candidate"
+    }
+  ],
+  "recommended_next_comparator": "SleepGPT single-channel staging with a fixed train-night head, alongside unchanged YASA; SleepFM-Clinical only if its released model supports the actual single-channel input.",
+  "switching_assessment": "ADD a current pretrained specialist arm, high priority, Tier B. Do not erase YASA or call SleepFM-2 an executable best model until checkpoint, pretraining provenance and single-channel interface are verified. Declare external-data and GPU budgets.",
+  "limitations": [
+    "Three held-out nights/people provide weak population evidence.",
+    "Full 12-hour wake distribution changes macro-F1 versus sleep-period trimming.",
+    "Pretraining on SleepEDF or its target recordings must be excluded or labeled exposed.",
+    "PFTSleep article states weights on request.",
+    "SleepFM-2 executable availability not established by this bounded check."
+  ],
+  "sources": [
+    {
+      "url": "https://www.nature.com/articles/s41467-025-67970-4",
+      "title": "A unified time-frequency foundation model for sleep decoding",
+      "publication_date": "2026-01-13; version of record 2026-01-30",
+      "accessed_on": "2026-11-01",
+      "finding": "SleepGPT has channel-adaptive and single-channel experiments; author code https://github.com/LordXX505/SleepGPT.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://github.com/zou-group/sleepfm-clinical",
+      "title": "SleepFM-Clinical: official code and checkpoints",
+      "publication_date": "2026 (associated Nature Medicine paper)",
+      "accessed_on": "2026-11-01",
+      "finding": "Repository exposes pretrained, sleep-staging and disease heads; disease prediction is a different endpoint.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.06849",
+      "title": "Learning transferable human physiology from two million hours of sleep with SleepFM-2",
+      "publication_date": "2026-09-06; v2 2026-10-02",
+      "accessed_on": "2026-11-01",
+      "finding": "Recent multimodal and wearable-transfer preprint. Exact single-Fpz-Cz adapter/checkpoint availability remains unverified.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12663716/",
+      "title": "A foundational transformer leveraging full night, multichannel sleep study data accurately classifies sleep stages",
+      "publication_date": "2025 (August issue)",
+      "accessed_on": "2026-11-01",
+      "finding": "PFTSleep code is public; article says weights available upon reasonable request, not unrestricted download.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41746-021-00440-5",
+      "title": "U-Sleep: resilient high-frequency sleep staging",
+      "publication_date": "2021",
+      "accessed_on": "2026-11-01",
+      "finding": "Strong established full-night EEG/EOG staging comparator; this slice supplies EEG only.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.22105",
+      "title": "Comparative Analysis of State-of-the-Art Foundation Models for Sleep Analysis Under Channel Reduction",
+      "publication_date": "2026-08-14",
+      "accessed_on": "2026-11-01",
+      "finding": "Primary reduced-channel comparison supports testing BIOT/LaBraM rather than presuming multimodal superiority.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    }
+  ],
+  "search_queries": [
+    "sleep SleepEDF 2025 2026 U-Sleep SleepFM PFTSleep",
+    "site.nature.com SleepFM multimodal sleep foundation model 2026",
+    "site.github.com SleepFM-2 2026",
+    "Comparative Analysis foundation models sleep channel reduction 2026"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

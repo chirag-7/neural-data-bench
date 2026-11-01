@@ -49,3 +49,7 @@ Decision: **measured** (2026-10-30). Original FRESH organizer description resolv
 Preview 0.11: measured. Original FRESH organizer description resolves left/right2s finger tapping. CC0 versioned SNIRF data acquired/prepared with subject-disjoint2s condition decoding and optical-density conversion; explicit session/condition confounding, no Hb or cortical-activation gold-standard claim.
 
 [Admission/source evidence](../../../literature/admission-v04-electrical.json). [Actual protocol/worklog](../../../experiments/I07). [Task measurements](../../../results/I07.json).
+
+## Current specialists and repair sensitivity — 1 November 2026
+
+[Current specialist review](../../../literature/specialist-review-2026-11-01/I07.json) · [Native version trajectories and practical interpretation](../../../analysis/practical-review-2026-11-01/report.md). The review distinguishes tested references from unexecuted newer candidates; no matched current global winner is certified.

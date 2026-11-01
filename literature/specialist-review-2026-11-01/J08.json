@@ -1,0 +1,146 @@
+{
+  "benchmark_id": "J08",
+  "title": "Multi-rater synaptic-punctum instance segmentation",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "SynAPSeg 27 original 2D training fields, fixed 128-pixel crops with annotation-coverage masks; two whole benchmark images held out, each with five expert annotations. Primary equal-image/equal-rater instance F1, IoU ≥ 0.5, documented disconnected-ID and minimum-four-pixel cleanup. No animal-level independence established.",
+  "local_protocol": "experiments/J08/protocol.md",
+  "existing_reference": {
+    "name": "Author-deposited StarDist prediction masks rescored on the canonical two images",
+    "evidence": "A: archived predictions verified on the custom multi-rater scorer.",
+    "strength": "A real relevant punctum specialist, much stronger evidence than a generic nucleus segmentation rank.",
+    "problems": [
+      "Historical benchmark exposure cannot be ruled out.",
+      "Training/selection effort and information differ from one-shot code.",
+      "Archived masks are a practical reference, not a newly trained pristine-test model or verified current best."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "Archived SynAPSeg 2D StarDist predictions",
+      "year": 2026,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/"
+      ],
+      "evidence": "B/A: original punctum study plus local archived masks.",
+      "matched_to_our_slice": true,
+      "information_match": "Deposited masks are already rescored on the local endpoint. Fresh train-field-only retraining is a separate unexecuted candidate.",
+      "role": "existing_reference"
+    },
+    {
+      "name": "SynAPSeg fine-tuned Cellpose-SAM",
+      "year": 2026,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
+        "https://www.biorxiv.org/content/10.1101/2025.04.28.651001v1"
+      ],
+      "evidence": "B: source study directly compares this punctum architecture.",
+      "matched_to_our_slice": false,
+      "information_match": "Strongest immediate alternative: retrain only on allowed original training fields and masked annotation regions; do not use test-rater labels for tuning.",
+      "role": "candidate"
+    },
+    {
+      "name": "Cellpose-SAM v2 / CellposeDINO",
+      "year": 2026,
+      "source_urls": [
+        "https://cellpose.readthedocs.io/en/latest/models.html"
+      ],
+      "evidence": "C: current official releases, not matched punctum evidence.",
+      "matched_to_our_slice": false,
+      "information_match": "Single-image input fits, but tiny puncta, sparse labels and scale need training-field validation.",
+      "role": "candidate"
+    },
+    {
+      "name": "CellSAM",
+      "year": 2025,
+      "source_urls": [
+        "https://doi.org/10.1038/s41592-025-02879-w"
+      ],
+      "evidence": "B for whole-cell segmentation; C/D for puncta adaptation.",
+      "matched_to_our_slice": false,
+      "information_match": "Whole-cell detector prior may miss tiny objects; no oracle bounding boxes permitted.",
+      "role": "candidate"
+    },
+    {
+      "name": "microSAM / DeepD3",
+      "year": 2025,
+      "source_urls": [
+        "https://www.nature.com/articles/s41592-024-02580-4.pdf",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/"
+      ],
+      "evidence": "B for microscopy or spines, not a proven punctum winner.",
+      "matched_to_our_slice": false,
+      "information_match": "Automatic mask proposal can be evaluated; interactive prompts or spine-specific labels change information/target.",
+      "role": "candidate"
+    }
+  ],
+  "recommended_next_comparator": "Fresh SynAPSeg-style StarDist and fine-tuned Cellpose-SAM, trained on exactly the existing 27 fields and chosen with training-field validation; add cpsam_v2/cpdino only as prespecified challengers.",
+  "switching_assessment": "ADD a clean trained specialist arm, high priority, Tier B. Retain archived StarDist as historical rescoring. Source 2D comparison supports multiple contenders, not a unique winner; current generic cell-model releases do not establish a better punctum reference.",
+  "limitations": [
+    "Two test fields cannot support a broad segmentation ranking.",
+    "Five raters are correlated annotations, not five specimens.",
+    "Ignore unknown training pixels in every neural loss and validation transform.",
+    "Published source benchmark aggregates and centroid-consensus scores differ from this custom multi-rater F1.",
+    "Generic SAM box/point prompts from hidden annotations would be unequal information.",
+    "All new candidate runs would require a separate compute and exposure declaration."
+  ],
+  "sources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
+      "title": "SynAPSeg: A novel dataset and image analysis framework for deep learning-based synapse detection and quantification",
+      "publication_date": "2026-07-29",
+      "accessed_on": "2026-11-01",
+      "finding": "Author study compares custom StarDist, Cellpose-SAM and DeepD3; custom 2D StarDist and Cellpose perform similarly.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://cellpose.readthedocs.io/en/latest/models.html",
+      "title": "Cellpose built-in models: official documentation",
+      "publication_date": "2026-06 for cpsam_v2 and CellposeDINO releases",
+      "accessed_on": "2026-11-01",
+      "finding": "Documents current cpsam_v2, cpdino and smaller cpdino-vitb; generic cell segmentation is not punctum validation.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.1101/2025.04.28.651001v1",
+      "title": "Cellpose-SAM: superhuman generalization for cellular segmentation",
+      "publication_date": "2025-05-01 (posted)",
+      "accessed_on": "2026-11-01",
+      "finding": "Original Cellpose-SAM architecture; author repository https://github.com/MouseLand/cellpose.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://doi.org/10.1038/s41592-025-02879-w",
+      "title": "CellSAM: a foundation model for cell segmentation",
+      "publication_date": "2025-12-08",
+      "accessed_on": "2026-11-01",
+      "finding": "CellFinder detector prompts SAM for whole-cell masks; no tiny synaptic-punctum superiority established.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41592-024-02580-4.pdf",
+      "title": "Segment Anything for Microscopy",
+      "publication_date": "2025 (March issue)",
+      "accessed_on": "2026-11-01",
+      "finding": "Interactive and automatic microscopy segmentation; human prompts are extra information under automatic J08.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    }
+  ],
+  "search_queries": [
+    "SynAPSeg 2026 synapse segmentation StarDist Cellpose 1014571",
+    "Cellpose SAM Nature Methods 2025 official tiny puncta segmentation",
+    "Cellpose SAM Pachitariu 2025 arxiv official github"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

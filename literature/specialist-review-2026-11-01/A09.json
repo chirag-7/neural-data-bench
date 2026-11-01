@@ -1,0 +1,185 @@
+{
+  "benchmark_id": "A09",
+  "title": "CalMS21 processed-pose social classification",
+  "reviewed_on": "2026-11-01",
+  "retrieval_date_semantics": "accessed_on is this fresh retrieval, not publication date or proof of exhaustive indexing; null publication_date means not verified",
+  "search_queries": [
+    "CalMS21 benchmark leaderboard best model VASSI MARS B-SOiD 2025 2026",
+    "site:github.com CalMS21 VASSI benchmark behavior 2025",
+    "Learning When Visual Context Matters arxiv code",
+    "FERAL Video-to-Behavior github",
+    "V-TRACE animal behaviors github"
+  ],
+  "candidates": [
+    {
+      "name": "VASSI",
+      "year": 2025,
+      "source_urls": [
+        "https://elifesciences.org/reviewed-preprints/108329"
+      ],
+      "evidence": "Published CalMS21 Task 1 validation and multiple archived runs; our source-backed rescoring exists but full temporal processing/input context exceeds the seven-offset processed-input general-model contract.",
+      "matched_to_our_slice": true,
+      "role": "existing archived specialist, richer source information"
+    },
+    {
+      "name": "MABe2021 Top-1 ensemble",
+      "year": 2021,
+      "source_urls": [
+        "https://sites.google.com/view/computational-behavior/our-datasets/calms21-dataset",
+        "https://github.com/nebw/mabe"
+      ],
+      "evidence": "Official dataset page links challenge winner code; ensemble and training setup require explicit alignment to our 3 Hz four-class macro F1.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "TREBA + pose classifier",
+      "year": 2021,
+      "source_urls": [
+        "https://github.com/neuroethology/TREBA"
+      ],
+      "evidence": "Official code supports CalMS21 task programming/unlabeled pretraining; does not establish a 2026 same-input winner.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "ResiFuse",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2603.07279"
+      ],
+      "evidence": "Preprint revised 12 October 2026 uses pose with selective video context; strong recent contender, additional modality and pretraining differ.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "FERAL / V-JEPA2",
+      "year": 2025,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12667788/",
+        "https://github.com/Skovorp/feral"
+      ],
+      "evidence": "Direct video behavior model; primary article indexed CalMS21 comparison, but direct PMC open challenged by CAPTCHA. Full-video information differs from pose diagnostic.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "V-TRACE",
+      "year": 2026,
+      "source_urls": [
+        "https://www.biorxiv.org/content/10.64898/2026.04.14.718392v2.full",
+        "https://zenodo.org/records/22119864"
+      ],
+      "evidence": "Recent video temporal-annotation system and versioned code deposit; indexed primary comparison includes CalMS21, direct paper returned HTTP 403. No matched pose-input ranking verified.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    }
+  ],
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_claim_scope": "Exact executed custom input/split/metric protocol, not best within our small inspected local set",
+  "current_reference": "VASSI archived run00 plus conventional geometry/ExtraTrees anchor",
+  "current_reference_limitations": [
+    "Seven-offset pose input at 3 Hz centers differs from full-frame models.",
+    "Video foundation/pose-pretraining resources and tuning budgets differ.",
+    "Four-class macro F1 cannot be replaced by reported mAP, foreground F1 or raw accuracy.",
+    "Public data and 19 test videos are not independent animal-population guarantees."
+  ],
+  "recommended_next_comparator": "First reproduce VASSI/Top-1 on identical sampled centers and four-class macro F1 with an input-matched pose-only tier; separately report full-pose/full-video tiers for ResiFuse, FERAL and V-TRACE. Freeze train-only selection and several seeds.",
+  "switching_assessment": "NO GENERAL REPLACEMENT RECOMMENDATION. Current evidence supports a bounded code-synthesis/pilot comparison to the named local reference. Establish prospective same-input/split/metric contender runs, biological/source replication, calibration and runtime/reliability before switching production tools.",
+  "limitations": [
+    "Seven-offset pose input at 3 Hz centers differs from full-frame models.",
+    "Video foundation/pose-pretraining resources and tuning budgets differ.",
+    "Four-class macro F1 cannot be replaced by reported mAP, foreground F1 or raw accuracy.",
+    "Public data and 19 test videos are not independent animal-population guarantees."
+  ],
+  "negative_findings": [
+    "No fresh official continuously maintained CalMS21 ranking with our precise metric/input contract verified.",
+    "Generic MARS-Bench/BEHAVIOR leaderboards are unrelated; discarded retrievals, not evidence."
+  ],
+  "sources": [
+    {
+      "url": "https://sites.google.com/view/computational-behavior/our-datasets/calms21-dataset",
+      "title": "CalMS21 official dataset page",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Links original paper, Top-1 implementation, TREBA and task-specific baselines."
+    },
+    {
+      "url": "https://github.com/nebw/mabe",
+      "title": "nebw/mabe official challenge-winning implementation",
+      "publication_date": "2021",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Inspected repository; contender code rather than evidence of an up-to-date universal leaderboard."
+    },
+    {
+      "url": "https://elifesciences.org/reviewed-preprints/108329",
+      "title": "vassi – verifiable, automated scoring of social interactions in animal groups",
+      "publication_date": "2025",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "CalMS21 classical classification study with 20 runs and postprocessing; label-set/context parity must be kept explicit."
+    },
+    {
+      "url": "https://github.com/neuroethology/TREBA",
+      "title": "TREBA official repository",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Task-programming features for CalMS21 and links to classifier."
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.07279",
+      "title": "Learning When Visual Context Matters for Mouse Behavior Analysis",
+      "publication_date": "2026-10-12",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "ResiFuse, pose/video hybrid; version 2, dated 12 October 2026 verified from arXiv."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12667788/",
+      "title": "FERAL: A Video-Understanding System for Direct Video-to-Behavior Mapping",
+      "publication_date": "2025",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh primary indexed retrieval; direct open CAPTCHA",
+      "finding": "Primary indexed text identifies video-model comparison; current direct open CAPTCHA, so no independent numerical table extraction."
+    },
+    {
+      "url": "https://github.com/Skovorp/feral",
+      "title": "FERAL official code",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Author article names this public repository; source/weights need separate pin before rerun."
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.64898/2026.04.14.718392v2.full",
+      "title": "V-TRACE: End-to-end temporal inference and annotation of animal behaviors from video",
+      "publication_date": "2026",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh primary indexed retrieval; direct returned HTTP 403",
+      "finding": "Recent primary indexed comparison; direct full text returned HTTP 403."
+    },
+    {
+      "url": "https://zenodo.org/records/22119864",
+      "title": "V-TRACE versioned software deposit",
+      "publication_date": "2026-08-27",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Official software release v1.0.0; creator metadata and linked code."
+    }
+  ],
+  "local_protocol": {
+    "path": "experiments/A09/protocol.md",
+    "sha256": "8cf05be6670b9c58816b5990851b091991b9fe27a3456f6baff86366977d2f23"
+  },
+  "review_actions": {
+    "fresh_primary_source_browsing": true,
+    "trained_models": false,
+    "downloaded_large_weights": false,
+    "changed_scores": false,
+    "changed_website": false
+  },
+  "unmatched_published_scores_imported": false
+}

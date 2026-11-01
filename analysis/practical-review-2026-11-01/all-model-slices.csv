@@ -1,0 +1,157 @@
+benchmark_id,slice_id,model,status,score,metric,direction,strict_format_compliant,reason
+A09,expansion-v1,gpt-5.6-sol,measured,0.8689719505732656,macro_f1,higher,True,
+A09,expansion-v1,gpt-6-sol,measured,0.8759463067061746,macro_f1,higher,True,
+A09,expansion-v1,gpt-6.1-sol,measured,0.8806960154913499,macro_f1,higher,True,
+A14,expansion-v1,gpt-5.6-sol,measured,0.4485493561358864,rmse_missing,lower,True,
+A14,expansion-v1,gpt-6-sol,measured,0.436120867729187,rmse_missing,lower,True,
+A14,expansion-v1,gpt-6.1-sol,measured,0.45059488811841064,rmse_missing,lower,True,
+A15,batch-v11,gpt-5.6-sol,measured,0.9863118287200278,recording_macro_event_f1_20ms_onset_20ms_or_20pct_offset,higher,False,
+A15,batch-v11,gpt-6-sol,measured,0.9868545569755686,recording_macro_event_f1_20ms_onset_20ms_or_20pct_offset,higher,True,
+A15,batch-v11,gpt-6.1-sol,measured,0.9920795405521152,recording_macro_event_f1_20ms_onset_20ms_or_20pct_offset,higher,True,
+B01,sorting-v1,gpt-5.6-sol,measured,0.8749905140758875,mean_gt_accuracy,higher,True,
+B01,sorting-v1,gpt-6-sol,measured,0.9400114619192405,mean_gt_accuracy,higher,True,
+B01,sorting-v1,gpt-6.1-sol,measured,0.7504504504504504,mean_gt_accuracy,higher,True,
+B03,batch-v11,gpt-5.6-sol,measured,3.6041552208003775,recording_mean_motion_rmse_um,lower,True,
+B03,batch-v11,gpt-6-sol,measured,4.418263744475342,recording_mean_motion_rmse_um,lower,True,
+B03,batch-v11,gpt-6.1-sol,measured,5.275098380741698,recording_mean_motion_rmse_um,lower,True,
+B07,compression-v1,gpt-5.6-sol,measured,7.0198300679524746,encoded_bits_per_int16_sample,lower,True,
+B07,compression-v1,gpt-6-sol,measured,6.9016977945963545,encoded_bits_per_int16_sample,lower,True,
+B07,compression-v1,gpt-6.1-sol,measured,7.2145891189575195,encoded_bits_per_int16_sample,lower,True,
+B08,batch-v11,gpt-5.6-sol,failed,,,,True,"Traceback (most recent call last):
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/batch_candidates.py"", line 88, in <module>
+    else:print(json.dumps(one(args.task,args.model,args.slice)))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/batch_candidates.py"", line 41, in one
+    if task=='B08':ns=code_namespace(code)
+                      ^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/compression_candidates.py"", line 13, in code_namespace
+    if isinstance(n,ast.Import) and any(x.name.split('.')[0] not in allowed for x in n.names):raise ValueError('Disallowed import')
+                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Disallowed import
+"
+B08,batch-v11,gpt-6-sol,failed,,,,True,"Traceback (most recent call last):
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/batch_candidates.py"", line 88, in <module>
+    else:print(json.dumps(one(args.task,args.model,args.slice)))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/batch_candidates.py"", line 41, in one
+    if task=='B08':ns=code_namespace(code)
+                      ^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/compression_candidates.py"", line 13, in code_namespace
+    if isinstance(n,ast.Import) and any(x.name.split('.')[0] not in allowed for x in n.names):raise ValueError('Disallowed import')
+                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Disallowed import
+"
+B08,batch-v11,gpt-6.1-sol,measured,8.636801620045114,mean_encoded_bits_per_event_50us,lower,True,
+C05,1,gpt-5.6-sol,measured,0.5789139103635804,median_pearson_40ms,higher,False,
+C05,1,gpt-6-sol,measured,0.6007624982304995,median_pearson_40ms,higher,True,
+C05,1,gpt-6.1-sol,measured,0.6045865346359193,median_pearson_40ms,higher,True,
+C05,2,gpt-5.6-sol,measured,0.4078136910603323,median_pearson_40ms,higher,False,
+C05,2,gpt-6-sol,measured,0.44113065412279007,median_pearson_40ms,higher,True,
+C05,2,gpt-6.1-sol,measured,0.4571717528928923,median_pearson_40ms,higher,True,
+C05,3,gpt-5.6-sol,measured,0.408966150564502,median_pearson_40ms,higher,False,
+C05,3,gpt-6-sol,measured,0.3971166573551097,median_pearson_40ms,higher,True,
+C05,3,gpt-6.1-sol,measured,0.44032121198396157,median_pearson_40ms,higher,True,
+C05,4,gpt-5.6-sol,measured,0.38975891067537416,median_pearson_40ms,higher,False,
+C05,4,gpt-6-sol,measured,0.367990624463029,median_pearson_40ms,higher,True,
+C05,4,gpt-6.1-sol,measured,0.39199494838416066,median_pearson_40ms,higher,True,
+C05,5,gpt-5.6-sol,measured,0.47552792525592424,median_pearson_40ms,higher,False,
+C05,5,gpt-6-sol,measured,0.4095258234590523,median_pearson_40ms,higher,True,
+C05,5,gpt-6.1-sol,measured,0.4454041252573775,median_pearson_40ms,higher,True,
+C06,batch-v11,gpt-5.6-sol,measured,0.8564154409076183,animal_mean_neuron_pearson_smoothed200ms,higher,True,
+C06,batch-v11,gpt-6-sol,measured,0.8465793019998664,animal_mean_neuron_pearson_smoothed200ms,higher,True,
+C06,batch-v11,gpt-6.1-sol,measured,0.8675919925239051,animal_mean_neuron_pearson_smoothed200ms,higher,True,
+D02,expansion-v1,gpt-5.6-sol,measured,0.21777564495208945,rmse_mV,lower,True,
+D02,expansion-v1,gpt-6-sol,measured,0.21770548314158608,rmse_mV,lower,True,
+D02,expansion-v1,gpt-6.1-sol,measured,0.23553334017447436,rmse_mV,lower,True,
+E01,expansion-v1,gpt-5.6-sol,measured,0.23766198054692542,bits_per_spike,higher,True,
+E01,expansion-v1,gpt-6-sol,measured,0.15860429272365217,bits_per_spike,higher,True,
+E01,expansion-v1,gpt-6.1-sol,measured,0.24215525550332231,bits_per_spike,higher,True,
+E01,area2_bump,gpt-5.6-sol,measured,0.22651242070341174,bits_per_spike,higher,True,
+E01,area2_bump,gpt-6-sol,measured,0.18621944382911432,bits_per_spike,higher,True,
+E01,area2_bump,gpt-6.1-sol,measured,0.21687815508893185,bits_per_spike,higher,True,
+E01,dmfc_rsg,gpt-5.6-sol,measured,0.1463466380970223,bits_per_spike,higher,True,
+E01,dmfc_rsg,gpt-6-sol,measured,0.13857845294434637,bits_per_spike,higher,True,
+E01,dmfc_rsg,gpt-6.1-sol,measured,0.1630950053691111,bits_per_spike,higher,True,
+E06,batch-v11,gpt-5.6-sol,measured,0.002794122521015086,mse_dff,lower,True,
+E06,batch-v11,gpt-6-sol,measured,0.0027332145893643007,mse_dff,lower,True,
+E06,batch-v11,gpt-6.1-sol,measured,0.0022787300259792874,mse_dff,lower,True,
+E06,taxis,gpt-5.6-sol,measured,0.0026811504487823626,mse_dff,lower,True,
+E06,taxis,gpt-6-sol,measured,0.002521834009582198,mse_dff,lower,True,
+E06,taxis,gpt-6.1-sol,measured,0.0027351108729422925,mse_dff,lower,True,
+F04,expansion-v1,gpt-5.6-sol,measured,1.5506315044426546,poisson_nll,lower,True,
+F04,expansion-v1,gpt-6-sol,measured,1.6247416041707718,poisson_nll,lower,True,
+F04,expansion-v1,gpt-6.1-sol,measured,1.5108013652511572,poisson_nll,lower,True,
+G01,expansion-v1,gpt-5.6-sol,measured,0.09128554368236495,r2_variance_weighted,higher,True,
+G01,expansion-v1,gpt-6-sol,measured,0.07616323074750539,r2_variance_weighted,higher,True,
+G01,expansion-v1,gpt-6.1-sol,measured,0.09464088827371597,r2_variance_weighted,higher,True,
+H01,expansion-v1,gpt-5.6-sol,measured,0.6488801054018445,balanced_accuracy,higher,True,
+H01,expansion-v1,gpt-6-sol,measured,0.7183794466403162,balanced_accuracy,higher,True,
+H01,expansion-v1,gpt-6.1-sol,measured,0.6979578392621871,balanced_accuracy,higher,True,
+H02,expansion-v1,gpt-5.6-sol,measured,0.7571945899092973,subject_equal_roc_auc,higher,True,
+H02,expansion-v1,gpt-6-sol,measured,0.73054818684538,subject_equal_roc_auc,higher,True,
+H02,expansion-v1,gpt-6.1-sol,measured,0.7885365446735593,subject_equal_roc_auc,higher,True,
+H08,expansion-v1,gpt-5.6-sol,measured,0.8027158427646084,macro_f1_sleep,higher,False,
+H08,expansion-v1,gpt-6-sol,measured,0.7926748472246049,macro_f1_sleep,higher,True,
+H08,expansion-v1,gpt-6.1-sol,measured,0.7922358672484364,macro_f1_sleep,higher,True,
+H16,expansion-v1,gpt-5.6-sol,measured,0.4616066515445709,temporal_rrmse,lower,True,
+H16,expansion-v1,gpt-6-sol,measured,0.5264783501625061,temporal_rrmse,lower,True,
+H16,expansion-v1,gpt-6.1-sol,measured,0.45338359475135803,temporal_rrmse,lower,True,
+I07,expansion-v1,gpt-5.6-sol,measured,0.4361111111111111,balanced_accuracy,higher,True,
+I07,expansion-v1,gpt-6-sol,measured,0.508187134502924,balanced_accuracy,higher,True,
+I07,expansion-v1,gpt-6.1-sol,measured,0.5505847953216374,balanced_accuracy,higher,True,
+I10,expansion-v1,gpt-5.6-sol,measured,0.6352631578947369,balanced_accuracy,higher,True,
+I10,expansion-v1,gpt-6-sol,measured,0.6071929824561404,balanced_accuracy,higher,True,
+I10,expansion-v1,gpt-6.1-sol,measured,0.6378947368421053,balanced_accuracy,higher,True,
+J08,expansion-v1,gpt-5.6-sol,measured,0.6433683295437704,instance_f1_iou50_multirater,higher,True,
+J08,expansion-v1,gpt-6-sol,measured,0.49207380629422726,instance_f1_iou50_multirater,higher,True,
+J08,expansion-v1,gpt-6.1-sol,failed,,,,True,"Traceback (most recent call last):
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/expansion.py"", line 133, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/expansion.py"", line 132, in main
+    else:print(json.dumps(one(a.task,a.model)))
+                          ^^^^^^^^^^^^^^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/expansion.py"", line 94, in one
+    np.random.seed(0);t=time.perf_counter();pred=np.asarray(f(x.copy(),y.copy(),xt.copy()));elapsed=time.perf_counter()-t
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""gpt-6.1-sol"", line 208, in fit_predict
+  File ""gpt-6.1-sol"", line 88, in _counts
+IndexError: boolean index did not match indexed array along axis 0; size of axis is 128 but size of corresponding boolean axis is 16384
+"
+K01,expansion-v1,gpt-5.6-sol,measured,0.9409145106376866,macro_f1,higher,True,
+K01,expansion-v1,gpt-6-sol,measured,0.9409145106376866,macro_f1,higher,True,
+K01,expansion-v1,gpt-6.1-sol,measured,0.943074240159442,macro_f1,higher,True,
+K04,expansion-v1,gpt-5.6-sol,measured,0.5050711426219323,section_equal_macro_f1_7classes,higher,True,
+K04,expansion-v1,gpt-6-sol,measured,0.5319420425018879,section_equal_macro_f1_7classes,higher,True,
+K04,expansion-v1,gpt-6.1-sol,measured,0.5505501906955991,section_equal_macro_f1_7classes,higher,True,
+K05,batch-v11,gpt-5.6-sol,measured,0.06742367203503653,donor_block_macro_rmse,lower,True,
+K05,batch-v11,gpt-6-sol,measured,0.057937995627723386,donor_block_macro_rmse,lower,True,
+K05,batch-v11,gpt-6.1-sol,measured,0.0552287462339175,donor_block_macro_rmse,lower,True,
+K06,batch-v11,gpt-5.6-sol,measured,0.8777777777777778,class_balanced_mouse_accuracy,higher,True,
+K06,batch-v11,gpt-6-sol,measured,0.8694444444444445,class_balanced_mouse_accuracy,higher,True,
+K06,batch-v11,gpt-6.1-sol,measured,0.8902777777777777,class_balanced_mouse_accuracy,higher,True,
+L04,expansion-v1,gpt-5.6-sol,measured,3.1947434653493336,bits_per_spike_train_mean,higher,True,
+L04,expansion-v1,gpt-6-sol,measured,3.2799513652032317,bits_per_spike_train_mean,higher,True,
+L04,expansion-v1,gpt-6.1-sol,measured,3.263821403265054,bits_per_spike_train_mean,higher,True,
+L06,posterior-v1,gpt-5.6-sol,measured,0.5125000059604645,c2st_accuracy_2000,lower,True,
+L06,posterior-v1,gpt-6-sol,measured,0.49737500846385957,c2st_accuracy_2000,lower,True,
+L06,posterior-v1,gpt-6.1-sol,measured,0.5056000024080276,c2st_accuracy_2000,lower,True,
+M01,expansion-v1,gpt-5.6-sol,measured,0.436515244310296,mouse_equal_binary_log_loss,lower,True,
+M01,expansion-v1,gpt-6-sol,measured,0.43758408636020407,mouse_equal_binary_log_loss,lower,True,
+M01,expansion-v1,gpt-6.1-sol,measured,0.43663393063728134,mouse_equal_binary_log_loss,lower,True,
+M04,synthetic-v1,gpt-5.6-sol,measured,0.05822260584692529,range_normalized_mae,lower,True,
+M04,synthetic-v1,gpt-6-sol,measured,0.058219400713050706,range_normalized_mae,lower,True,
+M04,synthetic-v1,gpt-6.1-sol,measured,0.058221490095125596,range_normalized_mae,lower,True,
+N05,expansion-v1,gpt-5.6-sol,failed,,,,False,"Traceback (most recent call last):
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/workflow.py"", line 57, in <module>
+    else:print(json.dumps(one(sys.argv[2])))
+                          ^^^^^^^^^^^^^^^^
+  File ""/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/workflow.py"", line 40, in one
+    t=time.perf_counter();answer=f(str(CACHE/'fixture.nwb'));elapsed=time.perf_counter()-t;sc=score(answer);p=ROOT/f'results/predictions/N05/expansion-v1--{model}.json';p.parent.mkdir(exist_ok=True,parents=True);p.write_text(json.dumps(answer,indent=2))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""gpt-5.6-sol"", line 204, in extract
+  File ""gpt-5.6-sol"", line 121, in find_series
+ValueError: Could not distinguish sweep 19 stimulus
+"
+N05,expansion-v1,gpt-6-sol,measured,1.0,field_accuracy,higher,True,
+N05,expansion-v1,gpt-6.1-sol,measured,1.0,field_accuracy,higher,True,

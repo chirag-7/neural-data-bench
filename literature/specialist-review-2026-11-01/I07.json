@@ -1,0 +1,121 @@
+{
+  "benchmark_id": "I07",
+  "title": "Held-out-person fNIRS optical-density classification",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "FRESH motor dataset, people 1–7 train/8–10 test; left/right 2-second tapping sessions; 136 optical-density measurements × eight delayed 1-second bins, baseline-relative 3–11 s. Balanced accuracy. No chromophore conversion or spatial metadata in the model interface.",
+  "local_protocol": "experiments/I07/protocol.md",
+  "existing_reference": {
+    "name": "Delayed-channel-mean optical-density shrinkage LDA",
+    "evidence": "A: executed conventional baseline, not a current specialist.",
+    "strength": "Uses exactly the supplied signals and no invented optical parameters.",
+    "problems": [
+      "Separate left/right sessions confound condition with recording.",
+      "No short-channel regression, Beer–Lambert conversion, motion repair or channel-quality optimization.",
+      "Binning discards much raw temporal structure."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "MtReNIRS",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2610.36159"
+      ],
+      "evidence": "C: 26 October 2026 foundation-model preprint.",
+      "matched_to_our_slice": false,
+      "information_match": "Not drop-in: chromophore-aware representations and montage identity cannot be reconstructed from the anonymous OD-bin interface.",
+      "role": "candidate"
+    },
+    {
+      "name": "67-dataset fNIRS corpus/dataloaders",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2610.40277"
+      ],
+      "evidence": "C: 29 October 2026 primary resource, not a trained-model leaderboard.",
+      "matched_to_our_slice": false,
+      "information_match": "Useful for a future raw HbO/HbR/montage track; not evidence of a best FRESH classifier.",
+      "role": "candidate"
+    },
+    {
+      "name": "Training-only regularized OD temporal decoder / SVM",
+      "year": 2026,
+      "source_urls": [
+        "https://openfnirs.org/community/fresh/welcome-to-the-fnirs-fresh-project/",
+        "https://www.nature.com/articles/s42003-025-08412-1"
+      ],
+      "evidence": "C: scientifically compatible proposed conventional comparison; no invented published FRESH score.",
+      "matched_to_our_slice": false,
+      "information_match": "Retains all eight bins, subject-grouped validation, same inputs and targets.",
+      "role": "candidate"
+    }
+  ],
+  "recommended_next_comparator": "A fixed small regularized logistic/SVM/temporal-feature panel selected on training people only; maintain OD semantics. A separate raw fNIRS track is needed for MtReNIRS.",
+  "switching_assessment": "ADD a stronger same-information conventional panel, Tier C. Do not silently switch the endpoint to HbO/HbR foundation modeling. The newest foundations are relevant field developments but currently unmatched.",
+  "limitations": [
+    "Only three held-out people.",
+    "Session confounding survives subject disjointness.",
+    "FRESH reproducibility outcomes concern scientific analyses, not this classification metric.",
+    "New preprints are days old; executable checkpoints and independent replication are not verified.",
+    "Chromophore/geometry recovery would change the supplied input information."
+  ],
+  "sources": [
+    {
+      "url": "https://openfnirs.org/community/fresh/welcome-to-the-fnirs-fresh-project/",
+      "title": "Welcome to the fNIRS FRESH project: original dataset information",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Left and right motor conditions were acquired in separate sessions; optical-density classifiers inherit this confounding.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://www.nature.com/articles/s42003-025-08412-1",
+      "title": "fNIRS reproducibility varies with data quality, analysis pipelines, and researcher experience",
+      "publication_date": "2025",
+      "accessed_on": "2026-11-01",
+      "finding": "Original reproducibility study; researcher concordance is not classifier balanced accuracy.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.36159",
+      "title": "MtReNIRS: A Self-Supervised Foundation Model for Transferable Neurovascular Representations",
+      "publication_date": "2026-10-26",
+      "accessed_on": "2026-11-01",
+      "finding": "New neurovascular representation preprint; chromophore and channel geometry requirements matter.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40277",
+      "title": "Towards fNIRS foundation models: A curated corpus of 67 public datasets with channel positions in MNI space",
+      "publication_date": "2026-10-29",
+      "accessed_on": "2026-11-01",
+      "finding": "A corpus/dataloader contribution, not a demonstrated best classifier; repository https://github.com/sposso/fnirs-datasets.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/pdf/2610.36159",
+      "title": "MtReNIRS full preprint PDF",
+      "publication_date": "2026-10-26",
+      "accessed_on": "2026-11-01",
+      "finding": "Full primary PDF verifies montage-aware chromophore identity and cortical location inputs; no journal acceptance inferred from placeholder header."
+    }
+  ],
+  "search_queries": [
+    "fNIRS foundation FRESH finger 2025 2026",
+    "\"FRESH\" fNIRS dataset finger tapping classification baseline",
+    "MtReNIRS transferable neurovascular representations 2026"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

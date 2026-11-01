@@ -1,0 +1,170 @@
+{
+  "benchmark_id": "I10",
+  "title": "Structural MRI quality classification from IQMs",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "Processed structural MRIQC table: 68 IQMs; ABIDE 600 training scans, DS030 265 test scans. Rater1 exclusion target; doubtful merged with accept; balanced accuracy. Raw MRI images are unavailable to fitted methods.",
+  "local_protocol": "experiments/I10/protocol.md",
+  "existing_reference": {
+    "name": "Fixed balanced RF500 and archived original MRIQC classifier",
+    "evidence": "A: locally evaluated outputs; archived fitting provenance differs.",
+    "strength": "Original MRIQC RF is historically and operationally relevant.",
+    "problems": [
+      "Archived rater-collapse and tuning history need separate treatment.",
+      "A modern MRIQC release is an extractor, not evidence for a new classifier winner.",
+      "Scanner/site/rater shift may dominate apparent classifier differences."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "Archived original MRIQC classifier, locally rescored",
+      "year": 2017,
+      "source_urls": [
+        "https://doi.org/10.1371/journal.pone.0184661",
+        "https://github.com/nipreps/mriqc"
+      ],
+      "evidence": "B/A: established primary pipeline; local archived reference exists.",
+      "matched_to_our_slice": true,
+      "information_match": "Archived outputs are locally measured, with differing historical training/rater conventions. A canonical-label refit is a separate unexecuted candidate.",
+      "role": "existing_reference"
+    },
+    {
+      "name": "TabPFN-3.5",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2609.17895",
+        "https://github.com/PriorLabs/TabPFN"
+      ],
+      "evidence": "B: current tabular contender.",
+      "matched_to_our_slice": false,
+      "information_match": "68-feature input fits; local weights/license and training-only calibration must be fixed; no target-site adaptation.",
+      "role": "candidate"
+    },
+    {
+      "name": "TabICLv2",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2602.11139",
+        "https://github.com/soda-inria/tabicl"
+      ],
+      "evidence": "B: current open tabular model.",
+      "matched_to_our_slice": false,
+      "information_match": "Can consume IQMs; matched ABIDE→DS030 result not established.",
+      "role": "candidate"
+    },
+    {
+      "name": "MI-DQA IQM-only branch",
+      "year": null,
+      "source_urls": [
+        "https://github.com/ashish-code/MI-DQA"
+      ],
+      "evidence": "C: author-repository claim, peer-reviewed matched evidence unverified.",
+      "matched_to_our_slice": false,
+      "information_match": "Only IQM branch could fit; full fusion uses raw image features unavailable here and source labels/splits may differ.",
+      "role": "candidate"
+    },
+    {
+      "name": "FetMRQC",
+      "year": 2024,
+      "source_urls": [
+        "https://github.com/Medical-Image-Analysis-Laboratory/fetmrqc"
+      ],
+      "evidence": "B for fetal imaging; D for endpoint compatibility.",
+      "matched_to_our_slice": false,
+      "information_match": "Fetal T2-weighted QA differs in anatomy, modality, IQM construction and labels; do not transfer its rank.",
+      "role": "candidate"
+    }
+  ],
+  "recommended_next_comparator": "Refit a documented MRIQC-style site-aware RF/boosted-tree panel using training scans only, then add locally run TabICLv2 or TabPFN-3.5 with identical labels/features.",
+  "switching_assessment": "RETAIN original MRIQC as a historical specialist and ADD modern IQM-only comparators, Tier B. Do not replace with raw-image QC or a fetal model, and do not elevate an unverified repository table to current SOTA.",
+  "limitations": [
+    "Precomputed IQMs limit what image-foundation models can do.",
+    "No matched current public leaderboard identified for these 68 columns and rater1 label collapse.",
+    "MI-DQA publication date and independent evaluation are unresolved; repository self-description is weaker evidence.",
+    "TabPFN weights have separate terms; no data upload or weights accepted during this review."
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/nipreps/mriqc",
+      "title": "MRIQC: official software repository",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Current MRIQC extracts QC metrics; its current software release does not establish a new best IQM classifier.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://doi.org/10.1371/journal.pone.0184661",
+      "title": "MRIQC: Advancing the automatic prediction of image quality in MRI from unseen sites",
+      "publication_date": "2017",
+      "accessed_on": "2026-11-01",
+      "finding": "Original structural-IQM classifier and external-site validation are relevant to I10.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://github.com/Medical-Image-Analysis-Laboratory/fetmrqc",
+      "title": "FetMRQC: official fetal MRI quality-control repository",
+      "publication_date": "2024 (associated Medical Image Analysis article)",
+      "accessed_on": "2026-11-01",
+      "finding": "Fetal T2-weighted quality assessment differs from adult structural T1 IQMs.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://github.com/ashish-code/MI-DQA",
+      "title": "MI-DQA: Medical Imaging — Deep Quality Assessment",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Repository claims ABIDE/DS030 evaluation but fuses IQMs with image features; peer-reviewed matched evidence unverified.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.17895",
+      "title": "TabPFN-3.5: Technical Report",
+      "publication_date": "2026-09-15; v2 2026-09-22",
+      "accessed_on": "2026-11-01",
+      "finding": "Current tabular candidate with grouped-split evaluation; task-specific superiority untested.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://github.com/PriorLabs/TabPFN",
+      "title": "TabPFN: official repository",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Current weights have noncommercial terms and license acceptance; hosted data transfer is not assumed authorized.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.11139",
+      "title": "TabICLv2: A better, faster, scalable, and open tabular foundation model",
+      "publication_date": "2026-02-11; v2 2026-09-16",
+      "accessed_on": "2026-11-01",
+      "finding": "ICML 2026 tabular classification/regression contender; no matched neuroscience result.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://github.com/soda-inria/tabicl",
+      "title": "TabICLv2 official code and models",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Author repository makes inference and pretraining resources available; releases must be pinned.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    }
+  ],
+  "search_queries": [
+    "MRIQC classifier IQM 2025 2026",
+    "site.mriqc.readthedocs.io classifier random forest ABIDE ds030 quality control",
+    "2026 tabular foundation model IQM MRI quality classifier",
+    "TabPFN v2.5 2026 official tabular foundation model Nature 2025"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

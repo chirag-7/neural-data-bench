@@ -43,3 +43,7 @@ Decision: **measured** (2026-10-30). Previously measured24agent synthetic Q-lear
 Preview 0.11: measured. Previously measured24agent synthetic Q-learning recovery. Author guide supports recovery checks; local implementation and posterior-vs-MLE objective difference explicit. Not biological data or a released leaderboard.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json). [Actual protocol/worklog](../../../experiments/M04). [Task measurements](../../../results/M04.json).
+
+## Current specialists and repair sensitivity — 1 November 2026
+
+[Current specialist review](../../../literature/specialist-review-2026-11-01/M04.json) · [Native version trajectories and practical interpretation](../../../analysis/practical-review-2026-11-01/report.md). The review distinguishes tested references from unexecuted newer candidates; no matched current global winner is certified.

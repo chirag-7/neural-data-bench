@@ -1,0 +1,10 @@
+{
+  "pin": "def1f8c2c5268eb71e83f57c265d4b3c102fb5f8",
+  "source_manifest": "data/manifests/spikefinder.json",
+  "primary_sources": [
+    "https://github.com/berenslab/spikefinder_analysis",
+    "https://github.com/berenslab/spikefinder_analysis/blob/def1f8c2c5268eb71e83f57c265d4b3c102fb5f8/spikefinder_eval.py"
+  ],
+  "evidence": "Upstream score() jointly masks NaNs and crops pairs; archive CSVs already contain0..N-1headers. No orientation/header correction supplies missing values. Preserving complete support is scientifically necessary for comparability.",
+  "reactivation": "Obtain a complete timestamp-aligned original submission with a documented source/version mapping, or run the original algorithm to create new scientific predictions under a separately frozen reproduction track."
+}

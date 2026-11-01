@@ -1,0 +1,156 @@
+{
+  "benchmark_id": "E01",
+  "title": "NLB population co-smoothing on three custom readout slices",
+  "reviewed_on": "2026-11-01",
+  "retrieval_date_semantics": "accessed_on is this fresh retrieval, not publication date or proof of exhaustive indexing; null publication_date means not verified",
+  "search_queries": [
+    "Neural Latents Benchmark leaderboard NDT2 NDT3 STNDT2026",
+    "Neural Latents Langevin github Song Perona",
+    "NLB DPAD smoothing ensemble2026 leaderboard"
+  ],
+  "candidates": [
+    {
+      "name": "LangevinFlow",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/html/2507.11531v2",
+        "https://github.com/KingJamesSong/LangevinFlow_CCN"
+      ],
+      "evidence": "Paper revised 10 March 2026 and author code; strong heldout-neuron likelihood and forward-prediction claims. Needs exact dataset/metric mapping, not a universal winner.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "AutoLFADS / NDT / STNDT / RNN_F",
+      "year": 2022,
+      "source_urls": [
+        "https://neurallatents.github.io/challenge.html",
+        "https://github.com/neurallatents/nlb_tools"
+      ],
+      "evidence": "Established NLB models and phase winners; fit budgets/task information differ from our bounded supervised readout.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "S5",
+      "year": 2023,
+      "source_urls": [
+        "https://neurallatents.github.io/challenge.html"
+      ],
+      "evidence": "Official NLB challenge page explicitly identifies post-challenge competitive submission.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "DPAD smoothing / ensemble",
+      "year": 2026,
+      "source_urls": [
+        "https://openreview.net/pdf/ff49552c1704e62be9f48f4a1aa6648f9338f669.pdf"
+      ],
+      "evidence": "Current primary conference submission table considers smoothing, ensemble and behavior objectives. Distinguish table-reported best behavior decoding from co-bps.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "NDT3",
+      "year": 2024,
+      "source_urls": [
+        "https://github.com/joel99/ndt3/blob/main/model_card.md"
+      ],
+      "evidence": "Pretrained autoregressive neural/behavior family; not automatic best at NLB co-smoothing; audit neuron/session overlap and behavioral supervision.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    }
+  ],
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_claim_scope": "Exact executed custom input/split/metric protocol, not best within our small inspected local set",
+  "current_reference": "Gaussian-smoothed fixed-ridge population readout reused across MazeSmall, Area2 and DMFC",
+  "current_reference_limitations": [
+    "Our input/output contract is supervised expected heldout counts from held-in counts, not the entire official generative-model submission.",
+    "Three sources/splits have differing tasks, masks and session sizes; no pooled raw-score ranking.",
+    "Current ridge is conventional, not strongest specialist.",
+    "Metric winners differ: behavior R², co-bps and forward-bps are separate."
+  ],
+  "recommended_next_comparator": "Pin and reproduce a stronger NLB-native latent model: prioritize NDT/AutoLFADS and LangevinFlow with explicit permitted training labels, output expected heldout counts and exact masks. Start with a train-validated GPFA/latent-Poisson reference for feasible CPU matching; report full NLB method runs separately from the 180-second code-fitting tier.",
+  "switching_assessment": "NO GENERAL REPLACEMENT RECOMMENDATION. Current evidence supports a bounded code-synthesis/pilot comparison to the named local reference. Establish prospective same-input/split/metric contender runs, biological/source replication, calibration and runtime/reliability before switching production tools.",
+  "limitations": [
+    "Our input/output contract is supervised expected heldout counts from held-in counts, not the entire official generative-model submission.",
+    "Three sources/splits have differing tasks, masks and session sizes; no pooled raw-score ranking.",
+    "Current ridge is conventional, not strongest specialist.",
+    "Metric winners differ: behavior R², co-bps and forward-bps are separate."
+  ],
+  "negative_findings": [
+    "Official live submissions no longer accepted; cannot label a fresh 2026 leader from historical phase winners alone.",
+    "EvalAI JavaScript response prevents independently extracting full ranking in this retrieval."
+  ],
+  "sources": [
+    {
+      "url": "https://neurallatents.github.io/challenge.html",
+      "title": "NLB official challenge guidelines",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Challenge closed; official page points to January 2026 leaderboard snapshot and now-public test targets."
+    },
+    {
+      "url": "https://github.com/neurallatents/nlb_tools",
+      "title": "NLB official codepack",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Task preprocessing, masks, splits and public test target access."
+    },
+    {
+      "url": "https://eval.ai/web/challenges/challenge-page/1256/leaderboard/3183",
+      "title": "NLB EvalAI leaderboard",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh direct open; JavaScript page without readable rows",
+      "finding": "Fresh open returned no readable leaderboard rows; no current numeric ordering extracted."
+    },
+    {
+      "url": "https://arxiv.org/html/2507.11531v2",
+      "title": "Langevin Flows for Modeling Neural Latent Dynamics",
+      "publication_date": "2026-03-10",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Current version 2; neuron-likelihood/forward-prediction results vary by dataset and bin width."
+    },
+    {
+      "url": "https://github.com/KingJamesSong/LangevinFlow_CCN",
+      "title": "LangevinFlow official implementation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Paper-linked source inspected; no training or published-score transplantation."
+    },
+    {
+      "url": "https://openreview.net/pdf/ff49552c1704e62be9f48f4a1aa6648f9338f669.pdf",
+      "title": "DPAD smoothing conference submission",
+      "publication_date": "2026",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Primary table separates velocity R² and co-bps, cites historical leaderboard leaders; anonymous review status means candidate rather than established winner."
+    },
+    {
+      "url": "https://github.com/joel99/ndt3/blob/main/model_card.md",
+      "title": "NDT3 model card",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Neural-spiking/behavior pretraining details; checkpoint overlap and additional task supervision must be audited."
+    }
+  ],
+  "local_protocol": {
+    "path": "experiments/E01/protocol.md",
+    "sha256": "d4834aab3507ceb3ad7a8ae137f11014a5caaefc8d19c7003a1b855b19fe620f"
+  },
+  "review_actions": {
+    "fresh_primary_source_browsing": true,
+    "trained_models": false,
+    "downloaded_large_weights": false,
+    "changed_scores": false,
+    "changed_website": false
+  },
+  "unmatched_published_scores_imported": false
+}

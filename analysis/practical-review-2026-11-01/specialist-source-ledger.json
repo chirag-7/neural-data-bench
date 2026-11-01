@@ -1,0 +1,1594 @@
+[
+  {
+    "benchmark_id": "A09",
+    "url": "https://sites.google.com/view/computational-behavior/our-datasets/calms21-dataset",
+    "title": "CalMS21 official dataset page",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Links original paper, Top-1 implementation, TREBA and task-specific baselines."
+  },
+  {
+    "benchmark_id": "A09",
+    "url": "https://github.com/nebw/mabe",
+    "title": "nebw/mabe official challenge-winning implementation",
+    "publication_date": "2021",
+    "accessed_on": "2026-11-01",
+    "finding": "Inspected repository; contender code rather than evidence of an up-to-date universal leaderboard."
+  },
+  {
+    "benchmark_id": "A09",
+    "url": "https://elifesciences.org/reviewed-preprints/108329",
+    "title": "vassi – verifiable, automated scoring of social interactions in animal groups",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "CalMS21 classical classification study with 20 runs and postprocessing; label-set/context parity must be kept explicit."
+  },
+  {
+    "benchmark_id": "A09",
+    "url": "https://github.com/neuroethology/TREBA",
+    "title": "TREBA official repository",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Task-programming features for CalMS21 and links to classifier."
+  },
+  {
+    "benchmark_id": "A09",
+    "url": "https://arxiv.org/abs/2603.07279",
+    "title": "Learning When Visual Context Matters for Mouse Behavior Analysis",
+    "publication_date": "2026-10-12",
+    "accessed_on": "2026-11-01",
+    "finding": "ResiFuse, pose/video hybrid; version 2, dated 12 October 2026 verified from arXiv."
+  },
+  {
+    "benchmark_id": "A09",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12667788/",
+    "title": "FERAL: A Video-Understanding System for Direct Video-to-Behavior Mapping",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "Primary indexed text identifies video-model comparison; current direct open CAPTCHA, so no independent numerical table extraction."
+  },
+  {
+    "benchmark_id": "A09",
+    "url": "https://github.com/Skovorp/feral",
+    "title": "FERAL official code",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Author article names this public repository; source/weights need separate pin before rerun."
+  },
+  {
+    "benchmark_id": "A09",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.04.14.718392v2.full",
+    "title": "V-TRACE: End-to-end temporal inference and annotation of animal behaviors from video",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "Recent primary indexed comparison; direct full text returned HTTP 403."
+  },
+  {
+    "benchmark_id": "A09",
+    "url": "https://zenodo.org/records/22119864",
+    "title": "V-TRACE versioned software deposit",
+    "publication_date": "2026-08-27",
+    "accessed_on": "2026-11-01",
+    "finding": "Official software release v1.0.0; creator metadata and linked code."
+  },
+  {
+    "benchmark_id": "A14",
+    "url": "https://www.nature.com/articles/s41592-025-02893-y",
+    "title": "Deep Imputation for Skeleton data (DISK) for behavioral science",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "Directly relevant missing-skeleton task; Rat7M handling differs from other dataset recording splits."
+  },
+  {
+    "benchmark_id": "A14",
+    "url": "https://github.com/bozeklab/DISK",
+    "title": "DISK official code",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Transformer/GRU and gap training/evaluation tooling; training hours to days, not a matched 180-second reference."
+  },
+  {
+    "benchmark_id": "A14",
+    "url": "https://github.com/bozeklab/DISK_paper_code",
+    "title": "DISK paper reproduction code",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Author-linked architecture/comparator evaluation scripts."
+  },
+  {
+    "benchmark_id": "A14",
+    "url": "https://www.nature.com/articles/s41592-021-01106-6",
+    "title": "DANNCE / Rat7M paper",
+    "publication_date": "2021",
+    "accessed_on": "2026-11-01",
+    "finding": "Source pose-estimation context, not our artificial-gap metric."
+  },
+  {
+    "benchmark_id": "A14",
+    "url": "https://github.com/tqxli/sdannce/blob/master/README.md",
+    "title": "s-DANNCE: Mapping the landscape of social behavior",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "2025 Cell source/code, social multi-view pose estimation."
+  },
+  {
+    "benchmark_id": "A15",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8560090/",
+    "title": "Fast and accurate annotation of acoustic signals with deep neural networks",
+    "publication_date": "2021",
+    "accessed_on": "2026-11-01",
+    "finding": "DAS paper compares established vocalization tools including TweetyNet."
+  },
+  {
+    "benchmark_id": "A15",
+    "url": "https://github.com/janclemenslab/das",
+    "title": "Deep Audio Segmenter official repository",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Current maintained code and torch installation; backend migration is not proof of a new best score."
+  },
+  {
+    "benchmark_id": "A15",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8860439/",
+    "title": "Automated annotation of birdsong with a neural network that segments spectrograms",
+    "publication_date": "2022",
+    "accessed_on": "2026-11-01",
+    "finding": "TweetyNet primary paper; explicit Bengalese threshold-derived annotation context."
+  },
+  {
+    "benchmark_id": "A15",
+    "url": "https://github.com/nianlonggu/WhisperSeg",
+    "title": "WhisperSeg official code",
+    "publication_date": "2024",
+    "accessed_on": "2026-11-01",
+    "finding": "Human/animal voice activity adaptation and explicit Bengalese examples."
+  },
+  {
+    "benchmark_id": "A15",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11370480/",
+    "title": "AVN: A Deep Learning Approach for the Analysis of Birdsong",
+    "publication_date": "2024",
+    "accessed_on": "2026-11-01",
+    "finding": "WhisperSeg and TweetyNet comparisons on zebra finch datasets."
+  },
+  {
+    "benchmark_id": "B01",
+    "url": "https://www.nature.com/articles/s41592-024-02232-7",
+    "title": "Spike sorting with Kilosort4",
+    "publication_date": "2024",
+    "accessed_on": "2026-11-01",
+    "finding": "Primary 2024 performance paper; broad hybrid data not our ten-second fixture."
+  },
+  {
+    "benchmark_id": "B01",
+    "url": "https://github.com/MouseLand/Kilosort",
+    "title": "Kilosort official implementation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Maintained fast spike sorting with drift correction."
+  },
+  {
+    "benchmark_id": "B01",
+    "url": "https://spikeinterface.readthedocs.io/en/latest/",
+    "title": "SpikeInterface current documentation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Current sorter ecosystem includes multiple alternatives beyond MountainSort."
+  },
+  {
+    "benchmark_id": "B01",
+    "url": "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html",
+    "title": "SpikeInterface benchmark module",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Supports independent noise/drift/SNR controlled hybrid/procedural comparisons."
+  },
+  {
+    "benchmark_id": "B01",
+    "url": "https://github.com/cwindolf/dartsort",
+    "title": "DARTsort official implementation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Maintainer explicitly warns against production use despite active development."
+  },
+  {
+    "benchmark_id": "B01",
+    "url": "https://github.com/flatironinstitute/mountainsort5",
+    "title": "MountainSort5 official implementation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Current local sorter family source."
+  },
+  {
+    "benchmark_id": "B01",
+    "url": "https://arxiv.org/abs/2609.22322",
+    "title": "Spike Sorting with VanillaSort",
+    "publication_date": "2026-09-15",
+    "accessed_on": "2026-11-01",
+    "finding": "Recent preprint detection and clustering claims limited to its reported comparisons."
+  },
+  {
+    "benchmark_id": "B01",
+    "url": "https://arxiv.org/abs/2504.01604",
+    "title": "SpikeSift: A Computationally Efficient and Drift-Resilient Spike Sorting Algorithm",
+    "publication_date": "2025-04-02",
+    "accessed_on": "2026-11-01",
+    "finding": "Preprint with short-stationary-segment strategy."
+  },
+  {
+    "benchmark_id": "B01",
+    "url": "https://openreview.net/pdf?id=IwjkwtkPGb",
+    "title": "SimSort: A Data-Driven Framework for Spike Sorting",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "Primary 2025 benchmark comparison; not matched to fixture."
+  },
+  {
+    "benchmark_id": "B01",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13441294/",
+    "title": "Efficient and reproducible pipelines for spike sorting large-scale electrophysiology data",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "2026 author hybrid study favors Kilosort4 over Kilosort2.5 on its probes; no universal winner across probe geometries."
+  },
+  {
+    "benchmark_id": "B03",
+    "url": "https://www.nature.com/articles/s41592-025-02614-5",
+    "title": "DREDge: robust motion correction for high-density extracellular recordings across species",
+    "publication_date": "2025-03-06",
+    "accessed_on": "2026-11-01",
+    "finding": "Peer-reviewed cross-species AP/LFP motion framework."
+  },
+  {
+    "benchmark_id": "B03",
+    "url": "https://github.com/evarol/dredge",
+    "title": "DREDge official repository",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Current guidance distinguishes official dredge presets from older decentralized variants."
+  },
+  {
+    "benchmark_id": "B03",
+    "url": "https://github.com/SpikeInterface/spikeinterface/blob/main/src/spikeinterface/sortingcomponents/motion/dredge.py",
+    "title": "Official SI DREDge implementation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Describes certified official AP/LFP implementation separate from earlier decentralized code."
+  },
+  {
+    "benchmark_id": "B03",
+    "url": "https://github.com/SpikeInterface/spikeinterface/blob/main/src/spikeinterface/preprocessing/motion.py",
+    "title": "SpikeInterface motion presets",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Current presets document preprocessing/localization differences."
+  },
+  {
+    "benchmark_id": "B03",
+    "url": "https://www.eneuro.org/content/12/3/ENEURO.0529-24.2025",
+    "title": "MEDiCINe: Motion Correction for Neural Electrophysiology Recordings",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "Primary comparison includes Kilosort, DREDge and rigid variants."
+  },
+  {
+    "benchmark_id": "B03",
+    "url": "https://github.com/jazlab/medicine",
+    "title": "MEDiCINe official code",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Detected-spike likelihood motion; 1-second resolution and default 30-second temporal smoothing."
+  },
+  {
+    "benchmark_id": "B03",
+    "url": "https://github.com/MouseLand/Kilosort",
+    "title": "Kilosort official implementation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Motion integrated with sorting; separate input-parity tier needed."
+  },
+  {
+    "benchmark_id": "B07",
+    "url": "https://www.biorxiv.org/content/10.1101/2023.05.22.541700v2",
+    "title": "Compression strategies for large-scale electrophysiology data",
+    "publication_date": "2023-05-25",
+    "accessed_on": "2026-11-01",
+    "finding": "Original 11-codec evaluation favors audio codecs on NP1/NP2, with speed tradeoffs."
+  },
+  {
+    "benchmark_id": "B07",
+    "url": "https://github.com/AllenNeuralDynamics/ephys-compression",
+    "title": "AIND ephys-compression official benchmark",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "16 experimental recordings, multiple levels/chunk durations and delta filters; protocols explicit."
+  },
+  {
+    "benchmark_id": "B07",
+    "url": "https://github.com/AllenNeuralDynamics/aind-capsule-ephys-compression-results",
+    "title": "AIND compression-results reproducibility capsule",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Original figure/result reproduction scripts."
+  },
+  {
+    "benchmark_id": "B07",
+    "url": "https://github.com/dbry/WavPack/blob/master/doc/wavpack_doc.html",
+    "title": "WavPack official usage documentation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "High and extra encode modes trade compression/time; exact multichannel metadata matters."
+  },
+  {
+    "benchmark_id": "B07",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13441294/",
+    "title": "Efficient and reproducible pipelines for spike sorting large-scale electrophysiology data",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "The 2026 pipeline still uses WavPack and evaluates lossy impact separately."
+  },
+  {
+    "benchmark_id": "B08",
+    "url": "https://github.com/int-brain-lab/spikepack",
+    "title": "Spikepack official code/documentation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Primary codec source and eleven-IBL-insertion benchmark link; exact timing is intentionally not preserved."
+  },
+  {
+    "benchmark_id": "B08",
+    "url": "https://int-brain-lab.github.io/spikepack/explanation/benchmark.html",
+    "title": "Spikepack container benchmark",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Official README link; direct page cache miss twice, so current numerical rank or table not verified."
+  },
+  {
+    "benchmark_id": "B08",
+    "url": "https://github.com/int-brain-lab/lfpack",
+    "title": "LFpack official implementation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Lossy LFP codec; not event timestamps or exact unit-label benchmark."
+  },
+  {
+    "benchmark_id": "B08",
+    "url": "https://github.com/AllenNeuralDynamics/ephys-compression",
+    "title": "AIND voltage compression benchmark",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Voltage compression references are distinct from this sorted-event task."
+  },
+  {
+    "benchmark_id": "C05",
+    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006157",
+    "title": "Community-based benchmarking improves spike rate inference from two-photon calcium imaging data",
+    "publication_date": "2018-05-21",
+    "accessed_on": "2026-11-01",
+    "finding": "Original Spikefinder challenge publication; historical ranking, not an ongoing 2026 leaderboard."
+  },
+  {
+    "benchmark_id": "C05",
+    "url": "https://github.com/berenslab/spikefinder_analysis",
+    "title": "Spikefinder official analysis and archived results",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Challenge ran in 2016–2017; prediction arrays and evaluation notebooks are available."
+  },
+  {
+    "benchmark_id": "C05",
+    "url": "https://github.com/HelmchenLabSoftware/Cascade",
+    "title": "CASCADE official repository",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Maintained inference toolbox; 2026 GCaMP8 updates and Torch counterpart documented."
+  },
+  {
+    "benchmark_id": "C05",
+    "url": "https://github.com/PTRRupprecht/CascadeTorch",
+    "title": "CascadeTorch official repository",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "Converted original CASCADE weights and same architecture; framework port is not an accuracy improvement."
+  },
+  {
+    "benchmark_id": "C05",
+    "url": "https://www.nature.com/articles/s41592-026-03183-x",
+    "title": "Spike inference from calcium imaging data acquired with GCaMP8 indicators",
+    "publication_date": "2026-07-27",
+    "accessed_on": "2026-11-01",
+    "finding": "Indicator-specific CASCADE/OASIS/MLSpike evaluation, not OGB1 zebrafish proof."
+  },
+  {
+    "benchmark_id": "C05",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10261900/",
+    "title": "Effective and efficient neural networks for spike inference from in vivo calcium imaging",
+    "publication_date": "2023-05-22",
+    "accessed_on": "2026-11-01",
+    "finding": "ENS2 supervised U-Net comparison against prior methods."
+  },
+  {
+    "benchmark_id": "C05",
+    "url": "https://github.com/TinLab/ENS2",
+    "title": "ENS2 official implementation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Uses paired calcium/electrophysiology training data from CASCADE."
+  },
+  {
+    "benchmark_id": "C05",
+    "url": "https://arxiv.org/abs/2610.11456",
+    "title": "SpikeSSL: A Universal Spike Inference Framework with Dynamics-Informed State-Space Layers",
+    "publication_date": "2026-10-08",
+    "accessed_on": "2026-11-01",
+    "finding": "New preprint with in-domain/leave-one-indicator comparisons; claims are authors’ own benchmark evidence, not independently reproduced here."
+  },
+  {
+    "benchmark_id": "C05",
+    "url": "https://arxiv.org/html/2610.11456v1",
+    "title": "SpikeSSL full paper and split definitions",
+    "publication_date": "2026-10-08",
+    "accessed_on": "2026-11-01",
+    "finding": "Appendix identifies DS04 among OGB evaluation recordings; its split and aggregation differ from our specimen split."
+  },
+  {
+    "benchmark_id": "C05",
+    "url": "https://github.com/detimage123/SpikeSSL",
+    "title": "SpikeSSL official implementation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Author-linked code located; weights, rights, dependencies and exact training exclusions need pinning."
+  },
+  {
+    "benchmark_id": "C05",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42282678/",
+    "title": "Precise calcium-to-spike inference using biophysical generative models",
+    "publication_date": "2026-06-04",
+    "accessed_on": "2026-11-01",
+    "finding": "C-SPIKES biophysical SMC/ML methods; indexed publication status is preprint, not peer-reviewed Nature evidence."
+  },
+  {
+    "benchmark_id": "C05",
+    "url": "https://github.com/gerardjb/C-SPIKES",
+    "title": "C-SPIKES official inference framework",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "BiophysSMC/ML, ENS2, CASCADE and OASIS runners; native-rate settings and semantic distinctions documented."
+  },
+  {
+    "benchmark_id": "C05",
+    "url": "https://doi.org/10.7554/eLife.94723.3",
+    "title": "High frequency spike inference with particle Gibbs sampling",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "PGBAR compares model-based methods and CASCADE, with different posterior/computation goals."
+  },
+  {
+    "benchmark_id": "C05",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12194039/",
+    "title": "Predicting neuronal firing from calcium imaging using a control theoretic approach",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "2025 model-predictive-control approach directly evaluates Spikefinder and links slugFind code."
+  },
+  {
+    "benchmark_id": "C06",
+    "url": "https://github.com/HelmchenLabSoftware/Cascade",
+    "title": "CASCADE official repository",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Maintained inference toolbox; 2026 GCaMP8 updates and Torch counterpart documented."
+  },
+  {
+    "benchmark_id": "C06",
+    "url": "https://github.com/PTRRupprecht/CascadeTorch",
+    "title": "CascadeTorch official repository",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "Converted original CASCADE weights and same architecture; framework port is not an accuracy improvement."
+  },
+  {
+    "benchmark_id": "C06",
+    "url": "https://www.nature.com/articles/s41592-026-03183-x",
+    "title": "Spike inference from calcium imaging data acquired with GCaMP8 indicators",
+    "publication_date": "2026-07-27",
+    "accessed_on": "2026-11-01",
+    "finding": "Indicator-specific CASCADE/OASIS/MLSpike evaluation, not OGB1 zebrafish proof."
+  },
+  {
+    "benchmark_id": "C06",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10261900/",
+    "title": "Effective and efficient neural networks for spike inference from in vivo calcium imaging",
+    "publication_date": "2023-05-22",
+    "accessed_on": "2026-11-01",
+    "finding": "ENS2 supervised U-Net comparison against prior methods."
+  },
+  {
+    "benchmark_id": "C06",
+    "url": "https://github.com/TinLab/ENS2",
+    "title": "ENS2 official implementation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Uses paired calcium/electrophysiology training data from CASCADE."
+  },
+  {
+    "benchmark_id": "C06",
+    "url": "https://arxiv.org/abs/2610.11456",
+    "title": "SpikeSSL: A Universal Spike Inference Framework with Dynamics-Informed State-Space Layers",
+    "publication_date": "2026-10-08",
+    "accessed_on": "2026-11-01",
+    "finding": "New preprint with in-domain/leave-one-indicator comparisons; claims are authors’ own benchmark evidence, not independently reproduced here."
+  },
+  {
+    "benchmark_id": "C06",
+    "url": "https://arxiv.org/html/2610.11456v1",
+    "title": "SpikeSSL full paper and split definitions",
+    "publication_date": "2026-10-08",
+    "accessed_on": "2026-11-01",
+    "finding": "Appendix identifies DS04 among OGB evaluation recordings; its split and aggregation differ from our specimen split."
+  },
+  {
+    "benchmark_id": "C06",
+    "url": "https://github.com/detimage123/SpikeSSL",
+    "title": "SpikeSSL official implementation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Author-linked code located; weights, rights, dependencies and exact training exclusions need pinning."
+  },
+  {
+    "benchmark_id": "C06",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42282678/",
+    "title": "Precise calcium-to-spike inference using biophysical generative models",
+    "publication_date": "2026-06-04",
+    "accessed_on": "2026-11-01",
+    "finding": "C-SPIKES biophysical SMC/ML methods; indexed publication status is preprint, not peer-reviewed Nature evidence."
+  },
+  {
+    "benchmark_id": "C06",
+    "url": "https://github.com/gerardjb/C-SPIKES",
+    "title": "C-SPIKES official inference framework",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "BiophysSMC/ML, ENS2, CASCADE and OASIS runners; native-rate settings and semantic distinctions documented."
+  },
+  {
+    "benchmark_id": "C06",
+    "url": "https://doi.org/10.7554/eLife.94723.3",
+    "title": "High frequency spike inference with particle Gibbs sampling",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "PGBAR compares model-based methods and CASCADE, with different posterior/computation goals."
+  },
+  {
+    "benchmark_id": "C06",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12194039/",
+    "title": "Predicting neuronal firing from calcium imaging using a control theoretic approach",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "2025 model-predictive-control approach directly evaluates Spikefinder and links slugFind code."
+  },
+  {
+    "benchmark_id": "D02",
+    "url": "https://brain-map.org/support/documentation/documentation-cell-types-database",
+    "title": "Allen Cell Types model documentation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Defines GLIF variants, biophysical models and their evaluation metrics; these differ from passive voltage RMSE."
+  },
+  {
+    "benchmark_id": "D02",
+    "url": "https://celltypes.brain-map.org/",
+    "title": "Allen Cell Types database overview",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Official data/model downloads and SDK/NEURON model execution."
+  },
+  {
+    "benchmark_id": "D02",
+    "url": "https://www.nature.com/articles/s41467-017-02717-4",
+    "title": "Generalized leaky integrate-and-fire models classify multiple neuron types",
+    "publication_date": "2018",
+    "accessed_on": "2026-11-01",
+    "finding": "Broader spike-time model evaluation; not our two hidden hyperpolarizing sweeps."
+  },
+  {
+    "benchmark_id": "D02",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13252523/",
+    "title": "Accurately fitting biophysical neuron models to experimental voltage data enabled by meta-learning",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "CoMParE primary indexed paper; fulltext retrieval CAPTCHA on one attempt, rich indexed methods text available."
+  },
+  {
+    "benchmark_id": "D02",
+    "url": "https://github.com/xanderladd/axonstandardized",
+    "title": "CoMParE axonstandardized official pipeline",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Author-linked implementation; inspected repository rather than executed fits."
+  },
+  {
+    "benchmark_id": "D02",
+    "url": "https://github.com/BlueBrain/BluePyOpt",
+    "title": "BluePyOpt official code",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Author primary paper describes this optimization dependency; no training attempted."
+  },
+  {
+    "benchmark_id": "E01",
+    "url": "https://neurallatents.github.io/challenge.html",
+    "title": "NLB official challenge guidelines",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Challenge closed; official page points to January 2026 leaderboard snapshot and now-public test targets."
+  },
+  {
+    "benchmark_id": "E01",
+    "url": "https://github.com/neurallatents/nlb_tools",
+    "title": "NLB official codepack",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Task preprocessing, masks, splits and public test target access."
+  },
+  {
+    "benchmark_id": "E01",
+    "url": "https://eval.ai/web/challenges/challenge-page/1256/leaderboard/3183",
+    "title": "NLB EvalAI leaderboard",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Fresh open returned no readable leaderboard rows; no current numeric ordering extracted."
+  },
+  {
+    "benchmark_id": "E01",
+    "url": "https://arxiv.org/html/2507.11531v2",
+    "title": "Langevin Flows for Modeling Neural Latent Dynamics",
+    "publication_date": "2026-03-10",
+    "accessed_on": "2026-11-01",
+    "finding": "Current version 2; neuron-likelihood/forward-prediction results vary by dataset and bin width."
+  },
+  {
+    "benchmark_id": "E01",
+    "url": "https://github.com/KingJamesSong/LangevinFlow_CCN",
+    "title": "LangevinFlow official implementation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Paper-linked source inspected; no training or published-score transplantation."
+  },
+  {
+    "benchmark_id": "E01",
+    "url": "https://openreview.net/pdf/ff49552c1704e62be9f48f4a1aa6648f9338f669.pdf",
+    "title": "DPAD smoothing conference submission",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "Primary table separates velocity R² and co-bps, cites historical leaderboard leaders; anonymous review status means candidate rather than established winner."
+  },
+  {
+    "benchmark_id": "E01",
+    "url": "https://github.com/joel99/ndt3/blob/main/model_card.md",
+    "title": "NDT3 model card",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Neural-spiking/behavior pretraining details; checkpoint overlap and additional task supervision must be audited."
+  },
+  {
+    "benchmark_id": "E06",
+    "url": "https://arxiv.org/html/2503.02618v1",
+    "title": "ZAPBench: A Benchmark for Whole-Brain Activity Prediction in Zebrafish",
+    "publication_date": "2025-03-04",
+    "accessed_on": "2026-11-01",
+    "finding": "Original published protocol uses short 4-frame and long 256-frame contexts and MAE; U-Net short-context advantage and long-context ties are conditional."
+  },
+  {
+    "benchmark_id": "E06",
+    "url": "https://google-research.github.io/zapbench/",
+    "title": "ZAPBench official project results",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Initial-baseline visualizations, model prediction tutorials and heldout taxis caveat."
+  },
+  {
+    "benchmark_id": "E06",
+    "url": "https://github.com/google-research/zapbench",
+    "title": "ZAPBench official model/training code",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "JAX time-series and video model implementations; current source inspected."
+  },
+  {
+    "benchmark_id": "E06",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/21fbf654963f9e455e8eec48e45bdea0-Paper-Conference.pdf",
+    "title": "POCO: Scalable Neural Forecasting through Population Conditioning",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "NeurIPS 2025 paper includes ZAPBench appendix, 25-epoch training and checkpoint selection on validation."
+  },
+  {
+    "benchmark_id": "E06",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13151936/",
+    "title": "POCO primary paper fulltext",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "Explicitly reports different short/long-context results, precluding blanket best claim."
+  },
+  {
+    "benchmark_id": "E06",
+    "url": "https://www.nature.com/articles/s41586-026-10658-6",
+    "title": "An AI system to help scientists write expert-level empirical software",
+    "publication_date": "2026-06-09",
+    "accessed_on": "2026-11-01",
+    "finding": "ERA final Nature paper, including neural forecasting; quality-driven tree search differs from one-shot code generation."
+  },
+  {
+    "benchmark_id": "E06",
+    "url": "https://github.com/google-research/era",
+    "title": "ERA official implementation and generated programs",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Author source and generated-code artifacts available; no new model calls performed."
+  },
+  {
+    "benchmark_id": "E06",
+    "url": "https://arxiv.org/abs/2604.19341",
+    "title": "Evaluation-driven Scaling for Scientific Discovery",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "2026 SimpleTES preprint, evaluation-driven search; claims not independently reproduced."
+  },
+  {
+    "benchmark_id": "E06",
+    "url": "https://github.com/wq-will/SimpleTES/blob/main/datasets/zapbench/README.md",
+    "title": "SimpleTES official ZAPBench task package",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Released 4-context, 32-step whole-brain task scored by negative MAE; source pin and result artifacts documented."
+  },
+  {
+    "benchmark_id": "F04",
+    "url": "https://www.nature.com/articles/s41467-022-33242-8",
+    "title": "Context-dependent selectivity to natural images in the retina",
+    "publication_date": "2022-09-22",
+    "accessed_on": "2026-11-01",
+    "finding": "Source Goldin natural-image study and CNN modeling context."
+  },
+  {
+    "benchmark_id": "F04",
+    "url": "https://github.com/samuelevirgili/Context-dependent-selectivity-to-natural-images-in-the-retina",
+    "title": "Goldin source analysis code",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Author repository with modeling/quantification notebooks."
+  },
+  {
+    "benchmark_id": "F04",
+    "url": "https://open-retina.org/api_reference/data_io/goldin_2022/",
+    "title": "OpenRetina Goldin2022 loader documentation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Links exact original data and processed mirror."
+  },
+  {
+    "benchmark_id": "F04",
+    "url": "https://open-retina.org/package_docs/model_zoo/",
+    "title": "OpenRetina model zoo",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Currently includes Goldin mouse/axolotl models alongside other species; no common exact-slice ranking."
+  },
+  {
+    "benchmark_id": "F04",
+    "url": "https://github.com/open-retina/open-retina",
+    "title": "OpenRetina official repository",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Maintained training/model architectures and pretrained access."
+  },
+  {
+    "benchmark_id": "F04",
+    "url": "https://open-retina.org/package_docs/training/core_readout/",
+    "title": "OpenRetina core-readout training documentation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Provides CNN/shared-core and neuron-readout approach for fresh matched training."
+  },
+  {
+    "benchmark_id": "G01",
+    "url": "https://snel-repo.github.io/falcon/",
+    "title": "FALCON official benchmark project",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Benchmark distinguishes few-shot/zero-shot/adaptive methods and new-day calibration."
+  },
+  {
+    "benchmark_id": "G01",
+    "url": "https://github.com/snel-repo/falcon-challenge",
+    "title": "FALCON official implementation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Decoder examples, evaluation rules and task interfaces."
+  },
+  {
+    "benchmark_id": "G01",
+    "url": "https://eval.ai/web/challenges/challenge-page/2319/leaderboard/5750",
+    "title": "FALCON M2 EvalAI leaderboard",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Fresh retrieval exposed metric labels but no readable submission results; no current best row verified."
+  },
+  {
+    "benchmark_id": "G01",
+    "url": "https://github.com/joel99/ndt3/blob/main/model_card.md",
+    "title": "NDT3 model card",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "FALCON downstream use and pretraining context; potential overlap audit required."
+  },
+  {
+    "benchmark_id": "G01",
+    "url": "https://arxiv.org/html/2507.08402v1",
+    "title": "SPINT: Spatial Permutation-Invariant Neural Transformer for Consistent Intracortical Motor Decoding",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "Primary fulltext describes unlabeled target adaptation and continuous motor tasks."
+  },
+  {
+    "benchmark_id": "G01",
+    "url": "https://arxiv.org/abs/2609.39080",
+    "title": "Association profile conditioning in a set-temporal transformer for cross-session intracortical motor decoding",
+    "publication_date": "2026-09-30",
+    "accessed_on": "2026-11-01",
+    "finding": "APST preprint explicitly relies on few labeled calibration trials on target session."
+  },
+  {
+    "benchmark_id": "H01",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/bbbd6d915cb90be21c1254a82d45cedd-Abstract-Conference.html",
+    "title": "CBraMod: A Criss-Cross Brain Foundation Model for EEG Decoding",
+    "publication_date": "2025 (ICLR)",
+    "accessed_on": "2026-11-01",
+    "finding": "Peer-reviewed EEG foundation model; author code at https://github.com/wjq-learning/CBraMod."
+  },
+  {
+    "benchmark_id": "H01",
+    "url": "https://brain-bzh.github.io/reve/",
+    "title": "REVE: A Foundation Model for EEG",
+    "publication_date": "2025 (NeurIPS)",
+    "accessed_on": "2026-11-01",
+    "finding": "Author project supplies paper, code and model weights; flexible electrode geometry."
+  },
+  {
+    "benchmark_id": "H01",
+    "url": "https://huggingface.co/brain-bzh/reve-base",
+    "title": "brain-bzh/reve-base model card",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Model card specifies 200 Hz inputs and its own responsible-use weight license; this is not a permissive-license assumption."
+  },
+  {
+    "benchmark_id": "H01",
+    "url": "https://arxiv.org/abs/2507.20254",
+    "title": "MIRepNet: A Pipeline and Foundation Model for EEG-Based Motor Imagery Classification",
+    "publication_date": "2025-07-27; journal 2026-06-15",
+    "accessed_on": "2026-11-01",
+    "finding": "MI-specific pretraining; author implementation https://github.com/staraink/MIRepNet is available."
+  },
+  {
+    "benchmark_id": "H01",
+    "url": "https://arxiv.org/abs/2601.17883",
+    "title": "EEG-FM-Compass: Progress, Benchmarking, and Future Directions for EEG Foundation Models",
+    "publication_date": "2026-01-25; v3 2026-08-03",
+    "accessed_on": "2026-11-01",
+    "finding": "LOSO and few-shot comparisons find task-dependent foundation-model and specialist performance."
+  },
+  {
+    "benchmark_id": "H01",
+    "url": "https://arxiv.org/abs/2404.15319",
+    "title": "The largest EEG-based BCI reproducibility study for open science: the MOABB benchmark",
+    "publication_date": "2024-04-23",
+    "accessed_on": "2026-11-01",
+    "finding": "Primary reproducibility study compares conventional, Riemannian and deep pipelines."
+  },
+  {
+    "benchmark_id": "H01",
+    "url": "https://arxiv.org/abs/2607.24519",
+    "title": "A Negative-Control Protocol for Clinical EEG Foundation-Model Benchmarks: Dataset Identity and External-Cohort Stress Testing",
+    "publication_date": "2026-07-27; v3 2026-08-13",
+    "accessed_on": "2026-11-01",
+    "finding": "Primary control study illustrates montage/cohort and preprocessing dependence; its clinical endpoints differ."
+  },
+  {
+    "benchmark_id": "H02",
+    "url": "https://moabb.neurotechx.com/docs/paper_results.html",
+    "title": "The largest EEG-based Benchmark for Open Science: MOABB results",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "BI2012 table is within-session five-fold evaluation, unlike this held-out-person endpoint."
+  },
+  {
+    "benchmark_id": "H02",
+    "url": "https://arxiv.org/abs/2404.15319",
+    "title": "The largest EEG-based BCI reproducibility study for open science: the MOABB benchmark",
+    "publication_date": "2024-04-23",
+    "accessed_on": "2026-11-01",
+    "finding": "Primary reproducibility study compares conventional, Riemannian and deep pipelines."
+  },
+  {
+    "benchmark_id": "H02",
+    "url": "https://www.mdpi.com/1424-8220/25/7/2305",
+    "title": "Riemannian Means Field Classifier for EEG-Based BCI Data",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "P300 comparison includes xDAWN and BI2012; no matching cross-person frozen result established."
+  },
+  {
+    "benchmark_id": "H02",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/bbbd6d915cb90be21c1254a82d45cedd-Abstract-Conference.html",
+    "title": "CBraMod: A Criss-Cross Brain Foundation Model for EEG Decoding",
+    "publication_date": "2025 (ICLR)",
+    "accessed_on": "2026-11-01",
+    "finding": "Peer-reviewed EEG foundation model; author code at https://github.com/wjq-learning/CBraMod."
+  },
+  {
+    "benchmark_id": "H02",
+    "url": "https://brain-bzh.github.io/reve/",
+    "title": "REVE: A Foundation Model for EEG",
+    "publication_date": "2025 (NeurIPS)",
+    "accessed_on": "2026-11-01",
+    "finding": "Author project supplies paper, code and model weights; flexible electrode geometry."
+  },
+  {
+    "benchmark_id": "H02",
+    "url": "https://arxiv.org/abs/2601.17883",
+    "title": "EEG-FM-Compass: Progress, Benchmarking, and Future Directions for EEG Foundation Models",
+    "publication_date": "2026-01-25; v3 2026-08-03",
+    "accessed_on": "2026-11-01",
+    "finding": "LOSO and few-shot comparisons find task-dependent foundation-model and specialist performance."
+  },
+  {
+    "benchmark_id": "H08",
+    "url": "https://www.nature.com/articles/s41467-025-67970-4",
+    "title": "A unified time-frequency foundation model for sleep decoding",
+    "publication_date": "2026-01-13; version of record 2026-01-30",
+    "accessed_on": "2026-11-01",
+    "finding": "SleepGPT has channel-adaptive and single-channel experiments; author code https://github.com/LordXX505/SleepGPT."
+  },
+  {
+    "benchmark_id": "H08",
+    "url": "https://github.com/zou-group/sleepfm-clinical",
+    "title": "SleepFM-Clinical: official code and checkpoints",
+    "publication_date": "2026 (associated Nature Medicine paper)",
+    "accessed_on": "2026-11-01",
+    "finding": "Repository exposes pretrained, sleep-staging and disease heads; disease prediction is a different endpoint."
+  },
+  {
+    "benchmark_id": "H08",
+    "url": "https://arxiv.org/abs/2609.06849",
+    "title": "Learning transferable human physiology from two million hours of sleep with SleepFM-2",
+    "publication_date": "2026-09-06; v2 2026-10-02",
+    "accessed_on": "2026-11-01",
+    "finding": "Recent multimodal and wearable-transfer preprint. Exact single-Fpz-Cz adapter/checkpoint availability remains unverified."
+  },
+  {
+    "benchmark_id": "H08",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12663716/",
+    "title": "A foundational transformer leveraging full night, multichannel sleep study data accurately classifies sleep stages",
+    "publication_date": "2025 (August issue)",
+    "accessed_on": "2026-11-01",
+    "finding": "PFTSleep code is public; article says weights available upon reasonable request, not unrestricted download."
+  },
+  {
+    "benchmark_id": "H08",
+    "url": "https://www.nature.com/articles/s41746-021-00440-5",
+    "title": "U-Sleep: resilient high-frequency sleep staging",
+    "publication_date": "2021",
+    "accessed_on": "2026-11-01",
+    "finding": "Strong established full-night EEG/EOG staging comparator; this slice supplies EEG only."
+  },
+  {
+    "benchmark_id": "H08",
+    "url": "https://arxiv.org/abs/2609.22105",
+    "title": "Comparative Analysis of State-of-the-Art Foundation Models for Sleep Analysis Under Channel Reduction",
+    "publication_date": "2026-08-14",
+    "accessed_on": "2026-11-01",
+    "finding": "Primary reduced-channel comparison supports testing BIOT/LaBraM rather than presuming multimodal superiority."
+  },
+  {
+    "benchmark_id": "H16",
+    "url": "https://doi.org/10.1088/1741-2552/ac2bf8",
+    "title": "EEGdenoiseNet: a benchmark dataset for deep learning solutions of EEG denoising",
+    "publication_date": "2021",
+    "accessed_on": "2026-11-01",
+    "finding": "Original paired EEG/artifact benchmark and supervised neural baselines."
+  },
+  {
+    "benchmark_id": "H16",
+    "url": "https://www.mdpi.com/2076-3425/16/10/1124",
+    "title": "EOG Artifact Removal from EEG Using a Gated WGAN with Multi-Scale and Multi-Domain Feature Extraction",
+    "publication_date": "2026-10",
+    "accessed_on": "2026-11-01",
+    "finding": "Recent EOG-specific EEGdenoiseNet candidate; source-component split described."
+  },
+  {
+    "benchmark_id": "H16",
+    "url": "https://www.mdpi.com/2073-8994/18/6/988",
+    "title": "Dual-Domain Symmetry: A Frequency-Aware Residual U-Net for High-Fidelity EEG Artifact Removal",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "Paired EEGdenoiseNet frequency-aware residual U-Net; source mixture and scoring differ."
+  },
+  {
+    "benchmark_id": "H16",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42772331/",
+    "title": "Diff-ADN: a diffusion-guided artifact denoising network with deterministic residual refinement for EEG",
+    "publication_date": "2026-10-30",
+    "accessed_on": "2026-11-01",
+    "finding": "Current single-channel denoising candidate; evaluate reconstruction and decoding separately."
+  },
+  {
+    "benchmark_id": "H16",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1053811925001259",
+    "title": "Augmenting brain-computer interfaces with ART: An artifact removal transformer for reconstructing multichannel EEG signals",
+    "publication_date": "2025-04-15",
+    "accessed_on": "2026-11-01",
+    "finding": "Multichannel reconstruction approach; not directly interchangeable with this single-channel mixture contract."
+  },
+  {
+    "benchmark_id": "I07",
+    "url": "https://openfnirs.org/community/fresh/welcome-to-the-fnirs-fresh-project/",
+    "title": "Welcome to the fNIRS FRESH project: original dataset information",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Left and right motor conditions were acquired in separate sessions; optical-density classifiers inherit this confounding."
+  },
+  {
+    "benchmark_id": "I07",
+    "url": "https://www.nature.com/articles/s42003-025-08412-1",
+    "title": "fNIRS reproducibility varies with data quality, analysis pipelines, and researcher experience",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "Original reproducibility study; researcher concordance is not classifier balanced accuracy."
+  },
+  {
+    "benchmark_id": "I07",
+    "url": "https://arxiv.org/abs/2610.36159",
+    "title": "MtReNIRS: A Self-Supervised Foundation Model for Transferable Neurovascular Representations",
+    "publication_date": "2026-10-26",
+    "accessed_on": "2026-11-01",
+    "finding": "New neurovascular representation preprint; chromophore and channel geometry requirements matter."
+  },
+  {
+    "benchmark_id": "I07",
+    "url": "https://arxiv.org/abs/2610.40277",
+    "title": "Towards fNIRS foundation models: A curated corpus of 67 public datasets with channel positions in MNI space",
+    "publication_date": "2026-10-29",
+    "accessed_on": "2026-11-01",
+    "finding": "A corpus/dataloader contribution, not a demonstrated best classifier; repository https://github.com/sposso/fnirs-datasets."
+  },
+  {
+    "benchmark_id": "I07",
+    "url": "https://arxiv.org/pdf/2610.36159",
+    "title": "MtReNIRS full preprint PDF",
+    "publication_date": "2026-10-26",
+    "accessed_on": "2026-11-01",
+    "finding": "Full primary PDF verifies montage-aware chromophore identity and cortical location inputs; no journal acceptance inferred from placeholder header."
+  },
+  {
+    "benchmark_id": "I10",
+    "url": "https://github.com/nipreps/mriqc",
+    "title": "MRIQC: official software repository",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Current MRIQC extracts QC metrics; its current software release does not establish a new best IQM classifier."
+  },
+  {
+    "benchmark_id": "I10",
+    "url": "https://doi.org/10.1371/journal.pone.0184661",
+    "title": "MRIQC: Advancing the automatic prediction of image quality in MRI from unseen sites",
+    "publication_date": "2017",
+    "accessed_on": "2026-11-01",
+    "finding": "Original structural-IQM classifier and external-site validation are relevant to I10."
+  },
+  {
+    "benchmark_id": "I10",
+    "url": "https://github.com/Medical-Image-Analysis-Laboratory/fetmrqc",
+    "title": "FetMRQC: official fetal MRI quality-control repository",
+    "publication_date": "2024 (associated Medical Image Analysis article)",
+    "accessed_on": "2026-11-01",
+    "finding": "Fetal T2-weighted quality assessment differs from adult structural T1 IQMs."
+  },
+  {
+    "benchmark_id": "I10",
+    "url": "https://github.com/ashish-code/MI-DQA",
+    "title": "MI-DQA: Medical Imaging — Deep Quality Assessment",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Repository claims ABIDE/DS030 evaluation but fuses IQMs with image features; peer-reviewed matched evidence unverified."
+  },
+  {
+    "benchmark_id": "I10",
+    "url": "https://arxiv.org/abs/2609.17895",
+    "title": "TabPFN-3.5: Technical Report",
+    "publication_date": "2026-09-15; v2 2026-09-22",
+    "accessed_on": "2026-11-01",
+    "finding": "Current tabular candidate with grouped-split evaluation; task-specific superiority untested."
+  },
+  {
+    "benchmark_id": "I10",
+    "url": "https://github.com/PriorLabs/TabPFN",
+    "title": "TabPFN: official repository",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Current weights have noncommercial terms and license acceptance; hosted data transfer is not assumed authorized."
+  },
+  {
+    "benchmark_id": "I10",
+    "url": "https://arxiv.org/abs/2602.11139",
+    "title": "TabICLv2: A better, faster, scalable, and open tabular foundation model",
+    "publication_date": "2026-02-11; v2 2026-09-16",
+    "accessed_on": "2026-11-01",
+    "finding": "ICML 2026 tabular classification/regression contender; no matched neuroscience result."
+  },
+  {
+    "benchmark_id": "I10",
+    "url": "https://github.com/soda-inria/tabicl",
+    "title": "TabICLv2 official code and models",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Author repository makes inference and pretraining resources available; releases must be pinned."
+  },
+  {
+    "benchmark_id": "J08",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
+    "title": "SynAPSeg: A novel dataset and image analysis framework for deep learning-based synapse detection and quantification",
+    "publication_date": "2026-07-29",
+    "accessed_on": "2026-11-01",
+    "finding": "Author study compares custom StarDist, Cellpose-SAM and DeepD3; custom 2D StarDist and Cellpose perform similarly."
+  },
+  {
+    "benchmark_id": "J08",
+    "url": "https://cellpose.readthedocs.io/en/latest/models.html",
+    "title": "Cellpose built-in models: official documentation",
+    "publication_date": "2026-06 for cpsam_v2 and CellposeDINO releases",
+    "accessed_on": "2026-11-01",
+    "finding": "Documents current cpsam_v2, cpdino and smaller cpdino-vitb; generic cell segmentation is not punctum validation."
+  },
+  {
+    "benchmark_id": "J08",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.04.28.651001v1",
+    "title": "Cellpose-SAM: superhuman generalization for cellular segmentation",
+    "publication_date": "2025-05-01 (posted)",
+    "accessed_on": "2026-11-01",
+    "finding": "Original Cellpose-SAM architecture; author repository https://github.com/MouseLand/cellpose."
+  },
+  {
+    "benchmark_id": "J08",
+    "url": "https://doi.org/10.1038/s41592-025-02879-w",
+    "title": "CellSAM: a foundation model for cell segmentation",
+    "publication_date": "2025-12-08",
+    "accessed_on": "2026-11-01",
+    "finding": "CellFinder detector prompts SAM for whole-cell masks; no tiny synaptic-punctum superiority established."
+  },
+  {
+    "benchmark_id": "J08",
+    "url": "https://www.nature.com/articles/s41592-024-02580-4.pdf",
+    "title": "Segment Anything for Microscopy",
+    "publication_date": "2025 (March issue)",
+    "accessed_on": "2026-11-01",
+    "finding": "Interactive and automatic microscopy segmentation; human prompts are extra information under automatic J08."
+  },
+  {
+    "benchmark_id": "K01",
+    "url": "https://www.nature.com/articles/s41593-019-0417-0",
+    "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+    "publication_date": "2019",
+    "accessed_on": "2026-11-01",
+    "finding": "Original multimodal taxonomy uses richer data than K01 binary morphology prediction from 11 scalar electrophysiology features."
+  },
+  {
+    "benchmark_id": "K01",
+    "url": "https://allenswdb.github.io/cell-types/cell-types.html",
+    "title": "Allen Institute SWDB 2026 Cell Types Data Book",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "Current institutional reference distinguishes electrophysiology, morphology, connectivity and transcriptomic identities."
+  },
+  {
+    "benchmark_id": "K01",
+    "url": "https://arxiv.org/abs/2609.17895",
+    "title": "TabPFN-3.5: Technical Report",
+    "publication_date": "2026-09-15; v2 2026-09-22",
+    "accessed_on": "2026-11-01",
+    "finding": "Current tabular candidate with grouped-split evaluation; task-specific superiority untested."
+  },
+  {
+    "benchmark_id": "K01",
+    "url": "https://github.com/PriorLabs/TabPFN",
+    "title": "TabPFN: official repository",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Current weights have noncommercial terms and license acceptance; hosted data transfer is not assumed authorized."
+  },
+  {
+    "benchmark_id": "K01",
+    "url": "https://arxiv.org/abs/2602.11139",
+    "title": "TabICLv2: A better, faster, scalable, and open tabular foundation model",
+    "publication_date": "2026-02-11; v2 2026-09-16",
+    "accessed_on": "2026-11-01",
+    "finding": "ICML 2026 tabular classification/regression contender; no matched neuroscience result."
+  },
+  {
+    "benchmark_id": "K01",
+    "url": "https://github.com/soda-inria/tabicl",
+    "title": "TabICLv2 official code and models",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Author repository makes inference and pretraining resources available; releases must be pinned."
+  },
+  {
+    "benchmark_id": "K04",
+    "url": "https://singler-inc.github.io/singler-py/api/singler.html",
+    "title": "SingleR Python API: official documentation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Current documentation identifies 0.5.1; existing K04 reference is pinned 0.5.0, not silently upgraded."
+  },
+  {
+    "benchmark_id": "K04",
+    "url": "https://www.nature.com/articles/s41592-025-02814-z",
+    "title": "Nicheformer: a foundation model for single-cell and spatial omics",
+    "publication_date": "2025-10-30",
+    "accessed_on": "2026-11-01",
+    "finding": "Gene-token model supports cell/niche/region transfer; not the same as anonymous 500-column Visium layer prediction."
+  },
+  {
+    "benchmark_id": "K04",
+    "url": "https://arxiv.org/abs/2607.17227",
+    "title": "Harmonised benchmarking of foundation models for single-cell and spatial transcriptomics reveals context-dependent generalisation",
+    "publication_date": "2026-07-19; v2 2026-09-17",
+    "accessed_on": "2026-11-01",
+    "finding": "Primary multi-model benchmark reports context-dependent rankings, not a universal annotation winner."
+  },
+  {
+    "benchmark_id": "K04",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.10.01.752251v1.full",
+    "title": "VINTER: a generative vision–language model for annotating and interrogating spatial tissues",
+    "publication_date": "2026-10-01 (preprint identifier)",
+    "accessed_on": "2026-11-01",
+    "finding": "DLPFC-specific contender uses image/gene inputs and held-out-pair tuning; incompatible with K04 expression-only unseen-donor protocol."
+  },
+  {
+    "benchmark_id": "K04",
+    "url": "https://www.nature.com/articles/s41592-026-03194-8",
+    "title": "Beyond benchmarking: an expert-guided consensus approach to spatially aware clustering",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "Primary benchmark warns DLPFC curated layers combine histology and marker information absent from transcriptome-only predictors."
+  },
+  {
+    "benchmark_id": "K04",
+    "url": "https://arxiv.org/abs/2602.11139",
+    "title": "TabICLv2: A better, faster, scalable, and open tabular foundation model",
+    "publication_date": "2026-02-11; v2 2026-09-16",
+    "accessed_on": "2026-11-01",
+    "finding": "ICML 2026 tabular classification/regression contender; no matched neuroscience result."
+  },
+  {
+    "benchmark_id": "K04",
+    "url": "https://github.com/soda-inria/tabicl",
+    "title": "TabICLv2 official code and models",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Author repository makes inference and pretraining resources available; releases must be pinned."
+  },
+  {
+    "benchmark_id": "K05",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
+    "title": "Benchmark of cellular deconvolution methods using a multi-assay dataset from postmortem human prefrontal cortex",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "Source orthogonal RNAScope/IF comparison supports Bisque and hspe among evaluated reference-based methods."
+  },
+  {
+    "benchmark_id": "K05",
+    "url": "https://bioconductor.org/packages/release/bioc/html/DeconvoBuddies.html",
+    "title": "DeconvoBuddies: official Bioconductor package",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Maintained source resource supplies marker-finding utilities and the DLPFC benchmark vignette."
+  },
+  {
+    "benchmark_id": "K05",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.10.02.756356v1.full",
+    "title": "DECONVersation: Single Cell Foundation Model-Derived Embeddings for Robust Cell Type Deconvolution of Bulk RNA-seq",
+    "publication_date": "2026-10-02 (preprint identifier)",
+    "accessed_on": "2026-11-01",
+    "finding": "Recent foundation-embedding deconvolution candidate includes brain data; needs cell reference and gene identities."
+  },
+  {
+    "benchmark_id": "K05",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11245312/",
+    "title": "InstaPrism: an R package for fast implementation of BayesPrism",
+    "publication_date": "2024",
+    "accessed_on": "2026-11-01",
+    "finding": "Faster BayesPrism implementation still requires bulk expression plus a single-cell reference; speed is not target-accuracy proof."
+  },
+  {
+    "benchmark_id": "K06",
+    "url": "https://elifesciences.org/articles/67490",
+    "title": "Non-linear dimensionality reduction on extracellular waveforms reveals cell type diversity in premotor cortex",
+    "publication_date": "2021-09-20 (version of record)",
+    "accessed_on": "2026-11-01",
+    "finding": "WaveMAP is waveform-only representation/clustering; supervised PV/SST transfer requires a trained label mapping."
+  },
+  {
+    "benchmark_id": "K06",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12373126/",
+    "title": "Towards robust and generalizable representations of extracellular data using contrastive learning",
+    "publication_date": "2023 (NeurIPS); PMC release 2025-08-25",
+    "accessed_on": "2026-11-01",
+    "finding": "CEED learns extracellular waveform representations; original architecture uses richer high-density spike observations."
+  },
+  {
+    "benchmark_id": "K06",
+    "url": "https://www.nature.com/articles/s41467-026-71331-0",
+    "title": "A multimodal approach for visualizing and identifying electrophysiological cell types in vivo",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "PhysMAP integrates waveform and spike-timing modalities; author code https://github.com/EricKenjiLee/PhysMAP_Manuscript."
+  },
+  {
+    "benchmark_id": "K06",
+    "url": "https://www.nature.com/articles/s41467-026-76939-w",
+    "title": "HIPPIE: a generative model for electrophysiological analysis across species, technologies, and modalities",
+    "publication_date": "2026",
+    "accessed_on": "2026-11-01",
+    "finding": "Recent conditional generative electrophysiology model; code https://github.com/braingeneers/HIPPIE."
+  },
+  {
+    "benchmark_id": "K06",
+    "url": "https://huggingface.co/Jesusgf23/hippie",
+    "title": "HIPPIE official model card",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Checkpoint uses waveform/ISI/ACG with technology conditioning; pretraining explicitly includes CellExplorer and Allen Visual Coding."
+  },
+  {
+    "benchmark_id": "K06",
+    "url": "https://arxiv.org/abs/2602.11139",
+    "title": "TabICLv2: A better, faster, scalable, and open tabular foundation model",
+    "publication_date": "2026-02-11; v2 2026-09-16",
+    "accessed_on": "2026-11-01",
+    "finding": "ICML 2026 tabular classification/regression contender; no matched neuroscience result."
+  },
+  {
+    "benchmark_id": "K06",
+    "url": "https://github.com/soda-inria/tabicl",
+    "title": "TabICLv2 official code and models",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Author repository makes inference and pretraining resources available; releases must be pinned."
+  },
+  {
+    "benchmark_id": "K06",
+    "url": "https://arxiv.org/abs/2609.17895",
+    "title": "TabPFN-3.5: Technical Report",
+    "publication_date": "2026-09-15; v2 2026-09-22",
+    "accessed_on": "2026-11-01",
+    "finding": "Current tabular candidate with grouped-split evaluation; task-specific superiority untested."
+  },
+  {
+    "benchmark_id": "K06",
+    "url": "https://github.com/PriorLabs/TabPFN",
+    "title": "TabPFN: official repository",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Current weights have noncommercial terms and license acceptance; hosted data transfer is not assumed authorized."
+  },
+  {
+    "benchmark_id": "L04",
+    "url": "https://github.com/flatironinstitute/nemos",
+    "title": "NeMoS: NEural MOdelS official repository",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Maintained composable basis functions and GLMs support flexible position/direction encoding."
+  },
+  {
+    "benchmark_id": "L04",
+    "url": "https://nemos-neuro.org/en/stable/quickstart.html",
+    "title": "NeMoS official quickstart",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Documents regularized single-neuron and population GLMs; no single-rat frozen-slice winner is claimed."
+  },
+  {
+    "benchmark_id": "L04",
+    "url": "https://nemos-neuro.org/en/latest/tutorials/plot_05_place_cells.html",
+    "title": "NeMoS: Fit place cell official tutorial",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Current place-cell GLM example demonstrates relevant nonlinear feature construction, on a different dataset."
+  },
+  {
+    "benchmark_id": "L06",
+    "url": "https://github.com/sbi-benchmark/sbibm",
+    "title": "Simulation-based inference benchmark: official repository",
+    "publication_date": "2021 (associated benchmark paper)",
+    "accessed_on": "2026-11-01",
+    "finding": "Supplies task reference posteriors and C2ST; task and raw-data variants must be distinguished."
+  },
+  {
+    "benchmark_id": "L06",
+    "url": "https://proceedings.mlr.press/v130/lueckmann21a.html",
+    "title": "Benchmarking Simulation-Based Inference",
+    "publication_date": "2021",
+    "accessed_on": "2026-11-01",
+    "finding": "Original benchmark uses simulation-budget comparisons; L06 instead exposes the likelihood."
+  },
+  {
+    "benchmark_id": "L06",
+    "url": "https://sbi.readthedocs.io/en/stable/how_to_guide/06_choosing_inference_method.html",
+    "title": "sbi: How to choose an inference method",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Current supported families include NPE/NLE/NRE and FMPE/NPSE, with different simulation and amortization tradeoffs."
+  },
+  {
+    "benchmark_id": "L06",
+    "url": "https://arxiv.org/abs/2601.22951",
+    "title": "OneFlowSBI: One Model, Many Queries for Simulation-Based Inference",
+    "publication_date": "2026-01-30; v2 2026-10-21",
+    "accessed_on": "2026-11-01",
+    "finding": "Current joint flow-matching method covers standard sbibm tasks; simulation budget and task variant must match."
+  },
+  {
+    "benchmark_id": "L06",
+    "url": "https://arxiv.org/abs/2605.27499",
+    "title": "GenSBI: Generative Methods for Simulation-Based Inference in JAX",
+    "publication_date": "2026-05-26",
+    "accessed_on": "2026-11-01",
+    "finding": "Current flow/diffusion SBI package; its reported Bernoulli GLM is a sufficient-statistic task, not automatically L06 raw observation scoring."
+  },
+  {
+    "benchmark_id": "L06",
+    "url": "https://gensbi.com/benchmarks.html",
+    "title": "GenSBI benchmark documentation",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Lists Bernoulli GLM dimension x=10; L06 supplies 100 raw spikes and a known design/likelihood."
+  },
+  {
+    "benchmark_id": "L06",
+    "url": "https://dynamechs.sourceforge.net/",
+    "title": "DYNAMECHS: A Multibody Dynamic Simulation Library",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Exact-name searches resolve a legacy multibody simulator, not a validated cognitive/SBI benchmark."
+  },
+  {
+    "benchmark_id": "M01",
+    "url": "https://github.com/int-brain-lab/behavior_models",
+    "title": "IBL official behavior_models repository",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Official task models include OptimalBayesian, ActionKernel and StimulusKernel with session-level inference."
+  },
+  {
+    "benchmark_id": "M01",
+    "url": "https://vocal.gatsby.ucl.ac.uk/~pel/papers/prior_ibl_2025.pdf",
+    "title": "Brain-wide representations of prior information",
+    "publication_date": "2025",
+    "accessed_on": "2026-11-01",
+    "finding": "Current IBL primary work uses learned behavioral-prior models, including action and stimulus kernels."
+  },
+  {
+    "benchmark_id": "M01",
+    "url": "https://github.com/nicholas-roy/psytrack",
+    "title": "PsyTrack official repository",
+    "publication_date": "2021 (associated method)",
+    "accessed_on": "2026-11-01",
+    "finding": "Dynamic psychophysical weights model within-session strategy; cannot use hidden test choices as fitting observations."
+  },
+  {
+    "benchmark_id": "M01",
+    "url": "https://www.nature.com/articles/s41593-021-01007-z.pdf",
+    "title": "Mice alternate between discrete strategies during perceptual decision-making",
+    "publication_date": "2022",
+    "accessed_on": "2026-11-01",
+    "finding": "IBL-relevant GLM-HMM strategy model; longitudinal latent-state fitting differs from independent truncated histories."
+  },
+  {
+    "benchmark_id": "M01",
+    "url": "https://deepmind.google/research/publications/94006/",
+    "title": "Hybrid neural–cognitive models reveal how memory shapes human reward learning",
+    "publication_date": "2026-02-05",
+    "accessed_on": "2026-11-01",
+    "finding": "Current author research on human reward-learning models; different species/task and purpose from this frozen transfer slice."
+  },
+  {
+    "benchmark_id": "M04",
+    "url": "https://elifesciences.org/articles/49547",
+    "title": "Ten simple rules for the computational modeling of behavioral data",
+    "publication_date": "2019",
+    "accessed_on": "2026-11-01",
+    "finding": "Primary methodological source motivates parameter recovery and identifiability checks, not a leaderboard for M04."
+  },
+  {
+    "benchmark_id": "M04",
+    "url": "https://github.com/lnccbrown/HSSM/releases",
+    "title": "HSSM official releases: choice-only RL and Bayesian cognitive modeling",
+    "publication_date": "2026-07-15 for v0.4.0; current release page lists v0.5.0 on 8 September",
+    "accessed_on": "2026-11-01",
+    "finding": "Choice-only RL support is real; larger sequential-sampling workflows must not be mistaken for the exact softmax Q-learning model."
+  },
+  {
+    "benchmark_id": "M04",
+    "url": "https://lnccbrown.github.io/HSSM/",
+    "title": "HSSM official documentation",
+    "publication_date": "2026 (associated toolbox preprint)",
+    "accessed_on": "2026-11-01",
+    "finding": "Supports custom likelihoods and RL models; likelihood/priors still require exact endpoint matching."
+  },
+  {
+    "benchmark_id": "M04",
+    "url": "https://arxiv.org/abs/2306.16015",
+    "title": "BayesFlow: Amortized Bayesian Workflows With Neural Networks",
+    "publication_date": "2023",
+    "accessed_on": "2026-11-01",
+    "finding": "Simulation-trained posterior inference is a relevant alternative but adds simulation/training budget."
+  },
+  {
+    "benchmark_id": "M04",
+    "url": "https://sbi.readthedocs.io/en/stable/how_to_guide/06_choosing_inference_method.html",
+    "title": "sbi: How to choose an inference method",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Current supported families include NPE/NLE/NRE and FMPE/NPSE, with different simulation and amortization tradeoffs."
+  },
+  {
+    "benchmark_id": "M04",
+    "url": "https://deepmind.google/research/publications/94006/",
+    "title": "Hybrid neural–cognitive models reveal how memory shapes human reward learning",
+    "publication_date": "2026-02-05",
+    "accessed_on": "2026-11-01",
+    "finding": "Current author research on human reward-learning models; different species/task and purpose from this frozen transfer slice."
+  },
+  {
+    "benchmark_id": "M04",
+    "url": "https://dynamechs.sourceforge.net/",
+    "title": "DYNAMECHS: A Multibody Dynamic Simulation Library",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Exact-name searches resolve a legacy multibody simulator, not a validated cognitive/SBI benchmark."
+  },
+  {
+    "benchmark_id": "M04",
+    "url": "https://arxiv.org/abs/2602.07098",
+    "title": "BayesFlow 2: Multi-Backend Amortized Bayesian Inference in Python",
+    "publication_date": "2026-02-06; v2 2026-03-23",
+    "accessed_on": "2026-11-01",
+    "finding": "Current multi-backend amortized Bayesian inference release; official code https://github.com/bayesflow-org/bayesflow."
+  },
+  {
+    "benchmark_id": "N05",
+    "url": "https://pynwb.readthedocs.io/en/stable/validation.html",
+    "title": "PyNWB: Validating NWB files",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Schema validation and NWBInspector best-practice checks are complementary; neither computes this custom 61-field answer."
+  },
+  {
+    "benchmark_id": "N05",
+    "url": "https://github.com/NeurodataWithoutBorders/nwbinspector",
+    "title": "NWBInspector official repository",
+    "publication_date": null,
+    "accessed_on": "2026-11-01",
+    "finding": "Maintained NWB best-practice inspection tool, not a pretrained neural predictor."
+  },
+  {
+    "benchmark_id": "N05",
+    "url": "https://github.com/NeurodataWithoutBorders/pynwb/blob/dev/CHANGELOG.md",
+    "title": "PyNWB official changelog",
+    "publication_date": "2026-06-29 for version 4.0.0",
+    "accessed_on": "2026-11-01",
+    "finding": "Current API and legacy-format compatibility need explicit handling; library upgrades alone do not strengthen a deterministic answer."
+  }
+]

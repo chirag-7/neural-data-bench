@@ -1,0 +1,135 @@
+{
+  "benchmark_id": "M01",
+  "title": "Cross-mouse conditional choice probability",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "IBL December 2019 archive, 83 training/17 test mice across the same nine labs; 13 columns: current contrasts, experimenter block prior and five past choices/feedbacks. Nonoverlapping six-trial blocks ensure scored targets never reappear as histories. Mouse-equal binary log loss. No complete test-session sequence or target feedback supplied.",
+  "local_protocol": "experiments/M01/protocol.md",
+  "existing_reference": {
+    "name": "Paper-inspired pooled behavioral GLM with stimulus basis, lag1 rewarded/unrewarded choice terms and block prior",
+    "evidence": "A: same canonical numerical input and mouse-equal training weights.",
+    "strength": "Genuine IBL task basis and interpretable conditional choice model.",
+    "problems": [
+      "Pooled transfer adaptation, not the original per-animal model fits.",
+      "Only lag1 used despite five allowed history lags.",
+      "Known experimenter prior is privileged information not directly cued to the animal."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "Regularized multi-lag task-specific behavioral GLM",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/int-brain-lab/behavior_models",
+        "https://vocal.gatsby.ucl.ac.uk/~pel/papers/prior_ibl_2025.pdf"
+      ],
+      "evidence": "C: matched extension of source model family.",
+      "matched_to_our_slice": false,
+      "information_match": "Use all five allowed history lags/interactions; select regularization on training mice only.",
+      "role": "candidate"
+    },
+    {
+      "name": "IBL ActionKernel / StimulusKernel / OptimalBayesian models",
+      "year": 2025,
+      "source_urls": [
+        "https://github.com/int-brain-lab/behavior_models",
+        "https://vocal.gatsby.ucl.ac.uk/~pel/papers/prior_ibl_2025.pdf"
+      ],
+      "evidence": "B: official current task-specific model implementations.",
+      "matched_to_our_slice": false,
+      "information_match": "Native session inference and accumulated histories exceed the frozen five-lag independent-block input; fit population parameters on allowed training histories only, without test fitting.",
+      "role": "candidate"
+    },
+    {
+      "name": "PsyTrack / GLM-HMM strategy model",
+      "year": 2022,
+      "source_urls": [
+        "https://github.com/nicholas-roy/psytrack",
+        "https://www.nature.com/articles/s41593-021-01007-z.pdf"
+      ],
+      "evidence": "B: established relevant IBL behavioral specialists.",
+      "matched_to_our_slice": false,
+      "information_match": "Latent temporal fitting requires continuous sessions and potentially test responses; not drop-in under independent frozen rows.",
+      "role": "candidate"
+    },
+    {
+      "name": "Hybrid neural–cognitive reward-learning models",
+      "year": 2026,
+      "source_urls": [
+        "https://deepmind.google/research/publications/94006/"
+      ],
+      "evidence": "B/C: recent primary human learning work, not mouse-transfer benchmark evidence.",
+      "matched_to_our_slice": false,
+      "information_match": "Different task/species and sequential information; domain relevance alone does not establish fit or a win.",
+      "role": "candidate"
+    }
+  ],
+  "recommended_next_comparator": "Training-mouse-selected regularized behavioral GLM with all permitted lags and reward interactions; separate full-session track for official action-kernel/GLM-HMM/PsyTrack inference.",
+  "switching_assessment": "ADD stronger same-information history modeling, Tier C; retain source-inspired GLM. Do not advertise a current best cognitive model from a conditional forecast with privileged prior, or use test-history reconstruction to fit a session model.",
+  "limitations": [
+    "Historical beta-quality source release, not all modern IBL QC.",
+    "Labs overlap; unseen-mouse is not unseen-lab transfer.",
+    "Do not join test rows or reconstruct scored choices from histories.",
+    "Per-mouse dynamic model fitting with hidden test choices violates the contract.",
+    "Prediction accuracy cannot establish recovery of the animal learning mechanism."
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/int-brain-lab/behavior_models",
+      "title": "IBL official behavior_models repository",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Official task models include OptimalBayesian, ActionKernel and StimulusKernel with session-level inference.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://vocal.gatsby.ucl.ac.uk/~pel/papers/prior_ibl_2025.pdf",
+      "title": "Brain-wide representations of prior information",
+      "publication_date": "2025",
+      "accessed_on": "2026-11-01",
+      "finding": "Current IBL primary work uses learned behavioral-prior models, including action and stimulus kernels.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://github.com/nicholas-roy/psytrack",
+      "title": "PsyTrack official repository",
+      "publication_date": "2021 (associated method)",
+      "accessed_on": "2026-11-01",
+      "finding": "Dynamic psychophysical weights model within-session strategy; cannot use hidden test choices as fitting observations.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41593-021-01007-z.pdf",
+      "title": "Mice alternate between discrete strategies during perceptual decision-making",
+      "publication_date": "2022",
+      "accessed_on": "2026-11-01",
+      "finding": "IBL-relevant GLM-HMM strategy model; longitudinal latent-state fitting differs from independent truncated histories.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://deepmind.google/research/publications/94006/",
+      "title": "Hybrid neural–cognitive models reveal how memory shapes human reward learning",
+      "publication_date": "2026-02-05",
+      "accessed_on": "2026-11-01",
+      "finding": "Current author research on human reward-learning models; different species/task and purpose from this frozen transfer slice.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    }
+  ],
+  "search_queries": [
+    "International Brain Laboratory 2025 behavior model prior action kernel optimal Bayesian observer github",
+    "site.github.com \"PsyTrack\" logistic regression behavioral",
+    "2026 cognitive modeling benchmark mechanistic models learning rules parameter recovery BayesFlow"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

@@ -1,0 +1,130 @@
+{
+  "benchmark_id": "A14",
+  "title": "Rat7M artificial HeadF gap recovery",
+  "reviewed_on": "2026-11-01",
+  "retrieval_date_semantics": "accessed_on is this fresh retrieval, not publication date or proof of exhaustive indexing; null publication_date means not verified",
+  "search_queries": [
+    "Rat7M pose DANNCE SDANNCE marker imputation benchmark2025",
+    "site:github.com DISK imputation Rat7M",
+    "SDANNCE github Rat7M"
+  ],
+  "candidates": [
+    {
+      "name": "DISK Transformer / bidirectional GRU",
+      "year": 2025,
+      "source_urls": [
+        "https://www.nature.com/articles/s41592-025-02893-y",
+        "https://github.com/bozeklab/DISK",
+        "https://github.com/bozeklab/DISK_paper_code"
+      ],
+      "evidence": "Primary paper and maintained code explicitly evaluate missing-coordinate imputation; official code recommends transformer, GRU as faster second architecture.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "MarkerBasedImputation / OptiPose / Keypoint-MoSeq",
+      "year": 2024,
+      "source_urls": [
+        "https://www.nature.com/articles/s41592-025-02893-y"
+      ],
+      "evidence": "DISK compares these methods on relevant skeleton sources; their different priors/setup merit same-mask evaluation, not automatic published-rank transfer.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "DANNCE",
+      "year": 2021,
+      "source_urls": [
+        "https://www.nature.com/articles/s41592-021-01106-6"
+      ],
+      "evidence": "Rat7M video-to-3D pose estimator, not a drop-in measured-coordinate gap imputer.",
+      "matched_to_our_slice": false,
+      "role": "adjacent pipeline, modality mismatch"
+    },
+    {
+      "name": "s-DANNCE",
+      "year": 2025,
+      "source_urls": [
+        "https://github.com/tqxli/sdannce/blob/master/README.md"
+      ],
+      "evidence": "2025 social 3D video tracking with pretrained inference/finetuning; important current pose tool but raw video unavailable to this gap endpoint.",
+      "matched_to_our_slice": false,
+      "role": "adjacent pipeline, modality mismatch"
+    }
+  ],
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_claim_scope": "Exact executed custom input/split/metric protocol, not best within our small inspected local set",
+  "current_reference": "Per-window linear interpolation",
+  "current_reference_limitations": [
+    "Linear interpolation is a matched conventional anchor, not DISK or state-of-the-art pose estimator.",
+    "Our animal-disjoint six-landmark short-gap slice differs from original DISK long/multiple gaps.",
+    "DANNCE/s-DANNCE video outputs cannot silently replace measured mocap truth.",
+    "Only two heldout animals; units unverified."
+  ],
+  "recommended_next_comparator": "Retrain DISK Transformer and GRU on animals 1–3 only, same six landmarks, 31 frames and fixed seven-frame HeadF gap; test animals 4–5 unchanged. Add multivariate Kalman/spline/rigid-head references; report training budget separately.",
+  "switching_assessment": "NO GENERAL REPLACEMENT RECOMMENDATION. Current evidence supports a bounded code-synthesis/pilot comparison to the named local reference. Establish prospective same-input/split/metric contender runs, biological/source replication, calibration and runtime/reliability before switching production tools.",
+  "limitations": [
+    "Linear interpolation is a matched conventional anchor, not DISK or state-of-the-art pose estimator.",
+    "Our animal-disjoint six-landmark short-gap slice differs from original DISK long/multiple gaps.",
+    "DANNCE/s-DANNCE video outputs cannot silently replace measured mocap truth.",
+    "Only two heldout animals; units unverified."
+  ],
+  "negative_findings": [
+    "No leaderboard for our six-marker seven-frame animal-heldout gap verified.",
+    "No current video-pose model establishes best coordinate-only imputation on this contract."
+  ],
+  "sources": [
+    {
+      "url": "https://www.nature.com/articles/s41592-025-02893-y",
+      "title": "Deep Imputation for Skeleton data (DISK) for behavioral science",
+      "publication_date": "2025",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Directly relevant missing-skeleton task; Rat7M handling differs from other dataset recording splits."
+    },
+    {
+      "url": "https://github.com/bozeklab/DISK",
+      "title": "DISK official code",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Transformer/GRU and gap training/evaluation tooling; training hours to days, not a matched 180-second reference."
+    },
+    {
+      "url": "https://github.com/bozeklab/DISK_paper_code",
+      "title": "DISK paper reproduction code",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Author-linked architecture/comparator evaluation scripts."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41592-021-01106-6",
+      "title": "DANNCE / Rat7M paper",
+      "publication_date": "2021",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Source pose-estimation context, not our artificial-gap metric."
+    },
+    {
+      "url": "https://github.com/tqxli/sdannce/blob/master/README.md",
+      "title": "s-DANNCE: Mapping the landscape of social behavior",
+      "publication_date": "2025",
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "2025 Cell source/code, social multi-view pose estimation."
+    }
+  ],
+  "local_protocol": {
+    "path": "experiments/A14/protocol.md",
+    "sha256": "bd15dbd171befe15c90b14d7459c192e7d5fa0bf11d3ad5bd7c1327fc17f7418"
+  },
+  "review_actions": {
+    "fresh_primary_source_browsing": true,
+    "trained_models": false,
+    "downloaded_large_weights": false,
+    "changed_scores": false,
+    "changed_website": false
+  },
+  "unmatched_published_scores_imported": false
+}

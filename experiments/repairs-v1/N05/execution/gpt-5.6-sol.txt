@@ -1,0 +1,11 @@
+
+Traceback (most recent call last):
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/repair_failed.py", line 218, in <module>
+    elif args.action=='one':print(json.dumps(one(args.task,args.method),allow_nan=False))
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/repair_failed.py", line 141, in one
+    then=time.perf_counter();answer=ns['extract'](str(ROOT/'data/cache/N05/fixture.nwb'));elapsed=time.perf_counter()-then
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "posthoc-repaired-program", line 204, in extract
+  File "posthoc-repaired-program", line 121, in find_series
+ValueError: Could not distinguish sweep 19 stimulus

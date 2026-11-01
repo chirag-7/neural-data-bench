@@ -1,0 +1,178 @@
+{
+  "benchmark_id": "K06",
+  "title": "Genetic PV/SST typing from extracellular mean waveforms",
+  "reviewed_on": "2026-11-01",
+  "as_of": "2026-11-01",
+  "current_best_claim": "STRONG_CANDIDATES_NO_MATCHED_WINNER",
+  "current_best_explanation": "No current global winner has been verified on this exact frozen input, split and scorer. A published dataset name or broad leaderboard lead is insufficient.",
+  "executed_endpoint": "Allen-contributed CellExplorer ground truth: 136 training cells from 11 mice, 71 test cells from five disjoint mice. Six waveform scalars plus 81 normalized filtered mean-waveform samples. Genetically optotagged PV vs SST labels; class-balanced mouse accuracy. No ACG, ISI, firing rate, depth, genotype, optotag responses or test identifiers as predictors.",
+  "local_protocol": "experiments/K06/protocol.md",
+  "existing_reference": {
+    "name": "Fixed mouse-stratified three-fold choice between SVM and ExtraTrees",
+    "evidence": "A: same input and mouse-aware training validation.",
+    "strength": "Defensible small-sample waveform classifier.",
+    "problems": [
+      "Only five PV mice in the entire included source.",
+      "One genetic class per mouse leaves genetic-line/acquisition-cohort confounding.",
+      "Not comprehensive molecular typing or raw spike sorting."
+    ],
+    "status": "VERIFIED_ON_PROTOCOL",
+    "verification_scope": "Only the named locally audited reference/archived outputs, not every newer candidate or equal-budget/global optimality."
+  },
+  "candidates": [
+    {
+      "name": "WaveMAP plus training-only supervised label transfer",
+      "year": 2021,
+      "source_urls": [
+        "https://elifesciences.org/articles/67490"
+      ],
+      "evidence": "B: waveform-only domain representation.",
+      "matched_to_our_slice": false,
+      "information_match": "Can use normalized waveforms, but unsupervised clusters are not genetic labels; fit UMAP only on training cells and map with allowed labels.",
+      "role": "candidate"
+    },
+    {
+      "name": "CEED waveform encoder",
+      "year": 2023,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12373126/"
+      ],
+      "evidence": "B: primary extracellular representation study; PMC posting in 2025 is not the publication year.",
+      "matched_to_our_slice": false,
+      "information_match": "Mean-waveform-only adaptation differs from high-density spike views and augmentations; retraining and architecture choices need an explicit ablation.",
+      "role": "candidate"
+    },
+    {
+      "name": "PhysMAP waveform-only ablation",
+      "year": 2026,
+      "source_urls": [
+        "https://www.nature.com/articles/s41467-026-71331-0"
+      ],
+      "evidence": "B: current domain specialist with optotagged comparisons.",
+      "matched_to_our_slice": false,
+      "information_match": "Full multimodal method requires withheld spike-timing features; only a training-only waveform ablation is information-matched.",
+      "role": "candidate"
+    },
+    {
+      "name": "HIPPIE waveform-only encoder/probe",
+      "year": 2026,
+      "source_urls": [
+        "https://www.nature.com/articles/s41467-026-76939-w",
+        "https://huggingface.co/Jesusgf23/hippie"
+      ],
+      "evidence": "B for current multimodal method; D for clean off-the-shelf matched claim.",
+      "matched_to_our_slice": false,
+      "information_match": "Full checkpoint needs ISI/ACG plus technology conditioning; model card lists CellExplorer and Allen Visual Coding pretraining, making test-unit overlap audit essential.",
+      "role": "candidate"
+    },
+    {
+      "name": "TabICLv2 / TabPFN-3.5",
+      "year": 2026,
+      "source_urls": [
+        "https://arxiv.org/abs/2602.11139",
+        "https://arxiv.org/abs/2609.17895"
+      ],
+      "evidence": "B: current tabular challengers.",
+      "matched_to_our_slice": false,
+      "information_match": "87 numerical inputs fit; same fixed mouse folds and class-balanced mouse validation must be used.",
+      "role": "candidate"
+    }
+  ],
+  "recommended_next_comparator": "Prospective waveform-only WaveMAP/CEED-style features plus a regularized supervised head and modern tabular challenger; preserve SVM/trees. Use no pretrained HIPPIE checkpoint until source-unit overlap is audited.",
+  "switching_assessment": "ADD matched waveform-only challengers, medium priority, Tier B/C. Do not substitute PhysMAP/HIPPIE full multimodal scores or infer a winner from generic cell-type classification. HIPPIE is current and relevant but particularly exposed to this source.",
+  "limitations": [
+    "Scarce mice and source cohort confounding limit genetic interpretation.",
+    "Restoring ACG/ISI/depth would expand the task information, not merely modernize the comparator.",
+    "Pretrained HIPPIE includes CellExplorer and Allen sources; identical-unit overlap is unresolved.",
+    "Allen source bytes remain subject to research/noncommercial terms, independently of code licenses.",
+    "Direct PhysMAP/HIPPIE publisher access was partly blocked; author repository/model card and indexed primary extracts were available."
+  ],
+  "sources": [
+    {
+      "url": "https://elifesciences.org/articles/67490",
+      "title": "Non-linear dimensionality reduction on extracellular waveforms reveals cell type diversity in premotor cortex",
+      "publication_date": "2021-09-20 (version of record)",
+      "accessed_on": "2026-11-01",
+      "finding": "WaveMAP is waveform-only representation/clustering; supervised PV/SST transfer requires a trained label mapping.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12373126/",
+      "title": "Towards robust and generalizable representations of extracellular data using contrastive learning",
+      "publication_date": "2023 (NeurIPS); PMC release 2025-08-25",
+      "accessed_on": "2026-11-01",
+      "finding": "CEED learns extracellular waveform representations; original architecture uses richer high-density spike observations.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-026-71331-0",
+      "title": "A multimodal approach for visualizing and identifying electrophysiological cell types in vivo",
+      "publication_date": "2026",
+      "accessed_on": "2026-11-01",
+      "finding": "PhysMAP integrates waveform and spike-timing modalities; author code https://github.com/EricKenjiLee/PhysMAP_Manuscript.",
+      "access": "Publisher indexed primary extract and author repository accessed; direct Nature page redirected to inaccessible authentication."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-026-76939-w",
+      "title": "HIPPIE: a generative model for electrophysiological analysis across species, technologies, and modalities",
+      "publication_date": "2026",
+      "accessed_on": "2026-11-01",
+      "finding": "Recent conditional generative electrophysiology model; code https://github.com/braingeneers/HIPPIE.",
+      "access": "Primary indexed full-text extract available; direct Nature authentication redirect and PMC CAPTCHA blocked clean full-page access."
+    },
+    {
+      "url": "https://huggingface.co/Jesusgf23/hippie",
+      "title": "HIPPIE official model card",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Checkpoint uses waveform/ISI/ACG with technology conditioning; pretraining explicitly includes CellExplorer and Allen Visual Coding.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.11139",
+      "title": "TabICLv2: A better, faster, scalable, and open tabular foundation model",
+      "publication_date": "2026-02-11; v2 2026-09-16",
+      "accessed_on": "2026-11-01",
+      "finding": "ICML 2026 tabular classification/regression contender; no matched neuroscience result.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://github.com/soda-inria/tabicl",
+      "title": "TabICLv2 official code and models",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Author repository makes inference and pretraining resources available; releases must be pinned.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.17895",
+      "title": "TabPFN-3.5: Technical Report",
+      "publication_date": "2026-09-15; v2 2026-09-22",
+      "accessed_on": "2026-11-01",
+      "finding": "Current tabular candidate with grouped-split evaluation; task-specific superiority untested.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    },
+    {
+      "url": "https://github.com/PriorLabs/TabPFN",
+      "title": "TabPFN: official repository",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "finding": "Current weights have noncommercial terms and license acceptance; hosted data transfer is not assumed authorized.",
+      "access": "Primary page or author repository accessed; no checkpoint downloaded."
+    }
+  ],
+  "search_queries": [
+    "CellExplorer optotagged waveform cell type WaveMAP CEED 2025 2026",
+    "2026 extracellular waveform classification WaveMAP PhysMAP CEED optotagged cell types",
+    "site.nature.com HIPPIE electrophysiological 2026",
+    "site.github.com HIPPIE Jesusgf23 electrophysiology"
+  ],
+  "evidence_tiers": {
+    "A": "Locally executed and audited on this frozen protocol; establishes a comparator result, not universal optimality.",
+    "B": "Primary method/benchmark with relevant task evidence but an unmatched split, inputs, scorer or budget.",
+    "C": "Author repository, preprint, mathematical proposal or adaptation requiring additional validation.",
+    "D": "Unresolved access, unavailable artifacts or input mismatch precludes an executable recommendation."
+  },
+  "execution_policy": "Literature review only. No inference, fitting, new scores, checkpoint downloads, frozen protocol edits or result changes. Any new comparator requires a prospective amendment, frozen training-only selection and separate result records.",
+  "score_import_policy": "No unmatched published numbers were imported into benchmark scores."
+}

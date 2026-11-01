@@ -1,0 +1,18 @@
+{
+  "repair_track": "posthoc-repairs-v1",
+  "benchmark_id": "C05",
+  "status": "not repairable from archived values under original complete-coverage contract",
+  "cases": 4,
+  "frozen_files": {
+    "results/C05.json": "5a3e4c710c587ffeab068739ce99268e28769c3b048c9a0dc635b1df8c41ec59",
+    "data/manifests/spikefinder.json": "976cdc388e2eeaf5c75cf65096d8cb091a3d2c5648c4c11ccf5e53d870e8d211",
+    "data/cache/spikefinder/spikefinder_eval.py": "fd39042a5d1be5b7ca309860648dcc1e34a604f9c9d21efa989ad3cb15432263",
+    "experiments/repairs-v1/C05/diagnosis.json": "733cc14e07b01f0c270e7baa42545a6a44b24684461944670d48635dd54cfd9e",
+    "experiments/repairs-v1/C05/source-evidence.json": "85695b986c3a9fe6135a94a63e22f4b28f73cc2a78f11d133d2ef5fcc5a62468",
+    "data/cache/spikefinder/2.speiser.csv": "b8b32a80a5d05b0535449a542265db5fef47e35c83e2eeb22f38064e74851f98",
+    "data/cache/spikefinder/4.speiser.csv": "3d4b5bf286fc3136faa824b13d1cbe4ecc05a564fe430b8271c1a9ab3a52bb3f",
+    "data/cache/spikefinder/5.deneux.csv": "1c65c3ee30091741cef426d9311fbe9f4c535e4ce22e0b29c88df4504d87d821",
+    "data/cache/spikefinder/5.speiser.csv": "86be293f10f75501a3b519f528dea03bc233eb361dfbd2f38b9c693f0f2a9a8a"
+  },
+  "no_predictions_fabricated": true
+}

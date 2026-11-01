@@ -46,3 +46,7 @@ Decision: **measured** (2026-10-30). Constructed an explicit real place-cell cou
 Preview 0.11: measured. Constructed an explicit real place-cell count-encoding diagnostic from author-released data, replacing only the execution slice of the earlier proposed simulation. Chronological60/40split plus1sbuffer; train-mean-null bits/spike; no parameter-recovery/calibration claim.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json). [Actual protocol/worklog](../../../experiments/L04). [Task measurements](../../../results/L04.json).
+
+## Current specialists and repair sensitivity — 1 November 2026
+
+[Current specialist review](../../../literature/specialist-review-2026-11-01/L04.json) · [Native version trajectories and practical interpretation](../../../analysis/practical-review-2026-11-01/report.md). The review distinguishes tested references from unexecuted newer candidates; no matched current global winner is certified.

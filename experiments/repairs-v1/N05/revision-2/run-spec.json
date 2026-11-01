@@ -1,0 +1,27 @@
+{
+  "track": "posthoc-repairs-v1",
+  "revision": 2,
+  "benchmark_id": "N05",
+  "rationale": "Original object traversal deduplicates aliases. Round1 link traversal ignored internal SoftLinks and did not recursively follow alias groups. Revision2 walks metadata paths, follows internal hard/soft links, refuses external-file links and uses ancestor object addresses to prevent cycles. Existing role/unit/sweep selection and numerical calculations remain unchanged. No expected answers or measured numerical constants added. Original249line noncompliance remains visible; no cosmetic trimming.",
+  "original_code_sha256": "9c568f8b0d190b78f699018e89dfdaa5eed62aaefd54150cbcb185f1d1a34e83",
+  "repaired_code_sha256": "ff40988903b1bbc78ef1d8cc73d80760771c3c56b589fbbe86cdc0d81a6982b4",
+  "timeout_seconds": 180,
+  "numerical_threads": 1,
+  "no_test_targets_in_patch_logic": true,
+  "no_new_model_calls": true,
+  "frozen_files": {
+    "experiments/N05/gpt-5.6-sol.json": "e6d5db5a80930840f6f8407c94d3b6e8dc30a1293e7d9590f079a897eb49566a",
+    "experiments/N05/run-spec.json": "237670478bc944642a5659dc1bbfe62c0d56378b36e9e9a339bade48d8342b4a",
+    "data/cache/N05/fixture.nwb": "6e663e329261c4302748df0286edd6a3168ff3e20f2433f413e2ac6240d10ddb",
+    "data/cache/N05/expected.json": "89c9eeace3b6e3adc8f072a375b42b3c9847ba00e321a53dcbef58887a63f25b",
+    "data/cache/N05/tolerances.json": "9f88a1e99cca223dfc400ce208d81c8f0605d74c6948d3a590b8b39769664ddf",
+    "scripts/workflow.py": "6d951f3e38e9b0b5bda24cca2d127a4ea2e40c3ff74c27a5ab9c071ed484c8ad",
+    "scripts/repair_failed.py": "6ce382b04bd769f2e6ff2e1631f0d2e0a83ea5741363ce7f4c5dd7d949ff600a",
+    "scripts/repair_failed_followup.py": "1aa63099fe61d3aa19517ac3417e7010857520d75dd6f7fb8cebd72f42a19f34",
+    "results/repairs-v1/round-1.json": "90216c01fa05329044dcba40733c3e875632b3d6190abff10a0abae472ed9f87",
+    "experiments/repairs-v1/N05/revision-2/patch.diff": "a578e0e0768bdc512d92b0f033aef8ba35c20ddd7cb799ecd4a6b8d7558a6075",
+    "experiments/repairs-v1/N05/revision-2/rationale.md": "66ee9c705baa4da0f0a7f76ca45fb74d0739188aa144df7e24565543c5944192",
+    "experiments/repairs-v1/N05/revision-2/gpt-5.6-sol.py": "ff40988903b1bbc78ef1d8cc73d80760771c3c56b589fbbe86cdc0d81a6982b4"
+  },
+  "status": "sealed before repaired execution and scoring"
+}

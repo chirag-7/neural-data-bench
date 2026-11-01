@@ -1,0 +1,17 @@
+{
+  "pin": "def1f8c2c5268eb71e83f57c265d4b3c102fb5f8",
+  "files": [
+    {
+      "path": "experiments/repairs-v1/C05/source/Process-submissions.ipynb",
+      "bytes": 64733,
+      "sha256": "caedad66048beddae34962af376fc3ce003525b5c6714a30e87813e9c73e6ba7"
+    },
+    {
+      "path": "experiments/repairs-v1/C05/source/json_reformat.ipynb",
+      "bytes": 3264,
+      "sha256": "71534b9ed35980d45294f9ca965a15dada85ead3cc0e4bff1674341b586b88bb"
+    }
+  ],
+  "findings": "Original Process submissions notebook loads CSV with headers and calls upstream score(data,truth) directly for Speiser/Deneux. No special orientation/shift/header or interpolation correction is applied. The upstream score jointly masks missing predictions/labels. json_reformat notebook reformats leaderboard score metadata, not raw scientific prediction arrays.",
+  "conclusion": "No complete archived values recoverable by documented source alignment. Four original complete-support cases remain not repairable without new predictions. No altered-contract diagnostic score used."
+}

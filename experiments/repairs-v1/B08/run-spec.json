@@ -1,0 +1,97 @@
+{
+  "repair_track": "posthoc-repairs-v1",
+  "benchmark_id": "B08",
+  "methods": [
+    "gpt-5.6-sol",
+    "gpt-6-sol",
+    "gpt-6.1-sol",
+    "spikepack",
+    "task-baseline"
+  ],
+  "date": "2026-11-01",
+  "original_outputs_preserved": true,
+  "originals": [
+    {
+      "model": "gpt-5.6-sol",
+      "source_json": "experiments/B08/gpt-5.6-sol.json",
+      "source_json_sha256": "012828dda836d7949cbb660321c2a708739163ed18802317994a504ccc2ccc3e",
+      "original_code_sha256": "df4a658b8d254695d11ea4e55b2ece66f69cc4f4535caeb097c9471f1141a245",
+      "repaired_code_sha256": "df4a658b8d254695d11ea4e55b2ece66f69cc4f4535caeb097c9471f1141a245",
+      "code_unchanged": true,
+      "original_code_lines": 177,
+      "repaired_code_lines": 177
+    },
+    {
+      "model": "gpt-6-sol",
+      "source_json": "experiments/B08/gpt-6-sol.json",
+      "source_json_sha256": "095e610dd14cfb3a7d7147f26a728cbd9ae7959cd2830c918da9fe2340a7651e",
+      "original_code_sha256": "64c1b27442585c1da465548be48cd65cecae91d47844d3f06bdb34b263122373",
+      "repaired_code_sha256": "64c1b27442585c1da465548be48cd65cecae91d47844d3f06bdb34b263122373",
+      "code_unchanged": true,
+      "original_code_lines": 178,
+      "repaired_code_lines": 178
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "source_json": "experiments/B08/gpt-6.1-sol.json",
+      "source_json_sha256": "72269ccdec306f96ec62718826c5df3ae3ec0b46a087628ec93f3a9f16f32cff",
+      "original_code_sha256": "6be104769ef7e6d3385b0da5160871504cec4c89164b8ba86bf85701e455e62b",
+      "repaired_code_sha256": "6be104769ef7e6d3385b0da5160871504cec4c89164b8ba86bf85701e455e62b",
+      "code_unchanged": true,
+      "original_code_lines": 191,
+      "repaired_code_lines": 191
+    }
+  ],
+  "patches": [
+    {
+      "model": "gpt-5.6-sol",
+      "diff_file": "experiments/repairs-v1/B08/gpt-5.6-sol.patch.diff"
+    },
+    {
+      "model": "gpt-6-sol",
+      "diff_file": "experiments/repairs-v1/B08/gpt-6-sol.patch.diff"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "diff_file": "experiments/repairs-v1/B08/gpt-6.1-sol.patch.diff"
+    }
+  ],
+  "rationale": "Harness-only repair: explicitly allow heapq as ordinary standard-library utility; all three generated programs are byte-unchanged. Re-run same two references as controls. Timing/labels/fidelity/scorer/budget unchanged. Original rejected attempts remain failures.",
+  "no_new_model_calls": true,
+  "no_test_targets_in_patch_logic": true,
+  "timeout_seconds": 180,
+  "numerical_threads": 1,
+  "procedure": "encode+fresh namespace decode for all7recordings",
+  "frozen_files": {
+    "data/cache/B08/sub-MonkeyN-held-in-calib_ses-2020-10-19-Run1_behavior+ecephys.npz": "0a00150002da1a283a073b40ec4bb4e67e069c60915f49f08ff121e4cd13059a",
+    "data/cache/B08/sub-MonkeyN-held-in-calib_ses-2020-10-19-Run2_behavior+ecephys.npz": "a6343c8b977bee677fbe857926b0b58e3d59fc229deeb57317652e0e59f4553f",
+    "data/cache/B08/sub-MonkeyN-held-in-calib_ses-2020-10-20-Run1_behavior+ecephys.npz": "5cce47af6a578934eeeeb74302a854b39fd025b5684475eef58ff8992c0d0904",
+    "data/cache/B08/sub-MonkeyN-held-in-calib_ses-2020-10-20-Run2_behavior+ecephys.npz": "9bf7d3d2fd60224e5953b1a0a1918b6be44af88be7165a5837ee1193f4a30de7",
+    "data/cache/B08/sub-MonkeyN-held-in-calib_ses-2020-10-27-Run1_behavior+ecephys.npz": "657f8c2f34b81c038ce228116d924ec3fc4b1379e326acb53ec514bfeffa9f2f",
+    "data/cache/B08/sub-MonkeyN-held-in-calib_ses-2020-10-27-Run2_behavior+ecephys.npz": "114043b2e8207cff64f6326a44955c3fb88b3bb44909d1dad7e56d16231d312f",
+    "data/cache/B08/sub-MonkeyN-held-in-calib_ses-2020-10-28-Run1_behavior+ecephys.npz": "0c02f77ed2f21c8bbacabb652dab1b8b92e1207d8bbdb98654f0e283c34def35",
+    "data/manifests/B08.json": "221241a4c49b4407a7b7f7b252929b7c620f4bb9b42b84310b5212a0b8b14cb6",
+    "experiments/B08/gpt-5.6-sol.json": "012828dda836d7949cbb660321c2a708739163ed18802317994a504ccc2ccc3e",
+    "experiments/B08/gpt-6-sol.json": "095e610dd14cfb3a7d7147f26a728cbd9ae7959cd2830c918da9fe2340a7651e",
+    "experiments/B08/gpt-6.1-sol.json": "72269ccdec306f96ec62718826c5df3ae3ec0b46a087628ec93f3a9f16f32cff",
+    "experiments/B08/reference.py": "e8ea58dc01558d728fc690560f8596889d4a02540190f4f402573c447eed0b42",
+    "experiments/B08/run-spec.json": "e5608bbddd92e058d1f50bd89b73caa7a44c1eafbb0d5e9296865b552ec6fcfe",
+    "experiments/B08/upstream/LICENSE": "3ec35e6afbe50bd2204bfd803e59c38fd3eaede2a6d9fffd17f803785fb2ed32",
+    "experiments/B08/upstream/spikepack/__init__.py": "a4ed86fa7d2c0d711ebd1fe2e862836a6ccc54bc271ba046023bc4b284d94eef",
+    "experiments/B08/upstream/spikepack/_core.py": "59168ea77c05bdc42560f9ec021cb2cb829261435cca2ddf09e5ce35725b4e4c",
+    "experiments/B08/upstream/spikepack/_io.py": "4f837493a470b3bf45a750d5db409bc5c6b9bbef0782f394a711151f019f5703",
+    "experiments/repairs-v1/B08/gpt-5.6-sol.original.py": "df4a658b8d254695d11ea4e55b2ece66f69cc4f4535caeb097c9471f1141a245",
+    "experiments/repairs-v1/B08/gpt-5.6-sol.patch.diff": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/repairs-v1/B08/gpt-5.6-sol.py": "df4a658b8d254695d11ea4e55b2ece66f69cc4f4535caeb097c9471f1141a245",
+    "experiments/repairs-v1/B08/gpt-6-sol.original.py": "64c1b27442585c1da465548be48cd65cecae91d47844d3f06bdb34b263122373",
+    "experiments/repairs-v1/B08/gpt-6-sol.patch.diff": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/repairs-v1/B08/gpt-6-sol.py": "64c1b27442585c1da465548be48cd65cecae91d47844d3f06bdb34b263122373",
+    "experiments/repairs-v1/B08/gpt-6.1-sol.original.py": "6be104769ef7e6d3385b0da5160871504cec4c89164b8ba86bf85701e455e62b",
+    "experiments/repairs-v1/B08/gpt-6.1-sol.patch.diff": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/repairs-v1/B08/gpt-6.1-sol.py": "6be104769ef7e6d3385b0da5160871504cec4c89164b8ba86bf85701e455e62b",
+    "experiments/repairs-v1/B08/rationale.md": "81eced95facae5747e7de3e17b6009a2eddff0648cd8c0fda0e63606c71ff042",
+    "results/B08.json": "c7609c2a7abf56ff1fe3b720dbfbb70bfb970f2341793276736279df0420c89f",
+    "scripts/repair_failed.py": "6ce382b04bd769f2e6ff2e1631f0d2e0a83ea5741363ce7f4c5dd7d949ff600a"
+  },
+  "status": "sealed before repaired execution and scoring"
+}

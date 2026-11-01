@@ -1,0 +1,13 @@
+--- original/gpt-6.1-sol.py
++++ repairs-v1/gpt-6.1-sol.py
+@@ -80,8 +80,8 @@
+     return result.astype(np.int32)
+ 
+ def _counts(gt, pred):
+-    _, g = np.unique(gt, return_inverse=True)
+-    _, p = np.unique(pred, return_inverse=True)
++    _, g = np.unique(gt.ravel(), return_inverse=True)
++    _, p = np.unique(pred.ravel(), return_inverse=True)
+     # Explicit background slots also handle images entirely covered by objects.
+     g = g + 1
+     p = p + 1

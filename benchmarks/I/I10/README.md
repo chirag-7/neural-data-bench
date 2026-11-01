@@ -44,3 +44,7 @@ Decision: **measured** (2026-10-30). Acquired original MRIQC0.10.5 tables and201
 Preview 0.11: measured. Acquired original MRIQC0.10.5 tables and2017 classifier predictions;600ABIDEtrain/265DS030test rater1 labels and68IQMs. One-to-one archived prediction alignment and exclude1 label convention verified. Original classifier used different training/rater/features, currentbest unresolved.
 
 [Admission/source evidence](../../../literature/admission-v04-inference-control.json). [Actual protocol/worklog](../../../experiments/I10). [Task measurements](../../../results/I10.json).
+
+## Current specialists and repair sensitivity — 1 November 2026
+
+[Current specialist review](../../../literature/specialist-review-2026-11-01/I10.json) · [Native version trajectories and practical interpretation](../../../analysis/practical-review-2026-11-01/report.md). The review distinguishes tested references from unexecuted newer candidates; no matched current global winner is certified.

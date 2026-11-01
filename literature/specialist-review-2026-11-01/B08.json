@@ -1,0 +1,130 @@
+{
+  "benchmark_id": "B08",
+  "title": "Spike-event storage with 50 µs tolerance",
+  "reviewed_on": "2026-11-01",
+  "retrieval_date_semantics": "accessed_on is this fresh retrieval, not publication date or proof of exhaustive indexing; null publication_date means not verified",
+  "search_queries": [
+    "site:github.com int-brain-lab spikepack compression",
+    "Spikepack spike compression benchmark",
+    "spikepack11realIBLinsertions"
+  ],
+  "candidates": [
+    {
+      "name": "Spikepack Blosc-shard",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/int-brain-lab/spikepack",
+        "https://int-brain-lab.github.io/spikepack/explanation/benchmark.html"
+      ],
+      "evidence": "Original codec: origin normalization, 100 µs ticks, deltas, narrowed integer types and Blosc/Zstd with shuffling; same codec locally run on alternate FALCON data.",
+      "matched_to_our_slice": true,
+      "role": "existing matched native codec, different benchmark source"
+    },
+    {
+      "name": "Spikepack Zarr container",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/int-brain-lab/spikepack",
+        "https://int-brain-lab.github.io/spikepack/explanation/benchmark.html"
+      ],
+      "evidence": "Same core codec alternate chunked container; size/metadata costs differ from framed Blosc payload.",
+      "matched_to_our_slice": false,
+      "role": "contender; not evaluated on our frozen slice"
+    },
+    {
+      "name": "Per-unit delta + entropy coding",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/int-brain-lab/spikepack"
+      ],
+      "evidence": "The author’s codec design suggests structured integer baselines; same 50 µs and label-order contract must retain within-tick permutation.",
+      "matched_to_our_slice": false,
+      "role": "engineering comparator family, no external winner claim"
+    },
+    {
+      "name": "LFpack",
+      "year": 2026,
+      "source_urls": [
+        "https://github.com/int-brain-lab/lfpack"
+      ],
+      "evidence": "Current IBL LFP lossy waveform codec; wrong signal/fidelity task.",
+      "matched_to_our_slice": false,
+      "role": "explicitly excluded adjacent codec"
+    }
+  ],
+  "current_best_claim": "UNRESOLVED",
+  "current_best_claim_scope": "Exact executed custom input/split/metric protocol, not best within our small inspected local set",
+  "current_reference": "Original Spikepack 0.1.0 with charged file framing; quantized delta + zlib level 9",
+  "current_reference_limitations": [
+    "The original two heapq failures reflect ambiguous prompt/harness whitelist disclosure and remain excluded from historical aggregate claims. The separate agentrepair-v1 correction now permits heapq for all unchanged programs; its reference/control audit is ongoing.",
+    "FALCON M2 alternate data shares all seven G01 sources and one monkey.",
+    "No lossless original-timing claim; Spikepack’s 100 µs grid is deliberately lossy.",
+    "No peer-reviewed universal event-compression leaderboard verified."
+  ],
+  "recommended_next_comparator": "The heapq-only whitelist correction has already been implemented today as the separate agentrepair-v1 rerun, retaining the original programs and historical outcomes. Next compare Spikepack Blosc and Zarr containers with per-unit and global delta/entropy coders, charging all framing and metadata. Preserve exact unit labels and order and timing error ≤50 µs on the same seven FALCON event streams; add independent animals and IBL insertions before generalizing.",
+  "switching_assessment": "NO GENERAL SWITCHING INFERENCE. Preserve the original two heapq whitelist failures and their aggregate exclusions as historical evidence. The parent reports that the common corrected agentrepair-v1 harness now decodes all three unchanged programs successfully; reference/control audits are still ongoing. This is a harness correction, not new model generation. Native codec-size results on seven recordings from one monkey do not establish a universal best codec or independent cross-task evidence.",
+  "limitations": [
+    "The original two heapq failures reflect ambiguous prompt/harness whitelist disclosure and remain excluded from historical aggregate claims. The separate agentrepair-v1 correction now permits heapq for all unchanged programs; its reference/control audit is ongoing.",
+    "FALCON M2 alternate data shares all seven G01 sources and one monkey.",
+    "No lossless original-timing claim; Spikepack’s 100 µs grid is deliberately lossy.",
+    "No peer-reviewed universal event-compression leaderboard verified."
+  ],
+  "negative_findings": [
+    "Name collision: the ICCV 2025 SpikePack SNN training paper is unrelated and excluded.",
+    "The official IBL container benchmark inaccessible; absence of a table is not absence of performance."
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/int-brain-lab/spikepack",
+      "title": "Spikepack official code/documentation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Primary codec source and eleven-IBL-insertion benchmark link; exact timing is intentionally not preserved."
+    },
+    {
+      "url": "https://int-brain-lab.github.io/spikepack/explanation/benchmark.html",
+      "title": "Spikepack container benchmark",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh direct open failed cache miss; README confirms scope",
+      "finding": "Official README link; direct page cache miss twice, so current numerical rank or table not verified."
+    },
+    {
+      "url": "https://github.com/int-brain-lab/lfpack",
+      "title": "LFpack official implementation",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Lossy LFP codec; not event timestamps or exact unit-label benchmark."
+    },
+    {
+      "url": "https://github.com/AllenNeuralDynamics/ephys-compression",
+      "title": "AIND voltage compression benchmark",
+      "publication_date": null,
+      "accessed_on": "2026-11-01",
+      "retrieval_status": "fresh web search/open; primary source",
+      "finding": "Voltage compression references are distinct from this sorted-event task."
+    }
+  ],
+  "local_protocol": {
+    "path": "experiments/B08/protocol.md",
+    "sha256": "545f02e47e7a2b66477256c33218f5c3f88f1b4ced373fff9bde6f3fdf8fbedd"
+  },
+  "review_actions": {
+    "fresh_primary_source_browsing": true,
+    "trained_models": false,
+    "downloaded_large_weights": false,
+    "changed_scores": false,
+    "changed_website": false
+  },
+  "unmatched_published_scores_imported": false,
+  "repair_status_as_reported_by_parent": {
+    "reported_on": "2026-11-01",
+    "revision": "agentrepair-v1",
+    "change": "Common heapq-only whitelist correction; unchanged generated programs.",
+    "all_three_programs_valid": true,
+    "reference_control_audit": "ongoing; no score imported into this literature review",
+    "historical_failures_preserved": true
+  }
+}

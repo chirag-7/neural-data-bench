@@ -1,0 +1,12 @@
+{
+  "component": "repair report assembly only",
+  "script": "scripts/repair_failed_followup.py",
+  "script_sha256": "1aa63099fe61d3aa19517ac3417e7010857520d75dd6f7fb8cebd72f42a19f34",
+  "observed_command": "repair_failed_followup.py evaluate",
+  "status": "preserved bookkeeping failure",
+  "exception": "TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'",
+  "location": "controls_reexecuted=sum(... r.get(control_originally_successful) ...) after all saved scientific outputs and fresh independent decodes completed",
+  "scientific_outputs_failed": false,
+  "scientific_code_modified_after_seal": false,
+  "resolution": "Separate scripts/finalize_repairs.py reads retained successful output records and assembles the report. No scientific program, encoder or decoder was rerun by the finalizer."
+}

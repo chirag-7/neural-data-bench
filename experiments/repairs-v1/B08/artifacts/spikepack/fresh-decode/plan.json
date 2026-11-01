@@ -1,0 +1,100 @@
+{
+  "method": "spikepack",
+  "program": "experiments/B08/reference.py",
+  "program_file_sha256": "e8ea58dc01558d728fc690560f8596889d4a02540190f4f402573c447eed0b42",
+  "payloads": [
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-19-Run1_behavior+ecephys",
+      "n_events": 202939,
+      "compressed_file": "experiments/repairs-v1/B08/artifacts/spikepack/00.bin",
+      "compressed_bytes": 200635,
+      "compressed_sha256": "41cdb57f94ab778ba48abfe44d01a6c506617799536a525f7fdf808c274c4677",
+      "decoded_times_sha256": "eaac10171c637850b4e18a2cacdea260a72520133f3b0a1d389ebb38d7fbfaf3",
+      "decoded_labels_sha256": "80670dd7ee4eb1f2135c816390eafbc29eb2846488b721ecd8f863457d17ed1b",
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "labels_exact": true,
+      "encode_seconds": 0.024836250115185976,
+      "decode_seconds": 0.004531291080638766
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-19-Run2_behavior+ecephys",
+      "n_events": 194904,
+      "compressed_file": "experiments/repairs-v1/B08/artifacts/spikepack/01.bin",
+      "compressed_bytes": 192683,
+      "compressed_sha256": "9ff858a32cf20e55fe70b18de1f767c3a37d1a5435c31414bece3c2ed548d5a6",
+      "decoded_times_sha256": "b1921ac6807e7a737d836ba9f5976824c2f71c0aea7ebbe1809c87787d357aa6",
+      "decoded_labels_sha256": "bcd0a5897e66a6034b1cb9e43ae86942287d66d140815d5b05d9b4197d8b3af0",
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "labels_exact": true,
+      "encode_seconds": 0.01846637506969273,
+      "decode_seconds": 0.0025080409832298756
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-20-Run1_behavior+ecephys",
+      "n_events": 137297,
+      "compressed_file": "experiments/repairs-v1/B08/artifacts/spikepack/02.bin",
+      "compressed_bytes": 144284,
+      "compressed_sha256": "06e5d40a4dcbd98d7e3068d36f10558405a3370b37b85025549c4b18e9204b9d",
+      "decoded_times_sha256": "5f3cfc6c8fe6c52e9907c5b2da691308715922c030eccac58c9e3c4ef6a7665e",
+      "decoded_labels_sha256": "48fc02fa6d9c4f8ec7c855a13637ed70841da9f1166dbed3b738897e38d00158",
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "labels_exact": true,
+      "encode_seconds": 0.010226583108305931,
+      "decode_seconds": 0.0016735419631004333
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-20-Run2_behavior+ecephys",
+      "n_events": 132486,
+      "compressed_file": "experiments/repairs-v1/B08/artifacts/spikepack/03.bin",
+      "compressed_bytes": 139473,
+      "compressed_sha256": "455d928d57e7d04757a32680efedcd65bb905d8cd52e4f902feab06dd64b19df",
+      "decoded_times_sha256": "64b361cb3d31bfbad8dee1c281be6b405e8fbed1f389840d074b08ff4d35d58d",
+      "decoded_labels_sha256": "0407f653dadd365db4a7947186a3b9805e552a3fcee252c0ba2fcf5e46feca55",
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "labels_exact": true,
+      "encode_seconds": 0.009178125066682696,
+      "decode_seconds": 0.0016564170364290476
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-27-Run1_behavior+ecephys",
+      "n_events": 93172,
+      "compressed_file": "experiments/repairs-v1/B08/artifacts/spikepack/04.bin",
+      "compressed_bytes": 94368,
+      "compressed_sha256": "2290e87b62a749f00855f14a336b3e9ee27e99d450b28e78dc590ffb53201d19",
+      "decoded_times_sha256": "79f3123bf90c77e568f3c523b13c7867607802e35751ced1c6fcdb7016345287",
+      "decoded_labels_sha256": "4072f53a3f6ad2e4049c2ca8b25d71e5b8625e706ed36257ebf04a474667e8ec",
+      "max_timing_error_seconds": 2.842170943040401e-14,
+      "labels_exact": true,
+      "encode_seconds": 0.009900999953970313,
+      "decode_seconds": 0.0012025421019643545
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-27-Run2_behavior+ecephys",
+      "n_events": 114382,
+      "compressed_file": "experiments/repairs-v1/B08/artifacts/spikepack/05.bin",
+      "compressed_bytes": 115236,
+      "compressed_sha256": "189f629313898e26f6718d7af60df0c9e4431f27becf418e65069ced1c649ae9",
+      "decoded_times_sha256": "d68ea49093442123696bcebe1ddf99aefc057f32d540c5ac931d8bde78b13699",
+      "decoded_labels_sha256": "209d95b4fa8a333a05c51fecf4ef3e939827404e5cd753e03a4f1bb0886f91f5",
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "labels_exact": true,
+      "encode_seconds": 0.012087707873433828,
+      "decode_seconds": 0.0013930830173194408
+    },
+    {
+      "recording": "sub-MonkeyN-held-in-calib_ses-2020-10-28-Run1_behavior+ecephys",
+      "n_events": 177365,
+      "compressed_file": "experiments/repairs-v1/B08/artifacts/spikepack/06.bin",
+      "compressed_bytes": 181505,
+      "compressed_sha256": "42049700928e7ab471a50ea080a5b5cdd3c2de26637f9f344776bcaef830a04e",
+      "decoded_times_sha256": "c100a38d078bff32401db2162b5c3aba664d4b5ad14986bc713bb54338a4a96d",
+      "decoded_labels_sha256": "b1942ce36f0800815b81d9b7889f2a85de1ec3f00d149e91019275cf3c70170d",
+      "max_timing_error_seconds": 5.684341886080802e-14,
+      "labels_exact": true,
+      "encode_seconds": 0.014663374982774258,
+      "decode_seconds": 0.0018234169110655785
+    }
+  ],
+  "output_dir": "experiments/repairs-v1/B08/artifacts/spikepack/fresh-decode",
+  "report_file": "experiments/repairs-v1/B08/artifacts/spikepack/fresh-decode/audit.json"
+}
