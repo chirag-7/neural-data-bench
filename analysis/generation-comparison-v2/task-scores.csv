@@ -19,7 +19,7 @@ H08,H,Sleep staging and sleep onset,macro_f1_sleep,higher,0.7252734503405033,0.6
 H16,H,EEG ocular/muscle artifact repair,temporal_rrmse,lower,0.6570072770118713,0.6595370769500732,0.4616066515445709,0.45338359475135803,0.6539532784253276,nonmonotonic or partly tied
 I07,I,fNIRS motor/hemodynamic decoding,balanced_accuracy,higher,0.47309941520467835,0.5950292397660819,0.4361111111111111,0.5505847953216374,0.48464912280701755,nonmonotonic or partly tied
 I10,I,MRI quality assessment across sites,balanced_accuracy,higher,0.6326315789473684,0.6707017543859649,0.6352631578947369,0.6378947368421053,0.6136842105263158,nonmonotonic or partly tied
-J08,J,Fluorescent synaptic puncta segmentation and quantification,instance_f1_iou50_multirater,higher,,0.24323205422323543,0.6433683295437704,0.57563018487252,0.8625343802858836,incomplete
+J08,J,Fluorescent synaptic puncta segmentation and quantification,instance_f1_iou50_multirater,higher,0.0,0.24323205422323543,0.6433683295437704,0.57563018487252,0.8625343802858836,nonmonotonic or partly tied
 K01,K,Electrophysiological cell-type classification,macro_f1,higher,0.9277844018905058,0.9321663019693655,0.9409145106376866,0.943074240159442,0.9299751005554491,all steps improve
 K04,K,Cortical-layer label transfer,section_equal_macro_f1_7classes,higher,0.5290441742064551,0.5175064764639699,0.5050711426219323,0.5505501906955991,0.5545850046572878,nonmonotonic or partly tied
 K05,K,Supervised bulk RNA to marker-positive fractions,donor_block_macro_rmse,lower,0.04239776846005213,0.05803003834470389,0.06742367203503653,0.0552287462339175,0.05759104442612498,nonmonotonic or partly tied

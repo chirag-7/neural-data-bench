@@ -9,16 +9,16 @@
   ],
   "n_tasks": 30,
   "n_families": 14,
-  "n_complete_trajectories": 29,
+  "n_complete_trajectories": 30,
   "endpoint": {
     "older": "gpt-4.1-2025-04-14",
     "newer": "gpt-6.1-sol",
     "n_tasks": 30,
     "counts": {
-      "better": 27,
+      "better": 28,
       "worse": 2,
       "numerical_tie": 0,
-      "incomplete": 1,
+      "incomplete": 0,
       "format_ineligible": 0
     },
     "task_ids": {
@@ -42,6 +42,7 @@
         "H16",
         "I07",
         "I10",
+        "J08",
         "K01",
         "K04",
         "K06",
@@ -56,13 +57,11 @@
         "K05"
       ],
       "numerical_tie": [],
-      "incomplete": [
-        "J08"
-      ],
+      "incomplete": [],
       "format_ineligible": []
     },
-    "complete_pairs": 29,
-    "better_fraction_of_complete": 0.9310344827586207
+    "complete_pairs": 30,
+    "better_fraction_of_complete": 0.9333333333333333
   },
   "pair_summaries": [
     {
@@ -70,10 +69,10 @@
       "newer": "gpt-5-2025-08-07",
       "n_tasks": 30,
       "counts": {
-        "better": 18,
+        "better": 19,
         "worse": 11,
         "numerical_tie": 0,
-        "incomplete": 1,
+        "incomplete": 0,
         "format_ineligible": 0
       },
       "task_ids": {
@@ -90,6 +89,7 @@
           "H02",
           "I07",
           "I10",
+          "J08",
           "K01",
           "K06",
           "L04",
@@ -111,23 +111,21 @@
           "M04"
         ],
         "numerical_tie": [],
-        "incomplete": [
-          "J08"
-        ],
+        "incomplete": [],
         "format_ineligible": []
       },
-      "complete_pairs": 29,
-      "better_fraction_of_complete": 0.6206896551724138
+      "complete_pairs": 30,
+      "better_fraction_of_complete": 0.6333333333333333
     },
     {
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-5.6-sol",
       "n_tasks": 30,
       "counts": {
-        "better": 24,
+        "better": 25,
         "worse": 5,
         "numerical_tie": 0,
-        "incomplete": 1,
+        "incomplete": 0,
         "format_ineligible": 0
       },
       "task_ids": {
@@ -149,6 +147,7 @@
           "H08",
           "H16",
           "I10",
+          "J08",
           "K01",
           "K06",
           "L04",
@@ -165,23 +164,21 @@
           "K05"
         ],
         "numerical_tie": [],
-        "incomplete": [
-          "J08"
-        ],
+        "incomplete": [],
         "format_ineligible": []
       },
-      "complete_pairs": 29,
-      "better_fraction_of_complete": 0.8275862068965517
+      "complete_pairs": 30,
+      "better_fraction_of_complete": 0.8333333333333334
     },
     {
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-6.1-sol",
       "n_tasks": 30,
       "counts": {
-        "better": 27,
+        "better": 28,
         "worse": 2,
         "numerical_tie": 0,
-        "incomplete": 1,
+        "incomplete": 0,
         "format_ineligible": 0
       },
       "task_ids": {
@@ -205,6 +202,7 @@
           "H16",
           "I07",
           "I10",
+          "J08",
           "K01",
           "K04",
           "K06",
@@ -219,13 +217,11 @@
           "K05"
         ],
         "numerical_tie": [],
-        "incomplete": [
-          "J08"
-        ],
+        "incomplete": [],
         "format_ineligible": []
       },
-      "complete_pairs": 29,
-      "better_fraction_of_complete": 0.9310344827586207
+      "complete_pairs": 30,
+      "better_fraction_of_complete": 0.9333333333333333
     },
     {
       "older": "gpt-5-2025-08-07",
@@ -395,10 +391,10 @@
     "newer": "gpt-6.1-sol",
     "n_tasks": 30,
     "counts": {
-      "better": 27,
+      "better": 28,
       "worse": 2,
       "numerical_tie": 0,
-      "incomplete": 1,
+      "incomplete": 0,
       "format_ineligible": 0
     },
     "task_ids": {
@@ -422,6 +418,7 @@
         "H16",
         "I07",
         "I10",
+        "J08",
         "K01",
         "K04",
         "K06",
@@ -436,23 +433,21 @@
         "K05"
       ],
       "numerical_tie": [],
-      "incomplete": [
-        "J08"
-      ],
+      "incomplete": [],
       "format_ineligible": []
     },
-    "complete_pairs": 29,
-    "better_fraction_of_complete": 0.9310344827586207
+    "complete_pairs": 30,
+    "better_fraction_of_complete": 0.9333333333333333
   },
   "observed_endpoint": {
     "older": "gpt-4.1-2025-04-14",
     "newer": "gpt-6.1-sol",
     "n_tasks": 24,
     "counts": {
-      "better": 21,
+      "better": 22,
       "worse": 2,
       "numerical_tie": 0,
-      "incomplete": 1,
+      "incomplete": 0,
       "format_ineligible": 0
     },
     "task_ids": {
@@ -473,6 +468,7 @@
         "H16",
         "I07",
         "I10",
+        "J08",
         "K01",
         "K04",
         "K06",
@@ -484,13 +480,11 @@
         "K05"
       ],
       "numerical_tie": [],
-      "incomplete": [
-        "J08"
-      ],
+      "incomplete": [],
       "format_ineligible": []
     },
-    "complete_pairs": 23,
-    "better_fraction_of_complete": 0.9130434782608695
+    "complete_pairs": 24,
+    "better_fraction_of_complete": 0.9166666666666666
   },
   "first_attempt_endpoint": {
     "scope": "all_measured_tasks",
@@ -509,22 +503,22 @@
   },
   "trajectory_counts": {
     "strictly_improving": 9,
-    "mixed_reversals": 19,
+    "mixed_reversals": 20,
     "numerically_flat": 0,
     "strictly_declining": 0,
     "nondecreasing_with_ties": 1,
     "nonincreasing_with_ties": 0,
-    "incomplete": 1
+    "incomplete": 0
   },
   "strict_trajectory_counts": {
-    "mixed_reversals": 19,
+    "mixed_reversals": 20,
     "strictly_improving": 9,
     "nondecreasing_with_ties": 1
   },
-  "strict_complete_trajectories": 29,
+  "strict_complete_trajectories": 30,
   "step_pattern_counts": {
     "- + +": 7,
-    "+ + -": 6,
+    "+ + -": 7,
     "- + -": 2,
     "+ + +": 9,
     "+ - +": 2,
@@ -716,15 +710,15 @@
       "family": "J",
       "name": "Anatomy, histology and connectomics",
       "n_tasks": 1,
-      "complete_trajectories": 0,
+      "complete_trajectories": 1,
       "strictly_improving": 0,
-      "mixed_reversals": 0,
-      "incomplete": 1,
+      "mixed_reversals": 1,
+      "incomplete": 0,
       "endpoint_counts": {
-        "better": 0,
+        "better": 1,
         "worse": 0,
         "numerical_tie": 0,
-        "incomplete": 1,
+        "incomplete": 0,
         "format_ineligible": 0
       }
     },
@@ -1543,7 +1537,7 @@
       "direction": "higher",
       "orientation": 1,
       "scores": {
-        "gpt-4.1-2025-04-14": null,
+        "gpt-4.1-2025-04-14": 0.0,
         "gpt-5-2025-08-07": 0.24323205422323543,
         "gpt-5.6-sol": 0.6433683295437704,
         "gpt-6.1-sol": 0.57563018487252
@@ -1555,16 +1549,16 @@
         "gpt-6.1-sol": true
       },
       "observed_macro_eligible": true,
-      "complete_trajectory": false,
-      "strict_complete": false,
+      "complete_trajectory": true,
+      "strict_complete": true,
       "adjacent_direction_adjusted_gains": [
-        null,
+        0.24323205422323543,
         0.400136275320535,
         -0.06773814467125039
       ],
-      "step_pattern": "? + -",
-      "trajectory_class": "incomplete",
-      "n_sign_reversals": null,
+      "step_pattern": "+ + -",
+      "trajectory_class": "mixed_reversals",
+      "n_sign_reversals": 1,
       "diminishing_every_step": null,
       "last_gain_smaller_than_first": null,
       "randomness_assessment": "not_estimated",
@@ -1906,15 +1900,15 @@
     }
   ],
   "input_sha256": {
-    "analysis/generation-comparison-v2/generation-comparison.json": "3fd5d36d426ab9869f67418ff2b65bf3caf1671f6099cfa30dd71da47eb9c857",
-    "scripts/analyze_generation_patterns.py": "726e5511a7aefb57daae919673457416cf4e1c0b22c747d06e0aae31420d392f",
-    "results/generation-repairs-v1.json": "14c68d18f4c39105eff3914ed45bae15375d5cb827cd04bc9c6d17b49a5835da"
+    "analysis/generation-comparison-v2/generation-comparison.json": "e9e1324936e7fbda528218c10b9898fd17e1bdfdbf38faf5ba7b978dbf8e1d26",
+    "scripts/analyze_generation_patterns.py": "4d7373672af35ec957c62acefab3e4a42bac7cec0fea77911851c63f9a1c9fb7",
+    "results/generation-repairs-v1.json": "11c7860c89f0eaa3dfde20f963ff50f4f6831d52edb5645c3443844bb9838af6"
   },
   "repair_summary": {
     "original_runtime_failures": 10,
-    "recovered_original_runtime_failures": 9,
-    "remaining_unscored": 1,
-    "successful_repair_slice_outputs": 20,
+    "recovered_original_runtime_failures": 10,
+    "remaining_unscored": 0,
+    "successful_repair_slice_outputs": 21,
     "new_API_calls": 0
   }
 }

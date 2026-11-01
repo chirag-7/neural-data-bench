@@ -23547,7 +23547,7 @@
       "metric": "instance_f1_iou50_multirater",
       "direction": "higher",
       "scores": {
-        "gpt-4.1-2025-04-14": null,
+        "gpt-4.1-2025-04-14": 0.0,
         "gpt-5-2025-08-07": 0.24323205422323543,
         "gpt-5.6-sol": 0.6433683295437704,
         "gpt-6.1-sol": 0.57563018487252
@@ -23562,25 +23562,25 @@
         {
           "older": "gpt-4.1-2025-04-14",
           "newer": "gpt-5-2025-08-07",
-          "raw_native_delta": null,
-          "direction_adjusted_delta": null,
-          "outcome": "incomplete",
+          "raw_native_delta": 0.24323205422323543,
+          "direction_adjusted_delta": 0.24323205422323543,
+          "outcome": "better",
           "strict_pair_compliant": true
         },
         {
           "older": "gpt-4.1-2025-04-14",
           "newer": "gpt-5.6-sol",
-          "raw_native_delta": null,
-          "direction_adjusted_delta": null,
-          "outcome": "incomplete",
+          "raw_native_delta": 0.6433683295437704,
+          "direction_adjusted_delta": 0.6433683295437704,
+          "outcome": "better",
           "strict_pair_compliant": true
         },
         {
           "older": "gpt-4.1-2025-04-14",
           "newer": "gpt-6.1-sol",
-          "raw_native_delta": null,
-          "direction_adjusted_delta": null,
-          "outcome": "incomplete",
+          "raw_native_delta": 0.57563018487252,
+          "direction_adjusted_delta": 0.57563018487252,
+          "outcome": "better",
           "strict_pair_compliant": true
         },
         {
@@ -23608,9 +23608,13 @@
           "strict_pair_compliant": true
         }
       ],
-      "trajectory": "incomplete",
-      "adjacent_step_outcomes": [],
-      "ordinal_direction_adjusted_slope": null,
+      "trajectory": "nonmonotonic or partly tied",
+      "adjacent_step_outcomes": [
+        "better",
+        "better",
+        "worse"
+      ],
+      "ordinal_direction_adjusted_slope": 0.19187672829084002,
       "slope_units": "instance_f1_iou50_multirater per ordinal version label (not time/compute)",
       "flat_interpretation": "Numerical tie is not practical or statistical equivalence.",
       "interpretation": "One generated program per model; source and generation replication remain limited.",
@@ -23679,8 +23683,8 @@
           "benchmark_id": "J08",
           "slice_id": "expansion-v1",
           "model": "gpt-4.1-2025-04-14",
-          "status": "failed",
-          "score": null,
+          "status": "measured",
+          "score": 0.0,
           "metric": "instance_f1_iou50_multirater",
           "direction": "higher",
           "reference_type": "archived_predictions_rescored",
@@ -23688,11 +23692,11 @@
           "strict_format_compliant": true,
           "baseline_name": "archived SynAPSeg custom 2D StarDist v3.6.0.8 masks, rescored",
           "description": "This method segments puncta in fluorescence microscopy images using classical image processing and machine learning based feature learning. Workflow: (1) For training, each 128x128 patch is featurized with pixel intensities, geometric coordinates (normalized xy), local gradients, and simple multi-scale shape-texture statistics. Only labeled regions (channel1 == 1) and valid pixels (train_y >= 0) are used. For each labeled object in a patch, we extract centroid locations and create instance-specific foreground masks. A RandomForestClassifier is trained to predict background vs punctum center. A per-training-patch global threshold is grid-searched to maximize foreground F1>0.5 under synthetic instance separation (patch-wise local IDs), using only annotated pixels. At test time, each whole test image is split into 128x128 overlapping windows (step 64). Per-pixel features are extracted and pixels are classified. Patch probabilities are averaged at overlaps. Pixelwise probability map is then thresholded and postprocessed: (a) valid extent mask applied; (b) small holes and objects <4 px are removed; (c) watershed with local maxima as seeds separates instances. Final label IDs are distinct for each test image. No pixels outside valid geometric test extent are labeled. The output is a (2,727,546) numpy array of labeled images for both test images. All computation is strictly local to individual images; no smoothing/config leakage/correlation across source fields or samples. Deterministic result due to fixed seed. No specialized packages or pretrained weights are used.",
-          "repair_applied": null,
-          "repair_type": null,
-          "repair_revision": null,
-          "code_repaired": false,
-          "not_scored_reason": "Not scored within the 180-second computation limit after compatibility and exact-caching repairs.",
+          "repair_applied": true,
+          "repair_type": "manual_training_budget_adaptation",
+          "repair_revision": "r4",
+          "code_repaired": true,
+          "not_scored_reason": null,
           "reason": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py\", line 314, in <module>\n    if __name__ == '__main__': main()\n                               ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py\", line 308, in main\n    if phase == 'procedure': result = procedure(task, sid, model)\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py\", line 186, in procedure\n    pred = ns['fit_predict'](*args)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"extension-generated\", line 97, in fit_predict\nTypeError: unhashable type: 'numpy.ndarray'\n"
         },
         {
@@ -23727,8 +23731,8 @@
       },
       "versus_primary_reference": {
         "gpt-4.1-2025-04-14": {
-          "outcome": "incomplete",
-          "direction_adjusted_delta": null
+          "outcome": "worse",
+          "direction_adjusted_delta": -0.8625343802858836
         },
         "gpt-5-2025-08-07": {
           "outcome": "worse",
@@ -23962,7 +23966,7 @@
         "metric": "instance_f1_iou50_multirater",
         "direction": "higher",
         "scores": {
-          "gpt-4.1-2025-04-14": null,
+          "gpt-4.1-2025-04-14": 0.0,
           "gpt-5-2025-08-07": 0.24323205422323543,
           "gpt-5.6-sol": 0.6433683295437704,
           "gpt-6.1-sol": 0.57563018487252
@@ -23977,25 +23981,25 @@
           {
             "older": "gpt-4.1-2025-04-14",
             "newer": "gpt-5-2025-08-07",
-            "raw_native_delta": null,
-            "direction_adjusted_delta": null,
-            "outcome": "incomplete",
+            "raw_native_delta": 0.24323205422323543,
+            "direction_adjusted_delta": 0.24323205422323543,
+            "outcome": "better",
             "strict_pair_compliant": true
           },
           {
             "older": "gpt-4.1-2025-04-14",
             "newer": "gpt-5.6-sol",
-            "raw_native_delta": null,
-            "direction_adjusted_delta": null,
-            "outcome": "incomplete",
+            "raw_native_delta": 0.6433683295437704,
+            "direction_adjusted_delta": 0.6433683295437704,
+            "outcome": "better",
             "strict_pair_compliant": true
           },
           {
             "older": "gpt-4.1-2025-04-14",
             "newer": "gpt-6.1-sol",
-            "raw_native_delta": null,
-            "direction_adjusted_delta": null,
-            "outcome": "incomplete",
+            "raw_native_delta": 0.57563018487252,
+            "direction_adjusted_delta": 0.57563018487252,
+            "outcome": "better",
             "strict_pair_compliant": true
           },
           {
@@ -24023,9 +24027,13 @@
             "strict_pair_compliant": true
           }
         ],
-        "trajectory": "incomplete",
-        "adjacent_step_outcomes": [],
-        "ordinal_direction_adjusted_slope": null,
+        "trajectory": "nonmonotonic or partly tied",
+        "adjacent_step_outcomes": [
+          "better",
+          "better",
+          "worse"
+        ],
+        "ordinal_direction_adjusted_slope": 0.19187672829084002,
         "slope_units": "instance_f1_iou50_multirater per ordinal version label (not time/compute)",
         "flat_interpretation": "Numerical tie is not practical or statistical equivalence.",
         "interpretation": "One generated program per model; source and generation replication remain limited.",
@@ -24094,8 +24102,8 @@
             "benchmark_id": "J08",
             "slice_id": "expansion-v1",
             "model": "gpt-4.1-2025-04-14",
-            "status": "failed",
-            "score": null,
+            "status": "measured",
+            "score": 0.0,
             "metric": "instance_f1_iou50_multirater",
             "direction": "higher",
             "reference_type": "archived_predictions_rescored",
@@ -24103,11 +24111,11 @@
             "strict_format_compliant": true,
             "baseline_name": "archived SynAPSeg custom 2D StarDist v3.6.0.8 masks, rescored",
             "description": "This method segments puncta in fluorescence microscopy images using classical image processing and machine learning based feature learning. Workflow: (1) For training, each 128x128 patch is featurized with pixel intensities, geometric coordinates (normalized xy), local gradients, and simple multi-scale shape-texture statistics. Only labeled regions (channel1 == 1) and valid pixels (train_y >= 0) are used. For each labeled object in a patch, we extract centroid locations and create instance-specific foreground masks. A RandomForestClassifier is trained to predict background vs punctum center. A per-training-patch global threshold is grid-searched to maximize foreground F1>0.5 under synthetic instance separation (patch-wise local IDs), using only annotated pixels. At test time, each whole test image is split into 128x128 overlapping windows (step 64). Per-pixel features are extracted and pixels are classified. Patch probabilities are averaged at overlaps. Pixelwise probability map is then thresholded and postprocessed: (a) valid extent mask applied; (b) small holes and objects <4 px are removed; (c) watershed with local maxima as seeds separates instances. Final label IDs are distinct for each test image. No pixels outside valid geometric test extent are labeled. The output is a (2,727,546) numpy array of labeled images for both test images. All computation is strictly local to individual images; no smoothing/config leakage/correlation across source fields or samples. Deterministic result due to fixed seed. No specialized packages or pretrained weights are used.",
-            "repair_applied": null,
-            "repair_type": null,
-            "repair_revision": null,
-            "code_repaired": false,
-            "not_scored_reason": "Not scored within the 180-second computation limit after compatibility and exact-caching repairs.",
+            "repair_applied": true,
+            "repair_type": "manual_training_budget_adaptation",
+            "repair_revision": "r4",
+            "code_repaired": true,
+            "not_scored_reason": null,
             "reason": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py\", line 314, in <module>\n    if __name__ == '__main__': main()\n                               ^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py\", line 308, in main\n    if phase == 'procedure': result = procedure(task, sid, model)\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/scripts/extension_evaluate.py\", line 186, in procedure\n    pred = ns['fit_predict'](*args)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"extension-generated\", line 97, in fit_predict\nTypeError: unhashable type: 'numpy.ndarray'\n"
           },
           {
@@ -24142,8 +24150,8 @@
         },
         "versus_primary_reference": {
           "gpt-4.1-2025-04-14": {
-            "outcome": "incomplete",
-            "direction_adjusted_delta": null
+            "outcome": "worse",
+            "direction_adjusted_delta": -0.8625343802858836
           },
           "gpt-5-2025-08-07": {
             "outcome": "worse",
@@ -24404,25 +24412,61 @@
             "result_sha256": "ce8dbab2d92051f54be06f3a1bd29b34c36d85526ff3fc6be35d3bfe04bb6d74",
             "saved_output_audit_file": "experiments/generation-repairs-v1/artifacts/J08/gpt-5-2025-08-07/r1/expansion-v1/saved-output-audit.json",
             "saved_output_audit_sha256": "9dbf2e471b002370fb6b02cb700b2156ae4873518d2143cdc9121dfefbfa21ea"
-          }
-        ],
-        "unresolved": [
+          },
           {
+            "benchmark_id": "J08",
+            "slice_id": "expansion-v1",
+            "model": "gpt-4.1-2025-04-14",
+            "run_id": "generation-repairs-v1",
+            "status": "measured",
+            "track": "T3",
+            "generation_replicates": 1,
+            "date": "2026-11-01",
+            "prompt_sha256": "02f3ff23dfb5f22bd10ebf8e5ad43ff635b5913bb31af03090541eac15ea9196",
+            "execution_seal_sha256": "5ad4a3a9264a1ee7e821b67fa997d7243ea087f01a521b668ed4ce2c2a72bb9b",
+            "superiority_eligible": false,
+            "superiority_reason": "Manual debugging after observed failure; final usability only, not fresh model capability.",
+            "no_new_generation": true,
+            "code_repaired": true,
+            "submission_file": "experiments/generation-repairs-v1/submissions/J08/gpt-4.1-2025-04-14/r4.json",
+            "submission_sha256": "213af991c2651121278e17b3ce2c5d32f5bfdbee03a5e4c97d6792ceebb92b46",
+            "code_sha256": "affe3ed6d28aace75db8ff0103c0d76ce7c6f1e1ab6f9b1310ec73b0fc74d020",
+            "description": "This method segments puncta in fluorescence microscopy images using classical image processing and machine learning based feature learning. Workflow: (1) For training, each 128x128 patch is featurized with pixel intensities, geometric coordinates (normalized xy), local gradients, and simple multi-scale shape-texture statistics. Only labeled regions (channel1 == 1) and valid pixels (train_y >= 0) are used. For each labeled object in a patch, we extract centroid locations and create instance-specific foreground masks. A RandomForestClassifier is trained to predict background vs punctum center. A per-training-patch global threshold is grid-searched to maximize foreground F1>0.5 under synthetic instance separation (patch-wise local IDs), using only annotated pixels. At test time, each whole test image is split into 128x128 overlapping windows (step 64). Per-pixel features are extracted and pixels are classified. Patch probabilities are averaged at overlaps. Pixelwise probability map is then thresholded and postprocessed: (a) valid extent mask applied; (b) small holes and objects <4 px are removed; (c) watershed with local maxima as seeds separates instances. Final label IDs are distinct for each test image. No pixels outside valid geometric test extent are labeled. The output is a (2,727,546) numpy array of labeled images for both test images. All computation is strictly local to individual images; no smoothing/config leakage/correlation across source fields or samples. Deterministic result due to fixed seed. No specialized packages or pretrained weights are used.",
+            "code_lines": 163,
+            "line_limit_exclusive": 240,
+            "line_limit_compliant": true,
+            "seconds": 24.662757915910333,
+            "score": 0.0,
+            "metric": "instance_f1_iou50_multirater",
+            "direction": "higher",
+            "per_unit": [
+              0.0,
+              0.0
+            ],
+            "n_units": 2,
+            "scoring_seconds": 1.2838321661110967,
+            "prediction_file": "experiments/generation-repairs-v1/artifacts/J08/gpt-4.1-2025-04-14/r4/expansion-v1/predictions.npz",
+            "prediction_sha256": "9f2382ba9190b08b89b3da17909d3afd93b426bb29381c3eb31f522d3c9971a8",
+            "strict_format_compliant": true,
+            "repair_revision": "r4",
+            "repair_type": "manual_training_budget_adaptation",
+            "patch_description": "Retain the original 30-tree depth-9 random forest, features, training fields, seed, one CPU thread, threshold grid and inference. Cap each tree bootstrap at 250000 draws from all eligible training pixels (instead of 16451616), chosen before test scoring after training-only profiling located the time bottleneck. This changes the fitting budget and potentially predictions; it is a manual budget adaptation, not an exact compatibility fix or an untouched GPT-4.1 score. Also pass signed int32 watershed markers as required by SciPy; confirmed by a synthetic-array compatibility probe and the preserved r3 runtime error. This avoids unsigned 8-bit label truncation.",
             "original_key": {
               "benchmark_id": "J08",
               "slice_id": "expansion-v1",
               "model": "gpt-4.1-2025-04-14"
             },
-            "status": "failed",
-            "failure_phase": "procedure",
-            "reason": "procedure exceeded 180 seconds",
-            "not_scored_reason": "Not scored within the 180-second computation limit after compatibility and exact-caching repairs.",
-            "latest_attempt_file": "experiments/generation-repairs-v1/artifacts/J08/gpt-4.1-2025-04-14/r2/expansion-v1/result.json",
-            "repair_attempts": 2,
-            "exclusion_is_not_zero_score": true,
-            "claim": "This is an implementation/budget exclusion, not proof that the model is intrinsically inapplicable to the modality."
+            "original_code_sha256": "c710d4c2ae4a742e5144d74bbabddb99c51a8649cfcc0f7e469892cab17b62ab",
+            "test_labels_used_for_patch": false,
+            "manual_debugging": true,
+            "repair_order": 28,
+            "result_file": "experiments/generation-repairs-v1/artifacts/J08/gpt-4.1-2025-04-14/r4/expansion-v1/result.json",
+            "result_sha256": "a9004b624dff2cfc2002f20246f071f1d2a6bd36c1a76f6aa6a1536abfab4339",
+            "saved_output_audit_file": "experiments/generation-repairs-v1/artifacts/J08/gpt-4.1-2025-04-14/r4/expansion-v1/saved-output-audit.json",
+            "saved_output_audit_sha256": "911d91bb59fec1dd611bfe0c37ceea57e680674e38b88b612ee7516389dd4971"
           }
-        ]
+        ],
+        "unresolved": []
       },
       "switch_decision": "retain_reference_and_investigate",
       "switch_now_evidence": "No blanket replacement claim: matched current-best specialist, independent sources, practical margins and operational checks are incomplete."
@@ -33505,14 +33549,14 @@
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-5-2025-08-07",
       "counts": {
-        "better": 18,
+        "better": 19,
         "worse": 11,
         "numerical_tie": 0,
-        "incomplete": 1
+        "incomplete": 0
       },
       "estimand": "Sign of native equal-slice task mean; no missing-score imputation.",
-      "family_balanced_signed_direction": 0.32051282051282054,
-      "families_with_valid_pairs": 13
+      "family_balanced_signed_direction": 0.36904761904761907,
+      "families_with_valid_pairs": 14
     },
     {
       "scope": "all_measured_tasks",
@@ -33520,14 +33564,14 @@
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-5.6-sol",
       "counts": {
-        "better": 24,
+        "better": 25,
         "worse": 5,
         "numerical_tie": 0,
-        "incomplete": 1
+        "incomplete": 0
       },
       "estimand": "Sign of native equal-slice task mean; no missing-score imputation.",
-      "family_balanced_signed_direction": 0.7564102564102565,
-      "families_with_valid_pairs": 13
+      "family_balanced_signed_direction": 0.7738095238095238,
+      "families_with_valid_pairs": 14
     },
     {
       "scope": "all_measured_tasks",
@@ -33535,14 +33579,14 @@
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-6.1-sol",
       "counts": {
-        "better": 27,
+        "better": 28,
         "worse": 2,
         "numerical_tie": 0,
-        "incomplete": 1
+        "incomplete": 0
       },
       "estimand": "Sign of native equal-slice task mean; no missing-score imputation.",
-      "family_balanced_signed_direction": 0.9230769230769231,
-      "families_with_valid_pairs": 13
+      "family_balanced_signed_direction": 0.9285714285714286,
+      "families_with_valid_pairs": 14
     },
     {
       "scope": "all_measured_tasks",
@@ -33595,10 +33639,10 @@
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-5-2025-08-07",
       "counts": {
-        "better": 13,
+        "better": 14,
         "worse": 10,
         "numerical_tie": 0,
-        "incomplete": 1
+        "incomplete": 0
       },
       "estimand": "Sign of native equal-slice task mean; no missing-score imputation."
     },
@@ -33608,10 +33652,10 @@
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-5.6-sol",
       "counts": {
-        "better": 18,
+        "better": 19,
         "worse": 5,
         "numerical_tie": 0,
-        "incomplete": 1
+        "incomplete": 0
       },
       "estimand": "Sign of native equal-slice task mean; no missing-score imputation."
     },
@@ -33621,10 +33665,10 @@
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-6.1-sol",
       "counts": {
-        "better": 21,
+        "better": 22,
         "worse": 2,
         "numerical_tie": 0,
-        "incomplete": 1
+        "incomplete": 0
       },
       "estimand": "Sign of native equal-slice task mean; no missing-score imputation."
     },
@@ -33675,14 +33719,14 @@
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-5-2025-08-07",
       "counts": {
-        "better": 18,
+        "better": 19,
         "worse": 11,
         "numerical_tie": 0,
-        "incomplete": 1
+        "incomplete": 0
       },
       "estimand": "Sign of native equal-slice task mean; no missing-score imputation.",
-      "family_balanced_signed_direction": 0.32051282051282054,
-      "families_with_valid_pairs": 13
+      "family_balanced_signed_direction": 0.36904761904761907,
+      "families_with_valid_pairs": 14
     },
     {
       "scope": "all_measured_tasks",
@@ -33690,14 +33734,14 @@
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-5.6-sol",
       "counts": {
-        "better": 24,
+        "better": 25,
         "worse": 5,
         "numerical_tie": 0,
-        "incomplete": 1
+        "incomplete": 0
       },
       "estimand": "Sign of native equal-slice task mean; no missing-score imputation.",
-      "family_balanced_signed_direction": 0.7564102564102565,
-      "families_with_valid_pairs": 13
+      "family_balanced_signed_direction": 0.7738095238095238,
+      "families_with_valid_pairs": 14
     },
     {
       "scope": "all_measured_tasks",
@@ -33705,14 +33749,14 @@
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-6.1-sol",
       "counts": {
-        "better": 27,
+        "better": 28,
         "worse": 2,
         "numerical_tie": 0,
-        "incomplete": 1
+        "incomplete": 0
       },
       "estimand": "Sign of native equal-slice task mean; no missing-score imputation.",
-      "family_balanced_signed_direction": 0.9230769230769231,
-      "families_with_valid_pairs": 13
+      "family_balanced_signed_direction": 0.9285714285714286,
+      "families_with_valid_pairs": 14
     },
     {
       "scope": "all_measured_tasks",
@@ -33765,10 +33809,10 @@
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-5-2025-08-07",
       "counts": {
-        "better": 13,
+        "better": 14,
         "worse": 10,
         "numerical_tie": 0,
-        "incomplete": 1
+        "incomplete": 0
       },
       "estimand": "Sign of native equal-slice task mean; no missing-score imputation."
     },
@@ -33778,10 +33822,10 @@
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-5.6-sol",
       "counts": {
-        "better": 18,
+        "better": 19,
         "worse": 5,
         "numerical_tie": 0,
-        "incomplete": 1
+        "incomplete": 0
       },
       "estimand": "Sign of native equal-slice task mean; no missing-score imputation."
     },
@@ -33791,10 +33835,10 @@
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-6.1-sol",
       "counts": {
-        "better": 21,
+        "better": 22,
         "worse": 2,
         "numerical_tie": 0,
-        "incomplete": 1
+        "incomplete": 0
       },
       "estimand": "Sign of native equal-slice task mean; no missing-score imputation."
     },
@@ -33842,11 +33886,11 @@
     {
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-5-2025-08-07",
-      "eligible_task_pairs": 29,
-      "incomplete": 1,
+      "eligible_task_pairs": 30,
+      "incomplete": 0,
       "format_ineligible": 0,
       "counts": {
-        "better": 18,
+        "better": 19,
         "worse": 11,
         "numerical_tie": 0
       }
@@ -33854,11 +33898,11 @@
     {
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-5.6-sol",
-      "eligible_task_pairs": 29,
-      "incomplete": 1,
+      "eligible_task_pairs": 30,
+      "incomplete": 0,
       "format_ineligible": 0,
       "counts": {
-        "better": 24,
+        "better": 25,
         "worse": 5,
         "numerical_tie": 0
       }
@@ -33866,11 +33910,11 @@
     {
       "older": "gpt-4.1-2025-04-14",
       "newer": "gpt-6.1-sol",
-      "eligible_task_pairs": 29,
-      "incomplete": 1,
+      "eligible_task_pairs": 30,
+      "incomplete": 0,
       "format_ineligible": 0,
       "counts": {
-        "better": 27,
+        "better": 28,
         "worse": 2,
         "numerical_tie": 0
       }
@@ -34578,34 +34622,34 @@
           "older": "gpt-4.1-2025-04-14",
           "newer": "gpt-5-2025-08-07",
           "counts": {
-            "better": 0,
+            "better": 1,
             "worse": 0,
             "numerical_tie": 0,
-            "incomplete": 1
+            "incomplete": 0
           },
-          "signed_task_mean": null
+          "signed_task_mean": 1.0
         },
         {
           "older": "gpt-4.1-2025-04-14",
           "newer": "gpt-5.6-sol",
           "counts": {
-            "better": 0,
+            "better": 1,
             "worse": 0,
             "numerical_tie": 0,
-            "incomplete": 1
+            "incomplete": 0
           },
-          "signed_task_mean": null
+          "signed_task_mean": 1.0
         },
         {
           "older": "gpt-4.1-2025-04-14",
           "newer": "gpt-6.1-sol",
           "counts": {
-            "better": 0,
+            "better": 1,
             "worse": 0,
             "numerical_tie": 0,
-            "incomplete": 1
+            "incomplete": 0
           },
-          "signed_task_mean": null
+          "signed_task_mean": 1.0
         },
         {
           "older": "gpt-5-2025-08-07",
@@ -35602,34 +35646,34 @@
           "older": "gpt-4.1-2025-04-14",
           "newer": "gpt-5-2025-08-07",
           "counts": {
-            "better": 0,
+            "better": 1,
             "worse": 0,
             "numerical_tie": 0,
-            "incomplete": 1
+            "incomplete": 0
           },
-          "signed_task_mean": null
+          "signed_task_mean": 1.0
         },
         {
           "older": "gpt-4.1-2025-04-14",
           "newer": "gpt-5.6-sol",
           "counts": {
-            "better": 0,
+            "better": 1,
             "worse": 0,
             "numerical_tie": 0,
-            "incomplete": 1
+            "incomplete": 0
           },
-          "signed_task_mean": null
+          "signed_task_mean": 1.0
         },
         {
           "older": "gpt-4.1-2025-04-14",
           "newer": "gpt-6.1-sol",
           "counts": {
-            "better": 0,
+            "better": 1,
             "worse": 0,
             "numerical_tie": 0,
-            "incomplete": 1
+            "incomplete": 0
           },
-          "signed_task_mean": null
+          "signed_task_mean": 1.0
         },
         {
           "older": "gpt-5-2025-08-07",
@@ -37155,9 +37199,9 @@
     }
   ],
   "findings": [
-    "gpt-5-2025-08-07 versus gpt-4.1-2025-04-14: 18 task improvements, 11 regressions, 0 numerical ties and 1 incomplete comparisons in the final usability track.",
-    "gpt-5.6-sol versus gpt-4.1-2025-04-14: 24 task improvements, 5 regressions, 0 numerical ties and 1 incomplete comparisons in the final usability track.",
-    "gpt-6.1-sol versus gpt-4.1-2025-04-14: 27 task improvements, 2 regressions, 0 numerical ties and 1 incomplete comparisons in the final usability track.",
+    "gpt-5-2025-08-07 versus gpt-4.1-2025-04-14: 19 task improvements, 11 regressions, 0 numerical ties and 0 incomplete comparisons in the final usability track.",
+    "gpt-5.6-sol versus gpt-4.1-2025-04-14: 25 task improvements, 5 regressions, 0 numerical ties and 0 incomplete comparisons in the final usability track.",
+    "gpt-6.1-sol versus gpt-4.1-2025-04-14: 28 task improvements, 2 regressions, 0 numerical ties and 0 incomplete comparisons in the final usability track.",
     "gpt-5.6-sol versus gpt-5-2025-08-07: 25 task improvements, 4 regressions, 1 numerical ties and 0 incomplete comparisons in the final usability track.",
     "gpt-6.1-sol versus gpt-5-2025-08-07: 24 task improvements, 5 regressions, 1 numerical ties and 0 incomplete comparisons in the final usability track.",
     "gpt-6.1-sol versus gpt-5.6-sol: 20 task improvements, 9 regressions, 1 numerical ties and 0 incomplete comparisons in the final usability track.",
@@ -37175,7 +37219,7 @@
     "registry/catalog.json": "2b4f7bca21f5fa1f68f812f3b25a9dda4965c4e76f2b471721f2b82097575b05",
     "results/generation-extension-v1.json": "795418f3c9c3034dc0a801d0abdd79e69423e32b5ce1a80e42ec7bded3f767a9",
     "results/repairs-v1.json": "c1a7882d16a254b8441fdc3feeac11e43a78f80f92b5a46af81eb85c9c63f762",
-    "results/generation-repairs-v1.json": "14c68d18f4c39105eff3914ed45bae15375d5cb827cd04bc9c6d17b49a5835da"
+    "results/generation-repairs-v1.json": "11c7860c89f0eaa3dfde20f963ff50f4f6831d52edb5645c3443844bb9838af6"
   },
   "provider_metadata": {
     "study": "generation-extension-v1",

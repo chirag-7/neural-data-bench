@@ -1,31 +1,31 @@
 # Macro patterns after repair and exclusion review
 
-GPT-6.1 versus GPT-4.1: **27 better, 2 worse, 0 numerical ties, 1 incomplete** out of 30 tasks. 27/29 comparable task means (93.1%) favor GPT-6.1. This is a task-count fraction, not model accuracy or a probability for all neuroscience problems.
+GPT-6.1 versus GPT-4.1: **28 better, 2 worse, 0 numerical ties, 0 incomplete** out of 30 tasks. 28/30 comparable task means (93.3%) favor GPT-6.1. This is a task-count fraction, not model accuracy or a probability for all neuroscience problems.
 
-Before these macros, 9/10 original API-runtime failures were recovered and independently audited. The remaining model/task case is explicitly unscored within the original 180-second limit. Original failed runs remain intact. Physical-line repairs preserve the exact AST; they demonstrate manually formatted compliance, not original model brevity. No new API calls were made.
+Before these macros, 10/10 original API-runtime failures were recovered and independently audited. 0 model/task cases remain unscored within the original 180-second limit. Original failed runs remain intact. Physical-line repairs preserve the exact AST; they demonstrate manually formatted compliance, not original model brevity. No new API calls were made.
 
 ## Quantitative findings
 
 | Four-model trajectory | Tasks |
 |---|---:|
 | strictly improving | 9 |
-| mixed reversals | 19 |
+| mixed reversals | 20 |
 | numerically flat | 0 |
 | strictly declining | 0 |
 | nondecreasing with ties | 1 |
 | nonincreasing with ties | 0 |
-| incomplete | 1 |
+| incomplete | 0 |
 
-9/29 complete trajectories (31.0%; 9/30 of the attempted panel) improve at every adjacent step, spanning 6 categories: C05, E01, F04, H01, H02, K01, K06, L04, L06.
+9/30 complete trajectories (30.0%; 9/30 of the attempted panel) improve at every adjacent step, spanning 6 categories: C05, E01, F04, H01, H02, K01, K06, L04, L06.
 
-Strict-format sensitivity has 29 complete trajectories: {'mixed_reversals': 19, 'strictly_improving': 9, 'nondecreasing_with_ties': 1}. All manual formatting is still excluded from original model-compliance claims.
+Strict-format sensitivity has 30 complete trajectories: {'mixed_reversals': 20, 'strictly_improving': 9, 'nondecreasing_with_ties': 1}. All manual formatting is still excluded from original model-compliance claims.
 
-Endpoint sensitivities (better / worse / numerical tie / incomplete): strict-format 27 / 2 / 0 / 1, with 0 additionally format-ineligible; observed-data 21 / 2 / 0 / 1; untouched first attempts 23 / 2 / 0 / 5. These scopes and repair histories answer different questions.
+Endpoint sensitivities (better / worse / numerical tie / incomplete): strict-format 28 / 2 / 0 / 0, with 0 additionally format-ineligible; observed-data 22 / 2 / 0 / 0; untouched first attempts 23 / 2 / 0 / 5. These scopes and repair histories answer different questions.
 
 | Adjacent sign pattern (+ = improvement) | Complete tasks |
 |---|---:|
 | + + + | 9 |
-| + + - | 6 |
+| + + - | 7 |
 | + - + | 2 |
 | + = = | 1 |
 | - + + | 7 |
@@ -40,7 +40,7 @@ Endpoint regressions relative to GPT-4.1: B07, K05. All task IDs, directions, ca
 
 Mixed changes are reversals, not established randomness. No validated four-model generation-noise model or prospective equivalence margins exist. Zero numerical endpoint ties does not imply no practically equivalent or statistically unresolved outcomes. A small gap is not evidence of equality; a nonmonotonic curve is not proof of random performance. Chance classifier accuracy is a separate concept.
 
-Untouched failures involved library compatibility, grouped-CV misuse, syntax, array indexing/shapes, legacy HDF5 aliases and time limits. Repairs enable usable procedures; same-objective optimizer replacements can still change numerical convergence and predictions. Thus the final panel combines model-written programs with explicit manual engineering. It cannot isolate autonomous debugging or causal generation effects.
+Untouched failures involved library compatibility, grouped-CV misuse, syntax, array indexing/shapes, legacy HDF5 aliases and time limits. Repairs enable usable procedures; optimizer replacements and the J08 GPT-4.1 bootstrap-budget adaptation can change predictions. J08 caps each tree at 250000 bootstrap draws rather than 16451616, preserving the original 180-second limit. That point is manually budget-adapted and is not untouched GPT-4.1 performance. Excluding the manually budget-adapted J08 point leaves the previous endpoint result: GPT-6.1 improves on 27 of 29 comparable tasks, with two regressions. Thus the final panel combines model-written programs with explicit manual engineering. It cannot isolate autonomous debugging or causal generation effects.
 
 The monotonic trajectories span calcium inference, population inference, sensory encoding, EEG decoding, cell classification and statistical inference. Behavior/movement and extracellular tasks have reversals in every complete trajectory in those categories. This retrospective observation has small and overlapping source samples; representation, estimator choice and task structure are hypotheses, not identified causal explanations.
 

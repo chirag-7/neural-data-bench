@@ -189,6 +189,20 @@
       "model": "gpt-5-2025-08-07",
       "revision": "r3",
       "patch": "Classify time-series groups by the visit path (including stimulus/acquisition hard-link aliases), rather than a resolved object name. Preserve the returned schema and extraction algorithm. Traverse stimulus and acquisition aliases independently with ancestor-cycle protection; visititems skips previously visited hard-linked objects. Parse actual supplied-file metadata, never expected answers. Normalize visit paths to absolute form before prefix classification. Mechanical AST-identical physical-line formatting; original format violation remains historical."
+    },
+    {
+      "benchmark_id": "J08",
+      "slice_id": "expansion-v1",
+      "model": "gpt-4.1-2025-04-14",
+      "revision": "r3",
+      "patch": "Retain the original 30-tree depth-9 random forest, features, training fields, seed, one CPU thread, threshold grid and inference. Cap each tree bootstrap at 250000 draws from all eligible training pixels (instead of 16451616), chosen before test scoring after training-only profiling located the time bottleneck. This changes the fitting budget and potentially predictions; it is a manual budget adaptation, not an exact compatibility fix or an untouched GPT-4.1 score."
+    },
+    {
+      "benchmark_id": "J08",
+      "slice_id": "expansion-v1",
+      "model": "gpt-4.1-2025-04-14",
+      "revision": "r4",
+      "patch": "Retain the original 30-tree depth-9 random forest, features, training fields, seed, one CPU thread, threshold grid and inference. Cap each tree bootstrap at 250000 draws from all eligible training pixels (instead of 16451616), chosen before test scoring after training-only profiling located the time bottleneck. This changes the fitting budget and potentially predictions; it is a manual budget adaptation, not an exact compatibility fix or an untouched GPT-4.1 score. Also pass signed int32 watershed markers as required by SciPy; confirmed by a synthetic-array compatibility probe and the preserved r3 runtime error. This avoids unsigned 8-bit label truncation."
     }
   ]
 }

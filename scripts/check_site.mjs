@@ -325,9 +325,9 @@ for(const direction of ['higher','lower']) {
  const bar=vm.runInContext(`barPlot([{model:MODELS[0],score:1}], '${direction}')`,ctx);if(!bar.includes(direction+' is better'))throw Error('Missing bar direction key');
 }
 ctx.location.hash='#/analysis/patterns';vm.runInContext('draw()',ctx);await new Promise(resolve=>setImmediate(resolve));
-if(!el('#app').innerHTML.includes('Do newer models improve?') || !el('#app').innerHTML.includes('27') || !el('#app').innerHTML.includes('Mixed changes / reversals'))throw Error('Macro route/data failed');
+if(!el('#app').innerHTML.includes('Do newer models improve?') || !el('#app').innerHTML.includes('28') || !el('#app').innerHTML.includes('Mixed changes / reversals'))throw Error('Macro route/data failed');
 ctx.location.hash='#/analysis/practical';vm.runInContext("practicalCategory='J';practicalTask='J08';draw()",ctx);await new Promise(resolve=>setImmediate(resolve));
-if(!el('#app').innerHTML.includes('Not scored within the 180-second computation limit'))throw Error('Excluded model reason missing from task graph');
+if(!el('#app').innerHTML.includes('manually adapted training budget') || el('#app').innerHTML.includes('Not scored within the 180-second computation limit'))throw Error('Final J08 repair score or budget provenance missing');
 const result = {
   type: "In-memory source-render and direct-handler checks; not real-browser interaction or layout QA",
   routes: n,

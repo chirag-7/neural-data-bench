@@ -8,9 +8,9 @@ Final usability scores include explicitly versioned manual runtime, optimizer an
 
 | Earlier | Later | Better | Worse | Numerical tie | Incomplete | Family-balanced direction |
 |---|---|---:|---:|---:|---:|---:|
-| gpt-4.1-2025-04-14 | gpt-5-2025-08-07 | 18 | 11 | 0 | 1 | 0.3205 |
-| gpt-4.1-2025-04-14 | gpt-5.6-sol | 24 | 5 | 0 | 1 | 0.7564 |
-| gpt-4.1-2025-04-14 | gpt-6.1-sol | 27 | 2 | 0 | 1 | 0.9231 |
+| gpt-4.1-2025-04-14 | gpt-5-2025-08-07 | 19 | 11 | 0 | 0 | 0.3690 |
+| gpt-4.1-2025-04-14 | gpt-5.6-sol | 25 | 5 | 0 | 0 | 0.7738 |
+| gpt-4.1-2025-04-14 | gpt-6.1-sol | 28 | 2 | 0 | 0 | 0.9286 |
 | gpt-5-2025-08-07 | gpt-5.6-sol | 25 | 4 | 1 | 0 | 0.7143 |
 | gpt-5-2025-08-07 | gpt-6.1-sol | 24 | 5 | 1 | 0 | 0.6786 |
 | gpt-5.6-sol | gpt-6.1-sol | 20 | 9 | 1 | 0 | 0.3452 |
@@ -21,9 +21,9 @@ Both model procedures must meet their original line limits and have numeric scor
 
 | Earlier | Later | Eligible tasks | Better | Worse | Tie | Incomplete | Format-ineligible |
 |---|---|---:|---:|---:|---:|---:|---:|
-| gpt-4.1-2025-04-14 | gpt-5-2025-08-07 | 29 | 18 | 11 | 0 | 1 | 0 |
-| gpt-4.1-2025-04-14 | gpt-5.6-sol | 29 | 24 | 5 | 0 | 1 | 0 |
-| gpt-4.1-2025-04-14 | gpt-6.1-sol | 29 | 27 | 2 | 0 | 1 | 0 |
+| gpt-4.1-2025-04-14 | gpt-5-2025-08-07 | 30 | 19 | 11 | 0 | 0 | 0 |
+| gpt-4.1-2025-04-14 | gpt-5.6-sol | 30 | 25 | 5 | 0 | 0 | 0 |
+| gpt-4.1-2025-04-14 | gpt-6.1-sol | 30 | 28 | 2 | 0 | 0 | 0 |
 | gpt-5-2025-08-07 | gpt-5.6-sol | 30 | 25 | 4 | 1 | 0 | 0 |
 | gpt-5-2025-08-07 | gpt-6.1-sol | 30 | 24 | 5 | 1 | 0 | 0 |
 | gpt-5.6-sol | gpt-6.1-sol | 30 | 20 | 9 | 1 | 0 | 0 |
@@ -32,9 +32,9 @@ Positive family-balanced direction means more improvements than regressions afte
 
 ## Findings
 
-- gpt-5-2025-08-07 versus gpt-4.1-2025-04-14: 18 task improvements, 11 regressions, 0 numerical ties and 1 incomplete comparisons in the final usability track.
-- gpt-5.6-sol versus gpt-4.1-2025-04-14: 24 task improvements, 5 regressions, 0 numerical ties and 1 incomplete comparisons in the final usability track.
-- gpt-6.1-sol versus gpt-4.1-2025-04-14: 27 task improvements, 2 regressions, 0 numerical ties and 1 incomplete comparisons in the final usability track.
+- gpt-5-2025-08-07 versus gpt-4.1-2025-04-14: 19 task improvements, 11 regressions, 0 numerical ties and 0 incomplete comparisons in the final usability track.
+- gpt-5.6-sol versus gpt-4.1-2025-04-14: 25 task improvements, 5 regressions, 0 numerical ties and 0 incomplete comparisons in the final usability track.
+- gpt-6.1-sol versus gpt-4.1-2025-04-14: 28 task improvements, 2 regressions, 0 numerical ties and 0 incomplete comparisons in the final usability track.
 - gpt-5.6-sol versus gpt-5-2025-08-07: 25 task improvements, 4 regressions, 1 numerical ties and 0 incomplete comparisons in the final usability track.
 - gpt-6.1-sol versus gpt-5-2025-08-07: 24 task improvements, 5 regressions, 1 numerical ties and 0 incomplete comparisons in the final usability track.
 - gpt-6.1-sol versus gpt-5.6-sol: 20 task improvements, 9 regressions, 1 numerical ties and 0 incomplete comparisons in the final usability track.

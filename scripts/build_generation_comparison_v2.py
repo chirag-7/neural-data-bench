@@ -121,7 +121,7 @@ Native ties are numerical, not demonstrated practical equivalence. A higher corr
 
 ## Provenance
 
-Input SHA256 hashes, extension metadata, retained code and scored-output hashes are recorded in generation-comparison.json and the extension record. Runtime/library/shape fixes, optimizer changes for the same training objective, and AST-identical formatting are recorded separately. No test-label or test-score-based model search is performed. Scores of manually repaired procedures cannot establish what the original model would do autonomously. No new measured score is invented. Historical GPT-6 results remain accessible through the prior report. Regenerate with python3 scripts/build_generation_comparison_v2.py after all 74 extension rows exist; run python3 scripts/check_generation_comparison_v2.py for structural checks.
+Input SHA256 hashes, extension metadata, retained code and scored-output hashes are recorded in generation-comparison.json and the extension record. Runtime/library/shape fixes, optimizer changes, a J08 GPT-4.1 bootstrap training-budget adaptation, and AST-identical formatting are recorded separately. The J08 bootstrap cap changes fitting and potentially predictions; it is not an exact compatibility fix or untouched model performance. No test-label or test-score-based model search is performed. Scores of manually repaired procedures cannot establish what the original model would do autonomously. No new measured score is invented. Historical GPT-6 results remain accessible through the prior report. Regenerate with python3 scripts/build_generation_comparison_v2.py after all 74 extension rows exist; run python3 scripts/check_generation_comparison_v2.py for structural checks.
 '''
 
 def main():

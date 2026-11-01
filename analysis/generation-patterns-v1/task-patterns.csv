@@ -19,7 +19,7 @@ H08,H,Sleep staging and sleep onset,macro_f1_sleep,higher,- + -,mixed_reversals,
 H16,H,EEG ocular/muscle artifact repair,temporal_rrmse,lower,- + +,mixed_reversals,1,True,True,,,not_estimated,not_established
 I07,I,fNIRS motor/hemodynamic decoding,balanced_accuracy,higher,+ - +,mixed_reversals,2,True,True,,,not_estimated,not_established
 I10,I,MRI quality assessment across sites,balanced_accuracy,higher,+ - +,mixed_reversals,2,True,True,,,not_estimated,not_established
-J08,J,Fluorescent synaptic puncta segmentation and quantification,instance_f1_iou50_multirater,higher,? + -,incomplete,,False,False,,,not_estimated,not_established
+J08,J,Fluorescent synaptic puncta segmentation and quantification,instance_f1_iou50_multirater,higher,+ + -,mixed_reversals,1,True,True,,,not_estimated,not_established
 K01,K,Electrophysiological cell-type classification,macro_f1,higher,+ + +,strictly_improving,0,True,True,False,True,not_estimated,not_established
 K04,K,Cortical-layer label transfer,section_equal_macro_f1_7classes,higher,- - +,mixed_reversals,1,True,True,,,not_estimated,not_established
 K05,K,Supervised bulk RNA to marker-positive fractions,donor_block_macro_rmse,lower,- - +,mixed_reversals,1,True,True,,,not_estimated,not_established

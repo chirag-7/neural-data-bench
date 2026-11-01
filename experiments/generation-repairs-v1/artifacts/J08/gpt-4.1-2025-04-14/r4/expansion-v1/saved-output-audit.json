@@ -1,0 +1,11 @@
+{
+  "score": 0.0,
+  "metric": "instance_f1_iou50_multirater",
+  "direction": "higher",
+  "per_unit": [
+    0.0,
+    0.0
+  ],
+  "n_units": 2,
+  "status": "passed"
+}
