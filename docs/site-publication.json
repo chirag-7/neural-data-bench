@@ -1,8 +1,8 @@
 {
-  "id": "appgdep_6ae7acb2199c819199606f19398152dd",
+  "id": "appgdep_6ae7ba674eb48191b082766e5c40c549",
   "project_id": "appgprj_6ae4f438805c81919b082963db32f4f5",
   "title": "Neural Data Observatory",
-  "version_id": "appgprj_6ae4f438805c81919b082963db32f4f5~appgver_2f50fe16f8d08191a80d5940a68f101c",
+  "version_id": "appgprj_6ae4f438805c81919b082963db32f4f5~appgver_da6670044d948191a80df1fc32221199",
   "type": "publish",
   "status": "succeeded",
   "url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site",
@@ -11,48 +11,47 @@
   "provider_deployment_id": "site---6ae4f438805c81919b082963db32f4f5",
   "failure_message": null,
   "env_set_revision": 0,
-  "updated_at": "2026-11-01T21:18:50.860083+00:00",
+  "updated_at": "2026-11-01T22:17:20.958016+00:00",
   "release": "0.11",
-  "analysis_revision": "generation-patterns-v1-repair-assisted",
-  "research_commit": "45b2f6566885fde3eabc01ff3da044d5fe35b9d8",
-  "source_commit": "7f62a4dddd08a54cce55bce95a92422debe59877",
+  "analysis_revision": "generation-patterns-v1-all-runtime-failures-repaired",
+  "research_commit": "82afe129f7d812f6932bb97aca515090e732d2a1",
+  "source_commit": "49391008ed2924ff58ceba803e3608ed570f9400",
   "repository_url": "https://github.com/chirag-7/neural-data-bench",
   "audience": "owner-private,preserved",
   "report": "analysis/generation-patterns-v1/report.md",
   "comparison": "analysis/generation-comparison-v2/report.md",
   "repairs": "experiments/generation-repairs-v1/README.md",
-  "source_hash_manifest": "analysis/website-source-v16.json",
-  "browser_qa": "analysis/site-navigation-v16.json",
-  "screenshot": "docs/assets/repaired-macro-patterns-v1.png",
+  "source_hash_manifest": "analysis/website-source-v17.json",
+  "browser_qa": "analysis/site-navigation-v17.json",
+  "screenshot": "docs/assets/final-j08-repair-v1.png",
   "verification": {
     "tasks": 30,
     "categories": 14,
-    "numeric_model_slice_results": 147,
+    "numeric_model_slice_results": 148,
     "model_slice_attempts": 148,
     "original_API_runtime_failures": 10,
-    "recovered_original_API_runtime_failures": 9,
-    "excluded_model_task": "GPT-4.1 / J08; original 180-second limit after two compatibility/caching attempts",
+    "recovered_original_API_runtime_failures": 10,
+    "remaining_unscored": 0,
+    "J08_GPT41": {
+      "score": 0,
+      "metric": "instance_f1_iou50_multirater",
+      "seconds": 24.662757915910333,
+      "predicted_foreground_pixels": 0,
+      "manual_training_budget_adaptation": true,
+      "independent_rescore": "passed"
+    },
     "endpoint_6_1_vs_4_1": {
-      "better": 27,
+      "better": 28,
       "worse": 2,
       "numerical_tie": 0,
-      "incomplete": 1
+      "incomplete": 0
     },
-    "trajectories": {
+    "trajectory": {
       "strictly_improving": 9,
-      "mixed_reversals": 19,
-      "improves_with_ties": 1,
-      "incomplete": 1
+      "mixed_reversals": 20,
+      "nondecreasing_with_ties": 1,
+      "incomplete": 0
     },
-    "direction_audit": {
-      "higher": 18,
-      "lower": 12,
-      "line_axes": "better-up with reversed lower-is-better native axes",
-      "bars": "raw native values; preferred direction labeled"
-    },
-    "new_API_calls": 0,
-    "successful_latest_repair_outputs_independently_audited": 20,
-    "canonical_packaged_assets_hash_matched": 51,
-    "original_measurements_and_first_attempt_reports_unchanged": true
+    "new_API_calls": 0
   }
 }

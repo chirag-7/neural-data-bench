@@ -1,0 +1,28 @@
+{
+  "revision": "website-v17-final-runtime-repair",
+  "deployed_url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site",
+  "browser_qa": {
+    "local_category_to_J08": "passed",
+    "production_category_to_J08": "passed",
+    "four_numeric_model_scores": [
+      0,
+      0.24323205422323543,
+      0.6433683295437704,
+      0.57563018487252
+    ],
+    "named_specialist_in_line_and_bar": "StarDist author archive; 0.8625343802858836",
+    "manual_bootstrap_budget_disclosure": "visible below plots",
+    "missing_score_exclusion_removed": "passed",
+    "screenshot": "docs/assets/final-j08-repair-v1.png"
+  },
+  "automated_checks": [
+    "check_repository",
+    "check_macro",
+    "check_practical_review",
+    "check_generation_comparison --no-website",
+    "check_generation_comparison_v2",
+    "check_generation_patterns",
+    "check_site.mjs"
+  ],
+  "archive_assets_verified": 51
+}
