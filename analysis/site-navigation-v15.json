@@ -26,5 +26,12 @@
     "summary": "concise actual pair counts and nine monotonic tasks",
     "asset_refresh": "content-hash query strings on changed scripts"
   },
-  "limitations": "No mobile viewport override or exhaustive browser interaction across every task; all 30 plots checked separately in source-render harness."
+  "limitations": "No mobile viewport override or exhaustive browser interaction across every task; all 30 plots checked separately in source-render harness.",
+  "production_verification": {
+    "url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site/#/analysis/practical",
+    "status": "passed",
+    "browser": "Codex in-app browser",
+    "H02_four_models_and_named_specialist": "verified live",
+    "screenshot": "docs/assets/four-model-comparison-v1.png"
+  }
 }
