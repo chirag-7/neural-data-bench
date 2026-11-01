@@ -1,0 +1,42 @@
+{
+  "revision": "generation-lags-v1",
+  "local_browser": {
+    "all_six_comparisons": "passed",
+    "lag_1_three_rows_per_table": "passed",
+    "lag_2_two_rows_per_table": "passed",
+    "lag_3_one_row_per_table": "passed",
+    "statistical_limitations_visible": "passed"
+  },
+  "production_browser": {
+    "route": "#/analysis/lags",
+    "lag_3_raw": [
+      28,
+      2,
+      0,
+      0
+    ],
+    "lag_3_band_0_1": [
+      27,
+      2,
+      1,
+      0
+    ],
+    "lag_3_band_0_5": [
+      25,
+      2,
+      3,
+      0
+    ],
+    "screenshot": "docs/assets/generation-lags-v1.png"
+  },
+  "checks": [
+    "check_repository.py",
+    "check_macro.py",
+    "check_practical_review.py",
+    "check_generation_comparison.py --no-website",
+    "check_generation_comparison_v2.py",
+    "check_generation_patterns.py",
+    "check_generation_lags.py",
+    "check_site.mjs"
+  ]
+}
