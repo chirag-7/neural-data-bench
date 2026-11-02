@@ -1,0 +1,21 @@
+{
+  "id": "appgdep_6ae7e6a6fe8c81918892ca5829814350",
+  "project_id": "appgprj_6ae4f438805c81919b082963db32f4f5",
+  "title": "Neural Data Observatory",
+  "version_id": "appgprj_6ae4f438805c81919b082963db32f4f5~appgver_7519f62e55b08191b6484c97de604684",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6ae4f438805c81919b082963db32f4f5",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-11-02T01:26:04.599504+00:00",
+  "research_commit": "8ba9986c1cc64ac5fb419a61729750810fcd407d",
+  "site_source_commit": "fe276dd2416840bd0ab7d6e9ea33220d3466cf0c",
+  "archive": "neural-data-observatory-publication-v21.tar.gz",
+  "purpose": "Correct published versus locally scored specialist evidence; preserve all original measurements.",
+  "asset_manifest": "analysis/website-source-v21.json",
+  "browser_audit": "analysis/site-navigation-v21.json"
+}
