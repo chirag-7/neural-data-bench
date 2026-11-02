@@ -1,0 +1,13 @@
+{
+  "revision": "specialist-frontier-v1",
+  "local_browser_qa": "passed",
+  "checks": [
+    "Renamed browser title, project header and explicit code-generation/local-fitting scope",
+    "Separate route with specialist-only 14/30 and all-reference 30/30 tables",
+    "EEG category filter: 3 specialist comparisons of 4 tasks; raw 3 general, 0 specialist, 1 unavailable",
+    "Reset restored 14/30 and full native task table",
+    "Desktop tables legible; existing broad category navigation retained"
+  ],
+  "new_model_calls": 0,
+  "old_measured_scores_changed": false
+}

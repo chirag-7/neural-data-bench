@@ -1,6 +1,6 @@
-# Neural Data Bench
+# Neuroscience Analysis Code Generation
 
-**Traceable evidence and exploratory experiments on general coding models for neuroscience lab tasks.** Preview **0.11**, 31 October 2026 (UTC). Course context: [Liam Paninski's Statistical Analysis of Neural Data](https://sites.stat.columbia.edu/liam/teaching/neurostat-fall26/).
+**Models write neuroscience analysis code; that code executes locally and may fit a task-specific model. This repository does not measure direct pretrained-model inference on neural data.** Preview **0.11**, 31 October 2026 (UTC). Course context: [Liam Paninski's Statistical Analysis of Neural Data](https://sites.stat.columbia.edu/liam/teaching/neurostat-fall26/).
 
 [Results explorer](https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site) · [Current release and review](docs/release-v11.md) · [Results and limits](analysis/findings.md) · [Reproduce](docs/reproduce.md)
 
@@ -96,3 +96,7 @@ Code/documentation MIT; third-party artifacts retain their original terms, inclu
 ## Scientific task filters
 
 The existing categories now have three complementary facets: **input data type, analysis task, and generalization setting**. [Read the rationale and cited methods](docs/task-classification/README.md), [audit all assignments](docs/task-classification/assignments.csv), or inspect the [versioned registry](registry/task-facets-v1.json). All 92 active entries are annotated; only 30 have executed contracts. Joint-input multimodal tasks are currently proposals, not measured results. Website filters select whole tasks and recompute descriptive counts without changing scores.
+
+## Separate specialist-frontier analysis
+
+[Best observed general code versus best measured specialist](analysis/specialist-frontier-v1/report.md) has raw, 0.1-IQR and 0.5-IQR tables, a separate all-reference context table, explicit candidate selection and native differences. [Website section](https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site/#/analysis/specialists). It does not alter prior generation/lag analyses.

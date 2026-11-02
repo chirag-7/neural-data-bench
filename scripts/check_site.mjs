@@ -31,6 +31,7 @@ const ctx = {
   }),
 };
 vm.createContext(ctx);
+vm.runInContext(fs.readFileSync(path.join(root,"website/specialist-frontier.js"),"utf8"),ctx);
 vm.runInContext(fs.readFileSync(path.join(root, "website/task-facets.js"), "utf8"), ctx);
 vm.runInContext(fs.readFileSync(path.join(root, "website/generation-patterns.js"), "utf8"), ctx);
 vm.runInContext(fs.readFileSync(path.join(root, "website/generation-lags.js"), "utf8"), ctx);
@@ -378,9 +379,23 @@ if(optionIds(el('#app').innerHTML,'practical-task').length!==4)throw Error('Cate
 vm.runInContext("Object.assign(facetState,{input_type:'',combination:'',operation:'',generalization:'',category:''});generationLagFilter='all'",ctx);
 if(vm.runInContext('JSON.stringify(records)',ctx)!==beforeFacetRecords)throw Error('Facets mutated measurements');
 
+// Separate specialist frontier page and shared filters.
+ctx.location.hash='#/analysis/specialists';vm.runInContext('draw()',ctx);await new Promise(resolve=>setImmediate(resolve));
+let frontierHTML=el('#app').innerHTML;
+if(!frontierHTML.includes('Best generated code versus specialists')||!frontierHTML.includes('14 scored comparisons / 30')||!frontierHTML.includes('30 scored comparisons / 30')||(frontierHTML.match(/<tr>/g)||[]).length!==39)throw Error('Separate specialist tables/denominators failed');
+el('#facet-input_type').onchange({target:{value:'images_video'}});await new Promise(resolve=>setImmediate(resolve));
+frontierHTML=el('#app').innerHTML;
+if(!frontierHTML.includes('1 scored comparisons / 2')||!frontierHTML.includes('J08')||frontierHTML.includes('B07 ·'))throw Error('Specialist facet filtering failed');
+el('#facet-input_type').onchange({target:{value:'multimodal'}});await new Promise(resolve=>setImmediate(resolve));
+if(!el('#app').innerHTML.includes('No measured tasks match')||/NaN|>undefined</.test(el('#app').innerHTML))throw Error('Specialist empty state failed');
+el('#facet-reset').onclick();await new Promise(resolve=>setImmediate(resolve));
+if(!el('#app').innerHTML.includes('14 scored comparisons / 30'))throw Error('Specialist reset failed');
+if(vm.runInContext('JSON.stringify(records)',ctx)!==beforeFacetRecords)throw Error('Specialist rendering mutated existing records');
+
 const result = {
   type: "In-memory source-render and direct-handler checks; not real-browser interaction or layout QA",
   routes: n,
+  separate_specialist_frontier: "passed · six scope/band summaries, native scores, missing specialists, facets, empty state and immutable measurements",
   scientific_facets: "passed · 92 annotations, all facet values, AND intersections, nested combinations, empty subsets, persisted controls, direction-aware counts and immutable lag scales",
   ordinal_lag_tables_and_three_filters: "passed · 180 source task-pairs; all six comparisons and both IQR sensitivity bands",
   measured_tasks_with_bar_and_line_plots: plots,

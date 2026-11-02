@@ -1,0 +1,2162 @@
+{
+  "revision": "specialist-frontier-v1",
+  "paradigm": "Neuroscience Analysis Code Generation",
+  "models": [
+    "gpt-4.1-2025-04-14",
+    "gpt-5-2025-08-07",
+    "gpt-5.6-sol",
+    "gpt-6.1-sol"
+  ],
+  "n_tasks": 30,
+  "n_tasks_with_specialists": 14,
+  "summaries": {
+    "specialist_only": [
+      {
+        "analysis": "raw",
+        "n_tasks": 30,
+        "counts": {
+          "general_better": 10,
+          "unavailable": 16,
+          "specialist_better": 4
+        }
+      },
+      {
+        "analysis": "iqr_0.1",
+        "n_tasks": 30,
+        "counts": {
+          "general_better": 9,
+          "unavailable": 16,
+          "within_band": 2,
+          "specialist_better": 3
+        }
+      },
+      {
+        "analysis": "iqr_0.5",
+        "n_tasks": 30,
+        "counts": {
+          "within_band": 10,
+          "unavailable": 16,
+          "general_better": 3,
+          "specialist_better": 1
+        }
+      }
+    ],
+    "all_available_references": [
+      {
+        "analysis": "raw",
+        "n_tasks": 30,
+        "counts": {
+          "general_better": 24,
+          "specialist_better": 5,
+          "numerical_tie": 1
+        }
+      },
+      {
+        "analysis": "iqr_0.1",
+        "n_tasks": 30,
+        "counts": {
+          "general_better": 20,
+          "within_band": 7,
+          "specialist_better": 3
+        }
+      },
+      {
+        "analysis": "iqr_0.5",
+        "n_tasks": 30,
+        "counts": {
+          "within_band": 17,
+          "general_better": 12,
+          "specialist_better": 1
+        }
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "benchmark_id": "A09",
+      "task": "Frame-level social behavior labels",
+      "family_code": "A",
+      "metric": "macro_f1",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.8532434326100573,
+        "gpt-5-2025-08-07": 0.825643120297422,
+        "gpt-5.6-sol": 0.8689719505732656,
+        "gpt-6.1-sol": 0.8806960154913499
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.8806960154913499,
+      "q1": 0.8463433545318986,
+      "q3": 0.8719029668027867,
+      "general_panel_iqr": 0.0255596122708881,
+      "best_specialist": {
+        "methods": [
+          "vassi-run-15"
+        ],
+        "score": 0.8702791972840422,
+        "raw_native_delta": 0.010416818207307665,
+        "direction_adjusted_delta": 0.010416818207307665,
+        "gap_in_general_panel_iqr": 0.4075499306056461,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "best_available_reference": {
+        "methods": [
+          "vassi-run-15"
+        ],
+        "score": 0.8702791972840422,
+        "raw_native_delta": 0.010416818207307665,
+        "direction_adjusted_delta": 0.010416818207307665,
+        "gap_in_general_panel_iqr": 0.4075499306056461,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 0.8304606579570881,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-00",
+          "score": 0.8695177327504425,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-01",
+          "score": 0.868998770966235,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-02",
+          "score": 0.8695484043864823,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-03",
+          "score": 0.8702006409981802,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-04",
+          "score": 0.8669488616044104,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-05",
+          "score": 0.8697333131396927,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-06",
+          "score": 0.8699842178797927,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-07",
+          "score": 0.866711197217867,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-08",
+          "score": 0.8682683842075497,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-09",
+          "score": 0.8676891271020648,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-10",
+          "score": 0.8697726374249142,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-11",
+          "score": 0.8668047719238074,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-12",
+          "score": 0.8678602012303515,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-13",
+          "score": 0.8692979581332307,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-14",
+          "score": 0.8688893553855324,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-15",
+          "score": 0.8702791972840422,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-16",
+          "score": 0.8681839399836866,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-17",
+          "score": 0.8686177676408582,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-18",
+          "score": 0.8690845087543317,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "vassi-run-19",
+          "score": 0.8684579797660562,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Archived VASSI run00, selected before rescoring; unequal full-frame inputs/training/tuning",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "A14",
+      "task": "Missing pose imputation",
+      "family_code": "A",
+      "metric": "rmse_missing",
+      "direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 17.05943489074707,
+        "gpt-5-2025-08-07": 1.8538062020757753,
+        "gpt-5.6-sol": 0.4485493561358864,
+        "gpt-6.1-sol": 0.45059488811841064
+      },
+      "best_general_models": [
+        "gpt-5.6-sol"
+      ],
+      "best_general_score": 0.4485493561358864,
+      "q1": 0.4500835051227796,
+      "q3": 5.6552133742435995,
+      "general_panel_iqr": 5.20512986912082,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 2.4370992183685303,
+        "raw_native_delta": -1.9885498622326439,
+        "direction_adjusted_delta": 1.9885498622326439,
+        "gap_in_general_panel_iqr": 0.3820365509090598,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 2.4370992183685303,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Local conventional task baseline; strongest specialist unverified",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "A15",
+      "task": "Annotated birdsong interval detection",
+      "family_code": "A",
+      "metric": "recording_macro_event_f1_20ms_onset_20ms_or_20pct_offset",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.9919605878099995,
+        "gpt-5-2025-08-07": 0.979201212547653,
+        "gpt-5.6-sol": 0.9863118287200278,
+        "gpt-6.1-sol": 0.9920795405521152
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.9920795405521152,
+      "q1": 0.984534174676934,
+      "q3": 0.9919903259955285,
+      "general_panel_iqr": 0.007456151318594451,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 0.9809624469472951,
+        "raw_native_delta": 0.01111709360482016,
+        "direction_adjusted_delta": 0.01111709360482016,
+        "gap_in_general_panel_iqr": 1.4909962432087323,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 0.9809624469472951,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Local conventional task baseline; strongest specialist unverified",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "B01",
+      "task": "Spike sorting and event detection",
+      "family_code": "B",
+      "metric": "mean_gt_accuracy",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.0,
+        "gpt-5-2025-08-07": 0.0803921568627451,
+        "gpt-5.6-sol": 0.8749905140758875,
+        "gpt-6.1-sol": 0.7504504504504504
+      },
+      "best_general_models": [
+        "gpt-5.6-sol"
+      ],
+      "best_general_score": 0.8749905140758875,
+      "q1": 0.06029411764705883,
+      "q3": 0.7815854663568097,
+      "general_panel_iqr": 0.7212913487097509,
+      "best_specialist": {
+        "methods": [
+          "mountainsort5"
+        ],
+        "score": 0.9408960583730381,
+        "raw_native_delta": -0.06590554429715068,
+        "direction_adjusted_delta": -0.06590554429715068,
+        "gap_in_general_panel_iqr": -0.09137159958322362,
+        "classes": {
+          "raw": "specialist_better",
+          "iqr_0.1": "within_band",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "best_available_reference": {
+        "methods": [
+          "mountainsort5"
+        ],
+        "score": 0.9408960583730381,
+        "raw_native_delta": -0.06590554429715068,
+        "direction_adjusted_delta": -0.06590554429715068,
+        "gap_in_general_panel_iqr": -0.09137159958322362,
+        "classes": {
+          "raw": "specialist_better",
+          "iqr_0.1": "within_band",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "mountainsort5",
+          "score": 0.9408960583730381,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "local_specialist_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "MountainSort5 fixed configuration; one standard stationary simulation, not current SOTA",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "B03",
+      "task": "Rigid drift recovery from synthetic ephys rasters",
+      "family_code": "B",
+      "metric": "recording_mean_motion_rmse_um",
+      "direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 12.704563694454103,
+        "gpt-5-2025-08-07": 3.9114990756015873,
+        "gpt-5.6-sol": 3.6041552208003775,
+        "gpt-6.1-sol": 5.275098380741698
+      },
+      "best_general_models": [
+        "gpt-5.6-sol"
+      ],
+      "best_general_score": 3.6041552208003775,
+      "q1": 3.834663111901285,
+      "q3": 7.132464709169799,
+      "general_panel_iqr": 3.297801597268514,
+      "best_specialist": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 4.850138078041406,
+        "raw_native_delta": -1.245982857241028,
+        "direction_adjusted_delta": 1.245982857241028,
+        "gap_in_general_panel_iqr": 0.37782226143411546,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 4.850138078041406,
+        "raw_native_delta": -1.245982857241028,
+        "direction_adjusted_delta": 1.245982857241028,
+        "gap_in_general_panel_iqr": 0.37782226143411546,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 4.850138078041406,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Official SI decentralized registration numerical code on same synthetic voltage-derived peak rasters;physical injected displacement truth,not realdrift/globalSOTA",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "B07",
+      "task": "Lossless Neuropixels voltage compression",
+      "family_code": "B",
+      "metric": "encoded_bits_per_int16_sample",
+      "direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 6.63548723856608,
+        "gpt-5-2025-08-07": 7.210052490234375,
+        "gpt-5.6-sol": 7.0198300679524746,
+        "gpt-6.1-sol": 7.2145891189575195
+      },
+      "best_general_models": [
+        "gpt-4.1-2025-04-14"
+      ],
+      "best_general_score": 6.63548723856608,
+      "q1": 6.923744360605875,
+      "q3": 7.211186647415161,
+      "general_panel_iqr": 0.2874422868092861,
+      "best_specialist": {
+        "methods": [
+          "delta-blosc-zstd"
+        ],
+        "score": 7.683237393697103,
+        "raw_native_delta": -1.0477501551310224,
+        "direction_adjusted_delta": 1.0477501551310224,
+        "gap_in_general_panel_iqr": 3.6450800846369202,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "best_available_reference": {
+        "methods": [
+          "delta-blosc-zstd"
+        ],
+        "score": 7.683237393697103,
+        "raw_native_delta": -1.0477501551310224,
+        "direction_adjusted_delta": 1.0477501551310224,
+        "gap_in_general_panel_iqr": 3.6450800846369202,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "candidates": [
+        {
+          "model": "delta-blosc-zstd",
+          "score": 7.683237393697103,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "local_specialist_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "task-baseline",
+          "score": 11.412251154581707,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "wavpack-high",
+          "score": 7.690052032470703,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "local_specialist_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Frozen WavPack5.8.0 lossless very-high mode on16 real shortchunks, all384channels, exact-byte reconstruction; delta-Blosc alternative retained; not full streaming/paper/current-global-best benchmark",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "B08",
+      "task": "Timing-bounded spike-event compression",
+      "family_code": "B",
+      "metric": "mean_encoded_bits_per_event_50us",
+      "direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 10.79480738185973,
+        "gpt-5-2025-08-07": 8.1652552072995,
+        "gpt-5.6-sol": 7.585598308443002,
+        "gpt-6.1-sol": 8.636801620045114
+      },
+      "best_general_models": [
+        "gpt-5.6-sol"
+      ],
+      "best_general_score": 7.585598308443002,
+      "q1": 8.020340982585376,
+      "q3": 9.176303060498768,
+      "general_panel_iqr": 1.155962077913392,
+      "best_specialist": {
+        "methods": [
+          "spikepack"
+        ],
+        "score": 8.142312213400157,
+        "raw_native_delta": -0.5567139049571548,
+        "direction_adjusted_delta": 0.5567139049571548,
+        "gap_in_general_panel_iqr": 0.48160222172864864,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "best_available_reference": {
+        "methods": [
+          "spikepack"
+        ],
+        "score": 8.142312213400157,
+        "raw_native_delta": -0.5567139049571548,
+        "direction_adjusted_delta": 0.5567139049571548,
+        "gap_in_general_panel_iqr": 0.48160222172864864,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "spikepack",
+          "score": 8.142312213400157,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "local_specialist_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "task-baseline",
+          "score": 11.918156003544585,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Original Spikepack100us on alternateFALCONdata;timing intentionally lossy;ambiguous utility whitelist prevents clean model-version inference;excluded from aggregate comparisons",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "C05",
+      "task": "Calcium-to-spike inference",
+      "family_code": "C",
+      "metric": "median_pearson_40ms",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.19131056627303558,
+        "gpt-5-2025-08-07": 0.42015600087620875,
+        "gpt-5.6-sol": 0.45219611758394257,
+        "gpt-6.1-sol": 0.46789571463086227
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.46789571463086227,
+      "q1": 0.36294464222541545,
+      "q3": 0.45612101684567247,
+      "general_panel_iqr": 0.09317637462025702,
+      "best_specialist": {
+        "methods": [
+          "rupprecht"
+        ],
+        "score": 0.46059773024801476,
+        "raw_native_delta": 0.007297984382847511,
+        "direction_adjusted_delta": 0.007297984382847511,
+        "gap_in_general_panel_iqr": 0.07832440801212384,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "within_band",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "best_available_reference": {
+        "methods": [
+          "rupprecht"
+        ],
+        "score": 0.46059773024801476,
+        "raw_native_delta": 0.007297984382847511,
+        "direction_adjusted_delta": 0.007297984382847511,
+        "gap_in_general_panel_iqr": 0.07832440801212384,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "within_band",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "friedrich",
+          "score": 0.4416890337317569,
+          "specialist": true,
+          "n_slices": 5,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "oasis-default",
+          "score": 0.24049668926835013,
+          "specialist": true,
+          "n_slices": 5,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "raw-calcium",
+          "score": 0.19174491274261166,
+          "specialist": false,
+          "n_slices": 5,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "rupprecht",
+          "score": 0.46059773024801476,
+          "specialist": true,
+          "n_slices": 5,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [
+        {
+          "model": "deneux",
+          "reason": "Incomplete or duplicate slice coverage; no imputation or per-slice winner stitching."
+        },
+        {
+          "model": "speiser",
+          "reason": "Incomplete or duplicate slice coverage; no imputation or per-slice winner stitching."
+        }
+      ],
+      "reference_evidence": "Test-selected envelope among up to four inspected 2017 archives, not current SOTA",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "C06",
+      "task": "Calcium to electrical expected spike counts",
+      "family_code": "C",
+      "metric": "animal_mean_neuron_pearson_smoothed200ms",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.5283479568442431,
+        "gpt-5-2025-08-07": 0.49931548987762076,
+        "gpt-5.6-sol": 0.8564154409076183,
+        "gpt-6.1-sol": 0.8675919925239051
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.8675919925239051,
+      "q1": 0.5210898401025875,
+      "q3": 0.85920957881169,
+      "general_panel_iqr": 0.3381197387091025,
+      "best_specialist": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 0.7155173445914688,
+        "raw_native_delta": 0.1520746479324363,
+        "direction_adjusted_delta": 0.1520746479324363,
+        "gap_in_general_panel_iqr": 0.449765661457795,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 0.7155173445914688,
+        "raw_native_delta": 0.1520746479324363,
+        "direction_adjusted_delta": 0.1520746479324363,
+        "gap_in_general_panel_iqr": 0.449765661457795,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 0.7155173445914688,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "local_specialist_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "OASIS AR1 with training-only scale and200ms smoothing;custom heldoutfish endpoint,not strongest CASCADE;global checkpoints overlaptestsource",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "D02",
+      "task": "Current-to-voltage prediction",
+      "family_code": "D",
+      "metric": "rmse_mV",
+      "direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 2.477160409962793,
+        "gpt-5-2025-08-07": 1.351431040403821,
+        "gpt-5.6-sol": 0.21777564495208945,
+        "gpt-6.1-sol": 0.23553334017447436
+      },
+      "best_general_models": [
+        "gpt-5.6-sol"
+      ],
+      "best_general_score": 0.21777564495208945,
+      "q1": 0.23109391636887813,
+      "q3": 1.6328633827935641,
+      "general_panel_iqr": 1.401769466424686,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 0.2207856527515162,
+        "raw_native_delta": -0.003010007799426756,
+        "direction_adjusted_delta": 0.003010007799426756,
+        "gap_in_general_panel_iqr": 0.002147291599312687,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "within_band",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 0.2207856527515162,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Local conventional task baseline; strongest specialist unverified",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "E01",
+      "task": "Neural rate inference and co-smoothing",
+      "family_code": "E",
+      "metric": "bits_per_spike",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": -4.27607211958728,
+        "gpt-5-2025-08-07": -2.547485403373772,
+        "gpt-5.6-sol": 0.20350701311578648,
+        "gpt-6.1-sol": 0.20737613865378843
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.20737613865378843,
+      "q1": -2.979632082427149,
+      "q3": 0.20447429450028698,
+      "general_panel_iqr": 3.1841063769274363,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 0.07200097225994366,
+        "raw_native_delta": 0.13537516639384478,
+        "direction_adjusted_delta": 0.13537516639384478,
+        "gap_in_general_panel_iqr": 0.04251590567915561,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "within_band",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 0.07200097225994366,
+          "specialist": false,
+          "n_slices": 3,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Local conventional task baseline; strongest specialist unverified",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "E06",
+      "task": "Causal population calcium forecasting",
+      "family_code": "E",
+      "metric": "mse_dff",
+      "direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.0029125121760502594,
+        "gpt-5-2025-08-07": 0.004443808369689206,
+        "gpt-5.6-sol": 0.0027376364848987244,
+        "gpt-6.1-sol": 0.00250692044946079
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.00250692044946079,
+      "q1": 0.002679957476039241,
+      "q3": 0.003295336224459996,
+      "general_panel_iqr": 0.0006153787484207548,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 0.002912296579635152,
+        "raw_native_delta": -0.000405376130174362,
+        "direction_adjusted_delta": 0.000405376130174362,
+        "gap_in_general_panel_iqr": 0.6587424918632272,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "candidates": [
+        {
+          "model": "mean-baseline",
+          "score": 0.0032670345319371612,
+          "specialist": false,
+          "n_slices": 2,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "task-baseline",
+          "score": 0.002912296579635152,
+          "specialist": false,
+          "n_slices": 2,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Official ZAPBench NLinear architecture,local analytical ridge1 optimization;shared256neurons,onebrain,two dependent slices,not published/globalbest",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "F04",
+      "task": "Retinal or other sensory encoding",
+      "family_code": "F",
+      "metric": "poisson_nll",
+      "direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 2.105494692482995,
+        "gpt-5-2025-08-07": 1.6302367572480365,
+        "gpt-5.6-sol": 1.5506315044426546,
+        "gpt-6.1-sol": 1.5108013652511572
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 1.5108013652511572,
+      "q1": 1.5406739696447802,
+      "q3": 1.749051241056776,
+      "general_panel_iqr": 0.2083772714119958,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 1.5514570822549862,
+        "raw_native_delta": -0.040655717003829084,
+        "direction_adjusted_delta": 0.040655717003829084,
+        "gap_in_general_panel_iqr": 0.195106293159229,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 1.5514570822549862,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Local conventional task baseline; strongest specialist unverified",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "G01",
+      "task": "Robust cross-day motor decoding",
+      "family_code": "G",
+      "metric": "r2_variance_weighted",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.08219552785158157,
+        "gpt-5-2025-08-07": -0.224704814552475,
+        "gpt-5.6-sol": 0.09128554368236495,
+        "gpt-6.1-sol": 0.09464088827371597
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.09464088827371597,
+      "q1": 0.005470442250567427,
+      "q3": 0.0921243798302027,
+      "general_panel_iqr": 0.08665393757963527,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": -0.22748267650604248,
+        "raw_native_delta": 0.32212356477975845,
+        "direction_adjusted_delta": 0.32212356477975845,
+        "gap_in_general_panel_iqr": 3.7173563461409445,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": -0.22748267650604248,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Local conventional task baseline; strongest specialist unverified",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "H01",
+      "task": "Motor imagery and noninvasive BCI",
+      "family_code": "H",
+      "metric": "balanced_accuracy",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.5513833992094861,
+        "gpt-5-2025-08-07": 0.5770750988142292,
+        "gpt-5.6-sol": 0.6488801054018445,
+        "gpt-6.1-sol": 0.6979578392621871
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.6979578392621871,
+      "q1": 0.5706521739130435,
+      "q3": 0.6611495388669302,
+      "general_panel_iqr": 0.09049736495388672,
+      "best_specialist": {
+        "methods": [
+          "pyriemann-aligned"
+        ],
+        "score": 0.6139657444005271,
+        "raw_native_delta": 0.08399209486166004,
+        "direction_adjusted_delta": 0.08399209486166004,
+        "gap_in_general_panel_iqr": 0.9281164695177427,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "best_available_reference": {
+        "methods": [
+          "pyriemann-aligned"
+        ],
+        "score": 0.6139657444005271,
+        "raw_native_delta": 0.08399209486166004,
+        "direction_adjusted_delta": 0.08399209486166004,
+        "gap_in_general_panel_iqr": 0.9281164695177427,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "candidates": [
+        {
+          "model": "pyriemann-aligned",
+          "score": 0.6139657444005271,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "local_specialist_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "pyriemann-ts-svm",
+          "score": 0.6123188405797102,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "local_specialist_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "task-baseline",
+          "score": 0.5464426877470356,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "pyRiemann subject-centered tangent SVM; post-hoc domain reference, explicit group IDs/offline unlabeled adaptation differ",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "H02",
+      "task": "ERP/P300 target decoding",
+      "family_code": "H",
+      "metric": "subject_equal_roc_auc",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.5730845665809128,
+        "gpt-5-2025-08-07": 0.7457725743654655,
+        "gpt-5.6-sol": 0.7571945899092973,
+        "gpt-6.1-sol": 0.7885365446735593
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.7885365446735593,
+      "q1": 0.7026005724193274,
+      "q3": 0.7650300786003628,
+      "general_panel_iqr": 0.06242950618103538,
+      "best_specialist": {
+        "methods": [
+          "xdawn-tslr-tuned"
+        ],
+        "score": 0.7785407674558235,
+        "raw_native_delta": 0.009995777217735813,
+        "direction_adjusted_delta": 0.009995777217735813,
+        "gap_in_general_panel_iqr": 0.1601130271437626,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "best_available_reference": {
+        "methods": [
+          "xdawn-tslr-tuned"
+        ],
+        "score": 0.7785407674558235,
+        "raw_native_delta": 0.009995777217735813,
+        "direction_adjusted_delta": 0.009995777217735813,
+        "gap_in_general_panel_iqr": 0.1601130271437626,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 0.7218908794859147,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "xdawn-tslr",
+          "score": 0.7612303198299977,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "local_specialist_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "xdawn-tslr-tuned",
+          "score": 0.7785407674558235,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "local_specialist_reproduction_train_cv_followup"
+          ],
+          "source": "H02-replication references"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Fixed pyRiemann xDAWN/tangent-space logistic pipeline, same subject-disjoint source and train-only fitting; no current-SOTA claim",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "H08",
+      "task": "Sleep staging and sleep onset",
+      "family_code": "H",
+      "metric": "macro_f1_sleep",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.7252734503405033,
+        "gpt-5-2025-08-07": 0.6783412614813794,
+        "gpt-5.6-sol": 0.8027158427646084,
+        "gpt-6.1-sol": 0.7922358672484364
+      },
+      "best_general_models": [
+        "gpt-5.6-sol"
+      ],
+      "best_general_score": 0.8027158427646084,
+      "q1": 0.7135404031257223,
+      "q3": 0.7948558611274794,
+      "general_panel_iqr": 0.0813154580017571,
+      "best_specialist": {
+        "methods": [
+          "yasa-eeg"
+        ],
+        "score": 0.7647374833018176,
+        "raw_native_delta": 0.03797835946279082,
+        "direction_adjusted_delta": 0.03797835946279082,
+        "gap_in_general_panel_iqr": 0.4670496901335804,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "best_available_reference": {
+        "methods": [
+          "yasa-eeg"
+        ],
+        "score": 0.7647374833018176,
+        "raw_native_delta": 0.03797835946279082,
+        "direction_adjusted_delta": 0.03797835946279082,
+        "gap_in_general_panel_iqr": 0.4670496901335804,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 0.6762869195929857,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "yasa-eeg",
+          "score": 0.7647374833018176,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "pretrained_specialist"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Published YASA EEG checkpoint on identical night signals; NSRR pretraining and target training budgets differ",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "H16",
+      "task": "EEG ocular/muscle artifact repair",
+      "family_code": "H",
+      "metric": "temporal_rrmse",
+      "direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.6570072770118713,
+        "gpt-5-2025-08-07": 0.6595370769500732,
+        "gpt-5.6-sol": 0.4616066515445709,
+        "gpt-6.1-sol": 0.45338359475135803
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.45338359475135803,
+      "q1": 0.4595508873462677,
+      "q3": 0.6576397269964218,
+      "general_panel_iqr": 0.1980888396501541,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 0.6539532784253276,
+        "raw_native_delta": -0.20056968367396955,
+        "direction_adjusted_delta": 0.20056968367396955,
+        "gap_in_general_panel_iqr": 1.0125238959862497,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 0.6539532784253276,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Local conventional task baseline; strongest specialist unverified",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "I07",
+      "task": "fNIRS motor/hemodynamic decoding",
+      "family_code": "I",
+      "metric": "balanced_accuracy",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.47309941520467835,
+        "gpt-5-2025-08-07": 0.5950292397660819,
+        "gpt-5.6-sol": 0.4361111111111111,
+        "gpt-6.1-sol": 0.5505847953216374
+      },
+      "best_general_models": [
+        "gpt-5-2025-08-07"
+      ],
+      "best_general_score": 0.5950292397660819,
+      "q1": 0.46385233918128654,
+      "q3": 0.5616959064327485,
+      "general_panel_iqr": 0.09784356725146193,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 0.48464912280701755,
+        "raw_native_delta": 0.11038011695906436,
+        "direction_adjusted_delta": 0.11038011695906436,
+        "gap_in_general_panel_iqr": 1.1281285020545397,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 0.48464912280701755,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Local conventional task baseline; strongest specialist unverified",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "I10",
+      "task": "MRI quality assessment across sites",
+      "family_code": "I",
+      "metric": "balanced_accuracy",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.6326315789473684,
+        "gpt-5-2025-08-07": 0.6707017543859649,
+        "gpt-5.6-sol": 0.6352631578947369,
+        "gpt-6.1-sol": 0.6378947368421053
+      },
+      "best_general_models": [
+        "gpt-5-2025-08-07"
+      ],
+      "best_general_score": 0.6707017543859649,
+      "q1": 0.6346052631578947,
+      "q3": 0.6460964912280702,
+      "general_panel_iqr": 0.011491228070175552,
+      "best_specialist": {
+        "methods": [
+          "mriqc-rfc-2017"
+        ],
+        "score": 0.6136842105263158,
+        "raw_native_delta": 0.05701754385964908,
+        "direction_adjusted_delta": 0.05701754385964908,
+        "gap_in_general_panel_iqr": 4.961832061068649,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 0.6340350877192983,
+        "raw_native_delta": 0.036666666666666625,
+        "direction_adjusted_delta": 0.036666666666666625,
+        "gap_in_general_panel_iqr": 3.1908396946564532,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "candidates": [
+        {
+          "model": "mriqc-rfc-2017",
+          "score": 0.6136842105263158,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "task-baseline",
+          "score": 0.6340350877192983,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Archived MRIQC2017 predictions, same DS030 rows; different training labels/features/tuning",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "J08",
+      "task": "Fluorescent synaptic puncta segmentation and quantification",
+      "family_code": "J",
+      "metric": "instance_f1_iou50_multirater",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.0,
+        "gpt-5-2025-08-07": 0.24323205422323543,
+        "gpt-5.6-sol": 0.6433683295437704,
+        "gpt-6.1-sol": 0.57563018487252
+      },
+      "best_general_models": [
+        "gpt-5.6-sol"
+      ],
+      "best_general_score": 0.6433683295437704,
+      "q1": 0.18242404066742657,
+      "q3": 0.5925647210403326,
+      "general_panel_iqr": 0.4101406803729061,
+      "best_specialist": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 0.8625343802858836,
+        "raw_native_delta": -0.21916605074211315,
+        "direction_adjusted_delta": -0.21916605074211315,
+        "gap_in_general_panel_iqr": -0.5343679894002323,
+        "classes": {
+          "raw": "specialist_better",
+          "iqr_0.1": "specialist_better",
+          "iqr_0.5": "specialist_better"
+        }
+      },
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 0.8625343802858836,
+        "raw_native_delta": -0.21916605074211315,
+        "direction_adjusted_delta": -0.21916605074211315,
+        "gap_in_general_panel_iqr": -0.5343679894002323,
+        "classes": {
+          "raw": "specialist_better",
+          "iqr_0.1": "specialist_better",
+          "iqr_0.5": "specialist_better"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 0.8625343802858836,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "archived_predictions_rescored"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Author archived StarDist masks, exact two fields/five human raters; different optimization history",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "K01",
+      "task": "Electrophysiological cell-type classification",
+      "family_code": "K",
+      "metric": "macro_f1",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.9277844018905058,
+        "gpt-5-2025-08-07": 0.9321663019693655,
+        "gpt-5.6-sol": 0.9409145106376866,
+        "gpt-6.1-sol": 0.943074240159442
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.943074240159442,
+      "q1": 0.9310708269496505,
+      "q3": 0.9414544430181254,
+      "general_panel_iqr": 0.010383616068474932,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 0.9299751005554491,
+        "raw_native_delta": 0.013099139603992893,
+        "direction_adjusted_delta": 0.013099139603992893,
+        "gap_in_general_panel_iqr": 1.2615200251637189,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 0.9299751005554491,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Local conventional task baseline; strongest specialist unverified",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "K04",
+      "task": "Cortical-layer label transfer",
+      "family_code": "K",
+      "metric": "section_equal_macro_f1_7classes",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.5290441742064551,
+        "gpt-5-2025-08-07": 0.5175064764639699,
+        "gpt-5.6-sol": 0.5050711426219323,
+        "gpt-6.1-sol": 0.5505501906955991
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.5505501906955991,
+      "q1": 0.5143976430034605,
+      "q3": 0.5344206783287411,
+      "general_panel_iqr": 0.020023035325280603,
+      "best_specialist": {
+        "methods": [
+          "singler"
+        ],
+        "score": 0.5545850046572878,
+        "raw_native_delta": -0.004034813961688699,
+        "direction_adjusted_delta": -0.004034813961688699,
+        "gap_in_general_panel_iqr": -0.2015086072686712,
+        "classes": {
+          "raw": "specialist_better",
+          "iqr_0.1": "specialist_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "best_available_reference": {
+        "methods": [
+          "singler"
+        ],
+        "score": 0.5545850046572878,
+        "raw_native_delta": -0.004034813961688699,
+        "direction_adjusted_delta": -0.004034813961688699,
+        "gap_in_general_panel_iqr": -0.2015086072686712,
+        "classes": {
+          "raw": "specialist_better",
+          "iqr_0.1": "specialist_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "singler",
+          "score": 0.5545850046572878,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "local_specialist_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "task-baseline",
+          "score": 0.5193260844488914,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Official SingleR0.5.0 on same500 genes; donor-layer mean profiles from training only. One test donor; supervised layer transfer, not spatial clustering leaderboard",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "K05",
+      "task": "Supervised bulk RNA to marker-positive fractions",
+      "family_code": "K",
+      "metric": "donor_block_macro_rmse",
+      "direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.04239776846005213,
+        "gpt-5-2025-08-07": 0.05803003834470389,
+        "gpt-5.6-sol": 0.06742367203503653,
+        "gpt-6.1-sol": 0.0552287462339175
+      },
+      "best_general_models": [
+        "gpt-4.1-2025-04-14"
+      ],
+      "best_general_score": 0.04239776846005213,
+      "q1": 0.05202100179045116,
+      "q3": 0.060378446767287056,
+      "general_panel_iqr": 0.008357444976835895,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 0.05759104442612498,
+        "raw_native_delta": -0.015193275966072846,
+        "direction_adjusted_delta": 0.015193275966072846,
+        "gap_in_general_panel_iqr": 1.8179331133119798,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 0.05759104442612498,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Local conventional task baseline; strongest specialist unverified",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "K06",
+      "task": "Optotagged PV/SST classification from waveform",
+      "family_code": "K",
+      "metric": "class_balanced_mouse_accuracy",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.810813492063492,
+        "gpt-5-2025-08-07": 0.8548611111111111,
+        "gpt-5.6-sol": 0.8777777777777778,
+        "gpt-6.1-sol": 0.8902777777777777
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.8902777777777777,
+      "q1": 0.8438492063492062,
+      "q3": 0.8809027777777778,
+      "general_panel_iqr": 0.037053571428571574,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 0.8381944444444444,
+        "raw_native_delta": 0.05208333333333337,
+        "direction_adjusted_delta": 0.05208333333333337,
+        "gap_in_general_panel_iqr": 1.4056224899598349,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 0.8381944444444444,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Local conventional task baseline; strongest specialist unverified",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "L04",
+      "task": "Point-process estimation and goodness of fit",
+      "family_code": "L",
+      "metric": "bits_per_spike_train_mean",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": -6.664439464819634,
+        "gpt-5-2025-08-07": 2.81716688224358,
+        "gpt-5.6-sol": 3.1947434653493336,
+        "gpt-6.1-sol": 3.263821403265054
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 3.263821403265054,
+      "q1": 0.4467652954777763,
+      "q3": 3.2120129498282637,
+      "general_panel_iqr": 2.765247654350487,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 3.273675852044799,
+        "raw_native_delta": -0.009854448779745173,
+        "direction_adjusted_delta": -0.009854448779745173,
+        "gap_in_general_panel_iqr": -0.003563676752149647,
+        "classes": {
+          "raw": "specialist_better",
+          "iqr_0.1": "within_band",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 3.273675852044799,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Local conventional task baseline; strongest specialist unverified",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "L06",
+      "task": "Spiking-neuron posterior inference",
+      "family_code": "L",
+      "metric": "c2st_accuracy_2000",
+      "direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.7063249886035919,
+        "gpt-5-2025-08-07": 0.5353500038385391,
+        "gpt-5.6-sol": 0.5125000059604645,
+        "gpt-6.1-sol": 0.5056000024080276
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.5056000024080276,
+      "q1": 0.5107750050723553,
+      "q3": 0.5780937500298023,
+      "general_panel_iqr": 0.06731874495744705,
+      "best_specialist": {
+        "methods": [
+          "polya-gamma"
+        ],
+        "score": 0.4940999984741211,
+        "raw_native_delta": 0.011500003933906489,
+        "direction_adjusted_delta": -0.011500003933906489,
+        "gap_in_general_panel_iqr": -0.170829149313104,
+        "classes": {
+          "raw": "specialist_better",
+          "iqr_0.1": "specialist_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "best_available_reference": {
+        "methods": [
+          "polya-gamma"
+        ],
+        "score": 0.4940999984741211,
+        "raw_native_delta": 0.011500003933906489,
+        "direction_adjusted_delta": -0.011500003933906489,
+        "gap_in_general_panel_iqr": -0.170829149313104,
+        "classes": {
+          "raw": "specialist_better",
+          "iqr_0.1": "specialist_better",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "laplace",
+          "score": 0.5462499976158142,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "polya-gamma",
+          "score": 0.4940999984741211,
+          "specialist": true,
+          "n_slices": 1,
+          "reference_types": [
+            "local_specialist_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Local Polya-Gamma Gibbs adaptation; ten synthetic GLM observations, known likelihood, custom2000draw C2ST. Same sampler family as archived reference, unequal implementation effort; no originalSBI/globalSOTAclaim",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "M01",
+      "task": "Conditional mouse-choice prediction",
+      "family_code": "M",
+      "metric": "mouse_equal_binary_log_loss",
+      "direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.4741733542464717,
+        "gpt-5-2025-08-07": 0.4492946398022002,
+        "gpt-5.6-sol": 0.436515244310296,
+        "gpt-6.1-sol": 0.43663393063728134
+      },
+      "best_general_models": [
+        "gpt-5.6-sol"
+      ],
+      "best_general_score": 0.436515244310296,
+      "q1": 0.436604259055535,
+      "q3": 0.45551431841326806,
+      "general_panel_iqr": 0.018910059357733044,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "behavioral-glm"
+        ],
+        "score": 0.46387700122945447,
+        "raw_native_delta": -0.027361756919158486,
+        "direction_adjusted_delta": 0.027361756919158486,
+        "gap_in_general_panel_iqr": 1.4469418842923527,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "general_better",
+          "iqr_0.5": "general_better"
+        }
+      },
+      "candidates": [
+        {
+          "model": "behavioral-glm",
+          "score": 0.46387700122945447,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_domain_reference"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "task-baseline",
+          "score": 0.6930802459843858,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Source-inspired pooled behavioral GLM with signed-contrast/history/block basis and train-mouse weighting; not original peranimal fits or global best",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "M04",
+      "task": "Cognitive model and parameter recovery",
+      "family_code": "M",
+      "metric": "range_normalized_mae",
+      "direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.07069645781617521,
+        "gpt-5-2025-08-07": 0.07069656357491515,
+        "gpt-5.6-sol": 0.05822260584692529,
+        "gpt-6.1-sol": 0.058221490095125596
+      },
+      "best_general_models": [
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 0.058221490095125596,
+      "q1": 0.058222326908975365,
+      "q3": 0.0706964842558602,
+      "general_panel_iqr": 0.012474157346884833,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "canonical-posterior"
+        ],
+        "score": 0.05822286923267737,
+        "raw_native_delta": -1.3791375517713256e-06,
+        "direction_adjusted_delta": 1.3791375517713256e-06,
+        "gap_in_general_panel_iqr": 0.00011055957636414913,
+        "classes": {
+          "raw": "general_better",
+          "iqr_0.1": "within_band",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "canonical-mle",
+          "score": 0.0706964586193028,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "canonical-posterior",
+          "score": 0.05822286923267737,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction_posthoc"
+          ],
+          "source": "retained comparison chart_rows"
+        },
+        {
+          "model": "midpoint",
+          "score": 0.21800332418606802,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "local_reproduction"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Frozen local MLE; recovery score favors posterior medians, post-hoc reference retained separately",
+      "current_global_sota_verified": false
+    },
+    {
+      "benchmark_id": "N05",
+      "task": "NWB data loading, units and reproducibility",
+      "family_code": "N",
+      "metric": "field_accuracy",
+      "direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.0,
+        "gpt-5-2025-08-07": 1.0,
+        "gpt-5.6-sol": 1.0,
+        "gpt-6.1-sol": 1.0
+      },
+      "best_general_models": [
+        "gpt-5-2025-08-07",
+        "gpt-5.6-sol",
+        "gpt-6.1-sol"
+      ],
+      "best_general_score": 1.0,
+      "q1": 0.75,
+      "q3": 1.0,
+      "general_panel_iqr": 0.25,
+      "best_specialist": null,
+      "best_available_reference": {
+        "methods": [
+          "task-baseline"
+        ],
+        "score": 1.0,
+        "raw_native_delta": 0.0,
+        "direction_adjusted_delta": 0.0,
+        "gap_in_general_panel_iqr": 0.0,
+        "classes": {
+          "raw": "numerical_tie",
+          "iqr_0.1": "within_band",
+          "iqr_0.5": "within_band"
+        }
+      },
+      "candidates": [
+        {
+          "model": "task-baseline",
+          "score": 1.0,
+          "specialist": false,
+          "n_slices": 1,
+          "reference_types": [
+            "deterministic_audited_calculation"
+          ],
+          "source": "retained comparison chart_rows"
+        }
+      ],
+      "excluded_candidates": [],
+      "reference_evidence": "Audited deterministic reference, correct by construction",
+      "current_global_sota_verified": false
+    }
+  ],
+  "selection": "Best test-score task mean among four retained general procedures; best complete specialist method separately. Post-hoc, unequal candidate pools and repair effort; not deployment selection.",
+  "normalization": "Direction-adjusted best-general minus comparator, divided by IQR of the original four general-model task means; inclusive linear quartiles. References are not added to that scale.",
+  "thresholds": [
+    0.1,
+    0.5
+  ],
+  "tie_tolerance": 1e-09,
+  "input_sha256": {
+    "analysis/generation-comparison-v2/generation-comparison.json": "e9e1324936e7fbda528218c10b9898fd17e1bdfdbf38faf5ba7b978dbf8e1d26",
+    "website/data/H02-replication.json": "b2ad4bd938057dd0caf4167b07bdbaf23eceb8c25dbb18fb51a60dc370c3d594",
+    "registry/task-facets-v1.json": "4bafc0e4345ced25be8edbc68c052a3885dc8cca73070e2afe1368365e7b5d5b",
+    "registry/catalog.json": "2b4f7bca21f5fa1f68f812f3b25a9dda4965c4e76f2b471721f2b82097575b05"
+  }
+}

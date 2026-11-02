@@ -1,3 +1,10 @@
+# Specialist comparison v1 — 2026-11-01
+
+- Relabeled the project Neuroscience Analysis Code Generation, explicitly separating code-generated/local-fitted procedures from direct pretrained-model inference.
+- Added a separate best-observed-general versus complete-specialist analysis, with raw, 0.1-IQR and 0.5-IQR tables and explicit 14/30 specialist coverage.
+- Added all-reference context, stronger H02 specialist supplement, complete-method C05 selection, candidate exclusions, native differences and source-bound checks.
+- Original scores and generation/lag reports are unchanged. See [new report](../analysis/specialist-frontier-v1/report.md).
+
 # Task facets v1 — 2026-11-01
 
 - Preserved broad categories; added input type, analysis task and generalization filters.

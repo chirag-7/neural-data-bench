@@ -1,6 +1,7 @@
 {
   "type": "In-memory source-render and direct-handler checks; not real-browser interaction or layout QA",
   "routes": 299,
+  "separate_specialist_frontier": "passed · six scope/band summaries, native scores, missing specialists, facets, empty state and immutable measurements",
   "scientific_facets": "passed · 92 annotations, all facet values, AND intersections, nested combinations, empty subsets, persisted controls, direction-aware counts and immutable lag scales",
   "ordinal_lag_tables_and_three_filters": "passed · 180 source task-pairs; all six comparisons and both IQR sensitivity bands",
   "measured_tasks_with_bar_and_line_plots": 30,
