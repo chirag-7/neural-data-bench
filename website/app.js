@@ -382,11 +382,12 @@ function explorer(fam = "") {
   const f = catalog.families.find((f) => f.code === fam),
     es = catalog.entries.filter((e) => !fam || e.family_code === fam),
     selectedCategory = fam || catalog.entries.find((entry) => entry.id === selectedTask)?.family_code || catalog.families[0].code,
-    scored = categoryTasks(selectedCategory, true),
-    choices = scored.length ? scored : categoryTasks(selectedCategory);
+    scored = categoryTasks(selectedCategory, true).filter(e=>facetMatches(e.id,false)),
+    choices = (listMode === "measured" ? scored : categoryTasks(selectedCategory).filter(e=>facetMatches(e.id,false)));
   if (choices.length && !choices.some((entry) => entry.id === selectedTask)) selectedTask = choices[0].id;
   $("#app").innerHTML =
-    `<p class="eyebrow">General models × specialist methods</p><h1>${f ? esc(CATEGORIES[fam] || f.name) : "Neuroscience benchmark results"}</h1><p class="lede">${f ? esc(f.tasks) : "Explore measured performance by task, compare general models with verified specialist references, and follow each result to its data and evaluation protocol. Models generate analysis code, which is then fitted locally."}</p>${!fam ? `<p class="note">Choose a category, then a benchmark. ${route("analysis/practical", "Version changes, repaired runs & current specialists →")} ${route("analysis/report", "Previous cross-benchmark findings →")}</p>` : ""}${!fam ? `<div class="stats"><div class="stat"><strong>${summary.measured_tasks}</strong><span>tasks with model attempts</span></div><div class="stat"><strong>${summary.measured_families} / ${catalog.families.length}</strong><span>categories represented</span></div><div class="stat"><strong>${MODELS.length}</strong><span>general models evaluated</span></div><div class="stat"><strong>${summary.model_attempts}</strong><span>model × slice attempts</span></div></div>` : ""}${choices.length ? `<div class="toolbar benchmark-jump" aria-label="Explore by category and benchmark"><label>Category <select id="category-picker">${categoryOptions(selectedCategory)}</select></label><label>Benchmark <select id="benchmark-picker">${taskOptions(choices, selectedTask)}</select></label>${route("benchmark/" + selectedTask, "Open benchmark →", "button secondary")}</div>${fam ? '<div id="featured-chart"></div>' : ""}` : `<div class="note">No active benchmarks in this category.</div>`}<div class="section-head"><h2>${f ? "Benchmarks in this category" : "Explore benchmark categories"}</h2><span class="small">Native scores · no mixed-metric ranking</span></div><div class="toolbar"><input id="search" class="search" aria-label="Search benchmarks" placeholder="Search tasks, datasets or methods…" value="${esc(query)}"><select id="list-mode" aria-label="Result availability"><option value="measured" ${listMode === "measured" ? "selected" : ""}>Measured results</option><option value="all" ${listMode === "all" ? "selected" : ""}>All active candidates</option></select><a class="download-link" href="data/${comparisonActive ? "comparison-measurements.jsonl" : "measurements.csv"}" download>Download results ↓</a></div><div id="benchmark-directory"></div><p class="small" style="margin-top:17px">† Code-line format deviation; see strict-format analysis. A published task score is conditional on its frozen slice and procedure. ${comparisonActive ? "Directory scores use the current retained comparison results, including documented repairs." : "Directory scores use each task’s first submission."} H02’s replication tab includes its stronger train-CV specialist and repeated submissions. The highest inspected reference score does not establish current global SOTA. ${route("methods", "Read the methodology →")}</p>`;
+    `<p class="eyebrow">General models × specialist methods</p><h1>${f ? esc(CATEGORIES[fam] || f.name) : "Neuroscience benchmark results"}</h1><p class="lede">${f ? esc(f.tasks) : "Explore measured performance by task, compare general models with verified specialist references, and follow each result to its data and evaluation protocol. Models generate analysis code, which is then fitted locally."}</p>${!fam ? `<p class="note">Choose a category, then a benchmark. ${route("analysis/practical", "Version changes, repaired runs & current specialists →")} ${route("analysis/report", "Previous cross-benchmark findings →")}</p>` : ""}${!fam ? `<div class="stats"><div class="stat"><strong>${summary.measured_tasks}</strong><span>tasks with model attempts</span></div><div class="stat"><strong>${summary.measured_families} / ${catalog.families.length}</strong><span>categories represented</span></div><div class="stat"><strong>${MODELS.length}</strong><span>general models evaluated</span></div><div class="stat"><strong>${summary.model_attempts}</strong><span>model × slice attempts</span></div></div>` : ""}${facetToolbar(es.filter(e=>listMode === "all" || measured(e.id)).map(e=>e.id))}${choices.length ? `<div class="toolbar benchmark-jump" aria-label="Explore by category and benchmark"><label>Category <select id="category-picker">${categoryOptions(selectedCategory)}</select></label><label>Benchmark <select id="benchmark-picker">${taskOptions(choices, selectedTask)}</select></label>${route("benchmark/" + selectedTask, "Open benchmark →", "button secondary")}</div>${fam ? '<div id="featured-chart"></div>' : ""}` : `<div class="toolbar benchmark-jump"><label>Category <select id="category-picker">${categoryOptions(selectedCategory)}</select></label><label>Benchmark <select disabled aria-label="Benchmark"><option>No matches in this category</option></select></label></div><p class="note">No matching benchmarks in this category. Choose another category or clear the filters.</p>`}<div class="section-head"><h2>${f ? "Benchmarks in this category" : "Explore benchmark categories"}</h2><span class="small">Native scores · no mixed-metric ranking</span></div><div class="toolbar"><input id="search" class="search" aria-label="Search benchmarks" placeholder="Search tasks, datasets or methods…" value="${esc(query)}"><select id="list-mode" aria-label="Result availability"><option value="measured" ${listMode === "measured" ? "selected" : ""}>Measured results</option><option value="all" ${listMode === "all" ? "selected" : ""}>All active candidates</option></select><a class="download-link" href="data/${comparisonActive ? "comparison-measurements.jsonl" : "measurements.csv"}" download>Download results ↓</a></div><div id="benchmark-directory"></div><p class="small" style="margin-top:17px">† Code-line format deviation; see strict-format analysis. A published task score is conditional on its frozen slice and procedure. ${comparisonActive ? "Directory scores use the current retained comparison results, including documented repairs." : "Directory scores use each task’s first submission."} H02’s replication tab includes its stronger train-CV specialist and repeated submissions. The highest inspected reference score does not establish current global SOTA. ${route("methods", "Read the methodology →")}</p>`;
+  bindFacetToolbar(()=>explorer(fam));
   if ($("#mobile-category"))
     $("#mobile-category").onchange = (e) => {
       location.hash = e.target.value ? "#/category/" + e.target.value : "#/";
@@ -410,16 +411,16 @@ function explorer(fam = "") {
   };
   $("#list-mode").onchange = (e) => {
     listMode = e.target.value;
-    directory(es, !fam);
+    explorer(fam);
   };
   directory(es, !fam);
-  if (fam && scored.length) renderChart("#featured-chart", selectedTask, true);
+  if (fam && scored.some(e=>e.id===selectedTask)) renderChart("#featured-chart", selectedTask, true);
 }
 function directory(es, grouped = false) {
   const q = query.toLowerCase(),
     filtered = es.filter(
       (e) =>
-        (listMode === "all" || measured(e.id)) &&
+        facetMatches(e.id,false) && (listMode === "all" || measured(e.id)) &&
         (!q ||
           JSON.stringify([
             e.id,
@@ -762,7 +763,7 @@ function benchmark(id, tab = "results") {
   }
   const b = brief(id);
   $("#app").innerHTML =
-    `<div id="detail-jump">${detailJumpMarkup(e.family_code, id)}</div><p class="breadcrumb">${route("", "Benchmarks")} / ${route("category/" + e.family_code, esc(CATEGORIES[e.family_code]))} / ${id}</p><p class="eyebrow">${id} · ${esc(CATEGORIES[e.family_code])}</p><h1>${esc(title(e))}</h1><p class="lede">${esc(e.executed_slice || e.resource)}</p><div class="detail-top"><span class="badge ${measured(id) ? "verified" : ""}">${measured(id) ? "Measured exploratory protocol" : "Candidate · not run"}</span><span class="badge">T3 · generated analysis code</span><span class="badge">Current global SOTA unverified</span></div><nav class="tabs" aria-label="Benchmark information">${[
+    `<div id="detail-jump">${detailJumpMarkup(e.family_code, id)}</div><p class="breadcrumb">${route("", "Benchmarks")} / ${route("category/" + e.family_code, esc(CATEGORIES[e.family_code]))} / ${id}</p><p class="eyebrow">${id} · ${esc(CATEGORIES[e.family_code])}</p><h1>${esc(title(e))}</h1><p class="lede">${esc(e.executed_slice || e.resource)}</p><div class="detail-top"><span class="badge ${measured(id) ? "verified" : ""}">${measured(id) ? "Measured exploratory protocol" : "Candidate · not run"}</span><span class="badge">T3 · generated analysis code</span><span class="badge">Current global SOTA unverified</span></div>${facetBadges(id)}<nav class="tabs" aria-label="Benchmark information">${[
       ["results", comparisonActive ? "Current results" : id === "H02" ? "Original results" : "Results"],
       ...(id === "H02" ? [["replication", "Historical replication"]] : []),
       ...(measured(id) ? [["specialists", "Current specialists"]] : []),
@@ -871,6 +872,7 @@ function methodsPage() {
       ["docs/generation-extension.md", "Four-model extension: design and audit trail"],
       ["docs/progress-assessment.md", "Progress assessment and evidence gaps"],
       ["docs/taxonomy.md", "Taxonomy and coverage justification"],
+      ["docs/task-classification/README.md", "Three task filters: definitions, justification and 92 annotations"],
       ["docs/methodology.md", "Evaluation methodology"],
       ["docs/macro-analysis-plan.md", "Macro analysis and weighting"],
       ["docs/prior-work.md", "Related benchmarks and literature"],
@@ -909,12 +911,14 @@ Promise.all([
     .then((r) => (r.ok ? r.json() : []))
     .catch(() => []),
   currentComparisonData(),
+  fetch("data/task-facets.json").then(r=>{if(!r.ok)throw Error("Task classification unavailable");return r.json();}),
   fetch("data/H02-replication.json").then((r) => {
     if (!r.ok) throw new Error("Replication results unavailable");
     return r.json();
   }),
 ])
-  .then(([c, s, t, x, current, rep]) => {
+  .then(([c, s, t, x, current, facets, rep]) => {
+    taskFacetData = facets;
     catalog = c;
     summary = s;
     replication = rep;

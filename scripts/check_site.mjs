@@ -31,6 +31,7 @@ const ctx = {
   }),
 };
 vm.createContext(ctx);
+vm.runInContext(fs.readFileSync(path.join(root, "website/task-facets.js"), "utf8"), ctx);
 vm.runInContext(fs.readFileSync(path.join(root, "website/generation-patterns.js"), "utf8"), ctx);
 vm.runInContext(fs.readFileSync(path.join(root, "website/generation-lags.js"), "utf8"), ctx);
 vm.runInContext(fs.readFileSync(path.join(root, "website/practical-review.js"), "utf8"), ctx);
@@ -325,19 +326,62 @@ for(const direction of ['higher','lower']) {
  if(!html.includes('Better performance ↑'))throw Error('Missing line metric-direction key');
  const bar=vm.runInContext(`barPlot([{model:MODELS[0],score:1}], '${direction}')`,ctx);if(!bar.includes(direction+' is better'))throw Error('Missing bar direction key');
 }
-ctx.location.hash='#/analysis/patterns';vm.runInContext('draw()',ctx);await new Promise(resolve=>setImmediate(resolve));
+ctx.location.hash='#/analysis/patterns';vm.runInContext("facetState.category='';draw()",ctx);await new Promise(resolve=>setImmediate(resolve));
 if(!el('#app').innerHTML.includes('Do newer models improve?') || !el('#app').innerHTML.includes('28') || !el('#app').innerHTML.includes('Mixed changes / reversals'))throw Error('Macro route/data failed');
-ctx.location.hash='#/analysis/practical';vm.runInContext("practicalCategory='J';practicalTask='J08';draw()",ctx);await new Promise(resolve=>setImmediate(resolve));
+ctx.location.hash='#/analysis/practical';vm.runInContext("facetState.category='J';practicalCategory='J';practicalTask='J08';draw()",ctx);await new Promise(resolve=>setImmediate(resolve));
 if(!el('#app').innerHTML.includes('manually adapted training budget') || el('#app').innerHTML.includes('Not scored within the 180-second computation limit'))throw Error('Final J08 repair score or budget provenance missing');
-ctx.location.hash='#/analysis/lags';vm.runInContext('draw()',ctx);await new Promise(resolve=>setImmediate(resolve));
+ctx.location.hash='#/analysis/lags';vm.runInContext("facetState.category='';draw()",ctx);await new Promise(resolve=>setImmediate(resolve));
 if(!el('#app').innerHTML.includes('Does a larger model gap mean more progress?') || !el('#app').innerHTML.includes('post-hoc sensitivity choices') || (el('#app').innerHTML.match(/<tr>/g)||[]).length!==21)throw Error('Lag route, three complete tables or limitations missing');
 for(const [lag,nRows] of [['1',12],['2',9],['3',6]]) {
  vm.runInContext(`generationLagFilter='${lag}';generationLagsPage()`,ctx);await new Promise(resolve=>setImmediate(resolve));
  if((el('#app').innerHTML.match(/<tr>/g)||[]).length!==nRows)throw Error('Lag filter table row count: '+lag);
 }
+// Classification filters must intersect; subsets retain native scores and four-model scales.
+const facetRegistry=JSON.parse(fs.readFileSync(path.join(root,'registry/task-facets-v1.json'),'utf8'));
+const patternBase=JSON.parse(fs.readFileSync(path.join(root,'website/data/generation-patterns.json'),'utf8'));
+const lagBase=JSON.parse(fs.readFileSync(path.join(root,'website/data/generation-lags.json'),'utf8'));
+const beforeFacetRecords=vm.runInContext('JSON.stringify(records)',ctx);
+const facetCases=[{},...Object.entries(facetRegistry.vocabulary).flatMap(([k,vs])=>Object.keys(vs).map(v=>({[k]:v}))),...catalog.families.map(f=>({category:f.code})),{input_type:'tables',generalization:'new_subjects'},{input_type:'audio',operation:'compress'},{input_type:'multimodal',combination:'images_video+tables'}];
+for(const state of facetCases){
+ vm.runInContext(`Object.assign(facetState,{input_type:'',combination:'',operation:'',generalization:'',category:''},${JSON.stringify(state)})`,ctx);
+ const expected=facetRegistry.assignments.filter(a=>(!state.input_type||a.input_type===state.input_type)&&(!state.combination||a.input_components.join('+')===state.combination)&&(!state.operation||a.operation===state.operation)&&(!state.generalization||a.generalization.includes(state.generalization))&&(!state.category||a.family_code===state.category)).map(a=>a.benchmark_id);
+ const subset=vm.runInContext('facetPatternSubset(generationPatterns)',ctx);
+ const ts=patternBase.tasks.filter(t=>expected.includes(t.benchmark_id));
+ if(subset.n_tasks!==ts.length || subset.tasks.some(t=>!expected.includes(t.benchmark_id)))throw Error('Facet intersection mismatch '+JSON.stringify(state));
+ const counts={better:0,worse:0,numerical_tie:0,incomplete:0};
+ for(const t of ts){const change=(t.scores[fourModels.at(-1)]-t.scores[fourModels[0]])*(t.direction==='lower'?-1:1);counts[Math.abs(change)<=1e-9?'numerical_tie':change>0?'better':'worse']++;}
+ for(const [k,v] of Object.entries(counts))if(subset.endpoint.counts[k]!==v)throw Error('Filtered endpoint count '+k);
+ const ls=vm.runInContext('facetLagSubset(generationLagData)',ctx);
+ for(const row of ls.task_pairs){const original=lagBase.task_pairs.find(t=>t.benchmark_id===row.benchmark_id&&t.older===row.older&&t.newer===row.newer);if(JSON.stringify(row)!==JSON.stringify(original))throw Error('Changed normalized/native row');}
+ for(const row of ls.summaries)if(Object.values(row.counts).reduce((a,b)=>a+b,0)!==ts.length)throw Error('Wrong lag denominator');
+ for(const route of ['patterns','lags','practical']){
+  ctx.location.hash='#/analysis/'+route;vm.runInContext('draw()',ctx);await new Promise(resolve=>setImmediate(resolve));
+  const html=el('#app').innerHTML;if(!html.includes('facet-input_type')||!html.includes('facet-operation')||!html.includes('facet-generalization')||/NaN|>undefined<|could not load/.test(html))throw Error('Facet analysis render '+route);
+  if(!ts.length&&!html.includes('No measured tasks match'))throw Error('Empty subset not explained');
+ }
+}
+// Nested multimodal combinations, availability and actual controls.
+vm.runInContext("Object.assign(facetState,{input_type:'multimodal',combination:'images_video+tables',operation:'',generalization:'',category:''});listMode='all';query='';explorer('')",ctx);
+let facetHTML=el('#app').innerHTML+el('#benchmark-directory').innerHTML;
+if(!facetHTML.includes('facet-combination')||!el('#benchmark-directory').innerHTML.includes('F02')||el('#benchmark-directory').innerHTML.includes('I04'))throw Error('Multimodal combination mismatch');
+el('#facet-input_type').onchange({target:{value:'tables'}});
+if(vm.runInContext('facetState.combination',ctx)!=='')throw Error('Stale multimodal combination');
+el('#facet-reset').onclick();
+if(vm.runInContext('facetActive()',ctx))throw Error('Reset did not clear facets');
+vm.runInContext("listMode='measured';query='';explorer('')",ctx);
+el('#facet-input_type').onchange({target:{value:'tables'}});
+const tableDirectory=el('#benchmark-directory').innerHTML;if(!tableDirectory.includes('K04')||tableDirectory.includes('H02'))throw Error('Directory did not filter');
+ctx.location.hash='#/analysis/practical';vm.runInContext('draw()',ctx);await new Promise(resolve=>setImmediate(resolve));
+if(!el('#app').innerHTML.includes('7 / 30 tasks'))throw Error('Filter state did not persist across navigation');
+el('#practical-category').onchange({target:{value:'K'}});await new Promise(resolve=>setImmediate(resolve));
+if(optionIds(el('#app').innerHTML,'practical-task').length!==4)throw Error('Category and scientific facets did not intersect');
+vm.runInContext("Object.assign(facetState,{input_type:'',combination:'',operation:'',generalization:'',category:''});generationLagFilter='all'",ctx);
+if(vm.runInContext('JSON.stringify(records)',ctx)!==beforeFacetRecords)throw Error('Facets mutated measurements');
+
 const result = {
   type: "In-memory source-render and direct-handler checks; not real-browser interaction or layout QA",
   routes: n,
+  scientific_facets: "passed · 92 annotations, all facet values, AND intersections, nested combinations, empty subsets, persisted controls, direction-aware counts and immutable lag scales",
   ordinal_lag_tables_and_three_filters: "passed · 180 source task-pairs; all six comparisons and both IQR sensitivity bands",
   measured_tasks_with_bar_and_line_plots: plots,
   specialist_overlays: "passed",

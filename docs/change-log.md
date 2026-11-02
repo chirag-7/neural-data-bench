@@ -1,3 +1,11 @@
+# Task facets v1 — 2026-11-01
+
+- Preserved broad categories; added input type, analysis task and generalization filters.
+- Annotated all 92 active entries: 30 executed and 62 proposed contracts, with source hashes and individual rationales.
+- Added nested multimodal combinations, per-task badges, filtered descriptive macros/lag tables and explicit empty states.
+- Preserved native scores, original aggregations, prior reports, IQR scales and private Site audience. No new model calls.
+- See [scientific rationale, decision rules and limitations](task-classification/README.md).
+
 # v 0.4 changes
 
 - Added 12 executed protocols across behavioral, electrical, optical, molecular, imaging, encoding, inference and file-workflow perspectives; total 14 task IDs/11 families.

@@ -92,3 +92,7 @@ Models **generate analysis code**, then saved programs execute numerical procedu
 This is a bounded feasibility study, not an exhaustive literature review or paper-ready all-neuroscience conclusion. Closest prior work includes BrainWideBench, NeuralBench, NeuroDiscoveryBench/NeuroClaw, SciVid and EEGAgentBench; novelty needs explicit comparison. A paper requires independent sources, repeated generations, matched strong specialists, prospective selection and external scientific review.
 
 Code/documentation MIT; third-party artifacts retain their original terms, including the H02 author code's retained license. Raw caches and supplied lecture PDFs are not redistributed. Repository and hosted site preserve their private audiences.
+
+## Scientific task filters
+
+The existing categories now have three complementary facets: **input data type, analysis task, and generalization setting**. [Read the rationale and cited methods](docs/task-classification/README.md), [audit all assignments](docs/task-classification/assignments.csv), or inspect the [versioned registry](registry/task-facets-v1.json). All 92 active entries are annotated; only 30 have executed contracts. Joint-input multimodal tasks are currently proposals, not measured results. Website filters select whole tasks and recompute descriptive counts without changing scores.

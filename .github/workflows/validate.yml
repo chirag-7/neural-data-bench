@@ -10,6 +10,7 @@ jobs:
           node-version: '22'
       - name: Check static site and source render routes
         run: |
+          node --check website/task-facets.js
           node --check website/app.js
           node --check website/macro-report.js
           node --check website/practical-review.js
@@ -18,6 +19,7 @@ jobs:
           node scripts/check_site.mjs
       - name: Validate registry, local Markdown links and measurement provenance
         run: |
+          python3 scripts/check_task_facets.py
           python3 scripts/check_repository.py
           python3 scripts/check_macro.py
           python3 scripts/check_practical_review.py

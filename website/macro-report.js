@@ -25,7 +25,7 @@ async function macroReportPage() {
   app.innerHTML = `<p class="breadcrumb"><a href="#/analysis">Analysis</a> / Macro findings</p>
     <p class="eyebrow">Evidence synthesis · snapshot ${macroEsc(data.snapshot)}</p>
     <h1>${macroEsc(data.title)}</h1>
-    <p class="lede">${macroEsc(data.conclusion)}</p>
+    <p class="lede">${macroEsc(data.conclusion)}</p><p class="note">Frozen historical full-panel report: current task filters do not alter this snapshot or its inferential diagnostics. Use <a href="#/analysis/patterns">current macro findings</a> or <a href="#/analysis/lags">lag comparisons</a> to explore filtered descriptive results.</p>
     <div class="stats"><div class="stat"><strong>24</strong><span>eligible observed-data tasks</span></div><div class="stat"><strong>13</strong><span>benchmark categories</span></div><div class="stat"><strong>31</strong><span>dependent evaluation slices</span></div><div class="stat"><strong>0</strong><span>established scaling laws</span></div></div>
     <div class="note">A descriptive signal is different from statistical proof. The category-level diagnostics do not reject their assumed null after adjustment. That also does not establish that all differences are noise. Measurement scores and original failures remain unchanged.</div>
     <div class="macro-tabs" role="tablist" aria-label="Finding type">${Object.entries(names).map(([key,value])=>`<button role="tab" aria-selected="${key===macroBucket}" data-macro-bucket="${key}">${value}</button>`).join('')}</div>

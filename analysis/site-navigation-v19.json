@@ -1,0 +1,17 @@
+{
+  "revision": "task-facets-v1",
+  "local_browser_qa": "passed",
+  "checked": [
+    "Desktop layout of three new facets alongside existing categories",
+    "Input type + new-subject intersection: 5 tasks, endpoint 4 better / 1 worse",
+    "Filters persisted to lag route; task-pair tables used selected 5 tasks",
+    "Multimodal candidate selector: 6 planned tasks, nested images+tables selects F02/F05",
+    "Category then benchmark navigation remained available with no matches"
+  ],
+  "limitations": [
+    "No mobile viewport override; responsive CSS added but mobile rendering not independently checked.",
+    "Classification is author-assigned; independent semantic review remains pending."
+  ],
+  "measurement_scores_changed": false,
+  "new_model_calls": 0
+}
