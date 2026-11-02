@@ -1,0 +1,38 @@
+[
+  {
+    "benchmark_id": "G01",
+    "slice_id": "expansion-v1",
+    "status": "measured",
+    "score": -0.17339082062244415,
+    "metric": "r2_variance_weighted",
+    "direction": "higher",
+    "seconds": 1.196903832955286,
+    "within_180s": true,
+    "prediction_file": "experiments/specialist-extension-v1/predictions/G01--expansion-v1.npz",
+    "prediction_sha256": "d0badbb82deba939dd3a90136aff936f3c94e669b31fc48793ab49dc65ceff68",
+    "data_file": "data/cache/G01/data.npz",
+    "data_sha256": "b19c47236c8215d3502dda9de6a723184e47aa891ae958006029ea700400326a",
+    "adapter_file": "experiments/G01/adapter.py",
+    "adapter_sha256": "0ee8c6ae09c090280a6d556b9c7f9824f71214159a80b55103aa0892608c01a6",
+    "fit_info": {
+      "alpha": 10000.0,
+      "validation_scores": [
+        0.11683699488639832,
+        0.11686733365058899,
+        0.11719038337469101,
+        0.12012770026922226,
+        0.13412730395793915
+      ],
+      "validation": "chronological last20% of training rows; no IDs or test-fitted normalization",
+      "temporal_test_state": false
+    },
+    "score_details": {
+      "score": -0.17339082062244415,
+      "metric": "r2_variance_weighted",
+      "direction": "higher"
+    },
+    "seed": 20261102,
+    "threads": 1,
+    "device": "cpu"
+  }
+]

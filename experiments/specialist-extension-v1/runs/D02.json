@@ -1,0 +1,36 @@
+[
+  {
+    "benchmark_id": "D02",
+    "slice_id": "expansion-v1",
+    "status": "measured",
+    "score": 0.9016188553449124,
+    "metric": "rmse_mV",
+    "direction": "lower",
+    "seconds": 0.22570962505415082,
+    "within_180s": true,
+    "prediction_file": "experiments/specialist-extension-v1/predictions/D02--expansion-v1.npz",
+    "prediction_sha256": "9c8581c070267c70882e8a3e1d763d540935ae6b3ddcff98ef8445a0ddbb45fc",
+    "data_file": "data/cache/D02/data.npz",
+    "data_sha256": "2a5f30d8b6f07f981a0cf2c6e7717543185ef3c8732a17e8bfefef500c7a49ca",
+    "adapter_file": "experiments/D02/adapter.py",
+    "adapter_sha256": "6801c86d7ba189e203b5c6f5898362394b63a10039ae2ea945cc2e10ed960242",
+    "fit_info": {
+      "fit_success": true,
+      "parameters": [
+        0.19251146309077824,
+        0.009005519672729315,
+        -4.620394508597208,
+        -6.907755278982136
+      ],
+      "training_mse": 0.726479863685393
+    },
+    "score_details": {
+      "score": 0.9016188553449124,
+      "metric": "rmse_mV",
+      "direction": "lower"
+    },
+    "seed": 20261102,
+    "threads": 1,
+    "device": "cpu"
+  }
+]

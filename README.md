@@ -4,6 +4,10 @@
 
 [Results explorer](https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site) · [Current release and review](docs/release-v11.md) · [Results and limits](analysis/findings.md) · [Reproduce](docs/reproduce.md)
 
+## Published specialist scores: important correction
+
+[Audit of all 30 local evaluations and published-result compatibility](analysis/published-specialists-v1/report.md). Several tasks introduced custom subsets, inputs, splits or scorers instead of executing the official benchmark unchanged. **No exact published whole-task comparator is verified in this audit yet.** Eight checked paper/official numbers across six tasks are retained as context, excluded from local win/loss totals. The 14 existing scored specialist references are local implementations or rescored archives, not 14 certified current SOTA results. No new specialist fitting or redesign will fill this published-result lookup.
+
 ## Macro findings and interactive navigation
 
 [New: lag-1 / lag-2 / lag-3 comparisons and two change-size sensitivity bands](analysis/generation-lags-v1/report.md). Three tables cover all six model pairs, with 180 auditable task-pair differences. The 0.1 / 0.5 IQR bands are exploratory panel-relative gaps, not significance tests or practical-equivalence margins. [Interactive lag tables](https://neural-data-benchmark-observatory-cc26.almondkoala21.chatgpt.site/#/analysis/lags).

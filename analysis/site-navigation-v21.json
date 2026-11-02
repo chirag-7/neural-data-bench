@@ -1,0 +1,11 @@
+{
+  "method": "Real in-app browser localhost preview, 1 November 2026 local time",
+  "route": "#/analysis/specialists",
+  "verified": [
+    "Published-result correction visible before local comparison tables",
+    "30-task GitHub audit link displayed",
+    "source-linked JSON download link displayed",
+    "Existing 14/30 local specialist comparison and four-model values retained"
+  ],
+  "screenshot": "docs/assets/published-score-audit-v1.png"
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "benchmark_id": "A14",
+    "returncode": 1,
+    "elapsed": 1.678049087524414,
+    "log": "experiments/specialist-extension-v1/runs/A14.log"
+  },
+  {
+    "benchmark_id": "H16",
+    "returncode": 1,
+    "elapsed": 1.5330519676208496,
+    "log": "experiments/specialist-extension-v1/runs/H16.log"
+  },
+  {
+    "benchmark_id": "A15",
+    "returncode": 1,
+    "elapsed": 5.950303077697754,
+    "log": "experiments/specialist-extension-v1/runs/A15.log"
+  },
+  {
+    "benchmark_id": "E01",
+    "returncode": 1,
+    "elapsed": 0.8019058704376221,
+    "log": "experiments/specialist-extension-v1/runs/E01.log"
+  },
+  {
+    "benchmark_id": "E06",
+    "returncode": 1,
+    "elapsed": 1.0456972122192383,
+    "log": "experiments/specialist-extension-v1/runs/E06.log"
+  },
+  {
+    "benchmark_id": "F04",
+    "returncode": 1,
+    "elapsed": 0.939035177230835,
+    "log": "experiments/specialist-extension-v1/runs/F04.log"
+  },
+  {
+    "benchmark_id": "D02",
+    "returncode": 0,
+    "elapsed": 0.3284943103790283,
+    "log": "experiments/specialist-extension-v1/runs/D02.log"
+  },
+  {
+    "benchmark_id": "G01",
+    "returncode": 0,
+    "elapsed": 1.5165371894836426,
+    "log": "experiments/specialist-extension-v1/runs/G01.log"
+  },
+  {
+    "benchmark_id": "I07",
+    "returncode": 0,
+    "elapsed": 1.2118499279022217,
+    "log": "experiments/specialist-extension-v1/runs/I07.log"
+  },
+  {
+    "benchmark_id": "L04",
+    "returncode": 0,
+    "elapsed": 1.1964499950408936,
+    "log": "experiments/specialist-extension-v1/runs/L04.log"
+  },
+  {
+    "benchmark_id": "K06",
+    "returncode": 1,
+    "elapsed": 1.8634791374206543,
+    "log": "experiments/specialist-extension-v1/runs/K06.log"
+  }
+]

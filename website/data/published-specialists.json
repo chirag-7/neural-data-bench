@@ -1,0 +1,1789 @@
+{
+  "revision": "published-specialists-v1",
+  "audited_on": "2026-11-01",
+  "purpose": "Published/official result lookup, not new specialist fitting.",
+  "status": "Compatibility audit complete for 30 tasks; published current-best score collection incomplete.",
+  "n_tasks": 30,
+  "n_exact_published_task_aggregates_verified": 0,
+  "n_tasks_with_verified_context_numbers": 6,
+  "n_verified_context_numbers": 8,
+  "rules": [
+    "Keep all four model measurements and the 30 task definitions fixed.",
+    "Use the strongest verified result for the same protocol; newest publication alone does not establish best performance.",
+    "Require dataset/version, input information, targets, evaluation split, metric and aggregation compatibility.",
+    "A failed or incomplete source search is not evidence that no matching publication exists.",
+    "Unmatched paper numbers are context only and never enter local graphs, gaps, IQR bands or win/loss totals.",
+    "No model calls, fitting, task redesign or paper-to-metric conversions in this audit."
+  ],
+  "source_panel_sha256": "d88aefcc57fea16c7377625af6987466b08aa2abdd5ce5d7b9184fdda96ed769",
+  "tasks": [
+    {
+      "benchmark_id": "A09",
+      "task": "Frame-level social behavior labels",
+      "local_metric": "macro_f1",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.8532434326100573,
+        "gpt-5-2025-08-07": 0.825643120297422,
+        "gpt-5.6-sol": 0.8689719505732656,
+        "gpt-6.1-sol": 0.8806960154913499
+      },
+      "protocol_path": "experiments/A09/protocol.md",
+      "protocol_sha256": "8cf05be6670b9c58816b5990851b091991b9fe27a3456f6baff86366977d2f23",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "CalMS21 Task 1 data, but only 3 Hz centers with seven pose offsets; published all-frame scores use different temporal information and aggregation.",
+      "published_results": [
+        {
+          "model": "VASSI, smoothing + thresholds",
+          "value": 0.867,
+          "metric": "four-class frame macro F1",
+          "unit": "fraction",
+          "source_url": "https://elifesciences.org/reviewed-preprints/108329",
+          "source_location": "Results: CALMS21 dataset, Figure 1C–D; reported SD 0.001 over 20 runs",
+          "selection_scope": "Best four-class postprocessing variant reported in this paper; newer candidates in the review are not ruled out.",
+          "eligible_for_local_win_loss": false,
+          "global_current_best_verified": false
+        }
+      ],
+      "candidates": [
+        {
+          "name": "VASSI",
+          "source_urls": [
+            "https://elifesciences.org/reviewed-preprints/108329"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "MABe2021 Top-1 ensemble",
+          "source_urls": [
+            "https://sites.google.com/view/computational-behavior/our-datasets/calms21-dataset",
+            "https://github.com/nebw/mabe"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "TREBA + pose classifier",
+          "source_urls": [
+            "https://github.com/neuroethology/TREBA"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "ResiFuse",
+          "source_urls": [
+            "https://arxiv.org/abs/2603.07279"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "FERAL / V-JEPA2",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC12667788/",
+            "https://github.com/Skovorp/feral"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "V-TRACE",
+          "source_urls": [
+            "https://www.biorxiv.org/content/10.64898/2026.04.14.718392v2.full",
+            "https://zenodo.org/records/22119864"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/A09.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "A14",
+      "task": "Missing pose imputation",
+      "local_metric": "rmse_missing",
+      "local_direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 17.05943489074707,
+        "gpt-5-2025-08-07": 1.8538062020757753,
+        "gpt-5.6-sol": 0.4485493561358864,
+        "gpt-6.1-sol": 0.45059488811841064
+      },
+      "protocol_path": "experiments/A14/protocol.md",
+      "protocol_sha256": "bd15dbd171befe15c90b14d7459c192e7d5fa0bf11d3ad5bd7c1327fc17f7418",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "Six-landmark HeadF seven-frame imputation with subjects 1–3 versus 4–5. DISK uses sequence-level chronological 70/15/15 splits and other masking configurations.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "DISK Transformer / bidirectional GRU",
+          "source_urls": [
+            "https://www.nature.com/articles/s41592-025-02893-y",
+            "https://github.com/bozeklab/DISK",
+            "https://github.com/bozeklab/DISK_paper_code"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "MarkerBasedImputation / OptiPose / Keypoint-MoSeq",
+          "source_urls": [
+            "https://www.nature.com/articles/s41592-025-02893-y"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "DANNCE",
+          "source_urls": [
+            "https://www.nature.com/articles/s41592-021-01106-6"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "s-DANNCE",
+          "source_urls": [
+            "https://github.com/tqxli/sdannce/blob/master/README.md"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/A14.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "A15",
+      "task": "Annotated birdsong interval detection",
+      "local_metric": "recording_macro_event_f1_20ms_onset_20ms_or_20pct_offset",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.9919605878099995,
+        "gpt-5-2025-08-07": 0.979201212547653,
+        "gpt-5.6-sol": 0.9863118287200278,
+        "gpt-6.1-sol": 0.9920795405521152
+      },
+      "protocol_path": "experiments/A15/protocol.md",
+      "protocol_sha256": "e658b331e88b890a3d5bd0a972a670b7d153a01beddc3d76212d81f818265754",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "Held-out fourth bird and recording-equal event F1 with explicit boundary tolerances. DAS reports precision/recall/jitter on a different train/test construction.",
+      "published_results": [
+        {
+          "model": "DAS",
+          "value": 99,
+          "metric": "Bengalese finch precision",
+          "unit": "percent",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8560090/",
+          "source_location": "Table 3, Bengalese finch row",
+          "selection_scope": "Paper comparison; not a verified 2026 global winner.",
+          "eligible_for_local_win_loss": false,
+          "global_current_best_verified": false
+        },
+        {
+          "model": "DAS",
+          "value": 99,
+          "metric": "Bengalese finch recall",
+          "unit": "percent",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8560090/",
+          "source_location": "Table 3, Bengalese finch row",
+          "selection_scope": "Same method and row; not a separate benchmark.",
+          "eligible_for_local_win_loss": false,
+          "global_current_best_verified": false
+        }
+      ],
+      "candidates": [
+        {
+          "name": "DAS",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC8560090/",
+            "https://github.com/janclemenslab/das"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "TweetyNet",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC8860439/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "WhisperSeg",
+          "source_urls": [
+            "https://github.com/nianlonggu/WhisperSeg"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "AVN segmentation comparisons",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC11370480/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/A15.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "B01",
+      "task": "Spike sorting and event detection",
+      "local_metric": "mean_gt_accuracy",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.0,
+        "gpt-5-2025-08-07": 0.0803921568627451,
+        "gpt-5.6-sol": 0.8749905140758875,
+        "gpt-6.1-sol": 0.7504504504504504
+      },
+      "protocol_path": "experiments/B01/protocol.md",
+      "protocol_sha256": "586a2efbcf72f6ecb79b27d35018a6124e92284601a3327a3adf3377e237c264",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "One 10-second MEArec tutorial fixture. Kilosort4 paper evaluates other hybrid/drifting simulations and uses different reported unit-level summaries.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "Kilosort4",
+          "source_urls": [
+            "https://www.nature.com/articles/s41592-024-02232-7",
+            "https://github.com/MouseLand/Kilosort"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "DARTsort",
+          "source_urls": [
+            "https://github.com/cwindolf/dartsort"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "MountainSort5",
+          "source_urls": [
+            "https://github.com/flatironinstitute/mountainsort5"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "SpyKINGCIRCUS2 / Tridesclous2 / Lupin",
+          "source_urls": [
+            "https://spikeinterface.readthedocs.io/en/latest/",
+            "https://spikeinterface.readthedocs.io/en/stable/modules/benchmark.html"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "VanillaSort",
+          "source_urls": [
+            "https://arxiv.org/abs/2609.22322"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "SimSort / SpikeSift",
+          "source_urls": [
+            "https://arxiv.org/abs/2504.01604",
+            "https://openreview.net/pdf?id=IwjkwtkPGb"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/B01.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "B03",
+      "task": "Rigid drift recovery from synthetic ephys rasters",
+      "local_metric": "recording_mean_motion_rmse_um",
+      "local_direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 12.704563694454103,
+        "gpt-5-2025-08-07": 3.9114990756015873,
+        "gpt-5.6-sol": 3.6041552208003775,
+        "gpt-6.1-sol": 5.275098380741698
+      },
+      "protocol_path": "experiments/B03/protocol.md",
+      "protocol_sha256": "5850c014ec703e42c5e1a6b31abca825043e1c68abda2770f5785ed53135424e",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "New eight-seed synthetic processed-raster motion experiment, with four held-out simulations. DREDge/MEDiCINe paper results are not scores for these generated rasters.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "Current DREDge AP",
+          "source_urls": [
+            "https://www.nature.com/articles/s41592-025-02614-5",
+            "https://github.com/evarol/dredge",
+            "https://github.com/SpikeInterface/spikeinterface/blob/main/src/spikeinterface/sortingcomponents/motion/dredge.py",
+            "https://github.com/SpikeInterface/spikeinterface/blob/main/src/spikeinterface/preprocessing/motion.py"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "MEDiCINe rigid",
+          "source_urls": [
+            "https://www.eneuro.org/content/12/3/ENEURO.0529-24.2025",
+            "https://github.com/jazlab/medicine"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Kilosort4 datashift",
+          "source_urls": [
+            "https://github.com/MouseLand/Kilosort",
+            "https://www.eneuro.org/content/12/3/ENEURO.0529-24.2025"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "SpikeInterface decentralized rigid numerical solver",
+          "source_urls": [
+            "https://github.com/SpikeInterface/spikeinterface/blob/main/src/spikeinterface/sortingcomponents/motion/dredge.py"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/B03.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "B07",
+      "task": "Lossless Neuropixels voltage compression",
+      "local_metric": "encoded_bits_per_int16_sample",
+      "local_direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 6.63548723856608,
+        "gpt-5-2025-08-07": 7.210052490234375,
+        "gpt-5.6-sol": 7.0198300679524746,
+        "gpt-6.1-sol": 7.2145891189575195
+      },
+      "protocol_path": "experiments/B07/protocol.md",
+      "protocol_sha256": "3e631c53c74d2bbe185ef6e15624c618d0ab797cfec44317586aebf31f426ad5",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "Fixed 4096-sample chunks from 16 source recordings, with local payload/header accounting. Whole-recording paper compression ratios cannot substitute for these chunk scores.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "WavPack high/very-high with extra processing",
+          "source_urls": [
+            "https://www.biorxiv.org/content/10.1101/2023.05.22.541700v2",
+            "https://github.com/AllenNeuralDynamics/ephys-compression",
+            "https://github.com/dbry/WavPack/blob/master/doc/wavpack_doc.html",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC13441294/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "FLAC",
+          "source_urls": [
+            "https://www.biorxiv.org/content/10.1101/2023.05.22.541700v2",
+            "https://github.com/AllenNeuralDynamics/ephys-compression",
+            "https://github.com/AllenNeuralDynamics/aind-capsule-ephys-compression-results"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Blosc/Zstd with reversible time/space delta",
+          "source_urls": [
+            "https://github.com/AllenNeuralDynamics/ephys-compression"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "LZMA/Zstd lossless with predictors",
+          "source_urls": [
+            "https://github.com/AllenNeuralDynamics/ephys-compression"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/B07.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "B08",
+      "task": "Timing-bounded spike-event compression",
+      "local_metric": "mean_encoded_bits_per_event_50us",
+      "local_direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 10.79480738185973,
+        "gpt-5-2025-08-07": 8.1652552072995,
+        "gpt-5.6-sol": 7.585598308443002,
+        "gpt-6.1-sol": 8.636801620045114
+      },
+      "protocol_path": "experiments/B08/protocol.md",
+      "protocol_sha256": "545f02e47e7a2b66477256c33218f5c3f88f1b4ced373fff9bde6f3fdf8fbedd",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "FALCON M2 event streams substituted for the original IBL recordings; includes local label/header accounting and a 50 microsecond timing constraint.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "Spikepack Blosc-shard",
+          "source_urls": [
+            "https://github.com/int-brain-lab/spikepack",
+            "https://int-brain-lab.github.io/spikepack/explanation/benchmark.html"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Spikepack Zarr container",
+          "source_urls": [
+            "https://github.com/int-brain-lab/spikepack",
+            "https://int-brain-lab.github.io/spikepack/explanation/benchmark.html"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Per-unit delta + entropy coding",
+          "source_urls": [
+            "https://github.com/int-brain-lab/spikepack"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "LFpack",
+          "source_urls": [
+            "https://github.com/int-brain-lab/lfpack"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/B08.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "C05",
+      "task": "Calcium-to-spike inference",
+      "local_metric": "median_pearson_40ms",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.19131056627303558,
+        "gpt-5-2025-08-07": 0.42015600087620875,
+        "gpt-5.6-sol": 0.45219611758394257,
+        "gpt-6.1-sol": 0.46789571463086227
+      },
+      "protocol_path": "experiments/C05/phase2-protocol.md",
+      "protocol_sha256": "7b3b9b2b20e7e04c9ac11eebd720a084fb2971db63f1c61fa01a73483f0c928d",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "Five original Spikefinder preparations and official per-cell scorer. Our preparation-equal aggregate and complete-archive eligibility are not a verified published current-best aggregate. Rescored archived predictions remain usable local evidence.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "CASCADE / CascadeTorch",
+          "source_urls": [
+            "https://github.com/HelmchenLabSoftware/Cascade",
+            "https://github.com/PTRRupprecht/CascadeTorch",
+            "https://www.nature.com/articles/s41592-026-03183-x"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "ENS2",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC10261900/",
+            "https://github.com/TinLab/ENS2"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "SpikeSSL",
+          "source_urls": [
+            "https://arxiv.org/abs/2610.11456",
+            "https://arxiv.org/html/2610.11456v1",
+            "https://github.com/detimage123/SpikeSSL"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "C-SPIKES BiophysSMC / BiophysML",
+          "source_urls": [
+            "https://pubmed.ncbi.nlm.nih.gov/42282678/",
+            "https://github.com/gerardjb/C-SPIKES"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "OASIS / MLspike / PGBAR",
+          "source_urls": [
+            "https://github.com/HelmchenLabSoftware/Cascade",
+            "https://doi.org/10.7554/eLife.94723.3"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "slugFind model-predictive-control",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC12194039/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/C05.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "C06",
+      "task": "Calcium to electrical expected spike counts",
+      "local_metric": "animal_mean_neuron_pearson_smoothed200ms",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.5283479568442431,
+        "gpt-5-2025-08-07": 0.49931548987762076,
+        "gpt-5.6-sol": 0.8564154409076183,
+        "gpt-6.1-sol": 0.8675919925239051
+      },
+      "protocol_path": "experiments/C06/protocol.md",
+      "protocol_sha256": "0fbf4700d1edb36157cd1d51d0d528a3d5931bdf3e43604d692767d90795b8be",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "CASCADE DS04 at native rate with held-out animals and 200 ms smoothing. Paper noise-resampled leave-one-neuron-out evaluations differ.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "CASCADE / CascadeTorch",
+          "source_urls": [
+            "https://github.com/HelmchenLabSoftware/Cascade",
+            "https://github.com/PTRRupprecht/CascadeTorch",
+            "https://www.nature.com/articles/s41592-026-03183-x"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "ENS2",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC10261900/",
+            "https://github.com/TinLab/ENS2"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "SpikeSSL",
+          "source_urls": [
+            "https://arxiv.org/abs/2610.11456",
+            "https://arxiv.org/html/2610.11456v1",
+            "https://github.com/detimage123/SpikeSSL"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "C-SPIKES BiophysSMC / BiophysML",
+          "source_urls": [
+            "https://pubmed.ncbi.nlm.nih.gov/42282678/",
+            "https://github.com/gerardjb/C-SPIKES"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "OASIS / MLspike / PGBAR",
+          "source_urls": [
+            "https://github.com/HelmchenLabSoftware/Cascade",
+            "https://doi.org/10.7554/eLife.94723.3"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "slugFind model-predictive-control",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC12194039/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/C06.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "D02",
+      "task": "Current-to-voltage prediction",
+      "local_metric": "rmse_mV",
+      "local_direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 2.477160409962793,
+        "gpt-5-2025-08-07": 1.351431040403821,
+        "gpt-5.6-sol": 0.21777564495208945,
+        "gpt-6.1-sol": 0.23553334017447436
+      },
+      "protocol_path": "experiments/D02/protocol.md",
+      "protocol_sha256": "877e867512c9f9ba36cb0ccfe3f1691bf0f1b3bf75091dde60e5ac92992ab8dc",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "One Allen example cell and two held-out hyperpolarizing current amplitudes, with passive-voltage RMSE. GLIF spike-prediction explained variance is a different endpoint.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "Training-only passive RC / constrained multi-exponential response",
+          "source_urls": [
+            "https://brain-map.org/support/documentation/documentation-cell-types-database"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Allen GLIF and perisomatic/all-active models",
+          "source_urls": [
+            "https://brain-map.org/support/documentation/documentation-cell-types-database",
+            "https://celltypes.brain-map.org/",
+            "https://www.nature.com/articles/s41467-017-02717-4"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "CoMParE",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC13252523/",
+            "https://github.com/xanderladd/axonstandardized"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "BluePyOpt/eFEL NEURON optimization",
+          "source_urls": [
+            "https://github.com/BlueBrain/BluePyOpt",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC13252523/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/D02.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "E01",
+      "task": "Neural rate inference and co-smoothing",
+      "local_metric": "bits_per_spike",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": -4.27607211958728,
+        "gpt-5-2025-08-07": -2.547485403373772,
+        "gpt-5.6-sol": 0.20350701311578648,
+        "gpt-6.1-sol": 0.20737613865378843
+      },
+      "protocol_path": "experiments/E01/protocol.md",
+      "protocol_sha256": "d4834aab3507ceb3ad7a8ae137f11014a5caaefc8d19c7003a1b855b19fe620f",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "Three NLB-derived co-smoothing slices. Area2/DMFC published 20 ms co-bps are relevant slice-level candidates; complete protocol equivalence is unverified. Full MC-Maze is not MC-Maze-Small. No complete three-slice published aggregate is established.",
+      "published_results": [
+        {
+          "model": "LangevinFlow",
+          "value": 0.2881,
+          "metric": "Area2-Bump 20 ms co-bps",
+          "unit": "bits/spike",
+          "source_url": "https://arxiv.org/html/2507.11531v2",
+          "source_location": "Table 2, Area2-Bump co-bps column",
+          "selection_scope": "Highest co-bps among methods in Table 2; full leaderboard optimality and our exact slice compatibility are unverified.",
+          "eligible_for_local_win_loss": false,
+          "global_current_best_verified": false
+        },
+        {
+          "model": "LangevinFlow",
+          "value": 0.1904,
+          "metric": "DMFC-RSG 20 ms co-bps",
+          "unit": "bits/spike",
+          "source_url": "https://arxiv.org/html/2507.11531v2",
+          "source_location": "Table 2, DMFC-RSG co-bps column",
+          "selection_scope": "Highest co-bps among methods in Table 2; not a complete E01 three-slice aggregate.",
+          "eligible_for_local_win_loss": false,
+          "global_current_best_verified": false
+        }
+      ],
+      "candidates": [
+        {
+          "name": "LangevinFlow",
+          "source_urls": [
+            "https://arxiv.org/html/2507.11531v2",
+            "https://github.com/KingJamesSong/LangevinFlow_CCN"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "AutoLFADS / NDT / STNDT / RNN_F",
+          "source_urls": [
+            "https://neurallatents.github.io/challenge.html",
+            "https://github.com/neurallatents/nlb_tools"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "S5",
+          "source_urls": [
+            "https://neurallatents.github.io/challenge.html"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "DPAD smoothing / ensemble",
+          "source_urls": [
+            "https://openreview.net/pdf/ff49552c1704e62be9f48f4a1aa6648f9338f669.pdf"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "NDT3",
+          "source_urls": [
+            "https://github.com/joel99/ndt3/blob/main/model_card.md"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/E01.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "E06",
+      "task": "Causal population calcium forecasting",
+      "local_metric": "mse_dff",
+      "local_direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.0029125121760502594,
+        "gpt-5-2025-08-07": 0.004443808369689206,
+        "gpt-5.6-sol": 0.0027376364848987244,
+        "gpt-6.1-sol": 0.00250692044946079
+      },
+      "protocol_path": "experiments/E06/protocol.md",
+      "protocol_sha256": "4859d3aeaf402acac3c3a6ffe44a262b2b3d4acef3f8cd6a74f0e1c8606d60e8",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "256 fixed neurons, 64 past frames and 32 future frames. ZAPBench paper uses whole-brain targets, 4/256-frame contexts and horizon-dependent metrics.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "POCO",
+          "source_urls": [
+            "https://proceedings.neurips.cc/paper_files/paper/2025/file/21fbf654963f9e455e8eec48e45bdea0-Paper-Conference.pdf",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC13151936/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Time-Mix / TSMixer / TiDE",
+          "source_urls": [
+            "https://arxiv.org/html/2503.02618v1",
+            "https://google-research.github.io/zapbench/",
+            "https://github.com/google-research/zapbench"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Volumetric U-Net",
+          "source_urls": [
+            "https://arxiv.org/html/2503.02618v1",
+            "https://google-research.github.io/zapbench/",
+            "https://github.com/google-research/zapbench"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "ERA tree-search generated forecaster",
+          "source_urls": [
+            "https://www.nature.com/articles/s41586-026-10658-6",
+            "https://github.com/google-research/era"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "SimpleTES generated programs",
+          "source_urls": [
+            "https://arxiv.org/abs/2604.19341",
+            "https://github.com/wq-will/SimpleTES/blob/main/datasets/zapbench/README.md"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Analytical NLinear with ridge penalty 1",
+          "source_urls": [
+            "https://github.com/google-research/zapbench"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/E06.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "F04",
+      "task": "Retinal or other sensory encoding",
+      "local_metric": "poisson_nll",
+      "local_direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 2.105494692482995,
+        "gpt-5-2025-08-07": 1.6302367572480365,
+        "gpt-5.6-sol": 1.5506315044426546,
+        "gpt-6.1-sol": 1.5108013652511572
+      },
+      "protocol_path": "experiments/F04/protocol.md",
+      "protocol_sha256": "d114274ee60470a4e0babbece885b7246a4b7c0eb5c8db67f235898f3ccf75b5",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "One Goldin natural-image retinal recording with 18×18 block-averaged inputs and 41-neuron 300 ms Poisson NLL. Published full-study metrics/splits do not establish this score.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "Goldin source CNN / contrast-sensitive encoding models",
+          "source_urls": [
+            "https://www.nature.com/articles/s41467-022-33242-8",
+            "https://github.com/samuelevirgili/Context-dependent-selectivity-to-natural-images-in-the-retina",
+            "https://open-retina.org/api_reference/data_io/goldin_2022/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "OpenRetina core/readout CNN",
+          "source_urls": [
+            "https://open-retina.org/api_reference/data_io/goldin_2022/",
+            "https://open-retina.org/package_docs/model_zoo/",
+            "https://github.com/open-retina/open-retina",
+            "https://open-retina.org/package_docs/training/core_readout/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Regularized LN/Poisson GLM",
+          "source_urls": [
+            "https://open-retina.org/package_docs/training/core_readout/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Multi-session/pretrained retinal cores",
+          "source_urls": [
+            "https://open-retina.org/package_docs/model_zoo/",
+            "https://github.com/open-retina/open-retina"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/F04.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "G01",
+      "task": "Robust cross-day motor decoding",
+      "local_metric": "r2_variance_weighted",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.08219552785158157,
+        "gpt-5-2025-08-07": -0.224704814552475,
+        "gpt-5.6-sol": 0.09128554368236495,
+        "gpt-6.1-sol": 0.09464088827371597
+      },
+      "protocol_path": "experiments/G01/protocol.md",
+      "protocol_sha256": "15f944fc36802b4676a6c6051a16e00bb7246e035b08badd058683d4e63dd715",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "New chronological split of FALCON M2 calibration recordings, without test-day calibration labels. This is not the official FALCON evaluation split/score.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "NDT3 pretrained transformer",
+          "source_urls": [
+            "https://github.com/joel99/ndt3/blob/main/model_card.md"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "SPINT",
+          "source_urls": [
+            "https://arxiv.org/html/2507.08402v1"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "APST",
+          "source_urls": [
+            "https://arxiv.org/abs/2609.39080"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "FALCON ridge / recurrent / session-specific baselines",
+          "source_urls": [
+            "https://snel-repo.github.io/falcon/",
+            "https://github.com/snel-repo/falcon-challenge"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/G01.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "H01",
+      "task": "Motor imagery and noninvasive BCI",
+      "local_metric": "balanced_accuracy",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.5513833992094861,
+        "gpt-5-2025-08-07": 0.5770750988142292,
+        "gpt-5.6-sol": 0.6488801054018445,
+        "gpt-6.1-sol": 0.6979578392621871
+      },
+      "protocol_path": "experiments/H01/protocol.md",
+      "protocol_sha256": "dcb8ba5df232d7e9987fe54bef07b1bfe4986907ab54ccd2cb54eef2d8ba8280",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "Only eight PhysioNet participants with held-out-person balanced accuracy. Official MOABB left/right table uses within-session ROC-AUC across a different participant panel.",
+      "published_results": [
+        {
+          "model": "FgMDM",
+          "value": 68.46,
+          "metric": "PhysionetMI left/right within-session ROC-AUC",
+          "unit": "percent",
+          "source_url": "https://moabb.neurotechx.com/docs/paper_results.html",
+          "source_location": "Motor Imagery – Left vs Right Hand, PhysionetMI column; SD 19.06",
+          "selection_scope": "Highest PhysionetMI mean among the pipelines in this official table, not across every published model.",
+          "eligible_for_local_win_loss": false,
+          "global_current_best_verified": false
+        }
+      ],
+      "candidates": [
+        {
+          "name": "CBraMod",
+          "source_urls": [
+            "https://proceedings.iclr.cc/paper_files/paper/2025/hash/bbbd6d915cb90be21c1254a82d45cedd-Abstract-Conference.html"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "REVE",
+          "source_urls": [
+            "https://brain-bzh.github.io/reve/",
+            "https://huggingface.co/brain-bzh/reve-base"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "MIRepNet",
+          "source_urls": [
+            "https://arxiv.org/abs/2507.20254"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Training-only filter-bank CSP and tangent-space SVM panel",
+          "source_urls": [
+            "https://arxiv.org/abs/2404.15319"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/H01.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "H02",
+      "task": "ERP/P300 target decoding",
+      "local_metric": "subject_equal_roc_auc",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.5730845665809128,
+        "gpt-5-2025-08-07": 0.7457725743654655,
+        "gpt-5.6-sol": 0.7571945899092973,
+        "gpt-6.1-sol": 0.7885365446735593
+      },
+      "protocol_path": "experiments/H02/protocol.md",
+      "protocol_sha256": "212c76c63972ed7305a935e35d9039f47767a9f7bfc34d410c162035cba6543c",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "BI2012 training runs split people 1–15 versus 16–25; equal-person AUC. MOABB table reports within-session five-fold results.",
+      "published_results": [
+        {
+          "model": "XDAWNCov+TS+SVM",
+          "value": 90.99,
+          "metric": "BI2012 within-session ROC-AUC",
+          "unit": "percent",
+          "source_url": "https://moabb.neurotechx.com/docs/paper_results.html",
+          "source_location": "P300/ERP table, BI2012 column; SD 4.79",
+          "selection_scope": "Highest BI2012 mean among pipelines in this official table, not a cross-person result.",
+          "eligible_for_local_win_loss": false,
+          "global_current_best_verified": false
+        }
+      ],
+      "candidates": [
+        {
+          "name": "xDAWN covariance → tangent-space SVM",
+          "source_urls": [
+            "https://moabb.neurotechx.com/docs/paper_results.html",
+            "https://arxiv.org/abs/2404.15319"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Riemannian Means Field classifier with xDAWN",
+          "source_urls": [
+            "https://www.mdpi.com/1424-8220/25/7/2305"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "CBraMod / REVE ERP fine-tuning",
+          "source_urls": [
+            "https://proceedings.iclr.cc/paper_files/paper/2025/hash/bbbd6d915cb90be21c1254a82d45cedd-Abstract-Conference.html",
+            "https://brain-bzh.github.io/reve/",
+            "https://arxiv.org/abs/2601.17883"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/H02.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "H08",
+      "task": "Sleep staging and sleep onset",
+      "local_metric": "macro_f1_sleep",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.7252734503405033,
+        "gpt-5-2025-08-07": 0.6783412614813794,
+        "gpt-5.6-sol": 0.8027158427646084,
+        "gpt-6.1-sol": 0.7922358672484364
+      },
+      "protocol_path": "experiments/H08/protocol.md",
+      "protocol_sha256": "a164e1d9921eba69e7c05a8dc415166d86201af560f4fe346a8323e84612e512",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "Eight Sleep-EDF first nights, one Fpz-Cz channel and a clock-defined 12-hour window. Different participant folds, wake trimming or channels change the published task.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "SleepGPT",
+          "source_urls": [
+            "https://www.nature.com/articles/s41467-025-67970-4"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "SleepFM-Clinical",
+          "source_urls": [
+            "https://github.com/zou-group/sleepfm-clinical"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "SleepFM-2",
+          "source_urls": [
+            "https://arxiv.org/abs/2609.06849"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "PFTSleep",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC12663716/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "U-Sleep",
+          "source_urls": [
+            "https://www.nature.com/articles/s41746-021-00440-5"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "BIOT / LaBraM EEG-only probes",
+          "source_urls": [
+            "https://arxiv.org/abs/2609.22105"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/H08.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "H16",
+      "task": "EEG ocular/muscle artifact repair",
+      "local_metric": "temporal_rrmse",
+      "local_direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.6570072770118713,
+        "gpt-5-2025-08-07": 0.6595370769500732,
+        "gpt-5.6-sol": 0.4616066515445709,
+        "gpt-6.1-sol": 0.45338359475135803
+      },
+      "protocol_path": "experiments/H16/protocol.md",
+      "protocol_sha256": "4e275752e18b11f717867dacfa58af355529f89b29b779678f9937a7e5deb7b7",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "New component-disjoint ocular mixtures with fixed SNR generation. Published EEGdenoiseNet results vary by SNR, noise type and splitting policy; a single transferable aggregate is unverified.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "EEGdenoiseNet original CNN/RNN models",
+          "source_urls": [
+            "https://doi.org/10.1088/1741-2552/ac2bf8"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Gated WGAN with multi-scale/multi-domain features",
+          "source_urls": [
+            "https://www.mdpi.com/2076-3425/16/10/1124"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "FARU-Net",
+          "source_urls": [
+            "https://www.mdpi.com/2073-8994/18/6/988"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Diff-ADN",
+          "source_urls": [
+            "https://pubmed.ncbi.nlm.nih.gov/42772331/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "ART",
+          "source_urls": [
+            "https://www.sciencedirect.com/science/article/pii/S1053811925001259"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/H16.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "I07",
+      "task": "fNIRS motor/hemodynamic decoding",
+      "local_metric": "balanced_accuracy",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.47309941520467835,
+        "gpt-5-2025-08-07": 0.5950292397660819,
+        "gpt-5.6-sol": 0.4361111111111111,
+        "gpt-6.1-sol": 0.5505847953216374
+      },
+      "protocol_path": "experiments/I07/protocol.md",
+      "protocol_sha256": "2c12234984cdd4d3782fa57a85fccb20ca6979d6c8ecbd674328ab4ff4af6f6c",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "Custom ten-person optical-density summaries and split, with a session/condition confound. HbO/HbR paper results are not this processed-input endpoint.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "MtReNIRS",
+          "source_urls": [
+            "https://arxiv.org/abs/2610.36159"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "67-dataset fNIRS corpus/dataloaders",
+          "source_urls": [
+            "https://arxiv.org/abs/2610.40277"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Training-only regularized OD temporal decoder / SVM",
+          "source_urls": [
+            "https://openfnirs.org/community/fresh/welcome-to-the-fnirs-fresh-project/",
+            "https://www.nature.com/articles/s42003-025-08412-1"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/I07.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "I10",
+      "task": "MRI quality assessment across sites",
+      "local_metric": "balanced_accuracy",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.6326315789473684,
+        "gpt-5-2025-08-07": 0.6707017543859649,
+        "gpt-5.6-sol": 0.6352631578947369,
+        "gpt-6.1-sol": 0.6378947368421053
+      },
+      "protocol_path": "experiments/I10/protocol.md",
+      "protocol_sha256": "7b6c1f4b33911a46306dcbf2eb16166af90629ffeee4a37fe54a306fde78d7bb",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "Custom MRIQC IQM site-held-out diagnostic and rater collapse. Original paper cohort/split/target conventions differ; archived local predictions remain local evidence.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "Archived original MRIQC classifier, locally rescored",
+          "source_urls": [
+            "https://doi.org/10.1371/journal.pone.0184661",
+            "https://github.com/nipreps/mriqc"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "TabPFN-3.5",
+          "source_urls": [
+            "https://arxiv.org/abs/2609.17895",
+            "https://github.com/PriorLabs/TabPFN"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "TabICLv2",
+          "source_urls": [
+            "https://arxiv.org/abs/2602.11139",
+            "https://github.com/soda-inria/tabicl"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "MI-DQA IQM-only branch",
+          "source_urls": [
+            "https://github.com/ashish-code/MI-DQA"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "FetMRQC",
+          "source_urls": [
+            "https://github.com/Medical-Image-Analysis-Laboratory/fetmrqc"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/I10.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "J08",
+      "task": "Fluorescent synaptic puncta segmentation and quantification",
+      "local_metric": "instance_f1_iou50_multirater",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.0,
+        "gpt-5-2025-08-07": 0.24323205422323543,
+        "gpt-5.6-sol": 0.6433683295437704,
+        "gpt-6.1-sol": 0.57563018487252
+      },
+      "protocol_path": "experiments/J08/protocol.md",
+      "protocol_sha256": "1fa4983162a42f78c7880d14d2b92a35f63d6689032a9183a260772cb4b9f778",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "Two SynAPSeg 2D fields, five separate raters, mean instance F1 at IoU 0.5. The paper spatial-centroid consensus endpoint differs. Archived StarDist masks have been rescored locally.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "Archived SynAPSeg 2D StarDist predictions",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "SynAPSeg fine-tuned Cellpose-SAM",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/",
+            "https://www.biorxiv.org/content/10.1101/2025.04.28.651001v1"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Cellpose-SAM v2 / CellposeDINO",
+          "source_urls": [
+            "https://cellpose.readthedocs.io/en/latest/models.html"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "CellSAM",
+          "source_urls": [
+            "https://doi.org/10.1038/s41592-025-02879-w"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "microSAM / DeepD3",
+          "source_urls": [
+            "https://www.nature.com/articles/s41592-024-02580-4.pdf",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC13432752/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/J08.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "K01",
+      "task": "Electrophysiological cell-type classification",
+      "local_metric": "macro_f1",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.9277844018905058,
+        "gpt-5-2025-08-07": 0.9321663019693655,
+        "gpt-5.6-sol": 0.9409145106376866,
+        "gpt-6.1-sol": 0.943074240159442
+      },
+      "protocol_path": "experiments/K01/protocol.md",
+      "protocol_sha256": "4212bf48ebdde8f850faf3b505548dd94386b8d5ae55bb79c653009ae343bcd5",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "New Allen 11-feature spiny/aspiny task with donor-disjoint split. Full cell-type taxonomy papers do not report this binary feature-restricted benchmark.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "TabPFN-3.5",
+          "source_urls": [
+            "https://arxiv.org/abs/2609.17895",
+            "https://github.com/PriorLabs/TabPFN"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "TabICLv2",
+          "source_urls": [
+            "https://arxiv.org/abs/2602.11139",
+            "https://github.com/soda-inria/tabicl"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Regularized boosted-tree / kernel classifier panel",
+          "source_urls": [
+            "https://arxiv.org/abs/2602.11139"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Allen morpho-electric taxonomy pipeline",
+          "source_urls": [
+            "https://www.nature.com/articles/s41593-019-0417-0",
+            "https://allenswdb.github.io/cell-types/cell-types.html"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/K01.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "K04",
+      "task": "Cortical-layer label transfer",
+      "local_metric": "section_equal_macro_f1_7classes",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.5290441742064551,
+        "gpt-5-2025-08-07": 0.5175064764639699,
+        "gpt-5.6-sol": 0.5050711426219323,
+        "gpt-6.1-sol": 0.5505501906955991
+      },
+      "protocol_path": "experiments/K04/protocol.md",
+      "protocol_sha256": "c0b0c26079c156a0c89abebd5c292d791024e0bd48bba25fed290464a836410f",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "DLPFC expression-only supervised layer transfer, 500 training-selected genes, one test donor and equal-section macro F1. Spatial clustering ARI or multimodal segmentation are different targets.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "SingleR 0.5.0 frozen reference; later release/tuning separate",
+          "source_urls": [
+            "https://singler-inc.github.io/singler-py/api/singler.html"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "scGPT / Nicheformer expression representations",
+          "source_urls": [
+            "https://www.nature.com/articles/s41592-025-02814-z",
+            "https://arxiv.org/abs/2607.17227"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Novae / GraphST / spatial domain models",
+          "source_urls": [
+            "https://arxiv.org/abs/2607.17227",
+            "https://www.nature.com/articles/s41592-026-03194-8"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "VINTER",
+          "source_urls": [
+            "https://www.biorxiv.org/content/10.64898/2026.10.01.752251v1.full"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Training-only expression classifier / scalable tabular representation",
+          "source_urls": [
+            "https://arxiv.org/abs/2602.11139"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/K04.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "K05",
+      "task": "Supervised bulk RNA to marker-positive fractions",
+      "local_metric": "donor_block_macro_rmse",
+      "local_direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.04239776846005213,
+        "gpt-5-2025-08-07": 0.05803003834470389,
+        "gpt-5.6-sol": 0.06742367203503653,
+        "gpt-6.1-sol": 0.0552287462339175
+      },
+      "protocol_path": "experiments/K05/protocol.md",
+      "protocol_sha256": "d9e2b5ad712f25c521a64192c311fbb92d8a810f329ca49806ac096ef375efe1",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "Anonymous 2000-gene inputs and three orthogonal IF/RNAScope fractions in a custom donor/block split. Reference-based seven-cell-type deconvolution has different inputs and targets.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "BisqueRNA / hspe with Mean Ratio markers",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
+            "https://bioconductor.org/packages/release/bioc/html/DeconvoBuddies.html"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "DECONVersation with Geneformer / Cell2Sentence embeddings",
+          "source_urls": [
+            "https://www.biorxiv.org/content/10.64898/2026.10.02.756356v1.full"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "BayesPrism / InstaPrism, MuSiC, CIBERSORTx",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC11245312/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Nested donor-CV PLS / elastic net / reduced-rank regression",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978107/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/K05.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "K06",
+      "task": "Optotagged PV/SST classification from waveform",
+      "local_metric": "class_balanced_mouse_accuracy",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.810813492063492,
+        "gpt-5-2025-08-07": 0.8548611111111111,
+        "gpt-5.6-sol": 0.8777777777777778,
+        "gpt-6.1-sol": 0.8902777777777777
+      },
+      "protocol_path": "experiments/K06/protocol.md",
+      "protocol_sha256": "4b0ec91465fbf0ec5a1c532da3abee53ac89e1f9858997c61767f746e87038ef",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "Mouse PV/SST genetic-label prediction from waveforms with held-out mice. WaveMAP paper accuracy predicts eight unsupervised macaque waveform clusters, not PV/SST.",
+      "published_results": [
+        {
+          "model": "Gradient-boosted classifier of WaveMAP clusters",
+          "value": 91,
+          "metric": "Eight-cluster classification accuracy",
+          "unit": "percent",
+          "source_url": "https://elifesciences.org/articles/67490",
+          "source_location": "Figure 3C and associated Results",
+          "selection_scope": "Reported cluster predictability; explicitly not a PV/SST classification result or a claim of genetic cell-type SOTA.",
+          "eligible_for_local_win_loss": false,
+          "global_current_best_verified": false
+        }
+      ],
+      "candidates": [
+        {
+          "name": "WaveMAP plus training-only supervised label transfer",
+          "source_urls": [
+            "https://elifesciences.org/articles/67490"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "CEED waveform encoder",
+          "source_urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC12373126/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "PhysMAP waveform-only ablation",
+          "source_urls": [
+            "https://www.nature.com/articles/s41467-026-71331-0"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "HIPPIE waveform-only encoder/probe",
+          "source_urls": [
+            "https://www.nature.com/articles/s41467-026-76939-w",
+            "https://huggingface.co/Jesusgf23/hippie"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "TabICLv2 / TabPFN-3.5",
+          "source_urls": [
+            "https://arxiv.org/abs/2602.11139",
+            "https://arxiv.org/abs/2609.17895"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/K06.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "L04",
+      "task": "Point-process estimation and goodness of fit",
+      "local_metric": "bits_per_spike_train_mean",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": -6.664439464819634,
+        "gpt-5-2025-08-07": 2.81716688224358,
+        "gpt-5.6-sol": 3.1947434653493336,
+        "gpt-6.1-sol": 3.263821403265054
+      },
+      "protocol_path": "experiments/L04/protocol.md",
+      "protocol_sha256": "2e1651c341cbdca2451e10a87a01ffc47c6b95afb0c695f17c7f9d15bd46b36d",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "One teaching-data place cell, chronological 60/40 split plus gap, and local train-null bits/spike. NeMoS is a modeling library, not a leaderboard for this exact fixture.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "NeMoS spline/tensor-product Poisson GLM",
+          "source_urls": [
+            "https://github.com/flatironinstitute/nemos",
+            "https://nemos-neuro.org/en/stable/quickstart.html"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Poisson generalized additive model with direction interaction",
+          "source_urls": [
+            "https://github.com/flatironinstitute/nemos"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Spike-history / population latent neural models",
+          "source_urls": [
+            "https://github.com/flatironinstitute/nemos"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/L04.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "L06",
+      "task": "Spiking-neuron posterior inference",
+      "local_metric": "c2st_accuracy_2000",
+      "local_direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.7063249886035919,
+        "gpt-5-2025-08-07": 0.5353500038385391,
+        "gpt-5.6-sol": 0.5125000059604645,
+        "gpt-6.1-sol": 0.5056000024080276
+      },
+      "protocol_path": "experiments/L06/protocol.md",
+      "protocol_sha256": "5847db040121e034cd732ae5c036da891bbf8ef55e099d057e21828a0c18fb35",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "sbibm observations, but likelihood-informed samplers and a 2000-draw C2ST adaptation. The original simulator-only, simulation-budget benchmark is different; values below chance are not superior posteriors.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "Independent NUTS/HMC on exact logistic likelihood",
+          "source_urls": [
+            "https://github.com/sbi-benchmark/sbibm",
+            "https://proceedings.mlr.press/v130/lueckmann21a.html"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Longer independently initialized Polya–Gamma chains",
+          "source_urls": [
+            "https://github.com/sbi-benchmark/sbibm"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "sbi FMPE / NPSE / NPE",
+          "source_urls": [
+            "https://sbi.readthedocs.io/en/stable/how_to_guide/06_choosing_inference_method.html"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "OneFlowSBI",
+          "source_urls": [
+            "https://arxiv.org/abs/2601.22951"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "GenSBI flow/score joint estimators",
+          "source_urls": [
+            "https://arxiv.org/abs/2605.27499",
+            "https://gensbi.com/benchmarks.html"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "DynaMEchs",
+          "source_urls": [
+            "https://dynamechs.sourceforge.net/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/L06.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "M01",
+      "task": "Conditional mouse-choice prediction",
+      "local_metric": "mouse_equal_binary_log_loss",
+      "local_direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.4741733542464717,
+        "gpt-5-2025-08-07": 0.4492946398022002,
+        "gpt-5.6-sol": 0.436515244310296,
+        "gpt-6.1-sol": 0.43663393063728134
+      },
+      "protocol_path": "experiments/M01/protocol.md",
+      "protocol_sha256": "85c3348a501e1b11941a1185c1604e202ed1871bd35f8200e970b4c66bb8e89e",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "Custom IBL history-feature and held-out-mouse next-choice task. Official full-session behavioral-model likelihoods do not establish this processed-input score.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "Regularized multi-lag task-specific behavioral GLM",
+          "source_urls": [
+            "https://github.com/int-brain-lab/behavior_models",
+            "https://vocal.gatsby.ucl.ac.uk/~pel/papers/prior_ibl_2025.pdf"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "IBL ActionKernel / StimulusKernel / OptimalBayesian models",
+          "source_urls": [
+            "https://github.com/int-brain-lab/behavior_models",
+            "https://vocal.gatsby.ucl.ac.uk/~pel/papers/prior_ibl_2025.pdf"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "PsyTrack / GLM-HMM strategy model",
+          "source_urls": [
+            "https://github.com/nicholas-roy/psytrack",
+            "https://www.nature.com/articles/s41593-021-01007-z.pdf"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Hybrid neural–cognitive reward-learning models",
+          "source_urls": [
+            "https://deepmind.google/research/publications/94006/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/M01.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "M04",
+      "task": "Cognitive model and parameter recovery",
+      "local_metric": "range_normalized_mae",
+      "local_direction": "lower",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.07069645781617521,
+        "gpt-5-2025-08-07": 0.07069656357491515,
+        "gpt-5.6-sol": 0.05822260584692529,
+        "gpt-6.1-sol": 0.058221490095125596
+      },
+      "protocol_path": "experiments/M04/protocol.md",
+      "protocol_sha256": "a4fd3a36bb086de15dfb5131fff543be2b62591302795016e4370db41ce0410d",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "New 24-agent reinforcement-learning simulation and normalized parameter MAE. Wilson & Collins is the motivating methods paper, not a published score for our simulator seed.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "Exact-likelihood bounded quadrature posterior median",
+          "source_urls": [
+            "https://elifesciences.org/articles/49547"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "HSSM choice-only RL/custom likelihood",
+          "source_urls": [
+            "https://github.com/lnccbrown/HSSM/releases",
+            "https://lnccbrown.github.io/HSSM/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "BayesFlow 2 / sbi posterior estimator",
+          "source_urls": [
+            "https://arxiv.org/abs/2306.16015",
+            "https://sbi.readthedocs.io/en/stable/how_to_guide/06_choosing_inference_method.html",
+            "https://arxiv.org/abs/2602.07098"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "Hybrid neural–cognitive models",
+          "source_urls": [
+            "https://deepmind.google/research/publications/94006/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "DynaMEchs",
+          "source_urls": [
+            "https://dynamechs.sourceforge.net/"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/M04.json",
+      "eligible_published_comparator": null
+    },
+    {
+      "benchmark_id": "N05",
+      "task": "NWB data loading, units and reproducibility",
+      "local_metric": "field_accuracy",
+      "local_direction": "higher",
+      "general_scores": {
+        "gpt-4.1-2025-04-14": 0.0,
+        "gpt-5-2025-08-07": 1.0,
+        "gpt-5.6-sol": 1.0,
+        "gpt-6.1-sol": 1.0
+      },
+      "protocol_path": "experiments/N05/protocol.md",
+      "protocol_sha256": "b81dcaacde26a38cd707cb6416b6cea7a7348dfebe95a39725158901375619c0",
+      "compatibility": "no_exact_published_task_aggregate_verified",
+      "reason": "New 61-field calculation fixture from one legacy Allen NWB file. PyNWB schema validation is not this physical-unit question-answer score; correctness is deterministic.",
+      "published_results": [],
+      "candidates": [
+        {
+          "name": "Direct HDF5 extraction with independent unit/timing implementation",
+          "source_urls": [
+            "https://github.com/NeurodataWithoutBorders/pynwb/blob/dev/CHANGELOG.md"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "PyNWB current validated I/O",
+          "source_urls": [
+            "https://pynwb.readthedocs.io/en/stable/validation.html",
+            "https://github.com/NeurodataWithoutBorders/pynwb/blob/dev/CHANGELOG.md"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        },
+        {
+          "name": "NWBInspector",
+          "source_urls": [
+            "https://github.com/NeurodataWithoutBorders/nwbinspector",
+            "https://pynwb.readthedocs.io/en/stable/validation.html"
+          ],
+          "status": "candidate_from_prior_review_not_a_certified_winner"
+        }
+      ],
+      "review_path": "literature/specialist-review-2026-11-01/N05.json",
+      "eligible_published_comparator": null
+    }
+  ]
+}

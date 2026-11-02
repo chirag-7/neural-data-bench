@@ -1,0 +1,33 @@
+[
+  {
+    "benchmark_id": "L04",
+    "slice_id": "expansion-v1",
+    "status": "measured",
+    "score": 3.1541385308197936,
+    "metric": "bits_per_spike_train_mean",
+    "direction": "higher",
+    "seconds": 0.8512967501301318,
+    "within_180s": true,
+    "prediction_file": "experiments/specialist-extension-v1/predictions/L04--expansion-v1.npz",
+    "prediction_sha256": "e38e9eba5fe9c5ddc6ae593b63a2c7c7cf2da47f4d452d38f552a22757e78256",
+    "data_file": "data/cache/L04/data.npz",
+    "data_sha256": "94fd62ff95fba99443e075a8ab9b188e5109a50e9da7d42933f4262365b38714",
+    "adapter_file": "experiments/L04/adapter.py",
+    "adapter_sha256": "ca87f881882b78ca9aae45fec470431fc56c40061380dbcab6035e6766fad772",
+    "fit_info": {
+      "family": "spline Poisson place-field GLM with direction interaction",
+      "alpha": 0.001,
+      "validation": "last20% of chronological training bins; no test labels"
+    },
+    "score_details": {
+      "score": 3.1541385308197936,
+      "metric": "bits_per_spike_train_mean",
+      "direction": "higher",
+      "poisson_nll_per_bin": 0.061598407934445674,
+      "per_unit": null
+    },
+    "seed": 20261102,
+    "threads": 1,
+    "device": "cpu"
+  }
+]

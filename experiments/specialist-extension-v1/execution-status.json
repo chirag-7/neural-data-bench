@@ -1,0 +1,26 @@
+{
+  "status": "Superseded: user explicitly requested published/official result lookup only",
+  "reason": "No further specialist fitting or dependency retries. These exploratory outputs remain separate and excluded from all 30-task plots and macro counts.",
+  "new_general_model_calls": 0,
+  "new_scored_classical_tasks": [
+    "D02",
+    "G01",
+    "I07",
+    "L04"
+  ],
+  "dependency_failures_without_scores": [
+    "A14",
+    "A15",
+    "E01",
+    "E06",
+    "F04",
+    "H16",
+    "K06"
+  ],
+  "dependency_errors": [
+    "PyTorch optimizer requires sympy",
+    "WaveMAP graph stage requires networkx"
+  ],
+  "failures_retained": true,
+  "original_general_results_unchanged": true
+}

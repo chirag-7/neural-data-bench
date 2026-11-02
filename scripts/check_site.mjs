@@ -382,6 +382,7 @@ if(vm.runInContext('JSON.stringify(records)',ctx)!==beforeFacetRecords)throw Err
 // Separate specialist frontier page and shared filters.
 ctx.location.hash='#/analysis/specialists';vm.runInContext('draw()',ctx);await new Promise(resolve=>setImmediate(resolve));
 let frontierHTML=el('#app').innerHTML;
+if(!frontierHTML.includes('Published paper scores: compatibility audit') || !frontierHTML.includes('not 14 certified current SOTA results') || !frontierHTML.includes('data/published-specialists.json'))throw Error('Published-score compatibility correction or audit link missing');
 if(!frontierHTML.includes('Best generated code versus specialists')||!frontierHTML.includes('14 scored comparisons / 30')||!frontierHTML.includes('30 scored comparisons / 30')||(frontierHTML.match(/<tr>/g)||[]).length!==39)throw Error('Separate specialist tables/denominators failed');
 el('#facet-input_type').onchange({target:{value:'images_video'}});await new Promise(resolve=>setImmediate(resolve));
 frontierHTML=el('#app').innerHTML;

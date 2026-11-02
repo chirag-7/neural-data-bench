@@ -1,0 +1,31 @@
+[
+  {
+    "benchmark_id": "I07",
+    "slice_id": "expansion-v1",
+    "status": "measured",
+    "score": 0.47558479532163744,
+    "metric": "balanced_accuracy",
+    "direction": "higher",
+    "seconds": 0.9076594579964876,
+    "within_180s": true,
+    "prediction_file": "experiments/specialist-extension-v1/predictions/I07--expansion-v1.npz",
+    "prediction_sha256": "82529a4bc653f6a3bfab67c066cccdf5ef1421c59b5d6b1138e179d0de117ad1",
+    "data_file": "data/cache/I07/data.npz",
+    "data_sha256": "fa62b48ce60428efb63acf5fd2c2b04a7cd7bbf4a9d197f834fed6810edb921b",
+    "adapter_file": "experiments/I07/adapter.py",
+    "adapter_sha256": "c80f1ac213789d53ce47469f0741ed1b012d916f8694f98271ce1e3d7c93651a",
+    "fit_info": {
+      "features": "channel mean and late-minus-early optical-density contrast",
+      "classifier": "shrinkage LDA",
+      "hemoglobin_conversion": false
+    },
+    "score_details": {
+      "score": 0.47558479532163744,
+      "metric": "balanced_accuracy",
+      "direction": "higher"
+    },
+    "seed": 20261102,
+    "threads": 1,
+    "device": "cpu"
+  }
+]

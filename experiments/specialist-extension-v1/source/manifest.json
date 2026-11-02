@@ -59,5 +59,14 @@
     "url": "https://raw.githubusercontent.com/google-research/zapbench/7347b3b21a3f332e281b774c945f1505dd966abf/LICENSE",
     "local_path": "experiments/specialist-extension-v1/source/google-research--zapbench--LICENSE",
     "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+  },
+  {
+    "repo": "bozeklab/DISK",
+    "commit": "3c8d38961404ae4e1908d836ee60f0f0a438e12d",
+    "upstream_path": "LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/bozeklab/DISK/3c8d38961404ae4e1908d836ee60f0f0a438e12d/LICENSE.txt",
+    "local_path": "experiments/specialist-extension-v1/source/bozeklab--DISK--LICENSE.txt",
+    "sha256": "3ef01b2e09afb494c0a6b665615dcd2209027627c8f820ec551bac58af190577",
+    "note": "Correct license filename found after the initial LICENSE lookup returned404; original lookup failure preserved."
   }
 ]

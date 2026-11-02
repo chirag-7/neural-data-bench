@@ -1,0 +1,5 @@
+{
+  "benchmark_id": "K06",
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/experiments/specialist-extension-v1/run.py\", line 55, in <module>\n    try:main(sys.argv[1])\n        ^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/experiments/specialist-extension-v1/run.py\", line 41, in main\n    tick=time.monotonic();pred,info=methods.METHODS[id](x,y,q,groups);seconds=time.monotonic()-tick\n                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/chiragchivate/Documents/Codex/2026-10-30/https-sites-stat-columbia-edu-liam/outputs/neural-data-bench/experiments/specialist-extension-v1/methods.py\", line 173, in k06\n    import umap,networkx as nx\nModuleNotFoundError: No module named 'networkx'\n"
+}
