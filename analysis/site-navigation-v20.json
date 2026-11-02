@@ -9,5 +9,13 @@
     "Desktop tables legible; existing broad category navigation retained"
   ],
   "new_model_calls": 0,
-  "old_measured_scores_changed": false
+  "old_measured_scores_changed": false,
+  "production_browser_qa": "passed",
+  "production_checks": [
+    "Explicit code-generation/local-fitting scope present",
+    "Specialist-only raw 10/4/0, 0.1-IQR 9/3/2, 0.5-IQR 3/1/10, 16 unavailable",
+    "All-reference raw 24/5/1, 0.1-IQR 20/3/7, 0.5-IQR 12/1/17",
+    "Screenshot saved from published page"
+  ],
+  "screenshot": "docs/assets/specialist-frontier-v1.png"
 }
