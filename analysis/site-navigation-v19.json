@@ -13,5 +13,12 @@
     "Classification is author-assigned; independent semantic review remains pending."
   ],
   "measurement_scores_changed": false,
-  "new_model_calls": 0
+  "new_model_calls": 0,
+  "production_browser_qa": "passed",
+  "production_checks": [
+    "Published controls present; 30/30 full-panel rows",
+    "Feature-table subset: 7 tasks, GPT-6.1 vs GPT-4.1 = 6 better / 1 worse",
+    "Screenshot captures selected input and corresponding counts"
+  ],
+  "screenshot": "docs/assets/task-filters-v1.png"
 }
