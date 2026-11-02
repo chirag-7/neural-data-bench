@@ -1,0 +1,8 @@
+{
+  "repo": "yardencsGitHub/tweetynet",
+  "commit": "eab406f0590f4e90a36530cada52a78b0c676a80",
+  "model_paths": [
+    "src/tweetynet/model.py",
+    "src/tweetynet/network.py"
+  ]
+}

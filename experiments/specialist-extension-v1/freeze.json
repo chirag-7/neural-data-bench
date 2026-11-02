@@ -1,0 +1,143 @@
+{
+  "created_at": "2026-11-02T01:08:09.056004+00:00",
+  "status": "sealed before new specialist test evaluations; original general scores already known",
+  "code_sha256": {
+    "methods.py": "b22a8a9405d0ff87c83c05f5e4ad9eb92f2fd35dc0412ec1cda7936522180fc1",
+    "run.py": "49a8f69673a7626d28c86a9022101e01e2d1b13db61a593732feadcc16284905",
+    "protocol.md": "2db5e669cef39a29d7b56083258543fa8f83cdbf71322194bf935dff533644e2"
+  },
+  "cases": {
+    "A14": [
+      {
+        "slice_id": "expansion-v1",
+        "data": "data/cache/A14/data.npz",
+        "sha256": "a0b8bc77bd286d647656dcb620709abfcfdef9ac4392b2bd3a4332b0917d5325",
+        "adapter": "experiments/A14/adapter.py",
+        "adapter_sha256": "c7d765c7765c6a8eac718706c2f821d352a7fda249d5a451a8f9b691d5f05c58"
+      }
+    ],
+    "A15": [
+      {
+        "slice_id": "batch-v11",
+        "data": "data/cache/A15/data.npz",
+        "sha256": "b365f56d812150311fb55ac58ab92b416cdd575c5b2b47badd39a7bec85e0804",
+        "adapter": "experiments/A15/adapter.py",
+        "adapter_sha256": "024352b9c6daf559c20535c8b04eaa2ace2670d496e64fff0eccce779e675fba"
+      }
+    ],
+    "D02": [
+      {
+        "slice_id": "expansion-v1",
+        "data": "data/cache/D02/data.npz",
+        "sha256": "2a5f30d8b6f07f981a0cf2c6e7717543185ef3c8732a17e8bfefef500c7a49ca",
+        "adapter": "experiments/D02/adapter.py",
+        "adapter_sha256": "6801c86d7ba189e203b5c6f5898362394b63a10039ae2ea945cc2e10ed960242"
+      }
+    ],
+    "E01": [
+      {
+        "slice_id": "area2_bump",
+        "data": "data/cache/E01-area2_bump/data.npz",
+        "sha256": "02c7df1e01b9e954d56273eb45cdcfb965f1bd19cca85f0ebe36337523e88f3d",
+        "adapter": "experiments/E01/slices/area2_bump/adapter.py",
+        "adapter_sha256": "5ebee94358bdd880f4d2299197ceeed94a5e97207610e19b5d8cadc1b3d2c9b7"
+      },
+      {
+        "slice_id": "dmfc_rsg",
+        "data": "data/cache/E01-dmfc_rsg/data.npz",
+        "sha256": "426408eb558939192b02a0ddb9b23a45ad4e644f10afbf9a22688b290216bdc7",
+        "adapter": "experiments/E01/slices/dmfc_rsg/adapter.py",
+        "adapter_sha256": "b60581db416aac5df6c864b97fef72568c41727cc9eaf438306a20fef5cd9b20"
+      },
+      {
+        "slice_id": "expansion-v1",
+        "data": "data/cache/E01/data.npz",
+        "sha256": "47bf8125c79925af3a638e73e8b48c04e02e3390e40bd65eaafd5deee5879dfc",
+        "adapter": "experiments/E01/adapter.py",
+        "adapter_sha256": "4785ee942aa8968d2eedb6482f970269c595f0222c91f89893686cbc53421422"
+      }
+    ],
+    "E06": [
+      {
+        "slice_id": "batch-v11",
+        "data": "data/cache/E06/data.npz",
+        "sha256": "dfbd6553dccd99d7f0c8af4daeb98435d9afb200dd3b957d5bd376fa74ebcf3c",
+        "adapter": "experiments/E06/adapter.py",
+        "adapter_sha256": "77b6b3dea939d0fb819e0d92675f7f642c860c561a591fe89f5bcacc428c554b"
+      },
+      {
+        "slice_id": "taxis",
+        "data": "data/cache/E06-taxis/data.npz",
+        "sha256": "944fa61ecf480096efef3ca3242e22693ab346ce26d25346c2c3f057cf12f3de",
+        "adapter": "experiments/E06/slices/taxis/adapter.py",
+        "adapter_sha256": "f2e1aa2c62ae7cdf0315a05a30f616f39c89690aa16e4ea528a6ec73f9d0d6b5"
+      }
+    ],
+    "F04": [
+      {
+        "slice_id": "expansion-v1",
+        "data": "data/cache/F04/data.npz",
+        "sha256": "33256c2f96c856219ee910eebe76160e5398953afd06a3a51089a674a47c2ff4",
+        "adapter": "experiments/F04/adapter.py",
+        "adapter_sha256": "b59d20c86579af9de548f774597f89c70b9e815723231d73457db7d1a433a557"
+      }
+    ],
+    "G01": [
+      {
+        "slice_id": "expansion-v1",
+        "data": "data/cache/G01/data.npz",
+        "sha256": "b19c47236c8215d3502dda9de6a723184e47aa891ae958006029ea700400326a",
+        "adapter": "experiments/G01/adapter.py",
+        "adapter_sha256": "0ee8c6ae09c090280a6d556b9c7f9824f71214159a80b55103aa0892608c01a6"
+      }
+    ],
+    "H16": [
+      {
+        "slice_id": "expansion-v1",
+        "data": "data/cache/H16/data.npz",
+        "sha256": "60d29e6c9ae9c16485c8ef1832fcef775108e687ae304c711b2a72d677e025ac",
+        "adapter": "experiments/H16/adapter.py",
+        "adapter_sha256": "30c46abf911ba88ef8727bb98ee9a87f9d604985b51544ce241b43e8f6dc37c1"
+      }
+    ],
+    "I07": [
+      {
+        "slice_id": "expansion-v1",
+        "data": "data/cache/I07/data.npz",
+        "sha256": "fa62b48ce60428efb63acf5fd2c2b04a7cd7bbf4a9d197f834fed6810edb921b",
+        "adapter": "experiments/I07/adapter.py",
+        "adapter_sha256": "c80f1ac213789d53ce47469f0741ed1b012d916f8694f98271ce1e3d7c93651a"
+      }
+    ],
+    "K06": [
+      {
+        "slice_id": "batch-v11",
+        "data": "data/cache/K06/data.npz",
+        "sha256": "b1cdab0c3433baacd59792a039e9726e34404ffa5ee539235673a42a301da4f9",
+        "adapter": "experiments/K06/adapter.py",
+        "adapter_sha256": "afb0a00c18ca8939c5a1b62614118ece123ea1ef0880f25f0ec9fe87f49608ec"
+      }
+    ],
+    "L04": [
+      {
+        "slice_id": "expansion-v1",
+        "data": "data/cache/L04/data.npz",
+        "sha256": "94fd62ff95fba99443e075a8ab9b188e5109a50e9da7d42933f4262365b38714",
+        "adapter": "experiments/L04/adapter.py",
+        "adapter_sha256": "ca87f881882b78ca9aae45fec470431fc56c40061380dbcab6035e6766fad772"
+      }
+    ]
+  },
+  "protected_source_sha256": {
+    "results/measurements.jsonl": "0d29b6cf4f8a11359ce1b100f8db23bf19ccc5281fc3acecb617e189c33b32bb",
+    "analysis/generation-comparison-v2/generation-comparison.json": "e9e1324936e7fbda528218c10b9898fd17e1bdfdbf38faf5ba7b978dbf8e1d26",
+    "analysis/generation-patterns-v1/patterns.json": "39e26552ec3f35606c40a05412b018dc1ecf7082dce8198bde5a433ec5b588d6",
+    "analysis/generation-lags-v1/lag-analysis.json": "b87009f58523c9ccdf6aec6ca0aac619ff63761914d40386145ec86dea578211",
+    "analysis/specialist-frontier-v1/comparison.json": "d88aefcc57fea16c7377625af6987466b08aa2abdd5ce5d7b9184fdda96ed769"
+  },
+  "training_seed": 20261102,
+  "optimization_seconds": 140,
+  "fit_predict_seconds_max": 180,
+  "cpu_threads_per_fit": 1,
+  "test_tuning": false
+}

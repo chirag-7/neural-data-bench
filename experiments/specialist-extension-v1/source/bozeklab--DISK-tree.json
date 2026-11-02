@@ -1,0 +1,16 @@
+{
+  "repo": "bozeklab/DISK",
+  "commit": "3c8d38961404ae4e1908d836ee60f0f0a438e12d",
+  "model_paths": [
+    "DISK/models/GRU_models.py",
+    "DISK/models/TCN.py",
+    "DISK/models/__init__.py",
+    "DISK/models/distribution_head.py",
+    "DISK/models/graph.py",
+    "DISK/models/st_gcn.py",
+    "DISK/models/stgcn_AE.py",
+    "DISK/models/sts_gcn.py",
+    "DISK/models/transformer.py",
+    "DISK/models/transformer_utils.py"
+  ]
+}

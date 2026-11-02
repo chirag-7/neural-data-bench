@@ -1,0 +1,63 @@
+[
+  {
+    "repo": "bozeklab/DISK",
+    "commit": "3c8d38961404ae4e1908d836ee60f0f0a438e12d",
+    "upstream_path": "DISK/models/GRU_models.py",
+    "url": "https://raw.githubusercontent.com/bozeklab/DISK/3c8d38961404ae4e1908d836ee60f0f0a438e12d/DISK/models/GRU_models.py",
+    "local_path": "experiments/specialist-extension-v1/source/bozeklab--DISK--DISK--models--GRU_models.py",
+    "sha256": "04beccdb13136b07151760ef8bcc3f8d4a1be245187a2c489c7c2ecfd32e0f59"
+  },
+  {
+    "repo": "bozeklab/DISK",
+    "upstream_path": "LICENSE",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "repo": "ncclabsustech/EEGdenoiseNet",
+    "commit": "8d290661146c7189c98cc04812d37371d4b9426c",
+    "upstream_path": "code/benchmark_networks/Network_structure.py",
+    "url": "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/code/benchmark_networks/Network_structure.py",
+    "local_path": "experiments/specialist-extension-v1/source/ncclabsustech--EEGdenoiseNet--code--benchmark_networks--Network_structure.py",
+    "sha256": "6a49fbc7e8ca7e376c8cd5704240392b99f9789340958a695f8a727d413270ba"
+  },
+  {
+    "repo": "ncclabsustech/EEGdenoiseNet",
+    "commit": "8d290661146c7189c98cc04812d37371d4b9426c",
+    "upstream_path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/ncclabsustech/EEGdenoiseNet/8d290661146c7189c98cc04812d37371d4b9426c/LICENSE",
+    "local_path": "experiments/specialist-extension-v1/source/ncclabsustech--EEGdenoiseNet--LICENSE",
+    "sha256": "9edecc3e64eff42ce4c7381349279fc9cdbc760b05384ae499c044bf8c40d010"
+  },
+  {
+    "repo": "yardencsGitHub/tweetynet",
+    "commit": "eab406f0590f4e90a36530cada52a78b0c676a80",
+    "upstream_path": "src/tweetynet/network.py",
+    "url": "https://raw.githubusercontent.com/yardencsGitHub/tweetynet/eab406f0590f4e90a36530cada52a78b0c676a80/src/tweetynet/network.py",
+    "local_path": "experiments/specialist-extension-v1/source/yardencsGitHub--tweetynet--src--tweetynet--network.py",
+    "sha256": "1c80e9bbfb968f9826f7cfb82b89513f560eb5ffc660799213e1bf4842601c38"
+  },
+  {
+    "repo": "yardencsGitHub/tweetynet",
+    "commit": "eab406f0590f4e90a36530cada52a78b0c676a80",
+    "upstream_path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/yardencsGitHub/tweetynet/eab406f0590f4e90a36530cada52a78b0c676a80/LICENSE",
+    "local_path": "experiments/specialist-extension-v1/source/yardencsGitHub--tweetynet--LICENSE",
+    "sha256": "f1cecad3663fe1f9c3606f48d9d8ea357bab8e01fc3bbe4934303cf4c9a65bcd"
+  },
+  {
+    "repo": "google-research/zapbench",
+    "commit": "7347b3b21a3f332e281b774c945f1505dd966abf",
+    "upstream_path": "zapbench/models/nlinear.py",
+    "url": "https://raw.githubusercontent.com/google-research/zapbench/7347b3b21a3f332e281b774c945f1505dd966abf/zapbench/models/nlinear.py",
+    "local_path": "experiments/specialist-extension-v1/source/google-research--zapbench--zapbench--models--nlinear.py",
+    "sha256": "dac6387411ab97d305c9e030baca083769ab376fa8c4943f712dc3a7efe6c872"
+  },
+  {
+    "repo": "google-research/zapbench",
+    "commit": "7347b3b21a3f332e281b774c945f1505dd966abf",
+    "upstream_path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/google-research/zapbench/7347b3b21a3f332e281b774c945f1505dd966abf/LICENSE",
+    "local_path": "experiments/specialist-extension-v1/source/google-research--zapbench--LICENSE",
+    "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+  }
+]

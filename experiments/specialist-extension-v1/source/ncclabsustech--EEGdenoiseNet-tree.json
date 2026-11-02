@@ -1,0 +1,12 @@
+{
+  "repo": "ncclabsustech/EEGdenoiseNet",
+  "commit": "8d290661146c7189c98cc04812d37371d4b9426c",
+  "model_paths": [
+    "code/benchmark_networks/Network_structure.py",
+    "code/benchmark_networks/data_prepare.py",
+    "code/benchmark_networks/loss_function.py",
+    "code/benchmark_networks/main.py",
+    "code/benchmark_networks/save_method.py",
+    "code/benchmark_networks/train_method.py"
+  ]
+}

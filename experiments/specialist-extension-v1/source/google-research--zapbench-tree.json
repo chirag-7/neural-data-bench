@@ -1,0 +1,18 @@
+{
+  "repo": "google-research/zapbench",
+  "commit": "7347b3b21a3f332e281b774c945f1505dd966abf",
+  "model_paths": [
+    "zapbench/models/naive.py",
+    "zapbench/models/naive_test.py",
+    "zapbench/models/nlinear.py",
+    "zapbench/models/nlinear_test.py",
+    "zapbench/models/nunet.py",
+    "zapbench/models/nunet_test.py",
+    "zapbench/models/tide.py",
+    "zapbench/models/tide_test.py",
+    "zapbench/models/tsmixer.py",
+    "zapbench/models/tsmixer_test.py",
+    "zapbench/models/util.py",
+    "zapbench/models/util_test.py"
+  ]
+}
